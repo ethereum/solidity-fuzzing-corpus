@@ -1,0 +1,8 @@
+{
+	let x := mul(f(0, mload(2)), 3)
+	function f(a, b) -> c {
+		c := mul(a, mload(add(c, c)))
+	}
+	sstore(x, f(mload(2), mload(2)))
+}
+//   }

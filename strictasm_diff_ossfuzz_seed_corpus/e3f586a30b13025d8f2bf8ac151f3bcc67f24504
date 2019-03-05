@@ -1,0 +1,16 @@
+{
+let a,b := foo(calldataload(0),calldataload(32),calldataload(64),calldataload(96),calldataload(12),calldataload(160),calldataload(192),calldataload(224))
+sstore(0, a)sstore(32, b)
+function foo(x_0, x_1, x_2, x_3, x_4, x_5, x_6, x_7) -> x_8, x_9
+{
+x_4 := x_8
+x_8 := x_0
+if x_6 {
+x_6 := x_6
+if x_0 {
+x_6 := x_0
+}
+}
+mstore(x_6, x_6)
+}
+}

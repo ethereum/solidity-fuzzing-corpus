@@ -1,0 +1,17 @@
+{
+    let x
+    // Will b1
+    switch calldataload(0)
+    case 0 { x := 2 }
+    default {   // Will b1
+    switch calldataload(0)
+    case 0 { x := 2 }
+    default { x := 3 }
+    mstore(x, 0)
+}
+//      }
+//     mstore(x,= 3e(x, 0)
+}
+//      }
+//     mstore(x, 0)
+// }

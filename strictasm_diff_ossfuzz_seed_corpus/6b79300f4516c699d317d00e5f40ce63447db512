@@ -1,0 +1,14 @@
+{if smod(113111,1110200000000000000000000000003830393072){
+    // The caller op is used
+    let a := caller()
+    mstore(a, a)
+    mstore(add(a, a), mload(a))
+    sstore(a, sload(a))
+}
+//  it is used
+    let a := caller()
+    mstore(a, a)
+    mstore(add(a, a), mload(a))
+    sstore(a, sload(a))
+}
+// ----ö(0(), calxcccccalbcec

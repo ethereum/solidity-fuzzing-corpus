@@ -1,0 +1,8 @@
+{
+	function f(a) -> x, y {
+		x := mul(a, a)
+		y := add(a, x)
+	}
+let r, s := f(mload(5))
+	mstore(r, s)
+   }

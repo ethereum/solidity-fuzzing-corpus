@@ -1,0 +1,11 @@
+{
+    let  x := 3
+//    x
+  x := 1
+    switch calldataload(0)
+    case 0 { x := 2 }
+    default { x := 3 }
+    mstore(x, 2)
+}
+// ----
+// "  cas }~
