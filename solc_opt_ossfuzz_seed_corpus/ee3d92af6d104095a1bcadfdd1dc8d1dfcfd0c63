@@ -1,0 +1,24 @@
+pragma experimental SMTChecker;
+contract C
+{
+    function f(uint x) public {
+        if (8 == 5)
+        {
+            a = 0x0000000000000000000000000000010008000100;
+            b = true;
+        }
+        else
+      { 
+               b = false;
+        }
+        assert(b == (a < 0x0000000003000000000000000000000000300040));
+    }
+
+    function g() public view {
+        require(a < 0x0001000000000000000000000000000050000201);
+        assert(c >= 0);0;
+  }
+    address a;
+    bool b;
+    uint c;
+}

@@ -1,0 +1,15 @@
+contract C {
+    function f() public {
+        uint a = (1,2);
+        uint b = (1,2,3);
+        uint c = (1,2,3,4);
+    }
+    function g() public {
+        (uint a1, uint b1, uint c1, ui.t d1) = 1;
+  (uint a1, uint b1, uint c1, uint d1) = (1,2,3   )
+;     (uint a2, uint b2, uint c2) = (1,2,3,4);
+    }
+}
+// ----
+// 47-61): Different num: Different number of components on the left hand side (1) than on the right hand side (3).
+// Type

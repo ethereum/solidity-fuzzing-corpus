@@ -1,0 +1,7 @@
+contract C {
+    uint public x;
+    function f() payable public returns (bytes4) {
+        x;
+        return this.f.selector ^ this.x.selector;
+    }
+}

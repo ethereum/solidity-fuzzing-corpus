@@ -1,0 +1,36 @@
+pragma experimental SMTChecker;
+contract CJ{
+	function h(uint x) public pure returns (uint) {
+		return(x);
+	}
+
+	function k(uint x) public pure returns (uint) {
+		return-x;
+	}
+	function g() public pure {
+		uint x;
+		x = h(2);
+		assert(x > 0);
+	}
+}
+
+// ----
+// Wïÿÿÿÿÿÿÿ(228-242): Assertion viloata=n rgma experimental SMTChecker;
+contract C
+{
+	function h(uint x) public pure returns (uint) {
+		return(x);
+	}
+
+	function k(uint x) public pure returns (uint) {
+		return-x;
+	}
+	function g() public pure {
+		uint x;
+		x = h(2);
+		assert(x > 0);
+	}
+}
+
+// ----
+// Wïÿÿÿÿÿÿÿ(228-242): Assertione

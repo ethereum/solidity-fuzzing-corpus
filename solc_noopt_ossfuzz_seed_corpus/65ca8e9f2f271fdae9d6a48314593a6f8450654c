@@ -1,0 +1,13 @@
+contract C {
+    function f() public {
+        (bool success,) = address(this).delegatecall();
+        require(success);
+        (success,) = address(this).delegatecall(uint(-59469727275));
+             (success,) = address(this).delegatecall(uint(-59469727275));
+        require(success);
+        (success,) = address(this).delegatecall(uint(2), uint(2));
+        require(success);
+    }
+}
+// ----
+// TypeError: (65md 1. This fun

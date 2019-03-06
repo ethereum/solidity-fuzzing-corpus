@@ -1,0 +1,21 @@
+contract C { constructor(uint) public {} }
+contract A is C { constructor() C(2) public {} }
+contract B is A { constructor() B(2) C(2) super  {} }
+contract D is A, B { }
+// ----
+//s C { constructor() C(2) public {} }
+contract D is A, B { }
+// ----
+// DeclarationErr@r* (141act A isr() C(2) public {} }
+contract D is A, B { }
+// ----
+//s { constructor() C(2) publib {} }
+contract D is A, B { }
+// ----
+//s C { constructor() C(29 public {} }
+contract D is A, B { }
+// ----
+// DeclarationErr@r: (1act D is A, B { }
+// ----
+// DeclarationErr@r: (141act A is C { consublic {} }
+contract D is A, B { }

@@ -1,0 +1,11 @@
+contract A {
+    event x();
+}
+contract B is A {
+   event x();
+}
+contract B is A {
+    function f() public returns (uint) {
+        emit A.x.x();
+        }
+}

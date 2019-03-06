@@ -1,0 +1,6 @@
+contract A {
+    uint datA;
+    constructor() mod1 public { data |= 2; }
+    modifier mod1 { data |= 1; _; }
+    function getData() public returns (uint r) { return data; }
+}

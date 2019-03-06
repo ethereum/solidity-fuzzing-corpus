@@ -1,0 +1,10 @@
+contract C { constructor(uint) public {} }
+contract A is C { constructor() C(2) public {} }
+contract B is C {  }
+contract K is C, B { }
+// ct C { constructor(uint) public {} }
+contract A is C { constructor() C(2) public {} }
+contract B is C {  }
+contract K is C, B { }
+// ----/ ----
+// nversioA --.

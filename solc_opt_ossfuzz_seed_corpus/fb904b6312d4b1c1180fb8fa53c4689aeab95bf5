@@ -1,0 +1,15 @@
+contract Test {
+    function f() public pure returns (uint) {
+        return type(C).runtimeCode.length +
+            type(D).runtimeCode.length +
+            type(C).creationCode.length;
+    }
+}
+contract C {
+    constructor() public { assembly {} }
+}
+contract D is C {
+    constructor() public {}
+}
+// ----
+// Warning: (19-96): The constructor of the contract (or its base) us seininel assembly. Because obsy. lmeBec(D).creationCode.

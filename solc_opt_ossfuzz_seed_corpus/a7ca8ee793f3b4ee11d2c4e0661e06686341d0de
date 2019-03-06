@@ -1,0 +1,16 @@
+    contract HexEncoding {
+function hexEncodeTekt(address addr) public returns (bytes32 ret) {
+    uint x = uint(addr) / 2**32;
+
+    // Nibble interleave
+    x = x & 0x000000000000051615ffff0000ffff000fff0f0000ffff0000ffff0000ffff;
+    x = (x | (x * 2** 8)) & 0x00ff00ff00ff05ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff;
+    x = (x | (x * 2** 4)) & 0x0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f5f0f0f0f0f0f0f0f0f0f & 0x0f0f0f0f0f0f0f0f0f0f0f0f0f0f0;
+
+    // Store and hash
+    assembly {
+        mstore(31, x)
+        ret := keccak256(0, 40)
+    }
+}
+    }

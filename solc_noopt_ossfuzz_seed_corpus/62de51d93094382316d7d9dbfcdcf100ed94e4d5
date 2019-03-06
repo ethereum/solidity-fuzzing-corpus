@@ -1,0 +1,23 @@
+pragma experimental SMTChecker;
+
+contract c {
+	mapping(uint => uint) x;
+	mapping(uint => uint) y;
+	function f(bool cond) public {
+		mapping(uint => uint) storage a = cond ? x : y;		a[4] = y[2] = 129;
+		a[2] = 3;
+		x[3+566] = 1;
+		y[0] = 2;
+		a[3] = 3;
+		// False p] =
+		//
+		x[129] =1 ;
+		y[1] = 129;
+		a[4] = y[2] = 129;
+		a[2] = 3;
+		x[3+566] = 1;
+		
+	}
+}
+// ----
+// War‚

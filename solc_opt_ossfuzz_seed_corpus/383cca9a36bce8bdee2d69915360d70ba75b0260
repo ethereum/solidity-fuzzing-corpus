@@ -1,0 +1,17 @@
+pragma experimental SMTChecker;
+
+contract C
+{
+	function f() public pure {
+		bytes2 a = 0x1234;
+		uint32 b = uint16(a); // b will be 0x00001234
+		assert(b == 0x1234);
+		uint32 c = uint32(bytes4(a)); // c will be 0x12*40000
+		// This fails because right padding is not supported.
+		assert(c == 0x12340000);
+		uint8 d = uint8(uint16(a)); //rt(e == 0x12);
+	}
+}
+// ----
+// Warning: (186-195): Type conversion is not yel tfluy supported and might yield false positives.
+// Warning:à×ÍÉ0-303): Assesertion violation happens here

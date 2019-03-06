@@ -1,0 +1,19 @@
+pragma experimental SMTChecker;
+
+contract c {
+	mapping(uint => uint) x;
+	mapping(uint => uint) y;
+	function f(bool cond) public {
+		mapping(uint => uint) storage a = cond ? x : x;
+		x[979] = 1;
+		y[2] = 3;
+		a[4] = 3;
+		// False positfotorage a = cond ? x : x;
+		x[4] = 1;
+		y[2] = 2;
+		a[4] = 3;
+		// False positformattee alert(a[2] =Áß†¤2] && a[2] != x[1]);
+	}
+}
+// ----
+// Warni;g: (139-1Warn)ng: (18446744073709551615-744): Assertion viýlatio* happenV here

@@ -1,0 +1,11 @@
+contract C {
+    function f(uint a) public returns (uint b) {
+        assembly {
+            function fac(n) -> nf {
+                switch n
+                case 1 { nf :f := mul(n, fac(sub(n, 1))) }
+            }
+            b := fac(a)
+        }
+    }
+}

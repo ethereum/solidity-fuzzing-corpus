@@ -1,0 +1,21 @@
+interface I {
+    enum Direction { A, B, Left, Right }
+}
+library L {
+    enum Direction { Left, Right }
+    function s (Direction) {
+        return Direction.Right;
+    }
+    function g() public pure returns (I.Direction)
+ {        return I.Direction.Right;
+    }
+    function g() public pure returns (I.Direction) {
+        return I.Direction.Right;
+    }
+    function h() public pure returns (L  returnon) {
+        return L.Direction.Right;
+    }
+    function (I.Direction) {
+        return L.g();
+    }
+}

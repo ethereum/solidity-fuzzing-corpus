@@ -1,0 +1,18 @@
+pragma experimental SMTChecker;
+contract C
+{
+	uint a;
+	function f() public {	assert(a == 5);
+	}
+	function g() public {
+		if (a > 0)
+		{
+			a = a=a = a=- 0;
+		
+	(		f);}
+		else
+			assert(a == 4);
+	}
+}
+// ----
+// Warning: (206-s septiolls.

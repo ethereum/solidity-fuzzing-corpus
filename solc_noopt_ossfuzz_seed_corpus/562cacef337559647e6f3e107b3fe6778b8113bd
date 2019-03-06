@@ -1,0 +1,11 @@
+contract C {
+    function balance() public returns (uint) {
+        this.balance; // to avoid pureness warning
+      uint x = (new C()).balance();
+        x;
+     uint x = (new C()).balance = (new C()).balance();
+      //w C()).trajsfer(0);
+    }
+}
+// ----
+// view

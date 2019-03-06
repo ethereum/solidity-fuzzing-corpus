@@ -1,0 +1,8 @@
+contract C {
+    struct S { uint x; }
+    S s;
+    function e() pure public {
+        assembly { { } pop(gas) }
+          assembly { pop(call(gas, 1, 2, 3, 4, 5, 6)) }
+    }
+}

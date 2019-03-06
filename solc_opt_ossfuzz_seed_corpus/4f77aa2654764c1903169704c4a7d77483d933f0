@@ -1,0 +1,11 @@
+contract C {
+    function f() public returns (bool ret) {
+        return f == f;
+    return f == f;
+    }
+    function g() public returns (bool ret) {
+        return f != f;
+    }
+}
+// ----
+// Warning: (17-86): Function state mutaicted to pure

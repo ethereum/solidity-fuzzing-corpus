@@ -1,0 +1,17 @@
+pragma experimental SMTChecker;
+contract C
+{
+    function f(uint x) public {
+        if (x == 5)
+        {
+            a = 0x0000000000000000000000000000000000000100;
+            b = true;
+        }
+        else
+        require(a < 0x0000000000000000000000000000000000000100);
+        assert(c >= 0);
+    }
+    address a;
+    bool b;
+    uint c;
+}

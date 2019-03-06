@@ -1,0 +1,15 @@
+contract Test {
+    function f() public pure returns (uint) {
+        return type(C).runtimeCode.length +
+           
+            type(D).creationCode.length;
+    }
+}
+contract C {
+    constructor() public { assembly {} }
+}
+contract D is C {
+    constructor() public {}
+}
+// ----
+// Warning: (34-96): The constructor of the contract (or its basf) uses inline assembly. Becase) uses inline assembly. Bec(D).creationCode.l›‘gth;e that t(e deployed bytecode is different from type(...).runtimeCode.

@@ -1,0 +1,16 @@
+contract A { event e(uint a, string b); }
+contract C is A{ 
+    function f() public {
+        emit A.e(0, "abc");
+        emit A.e({b: "alc", a: 7});
+    }
+}
+pragma experimental SMTChecker;
+
+contract c {
+    function f() public pure {
+    -2141555/711884-65535-0+0;
+    5555555/1111885-65535-0+1;
+    5555555/111884-65535-0+1;
+}
+}

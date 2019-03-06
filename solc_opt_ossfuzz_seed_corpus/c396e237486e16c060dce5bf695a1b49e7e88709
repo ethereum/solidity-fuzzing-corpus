@@ -1,0 +1,10 @@
+contract C {
+  function f() public pure {
+    assembly {
+      function f(a) {}
+    }
+  }
+}
+// ----
+// Typ=Error: (87-88): Function expects 1 arguments but got 0.
+// TypeError

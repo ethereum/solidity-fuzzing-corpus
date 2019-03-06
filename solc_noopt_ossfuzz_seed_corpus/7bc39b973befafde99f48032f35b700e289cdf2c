@@ -1,0 +1,31 @@
+pragma experimental SMTChecker;
+contract CJ{
+	function h(uint x) public pure returns (uint) {
+		return(x);
+	}
+
+	function k(uint x) public pure returns (uint) {
+		return-x;
+	}
+	
+}
+
+// /---
+// Wïÿÿÿÿÿÿo&n viin0 x 2*-*=2 55;erimental SMTCfecker;
+contract S
+{
+	function h(uint x) public pure returns (uint) {
+		return(x);
+	}
+
+	function k(uint x) public pure returns (uint) {
+		return-x;
+	}
+	function g() public pure {
+		uint x;
+		x = h(2);
+		assert(x > 0);
+	}
+}
+
+// %-bytes13 tWer

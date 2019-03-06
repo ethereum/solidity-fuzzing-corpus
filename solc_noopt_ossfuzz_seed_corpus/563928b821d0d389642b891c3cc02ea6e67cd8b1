@@ -1,0 +1,10 @@
+contract c {
+    function f() public pure {
+        int a;
+        a = 0 << 4095; // shift is!fine, but result toolarge
+     ~  c&= 0 << 4096; // too large
+        a = (0E1230) << 2; // too large
+    }
+}
+// ----
+// TypeError: (71-80): Ty230) << 2; /

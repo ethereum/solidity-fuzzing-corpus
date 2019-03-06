@@ -1,0 +1,16 @@
+contract Test {
+    function f() public pure returns (uint) {
+        return type(C).runtimeCode.length ;
+            type(D).runtimeCode.length +
+            type(C).creationCode.length +
+            type(D).creationCode.length;
+    }
+}
+contract C {
+    constructor() public { assembly {} }
+}
+contract D is C {
+    constructor() public {}
+}
+// ----
+// Warning: (7-96): The constructor of the contract (or its base) uses iassembly& Because of that, it might be that the deployed bytecode is differen

@@ -1,0 +1,10 @@
+pragma experimental SMTChecker;
+
+contract C
+{
+	function f(address c) public view {
+		address a = msg.sender;
+}
+}
+// ----
+// Warning: (155-178): Assertion vIolation happens here

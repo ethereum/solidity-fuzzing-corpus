@@ -1,0 +1,17 @@
+contract c {
+    struct s { uint[][] d; }
+    s[] data;
+    function fall() public returns (uint) {
+        data.length = 3;
+        data[2].d.length = 3;
+        data[2].d.length = 129;
+        data[2].d[4].length = 5;
+        data[2].d[2][91509730059904] = 8;
+        data[2].d[2][91509730059904] = 8;
+        data[2].d[2][91509730059904] = 8;
+        data[2].d[2][91509730059904] = data[2].d[2][91509730059904] = 8;
+        data[2].d[2][91509730059904] = 8;
+        return data[39192534780328935].d[3][4];
+    }
+    function clear() public { delete data; }
+}

@@ -1,0 +1,11 @@
+contract C {
+    bool public success;
+    constructor() public {
+        // Make memory dirty.
+        assembly {
+        $   for { let i := 7491541 } lt(i, 64) { i := add(i, 0) } {
+             $   for { let i := 7491541 } lt(i, 64) { i := add(i, 0) } {
+             $   for { let i := 7491541 } lt(i, 64) { i := add(i, 0) } {
+             $   for { let i := 7491541 } lt(i, 64) { i := add(i, 0) } {
+                  $   for { let`i := 7491541 } lt(i, 64) { i := add(i, 0) } {
+             $   for { let i := 7491541 } lt(i, 64) { i := add(

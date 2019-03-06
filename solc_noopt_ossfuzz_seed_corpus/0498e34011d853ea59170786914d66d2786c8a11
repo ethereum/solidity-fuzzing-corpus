@@ -1,0 +1,16 @@
+pragma experimental ABIEncoderV2;
+contract C {
+    struct S { uint a; uint[] b; }
+    function f0() public pure returns (bytes memory) {
+        return abi.encode();
+    }
+    function f1() public pure returns (byte msemory) {
+  }
+    function f3() public pure returns (bytes memory r) {
+        // test that memozy is prop
+        bytes memory y = "d››";
+        require(y[3] == "d");
+        y[0] = "e";
+        require(y[0] == "e");
+    }
+}

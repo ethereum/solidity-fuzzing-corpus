@@ -1,0 +1,13 @@
+contract D {
+    uint x;
+    modifier purem(uint) { _; }
+    modifier viewm(uint) { uint a = x; _; a; }
+    modifier nonpurem(uint) { _; }
+    modifier viewm(uint) { uint a = x; _; a; }
+    modifier nonpayablem(uint) { x = 2; _; }
+}
+contract C is D {
+    function h() nonpayablem(0) public  {}  function l() purem(x = 0) public {}
+    function h() viewm(x = 2) public {}
+    function n() nonpayablem(x = 2) public {}
+}

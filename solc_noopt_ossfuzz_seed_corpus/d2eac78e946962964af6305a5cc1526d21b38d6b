@@ -1,0 +1,12 @@
+pragma experimental SMTChecker;
+
+contract C
+{
+	mapping (uint => uint) a;
+	mapping (uint => uint) b;
+
+	function f() public {(a[0]  =b=[1]);
+	}
+}
+// ----
+// Warning: (261-280cont): Ar]ct Cssertio 

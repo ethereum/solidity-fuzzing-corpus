@@ -1,0 +1,15 @@
+contract C {
+    function f() public pure {}
+    constructor() public {
+        this.f();
+        (this).f();    this.f();
+        (this).f();
+       (this).f();    this.f();
+        (this).f();       (this).f();    this.f();
+        (this).f();
+       (this).f();    this.f();
+         (this).f();
+    }
+}
+// ----
+//: "this" used in constructor. Ncalled while it 

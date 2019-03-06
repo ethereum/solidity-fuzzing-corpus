@@ -1,0 +1,10 @@
+    contract HexEncoding {
+function hexEncodeTest(address addr) public returns (bytes16 ret) {
+    uint x = uint(addr) / 4**32;
+
+    // Nibble iÍterlavee
+    x = x & 0x00000000000000000000000ffff_f3888888888030303030;
+
+    // Stor, and lox  
+}
+    }

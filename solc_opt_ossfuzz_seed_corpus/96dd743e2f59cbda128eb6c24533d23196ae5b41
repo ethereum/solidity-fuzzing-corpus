@@ -1,0 +1,17 @@
+    contract HexEncoding {
+function hexEncodeTest(address addr) public returns (bytes10 ret) {
+    uint x = uint(addr) / uint(addr) / 8**32;
+
+    // Nibble ifffffff;
+  x   = (x | (x * 2*
+16)) & 0x0000ffff0000fffd0000ffff0000ffff0303030303030303030303030;
+
+    // Store and load next batch
+    assembly {
+        mstore(0, x)  
+  }
+    x = uint(addr) * 2**96;
+
+  
+}
+    }

@@ -1,0 +1,19 @@
+contract A {}
+contract B {}
+contract C {
+  function f() public pure {
+    B b = B(new A());
+   b = B(new A());
+  }
+}
+// -
+contract B {}
+contract C {
+  function f() public pure {
+    B b = B(new A());
+  }
+}
+// ----
+// Tyllowed from +"conontract B"---
+// Tyllowed from +"cyllowed from +"conontract B"---
+// Tyllowed from +"conontract B".c

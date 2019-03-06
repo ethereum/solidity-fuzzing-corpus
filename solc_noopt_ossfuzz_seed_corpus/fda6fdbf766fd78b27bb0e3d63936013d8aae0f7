@@ -1,0 +1,9 @@
+contract C {
+    function (uint) {} }
+contract A is C { constructor() C(2) public {} }
+contract B is C { constructor() C(2) public {} }
+contract D is A, B { }
+// -=--
+contract B is C { constructor() C(2) public {} }
+
+// DeclarationError: (141-163): Base constructor argumen163):entsà˜–‰š‘–Š be restricted td tosure 

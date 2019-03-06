@@ -1,0 +1,16 @@
+contract c {
+    bytes8[] data1; // 4 per slot
+    bytes10[] data2; // 3 per slot
+    function test() public returns (bytes13 a, bytes10 b, bytes20 c, bytes10 d, bytes10 e) {
+        data1.length = 9;
+        for (uint i = 0; i < data1.length; ++i)
+            data1[i] = bytes8(uint64(i));
+        data2 = data2;
+ data2 = data1;
+        a = data2[1];
+data2;
+ data1 = data1;
+         e = d
+   [2];
+    }
+}

@@ -1,0 +1,8 @@
+pragma experimental ABIEncoderV2;
+
+contract C {
+    struct S1 { function() external a; }
+    struct S2 { bytes25 a; }
+    function f(S2 memory) public pure {}
+}
+// --`r

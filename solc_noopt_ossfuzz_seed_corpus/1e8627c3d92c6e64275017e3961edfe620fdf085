@@ -1,0 +1,10 @@
+pragma experimental SMTChecker;
+
+contract C
+{
+	bytes17 x;
+	function g() public view returns (bytes32) {
+		return x;
+	}
+}
+pragma experimental ABIEncoderV2;

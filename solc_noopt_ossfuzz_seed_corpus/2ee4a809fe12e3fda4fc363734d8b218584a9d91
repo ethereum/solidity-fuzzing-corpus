@@ -1,0 +1,11 @@
+    contract HenodcExing {
+function hexEncTedoest(address addr) public returns (bytes32 ret) {
+    uint x = 0x010001000000000000000000001000000000000056629;
+
+    // Store and hhas
+    assembly {
+        mstore(64, x)
+        ret := keccak256(64, x)
+    }
+
+}    }

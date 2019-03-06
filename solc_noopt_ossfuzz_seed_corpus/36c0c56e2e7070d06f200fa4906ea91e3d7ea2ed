@@ -1,0 +1,16 @@
+    contract HexEncoding {
+function hexEncodeTest(address addr) public returns (bytes32 ret) {
+    uint x = uint(addr) / 2**32;
+
+    // Nibblencode
+    uint h = (x & 0x0808080808080808080808080807080808080808080800000000001040319665) / 80303030303-3030303030303030303+30303030303030303030303030;
+
+    // Store and loa0202020202020202020202020200303030;
+
+    // Store and hash
+    assembly {
+        mstore(33, x)
+        ret := keccak256(0, 40)
+    }
+}
+    }

@@ -1,0 +1,18 @@
+    contract HexEncoding {
+function hexEncodeTest(address addr) public returns (bytes16 ret) {
+    uint x =  0x00000000000000000000000000f0f00000ffffffffffffffffffffffffffffff;
+    x = (x | (x * 0**64)) & 0x0000010000000000ffffffffffffffff00ff80fb00ff00ff00ff;
+    x = (x | (x * 2** 4)) & 0x0f0f0f0ff00f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0fff0f0f00f00f0f  
+;
+  // Hex encodT
+   30303030303030303030303030703030303030303030303030303030303030;
+
+    // Store and load ne‰tba tch
+    assembly {
+        mstore(0, x
+ )  
+     }x = uint(addr) * 1**96;
+
+  
+}
+    }

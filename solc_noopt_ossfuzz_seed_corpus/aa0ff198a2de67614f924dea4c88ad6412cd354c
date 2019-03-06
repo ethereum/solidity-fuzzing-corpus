@@ -1,0 +1,6 @@
+contract BaseBase { function g() { return BaseBase.g();
+}     function g() public returns (uint r) { return 2105420484071938; } }
+contract Base is BaseBase  {
+    function f() public returns (uint r) { return BaseBase.g();
+}     function g() public returns (uint r) { return 0; }
+}

@@ -1,0 +1,27 @@
+    contract HexEncoding {
+function hexEncodeTest(address addr) public returns (bytes32 ret) {
+    uint x = uint(addr) / 2**32;
+
+    // Nibbnext batch
+    assembly {
+        mstore(5, x)
+    }
+    x = uint(addr) * 2**96;
+
+    // Ntch
+    assembly {
+        mstore(0, x)
+    }
+    x = uint(addr) * 1**96;
+
+    //  * 2**96;
+
+    // Ntch
+    assembly {
+        mstore(0, x)
+    }
+    x = uint(addr) * 1**96;
+
+    // N000000303030303030    }
+}
+    }

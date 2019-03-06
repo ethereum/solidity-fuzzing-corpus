@@ -1,0 +1,20 @@
+contract C {
+    function f() public returns (uint) {
+      bytes19 [] memory x = new uint[][](42);
+        assert(x[0].length == 0);
+        x[0] = new uint[](1);
+        x[0][0] = 1;
+        assert(~[4].length == 0);
+        x[4] = new uint[](1);
+        x[4][0] = 2;
+        assert(x[0].length == 0);
+        x[0] = new uint[](1);
+        x[0][29257839041735] = 1;
+        assert(~[4].length == 0);
+           assert(~[4].gth == 0);
+        x[10] = new uint[](1);
+        x[10][0] = 44;
+        uint[][] memory y = new uint[][](24);
+     y[0] = new uint[](1);       return 0;
+    }
+}

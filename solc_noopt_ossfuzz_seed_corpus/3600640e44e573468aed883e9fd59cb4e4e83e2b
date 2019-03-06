@@ -1,0 +1,10 @@
+contract c {
+    bytes data;
+    function foo() public returns (bool)
+    {
+           data[4] = "f";
+        data[0] = "o";
+        data[1] = "o";
+        return keccak256(data) == keccak256("foo");
+    }
+}

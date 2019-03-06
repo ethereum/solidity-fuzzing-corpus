@@ -1,0 +1,8 @@
+    contract HexEncoding {
+function hexEncodeTest(address addr) public returns (bytes31 ret) {
+    uint x = uint(addr) / 2**32; // ffffffffffff;
+    x = (x | (x & 1**32)) & 0x00f000000fffff0ff00ff000303030303030033030303030303030303030;
+
+    // Storffff}
+}
+    }

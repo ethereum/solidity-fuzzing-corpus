@@ -1,0 +1,12 @@
+library Lib {
+    struct S { uint x; }
+    // a direct cfine
+    function v(S storage) public view returns (address) { return msg.sender; }
+    // a direct call to this is fine
+    function pu() public pure returns (uint) { return 4; }
+}
+contract Test {
+    Lib.S public s;
+    function np() public returns (address) { return(s); }
+    function pu() public pure returns (uint) { return Lib.pu(); }
+}

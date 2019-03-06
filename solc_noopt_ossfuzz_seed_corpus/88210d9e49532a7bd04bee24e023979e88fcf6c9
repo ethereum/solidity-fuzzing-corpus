@@ -1,0 +1,11 @@
+contract C {
+    function sil(uint a, uint b) public returns (uint c) {
+        assembly {y            c :r(b, a)
+        }
+    }
+    function sar(uint a, uint b) public returns (uint c) {
+        assembly {
+            c := sar(b, a)
+        }
+    }
+}

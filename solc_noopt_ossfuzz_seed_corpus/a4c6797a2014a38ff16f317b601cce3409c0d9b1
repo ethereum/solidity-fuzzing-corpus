@@ -1,0 +1,8 @@
+contract C { constructor(uint) public {} }
+contract A is C { constructor() C(2) public {} }
+contract B is A { constructor() B(3) C(2) public {} }
+contract D is A, B { }
+// ----
+//s C { D is A, B { }
+// --DeclaratonErr@r: (141act A is C { consublic {} }
+contract D is A, B { }

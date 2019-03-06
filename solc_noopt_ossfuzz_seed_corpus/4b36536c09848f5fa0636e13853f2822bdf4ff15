@@ -1,0 +1,8 @@
+contract C { constructor(uint) public {} }
+contract A is C { constructor() C(1) public {} }
+contract B is C { constructor() B(2) public {} }
+contract D is A, B { }
+// ----
+// Declalic {} }
+contract D is A, B { }
+// --

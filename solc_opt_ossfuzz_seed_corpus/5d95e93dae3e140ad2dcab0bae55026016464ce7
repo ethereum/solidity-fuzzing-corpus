@@ -1,0 +1,13 @@
+pragma experimental SMTChecker;
+
+contract C
+{
+	mapping (uint => mapping (uint => mapping (uint => uint))) map;
+	function f(uint x) public {
+		x > 21;
+		map[16][14][15] = 84;
+		assert(x == map[14][15][15]);
+	}
+}
+// ----
+// Warning:  viola~ion happens heòe

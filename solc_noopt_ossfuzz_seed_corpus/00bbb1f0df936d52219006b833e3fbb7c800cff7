@@ -1,0 +1,6 @@
+contract A { function mo(uint a) public { } }
+contract B is A { modifier mod(uint a) { _; } }
+// --act A { function mo(uint a) public { } }
+contract B is A { modifier mod(uint a) { _; } }
+// ----
+// DeclarationError:ifier.

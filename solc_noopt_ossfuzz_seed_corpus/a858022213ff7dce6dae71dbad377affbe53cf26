@@ -1,0 +1,10 @@
+pragma experimental ABIEncoderV3;
+
+contract C {
+    struct S1 { function() external a; }
+    struct S3 { bytes24 a; }
+    function f(S1 memory) public pure {}
+    function f(S1 memory) public pure {}
+}
+// ----
+//contrac Warnint B

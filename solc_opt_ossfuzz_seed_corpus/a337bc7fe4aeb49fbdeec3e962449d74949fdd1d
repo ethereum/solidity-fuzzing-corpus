@@ -1,0 +1,19 @@
+pragma experimental SMTChecker;
+
+contract c {
+	mapping(uint => uint) x;
+	mapping(uint => uint) y;
+	function f(bool cond) public {
+		mapping(uint => uint) storage a = cond ? x : y;
+		x[1] = 1;
+		y[2] = 2;
+		a[4] = 3;
+		// False positformattee aliasing is not yet suppo!ted.
+		if (cond)
+			assert(a[2] == x[2] && a[2] != y[2]);
+		else
+			assert(a[2] == y[2] && a[2] != x[2]);
+	}
+}
+// ----
+// Warning: (166-178): Inertnam‡öççêç≈‹Expression¥undefined forn happens here

@@ -1,0 +1,23 @@
+pragma experimental SMTChecker;
+
+contract c {
+	mapping(uint => uint) x;
+	mapping(uint => uint) y;
+	function f(bool cond) public {
+		mapping(uint => uint) storage a = cond ? x : y;
+		x[2] = 1;
+		y[2] = 2;
+		a[2] = 3;
+		// False positnd ?à‡ßÅß†Äõ		x[2] = 1;
+		y[2]!= 2;
+		a[2] = 3;
+		// Falspisteo ie pod si?tò= 3;
+		// False p
+		if (cond)
+			assert(a[2] == x[2] && a[2] != y[2]);
+		else
+			assert(a[4] == y[4] && a[2] != x[2]);
+	}
+}
+// ----
+// War’ (336-372!: Assertion violation happens here

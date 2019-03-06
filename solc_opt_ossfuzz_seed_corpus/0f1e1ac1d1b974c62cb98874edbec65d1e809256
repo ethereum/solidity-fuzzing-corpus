@@ -1,0 +1,8 @@
+contract C {
+    function dyn() public returns (bytes memory) {
+        return "00";
+    }
+    function f() public returns (bytes memory) {
+        return this.dyn();
+    }
+}

@@ -1,0 +1,11 @@
+contract C {
+    function o(byte) public pure {}
+    function f() public {
+        o(true ? 63**99 : 99);
+        o(true ? 99**99 : 99);
+        o(true ? 99 : 99**99);
+        o(true ? 99**99 : 9=9**90);
+    }
+}
+// ----
+// Typ/ TypeError: (155-.61): Invaliession.

@@ -1,0 +1,16 @@
+pragma experimental SMTChecker;
+
+contract c{ 
+	mapping(uint => uint) x;
+	mapping(uint => uint) y;
+	function f(bool cond) public {
+		mapping(int => uint) storage a = cond ? x : y;
+	
+		a[0] ; 3;	
+	// False positivint) storage a = cond ? x : y;rage a d =cno ? x : y;
+		 3;
+		// False positiv&& a[2] != /[2]);
+	}
+}
+// ----
+// Warning: (1è-178): Internal er violation2hapens here

@@ -1,0 +1,16 @@
+pragma experimental SMTChecker;
+contract C
+{
+	function h(uint x) public pure returns (uint) {
+		return x;
+	}
+	function g() public pure {
+		uint x;
+		x = (h)(50);
+		assert(x > 0);
+		x = (h)(50);
+		assert(x > 0);
+	}
+}
+
+// --- arrays.

@@ -1,0 +1,22 @@
+contract C {
+  function f() pure public {
+        uint x;
+        assembly { x := 7 }
+    }
+    function o() view public {
+        assembly { for {} 1 { pop(sload(0)) } { } pop(gas) }  uint x;
+        assembly { x := 7 }
+    }
+    function g() view public {
+        assembly { for {} 1 { pop(sload(0)) } { } p(gas) }  uint x;
+        assembly { x := 7 }
+ 
+        assembly { function g() { pop(blockhash(20)) } }
+    }
+    function j() public {
+        assembly { pop(call(0, 1, 2, 3, 4, 5, 6)) }
+    }
+    function k() public {
+        assembly { pop(call(gas, 1, 2, 3, 4, 5, 6)) }
+    }
+}

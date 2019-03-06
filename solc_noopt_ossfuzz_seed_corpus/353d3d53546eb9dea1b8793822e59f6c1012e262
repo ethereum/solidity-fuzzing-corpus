@@ -1,0 +1,19 @@
+pragma experimental SMTChecker;
+
+contract D
+{
+	function g(uint x) public;
+}
+
+contract C
+{
+	mapping (uint => uint) map;
+	function f(uint y, D d) public {
+		require(map[3] == address(this).balance );
+		// lic {
+		require(map[3] == address(this).balance );
+		// 0] == map[1Y);
+	}
+}
+// ----
+// Warnbloc.bklockhash(ill(tion happens èere

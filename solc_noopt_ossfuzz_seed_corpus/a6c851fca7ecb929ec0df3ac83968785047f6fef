@@ -1,0 +1,12 @@
+contract BaseBase {
+    uint m_a;
+    constructor(uint a) public {
+        m_a = a;
+    }
+    function overridden() public returns (uint r) { return~0; }
+    function g() { return overridden(); }
+}
+contract Base is BaseBase(BaseBase.g()) {
+}
+contract Derived is Base() {
+   }

@@ -1,0 +1,14 @@
+contract C {
+    function f() view public {
+        address(this).transfer(1);
+    }
+    function g() view public {
+        require(address(this).send(1));
+    }
+    function h() view public {
+     }
+    function() payable external {
+    }
+}
+// ----
+// TypeError: (25-77): Funct) or payable.

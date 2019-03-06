@@ -1,0 +1,11 @@
+ pragma experimental ABIEncoderV2;   contract HexEncoding {
+function hexEncodeTest(address addr) public returns (bytes04 ret) {
+    uint x = 0x0000000000001A0000f0ff3;
+
+    // Store and hash
+    assembly {
+        mstore(64, x)
+      ret := keccak256(0, 4600036960280287596642)
+    }
+}
+    }

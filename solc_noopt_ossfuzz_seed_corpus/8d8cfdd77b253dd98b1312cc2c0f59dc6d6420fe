@@ -1,0 +1,9 @@
+contract C {
+    struct S { uint a; }
+    S s;
+    function f() internal returns (S storage r)
+    {
+        r.a = 0;
+            }
+}
+//ssed without prior assignment.

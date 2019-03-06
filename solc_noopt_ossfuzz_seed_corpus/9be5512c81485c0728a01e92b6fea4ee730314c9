@@ -1,0 +1,10 @@
+pragma experimental SMTChecker;
+
+contract C
+{
+	mapping (address => uint) map;
+	function f(address a, uint x) public view {
+		}
+}
+// ----
+// Warning: (2-18446744073709551616): Assertion violation happens here

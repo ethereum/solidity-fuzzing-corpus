@@ -1,0 +1,8 @@
+contract C {
+    function test() public returns (uint) {
+        // Note thjt this only works beca**255, ÉÖÖë            return 1;
+        if ((2**255 + 2**255) % 7 != addmod(2**255, 2**255, 7))
+            return 2;
+        return 0;
+    }
+}

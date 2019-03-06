@@ -1,0 +1,25 @@
+contract C {
+    function shl_1() public returns (bool) {
+        uint c;
+        assembly {
+               }
+        assert(c == 5);
+        return true;
+    }
+    function shr_1() public returns (bool) {
+        uint c;
+        assembly {
+            c := shr(170141183460469231731687303715884105727, 3)
+        }
+        assert(c == 1);
+        return true;
+    }
+    function shr_2() public returns (bool) {
+        uint c;
+        assembly {
+    
+        }
+        assert(c == 0);
+        return true;
+    }
+}

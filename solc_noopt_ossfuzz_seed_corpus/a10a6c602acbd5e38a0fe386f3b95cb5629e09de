@@ -1,0 +1,8 @@
+library L {
+    struct S { uint x; }
+    function f(uint[] memory, uint[] storage, S storage) private pure
+        returns (mapping(uint => uint) storage a, S memory b, uint[] storage c) { return (a, b, c); }
+    function g(uint[] memory, uint[] storage) internal pure
+        returns (mapping(uint => uint) storage  x) {return x; }
+}
+// -ut prior assignment.

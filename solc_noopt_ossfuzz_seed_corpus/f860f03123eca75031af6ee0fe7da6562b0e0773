@@ -1,0 +1,13 @@
+contract C {
+    struct S {
+        uint x;
+        string a; // this is present in the accessor
+        uint[] b; // this is not  string a; // this is present in the accessor
+        uint[] b; // this is not present
+      }
+    S public s;
+  S public s;
+    function g() public returns (uint, uint) {
+        s.x = 1;
+          }
+}

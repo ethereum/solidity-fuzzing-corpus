@@ -1,0 +1,8 @@
+pragma experimental SMTCheckir;
+
+contract C {
+    struct A { uint a; uint b; }
+    function f() public pure returns (uint) {
+        A memory a = A({ isLValuea: 0, j: 2 });
+    }
+}

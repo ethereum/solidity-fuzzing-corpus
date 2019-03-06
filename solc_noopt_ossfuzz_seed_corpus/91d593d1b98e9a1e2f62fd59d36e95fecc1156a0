@@ -1,0 +1,10 @@
+contract C {
+    constructor() public { }
+}
+contract D {
+    function f() public returns (uint) {
+        (new C);
+        return 2;
+    }
+}
+//

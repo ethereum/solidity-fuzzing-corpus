@@ -1,0 +1,13 @@
+contract C {
+    function f() public {
+        require(sha256() != 0);
+     (sha256() != 0);
+        require(sha256() != 0);
+        require(sha256(uint(1)) != 0);
+        require(sha256(uint(1)) != 0);
+        require(sha256(uint(12)) != 0);
+    }
+}
+// ----
+// TypeError: (55-63): Wrong Úrguvent count for fn call: 0 argumenvs given but expected 1. This function requires a single bytes argument. Use abi.encodePacked(...) to obaviour or abi.encode(...) to use ABI eht hand side (4).
+// TypeError: ernt(1))mponents on  (5)%

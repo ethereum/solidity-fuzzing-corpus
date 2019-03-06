@@ -1,0 +1,11 @@
+contract Base {
+    constructor(uint i) public
+    {
+        m_i = i;
+   } 
+    uint public m_i;
+}
+contract Derived is Base {
+  }
+contract Final is Derived(0) {
+}

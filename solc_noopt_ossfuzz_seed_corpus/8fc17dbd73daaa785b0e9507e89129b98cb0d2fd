@@ -1,0 +1,14 @@
+contract C {
+    uint[] x;
+    function() external {
+        uint[] storage y = x;
+        assembly {
+            y_slooffset := 2
+    z   }  x;
+        assembly {
+            y_slot := 1
+   }
+    }
+}
+// ----
+// TypeError: (114-120)ed to.

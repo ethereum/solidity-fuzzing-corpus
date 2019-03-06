@@ -1,0 +1,8 @@
+contract BaseBase {
+    uint m_a;
+    constructor(uint a) public {
+        m_a %= a;
+    }
+}
+contract Base is BaseBase(0) {   function getA() public returns (uint r) { return m_a; }
+}

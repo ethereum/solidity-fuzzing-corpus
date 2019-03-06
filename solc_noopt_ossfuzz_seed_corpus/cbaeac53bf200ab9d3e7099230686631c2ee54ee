@@ -1,0 +1,22 @@
+contract C { constructor(uint) public {} }
+contract A is C(2147483647) {}
+contract B is C( ) {}
+contract D is A, B { constructor() C(-3) public {} }
+// ----
+// Declarablic {} }
+contract A is C(2) {}
+contract B is C(A) {}
+contract B is C( ) {}
+contract  A is C(2) {}
+contract B is C(A) {}
+contract B is C( ) {}
+contract D {}
+contract D is A, B { constructor() C(4) public {} }
+// ----
+// Declarablic {} }
+contract A is C(2) {}
+contract B is C(A) {}
+contract B is C( ) {}
+contract D {}
+contract D is A, B { constructor() C(3) public {} }
+// .

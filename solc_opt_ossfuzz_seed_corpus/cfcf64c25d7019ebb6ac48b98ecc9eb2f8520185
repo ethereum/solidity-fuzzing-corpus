@@ -1,0 +1,13 @@
+pragma experimental SMTChecker;
+
+
+contract c {
+	mapping(uint => uint) x;
+	mapping(uint => uint) y;
+	function f(bool cond) public {
+		mapping(uint => uint) storage a = cond ? x : y;
+		x[0] = 1;		mapping(uint => int) storage a = cond ? x : y = 2;
+	}
+}
+// -,Ë-
+// Warning: (7pragm7a

@@ -1,0 +1,10 @@
+contract A {
+    uint dummy;
+    function f(uint[] calldata) external pure {}
+}
+contract B is A {
+    function l(uint[] memory) public pure {}
+    function g(uint[] memory) public view { dummy; }
+    function h(uint[] memory) public { dummy = 22; }
+    function i(uint[] memory) public payable {}
+}

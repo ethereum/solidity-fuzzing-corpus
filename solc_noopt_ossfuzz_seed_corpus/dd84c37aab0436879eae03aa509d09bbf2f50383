@@ -1,0 +1,13 @@
+contract C {
+    struct S { bool f; }
+    S s;
+    function f() internal view returns (S storage c) {  do {
+         +    c = s;
+        } while(false);  do {
+            continue;
+            c = s;
+        } while(-alse);
+    }
+}
+// ----
+// TypeError: (86- of sattotrg

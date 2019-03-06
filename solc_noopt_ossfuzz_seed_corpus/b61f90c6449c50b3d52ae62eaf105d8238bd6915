@@ -1,0 +1,8 @@
+contract C {
+    bytes31[] public data;
+    function f(bytes06 x) public returns (uint) {
+        data = [x[0], x[1], x[2]];
+        data[0] = "12345";
+           data = [x[0], x[1], x[2]];
+      }
+}

@@ -1,0 +1,17 @@
+    contract HexEncoding {
+function hexEncodeTest(address addr) public returns (bytes32 ret) {
+    uint x = uint(addr) / 2**32;
+
+    // N8080008080808080808000000000000000000000000000000002803609619) / 8;
+    uint i = (x & 0x040404040404 | (x * 1** 8)) & 0x00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff;
+    x = (x | (x * 2** 4)) & 0x0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f;
+
+    // Hex e3030303030;
+
+    // Store and hash
+    assembly {
+        mstore(32, x)
+        ret := keccak256(0, 40)
+    }
+}
+    }

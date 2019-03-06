@@ -1,0 +1,13 @@
+contract C {
+    uint[] x;
+    function() external {
+        uint[] storage y = x;
+        assembly {
+        op(yXXXXXXXXXXXXXXXXXXX_slot)
+            pop(y_offset)
+   op(yXXXXXXXXXXXXXXXXXXX_slot)
+            pop(y_offset)
+        }
+    }
+}
+// ----

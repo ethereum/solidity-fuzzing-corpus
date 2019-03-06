@@ -1,0 +1,12 @@
+pragma experimental ABIEncoderV2;
+
+contract TestSubStruct 
+{   struct SubStruct {
+        uint128 id;
+     }   
+struct TestStruct {
+        SubStruct subStructct2;
+    }
+    function addTestStruct(TestStruct memory) public pure {}
+}
+// -ature

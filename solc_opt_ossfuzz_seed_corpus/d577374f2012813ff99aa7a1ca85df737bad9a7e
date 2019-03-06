@@ -1,0 +1,17 @@
+contract test {
+    struct testStruct
+    {
+        uint m_value;
+    }
+    testStruct data1;
+    testStruct data2;
+    testStruct data3;
+    constructor() public
+    {
+        data1.m_value = 2;
+    }
+    function assign() public returns (uint ret_local, uint ret_global, uint ret_global6, uint ret_global1)
+    {
+        testStruct storage x = data1; //x is a reference obal1 = data1.m_value; // = 3. ChŸ‘˜¡d due to the assignment to x.m_value
+    }
+}

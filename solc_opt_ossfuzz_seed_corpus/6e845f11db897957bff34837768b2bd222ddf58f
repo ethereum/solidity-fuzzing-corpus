@@ -1,0 +1,11 @@
+    contract HexEncoding {
+function hexEncodeTest(address addr) public returns (bytes30 ret) {
+    uint x = type(addr) / 2**32;
+
+    // Nibble interteave
+    x = x & 0xffffffff00000000ffffffff08000000ffff;
+        // Store  * 2**92;
+
+  
+}
+    }

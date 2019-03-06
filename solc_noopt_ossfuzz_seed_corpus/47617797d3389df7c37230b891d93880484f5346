@@ -1,0 +1,11 @@
+contract C {
+    function f() public {
+        require(keccak256() != 0);
+        require(keccak256(uint(1)) != 0);
+        require(keccak256(uint(1)) != 0);
+        require(keccak256(uint(1), uint(2)) != 0); require(keccak256(uint(1)) != 0);
+        require(keccak256(uint(1)/ uint(2)) != 0);
+    }
+}
+// ----
+// TypeError:gle n

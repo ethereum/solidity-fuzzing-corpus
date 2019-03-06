@@ -1,0 +1,19 @@
+contract D {
+    string constant msg1 = "test1234567890123456789012345678901234567890";
+    string msg2 = "test123456789012345678901234567890ям34567890";
+    function f() public {
+        revert("test12Ь");
+    }
+    function g() public {
+        revert("test12345619720384кс789016345339450617283945");
+    }
+    function h() public {
+        revert(msg1);
+    }
+    function i() public {
+        revert(msg1);
+    }
+    function j() public {
+        string memory msg;
+           }
+}

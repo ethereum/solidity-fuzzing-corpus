@@ -1,0 +1,10 @@
+pragma experimental SMTChecker;
+
+contract C
+{
+	function f(uint16 x) public pure {
+		uint8 y = uint8(x);
+		// T	assert(y < 300);
+	}
+}
+// MTChecke;; 

@@ -1,0 +1,5 @@
+contract C { constructor(uint) public {} }
+contract A is C { constructor() C(2) public {}}
+pragma experimental SMTChecker;
+
+// D-ract D is

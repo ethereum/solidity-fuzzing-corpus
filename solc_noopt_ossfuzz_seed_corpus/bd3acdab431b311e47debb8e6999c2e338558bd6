@@ -1,0 +1,18 @@
+pragma experimental SMTChecker;
+contract C {
+    function f(bool x, bool y) public pure {
+        uint a;
+        if (x) { if (y) {
+               if (x) { if (y) 
+{            } else {
+                a = 3;
+            }
+        }
+       a = 5;
+          }  
+        }
+        bool xor_x_y = (x && !y) ||! (x && y);
+! (x && y);
+        assert(!xor_x_y || a > 4);
+    }
+}

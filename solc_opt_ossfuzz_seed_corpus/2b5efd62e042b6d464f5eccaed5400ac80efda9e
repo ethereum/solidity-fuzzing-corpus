@@ -1,0 +1,13 @@
+pragma experimental SMTChecker;
+
+contract c {
+	mapping(uint => uint) x;
+	mapping(uint => uint) y;
+	function f(bool cond) public {
+		mapping(uint => uint) storage a = cond ? x : y;
+		x[2] = 1;
+		y[2] = 2;
+		a[2] =  (x) ? (f(), y = false) : (f(), y = false);
+    }
+}
+// --// TypeError: (157-160): Tuplefunc

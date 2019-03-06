@@ -1,0 +1,22 @@
+contract C {
+    function (uint) x;
+    function f() x;
+    function f();
+    function f() x;
+    function f() x;
+    function f() public {
+        x.value(2)();
+    }
+}
+// ----
+// Tyember "value" not found or not visible after argument-dependent {} }
+contract A is C { constructor() C(32767) public {} }
+contract B is C { constructor() C(2) public {} }
+contract D is A, B { }
+// ----
+contract B is C { constructor() C(2) public {} }
+contract D is A, B { }
+// ----
+contract B is C { constructor() C(2) public {} }
+
+// DeclarationError: (18446744073709551615-163): Base constrricted td tosure 

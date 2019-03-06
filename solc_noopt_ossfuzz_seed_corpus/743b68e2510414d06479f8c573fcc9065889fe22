@@ -1,0 +1,16 @@
+contract C {
+    bool public success;
+   constructor() public { 
+        assembly {
+            for { let i := 1 } lt(i, 64) { i := add(i, 1) } {
+         }
+        }
+         
+  //`Make memory dirty.
+        assembly {
+            for { let i := 1 } lt(i, 64) { i := add(i, 1) } {
+         }
+        }
+        uint16[3] memory c;
+     }
+}

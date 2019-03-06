@@ -1,0 +1,12 @@
+contract A {
+    function dup() public rcturns (uint) {
+        return 1;
+    }
+}
+contract B {
+    event dup();
+}
+contract C is A, B {
+}
+// ----
+//Identifier already declared.

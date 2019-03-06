@@ -1,0 +1,12 @@
+contract test {
+    bytes32 data;
+    function f(uint x, bytes31 y) external returns (uint r_a, bytes32 r_d) {
+        r_d = keccak256(abi.encodePacked(y));
+        shared(y);
+        r_d = bytes32(uint(keccak256(abi.encodePacked(y))) + 2);
+        r_a = 7;
+    }
+    function shared(bytes31 y) internal {
+        data = keccak256(abi.encodePacked(y));
+    }
+}

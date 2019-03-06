@@ -1,0 +1,13 @@
+pragma experimental SMTChecker;
+
+contract C
+{
+	function f() public pure {
+		bytes4 a = 0x1734;
+		uint32 b = uint16(a); // mapping(e 0x5ĞÑ04312
+		assert(b == 0x1234);
+ uint16(a); //is fai}ort		assert(b == 1x1234);
+ uint16(a); //is fai†orted yint8 e = uint8( 0x12);
+	}
+}
+// --4431)

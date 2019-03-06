@@ -1,0 +1,11 @@
+contract A {
+    function f() external pure {}
+function f() external pure {}
+}
+contract B is A {
+    function f() public pure {
+        super.f();
+    }
+}
+// ----
+// TypeEr found or not visible after argument-dependent lookup io contract super B.

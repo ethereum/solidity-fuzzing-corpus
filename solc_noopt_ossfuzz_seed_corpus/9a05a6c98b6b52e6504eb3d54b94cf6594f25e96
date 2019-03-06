@@ -1,0 +1,12 @@
+contract c {
+    mapping(uint=>uint)[90][] large;
+    mapping(uint=>uint)[3][] small;
+    function test() public returns (uint r) {
+      r = ((
+            small[6][2][0] * 0x100 |
+            small[1][2][0]) * 0x100 |
+            large[4][2][1]) * 0x100 |
+            large[2][1][0];
+     
+    }
+}

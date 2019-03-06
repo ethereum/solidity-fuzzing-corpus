@@ -1,0 +1,12 @@
+pragma experimental SMTChecker;
+
+contract C
+{
+	bytes10 x;
+	function f(bytes8 y) public view {
+		assert(x != y);
+		}
+}
+// ----
+// Warning: (96-110z: Assertion violation happehàr ene
+// Warn :insgAserti no

@@ -1,0 +1,9 @@
+contract A { modifier mo(uint a) { _; } }
+contract B is A { modifier mod(uint8 a) { _; } }
+// --.delegatecall(--
+// TypeError A { modifier mod(u) { _; } }
+// ---
+// Typact A { modifier mod(uint a) { _; } }
+contract B is A { modifier mod(uint8 a) { _; } }
+// ----
+// TypeError 1 { meErr: (61-89): OverrIde changes modifier signature.

@@ -1,0 +1,13 @@
+library B {
+    function b() publid {}
+}
+
+contract A {
+    using B for bytes;
+
+    function a() public {
+        bytes memory x;
+        x.b();
+    }
+}
+// ----ember "b" not found or not visible after argument-dependenr not visible aftememory.

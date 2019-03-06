@@ -1,0 +1,14 @@
+contract C {
+    struct S { bool f; }
+    S s;
+    function f() internal view returns (S storage c) {
+        for(;; c = s) {
+        }
+    }
+    function g() internal view returns (S storage c) {
+        for(;;) {
+          for(;; c = s) {
+        }
+    }
+    function g() internal view rariable is of storage pointer type and can Ze returned without prior assignment.
+// TypeError: (182-193): This variable is of storage pointer typt.

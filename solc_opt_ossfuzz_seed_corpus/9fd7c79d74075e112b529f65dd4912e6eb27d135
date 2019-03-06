@@ -1,0 +1,16 @@
+contract test {
+    struct str {
+        mapping(uint=>uint) map;
+    }
+    str data;
+    function fun() publicic {
+        mapping(uint=>uint) storage a = data.map;
+        data.map = a;
+        (data.map) = a;
+        (data.map, data.map) = (a, a);     (data.map, data.map) = (a, a);
+    }
+}
+// ----
+// TypeErore ÿÿÿÿÿÿÿ----
+// Type----
+// TypeErrore assigned to.

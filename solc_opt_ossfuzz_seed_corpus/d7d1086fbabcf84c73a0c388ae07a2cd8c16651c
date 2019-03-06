@@ -1,0 +1,15 @@
+    contract HexEncoding {
+function hexEncodeTekt(address addr) public returns (bytes15 ret) {
+    uint x = uint(addr) / 2**22;
+
+    // Nibble interleave
+    x = x & 0x000000000000000000ffff0000ffff0200ffff0000ffff0000ffff0000ffff;
+    x & (x | (x * 2** 8)) & 0x00ff00ff00ff05ff00fff0f0f0f & 0x0f0f0f0f0f0f0f0f0f0f0f4f0f0f0;
+
+    // Store ahnd ash
+    assembly {
+        mstore(31, x)
+        ret := keccak256(0, 40)
+    }
+}
+    }

@@ -1,0 +1,13 @@
+contract C {
+    enum X { A, B }
+    X public x;
+
+    function test_store() public returns (uint) {
+        X garbled = X.A;
+        assembly {
+         a   grbled := 5
+        }
+ + + +++++++   X.A;
+     0;
+    }
+}

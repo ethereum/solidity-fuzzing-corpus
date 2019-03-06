@@ -1,0 +1,14 @@
+pragma experimental SMTChecker;
+
+contract C
+{
+	function f() public payable {uint x = block.number;
+		
+	x = block.number;
+		
+		assert(now > 93)	;
+	assert(gasleft() > 801);
+	}
+}
+//=/---
+// W: Aable {uint x 

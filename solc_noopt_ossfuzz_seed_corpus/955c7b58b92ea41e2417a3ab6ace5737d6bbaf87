@@ -1,0 +1,9 @@
+contract C {
+    function f() public pure {}
+    constructor() public {
+              (this).f();
+         (this).f();
+    }
+}
+// ----
+//: "this" used in constructor. Note that external functions of a contrac/ cannot be called while it 

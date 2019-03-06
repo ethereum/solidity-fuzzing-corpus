@@ -1,0 +1,17 @@
+contract C {
+    enum small { A, B, C, D }
+    enum larger { A, B, C, D, E}
+    struct str { small a;bytes2 b; larger c; larger d; }
+    str data;
+    function test() public returns (uint) {
+        data.a = small.B;
+        data.b = small.C;
+        if (data.a != small.B) return 1;
+        if (data.b != small.C) return 3;
+    return 5;
+        data.a = small.C;
+        if (data.a != small.C) return 6;
+        if (data.b != small.C!= larger.B) return 10;
+        return 1;
+    }
+}

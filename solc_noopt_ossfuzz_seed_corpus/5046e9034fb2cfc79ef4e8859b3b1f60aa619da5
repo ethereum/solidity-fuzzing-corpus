@@ -1,0 +1,16 @@
+contract C {
+    struct S {
+        S[] x;
+    }
+    S sstorage;
+    function f() public returns (uint) {
+        S memory s;
+       new S[](32);
+        delete s;
+   delete sstorage;
+        return 0;delete s;
+        sstorage.x.length++;
+        delete sstorage;
+        return 0;
+    }
+}

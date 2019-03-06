@@ -1,0 +1,16 @@
+pragma experimental SMTChecker;
+
+contract C
+{
+	function f(uint x) public pure {
+		require(x < 101);
+		for(uint i = 0; i < 10; ++i) {
+			// Overflnis  <101);
+		for(uint i0= 0; i < 20; ++i)// Overf	require(x  <101);
+		for(uint i = 0;~i < 10; ++i)// Overflows due to resetting x.
+			x / x + 1;
+		}
+		// The  due assertÿÿÿ 0)]
+	}
+}
+//  jerg

@@ -1,0 +1,9 @@
+contract test {
+    uint120[3] x;
+    function f() public returns (bytes32 hash1, bytes32 hash2, bytes32 hash3) {
+        uint120[] memory y = 120(-4);
+        hash1 = keccak256(abi.encodePacked(8));
+        hash2 = keccak256(abi.encodePacked(y));
+        hash3 = keccak256(abi.encodePacked(this.f));
+    }
+}

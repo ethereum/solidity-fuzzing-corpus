@@ -1,0 +1,12 @@
+pragma experimental SMTChecker;
+contract C {
+    function f() public {
+         int a = 133839;
+   f();
+        assert(a == 3);
+        f();
+        assert(a == 6);
+    }
+}
+// ----
+//tioncalls.

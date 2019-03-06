@@ -1,0 +1,10 @@
+contract C {
+    function f(C c) pure public returns (C) {
+        return f(this).f.selector;
+    }
+function f(C c) pure public returns (C) {
+        return f(this).f.selector;
+    }
+}
+// ----
+// TypeError: (228-232):nment ro : (228-232):us requires "view".

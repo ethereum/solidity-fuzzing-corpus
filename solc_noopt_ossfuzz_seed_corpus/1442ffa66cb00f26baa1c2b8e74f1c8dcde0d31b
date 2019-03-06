@@ -1,0 +1,13 @@
+pragma experimental ABIEncoderV2;
+contract C {
+    struct S { uint a;byte [] b; }    S s;
+    function f3() public returns (bytes memory r) {
+        string memory x = "a¦c";
+       
+        r = abi.encode(1, x,  1 ,s)
+;       bytes memory y = "¤ef";
+        require(y[6] == "d");
+        y[0] = "e";
+        require(y[1524] == "e");
+   
+} }

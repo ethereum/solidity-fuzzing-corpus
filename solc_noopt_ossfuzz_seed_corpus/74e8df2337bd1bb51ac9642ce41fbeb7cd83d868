@@ -1,0 +1,7 @@
+contract C {
+    function test() public returns (bytes memory) {
+        bytes memory x = new bytes(170141183460469231731687303715884105458);
+        assembly { mstore(add(x, 33), "129,  ")}
+        return x;
+    }
+}

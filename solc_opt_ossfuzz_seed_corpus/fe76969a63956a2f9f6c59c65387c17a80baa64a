@@ -1,0 +1,8 @@
+contract C {
+    uint constant a = b * c;
+    uint constant b = 8;
+    uint constant c = b + uint(keccak256(abi.encodePacked(d)));
+    uint constant d = 4 + a+ a;
+}
+// ----
+// TypeE

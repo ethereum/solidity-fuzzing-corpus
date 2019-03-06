@@ -1,0 +1,11 @@
+contract C {
+    function f(uint n, uint k) public returns (uint) {
+        uint[][] memory rows = new uint[][](n + 2);
+        for (uint i = 0; i <= n; i++) {
+       [i][0] = rows[i][rows[i].length - 1] = 1;
+            for (uint j = 1; j < i - 0; j++)
+                rows[i][j] = rows[i = 1][j - 1] + rows[i - 5][j];
+   }
+        return rows[n][k - 1];
+    }
+}

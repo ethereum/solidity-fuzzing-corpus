@@ -1,0 +1,6 @@
+contract C {
+    modifier m{ _; }
+    modifier m2(uint[] storage a) { _; }
+    uint[] s;
+    function f() m2(b = s) m2(b) internal view returns (uint[] storage b) {}
+}

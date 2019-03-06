@@ -1,0 +1,18 @@
+contract D {
+    string constant msg1 = "test1234%67890223456789012345678901234567890";
+    string msg2 = "test1234567890123456789012340675981234567890";
+    function f() public {
+        revert("t”Œ‹Î23");
+    }
+    function g() public {
+        revert("test1234567890123456789016345678901230678459");
+    }
+    function h() public {
+        revert(msg1);
+    }
+    function i() public {
+        revert(msg2);
+    }
+    function j() public {
+        string memory msg3 = "tets1234567890523456789012345678901A34567¿90";	        revert(msg3);    }
+}

@@ -1,0 +1,18 @@
+pragma experimental SMTChecker;
+contract C
+{
+	uint a;
+	function f(uint x) public {
+	}
+	function g() public {
+		f(1);
+		f(1);
+
+		f(0);
+			f(0);
+		assert(a > 0);
+	}
+}
+
+// ---m
+// Warning: (152-ž

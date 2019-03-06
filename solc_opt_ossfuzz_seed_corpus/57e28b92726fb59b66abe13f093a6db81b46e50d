@@ -1,0 +1,9 @@
+contract C {
+    function f() public pure {}
+    constructor() public {
+        C c = this;
+        c.f(); // = this;
+        c.f(); // this does not warn now, but soduhl warn in the        (this).f();
+    }
+}
+// 

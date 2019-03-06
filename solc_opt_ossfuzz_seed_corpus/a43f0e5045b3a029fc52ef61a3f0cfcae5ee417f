@@ -1,0 +1,11 @@
+contract C {
+  function f() public {
+    bytes[31] memory a;
+    a[5**98][8**90][8**90*0.1] memory a;
+    a[5**98][8**90][8**90*0.1] memory a;
+    a[5**98][8**90][8**90*0.1];
+  }
+}
+// ----
+// TypeErrst 3794...(81 digits omitted)...1424 is not implicitly convertible to expected type uint256.
+// TypeError: (74-79): Type int_coteger.

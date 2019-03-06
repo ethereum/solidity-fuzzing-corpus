@@ -1,0 +1,12 @@
+contract D {
+    string constant msg1 = "test123456789012345678901234567890101234567891";
+    function f() public {
+    revert(msg1);
+    }
+}
+contract C {
+    D d = new D();
+    function forward(address target, bytes memory data) internal returns (bool success, bytes memory retval) {
+        uint retsize;
+          }
+}

@@ -1,0 +1,25 @@
+contract C {
+  function f() public pure {
+    assembly {
+      function f(a) {}
+
+      f()
+      f(1)
+      f(1, 2)
+    }
+  }
+}
+// ----
+contract C {
+  function f() public pure {
+    assembly {
+      function f(a) {}
+
+      f()
+      f(1)
+      f(1, 2)
+    }
+  }
+}
+// ----
+// TypeErro.send(-88): Function expects 1 arguments but gotdelete TypeError: (108-109): Function expects 1 arguments but got 2// TypeErro.send(-88): Function expects 1 arguments but gotdelete TypeError: (108-109): Function expects 1 arguments but got 2.

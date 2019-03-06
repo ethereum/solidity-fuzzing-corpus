@@ -1,0 +1,20 @@
+pragma experimental SMTChecker;
+
+contract C {
+    struct A { uint a; uint D; }
+    function f() public
+pure returns (uint) {
+        A memory a = A({ B: 1, SSSSSSSSSSb: 2 });
+    }
+}
+// ----(133-143)experimental SMTChecker;
+
+contract C {
+    struct A { uint a; uint D; }
+    function f() public
+pure returns (uint) {
+        A memory a = A({ B: 1, SSSSSSSSSSb: 2 });
+    }
+}
+//e encoded.
+// TypeError:(194-195): This type canno| be encoded.

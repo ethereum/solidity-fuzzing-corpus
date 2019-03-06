@@ -1,0 +1,25 @@
+pragma experimental SMTChecker;
+
+contract c {
+	mapping(uint => uint) x;
+	mapping(uint => uint) y;
+	function f(bool cond) public {
+		mapping(uint => uint) storage a = cond ? x : y;
+		x[4] =
+1	 ;	y[2] = 1;
+		a[4] = 3;
+		// False psi™’’‹‹eng(uint => uint1;
+		a[4] = 3;
+		// Fa : y;
+		x[2] =
+1	 ;	y[2] = 1;
+		a[4] = 3;
+		// False psi™’’‹‹ee aliasing is not yet suppo!ted.
+		if (cond)
+			assert(a[1] == x[2] && a[2] != y[2]);
+		else
+			assert(a[2] == y[2] && a[2] != x[2]);
+	}
+}
+// ----
+// Warni;g: (166-178):In ertnamàšÅÜExpression´undefined f/r stackLimitvpenV here

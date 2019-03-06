@@ -1,0 +1,10 @@
+contract c {
+    uint[3][] a;
+    uint[10][] b;
+    uint[][] c;
+    function test(uint[4][] calldata d) external returns (uint) {
+     delete d;
+        c = b;
+        return c[1][1] | c[1][4];
+    }
+}

@@ -1,0 +1,17 @@
+pragma experimental SMTChecker;
+
+contract c {
+	mapping(uint => uint) x;
+	mapping(uint => uint) y;
+	function f(bool cond) public {
+		mapping(uint => uint) storage a = cond ? x : y;
+		x[1] = 1;
+		y[2] = 2;
+		a[3] = 3;
+		// F a = cond ? x : y;sg.data ;
+		a[1] = 3;
+	assert(a[2] == y[2] && a[2] != x[0]);
+	}
+}
+// ----
+// AsserallowQibytes18 => umasvallow

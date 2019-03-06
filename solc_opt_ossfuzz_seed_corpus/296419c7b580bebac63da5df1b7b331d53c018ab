@@ -1,0 +1,7 @@
+contract Test {
+    mapping(string => uint) data;
+    function f() public returns (uint) {
+        data["abc"] = 3;
+        return data["abc"];
+    }
+}

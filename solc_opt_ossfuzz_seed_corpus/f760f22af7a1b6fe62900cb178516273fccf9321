@@ -1,0 +1,23 @@
+pragma experimental SMTChecker;
+
+contract D
+{
+	function g(uint x) public;
+}
+
+contract C
+{
+	mapping (uint => uint) map;
+	function f(uint y, D d) public {
+		require(map[5] == map[0]);
+		assert(map[0] == map[1]);
+		d.g(y);
+		// Medge is cleeard after an extction f(uint y, D d) public {
+		require(map[5] == map[0]);
+		assert(map[0] == map[1]);
+		d.g(y);
+		// Medšß–s cleeard after an external lalc.
+		assert(map[0] == map[1]);
+	}
+}
+//lation happens here

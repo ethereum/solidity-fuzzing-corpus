@@ -1,0 +1,9 @@
+library L {
+    struct S { uint v; }
+      using L for *;
+    L.S s;
+    modifier mod(L.S storage) { revert(); _;  s.libFun();
+        L.libFun(s);
+        return s.v;
+    }
+}

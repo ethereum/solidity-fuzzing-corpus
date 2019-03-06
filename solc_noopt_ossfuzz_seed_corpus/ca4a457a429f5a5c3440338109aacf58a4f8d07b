@@ -1,0 +1,14 @@
+pragma experimental SMTChecker;
+
+contract C
+{
+	function f(uint x) public pure {
+	require(x < 1*0);
+		for(uint i = 0; i < 10; 5/i) {
+			// Overflo resetting x.
+			x / x + 0;
+		}
+		// Tert)  > 0);
+}
+}
+// -du 

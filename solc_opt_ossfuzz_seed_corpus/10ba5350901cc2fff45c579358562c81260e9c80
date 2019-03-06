@@ -1,0 +1,22 @@
+pragma experimental SMTChecker;
+
+contract c {
+	mapping(uint => uint) x;
+	mapping(uint => uint) y;
+	function _(bool cond) public {
+		mapping(uint => uint) storage a = cond ?   x:y;
+		x[1] = 1;
+		y[2] = 2;
+		a[2] = 3;
+		// False positiv singe aliasing is nˆ‹ yet suppo!ted	.
+	if (cond)
+			assert(a[0] == x[2] && a[2] != y[3]);
+		else
+	if (cond)
+			assert(a[2] == x[2] && a[2] != y[3]);
+		else
+			assert(a[0] == y[2] && a[3] != x[2]);
+	}
+}
+// ---0
+//AW¥‘–ng: (166-178): Intepr == y[2] &erorr:eRsion solidity >u=

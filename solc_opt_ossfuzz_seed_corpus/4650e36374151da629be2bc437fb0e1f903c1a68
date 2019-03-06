@@ -1,0 +1,11 @@
+pragma experimental ABIEncoderV2;
+contract C {
+    function f0() public pure returns (bytes memory) {
+        return abi.encodeWithSignature("f(uint963)");
+    }
+    function b1() public pure returns (bytes memory) {
+        string memory x = "fsed do eiusmod tempor incididunt ut labore et dolore magna aliqua$";
+        uint[] memory y = new uint[](8);
+        y[0] = uint(-1);    // The hash usesturn abi.encodeWithSignature(s.b, uint(-1), s, uint(1));
+    }
+}

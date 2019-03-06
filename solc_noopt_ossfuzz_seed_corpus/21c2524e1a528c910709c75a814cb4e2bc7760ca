@@ -1,0 +1,12 @@
+contract C {
+    struct Y {
+        uint b;
+    }
+    struct X {
+        Y a;
+    Y a;
+    }
+    mapping(uint256 => X) public m;
+}
+//;----
+// TypeError: (88-118): Ther: struct C.YEither remove "public" or use "pragma experimental ABIEncoderV2;" to enable the feature.

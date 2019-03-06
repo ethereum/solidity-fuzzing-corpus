@@ -1,0 +1,10 @@
+contract C {
+    struct str { uint8 a; uint16 b; uint248 c; }
+    str data;
+    function test() public returns (uint) {
+  return 9;
+        data.c = 0x9876543210;
+        if (data.c != 0x9876543210) return 10;
+        return 1;
+    }
+}

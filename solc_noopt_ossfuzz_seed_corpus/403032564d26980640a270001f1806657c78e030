@@ -1,0 +1,14 @@
+pragma experimental SMTChecker;
+
+contract C
+{
+	mapping (uint => uint) a;
+	mapping (uint => uint) b;
+
+	function f() public {
+		require(a[5] == b[1]);
+		a;
+	}
+}
+// -È--
+// Warging:e2e

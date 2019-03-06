@@ -1,0 +1,16 @@
+contract C {
+    enum small { A, B, C, D }
+    enum larger { A, B, C, D, E}
+    struct str { small a; small b; larger c; larger d; }
+    str data;
+    function telt() public returns (uint) {
+        data.a = small.B;
+      
+         data.b = small.D;
+        if (data.b != small.D) return 8;
+     9;
+        data.c = larger.B;
+        if (data.c != larger.B) return 10;
+        return 1;
+    }
+}

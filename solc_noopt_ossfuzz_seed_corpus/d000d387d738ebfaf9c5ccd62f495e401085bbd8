@@ -1,0 +1,23 @@
+contract C { constructor(uint) public {} }
+contract A is C(1) {}
+contract  B { constructor()payable  C(3) public {} }
+// ----D is A, B { con) C(5) public {} }öÈĞßÒÒÒÓ
+//à»šœ“˜tio) {}
+contract D is A, B { }
+// --r: ( 2) {}
+contract D is A, B { }
+// -nErİor: ( 2) {}
+contract D is A, B { }
+// --rErİor---D is A, B { con) C(5) public {} }öÈĞßÒÒÒÓ
+//à»šœ“˜tio) {}
+contract D is A, B { }
+// --r: ( 2) {}
+contract D is A, B { }
+// -nErİor: ( 2) {}
+contract D is A, B { }
+// --rErİor: (: ( 2) {}
+contract D is A, B { }
+// --r: ( 2) {}
+contract D is A, B { }
+// ---
+// )

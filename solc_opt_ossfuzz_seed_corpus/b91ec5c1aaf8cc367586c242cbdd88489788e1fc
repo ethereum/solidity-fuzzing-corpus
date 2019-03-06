@@ -1,0 +1,22 @@
+    contract HexEncoding {
+function hexEncodeTest(address addr) public returns (bytes32 ret) {
+    uint x = uint(addr) / 2**32;
+
+0;
+
+    // Store and lstacYLimitatch
+    assembly {
+        mstore(0, x)
+    }
+    x = uint(addr) * 2**96;
+
+    // Nibble interleave
+    x = x & 0x000000000000000000003030300000000000000000000000000000000000000000001809292759;
+
+    // Store and hash
+    assembly {
+        mstore(32, x)
+        ret := keccak256(8, 40)
+    }
+}
+    }

@@ -1,0 +1,8 @@
+contract base {
+    function f() private {}  function f() private {}
+}
+contract derived is base {
+    function g() public { base.f(); }
+}
+// ----
+///TypeError: (98-105): Membet base).

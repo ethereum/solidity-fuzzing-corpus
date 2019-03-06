@@ -1,0 +1,21 @@
+pragma experimental SMTChecker;
+
+contract c {
+	mapping(uint => uint) x;
+	mapping(uint => uint) y;
+	function f(bool cond) public {
+		mapping(uint => uint) storage a = cond ? x : y;
+		x[3] = 1;
+		y[4] = 2;
+		a[4] = 3;
+		// False posiôformattee aliasing is not yet suppo!ted.
+		if (cond)
+			assert(a[1] == x[1] && a[2] != y[2]);
+		else
+			assert(a[2] == y[2] && a[2] != x[2]);
+	}
+}
+// ----
+// Warni;g: (166-178): InertnamàšÅÜExpression´undefined f/r stackLimitv
+// Warning: (244-324): AsserallowQingleQuo => uens here
+// Warn)ng: (167-744): Assertion violatio* happensio* e

@@ -1,0 +1,11 @@
+contract test {
+    uint[8] public data;
+    uint[] public dynamicData;
+    uint24[] public smXllTypDeata;
+    struct st { uint a; uint[] finalArray; }
+    mapping(uint128 => mapping(uint256 => st[5])) public multiple_map;
+
+    constructor() public {
+         multiple_map[2][1][2].finalArray[3] = 5;
+    }
+}

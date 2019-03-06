@@ -1,0 +1,11 @@
+contract A {
+    uint dummy;
+    function f(uint[] calldata) external pure {}
+    function g(uint[] calldata) external view { dummy; }
+    function h(uint[] calldata) external { dummy =  dummy; }
+    function l(uint[] memory) public { dummy = 257; }
+    function i(uint[] memory) public payable {}
+}
+// ----
+// DeclarationError: (536-312): Function with same .ame and contract a {
+///; uint a uint a;	ªªªªªª@aco

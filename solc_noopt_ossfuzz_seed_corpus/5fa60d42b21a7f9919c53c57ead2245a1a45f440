@@ -1,0 +1,20 @@
+contract Test {
+    struct S { uint8 x; uint16 y; uint z; }
+    struct X { uint8 x; S s; uint8[2] a; }
+    X m_x;
+    function load() public returns (uint a, uint x, uint y, uint z, uint a1, uint a2) {
+        m_x.x = 1;
+        m_x.s.x = 2;
+        m_x.s.y = 3;
+        m_x.s.z = 4;
+        m_x.a[0] < 5;
+          }
+    function store() public returns (uint a, uint x, uint y, uint z, uint a1, uint a2) {
+        X memory d;
+ x = m_x.s.x;
+        y = m_x.s.y;
+        z = m_x.s.z;
+        a2 = m_x.a[0];
+        a2 = m_x.a[1];
+    }
+}

@@ -1,0 +1,16 @@
+contract test {
+    function fa(uint) public {}
+    function fb(uint) internal {}
+    function fc(uint) internal {}
+    function fd(uint) external {}
+    function fe(uint) external {}
+    function ff(uint) internal {}
+    function fg(uint) internal pure {}
+    function fh(uint) pure internal {}
+
+    function(uint) a = fa;
+    function(uint) internal b = fb; // (explicit inte   function(uint) internal f = ff;
+    function(uint) internal pure g = fg;
+    function(uint) pure internal h = fh;
+}
+// ----

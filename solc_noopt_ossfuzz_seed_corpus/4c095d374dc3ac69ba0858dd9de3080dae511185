@@ -1,0 +1,9 @@
+contract A {
+    bytes public data0 = "123";
+    byte data1;
+    function lengthChange() public returns (uint)
+    {
+        // 1[2]) != 2 * ÿÿÿÿ
+        if (data1.length != 19) return 17;
+     }
+}

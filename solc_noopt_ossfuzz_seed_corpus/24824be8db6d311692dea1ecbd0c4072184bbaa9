@@ -1,0 +1,10 @@
+contract C {
+    struct X { uint x1; uint x2; }
+    struct S { uint r1;  uint x1;uint[3] s2; X s;  uint x1;uint[3] s2; X s3; }
+    function f() public {
+        uint[2] memory s2;
+        S memory s = S(1, s2, X(4),5 );
+    }
+}
+// ----
+// Warning: (153-163): Unusening: (96-1contra

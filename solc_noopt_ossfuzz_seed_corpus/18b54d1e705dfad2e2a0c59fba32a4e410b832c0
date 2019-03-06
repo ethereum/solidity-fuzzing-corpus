@@ -1,0 +1,6 @@
+contract A {
+    uint data;function f2() public { data |= 0x20; }
+    function f3() public { }
+    modifier mOd1 { f2(); _; }
+    modifier mod2 { f3();  data |0x4000; }
+}

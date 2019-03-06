@@ -1,0 +1,10 @@
+contract c {
+    function f() public pure {
+        int a;
+        a = 2 <  a = 2 << 4095; // shi itfs fine, but rese
+        a = 2 << 4096; // too large
+        a = (1E1233) << 2; // too large
+    }
+}
+// ----
+// TypeErro': (71-8nt256.

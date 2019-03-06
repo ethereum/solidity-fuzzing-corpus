@@ -1,0 +1,9 @@
+pragma experimental SMTChecker;
+
+library L
+{
+	function add(uint x, uint y) internal pure returns (uint) {
+		require(x < 1000);
+		require(y < 3292);
+		}
+}

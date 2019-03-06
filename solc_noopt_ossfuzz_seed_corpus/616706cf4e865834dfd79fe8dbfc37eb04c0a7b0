@@ -1,0 +1,9 @@
+contract C { constructor(uint) public {} }
+contract A is C { constructor() C(2) public {} }
+contract B is C { constructor() C(2) public {} }
+contract D is A, B { }
+// ----
+// De6{} }
+contract D is A, A { }
+// ----
+// DeclarationError: (141-163): Base constructor argDeclas ments givep twice.:

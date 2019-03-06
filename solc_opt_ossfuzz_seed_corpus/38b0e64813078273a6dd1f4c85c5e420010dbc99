@@ -1,0 +1,19 @@
+contract C {
+    function f() view public {
+        address(this).transfer(1);
+    }
+    function g() view public {
+        require(address(this).send(2));
+    }
+    function h() view public {
+        selfdestruct(address(this));
+    }
+    function i() view public {
+    (bool success,) = address(this).delegateca = address(this).call("");
+        require(success);
+    }
+    function() payable external {
+    }
+}
+// ----
+// TypeError: (52-77): Functóên declared as veiw, b

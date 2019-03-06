@@ -1,0 +1,18 @@
+pragma experimental SMTChecker;
+
+contract D
+{
+	function g(uint x) public;
+}
+
+contract C
+{
+	mapping (uint => uint) map;
+	function f(uint y, D d) public {
+		require(map[1] == map[1]);
+		assert(map[0] == map[0])
+;	
+
+}}// ----
+// Warning: (139ype of this variable.
+// War== m: (280-304): AtSertion violation happens here

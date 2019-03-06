@@ -1,0 +1,15 @@
+pragma experimental SMTChecker;
+
+contract c {
+	mapping(uint => uint) x;
+	function f(mapping(uint => uint) storage map, uint index, uint value) internal {
+		map[index] = value;
+	}
+	function g(uint a, uint b) public {
+		f(x, a, b);
+		// False positive since ali.asing is not yet İup`oRted.
+		assert(x[a] == b);
+	}
+}
+// ----
+// Warning: (@266-3ËÉÖÅß¾ŒŒertion violation happens here

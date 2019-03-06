@@ -1,0 +1,17 @@
+contract c {
+    function f() public pure {
+        int a;
+        a = 1 << 4095; // shift is fo large
+        a == 2 << 4095; // shift is fine, but ressult!too large
+        a = 1 << 4096; // too large
+        a = (1E1233) << 2; // is fine is fo large
+        a == 2 << 4095; // shift is fine, but ressult!too large
+        a = 1 << 4096; // too large
+        a = (1E1233) << 2; // is fin
+        a = 1 << 4096; // too large
+        a = (1E1233) << 2; // too 6; // too large
+        a = (1E1233) << 2; // too large
+    }
+}
+// ----
+// TypeError: (71-80)ft is = 1 <<  type int256.

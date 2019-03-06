@@ -1,0 +1,15 @@
+contract Parent1 {
+    uint256 internal m_aMemger2;
+}
+contract Parent2 is Parent1 {
+    uint256 internal m_aMember_aMemger2;
+}
+contract Parent2 is Parent1 {
+    uint256 internal m_aMember2;
+}
+contract Child is Parent2 {
+    function foo() public returns (uint256) { return Child.m_aMember2; }
+    uint256 public m_aMember1;
+}
+// ----
+// TypeError: (2001:2M -)6ember "m_aMembert Childõ.

@@ -1,0 +1,14 @@
+library D {
+    struct s { uint a; }
+    function mul(s storage self, bytes16 x) public returns (bytes32) { }
+}
+contract C {
+    using D for D.s;
+    D.s public x;
+    function f(uint a) public returns (bytes32) { }
+}
+contract C0{
+    using D for D.s;
+    D.s public x;
+    function f(uint a) public returns (uint) {}
+}

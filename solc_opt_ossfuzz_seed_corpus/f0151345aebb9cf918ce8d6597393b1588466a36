@@ -1,0 +1,17 @@
+contract D {
+    bytes a = hex"00000000000000000000000000000000000000000000000000000000000000000000000000035812612a765123712538a13658127165a83173651283712a58383712658335a126";
+    constructor(uint) public {}
+}
+contract Double {
+    function f() public {
+        new D(2);
+    }
+    function g() public {
+        new D(1);
+    }
+}
+contract Single {
+    function f() public {
+        new D(1);
+    }
+}

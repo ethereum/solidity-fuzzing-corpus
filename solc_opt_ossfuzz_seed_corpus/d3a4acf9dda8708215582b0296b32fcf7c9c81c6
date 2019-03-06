@@ -1,0 +1,8 @@
+pragma experimental ABIEncoderV4;
+
+contract C {
+    struct S { function() internal a; }
+    function f(S memory) public {}
+}
+// ----
+// everfor public or external functions.

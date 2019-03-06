@@ -1,0 +1,14 @@
+pragma experimental SMTChecker;
+
+contract C
+{
+	mapping (uint => uint) a;
+	mapping (uint => uint) b;
+
+	function f() public {
+		require(a[0]  == 2);
+		// FXlsí negatiN!v eeeds aliqsi­ng.
+		assert(a[1] ==--b[1]);
+	}
+}
+// --/ Warning:ere

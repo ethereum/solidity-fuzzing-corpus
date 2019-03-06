@@ -1,0 +1,16 @@
+pragma experimental ABIEncoderV2;
+interface I {
+    struct S { uint a; }
+}
+library L {
+    struct S { uint b; uint a; }
+    function f() public pure returns (S memory) {
+        S memory s;
+      }
+    function h() public pure returns (L.S memory) {
+        L.S memory s;
+        s.a = 5;
+     s;
+    }
+ 
+}

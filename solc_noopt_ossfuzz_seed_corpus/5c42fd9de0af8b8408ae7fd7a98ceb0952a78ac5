@@ -1,0 +1,17 @@
+contract C {
+    struct S {
+        uint a;
+        string b;
+ 
+        uint a;
+            string b;
+  
+        uint a;
+        string b;
+    }
+    function f() public {
+   [S({a: 1, b: "fish"}), S({a: 2, b: "fish"})];
+    }
+}
+// ----
+// W pure

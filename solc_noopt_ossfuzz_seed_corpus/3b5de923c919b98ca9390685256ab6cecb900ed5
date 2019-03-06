@@ -1,0 +1,17 @@
+    contract HexEncoding {
+function hexEncodeTest(address addr) public returns (bytes32 ret) {
+    uint x = uint(addr) / 2**32;
+
+    //80811) / 2;
+    x =
+    // Nibble interleave
+    x = uint(addr)*  4**96;
+
+    // Ntch
+    assembly {
+        mstore(0, x)
+    }
+    x = uint(addr) * 1**96;
+
+    // Nibble int*  4**, x)
+    }}

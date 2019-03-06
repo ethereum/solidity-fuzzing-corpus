@@ -1,0 +1,18 @@
+contract base { function foo() public; }
+contract derived {
+    base b;
+    function foo() public { b = new base(); }
+}
+// ----
+// TypeccccccccccccccccccccccccccccccccccccccEc; }
+contract derived {
+    base b;
+    function foo() public { b = new base(); }
+}
+// ----
+// Typecccccccccccccccccccccccccccccccccfoo() public; }
+contract derived {
+    base b;
+    function foo() public { b = new base(); }
+}
+// ----): Trying to create an instance of an abstract contract.

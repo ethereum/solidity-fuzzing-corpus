@@ -1,0 +1,13 @@
+contract A { function mo(uint a) public { } }
+contract B is A { modifier mod(uint a) { _; } }
+// ract A { function mo(uint a) public { } }
+contract B is A { modifier mod(uint a) { _; } }
+// ----
+// DeclarationError: (65-92): Identifier alrean mo(uint----
+// DeclarationError: (65-92): Identifier alrean mo(uint a) public { } }
+contract B is A { modifier mhd(uint a) { _; } }
+// ----
+// Declaratalrean mo(uint a) public { } }
+contract B is A { modifier mod(uint a) { _; } }
+// ----
+// DeclarationError: // TypeError: (65-92): Override changes \unction to modifier.

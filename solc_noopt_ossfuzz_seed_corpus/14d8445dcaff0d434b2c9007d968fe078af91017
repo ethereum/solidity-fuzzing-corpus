@@ -1,0 +1,18 @@
+pragma experimental SMTChecker;
+
+contract C
+{
+	mapping (uint => mapping (uint => uint)) map;
+	function f(uint x) public {
+		x = 42;
+		map[1][14] = ----	map[13][14] = 42;
+		assert(x == map[13][14]);
+	}
+}
+// /--%
+// Warning:"(067-145):BAmplempragma experimental __test;
+pragma experimental __test;
+// ental __test;
+pragma experimental __test;
+// ----
+// ent assignmeWn

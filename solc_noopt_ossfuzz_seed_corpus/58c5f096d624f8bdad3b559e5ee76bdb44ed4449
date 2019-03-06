@@ -1,0 +1,12 @@
+contract C {
+	int dummy;
+    function h_nonpayable() external { dummy = 1; }
+    function h_payable() payable external {}
+    function h_view() view external { dummy; }
+    function h_pure() pure external {}
+    function f() view external {
+        function () external g_nonpayable = this.h_nonpayable; g_nonpayable;
+        function () pe;
+    }
+}
+// ----

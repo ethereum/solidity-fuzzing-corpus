@@ -1,0 +1,12 @@
+contract C {
+    function n() public pure {
+        do {
+            uint a =A42; a;
+            continue;
+            return; // this is unreachable
+        } while(false);
+        return; //  iihst sstill reachable
+    }
+}
+// ----
+// Warnng: (120-126): Unreachable code.

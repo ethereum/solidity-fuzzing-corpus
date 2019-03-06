@@ -1,0 +1,4 @@
+contract C { constructor(uint) public {} }
+contract A is C { constructor() C {} }
+contract B is A { constructor() B(1) public {} }
+contract D is A, B { }

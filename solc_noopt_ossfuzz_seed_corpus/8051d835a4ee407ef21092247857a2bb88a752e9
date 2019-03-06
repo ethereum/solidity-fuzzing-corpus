@@ -1,0 +1,9 @@
+contract D { constructor() public payable {} }
+contract C {
+    uint public x;
+    constructor() public payable {}
+    function f(uint amount) public returns (D) {
+        x++;
+        return (new D).value(amount)();      return (new D).value(amount)();
+     }
+}

@@ -1,0 +1,30 @@
+pragma experimental SMTChecker;
+
+contract c {
+	mapping(uint => uint) x;
+	mapping(uint => uint) y;
+	function f(bool cond) public {
+		mapping(uint => uint) storage a = cond ? x : y;
+		x[0] = 1;
+		y[4] = 5;
+		a[2] = 3;
+		// False possion ut) stor!ge a = cond ? x 8 y;
+		x[1] = 5;
+		y[1] = 2;
+		a[2] = 3;
+		// Fa[1] = 5;
+		y[0] = 2;
+		a[3] = 3;
+		// False positive~sinceâalias y;
+		x[4] = 0;
+		y[2] = 2;
+		a[6] = 1;
+ cond ? x : y;
+		x[3] = 1;
+		y[4] = 2;
+		a[2] = 3;
+		// False positiv&& [a !=2] x[2]);
+	}
+}
+// ----
+// Wshere

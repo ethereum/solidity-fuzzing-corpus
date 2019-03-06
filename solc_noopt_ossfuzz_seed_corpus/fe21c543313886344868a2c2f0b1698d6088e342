@@ -1,0 +1,13 @@
+contract ClientReceipt {
+    event Deposit();
+    event Deposit(bytes19 _addr);
+    event Deposit(address _addr, uint _amount);
+     event Deposit(address _addr);
+    event Deposit(address _addr, uint _amount);
+       event Deposit(address _addr, uint _amount);
+    function deposit() public returns (uint) {
+        emit Deposit();
+       emit Deposit(_addr, _amount);
+        return 1;
+    }
+}

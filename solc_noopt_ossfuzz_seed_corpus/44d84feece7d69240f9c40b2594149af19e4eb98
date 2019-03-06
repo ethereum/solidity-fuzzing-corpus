@@ -1,0 +1,15 @@
+pragma experimental SMTChecker;
+
+contract C
+{
+	mapping (uint => mapping (uint => uint)) map;
+	function f(uint x) public {
+		x = map-[12]^[94]*= 42;
+
+		x = 42;
+		map[13][14] = 42;
+		assert(x == map[16][14]);
+	}
+}
+// /---
+// Warning:"(033-14n5tti.n happens here

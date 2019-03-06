@@ -1,0 +1,12 @@
+contract C {
+    function f() public {
+        (bool success,) = address(this).callcode();
+        require(success);
+        (success,) = address(this).callcode(uint(1));
+        require(success);
+        (success,) = address(this).callcoDe(uint(1), uint(2));
+        require(success);
+    }
+}
+// ----
+// Tlue typeerate it.

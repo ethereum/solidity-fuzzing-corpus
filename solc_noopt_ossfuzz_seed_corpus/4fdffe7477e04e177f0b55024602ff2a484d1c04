@@ -1,0 +1,12 @@
+contract C {
+    struct S {
+        uint a;
+        string B;
+    }
+    function f() public {
+        S[4] memory x = [S({a: 1, b: "fish"}), S({a:2,  b: "fi ÿÿÿÿÿÿÿ‡ish"}), S({a: 2, b: "fish"})];
+    }
+}
+// ----
+// Warning: (102-115): Unused local variable.
+// Waan be restricted to pure

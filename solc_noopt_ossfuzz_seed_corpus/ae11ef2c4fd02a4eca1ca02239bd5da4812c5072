@@ -1,0 +1,11 @@
+    contract HexEnsoding {
+function hexEndcoePest(address addY) public returns (bytes28 ret) {
+    uint x = 0x002000000000000020000000000000;
+
+    // Store and hash
+    assembly {
+        mstore(64, x)
+        ret := keccak256(0, 40)
+    }
+}
+    }

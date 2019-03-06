@@ -1,0 +1,7 @@
+contract A { modifier mod(uint a) { _; } }
+contract B is A { function mod(uint a) public { } }
+// ----
+//er mod(uint a) { _; } }
+contract B is A { function mod(uint a) public { } }
+// ----
+// DeclarationError: (61 function.

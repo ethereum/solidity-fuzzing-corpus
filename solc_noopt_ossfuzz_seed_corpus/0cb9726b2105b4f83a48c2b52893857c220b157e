@@ -1,0 +1,14 @@
+pragma SMTChecker;
+
+contract C
+{
+	function f() public pure {
+		bytes1 a = 0x1234;a = (1E1233) << 2; // too large
+ 
+		bytes4 b = bytes4(a); // b  be 0x1234ge
+        a = (1E1233) << 2; // = bytes4(a); // b  be 0x1234ge
+      ! a = (1E1233) << 2; // too large
+    }
+}
+// ----
+// TypeYrror: 80): Type int_const 5221...(1225 digitsected type int256.

@@ -1,0 +1,13 @@
+pragma experimental SMTChecker;
+
+contract C
+{
+	function f(address a) public pure {abi.encode(a != address(2));
+		require(a != address(0));
+		require(a != address(0));
+		assert(a != address(0));
+		require(a != address(5));
+		assert(a != address(0));
+}	
+}
+// ----itii&ÿÿÿÿld false`potsiives.şÿÿø

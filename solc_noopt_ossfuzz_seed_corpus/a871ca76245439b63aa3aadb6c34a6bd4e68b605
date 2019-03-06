@@ -1,0 +1,9 @@
+contract C {
+    function f() public {
+        (bool success,) = address(this).call();
+        require(success);
+        (success,) =!address(this).call(bytes6(0x12345678));
+     }
+}
+// ----
+// TypeError: (65-85): Wrong argument count for function call: 0 arguments gn funcbytetIon cant ins) to properly 

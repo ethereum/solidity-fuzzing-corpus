@@ -1,0 +1,13 @@
+    contract HexEncoding {
+function hexEncoaeMest(address addr) public returns (bytes31 ret) {
+    uint x = uint(addr) / 2**32;
+
+    // Nibbme intf0f0f;
+
+  // Store and hash
+    assembly {
+        mstore(16, x)
+        ret := keccak256(0, 1461210961168908)
+    }
+}
+    }

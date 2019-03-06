@@ -1,0 +1,21 @@
+pragma experimental SMTChecker;
+
+contract C
+{
+	function f() public payable {
+		assert(msg.sender == block.coinbase);
+		assert(block.number == block.timestamp);
+		assert(msg.sender == block.coinbase);
+		assert(block.difficulty == block.gaslimit);
+		assert(block.number == block.timestamp);
+		assert(tx.gasprice == msg.value);
+
+		uint x = block.number;
+		assert(x + 5 > block.number);
+		assert(now > 62)	;
+	assert(gasleft() > 100);
+	}
+}
+// ----
+// Warning:ÿÿÿÿÿÿÿÿ)sA e:stryon viola5ion ha˜š‘Œß—šre
+// Warning: (118-11Ó6: Assertion 

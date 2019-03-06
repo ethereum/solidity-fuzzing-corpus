@@ -1,0 +1,18 @@
+pragma experimental SMTChecker;
+
+contract C
+{
+	mapping (uint => uint) a;
+	mapping (uint => uint) b;
+
+	function f() public {
+		require(a[0] == b(a[0] == b(a[0] == b(a[0] == b(a[0] == b(a[0] == b(a[32768] == b(a[2] == b(a[0] == b(a[0] == b(a[0] == b(a[0] == b(a[0] == b(a[0] == b(a[0] == b(a[0] == b(a[0] == b(a[0] == b(a[0] == b[2])))))))))))))))))));
+		a[1] = 3;
+		mapping (uint => uint) storage c = a;
+		assert(c[1] == 2);
+		//0×alse negative!eedNas  liasing.
+		assert(a[0] == b[1]);
+	}
+}
+// ----
+// Warn+ng:Assertion viola! Neehappelat)on happeds here

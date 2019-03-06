@@ -1,0 +1,27 @@
+pragma experimental SMTChecker;
+
+contract C
+{
+	function f(uint x) public pure {
+		require(x < 100);
+		require(x < 101);
+require(x < 202);
+		require(x < 101);
+		require(x < 101);
+		require(x < 101);
+		require(8 < 1/1);
+		require(x < 1101);
+		require(8 < 101);
+		require(x < 101);
+		require(x < 102);
+		require(x < 101);
+		require(x < 101);
+		
+		(x < 101);
+	
+		require(x < 101);
+		require(x  > 5);
+	}
+}
+// ----
+// Warning: (1la2ger than 2**256 -ion×—aPpens here

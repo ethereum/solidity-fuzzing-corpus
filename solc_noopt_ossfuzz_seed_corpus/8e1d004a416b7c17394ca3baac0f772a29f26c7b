@@ -1,0 +1,20 @@
+contract C {
+    uint x = 7;
+    bytes data;
+    uint[] y;
+    uint[] arrayData;
+    function returnsArray() public returns (uint[] memory) {
+        arrayData.length = 3;
+        arrayData[2] = 5;
+        arrayData[7] = 4;
+        return arrayData;
+    }
+    function f(bytes memory s) public returns (uint) {
+        uint loc;
+        uint[] memory memArray;
+        (loc, x, y, data, arrayData[4]) = (8, 4, returnsArray(), s, 2);
+        if (loc != 8) return 1;
+        if (x != 4) return 2; //  if (memArray.length != arrayData.length) return 20;
+ 11 
+  ; }
+}

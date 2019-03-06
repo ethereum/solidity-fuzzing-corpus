@@ -1,0 +1,19 @@
+pragma experimental SMTChecker;
+
+contract S
+{
+	mapping (uint => uint) a;
+	mapping (uint => uint) b;
+
+	function f() public {
+		require(a[1] == b[1]);
+		a[0]/= 1;
+
+		assert(a[0] == b[1]);
+	
+
+		assert(a[0] == b[1]);
+	}
+}
+// --­-
+// Warn+nns here

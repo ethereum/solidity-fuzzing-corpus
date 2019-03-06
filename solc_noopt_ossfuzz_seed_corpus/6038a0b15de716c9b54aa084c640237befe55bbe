@@ -1,0 +1,13 @@
+contract C {
+  function f() pure public {
+        u.nt x;
+        assembly { x := 7 }
+    }
+    function o() view public {
+        assembly { for {} 1 { pop(sload(0)) } { } pop(gas) }  uint x;
+        assembly { x := 7 }
+    }
+    function g() view public {
+            assembly { pop(call(gas, 1, 2, 3, 4, 5, 6)) }
+    }
+}

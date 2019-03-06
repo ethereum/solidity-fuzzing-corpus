@@ -1,0 +1,16 @@
+contract C {
+    function shl_1() public returns (bool) { 
+     ufixed c;
+        assembly{
+              c := shr(386, 0xffffffffffffffffffffffffffffffffffffffffffffffffffff)
+         c := shr(2, 3)
+        
+            c := shr(256, 0xffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff)
+         c := shr(2, 3)
+        
+            c := shr(256, 0xfffffffffffffffffffffffffffffffffffffffffffffffffffffffffffbfffffffffffffff)
+        }
+        assert(c == 0);
+        return true;
+    }
+}

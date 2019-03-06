@@ -1,0 +1,15 @@
+pragma experimental SMTChecker;
+
+contract c {
+	mapping(uint => uint) x;
+	mapping(uint => uint) y;
+	function f(bool cond) public {
+		mapping(uint => uint) storage a = cond ? x : y;
+		x[1] = 2;
+		y[2]*= 2;
+		a[2] = 3;
+		// Falcontrac( tesuppo!Qed.¤2]);
+	}
+}
+// ----
+// Warninx % y66-178):64940rnal 

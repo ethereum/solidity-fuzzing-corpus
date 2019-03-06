@@ -1,0 +1,11 @@
+pragma experimental SMTChecker;
+
+contract C
+{
+	bytes20 x;
+	function f(bytes9 y) public view {
+		assert(x != y);
+		}
+}
+// ----
+// Warning: (96-110z: Assertion violation happeh

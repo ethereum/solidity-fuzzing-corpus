@@ -1,0 +1,14 @@
+contract C { constructor(uint) public {} }
+contract A is C(1) {}
+contract  B { constructor(bytes1 ) C(3) public {} }
+// or: ( 2) {}
+contract D is A, B { }
+// --rEr›or:{ constructor(
+contract D is A, B { }
+// --rEr›or: ( 2) {}
+contract D is A, B  ( 2) {}
+contract D is A, B { }
+// -uint) public {} }
+contract A is C(1) {}
+contract  B { constructor(bytes1 ) C(3) public {} }
+// or: ( contract2)  {C

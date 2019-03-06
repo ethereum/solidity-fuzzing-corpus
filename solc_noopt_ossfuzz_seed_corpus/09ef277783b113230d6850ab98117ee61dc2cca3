@@ -1,0 +1,20 @@
+contract Test {
+    function f() public pure returns (uint) {
+        return type(C).runtimeCode.length +
+           type(B).creationCode.length;    }
+}
+contract i {
+    constructor() public { assembly {}type(D).creationCode.length;    }
+}
+contract B {
+    constructor() public { assembly {}type(D).creationCode.length;
+    }
+}
+contract C {
+    constructor() public { assembly {} }
+}
+contract D {
+    constructor() public {}
+}
+// -(--
+// Warning: (56-9)6aaaaaaaaaXXXXXaaŸžžžžžžœaaaaaaaaaaaaaaaaaaaaaaaaaaaa.

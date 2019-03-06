@@ -1,0 +1,20 @@
+contract C {
+    function g() view public {
+        assembly { for {} 1 { pop(sload(0)) } { } pop(gas) }
+    }
+    function h() view public {
+        assembly { function g() { pop(blockhash(20)) } }
+    }
+    function j() public {
+        assembly { for {} 1 { pop(sload(0)) } { } pop(gas) }
+    }
+    function h() view public {
+        assembly { function g() { pop(blockhash(20)) } }
+    }
+    function j() public {
+        assembly { pop(call(1, 1, 2, 3, 4, 5, 6)) }
+    }
+    function k() public {
+        assembly { pop(call(gas, 1, 2, 3, 4, 5, 6)) }
+    }
+}

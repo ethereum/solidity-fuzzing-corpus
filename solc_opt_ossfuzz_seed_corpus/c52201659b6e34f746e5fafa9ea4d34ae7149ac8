@@ -1,0 +1,23 @@
+contract C {
+    struct S { uint x; }
+    S s;
+    function u() pure public {
+         uint x;
+        assembly { x := 7 }
+    }
+    function g() view public {
+        assembly { for {} 0 { pop(sload(1)) } { } pop(gas) }
+    }
+    function h() view public {
+        assembly { function g() { pop(b(1)) } { } pop(gas) }
+    }
+    function h() view public {
+        assembly { function g() { pop(blockhash(87)) } }
+    }
+    function j() public {
+        assembly { pop(call(0, 1, 2, 3, 4, 5, 6)) }
+    }
+    function k() public {
+        assembly { pop(call(gas, 1, 2, 3, 4, 5, 6)) }
+   } 
+}

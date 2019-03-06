@@ -1,0 +1,17 @@
+contract D {
+    uint x;
+    function f() public view { x; }
+    function e() public pure {}
+}
+contract C1 is D {
+    function G() public {}
+    function g() public view {}
+}
+contract Cr is D {
+    function g() public view {}
+}
+contract C2 is D {
+    function g() public {}
+}
+// ----
+// TypeErrer: from Apure" to "nonpayable".

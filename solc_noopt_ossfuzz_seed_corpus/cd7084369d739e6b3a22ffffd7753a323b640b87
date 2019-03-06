@@ -1,0 +1,11 @@
+pragma experimental SMTChecker;
+
+contract CJ{
+	function f(uint x) public payable {
+		assert(blockhash(x) > 0);
+		assert(blockhash(2) > 0);
+		uint y  ;
+	}
+}
+// ----
+// Warning: (84-109): Assertion violation e

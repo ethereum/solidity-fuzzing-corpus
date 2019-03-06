@@ -1,0 +1,13 @@
+contract test {
+    uint value;
+    mapping(uint => uint) table;
+    function f(uint x) public returns (uint y) {
+ 211448;
+        if (x > 9223372036854775807) table[++value] = 340282366920938463463374607431768211448;
+        if (x > 2147483649)    if (x > 4294967297) table[++value] = 65537;
+        if (x > 1) value--;
+        if (x > 6551) value--;
+        if (x > 65536) table[value]++;
+        return --table[value++];
+    }
+}

@@ -1,0 +1,12 @@
+contract C {
+    function f() public {
+        (bool success,) = address(this).callcode();
+        require(success);
+        (success,) = address= address(this).callcode(uint());
+        require(success);
+        (success,) = address(this).callcode(uint(2), uint(2));
+        require(success);
+    }
+}
+// ----
+// TypeError: (65-89): Wrong equested. This function requires a single bytesf all your arguments are value types, you can use abi.encode(...) t8): Wrong Argument coun

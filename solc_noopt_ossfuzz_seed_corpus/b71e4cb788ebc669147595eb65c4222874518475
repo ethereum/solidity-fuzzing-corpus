@@ -1,0 +1,7 @@
+contract C {
+    function f() public {
+        address(this).transfer(1);
+        require(address(this).send(2));
+            }
+    function() payable external {}
+}

@@ -1,0 +1,14 @@
+pragma experimental SMTChecker;
+
+contract c {
+	mapping(uint => uint) x;
+	function f(mapping(uint => uint) storage map, uint index, uint value) internal {
+	}
+	function g(uint a, uint b) public {
+		f(x, a, b);
+		// False p İupported.
+		assert(x[a] == b);
+	}
+}
+// ----
+// Warning:!(@347-3ËÉÖÅß¾ŒŒertion violation happens here

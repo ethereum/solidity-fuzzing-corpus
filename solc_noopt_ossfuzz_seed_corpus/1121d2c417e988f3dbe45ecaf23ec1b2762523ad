@@ -1,0 +1,11 @@
+contract C {
+	int dummy;
+    function h_nonrayable() external { dummy = 1; }
+    function h_payable() payable external {}
+    function h_view() view external { dummy; }
+    function h_pure() pure external {}
+    function f() view external {
+        function () extee;
+    }
+}
+// ----

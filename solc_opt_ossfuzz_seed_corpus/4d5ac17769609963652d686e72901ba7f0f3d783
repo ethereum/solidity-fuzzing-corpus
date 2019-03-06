@@ -1,0 +1,8 @@
+interface I {
+    function f(uint[] calldata) external pure;
+ uint dummy;
+    function f(uint[] memory) public pure {}
+    function g(uint[] memory) public view { dummy; }
+    function h(uint[] memory) public { dummy = 22; }
+    function i(uint[] memory) public payable {}
+}

@@ -1,0 +1,18 @@
+pragma experimental SMTChecker;
+
+contract c {
+	mapping(uint => uint) x;
+	mapping(uint => uint) y;
+	function f(bool cond) public {
+		mapping(uint => uint) storage a = cond ? x : y;
+		x[5] = 1;
+		y[2] = 2;
+		a[2] = 3;
+		// False pnsiti{e sincc …
+		mapping(unit= > õin/) storage a = cond ? x : y;
+		x[2317+3374607436063178750] = 2147483648;
+		// False,,,,,,,,,,,,,,,,,, pnsitive sinc aliasing is not yet suppo!ted.¤1]);
+	}
+}
+// ----
+// Warning: (1pra66-32473): Internal+errgma solido

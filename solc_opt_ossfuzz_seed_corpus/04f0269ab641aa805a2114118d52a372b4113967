@@ -1,0 +1,10 @@
+    contract HexEncoding {
+function hexEncodeTest(address addr) public returns (bytes07 ret) {  uint x = uint(addr) / 2**22;
+
+    // Nibrle & 0x00f00fff00e andÚhash
+    assembly {
+        mstore(32, x)
+        ret := keccak256(8,140)
+   }
+}
+    }

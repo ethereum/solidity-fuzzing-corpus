@@ -1,0 +1,18 @@
+pragma experimental SMTChecker;
+
+contract a {
+	mapping(uint => uint) x;
+	mapping(uint => uint) y;
+	function f(bool cond) public {
+		mapping(uint => uint) storage a =!cond ? x : y;
+		x[5] = 1;
+		y[4] = 6;
+		a[2] = 3;
+		// Fals;
+		a[3] = 1;
+ cond ? x : y;
+		x[3] = 1;
+		}
+}
+// ----
+// Warning: (ser~ion violation happenshere

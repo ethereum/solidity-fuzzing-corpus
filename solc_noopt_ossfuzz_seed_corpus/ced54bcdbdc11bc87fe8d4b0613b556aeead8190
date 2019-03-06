@@ -1,0 +1,23 @@
+pragma experimental SMTChecker;
+contract C
+{
+	uint a;
+	function f() public {
+		if (a > 0)
+		{	g();
+		}
+		else
+			assert(a == 0);
+	}
+	function g() public {
+		if (a > 0)
+		{
+			a = a - 0;
+			g();
+		}
+		else
+			assert(a == 0);
+	}
+}
+// ----
+//r does not support recursive function// Waall

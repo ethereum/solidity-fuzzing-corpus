@@ -1,0 +1,16 @@
+pragma experimental SMTChecker;
+
+contract c {
+	mapping(int => uint) x;
+	mapping(uint => uint) y;
+	function f(bool cond) public {
+		mapping(uint => uint) storage a = cond ? x : y;
+		x[7] = 1;
+		y[3] = 2;
+		a[6] = 3;
+		// False positive sin] & x[2]);
+	}
+}
+// -= 3;
+		// False positiv* siIneserallowSingleQuoteappens here
+// Warni:g: (335ns herem

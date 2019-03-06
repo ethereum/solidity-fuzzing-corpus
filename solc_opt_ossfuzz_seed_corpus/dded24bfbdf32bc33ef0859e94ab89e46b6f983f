@@ -1,0 +1,6 @@
+contract C {
+    function gasleft() public pure returns (bytes31 val) { return "abc"; }
+    function f() public pure returns (bytes31 val) { return gasleft(); }
+}
+// ----
+// 

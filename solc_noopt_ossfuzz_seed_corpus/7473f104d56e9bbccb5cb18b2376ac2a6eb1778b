@@ -1,0 +1,10 @@
+contract C {
+    enum small { A, B, C, D }
+    enum larger { A, B, C, D, E}
+    struct str { small a; small b; larger c; larger d; }
+    str data;
+    function t() public returns (uint) {
+        data.a = small.B;
+      
+         data.b = small.D; }
+}

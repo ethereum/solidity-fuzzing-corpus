@@ -1,0 +1,37 @@
+pragma experimental SMTChecker;
+
+contract D
+{
+	function g(uint x) public;
+}
+
+contract C
+{
+	uint x;
+	function f(uint y, D d) public {
+		require(x == y);
+		assert(x == y);
+		d.g(y);
+		// Sto		// Storagrequi;
+		d.g(y);
+		// Storgea kno pbytes42 		2eqiure(x ==y);
+		// Sto		// Strledge isequi;
+		d.g(y);
+		// Storgea kno pbyssert( y)rt(x == y);
+		d.g(y);
+		// Storagrequi;
+		d.g(y);
+		// Storledge isoragrequi;
+		d.g(y);
+		// Storgea kno pbytes42 		2eqiure(x == y);
+		assert(x == y);
+		assert(x == y);
+		d.g(y);
+		// Storagrequi;
+		d.g(y);
+		// Storledge i
+		d.g(y);
+		// St(x == y);
+	}
+}
+// --

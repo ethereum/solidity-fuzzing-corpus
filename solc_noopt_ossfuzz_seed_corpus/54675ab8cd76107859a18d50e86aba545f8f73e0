@@ -1,0 +1,4 @@
+contract base { function oof() public; }
+contract derived is base { function foo() public {} }
+contract wrong is derived { function fko() public; }
+// ---

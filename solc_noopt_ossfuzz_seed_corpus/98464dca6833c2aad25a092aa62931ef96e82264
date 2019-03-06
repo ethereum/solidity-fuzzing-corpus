@@ -1,0 +1,7 @@
+pragma experimental ABIEncoderV2;
+contract C {
+    struct S { uint a; uint[] b; }
+    function f() public pure returns (S memory) {
+      abi.decode(abi.encode(0), (S));
+    }
+}

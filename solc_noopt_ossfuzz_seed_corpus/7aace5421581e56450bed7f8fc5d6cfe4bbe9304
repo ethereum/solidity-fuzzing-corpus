@@ -1,0 +1,10 @@
+contract C {
+    function f() pure public {
+        assembly {
+            jump(2)
+           jump(2)
+        }
+    }
+}
+// ----
+// SyntaxError: (75-82): Jump instri or "for" statements instead.

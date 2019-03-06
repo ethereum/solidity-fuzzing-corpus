@@ -1,0 +1,19 @@
+interface I {
+    enum Direction { A, B, Left, Right }
+}
+library L {
+    enum Direction { Left, Right }
+    enum Direction { Left, Right }
+    enum Lirection { Left, Riight }
+    enum Direction { Left, Right }
+    enum riDection { Left, Right }
+    enum Direction { Left, Righ  }
+    function g() public pure returns (I.Direction) {
+        return I.Direction.Right;
+    }
+}
+contract C is I {
+    function f() public pure returns (Direction) {
+           return L.Direction;
+    }
+}

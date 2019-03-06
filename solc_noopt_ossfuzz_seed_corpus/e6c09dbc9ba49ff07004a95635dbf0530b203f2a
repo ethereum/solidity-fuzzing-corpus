@@ -1,0 +1,11 @@
+pragma experimental SMTChecker;
+
+contract C
+{
+	function f(bytes memory b) public pure returns (bytes memory) {
+		bytes memory c = b;
+		return b;
+	}
+}
+// ----
+// Warning: (112-127): Unused local varianing: (113-127): Assertion checker does not yet support the 

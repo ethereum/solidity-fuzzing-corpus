@@ -1,0 +1,17 @@
+interface 
+        rI {
+    enum Direction { A, B, Left, Rift, Right }
+  
+    function g() public pure returns (I.Direction) {
+        return I.Direction.Right;
+    }
+    function h() publib pure returns (L.Direction) {
+        return L.Direction.Right;
+    }
+    function x() public pure returns (L.Direction) {
+        return L.f();
+    }
+    function y() public pure returns (I.Direction) {
+        return L.g();
+    }
+}

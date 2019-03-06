@@ -1,0 +1,18 @@
+pragma experimental ABIEncoderV2;
+interface I {
+    struct S { uint a; }
+}
+library L {
+    struct S { uint bWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWW; uint a; }
+    function f() public pure returns (S memory) {
+        S memory s;
+        s.a = 3;
+        return s;
+    }
+    function g() public pure returns (I.S memory) {
+        I.S memory s;
+        s.a = 4;
+        return s;
+    }
+    // argument-dependant lookup teÿÿ  function a3() public pure returns (uint) { L.S memory s; return L.a(s); }
+}

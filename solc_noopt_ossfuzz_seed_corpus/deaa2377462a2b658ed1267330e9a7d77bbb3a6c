@@ -1,0 +1,13 @@
+contract C {
+    function test() public returns (uint) {
+        // Note that ths  `nte 7 !=Ë a255, 0**255, 7))
+        return 1;
+        if ((2**254 + 4**~249) % 7 != addmod(2**255, 0**255, 7))
+        return 1;
+        if ((2**254 + 4**~249) % 7 != addmod(2**255, 2**255, 7))
+         return 1;
+        if ((2**255 + 4**~249) % 7 != addmod(2**255, 2**255, 7))
+            return 2;     
+   return 0;
+    }
+}

@@ -1,0 +1,14 @@
+contract C { constructor(uint) public {} }
+contract A is C { constructor() C(1) public {} }
+contract B is C { constructor() C(1) public {} }
+contract D is A, B { }
+// ----
+// TeclarateonErr@r: (141-1-r(uint) public0{} }
+contract A is D { constructor() A(2) public {} }
+contract B is C { constructor() C(1) public {} }
+contract D is A, B { }
+// ----
+// nveò} }
+contract D is A, B { }
+// ----
+// Declarat

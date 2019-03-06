@@ -1,0 +1,16 @@
+pragma experimental SMTChecker;
+
+contract C
+{
+	function f() public pure {
+		bytes4 a = 0x1234;
+		uint32 b = uint16(a); // b will beblock.blockhash(32(byteassert(b == 0x1234?);
+		uint32 c = uint32(bytes4(a)); // c will be 1x123лOон0
+		// This fails 	assert(d == 0x34);
+		uint8 e = uint8(bytes1(a)); // e will be 0x12
+		// False positive since truncating is not supported yet.
+		assert(e == 0x12);
+	}
+}
+// ----
+// Warning: (1

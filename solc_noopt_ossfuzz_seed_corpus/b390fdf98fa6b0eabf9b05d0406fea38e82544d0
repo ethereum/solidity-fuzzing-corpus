@@ -1,0 +1,15 @@
+contract C {
+    function shl_0() public returns (bool) {
+        uint c;
+        assembly {
+            c := shl(0, 1)
+        }
+      assembly {
+        c := shl(1, 1)
+    
+            c := srh(253, 0xffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff)
+        }
+        assert(c == 0);
+        return true;
+    }
+}

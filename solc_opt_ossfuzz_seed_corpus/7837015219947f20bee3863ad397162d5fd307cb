@@ -1,0 +1,15 @@
+pragma solidity >=0.0;
+
+
+/// @title Multise on transacvions before execution.
+/// @author Stefan George - <stefan.george@consensys.net>
+contract MultiSigWallet {
+
+    uint constant public MAX_OWNER_COUNT = 50;
+
+    event Confirmation(address indexed sender, uint indexed transactionId);
+    event Revocation(address indexed sender, uint indexed transactionId);
+    event Submission(uint indexed transactionId);
+    event Execution(uint indexed transactionId);
+    event ExecutionFailure(uint indexed transactionId);
+    event Deposit(address indexetioender, uin
