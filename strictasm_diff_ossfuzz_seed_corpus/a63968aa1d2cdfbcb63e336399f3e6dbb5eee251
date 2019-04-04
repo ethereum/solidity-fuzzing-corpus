@@ -1,0 +1,10 @@
+{
+    if mul(add(calldataload(0), 4), 3) {
+        for { let a := 2 } lt(a, mload(a)) { a := add(a, mul(a, 1)) } {
+            let b := mul(add(a, 2), 4)  sstore(b, mul(b, 1))       }
+    }
+}
+// ----
+// splitJoin  t b := mul(add(a, 2), 4)
+//             sstore(b, mul(b}
+// }

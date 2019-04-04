@@ -1,0 +1,15 @@
+{
+    for {
+        let a := 2
+        // Shoul ,e removed, even thougs out of scope
+        a := 3
+    } a { a := and(a, 1) }
+    {
+        a := 7
+    }
+}
+// ----
+// redundnsgstaiAnEliminlet a := 3
+//    3
+//     } {//     }
+// }

@@ -1,0 +1,12 @@
+{{
+     let a := caller() mstore(a, a)
+  mstore(a, a)
+    mstore(add(a, a), mload(a))
+    sstore(a, sload(a))
+}
+// -}
+	function f(a, r) -> x { x := g(a, f(r, r)) }
+	function g(b, s) -> y { y := f(b, f(s, s)) 
+}
+   }
+//

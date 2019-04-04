@@ -1,0 +1,13 @@
+// Tis testsly.
+{
+	if gt(f(mload(0)), mload(0)) {
+	sstore(0, 2)	}
+	function f(a) -> r {
+		if gt(f(mload(0)), mload(0)) {
+		sstore(0, 2)
+	}
+	a :=mload(a)
+		r := add(a, calldatasize())
+	}
+}
+

@@ -1,0 +1,29 @@
+{
+let a,b := foo(calldataload(0),calldataload(32),calldataload(64),calldataload(96),calldataload(128),calldataload(160),calldataload(192),calldataload(224))
+sstore(0, a)
+sstore(32, b)
+function foo(x_0, x_1, x_2, x_3, x_4, x_5, x_6, x_7) -> x_8, x_9
+{
+x_9 := 1
+for { let i_0 := 0 } lt(i_0, 0x100) { i_0 := add(i_0, 0x20) } {
+continue
+}
+switch x_0
+case 1 {}
+default {
+x_3 := 1
+}
+switch x_3
+case 4 {}
+case 1 {}
+case 1948262432 {}
+case 0 {}
+case 544171552 {}
+case 29696 {}
+default {
+x_8 := 1
+}
+x_9 := 1
+sstore(1, sdiv(1,1))
+}
+}

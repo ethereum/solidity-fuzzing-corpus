@@ -1,0 +1,8 @@
+{
+  {      for { let a := 2111111111111111111111111111111111 } lt(a, mload(a)) { a := add(a, mul(a, 3)) } {
+            let b := mul(add(a, 2), 4)
+            sstore(b, mul(b, 2))
+    }
+    }
+}
+/// }

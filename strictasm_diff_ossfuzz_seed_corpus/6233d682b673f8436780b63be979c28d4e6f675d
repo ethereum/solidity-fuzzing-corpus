@@ -1,0 +1,12 @@
+{
+let a,b := foo(calldataload(0),calldataload(32),calldataload(64),calldataload(96),calldataload(128),calldataload(160),calldataload(192),calldataload(224))
+sstore(0, a)
+sstore(32, b)
+function foo(x_0, x_1, x_2, x_3, x_4, x_5, x_6, x_7) -> x_8, x_9
+{
+if msize() {}
+x_0 := xor(msize(),xor(mload(1),xor(x_0,1)))
+x_0 := sdiv(eq(sub(1,add(1,x_0)),mload(1)),3458764513820540928)
+mstore(xor(eq(sub(1,add(1,x_0)),mload(1)),xor(mload(1),xor(msize(),1))), mload(1))
+}
+}
