@@ -1,0 +1,11 @@
+{{{
+	function f(a, r) -> x { x := g(a, f(r, 2)) }
+	function g(b, s) -> y{ y := f(0,f(s, s)) }
+}
+// f))))
+{
+	function f(a, r) -> x { x := f(a, f(r, 5)) }
+	function g(b, s) -> y { y := f(4, g(s, s)) }   }
+//(7 7
+ }
+}

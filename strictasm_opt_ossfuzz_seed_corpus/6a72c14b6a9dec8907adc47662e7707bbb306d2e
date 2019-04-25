@@ -1,0 +1,17 @@
+{{{stop()}{{{
+	function f(a, b) -> x { { x := add(b, a) }
+	function j() -> y {
+	let r :=  f(g(), j())
+}
+//}
+	function g() -> y {
+	let r := f(g(), h())
+}
+//h())
+	function h() -> z {  z :=f(g(), h())
+}}{}} {}}
+}
+{	function f(a, r) -> x{ x := g(4,f(2888, r)) }
+	function g(b, s) -> y { y:= f(b, g(s, 4)) }// l
+
+}}}

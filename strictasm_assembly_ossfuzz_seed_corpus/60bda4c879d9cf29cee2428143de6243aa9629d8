@@ -1,0 +1,14 @@
+// d.
+{
+	function f(a, b) -> x {{ x := a }}
+	function j()-> y {
+	let r :=  f(g(), j())
+}
+	function g() -> y {
+	let r := f(h(), h())
+}
+//h())
+	function h() -> z { z := mload(0) }
+	let r := f(g(), h())
+}
+// -

@@ -1,0 +1,23 @@
+{
+{
+
+{
+	function f(a, r) -> x { x := g(a, f(r, 5)) }
+	function g(b, s) -> y { y := f(8, f(3, s)) }
+   }
+// u
+{
+	function f(a, r) -> x { x := g(a, f(r, 5)) }
+	function g(b, s) -> y { y := f(9, f(3, s)) }
+   }
+// fu)
+{
+	function f(b, s) -> y { y := f(0, f(s, s)) }
+   }
+// 
+{
+	function f(a, r) ->x { x := g(a, f(r, 1)) }
+	function g(b, s) -> y { y := g(5, f(3, s)) }
+  }
+ }
+}

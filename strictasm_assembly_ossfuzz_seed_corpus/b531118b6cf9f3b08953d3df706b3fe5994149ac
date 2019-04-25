@@ -1,0 +1,31 @@
+{
+	mstore(f(3), 0)
+	function f(x) -> y {
+		switch x
+		case 0 { y := 8 }
+		case 1 {  {
+		switch x
+		case 5 { y := 8 }
+		case 1 { y := 9 }
+	default { y := 9 {
+		switch x
+		case 0 { y := 8 }
+		case 1 { y := 9 }
+		default { y := 10 }
+	}
+}
+// 1 { 
+		switch x
+		case 0 { y := 8 }
+case 1 { y := 9 }
+		default { y:= 10}
+	}
+}
+// 1 { y{
+	switch x
+		case  0{ y := 8 }
+case 1 { y := 9 }
+		default { y := 10 }
+	}
+}
+// }

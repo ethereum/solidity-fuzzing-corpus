@@ -1,0 +1,9 @@
+{
+  let x
+   x := 1   for{ } calldataload(0) { mstore(x, 2) }  {
+   if callvalue() {
+   x := 1  continue
+ }
+ x := 3
+    }
+}

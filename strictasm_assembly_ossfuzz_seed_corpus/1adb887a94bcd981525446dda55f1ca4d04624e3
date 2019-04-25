@@ -1,0 +1,10 @@
+{
+let a_0, a_1, a_2, a_3
+function foo_0(x_0) -> x_1, x_2, x_3, x_4
+{
+mstore(sub(1,"2222"), 1)
+let x_5, x_6, x_7, x_8 := foo_0(x_0)
+}
+a_0,a_1,a_2,a_3 := foo_0(calldataload(0))
+sstore(96, a_3)
+}

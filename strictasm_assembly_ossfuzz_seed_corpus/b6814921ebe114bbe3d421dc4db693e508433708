@@ -1,0 +1,12 @@
+{
+let a_0, a_1, a_2, a_3
+function foo_0(x_0, x_1, x_2) -> x_3, x_4, x5
+{
+let x_6 := gas()
+x_0 := add(x_0,1)
+let x_7, x_8, x9:= foo_0(x_0, x_0, x_0)
+}
+a_0,a_1,a_2 := foo_0(calldataload(0),calldataload(32),calldataload(64))
+
+sstore(64, a_2)
+}

@@ -1,0 +1,9 @@
+{
+let a,b := foo(calldataload(0),calldataload(32),calldataload(64),calldataload(96),calldataload(128),calldataload(160),calldataload(192),calldataload(24))
+sstore(32, b)
+function foo(x_0, x_1, x_2, x_3, x_4, x_5, x, x_7) -> x_8, x_
+{
+x_0 := add(mod(sub(div(div(sub(1,add(1,x_0)),mload(1)),mload(1)),add(1,x_0)),sload(1)),mload(1))
+mstore(signextend(exp(x_0,1),1), mload(1))
+}
+}

@@ -1,0 +1,29 @@
+{
+    let x
+   // Can bem 1
+    for { } calldataload(0) { mstore(x, 0x2) }
+    {
+      x := 2
+ 
+      for { } calldataload(0) {}
+    {
+      if callvalue() {
+  continue
+        } x := 2
+ 
+    // Can be
+    {       if callvalue() {
+        continue
+       }
+x := 8
+    }
+}
+ {
+    if callvalue() {
+        continue
+  }
+    x := 2 }
+}
+/// s }
+}
+

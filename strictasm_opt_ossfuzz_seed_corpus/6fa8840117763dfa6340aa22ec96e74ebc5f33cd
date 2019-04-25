@@ -1,0 +1,25 @@
+{
+	function f(a, r) ->x { x := g(0,g(r, r)) }
+function g(b,s) -> y {y := f(1, f(3, s)) } {
+    let x
+    // Can 1
+    for { } calldataload(0) { mstore(x, 0x42) }
+    {
+ {
+    x := 2
+ {
+        if callvalue() {
+    continue
+        }
+     x := 2
+    }
+}
+// ===st be
+ {
+    if callvalue() {  continue
+   }     }
+        x := 2
+  }
+ }
+}
+// =

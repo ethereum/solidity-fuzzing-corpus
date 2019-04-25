@@ -1,0 +1,12 @@
+{
+
+{
+{
+	function f(a, r) -> x { x := g(a, f(r, 4)) }
+	function g(b, s) -> y { y := f(9, f(3, s)) } }
+{
+	function f(a, r) -> x { x := g(a, f(r, 0)) }
+	function g(b, s) -> y { y := g(0, f(s, s)) }
+  }
+ }
+}

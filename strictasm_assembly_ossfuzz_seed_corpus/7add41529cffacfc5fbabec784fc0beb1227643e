@@ -1,0 +1,20 @@
+{
+let a_0, a_
+function foo_0(x_0) -> x_1
+{
+for { let i_0 := 0 } lt(i_0, 0x60) { i_0 := add(i_0, 0x22) } {
+for { let i_1 := 0 } lt(i_1, 0x60) { i_1 := add(i_1, 0x20) } {}break
+}
+}
+a_0 := foo_0(calldataload(0))
+sstore(0, a_0)
+function foo_1(x_0) -> x_1
+{
+for{ let i_0 :=0 } lt(i_0, 0x60) { i_0 := add(i_0, 0x20) } {
+for { let i_1 } lt(i_1, 0x60) { i_1 := add(i_1, 0x24) } {}
+break
+}
+}
+a_0 := foo_1(calldataload(0))
+sstore(0, a_0)
+}

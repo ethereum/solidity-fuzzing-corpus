@@ -1,0 +1,14 @@
+{
+function o(x_0, ho){
+sstore(1, sub(0,sub(not(1),sub(sub(x_0,add(1,1)),add(1,x_0)))))
+{
+	function f(a, r) -> x { x := g(a, f(r, 5)) }
+	function g(b, s) -> y { y := f(9, f(3, s)) }
+   }
+// 
+{
+	function f(a, r) -> x { x := g(a, f(r, 0)) }
+	function g(b, s) -> y { y := g(5, f(s, s)) }
+  }
+ }
+}

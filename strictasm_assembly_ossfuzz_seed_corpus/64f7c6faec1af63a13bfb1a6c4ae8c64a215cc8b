@@ -1,0 +1,8 @@
+{let a,b := foo(calldataload(0),calldataload(32),calldataload(64),calldataload(96),calldataload(128),calldataload(160),calldataload(192),calldataload(224))
+function foo(x_0, x_1, x_2, x_3, x_4, x_5, x_6,_7) -> x_8, x_9
+{
+x_0:= eq(eq(signextend(1,sdiv(1,x_0)),sload(1)),keccak256(1,1))
+x_0 := sdiv(eq(sub(1,add(1,x_0)),keccak256(1,1)),sload(1))
+mstore(xor(eq(sub(1,add(1,x_0)),pc()),xor(mload(1),xor(mload(1),1))), msize())
+}
+}

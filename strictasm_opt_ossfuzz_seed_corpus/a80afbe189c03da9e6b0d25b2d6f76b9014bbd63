@@ -1,0 +1,16 @@
+{
+let a_0, a_1,a_2, a_3
+function foo_0(x_0, x_1, x_2) -> x_3, x_4, x_5, x_6
+{
+sstore(1, 1)
+x_0, x_0, x_5, x_0 := foo_0(x_0, x_0, x_0)
+x_3, x_4, x_6 := foo_1(x_0, x_0)
+}
+a_0,a_1,a_2,a_3 := foo_0(calldataload(0),calldataload(32), a_2)
+function foo_1(x_0, x_1) -> x_2, x_3, x_4
+{
+x_3, x_4, x_2 := foo_1(0, x_0)
+}
+a_0,a_1,a_2 := foo_1(calldataload(0),calldataload(32))
+sstore(0, a_0)
+}

@@ -1,0 +1,9 @@
+{
+let a,b := foo(calldataload(0),calldataload(32),calldataload(64),calldataload(96),calldataload(128),calldataload(1),calldataload(2),calldataload(4))
+sstore(0, a)sstore(32, b)
+function foo(x_0, x_1, x, x_3, x_4, x_5, x_6, x_7) -> x_8, x_9
+{
+x_9 := sub(sub(x_9,x_0),eq(x_8,x_8))
+x_9 := lt(lt(x_9,eq(x_0,eq(x_0,x_9))),sub(x_9,eq(x_0,x_9)))
+}
+}

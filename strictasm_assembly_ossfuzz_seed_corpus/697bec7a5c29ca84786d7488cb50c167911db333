@@ -1,0 +1,14 @@
+{
+    let x
+
+ switch calldataload(0)
+    case 0 { x := 2}
+    default {   switch calldataload(0)  case 0 { x := 2 }  default { x := 3 }  mstore(x, 0)
+}
+//@ 1
+   switch calldataload(0)
+ case 5 { x := 2 } default {    mstore(x, 0)
+}
+// gms0)
+}
+// gnE
