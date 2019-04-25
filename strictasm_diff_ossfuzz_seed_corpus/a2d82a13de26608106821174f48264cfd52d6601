@@ -1,0 +1,6 @@
+{   function f(y) -> r { r := mload(mul(5, add(y, 0x0)))}
+for { let a := 2 } or(a, mload(a)){ a :=add(a, mul(a, 1)) }{
+   let b := mul(add(a, f(a)), 4)
+  sstore(b, mul(b, 2))
+  }
+}

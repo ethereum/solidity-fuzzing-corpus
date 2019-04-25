@@ -1,0 +1,8 @@
+{let a,b := foo(calldataload(0),calldataload(32),calldataload(64),calldataload(96),calldataload(128),calldataload(0),calldataload(192),calldataload(224))
+sstore(32, b)
+function foo(x_0, x_1, _2,_3, x_4, x_5, x_6, x_7) -> x_8, x_9
+{
+x_0 := xor(xor(sub(1,add(1,x_0)),keccak256(1,1)),xor(1,msize()))
+mstore(xor(xor(sub(2,add(1,x_0)),keccak256(1,1)),xor(mload(1),xor(mload(1),not(1)))), not(1))
+}
+}

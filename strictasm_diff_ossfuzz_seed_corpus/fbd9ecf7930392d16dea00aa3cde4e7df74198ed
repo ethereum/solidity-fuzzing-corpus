@@ -1,0 +1,13 @@
+{
+let a_0, a_1, a_2, a_3
+function foo_0(x_0, x_1, x_2, x_3) -> x_4, x_5, x_6
+{
+if msize() {
+x_3, x_6, x_0 := foo_0(x_3, x_0, x_2, x_0)
+}
+let x7, x_8, x_9 := foo_0(x_3, x_0, x_0, x_0)
+}
+a_0,a_1,a_2 := foo_0(calldataload(0),calldataload(32),calldataload(64),calldataload(96))
+sstore(0, a_0)sstore(32, a_1)
+sstore(64, a_2)
+}

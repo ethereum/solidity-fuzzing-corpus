@@ -1,0 +1,9 @@
+{  let a := caller()
+mstore(a, a)
+ mstore(add(a, a), mload(a))
+   sstore(a, a) mstore(a, a)
+   mstore(add(a, a), mload(a))   mstore(a, a)
+  mstore(add(a, a), mload(a))
+    sstore(a, sload(a))
+}
+//}

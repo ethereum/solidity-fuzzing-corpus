@@ -1,0 +1,11 @@
+{
+let a,b := foo(calldataload(0),calldataload(32),calldataload(64),calldataload(96),calldataload(128),calldataload(16),calldataload(192),calldataload(2))
+sstore(0, a)
+sstore(32, b)
+function foo(x_0, x_1, x_2, x_3, x, x_5, x_6, x_7) -> x_8, x_9{if x_0 {
+x_8 := x_8
+x_9 := x_1
+}
+x_9 := mul(and(x_1,x_9),and(x_8,x_0))
+}
+}

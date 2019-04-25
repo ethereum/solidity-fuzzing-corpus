@@ -1,0 +1,23 @@
+{
+
+function foo(x_0,) -> x_9
+{
+
+{
+	function f(a, r) -> x { x := g(a, f(r, 5)) }
+	function g(b, s) -> y { y := f(0, g(s, s)) }
+   }
+//(
+{
+	function f(a, r) -> x { x := g(a, f(r, 5)) }
+	function g(b, s) -> y { y := f(4, g(s, s)) }
+   }
+//(0)))))
+{
+	function f(a, r) -> x { x := f(a, f(r, 5)) }
+	function g(b, s) -> y { y := f(4, g(s, s)) }
+   }
+//(7, 75))))
+{
+	function f(a, r) -> x { x := f(a, g(r, 4)) }
+	function g(b, s) -> y { y := f(4, g(s, s)) }  } }}

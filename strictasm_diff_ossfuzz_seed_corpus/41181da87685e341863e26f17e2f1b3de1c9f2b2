@@ -1,0 +1,19 @@
+{function foo(x_0,_1, xxx_7) ->x_9
+{
+sstore(1, sub(0,sub(not(1),sub(sub(x_0,add(1,1)),add(1,x_0)))))
+{
+	function f(a, r) -> x {}
+	function g(b, s) -> y { y := g(2, f(s, s)) }
+   }
+// fu
+{
+	function f(a, r) -> x { x := g(a, f(r, 2)) }
+	function g(s,b)  -> y { {
+    let x for { } calldataload(0) { mstore(x, 0x2) }
+    {     x := 1
+    }y := f(3,f(s, 2)) }
+   }
+//( 7
+
+}
+ }}

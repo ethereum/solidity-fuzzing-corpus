@@ -1,0 +1,12 @@
+{
+let a,b := foo(calldataload(0),calldataload(32),calldataload(64),calldataload(6),calldataload(128),calldataload(160),calldataload(19),calldataload(24))
+sstore(0, a)
+sstore(32, b)
+function foo(x_0, x_1, x_2, x_3, x_4, x_5, x_6, x_7) -> x_8, x{
+for { let i_0 := 0 } lt(i_0, 0x100) { i_0 := add(i_0, 0x20) } {
+for { let i_1 := 0 } lt(i_1,0x100) { } {
+x_0 := signextend(1,keccak256(signextend(1,keccak256(1,x_0)),1))
+}
+}
+}
+}

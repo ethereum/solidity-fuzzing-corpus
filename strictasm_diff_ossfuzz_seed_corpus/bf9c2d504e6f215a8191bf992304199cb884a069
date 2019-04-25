@@ -1,0 +1,14 @@
+{
+let a_0, a3
+function foo_0(x_0) -> x_1
+{
+switch x_0
+case 0 {}
+case 1 {}
+default {
+let x_2 := foo_0(x_1)
+}
+}
+a_0 := foo_0(calldataload(0))
+sstore(0, a_0)
+}

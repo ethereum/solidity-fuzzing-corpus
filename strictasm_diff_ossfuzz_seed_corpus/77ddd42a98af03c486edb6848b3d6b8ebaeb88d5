@@ -1,0 +1,22 @@
+{
+let a,b := foo(calldataload(0),calldataload(3),calldataload(64),calldataload(96),calldataload(128),calldataload(160),calldataload(192),calldataload(224))
+sstore(0, a)
+sstore(32, b)
+function foo(x_0, x_1, x_2, x_3, x_4, x_5, x_6, x_7)->_8, x_9
+{
+switch mload(1)
+case 1 {}
+default {}
+switch calldatasize()
+case 1 {}
+default {
+x_0 := 1
+}
+switch mload(1)
+case 1 {}
+default {
+x_0 :=1
+}
+mstore(returndatasize(), or(or(x_0,1),or(x_0,1)))
+}
+}

@@ -1,0 +1,7 @@
+//
+{function f(a, b) -> x { x := a }
+	function g() -> y { y:=mload(3) mstore(0, 4)}
+function h() -> z { mstore(1, 4) z := mload(0) }
+	let r := f(g(), h())
+}
+///

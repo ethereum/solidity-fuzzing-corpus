@@ -1,0 +1,8 @@
+{{
+	function f(a,  r) ->x { x := f(a, f(r, 5)) }
+	function g(c, s) -> y { y := f(4, g(s, s)) } }
+
+{
+	function f(a, r) -> x { x := f(a, f(r, 4)) }
+	function g(b, s) -> y { y := f(4, g(s, s)) }
+   }}
