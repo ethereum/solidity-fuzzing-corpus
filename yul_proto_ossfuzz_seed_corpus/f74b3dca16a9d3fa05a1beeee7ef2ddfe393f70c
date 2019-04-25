@@ -1,0 +1,39 @@
+statements {
+  statements {
+    forstmt {
+      for_body {
+      }
+    }
+  }
+  statements {
+    ifstmt {
+      cond {
+        unop {
+          op: ISZERO
+          operand {
+            unop {
+              op: NOT
+              operand {
+                unop {
+                  op: ISZERO
+                  operand {
+                    unop {
+                      op: NOT
+                      operand {
+                        varref {
+                          varnum: 0
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+      if_body {
+      }
+    }
+  }
+}

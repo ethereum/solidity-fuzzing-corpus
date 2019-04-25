@@ -1,0 +1,74 @@
+statements {
+  statements {
+    storage_func {
+      loc {
+      }
+      val {
+      }
+      st: MSTORE
+    }
+  }
+  statements {
+    forstmt {
+      for_body {
+        statements {
+          forstmt {
+            for_body {
+              statements {
+                forstmt {
+                  for_body {
+                    statements {
+                      forstmt {
+                        for_body {
+                          statements {
+                            storage_func {
+                              loc {
+                                binop {
+                                  op: SGT
+                                  left {
+                                    cons {
+                                      intval: 10
+                                    }
+                                  }
+                                  right {
+                                    unop {
+                                      op: NOT
+                                      operand {
+                                        unop {
+                                          op: MLOAD
+                                          operand {
+                                          }
+                                        }
+                                      }
+                                    }
+                                  }
+                                }
+                              }
+                              val {
+                                unop {
+                                  op: NOT
+                                  operand {
+                                    unop {
+                                      op: MLOAD
+                                      operand {
+                                      }
+                                    }
+                                  }
+                                }
+                              }
+                              st: MSTORE
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

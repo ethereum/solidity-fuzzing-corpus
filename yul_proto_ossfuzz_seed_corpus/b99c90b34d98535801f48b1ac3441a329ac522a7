@@ -1,0 +1,57 @@
+statements {
+  statements {
+    storage_func {
+      loc {
+        binop {
+          op: SMOD
+          left {
+            cons {
+              hexval: "FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF"
+            }
+          }
+          right {
+            binop {
+              op: SMOD
+              left {
+                cons {
+                  hexval: "FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF"
+                }
+              }
+              right {
+                cons {
+                  hexval: "BBBBBBBBBBBB:BBBBBBBBBBBBBBBBB"
+                }
+              }
+            }
+          }
+        }
+      }
+      val {
+        binop {
+          op: SMOD
+          left {
+            cons {
+              hexval: "FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF"
+            }
+          }
+          right {
+            binop {
+              op: SMOD
+              left {
+                cons {
+                  hexval: "FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF"
+                }
+              }
+              right {
+                cons {
+                  hexval: "BBBBBBBBBBBB:BBBBBBBBBBBBBBBBB"
+                }
+              }
+            }
+          }
+        }
+      }
+      st: MSTORE
+    }
+  }
+}

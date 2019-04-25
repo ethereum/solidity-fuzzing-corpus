@@ -1,0 +1,51 @@
+statements {
+  statements {
+  }
+  statements {
+    storage_func {
+      loc {
+        binop {
+          op: XOR
+          left {
+            binop {
+              op: KECCAK
+              left {
+              }
+              right {
+              }
+            }
+          }
+          right {
+            binop {
+              op: XOR
+              left {
+                unop {
+                  op: MLOAD
+                  operand {
+                  }
+                }
+              }
+              right {
+                binop {
+                  op: XOR
+                  left {
+                    unop {
+                      op: MLOAD
+                      operand {
+                      }
+                    }
+                  }
+                  right {
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+      val {
+      }
+      st: MSTORE
+    }
+  }
+}

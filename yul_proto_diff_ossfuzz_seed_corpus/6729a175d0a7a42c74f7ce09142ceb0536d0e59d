@@ -1,0 +1,111 @@
+statements {
+  statements {
+    ifstmt {
+      cond {
+        binop {
+          op: LT
+          left {
+            unop {
+              op: SLOAD
+              operand {
+                unop {
+                  op: NOT
+                  operand {
+                  }
+                }
+              }
+            }
+          }
+          right {
+            binop {
+              op: LT
+              left {
+                binop {
+                  op: AND
+                  left {
+                    unop {
+                      op: SLOAD
+                      operand {
+                      }
+                    }
+                  }
+                  right {
+                    binop {
+                      op: AND
+                      left {
+                        varref {
+                          varnum: 0
+                        }
+                      }
+                      right {
+                        binop {
+                          op: AND
+                          left {
+                            unop {
+                              op: SLOAD
+                              operand {
+                              }
+                            }
+                          }
+                          right {
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+              right {
+                binop {
+                  op: AND
+                  left {
+                    unop {
+                      op: SLOAD
+                      operand {
+                      }
+                    }
+                  }
+                  right {
+                    binop {
+                      op: AND
+                      left {
+                        varref {
+                          varnum: 0
+                        }
+                      }
+                      right {
+                        binop {
+                          op: AND
+                          left {
+                            unop {
+                              op: SLOAD
+                              operand {
+                              }
+                            }
+                          }
+                          right {
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+      if_body {
+        statements {
+          storage_func {
+            loc {
+            }
+            val {
+            }
+            st: SSTORE
+          }
+        }
+      }
+    }
+  }
+}

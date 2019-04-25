@@ -1,0 +1,74 @@
+statements {
+  statements {
+    storage_func {
+      loc {
+      }
+      val {
+      }
+      st: MSTORE
+    }
+  }
+  statements {
+    forstmt {
+      for_body {
+        statements {
+          storage_func {
+            loc {
+              binop {
+                op: OR
+                left {
+                  binop {
+                    op: OR
+                    left {
+                      binop {
+                        op: KECCAK
+                        left {
+                          cons {
+                            intval: 111546225160960
+                          }
+                        }
+                        right {
+                          cons {
+                            intval: 111546225160960
+                          }
+                        }
+                      }
+                    }
+                    right {
+                      binop {
+                        op: KECCAK
+                        left {
+                        }
+                        right {
+                        }
+                      }
+                    }
+                  }
+                }
+                right {
+                  unop {
+                    op: MLOAD
+                    operand {
+                    }
+                  }
+                }
+              }
+            }
+            val {
+              unop {
+                op: SLOAD
+                operand {
+                }
+              }
+            }
+            st: MSTORE
+          }
+        }
+        statements {
+          breakstmt {
+          }
+        }
+      }
+    }
+  }
+}

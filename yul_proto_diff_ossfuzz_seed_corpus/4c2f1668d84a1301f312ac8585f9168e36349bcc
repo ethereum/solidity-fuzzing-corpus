@@ -1,0 +1,29 @@
+statements {
+  statements {
+    ifstmt {
+      cond {
+        cons {
+          strval: "0"
+        }
+      }
+      if_body {
+        statements {
+          decl {
+            expr {
+              unop {
+                op: NOT
+                operand {
+                  unop {
+                    op: MLOAD
+                    operand {
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

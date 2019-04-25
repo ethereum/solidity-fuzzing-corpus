@@ -1,0 +1,178 @@
+statements {
+  statements {
+    forstmt {
+      for_body {
+        statements {
+          forstmt {
+            for_body {
+              statements {
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  statements {
+  }
+  statements {
+    storage_func {
+      loc {
+        cons {
+          hexval: "`"
+        }
+      }
+      val {
+        binop {
+          op: SLT
+          left {
+          }
+          right {
+            binop {
+              op: EQ
+              left {
+                cons {
+                  strval: "\265\2730m"
+                }
+              }
+              right {
+                varref {
+                  varnum: 0
+                }
+              }
+            }
+          }
+        }
+      }
+      st: MSTORE
+    }
+  }
+  statements {
+    storage_func {
+      loc {
+        binop {
+          op: SUB
+          left {
+            binop {
+              op: LT
+              left {
+                binop {
+                  op: SI
+                  left {
+                    binop {
+                      op: SI
+                      left {
+                        binop {
+                          op: EQ
+                          left {
+                            binop {
+                              op: SAR
+                              left {
+                                binop {
+                                  op: SI
+                                  left {
+                                    binop {
+                                      op: SUB
+                                      left {
+                                        varref {
+                                          varnum: 2
+                                        }
+                                      }
+                                      right {
+                                      }
+                                    }
+                                  }
+                                  right {
+                                    cons {
+                                      strval: "\000\000\000\000\000\000\000\000"
+                                    }
+                                  }
+                                }
+                              }
+                              right {
+                                unop {
+                                  op: MLOAD
+                                  operand {
+                                  }
+                                }
+                              }
+                            }
+                          }
+                          right {
+                            binop {
+                              op: ADD
+                              left {
+                              }
+                              right {
+                                unop {
+                                  op: MLOAD
+                                  operand {
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                      right {
+                        unop {
+                          op: MLOAD
+                          operand {
+                            varref {
+                              varnum: 2
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                  right {
+                    unop {
+                      op: MLOAD
+                      operand {
+                      }
+                    }
+                  }
+                }
+              }
+              right {
+                unop {
+                  op: MLOAD
+                  operand {
+                  }
+                }
+              }
+            }
+          }
+          right {
+            binop {
+              op: SUB
+              left {
+                binop {
+                  op: ADD
+                  left {
+                  }
+                  right {
+                    varref {
+                      varnum: 0
+                    }
+                  }
+                }
+              }
+              right {
+                unop {
+                  op: MLOAD
+                  operand {
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+      val {
+      }
+      st: MSTORE
+    }
+  }
+}

@@ -1,0 +1,191 @@
+statements {
+  statements {
+    storage_func {
+      loc {
+        binop {
+          op: SUB
+          left {
+            binop {
+              op: KECCAK
+              left {
+                binop {
+                  op: SUB
+                  left {
+                    binop {
+                      op: ADD
+                      left {
+                        binop {
+                          op: SUB
+                          left {
+                            unop {
+                              op: SLOAD
+                              operand {
+                              }
+                            }
+                          }
+                          right {
+                            binop {
+                              op: SUB
+                              left {
+                                unop {
+                                  op: MLOAD
+                                  operand {
+                                  }
+                                }
+                              }
+                              right {
+                                binop {
+                                  op: SUB
+                                  left {
+                                    unop {
+                                      op: SLOAD
+                                      operand {
+                                      }
+                                    }
+                                  }
+                                  right {
+                                    binop {
+                                      op: SUB
+                                      left {
+                                        unop {
+                                          op: MLOAD
+                                          operand {
+                                          }
+                                        }
+                                      }
+                                      right {
+                                        binop {
+                                          op: ADD
+                                          left {
+                                          }
+                                          right {
+                                            unop {
+                                              op: MLOAD
+                                              operand {
+                                              }
+                                            }
+                                          }
+                                        }
+                                      }
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                      right {
+                        unop {
+                          op: MLOAD
+                          operand {
+                          }
+                        }
+                      }
+                    }
+                  }
+                  right {
+                    unop {
+                      op: SLOAD
+                      operand {
+                      }
+                    }
+                  }
+                }
+              }
+              right {
+                binop {
+                  op: OR
+                  left {
+                    binop {
+                      op: SUB
+                      left {
+                        unop {
+                          op: MLOAD
+                          operand {
+                          }
+                        }
+                      }
+                      right {
+                        binop {
+                          op: SUB
+                          left {
+                            binop {
+                              op: ADD
+                              left {
+                              }
+                              right {
+                                unop {
+                                  op: MLOAD
+                                  operand {
+                                  }
+                                }
+                              }
+                            }
+                          }
+                          right {
+                            unop {
+                              op: MLOAD
+                              operand {
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                  right {
+                    unop {
+                      op: SLOAD
+                      operand {
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+          right {
+            binop {
+              op: ADD
+              left {
+                unop {
+                  op: MLOAD
+                  operand {
+                  }
+                }
+              }
+              right {
+                binop {
+                  op: SUB
+                  left {
+                    binop {
+                      op: ADD
+                      left {
+                      }
+                      right {
+                        unop {
+                          op: MLOAD
+                          operand {
+                          }
+                        }
+                      }
+                    }
+                  }
+                  right {
+                    cons {
+                      strval: "\020\000"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+      val {
+      }
+      st: SSTORE
+    }
+  }
+}

@@ -1,0 +1,78 @@
+statements {
+  statements {
+    forstmt {
+      for_body {
+        statements {
+          decl {
+            expr {
+              binop {
+                op: KECCAK
+                left {
+                }
+                right {
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  statements {
+    ifstmt {
+      cond {
+        cons {
+          strval: "1"
+        }
+      }
+      if_body {
+        statements {
+          ifstmt {
+            cond {
+              varref {
+                varnum: 0
+              }
+            }
+            if_body {
+              statements {
+                assignment {
+                  ref_id {
+                    varnum: 0
+                  }
+                  expr {
+                  }
+                }
+              }
+            }
+          }
+        }
+        statements {
+          ifstmt {
+            cond {
+              varref {
+                varnum: 0
+              }
+            }
+            if_body {
+            }
+          }
+        }
+        statements {
+          ifstmt {
+            cond {
+              binop {
+                op: KECCAK
+                left {
+                }
+                right {
+                }
+              }
+            }
+            if_body {
+            }
+          }
+        }
+      }
+    }
+  }
+}

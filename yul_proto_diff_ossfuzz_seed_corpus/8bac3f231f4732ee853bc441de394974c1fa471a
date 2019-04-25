@@ -1,0 +1,58 @@
+statements {
+  statements {
+    ifstmt {
+      cond {
+        binop {
+          op: DIV
+          left {
+            unop {
+              op: NOT
+              operand {
+                cons {
+                  intval: 18446744073709551615
+                }
+              }
+            }
+          }
+          right {
+            binop {
+              op: KECCAK
+              left {
+                binop {
+                  op: DIV
+                  left {
+                    unop {
+                      op: NOT
+                      operand {
+                      }
+                    }
+                  }
+                  right {
+                    cons {
+                      intval: 18446744073709551615
+                    }
+                  }
+                }
+              }
+              right {
+              }
+            }
+          }
+        }
+      }
+      if_body {
+        statements {
+          decl {
+            expr {
+              unop {
+                op: MLOAD
+                operand {
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

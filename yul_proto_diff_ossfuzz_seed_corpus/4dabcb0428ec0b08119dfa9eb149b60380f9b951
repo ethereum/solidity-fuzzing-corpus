@@ -1,0 +1,67 @@
+statements {
+  statements {
+    forstmt {
+      for_body {
+        statements {
+          forstmt {
+            for_body {
+              statements {
+                forstmt {
+                  for_body {
+                    statements {
+                      assignment {
+                        ref_id {
+                          varnum: 0
+                        }
+                        expr {
+                          binop {
+                            op: MOD
+                            left {
+                              cons {
+                                strval: "1"
+                              }
+                            }
+                            right {
+                              binop {
+                                op: MOD
+                                left {
+                                  cons {
+                                    strval: "1"
+                                  }
+                                }
+                                right {
+                                  binop {
+                                    op: MOD
+                                    left {
+                                      unop {
+                                        op: NOT
+                                        operand {
+                                          varref {
+                                            varnum: 0
+                                          }
+                                        }
+                                      }
+                                    }
+                                    right {
+                                      cons {
+                                        strval: "1"
+                                      }
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,68 @@
+statements {
+  statements {
+    forstmt {
+      for_body {
+        statements {
+          assignment {
+            ref_id {
+              varnum: 2
+            }
+            expr {
+              binop {
+                op: EXP
+                left {
+                  cons {
+                    intval: 7761513
+                  }
+                }
+                right {
+                  cons {
+                    hexval: "sdi"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  statements {
+    forstmt {
+      for_body {
+        statements {
+          storage_func {
+            loc {
+              binop {
+                op: DIV
+                left {
+                  varref {
+                    varnum: 2
+                  }
+                }
+                right {
+                  binop {
+                    op: DIV
+                    left {
+                      varref {
+                        varnum: 2
+                      }
+                    }
+                    right {
+                      cons {
+                        intval: 18446744073709551615
+                      }
+                    }
+                  }
+                }
+              }
+            }
+            val {
+            }
+            st: MSTORE
+          }
+        }
+      }
+    }
+  }
+}

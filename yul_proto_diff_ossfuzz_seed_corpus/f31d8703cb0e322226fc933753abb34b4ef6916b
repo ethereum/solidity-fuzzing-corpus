@@ -1,0 +1,35 @@
+statements {
+  statements {
+    storage_func {
+      loc {
+        unop {
+          op: SLOAD
+          operand {
+            unop {
+              op: SLOAD
+              operand {
+                cons {
+                  intval: 40
+                }
+              }
+            }
+          }
+        }
+      }
+      val {
+        unop {
+          op: MLOAD
+          operand {
+          }
+        }
+      }
+      st: MSTORE
+    }
+  }
+  statements {
+    forstmt {
+      for_body {
+      }
+    }
+  }
+}

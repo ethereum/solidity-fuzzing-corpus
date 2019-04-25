@@ -1,0 +1,33 @@
+statements {
+  statements {
+    ifstmt {
+      cond {
+        unop {
+          op: ISZERO
+          operand {
+          }
+        }
+      }
+      if_body {
+        statements {
+          ifstmt {
+            cond {
+              unop {
+                op: MLOAD
+                operand {
+                  unop {
+                    op: MLOAD
+                    operand {
+                    }
+                  }
+                }
+              }
+            }
+            if_body {
+            }
+          }
+        }
+      }
+    }
+  }
+}

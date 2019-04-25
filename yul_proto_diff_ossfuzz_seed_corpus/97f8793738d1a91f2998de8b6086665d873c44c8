@@ -1,0 +1,50 @@
+statements {
+  statements {
+    forstmt {
+      for_body {
+        statements {
+          storage_func {
+            loc {
+            }
+            val {
+              binop {
+                op: SMOD
+                left {
+                  unop {
+                    op: NOT
+                    operand {
+                      cons {
+                        strval: "a"
+                      }
+                    }
+                  }
+                }
+                right {
+                  binop {
+                    op: ADD
+                    left {
+                      unop {
+                        op: NOT
+                        operand {
+                          cons {
+                            strval: "aa\377"
+                          }
+                        }
+                      }
+                    }
+                    right {
+                      cons {
+                        strval: "a"
+                      }
+                    }
+                  }
+                }
+              }
+            }
+            st: SSTORE
+          }
+        }
+      }
+    }
+  }
+}

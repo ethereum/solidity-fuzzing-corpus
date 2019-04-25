@@ -1,0 +1,57 @@
+statements {
+  statements {
+    storage_func {
+      loc {
+        binop {
+          op: AND
+          left {
+            binop {
+              op: SHR
+              left {
+              }
+              right {
+                varref {
+                  varnum: 0
+                }
+              }
+            }
+          }
+          right {
+            unop {
+              op: NOT
+              operand {
+              }
+            }
+          }
+        }
+      }
+      val {
+        binop {
+          op: AND
+          left {
+            binop {
+              op: SHR
+              left {
+              }
+              right {
+                unop {
+                  op: SLOAD
+                  operand {
+                  }
+                }
+              }
+            }
+          }
+          right {
+            unop {
+              op: NOT
+              operand {
+              }
+            }
+          }
+        }
+      }
+      st: MSTORE
+    }
+  }
+}

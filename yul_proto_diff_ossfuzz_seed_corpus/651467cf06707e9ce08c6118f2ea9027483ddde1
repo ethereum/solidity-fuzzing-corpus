@@ -1,0 +1,79 @@
+statements {
+  statements {
+    storage_func {
+      loc {
+      }
+      val {
+      }
+      st: MSTORE
+    }
+  }
+  statements {
+    forstmt {
+      for_body {
+        statements {
+          forstmt {
+            for_body {
+              statements {
+                forstmt {
+                  for_body {
+                    statements {
+                      ifstmt {
+                        cond {
+                          unop {
+                            op: NOT
+                            operand {
+                              unop {
+                                op: SLOAD
+                                operand {
+                                  unop {
+                                    op: NOT
+                                    operand {
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        }
+                        if_body {
+                          statements {
+                            breakstmt {
+                            }
+                          }
+                        }
+                      }
+                    }
+                    statements {
+                      ifstmt {
+                        cond {
+                          unop {
+                            op: SLOAD
+                            operand {
+                            }
+                          }
+                        }
+                        if_body {
+                          statements {
+                            contstmt {
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  statements {
+    forstmt {
+      for_body {
+      }
+    }
+  }
+}

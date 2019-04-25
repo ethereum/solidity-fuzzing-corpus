@@ -1,0 +1,86 @@
+statements {
+  statements {
+    assignment {
+      ref_id {
+        varnum: 0
+      }
+      expr {
+        binop {
+          op: SMOD
+          left {
+            binop {
+              op: DIV
+              left {
+                binop {
+                  op: MUL
+                  left {
+                    unop {
+                      op: NOT
+                      operand {
+                        varref {
+                          varnum: 0
+                        }
+                      }
+                    }
+                  }
+                  right {
+                  }
+                }
+              }
+              right {
+                cons {
+                  intval: 18446744069414521083
+                }
+              }
+            }
+          }
+          right {
+            binop {
+              op: MUL
+              left {
+                cons {
+                  intval: 20547675365602304
+                }
+              }
+              right {
+                cons {
+                  intval: 18446744069414521083
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  statements {
+    forstmt {
+      for_body {
+        statements {
+          forstmt {
+            for_body {
+              statements {
+                forstmt {
+                  for_body {
+                    statements {
+                      storage_func {
+                        loc {
+                        }
+                        val {
+                          varref {
+                            varnum: 0
+                          }
+                        }
+                        st: MSTORE
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

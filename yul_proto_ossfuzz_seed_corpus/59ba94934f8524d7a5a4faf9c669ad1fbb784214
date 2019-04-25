@@ -1,0 +1,100 @@
+statements {
+  statements {
+    forstmt {
+      for_body {
+      }
+    }
+  }
+  statements {
+    storage_func {
+      loc {
+        cons {
+          strval: ""
+        }
+      }
+      val {
+        binop {
+          op: SI
+          left {
+          }
+          right {
+            varref {
+              varnum: 4
+            }
+          }
+        }
+      }
+      st: MSTORE
+    }
+  }
+  statements {
+    switchstmt {
+      switch_expr {
+        varref {
+          varnum: 256
+        }
+      }
+      case_stmt {
+        case_lit {
+        }
+        case_block {
+          statements {
+            assignment {
+              ref_id {
+                varnum: 65279
+              }
+              expr {
+              }
+            }
+          }
+          statements {
+            assignment {
+              ref_id {
+                varnum: 0
+              }
+              expr {
+              }
+            }
+          }
+        }
+      }
+      case_stmt {
+        case_lit {
+          intval: 0
+        }
+        case_block {
+          statements {
+            assignment {
+              ref_id {
+                varnum: 0
+              }
+              expr {
+                binop {
+                  op: SI
+                  left {
+                    unop {
+                      op: MLOAD
+                      operand {
+                      }
+                    }
+                  }
+                  right {
+                  }
+                }
+              }
+            }
+          }
+          statements {
+            assignment {
+              ref_id {
+                varnum: 128
+              }
+              expr {
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,67 @@
+statements {
+  statements {
+    ifstmt {
+      cond {
+        unop {
+          op: MLOAD
+          operand {
+            binop {
+              op: EXP
+              left {
+                unop {
+                  op: MLOAD
+                  operand {
+                    binop {
+                      op: EXP
+                      left {
+                        cons {
+                          intval: 32
+                        }
+                      }
+                      right {
+                        cons {
+                          intval: 32
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+              right {
+                cons {
+                  intval: 32
+                }
+              }
+            }
+          }
+        }
+      }
+      if_body {
+      }
+    }
+  }
+  statements {
+    forstmt {
+      for_body {
+        statements {
+          forstmt {
+            for_body {
+              statements {
+                forstmt {
+                  for_body {
+                    statements {
+                      forstmt {
+                        for_body {
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,57 @@
+statements {
+  statements {
+    storage_func {
+      loc {
+      }
+      val {
+      }
+      st: MSTORE
+    }
+  }
+  statements {
+    forstmt {
+      for_body {
+        statements {
+          storage_func {
+            loc {
+            }
+            val {
+            }
+            st: MSTORE
+          }
+        }
+        statements {
+          forstmt {
+            for_body {
+              statements {
+                forstmt {
+                  for_body {
+                    statements {
+                      storage_func {
+                        loc {
+                          unop {
+                            op: NOT
+                            operand {
+                            }
+                          }
+                        }
+                        val {
+                          unop {
+                            op: NOT
+                            operand {
+                            }
+                          }
+                        }
+                        st: SSTORE
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

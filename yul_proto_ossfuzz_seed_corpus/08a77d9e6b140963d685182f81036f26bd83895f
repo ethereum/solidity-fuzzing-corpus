@@ -1,0 +1,44 @@
+statements {
+  statements {
+    storage_func {
+      loc {
+      }
+      val {
+        binop {
+          op: SDIV
+          left {
+            unop {
+              op: NOT
+              operand {
+                cons {
+                  hexval: "9223372036854775807"
+                }
+              }
+            }
+          }
+          right {
+            binop {
+              op: SDIV
+              left {
+                unop {
+                  op: NOT
+                  operand {
+                    cons {
+                      hexval: "9223372036854775807"
+                    }
+                  }
+                }
+              }
+              right {
+                cons {
+                  intval: 8448
+                }
+              }
+            }
+          }
+        }
+      }
+      st: MSTORE
+    }
+  }
+}

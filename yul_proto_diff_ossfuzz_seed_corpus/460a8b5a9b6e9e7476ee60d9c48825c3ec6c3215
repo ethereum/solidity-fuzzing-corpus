@@ -1,0 +1,54 @@
+statements {
+  statements {
+    forstmt {
+      for_body {
+        statements {
+          assignment {
+            ref_id {
+              varnum: 0
+            }
+            expr {
+              binop {
+                op: DIV
+                left {
+                  unop {
+                    op: NOT
+                    operand {
+                    }
+                  }
+                }
+                right {
+                  binop {
+                    op: DIV
+                    left {
+                      unop {
+                        op: NOT
+                        operand {
+                        }
+                      }
+                    }
+                    right {
+                      binop {
+                        op: OR
+                        left {
+                          varref {
+                            varnum: 0
+                          }
+                        }
+                        right {
+                          cons {
+                            intval: 18446744073709551615
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

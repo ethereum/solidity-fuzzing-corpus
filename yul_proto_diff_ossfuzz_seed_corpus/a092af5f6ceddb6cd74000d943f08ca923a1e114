@@ -1,0 +1,95 @@
+statements {
+  statements {
+    storage_func {
+      loc {
+        binop {
+          op: SI
+          left {
+          }
+          right {
+            unop {
+              op: NOT
+              operand {
+                varref {
+                  varnum: 0
+                }
+              }
+            }
+          }
+        }
+      }
+      val {
+        binop {
+          op: SUB
+          left {
+            unop {
+              op: SLOAD
+              operand {
+              }
+            }
+          }
+          right {
+          }
+        }
+      }
+      st: MSTORE
+    }
+  }
+  statements {
+    storage_func {
+      loc {
+        binop {
+          op: SUB
+          left {
+            unop {
+              op: MLOAD
+              operand {
+              }
+            }
+          }
+          right {
+          }
+        }
+      }
+      val {
+        binop {
+          op: SUB
+          left {
+            unop {
+              op: MLOAD
+              operand {
+              }
+            }
+          }
+          right {
+          }
+        }
+      }
+      st: MSTORE
+    }
+  }
+  statements {
+    storage_func {
+      loc {
+        cons {
+          strval: "S"
+        }
+      }
+      val {
+        binop {
+          op: SUB
+          left {
+            unop {
+              op: SLOAD
+              operand {
+              }
+            }
+          }
+          right {
+          }
+        }
+      }
+      st: SSTORE
+    }
+  }
+}

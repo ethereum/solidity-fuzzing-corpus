@@ -1,0 +1,56 @@
+statements {
+  statements {
+    forstmt {
+      for_body {
+      }
+    }
+  }
+  statements {
+    switchstmt {
+      switch_expr {
+      }
+      case_stmt {
+        case_lit {
+          intval: 0
+        }
+        case_block {
+          statements {
+            forstmt {
+              for_body {
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  statements {
+    ifstmt {
+      cond {
+        binop {
+          op: SGT
+          left {
+          }
+          right {
+            unop {
+              op: NOT
+              operand {
+                varref {
+                  varnum: 0
+                }
+              }
+            }
+          }
+        }
+      }
+      if_body {
+      }
+    }
+  }
+  statements {
+    forstmt {
+      for_body {
+      }
+    }
+  }
+}

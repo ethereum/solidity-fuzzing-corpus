@@ -1,0 +1,45 @@
+statements {
+  statements {
+    ifstmt {
+      cond {
+        binop {
+          op: AND
+          left {
+            binop {
+              op: DIV
+              left {
+                unop {
+                  op: NOT
+                  operand {
+                  }
+                }
+              }
+              right {
+                cons {
+                  intval: 1024
+                }
+              }
+            }
+          }
+          right {
+            binop {
+              op: SHR
+              left {
+                cons {
+                  intval: 72
+                }
+              }
+              right {
+                varref {
+                  varnum: 0
+                }
+              }
+            }
+          }
+        }
+      }
+      if_body {
+      }
+    }
+  }
+}

@@ -1,0 +1,147 @@
+statements {
+  statements {
+    forstmt {
+      for_body {
+      }
+    }
+  }
+  statements {
+    storage_func {
+      loc {
+        binop {
+          op: SUB
+          left {
+          }
+          right {
+            unop {
+              op: ISZERO
+              operand {
+              }
+            }
+          }
+        }
+      }
+      val {
+        unop {
+          op: MLOAD
+          operand {
+            varref {
+              varnum: 1146290176
+            }
+          }
+        }
+      }
+      st: MSTORE
+    }
+  }
+  statements {
+    storage_func {
+      loc {
+        varref {
+          varnum: 4
+        }
+      }
+      val {
+      }
+      st: SSTORE
+    }
+  }
+  statements {
+    storage_func {
+      loc {
+        binop {
+          op: SUB
+          left {
+            unop {
+              op: SLOAD
+              operand {
+                varref {
+                  varnum: 1146290176
+                }
+              }
+            }
+          }
+          right {
+            binop {
+              op: SUB
+              left {
+                binop {
+                  op: ADD
+                  left {
+                  }
+                  right {
+                    unop {
+                      op: MLOAD
+                      operand {
+                      }
+                    }
+                  }
+                }
+              }
+              right {
+                unop {
+                  op: MLOAD
+                  operand {
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+      val {
+      }
+      st: MSTORE
+    }
+  }
+  statements {
+    forstmt {
+      for_body {
+        statements {
+        }
+        statements {
+          assignment {
+            ref_id {
+              varnum: 9
+            }
+            expr {
+              varref {
+                varnum: 0
+              }
+            }
+          }
+        }
+        statements {
+          assignment {
+            ref_id {
+              varnum: 4
+            }
+            expr {
+              varref {
+                varnum: 4
+              }
+            }
+          }
+        }
+        statements {
+          assignment {
+            ref_id {
+              varnum: 0
+            }
+            expr {
+            }
+          }
+        }
+        statements {
+          assignment {
+            ref_id {
+              varnum: 58
+            }
+            expr {
+            }
+          }
+        }
+      }
+    }
+  }
+}

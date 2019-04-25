@@ -1,0 +1,77 @@
+statements {
+  statements {
+    storage_func {
+      loc {
+        binop {
+          op: BYTE
+          left {
+            cons {
+              intval: 31
+            }
+          }
+          right {
+            varref {
+              varnum: 255
+            }
+          }
+        }
+      }
+      val {
+        binop {
+          op: BYTE
+          left {
+            cons {
+              intval: 31
+            }
+          }
+          right {
+          }
+        }
+      }
+      st: MSTORE
+    }
+  }
+  statements {
+    storage_func {
+      loc {
+        binop {
+          op: GT
+          left {
+          }
+          right {
+            binop {
+              op: GT
+              left {
+                varref {
+                  varnum: 255
+                }
+              }
+              right {
+              }
+            }
+          }
+        }
+      }
+      val {
+        binop {
+          op: GT
+          left {
+            varref {
+              varnum: 0
+            }
+          }
+          right {
+            binop {
+              op: GT
+              left {
+              }
+              right {
+              }
+            }
+          }
+        }
+      }
+      st: MSTORE
+    }
+  }
+}

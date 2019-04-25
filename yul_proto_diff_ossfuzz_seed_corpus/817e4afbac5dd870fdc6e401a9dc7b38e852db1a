@@ -1,0 +1,71 @@
+statements {
+  statements {
+    forstmt {
+      for_body {
+        statements {
+          storage_func {
+            loc {
+              binop {
+                op: XOR
+                left {
+                  binop {
+                    op: EQ
+                    left {
+                      unop {
+                        op: MLOAD
+                        operand {
+                        }
+                      }
+                    }
+                    right {
+                    }
+                  }
+                }
+                right {
+                  binop {
+                    op: XOR
+                    left {
+                      unop {
+                        op: MLOAD
+                        operand {
+                        }
+                      }
+                    }
+                    right {
+                      binop {
+                        op: XOR
+                        left {
+                          unop {
+                            op: MLOAD
+                            operand {
+                              varref {
+                                varnum: 0
+                              }
+                            }
+                          }
+                        }
+                        right {
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+            val {
+              unop {
+                op: MLOAD
+                operand {
+                  varref {
+                    varnum: 0
+                  }
+                }
+              }
+            }
+            st: MSTORE
+          }
+        }
+      }
+    }
+  }
+}

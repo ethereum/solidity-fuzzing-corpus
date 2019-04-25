@@ -1,0 +1,64 @@
+statements {
+  statements {
+    ifstmt {
+      cond {
+        binop {
+          op: SDIV
+          left {
+            cons {
+              hexval: "dddddddddddddddddddddddddddddddddddd"
+            }
+          }
+          right {
+            binop {
+              op: SDIV
+              left {
+                cons {
+                  hexval: "ddddddddddddddddddddddddddddddddddddddddddddddddddddddddddd"
+                }
+              }
+              right {
+                unop {
+                  op: NOT
+                  operand {
+                    cons {
+                      hexval: "dddddddddddddddddddddddddddddddddddd"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+      if_body {
+      }
+    }
+  }
+  statements {
+    ifstmt {
+      cond {
+        binop {
+          op: SDIV
+          left {
+            cons {
+              hexval: "dddddddddddddddddddddddddddddddddddd"
+            }
+          }
+          right {
+            unop {
+              op: NOT
+              operand {
+                cons {
+                  hexval: "ddddddddddddddddddddddddddddd"
+                }
+              }
+            }
+          }
+        }
+      }
+      if_body {
+      }
+    }
+  }
+}

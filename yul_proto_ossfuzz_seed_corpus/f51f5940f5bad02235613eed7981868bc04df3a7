@@ -1,0 +1,65 @@
+statements {
+  statements {
+    assignment {
+      ref_id {
+        varnum: 0
+      }
+      expr {
+        binop {
+          op: DIV
+          left {
+            unop {
+              op: NOT
+              operand {
+              }
+            }
+          }
+          right {
+            cons {
+              hexval: "FFFFFFFFFFFFFFFFVFFFFFFFFFFFFF"
+            }
+          }
+        }
+      }
+    }
+  }
+  statements {
+    assignment {
+      ref_id {
+        varnum: 9
+      }
+      expr {
+        varref {
+          varnum: 0
+        }
+      }
+    }
+  }
+  statements {
+    storage_func {
+      loc {
+        binop {
+          op: DIV
+          left {
+            unop {
+              op: NOT
+              operand {
+                varref {
+                  varnum: 9
+                }
+              }
+            }
+          }
+          right {
+            cons {
+              hexval: "FFFFFFFFFFFFFFFFVFFFFFFFFFFFFF"
+            }
+          }
+        }
+      }
+      val {
+      }
+      st: MSTORE
+    }
+  }
+}

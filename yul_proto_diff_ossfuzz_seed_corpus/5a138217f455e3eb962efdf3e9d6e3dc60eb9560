@@ -1,0 +1,141 @@
+statements {
+  statements {
+    storage_func {
+      loc {
+        binop {
+          op: SUB
+          left {
+            unop {
+              op: MLOAD
+              operand {
+              }
+            }
+          }
+          right {
+            binop {
+              op: SUB
+              left {
+                binop {
+                  op: ADD
+                  left {
+                  }
+                  right {
+                    unop {
+                      op: MLOAD
+                      operand {
+                      }
+                    }
+                  }
+                }
+              }
+              right {
+                unop {
+                  op: MLOAD
+                  operand {
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+      val {
+        unop {
+          op: SLOAD
+          operand {
+          }
+        }
+      }
+      st: MSTORE
+    }
+  }
+  statements {
+    storage_func {
+      loc {
+        binop {
+          op: SUB
+          left {
+            unop {
+              op: MLOAD
+              operand {
+              }
+            }
+          }
+          right {
+            binop {
+              op: SUB
+              left {
+                binop {
+                  op: ADD
+                  left {
+                  }
+                  right {
+                    unop {
+                      op: MLOAD
+                      operand {
+                        varref {
+                          varnum: 2619
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+              right {
+                unop {
+                  op: MLOAD
+                  operand {
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+      val {
+        unop {
+          op: SLOAD
+          operand {
+          }
+        }
+      }
+      st: MSTORE
+    }
+  }
+  statements {
+    forstmt {
+      for_body {
+        statements {
+          assignment {
+            ref_id {
+              varnum: 1948286396
+            }
+            expr {
+              varref {
+                varnum: 1948286396
+              }
+            }
+          }
+        }
+        statements {
+          assignment {
+            ref_id {
+              varnum: 2619
+            }
+            expr {
+              varref {
+                varnum: 1948286396
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  statements {
+    forstmt {
+      for_body {
+      }
+    }
+  }
+}

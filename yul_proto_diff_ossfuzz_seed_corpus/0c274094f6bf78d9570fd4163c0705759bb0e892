@@ -1,0 +1,101 @@
+statements {
+  statements {
+    storage_func {
+      loc {
+      }
+      val {
+        binop {
+          op: SUB
+          left {
+            binop {
+              op: SUB
+              left {
+                binop {
+                  op: ADD
+                  left {
+                  }
+                  right {
+                    varref {
+                      varnum: 42
+                    }
+                  }
+                }
+              }
+              right {
+                binop {
+                  op: ADD
+                  left {
+                  }
+                  right {
+                    varref {
+                      varnum: 0
+                    }
+                  }
+                }
+              }
+            }
+          }
+          right {
+            binop {
+              op: ADD
+              left {
+              }
+              right {
+                unop {
+                  op: NOT
+                  operand {
+                    binop {
+                      op: SUB
+                      left {
+                        binop {
+                          op: SUB
+                          left {
+                            binop {
+                              op: ADD
+                              left {
+                              }
+                              right {
+                                varref {
+                                  varnum: 0
+                                }
+                              }
+                            }
+                          }
+                          right {
+                            binop {
+                              op: ADD
+                              left {
+                              }
+                              right {
+                                varref {
+                                  varnum: 0
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                      right {
+                        binop {
+                          op: ADD
+                          left {
+                          }
+                          right {
+                            varref {
+                              varnum: 0
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+      st: SSTORE
+    }
+  }
+}

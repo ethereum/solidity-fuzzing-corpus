@@ -1,0 +1,71 @@
+statements {
+  statements {
+    forstmt {
+      for_body {
+        statements {
+          forstmt {
+            for_body {
+            }
+          }
+        }
+        statements {
+          forstmt {
+            for_body {
+            }
+          }
+        }
+        statements {
+          forstmt {
+            for_body {
+            }
+          }
+        }
+      }
+    }
+  }
+  statements {
+    ifstmt {
+      cond {
+        varref {
+          varnum: 0
+        }
+      }
+      if_body {
+        statements {
+          ifstmt {
+            cond {
+              varref {
+                varnum: 0
+              }
+            }
+            if_body {
+              statements {
+                assignment {
+                  ref_id {
+                    varnum: 0
+                  }
+                  expr {
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  statements {
+    assignment {
+      ref_id {
+        varnum: 0
+      }
+      expr {
+        unop {
+          op: MLOAD
+          operand {
+          }
+        }
+      }
+    }
+  }
+}

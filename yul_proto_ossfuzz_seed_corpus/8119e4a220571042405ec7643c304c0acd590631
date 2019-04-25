@@ -1,0 +1,47 @@
+statements {
+  statements {
+    storage_func {
+      loc {
+        binop {
+          op: SMOD
+          left {
+            unop {
+              op: NOT
+              operand {
+              }
+            }
+          }
+          right {
+          }
+        }
+      }
+      val {
+        binop {
+          op: SMOD
+          left {
+            unop {
+              op: NOT
+              operand {
+                binop {
+                  op: SMOD
+                  left {
+                    unop {
+                      op: NOT
+                      operand {
+                      }
+                    }
+                  }
+                  right {
+                  }
+                }
+              }
+            }
+          }
+          right {
+          }
+        }
+      }
+      st: MSTORE
+    }
+  }
+}

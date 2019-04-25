@@ -1,0 +1,99 @@
+statements {
+  statements {
+    assignment {
+      ref_id {
+        varnum: 1830821920
+      }
+      expr {
+        binop {
+          op: SI
+          left {
+            binop {
+              op: EXP
+              left {
+                binop {
+                  op: SHL
+                  left {
+                    binop {
+                      op: SUB
+                      left {
+                      }
+                      right {
+                        binop {
+                          op: ADD
+                          left {
+                          }
+                          right {
+                            varref {
+                              varnum: 0
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                  right {
+                    binop {
+                      op: KECCAK
+                      left {
+                      }
+                      right {
+                      }
+                    }
+                  }
+                }
+              }
+              right {
+                unop {
+                  op: MLOAD
+                  operand {
+                  }
+                }
+              }
+            }
+          }
+          right {
+            unop {
+              op: SLOAD
+              operand {
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  statements {
+    forstmt {
+      for_body {
+      }
+    }
+  }
+  statements {
+    storage_func {
+      loc {
+        unop {
+          op: NOT
+          operand {
+            cons {
+              strval: "\377\377\377\377"
+            }
+          }
+        }
+      }
+      val {
+        binop {
+          op: SUB
+          left {
+          }
+          right {
+            varref {
+              varnum: 0
+            }
+          }
+        }
+      }
+      st: MSTORE
+    }
+  }
+}

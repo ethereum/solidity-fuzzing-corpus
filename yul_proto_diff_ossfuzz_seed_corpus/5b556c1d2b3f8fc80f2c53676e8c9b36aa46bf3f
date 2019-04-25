@@ -1,0 +1,51 @@
+statements {
+  statements {
+    storage_func {
+      loc {
+      }
+      val {
+        binop {
+          op: MUL
+          left {
+            cons {
+              hexval: "ffff&fffffffffffffffffffff"
+            }
+          }
+          right {
+            binop {
+              op: ADD
+              left {
+                cons {
+                  strval: "\305"
+                }
+              }
+              right {
+              }
+            }
+          }
+        }
+      }
+      st: MSTORE
+    }
+  }
+  statements {
+    forstmt {
+      for_body {
+        statements {
+          storage_func {
+            loc {
+            }
+            val {
+              unop {
+                op: MLOAD
+                operand {
+                }
+              }
+            }
+            st: MSTORE
+          }
+        }
+      }
+    }
+  }
+}

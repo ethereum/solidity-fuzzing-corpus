@@ -1,0 +1,182 @@
+statements {
+  statements {
+    assignment {
+      ref_id {
+        varnum: 0
+      }
+      expr {
+        binop {
+          op: SDIV
+          left {
+            binop {
+              op: SDIV
+              left {
+                binop {
+                  op: SUB
+                  left {
+                    binop {
+                      op: EQ
+                      left {
+                        binop {
+                          op: LT
+                          left {
+                            binop {
+                              op: SUB
+                              left {
+                              }
+                              right {
+                                binop {
+                                  op: ADD
+                                  left {
+                                  }
+                                  right {
+                                    varref {
+                                      varnum: 0
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          }
+                          right {
+                            binop {
+                              op: KECCAK
+                              left {
+                              }
+                              right {
+                              }
+                            }
+                          }
+                        }
+                      }
+                      right {
+                        unop {
+                          op: MLOAD
+                          operand {
+                            varref {
+                              varnum: 768
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                  right {
+                    binop {
+                      op: ADD
+                      left {
+                      }
+                      right {
+                        varref {
+                          varnum: 0
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+              right {
+                binop {
+                  op: KECCAK
+                  left {
+                  }
+                  right {
+                  }
+                }
+              }
+            }
+          }
+          right {
+            binop {
+              op: KECCAK
+              left {
+              }
+              right {
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  statements {
+    storage_func {
+      loc {
+        varref {
+          varnum: -12
+        }
+      }
+      val {
+        varref {
+          varnum: -12
+        }
+      }
+      st: MSTORE
+    }
+  }
+  statements {
+    forstmt {
+      for_body {
+      }
+    }
+  }
+  statements {
+    storage_func {
+      loc {
+        binop {
+          op: SI
+          left {
+            binop {
+              op: GT
+              left {
+                varref {
+                  varnum: 0
+                }
+              }
+              right {
+              }
+            }
+          }
+          right {
+          }
+        }
+      }
+      val {
+        binop {
+          op: SI
+          left {
+            varref {
+              varnum: 512
+            }
+          }
+          right {
+            varref {
+              varnum: -1660944384
+            }
+          }
+        }
+      }
+      st: MSTORE
+    }
+  }
+  statements {
+    forstmt {
+      for_body {
+      }
+    }
+  }
+  statements {
+  }
+  statements {
+    storage_func {
+      loc {
+        varref {
+          varnum: -12
+        }
+      }
+      val {
+      }
+      st: MSTORE
+    }
+  }
+}

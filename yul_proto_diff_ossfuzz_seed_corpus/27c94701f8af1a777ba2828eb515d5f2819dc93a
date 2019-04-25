@@ -1,0 +1,40 @@
+statements {
+  statements {
+    forstmt {
+      for_body {
+        statements {
+          assignment {
+            ref_id {
+              varnum: 0
+            }
+            expr {
+              binop {
+                op: SDIV
+                left {
+                  unop {
+                    op: NOT
+                    operand {
+                      unop {
+                        op: MLOAD
+                        operand {
+                          cons {
+                            intval: 18446744073709551613
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+                right {
+                  cons {
+                    intval: 32768
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

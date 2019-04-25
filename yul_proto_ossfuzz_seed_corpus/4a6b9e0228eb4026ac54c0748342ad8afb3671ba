@@ -1,0 +1,70 @@
+statements {
+  statements {
+    storage_func {
+      loc {
+      }
+      val {
+        binop {
+          op: SDIV
+          left {
+            binop {
+              op: MUL
+              left {
+              }
+              right {
+                binop {
+                  op: MUL
+                  left {
+                    cons {
+                      intval: 18446547261128179711
+                    }
+                  }
+                  right {
+                    binop {
+                      op: MUL
+                      left {
+                        cons {
+                          intval: 18446547261128179711
+                        }
+                      }
+                      right {
+                        cons {
+                          intval: 18446744073709551615
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+          right {
+            binop {
+              op: ADD
+              left {
+                cons {
+                  intval: 18446744073709551615
+                }
+              }
+              right {
+              }
+            }
+          }
+        }
+      }
+      st: MSTORE
+    }
+  }
+  statements {
+    storage_func {
+      loc {
+      }
+      val {
+        varref {
+          varnum: 0
+        }
+      }
+      st: SSTORE
+    }
+  }
+}

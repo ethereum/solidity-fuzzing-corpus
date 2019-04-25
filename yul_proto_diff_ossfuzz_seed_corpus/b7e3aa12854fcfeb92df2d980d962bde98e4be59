@@ -1,0 +1,61 @@
+statements {
+  statements {
+    forstmt {
+      for_body {
+        statements {
+          forstmt {
+            for_body {
+              statements {
+                forstmt {
+                  for_body {
+                    statements {
+                      ifstmt {
+                        cond {
+                          binop {
+                            op: ADD
+                            left {
+                              varref {
+                                varnum: 0
+                              }
+                            }
+                            right {
+                              binop {
+                                op: ADD
+                                left {
+                                  unop {
+                                    op: NOT
+                                    operand {
+                                      cons {
+                                        strval: ""
+                                      }
+                                    }
+                                  }
+                                }
+                                right {
+                                }
+                              }
+                            }
+                          }
+                        }
+                        if_body {
+                          statements {
+                            breakstmt {
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+              statements {
+                breakstmt {
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

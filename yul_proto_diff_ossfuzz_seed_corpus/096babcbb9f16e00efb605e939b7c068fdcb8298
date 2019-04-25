@@ -1,0 +1,60 @@
+statements {
+  statements {
+    forstmt {
+      for_body {
+        statements {
+          forstmt {
+            for_body {
+              statements {
+                storage_func {
+                  loc {
+                  }
+                  val {
+                    binop {
+                      op: SDIV
+                      left {
+                        binop {
+                          op: DIV
+                          left {
+                            unop {
+                              op: NOT
+                              operand {
+                              }
+                            }
+                          }
+                          right {
+                            binop {
+                              op: SHL
+                              left {
+                                cons {
+                                  intval: 64
+                                }
+                              }
+                              right {
+                              }
+                            }
+                          }
+                        }
+                      }
+                      right {
+                        unop {
+                          op: NOT
+                          operand {
+                            cons {
+                              hexval: "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                  st: SSTORE
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

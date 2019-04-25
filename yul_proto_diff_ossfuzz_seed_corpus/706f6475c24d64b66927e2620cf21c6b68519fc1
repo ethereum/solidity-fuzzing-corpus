@@ -1,0 +1,47 @@
+statements {
+  statements {
+    forstmt {
+      for_body {
+        statements {
+          storage_func {
+            loc {
+            }
+            val {
+              unop {
+                op: NOT
+                operand {
+                  binop {
+                    op: SI
+                    left {
+                      unop {
+                        op: MLOAD
+                        operand {
+                          varref {
+                            varnum: 17
+                          }
+                        }
+                      }
+                    }
+                    right {
+                      unop {
+                        op: MLOAD
+                        operand {
+                          unop {
+                            op: MLOAD
+                            operand {
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+            st: MSTORE
+          }
+        }
+      }
+    }
+  }
+}

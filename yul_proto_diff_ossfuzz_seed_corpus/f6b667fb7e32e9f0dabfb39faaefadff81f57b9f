@@ -1,0 +1,53 @@
+statements {
+  statements {
+    storage_func {
+      loc {
+        binop {
+          op: EQ
+          left {
+            unop {
+              op: NOT
+              operand {
+                cons {
+                  strval: "y"
+                }
+              }
+            }
+          }
+          right {
+            binop {
+              op: EQ
+              left {
+                unop {
+                  op: NOT
+                  operand {
+                    unop {
+                      op: MLOAD
+                      operand {
+                      }
+                    }
+                  }
+                }
+              }
+              right {
+                unop {
+                  op: MLOAD
+                  operand {
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+      val {
+        unop {
+          op: SLOAD
+          operand {
+          }
+        }
+      }
+      st: SSTORE
+    }
+  }
+}

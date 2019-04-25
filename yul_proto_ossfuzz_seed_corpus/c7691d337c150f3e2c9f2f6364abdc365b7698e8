@@ -1,0 +1,109 @@
+statements {
+  statements {
+    forstmt {
+      for_body {
+      }
+    }
+  }
+  statements {
+    storage_func {
+      loc {
+        binop {
+          op: EQ
+          left {
+            binop {
+              op: LT
+              left {
+                binop {
+                  op: SUB
+                  left {
+                    binop {
+                      op: EQ
+                      left {
+                        binop {
+                          op: EQ
+                          left {
+                            binop {
+                              op: LT
+                              left {
+                                binop {
+                                  op: EQ
+                                  left {
+                                    binop {
+                                      op: SUB
+                                      left {
+                                        varref {
+                                          varnum: 0
+                                        }
+                                      }
+                                      right {
+                                      }
+                                    }
+                                  }
+                                  right {
+                                  }
+                                }
+                              }
+                              right {
+                                unop {
+                                  op: MLOAD
+                                  operand {
+                                  }
+                                }
+                              }
+                            }
+                          }
+                          right {
+                            unop {
+                              op: MLOAD
+                              operand {
+                              }
+                            }
+                          }
+                        }
+                      }
+                      right {
+                        unop {
+                          op: SLOAD
+                          operand {
+                          }
+                        }
+                      }
+                    }
+                  }
+                  right {
+                  }
+                }
+              }
+              right {
+                unop {
+                  op: MLOAD
+                  operand {
+                  }
+                }
+              }
+            }
+          }
+          right {
+            unop {
+              op: MLOAD
+              operand {
+              }
+            }
+          }
+        }
+      }
+      val {
+        unop {
+          op: NOT
+          operand {
+            varref {
+              varnum: 0
+            }
+          }
+        }
+      }
+      st: MSTORE
+    }
+  }
+}

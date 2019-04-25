@@ -1,0 +1,66 @@
+statements {
+  statements {
+    assignment {
+      ref_id {
+        varnum: 0
+      }
+      expr {
+        binop {
+          op: SDIV
+          left {
+            binop {
+              op: KECCAK
+              left {
+              }
+              right {
+              }
+            }
+          }
+          right {
+            binop {
+              op: KECCAK
+              left {
+              }
+              right {
+                cons {
+                  intval: 4398046511104
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  statements {
+    forstmt {
+      for_body {
+        statements {
+          forstmt {
+            for_body {
+              statements {
+                storage_func {
+                  loc {
+                    binop {
+                      op: SUB
+                      left {
+                      }
+                      right {
+                        varref {
+                          varnum: 0
+                        }
+                      }
+                    }
+                  }
+                  val {
+                  }
+                  st: MSTORE
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

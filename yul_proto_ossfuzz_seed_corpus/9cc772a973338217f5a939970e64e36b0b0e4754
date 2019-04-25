@@ -1,0 +1,138 @@
+statements {
+  statements {
+    forstmt {
+      for_body {
+      }
+    }
+  }
+  statements {
+    assignment {
+      ref_id {
+        varnum: 0
+      }
+      expr {
+        binop {
+          op: ADD
+          left {
+            varref {
+              varnum: 0
+            }
+          }
+          right {
+          }
+        }
+      }
+    }
+  }
+  statements {
+    forstmt {
+      for_body {
+      }
+    }
+  }
+  statements {
+    assignment {
+      ref_id {
+        varnum: 0
+      }
+      expr {
+        binop {
+          op: SUB
+          left {
+            binop {
+              op: ADD
+              left {
+                binop {
+                  op: ADD
+                  left {
+                    varref {
+                      varnum: 0
+                    }
+                  }
+                  right {
+                    varref {
+                      varnum: 0
+                    }
+                  }
+                }
+              }
+              right {
+                varref {
+                  varnum: 0
+                }
+              }
+            }
+          }
+          right {
+            varref {
+              varnum: 0
+            }
+          }
+        }
+      }
+    }
+  }
+  statements {
+    storage_func {
+      loc {
+      }
+      val {
+        binop {
+          op: OR
+          left {
+            unop {
+              op: SLOAD
+              operand {
+              }
+            }
+          }
+          right {
+          }
+        }
+      }
+      st: MSTORE
+    }
+  }
+  statements {
+    storage_func {
+      loc {
+        binop {
+          op: SUB
+          left {
+            binop {
+              op: ADD
+              left {
+                varref {
+                  varnum: 0
+                }
+              }
+              right {
+                varref {
+                  varnum: 0
+                }
+              }
+            }
+          }
+          right {
+            binop {
+              op: ADD
+              left {
+                varref {
+                  varnum: 0
+                }
+              }
+              right {
+                cons {
+                  strval: "5"
+                }
+              }
+            }
+          }
+        }
+      }
+      val {
+      }
+      st: SSTORE
+    }
+  }
+}

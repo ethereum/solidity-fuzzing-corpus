@@ -1,0 +1,91 @@
+statements {
+  statements {
+    storage_func {
+      loc {
+        binop {
+          op: EQ
+          left {
+          }
+          right {
+          }
+        }
+      }
+      val {
+      }
+      st: MSTORE
+    }
+  }
+  statements {
+    forstmt {
+      for_body {
+        statements {
+          decl {
+            expr {
+            }
+          }
+        }
+        statements {
+          forstmt {
+            for_body {
+              statements {
+                forstmt {
+                  for_body {
+                    statements {
+                      storage_func {
+                        loc {
+                          binop {
+                            op: SAR
+                            left {
+                            }
+                            right {
+                              unop {
+                                op: NOT
+                                operand {
+                                }
+                              }
+                            }
+                          }
+                        }
+                        val {
+                          binop {
+                            op: SAR
+                            left {
+                            }
+                            right {
+                              binop {
+                                op: SAR
+                                left {
+                                }
+                                right {
+                                  unop {
+                                    op: NOT
+                                    operand {
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        }
+                        st: MSTORE
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+        statements {
+          assignment {
+            ref_id {
+              varnum: 4
+            }
+            expr {
+            }
+          }
+        }
+      }
+    }
+  }
+}

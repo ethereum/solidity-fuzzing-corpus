@@ -1,0 +1,124 @@
+statements {
+  statements {
+    assignment {
+      ref_id {
+        varnum: 0
+      }
+      expr {
+        binop {
+          op: ADD
+          left {
+            binop {
+              op: EQ
+              left {
+                binop {
+                  op: SUB
+                  left {
+                    binop {
+                      op: EQ
+                      left {
+                        binop {
+                          op: ADD
+                          left {
+                            binop {
+                              op: SI
+                              left {
+                                binop {
+                                  op: SUB
+                                  left {
+                                    varref {
+                                      varnum: 0
+                                    }
+                                  }
+                                  right {
+                                  }
+                                }
+                              }
+                              right {
+                              }
+                            }
+                          }
+                          right {
+                            binop {
+                              op: SUB
+                              left {
+                                varref {
+                                  varnum: 0
+                                }
+                              }
+                              right {
+                              }
+                            }
+                          }
+                        }
+                      }
+                      right {
+                        unop {
+                          op: MLOAD
+                          operand {
+                          }
+                        }
+                      }
+                    }
+                  }
+                  right {
+                    binop {
+                      op: ADD
+                      left {
+                      }
+                      right {
+                        varref {
+                          varnum: 1830826016
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+              right {
+              }
+            }
+          }
+          right {
+            unop {
+              op: SLOAD
+              operand {
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  statements {
+    storage_func {
+      loc {
+        binop {
+          op: SI
+          left {
+            binop {
+              op: SUB
+              left {
+                varref {
+                  varnum: 0
+                }
+              }
+              right {
+              }
+            }
+          }
+          right {
+          }
+        }
+      }
+      val {
+        unop {
+          op: MLOAD
+          operand {
+          }
+        }
+      }
+      st: MSTORE
+    }
+  }
+}

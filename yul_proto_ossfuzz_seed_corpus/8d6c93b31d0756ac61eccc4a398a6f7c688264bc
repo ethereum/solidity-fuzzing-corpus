@@ -1,0 +1,156 @@
+statements {
+  statements {
+    ifstmt {
+      cond {
+        varref {
+          varnum: 1830821920
+        }
+      }
+      if_body {
+        statements {
+        }
+      }
+    }
+  }
+  statements {
+    storage_func {
+      loc {
+      }
+      val {
+      }
+      st: MSTORE
+    }
+  }
+  statements {
+    forstmt {
+      for_body {
+      }
+    }
+  }
+  statements {
+    assignment {
+      ref_id {
+        varnum: 0
+      }
+      expr {
+        binop {
+          op: SI
+          left {
+            binop {
+              op: SDIV
+              left {
+                binop {
+                  op: SUB
+                  left {
+                  }
+                  right {
+                    binop {
+                      op: ADD
+                      left {
+                      }
+                      right {
+                        varref {
+                          varnum: 0
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+              right {
+                binop {
+                  op: KECCAK
+                  left {
+                  }
+                  right {
+                  }
+                }
+              }
+            }
+          }
+          right {
+            unop {
+              op: MLOAD
+              operand {
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  statements {
+    storage_func {
+      loc {
+        binop {
+          op: XOR
+          left {
+            binop {
+              op: MOD
+              left {
+                binop {
+                  op: SUB
+                  left {
+                  }
+                  right {
+                    binop {
+                      op: ADD
+                      left {
+                      }
+                      right {
+                        varref {
+                          varnum: 0
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+              right {
+                unop {
+                  op: MLOAD
+                  operand {
+                  }
+                }
+              }
+            }
+          }
+          right {
+            binop {
+              op: XOR
+              left {
+                unop {
+                  op: MLOAD
+                  operand {
+                  }
+                }
+              }
+              right {
+                binop {
+                  op: XOR
+                  left {
+                    unop {
+                      op: MLOAD
+                      operand {
+                      }
+                    }
+                  }
+                  right {
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+      val {
+        unop {
+          op: MLOAD
+          operand {
+          }
+        }
+      }
+      st: MSTORE
+    }
+  }
+}

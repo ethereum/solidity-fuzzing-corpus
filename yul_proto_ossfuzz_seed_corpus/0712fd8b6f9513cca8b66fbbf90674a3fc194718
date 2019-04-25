@@ -1,0 +1,150 @@
+statements {
+  statements {
+    storage_func {
+      loc {
+        binop {
+          op: SUB
+          left {
+            binop {
+              op: EQ
+              left {
+                binop {
+                  op: SUB
+                  left {
+                    binop {
+                      op: LT
+                      left {
+                        binop {
+                          op: ADD
+                          left {
+                            binop {
+                              op: LT
+                              left {
+                                binop {
+                                  op: LT
+                                  left {
+                                    binop {
+                                      op: EQ
+                                      left {
+                                        binop {
+                                          op: LT
+                                          left {
+                                            varref {
+                                              varnum: 0
+                                            }
+                                          }
+                                          right {
+                                          }
+                                        }
+                                      }
+                                      right {
+                                      }
+                                    }
+                                  }
+                                  right {
+                                  }
+                                }
+                              }
+                              right {
+                                unop {
+                                  op: MLOAD
+                                  operand {
+                                  }
+                                }
+                              }
+                            }
+                          }
+                          right {
+                          }
+                        }
+                      }
+                      right {
+                      }
+                    }
+                  }
+                  right {
+                  }
+                }
+              }
+              right {
+              }
+            }
+          }
+          right {
+            binop {
+              op: SUB
+              left {
+                binop {
+                  op: ADD
+                  left {
+                  }
+                  right {
+                    cons {
+                      strval: "="
+                    }
+                  }
+                }
+              }
+              right {
+                unop {
+                  op: MLOAD
+                  operand {
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+      val {
+        unop {
+          op: SLOAD
+          operand {
+          }
+        }
+      }
+      st: SSTORE
+    }
+  }
+  statements {
+    ifstmt {
+      cond {
+        cons {
+          strval: "="
+        }
+      }
+      if_body {
+        statements {
+          forstmt {
+            for_body {
+            }
+          }
+        }
+      }
+    }
+  }
+  statements {
+    forstmt {
+      for_body {
+        statements {
+          assignment {
+            ref_id {
+              varnum: 9
+            }
+            expr {
+            }
+          }
+        }
+        statements {
+          assignment {
+            ref_id {
+              varnum: 128
+            }
+            expr {
+            }
+          }
+        }
+      }
+    }
+  }
+}
