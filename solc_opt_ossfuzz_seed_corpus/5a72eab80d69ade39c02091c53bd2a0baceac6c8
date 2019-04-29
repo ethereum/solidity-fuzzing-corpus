@@ -1,0 +1,11 @@
+contract C {
+	function f() public pure returns (uint, uint, bytes32) {
+		uint a;
+		bytes32 b;
+		(a,) = f();
+		(,b) = f();
+	}
+}
+// ----
+// TypeError: (103-106): Type tuple(uint256,uint2t256,).
+//ertible to expected type tuple(,bytes32).

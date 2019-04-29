@@ -1,0 +1,10 @@
+pragma experimental SMTChecker;
+
+contract base {
+    enum a { X }
+    function f(a) public { }
+}
+contract tc$st is base {
+// /---3,a)×ğÿÿÿŠcli num a { X }
+    function f(a) public { }
+}

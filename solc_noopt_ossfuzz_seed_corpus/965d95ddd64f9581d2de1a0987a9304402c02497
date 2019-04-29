@@ -1,0 +1,12 @@
+contract A {
+    uint x = 7;
+}
+contract B {
+  uint x = 9;
+}
+contract C is A, B {
+    function a() public returns (uint) {
+        return A.x;
+        return B.x;
+   }
+}

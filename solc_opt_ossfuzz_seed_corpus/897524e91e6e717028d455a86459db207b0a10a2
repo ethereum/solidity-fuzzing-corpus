@@ -1,0 +1,13 @@
+contract D {
+    uint x;
+    function f() public view { x; }
+    function g() publ{}
+}
+contract C1 is D {
+    function f() public {}
+    function g() public view {}
+}
+contract C2 is D {
+    function g() public {}
+}
+// - TypeError:

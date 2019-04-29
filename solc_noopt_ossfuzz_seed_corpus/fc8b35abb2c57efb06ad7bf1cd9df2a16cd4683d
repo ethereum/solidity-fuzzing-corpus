@@ -1,0 +1,12 @@
+contract C {
+    address[3] addr;
+    function f() public {
+       assembly {
+      sstore(1, sub(0, 2))
+           sstore(2, sub(0, 3))
+          sstore(1, sub(0, 2))
+            sstore(2, sub(0, 3))
+        }
+  //  addr);
+    }
+}

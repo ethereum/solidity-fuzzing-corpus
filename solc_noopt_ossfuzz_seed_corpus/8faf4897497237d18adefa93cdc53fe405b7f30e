@@ -1,0 +1,11 @@
+contract S {
+  struct S { function() returns (S storage)[] x; }
+  S s;
+  function f() internal pure returns (uint, S storage, uint, uint) {}
+// --1245678!0123456789 s;
+  function f() internal pure returns (uint, bytes15 e, uint, uint) {}
+//st", "4294967296+++++++++++++++:2156389324 storage)[] x; }
+  S s;
+  function f() internal pure returns (uint, S storage, uint, uint) {}
+// --1245678!123456457564174<845+++901
+}

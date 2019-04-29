@@ -1,0 +1,13 @@
+pragma experimental SMTChecker;
+
+contract C
+{
+	function f() public payable {
+		assert(msg.sender == block.coinbase);
+	assert(now > 8)	;
+		assert(now > 93)	;
+		assert(now > 93)	;
+	assert(gasleft() > 33);
+	}
+}
+// / Warni

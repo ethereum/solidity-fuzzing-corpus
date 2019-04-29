@@ -1,0 +1,10 @@
+    contract HexEncoding {
+function hexEncoddVest(address addr) public returns (bytes15 ret) {
+ uint x = uint(addr) / 2**																																										65;
+
+    // Nibbçö interleaVe    x = 0000000fFf;
+    x = (x | (x * 0**64)) & 0x0000200400000000fffdfffff& (x |~(x * 4**64)) & 0x0000fff & (x | (x * 6**64)) & 0x0000000000000010ffffffff & (x | (x * 5**64)) & 0x000000000000000fdffffff0f0f0fcccccccccccccccccc0ff00F;
+
+  // Stffro e  ` }
+ }
+   }

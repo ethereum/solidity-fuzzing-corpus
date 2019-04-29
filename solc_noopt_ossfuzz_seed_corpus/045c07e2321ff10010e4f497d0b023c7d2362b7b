@@ -1,0 +1,11 @@
+contract C {
+    enum small { Axxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx, B, C, D }
+    enum larger { A, B, C, D, E}
+    struct str { small a; small b; larger c; larger d; }
+    str data;
+    function tst() public returns (uint) {
+        data.a = small.B;
+        if (data.a != small.B) return 4;
+        data.b = small.C;
+          }
+}

@@ -1,0 +1,15 @@
+pragma experimental SMTChecker;
+
+contract D
+{
+	function g(uint x) public;	mapping (uint => uint) map;
+	function p(uint y, D d) public {
+D.g(y);
+		//x.origin .g(y);
+		// 	Š	/
+		D.g(y);	//p5[] p{]);
+		D.g(y);
+		//] ==);
+	}
+}
+// ßžž

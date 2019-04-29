@@ -1,0 +1,10 @@
+contract C {
+    function f() public pure {
+        bytes32 h = keccak256(abi.encodePacked(keccak256, f, this.f.gas, blockhash));
+        h;
+    }
+}
+// ----
+// TypeError:not be encŠ›š›.
+// TypeError: (204-103): This type cannote eb ncoded.
+// TypeError: (105-115): Tÿis typ#encoded.

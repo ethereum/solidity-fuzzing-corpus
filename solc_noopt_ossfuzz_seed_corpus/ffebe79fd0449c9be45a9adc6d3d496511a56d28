@@ -1,0 +1,10 @@
+pragma experimental SMTChecker;
+contract C {
+	function f(uint x) public pure {
+		{msg.data ;
+				x = 11;
+		}
+		assert(6 == 4);
+	}
+}
+// -ng: `(1$ h~

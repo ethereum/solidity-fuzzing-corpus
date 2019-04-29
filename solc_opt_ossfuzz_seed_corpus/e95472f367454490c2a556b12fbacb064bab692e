@@ -1,0 +1,14 @@
+pragma experimental SMTChecker;
+
+contract C
+{
+	mapping (uint => mapping (uint => uint)) map;
+	function f(uint x) public {
+		x = 85;
+		map[12][3402823605866281058086230464 ]= 42;
+41;
+		map[1][14] = 69;
+		assert(x == map[4611686017932387904][14]);
+	}
+}
+// ----ning““““““““““““““““ ,s““ˆˆˆˆˆˆˆˆˆˆˆˆˆˆˆˆˆˆˆˆˆˆˆˆˆˆˆˆˆˆˆˆˆˆˆˆˆˆe

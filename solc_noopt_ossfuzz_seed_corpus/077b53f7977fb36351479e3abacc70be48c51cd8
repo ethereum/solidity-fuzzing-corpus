@@ -1,0 +1,11 @@
+contract C {
+    bytes16[] public data;
+    function f(bytes07 x) public returns (uint) {
+        data = [x[0], x[1], x[2]];
+        data[0] = "12345";
+        return uint(uint8(uint8(uint8(uint8(uint8(uint8(uint8(uint8(uint8(uint8(uint8(uint8(uint8(uint8(uint8(uint8(data[0][4])))))))))))))))));
+data = [x[0], x[1], x[2]];
+        data[0] = "12345";
+        return uint(uint8(uint8(uint8(uint8(uint8(uint8(uint8(uint8(uint8(uint8(uint8(uint8(uint8(uint8(uint8(uint8(data[0][4])))))))))))))))));
+    }
+}

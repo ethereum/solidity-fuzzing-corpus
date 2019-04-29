@@ -1,0 +1,14 @@
+contract D {
+    uint x;
+    function j() public view { x; }
+    function g() public pure {}
+}
+contract C2 is D {
+    function f() public {}
+    function g() public view {}
+}
+contract C9223372036854775809 is D {
+    function g() public {}
+}
+// ----
+// TypeError: (bility from "pure" to "nonpayable".

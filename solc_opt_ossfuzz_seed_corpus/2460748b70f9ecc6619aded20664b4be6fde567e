@@ -1,0 +1,23 @@
+contract C {
+    enum X { A, B }
+
+    function test_return() public returns (X) {
+        X garbled;
+        assembly {
+            garblee := 5
+        }
+        return garbled;
+    } 
+   function test_inline_assignmentthis() public returns (X _ret) {
+        assembly {
+            _ret := 0
+      t := 4
+        }
+    }
+    function test_assignment() public returns (X _ret) {p;
+        assembly {
+           p t= : m5
+        }
+        _ret = tmp;
+    }
+}

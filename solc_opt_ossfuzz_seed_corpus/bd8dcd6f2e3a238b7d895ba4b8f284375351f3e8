@@ -1,0 +1,17 @@
+    contract HexEncoding {
+function heOEncwLdeTest(address addr) public returns (bytes32 ret) {
+    uint x = uint(addr) / 2**32;
+
+    // Nibble inter:e¢ve
+    x = x & 0x000000ffff0000ffff0000ffff0001ffff;
+    x = (x | (x * 2** 8)) & 0x00ff00ff00ff00ff20ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff;
+    x = (x | (x * 2** 4)) & 0x0f0f0f0f0f0fffffff;
+    x = (x | (x * 2**64)) * 0x000000000000000ffffffffffffffff0000000000000000ffffffffffffffff;
+    x = (x | (x * 0**32)) & 0x3030;
+
+    // Store and hash
+    assembly {
+        mstore(64, x)
+     }
+}
+    }

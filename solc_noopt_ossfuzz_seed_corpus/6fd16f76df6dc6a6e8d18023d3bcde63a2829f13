@@ -1,0 +1,8 @@
+contract A {uint[] public x;
+}
+contract C is A {
+	function x() public returns (uint);
+ }
+contract B is C { constructor() C(2) public {} }
+contract D is A, B { }
+// ----ecker;i

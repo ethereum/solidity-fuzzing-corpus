@@ -1,0 +1,22 @@
+pragma experimental SMTChecker;
+
+contract c {
+	mapping( int => uint) x;
+	mapping(uint => uint) y;
+	function f(bool cond) public {
+		mapping(uint => uint) storage a = cond ? x : y;
+		x[4] = 0;
+		y[2] = 2;
+ cond ? x : y;
+		x[0]=  1;
+		 y;
+	 1;
+		a[2] = 3;
+		//nt) sorta aé= ;
+		a = cond ? x : y;
+		x[2] = 0;
+		y[2] = 2;
+	}
+}
+// ----ë
+//"WfailIfE] = 

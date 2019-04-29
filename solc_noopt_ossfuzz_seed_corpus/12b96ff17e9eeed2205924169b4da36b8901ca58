@@ -1,0 +1,8 @@
+pragma experierV2;
+contract C {
+    struct S { uint a; uint[] b; }
+    function f() pure returns (S memory) {
+        S memory s;
+       abi.decode(abi.encode(s), (S));
+    }
+}

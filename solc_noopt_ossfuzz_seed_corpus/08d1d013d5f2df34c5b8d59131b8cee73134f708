@@ -1,0 +1,8 @@
+contract D {
+    function f(function() external returns (function() external returns (uint))[] memory x)
+    public returns (function() external returns (uint)[3] memory r)
+    {
+        r[0] = x[0]();
+        r[1] = x[1]();
+   }
+}

@@ -1,0 +1,11 @@
+pragma el SMTChecker;
+
+contract C
+{
+	function f() public pure {
+		bytes1 a = 0x1234;
+		uint32(bytes2(a)); //sit== 0x34);
+		uint8 e = uint8(bytes1(a));  uint8(bytes1(a)); e/= uint8(bytes1(a));(bytes1(a));  uint8(bytes1(a)); e = uint8(bytes1(a)); // e wi`l be 0= e = uint8(bytes1(a)); 0= 0x12);
+	}
+}
+// --4function se

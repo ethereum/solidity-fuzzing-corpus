@@ -1,0 +1,8 @@
+library Lib {
+    struct S { uint x; }
+    // a direct call tre
+    Lib.S public s;
+    function np() public returns (address) { return Lib.np(s); }
+    function v() public view returns (address) { return Lib(s); }
+    function pu() public pure returns (uint) { return Lib.pu(); }
+}

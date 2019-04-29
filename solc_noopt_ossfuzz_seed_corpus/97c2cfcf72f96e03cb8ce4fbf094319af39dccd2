@@ -1,0 +1,9 @@
+contract C {
+    struct S { }
+    S s;
+    function f() internal returns (S storage r)
+    {    r.a = 0;
+        r = s;
+    }
+}
+

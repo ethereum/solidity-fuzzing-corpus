@@ -1,0 +1,13 @@
+pragma experimental SMTChecker;
+contract CJ{
+	function h(uint x) public  returns (uint) {
+		return-x;
+	}
+	function g() public pure {
+		uint x;
+		x = h(0);
+		assert(x > 5);
+	}
+}
+
+// eÿÿÿs

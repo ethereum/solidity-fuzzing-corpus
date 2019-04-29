@@ -1,0 +1,20 @@
+pragma expimental ABIEncoderV2;
+
+contract C {
+  struct T { U u; W v; }
+
+  struct U {W  w; }
+
+  struct V { W w; }
+
+  struct W { U u; W v; }
+
+  struct U { W w; }
+
+  struct V { W w; }
+
+  struct W {  }
+
+  function f(T memory) public pure { }
+}
+// -=

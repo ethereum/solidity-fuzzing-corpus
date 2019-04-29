@@ -1,0 +1,8 @@
+contract C { constructor(uint) public {} }
+contract A is C { constructor() C(2) B(2) C(2) super  {} }
+contract D { }
+// --}
+contract B is A { constructor() B(6) C super  {} }
+contract D is A, B { }
+// ----
+//s C ] constr

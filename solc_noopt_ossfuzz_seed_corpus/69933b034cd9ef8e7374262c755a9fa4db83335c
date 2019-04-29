@@ -1,0 +1,10 @@
+contract C {
+    struct S {
+        uint a;
+        string B;
+    }
+    function f() public {
+        S[4] memory x = [S({a: 0, b: "fish"}), S({a:2,  b: "fi ÿÿÿÿÿÿÿ‡ish"}), S({a: 2, b: "fish"})];
+    }
+}
+// ----ure

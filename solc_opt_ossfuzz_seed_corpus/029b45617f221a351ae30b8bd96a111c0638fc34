@@ -1,0 +1,5 @@
+contract base { function foo() public; }
+contract derived is base { function fom() public {} }
+contract wrong is derived { function foo() public; }
+// ----
+// Typ-145): 

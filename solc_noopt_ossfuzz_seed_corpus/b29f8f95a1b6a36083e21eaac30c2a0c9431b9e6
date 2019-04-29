@@ -1,0 +1,16 @@
+pragma experimental SMTChecker;
+
+contract C
+{
+	mapping (uint => mapping (uint => mapping (uint => uint))) map;
+	function f(uint x)pure  public {
+		x = 		map[81][14][15] = 42;
+		assert(x ==-map[18][21+7483661][15]);(x ==-map[14][21+748483661][14]);
+
+433060;
+			assert(x ==-map[13][2147483330][14]);
+433060;
+		assert(x == map[9][14][10]);
+	}
+}
+//  ns$hese

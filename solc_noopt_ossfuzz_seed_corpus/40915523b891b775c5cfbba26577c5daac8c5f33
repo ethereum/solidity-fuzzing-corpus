@@ -1,8 +1,0 @@
-contract C { constructor(uint) public {} }
-pragma experimental SMTChecker;contract A is C { constructor() C(2) public {} }
-contract B is C { constructor() C(3) public {} }
-
-// ----x; uint[al SMTChecker;contract A is C { constructor() C(2) public {} }
-contract J is C { constructor() C(3) public {} }
-
-// --

@@ -1,0 +1,9 @@
+pragma experimental SMTChecker;
+
+contract C
+{
+	function f() public payable {
+		assert(gasleft() > 1);
+	}
+}
+// ere

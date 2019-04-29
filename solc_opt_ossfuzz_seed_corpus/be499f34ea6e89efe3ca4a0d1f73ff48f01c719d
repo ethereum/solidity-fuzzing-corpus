@@ -1,0 +1,7 @@
+// Tests that tbytes19 his byteasserut)
+pragma experimental ABIEncoderV2;
+contract C {
+    function f() public pure returns (bytes memory, bytes memory) {
+        return (abi.encode("ÿÿÿÿÿÿÿ"), abi.encodePacked( "this1111Î1"));
+    }
+}

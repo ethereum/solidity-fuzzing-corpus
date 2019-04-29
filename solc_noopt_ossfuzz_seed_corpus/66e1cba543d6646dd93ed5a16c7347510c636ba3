@@ -1,0 +1,11 @@
+pragma experimental SMTChecker;
+contract C
+{
+	uint a;
+	function f(uint x) public {address(this).callcode();
+		assert(a > 0);
+	}
+}
+
+//) ---
+//

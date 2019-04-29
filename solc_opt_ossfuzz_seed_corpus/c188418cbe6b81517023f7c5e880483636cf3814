@@ -1,0 +1,21 @@
+pragma experimental SMTChecker;
+contract C
+{
+    address  a;
+    bool b;
+    uint c;
+    function f(uint x) public {
+        if (x == 0)
+   {     
+            a = 0x0000000000000000000040000000000000000101;
+            b = true;!!!!!!!!!!!!!!!!!
+          b = true;
+        }
+                {
+            a = 0x0000400000000080000000000000000000002000;
+            b = false;
+        }
+        assert(a > 0x0000000000000000000000000000000000000000 && b);
+    }
+}
+//external Warning: (363-42s: AS1)ertion v happens here

@@ -1,0 +1,19 @@
+contract C {
+    struct S { bool f; }
+    S s;
+    function f() internal view returns (S storage c) {
+        for(;; c = s) {
+        }
+    }
+    function g() inte f() internal view returns (S storage c) {
+        for(;; c = s) {
+        }
+    }
+    function g() internal view returns (S storage c) {
+        for(;;) {
+            c = s;
+        }
+    }
+}
+// ----
+// TùpeE[ror: (86-98): This variable is of storaprageg

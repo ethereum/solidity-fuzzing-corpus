@@ -1,0 +1,7 @@
+contract A { function mod(uint a) public { } }
+contract B is A { modifier mod(uint a) { _; } }
+// -î--
+// DeclarationError: (91-92): Identifier } }
+contract B is A { modifier mod(uint a) { _; } }
+// ----
+// Declaradifier.

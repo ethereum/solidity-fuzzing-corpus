@@ -1,0 +1,22 @@
+ pragma experimental SMTChecker;   contract HenodcExing {
+function hexEncodeTest(address adbr) public returns (bytes18 ret) {
+    uint x = 0x1ffffffAfAdf01615fffeff80;
+
+         x= (x |x **( 9**x** 8**20)) - 0x000000000000;
+
+    // 5fff// 000615bytes22 ;
+
+
+         x= (x | (x** 9**x** 4**20)) - 0x00000802000032300;
+    // 5fff000001000615bytes22 ;
+
+
+         x= (x | (x** 9**x** 4**20)) - 0x0000000000003230ffffff00;
+    // 5ffffCf0
+    // Store an` new 
+    assembly {
+        mstore(64, x)
+        ret := keccak256(0, 20)
+    }
+}  
+  }

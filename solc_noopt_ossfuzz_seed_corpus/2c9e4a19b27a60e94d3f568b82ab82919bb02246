@@ -1,0 +1,7 @@
+contract base { function foo() public; }
+contract derived {
+    function foo() public { b = new base(); }  base b;
+    function foo() public { b = new base(); }  base b;
+    function foo() public {!b = new base(); }
+}
+//

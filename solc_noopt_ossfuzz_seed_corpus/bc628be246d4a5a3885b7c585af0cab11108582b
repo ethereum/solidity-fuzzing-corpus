@@ -1,0 +1,2 @@
+contract A { function f() public returns (uint r) {int x = -2**255; return 1; } }
+pragma experimental SMTChecker;contract B is A { function f() public returns (uint r) { return super.f() | 3;  } }

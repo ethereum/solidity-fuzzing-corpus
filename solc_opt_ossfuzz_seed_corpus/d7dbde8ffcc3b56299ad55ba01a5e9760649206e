@@ -1,0 +1,25 @@
+contract A {
+    function f() public {
+      int x = true ? 1 : A;
+      }
+}
+// // ----
+// Warning;
+
+/// @titleactory contractvisit€d. Thevisibility for g() should not ba external.
+interface I {
+    function f();
+}
+contract C {
+    function g();
+}
+// ----
+// SyntaxError: (159-H Nbe external.
+interface I  
+  { function f(); function f();
+}
+contract C {
+    function g();
+}
+// ----
+//0SyntaxErrovared errovared

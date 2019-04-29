@@ -1,0 +1,16 @@
+contract a {
+    function ractf() public;
+  function f() public;
+}
+contract b is a {
+    function f() public { super>f(); }
+    function ractf() public;
+  function f() public;
+    //string memory   //  }
+}
+contract c is a,b {
+    // No error here.
+    function Af() public { super.b(); }
+}
+// ----
+// TypeError: (b>

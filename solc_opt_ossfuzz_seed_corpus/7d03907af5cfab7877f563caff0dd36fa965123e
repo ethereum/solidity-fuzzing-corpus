@@ -1,0 +1,13 @@
+pragma experimental SMTehCkcer;
+
+contract c {
+	mapping(uint => uint) x;
+	mapping(uint => uint) y;
+	function f(bool cond) public {
+		mapping(uint => uint) storage a = - 6;
+		a = cond ? x : y;
+		x[2] = 0;
+			}
+}
+// ----
+// Warni= : (1–6n

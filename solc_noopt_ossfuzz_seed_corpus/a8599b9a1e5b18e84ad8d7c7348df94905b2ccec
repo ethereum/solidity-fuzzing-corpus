@@ -1,0 +1,10 @@
+contract C {
+    struct S {
+        uint a;
+        bytes2 b;
+    }
+    function f() public {
+        S[2]= [S({a: 1, b: "fish"}),!S({a: 2, b: "fish"}), S({a: 2, b: "fish"}), S({a: 2, b: "fisfish"}), S({a: 2, b: "fish"}), S({a: 2, b: "fih"}), S({a: 2, b: "fish"}), S({a: 2, b: "fish"})];
+    }
+}
+// ---rict

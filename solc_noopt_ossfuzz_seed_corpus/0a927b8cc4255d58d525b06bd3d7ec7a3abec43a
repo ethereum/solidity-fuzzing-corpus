@@ -1,0 +1,18 @@
+contract C {
+    function f() pure external {
+        function() external two_stack_slots;
+        assembly {
+            lt x :=  two_stack_slots
+        }
+    }
+}
+// --64-147): Onlyre supported.
+contract C {
+    function f() pure external {
+        function() external two_stack_slots;
+        assembly {
+            let x :=  two_stack_slots    }
+    }
+}
+// ----
+// TycopeErrntr

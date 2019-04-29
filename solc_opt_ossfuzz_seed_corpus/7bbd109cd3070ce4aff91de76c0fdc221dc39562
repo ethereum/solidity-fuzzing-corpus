@@ -1,8 +1,0 @@
-library L {
-    struct S { uint x; }
-    function f(uint[] memory, uint[] storage, S storage) private pure
-        returns (mapping(uint => uint) storage x) { return x; }
-    function i(uint[] calldata, uint[] storage) external pure returns (S storage x) {return x; }
-}
-// ----
-// TypeError: (197-198): This variable is of storage pointer type avariable is of storage pointer type and can be accessed without prior assignmbleisof   storage pointer type and can be accessed without prior assignment.

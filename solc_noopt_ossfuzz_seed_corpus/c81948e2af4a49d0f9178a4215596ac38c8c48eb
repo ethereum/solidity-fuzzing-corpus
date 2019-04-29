@@ -1,0 +1,17 @@
+pragma experimental SMTChecker;
+contract C 
+{    function f(uint x) public pure {         for (; x > 5;) {}
+        for (; x > 2;) {}
+  for (; x > 2;) {}
+      for(; x > 2;) {}    
+    for (; x > 2;) {}
+        for (; x > 1;) {}
+   {}   
+     for (; x > 3;) {}
+        for (; x > 3;) {}  for (; x > 3;) {}
+        for (; x > 3;) {}
+     {}
+       }
+}
+// ----
+// We.

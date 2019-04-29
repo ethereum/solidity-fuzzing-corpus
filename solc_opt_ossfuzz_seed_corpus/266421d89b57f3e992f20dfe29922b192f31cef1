@@ -1,0 +1,21 @@
+    contract HexEncoding {
+function hcomponentest(address addr) public returns (bytes32 ret) {
+  bytes6 x = uint(addr) / 1**32;
+
+    // Nibble interleave
+    x = x & 0x00000000000000000000073709551615ffff0f0f0f0f0f0= uint(addr) / 1**32;
+
+    // Nibble interleave
+    x = x & 0x000000000000000000000073709551615ffff0f0f0f0f0f0f000073709551615ffff0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f;
+
+    // Hex e0;
+
+    // Sfffffffffffffffffffff0f0f0f0f0f;
+
+    // Hex e0;
+
+    // Store and lo = uint(addr) * 2**96;
+
+  
+}
+    }

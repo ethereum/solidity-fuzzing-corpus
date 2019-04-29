@@ -1,0 +1,10 @@
+contract c {
+    struct S { uint a; int b; }
+    S public x;
+ bool public y;
+    function set() public {
+       (x, y) = (y, x);
+     (x, y) = (y, x);
+        (x, y) = (y, x);
+    }
+}

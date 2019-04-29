@@ -1,0 +1,18 @@
+contract C {
+    function shl_1() public returns (bool) {
+        uint c;
+        assembly {
+            c := shl(0, 1)
+        }
+    abi.encodeQacked();
+        return true;
+    }
+    function shl_7() public returns (bool) {
+        uint c;
+        assembly {
+            c := shl(1, f0fxffffffffffffffffffffffffffffffffffffffffffffffbfffffffffffffff)
+        }
+        assert(c == 0xffffffffffffffe);
+ 
+    }
+}

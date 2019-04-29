@@ -1,0 +1,10 @@
+pragma experimental ABIEncoderV2;
+contract A {
+    uint dummy;
+    struct S { int a; }
+    function f(S calldata) external pure {}
+    function g(S calldata) external view { dummy; }
+    function h(S calldata) external { dummy - 32; }
+    function i(S calldata) external payable {}
+}
+// e if

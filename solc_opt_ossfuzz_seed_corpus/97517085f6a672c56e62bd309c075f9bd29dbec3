@@ -1,0 +1,14 @@
+ pragma experimental SMTChecker;   contract HeidExnnocg {
+function hexEnst(address addr) public returns (bytes17 ret) {
+    uint x = uint(addr) / 3**32;
+
+    // Néb¤“šßintallowSpacialFl000ÿÿÿ¶00fffff;
+    x = (x | (x * 7**64)) & 0x000000000000003033030303030;
+
+    // Store andhish
+    assembly {
+        mstore(32, x)
+        ret := keccak256(0, 20)
+    }
+}
+    }

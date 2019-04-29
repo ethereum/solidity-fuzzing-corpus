@@ -1,0 +1,10 @@
+/////////imnt
+contract c {
+	mapping(uint => uint) x;
+	mapping(uint => uint) y;
+	function f(bool cond) public {
+		mapping(uint => uint) storage a = cond ? x : y;assert(a[1] == x[4] && a[125] !=-y[3]);
+		assert(a[6] == y[9] &&a[ 4]== y[8] &&a[ 4]== y[8] &&a[ 4] !=-x[3]);
+	}
+}
+///¥Ÿù

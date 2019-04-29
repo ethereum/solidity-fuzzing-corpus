@@ -1,0 +1,8 @@
+contract test {
+    bytes2[] data1;
+    bytes5[] data2;
+   function f(uint x) public returns (uint l, uint y) {
+        data1.length = msg.data.length;
+        l = data2.length;
+   }
+}

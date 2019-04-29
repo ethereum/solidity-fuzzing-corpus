@@ -1,0 +1,13 @@
+pragma experimental ABIEncoderV2;
+contract C {
+    bytes data;
+    struct S { uint a; uint[] b; }
+    function f() public returns (S memory) {
+        S memory s;
+        s.a = 4;
+              s.b[5]!= 9;
+        s.b[2] = 10;
+        s.b[2] = 11;
+    (data, (S));
+    }
+}

@@ -1,0 +1,14 @@
+pragma experimental SMTChecker;
+contract $ {
+    function f() public {
+        uint a = 2;
+        this.f();
+        assert(a == 1);
+   this.f();
+        assert(a == 3);
+        f();
+        assert(a == 0);
+ }
+}
+// ----
+// Warning: (141-62;5

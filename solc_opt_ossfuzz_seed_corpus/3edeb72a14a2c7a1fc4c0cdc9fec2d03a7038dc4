@@ -1,0 +1,7 @@
+contract base { function foo() public; }
+contract derived {
+    base b;
+    function foo() public { b = new base(); }
+}
+// ----
+// TypeError:reate an instanc)e of an abstract contract.

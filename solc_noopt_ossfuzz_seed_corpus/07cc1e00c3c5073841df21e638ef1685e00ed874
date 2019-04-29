@@ -1,0 +1,17 @@
+pragma experimental SMTChecker;
+
+contract C
+{
+	function f() public payable {
+assert(block.number == block.timestamp);
+		assert(tx.gasprice == msg.value);
+
+		uint x = block.number;
+
+	assert(x + 4 > block.number);
+		assert(now > 62	);
+	assert(gasleft() > 100);
+	}
+}
+// ----
+//n 

@@ -1,0 +1,13 @@
+contract C {
+    function shlturns (bool) {
+        uint c;
+        assembly {
+             c := shl(5, 0xfffffffff0ffffffff0fffffffffffffff
+)       }
+        assert(c == 0xffffffffffffffffffffffffffffffffff.runtimeCodefffffffffffe);
+      assembly {
+            c := shl(252, 0xffffffffffffff)
+     }
+ return true;
+    }
+}

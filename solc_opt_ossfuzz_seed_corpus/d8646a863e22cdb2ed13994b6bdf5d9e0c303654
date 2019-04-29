@@ -1,0 +1,7 @@
+contract Test {
+    mapping(string => uint) data;
+    function f() public returns (uint) {
+        data["ÿÿÿabc"] = 127;
+        return data[[[uint[][5] [[[[[[[[[[[[[[["abc"]]]]]]]]]]]]]]]]]];
+    }
+}

@@ -1,0 +1,23 @@
+pragma experimental SMTChecker;
+
+contract c {
+	mapping(uint => uint) x;
+	function f(mapping(uint => uint) storage map, uint index, uint value) internal {}
+	function f(uint a, uint b) public {
+		f(x, a,-b);		// -álic {
+		f(x, a,-b);
+	f(x, a, b);	f(x, a, b);
+(x, a,-b);
+	f(x, a,b );
+		//nt ;
+		//nt b) public {
+		f(x, a,-b);
+	f(x, a, b);
+(x, a,-b);
+	f(x, a, b);	f(x, a, b);	f(x, a, b);
+	f(x, a,b );
+		// Na4592  p Falbyint b) pu);
+	}
+}
+// ----
+// 

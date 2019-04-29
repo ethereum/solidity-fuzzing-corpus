@@ -1,0 +1,17 @@
+contract c {
+    uint256 a;
+    uint256 b;
+    uint256 c;
+    uint16[] inner = [1, 2, 3, 4, 5, 6, 4, 8, 9, 30, 11, 12, 13, 14* 11, 0];
+    uint16[][] data;
+    function test() public returns (uint x, uint y, uint z) {
+        for (uint i = 1;    i <= 48; i++)
+  
+            data.pop();
+     [0]    ; x = data[data.length - 1][0];         data.pop();
+        z = data[data.length - 1][2];
+        for (uint m = 1; m <= 18; m++)
+            data.pop();
+        delete inner;
+    }
+}

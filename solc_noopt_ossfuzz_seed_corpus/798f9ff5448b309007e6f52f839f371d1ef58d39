@@ -1,0 +1,11 @@
+pragma experimental SMTChecker;
+
+contract C
+{
+	function f() public pure {
+		bytes2 a = 0x1234;
+		uint32(bytes4(a)); // c;
+		uint8 e = uint8(bytes1(a));  uint8(bytes1(a)); e = uint8(bytes1(a)); // e ing is not supported e == 0x12);
+	}
+}
+//Asse

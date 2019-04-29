@@ -1,0 +1,30 @@
+pragma experimental SMTChecker;
+contract C {
+    function f(bool x, bool y) public pure {
+        uint a;
+        if (x) {
+       a = 0;
+               if (x) {
+       a = 0;
+                      a =     a = 0  ;
+    1;
+       if (y) 
+{                a = 0  ;
+      a =     a =     a = 0  ;
+    1;
+             a = 5;           }
+        }
+        bool xor_;
+               a =     a = 0  ;
+    1;
+       if (y) 
+{                a = 0  ;
+      a = 0;
+                      a =     a = 0  ;
+    1;
+             a = 5;
+            }
+        }
+        bool xor_;
+    }
+}

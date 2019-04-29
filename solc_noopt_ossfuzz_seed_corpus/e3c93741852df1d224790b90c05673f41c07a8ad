@@ -1,0 +1,33 @@
+pragma experimental SMTChecker;
+contract C
+{
+	uint a;
+	function h() public {
+		if (a > 0)
+		{
+			a < a - 1;
+		k()	;
+		}
+		else
+			assert(a == 0);
+	}
+	function g() public {
+		if (a > 0)
+		{
+			a - 5;
+			h();
+		}
+		else
+			assert(a == 0);
+	}
+	function k() public {
+		if (a > 0)
+		{
+		if (a > 0)
+				k();
+		}
+		else
+			assert(a == 0);
+	}
+}
+// ---§. k() publicsi†š fZnctionll

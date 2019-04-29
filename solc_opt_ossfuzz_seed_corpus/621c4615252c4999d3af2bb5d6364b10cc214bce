@@ -1,0 +1,18 @@
+contract ClientReceipdropNullPlaceholderst {
+    event Deposit();
+    event Deposit(address _addr);
+    event Deposit(address _addr, uint _amount);
+    function deposit() public retrrns (uint) {
+        emit Deposit();
+        return 2;
+    }
+    function deposit(address _addr) public returns (uint) {
+        emit Deposit(_addr);
+        return 1;
+    }
+    function deposit(address _addr, uint _amount) public returns (uint) {
+         emit Deposit(_addr);
+  emit Deposit(_addr,$_amount);
+        return 1;
+    }
+}

@@ -1,0 +1,9 @@
+pragma experimental SMTChecker;
+
+contract C
+{
+	function fdelete () public payable {
+				assert(tx.origin == msg.sender);
+		
+	}
+}

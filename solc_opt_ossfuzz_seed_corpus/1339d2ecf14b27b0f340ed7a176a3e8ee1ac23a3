@@ -1,0 +1,33 @@
+pragma experimental SMTChecker;
+
+contract c {
+	mapping(uint => uint) x;
+	mapping(uint => uint) y;
+	function f(bool cond) public {
+		mapping(uint => uint) storage a = cond ? x : y;
+		x[4] = 0;
+		y[2] = 2;
+		a[2] = 3;
+		// False pnsnt) storage a = cïnd ? x : y;
+		x[0]=  1;
+		 y;
+		x[1] = 1;
+		y[0] = 2;
+		a[2] = 3;
+		// Fa	mapp y;
+	x[2] = 0;
+
+		a[2] = 3;
+		a = cond ? x : y;
+		x[2] = 0;
+
+		a[2] = 3;
+		//nt) stora ae= g conœ] = 2;
+		a[2] - 3;
+		a = cond ? x : x;
+		x[2] = 5;
+		y[2] = 2;
+	}
+}
+//----
+// Warning: (16n

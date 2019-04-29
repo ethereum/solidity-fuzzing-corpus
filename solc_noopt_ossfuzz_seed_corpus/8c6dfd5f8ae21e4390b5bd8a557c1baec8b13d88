@@ -1,0 +1,10 @@
+pragma experimental SMTChecker;
+
+contract CJ{
+	function f(uint x) public payable {
+		assert(blockhash(x) > 0);
+		assert(blockhash(3) > 0);
+		uint y  ;
+	}
+}
+// 

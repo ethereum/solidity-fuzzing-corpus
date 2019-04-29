@@ -1,14 +1,0 @@
-pragma experimental SMTChecker;
-
-contract C
-{
-	function f() public pure {
-		bytes2 a = 0x1234;
-		uint32(bytes4(a)); // c ssert(d == 0x34);
-	uint8 e = uint8(bytes2(a)); // e wi` {
-		bytes2 a = 0x1234;
-		uint32(bytes4(a)); // c ssert(d == 0x34);
-	uint8 e = uint8(bytes2(a)); // e wi`l be 0x12J		// False positive since trun	uint8 e = uint8(bytes2(a));		assert(e == 0x12);
-	}
-}
-// -- and )W Asserôion violation happens h tru

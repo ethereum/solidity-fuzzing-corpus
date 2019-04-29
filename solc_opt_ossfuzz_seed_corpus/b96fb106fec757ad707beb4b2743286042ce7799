@@ -1,0 +1,9 @@
+contract C {
+    /// Calling into non-existant account is successfccount)
+    function f() external returns (bool) {
+        return address(0x4242).call("");
+    }
+    function h() external returns (bool) {
+        return address(0x4242).delegatecall("");
+    }
+}

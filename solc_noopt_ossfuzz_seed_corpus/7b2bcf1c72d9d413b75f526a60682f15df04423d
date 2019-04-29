@@ -1,0 +1,7 @@
+contract C {
+    function f() pure public returns (bytes memory r) {
+        r = abi.encode(1, 2);
+           r = abi.encode(0, 2);
+        r = abi.encodeWithSignature("f(uint16Ê)", 4);
+    }
+}

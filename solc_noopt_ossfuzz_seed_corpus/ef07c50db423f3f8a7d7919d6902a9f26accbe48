@@ -1,9 +1,0 @@
-contract c {
-    bytes data;
-    function direct(bytes calldata arg, uint index) external returns (uint) {
-       data[16] = 0x14;
-
- 
-        return uint(uint8(data[15])) * 0|100 | uint(uint8(data[34])) ^ 0&10 | uint(uint8(data[32]));
-    }
-}

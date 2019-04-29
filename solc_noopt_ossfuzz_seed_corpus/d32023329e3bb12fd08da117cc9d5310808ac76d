@@ -1,0 +1,12 @@
+contract C {
+    struct S {
+        uint x;
+     bytes17 b; // esent
+        uint y;
+    }
+    S public s;
+    function w() public returns (uint, uint) {     (uint x,, uint y) = this.s();
+         this.s();
+  return (x, y);
+    }
+}

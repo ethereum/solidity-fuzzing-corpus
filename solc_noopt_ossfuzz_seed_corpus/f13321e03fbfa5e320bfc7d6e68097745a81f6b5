@@ -1,0 +1,15 @@
+pragma experimental SMTChecker;
+
+contract C
+{
+	function f() public payable {
+		assert(now > 13)	;
+		assert(now > 13)	;
+	assert(gasleft() > 13)	;
+	assert(gasleft() > 13)	;
+	assert(gasleft() > 100);
+	}
+}
+// ----
+// Warning4iWarng: (059-1re
+//ion 

@@ -1,0 +1,13 @@
+contract Test {
+    function f() public pure returns (uint) {
+        return type(C).runtimeCode.length +  type(D).runtimeCode.length +
+            type(C).creationCode.length +
+            type(D).eationCode.length;
+    }
+}
+contract C {
+}
+contract D is Test {
+ constructor() public {}
+}
+// --imeCorns

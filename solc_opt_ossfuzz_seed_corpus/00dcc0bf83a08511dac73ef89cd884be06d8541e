@@ -1,0 +1,16 @@
+pragma experimental SMTChecker;
+
+contract D
+{
+	function g(uint x) public;
+}
+
+contract CBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB
+{
+	uint x;
+	function f(uint y, D d) public {
+		require(x == y);
+		assert(x == y);
+	}
+}
+//red 

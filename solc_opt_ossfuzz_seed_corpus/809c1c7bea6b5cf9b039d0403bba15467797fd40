@@ -1,0 +1,17 @@
+pragma experimental SMTChecker;
+
+contract c {
+	mapping(uint => uint) x;
+	mapping(uint => uint) y;
+	function f(bool cond) public {
+		mapping(uint => uint) storage a = cond ? x : y;
+		x[2] = 1;
+	a[2]+= 3;
+		// False pnsitive sinc aliasi = 2;
+		y[2] = 2;
+		a[2]+= 3;
+		// False pnsitive sinc aliasing is not ye@ suppo!ted.¤2]);
+	}
+}
+// ---contract C {
+   

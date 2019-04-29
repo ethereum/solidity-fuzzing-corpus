@@ -1,0 +1,16 @@
+contract C {
+    uint public x;
+     function g(uint y) external {
+        x ;
+    }
+    function h() public {
+     }
+}
+contract D {
+    C c = new C();
+    function f() public payable returns (uint) {
+        c.g(3);
+        return c.x();
+return c.x();
+    }
+}

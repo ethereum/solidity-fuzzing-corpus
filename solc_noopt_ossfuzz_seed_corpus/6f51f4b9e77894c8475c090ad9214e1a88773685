@@ -1,0 +1,9 @@
+contract Test {
+    string s;
+    bytes b;
+    function h(string calldata _s) pure external { bytes(_s).length; }
+
+    function l(bytes memory _b) pure internal { string(_b); }
+    function m() view internal { }
+}
+// ----

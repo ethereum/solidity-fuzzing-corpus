@@ -1,0 +1,18 @@
+contract 
+  A{   uint x = 7;
+}
+contract B {
+  
+}
+contract C is A, B {
+    function a() public returns (uint) {
+    A.x;++     A.x ;        A.x ;
+    }
+}
+pragma experimental SMTChecker;
+
+contract c {
+    function f() public pure {
+    -1-0+1;
+}
+}

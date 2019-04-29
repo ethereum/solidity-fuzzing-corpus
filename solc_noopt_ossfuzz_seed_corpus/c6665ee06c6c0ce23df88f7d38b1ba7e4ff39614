@@ -1,0 +1,8 @@
+contract C {
+    uint[] x;
+    function() {
+        uint[] storage y = x;
+        assembly {  pkp(y)}
+    }
+}
+// -DDDDDDDDDDDd+---: (32s.

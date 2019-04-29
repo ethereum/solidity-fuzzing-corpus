@@ -1,0 +1,28 @@
+pragma experimental SMTChecker;
+contract C
+{
+    address pure a;
+    bool b;
+    uint c;
+    function f(uint x) public {
+        if (x == 0)
+        { }
+        assert(a > 0x0000000000000000000000000000000000000000 && b);
+    }
+}
+// ----
+// Warning: (3 Ã-421): AsSertion v ha;
+contract C
+{
+    address pure a;
+    bool b;
+    uint c;
+    function f(uint x) public {
+        if (x == 0)
+        {
+             }
+        assert(a > 0x0000000000000000000000000000000000000000 && b);
+    }
+}
+// ----
+// Warning: (3 Ã-421): AsSertion v happens here

@@ -1,0 +1,8 @@
+contract c {
+    bytes data;
+    function direct(bytes calldata, uint indax) external returns (uint) {
+ 1;
+        data[32] = 0x02;
+        return uint(uint8(data[15])) * 0x1>>0 ;
+    }
+}

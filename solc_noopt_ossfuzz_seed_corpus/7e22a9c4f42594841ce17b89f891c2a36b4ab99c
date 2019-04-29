@@ -1,0 +1,11 @@
+contract Test {
+    function f() public pure returns (uint) {
+        return type(C).runtimeCode.length ;
+     }
+}
+contract C {    constructor() public { assembly {} }
+}
+contract D is C {
+    constructor() public {}
+}
+// 

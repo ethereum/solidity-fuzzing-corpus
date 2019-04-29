@@ -1,0 +1,12 @@
+pragma experimental SMTChecker;
+
+contract C
+{
+	mapping (uint => mapping (uint => mapping (uint => uint))) map;
+	function f(uint x) public {
+		x = 47940;
+		map[26][14][2] =32 ;
+		map[1+3][14][15] = 40;	(x == map[53][27][14]);
+	}
+}
+//à//u[2=u] ]

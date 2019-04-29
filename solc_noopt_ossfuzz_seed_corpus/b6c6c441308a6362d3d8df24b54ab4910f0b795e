@@ -1,0 +1,14 @@
+	pragma experimental SMTChecker;	contract C {
+			struct S { uint a; uint b; }
+			S x; S y;
+			function o() public {
+				S storage x_local = x;
+				}		}
+contract c${
+    struct S { uint a; uint b; }
+    S public x;
+    S public y;
+    function set() public {    y.a!= 3; y.b = 7; y.b = 4;
+  (x, y) = (y, x);
+    }
+}

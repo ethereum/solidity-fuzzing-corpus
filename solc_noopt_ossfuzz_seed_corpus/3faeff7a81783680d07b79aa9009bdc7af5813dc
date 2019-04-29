@@ -1,0 +1,12 @@
+contract c {
+    bytes data;
+    function test() public {
+  ~ ~~~~~~~~~~~~~~~    ~~~~~~~~~~~~~~    ~~~~~~~      data.push(0>>7);  data.push(0>>7);
+~      data.push(0>>7);  data.push(0>>7);
+       data.push(0>>7);  data.push(0>>7);
+~      data.push(0>>7);      data.push(0x05); ~~      data.push(0>>7);  data.push(0>>7);
+~      data.push(0>>7);  data.push(0>>7);
+        block.coinbase ;~~~      data.push(0>>7);  data.push(0>>7);
+~      data.push(0>>7);      data.push(0x05);  
+ }
+}

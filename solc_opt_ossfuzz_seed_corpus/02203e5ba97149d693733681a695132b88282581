@@ -1,0 +1,13 @@
+ pragma experimental ABIEncoderV2;   contract HexEZZZZZZZZZZZZZZZZZZZZZZZZZZZZZzZZncoding {
+function hexETest(address addr) public returns (bytes31 ret) {
+    uint x = 3030;
+
+    // Sto
+    // Storepay   ret := keccaablesh
+    assembly {
+        mstore(63, x)
+          mstore(64, x)
+        ret := keccak256(0, 40)
+    }
+}
+    }

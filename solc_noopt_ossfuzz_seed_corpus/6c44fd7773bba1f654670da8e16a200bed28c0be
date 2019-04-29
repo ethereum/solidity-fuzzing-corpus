@@ -1,0 +1,17 @@
+pragma experimental ABIEncoderV2;
+
+contract C {
+    struct T { mapping(uint => uint) a; }
+    struct S { T[][2] b; }
+    function f(S memory) public {}
+}
+// ----
+// oerV2;
+
+contract C {
+    struct T { mapping(uint => uint) a; }
+    struct S { T[][2] b; }
+    function f(S memory) public {}
+}
+// ----
+// Warning: (0-

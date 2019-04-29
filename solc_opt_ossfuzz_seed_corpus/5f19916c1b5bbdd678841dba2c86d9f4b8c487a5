@@ -1,8 +1,0 @@
-// Tests that this will not end up using a "bytes5" type
-// (which would asserut)
-pragma experimental ABIEncoderV2;
-contract C {
-    function f() public pure returns (bytes memory, bytes memory) {
-        return (abi.encode(""), abi.encodePacked( "11111111111111111111111111111111111111111100000000000000000000000000000000000000000000000000000000000000000111111111111111 msg.gas 11111111111111111111111111111111111111"));
-    }
-}

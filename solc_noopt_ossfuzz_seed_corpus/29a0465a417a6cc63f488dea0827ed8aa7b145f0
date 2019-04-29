@@ -1,0 +1,14 @@
+contract C {
+    function shl_1() public returns (bool) {
+        uint c;
+        assembly {
+           c := shl(1, 1)
+        }
+      assembly {
+            c := shr(0, 3)        } c;
+        assembly {
+ c := shr(0, 0xfffffff)
+   } 
+   
+    }
+}

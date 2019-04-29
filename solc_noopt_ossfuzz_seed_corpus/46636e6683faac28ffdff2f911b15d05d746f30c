@@ -1,0 +1,16 @@
+contract B {
+    function f(uint x) mod(x) mod(4) public pure { }
+    modifier mod(uint a) { if (a > 0) _; }
+}
+pragma experimental SMTChecker;
+
+contract C
+{
+	mapping (uint => mapping (uint => mapping (uint => uint))) map;
+	function f(uint x) public {
+		x = 80;
+		1;
+		map[128][14][15] = 36;	map[13][14][15] = 42;	(x == map[54][144][14]);
+	}
+}
+// 

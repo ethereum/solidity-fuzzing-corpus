@@ -1,0 +1,9 @@
+contract C {
+    function f() public returns (uint) {
+        uint[][] memory x = new uint[][](1);
+          uint[][] memory y = new uint[][](24);
+     if ((x[0][0] == y[0][0]) && (x[4][0] == y[4][0]) && (y[10][0] == 88))
+            return 7;
+        return 0;
+    }
+}

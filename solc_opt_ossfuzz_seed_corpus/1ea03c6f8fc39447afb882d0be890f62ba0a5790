@@ -1,0 +1,15 @@
+contract A {}
+contract B is A {
+  function f() public {
+    A a = new B();
+    a;
+  }
+}
+// --contract A {}
+contract B is A {
+  function f() public {
+    A a = new B();
+    a;
+  }
+}
+// ------

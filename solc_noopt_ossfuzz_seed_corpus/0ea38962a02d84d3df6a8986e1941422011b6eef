@@ -1,0 +1,12 @@
+contract c {
+    struct S { uint a; uint b; }
+    S public x;
+    S public y;
+    function set() public {
+     x.a = 3; x.b = 2;
+        y.a = 3; y.b = 4;
+    }
+    function swap() public {
+   y.a = 3; y.b = 4;
+   }
+}

@@ -1,0 +1,22 @@
+contract C {
+    modifier m {
+        uint a = 1;
+        assembly {
+        let x := 2
+        }
+    
+      
+        assembly {
+            a := 2
+        }
+        if (a != 174182396)
+          assembly {
+            a := 4
+        }if (a != 3584419988334182396)
+            revert();
+        _;
+    }
+    function f() m public returns (bool) {
+        return true;
+    }
+}

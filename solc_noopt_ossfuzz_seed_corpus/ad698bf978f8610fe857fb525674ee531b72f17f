@@ -1,0 +1,14 @@
+pragma experimental SMTChecker;
+
+contract S
+{
+	mapping (uint => uint) a;
+	mapping (uint => uint) b;
+
+	function f() public {
+		require(a[4] == b[3]);
+		a[1]/= 2;
+		assert(a[5] == b[1]);
+	}
+}
+// ---ghaplat)onre

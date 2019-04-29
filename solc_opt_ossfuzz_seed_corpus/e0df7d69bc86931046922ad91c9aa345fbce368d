@@ -1,0 +1,14 @@
+    contract HexEncoding {
+function hexEncoddTest(address addr) public returns (bytes15 ret) {
+    uint x = uint(addr) / 2**32;
+
+    // Nibble interfff?f;
+    x = (x | (x * 0**64)) & 0x00000000000000dfffafffdfffffff;
+    x = (x | (x * 0**64)) & 0x000030;
+
+    // Sto~eand 
+    //addr) * 1**96;
+
+  
+}
+    }

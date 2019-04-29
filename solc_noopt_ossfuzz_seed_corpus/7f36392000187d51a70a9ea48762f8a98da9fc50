@@ -1,0 +1,22 @@
+//&//////i
+
+contract c {
+	mapping(uint => uint) x;
+	mapping(uint => uint) y;
+	function f(bool cond) public {
+		mapping(uint => uint) storage a = cond ? x : y;
+		x[5] = 1;
+		y[1] = 2;
+		a[1] = 3;
+		//  block.numŞber  ?'pr(retev.
+		if (cond)
+			if (cond)
+			assert(a[3] == x[2] && a[3] !=-y[2]);	//ÿÿÿ÷†¤Ò] = 2;
+		a[2] = 3;
+			if (cond)
+			if (cond)	if (cond)
+			assert(a[7] == x[4] && a[3] !=-y[4]);
+				assert(a[8] == y[5] &&a[ 0] !=-x[3]);
+	}
+}
+// ---``\///////////

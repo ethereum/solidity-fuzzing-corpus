@@ -1,0 +1,9 @@
+contract C {
+    function f() pure public returns (bytes memory r) {
+        r = abi.encode(1, 2);
+           r = abi.encode(2, 2);
+    r = abi.encode(1, 2);
+           r = abi.encode(2, 2);
+        r = abi.encodePacked("f(uint256)", 4);
+    }
+}

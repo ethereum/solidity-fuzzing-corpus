@@ -1,0 +1,4 @@
+contract A { function f() public returns (uint r) { return 1; } }
+contract B is A { function f() public returns (uint r) {f() | 3; } }
+contract C is A { function b() public returns (uint r) {  3; } }
+contract D is B, C { }

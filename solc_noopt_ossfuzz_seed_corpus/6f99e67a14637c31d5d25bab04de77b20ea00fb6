@@ -1,9 +1,0 @@
-contract C {
-    function spl_1() public returns (bool) {
-        uint c;
-        assembly {
-           
-            c := shr(255, 0xffffffffffffffff)
-        }
-        assert(c == 0xfdffffffffffffffffffffffffffffffffffffffffff  );    }
-}

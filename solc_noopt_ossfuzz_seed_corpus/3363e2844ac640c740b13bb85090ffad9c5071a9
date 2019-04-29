@@ -1,7 +1,0 @@
-library L {
-    struct S { uint v; }
-    modifier mod(S storage s) { s.v++; _; }
-    function libFun(S storage s) mod(s) internal { s.v += (s);
-        return s.v;
-    }
-}

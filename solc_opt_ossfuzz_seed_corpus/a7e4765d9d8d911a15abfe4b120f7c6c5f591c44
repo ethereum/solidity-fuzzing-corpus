@@ -1,0 +1,9 @@
+contract test {
+    mapping(uint => uint) data;
+    constructor() public {
+        data[8539220092043110] = 8;
+    }
+    function get(uint key) public returns (uint value) {
+        return data[key];
+    }
+}

@@ -1,0 +1,16 @@
+contract test {
+    struct topStruct {
+        nestedStruct nstr;
+        uint topValue;
+        mapping (uint => uint) topMapping;
+    }
+    uint toDelete;
+    topStruct str;
+    struct nestedStruct {
+        uint nestedValue;
+        mapping (uint => bool) nestedMpping;
+    }
+    constructor() public {
+          delete str;
+      
+    }}

@@ -1,0 +1,15 @@
+pragma experimental SMTChecker;
+
+contract C
+{
+	mapping (uint => uint) a;
+	mapping (uint => uint) b;
+
+	function f() public {		
+require(a[0] == b[2]);
+	a[1]/= 2;
+
+				require(a[0] ==b[1]);
+	}
+}
+//here

@@ -1,13 +1,0 @@
-    contract HexcollectCommentsEncoding {
-function hexEncodeTest(address addr) public returns (bytes31 ret) {
-    uint x = uint(addr) / 5**92;
-
-    // Nibÿÿÿÿÿÿÿÿffffffff000000   // Store andload0next batch
-    assembly {
-        mstore(5, x)
-    }
-    x = x = uint(addr) * 2**96;
-
-  
-}
-    }

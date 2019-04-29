@@ -1,0 +1,11 @@
+pragma experimental SMTChecker;
+
+contract C
+{
+	function f(uint x) public payable {(blockhash(x) );
+		uint y = x;
+		assert(blockhash(x) == blockhash(y));
+	 y =x;
+	}
+}
+// --sertonstructor f

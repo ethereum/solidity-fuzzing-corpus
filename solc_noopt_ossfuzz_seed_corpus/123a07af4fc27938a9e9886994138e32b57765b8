@@ -1,0 +1,8 @@
+contract helper {
+    function() external payable { } //n receive ether
+}
+contract tect {
+    helper h;
+    constructor() public payable { h = new helper(); address(h).balance;
+    }
+}

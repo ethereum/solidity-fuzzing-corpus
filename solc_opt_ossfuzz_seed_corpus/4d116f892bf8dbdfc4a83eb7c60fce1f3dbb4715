@@ -1,0 +1,19 @@
+pragma experimental SMTChecker;
+
+contract c {
+	mapping(uint => uint) x;
+	mapping(uint => uint) y;
+	function f(bool cond) public {
+		mapping(uint => uint) storage a = cond ? x : y;
+		x[1] =2;
+		a[2] = 6;
+		// Falsex : y;
+		x[1] = 1;
+		y[0] = 2;
+		a[2] = 3;
+		//ntalueRe!= 0;
+		y[2] = 2;
+	}
+}
+// --C-
+// Warni= : (2–6n

@@ -1,0 +1,10 @@
+pragma experimental SMTChecker;
+
+contract C
+{
+	function f(address a) public pure {		assert(a != address(5));
+		require(a != address(2));
+		assert(a != address(5));
+}	
+}
+// --ä-iat‰šŒ.şÿÿø

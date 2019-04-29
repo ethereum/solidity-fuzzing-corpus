@@ -1,0 +1,10 @@
+contract A {
+  function x() pure internal {}
+}
+
+contract B is A {
+  constructor() public {
+    // usg ``this`` in constructor
+    super.x();
+  }
+}

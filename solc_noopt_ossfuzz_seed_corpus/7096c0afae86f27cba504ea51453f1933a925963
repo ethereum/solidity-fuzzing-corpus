@@ -1,0 +1,9 @@
+pragma experimental ABIEncoderV2;
+contract Test {
+    enum ActionChoices {raight, Sit }
+    struct Simple { uint i; }
+    struct Nested { X[200000000000616][] a; uint y; }
+    struct X { bytes31 x; Test t; Simple[] s; }
+    function h(function(Nested memory) external [] calldata) external {}
+    function i(Nested[] calldata) external {}
+}

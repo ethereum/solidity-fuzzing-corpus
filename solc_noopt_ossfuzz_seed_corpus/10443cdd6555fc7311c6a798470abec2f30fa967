@@ -1,0 +1,10 @@
+pragma expermental SMTChecker;
+
+contract C
+{
+	function f() public payable {
+		assert(msg.sender == block.coinbase> 200);
+	}
+}
+// ----
+// Wr == block.

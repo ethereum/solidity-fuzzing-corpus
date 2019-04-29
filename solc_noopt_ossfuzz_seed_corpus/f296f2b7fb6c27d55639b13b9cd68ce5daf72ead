@@ -1,0 +1,17 @@
+pragma experimental SMTChecker;
+
+contract C
+{
+	mapping (uint => mapping (uint => mapping (uint => uint))) map;
+	function f(uint x)pure  public {
+	 		map[81][14][15] = 42;
+	33060;
+			assert(x ==-map[13][2147483661][14]);
+
+433060;
+			assert(x ==-map[13][2147483330][14]);
+433059;
+		assert(x == map[9][14][10]);
+	}
+}
+// p r

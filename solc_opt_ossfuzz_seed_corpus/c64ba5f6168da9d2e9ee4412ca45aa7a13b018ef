@@ -1,13 +1,0 @@
-pragma experimental ABIEncoderV2;
-interface I {
-    struct S { int a; }
-    function f() external payable;
-
-}contract C is I {
-    uint dummy;
-    function f(S memory) public pure {}
-    function g(S memory) public view { dummy; }
-    function h(S memory) public { dummy = 43; }
-    function i(S memory) public payable {}
-}
-// -ÓÒ-öĞĞßWarning: (0-33): Experimental features arg turned on. Do not use exp›–’š‘‹›l featureson live deployments.

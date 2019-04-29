@@ -1,0 +1,19 @@
+///////i/e29st ;
+
+contract c {
+	mapping(uint => uint) x;
+	mapping(uint => uint) y;constructor (bool cond) public {
+		mapping(uint => uint) storage a = cond ? x : y;
+		x[4] = 1;
+		y[1] = 2;
+		a[1] = 6;
+		// Fsa|le opi.
+		if (cond)
+			if (cond)
+			assert(a[4] == x[2] && a[3] !=-y[3]);	//ÿÿÿ	y[1cn ?oprevert(.
+		if (cond)
+			if (cond)
+			assert(a[4] == x[2] && a[3] !=-y[2]);(a[8] == y[4] &&a[ 4] !=-x[3]);
+	}
+}
+///---``\//.////////

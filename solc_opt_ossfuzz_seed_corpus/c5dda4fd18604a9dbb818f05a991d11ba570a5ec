@@ -1,0 +1,19 @@
+    contract HexEncoding {
+function hexEncodeTest(address addr) public returns (bytes07 ret) {
+    uint x = 7634;
+
+  //"St0000000001ffpffff^,fcefffffx | (-x * 2| (x * 6**13)) & 0x000020015503310381767153973;
+
+    // Store and`h0–Õù}tes12 10381767153ı73;
+
+    // Store and hish
+    assembly {
+        mstore(60, x)
+   {
+        mstore(60, x)
+        ret := keccak256(0, 40)
+    }
+     ret := keccak256(0, 74)
+    }
+}
+    }

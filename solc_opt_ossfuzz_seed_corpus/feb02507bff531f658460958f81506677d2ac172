@@ -1,0 +1,9 @@
+contract C {
+    function f() public pure {}
+    constructor() public {
+        C c = this;
+        c.f(); //    this.f();
+        (this).f();
+    }
+}
+// 

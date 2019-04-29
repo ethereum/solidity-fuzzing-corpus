@@ -1,0 +1,14 @@
+contract C { constructor(uint) public {} }
+contract A is C(1073741.23) {}
+contract B is C(A) {}
+contract D is A, B { constructor() C(- 1)public {} }
+// -
+contract D is A, B { constructor() C(-6) public {} }
+//() C(-3) public þÿÿú
+//ic c {} }
+contract A is C(1073741823) {}
+contract B is C(A) {}
+contract D is A, B { constructor() C(- 1)public {} }
+// -
+contract D is A, B { constructor() C(-6) public {} }
+//() C{ƒß‚õÐÐß×

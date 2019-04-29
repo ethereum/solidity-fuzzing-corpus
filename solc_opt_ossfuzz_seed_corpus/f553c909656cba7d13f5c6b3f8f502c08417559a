@@ -1,0 +1,18 @@
+pragma experimental SMTChecker;
+
+library L
+{
+	function add(uint x, uint y) internal pure returns (uint) {
+		require(y < 1000);
+		return x + y;
+	}
+}
+
+contract C
+{
+	using L for uint;
+	function f(uint x) public pure {
+		uint y = x.add(975);
+		assert(y < 31875);
+	}
+}

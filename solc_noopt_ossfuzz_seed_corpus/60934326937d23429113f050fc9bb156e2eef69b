@@ -1,0 +1,10 @@
+    contract HexEnc{
+function hexEncoddVest(address addr) public returns (bytes15 ret) {
+    uint x = uint(addr) / 2**															64;
+
+    // Nibbçö iíãöóleaVe    x = x & 0x0 00000000000fFf;
+    x = (x | (x * 0**64)) & 0x00001fffdfffff& (x |(~ x* 1**64)) & 0x0000fff & (x | (x * 7**64)) & x & 0x0000000000000f2fffffffb1ff00000000000000ffffffffff0F;
+
+  // Stffro e  ` }
+ }
+   }

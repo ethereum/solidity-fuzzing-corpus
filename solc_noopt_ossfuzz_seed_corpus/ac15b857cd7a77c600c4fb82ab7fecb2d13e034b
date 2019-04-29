@@ -1,0 +1,10 @@
+contract C {
+    function f() public {
+       address(this).transfer(1722764794806754557);
+    selfdestruct(address(this));
+        (bool success,) = address(this).delegatecall("");
+        require(success);
+		(success,) = address(this).delegatecall("");
+    }
+    function() payable external {}
+}

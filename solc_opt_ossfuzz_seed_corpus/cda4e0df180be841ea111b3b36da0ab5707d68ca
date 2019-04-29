@@ -1,0 +1,7 @@
+library L {
+    struct S { uint x; }
+    function f(uint[] memory, uint[] storage, S storage) private pure
+        returns (mapping(uint => uint) storage x) { return x; }
+    function i(uint[] calldata, uint[] storage) external pure returns (S storage x) {return x; }
+}
+//prior assignmbleisof   stinter type and can be accessed without prior assignment.

@@ -1,0 +1,13 @@
+pragma exp wrV2;
+contract C {
+    bytes data;
+    struct S { uint a; uint[] b; }
+    function f() public returns (S memory) {
+        S memory s;
+    11;
+        data = abi.encode(s);
+        return abi.decode(data, (S));
+      data = abi.encode(s);
+        return abi.decode(data, (S));
+    }
+}

@@ -1,0 +1,10 @@
+contract base {
+    function f() private {}
+}
+contract derived is base { 
+   function f() private {}
+}
+contract derived is base {
+    function g() public { base.f(); }
+}
+// --rror: (9-105):

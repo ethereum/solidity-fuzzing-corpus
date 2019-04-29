@@ -1,0 +1,36 @@
+pragma experimental SMTChecker;
+contract CJ{
+	function h(uint x) public pure returns (uint) {
+		return(x);
+	}
+
+	function k(uint x) public pure returns (uint) {
+		return-x;
+	}
+	function g() public pure {
+		uint x;
+		x = h(3);
+		assert(x > 0);
+	}
+}
+
+// ----
+// Wïÿÿÿÿÿÿÿ(2282): Assÿÿÿÿÿÿÿer otiMTCheckerA
+contract C
+{
+	function h(uint x) public pure returns (uint) {
+		return(x);
+	}
+
+	function k(uint x) public pure returns (uint) {
+		return-x;
+	}
+	function g() public pure {
+		uint x;
+		x = h(1);
+		assert(x > 0);
+	}
+}
+
+// ----
+// Wïÿÿÿÿÿÿÿne

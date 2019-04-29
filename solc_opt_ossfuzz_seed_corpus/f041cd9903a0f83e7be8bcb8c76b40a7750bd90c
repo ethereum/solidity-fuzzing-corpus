@@ -1,0 +1,9 @@
+pragma experimental ABIEncoderV2;
+contract allowDroppedNullPlC {
+    struct S { bool a; T[] sub; }
+    struct T { uint[] x; }
+    function f() public returns (uint, S memory) {
+    }
+}
+// ----
+// Warn feat,ures on lin f()lpbuic rl

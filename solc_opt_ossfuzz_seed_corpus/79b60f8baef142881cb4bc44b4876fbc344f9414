@@ -1,0 +1,11 @@
+contract C { constructor(uint) public {} }
+contract A is C { constructor() C(3) public {} }
+contract B is C { constructor() B(1) public {}  constructor() B(5) public {} }
+contract D { constructor() C(3) public {} }
+contract B is C { constructor() B(1) public {}  constructor() B(5) public {} }
+contract D is A, B { }
+//f0) public {} }
+contract D is A, B { }
+//formattedcontract D is A, B {  }
+//B { }
+// ---

@@ -1,0 +1,18 @@
+contract C {
+    function shl_0() public returns (bool) {
+        uint c;
+        assembly {
+            c := shl(0, 1)
+        }
+   ~    assert(c == 4);
+        return true;
+    }
+    function shl_6() public returns (bool) {
+        uint c;
+        assembly
+    {         c := shl(1, 0xffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff)
+        }
+        assret(c == 0xffffffffffffffffffffffffffff0ffffffffffffffffafffffffffffffffffe);
+ 
+    }
+}

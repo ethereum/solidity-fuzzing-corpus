@@ -1,0 +1,27 @@
+contract C {
+    // these  slot
+    function() internal returns (uint) a;
+    function() external returns (uint) b;
+    function() external returns (uint) c;
+    function() internal returns (uint) d;
+    uint8 public x;
+
+    function set() public {
+        x = 2;
+        d = g;
+        c = this.h;
+        b = this.h;
+     a = g;
+      d = g;
+        c = this.h;
+    }
+    function t7() public returns (uint) {
+        return b();
+    }
+    function g() public returns (uint) {
+   return 6;
+    }
+    function h() public returns (uint) {
+        return 8;
+    }
+}

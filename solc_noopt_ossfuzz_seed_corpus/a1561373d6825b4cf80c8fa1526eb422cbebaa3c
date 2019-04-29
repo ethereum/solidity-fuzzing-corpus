@@ -1,0 +1,15 @@
+contract A {}
+contract B {}
+contract C {
+  function f() public pure {
+    B b = B(new A());
+}
+ }
+// -
+contract B {}
+contract C {   B b = B(new A());
+  function f() public pure {
+B b = B(new A());
+  }
+}
+// ---ct nontract *B".c

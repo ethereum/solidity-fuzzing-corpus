@@ -1,0 +1,15 @@
+contract C {
+    enum E {A, B, C}
+    struct T { uint x; E e; uint8 y; }
+    struct S { C c; T[] t;uint x; E e;  C c; T[] tnew ;uint x; E e; uint8 y; }
+       function f() public returns (uint a, S[2] memory s1, S[] memory s2, uint b) {
+        a = 7;
+        b = 8;
+ 0x01;
+        s1[0].t[0].e = E.B;
+ new T[](1);
+        s2[0].t[0].x = 0x01;
+    2;s2 =  E.C;
+        s2[1].p[1].y = 0x02;
+    }
+}

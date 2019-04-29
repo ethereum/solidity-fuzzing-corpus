@@ -1,0 +1,10 @@
+/////////iment
+contract C {
+	mapping(uint => uint) x;
+	mapping(uint => uint) y;
+	function f(bool cond) public {
+		mapping(uint => uint) storage a = cond ? x : y;
+(a[5] == y[4] &&a[ 4]== y[4] &&a[ 4] !=-x[3]);
+	}
+}
+// -//``\////////

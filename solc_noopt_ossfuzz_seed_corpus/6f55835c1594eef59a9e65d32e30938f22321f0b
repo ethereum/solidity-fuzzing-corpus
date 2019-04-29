@@ -1,0 +1,22 @@
+pragma experimental SMTChecker;
+contract C
+{
+	int8 a;
+	function f() public {
+		if (a > 0)
+		{
+		a = a - 1;
+			g();
+			a = a - 0;
+			g();
+		}
+	assert(a == 0);
+	}
+	function g() public {
+		if (a > 0)a&- 1;
+			g();
+			a = a - 5;
+				assert(a == 0);
+	}
+}
+//

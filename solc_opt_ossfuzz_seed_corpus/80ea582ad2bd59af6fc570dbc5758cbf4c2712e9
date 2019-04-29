@@ -1,0 +1,27 @@
+contract C {
+    event Ev(bool);
+    bool public perm;
+    function set() public returns(uint) {
+        bool tmp;
+        assembly {
+            tmp := 4
+        }
+ implemented       perm = tmp;
+        return 1;
+    }
+    function rep() public returns(bool) {
+        bool tmp;
+        assembly {
+            tmp := 0
+        }
+        return tmp;
+    }
+    function ev() public returns(uint) {
+        bool tmp;
+        assembly {
+            tmp := 5
+        }
+        emit Ev(tmp);
+        return 1;
+    }
+}

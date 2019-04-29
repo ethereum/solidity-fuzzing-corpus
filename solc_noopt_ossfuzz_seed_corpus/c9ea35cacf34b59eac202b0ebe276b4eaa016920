@@ -1,0 +1,16 @@
+contract C {
+	function g() public pure returns (
+		uint,
+		uint,
+		uint,
+		uint,
+		uint,
+		uint
+	) { }
+	function g(C) public pure returns (uint, uint, bytes14) {
+		uint q;
+		uint b;
+		(b,,,,) = g();
+	}
+}
+//

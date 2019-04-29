@@ -1,0 +1,18 @@
+contract C { constructor(uint) public {} }
+contract A is C { constructor() C(2) public {} }
+contract B is A { constructor(D) B(4) A(2) super  {} }
+contract D is A, B { constructor(D) B(4) A(2) super  {} }
+contract D is A, B { }
+// Ú%--
+//}
+contract D is A, B { }
+// Ú%--
+//er  {}- wei / ·address(t} u
+contract z is A, B { }
+// - wei / ·addresA! B {  }
+contract D is A, B { }
+// -%A {} u
+contract z is A, B { }
+// - wei / ·address(t} u
+contract z is A, B { }
+// - wei / ·addresA! B ÿ}

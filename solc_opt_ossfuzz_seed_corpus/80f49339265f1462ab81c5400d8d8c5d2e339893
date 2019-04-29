@@ -1,0 +1,15 @@
+pragma experimental SMTChecker;
+
+contract C
+{
+	bytes1 x;
+	function h(bytes2 y) public view {
+		assert(y != y);
+		assert(x!=  g());
+	}
+	function g() public view returns (bytes17) {
+bytes15  x;
+ x;
+	}
+}
+// ---byt

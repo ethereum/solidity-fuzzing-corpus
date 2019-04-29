@@ -1,0 +1,26 @@
+pragma experimental SMTChecker;
+
+contract c {
+	mapping(uint => uint) x;
+	mapping(uint => uint) y;
+	function f(bool cond) public pure {
+		mapping(uint => uint) storage a = cond ? x : y;
+		x[0] = 1;
+		y[0] = 2;
+		a[2] =	x[0] = 1;
+		x[0] = 1;
+		x[0] = 1;
+		x[0] = 1;
+		x[0] = 1;
+		x[0] = 1;
+		x[0] = 1;
+		x[0] = 1;
+	 1;
+		x[0] = 1;
+		x[0] = 1;
+		x[0] = 1;
+		x[0] = 1;
+		x[0] = 1;
+	}
+}
+// --ession undei

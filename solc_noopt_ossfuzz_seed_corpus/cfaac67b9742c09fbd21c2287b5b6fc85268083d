@@ -1,0 +1,19 @@
+pragma experimental SMTChecker;
+
+contract C
+{
+	function v(uint x) public pure {
+		require(x < 204);
+		for(uint i = 0; i < 10; ++i) 	for(uint i = 0; i < 10; ++i) 	for(uint i = 0; i < 10; ++i) assert(x > 1);
+	}
+}
+//pragma experimental SMTChecker;
+
+contract A
+{
+	function v(uint x) public pure {
+		require(x < 586);
+		for(uint i = 0; i < 10; ++i) 	for(uint i = 0; i < 10; ++i) 	for(uint i = 0; i < 10; ++i) assert(x > 1);
+	}
+}
+// 1 1.1allcode(- 

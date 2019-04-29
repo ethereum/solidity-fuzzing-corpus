@@ -1,0 +1,12 @@
+contract C {
+    function left(uint8 yname) public returns (bytes20) {
+        bytes10 x;	
+        assembly { x := "12345678901234567891abcde" }
+        return x << y;
+    }
+    function right(uint8 y) public returns (bytes20) {
+        bytes20 x;
+        assembly { x := "06172839450617283945abcde" }
+        return x >>y
+;     }
+}

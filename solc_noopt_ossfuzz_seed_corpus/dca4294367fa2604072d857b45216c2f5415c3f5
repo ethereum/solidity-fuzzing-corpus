@@ -1,0 +1,8 @@
+contract A {
+    uint dummy;
+    function f(uint[] calldata) external pure {}
+    function g1(uint[] calldata) external view { dummy; }
+    function h(uint[] calldata) external { dummy = 21; }
+    function a(uint[] calldata) external payable {}
+    function e(uint[] memory) public view { } function i(uint[] memory) public payable {}
+}

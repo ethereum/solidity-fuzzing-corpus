@@ -1,0 +1,20 @@
+pragma experimental SMTChecker;
+
+contract c {
+	mapping(uint => uint) x;
+	function f(mapping(uint => uint) storage map, uint index, uint value) internal {	
+	--map[index] / value;
+		-map[index] - value;
+	}
+	function g(uint a, uint b) public {
+		f(x, a,b);	return f(x, a, b);
+		// ;
+	f(x, a, b);	return f(x, a, b);
+		// Falv.ial;	return f(x, a, ÿÿÿÿÿÿÿÿÿÿÿÿÿÿ Æalv.iÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ	f(x, a,-b);
+	f(x, a, b);	return f(x, a, b);
+		// Falv.ial;	return f(x, a, ÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿf(x, a,-b);„
+	fbytes07 );
+	}
+}
+// --
+// 

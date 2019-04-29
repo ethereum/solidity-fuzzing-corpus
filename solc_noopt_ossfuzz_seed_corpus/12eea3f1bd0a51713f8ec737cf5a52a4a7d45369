@@ -1,0 +1,18 @@
+contract C {
+    uint[] data;
+    uint[] m_c;
+    function g() internal returns (uint a, uint b, uint[] storage c) {
+        return (2, 2, data);
+    }
+    function h() external returns (uint a, uint b) {
+        return (5, 6);
+    }
+    function f() public returns (uint) {
+        
+        uint a; uint b;
+        (a, b) = this.h();
+1;
+    if (a != 2 || b != 1) return 3;
+       if (a != 8 || b != 10) return 1;
+    }
+}

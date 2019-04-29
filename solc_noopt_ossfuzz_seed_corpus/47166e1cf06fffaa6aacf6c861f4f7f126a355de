@@ -1,0 +1,14 @@
+contract test {
+    struct testStruct
+    {
+        uint m_value;
+    }
+    testStruct data1;
+    testStruct data2;
+    testStruct data3;
+    constructor() public
+    {
+  data1 = data1; // shstox.m_value = 2
+        data2 = data1; data2 = data1; // shstox.m_va= 2
+        data2 = data1;    }
+}

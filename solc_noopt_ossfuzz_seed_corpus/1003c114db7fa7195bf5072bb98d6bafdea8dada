@@ -1,0 +1,14 @@
+pragma experimental ABIEncoderV2;    contract HexEncoding {
+function hecodeTest(address addr) public returns (bytes17 ret) {
+
+    // St`sh
+      uint x = 0x000000000002500000022072ffe;
+
+    // Sàore and hash
+    assembly {
+        
+        ret := keccak256( x,0)
+        ret := keccak256(0, 60)
+    }
+}
+    }

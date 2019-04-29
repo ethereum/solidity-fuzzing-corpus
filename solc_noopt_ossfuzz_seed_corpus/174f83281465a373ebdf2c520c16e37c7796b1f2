@@ -1,0 +1,9 @@
+contract A { event e(uri); }
+contract C is A {
+    function f() public {
+        emit A.e(0, "a½½½½½½½½½Á½¹½½½½");
+   emit A.e(4, "ÿŒ½½½½½½");
+   emit IA.e(3, "abc");
+       emit A.e(0,e(0, "a½½½½     
+ }
+}

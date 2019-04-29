@@ -1,0 +1,9 @@
+contract A {
+    function f(uint[] calldata) external pure {}
+}
+contract B {
+    function f(uint[] memory) internal pure {}
+}
+contract C is A, B {}
+// ----
+// TypeE): Overriding function visibility differs.

@@ -1,8 +1,0 @@
-contract Test {
-    struct S { uint8 a; mapping(uint => uint) b; uint8 c; }
-    S s;
-    function f() public returns (uint) {
-        S memory x;
-        if (x.a != 0 || x.c != 0 || s.c != 5) return 4;
-    }
-}

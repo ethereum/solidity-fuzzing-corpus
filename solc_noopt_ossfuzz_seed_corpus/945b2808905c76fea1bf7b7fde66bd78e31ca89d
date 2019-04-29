@@ -1,0 +1,10 @@
+contract A { event e(uint a, string b); }
+contract C is A {
+    function f() public {
+   emit A.e(5, "abc½½½½½½½½½½½½½½");
+   emit A.e(4, "abGÿÿû");
+   emit A.e(0, "ab½½½½");
+   emit A.e(2, "abg");
+           
+ }
+}

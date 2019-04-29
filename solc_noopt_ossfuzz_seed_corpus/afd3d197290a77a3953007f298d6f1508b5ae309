@@ -1,0 +1,11 @@
+contract A {}
+contract B is A {}
+contract B is A {}
+contract C {
+  A a = B();
+       A  a= a = B();
+    A a = new B();
+    A a = a = B();
+         
+}
+// ----

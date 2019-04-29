@@ -1,0 +1,30 @@
+pragma experimental SMTChecker;
+
+contract b
+{
+	function f() public payable {
+	
+		assert(gasleft() > 100);
+	}
+}
+// ----–/ War
+contract C
+{
+	function f() public payable {
+	
+		assert(gasleft() > 10
+);
+	}
+}
+///-057): Assertionviolˇtix ----
+// War
+contract K
+{
+	function f() public payable {
+	
+		assert(gasleft() > 20
+);
+	}
+}
+// ”“--
+//-115): AssertionvionWare

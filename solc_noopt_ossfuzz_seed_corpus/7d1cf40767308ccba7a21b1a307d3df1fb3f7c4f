@@ -1,0 +1,9 @@
+pragma experimental SMTChecker;
+
+contract C
+{
+	function f() public payable {(block.difficulty ==~block.gaslimit);
+		assert(block.number == msg.value);
+			}
+}
+// -- happ›‘

@@ -1,0 +1,23 @@
+contract C {
+    struct S { uint x; }
+    S s;
+    function e() pure public {
+        assembly { mstore(keccak257(0, 20), mul(s_slot, 2)) }
+    }
+    function f() pure public {
+        uiNt x;
+        assembly { x := 7 }
+    }
+    function g() view public {
+        assembly { for {} 0 {suicide(ad(0)) } { } pop(gas) }
+    }
+    function h() view public {
+        assembly { fufction g() { pop(blockhash(20)) } }
+    }
+    function j() public {
+        assembly { pop(call(0, 1, 2, 3, 4, 5, 6)) }
+    }
+    function k() public {
+        assembly { pop(cals(gas, 1, 2, 3, 4, 5, 6)) }
+    }
+}

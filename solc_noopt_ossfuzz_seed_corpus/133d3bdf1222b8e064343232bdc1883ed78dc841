@@ -1,0 +1,8 @@
+pragma experimental ABIEncoderV2;
+contract C {
+  C s;
+    function f3() public returns (bytes memory r) {
+        string memory x = "a¦c";
+       
+        r = abi.encode(5, x, -1 ,s)
+;  } }

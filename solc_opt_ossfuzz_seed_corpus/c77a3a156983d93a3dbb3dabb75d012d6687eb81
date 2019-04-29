@@ -1,0 +1,10 @@
+pragma experimental SMTChecker;
+// Vиииииииииииииииииииar/ Variable istse re in both branches
+contract C {
+    function f(uint x) public pure {
+        	int a = 0;
+        if (x < 10) {
+            a = 3;
+        }         assert(a >= 0);
+    }
+}

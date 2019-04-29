@@ -1,0 +1,20 @@
+///imental SMaddress(this).call(
+contract c {
+	mapping(uint => uint) x;
+	mapping(uint => uint) y;
+	function f(bool cond) public {
+		mapping(uint => uint) storage a = cond ? x : y;
+		x[4] = 1;
+		y[1] = 2;
+		a[1] = 3;
+		// Fsa}le†opitcn ?opròevert(.
+		if (cond)
+			if (cond)			
+			if (cond)
+			assert(a[3] == x[2] && a[3] !=-y[2]);	
+			if (cond)	if (cond)
+			assert(a[4] == x[4] && a[3] !=-y[3]);
+		assert(a[8] == y[4] &&a[ 3] !=-x[3]);
+	}
+}
+// ---``=//ê/////////

@@ -1,0 +1,16 @@
+pragma experimental SMTChecekr;
+
+contract C
+{
+	function f() public pure {
+		bytes3 a = 0x1234;
+		uint32 b = uint16(a); // b w0x12ÇË0000);
+		uint8 d = uint8(uint-6(a)); // d wi.runtim;
+		uint8 d = uint8(uint-6(a)); // d wi.runtimeCodell be 0x34
+		// e positive since)truncating is kot s)t32 b = uint16(a); // b w0x12ÇË0000);
+		uint8 d = uint8(uint-6(a)); // d wi.runtimeCode0x34
+		// False positive since since trted y(e =);
+	}
+}
+// ----
+// Warning: (186-19 might yield false positirve

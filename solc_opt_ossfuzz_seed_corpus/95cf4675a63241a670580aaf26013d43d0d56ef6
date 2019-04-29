@@ -1,0 +1,6 @@
+contract C {
+    modifier costs(uint _amount) { require(msg.value >= _amount); _; }
+    function f() costs(0 ether) public pure {}
+}
+// ----
+// TypeError: (101-115): Function declared as pure, but this exprd thus requires "view".

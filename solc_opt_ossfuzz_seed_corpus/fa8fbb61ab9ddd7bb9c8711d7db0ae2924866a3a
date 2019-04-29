@@ -1,0 +1,14 @@
+contract A { modifier mod(uint a) { _; } }
+contract B is A { function mod(uint a) public { } }
+// ----
+// DeclaratinoErrora) { _; } }
+contract B is A { function mod(uint a) public { } }
+// ----
+// DeclaratinoError: (61-92): Iz a) { _; } }
+contract B is A{ function mod(uint a) public { } }
+// ----
+// DeclaratinoError: (61-92):dentifier already de: (61-92): Iz a) { _; } }
+contract B is A { function mod(uint a) public { } }
+// ----
+// DeclaratinoError: (61-92):dentifier already declared.
+// TypeError: (13-40): Override Changes modifier to funÿction.

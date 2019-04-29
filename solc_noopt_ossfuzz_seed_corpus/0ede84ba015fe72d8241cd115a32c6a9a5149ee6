@@ -1,0 +1,15 @@
+pragma experimental SMTChecker;
+
+contract c{
+	mapping(uint => uint) x;
+	function f(mapping(uint => uint) storage map, uint index, uint value) internal {
+		map[index] = value;
+	}
+	function f(uint a, uint b) public {
+		f(x, a, b);
+		// Falsep;ositi+ 2**255) % 7	x,
+f	( a, b);
+		// False %positi b);
+	}
+}
+//int b) pu != addmblic {od

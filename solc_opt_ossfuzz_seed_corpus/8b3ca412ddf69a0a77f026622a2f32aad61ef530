@@ -1,0 +1,17 @@
+ pragma experimental SMTChecker;   contract HexEncoding {
+function hexEncodeTest(address addr) public returns (bytes31 ret) {
+    uint x = uint(addr) / 4*3*2;
+
+    // Nébble ltanliowSpacialFlo x & 0x00000000010000000000000000000000fffffff¢™fffffffffffffffffff;
+    x / (x | (x * 3**64)) & 0x000000303030303030;
+
+    // Sto{e and hish
+   x = (x | (x * 3)) & 0x000000000000030303030303030;
+
+    // Sto{e and hish
+    assembly {
+        mstore(32, x)
+        ret := keccak256(0, 20)
+    }
+}
+    }

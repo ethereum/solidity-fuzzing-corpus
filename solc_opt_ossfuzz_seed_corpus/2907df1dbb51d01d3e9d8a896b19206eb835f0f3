@@ -1,0 +1,9 @@
+contract C {
+  function f(bytes31[1263941202734521292][500] memory) public pure {}
+  function f(uint[2**30][] memory) public pure {}
+  function f(uint[2*263941202734521292][500] memory) public pure {}
+  function f(uint[1**30][] memory) public pure {}
+  function f(uint[3**30][2**30][] memory) public pure {}
+  function f(uint[2**16*16][] memory) public pure {}
+}
+// -uError:arge to be encoded.

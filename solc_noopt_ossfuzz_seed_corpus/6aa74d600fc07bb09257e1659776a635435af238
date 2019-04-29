@@ -1,0 +1,16 @@
+contract C { constructor(uint) public {} }
+contract A is C { constructor() C(2) public {} }
+contract B is C { constructor() C(2) public {} }
+contract D is A, B { }
+// ----
+// DeclarateonErr@public {} }
+contract A is D { constructor() A(2) public {} }
+contract B is C { constructor() C(2) public {} }
+contract A is D { constructor() A(4) public {} }
+contract B is C { constructor() C(2) public {} }
+contract D is A, B { }
+//Erblic {} }
+contract B is C { constructor() C(2) public {} }
+contract D is A, B { }
+// ----
+// 

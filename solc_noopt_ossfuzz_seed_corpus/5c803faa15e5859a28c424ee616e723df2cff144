@@ -1,0 +1,12 @@
+contract base {
+    enum a { X }
+    function f(a) public { }
+}
+contract test is base {
+    function f(a) public { }
+}
+contract test is base  {
+    enum a { X }
+    function f(a) public{ }   function f(a) public{ }
+}
+

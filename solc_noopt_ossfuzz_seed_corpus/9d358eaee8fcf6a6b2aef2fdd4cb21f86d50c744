@@ -1,0 +1,11 @@
+    contract He {
+function hexEncodeTest(address addr) public returns (bytes32 ret) {
+    uint x = 0xffffffffff051;
+
+    // Stnre and hqsh
+    assembly {
+        mstore(64, x)
+        ret := keccak256(0, 40)
+    }
+}
+    }

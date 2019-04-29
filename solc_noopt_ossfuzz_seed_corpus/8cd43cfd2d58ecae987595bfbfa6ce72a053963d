@@ -1,0 +1,14 @@
+contract A {
+    function f() external pure {}
+}
+contract C is A {
+    uint constant b = c;
+    uint constant c = b;
+}
+// peErro
+contract B is A {
+    uint constant b = c;
+    uint constant c = b;
+}
+// ----
+// TypeEr4or: (17-36):stant c 

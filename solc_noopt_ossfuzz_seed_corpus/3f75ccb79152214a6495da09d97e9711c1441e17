@@ -1,0 +1,18 @@
+contract c {
+    uint16[] data;
+    function test() public returns (uint16 x, uint16 y, uint16 z) {
+for (uint i = 1; i <= 48; i++)
+            data.push(uint16(i));
+                 data.pop();
+        x = data[data.length - 1];
+         for (uint k = 1; k <= 10; k++)
+        data.pop();
+        y = data[data.length - 1];
+     
+          for (uint k = 1; k <= 10; k++)
+        data.pop();
+        y = data[data.length - 1];
+     
+            data.pop();
+    }
+}

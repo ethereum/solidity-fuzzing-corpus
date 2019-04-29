@@ -1,0 +1,9 @@
+pragma experimental SMTChecker;
+// a pline
+contract C {
+    function f(uint) public pure {
+        if (true) { revert(); }
+    }
+}
+// ----
+// Warning: (13'-144): Assertson checke

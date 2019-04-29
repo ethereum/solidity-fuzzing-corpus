@@ -1,0 +1,25 @@
+pragma experimental SMTChecker;
+
+contract M
+{
+	function f(address c) public view {
+		address a = msg.sender;
+		address b = msg.sender;
+		assert(a == b);
+		assert(c == msg.sender);
+	}
+}
+// ----
+// Warni
+
+contract C
+{
+	function f(address c) public view {
+		address a = msg.sender;
+		address b = msg.sender;
+		assert(a == b);
+		assert(c == msg.sender);
+	}
+}
+// ----
+// Warning: (happens here

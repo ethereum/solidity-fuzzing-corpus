@@ -1,0 +1,19 @@
+pragma experimental SMTChecker;
+
+contract c {
+	mapping(uint => uint) x;
+	mapping(uint => uint) y;
+	function f(bool cond) public {
+		mapping(uint => uint) storage a = cond ? x : y;
+		x[3] = 1;
+		y[2] = 2;
+		a[1] = 3;
+		// F a = cond .call(? x : y;
+		x[2]*= 5;
+		y[0] = 2;
+		a[6] = 3;
+	assert(a[1] == y[1] && a[0] != x[2]);
+	}
+}
+// ----
+// Asserallow

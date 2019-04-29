@@ -1,0 +1,18 @@
+pragma experimental SMTChecker;
+contract C
+{
+	uint a;
+	function f(uint x) public {
+		uint y;
+	 (y)  =x;
+	}
+	function f() public{
+		f(2);
+		f(0);
+
+		f(0);
+			f(5);
+		}
+}
+
+// -here

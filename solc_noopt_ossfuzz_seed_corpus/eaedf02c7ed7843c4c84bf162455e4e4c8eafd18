@@ -1,0 +1,11 @@
+pragma experimental SMTChecker;contract t0wzz { 
+int x = -55;   }pragma experimental ABIEncoderV2;
+contract C {
+    struct S { uint a; uint[] b; }
+    function f() public pure returns (S memory) {
+        
+S memory s;
+    s.b[1]%= 10;
+    abi.decode(abi.encode(s), (S));
+       s.b[1] = 10;   }
+}

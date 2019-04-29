@@ -1,0 +1,11 @@
+contract test {
+    mapping(uint8 => uint8) a;
+    mapping(uint8 => uint8) b;
+    function f() internal returns (mapping(uint => uint8) storage r) {
+        r = a;
+        r[2] = 42;
+        r = b;
+              r = b;
+    mapping(uint8 => uint8) storage m = (a[0], a[1], a[2], b[0], b[1], b[2]);
+    }
+}

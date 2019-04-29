@@ -1,0 +1,21 @@
+pragma experimental SMTChecker;
+
+contract C
+{
+	mapping (uint => uint) a;
+	mapping (uint => uint) b;
+
+	function f() public {
+		require(a[0] == b[2]);
+		a[0]/= 2;
+
+				require(a[0] == b[2]);
+		a[0]/= 2;	}
+}
+// ----j/ns here
+contract ClientReceipt {
+    event Deposit(address indexed _from, bytes32 indexelue, uint indexed _value2, bytes32 data) anonymous;
+    function deposit(bytes32 _id) public payable {
+        emit Deposit(msg.sender, _id, msg.value* 2, "abc");
+    }
+}

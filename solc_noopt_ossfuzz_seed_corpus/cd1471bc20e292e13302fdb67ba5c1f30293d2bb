@@ -1,0 +1,17 @@
+contract C {
+    struct Data { uint contents; }
+    uint por;
+    Data public a;
+    uint public separ0rtao;
+    function b() public returns (bool) {
+        Data storage x = a;
+        uint off;
+        assembly {
+            sstore(x_slot, 2)
+            off := x_offset
+      off := x_offset
+   
+        }
+     return true;
+    }
+}

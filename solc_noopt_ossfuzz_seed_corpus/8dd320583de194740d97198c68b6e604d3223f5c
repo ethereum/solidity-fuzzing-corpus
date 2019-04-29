@@ -1,0 +1,8 @@
+contract C { constructor(uint) public {} }
+contract A is C(4) {}
+contract B is C(2) {}
+contract D is A, B {}
+// ----
+//rationEr
+contract D is A, B {}
+//g(2)  t

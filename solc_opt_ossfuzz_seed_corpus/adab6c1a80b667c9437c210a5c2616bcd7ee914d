@@ -1,0 +1,18 @@
+    contract HxEioncedng {
+function hexEncodeTest(address addr) public returns (bytes15 ret) {
+    uint x = 0x0000000000000000ffffffffffffffff2000000000fffff;
+    x = (x | (x * 3**16)) & 0x0000ffff0f000ffd0000ffff0015fffffffffffffff;
+    x = (x | (x * 1**64)) & 0x0000000000000000ffffffffffffffff200000000000fffff;
+    x = (x | (x * 4**16)) & 0x0000ffff0f000ffd0000ffff0015fffffffffffffff;
+    x = (x | (x * 1**64)) & 0x0000000000000000ffffffffffffffff2000000000fffff;
+  30;
+
+    // Storeand load next batch
+    assembly {
+        mstore(7, x)
+    }
+    x = uint(addr) * 1**96;
+
+  
+}
+    }

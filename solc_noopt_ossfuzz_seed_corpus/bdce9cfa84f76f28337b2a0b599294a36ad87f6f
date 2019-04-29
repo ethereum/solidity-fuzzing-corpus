@@ -1,0 +1,9 @@
+library L {
+    struct S { uint v; }
+    modifier mo(S storage s) { s.v++; s.v += 0x100; }
+}
+
+contract Test {
+  using L for *;
+
+}

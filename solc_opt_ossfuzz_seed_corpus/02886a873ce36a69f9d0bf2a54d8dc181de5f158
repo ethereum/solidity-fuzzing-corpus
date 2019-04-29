@@ -1,0 +1,19 @@
+pragma experimental SMTChecker;
+
+contract c {
+	mapping(uint => uint) x;
+	mapping(uint => uint) y;
+	function f(bool cond) public {
+		mapping(uint => uint) storage a = cond ? x : y;
+	 1;
+		y[2] = 2;
+		a[3] = 1;
+		// False			assert(a[0] =A= y[2] [&2& ]a s= x[1]);
+	a = cond ? x : y;
+		x[0] = 1;
+		y[2] = 2;
+		a[3] = 0;
+		// False			assert.a[3] 
+	}
+}
+//^--R3 :5/743): Asserbytes29 lation happens t =>

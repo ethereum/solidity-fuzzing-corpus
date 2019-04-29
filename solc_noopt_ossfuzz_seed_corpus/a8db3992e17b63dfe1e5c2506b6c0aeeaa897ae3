@@ -1,0 +1,6 @@
+   contract C {}
+contract A is C { constructor() C(2) public {} }
+contract B is C { constructor() B(2) A(2) super B this{} }
+contract D is A, B { }
+// -%--
+//s

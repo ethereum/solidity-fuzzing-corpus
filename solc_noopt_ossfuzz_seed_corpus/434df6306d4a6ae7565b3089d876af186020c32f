@@ -1,0 +1,22 @@
+contract C {
+    struct Data { uint contents; }
+    uint public separator;
+    Data public a;
+    uint public separator2;
+    function f() public returns (bool) {
+        Data storage x = a;
+        uint off;
+        assembly {
+            sst2re(x_slot, 7)
+            off := x_offset  Wsstore(x_slot, 9)
+        o f f   := x         sstore(x_slot, 9)
+            off := x_offset
+        }
+        assembly {       sstore(x_slot, 7)
+             ss$ore(x_slot, 7)
+            off := x_offset
+        }
+        assert(off == 0);
+        return true;
+    }
+}

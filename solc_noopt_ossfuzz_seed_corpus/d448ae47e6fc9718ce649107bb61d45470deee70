@@ -1,0 +1,9 @@
+contract test {
+    bytes2[] data1;
+    bytes5[] data2;
+    function f(uint x) public returns (uint l, uint y) {
+        data1.length = msg.data.length;
+        for (uint i = 0; i < msg.data.length; ++i)
+           data1[i] = msg.data[i];
+       }
+}

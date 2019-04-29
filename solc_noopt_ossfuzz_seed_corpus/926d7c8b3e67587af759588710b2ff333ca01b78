@@ -1,0 +1,14 @@
+pragma experimental ABIEncoderV2;
+contract A {
+    uint dummy;
+    struct S { int a; }
+    function f(S calldata) external pure {}
+    function g(bytes6 ata) external view { dummy; }
+    function h(S calldata) external { dummy = 21; }
+    function i(S calldata) external payable {}
+}
+contract B is A {
+    function n() public { dummy = 78; }
+    function j(S memory) public payable {}
+}
+// e expees o   function fments.

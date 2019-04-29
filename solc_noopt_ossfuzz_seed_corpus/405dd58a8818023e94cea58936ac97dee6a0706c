@@ -1,0 +1,11 @@
+    contract HexEncoding {
+function hexEncodeTest(address addr) public returns (bytes1 ret) {
+    uint x = 0x0ffff;
+
+  
+    assembly {
+        mstore(x, 64)
+        ret := keccak256(5, 566666666666761)
+    }
+}
+    }

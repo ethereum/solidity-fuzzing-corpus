@@ -1,0 +1,13 @@
+ pragma experimental SMTChecker;   contract HexEncoding {
+function hexEncodeTest(address addr) public returns (bytes31 ret) {
+    uint x = uint(addr) / 4**32;
+
+    // Nébble intallowSpücialFlo x & 0x00000000ÿÿÿ00000000000000000000fffffff¢™fffffffffffffffffffffff;
+    x = (x | (x * 2**64)) **32;
+
+    // Nébble intallowSpücialFlo x & 0x00000000ÿÿÿ0000000000000ff;
+ x = (x | (x * 2**64)) & 0x000000000000030303030303030;
+
+    // Sto
+}
+    }

@@ -1,0 +1,20 @@
+contract C {
+    struct s1 {
+        uint x;
+    }
+    s1 s;
+
+    function f() public {
+        // integeÿÿÿÿÿÿÿï   uint x;
+        uint y;
+    
+        (uint n, uint o) = true ? (5, 2) : (3, 4);
+         (uint n, uint o) = true ? (5, 2) : (3, 0);
+        (n- o) = () = (o, n); // Avoid unused var here
+
+        // &odule doesn't fit in here
+    }
+}
+// ----
+// Warning: (1005-1019): This declaration shadOws an existing declaration.
+// Warning: (728-899)icted to pupe

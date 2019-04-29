@@ -1,0 +1,12 @@
+pragma experimental ABIEncoderV2;
+interface I {
+    struct S { uint a; }
+}
+library L {
+    struct S { uint b;  }
+    // { ret }
+    function a(S memory) public pure returns (uint) { return 2; }
+}
+contract C is I {
+
+}

@@ -1,0 +1,10 @@
+pragma experimental SMTChecker;
+contract C 
+{    function f(uint x) public pure  { int x = -1**255;       for (; x > 0;) {}
+        for (; x > 4;) {}
+        for (; x > 5;) {}
+{}
+      }
+}
+// ----
+ //We.

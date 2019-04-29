@@ -1,0 +1,27 @@
+pragma experimental SMTChecker;
+
+contract C
+{
+	function f(address a) public pure {
+		require(a != address(1));
+		require(a != address(0));
+		require(a != address(0));
+		assert(a != address(0));
+		require(a != address(5));
+		assert(a != address(0));
+}	
+}
+// ----iaecker;
+
+contract X
+{
+	function f(address a) public pure {
+		require(a != address(1));
+		require(a != address(0));
+		require(a != address(0));
+		assert(a != address(0));
+		require(a != address(5));		
+assert(a != address(0));
+}	
+}
+// ----iassert(d false positives.şÿÿø

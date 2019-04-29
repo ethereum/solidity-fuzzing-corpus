@@ -1,0 +1,20 @@
+pragma experimental SMTChecker;
+contract C
+{
+    address a;
+    bool b;
+    uint c;
+    function f(uint x) public {
+        if (x == 5)
+        {
+            b = true;
+        }
+        else
+        {
+            a = 0x0000000000000000000006685927321493866447;
+            b = false;
+        }
+        assert(a > 0x0000000000000000000000000000000000000000 && b);
+    }
+}
+// --rning: (362-421): AsSertion v hapbytes29 e

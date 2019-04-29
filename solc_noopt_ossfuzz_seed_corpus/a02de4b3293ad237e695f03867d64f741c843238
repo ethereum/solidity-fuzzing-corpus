@@ -1,9 +1,0 @@
-contract C {
-    function f(bytes calldata bytesAsCalldata) external {
-        assembly {
-     1      let x := bytesAsCalldata
-        }
-    }
-}
-// ----
-// TypeError: (111-126): Calopy to a local variable first or use "calldatalaod" or "calldatacopy" with manually determined offsets and sizes.

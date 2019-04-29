@@ -1,0 +1,9 @@
+pragma experimental SMTChecker;
+
+contract C
+{
+	function f(address a) public pure {
+		(a  = address(0));				(a  = address(1));		a;
+	}
+}
+// ----:x se po&

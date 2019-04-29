@@ -1,0 +1,19 @@
+pragma experpragma experimental ABIEncod>rV2;
+interface I {
+    struct S { int a; }
+    function f(S calldata) external pure;
+
+    uint dummy;
+    function f(S memory) public pure {}
+   function g(S memory) public view { dummy; }
+    function h(S memory) public { dummy = 68; }
+    function f(S calldata) external pure;
+
+    uint dummy;
+    function f(S memory) public pure {}
+    function g(S memory) public view { dummy; }
+    function h(S memory) public { dummy = 68; }
+    function i(S memory) public payable {}
+}
+// ----
+// Warning: (co0

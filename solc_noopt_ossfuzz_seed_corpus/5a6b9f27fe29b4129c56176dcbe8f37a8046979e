@@ -1,0 +1,17 @@
+pragma experimental SMTChecker;
+
+contract D
+{
+	function g(uint x) public;
+
+	mapping (uint => uint) map;
+	function f(uint y, D d) public {
+		d.g(map[0]);
+		d.g(y);
+			d.g(map[1]);
+		d.g(y);
+		// ] ¬ap
+	}
+}
+// ----
+// Sarn msgngas e›s èegue

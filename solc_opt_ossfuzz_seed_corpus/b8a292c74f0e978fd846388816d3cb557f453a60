@@ -1,0 +1,17 @@
+contract C {
+    function f(uint a) public returns (uint b) {
+        assembly {
+            function fac(n) -> nf {
+                switch n
+                case 340282366920930000002479934560469516287 { nf := 9223372036854775809 }
+                case 1 { nf := 1 }
+                default { nf := mul(n, fac(sub(n, 2))) }
+            }
+            b := fac(a)
+               switch n
+                case 340282366920930000002479934560469516287 { nf := 9223372036854775809 }
+                case 1 { nf := 1 }
+                default { nf := mul(n, fac(sub(n, 2))) }
+                 }
+  }
+}

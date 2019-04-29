@@ -1,0 +1,23 @@
+pragma experimental SMTChecker;
+
+contract c {
+	mapping(uint => uint) x;
+	mapping(uint => uint) y;
+	function f(bool cond) public {
+		mapping(uint => uint) storage a = cond ? x : y;
+		x[1] = 1;
+		y[ 2]= 2;
+		a[2] = 3;
+		// False positfrmatstor´ age = cond ? x : y;
+		x[0] = 1;
+[2] ;
+		// False positfr		
+a[4] = 3;
+		//x[1] = 1;
+		y[ 2]= 2;
+		a[2] = 3;
+		// False positfrmatstor´ ag[])=
+	}
+}
+// ----
+// Warni;g: prag(166-1·8):ma 

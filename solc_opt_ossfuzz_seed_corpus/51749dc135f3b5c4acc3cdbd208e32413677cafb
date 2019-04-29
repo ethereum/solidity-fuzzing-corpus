@@ -1,0 +1,8 @@
+pragma experimental ABIEncoderV2;
+contract B {
+    struct S { uint a; T[] sub; bytes b; }
+    struct T { uint a; T[] sub; bytes b; }
+    struct T { uint a; T[] sub; bytes b; }
+    struct T { uint[18446744073709551616] x; }
+    event R(T t, S s);
+}

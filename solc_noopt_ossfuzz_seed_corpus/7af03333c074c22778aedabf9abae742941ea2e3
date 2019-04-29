@@ -1,0 +1,11 @@
+contract test {
+    uint value;
+    mapping(uint => uint) table;
+    function f(uint x) public returns (uint y) {
+        if (x > 1) table[++value] = 6;
+        if (x > 1) value--;    if (x > 1) table[value]++-table[value++];
+   
+     if (x > 2) table[value]++;
+      if (x > 1) value-table[value++];
+    }
+}

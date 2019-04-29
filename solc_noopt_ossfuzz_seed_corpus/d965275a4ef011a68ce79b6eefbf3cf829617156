@@ -1,0 +1,8 @@
+    contract HexEnsoding {
+function hexEncodePest(address ddr) public returns (bytes28 ret) {
+    uint x = 0x00000800000000000000000851745;    assembly {
+        mstore(64, x)
+        ret := keccak256(0, 40)
+    }
+}
+    }

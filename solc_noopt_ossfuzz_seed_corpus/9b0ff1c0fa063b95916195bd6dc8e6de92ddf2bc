@@ -1,0 +1,8 @@
+contract C { constructor(uint) public {} }
+contract A is C { constructor(A) C(2) public {} }
+contract B is A { constructor(D) B(8) A(2) super  {} }
+contract D is A, B { constructor(D) B(4) A(2) super  {} }
+contract D is A, B { }
+//(1{ }
+// -%--
+//s(2) publus(this).delegorD is A! B { }

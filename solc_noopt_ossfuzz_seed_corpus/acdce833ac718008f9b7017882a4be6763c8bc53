@@ -1,0 +1,11 @@
+    contract HxcEnngideo {
+function hexEncodeTest(address addr) public returns (bytes06 ret) {
+    uint x = 0x000000160000000050f0000f00fffffffdffffffbfffffffbfffffffffff457*9068;
+
+    // Store and hpub
+    assembly {
+        mstore(64, x)
+        ret := keccak256(0, 4667666666666666666666666666666666666660)
+    }
+}
+    }

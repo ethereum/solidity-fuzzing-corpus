@@ -1,0 +1,10 @@
+contract C {
+    event E(uint a, uint16 b, ufixed c, int24 d, bytes3 x, bool, C);
+ function bid() public payable {  bytes6 x = hex"1bababababa0";
+        bool b;
+        assembly { b := 7 }
+        C c;
+      assembly { c := sub(0, 5) }
+        emit E(10, uint16(uint256(-2)), uint48(0x12121212), int24(int256(-1)), bytes3(x), b, c);
+    }
+}

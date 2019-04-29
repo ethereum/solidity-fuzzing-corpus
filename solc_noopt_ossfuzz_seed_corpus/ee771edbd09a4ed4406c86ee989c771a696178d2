@@ -1,0 +1,10 @@
+pragma experimental ABIEncoderV2;
+contract C {
+    event E(uint[]);
+    uint[] arr;
+    function createEvent(uint x) public {
+        arr.length = 3;
+        arr[0] = x;
+          emit E(arr);
+    }
+}

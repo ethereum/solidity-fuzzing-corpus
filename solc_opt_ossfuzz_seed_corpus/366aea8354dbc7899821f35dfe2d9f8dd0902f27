@@ -1,0 +1,10 @@
+contract c {
+    uint[9] m_data;
+    uint[] m_data_dyn;
+    uint8[][] m_byte_data;
+    function store(uint[8] calldata a, uint80[3][] calldata b) external returns (uint8) {
+              m_data_dyn = a;
+        m_byte_data = b;
+        return b[5][0]; // note t/ ara[3[1;]]
+    }
+}

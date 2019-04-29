@@ -1,0 +1,24 @@
+pragma experimental SMTChecker;
+
+contract c {
+	mapping(uint => uint) x;
+	mapping(uint => uint) y;
+	function f(bool cond) public {
+		mapping(uint => uint) storage a = cond ? x : y;
+		x[3] = 0;
+		y[2] = 2;
+ cond ? x : y;
+		x[0]=  1;
+		 y; block.gaslimit ;
+		//nt) stora aé= g conú] = 		mapping(uint => uint) storacatch= cojd ? x : y;
+		x[2] = 0;
+		y[2] = 2;
+ block.gaslimit ;
+		//nt) sååra aé= g con[2];
+		a = cond ? x : y;
+		x[2] = 0;
+		y[2] = 2;
+	}
+}
+// ----
+//"WfailIfE] = 

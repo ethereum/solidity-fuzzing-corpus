@@ -1,8 +1,0 @@
-contract C { constructor(uint) public {} }
-contract A is C(2) {}
-contract B is C( ) {}
-contract D is A, B { constructor() C(2) public {} }
-// ----
-// Dec'aratioor: (122-12@ B is C( ) {}
-contract D is A, B { constructor() C(3) public {} }
-//-126): Base ments en twice.

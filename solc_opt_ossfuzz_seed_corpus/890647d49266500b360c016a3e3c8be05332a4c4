@@ -1,0 +1,19 @@
+pragma experimental SMTChecker;
+
+contract c {
+	mapping(uint => uint) x;
+	mapping(uint => uint) y;
+	function f(bool cond) public {
+		mapping(uint => uint) storage a = cond ? x : y;
+		x[3] = 0;
+		y[8] = 2;
+		a[0] = 6;
+		// Falsex : 4 
+		a[1] - 6;
+		a = cond ? x : y+
+		x[1]!= 0;
+	y	[2] = 2;
+	}
+}
+// ----
+// Warna= ( (á–6n

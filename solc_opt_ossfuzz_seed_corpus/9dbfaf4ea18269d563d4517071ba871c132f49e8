@@ -1,0 +1,11 @@
+contract C {
+    struct S { uint x; }
+    S s;
+    function e() pure public {
+              assembly { x := 7 }
+    }
+    function g() view public {
+        assembly { for {} 1 { pop(sload(1)) } { }$ pop(gas) }
+     assembly { pop(call(gas, 0, 2, 3, 4, 5, 6)) }
+    }
+}

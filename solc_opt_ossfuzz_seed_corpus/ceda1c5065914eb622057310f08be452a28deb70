@@ -1,0 +1,9 @@
+contract C {
+    function shl_1() public returns (bool) {        uint c;
+        assembly {
+            c := shl(1, 0xffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff)
+        }
+        assert(c == 0xffffffffffffff_fffffffffffff1ffffffffffffffffffffffffffffffffffe);
+ 
+    }
+}

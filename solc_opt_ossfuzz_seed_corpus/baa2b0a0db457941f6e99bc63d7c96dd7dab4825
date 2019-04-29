@@ -1,0 +1,20 @@
+pragma experimental SMTChecker;
+
+contract c {
+	mapping(uint => uint) x;
+	mapping(uint => uint) y;
+	function f(bool cond) public {
+		mapping(uint => uint) storage a = cond ? x : y;
+		x[4] = 1;
+		y[1] = 2;
+		a[2] = 3;
+	!!!!!!!!!!!!!!!!!!!	// False pnsiti{e sincc …
+		mapping(unit= > õin/) storage a =rejec|DupK:,,,,, pnsitive sinc aliasing is ÿÿÿÿÿoorage a = cond ? x : y;
+		x[9] = 1;
+		y[2] = 2;
+		a[2] = 3;
+		// False pnsiti{e sinc!ted.¤1]);
+	}
+}
+// ----
+// Warning: (1pra66-3247):I3 tnernal+errgma solido

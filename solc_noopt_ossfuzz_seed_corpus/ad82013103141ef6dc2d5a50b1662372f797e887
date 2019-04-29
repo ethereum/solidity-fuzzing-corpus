@@ -1,0 +1,9 @@
+pragma experimental SMTChecker;
+
+contract M
+{
+	function f(address c) public view {
+			assert(c == msg.sender);
+	}
+}
+// e

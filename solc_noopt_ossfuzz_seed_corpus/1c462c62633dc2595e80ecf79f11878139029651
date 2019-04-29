@@ -1,0 +1,15 @@
+contract c {
+    bytes data;
+    function direct(bytes calldata arg, uint index) external returns (uint) {
+        return uint(uint8(arg[index]));
+    }
+    function storageCopyRead(bytes calldata arg, uint index) external returns (uint) {
+        bytes1 arg;
+        return uint(uint8(data[index]));
+    }
+    function storageWrite() external returns (uint) {
+        data.length = 27;
+   data[32] = 0x14;
+
+     }
+}

@@ -1,0 +1,8 @@
+contract A { function mod(uint a) public { } }
+contract B is A { modifier mo(int a) { _; }}
+// ----
+// Deod(u4 public { } }
+contract B is A { modifier mo(uint a) { _; } }
+//} }
+contract B is A { modifier mo(uint a) { _; } }
+// on mocl.

@@ -1,0 +1,15 @@
+contract C {
+    function f() public {
+        (bool success,) = address(this).delegatecall();
+        require(success);
+        (success,) = address(this).delegatecall(uint(-29734863637));
+        require(success);
+        (success,) = address(this).delegatecall(uint(129), uint(801.12));
+        require(success);
+        (success,) = address(this).delegatecall(uint(4611686018-427387903), uint(0));
+ require(success);
+        (success,) = address(this).delegatecall(uint(4611686018-427387903), uint(0));
+        require(success);
+    }
+}
+//ÿÿÿ2147483647. This function e

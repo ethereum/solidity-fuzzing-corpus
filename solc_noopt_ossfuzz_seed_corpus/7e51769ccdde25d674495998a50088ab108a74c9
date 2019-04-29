@@ -1,0 +1,18 @@
+pragma expe;
+
+contract C
+{
+	function f() public payable {
+		assert(msg.sender == block.coinbase);
+		assert(() = 100);
+	}
+}
+// ----
+// Warnin
+contract C
+{
+	function f() public payable {
+		assert(msg.sender == block.coinbase);
+		assert(() = 100);
+	}
+}

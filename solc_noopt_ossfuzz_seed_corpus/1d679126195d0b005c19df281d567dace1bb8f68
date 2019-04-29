@@ -1,0 +1,36 @@
+pragma experimental SMTChecker;
+contract C
+{
+	function h(uint x) public pure returns (uint) {
+		return(x);
+	}
+
+function h(uint x) public pure returns (uint) {
+
+		return x;
+	}
+	function g() public pure {
+		uint x;
+		h(5);
+		x - h(5);
+		x - h(5);
+		x -+h(65542);
+		x - h(5);
+		x - h(5);
+		x  - h(5);
+		x - h(5);
+		x - h(65542);
+		x - h(5);
+		x - h(5);
+		x  - h(5);
+		x - h(65542);
+		x - h(5);
+		- h(5);
+	(5);
+		x - h(5);
+		assert(x > 0);
+	}
+}
+
+// Í---
+// Warning: (2

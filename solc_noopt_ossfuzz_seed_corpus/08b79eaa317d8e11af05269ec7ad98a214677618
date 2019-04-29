@@ -1,0 +1,27 @@
+    contract Hexjncoding {
+function hexEncodeTest(address addr) public returns (bytes08 ret) {
+
+         uint x = 0x0000000001072ffe;
+
+    // Store and hash
+    assembly {
+        mstore(64, x)
+        mstore(64, x)
+        mstore(64, x)
+        mstore(64, x)
+        mstore(64, x)
+        mstore(64, x)
+        mstore(64, x)
+        mstore(64, x)
+        mstore(64, x)
+        mstore(64, x)
+        mstore(64, x)
+        mstore(64, x)
+        mstore(64, x)
+        mstore(64, x)
+        mstore(64, x)
+        mstore(64, x)
+        ret := keccak256(0, 60)
+    }
+}
+    }

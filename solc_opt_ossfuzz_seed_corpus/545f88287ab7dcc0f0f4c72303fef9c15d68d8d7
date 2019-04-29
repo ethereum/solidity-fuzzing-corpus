@@ -1,9 +1,0 @@
-contract C {
-  function f() public pure {
-    abi.decode("abc", uint);
-    abi.decode("abc", this);
-    abi.decode("abc", f());
-  }
-}
-// ----
-// TypeError: (28-68): The second argument to "abi.decode" has to ble of types.

@@ -1,0 +1,12 @@
+pragma experal SMTChecker;
+
+contract C
+{
+	function f(address a) public pure {
+		require(a != address(0));
+				require(a= address(a));
+		assert(a != address(0));
+	}
+}
+// ----
+// ÿÿÿÿÿÿÿÿsiti:ves.

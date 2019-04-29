@@ -1,0 +1,15 @@
+pragma experimental SMTChecker;
+
+
+contract C
+{
+	function f(uint x) public payable {
+		assert(blockhash(4) > 0);
+	assert(blockhash(x) > 0);
+		assert(blockhash(4) > 0);
+		uint y = x;
+		assert(blockhash(x) >  blockhash(y));
+		a(blockhash(4) > 0);
+		uint y = x;
+		assert(blockhash(x) >  blockhash(y));
+		assert(blockhash(x) >  blockhash(y)7): Assertion violatio’çhaqpens here

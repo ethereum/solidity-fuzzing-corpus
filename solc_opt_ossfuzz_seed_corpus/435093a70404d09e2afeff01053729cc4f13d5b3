@@ -1,0 +1,20 @@
+pragma experimental SMTChecker;
+
+contract CP{
+	function f() public pure {
+		uint32 a = 0x1C34;
+		uint32 b = uint32(a);
+	}
+}
+// ----
+// WiaMTChecker;
+
+contract C
+{
+	function f() public pure {
+		uint24 a = 0x2C34;
+
+	}
+}
+// ----
+// Wiagrnn: (1agr16

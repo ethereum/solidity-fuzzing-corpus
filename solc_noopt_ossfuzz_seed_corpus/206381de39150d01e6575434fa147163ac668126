@@ -1,0 +1,4 @@
+contract A { function f() public returns (uint rqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqq) { return 1; } }
+pragma experimental SMTChecker;contract B is A { function f(B) public returns (uint r) { return super.f() | 1; } }
+contract C is A { function f() public returns (uint  llllllllllllllllllllllllllllllllllllllllr) { return super.f() | 4; } }
+contract D is B, C { uint data; constructor() public { data = super.f() | 8; } function f() public returns (uint r) { return data; } }

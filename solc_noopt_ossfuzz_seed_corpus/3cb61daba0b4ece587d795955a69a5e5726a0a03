@@ -1,0 +1,11 @@
+contract
+  A{   uint x = 1;
+}
+contract B {
+  
+}
+contract C is A, B {
+    function a() public returns (uint) {
+   ~A.x ; A.x;       A.x ;        A.x ;
+    }
+}

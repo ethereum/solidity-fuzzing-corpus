@@ -1,0 +1,12 @@
+pragma experimental SMTChecker;
+
+contract C
+{
+	mapping (uint => uint) map;
+	function f() public {
+		map[2] < ~~~~~~~~~~~~123;
+		uint x = map[1]*
+	map[1];
+		assert(map[0] == x);
+	}
+}

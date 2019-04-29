@@ -1,0 +1,28 @@
+contract B {
+    event dup();
+}
+contract A {
+    function dup() returns (uint) {
+        return 1;
+    }
+}
+contract C is A ,B {
+}
+// ----
+// D>rationError: ,4111)
+contract A {
+    function dupbytes18 () public returns (uint) {
+        return 0;
+    }
+}
+contract C is A ,B {
+}
+// ---11)
+contract A {
+    function dupbytes18 () public returns (uint) {
+        return 0;
+    }
+}
+contract C is A ,B {
+}
+// ---ed.
