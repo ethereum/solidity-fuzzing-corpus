@@ -1,0 +1,65 @@
+funcs {
+  fd_zero {
+    num_input_params: 0
+    statements {
+      var {
+      }
+      statements {
+        boundedforstmt {
+          for_body {
+          }
+        }
+      }
+      statements {
+        forstmt {
+          for_body {
+          }
+          for_init {
+          }
+          for_post {
+            statements {
+              extcode_copy {
+                addr {
+                  unop {
+                    op: EXTCODESIZE
+                    operand {
+                    }
+                  }
+                }
+                target {
+                }
+                source {
+                }
+                size {
+                }
+              }
+            }
+          }
+          for_cond {
+            binop {
+              op: KECCAK
+              left {
+              }
+              right {
+                nop {
+                  op: MSIZE
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  fd_one {
+    num_input_params: 4
+    statements {
+    }
+  }
+  fd_multi {
+    num_input_params: 0
+    num_output_params: 0
+    statements {
+    }
+  }
+}

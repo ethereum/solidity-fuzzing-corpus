@@ -1,0 +1,66 @@
+funcs {
+  fd_zero {
+    num_input_params: 0
+    statements {
+      var {
+      }
+    }
+  }
+  fd_one {
+    num_input_params: 8
+    statements {
+      statements {
+        ifstmt {
+          cond {
+            binop {
+              op: BYTE
+              left {
+                cons {
+                  intval: 26112
+                }
+              }
+              right {
+              }
+            }
+          }
+          if_body {
+          }
+        }
+      }
+    }
+  }
+  fd_multi {
+    num_input_params: 0
+    num_output_params: 8
+    statements {
+      statements {
+        ifstmt {
+          cond {
+            binop {
+              op: BYTE
+              left {
+                cons {
+                  intval: 26112
+                }
+              }
+              right {
+                binop {
+                  op: BYTE
+                  left {
+                    cons {
+                      intval: 26112
+                    }
+                  }
+                  right {
+                  }
+                }
+              }
+            }
+          }
+          if_body {
+          }
+        }
+      }
+    }
+  }
+}

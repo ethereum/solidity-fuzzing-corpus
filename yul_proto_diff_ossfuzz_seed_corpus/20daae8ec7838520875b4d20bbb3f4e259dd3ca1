@@ -1,0 +1,39 @@
+funcs {
+  fd_zero {
+    num_input_params: 0
+    statements {
+      var {
+      }
+    }
+  }
+  fd_one {
+    num_input_params: 0
+    statements {
+    }
+  }
+  fd_multi {
+    num_input_params: 3
+    num_output_params: 2
+    statements {
+      statements {
+        storage_func {
+          loc {
+            unop {
+              op: ISZERO
+              operand {
+              }
+            }
+          }
+          val {
+            unop {
+              op: ISZERO
+              operand {
+              }
+            }
+          }
+          st: MSTORE
+        }
+      }
+    }
+  }
+}

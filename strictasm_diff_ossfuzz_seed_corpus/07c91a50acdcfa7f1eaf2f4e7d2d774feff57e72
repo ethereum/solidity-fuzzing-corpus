@@ -1,0 +1,48 @@
+{
+let a_0, a_1, a_2, a_3
+function foo_noreturn_0()
+{
+let x_0
+}
+foo_noreturn_0()
+function foo_singlereturn_0() -> x_0
+{
+if shl(shl(shl(x_0,x_0),shl(x_0,x_0)),1) {}
+if shl(shl(shl(x_0,x_0),shl(x_0,x_0)),1) {}
+}
+a_0 := foo_singlereturn_0()
+sstore(0, a_0)
+function foo_multireturn_0() -> x_0, x_1
+{
+if shl(shl(shl(x_0,x_0),shl(x_0,x_0)),1) {}
+if shl(shl(1,x_0),1) {}
+}
+a_0, a_1 := foo_multireturn_0()
+sstore(0, a_0)
+sstore(32, a_1)
+function foo_noreturn_1(x_0, x_1)
+{
+let x_2
+}
+foo_noreturn_1(calldataload(0),calldataload(32))
+function foo_singlereturn_1() -> x_0
+{
+if shl(shl(1,x_0),1) {}
+if shl(shl(shl(x_0,x_0),shl(x_0,x_0)),1) {}
+if shl(shl(shl(x_0,x_0),shl(x_0,x_0)),1) {}
+}
+a_0 := foo_singlereturn_1()
+sstore(0, a_0)
+function foo_multireturn_1() -> x_0, x_1, x_2
+{
+if shl(shl(1,x_0),1) {}
+if shl(shl(shl(x_0,x_0),shl(x_0,x_0)),1) {}
+if shl(shl(1,x_0),1) {}
+if shl(shl(shl(x_0,x_0),shl(x_0,x_0)),1) {}
+for { let i_0 := 0 } lt(i_0, 0x60) { i_0 := add(i_0, 0x20) } {}
+}
+a_0, a_1, a_2 := foo_multireturn_1()
+sstore(0, a_0)
+sstore(32, a_1)
+sstore(64, a_2)
+}

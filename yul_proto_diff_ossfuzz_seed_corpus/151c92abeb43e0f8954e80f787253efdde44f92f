@@ -1,0 +1,73 @@
+funcs {
+  fd_zero {
+    num_input_params: 0
+    statements {
+      var {
+      }
+      statements {
+        forstmt {
+          for_body {
+          }
+          for_init {
+          }
+          for_post {
+          }
+          for_cond {
+            binop {
+              op: SHL
+              left {
+              }
+              right {
+                binop {
+                  op: SHR
+                  left {
+                    cons {
+                      intval: 136
+                    }
+                  }
+                  right {
+                    binop {
+                      op: SHR
+                      left {
+                      }
+                      right {
+                        nop {
+                          op: GAS
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+      statements {
+        terminatestmt {
+          ret_rev {
+            stmt: RETURN
+            pos {
+              nop {
+                op: CALLDATASIZE
+              }
+            }
+            size {
+            }
+          }
+        }
+      }
+    }
+  }
+  fd_one {
+    num_input_params: 0
+    statements {
+    }
+  }
+  fd_multi {
+    num_input_params: 8
+    num_output_params: 0
+    statements {
+    }
+  }
+}

@@ -1,0 +1,61 @@
+funcs {
+  fd_zero {
+    num_input_params: 4
+    statements {
+      var {
+      }
+      statements {
+        terminatestmt {
+          self_des {
+            addr {
+              binop {
+                op: SHL
+                left {
+                  nop {
+                    op: GAS
+                  }
+                }
+                right {
+                  binop {
+                    op: SHL
+                    left {
+                      nop {
+                        op: GAS
+                      }
+                    }
+                    right {
+                      binop {
+                        op: SHL
+                        left {
+                          nop {
+                            op: GAS
+                          }
+                        }
+                        right {
+                          cons {
+                            intval: 0
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  fd_one {
+    num_input_params: 4
+    statements {
+    }
+  }
+  fd_multi {
+    num_input_params: 8
+    num_output_params: 1
+    statements {
+    }
+  }
+}

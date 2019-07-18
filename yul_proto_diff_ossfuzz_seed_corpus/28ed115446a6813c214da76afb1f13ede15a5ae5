@@ -1,0 +1,49 @@
+funcs {
+  fd_zero {
+    num_input_params: 2
+    statements {
+      var {
+      }
+    }
+  }
+  fd_one {
+    num_input_params: 4
+    statements {
+    }
+  }
+  fd_multi {
+    num_input_params: 0
+    num_output_params: 4
+    statements {
+      statements {
+        assignment {
+          ref_id {
+            varnum: 5
+          }
+          expr {
+            binop {
+              op: XOR
+              left {
+              }
+              right {
+                binop {
+                  op: XOR
+                  left {
+                    nop {
+                      op: PC
+                    }
+                  }
+                  right {
+                    cons {
+                      strval: "\377S"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

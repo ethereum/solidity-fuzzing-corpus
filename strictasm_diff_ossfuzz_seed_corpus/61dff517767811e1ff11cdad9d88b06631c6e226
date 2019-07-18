@@ -1,9 +1,0 @@
-{
-let x_9
-{
-x_9 := shr(not(shr(mload(1),1)),add(16,1))
-for { let i_0 } lt(i_0, 0x100) { i_0 := add(i_0, 0x20) }{
-x_9 := shr(not(shr(add(mload(1),1),1)),255)
-}
-x_9 := shr(not(shr(add(mload(1),1),1)),sload(1))
-}}

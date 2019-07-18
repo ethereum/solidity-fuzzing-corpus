@@ -1,0 +1,80 @@
+funcs {
+  fd_zero {
+    num_input_params: 9
+    statements {
+      var {
+      }
+    }
+  }
+  fd_one {
+    num_input_params: 0
+    statements {
+      statements {
+        storage_func {
+          loc {
+            nop {
+              op: CALLDATASIZE
+            }
+          }
+          val {
+            nop {
+              op: CALLDATASIZE
+            }
+          }
+          st: SSTORE
+        }
+      }
+      statements {
+        storage_func {
+          loc {
+            nop {
+              op: CALLDATASIZE
+            }
+          }
+          val {
+            nop {
+              op: CALLDATASIZE
+            }
+          }
+          st: MSTORE
+        }
+      }
+    }
+  }
+  fd_multi {
+    num_input_params: 0
+    num_output_params: 9
+    statements {
+      statements {
+        storage_func {
+          loc {
+            nop {
+              op: CALLDATASIZE
+            }
+          }
+          val {
+            nop {
+              op: CALLDATASIZE
+            }
+          }
+          st: MSTORE
+        }
+      }
+      statements {
+        storage_func {
+          loc {
+            nop {
+              op: CALLDATASIZE
+            }
+          }
+          val {
+            nop {
+              op: CALLDATASIZE
+            }
+          }
+          st: MSTORE
+        }
+      }
+    }
+  }
+}

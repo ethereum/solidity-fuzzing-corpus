@@ -1,0 +1,42 @@
+funcs {
+  fd_zero {
+    num_input_params: 1
+    statements {
+      var {
+      }
+    }
+  }
+  fd_one {
+    num_input_params: 3
+    statements {
+      statements {
+        storage_func {
+          loc {
+            binop {
+              op: EXP
+              left {
+                cons {
+                  hexval: "FFFFFFFFFFFFFFFFFFFFFFF"
+                }
+              }
+              right {
+                cons {
+                  intval: 1914708000
+                }
+              }
+            }
+          }
+          val {
+          }
+          st: MSTORE
+        }
+      }
+    }
+  }
+  fd_multi {
+    num_input_params: 1
+    num_output_params: 3
+    statements {
+    }
+  }
+}

@@ -1,0 +1,140 @@
+funcs {
+  fd_zero {
+    num_input_params: 8
+    statements {
+      var {
+      }
+      statements {
+        storage_func {
+          loc {
+            unop {
+              op: ISZERO
+              operand {
+                unop {
+                  op: MLOAD
+                  operand {
+                  }
+                }
+              }
+            }
+          }
+          val {
+          }
+          st: MSTORE
+        }
+      }
+    }
+  }
+  fd_one {
+    num_input_params: 6
+    statements {
+      statements {
+        storage_func {
+          loc {
+            unop {
+              op: ISZERO
+              operand {
+              }
+            }
+          }
+          val {
+            unop {
+              op: ISZERO
+              operand {
+                unop {
+                  op: ISZERO
+                  operand {
+                  }
+                }
+              }
+            }
+          }
+          st: MSTORE
+        }
+      }
+      statements {
+        storage_func {
+          loc {
+            unop {
+              op: ISZERO
+              operand {
+              }
+            }
+          }
+          val {
+            unop {
+              op: ISZERO
+              operand {
+                unop {
+                  op: ISZERO
+                  operand {
+                  }
+                }
+              }
+            }
+          }
+          st: MSTORE
+        }
+      }
+      statements {
+        storage_func {
+          loc {
+            unop {
+              op: ISZERO
+              operand {
+                unop {
+                  op: NOT
+                  operand {
+                  }
+                }
+              }
+            }
+          }
+          val {
+            unop {
+              op: SLOAD
+              operand {
+                unop {
+                  op: ISZERO
+                  operand {
+                  }
+                }
+              }
+            }
+          }
+          st: MSTORE
+        }
+      }
+    }
+  }
+  fd_multi {
+    num_input_params: 8
+    num_output_params: 4
+    statements {
+      statements {
+        storage_func {
+          loc {
+            unop {
+              op: ISZERO
+              operand {
+              }
+            }
+          }
+          val {
+            unop {
+              op: ISZERO
+              operand {
+                unop {
+                  op: ISZERO
+                  operand {
+                  }
+                }
+              }
+            }
+          }
+          st: MSTORE
+        }
+      }
+    }
+  }
+}

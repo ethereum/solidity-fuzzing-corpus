@@ -1,0 +1,47 @@
+funcs {
+  fd_zero {
+    num_input_params: 4
+    statements {
+      var {
+      }
+    }
+  }
+  fd_one {
+    num_input_params: 2
+    statements {
+      statements {
+        forstmt {
+          for_body {
+          }
+          for_init {
+          }
+          for_post {
+          }
+          for_cond {
+            binop {
+              op: SI
+              left {
+                nop {
+                  op: CODESIZE
+                }
+              }
+              right {
+                unop {
+                  op: NOT
+                  operand {
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  fd_multi {
+    num_input_params: 2
+    num_output_params: 4
+    statements {
+    }
+  }
+}

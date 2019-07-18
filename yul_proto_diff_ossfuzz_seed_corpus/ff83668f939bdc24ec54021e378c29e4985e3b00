@@ -1,0 +1,83 @@
+funcs {
+  fd_zero {
+    num_input_params: 4
+    statements {
+      var {
+      }
+    }
+  }
+  fd_one {
+    num_input_params: 1
+    statements {
+    }
+  }
+  fd_multi {
+    num_input_params: 1
+    num_output_params: 4
+    statements {
+      statements {
+        storage_func {
+          loc {
+            binop {
+              op: SUB
+              left {
+                binop {
+                  op: SUB
+                  left {
+                    varref {
+                      varnum: 14
+                    }
+                  }
+                  right {
+                  }
+                }
+              }
+              right {
+                binop {
+                  op: SUB
+                  left {
+                    binop {
+                      op: SUB
+                      left {
+                        varref {
+                          varnum: 14
+                        }
+                      }
+                      right {
+                      }
+                    }
+                  }
+                  right {
+                    binop {
+                      op: SUB
+                      left {
+                        binop {
+                          op: SUB
+                          left {
+                            varref {
+                              varnum: 14
+                            }
+                          }
+                          right {
+                          }
+                        }
+                      }
+                      right {
+                        nop {
+                          op: PC
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+          val {
+          }
+          st: MSTORE
+        }
+      }
+    }
+  }
+}

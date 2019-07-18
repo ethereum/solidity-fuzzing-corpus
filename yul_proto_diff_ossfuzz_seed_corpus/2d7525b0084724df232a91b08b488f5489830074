@@ -1,0 +1,120 @@
+funcs {
+  fd_zero {
+    num_input_params: 6
+    statements {
+      var {
+      }
+      statements {
+        boundedforstmt {
+          for_body {
+          }
+        }
+      }
+      statements {
+        boundedforstmt {
+          for_body {
+          }
+        }
+      }
+      statements {
+        boundedforstmt {
+          for_body {
+          }
+        }
+      }
+    }
+  }
+  fd_one {
+    num_input_params: 4
+    statements {
+      statements {
+        copy_func {
+          ct: CALLDATA
+          target {
+          }
+          source {
+          }
+          size {
+          }
+        }
+      }
+    }
+  }
+  fd_multi {
+    num_input_params: 6
+    num_output_params: 4
+    statements {
+      statements {
+        copy_func {
+          ct: CALLDATA
+          target {
+          }
+          source {
+          }
+          size {
+          }
+        }
+      }
+    }
+  }
+}
+funcs {
+  fd_zero {
+    num_input_params: 0
+    statements {
+      var {
+      }
+      statements {
+        copy_func {
+          ct: CALLDATA
+          target {
+          }
+          source {
+          }
+          size {
+          }
+        }
+      }
+    }
+  }
+  fd_one {
+    num_input_params: 50331649
+    statements {
+      statements {
+        storage_func {
+          loc {
+          }
+          val {
+          }
+          st: SSTORE
+        }
+      }
+      statements {
+        copy_func {
+          ct: CALLDATA
+          target {
+          }
+          source {
+          }
+          size {
+          }
+        }
+      }
+    }
+  }
+  fd_multi {
+    num_input_params: 0
+    num_output_params: 4
+    statements {
+      statements {
+        storage_func {
+          loc {
+          }
+          val {
+          }
+          st: SSTORE
+        }
+      }
+    }
+  }
+}

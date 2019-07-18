@@ -1,0 +1,230 @@
+funcs {
+  fd_zero {
+    num_input_params: 0
+    statements {
+      var {
+      }
+    }
+  }
+  fd_one {
+    num_input_params: 1024
+    statements {
+      statements {
+        storage_func {
+          loc {
+            binop {
+              op: SUB
+              left {
+                binop {
+                  op: ADD
+                  left {
+                    top {
+                      op: ADDM
+                      arg1 {
+                      }
+                      arg2 {
+                      }
+                      arg3 {
+                        nop {
+                          op: CODESIZE
+                        }
+                      }
+                    }
+                  }
+                  right {
+                    nop {
+                      op: CODESIZE
+                    }
+                  }
+                }
+              }
+              right {
+              }
+            }
+          }
+          val {
+          }
+          st: MSTORE
+        }
+      }
+      statements {
+        storage_func {
+          loc {
+            binop {
+              op: SUB
+              left {
+                binop {
+                  op: ADD
+                  left {
+                  }
+                  right {
+                    nop {
+                      op: CODESIZE
+                    }
+                  }
+                }
+              }
+              right {
+                binop {
+                  op: ADD
+                  left {
+                  }
+                  right {
+                    cons {
+                    }
+                  }
+                }
+              }
+            }
+          }
+          val {
+          }
+          st: MSTORE
+        }
+      }
+    }
+  }
+  fd_multi {
+    num_input_params: 0
+    num_output_params: 0
+    statements {
+      statements {
+        storage_func {
+          loc {
+            binop {
+              op: OR
+              left {
+                binop {
+                  op: ADD
+                  left {
+                    top {
+                      op: ADDM
+                      arg1 {
+                      }
+                      arg2 {
+                      }
+                      arg3 {
+                        nop {
+                          op: CALLDATASIZE
+                        }
+                      }
+                    }
+                  }
+                  right {
+                    nop {
+                      op: CODESIZE
+                    }
+                  }
+                }
+              }
+              right {
+                binop {
+                  op: ADD
+                  left {
+                  }
+                  right {
+                    cons {
+                      strval: "WWfWu"
+                    }
+                  }
+                }
+              }
+            }
+          }
+          val {
+          }
+          st: MSTORE
+        }
+      }
+      statements {
+        storage_func {
+          loc {
+            binop {
+              op: SUB
+              left {
+                binop {
+                  op: ADD
+                  left {
+                  }
+                  right {
+                    func_expr {
+                      func_index: 0
+                      in_param1 {
+                      }
+                      in_param2 {
+                      }
+                      in_param3 {
+                      }
+                      in_param4 {
+                        unop {
+                          op: NOT
+                          operand {
+                            func_expr {
+                              func_index: 0
+                              in_param1 {
+                              }
+                              in_param2 {
+                              }
+                              in_param3 {
+                              }
+                              in_param4 {
+                                func_expr {
+                                  func_index: 0
+                                  in_param1 {
+                                  }
+                                  in_param2 {
+                                  }
+                                  in_param3 {
+                                  }
+                                  in_param4 {
+                                    unop {
+                                      op: EXTCODESIZE
+                                      operand {
+                                      }
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+              right {
+              }
+            }
+          }
+          val {
+            cons {
+              strval: "WWfWu"
+            }
+          }
+          st: MSTORE
+        }
+      }
+    }
+  }
+}
+funcs {
+  fd_zero {
+    num_input_params: 0
+    statements {
+      var {
+      }
+    }
+  }
+  fd_one {
+    num_input_params: 0
+    statements {
+    }
+  }
+  fd_multi {
+    num_input_params: 0
+    num_output_params: 3
+    statements {
+    }
+  }
+}

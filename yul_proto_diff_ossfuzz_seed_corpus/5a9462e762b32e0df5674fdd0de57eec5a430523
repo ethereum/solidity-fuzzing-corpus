@@ -1,0 +1,150 @@
+funcs {
+  fd_zero {
+    num_input_params: 8
+    statements {
+      var {
+      }
+      statements {
+        storage_func {
+          loc {
+            cons {
+              hexval: "99999999999999999999999999999999999999999999999999999999999999999999999999"
+            }
+          }
+          val {
+            cons {
+              strval: "rrrrrrrrrrrrrrrrrrrrrrrrrrrr"
+            }
+          }
+          st: MSTORE
+        }
+      }
+      statements {
+        storage_func {
+          loc {
+            cons {
+              strval: "rrrrrrrrrrrrrrrrrrrrrrrrrrrr"
+            }
+          }
+          val {
+            nop {
+              op: MSIZE
+            }
+          }
+          st: MSTORE
+        }
+      }
+      statements {
+        storage_func {
+          loc {
+            cons {
+            }
+          }
+          val {
+            cons {
+            }
+          }
+          st: MSTORE
+        }
+      }
+    }
+  }
+  fd_one {
+    num_input_params: 4
+    statements {
+      statements {
+        functioncall {
+          call_zero {
+            func_index: 0
+            in_param1 {
+            }
+            in_param2 {
+            }
+            in_param3 {
+            }
+            in_param4 {
+            }
+          }
+        }
+      }
+      statements {
+      }
+    }
+  }
+  fd_multi {
+    num_input_params: 3
+    num_output_params: 134479936
+    statements {
+      statements {
+        functioncall {
+          call_zero {
+            func_index: 0
+            in_param1 {
+            }
+            in_param2 {
+            }
+            in_param3 {
+            }
+            in_param4 {
+            }
+          }
+        }
+      }
+      statements {
+        functioncall {
+          call_zero {
+            func_index: 0
+            in_param1 {
+              func_expr {
+                func_index: 0
+                in_param1 {
+                }
+                in_param2 {
+                }
+                in_param3 {
+                  func_expr {
+                    func_index: 0
+                    in_param1 {
+                      unop {
+                        op: NOT
+                        operand {
+                          func_expr {
+                            func_index: 0
+                            in_param1 {
+                            }
+                            in_param2 {
+                            }
+                            in_param3 {
+                            }
+                            in_param4 {
+                            }
+                          }
+                        }
+                      }
+                    }
+                    in_param2 {
+                    }
+                    in_param3 {
+                    }
+                    in_param4 {
+                    }
+                  }
+                }
+                in_param4 {
+                }
+              }
+            }
+            in_param2 {
+            }
+            in_param3 {
+            }
+            in_param4 {
+              cons {
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

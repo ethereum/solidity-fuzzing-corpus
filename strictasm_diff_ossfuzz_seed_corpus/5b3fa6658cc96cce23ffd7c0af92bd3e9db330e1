@@ -1,9 +1,0 @@
-
-{
-	function f(a, b) -> x {x := f(g(), a) }
-	function g() ->${
-	let r := f(g(), h())
-}
-	function h() -> z { mstore(5, 4) z := mload(0) }
-	let r := f(g(), h())
-}

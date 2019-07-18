@@ -1,0 +1,52 @@
+funcs {
+  fd_zero {
+    num_input_params: 8
+    statements {
+      var {
+      }
+    }
+  }
+  fd_one {
+    num_input_params: 8
+    statements {
+    }
+  }
+  fd_multi {
+    num_input_params: 8
+    num_output_params: 8
+    statements {
+      statements {
+        storage_func {
+          loc {
+            binop {
+              op: DIV
+              left {
+                binop {
+                  op: DIV
+                  left {
+                    nop {
+                      op: MSIZE
+                    }
+                  }
+                  right {
+                    cons {
+                      strval: "sh"
+                    }
+                  }
+                }
+              }
+              right {
+                cons {
+                  strval: "sh"
+                }
+              }
+            }
+          }
+          val {
+          }
+          st: SSTORE
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,112 @@
+funcs {
+  fd_zero {
+    num_input_params: 4
+    statements {
+      var {
+      }
+    }
+  }
+  fd_one {
+    num_input_params: 4
+    statements {
+      statements {
+        storage_func {
+          loc {
+          }
+          val {
+            unop {
+              op: ISZERO
+              operand {
+              }
+            }
+          }
+          st: MSTORE
+        }
+      }
+    }
+  }
+  fd_multi {
+    num_input_params: 9
+    num_output_params: 0
+    statements {
+    }
+  }
+}
+funcs {
+  fd_zero {
+    num_input_params: 4
+    statements {
+      var {
+      }
+    }
+  }
+  fd_one {
+    num_input_params: 4
+    statements {
+      statements {
+        storage_func {
+          loc {
+            unop {
+              op: ISZERO
+              operand {
+                unop {
+                  op: ISZERO
+                  operand {
+                    unop {
+                      op: ISZERO
+                      operand {
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+          val {
+            unop {
+              op: ISZERO
+              operand {
+                unop {
+                  op: ISZERO
+                  operand {
+                  }
+                }
+              }
+            }
+          }
+          st: MSTORE
+        }
+      }
+    }
+  }
+  fd_multi {
+    num_input_params: 8
+    num_output_params: 4
+    statements {
+      statements {
+        storage_func {
+          loc {
+            unop {
+              op: ISZERO
+              operand {
+                unop {
+                  op: ISZERO
+                  operand {
+                  }
+                }
+              }
+            }
+          }
+          val {
+            unop {
+              op: ISZERO
+              operand {
+              }
+            }
+          }
+          st: MSTORE
+        }
+      }
+    }
+  }
+}

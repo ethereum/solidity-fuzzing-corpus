@@ -1,0 +1,68 @@
+funcs {
+  fd_zero {
+    num_input_params: 6
+    statements {
+      var {
+      }
+    }
+  }
+  fd_one {
+    num_input_params: 4
+    statements {
+      statements {
+        storage_func {
+          loc {
+          }
+          val {
+            cons {
+              hexval: "CCCCCCCCCCCCCCCCCCCCCCCCC"
+            }
+          }
+          st: MSTORE
+        }
+      }
+      statements {
+        storage_func {
+          loc {
+            cons {
+              hexval: "CCCCCCCCCCCCCCCCCCCCCCCCC"
+            }
+          }
+          val {
+            cons {
+              intval: 2
+            }
+          }
+          st: MSTORE
+        }
+      }
+      statements {
+        storage_func {
+          loc {
+            top {
+              op: ADDM
+              arg1 {
+              }
+              arg2 {
+              }
+              arg3 {
+              }
+            }
+          }
+          val {
+            cons {
+              intval: 35322347913224
+            }
+          }
+          st: MSTORE
+        }
+      }
+    }
+  }
+  fd_multi {
+    num_input_params: 0
+    num_output_params: 2
+    statements {
+    }
+  }
+}

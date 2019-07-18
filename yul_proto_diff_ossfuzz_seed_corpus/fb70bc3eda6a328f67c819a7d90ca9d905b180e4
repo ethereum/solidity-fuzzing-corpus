@@ -1,0 +1,39 @@
+funcs {
+  fd_zero {
+    num_input_params: 4
+    statements {
+      var {
+      }
+      statements {
+        decl {
+          expr {
+            unop {
+              op: MLOAD
+              operand {
+                unop {
+                  op: NOT
+                  operand {
+                    nop {
+                      op: MSIZE
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  fd_one {
+    num_input_params: 2
+    statements {
+    }
+  }
+  fd_multi {
+    num_input_params: 2
+    num_output_params: 4
+    statements {
+    }
+  }
+}

@@ -1,0 +1,68 @@
+funcs {
+  fd_zero {
+    num_input_params: 6
+    statements {
+      var {
+      }
+    }
+  }
+  fd_one {
+    num_input_params: 6
+    statements {
+      statements {
+        assignment {
+          ref_id {
+            varnum: 5
+          }
+          expr {
+            top {
+              op: MULM
+              arg1 {
+                cons {
+                  strval: "a"
+                }
+              }
+              arg2 {
+              }
+              arg3 {
+                cons {
+                  hexval: "888888888888888888888888"
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  fd_multi {
+    num_input_params: 3
+    num_output_params: 8
+    statements {
+      statements {
+        assignment {
+          ref_id {
+            varnum: 5
+          }
+          expr {
+            top {
+              op: MULM
+              arg1 {
+                cons {
+                  strval: "ad"
+                }
+              }
+              arg2 {
+              }
+              arg3 {
+                cons {
+                  hexval: "888888888888888888888888"
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,42 @@
+{
+let a_0, a_1, a_2, a_3
+function foo_noreturn_0(x_0, x_1)
+{
+let x_2
+sstore(lt(0,x_0), lt(144115188075855872,gas()))
+}
+foo_noreturn_0(calldataload(0),calldataload(32))
+function foo_singlereturn_0(x_0, x_1) -> x_2
+{
+foo_noreturn_0(1, 1)
+}
+a_0 := foo_singlereturn_0(calldataload(0),calldataload(32))
+sstore(0, a_0)
+function foo_multireturn_0() -> x_0, x_1
+{
+mstore(lt(1,shl(shl(1,1),1)), 1)
+foo_noreturn_0(foo_singlereturn_0(1, 1), foo_singlereturn_0(1, 1))
+}
+a_0, a_1 := foo_multireturn_0()
+sstore(0, a_0)
+sstore(32, a_1)
+function foo_noreturn_1(x_0)
+{
+let x_1
+mstore(shl(1,shl(shl(1,1),1)), 1)
+}
+foo_noreturn_1(calldataload(0))
+function foo_singlereturn_1() -> x_0
+{
+foo_noreturn_0(1, 1)
+}
+a_0 := foo_singlereturn_1()
+sstore(0, a_0)
+function foo_multireturn_1(x_0, x_1) -> x_2, x_3
+{
+foo_noreturn_0(div(1,1), foo_singlereturn_0(1, 1))
+}
+a_0, a_1 := foo_multireturn_1(calldataload(0),calldataload(32))
+sstore(0, a_0)
+sstore(32, a_1)
+}

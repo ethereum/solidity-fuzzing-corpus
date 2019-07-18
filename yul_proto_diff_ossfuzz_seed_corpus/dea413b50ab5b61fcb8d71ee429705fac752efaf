@@ -1,0 +1,68 @@
+funcs {
+  fd_zero {
+    num_input_params: 6
+    statements {
+      var {
+      }
+    }
+  }
+  fd_one {
+    num_input_params: 4
+    statements {
+    }
+  }
+  fd_multi {
+    num_input_params: 4
+    num_output_params: 4
+    statements {
+      statements {
+        boundedforstmt {
+          for_body {
+          }
+        }
+      }
+      statements {
+        boundedforstmt {
+          for_body {
+          }
+        }
+      }
+      statements {
+        ifstmt {
+          cond {
+            binop {
+              op: MOD
+              left {
+                cons {
+                  strval: "swap15"
+                }
+              }
+              right {
+                cons {
+                  hexval: "666666\'#3333333323231"
+                }
+              }
+            }
+          }
+          if_body {
+            statements {
+              functioncall {
+                call_multidecl {
+                  func_index: 0
+                  in_param1 {
+                  }
+                  in_param2 {
+                  }
+                  in_param3 {
+                  }
+                  in_param4 {
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,41 @@
+funcs {
+  fd_zero {
+    num_input_params: 4
+    statements {
+      var {
+      }
+    }
+  }
+  fd_one {
+    num_input_params: 4
+    statements {
+    }
+  }
+  fd_multi {
+    num_input_params: 4
+    num_output_params: 4
+    statements {
+      statements {
+        ifstmt {
+          cond {
+            binop {
+              op: SDIV
+              left {
+                cons {
+                  hexval: "666666666666666666666666666666666666666"
+                }
+              }
+              right {
+                cons {
+                  hexval: "66666666666\'swap437333331"
+                }
+              }
+            }
+          }
+          if_body {
+          }
+        }
+      }
+    }
+  }
+}

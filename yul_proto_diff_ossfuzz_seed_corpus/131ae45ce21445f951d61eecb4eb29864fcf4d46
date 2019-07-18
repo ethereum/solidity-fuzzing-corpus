@@ -1,0 +1,40 @@
+funcs {
+  fd_zero {
+    num_input_params: 0
+    statements {
+      var {
+      }
+    }
+  }
+  fd_one {
+    num_input_params: 2
+    statements {
+      statements {
+        copy_func {
+          ct: CODE
+          target {
+            varref {
+              varnum: 4
+            }
+          }
+          source {
+            varref {
+              varnum: 4
+            }
+          }
+          size {
+            varref {
+              varnum: 4
+            }
+          }
+        }
+      }
+    }
+  }
+  fd_multi {
+    num_input_params: 2
+    num_output_params: 4
+    statements {
+    }
+  }
+}

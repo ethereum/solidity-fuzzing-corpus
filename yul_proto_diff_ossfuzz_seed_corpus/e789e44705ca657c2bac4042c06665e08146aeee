@@ -1,0 +1,43 @@
+funcs {
+  fd_zero {
+    num_input_params: 4
+    statements {
+      var {
+      }
+    }
+  }
+  fd_one {
+    num_input_params: 0
+    statements {
+    }
+  }
+  fd_multi {
+    num_input_params: 1
+    num_output_params: 4
+    statements {
+      statements {
+        ifstmt {
+          cond {
+            binop {
+              op: KECCAK
+              left {
+                unop {
+                  op: NOT
+                  operand {
+                  }
+                }
+              }
+              right {
+                cons {
+                  hexval: "6666666660000000000000014966504185923"
+                }
+              }
+            }
+          }
+          if_body {
+          }
+        }
+      }
+    }
+  }
+}

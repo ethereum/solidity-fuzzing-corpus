@@ -1,0 +1,40 @@
+{
+let a_0, a_1, a_2, a_3
+function foo_noreturn_0(x_0, x_1, x_2)
+{
+let x_3
+}
+foo_noreturn_0(calldataload(0),calldataload(32),calldataload(64))
+function foo_singlereturn_0() -> x_0
+{}
+a_0 := foo_singlereturn_0()
+sstore(0, a_0)
+function foo_multireturn_0(x_0, x_1, x_2, x_3) -> x_4, x_5
+{
+mstore(sub(1,sub(1,sub(1,sub(1,x_0)))), 1)
+}
+a_0, a_1 := foo_multireturn_0(calldataload(0),calldataload(32),calldataload(64),calldataload(96))
+sstore(0, a_0)
+sstore(32, a_1)
+function foo_noreturn_1(x_0, x_1, x_2, x_3)
+{
+let x_4
+}
+foo_noreturn_1(calldataload(0),calldataload(32),calldataload(64),calldataload(96))
+function foo_singlereturn_1(x_0, x_1, x_2) -> x_3
+{}
+a_0 := foo_singlereturn_1(calldataload(0),calldataload(32),calldataload(64))
+sstore(0, a_0)
+function foo_multireturn_1(x_0) -> x_1, x_2, x_3, x_4
+{
+for { let i_0 := 0 } lt(i_0, 0x60) { i_0 := add(i_0, 0x20) } {}
+if slt("swap15",0x6666666666663333333333333323231) {
+let x_5, x_6 := foo_multireturn_0(1, 1, 1, 1)
+}
+}
+a_0, a_1, a_2, a_3 := foo_multireturn_1(calldataload(0))
+sstore(0, a_0)
+sstore(32, a_1)
+sstore(64, a_2)
+sstore(96, a_3)
+}

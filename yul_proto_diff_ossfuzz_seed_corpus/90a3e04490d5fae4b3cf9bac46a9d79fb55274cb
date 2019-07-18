@@ -1,0 +1,45 @@
+funcs {
+  fd_zero {
+    num_input_params: 4
+    statements {
+      var {
+      }
+    }
+  }
+  fd_one {
+    num_input_params: 2
+    statements {
+      statements {
+        boundedforstmt {
+          for_body {
+            statements {
+              decl {
+                expr {
+                  binop {
+                    op: SMOD
+                    left {
+                      cons {
+                        hexval: "777777777777777777777777777777"
+                      }
+                    }
+                    right {
+                      cons {
+                        hexval: "777777777777777777777777777777"
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  fd_multi {
+    num_input_params: 2
+    num_output_params: 4
+    statements {
+    }
+  }
+}

@@ -1,0 +1,58 @@
+funcs {
+  fd_zero {
+    num_input_params: 4
+    statements {
+      var {
+      }
+    }
+  }
+  fd_one {
+    num_input_params: 2
+    statements {
+    }
+  }
+  fd_multi {
+    num_input_params: 4
+    num_output_params: 2
+    statements {
+      statements {
+        boundedforstmt {
+          for_body {
+            statements {
+              boundedforstmt {
+                for_body {
+                  statements {
+                    boundedforstmt {
+                      for_body {
+                        statements {
+                          storage_func {
+                            loc {
+                              nop {
+                                op: MSIZE
+                              }
+                            }
+                            val {
+                              unop {
+                                op: SLOAD
+                                operand {
+                                  nop {
+                                    op: MSIZE
+                                  }
+                                }
+                              }
+                            }
+                            st: MSTORE
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

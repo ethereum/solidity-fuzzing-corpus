@@ -1,0 +1,59 @@
+funcs {
+  fd_zero {
+    num_input_params: 9
+    statements {
+      var {
+      }
+    }
+  }
+  fd_one {
+    num_input_params: 9
+    statements {
+      statements {
+        assignment {
+          ref_id {
+            varnum: 4
+          }
+          expr {
+            top {
+              op: ADDM
+              arg1 {
+                varref {
+                  varnum: 4
+                }
+              }
+              arg2 {
+                top {
+                  op: ADDM
+                  arg1 {
+                  }
+                  arg2 {
+                    varref {
+                      varnum: 4
+                    }
+                  }
+                  arg3 {
+                    varref {
+                      varnum: 43
+                    }
+                  }
+                }
+              }
+              arg3 {
+                varref {
+                  varnum: 4
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  fd_multi {
+    num_input_params: 8
+    num_output_params: 0
+    statements {
+    }
+  }
+}

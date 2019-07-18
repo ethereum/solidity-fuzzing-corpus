@@ -1,0 +1,35 @@
+funcs {
+  fd_zero {
+    num_input_params: 4
+    statements {
+      var {
+      }
+    }
+  }
+  fd_one {
+    num_input_params: 4
+    statements {
+    }
+  }
+  fd_multi {
+    num_input_params: 4
+    num_output_params: 8
+    statements {
+      statements {
+        storage_func {
+          loc {
+            varref {
+              varnum: 3
+            }
+          }
+          val {
+            varref {
+              varnum: 64
+            }
+          }
+          st: SSTORE
+        }
+      }
+    }
+  }
+}

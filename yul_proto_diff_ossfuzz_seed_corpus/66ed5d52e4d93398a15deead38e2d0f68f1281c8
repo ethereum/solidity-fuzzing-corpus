@@ -1,0 +1,170 @@
+funcs {
+  fd_zero {
+    num_input_params: 2
+    statements {
+      var {
+      }
+    }
+  }
+  fd_one {
+    num_input_params: 0
+    statements {
+      statements {
+        storage_func {
+          loc {
+            binop {
+              op: SHL
+              left {
+                cons {
+                  hexval: "ad"
+                }
+              }
+              right {
+                binop {
+                  op: SHL
+                  left {
+                    cons {
+                      hexval: "ad"
+                    }
+                  }
+                  right {
+                  }
+                }
+              }
+            }
+          }
+          val {
+          }
+          st: MSTORE
+        }
+      }
+      statements {
+        storage_func {
+          loc {
+            binop {
+              op: SHL
+              left {
+                cons {
+                  hexval: "ad"
+                }
+              }
+              right {
+                binop {
+                  op: SHL
+                  left {
+                    cons {
+                      hexval: "ad"
+                    }
+                  }
+                  right {
+                  }
+                }
+              }
+            }
+          }
+          val {
+            binop {
+              op: SHL
+              left {
+              }
+              right {
+                binop {
+                  op: SHL
+                  left {
+                    cons {
+                      intval: 0
+                    }
+                  }
+                  right {
+                  }
+                }
+              }
+            }
+          }
+          st: MSTORE
+        }
+      }
+      statements {
+        storage_func {
+          loc {
+            binop {
+              op: SHL
+              left {
+                cons {
+                  hexval: "ad"
+                }
+              }
+              right {
+                binop {
+                  op: SHL
+                  left {
+                    cons {
+                      intval: 0
+                    }
+                  }
+                  right {
+                  }
+                }
+              }
+            }
+          }
+          val {
+            binop {
+              op: SHL
+              left {
+                cons {
+                  intval: 0
+                }
+              }
+              right {
+              }
+            }
+          }
+          st: MSTORE
+        }
+      }
+      statements {
+        storage_func {
+          loc {
+            binop {
+              op: SHL
+              left {
+                binop {
+                  op: ADD
+                  left {
+                    nop {
+                      op: CALLDATASIZE
+                    }
+                  }
+                  right {
+                  }
+                }
+              }
+              right {
+                binop {
+                  op: SHL
+                  left {
+                    cons {
+                      hexval: "ad"
+                    }
+                  }
+                  right {
+                  }
+                }
+              }
+            }
+          }
+          val {
+          }
+          st: MSTORE
+        }
+      }
+    }
+  }
+  fd_multi {
+    num_input_params: 8
+    num_output_params: 0
+    statements {
+    }
+  }
+}

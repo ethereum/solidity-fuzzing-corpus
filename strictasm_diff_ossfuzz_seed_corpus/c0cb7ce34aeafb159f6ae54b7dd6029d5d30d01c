@@ -1,0 +1,253 @@
+{
+let a_0, a_1, a_2, a_3
+function foo_noreturn_0()
+{
+let x_0
+for { let i_0 := 0 } lt(i_0, 0x60) { i_0 := add(i_0, 0x20) } {}
+}
+foo_noreturn_0()
+function foo_singlereturn_0() -> x_0
+{}
+a_0 := foo_singlereturn_0()
+sstore(0, a_0)
+function foo_multireturn_0() -> x_0, x_1, x_2
+{
+for { let i_1 := 0 } lt(i_1, 0x60) { i_1 := add(i_1, 0x20) } {}
+}
+a_0, a_1, a_2 := foo_multireturn_0()
+sstore(0, a_0)
+sstore(32, a_1)
+sstore(64, a_2)
+function foo_noreturn_1(x_0, x_1, x_2)
+{
+let x_3
+}
+foo_noreturn_1(calldataload(0),calldataload(32),calldataload(64))
+function foo_singlereturn_1() -> x_0
+{
+log2(1, 1, 1, 1)
+log2(1, 1, 1, 1)
+log2(1, 1, 1, 1)
+log2(1, 1, 1, 1)
+}
+a_0 := foo_singlereturn_1()
+sstore(0, a_0)
+function foo_multireturn_1(x_0, x_1, x_2) -> x_3, x_4
+{
+log2(1, 1, 1, 1)
+log2(1, 1, 1, 1)
+log2(1, 1, 1, 1)
+log2(1, 1, 1, 1)
+}
+a_0, a_1 := foo_multireturn_1(calldataload(0),calldataload(32),calldataload(64))
+sstore(0, a_0)
+sstore(32, a_1)
+function foo_noreturn_2(x_0, x_1, x_2)
+{
+let x_3
+}
+foo_noreturn_2(calldataload(0),calldataload(32),calldataload(64))
+function foo_singlereturn_2(x_0, x_1, x_2, x_3) -> x_4
+{
+log2(1, 1, 1, 1)
+x_4 := 1
+log2(1, 1, 1, 1)
+log2(1, 1, 1, 1)
+let x_5 := ""
+log2(1, 1, 1, 1)
+log2(1, 1, 1, 1)
+log2(1, 1, 1, 1)
+log2(1, 1, 1, 1)
+log2(1, 1, 1, 1)
+}
+a_0 := foo_singlereturn_2(calldataload(0),calldataload(32),calldataload(64),calldataload(96))
+sstore(0, a_0)
+function foo_multireturn_2() -> x_0, x_1
+{
+log2(1, 1, 1, 1)
+log2(1, 1, 1, 1)
+log2(1, 1, 1, 1)
+log2(1, 1, 1, 1)
+}
+a_0, a_1 := foo_multireturn_2()
+sstore(0, a_0)
+sstore(32, a_1)
+function foo_noreturn_3(x_0, x_1, x_2)
+{
+let x_3
+}
+foo_noreturn_3(calldataload(0),calldataload(32),calldataload(64))
+function foo_singlereturn_3() -> x_0
+{
+log2(1, 1, 1, 1)
+log2(1, 1, 1, 1)
+log2(1, 1, 1, 1)
+log2(1, 1, 1, 1)
+}
+a_0 := foo_singlereturn_3()
+sstore(0, a_0)
+function foo_multireturn_3(x_0, x_1, x_2) -> x_3, x_4
+{
+log2(1, 1, 1, 1)
+log2(1, 1, 1, 1)
+log2(1, 1, 1, 1)
+log2(1, 1, 1, 1)
+}
+a_0, a_1 := foo_multireturn_3(calldataload(0),calldataload(32),calldataload(64))
+sstore(0, a_0)
+sstore(32, a_1)
+function foo_noreturn_4(x_0, x_1, x_2)
+{
+let x_3
+}
+foo_noreturn_4(calldataload(0),calldataload(32),calldataload(64))
+function foo_singlereturn_4() -> x_0
+{
+x_0 := ""
+log2(1, 1, 1, 1)
+log2(1, 1, 1, 1)
+x_0 := 1
+log2(1, 1, 1, 1)
+log2(1, 1, 1, 1)
+log2(1, 1, 1, 1)
+log2(1, 1, 1, 1)
+log2(1, 1, 1, 1)
+}
+a_0 := foo_singlereturn_4()
+sstore(0, a_0)
+function foo_multireturn_4(x_0, x_1, x_2) -> x_3, x_4
+{
+log2(1, 1, 1, 1)
+log2(1, 1, 1, 1)
+log2(1, 1, 1, 1)
+}
+a_0, a_1 := foo_multireturn_4(calldataload(0),calldataload(32),calldataload(64))
+sstore(0, a_0)
+sstore(32, a_1)
+function foo_noreturn_5(x_0, x_1, x_2)
+{
+let x_3
+}
+foo_noreturn_5(calldataload(0),calldataload(32),calldataload(64))
+function foo_singlereturn_5() -> x_0
+{}
+a_0 := foo_singlereturn_5()
+sstore(0, a_0)
+function foo_multireturn_5(x_0, x_1, x_2) -> x_3, x_4
+{
+log2(1, 1, 1, 1)
+}
+a_0, a_1 := foo_multireturn_5(calldataload(0),calldataload(32),calldataload(64))
+sstore(0, a_0)
+sstore(32, a_1)
+function foo_noreturn_6()
+{
+let x_0
+for {}
+shl(1,and(1,shr(2073916416,msize()))){}
+{}
+}
+foo_noreturn_6()
+function foo_singlereturn_6() -> x_0
+{}
+a_0 := foo_singlereturn_6()
+sstore(0, a_0)
+function foo_multireturn_6(x_0, x_1, x_2) -> x_3, x_4
+{}
+a_0, a_1 := foo_multireturn_6(calldataload(0),calldataload(32),calldataload(64))
+sstore(0, a_0)
+sstore(32, a_1)
+function foo_noreturn_7()
+{
+let x_0
+for { let i_2 := 0 } lt(i_2, 0x60) { i_2 := add(i_2, 0x20) } {}
+}
+foo_noreturn_7()
+function foo_singlereturn_7() -> x_0
+{}
+a_0 := foo_singlereturn_7()
+sstore(0, a_0)
+function foo_multireturn_7() -> x_0, x_1, x_2
+{
+for { let i_3 := 0 } lt(i_3, 0x60) { i_3 := add(i_3, 0x20) } {}
+}
+a_0, a_1, a_2 := foo_multireturn_7()
+sstore(0, a_0)
+sstore(32, a_1)
+sstore(64, a_2)
+function foo_noreturn_8(x_0, x_1, x_2)
+{
+let x_3
+x_1 := 1
+}
+foo_noreturn_8(calldataload(0),calldataload(32),calldataload(64))
+function foo_singlereturn_8(x_0, x_1, x_2, x_3) -> x_4
+{
+x_0 := 1
+log2(1, 1, 1, 1)
+log2(1, 1, 1, 1)
+log2(1, 1, 1, 1)
+x_4 := 1
+}
+a_0 := foo_singlereturn_8(calldataload(0),calldataload(32),calldataload(64),calldataload(96))
+sstore(0, a_0)
+function foo_multireturn_8() -> x_0, x_1
+{
+log2(1, 1, 1, 1)
+}
+a_0, a_1 := foo_multireturn_8()
+sstore(0, a_0)
+sstore(32, a_1)
+function foo_noreturn_9(x_0, x_1, x_2)
+{
+let x_3
+}
+foo_noreturn_9(calldataload(0),calldataload(32),calldataload(64))
+function foo_singlereturn_9(x_0, x_1, x_2, x_3) -> x_4
+{
+log2(1, 1, 1, 1)
+x_4 := 1
+log2(1, 1, 1, 1)
+log2(1, 1, 1, 1)
+x_0 := ""
+log2(1, 1, 1, 1)
+log2(1, 1, 1, 1)
+log2(1, 1, 1, 1)
+log2(1, 1, 1, 1)
+log2(1, 1, 1, 1)
+}
+a_0 := foo_singlereturn_9(calldataload(0),calldataload(32),calldataload(64),calldataload(96))
+sstore(0, a_0)
+function foo_multireturn_9() -> x_0, x_1
+{
+log2(1, 1, 1, 1)
+log2(1, 1, 1, 1)
+log2(1, 1, 1, 1)
+}
+a_0, a_1 := foo_multireturn_9()
+sstore(0, a_0)
+sstore(32, a_1)
+function foo_noreturn_10(x_0, x_1, x_2)
+{
+let x_3
+}
+foo_noreturn_10(calldataload(0),calldataload(32),calldataload(64))
+function foo_singlereturn_10() -> x_0
+{
+log2(1, 1, 1, 1)
+log2(1, 1, 1, 1)
+log2(1, 1, 1, 1)
+log2(1, 1, 1, 1)
+}
+a_0 := foo_singlereturn_10()
+sstore(0, a_0)
+function foo_multireturn_10(x_0, x_1, x_2) -> x_3, x_4
+{
+log2(1, 1, 1, 1)
+log2(1, 1, 1, 1)
+log2(1, 1, 1, 1)
+}
+a_0, a_1 := foo_multireturn_10(calldataload(0),calldataload(32),calldataload(64))
+sstore(0, a_0)
+sstore(32, a_1)
+}

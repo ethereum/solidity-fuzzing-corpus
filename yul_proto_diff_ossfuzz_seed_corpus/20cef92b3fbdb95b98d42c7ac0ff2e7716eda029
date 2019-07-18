@@ -1,0 +1,52 @@
+funcs {
+  fd_zero {
+    num_input_params: 6
+    statements {
+      var {
+      }
+      statements {
+        storage_func {
+          loc {
+          }
+          val {
+            binop {
+              op: EXP
+              left {
+                unop {
+                  op: NOT
+                  operand {
+                    cons {
+                      intval: 0
+                    }
+                  }
+                }
+              }
+              right {
+                unop {
+                  op: NOT
+                  operand {
+                    cons {
+                      intval: 254
+                    }
+                  }
+                }
+              }
+            }
+          }
+          st: SSTORE
+        }
+      }
+    }
+  }
+  fd_one {
+    num_input_params: 6
+    statements {
+    }
+  }
+  fd_multi {
+    num_input_params: 4
+    num_output_params: 4
+    statements {
+    }
+  }
+}

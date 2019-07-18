@@ -1,0 +1,50 @@
+funcs {
+  fd_zero {
+    num_input_params: 0
+    statements {
+      var {
+      }
+      statements {
+        boundedforstmt {
+          for_body {
+            statements {
+              terminatestmt {
+                stop_invalid {
+                  stmt: STOP
+                }
+              }
+            }
+          }
+        }
+      }
+      statements {
+        ifstmt {
+          cond {
+            cons {
+              strval: "A"
+            }
+          }
+          if_body {
+            statements {
+              boundedforstmt {
+                for_body {
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  fd_one {
+    num_input_params: 0
+    statements {
+    }
+  }
+  fd_multi {
+    num_input_params: 0
+    num_output_params: 1
+    statements {
+    }
+  }
+}

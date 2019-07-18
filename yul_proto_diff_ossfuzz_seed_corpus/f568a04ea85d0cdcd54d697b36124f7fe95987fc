@@ -1,0 +1,74 @@
+funcs {
+  fd_zero {
+    num_input_params: 32768
+    statements {
+      var {
+      }
+    }
+  }
+  fd_one {
+    num_input_params: 0
+    statements {
+      statements {
+        assignment {
+          ref_id {
+            varnum: 1024
+          }
+          expr {
+          }
+        }
+      }
+      statements {
+        boundedforstmt {
+          for_body {
+            statements {
+              assignment {
+                ref_id {
+                  varnum: 1024
+                }
+                expr {
+                }
+              }
+            }
+          }
+        }
+      }
+      statements {
+        boundedforstmt {
+          for_body {
+            statements {
+              assignment {
+                ref_id {
+                  varnum: 67108864
+                }
+                expr {
+                }
+              }
+            }
+          }
+        }
+      }
+      statements {
+        boundedforstmt {
+          for_body {
+            statements {
+              assignment {
+                ref_id {
+                  varnum: 1024
+                }
+                expr {
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  fd_multi {
+    num_input_params: 4
+    num_output_params: 4
+    statements {
+    }
+  }
+}

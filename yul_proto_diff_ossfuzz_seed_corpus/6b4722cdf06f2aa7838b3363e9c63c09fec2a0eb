@@ -1,0 +1,113 @@
+funcs {
+  fd_zero {
+    num_input_params: 0
+    statements {
+      var {
+      }
+      statements {
+        terminatestmt {
+          stop_invalid {
+            stmt: STOP
+          }
+        }
+      }
+      statements {
+      }
+    }
+  }
+  fd_one {
+    num_input_params: 2
+    statements {
+    }
+  }
+  fd_multi {
+    num_input_params: 2
+    num_output_params: 4
+    statements {
+      statements {
+        assignment {
+          ref_id {
+            varnum: 1600
+          }
+          expr {
+          }
+        }
+      }
+      statements {
+        boundedforstmt {
+          for_body {
+            statements {
+              boundedforstmt {
+                for_body {
+                  statements {
+                    boundedforstmt {
+                      for_body {
+                        statements {
+                          boundedforstmt {
+                            for_body {
+                              statements {
+                                assignment {
+                                  ref_id {
+                                    varnum: 1600
+                                  }
+                                  expr {
+                                  }
+                                }
+                              }
+                              statements {
+                                boundedforstmt {
+                                  for_body {
+                                    statements {
+                                      boundedforstmt {
+                                        for_body {
+                                        }
+                                      }
+                                    }
+                                    statements {
+                                      assignment {
+                                        ref_id {
+                                          varnum: 1600
+                                        }
+                                        expr {
+                                        }
+                                      }
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                  statements {
+                    assignment {
+                      ref_id {
+                        varnum: 64
+                      }
+                      expr {
+                        varref {
+                          varnum: 16384
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+            statements {
+              assignment {
+                ref_id {
+                  varnum: 1600
+                }
+                expr {
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,227 @@
+funcs {
+  fd_zero {
+    num_input_params: 0
+    statements {
+      var {
+      }
+    }
+  }
+  fd_one {
+    num_input_params: 0
+    statements {
+      statements {
+      }
+      statements {
+        boundedforstmt {
+          for_body {
+            statements {
+              assignment {
+                ref_id {
+                  varnum: 1024
+                }
+                expr {
+                  binop {
+                    op: MOD
+                    left {
+                      binop {
+                        op: MOD
+                        left {
+                          varref {
+                            varnum: 1
+                          }
+                        }
+                        right {
+                        }
+                      }
+                    }
+                    right {
+                      top {
+                        op: ADDM
+                        arg1 {
+                        }
+                        arg2 {
+                          unop {
+                            op: MLOAD
+                            operand {
+                            }
+                          }
+                        }
+                        arg3 {
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+      statements {
+        ifstmt {
+          cond {
+            binop {
+              op: MOD
+              left {
+                binop {
+                  op: MOD
+                  left {
+                    varref {
+                      varnum: 1
+                    }
+                  }
+                  right {
+                  }
+                }
+              }
+              right {
+                top {
+                  op: ADDM
+                  arg1 {
+                  }
+                  arg2 {
+                    unop {
+                      op: MLOAD
+                      operand {
+                      }
+                    }
+                  }
+                  arg3 {
+                  }
+                }
+              }
+            }
+          }
+          if_body {
+          }
+        }
+      }
+      statements {
+      }
+      statements {
+        boundedforstmt {
+          for_body {
+          }
+        }
+      }
+    }
+  }
+  fd_multi {
+    num_input_params: 4
+    num_output_params: 0
+    statements {
+      statements {
+        ifstmt {
+          cond {
+            binop {
+              op: MOD
+              left {
+                varref {
+                  varnum: 1
+                }
+              }
+              right {
+              }
+            }
+          }
+          if_body {
+          }
+        }
+      }
+    }
+  }
+}
+funcs {
+  fd_zero {
+    num_input_params: 0
+    statements {
+      var {
+      }
+    }
+  }
+  fd_one {
+    num_input_params: 0
+    statements {
+      statements {
+      }
+      statements {
+        boundedforstmt {
+          for_body {
+          }
+        }
+      }
+      statements {
+        boundedforstmt {
+          for_body {
+            statements {
+              assignment {
+                ref_id {
+                  varnum: 1024
+                }
+                expr {
+                  binop {
+                    op: MOD
+                    left {
+                      binop {
+                        op: MOD
+                        left {
+                          varref {
+                            varnum: 1
+                          }
+                        }
+                        right {
+                        }
+                      }
+                    }
+                    right {
+                      top {
+                        op: ADDM
+                        arg1 {
+                        }
+                        arg2 {
+                          unop {
+                            op: MLOAD
+                            operand {
+                            }
+                          }
+                        }
+                        arg3 {
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+      statements {
+      }
+      statements {
+        ifstmt {
+          cond {
+            binop {
+              op: MOD
+              left {
+                varref {
+                  varnum: 1
+                }
+              }
+              right {
+              }
+            }
+          }
+          if_body {
+          }
+        }
+      }
+    }
+  }
+  fd_multi {
+    num_input_params: 4
+    num_output_params: 0
+    statements {
+    }
+  }
+}

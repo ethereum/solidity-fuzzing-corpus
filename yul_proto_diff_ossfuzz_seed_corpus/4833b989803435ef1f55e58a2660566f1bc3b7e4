@@ -1,0 +1,81 @@
+funcs {
+  fd_zero {
+    num_input_params: 4
+    statements {
+      var {
+      }
+      statements {
+        ifstmt {
+          cond {
+            binop {
+              op: DIV
+              left {
+                binop {
+                  op: DIV
+                  left {
+                    unop {
+                      op: NOT
+                      operand {
+                      }
+                    }
+                  }
+                  right {
+                    nop {
+                      op: MSIZE
+                    }
+                  }
+                }
+              }
+              right {
+              }
+            }
+          }
+          if_body {
+            statements {
+              storage_func {
+                loc {
+                  func_expr {
+                    func_index: 0
+                    in_param1 {
+                    }
+                    in_param2 {
+                    }
+                    in_param3 {
+                    }
+                    in_param4 {
+                    }
+                  }
+                }
+                val {
+                }
+                st: SSTORE
+              }
+            }
+            statements {
+              storage_func {
+                loc {
+                }
+                val {
+                  cons {
+                  }
+                }
+                st: SSTORE
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  fd_one {
+    num_input_params: 0
+    statements {
+    }
+  }
+  fd_multi {
+    num_input_params: 2
+    num_output_params: 0
+    statements {
+    }
+  }
+}

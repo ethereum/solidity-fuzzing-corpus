@@ -1,0 +1,60 @@
+funcs {
+  fd_zero {
+    num_input_params: 8
+    statements {
+      var {
+      }
+    }
+  }
+  fd_one {
+    num_input_params: 8
+    statements {
+    }
+  }
+  fd_multi {
+    num_input_params: 4
+    num_output_params: 8
+    statements {
+      statements {
+        copy_func {
+          ct: CODE
+          target {
+            cons {
+              hexval: "j"
+            }
+          }
+          source {
+            cons {
+              intval: 0
+            }
+          }
+          size {
+            cons {
+              strval: ""
+            }
+          }
+        }
+      }
+      statements {
+        copy_func {
+          ct: CODE
+          target {
+            cons {
+              hexval: "j"
+            }
+          }
+          source {
+            cons {
+              strval: ""
+            }
+          }
+          size {
+            cons {
+              strval: ""
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,41 @@
+{
+let a_0, a_1, a_2, a_3
+function foo_noreturn_0()
+{
+let x_0
+}
+foo_noreturn_0()
+function foo_singlereturn_0(x_0) -> x_1
+{
+x_1 := addmod(not(x_0), not(1), 1)
+}
+a_0 := foo_singlereturn_0(calldataload(0))
+sstore(0, a_0)
+function foo_multireturn_0() -> x_0, x_1
+{
+x_1 := mulmod(not(1), not(foo_singlereturn_0(foo_singlereturn_0(foo_singlereturn_0(foo_singlereturn_0(foo_singlereturn_0(foo_singlereturn_0(foo_singlereturn_0(foo_singlereturn_0(returndatasize()))))))))), 1)
+x_1 := mulmod(not(1), not(foo_singlereturn_0(foo_singlereturn_0(foo_singlereturn_0(foo_singlereturn_0(foo_singlereturn_0(foo_singlereturn_0(foo_singlereturn_0(foo_singlereturn_0(returndatasize()))))))))), 1)
+}
+a_0, a_1 := foo_multireturn_0()
+sstore(0, a_0)
+sstore(32, a_1)
+function foo_noreturn_1(x_0, x_1, x_2)
+{
+let x_3
+sstore(1, div(1,shl(pc(),1)))
+}
+foo_noreturn_1(calldataload(0),calldataload(32),calldataload(64))
+function foo_singlereturn_1() -> x_0
+{
+{
+sstore(1, msize())
+}
+}
+a_0 := foo_singlereturn_1()
+sstore(0, a_0)
+function foo_multireturn_1() -> x_0, x_1
+{}
+a_0, a_1 := foo_multireturn_1()
+sstore(0, a_0)
+sstore(32, a_1)
+}

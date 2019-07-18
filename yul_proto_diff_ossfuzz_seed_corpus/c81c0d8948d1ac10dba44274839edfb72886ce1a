@@ -1,0 +1,95 @@
+funcs {
+  fd_zero {
+    num_input_params: 4
+    statements {
+      var {
+      }
+    }
+  }
+  fd_one {
+    num_input_params: 4
+    statements {
+    }
+  }
+  fd_multi {
+    num_input_params: 4
+    num_output_params: 1
+    statements {
+      statements {
+        decl {
+          expr {
+            binop {
+              op: DIV
+              left {
+                unop {
+                  op: NOT
+                  operand {
+                    cons {
+                    }
+                  }
+                }
+              }
+              right {
+                binop {
+                  op: DIV
+                  left {
+                    cons {
+                      hexval: "7R777\322777777777777777777777R77777777777777777777}7777777777777"
+                    }
+                  }
+                  right {
+                    cons {
+                      hexval: "77777777777777777777777777777"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+      statements {
+        functioncall {
+          call_multidecl {
+            func_index: 0
+            in_param1 {
+              binop {
+                op: DIV
+                left {
+                  unop {
+                    op: NOT
+                    operand {
+                      cons {
+                      }
+                    }
+                  }
+                }
+                right {
+                  binop {
+                    op: DIV
+                    left {
+                      cons {
+                        hexval: "7R777\322777777777777777777777R77777777777777777777}7777777777777"
+                      }
+                    }
+                    right {
+                      cons {
+                        hexval: "77777777777777777777777777777"
+                      }
+                    }
+                  }
+                }
+              }
+            }
+            in_param2 {
+            }
+            in_param3 {
+            }
+            in_param4 {
+            }
+          }
+        }
+      }
+    }
+  }
+}

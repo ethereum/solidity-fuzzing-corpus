@@ -1,0 +1,134 @@
+funcs {
+  fd_zero {
+    num_input_params: 67108864
+    statements {
+      var {
+      }
+      statements {
+        ifstmt {
+          cond {
+            binop {
+              op: DIV
+              left {
+                unop {
+                  op: NOT
+                  operand {
+                  }
+                }
+              }
+              right {
+                nop {
+                  op: MSIZE
+                }
+              }
+            }
+          }
+          if_body {
+            statements {
+              storage_func {
+                loc {
+                  unop {
+                    op: NOT
+                    operand {
+                    }
+                  }
+                }
+                val {
+                }
+                st: SSTORE
+              }
+            }
+            statements {
+              storage_func {
+                loc {
+                  binop {
+                    op: ADD
+                    left {
+                      top {
+                        op: MULM
+                        arg1 {
+                        }
+                        arg2 {
+                        }
+                        arg3 {
+                        }
+                      }
+                    }
+                    right {
+                    }
+                  }
+                }
+                val {
+                }
+                st: SSTORE
+              }
+            }
+          }
+        }
+      }
+      statements {
+        ifstmt {
+          cond {
+            binop {
+              op: DIV
+              left {
+                func_expr {
+                  func_index: 0
+                  in_param1 {
+                  }
+                  in_param2 {
+                  }
+                  in_param3 {
+                    varref {
+                      varnum: 65536
+                    }
+                  }
+                  in_param4 {
+                  }
+                }
+              }
+              right {
+              }
+            }
+          }
+          if_body {
+            statements {
+              storage_func {
+                loc {
+                }
+                val {
+                }
+                st: SSTORE
+              }
+            }
+            statements {
+              storage_func {
+                loc {
+                  unop {
+                    op: NOT
+                    operand {
+                    }
+                  }
+                }
+                val {
+                }
+                st: SSTORE
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  fd_one {
+    num_input_params: 6422528
+    statements {
+    }
+  }
+  fd_multi {
+    num_input_params: 0
+    num_output_params: 0
+    statements {
+    }
+  }
+}

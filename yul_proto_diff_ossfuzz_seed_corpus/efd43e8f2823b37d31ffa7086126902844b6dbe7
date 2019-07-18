@@ -1,0 +1,96 @@
+funcs {
+  fd_zero {
+    num_input_params: 0
+    statements {
+      var {
+      }
+      statements {
+        ifstmt {
+          cond {
+            binop {
+              op: SHR
+              left {
+                unop {
+                  op: NOT
+                  operand {
+                    binop {
+                      op: SHR
+                      left {
+                        unop {
+                          op: NOT
+                          operand {
+                          }
+                        }
+                      }
+                      right {
+                        nop {
+                          op: PC
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+              right {
+                nop {
+                  op: PC
+                }
+              }
+            }
+          }
+          if_body {
+          }
+        }
+      }
+      statements {
+        ifstmt {
+          cond {
+            binop {
+              op: SHR
+              left {
+                unop {
+                  op: NOT
+                  operand {
+                    binop {
+                      op: SHR
+                      left {
+                        unop {
+                          op: NOT
+                          operand {
+                          }
+                        }
+                      }
+                      right {
+                        nop {
+                          op: PC
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+              right {
+                nop {
+                  op: PC
+                }
+              }
+            }
+          }
+          if_body {
+          }
+        }
+      }
+    }
+  }
+  fd_one {
+    num_input_params: 4
+    statements {
+    }
+  }
+  fd_multi {
+    num_input_params: 4
+    num_output_params: 0
+    statements {
+    }
+  }
+}

@@ -1,0 +1,64 @@
+funcs {
+  fd_zero {
+    num_input_params: 4
+    statements {
+      var {
+      }
+      statements {
+        forstmt {
+          for_body {
+          }
+          for_init {
+          }
+          for_post {
+          }
+          for_cond {
+            binop {
+              op: SHR
+              left {
+              }
+              right {
+                binop {
+                  op: SHL
+                  left {
+                    cons {
+                      intval: 16
+                    }
+                  }
+                  right {
+                    binop {
+                      op: AND
+                      left {
+                        unop {
+                          op: NOT
+                          operand {
+                          }
+                        }
+                      }
+                      right {
+                        nop {
+                          op: MSIZE
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  fd_one {
+    num_input_params: 4
+    statements {
+    }
+  }
+  fd_multi {
+    num_input_params: 4
+    num_output_params: 4
+    statements {
+    }
+  }
+}

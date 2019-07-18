@@ -1,0 +1,24 @@
+{
+let a_0, a_1, a_2, a_3
+function foo_noreturn_0()
+{
+let x_0
+sstore(1, xor(xor(xor(xor(x_0,xor(pc(),1)),pc()),xor(xor(xor(div(addmod(1, foo_singlereturn_0(), 1),foo_singlereturn_0()),xor(pc(),1)),pc()),pc())),pc()))
+sstore(1, xor(xor(xor(xor(x_0,xor(pc(),xor(xor(xor(xor(x_0,xor(pc(),1)),pc()),xor(xor(xor(div(foo_singlereturn_0(),foo_singlereturn_0()),xor(pc(),1)),pc()),pc())),pc()))),pc()),xor(xor(xor(div(foo_singlereturn_0(),foo_singlereturn_0()),xor(pc(),1)),gas()),pc())),pc()))
+sstore(1, xor(xor(xor(xor(x_0,xor(xor(xor(x_0,xor(pc(),xor(xor(xor(xor(x_0,xor(pc(),1)),pc()),xor(xor(xor(div(foo_singlereturn_0(),foo_singlereturn_0()),xor(pc(),1)),pc()),pc())),pc()))),pc()),xor(xor(xor(div(mulmod(1, 1, 1),foo_singlereturn_0()),xor(pc(),1)),pc()),pc()))),pc()),xor(xor(xor(div(foo_singlereturn_0(),foo_singlereturn_0()),xor(pc(),1)),pc()),pc())),pc()))
+}
+foo_noreturn_0()
+function foo_singlereturn_0() -> x_0
+{
+log0(1, 1)
+}
+a_0 := foo_singlereturn_0()
+sstore(0, a_0)
+function foo_multireturn_0() -> x_0, x_1
+{
+log0(1, 1)
+}
+a_0, a_1 := foo_multireturn_0()
+sstore(0, a_0)
+sstore(32, a_1)
+}

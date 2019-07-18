@@ -1,0 +1,50 @@
+funcs {
+  fd_zero {
+    num_input_params: 0
+    statements {
+      var {
+      }
+      statements {
+        assignment {
+          ref_id {
+            varnum: 0
+          }
+          expr {
+            nop {
+              op: PC
+            }
+          }
+        }
+      }
+      statements {
+        ifstmt {
+          cond {
+            varref {
+              varnum: 0
+            }
+          }
+          if_body {
+            statements {
+              terminatestmt {
+                stop_invalid {
+                  stmt: STOP
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  fd_one {
+    num_input_params: 0
+    statements {
+    }
+  }
+  fd_multi {
+    num_input_params: 0
+    num_output_params: 0
+    statements {
+    }
+  }
+}

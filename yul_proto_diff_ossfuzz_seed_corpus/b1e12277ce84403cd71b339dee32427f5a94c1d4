@@ -1,0 +1,45 @@
+funcs {
+  fd_zero {
+    num_input_params: 0
+    statements {
+      var {
+      }
+    }
+  }
+  fd_one {
+    num_input_params: 0
+    statements {
+      statements {
+        ifstmt {
+          cond {
+            binop {
+              op: SHL
+              left {
+              }
+              right {
+                binop {
+                  op: AND
+                  left {
+                    nop {
+                      op: PC
+                    }
+                  }
+                  right {
+                  }
+                }
+              }
+            }
+          }
+          if_body {
+          }
+        }
+      }
+    }
+  }
+  fd_multi {
+    num_input_params: 0
+    num_output_params: 8
+    statements {
+    }
+  }
+}

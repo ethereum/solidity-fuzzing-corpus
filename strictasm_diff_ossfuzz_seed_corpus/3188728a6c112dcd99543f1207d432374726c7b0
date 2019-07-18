@@ -1,0 +1,22 @@
+{
+let a_0, a_1, a_2, a_3
+function foo_noreturn_0()
+{
+let x_0
+sstore(sub(1,foo_singlereturn_0()), sub(1,1))
+sstore(sub(codesize(),1), sub(1,1))
+sstore(sub(codesize(),x_0), sub(msize(),eq(not(1),not(codesize()))))
+}
+foo_noreturn_0()
+function foo_singlereturn_0() -> x_0
+{
+let x_1, x_2 := foo_multireturn_0()
+}
+a_0 := foo_singlereturn_0()
+sstore(0, a_0)
+function foo_multireturn_0() -> x_0, x_1
+{}
+a_0, a_1 := foo_multireturn_0()
+sstore(0, a_0)
+sstore(32, a_1)
+}

@@ -1,0 +1,60 @@
+funcs {
+  fd_zero {
+    num_input_params: 8
+    statements {
+      var {
+      }
+    }
+  }
+  fd_one {
+    num_input_params: 1
+    statements {
+    }
+  }
+  fd_multi {
+    num_input_params: 4
+    num_output_params: 0
+    statements {
+      statements {
+        ifstmt {
+          cond {
+            binop {
+              op: SDIV
+              left {
+                cons {
+                  strval: "swap1"
+                }
+              }
+              right {
+                binop {
+                  op: SDIV
+                  left {
+                    cons {
+                      strval: "swap1"
+                    }
+                  }
+                  right {
+                    cons {
+                      hexval: "666666666666\'#333333333231"
+                    }
+                  }
+                }
+              }
+            }
+          }
+          if_body {
+            statements {
+              storage_func {
+                loc {
+                }
+                val {
+                }
+                st: SSTORE
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,193 @@
+funcs {
+  fd_zero {
+    num_input_params: 7
+    statements {
+      var {
+      }
+      statements {
+        forstmt {
+          for_body {
+          }
+          for_init {
+          }
+          for_post {
+          }
+          for_cond {
+            binop {
+              op: SHL
+              left {
+                unop {
+                  op: NOT
+                  operand {
+                  }
+                }
+              }
+              right {
+                binop {
+                  op: SHL
+                  left {
+                    unop {
+                      op: NOT
+                      operand {
+                      }
+                    }
+                  }
+                  right {
+                    binop {
+                      op: OR
+                      left {
+                        unop {
+                          op: NOT
+                          operand {
+                          }
+                        }
+                      }
+                      right {
+                        nop {
+                          op: PC
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  fd_one {
+    num_input_params: 4
+    statements {
+      statements {
+        functioncall {
+          call_zero {
+            func_index: 0
+            in_param1 {
+            }
+            in_param2 {
+            }
+            in_param3 {
+            }
+            in_param4 {
+            }
+          }
+        }
+      }
+      statements {
+        functioncall {
+          call_zero {
+            func_index: 0
+            in_param1 {
+            }
+            in_param2 {
+            }
+            in_param3 {
+            }
+            in_param4 {
+            }
+          }
+        }
+      }
+    }
+  }
+  fd_multi {
+    num_input_params: 4
+    num_output_params: 4
+    statements {
+    }
+  }
+}
+funcs {
+  fd_zero {
+    num_input_params: 0
+    statements {
+      var {
+      }
+    }
+  }
+  fd_one {
+    num_input_params: 0
+    statements {
+    }
+  }
+  fd_multi {
+    num_input_params: 0
+    num_output_params: 0
+    statements {
+      statements {
+        storage_func {
+          loc {
+            binop {
+              op: DIV
+              left {
+                nop {
+                  op: MSIZE
+                }
+              }
+              right {
+                binop {
+                  op: SUB
+                  left {
+                    cons {
+                      strval: ""
+                    }
+                  }
+                  right {
+                  }
+                }
+              }
+            }
+          }
+          val {
+          }
+          st: MSTORE
+        }
+      }
+    }
+  }
+}
+funcs {
+  fd_zero {
+    num_input_params: 0
+    statements {
+      var {
+      }
+    }
+  }
+  fd_one {
+    num_input_params: 0
+    statements {
+    }
+  }
+  fd_multi {
+    num_input_params: 0
+    num_output_params: 0
+    statements {
+      statements {
+        storage_func {
+          loc {
+            func_expr {
+              func_index: 0
+              in_param1 {
+              }
+              in_param2 {
+              }
+              in_param3 {
+                cons {
+                  intval: 13
+                }
+              }
+              in_param4 {
+              }
+            }
+          }
+          val {
+          }
+          st: MSTORE
+        }
+      }
+    }
+  }
+}

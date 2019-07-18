@@ -1,0 +1,49 @@
+funcs {
+  fd_zero {
+    num_input_params: 2
+    statements {
+      var {
+      }
+    }
+  }
+  fd_one {
+    num_input_params: 4
+    statements {
+      statements {
+        storage_func {
+          loc {
+            binop {
+              op: KECCAK
+              left {
+              }
+              right {
+                cons {
+                  strval: ""
+                }
+              }
+            }
+          }
+          val {
+            binop {
+              op: KECCAK
+              left {
+              }
+              right {
+                nop {
+                  op: MSIZE
+                }
+              }
+            }
+          }
+          st: MSTORE
+        }
+      }
+    }
+  }
+  fd_multi {
+    num_input_params: 0
+    num_output_params: 0
+    statements {
+    }
+  }
+}

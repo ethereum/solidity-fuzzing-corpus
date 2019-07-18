@@ -1,0 +1,126 @@
+funcs {
+  fd_zero {
+    num_input_params: 7
+    statements {
+      var {
+      }
+    }
+  }
+  fd_one {
+    num_input_params: 4
+    statements {
+    }
+  }
+  fd_multi {
+    num_input_params: 8
+    num_output_params: 7
+    statements {
+      statements {
+        storage_func {
+          loc {
+            binop {
+              op: SI
+              left {
+              }
+              right {
+                binop {
+                  op: SUB
+                  left {
+                    binop {
+                      op: SUB
+                      left {
+                        varref {
+                          varnum: 14
+                        }
+                      }
+                      right {
+                      }
+                    }
+                  }
+                  right {
+                    binop {
+                      op: SUB
+                      left {
+                        binop {
+                          op: SUB
+                          left {
+                            binop {
+                              op: SUB
+                              left {
+                                varref {
+                                  varnum: 14
+                                }
+                              }
+                              right {
+                              }
+                            }
+                          }
+                          right {
+                            binop {
+                              op: SUB
+                              left {
+                                binop {
+                                  op: SUB
+                                  left {
+                                    varref {
+                                      varnum: 14
+                                    }
+                                  }
+                                  right {
+                                  }
+                                }
+                              }
+                              right {
+                                binop {
+                                  op: GT
+                                  left {
+                                    cons {
+                                      strval: ")"
+                                    }
+                                  }
+                                  right {
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                      right {
+                        binop {
+                          op: SUB
+                          left {
+                            binop {
+                              op: SUB
+                              left {
+                                varref {
+                                  varnum: 14
+                                }
+                              }
+                              right {
+                              }
+                            }
+                          }
+                          right {
+                            unop {
+                              op: EXTCODEHASH
+                              operand {
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+          val {
+          }
+          st: MSTORE
+        }
+      }
+    }
+  }
+}

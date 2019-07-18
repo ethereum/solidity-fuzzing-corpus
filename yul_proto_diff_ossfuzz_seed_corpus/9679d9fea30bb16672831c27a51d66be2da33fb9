@@ -1,0 +1,55 @@
+funcs {
+  fd_zero {
+    num_input_params: 2
+    statements {
+      var {
+      }
+      statements {
+        storage_func {
+          loc {
+            binop {
+              op: LT
+              left {
+                cons {
+                  intval: 0
+                }
+              }
+              right {
+                nop {
+                  op: PC
+                }
+              }
+            }
+          }
+          val {
+            binop {
+              op: LT
+              left {
+                cons {
+                  intval: 0
+                }
+              }
+              right {
+                nop {
+                  op: PC
+                }
+              }
+            }
+          }
+          st: MSTORE
+        }
+      }
+    }
+  }
+  fd_one {
+    num_input_params: 3
+    statements {
+    }
+  }
+  fd_multi {
+    num_input_params: 3
+    num_output_params: 8
+    statements {
+    }
+  }
+}

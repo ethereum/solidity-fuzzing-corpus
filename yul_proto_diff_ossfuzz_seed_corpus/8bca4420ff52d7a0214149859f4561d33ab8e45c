@@ -1,0 +1,48 @@
+funcs {
+  fd_zero {
+    num_input_params: 4
+    statements {
+      var {
+      }
+    }
+  }
+  fd_one {
+    num_input_params: 4
+    statements {
+      statements {
+        extcode_copy {
+          addr {
+          }
+          target {
+            unop {
+              op: MLOAD
+              operand {
+                cons {
+                  hexval: "ffffffffffffffffffffffffffffffffffffffffffffffff"
+                }
+              }
+            }
+          }
+          source {
+          }
+          size {
+            unop {
+              op: MLOAD
+              operand {
+                cons {
+                  hexval: "ffffffffffffffffffffffffffffffffffffffffffffffff"
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  fd_multi {
+    num_input_params: 7
+    num_output_params: 1
+    statements {
+    }
+  }
+}

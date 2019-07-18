@@ -1,0 +1,57 @@
+funcs {
+  fd_zero {
+    num_input_params: 4
+    statements {
+      var {
+      }
+    }
+  }
+  fd_one {
+    num_input_params: 0
+    statements {
+      statements {
+        assignment {
+          ref_id {
+            varnum: 0
+          }
+          expr {
+            binop {
+              op: LT
+              left {
+              }
+              right {
+                nop {
+                  op: PC
+                }
+              }
+            }
+          }
+        }
+      }
+      statements {
+        extcode_copy {
+          addr {
+          }
+          target {
+            varref {
+              varnum: 0
+            }
+          }
+          source {
+            varref {
+              varnum: 0
+            }
+          }
+          size {
+          }
+        }
+      }
+    }
+  }
+  fd_multi {
+    num_input_params: 4
+    num_output_params: 0
+    statements {
+    }
+  }
+}

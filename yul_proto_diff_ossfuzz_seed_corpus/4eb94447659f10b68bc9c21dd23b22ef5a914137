@@ -1,0 +1,54 @@
+funcs {
+  fd_zero {
+    num_input_params: 8
+    statements {
+      var {
+      }
+    }
+  }
+  fd_one {
+    num_input_params: 4
+    statements {
+    }
+  }
+  fd_multi {
+    num_input_params: 4
+    num_output_params: 3
+    statements {
+      statements {
+        assignment {
+          ref_id {
+            varnum: 5
+          }
+          expr {
+            top {
+              op: MULM
+              arg1 {
+                unop {
+                  op: NOT
+                  operand {
+                    cons {
+                      hexval: "88888888888888888888%888"
+                    }
+                  }
+                }
+              }
+              arg2 {
+                unop {
+                  op: NOT
+                  operand {
+                  }
+                }
+              }
+              arg3 {
+                cons {
+                  hexval: "88(88888888888888888%888"
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

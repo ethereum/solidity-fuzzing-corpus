@@ -1,0 +1,47 @@
+funcs {
+  fd_zero {
+    num_input_params: 0
+    statements {
+      var {
+      }
+    }
+  }
+  fd_one {
+    num_input_params: 6
+    statements {
+    }
+  }
+  fd_multi {
+    num_input_params: 4
+    num_output_params: 4
+    statements {
+      statements {
+        boundedforstmt {
+          for_body {
+          }
+        }
+      }
+      statements {
+        functioncall {
+          call_multidecl {
+            func_index: 0
+            in_param1 {
+              nop {
+                op: CALLDATASIZE
+              }
+            }
+            in_param2 {
+              nop {
+                op: CALLDATASIZE
+              }
+            }
+            in_param3 {
+            }
+            in_param4 {
+            }
+          }
+        }
+      }
+    }
+  }
+}

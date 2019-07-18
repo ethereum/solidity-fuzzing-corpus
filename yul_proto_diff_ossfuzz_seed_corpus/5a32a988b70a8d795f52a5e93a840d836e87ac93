@@ -1,0 +1,45 @@
+funcs {
+  fd_zero {
+    num_input_params: 4
+    statements {
+      var {
+      }
+    }
+  }
+  fd_one {
+    num_input_params: 4
+    statements {
+      statements {
+        boundedforstmt {
+          for_body {
+            statements {
+              ifstmt {
+                cond {
+                  varref {
+                    varnum: 0
+                  }
+                }
+                if_body {
+                  statements {
+                    breakstmt {
+                    }
+                  }
+                }
+              }
+            }
+            statements {
+              breakstmt {
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  fd_multi {
+    num_input_params: 4
+    num_output_params: 4
+    statements {
+    }
+  }
+}

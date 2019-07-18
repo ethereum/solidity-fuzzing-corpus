@@ -1,0 +1,55 @@
+funcs {
+  fd_zero {
+    num_input_params: 0
+    statements {
+      var {
+      }
+      statements {
+      }
+    }
+  }
+  fd_one {
+    num_input_params: 0
+    statements {
+      statements {
+      }
+    }
+  }
+  fd_multi {
+    num_input_params: 0
+    num_output_params: 4
+    statements {
+      statements {
+        storage_func {
+          loc {
+            nop {
+              op: GAS
+            }
+          }
+          val {
+          }
+          st: MSTORE
+        }
+      }
+      statements {
+        storage_func {
+          loc {
+            unop {
+              op: NOT
+              operand {
+                varref {
+                  varnum: 0
+                }
+              }
+            }
+          }
+          val {
+          }
+          st: MSTORE
+        }
+      }
+      statements {
+      }
+    }
+  }
+}

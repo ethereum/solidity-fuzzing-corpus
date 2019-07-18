@@ -1,0 +1,47 @@
+funcs {
+  fd_zero {
+    num_input_params: 2
+    statements {
+      var {
+      }
+    }
+  }
+  fd_one {
+    num_input_params: 2
+    statements {
+      statements {
+        storage_func {
+          loc {
+          }
+          val {
+            cons {
+              strval: "vvvv"
+            }
+          }
+          st: SSTORE
+        }
+      }
+    }
+  }
+  fd_multi {
+    num_input_params: 2
+    num_output_params: 1024
+    statements {
+      statements {
+        storage_func {
+          loc {
+            nop {
+              op: GAS
+            }
+          }
+          val {
+            cons {
+              strval: "vv"
+            }
+          }
+          st: SSTORE
+        }
+      }
+    }
+  }
+}

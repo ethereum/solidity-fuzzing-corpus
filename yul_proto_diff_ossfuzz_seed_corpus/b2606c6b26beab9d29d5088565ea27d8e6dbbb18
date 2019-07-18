@@ -1,0 +1,51 @@
+funcs {
+  fd_zero {
+    num_input_params: 4
+    statements {
+      var {
+      }
+      statements {
+        ifstmt {
+          cond {
+            binop {
+              op: SDIV
+              left {
+                binop {
+                  op: SDIV
+                  left {
+                    cons {
+                      strval: "EEEEEEEEEEEEE"
+                    }
+                  }
+                  right {
+                    cons {
+                      intval: 21
+                    }
+                  }
+                }
+              }
+              right {
+                nop {
+                  op: CODESIZE
+                }
+              }
+            }
+          }
+          if_body {
+          }
+        }
+      }
+    }
+  }
+  fd_one {
+    num_input_params: 1
+    statements {
+    }
+  }
+  fd_multi {
+    num_input_params: 1
+    num_output_params: 3
+    statements {
+    }
+  }
+}

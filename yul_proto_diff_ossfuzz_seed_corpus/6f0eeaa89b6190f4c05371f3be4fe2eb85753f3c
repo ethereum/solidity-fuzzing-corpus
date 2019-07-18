@@ -1,0 +1,59 @@
+funcs {
+  fd_zero {
+    num_input_params: 6
+    statements {
+      var {
+      }
+      statements {
+        copy_func {
+          ct: RETURNDATA
+          target {
+          }
+          source {
+            binop {
+              op: SHL
+              left {
+                nop {
+                  op: MSIZE
+                }
+              }
+              right {
+                cons {
+                  strval: "6"
+                }
+              }
+            }
+          }
+          size {
+          }
+        }
+      }
+      statements {
+        functioncall {
+          call_zero {
+            func_index: 4
+            in_param1 {
+            }
+            in_param2 {
+            }
+            in_param3 {
+            }
+            in_param4 {
+            }
+          }
+        }
+      }
+    }
+  }
+  fd_one {
+    num_input_params: 0
+    statements {
+    }
+  }
+  fd_multi {
+    num_input_params: 4
+    num_output_params: 4
+    statements {
+    }
+  }
+}

@@ -1,0 +1,225 @@
+funcs {
+  fd_zero {
+    num_input_params: 0
+    statements {
+      var {
+      }
+      statements {
+        terminatestmt {
+          stop_invalid {
+            stmt: STOP
+          }
+        }
+      }
+    }
+  }
+  fd_one {
+    num_input_params: 4
+    statements {
+      statements {
+        ifstmt {
+          cond {
+            binop {
+              op: SHR
+              left {
+                nop {
+                  op: CALLDATASIZE
+                }
+              }
+              right {
+                binop {
+                  op: SHR
+                  left {
+                    cons {
+                      intval: 0
+                    }
+                  }
+                  right {
+                    binop {
+                      op: SHR
+                      left {
+                        cons {
+                          intval: 0
+                        }
+                      }
+                      right {
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+          if_body {
+          }
+        }
+      }
+      statements {
+        storage_func {
+          loc {
+          }
+          val {
+          }
+          st: MSTORE
+        }
+      }
+      statements {
+        ifstmt {
+          cond {
+            binop {
+              op: SMOD
+              left {
+              }
+              right {
+              }
+            }
+          }
+          if_body {
+          }
+        }
+      }
+    }
+  }
+  fd_multi {
+    num_input_params: 1
+    num_output_params: 2048
+    statements {
+    }
+  }
+}
+funcs {
+  fd_zero {
+    num_input_params: 0
+    statements {
+      var {
+      }
+      statements {
+        terminatestmt {
+          stop_invalid {
+            stmt: STOP
+          }
+        }
+      }
+    }
+  }
+  fd_one {
+    num_input_params: 4
+    statements {
+      statements {
+        ifstmt {
+          cond {
+            binop {
+              op: SHR
+              left {
+                nop {
+                  op: CALLDATASIZE
+                }
+              }
+              right {
+                binop {
+                  op: SHR
+                  left {
+                    cons {
+                      intval: 0
+                    }
+                  }
+                  right {
+                    binop {
+                      op: SHR
+                      left {
+                        cons {
+                          intval: 0
+                        }
+                      }
+                      right {
+                        unop {
+                          op: NOT
+                          operand {
+                            top {
+                              op: ADDM
+                              arg1 {
+                                binop {
+                                  op: SHR
+                                  left {
+                                    nop {
+                                      op: CALLDATASIZE
+                                    }
+                                  }
+                                  right {
+                                    binop {
+                                      op: SHR
+                                      left {
+                                        cons {
+                                          intval: 0
+                                        }
+                                      }
+                                      right {
+                                        binop {
+                                          op: SHR
+                                          left {
+                                            cons {
+                                              intval: 0
+                                            }
+                                          }
+                                          right {
+                                          }
+                                        }
+                                      }
+                                    }
+                                  }
+                                }
+                              }
+                              arg2 {
+                                cons {
+                                  intval: 0
+                                }
+                              }
+                              arg3 {
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+          if_body {
+          }
+        }
+      }
+      statements {
+        storage_func {
+          loc {
+          }
+          val {
+          }
+          st: MSTORE
+        }
+      }
+      statements {
+        ifstmt {
+          cond {
+            binop {
+              op: SMOD
+              left {
+              }
+              right {
+              }
+            }
+          }
+          if_body {
+          }
+        }
+      }
+    }
+  }
+  fd_multi {
+    num_input_params: 1
+    num_output_params: 2048
+    statements {
+    }
+  }
+}

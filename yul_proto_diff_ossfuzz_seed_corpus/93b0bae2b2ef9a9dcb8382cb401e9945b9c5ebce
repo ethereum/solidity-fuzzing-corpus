@@ -1,0 +1,64 @@
+funcs {
+  fd_zero {
+    num_input_params: 4
+    statements {
+      var {
+      }
+    }
+  }
+  fd_one {
+    num_input_params: 4
+    statements {
+      statements {
+        ifstmt {
+          cond {
+            binop {
+              op: DIV
+              left {
+                unop {
+                  op: NOT
+                  operand {
+                  }
+                }
+              }
+              right {
+                cons {
+                  hexval: "666666666666666675787058"
+                }
+              }
+            }
+          }
+          if_body {
+          }
+        }
+      }
+    }
+  }
+  fd_multi {
+    num_input_params: 4
+    num_output_params: 4
+    statements {
+      statements {
+        ifstmt {
+          cond {
+            binop {
+              op: DIV
+              left {
+                cons {
+                  hexval: "333333333333/33333333333333333333333333333333333333333333333333333333333"
+                }
+              }
+              right {
+                cons {
+                  hexval: "666666666666666676666666"
+                }
+              }
+            }
+          }
+          if_body {
+          }
+        }
+      }
+    }
+  }
+}

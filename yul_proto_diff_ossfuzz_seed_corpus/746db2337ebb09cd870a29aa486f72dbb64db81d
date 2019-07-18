@@ -1,0 +1,57 @@
+funcs {
+  fd_zero {
+    num_input_params: 0
+    statements {
+      var {
+      }
+      statements {
+        functioncall {
+          call_multidecl {
+            func_index: 8
+            in_param1 {
+            }
+            in_param2 {
+            }
+            in_param3 {
+            }
+            in_param4 {
+            }
+          }
+        }
+      }
+    }
+  }
+  fd_one {
+    num_input_params: 8
+    statements {
+    }
+  }
+  fd_multi {
+    num_input_params: 8
+    num_output_params: 4
+    statements {
+      statements {
+        storage_func {
+          loc {
+            binop {
+              op: GT
+              left {
+                nop {
+                  op: CALLDATASIZE
+                }
+              }
+              right {
+                nop {
+                  op: CALLDATASIZE
+                }
+              }
+            }
+          }
+          val {
+          }
+          st: SSTORE
+        }
+      }
+    }
+  }
+}

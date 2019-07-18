@@ -1,0 +1,47 @@
+funcs {
+  fd_zero {
+    num_input_params: 4
+    statements {
+      var {
+      }
+    }
+  }
+  fd_one {
+    num_input_params: 4
+    statements {
+    }
+  }
+  fd_multi {
+    num_input_params: 8
+    num_output_params: 4
+    statements {
+      statements {
+        assignment {
+          ref_id {
+            varnum: 4
+          }
+          expr {
+            top {
+              op: MULM
+              arg1 {
+                cons {
+                  strval: "j"
+                }
+              }
+              arg2 {
+                cons {
+                  strval: "j"
+                }
+              }
+              arg3 {
+                cons {
+                  hexval: "A"
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

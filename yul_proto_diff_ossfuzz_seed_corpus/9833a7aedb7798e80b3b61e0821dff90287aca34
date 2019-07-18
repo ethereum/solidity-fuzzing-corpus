@@ -1,0 +1,58 @@
+funcs {
+  fd_zero {
+    num_input_params: 0
+    statements {
+      var {
+      }
+    }
+  }
+  fd_one {
+    num_input_params: 1
+    statements {
+    }
+  }
+  fd_multi {
+    num_input_params: 1
+    num_output_params: 6
+    statements {
+      statements {
+        forstmt {
+          for_body {
+          }
+          for_init {
+          }
+          for_post {
+            statements {
+              boundedforstmt {
+                for_body {
+                }
+              }
+            }
+          }
+          for_cond {
+            binop {
+              op: SDIV
+              left {
+                binop {
+                  op: OR
+                  left {
+                  }
+                  right {
+                    cons {
+                      strval: "librar"
+                    }
+                  }
+                }
+              }
+              right {
+                cons {
+                  strval: "librar"
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

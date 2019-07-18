@@ -1,0 +1,47 @@
+funcs {
+  fd_zero {
+    num_input_params: 6
+    statements {
+      var {
+      }
+    }
+  }
+  fd_one {
+    num_input_params: 4
+    statements {
+    }
+  }
+  fd_multi {
+    num_input_params: 2
+    num_output_params: 4
+    statements {
+      statements {
+        storage_func {
+          loc {
+            cons {
+              intval: 8
+            }
+          }
+          val {
+            cons {
+              hexval: "C\037\000\000\000\000\000\000\000CCCCCCCCCCCCCCCC"
+            }
+          }
+          st: SSTORE
+        }
+      }
+      statements {
+        storage_func {
+          loc {
+          }
+          val {
+            cons {
+              hexval: "C\037\000\000\000\000\000\000\000CCCCCCCCCCCCCCCC"
+            }
+          }
+          st: SSTORE
+        }
+      }
+    }
+  }
+}

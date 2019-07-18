@@ -1,0 +1,41 @@
+funcs {
+  fd_zero {
+    num_input_params: 4
+    statements {
+      var {
+      }
+    }
+  }
+  fd_one {
+    num_input_params: 4
+    statements {
+    }
+  }
+  fd_multi {
+    num_input_params: 4
+    num_output_params: 6
+    statements {
+      statements {
+        boundedforstmt {
+          for_body {
+            statements {
+              storage_func {
+                loc {
+                  nop {
+                    op: MSIZE
+                  }
+                }
+                val {
+                  cons {
+                    hexval: "AAAfuncs {\n  fd_zero {AAAAAAAAAAAAAAAAA\n    num_ifuncs {\n  fd_zero {\n    num_input_params: 0\n    statementnput_params: 4\n  AAAA  stat"
+                  }
+                }
+                st: MSTORE
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
