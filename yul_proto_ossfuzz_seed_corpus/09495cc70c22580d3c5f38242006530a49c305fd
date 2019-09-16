@@ -1,0 +1,46 @@
+block {
+  statements {
+    storage_func {
+      loc {
+        nop {
+          op: CALLDATASIZE
+        }
+      }
+      val {
+      }
+      st: MSTORE
+    }
+  }
+  statements {
+    storage_func {
+      loc {
+      }
+      val {
+      }
+      st: MSTORE
+    }
+  }
+  statements {
+    ifstmt {
+      cond {
+        nop {
+          op: PC
+        }
+      }
+      if_body {
+        statements {
+          storage_func {
+            loc {
+              nop {
+                op: CALLDATASIZE
+              }
+            }
+            val {
+            }
+            st: MSTORE
+          }
+        }
+      }
+    }
+  }
+}

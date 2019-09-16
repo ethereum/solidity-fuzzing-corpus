@@ -1,0 +1,27 @@
+block {
+  statements {
+    storage_func {
+      loc {
+        binop {
+          op: SDIV
+          left {
+            nop {
+              op: GASPRICE
+            }
+          }
+          right {
+            nop {
+              op: GASPRICE
+            }
+          }
+        }
+      }
+      val {
+        nop {
+          op: GASPRICE
+        }
+      }
+      st: MSTORE
+    }
+  }
+}

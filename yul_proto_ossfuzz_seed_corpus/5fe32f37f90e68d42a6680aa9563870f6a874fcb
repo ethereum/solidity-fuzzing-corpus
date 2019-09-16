@@ -1,0 +1,167 @@
+block {
+  statements {
+  }
+  statements {
+    log_func {
+      pos {
+        binop {
+          op: SI
+          left {
+            binop {
+              op: SDIV
+              left {
+                binop {
+                  op: SI
+                  left {
+                  }
+                  right {
+                  }
+                }
+              }
+              right {
+                unop {
+                  op: NOT
+                  operand {
+                  }
+                }
+              }
+            }
+          }
+          right {
+            nop {
+              op: PC
+            }
+          }
+        }
+      }
+      size {
+        binop {
+          op: SI
+          left {
+            binop {
+              op: SDIV
+              left {
+                binop {
+                  op: MUL
+                  left {
+                  }
+                  right {
+                  }
+                }
+              }
+              right {
+                unop {
+                  op: NOT
+                  operand {
+                    varref {
+                      varnum: 0
+                    }
+                  }
+                }
+              }
+            }
+          }
+          right {
+            nop {
+              op: PC
+            }
+          }
+        }
+      }
+      num_topics: ZERO
+      t1 {
+      }
+      t2 {
+      }
+      t3 {
+      }
+      t4 {
+      }
+    }
+  }
+  statements {
+    log_func {
+      pos {
+        binop {
+          op: GT
+          left {
+            binop {
+              op: SDIV
+              left {
+                binop {
+                  op: MUL
+                  left {
+                  }
+                  right {
+                  }
+                }
+              }
+              right {
+                unop {
+                  op: NOT
+                  operand {
+                    varref {
+                      varnum: 0
+                    }
+                  }
+                }
+              }
+            }
+          }
+          right {
+            nop {
+              op: PC
+            }
+          }
+        }
+      }
+      size {
+        binop {
+          op: GT
+          left {
+            binop {
+              op: SDIV
+              left {
+                binop {
+                  op: MUL
+                  left {
+                  }
+                  right {
+                  }
+                }
+              }
+              right {
+                unop {
+                  op: NOT
+                  operand {
+                  }
+                }
+              }
+            }
+          }
+          right {
+            binop {
+              op: SI
+              left {
+              }
+              right {
+              }
+            }
+          }
+        }
+      }
+      num_topics: TWO
+      t1 {
+      }
+      t2 {
+      }
+      t3 {
+        cons {
+          strval: "?"
+        }
+      }
+      t4 {
+      }
+    }
+  }
+}

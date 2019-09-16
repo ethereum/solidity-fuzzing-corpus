@@ -1,0 +1,47 @@
+block {
+  statements {
+    ifstmt {
+      cond {
+        top {
+          op: ADDM
+          arg1 {
+          }
+          arg2 {
+          }
+          arg3 {
+            binop {
+              op: EXP
+              left {
+              }
+              right {
+                varref {
+                  varnum: 1073741824
+                }
+              }
+            }
+          }
+        }
+      }
+      if_body {
+        statements {
+          extcode_copy {
+            addr {
+              varref {
+                varnum: -1073741824
+              }
+            }
+            target {
+            }
+            source {
+              varref {
+                varnum: 1073741824
+              }
+            }
+            size {
+            }
+          }
+        }
+      }
+    }
+  }
+}

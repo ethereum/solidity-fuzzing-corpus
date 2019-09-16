@@ -1,0 +1,30 @@
+block {
+  statements {
+    ifstmt {
+      cond {
+        binop {
+          op: SUB
+          left {
+            binop {
+              op: SUB
+              left {
+                nop {
+                  op: CODESIZE
+                }
+              }
+              right {
+              }
+            }
+          }
+          right {
+            nop {
+              op: CODESIZE
+            }
+          }
+        }
+      }
+      if_body {
+      }
+    }
+  }
+}

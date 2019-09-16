@@ -1,0 +1,54 @@
+block {
+  statements {
+    log_func {
+      pos {
+        binop {
+          op: OR
+          left {
+          }
+          right {
+            nop {
+              op: CODESIZE
+            }
+          }
+        }
+      }
+      size {
+        top {
+          op: MULM
+          arg1 {
+          }
+          arg2 {
+            unop {
+              op: NOT
+              operand {
+                nop {
+                  op: CODESIZE
+                }
+              }
+            }
+          }
+          arg3 {
+            unop {
+              op: NOT
+              operand {
+                nop {
+                  op: CODESIZE
+                }
+              }
+            }
+          }
+        }
+      }
+      num_topics: ONE
+      t1 {
+      }
+      t2 {
+      }
+      t3 {
+      }
+      t4 {
+      }
+    }
+  }
+}

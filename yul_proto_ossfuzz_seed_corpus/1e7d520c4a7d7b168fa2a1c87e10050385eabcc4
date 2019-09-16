@@ -1,0 +1,52 @@
+block {
+  statements {
+    funcdef {
+      num_input_params: 0
+      num_output_params: 0
+      block {
+        statements {
+          terminatestmt {
+            stop_invalid {
+              stmt: STOP
+            }
+          }
+        }
+      }
+    }
+  }
+  statements {
+    extcode_copy {
+      addr {
+      }
+      target {
+      }
+      source {
+        binop {
+          op: EQ
+          left {
+            cons {
+              intval: 0
+            }
+          }
+          right {
+            cons {
+              strval: ""
+            }
+          }
+        }
+      }
+      size {
+        binop {
+          op: EQ
+          left {
+            cons {
+              strval: ""
+            }
+          }
+          right {
+          }
+        }
+      }
+    }
+  }
+}

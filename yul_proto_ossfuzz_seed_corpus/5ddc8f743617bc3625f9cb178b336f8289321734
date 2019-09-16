@@ -1,0 +1,125 @@
+block {
+  statements {
+    log_func {
+      pos {
+        unop {
+          op: NOT
+          operand {
+            nop {
+              op: GAS
+            }
+          }
+        }
+      }
+      size {
+        top {
+          op: ADDM
+          arg1 {
+          }
+          arg2 {
+            binop {
+              op: EQ
+              left {
+              }
+              right {
+                nop {
+                  op: CODESIZE
+                }
+              }
+            }
+          }
+          arg3 {
+            top {
+              op: ADDM
+              arg1 {
+                unop {
+                  op: CALLDATALOAD
+                  operand {
+                  }
+                }
+              }
+              arg2 {
+                binop {
+                  op: GT
+                  left {
+                  }
+                  right {
+                    nop {
+                      op: GAS
+                    }
+                  }
+                }
+              }
+              arg3 {
+                top {
+                  op: ADDM
+                  arg1 {
+                  }
+                  arg2 {
+                    binop {
+                      op: EQ
+                      left {
+                      }
+                      right {
+                        nop {
+                          op: CODESIZE
+                        }
+                      }
+                    }
+                  }
+                  arg3 {
+                    top {
+                      op: ADDM
+                      arg1 {
+                      }
+                      arg2 {
+                        binop {
+                          op: ADD
+                          left {
+                          }
+                          right {
+                            nop {
+                              op: CALLDATASIZE
+                            }
+                          }
+                        }
+                      }
+                      arg3 {
+                        top {
+                          op: MULM
+                          arg1 {
+                          }
+                          arg2 {
+                          }
+                          arg3 {
+                            unop {
+                              op: NOT
+                              operand {
+                                nop {
+                                  op: CALLER
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+      num_topics: ONE
+      t1 {
+      }
+      t2 {
+      }
+      t3 {
+      }
+      t4 {
+      }
+    }
+  }
+}

@@ -1,0 +1,72 @@
+block {
+  statements {
+    log_func {
+      pos {
+        unop {
+          op: MLOAD
+          operand {
+          }
+        }
+      }
+      size {
+        top {
+          op: ADDM
+          arg1 {
+          }
+          arg2 {
+            binop {
+              op: EQ
+              left {
+              }
+              right {
+                unop {
+                  op: CALLDATALOAD
+                  operand {
+                  }
+                }
+              }
+            }
+          }
+          arg3 {
+            top {
+              op: MULM
+              arg1 {
+              }
+              arg2 {
+                binop {
+                  op: LT
+                  left {
+                  }
+                  right {
+                    nop {
+                      op: NUMBER
+                    }
+                  }
+                }
+              }
+              arg3 {
+                unop {
+                  op: NOT
+                  operand {
+                    nop {
+                      op: CALLER
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+      num_topics: ONE
+      t1 {
+      }
+      t2 {
+      }
+      t3 {
+      }
+      t4 {
+      }
+    }
+  }
+}

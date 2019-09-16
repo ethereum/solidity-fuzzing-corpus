@@ -1,0 +1,76 @@
+block {
+  statements {
+    storage_func {
+      loc {
+        binop {
+          op: SI
+          left {
+            top {
+              op: MULM
+              arg1 {
+              }
+              arg2 {
+              }
+              arg3 {
+              }
+            }
+          }
+          right {
+            unop {
+              op: NOT
+              operand {
+                top {
+                  op: MULM
+                  arg1 {
+                  }
+                  arg2 {
+                  }
+                  arg3 {
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+      val {
+        nop {
+          op: PC
+        }
+      }
+      st: MSTORE
+    }
+  }
+  statements {
+    funcdef {
+      num_input_params: 2
+      num_output_params: 2
+      block {
+        statements {
+          funcdef {
+            num_input_params: 2
+            num_output_params: 2
+            block {
+              statements {
+                funcdef {
+                  num_input_params: 2
+                  num_output_params: 2
+                  block {
+                    statements {
+                      funcdef {
+                        num_input_params: 9
+                        num_output_params: 2
+                        block {
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

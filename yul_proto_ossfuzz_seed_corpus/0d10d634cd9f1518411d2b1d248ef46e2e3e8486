@@ -1,0 +1,69 @@
+block {
+  statements {
+  }
+  statements {
+    extcode_copy {
+      addr {
+        nop {
+          op: PC
+        }
+      }
+      target {
+        binop {
+          op: DIV
+          left {
+            unop {
+              op: MLOAD
+              operand {
+              }
+            }
+          }
+          right {
+            binop {
+              op: GT
+              left {
+              }
+              right {
+              }
+            }
+          }
+        }
+      }
+      source {
+        binop {
+          op: DIV
+          left {
+            binop {
+              op: DIV
+              left {
+                nop {
+                  op: GAS
+                }
+              }
+              right {
+                binop {
+                  op: GT
+                  left {
+                  }
+                  right {
+                  }
+                }
+              }
+            }
+          }
+          right {
+            binop {
+              op: GT
+              left {
+              }
+              right {
+              }
+            }
+          }
+        }
+      }
+      size {
+      }
+    }
+  }
+}

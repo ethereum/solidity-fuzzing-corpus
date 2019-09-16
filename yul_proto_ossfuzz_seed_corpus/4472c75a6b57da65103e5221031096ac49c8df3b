@@ -1,0 +1,78 @@
+block {
+  statements {
+  }
+  statements {
+    terminatestmt {
+      ret_rev {
+        stmt: RETURN
+        pos {
+          binop {
+            op: SHR
+            left {
+            }
+            right {
+            }
+          }
+        }
+        size {
+          top {
+            op: ADDM
+            arg1 {
+              binop {
+                op: SHR
+                left {
+                }
+                right {
+                  binop {
+                    op: SHR
+                    left {
+                    }
+                    right {
+                    }
+                  }
+                }
+              }
+            }
+            arg2 {
+            }
+            arg3 {
+            }
+          }
+        }
+      }
+    }
+  }
+  statements {
+    storage_func {
+      loc {
+        unop {
+          op: NOT
+          operand {
+            cons {
+            }
+          }
+        }
+      }
+      val {
+      }
+      st: MSTORE
+    }
+  }
+  statements {
+    storage_func {
+      loc {
+        unop {
+          op: NOT
+          operand {
+            cons {
+              intval: 0
+            }
+          }
+        }
+      }
+      val {
+      }
+      st: MSTORE
+    }
+  }
+}

@@ -1,0 +1,67 @@
+block {
+  statements {
+    log_func {
+      pos {
+        binop {
+          op: MUL
+          left {
+            cons {
+              strval: "&&\001"
+            }
+          }
+          right {
+            binop {
+              op: MUL
+              left {
+                cons {
+                  strval: "&&\001"
+                }
+              }
+              right {
+                cons {
+                  intval: 0
+                }
+              }
+            }
+          }
+        }
+      }
+      size {
+        binop {
+          op: MUL
+          left {
+            cons {
+              strval: ""
+            }
+          }
+          right {
+            binop {
+              op: MUL
+              left {
+                cons {
+                  strval: "&&\001"
+                }
+              }
+              right {
+                unop {
+                  op: ISZERO
+                  operand {
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+      num_topics: ONE
+      t1 {
+      }
+      t2 {
+      }
+      t3 {
+      }
+      t4 {
+      }
+    }
+  }
+}

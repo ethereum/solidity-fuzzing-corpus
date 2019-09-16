@@ -1,0 +1,79 @@
+block {
+  statements {
+    terminatestmt {
+      ret_rev {
+        stmt: RETURN
+        pos {
+          top {
+            op: ADDM
+            arg1 {
+            }
+            arg2 {
+              binop {
+                op: SHR
+                left {
+                }
+                right {
+                }
+              }
+            }
+            arg3 {
+            }
+          }
+        }
+        size {
+          top {
+            op: ADDM
+            arg1 {
+              binop {
+                op: LT
+                left {
+                }
+                right {
+                }
+              }
+            }
+            arg2 {
+              binop {
+                op: LT
+                left {
+                  binop {
+                    op: SHR
+                    left {
+                    }
+                    right {
+                    }
+                  }
+                }
+                right {
+                }
+              }
+            }
+            arg3 {
+            }
+          }
+        }
+      }
+    }
+  }
+  statements {
+  }
+  statements {
+  }
+  statements {
+  }
+  statements {
+  }
+  statements {
+    assignment {
+      ref_id {
+        varnum: 0
+      }
+      expr {
+        varref {
+          varnum: 0
+        }
+      }
+    }
+  }
+}

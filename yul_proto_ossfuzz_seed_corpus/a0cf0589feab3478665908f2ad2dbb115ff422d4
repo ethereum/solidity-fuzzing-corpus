@@ -1,0 +1,189 @@
+block {
+  statements {
+    log_func {
+      pos {
+        binop {
+          op: LT
+          left {
+            binop {
+              op: SUB
+              left {
+                nop {
+                  op: GAS
+                }
+              }
+              right {
+                binop {
+                  op: SUB
+                  left {
+                    binop {
+                      op: SUB
+                      left {
+                        nop {
+                          op: GAS
+                        }
+                      }
+                      right {
+                      }
+                    }
+                  }
+                  right {
+                    nop {
+                      op: GAS
+                    }
+                  }
+                }
+              }
+            }
+          }
+          right {
+            nop {
+              op: GAS
+            }
+          }
+        }
+      }
+      size {
+        binop {
+          op: EQ
+          left {
+            binop {
+              op: SUB
+              left {
+                nop {
+                  op: GAS
+                }
+              }
+              right {
+                binop {
+                  op: SUB
+                  left {
+                    binop {
+                      op: SUB
+                      left {
+                        nop {
+                          op: GAS
+                        }
+                      }
+                      right {
+                      }
+                    }
+                  }
+                  right {
+                    nop {
+                      op: GAS
+                    }
+                  }
+                }
+              }
+            }
+          }
+          right {
+            nop {
+              op: GAS
+            }
+          }
+        }
+      }
+      num_topics: FOUR
+      t1 {
+        binop {
+          op: LT
+          left {
+            binop {
+              op: LT
+              left {
+                binop {
+                  op: SUB
+                  left {
+                    nop {
+                      op: GAS
+                    }
+                  }
+                  right {
+                    binop {
+                      op: SUB
+                      left {
+                        binop {
+                          op: SUB
+                          left {
+                            nop {
+                              op: GAS
+                            }
+                          }
+                          right {
+                          }
+                        }
+                      }
+                      right {
+                        nop {
+                          op: CODESIZE
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+              right {
+              }
+            }
+          }
+          right {
+          }
+        }
+      }
+      t2 {
+      }
+      t3 {
+      }
+      t4 {
+      }
+    }
+  }
+  statements {
+    storage_func {
+      loc {
+      }
+      val {
+        cons {
+          strval: "A"
+        }
+      }
+      st: MSTORE
+    }
+  }
+  statements {
+    boundedforstmt {
+      for_body {
+      }
+    }
+  }
+  statements {
+    storage_func {
+      loc {
+      }
+      val {
+        cons {
+          strval: "A"
+        }
+      }
+      st: MSTORE
+    }
+  }
+  statements {
+  }
+  statements {
+    boundedforstmt {
+      for_body {
+      }
+    }
+  }
+  statements {
+    boundedforstmt {
+      for_body {
+      }
+    }
+  }
+  statements {
+  }
+}

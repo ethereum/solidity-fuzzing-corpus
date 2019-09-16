@@ -1,0 +1,200 @@
+block {
+  statements {
+    copy_func {
+      ct: CODE
+      target {
+        cons {
+          strval: "0"
+        }
+      }
+      source {
+        cons {
+          strval: ""
+        }
+      }
+      size {
+        cons {
+          strval: ""
+        }
+      }
+    }
+  }
+  statements {
+    copy_func {
+      ct: CODE
+      target {
+        cons {
+          strval: ""
+        }
+      }
+      source {
+        cons {
+          strval: ""
+        }
+      }
+      size {
+        cons {
+          strval: ""
+        }
+      }
+    }
+  }
+  statements {
+    copy_func {
+      ct: CODE
+      target {
+      }
+      source {
+        cons {
+          strval: ""
+        }
+      }
+      size {
+      }
+    }
+  }
+  statements {
+    log_func {
+      pos {
+        binop {
+          op: SLT
+          left {
+            binop {
+              op: SUB
+              left {
+                nop {
+                  op: PC
+                }
+              }
+              right {
+                binop {
+                  op: SUB
+                  left {
+                    binop {
+                      op: SUB
+                      left {
+                        nop {
+                          op: PC
+                        }
+                      }
+                      right {
+                      }
+                    }
+                  }
+                  right {
+                    nop {
+                      op: PC
+                    }
+                  }
+                }
+              }
+            }
+          }
+          right {
+            nop {
+              op: GAS
+            }
+          }
+        }
+      }
+      size {
+        binop {
+          op: LT
+          left {
+            binop {
+              op: SUB
+              left {
+                nop {
+                  op: PC
+                }
+              }
+              right {
+                binop {
+                  op: SUB
+                  left {
+                    binop {
+                      op: SUB
+                      left {
+                        nop {
+                          op: PC
+                        }
+                      }
+                      right {
+                      }
+                    }
+                  }
+                  right {
+                    nop {
+                      op: PC
+                    }
+                  }
+                }
+              }
+            }
+          }
+          right {
+            nop {
+              op: PC
+            }
+          }
+        }
+      }
+      num_topics: FOUR
+      t1 {
+        binop {
+          op: LT
+          left {
+            binop {
+              op: LT
+              left {
+                binop {
+                  op: SUB
+                  left {
+                    nop {
+                      op: PC
+                    }
+                  }
+                  right {
+                    binop {
+                      op: SUB
+                      left {
+                        binop {
+                          op: SUB
+                          left {
+                            nop {
+                              op: PC
+                            }
+                          }
+                          right {
+                          }
+                        }
+                      }
+                      right {
+                        nop {
+                          op: PC
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+              right {
+                nop {
+                  op: PC
+                }
+              }
+            }
+          }
+          right {
+          }
+        }
+      }
+      t2 {
+      }
+      t3 {
+      }
+      t4 {
+      }
+    }
+  }
+}

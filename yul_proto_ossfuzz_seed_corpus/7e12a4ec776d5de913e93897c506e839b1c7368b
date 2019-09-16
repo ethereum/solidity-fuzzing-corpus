@@ -1,0 +1,27 @@
+block {
+  statements {
+    funcdef {
+      num_input_params: 262144
+      num_output_params: 9
+      block {
+      }
+    }
+  }
+  statements {
+    assignment {
+      ref_id {
+        varnum: 0
+      }
+      expr {
+        unop {
+          op: BLOCKHASH
+          operand {
+            nop {
+              op: CALLER
+            }
+          }
+        }
+      }
+    }
+  }
+}

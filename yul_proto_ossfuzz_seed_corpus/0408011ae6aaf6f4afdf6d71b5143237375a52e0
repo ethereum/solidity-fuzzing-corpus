@@ -1,0 +1,73 @@
+block {
+  statements {
+    storage_func {
+      loc {
+        top {
+          op: ADDM
+          arg1 {
+            unop {
+              op: NOT
+              operand {
+              }
+            }
+          }
+          arg2 {
+            top {
+              op: ADDM
+              arg1 {
+                unop {
+                  op: NOT
+                  operand {
+                  }
+                }
+              }
+              arg2 {
+              }
+              arg3 {
+              }
+            }
+          }
+          arg3 {
+          }
+        }
+      }
+      val {
+      }
+      st: SSTORE
+    }
+  }
+  statements {
+    copy_func {
+      ct: CODE
+      target {
+        top {
+          op: ADDM
+          arg1 {
+            unop {
+              op: NOT
+              operand {
+              }
+            }
+          }
+          arg2 {
+          }
+          arg3 {
+          }
+        }
+      }
+      source {
+      }
+      size {
+      }
+    }
+  }
+  statements {
+    decl {
+      expr {
+        nop {
+          op: ORIGIN
+        }
+      }
+    }
+  }
+}

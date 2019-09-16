@@ -1,0 +1,122 @@
+block {
+  statements {
+    ifstmt {
+      cond {
+        top {
+          op: ADDM
+          arg1 {
+          }
+          arg2 {
+            binop {
+              op: GT
+              left {
+                binop {
+                  op: GT
+                  left {
+                    binop {
+                      op: GT
+                      left {
+                        binop {
+                          op: GT
+                          left {
+                            unop {
+                              op: ISZERO
+                              operand {
+                              }
+                            }
+                          }
+                          right {
+                            nop {
+                              op: PC
+                            }
+                          }
+                        }
+                      }
+                      right {
+                        cons {
+                          strval: "/"
+                        }
+                      }
+                    }
+                  }
+                  right {
+                    cons {
+                      strval: "/"
+                    }
+                  }
+                }
+              }
+              right {
+                cons {
+                  strval: "/"
+                }
+              }
+            }
+          }
+          arg3 {
+            binop {
+              op: GT
+              left {
+                unop {
+                  op: ISZERO
+                  operand {
+                  }
+                }
+              }
+              right {
+                nop {
+                  op: PC
+                }
+              }
+            }
+          }
+        }
+      }
+      if_body {
+        statements {
+          ifstmt {
+            cond {
+              binop {
+                op: GT
+                left {
+                  binop {
+                    op: GT
+                    left {
+                      binop {
+                        op: GT
+                        left {
+                          unop {
+                            op: ISZERO
+                            operand {
+                            }
+                          }
+                        }
+                        right {
+                          nop {
+                            op: PC
+                          }
+                        }
+                      }
+                    }
+                    right {
+                      cons {
+                        strval: "/"
+                      }
+                    }
+                  }
+                }
+                right {
+                  cons {
+                    strval: "/"
+                  }
+                }
+              }
+            }
+            if_body {
+            }
+          }
+        }
+      }
+    }
+  }
+}

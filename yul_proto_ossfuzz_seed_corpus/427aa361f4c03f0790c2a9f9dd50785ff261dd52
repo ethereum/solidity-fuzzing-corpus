@@ -1,0 +1,58 @@
+block {
+  statements {
+    log_func {
+      pos {
+        binop {
+          op: SLT
+          left {
+          }
+          right {
+            nop {
+              op: CODESIZE
+            }
+          }
+        }
+      }
+      size {
+        top {
+          op: ADDM
+          arg1 {
+          }
+          arg2 {
+            binop {
+              op: GT
+              left {
+              }
+              right {
+                nop {
+                  op: TIMESTAMP
+                }
+              }
+            }
+          }
+          arg3 {
+            binop {
+              op: SI
+              left {
+              }
+              right {
+                nop {
+                  op: CODESIZE
+                }
+              }
+            }
+          }
+        }
+      }
+      num_topics: ONE
+      t1 {
+      }
+      t2 {
+      }
+      t3 {
+      }
+      t4 {
+      }
+    }
+  }
+}

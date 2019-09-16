@@ -1,0 +1,33 @@
+block {
+  statements {
+    copy_func {
+      ct: CODE
+      target {
+        binop {
+          op: OR
+          left {
+            binop {
+              op: AND
+              left {
+                nop {
+                  op: CALLER
+                }
+              }
+              right {
+              }
+            }
+          }
+          right {
+            nop {
+              op: CALLER
+            }
+          }
+        }
+      }
+      source {
+      }
+      size {
+      }
+    }
+  }
+}

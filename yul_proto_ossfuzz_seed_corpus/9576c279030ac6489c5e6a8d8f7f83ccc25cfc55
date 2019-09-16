@@ -1,0 +1,65 @@
+block {
+  statements {
+    boundedforstmt {
+      for_body {
+        statements {
+          extcode_copy {
+            addr {
+            }
+            target {
+              binop {
+                op: DIV
+                left {
+                  binop {
+                    op: MUL
+                    left {
+                    }
+                    right {
+                    }
+                  }
+                }
+                right {
+                }
+              }
+            }
+            source {
+            }
+            size {
+              binop {
+                op: SDIV
+                left {
+                  binop {
+                    op: MUL
+                    left {
+                    }
+                    right {
+                    }
+                  }
+                }
+                right {
+                  binop {
+                    op: SDIV
+                    left {
+                      binop {
+                        op: MUL
+                        left {
+                        }
+                        right {
+                        }
+                      }
+                    }
+                    right {
+                      varref {
+                        varnum: 0
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

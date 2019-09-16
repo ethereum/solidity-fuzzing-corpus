@@ -1,0 +1,25 @@
+block {
+  statements {
+    terminatestmt {
+      self_des {
+        addr {
+          binop {
+            op: GT
+            left {
+              unop {
+                op: ISZERO
+                operand {
+                }
+              }
+            }
+            right {
+              nop {
+                op: GASPRICE
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

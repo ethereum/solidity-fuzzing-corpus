@@ -1,0 +1,86 @@
+block {
+  statements {
+    extcode_copy {
+      addr {
+        nop {
+          op: PC
+        }
+      }
+      target {
+        binop {
+          op: DIV
+          left {
+            binop {
+              op: DIV
+              left {
+                binop {
+                  op: GT
+                  left {
+                    nop {
+                      op: PC
+                    }
+                  }
+                  right {
+                  }
+                }
+              }
+              right {
+                binop {
+                  op: GT
+                  left {
+                  }
+                  right {
+                  }
+                }
+              }
+            }
+          }
+          right {
+            binop {
+              op: GT
+              left {
+              }
+              right {
+              }
+            }
+          }
+        }
+      }
+      source {
+        binop {
+          op: DIV
+          left {
+            binop {
+              op: DIV
+              left {
+                nop {
+                  op: PC
+                }
+              }
+              right {
+                binop {
+                  op: GT
+                  left {
+                  }
+                  right {
+                  }
+                }
+              }
+            }
+          }
+          right {
+            binop {
+              op: GT
+              left {
+              }
+              right {
+              }
+            }
+          }
+        }
+      }
+      size {
+      }
+    }
+  }
+}

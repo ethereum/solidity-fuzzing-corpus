@@ -1,0 +1,97 @@
+block {
+  statements {
+    log_func {
+      pos {
+        unop {
+          op: MLOAD
+          operand {
+          }
+        }
+      }
+      size {
+        binop {
+          op: SI
+          left {
+            binop {
+              op: SHL
+              left {
+                binop {
+                  op: GT
+                  left {
+                  }
+                  right {
+                  }
+                }
+              }
+              right {
+                binop {
+                  op: SHR
+                  left {
+                    binop {
+                      op: GT
+                      left {
+                      }
+                      right {
+                      }
+                    }
+                  }
+                  right {
+                    unop {
+                      op: SLOAD
+                      operand {
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+          right {
+            binop {
+              op: SHL
+              left {
+                binop {
+                  op: GT
+                  left {
+                  }
+                  right {
+                  }
+                }
+              }
+              right {
+                binop {
+                  op: SHR
+                  left {
+                    binop {
+                      op: GT
+                      left {
+                      }
+                      right {
+                      }
+                    }
+                  }
+                  right {
+                    unop {
+                      op: SLOAD
+                      operand {
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+      num_topics: TWO
+      t1 {
+      }
+      t2 {
+      }
+      t3 {
+      }
+      t4 {
+      }
+    }
+  }
+}

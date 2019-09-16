@@ -1,0 +1,51 @@
+block {
+  statements {
+    extcode_copy {
+      addr {
+      }
+      target {
+        unop {
+          op: NOT
+          operand {
+          }
+        }
+      }
+      source {
+        unop {
+          op: MLOAD
+          operand {
+          }
+        }
+      }
+      size {
+        unop {
+          op: MLOAD
+          operand {
+            unop {
+              op: NOT
+              operand {
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  statements {
+    forstmt {
+      for_body {
+      }
+      for_init {
+      }
+      for_post {
+      }
+      for_cond {
+        nop {
+          op: CALLDATASIZE
+        }
+      }
+    }
+  }
+  statements {
+  }
+}

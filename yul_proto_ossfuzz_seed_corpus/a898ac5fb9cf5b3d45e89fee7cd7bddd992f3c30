@@ -1,0 +1,127 @@
+block {
+  statements {
+    forstmt {
+      for_body {
+      }
+      for_init {
+      }
+      for_post {
+      }
+      for_cond {
+        binop {
+          op: SHR
+          left {
+            varref {
+              varnum: 126
+            }
+          }
+          right {
+            binop {
+              op: SHL
+              left {
+                cons {
+                  hexval: "3v"
+                }
+              }
+              right {
+                binop {
+                  op: SHR
+                  left {
+                  }
+                  right {
+                    binop {
+                      op: SHL
+                      left {
+                        cons {
+                          hexval: "3v\006\353"
+                        }
+                      }
+                      right {
+                        binop {
+                          op: SHR
+                          left {
+                            cons {
+                              hexval: "3v\006\353"
+                            }
+                          }
+                          right {
+                            binop {
+                              op: SHL
+                              left {
+                                cons {
+                                  hexval: "3v"
+                                }
+                              }
+                              right {
+                                binop {
+                                  op: SHL
+                                  left {
+                                    cons {
+                                      hexval: "3v\006\353"
+                                    }
+                                  }
+                                  right {
+                                    nop {
+                                      op: MSIZE
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  statements {
+    log_func {
+      pos {
+      }
+      size {
+        binop {
+          op: MUL
+          left {
+            cons {
+              hexval: "3v\006\353"
+            }
+          }
+          right {
+            binop {
+              op: MUL
+              left {
+                cons {
+                  hexval: "3v\006\353"
+                }
+              }
+              right {
+                nop {
+                  op: PC
+                }
+              }
+            }
+          }
+        }
+      }
+      num_topics: ONE
+      t1 {
+      }
+      t2 {
+        nop {
+          op: PC
+        }
+      }
+      t3 {
+      }
+      t4 {
+      }
+    }
+  }
+}

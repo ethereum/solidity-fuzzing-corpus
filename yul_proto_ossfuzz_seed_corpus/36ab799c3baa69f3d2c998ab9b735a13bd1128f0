@@ -1,0 +1,35 @@
+block {
+  statements {
+    ifstmt {
+      cond {
+        binop {
+          op: GT
+          left {
+            binop {
+              op: GT
+              left {
+                unop {
+                  op: ISZERO
+                  operand {
+                  }
+                }
+              }
+              right {
+                cons {
+                  strval: "\002~"
+                }
+              }
+            }
+          }
+          right {
+            nop {
+              op: MSIZE
+            }
+          }
+        }
+      }
+      if_body {
+      }
+    }
+  }
+}

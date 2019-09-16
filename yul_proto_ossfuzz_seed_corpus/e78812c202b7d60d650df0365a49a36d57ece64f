@@ -1,0 +1,53 @@
+block {
+  statements {
+    storage_func {
+      loc {
+        cons {
+          intval: 0
+        }
+      }
+      val {
+      }
+      st: SSTORE
+    }
+  }
+  statements {
+    storage_func {
+      loc {
+        binop {
+          op: XOR
+          left {
+            binop {
+              op: XOR
+              left {
+                binop {
+                  op: XOR
+                  left {
+                    nop {
+                      op: GASLIMIT
+                    }
+                  }
+                  right {
+                  }
+                }
+              }
+              right {
+                nop {
+                  op: GASLIMIT
+                }
+              }
+            }
+          }
+          right {
+            nop {
+              op: GASLIMIT
+            }
+          }
+        }
+      }
+      val {
+      }
+      st: SSTORE
+    }
+  }
+}

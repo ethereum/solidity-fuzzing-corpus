@@ -1,0 +1,33 @@
+block {
+  statements {
+    boundedforstmt {
+      for_body {
+        statements {
+          boundedforstmt {
+            for_body {
+              statements {
+                storage_func {
+                  loc {
+                    unop {
+                      op: BLOCKHASH
+                      operand {
+                        unop {
+                          op: ISZERO
+                          operand {
+                          }
+                        }
+                      }
+                    }
+                  }
+                  val {
+                  }
+                  st: MSTORE
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

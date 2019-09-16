@@ -1,0 +1,76 @@
+block {
+  statements {
+    decl {
+      expr {
+      }
+    }
+  }
+  statements {
+    storage_func {
+      loc {
+      }
+      val {
+      }
+      st: SSTORE
+    }
+  }
+  statements {
+    extcode_copy {
+      addr {
+        binop {
+          op: DIV
+          left {
+            unop {
+              op: NOT
+              operand {
+                cons {
+                  intval: 16777216
+                }
+              }
+            }
+          }
+          right {
+          }
+        }
+      }
+      target {
+        binop {
+          op: DIV
+          left {
+            binop {
+              op: LT
+              left {
+                unop {
+                  op: NOT
+                  operand {
+                  }
+                }
+              }
+              right {
+                cons {
+                  intval: 16777216
+                }
+              }
+            }
+          }
+          right {
+            binop {
+              op: LT
+              left {
+              }
+              right {
+              }
+            }
+          }
+        }
+      }
+      source {
+      }
+      size {
+        cons {
+          strval: "\000\000\000\000"
+        }
+      }
+    }
+  }
+}

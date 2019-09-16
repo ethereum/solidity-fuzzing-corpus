@@ -1,0 +1,44 @@
+block {
+  statements {
+    log_func {
+      pos {
+        unop {
+          op: MLOAD
+          operand {
+          }
+        }
+      }
+      size {
+        binop {
+          op: ADD
+          left {
+            binop {
+              op: ADD
+              left {
+              }
+              right {
+                nop {
+                  op: NUMBER
+                }
+              }
+            }
+          }
+          right {
+            cons {
+              strval: "*"
+            }
+          }
+        }
+      }
+      num_topics: ONE
+      t1 {
+      }
+      t2 {
+      }
+      t3 {
+      }
+      t4 {
+      }
+    }
+  }
+}

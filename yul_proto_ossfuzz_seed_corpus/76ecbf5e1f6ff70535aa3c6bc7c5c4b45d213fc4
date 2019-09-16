@@ -1,0 +1,36 @@
+block {
+  statements {
+    copy_func {
+      ct: CODE
+      target {
+        nop {
+          op: PC
+        }
+      }
+      source {
+        unop {
+          op: NOT
+          operand {
+            unop {
+              op: NOT
+              operand {
+              }
+            }
+          }
+        }
+      }
+      size {
+        unop {
+          op: NOT
+          operand {
+            unop {
+              op: NOT
+              operand {
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

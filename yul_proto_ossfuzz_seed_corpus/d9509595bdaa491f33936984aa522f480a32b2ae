@@ -1,0 +1,87 @@
+block {
+  statements {
+  }
+  statements {
+    copy_func {
+      ct: CODE
+      target {
+        binop {
+          op: SMOD
+          left {
+          }
+          right {
+          }
+        }
+      }
+      source {
+        binop {
+          op: SMOD
+          left {
+          }
+          right {
+            binop {
+              op: SMOD
+              left {
+              }
+              right {
+                unop {
+                  op: ISZERO
+                  operand {
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+      size {
+      }
+    }
+  }
+  statements {
+    copy_func {
+      ct: CODE
+      target {
+        binop {
+          op: SMOD
+          left {
+          }
+          right {
+            binop {
+              op: SMOD
+              left {
+              }
+              right {
+              }
+            }
+          }
+        }
+      }
+      source {
+        binop {
+          op: SMOD
+          left {
+          }
+          right {
+          }
+        }
+      }
+      size {
+        binop {
+          op: SMOD
+          left {
+          }
+          right {
+            binop {
+              op: SMOD
+              left {
+              }
+              right {
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

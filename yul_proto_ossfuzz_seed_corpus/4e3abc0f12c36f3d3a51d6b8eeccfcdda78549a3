@@ -1,0 +1,94 @@
+block {
+  statements {
+    log_func {
+      pos {
+        binop {
+          op: SHR
+          left {
+            binop {
+              op: AND
+              left {
+              }
+              right {
+              }
+            }
+          }
+          right {
+            binop {
+              op: AND
+              left {
+              }
+              right {
+                nop {
+                  op: PC
+                }
+              }
+            }
+          }
+        }
+      }
+      size {
+        binop {
+          op: SI
+          left {
+          }
+          right {
+            top {
+              op: ADDM
+              arg1 {
+              }
+              arg2 {
+              }
+              arg3 {
+                varref {
+                  varnum: 8388608
+                }
+              }
+            }
+          }
+        }
+      }
+      num_topics: ONE
+      t1 {
+        binop {
+          op: SHR
+          left {
+            binop {
+              op: GT
+              left {
+              }
+              right {
+              }
+            }
+          }
+          right {
+            binop {
+              op: AND
+              left {
+              }
+              right {
+                nop {
+                  op: PC
+                }
+              }
+            }
+          }
+        }
+      }
+      t2 {
+      }
+      t3 {
+      }
+      t4 {
+      }
+    }
+  }
+  statements {
+  }
+  statements {
+    pop {
+      expr {
+      }
+    }
+  }
+}

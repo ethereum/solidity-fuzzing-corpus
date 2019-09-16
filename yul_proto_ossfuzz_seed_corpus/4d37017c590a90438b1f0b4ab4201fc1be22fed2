@@ -1,0 +1,72 @@
+block {
+  statements {
+    terminatestmt {
+      ret_rev {
+        stmt: RETURN
+        pos {
+          top {
+            op: ADDM
+            arg1 {
+            }
+            arg2 {
+              binop {
+                op: LT
+                left {
+                }
+                right {
+                  top {
+                    op: ADDM
+                    arg1 {
+                    }
+                    arg2 {
+                      cons {
+                        intval: 281474976710656
+                      }
+                    }
+                    arg3 {
+                    }
+                  }
+                }
+              }
+            }
+            arg3 {
+            }
+          }
+        }
+        size {
+          top {
+            op: ADDM
+            arg1 {
+            }
+            arg2 {
+              binop {
+                op: SHL
+                left {
+                }
+                right {
+                  binop {
+                    op: SHR
+                    left {
+                    }
+                    right {
+                      cons {
+                        strval: "\000\000r\000\000\000\000\000"
+                      }
+                    }
+                  }
+                }
+              }
+            }
+            arg3 {
+              nop {
+                op: PC
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  statements {
+  }
+}

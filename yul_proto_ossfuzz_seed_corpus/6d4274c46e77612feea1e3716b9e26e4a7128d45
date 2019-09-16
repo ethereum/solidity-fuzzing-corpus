@@ -1,0 +1,55 @@
+block {
+  statements {
+    copy_func {
+      ct: CODE
+      target {
+        binop {
+          op: LT
+          left {
+            unop {
+              op: ISZERO
+              operand {
+              }
+            }
+          }
+          right {
+            binop {
+              op: LT
+              left {
+                cons {
+                  intval: 0
+                }
+              }
+              right {
+                binop {
+                  op: LT
+                  left {
+                    cons {
+                      intval: 0
+                    }
+                  }
+                  right {
+                    binop {
+                      op: LT
+                      left {
+                      }
+                      right {
+                        nop {
+                          op: PC
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+      source {
+      }
+      size {
+      }
+    }
+  }
+}

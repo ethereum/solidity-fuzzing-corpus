@@ -1,0 +1,123 @@
+block {
+  statements {
+    storage_func {
+      loc {
+        binop {
+          op: XOR
+          left {
+            binop {
+              op: XOR
+              left {
+                binop {
+                  op: XOR
+                  left {
+                    binop {
+                      op: XOR
+                      left {
+                        binop {
+                          op: XOR
+                          left {
+                            nop {
+                              op: CALLDATASIZE
+                            }
+                          }
+                          right {
+                          }
+                        }
+                      }
+                      right {
+                        binop {
+                          op: XOR
+                          left {
+                            nop {
+                              op: CODESIZE
+                            }
+                          }
+                          right {
+                            binop {
+                              op: XOR
+                              left {
+                              }
+                              right {
+                                nop {
+                                  op: CODESIZE
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                  right {
+                    binop {
+                      op: XOR
+                      left {
+                      }
+                      right {
+                        nop {
+                          op: CODESIZE
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+              right {
+                binop {
+                  op: XOR
+                  left {
+                    nop {
+                      op: CALLDATASIZE
+                    }
+                  }
+                  right {
+                  }
+                }
+              }
+            }
+          }
+          right {
+            binop {
+              op: XOR
+              left {
+                nop {
+                  op: CODESIZE
+                }
+              }
+              right {
+              }
+            }
+          }
+        }
+      }
+      val {
+      }
+      st: SSTORE
+    }
+  }
+  statements {
+    extcode_copy {
+      addr {
+      }
+      target {
+      }
+      source {
+      }
+      size {
+      }
+    }
+  }
+  statements {
+    storage_func {
+      loc {
+        cons {
+          intval: 0
+        }
+      }
+      val {
+      }
+      st: SSTORE
+    }
+  }
+}

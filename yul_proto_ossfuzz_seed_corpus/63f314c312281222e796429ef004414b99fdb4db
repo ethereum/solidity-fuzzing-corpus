@@ -1,0 +1,106 @@
+block {
+  statements {
+    forstmt {
+      for_body {
+        statements {
+          extcode_copy {
+            addr {
+              binop {
+                op: GT
+                left {
+                  nop {
+                    op: MSIZE
+                  }
+                }
+                right {
+                  cons {
+                    intval: 0
+                  }
+                }
+              }
+            }
+            target {
+              binop {
+                op: GT
+                left {
+                  nop {
+                    op: GAS
+                  }
+                }
+                right {
+                  cons {
+                    intval: 0
+                  }
+                }
+              }
+            }
+            source {
+              binop {
+                op: GT
+                left {
+                  nop {
+                    op: GAS
+                  }
+                }
+                right {
+                  cons {
+                    intval: 0
+                  }
+                }
+              }
+            }
+            size {
+              binop {
+                op: GT
+                left {
+                  nop {
+                    op: GAS
+                  }
+                }
+                right {
+                  cons {
+                    intval: 0
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+      for_init {
+      }
+      for_post {
+        statements {
+          extcode_copy {
+            addr {
+              nop {
+                op: GAS
+              }
+            }
+            target {
+            }
+            source {
+            }
+            size {
+            }
+          }
+        }
+      }
+      for_cond {
+        binop {
+          op: GT
+          left {
+            nop {
+              op: GAS
+            }
+          }
+          right {
+            cons {
+              intval: 0
+            }
+          }
+        }
+      }
+    }
+  }
+}

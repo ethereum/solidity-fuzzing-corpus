@@ -1,0 +1,120 @@
+block {
+  statements {
+  }
+  statements {
+  }
+  statements {
+    storage_func {
+      loc {
+        cons {
+          intval: 0
+        }
+      }
+      val {
+      }
+      st: SSTORE
+    }
+  }
+  statements {
+    storage_func {
+      loc {
+        binop {
+          op: LT
+          left {
+            cons {
+              intval: 0
+            }
+          }
+          right {
+            nop {
+              op: MSIZE
+            }
+          }
+        }
+      }
+      val {
+      }
+      st: SSTORE
+    }
+  }
+  statements {
+    boundedforstmt {
+      for_body {
+        statements {
+          storage_func {
+            loc {
+              cons {
+                intval: 0
+              }
+            }
+            val {
+            }
+            st: SSTORE
+          }
+        }
+        statements {
+        }
+        statements {
+        }
+        statements {
+          storage_func {
+            loc {
+              binop {
+                op: LT
+                left {
+                  cons {
+                    intval: 0
+                  }
+                }
+                right {
+                  nop {
+                    op: MSIZE
+                  }
+                }
+              }
+            }
+            val {
+            }
+            st: SSTORE
+          }
+        }
+        statements {
+          storage_func {
+            loc {
+              cons {
+                intval: 0
+              }
+            }
+            val {
+            }
+            st: SSTORE
+          }
+        }
+        statements {
+        }
+        statements {
+          ifstmt {
+            cond {
+            }
+            if_body {
+              statements {
+                breakstmt {
+                }
+              }
+            }
+          }
+        }
+        statements {
+        }
+        statements {
+        }
+        statements {
+          boundedforstmt {
+            for_body {
+            }
+          }
+        }
+      }
+    }
+  }
+}

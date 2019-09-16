@@ -1,0 +1,89 @@
+block {
+  statements {
+    decl {
+      expr {
+        binop {
+          op: GT
+          left {
+            nop {
+              op: CODESIZE
+            }
+          }
+          right {
+            binop {
+              op: GT
+              left {
+              }
+              right {
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  statements {
+    extcode_copy {
+      addr {
+        varref {
+          varnum: 0
+        }
+      }
+      target {
+        binop {
+          op: GT
+          left {
+          }
+          right {
+            top {
+              op: ADDM
+              arg1 {
+              }
+              arg2 {
+              }
+              arg3 {
+                varref {
+                  varnum: 0
+                }
+              }
+            }
+          }
+        }
+      }
+      source {
+        top {
+          op: ADDM
+          arg1 {
+            varref {
+              varnum: 0
+            }
+          }
+          arg2 {
+          }
+          arg3 {
+            varref {
+              varnum: 0
+            }
+          }
+        }
+      }
+      size {
+        top {
+          op: ADDM
+          arg1 {
+            varref {
+              varnum: 0
+            }
+          }
+          arg2 {
+          }
+          arg3 {
+            varref {
+              varnum: 0
+            }
+          }
+        }
+      }
+    }
+  }
+}

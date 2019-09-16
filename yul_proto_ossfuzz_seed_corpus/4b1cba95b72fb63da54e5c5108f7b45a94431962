@@ -1,0 +1,206 @@
+block {
+  statements {
+    storage_func {
+      loc {
+        binop {
+          op: ADD
+          left {
+            nop {
+              op: CALLDATASIZE
+            }
+          }
+          right {
+            cons {
+              intval: 8
+            }
+          }
+        }
+      }
+      val {
+        cons {
+          intval: 8
+        }
+      }
+      st: MSTORE
+    }
+  }
+  statements {
+  }
+  statements {
+    storage_func {
+      loc {
+        binop {
+          op: ADD
+          left {
+            nop {
+              op: CALLDATASIZE
+            }
+          }
+          right {
+            cons {
+              intval: 8
+            }
+          }
+        }
+      }
+      val {
+        cons {
+          intval: 8
+        }
+      }
+      st: MSTORE
+    }
+  }
+  statements {
+    storage_func {
+      loc {
+        cons {
+          intval: 8
+        }
+      }
+      val {
+        cons {
+          intval: 8
+        }
+      }
+      st: MSTORE
+    }
+  }
+  statements {
+  }
+  statements {
+  }
+  statements {
+    boundedforstmt {
+      for_body {
+      }
+    }
+  }
+  statements {
+    storage_func {
+      loc {
+        cons {
+          intval: 8
+        }
+      }
+      val {
+        cons {
+          intval: 8
+        }
+      }
+      st: MSTORE
+    }
+  }
+  statements {
+    funcdef {
+      num_input_params: 4
+      num_output_params: 4
+      block {
+      }
+    }
+  }
+  statements {
+  }
+  statements {
+    boundedforstmt {
+      for_body {
+      }
+    }
+  }
+  statements {
+  }
+  statements {
+    boundedforstmt {
+      for_body {
+      }
+    }
+  }
+  statements {
+  }
+  statements {
+    boundedforstmt {
+      for_body {
+        statements {
+          ifstmt {
+            cond {
+              lowcall {
+                callty: CALL
+                gas {
+                }
+                addr {
+                }
+                wei {
+                  lowcall {
+                    callty: CALL
+                    gas {
+                    }
+                    addr {
+                      unop {
+                        op: NOT
+                        operand {
+                          create {
+                            createty: CREATE
+                            wei {
+                              lowcall {
+                                callty: CALL
+                                gas {
+                                }
+                                addr {
+                                  varref {
+                                    varnum: 838860800
+                                  }
+                                }
+                                wei {
+                                }
+                                in {
+                                }
+                                insize {
+                                }
+                                out {
+                                }
+                                outsize {
+                                }
+                              }
+                            }
+                            position {
+                            }
+                            size {
+                            }
+                            value {
+                            }
+                          }
+                        }
+                      }
+                    }
+                    wei {
+                    }
+                    in {
+                    }
+                    insize {
+                    }
+                    out {
+                    }
+                    outsize {
+                    }
+                  }
+                }
+                in {
+                }
+                insize {
+                }
+                out {
+                }
+                outsize {
+                }
+              }
+            }
+            if_body {
+            }
+          }
+        }
+      }
+    }
+  }
+  statements {
+  }
+}

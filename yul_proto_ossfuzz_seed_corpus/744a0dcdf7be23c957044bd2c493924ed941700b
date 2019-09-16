@@ -1,0 +1,103 @@
+block {
+  statements {
+  }
+  statements {
+  }
+  statements {
+    blockstmt {
+      statements {
+        switchstmt {
+          switch_expr {
+          }
+          default_block {
+            statements {
+              terminatestmt {
+                stop_invalid {
+                  stmt: STOP
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  statements {
+  }
+  statements {
+    decl {
+      expr {
+      }
+    }
+  }
+  statements {
+    storage_func {
+      loc {
+        unop {
+          op: ISZERO
+          operand {
+          }
+        }
+      }
+      val {
+      }
+      st: MSTORE
+    }
+  }
+  statements {
+    storage_func {
+      loc {
+        varref {
+          varnum: 512
+        }
+      }
+      val {
+      }
+      st: MSTORE
+    }
+  }
+  statements {
+    storage_func {
+      loc {
+        unop {
+          op: ISZERO
+          operand {
+          }
+        }
+      }
+      val {
+      }
+      st: MSTORE
+    }
+  }
+  statements {
+    ifstmt {
+      cond {
+        nop {
+          op: PC
+        }
+      }
+      if_body {
+        statements {
+          storage_func {
+            loc {
+              varref {
+                varnum: 512
+              }
+            }
+            val {
+              varref {
+                varnum: 512
+              }
+            }
+            st: MSTORE
+          }
+        }
+      }
+    }
+  }
+  statements {
+  }
+  statements {
+  }
+}
