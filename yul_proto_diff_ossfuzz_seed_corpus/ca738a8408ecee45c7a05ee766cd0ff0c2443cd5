@@ -1,0 +1,90 @@
+block {
+  statements {
+    storage_func {
+      loc {
+        binop {
+          op: XOR
+          left {
+            nop {
+              op: CODESIZE
+            }
+          }
+          right {
+            nop {
+              op: CODESIZE
+            }
+          }
+        }
+      }
+      val {
+      }
+      st: SSTORE
+    }
+  }
+  statements {
+    storage_func {
+      loc {
+        binop {
+          op: XOR
+          left {
+            nop {
+              op: CALLDATASIZE
+            }
+          }
+          right {
+            binop {
+              op: XOR
+              left {
+                binop {
+                  op: XOR
+                  left {
+                  }
+                  right {
+                    nop {
+                      op: PC
+                    }
+                  }
+                }
+              }
+              right {
+                binop {
+                  op: XOR
+                  left {
+                    binop {
+                      op: XOR
+                      left {
+                        nop {
+                          op: CALLDATASIZE
+                        }
+                      }
+                      right {
+                      }
+                    }
+                  }
+                  right {
+                    binop {
+                      op: XOR
+                      left {
+                        nop {
+                          op: CODESIZE
+                        }
+                      }
+                      right {
+                        nop {
+                          op: CODESIZE
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+      val {
+      }
+      st: SSTORE
+    }
+  }
+}

@@ -1,0 +1,39 @@
+block {
+  statements {
+    boundedforstmt {
+      for_body {
+        statements {
+          blockstmt {
+            statements {
+              ifstmt {
+                cond {
+                  binop {
+                    op: SDIV
+                    left {
+                      unop {
+                        op: EXTCODEHASH
+                        operand {
+                          nop {
+                            op: PC
+                          }
+                        }
+                      }
+                    }
+                    right {
+                    }
+                  }
+                }
+                if_body {
+                  statements {
+                    contstmt {
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

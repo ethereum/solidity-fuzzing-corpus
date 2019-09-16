@@ -1,0 +1,75 @@
+block {
+  statements {
+    extcode_copy {
+      addr {
+        binop {
+          op: OR
+          left {
+            unop {
+              op: NOT
+              operand {
+                cons {
+                  intval: 16777216
+                }
+              }
+            }
+          }
+          right {
+          }
+        }
+      }
+      target {
+      }
+      source {
+        binop {
+          op: OR
+          left {
+            binop {
+              op: DIV
+              left {
+                unop {
+                  op: NOT
+                  operand {
+                    cons {
+                      intval: 16777216
+                    }
+                  }
+                }
+              }
+              right {
+                binop {
+                  op: ADD
+                  left {
+                    cons {
+                      hexval: "\n\000\000\000\000\000\000\000"
+                    }
+                  }
+                  right {
+                  }
+                }
+              }
+            }
+          }
+          right {
+            cons {
+              hexval: "\001\000\000\000"
+            }
+          }
+        }
+      }
+      size {
+      }
+    }
+  }
+  statements {
+    storage_func {
+      loc {
+      }
+      val {
+      }
+      st: SSTORE
+    }
+  }
+  statements {
+  }
+}

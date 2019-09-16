@@ -1,0 +1,99 @@
+block {
+  statements {
+    boundedforstmt {
+      for_body {
+        statements {
+          blockstmt {
+            statements {
+              extcode_copy {
+                addr {
+                  binop {
+                    op: SI
+                    left {
+                      binop {
+                        op: KECCAK
+                        left {
+                        }
+                        right {
+                        }
+                      }
+                    }
+                    right {
+                      cons {
+                        intval: 16777216
+                      }
+                    }
+                  }
+                }
+                target {
+                }
+                source {
+                  cons {
+                    intval: 16777216
+                  }
+                }
+                size {
+                  cons {
+                    strval: "\001\000\000\014"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  statements {
+  }
+  statements {
+  }
+  statements {
+    forstmt {
+      for_body {
+        statements {
+          extcode_copy {
+            addr {
+            }
+            target {
+            }
+            source {
+              cons {
+                intval: 16777216
+              }
+            }
+            size {
+              binop {
+                op: SI
+                left {
+                }
+                right {
+                }
+              }
+            }
+          }
+        }
+      }
+      for_init {
+      }
+      for_post {
+      }
+      for_cond {
+      }
+    }
+  }
+  statements {
+  }
+  statements {
+    storage_func {
+      loc {
+        varref {
+          varnum: -16777217
+        }
+      }
+      val {
+      }
+      st: SSTORE
+    }
+  }
+}

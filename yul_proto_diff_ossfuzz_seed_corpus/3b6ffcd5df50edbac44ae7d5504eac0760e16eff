@@ -1,0 +1,50 @@
+block {
+  statements {
+    switchstmt {
+      switch_expr {
+        nop {
+          op: PC
+        }
+      }
+      case_stmt {
+        case_lit {
+          hexval: "3v"
+        }
+        case_block {
+          statements {
+            forstmt {
+              for_body {
+              }
+              for_init {
+              }
+              for_post {
+              }
+              for_cond {
+                binop {
+                  op: SHL
+                  left {
+                    cons {
+                      hexval: "3v\006\353"
+                    }
+                  }
+                  right {
+                    binop {
+                      op: SHR
+                      left {
+                      }
+                      right {
+                        nop {
+                          op: PC
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

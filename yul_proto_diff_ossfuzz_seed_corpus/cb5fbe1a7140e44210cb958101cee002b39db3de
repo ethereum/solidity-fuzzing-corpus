@@ -1,0 +1,29 @@
+block {
+  statements {
+    storage_func {
+      loc {
+        unop {
+          op: NOT
+          operand {
+            nop {
+              op: CODESIZE
+            }
+          }
+        }
+      }
+      val {
+        binop {
+          op: SI
+          left {
+            nop {
+              op: DIFFICULTY
+            }
+          }
+          right {
+          }
+        }
+      }
+      st: MSTORE
+    }
+  }
+}

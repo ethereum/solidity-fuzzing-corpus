@@ -1,0 +1,128 @@
+block {
+  statements {
+    decl {
+      expr {
+      }
+    }
+  }
+  statements {
+  }
+  statements {
+    ifstmt {
+      cond {
+        cons {
+          strval: "-"
+        }
+      }
+      if_body {
+        statements {
+          ifstmt {
+            cond {
+              cons {
+                strval: "-"
+              }
+            }
+            if_body {
+              statements {
+                assignment {
+                  ref_id {
+                    varnum: 1024
+                  }
+                  expr {
+                    cons {
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  statements {
+    boundedforstmt {
+      for_body {
+        statements {
+          log_func {
+            pos {
+              lowcall {
+                callty: CALL
+                gas {
+                  lowcall {
+                    callty: CALL
+                    gas {
+                      lowcall {
+                        callty: CALL
+                        gas {
+                        }
+                        addr {
+                        }
+                        wei {
+                        }
+                        in {
+                          unop {
+                            op: NOT
+                            operand {
+                              varref {
+                                varnum: 43
+                              }
+                            }
+                          }
+                        }
+                        insize {
+                        }
+                        out {
+                        }
+                        outsize {
+                        }
+                      }
+                    }
+                    addr {
+                    }
+                    wei {
+                    }
+                    in {
+                    }
+                    insize {
+                    }
+                    out {
+                    }
+                    outsize {
+                    }
+                  }
+                }
+                addr {
+                }
+                wei {
+                }
+                in {
+                }
+                insize {
+                }
+                out {
+                }
+                outsize {
+                }
+              }
+            }
+            size {
+            }
+            num_topics: ONE
+            t1 {
+            }
+            t2 {
+              nop {
+                op: CALLVALUE
+              }
+            }
+            t3 {
+            }
+            t4 {
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,43 @@
+block {
+  statements {
+    ifstmt {
+      cond {
+        binop {
+          op: OR
+          left {
+          }
+          right {
+            binop {
+              op: EQ
+              left {
+                nop {
+                  op: PC
+                }
+              }
+              right {
+                unop {
+                  op: MLOAD
+                  operand {
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+      if_body {
+        statements {
+          ifstmt {
+            cond {
+              nop {
+                op: PC
+              }
+            }
+            if_body {
+            }
+          }
+        }
+      }
+    }
+  }
+}

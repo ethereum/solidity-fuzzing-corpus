@@ -1,0 +1,63 @@
+block {
+  statements {
+    extcode_copy {
+      addr {
+        binop {
+          op: DIV
+          left {
+            binop {
+              op: DIV
+              left {
+                cons {
+                  intval: 0
+                }
+              }
+              right {
+                nop {
+                  op: PC
+                }
+              }
+            }
+          }
+          right {
+            nop {
+              op: PC
+            }
+          }
+        }
+      }
+      target {
+        binop {
+          op: DIV
+          left {
+            cons {
+              intval: 0
+            }
+          }
+          right {
+            nop {
+              op: CODESIZE
+            }
+          }
+        }
+      }
+      source {
+        binop {
+          op: DIV
+          left {
+            cons {
+              intval: 0
+            }
+          }
+          right {
+            nop {
+              op: PC
+            }
+          }
+        }
+      }
+      size {
+      }
+    }
+  }
+}

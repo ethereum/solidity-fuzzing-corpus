@@ -1,0 +1,155 @@
+block {
+  statements {
+    ifstmt {
+      cond {
+        nop {
+          op: GAS
+        }
+      }
+      if_body {
+        statements {
+          storage_func {
+            loc {
+              nop {
+                op: GAS
+              }
+            }
+            val {
+              nop {
+                op: GAS
+              }
+            }
+            st: MSTORE
+          }
+        }
+      }
+    }
+  }
+  statements {
+    ifstmt {
+      cond {
+        binop {
+          op: GT
+          left {
+          }
+          right {
+          }
+        }
+      }
+      if_body {
+        statements {
+          decl {
+            expr {
+              cons {
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  statements {
+    storage_func {
+      loc {
+        nop {
+          op: GAS
+        }
+      }
+      val {
+        nop {
+          op: GAS
+        }
+      }
+      st: MSTORE
+    }
+  }
+  statements {
+    decl {
+      expr {
+      }
+    }
+  }
+  statements {
+    copy_func {
+      ct: CODE
+      target {
+      }
+      source {
+        unop {
+          op: NOT
+          operand {
+            top {
+              op: ADDM
+              arg1 {
+              }
+              arg2 {
+                unop {
+                  op: NOT
+                  operand {
+                    top {
+                      op: ADDM
+                      arg1 {
+                      }
+                      arg2 {
+                        unop {
+                          op: NOT
+                          operand {
+                            varref {
+                              varnum: 50
+                            }
+                          }
+                        }
+                      }
+                      arg3 {
+                      }
+                    }
+                  }
+                }
+              }
+              arg3 {
+              }
+            }
+          }
+        }
+      }
+      size {
+        unop {
+          op: NOT
+          operand {
+            top {
+              op: ADDM
+              arg1 {
+              }
+              arg2 {
+                unop {
+                  op: NOT
+                  operand {
+                    top {
+                      op: ADDM
+                      arg1 {
+                      }
+                      arg2 {
+                        unop {
+                          op: NOT
+                          operand {
+                            varref {
+                              varnum: 50
+                            }
+                          }
+                        }
+                      }
+                      arg3 {
+                      }
+                    }
+                  }
+                }
+              }
+              arg3 {
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

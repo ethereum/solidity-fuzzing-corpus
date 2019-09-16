@@ -1,0 +1,85 @@
+block {
+  statements {
+    boundedforstmt {
+      for_body {
+        statements {
+          forstmt {
+            for_body {
+            }
+            for_init {
+              statements {
+                breakstmt {
+                }
+              }
+            }
+            for_post {
+              statements {
+              }
+            }
+            for_cond {
+              binop {
+                op: LT
+                left {
+                  top {
+                    op: ADDM
+                    arg1 {
+                      unop {
+                        op: NOT
+                        operand {
+                        }
+                      }
+                    }
+                    arg2 {
+                    }
+                    arg3 {
+                    }
+                  }
+                }
+                right {
+                  binop {
+                    op: SHL
+                    left {
+                    }
+                    right {
+                      binop {
+                        op: SHR
+                        left {
+                        }
+                        right {
+                          binop {
+                            op: SHL
+                            left {
+                              unop {
+                                op: NOT
+                                operand {
+                                  cons {
+                                  }
+                                }
+                              }
+                            }
+                            right {
+                              binop {
+                                op: LT
+                                left {
+                                  nop {
+                                    op: PC
+                                  }
+                                }
+                                right {
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

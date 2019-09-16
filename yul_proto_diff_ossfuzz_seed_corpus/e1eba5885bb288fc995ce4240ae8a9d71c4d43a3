@@ -1,0 +1,41 @@
+block {
+  statements {
+    terminatestmt {
+      self_des {
+        addr {
+          top {
+            op: ADDM
+            arg1 {
+            }
+            arg2 {
+              unop {
+                op: SLOAD
+                operand {
+                }
+              }
+            }
+            arg3 {
+              top {
+                op: ADDM
+                arg1 {
+                }
+                arg2 {
+                  unop {
+                    op: BLOCKHASH
+                    operand {
+                    }
+                  }
+                }
+                arg3 {
+                  cons {
+                    strval: "66666666666666666666666666666666666666666666666"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

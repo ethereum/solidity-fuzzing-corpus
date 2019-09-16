@@ -1,0 +1,75 @@
+block {
+  statements {
+    boundedforstmt {
+      for_body {
+        statements {
+          boundedforstmt {
+            for_body {
+              statements {
+                boundedforstmt {
+                  for_body {
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  statements {
+  }
+  statements {
+    forstmt {
+      for_body {
+        statements {
+        }
+      }
+      for_init {
+      }
+      for_post {
+      }
+      for_cond {
+        top {
+          op: ADDM
+          arg1 {
+            unop {
+              op: NOT
+              operand {
+                binop {
+                  op: ADD
+                  left {
+                  }
+                  right {
+                    top {
+                      op: ADDM
+                      arg1 {
+                        cons {
+                          hexval: "\377\377\377\377\377\377\377\377\377\377\377\377\377"
+                        }
+                      }
+                      arg2 {
+                        nop {
+                          op: PC
+                        }
+                      }
+                      arg3 {
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+          arg2 {
+            cons {
+              intval: 59648
+            }
+          }
+          arg3 {
+          }
+        }
+      }
+    }
+  }
+}

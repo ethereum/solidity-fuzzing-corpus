@@ -1,0 +1,73 @@
+block {
+  statements {
+    copy_func {
+      ct: CODE
+      target {
+        unop {
+          op: NOT
+          operand {
+          }
+        }
+      }
+      source {
+      }
+      size {
+      }
+    }
+  }
+  statements {
+    forstmt {
+      for_body {
+      }
+      for_init {
+      }
+      for_post {
+      }
+      for_cond {
+        binop {
+          op: SHR
+          left {
+            binop {
+              op: OR
+              left {
+                cons {
+                  strval: ""
+                }
+              }
+              right {
+                unop {
+                  op: NOT
+                  operand {
+                    cons {
+                      strval: ""
+                    }
+                  }
+                }
+              }
+            }
+          }
+          right {
+            binop {
+              op: OR
+              left {
+                cons {
+                  strval: ""
+                }
+              }
+              right {
+                unop {
+                  op: NOT
+                  operand {
+                    cons {
+                      strval: ""
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

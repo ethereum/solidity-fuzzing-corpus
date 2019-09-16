@@ -1,0 +1,110 @@
+block {
+  statements {
+    storage_func {
+      loc {
+        cons {
+          intval: 0
+        }
+      }
+      val {
+      }
+      st: SSTORE
+    }
+  }
+  statements {
+    storage_func {
+      loc {
+      }
+      val {
+      }
+      st: MSTORE
+    }
+  }
+  statements {
+    storage_func {
+      loc {
+        binop {
+          op: ADD
+          left {
+            binop {
+              op: SUB
+              left {
+                binop {
+                  op: ADD
+                  left {
+                    cons {
+                      strval: "\244"
+                    }
+                  }
+                  right {
+                  }
+                }
+              }
+              right {
+                binop {
+                  op: ADD
+                  left {
+                    cons {
+                      strval: "\244"
+                    }
+                  }
+                  right {
+                  }
+                }
+              }
+            }
+          }
+          right {
+            binop {
+              op: ADD
+              left {
+                cons {
+                  strval: "\244"
+                }
+              }
+              right {
+              }
+            }
+          }
+        }
+      }
+      val {
+      }
+      st: MSTORE
+    }
+  }
+  statements {
+    storage_func {
+      loc {
+      }
+      val {
+      }
+      st: MSTORE
+    }
+  }
+  statements {
+    storage_func {
+      loc {
+        binop {
+          op: XOR
+          left {
+            nop {
+              op: GAS
+            }
+          }
+          right {
+          }
+        }
+      }
+      val {
+      }
+      st: SSTORE
+    }
+  }
+  statements {
+    boundedforstmt {
+      for_body {
+      }
+    }
+  }
+}

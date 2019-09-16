@@ -1,0 +1,69 @@
+block {
+  statements {
+    log_func {
+      pos {
+      }
+      size {
+        binop {
+          op: BYTE
+          left {
+            cons {
+              intval: 0
+            }
+          }
+          right {
+            nop {
+              op: MSIZE
+            }
+          }
+        }
+      }
+      num_topics: ONE
+      t1 {
+        binop {
+          op: BYTE
+          left {
+            unop {
+              op: ISZERO
+              operand {
+              }
+            }
+          }
+          right {
+            binop {
+              op: BYTE
+              left {
+                unop {
+                  op: ISZERO
+                  operand {
+                  }
+                }
+              }
+              right {
+                binop {
+                  op: BYTE
+                  left {
+                    cons {
+                      intval: 0
+                    }
+                  }
+                  right {
+                    nop {
+                      op: MSIZE
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+      t2 {
+      }
+      t3 {
+      }
+      t4 {
+      }
+    }
+  }
+}

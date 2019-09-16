@@ -1,0 +1,57 @@
+block {
+  statements {
+    forstmt {
+      for_body {
+      }
+      for_init {
+      }
+      for_post {
+      }
+      for_cond {
+        binop {
+          op: DIV
+          left {
+            binop {
+              op: MUL
+              left {
+              }
+              right {
+              }
+            }
+          }
+          right {
+            binop {
+              op: DIV
+              left {
+                unop {
+                  op: EXTCODEHASH
+                  operand {
+                  }
+                }
+              }
+              right {
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  statements {
+    funcdef {
+      num_input_params: 0
+      num_output_params: 0
+      block {
+        statements {
+          storage_func {
+            loc {
+            }
+            val {
+            }
+            st: SSTORE
+          }
+        }
+      }
+    }
+  }
+}

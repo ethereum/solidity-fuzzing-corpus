@@ -1,0 +1,72 @@
+block {
+  statements {
+    funcdef {
+      num_input_params: 0
+      num_output_params: 0
+      block {
+        statements {
+        }
+      }
+    }
+  }
+  statements {
+    storage_func {
+      loc {
+        binop {
+          op: XOR
+          left {
+            binop {
+              op: XOR
+              left {
+                binop {
+                  op: XOR
+                  left {
+                    nop {
+                      op: CALLDATASIZE
+                    }
+                  }
+                  right {
+                  }
+                }
+              }
+              right {
+                binop {
+                  op: XOR
+                  left {
+                    nop {
+                      op: CALLDATASIZE
+                    }
+                  }
+                  right {
+                  }
+                }
+              }
+            }
+          }
+          right {
+            binop {
+              op: XOR
+              left {
+              }
+              right {
+                binop {
+                  op: XOR
+                  left {
+                  }
+                  right {
+                    nop {
+                      op: PC
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+      val {
+      }
+      st: SSTORE
+    }
+  }
+}

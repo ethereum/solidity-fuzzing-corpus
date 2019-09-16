@@ -1,0 +1,162 @@
+block {
+  statements {
+  }
+  statements {
+    storage_func {
+      loc {
+        binop {
+          op: GT
+          left {
+            binop {
+              op: XOR
+              left {
+                binop {
+                  op: XOR
+                  left {
+                    binop {
+                      op: XOR
+                      left {
+                        nop {
+                          op: PC
+                        }
+                      }
+                      right {
+                      }
+                    }
+                  }
+                  right {
+                    binop {
+                      op: XOR
+                      left {
+                        nop {
+                          op: PC
+                        }
+                      }
+                      right {
+                      }
+                    }
+                  }
+                }
+              }
+              right {
+                nop {
+                  op: CALLDATASIZE
+                }
+              }
+            }
+          }
+          right {
+            cons {
+              intval: 0
+            }
+          }
+        }
+      }
+      val {
+      }
+      st: SSTORE
+    }
+  }
+  statements {
+    storage_func {
+      loc {
+        cons {
+          intval: 0
+        }
+      }
+      val {
+      }
+      st: SSTORE
+    }
+  }
+  statements {
+    ifstmt {
+      cond {
+        nop {
+          op: PC
+        }
+      }
+      if_body {
+        statements {
+          ifstmt {
+            cond {
+              cons {
+                strval: "-"
+              }
+            }
+            if_body {
+              statements {
+                ifstmt {
+                  cond {
+                    nop {
+                      op: GAS
+                    }
+                  }
+                  if_body {
+                    statements {
+                      ifstmt {
+                        cond {
+                          nop {
+                            op: PC
+                          }
+                        }
+                        if_body {
+                          statements {
+                            ifstmt {
+                              cond {
+                              }
+                              if_body {
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  statements {
+    boundedforstmt {
+      for_body {
+        statements {
+          forstmt {
+            for_body {
+            }
+            for_init {
+            }
+            for_post {
+            }
+            for_cond {
+              binop {
+                op: SHL
+                left {
+                  cons {
+                    hexval: "3v\006\353"
+                  }
+                }
+                right {
+                  binop {
+                    op: SHR
+                    left {
+                    }
+                    right {
+                      nop {
+                        op: GAS
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

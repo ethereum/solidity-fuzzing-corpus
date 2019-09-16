@@ -1,0 +1,53 @@
+block {
+  statements {
+    ifstmt {
+      cond {
+        binop {
+          op: SMOD
+          left {
+            binop {
+              op: SMOD
+              left {
+                binop {
+                  op: SMOD
+                  left {
+                  }
+                  right {
+                    unop {
+                      op: ISZERO
+                      operand {
+                      }
+                    }
+                  }
+                }
+              }
+              right {
+                binop {
+                  op: SMOD
+                  left {
+                  }
+                  right {
+                    unop {
+                      op: ISZERO
+                      operand {
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+          right {
+            unop {
+              op: ISZERO
+              operand {
+              }
+            }
+          }
+        }
+      }
+      if_body {
+      }
+    }
+  }
+}

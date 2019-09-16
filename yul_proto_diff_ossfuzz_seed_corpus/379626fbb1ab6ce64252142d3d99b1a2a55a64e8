@@ -1,0 +1,87 @@
+block {
+  statements {
+    boundedforstmt {
+      for_body {
+        statements {
+          storage_func {
+            loc {
+              nop {
+                op: MSIZE
+              }
+            }
+            val {
+              cons {
+                intval: 16711424
+              }
+            }
+            st: SSTORE
+          }
+        }
+        statements {
+          boundedforstmt {
+            for_body {
+              statements {
+                ifstmt {
+                  cond {
+                  }
+                  if_body {
+                    statements {
+                      storage_func {
+                        loc {
+                          nop {
+                            op: MSIZE
+                          }
+                        }
+                        val {
+                        }
+                        st: MSTORE
+                      }
+                    }
+                  }
+                }
+              }
+              statements {
+                ifstmt {
+                  cond {
+                  }
+                  if_body {
+                    statements {
+                      storage_func {
+                        loc {
+                          nop {
+                            op: MSIZE
+                          }
+                        }
+                        val {
+                          cons {
+                            hexval: "/"
+                          }
+                        }
+                        st: SSTORE
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  statements {
+  }
+  statements {
+  }
+  statements {
+  }
+  statements {
+    decl {
+      expr {
+        varref {
+          varnum: 33554432
+        }
+      }
+    }
+  }
+}

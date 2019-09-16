@@ -1,0 +1,65 @@
+block {
+  statements {
+    log_func {
+      pos {
+        binop {
+          op: SUB
+          left {
+            binop {
+              op: SUB
+              left {
+                nop {
+                  op: GAS
+                }
+              }
+              right {
+                binop {
+                  op: SUB
+                  left {
+                    nop {
+                      op: GAS
+                    }
+                  }
+                  right {
+                    binop {
+                      op: SUB
+                      left {
+                        nop {
+                          op: MSIZE
+                        }
+                      }
+                      right {
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+          right {
+            nop {
+              op: MSIZE
+            }
+          }
+        }
+      }
+      size {
+        nop {
+          op: GAS
+        }
+      }
+      num_topics: ONE
+      t1 {
+        nop {
+          op: MSIZE
+        }
+      }
+      t2 {
+      }
+      t3 {
+      }
+      t4 {
+      }
+    }
+  }
+}

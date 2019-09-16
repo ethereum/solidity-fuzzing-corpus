@@ -1,0 +1,91 @@
+block {
+  statements {
+    log_func {
+      pos {
+        unop {
+          op: SLOAD
+          operand {
+          }
+        }
+      }
+      size {
+      }
+      num_topics: ONE
+      t1 {
+        binop {
+          op: LT
+          left {
+            binop {
+              op: SUB
+              left {
+                nop {
+                  op: PC
+                }
+              }
+              right {
+                binop {
+                  op: SUB
+                  left {
+                    binop {
+                      op: SUB
+                      left {
+                        nop {
+                          op: PC
+                        }
+                      }
+                      right {
+                      }
+                    }
+                  }
+                  right {
+                    binop {
+                      op: SUB
+                      left {
+                        nop {
+                          op: PC
+                        }
+                      }
+                      right {
+                        binop {
+                          op: SUB
+                          left {
+                            binop {
+                              op: SUB
+                              left {
+                                nop {
+                                  op: PC
+                                }
+                              }
+                              right {
+                              }
+                            }
+                          }
+                          right {
+                            nop {
+                              op: PC
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+          right {
+            nop {
+              op: PC
+            }
+          }
+        }
+      }
+      t2 {
+      }
+      t3 {
+      }
+      t4 {
+      }
+    }
+  }
+}

@@ -1,0 +1,69 @@
+block {
+  statements {
+    funcdef {
+      num_input_params: 64
+      num_output_params: 64
+      block {
+      }
+    }
+  }
+  statements {
+    forstmt {
+      for_body {
+        statements {
+          switchstmt {
+            switch_expr {
+              unop {
+                op: BLOCKHASH
+                operand {
+                }
+              }
+            }
+            default_block {
+              statements {
+                decl {
+                  expr {
+                    binop {
+                      op: DIV
+                      left {
+                      }
+                      right {
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+      for_init {
+      }
+      for_post {
+        statements {
+        }
+        statements {
+          pop {
+            expr {
+              unop {
+                op: BLOCKHASH
+                operand {
+                }
+              }
+            }
+          }
+        }
+        statements {
+          breakstmt {
+          }
+        }
+      }
+      for_cond {
+      }
+    }
+  }
+  statements {
+  }
+  statements {
+  }
+}

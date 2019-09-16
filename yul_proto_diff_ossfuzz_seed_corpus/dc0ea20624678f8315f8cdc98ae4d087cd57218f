@@ -1,0 +1,113 @@
+block {
+  statements {
+    ifstmt {
+      cond {
+        cons {
+          strval: "-"
+        }
+      }
+      if_body {
+        statements {
+          ifstmt {
+            cond {
+              cons {
+                strval: "-"
+              }
+            }
+            if_body {
+              statements {
+                ifstmt {
+                  cond {
+                    nop {
+                      op: PC
+                    }
+                  }
+                  if_body {
+                    statements {
+                      ifstmt {
+                        cond {
+                          nop {
+                            op: PC
+                          }
+                        }
+                        if_body {
+                          statements {
+                            ifstmt {
+                              cond {
+                              }
+                              if_body {
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  statements {
+    forstmt {
+      for_body {
+      }
+      for_init {
+      }
+      for_post {
+      }
+      for_cond {
+        binop {
+          op: SHL
+          left {
+            binop {
+              op: SHL
+              left {
+                cons {
+                  intval: 8
+                }
+              }
+              right {
+                binop {
+                  op: SHR
+                  left {
+                  }
+                  right {
+                    nop {
+                      op: PC
+                    }
+                  }
+                }
+              }
+            }
+          }
+          right {
+            binop {
+              op: SHL
+              left {
+                cons {
+                  intval: 8
+                }
+              }
+              right {
+                binop {
+                  op: SHR
+                  left {
+                  }
+                  right {
+                    nop {
+                      op: PC
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

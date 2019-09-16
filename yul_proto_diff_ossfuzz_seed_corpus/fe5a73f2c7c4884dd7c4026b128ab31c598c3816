@@ -1,0 +1,38 @@
+block {
+  statements {
+  }
+  statements {
+    decl {
+      expr {
+        nop {
+          op: PC
+        }
+      }
+    }
+  }
+  statements {
+    ifstmt {
+      cond {
+        binop {
+          op: LT
+          left {
+            unop {
+              op: NOT
+              operand {
+              }
+            }
+          }
+          right {
+            unop {
+              op: NOT
+              operand {
+              }
+            }
+          }
+        }
+      }
+      if_body {
+      }
+    }
+  }
+}

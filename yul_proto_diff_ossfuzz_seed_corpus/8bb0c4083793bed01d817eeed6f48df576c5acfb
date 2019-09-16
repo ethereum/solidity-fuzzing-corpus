@@ -1,0 +1,79 @@
+block {
+  statements {
+  }
+  statements {
+  }
+  statements {
+    contstmt {
+    }
+  }
+  statements {
+  }
+  statements {
+  }
+  statements {
+  }
+  statements {
+    forstmt {
+      for_body {
+      }
+      for_init {
+      }
+      for_post {
+        statements {
+          forstmt {
+            for_body {
+            }
+            for_init {
+              statements {
+                switchstmt {
+                  switch_expr {
+                  }
+                  case_stmt {
+                    case_lit {
+                      hexval: "\001\000\000/\000\000\000\000"
+                    }
+                    case_block {
+                    }
+                  }
+                }
+              }
+            }
+            for_post {
+              statements {
+                contstmt {
+                }
+              }
+            }
+            for_cond {
+              binop {
+                op: SDIV
+                left {
+                  binop {
+                    op: MUL
+                    left {
+                    }
+                    right {
+                    }
+                  }
+                }
+                right {
+                }
+              }
+            }
+          }
+        }
+      }
+      for_cond {
+        unop {
+          op: NOT
+          operand {
+            nop {
+              op: PC
+            }
+          }
+        }
+      }
+    }
+  }
+}

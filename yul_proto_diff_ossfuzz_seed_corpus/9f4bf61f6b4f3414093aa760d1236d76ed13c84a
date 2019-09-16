@@ -1,0 +1,59 @@
+block {
+  statements {
+    extcode_copy {
+      addr {
+        unop {
+          op: SLOAD
+          operand {
+            unop {
+              op: NOT
+              operand {
+              }
+            }
+          }
+        }
+      }
+      target {
+        unop {
+          op: NOT
+          operand {
+            unop {
+              op: SLOAD
+              operand {
+              }
+            }
+          }
+        }
+      }
+      source {
+        unop {
+          op: SLOAD
+          operand {
+            unop {
+              op: NOT
+              operand {
+              }
+            }
+          }
+        }
+      }
+      size {
+        unop {
+          op: NOT
+          operand {
+            unop {
+              op: SLOAD
+              operand {
+                unop {
+                  op: SLOAD
+                  operand {
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

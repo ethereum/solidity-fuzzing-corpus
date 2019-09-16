@@ -1,0 +1,51 @@
+block {
+  statements {
+    copy_func {
+      ct: CODE
+      target {
+      }
+      source {
+        binop {
+          op: OR
+          left {
+            binop {
+              op: SMOD
+              left {
+              }
+              right {
+                unop {
+                  op: NOT
+                  operand {
+                  }
+                }
+              }
+            }
+          }
+          right {
+          }
+        }
+      }
+      size {
+        binop {
+          op: EQ
+          left {
+            binop {
+              op: SMOD
+              left {
+              }
+              right {
+                unop {
+                  op: NOT
+                  operand {
+                  }
+                }
+              }
+            }
+          }
+          right {
+          }
+        }
+      }
+    }
+  }
+}

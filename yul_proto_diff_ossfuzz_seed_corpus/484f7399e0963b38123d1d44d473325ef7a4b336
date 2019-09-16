@@ -1,0 +1,148 @@
+block {
+  statements {
+    storage_func {
+      loc {
+        binop {
+          op: SI
+          left {
+          }
+          right {
+            nop {
+              op: MSIZE
+            }
+          }
+        }
+      }
+      val {
+      }
+      st: MSTORE
+    }
+  }
+  statements {
+    copy_func {
+      ct: CODE
+      target {
+      }
+      source {
+      }
+      size {
+      }
+    }
+  }
+  statements {
+    storage_func {
+      loc {
+        binop {
+          op: GT
+          left {
+          }
+          right {
+            binop {
+              op: GT
+              left {
+                binop {
+                  op: GT
+                  left {
+                    cons {
+                    }
+                  }
+                  right {
+                    binop {
+                      op: GT
+                      left {
+                      }
+                      right {
+                      }
+                    }
+                  }
+                }
+              }
+              right {
+                binop {
+                  op: GT
+                  left {
+                    cons {
+                      hexval: "\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377"
+                    }
+                  }
+                  right {
+                    binop {
+                      op: GT
+                      left {
+                        cons {
+                          strval: "\244"
+                        }
+                      }
+                      right {
+                        binop {
+                          op: MUL
+                          left {
+                            cons {
+                            }
+                          }
+                          right {
+                            binop {
+                              op: GT
+                              left {
+                                cons {
+                                  strval: "\324%\000\000\000\000\000\000\000\324\324\324\324\324\324>\324\324"
+                                }
+                              }
+                              right {
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+      val {
+        binop {
+          op: ADD
+          left {
+            cons {
+              strval: "\244"
+            }
+          }
+          right {
+            binop {
+              op: GT
+              left {
+                cons {
+                }
+              }
+              right {
+                binop {
+                  op: GT
+                  left {
+                    cons {
+                      strval: "\324%\000\000\000\000\000\000\000\324\324\324\324\324\324>\324\324"
+                    }
+                  }
+                  right {
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+      st: MSTORE
+    }
+  }
+  statements {
+    storage_func {
+      loc {
+      }
+      val {
+      }
+      st: MSTORE
+    }
+  }
+}

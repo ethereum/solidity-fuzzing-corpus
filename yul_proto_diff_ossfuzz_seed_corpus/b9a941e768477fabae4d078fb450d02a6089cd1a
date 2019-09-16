@@ -1,0 +1,52 @@
+block {
+  statements {
+    ifstmt {
+      cond {
+        unop {
+          op: NOT
+          operand {
+          }
+        }
+      }
+      if_body {
+      }
+    }
+  }
+  statements {
+    forstmt {
+      for_body {
+      }
+      for_init {
+      }
+      for_post {
+      }
+      for_cond {
+        binop {
+          op: SHR
+          left {
+          }
+          right {
+            binop {
+              op: OR
+              left {
+                unop {
+                  op: NOT
+                  operand {
+                    nop {
+                      op: CODESIZE
+                    }
+                  }
+                }
+              }
+              right {
+                nop {
+                  op: CODESIZE
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

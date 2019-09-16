@@ -1,0 +1,110 @@
+block {
+  statements {
+    extcode_copy {
+      addr {
+      }
+      target {
+      }
+      source {
+        nop {
+          op: PC
+        }
+      }
+      size {
+      }
+    }
+  }
+  statements {
+  }
+  statements {
+    boundedforstmt {
+      for_body {
+      }
+    }
+  }
+  statements {
+    boundedforstmt {
+      for_body {
+      }
+    }
+  }
+  statements {
+    forstmt {
+      for_body {
+        statements {
+          switchstmt {
+            switch_expr {
+              nop {
+                op: PC
+              }
+            }
+          }
+        }
+        statements {
+          copy_func {
+            ct: CODE
+            target {
+              top {
+                op: ADDM
+                arg1 {
+                }
+                arg2 {
+                }
+                arg3 {
+                  top {
+                    op: ADDM
+                    arg1 {
+                      binop {
+                        op: BYTE
+                        left {
+                        }
+                        right {
+                        }
+                      }
+                    }
+                    arg2 {
+                    }
+                    arg3 {
+                    }
+                  }
+                }
+              }
+            }
+            source {
+            }
+            size {
+            }
+          }
+        }
+      }
+      for_init {
+      }
+      for_post {
+      }
+      for_cond {
+      }
+    }
+  }
+  statements {
+    ifstmt {
+      cond {
+        top {
+          op: ADDM
+          arg1 {
+          }
+          arg2 {
+          }
+          arg3 {
+            cons {
+              strval: "\377\377\377\377\377\377\377\377\377\377"
+            }
+          }
+        }
+      }
+      if_body {
+      }
+    }
+  }
+  statements {
+  }
+}

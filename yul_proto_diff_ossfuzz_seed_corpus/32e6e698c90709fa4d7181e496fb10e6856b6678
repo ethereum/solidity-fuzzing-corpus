@@ -1,0 +1,38 @@
+block {
+  statements {
+    boundedforstmt {
+      for_body {
+        statements {
+          ifstmt {
+            cond {
+              nop {
+                op: PC
+              }
+            }
+            if_body {
+              statements {
+                boundedforstmt {
+                  for_body {
+                  }
+                }
+              }
+              statements {
+                storage_func {
+                  loc {
+                  }
+                  val {
+                  }
+                  st: SSTORE
+                }
+              }
+              statements {
+                breakstmt {
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

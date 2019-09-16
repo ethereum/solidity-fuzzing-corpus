@@ -1,0 +1,126 @@
+block {
+  statements {
+    funcdef {
+      num_input_params: 64
+      num_output_params: 64
+      block {
+      }
+    }
+  }
+  statements {
+    forstmt {
+      for_body {
+      }
+      for_init {
+        statements {
+          forstmt {
+            for_body {
+            }
+            for_init {
+            }
+            for_post {
+            }
+            for_cond {
+              top {
+                op: MULM
+                arg1 {
+                }
+                arg2 {
+                  binop {
+                    op: DIV
+                    left {
+                      cons {
+                        strval: "QQQQQQQQQQQQQQQQQQQQQQQQ"
+                      }
+                    }
+                    right {
+                      binop {
+                        op: LT
+                        left {
+                          unop {
+                            op: NOT
+                            operand {
+                              nop {
+                                op: PC
+                              }
+                            }
+                          }
+                        }
+                        right {
+                        }
+                      }
+                    }
+                  }
+                }
+                arg3 {
+                  binop {
+                    op: SMOD
+                    left {
+                      cons {
+                        strval: "QQQQQQQQQQQQQQQQQQQQQQQQ"
+                      }
+                    }
+                    right {
+                      binop {
+                        op: DIV
+                        left {
+                          cons {
+                            strval: "QQQQQQQQQQQQQQQQQQQQQQQQ"
+                          }
+                        }
+                        right {
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+        statements {
+        }
+      }
+      for_post {
+      }
+      for_cond {
+        top {
+          op: MULM
+          arg1 {
+          }
+          arg2 {
+            nop {
+              op: PC
+            }
+          }
+          arg3 {
+            binop {
+              op: SLT
+              left {
+                cons {
+                }
+              }
+              right {
+                binop {
+                  op: SLT
+                  left {
+                    unop {
+                      op: NOT
+                      operand {
+                      }
+                    }
+                  }
+                  right {
+                    varref {
+                      varnum: 540701472
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

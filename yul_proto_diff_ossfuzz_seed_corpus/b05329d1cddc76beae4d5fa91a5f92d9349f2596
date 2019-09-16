@@ -1,0 +1,141 @@
+block {
+  statements {
+    ifstmt {
+      cond {
+        cons {
+          strval: ""
+        }
+      }
+      if_body {
+        statements {
+          ifstmt {
+            cond {
+              nop {
+                op: PC
+              }
+            }
+            if_body {
+              statements {
+                ifstmt {
+                  cond {
+                    nop {
+                      op: PC
+                    }
+                  }
+                  if_body {
+                    statements {
+                      ifstmt {
+                        cond {
+                          cons {
+                            strval: ""
+                          }
+                        }
+                        if_body {
+                          statements {
+                            ifstmt {
+                              cond {
+                              }
+                              if_body {
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  statements {
+    boundedforstmt {
+      for_body {
+        statements {
+          forstmt {
+            for_body {
+            }
+            for_init {
+            }
+            for_post {
+            }
+            for_cond {
+              binop {
+                op: SHR
+                left {
+                  cons {
+                    hexval: "3\353"
+                  }
+                }
+                right {
+                  binop {
+                    op: SHL
+                    left {
+                    }
+                    right {
+                      binop {
+                        op: SHR
+                        left {
+                        }
+                        right {
+                          nop {
+                            op: PC
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+        statements {
+          forstmt {
+            for_body {
+            }
+            for_init {
+              statements {
+                funcdef {
+                  num_input_params: 5
+                  num_output_params: 0
+                  block {
+                  }
+                }
+              }
+            }
+            for_post {
+            }
+            for_cond {
+              binop {
+                op: SHR
+                left {
+                  cons {
+                    hexval: "3\353"
+                  }
+                }
+                right {
+                  binop {
+                    op: SHL
+                    left {
+                    }
+                    right {
+                      unop {
+                        op: SLOAD
+                        operand {
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

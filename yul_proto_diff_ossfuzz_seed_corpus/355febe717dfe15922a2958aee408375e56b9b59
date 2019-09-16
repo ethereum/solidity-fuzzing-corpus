@@ -1,0 +1,62 @@
+block {
+  statements {
+  }
+  statements {
+    copy_func {
+      ct: CODE
+      target {
+      }
+      source {
+        unop {
+          op: NOT
+          operand {
+          }
+        }
+      }
+      size {
+        binop {
+          op: EQ
+          left {
+          }
+          right {
+          }
+        }
+      }
+    }
+  }
+  statements {
+    storage_func {
+      loc {
+        binop {
+          op: EQ
+          left {
+            cons {
+              strval: "\324\324\324\324\324\324\324\324\324\324,+\376\001\000\000\000\000\000\000\324\324\324\324\324\324"
+            }
+          }
+          right {
+          }
+        }
+      }
+      val {
+      }
+      st: MSTORE
+    }
+  }
+  statements {
+    copy_func {
+      ct: CALLDATA
+      target {
+      }
+      source {
+        unop {
+          op: NOT
+          operand {
+          }
+        }
+      }
+      size {
+      }
+    }
+  }
+}

@@ -1,0 +1,54 @@
+block {
+  statements {
+    storage_func {
+      loc {
+        binop {
+          op: ADD
+          left {
+            cons {
+              strval: "\244"
+            }
+          }
+          right {
+          }
+        }
+      }
+      val {
+      }
+      st: SSTORE
+    }
+  }
+  statements {
+  }
+  statements {
+    ifstmt {
+      cond {
+        unop {
+          op: ISZERO
+          operand {
+          }
+        }
+      }
+      if_body {
+        statements {
+          storage_func {
+            loc {
+              binop {
+                op: ADD
+                left {
+                }
+                right {
+                }
+              }
+            }
+            val {
+            }
+            st: SSTORE
+          }
+        }
+        statements {
+        }
+      }
+    }
+  }
+}

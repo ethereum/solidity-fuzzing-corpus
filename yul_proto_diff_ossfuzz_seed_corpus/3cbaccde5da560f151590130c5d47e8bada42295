@@ -1,0 +1,96 @@
+block {
+  statements {
+  }
+  statements {
+    copy_func {
+      ct: CALLDATA
+      target {
+        binop {
+          op: EQ
+          left {
+            cons {
+              intval: 0
+            }
+          }
+          right {
+            binop {
+              op: EQ
+              left {
+              }
+              right {
+              }
+            }
+          }
+        }
+      }
+      source {
+      }
+      size {
+      }
+    }
+  }
+  statements {
+  }
+  statements {
+    copy_func {
+      ct: CALLDATA
+      target {
+        binop {
+          op: SDIV
+          left {
+            binop {
+              op: SDIV
+              left {
+                cons {
+                  intval: 0
+                }
+              }
+              right {
+                binop {
+                  op: KECCAK
+                  left {
+                  }
+                  right {
+                    varref {
+                      varnum: 4259840
+                    }
+                  }
+                }
+              }
+            }
+          }
+          right {
+          }
+        }
+      }
+      source {
+      }
+      size {
+        binop {
+          op: SDIV
+          left {
+            binop {
+              op: GT
+              left {
+                cons {
+                  intval: 0
+                }
+              }
+              right {
+              }
+            }
+          }
+          right {
+            binop {
+              op: EQ
+              left {
+              }
+              right {
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

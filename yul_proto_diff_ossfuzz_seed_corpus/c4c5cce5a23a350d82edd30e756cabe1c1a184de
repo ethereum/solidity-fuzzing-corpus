@@ -1,0 +1,37 @@
+block {
+  statements {
+    copy_func {
+      ct: CALLDATA
+      target {
+        cons {
+          hexval: "+"
+        }
+      }
+      source {
+        cons {
+          hexval: "+"
+        }
+      }
+      size {
+        binop {
+          op: SHR
+          left {
+            nop {
+              op: MSIZE
+            }
+          }
+          right {
+          }
+        }
+      }
+    }
+  }
+  statements {
+    terminatestmt {
+    }
+  }
+  statements {
+  }
+  statements {
+  }
+}

@@ -1,0 +1,47 @@
+block {
+  statements {
+    extcode_copy {
+      addr {
+        cons {
+          strval: "&\377\377\377\377\377\377\000"
+        }
+      }
+      target {
+      }
+      source {
+        binop {
+          op: DIV
+          left {
+            binop {
+              op: DIV
+              left {
+                unop {
+                  op: NOT
+                  operand {
+                    cons {
+                      strval: "&\377\377\377\377\377\377\000"
+                    }
+                  }
+                }
+              }
+              right {
+              }
+            }
+          }
+          right {
+          }
+        }
+      }
+      size {
+      }
+    }
+  }
+  statements {
+    funcdef {
+      num_input_params: 4608
+      num_output_params: 0
+      block {
+      }
+    }
+  }
+}

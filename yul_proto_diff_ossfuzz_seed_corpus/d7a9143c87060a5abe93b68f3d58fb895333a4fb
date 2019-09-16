@@ -1,0 +1,165 @@
+block {
+  statements {
+    log_func {
+      pos {
+        unop {
+          op: SLOAD
+          operand {
+          }
+        }
+      }
+      size {
+        top {
+          op: ADDM
+          arg1 {
+          }
+          arg2 {
+            cons {
+              intval: 0
+            }
+          }
+          arg3 {
+            top {
+              op: ADDM
+              arg1 {
+              }
+              arg2 {
+                binop {
+                  op: EQ
+                  left {
+                  }
+                  right {
+                    nop {
+                      op: CODESIZE
+                    }
+                  }
+                }
+              }
+              arg3 {
+                top {
+                  op: ADDM
+                  arg1 {
+                  }
+                  arg2 {
+                    binop {
+                      op: OR
+                      left {
+                      }
+                      right {
+                        nop {
+                          op: CALLDATASIZE
+                        }
+                      }
+                    }
+                  }
+                  arg3 {
+                    unop {
+                      op: NOT
+                      operand {
+                        nop {
+                          op: COINBASE
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+      num_topics: ONE
+      t1 {
+      }
+      t2 {
+      }
+      t3 {
+      }
+      t4 {
+      }
+    }
+  }
+  statements {
+    log_func {
+      pos {
+        binop {
+          op: LT
+          left {
+          }
+          right {
+            nop {
+              op: PC
+            }
+          }
+        }
+      }
+      size {
+        top {
+          op: ADDM
+          arg1 {
+          }
+          arg2 {
+            unop {
+              op: NOT
+              operand {
+                nop {
+                  op: ORIGIN
+                }
+              }
+            }
+          }
+          arg3 {
+            top {
+              op: ADDM
+              arg1 {
+              }
+              arg2 {
+                binop {
+                  op: LT
+                  left {
+                  }
+                  right {
+                    nop {
+                      op: CALLDATASIZE
+                    }
+                  }
+                }
+              }
+              arg3 {
+                top {
+                  op: MULM
+                  arg1 {
+                  }
+                  arg2 {
+                  }
+                  arg3 {
+                    nop {
+                      op: CODESIZE
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+      num_topics: ONE
+      t1 {
+      }
+      t2 {
+      }
+      t3 {
+      }
+      t4 {
+      }
+    }
+  }
+  statements {
+    boundedforstmt {
+      for_body {
+      }
+    }
+  }
+  statements {
+  }
+}

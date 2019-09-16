@@ -1,0 +1,69 @@
+block {
+  statements {
+    decl {
+      expr {
+      }
+    }
+  }
+  statements {
+    blockstmt {
+      statements {
+        switchstmt {
+          switch_expr {
+          }
+          default_block {
+            statements {
+              terminatestmt {
+                stop_invalid {
+                  stmt: STOP
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  statements {
+  }
+  statements {
+  }
+  statements {
+    storage_func {
+      loc {
+        varref {
+          varnum: -4
+        }
+      }
+      val {
+      }
+      st: MSTORE
+    }
+  }
+  statements {
+    ifstmt {
+      cond {
+        nop {
+          op: PC
+        }
+      }
+      if_body {
+        statements {
+          storage_func {
+            loc {
+              varref {
+                varnum: -4
+              }
+            }
+            val {
+              varref {
+                varnum: -4
+              }
+            }
+            st: MSTORE
+          }
+        }
+      }
+    }
+  }
+}

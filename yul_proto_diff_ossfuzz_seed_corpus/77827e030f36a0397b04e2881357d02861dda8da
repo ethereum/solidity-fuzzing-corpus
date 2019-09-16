@@ -1,0 +1,65 @@
+block {
+  statements {
+  }
+  statements {
+    storage_func {
+      loc {
+        cons {
+          intval: 8
+        }
+      }
+      val {
+        cons {
+          intval: 8
+        }
+      }
+      st: MSTORE
+    }
+  }
+  statements {
+    storage_func {
+      loc {
+        binop {
+          op: ADD
+          left {
+            nop {
+              op: PC
+            }
+          }
+          right {
+            cons {
+              intval: 8
+            }
+          }
+        }
+      }
+      val {
+      }
+      st: MSTORE
+    }
+  }
+  statements {
+  }
+  statements {
+    boundedforstmt {
+      for_body {
+        statements {
+          switchstmt {
+            switch_expr {
+            }
+            default_block {
+              statements {
+                breakstmt {
+                }
+              }
+            }
+          }
+        }
+        statements {
+          breakstmt {
+          }
+        }
+      }
+    }
+  }
+}

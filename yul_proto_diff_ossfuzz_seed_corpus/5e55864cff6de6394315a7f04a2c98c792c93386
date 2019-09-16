@@ -1,0 +1,39 @@
+block {
+  statements {
+  }
+  statements {
+    log_func {
+      pos {
+        nop {
+          op: MSIZE
+        }
+      }
+      size {
+        binop {
+          op: SMOD
+          left {
+          }
+          right {
+            unop {
+              op: NOT
+              operand {
+                nop {
+                  op: CALLDATASIZE
+                }
+              }
+            }
+          }
+        }
+      }
+      num_topics: ONE
+      t1 {
+      }
+      t2 {
+      }
+      t3 {
+      }
+      t4 {
+      }
+    }
+  }
+}

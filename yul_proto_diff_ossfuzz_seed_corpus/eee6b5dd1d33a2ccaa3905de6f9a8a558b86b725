@@ -1,0 +1,73 @@
+block {
+  statements {
+    storage_func {
+      loc {
+      }
+      val {
+      }
+      st: SSTORE
+    }
+  }
+  statements {
+    extcode_copy {
+      addr {
+        binop {
+          op: GT
+          left {
+            unop {
+              op: NOT
+              operand {
+              }
+            }
+          }
+          right {
+            cons {
+              intval: 16777216
+            }
+          }
+        }
+      }
+      target {
+      }
+      source {
+        binop {
+          op: DIV
+          left {
+            binop {
+              op: DIV
+              left {
+                unop {
+                  op: NOT
+                  operand {
+                    cons {
+                      intval: 16777216
+                    }
+                  }
+                }
+              }
+              right {
+              }
+            }
+          }
+          right {
+          }
+        }
+      }
+      size {
+      }
+    }
+  }
+  statements {
+  }
+  statements {
+    copy_func {
+      ct: DATA
+      target {
+      }
+      source {
+      }
+      size {
+      }
+    }
+  }
+}

@@ -1,0 +1,46 @@
+block {
+  statements {
+    decl {
+      expr {
+        cons {
+          intval: 0
+        }
+      }
+    }
+  }
+  statements {
+    storage_func {
+      loc {
+      }
+      val {
+      }
+      st: MSTORE
+    }
+  }
+  statements {
+    ifstmt {
+      cond {
+        nop {
+          op: PC
+        }
+      }
+      if_body {
+        statements {
+          storage_func {
+            loc {
+              varref {
+                varnum: 1
+              }
+            }
+            val {
+              varref {
+                varnum: 1
+              }
+            }
+            st: MSTORE
+          }
+        }
+      }
+    }
+  }
+}

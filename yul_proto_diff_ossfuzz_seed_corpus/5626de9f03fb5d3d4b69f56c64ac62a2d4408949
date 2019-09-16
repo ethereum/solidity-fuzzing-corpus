@@ -1,0 +1,69 @@
+block {
+  statements {
+  }
+  statements {
+    breakstmt {
+    }
+  }
+  statements {
+    storage_func {
+      loc {
+        nop {
+          op: PC
+        }
+      }
+      val {
+        nop {
+          op: PC
+        }
+      }
+      st: MSTORE
+    }
+  }
+  statements {
+  }
+  statements {
+    funcdef {
+      num_input_params: 0
+      num_output_params: 0
+      block {
+        statements {
+          boundedforstmt {
+            for_body {
+              statements {
+                terminatestmt {
+                  stop_invalid {
+                    stmt: STOP
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  statements {
+    storage_func {
+      loc {
+        unop {
+          op: NOT
+          operand {
+            top {
+              op: MULM
+              arg1 {
+              }
+              arg2 {
+              }
+              arg3 {
+              }
+            }
+          }
+        }
+      }
+      val {
+      }
+      st: MSTORE
+    }
+  }
+}

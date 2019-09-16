@@ -1,0 +1,37 @@
+block {
+  statements {
+    funcdef {
+      num_input_params: 4
+      num_output_params: 4
+      block {
+        statements {
+          boundedforstmt {
+            for_body {
+            }
+          }
+        }
+      }
+    }
+  }
+  statements {
+  }
+  statements {
+    assignment {
+      ref_id {
+        varnum: 0
+      }
+      expr {
+        unop {
+          op: BLOCKHASH
+          operand {
+            nop {
+              op: CALLER
+            }
+          }
+        }
+      }
+    }
+  }
+  statements {
+  }
+}

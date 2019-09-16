@@ -1,0 +1,65 @@
+block {
+  statements {
+    log_func {
+      pos {
+        unop {
+          op: MLOAD
+          operand {
+          }
+        }
+      }
+      size {
+        top {
+          op: ADDM
+          arg1 {
+          }
+          arg2 {
+            unop {
+              op: BLOCKHASH
+              operand {
+              }
+            }
+          }
+          arg3 {
+            top {
+              op: MULM
+              arg1 {
+                binop {
+                  op: LT
+                  left {
+                  }
+                  right {
+                    nop {
+                      op: CODESIZE
+                    }
+                  }
+                }
+              }
+              arg2 {
+                unop {
+                  op: MLOAD
+                  operand {
+                  }
+                }
+              }
+              arg3 {
+                nop {
+                  op: PC
+                }
+              }
+            }
+          }
+        }
+      }
+      num_topics: ONE
+      t1 {
+      }
+      t2 {
+      }
+      t3 {
+      }
+      t4 {
+      }
+    }
+  }
+}

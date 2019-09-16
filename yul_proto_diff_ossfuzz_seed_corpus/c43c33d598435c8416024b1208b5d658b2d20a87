@@ -1,0 +1,120 @@
+block {
+  statements {
+    switchstmt {
+      switch_expr {
+        nop {
+          op: PC
+        }
+      }
+      case_stmt {
+        case_lit {
+        }
+        case_block {
+          statements {
+            switchstmt {
+              switch_expr {
+              }
+              default_block {
+              }
+            }
+          }
+        }
+      }
+      default_block {
+        statements {
+          switchstmt {
+            switch_expr {
+            }
+            default_block {
+            }
+          }
+        }
+      }
+    }
+  }
+  statements {
+    boundedforstmt {
+      for_body {
+        statements {
+          ifstmt {
+            cond {
+              top {
+                op: MULM
+                arg1 {
+                  top {
+                    op: MULM
+                    arg1 {
+                    }
+                    arg2 {
+                    }
+                    arg3 {
+                      top {
+                        op: MULM
+                        arg1 {
+                          nop {
+                            op: PC
+                          }
+                        }
+                        arg2 {
+                        }
+                        arg3 {
+                        }
+                      }
+                    }
+                  }
+                }
+                arg2 {
+                }
+                arg3 {
+                }
+              }
+            }
+            if_body {
+            }
+          }
+        }
+      }
+    }
+  }
+  statements {
+    switchstmt {
+      switch_expr {
+        nop {
+          op: PC
+        }
+      }
+      case_stmt {
+        case_lit {
+        }
+        case_block {
+        }
+      }
+      default_block {
+        statements {
+          switchstmt {
+            switch_expr {
+              nop {
+                op: PC
+              }
+            }
+            case_stmt {
+              case_lit {
+              }
+              case_block {
+              }
+            }
+            default_block {
+              statements {
+                terminatestmt {
+                  stop_invalid {
+                    stmt: INVALID
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

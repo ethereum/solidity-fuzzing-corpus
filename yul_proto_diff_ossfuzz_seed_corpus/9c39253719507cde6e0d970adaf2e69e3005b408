@@ -1,0 +1,69 @@
+block {
+  statements {
+    terminatestmt {
+      ret_rev {
+        stmt: RETURN
+        pos {
+          binop {
+            op: SHR
+            left {
+              nop {
+                op: PC
+              }
+            }
+            right {
+              binop {
+                op: SHR
+                left {
+                  nop {
+                    op: PC
+                  }
+                }
+                right {
+                  binop {
+                    op: SHR
+                    left {
+                      nop {
+                        op: PC
+                      }
+                    }
+                    right {
+                      cons {
+                        intval: 0
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+        size {
+          binop {
+            op: SHR
+            left {
+              nop {
+                op: PC
+              }
+            }
+            right {
+              binop {
+                op: SHR
+                left {
+                  nop {
+                    op: PC
+                  }
+                }
+                right {
+                  cons {
+                    intval: 0
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

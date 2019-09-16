@@ -1,0 +1,67 @@
+block {
+  statements {
+  }
+  statements {
+    forstmt {
+      for_body {
+      }
+      for_init {
+      }
+      for_post {
+        statements {
+          forstmt {
+            for_body {
+            }
+            for_init {
+              statements {
+                boundedforstmt {
+                  for_body {
+                    statements {
+                    }
+                  }
+                }
+              }
+            }
+            for_post {
+              statements {
+                blockstmt {
+                }
+              }
+            }
+            for_cond {
+              binop {
+                op: SDIV
+                left {
+                  binop {
+                    op: MUL
+                    left {
+                    }
+                    right {
+                    }
+                  }
+                }
+                right {
+                  binop {
+                    op: ADD
+                    left {
+                    }
+                    right {
+                      nop {
+                        op: PC
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+      for_cond {
+        nop {
+          op: PC
+        }
+      }
+    }
+  }
+}

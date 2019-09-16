@@ -1,0 +1,80 @@
+block {
+  statements {
+    decl {
+      expr {
+        binop {
+          op: SI
+          left {
+            cons {
+              intval: 8
+            }
+          }
+          right {
+          }
+        }
+      }
+    }
+  }
+  statements {
+    storage_func {
+      loc {
+        nop {
+          op: PC
+        }
+      }
+      val {
+        nop {
+          op: PC
+        }
+      }
+      st: MSTORE
+    }
+  }
+  statements {
+    ifstmt {
+      cond {
+        binop {
+          op: SI
+          left {
+            cons {
+              intval: 8
+            }
+          }
+          right {
+          }
+        }
+      }
+      if_body {
+      }
+    }
+  }
+  statements {
+  }
+  statements {
+    decl {
+      expr {
+        binop {
+          op: SI
+          left {
+            cons {
+              intval: 8
+            }
+          }
+          right {
+            varref {
+              varnum: 0
+            }
+          }
+        }
+      }
+    }
+  }
+  statements {
+  }
+  statements {
+  }
+  statements {
+    contstmt {
+    }
+  }
+}

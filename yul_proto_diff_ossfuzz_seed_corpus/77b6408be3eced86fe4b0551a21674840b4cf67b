@@ -1,0 +1,75 @@
+block {
+  statements {
+    decl {
+      expr {
+      }
+    }
+  }
+  statements {
+    contstmt {
+    }
+  }
+  statements {
+  }
+  statements {
+    storage_func {
+      loc {
+      }
+      val {
+      }
+      st: SSTORE
+    }
+  }
+  statements {
+    extcode_copy {
+      addr {
+      }
+      target {
+      }
+      source {
+      }
+      size {
+        unop {
+          op: SLOAD
+          operand {
+            unop {
+              op: SLOAD
+              operand {
+                unop {
+                  op: SLOAD
+                  operand {
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  statements {
+    copy_func {
+      ct: CODE
+      target {
+      }
+      source {
+      }
+      size {
+        unop {
+          op: SLOAD
+          operand {
+          }
+        }
+      }
+    }
+  }
+  statements {
+    assignment {
+      ref_id {
+        varnum: 16384
+      }
+      expr {
+      }
+    }
+  }
+}

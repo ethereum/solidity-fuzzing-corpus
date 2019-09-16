@@ -1,0 +1,60 @@
+block {
+  statements {
+    extcode_copy {
+      addr {
+        binop {
+          op: DIV
+          left {
+            unop {
+              op: NOT
+              operand {
+                nop {
+                  op: MSIZE
+                }
+              }
+            }
+          }
+          right {
+            unop {
+              op: NOT
+              operand {
+                nop {
+                  op: MSIZE
+                }
+              }
+            }
+          }
+        }
+      }
+      target {
+      }
+      source {
+        binop {
+          op: DIV
+          left {
+            unop {
+              op: NOT
+              operand {
+                nop {
+                  op: MSIZE
+                }
+              }
+            }
+          }
+          right {
+            unop {
+              op: NOT
+              operand {
+                nop {
+                  op: MSIZE
+                }
+              }
+            }
+          }
+        }
+      }
+      size {
+      }
+    }
+  }
+}

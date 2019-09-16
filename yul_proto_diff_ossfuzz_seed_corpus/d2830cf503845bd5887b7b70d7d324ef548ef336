@@ -1,0 +1,44 @@
+block {
+  statements {
+    funcdef {
+      num_input_params: 0
+      num_output_params: 8
+      block {
+      }
+    }
+  }
+  statements {
+    copy_func {
+      ct: CALLDATA
+      target {
+        binop {
+          op: SDIV
+          left {
+          }
+          right {
+            varref {
+              varnum: 0
+            }
+          }
+        }
+      }
+      source {
+      }
+      size {
+        binop {
+          op: EQ
+          left {
+            nop {
+              op: CALLER
+            }
+          }
+          right {
+            cons {
+              intval: 0
+            }
+          }
+        }
+      }
+    }
+  }
+}

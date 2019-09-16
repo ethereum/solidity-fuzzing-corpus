@@ -1,0 +1,33 @@
+block {
+  statements {
+    copy_func {
+      ct: CODE
+      target {
+        unop {
+          op: EXTCODEHASH
+          operand {
+          }
+        }
+      }
+      source {
+        unop {
+          op: EXTCODEHASH
+          operand {
+            unop {
+              op: EXTCODEHASH
+              operand {
+              }
+            }
+          }
+        }
+      }
+      size {
+        unop {
+          op: EXTCODEHASH
+          operand {
+          }
+        }
+      }
+    }
+  }
+}

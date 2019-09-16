@@ -1,0 +1,58 @@
+block {
+  statements {
+    boundedforstmt {
+      for_body {
+        statements {
+          blockstmt {
+            statements {
+              boundedforstmt {
+                for_body {
+                  statements {
+                    terminatestmt {
+                      stop_invalid {
+                        stmt: STOP
+                      }
+                    }
+                  }
+                }
+              }
+            }
+            statements {
+              contstmt {
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  statements {
+    forstmt {
+      for_body {
+      }
+      for_init {
+      }
+      for_post {
+      }
+      for_cond {
+        binop {
+          op: DIV
+          left {
+            binop {
+              op: DIV
+              left {
+              }
+              right {
+              }
+            }
+          }
+          right {
+            nop {
+              op: PC
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,77 @@
+block {
+  statements {
+    boundedforstmt {
+      for_body {
+        statements {
+          terminatestmt {
+            stop_invalid {
+              stmt: STOP
+            }
+          }
+        }
+      }
+    }
+  }
+  statements {
+    ifstmt {
+      cond {
+        binop {
+          op: ADD
+          left {
+          }
+          right {
+            binop {
+              op: ADD
+              left {
+              }
+              right {
+                nop {
+                  op: PC
+                }
+              }
+            }
+          }
+        }
+      }
+      if_body {
+        statements {
+          ifstmt {
+            cond {
+            }
+            if_body {
+            }
+          }
+        }
+      }
+    }
+  }
+  statements {
+    forstmt {
+      for_body {
+      }
+      for_init {
+      }
+      for_post {
+      }
+      for_cond {
+        binop {
+          op: ADD
+          left {
+          }
+          right {
+            binop {
+              op: ADD
+              left {
+              }
+              right {
+                nop {
+                  op: PC
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

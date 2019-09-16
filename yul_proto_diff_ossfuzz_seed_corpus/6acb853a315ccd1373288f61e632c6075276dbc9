@@ -1,0 +1,70 @@
+block {
+  statements {
+  }
+  statements {
+  }
+  statements {
+  }
+  statements {
+  }
+  statements {
+  }
+  statements {
+    forstmt {
+      for_body {
+      }
+      for_init {
+      }
+      for_post {
+        statements {
+          forstmt {
+            for_body {
+            }
+            for_init {
+            }
+            for_post {
+            }
+            for_cond {
+              binop {
+                op: OR
+                left {
+                  binop {
+                    op: OR
+                    left {
+                    }
+                    right {
+                    }
+                  }
+                }
+                right {
+                  binop {
+                    op: DIV
+                    left {
+                      unop {
+                        op: EXTCODEHASH
+                        operand {
+                        }
+                      }
+                    }
+                    right {
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+      for_cond {
+        unop {
+          op: NOT
+          operand {
+            nop {
+              op: GAS
+            }
+          }
+        }
+      }
+    }
+  }
+}

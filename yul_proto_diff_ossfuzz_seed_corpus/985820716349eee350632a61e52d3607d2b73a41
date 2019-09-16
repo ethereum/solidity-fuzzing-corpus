@@ -1,0 +1,45 @@
+block {
+  statements {
+    storage_func {
+      loc {
+        unop {
+          op: ISZERO
+          operand {
+          }
+        }
+      }
+      val {
+      }
+      st: MSTORE
+    }
+  }
+  statements {
+  }
+  statements {
+    ifstmt {
+      cond {
+      }
+      if_body {
+        statements {
+          terminatestmt {
+            stop_invalid {
+              stmt: STOP
+            }
+          }
+        }
+      }
+    }
+  }
+  statements {
+    storage_func {
+      loc {
+        nop {
+          op: MSIZE
+        }
+      }
+      val {
+      }
+      st: MSTORE
+    }
+  }
+}

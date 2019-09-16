@@ -1,0 +1,85 @@
+block {
+  statements {
+    forstmt {
+      for_body {
+      }
+      for_init {
+      }
+      for_post {
+        statements {
+        }
+      }
+      for_cond {
+        binop {
+          op: EXP
+          left {
+            nop {
+              op: CODESIZE
+            }
+          }
+          right {
+          }
+        }
+      }
+    }
+  }
+  statements {
+  }
+  statements {
+  }
+  statements {
+  }
+  statements {
+    boundedforstmt {
+      for_body {
+        statements {
+          boundedforstmt {
+            for_body {
+              statements {
+                boundedforstmt {
+                  for_body {
+                    statements {
+                      storage_func {
+                        loc {
+                          nop {
+                            op: MSIZE
+                          }
+                        }
+                        val {
+                        }
+                        st: SSTORE
+                      }
+                    }
+                    statements {
+                      storage_func {
+                        loc {
+                          nop {
+                            op: MSIZE
+                          }
+                        }
+                        val {
+                        }
+                        st: MSTORE
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  statements {
+    storage_func {
+      loc {
+      }
+      val {
+      }
+      st: SSTORE
+    }
+  }
+  statements {
+  }
+}

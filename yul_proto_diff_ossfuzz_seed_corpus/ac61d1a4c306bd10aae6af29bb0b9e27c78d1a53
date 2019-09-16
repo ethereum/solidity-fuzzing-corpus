@@ -1,0 +1,82 @@
+block {
+  statements {
+    boundedforstmt {
+      for_body {
+        statements {
+          copy_func {
+            ct: CODE
+            target {
+              unop {
+                op: MLOAD
+                operand {
+                }
+              }
+            }
+            source {
+              unop {
+                op: MLOAD
+                operand {
+                }
+              }
+            }
+            size {
+            }
+          }
+        }
+        statements {
+          copy_func {
+            ct: CODE
+            target {
+            }
+            source {
+              unop {
+                op: MLOAD
+                operand {
+                }
+              }
+            }
+            size {
+            }
+          }
+        }
+      }
+    }
+  }
+  statements {
+  }
+  statements {
+    boundedforstmt {
+      for_body {
+      }
+    }
+  }
+  statements {
+    forstmt {
+      for_body {
+        statements {
+        }
+      }
+      for_init {
+        statements {
+          decl {
+            expr {
+              top {
+                op: ADDM
+                arg1 {
+                }
+                arg2 {
+                }
+                arg3 {
+                }
+              }
+            }
+          }
+        }
+      }
+      for_post {
+      }
+      for_cond {
+      }
+    }
+  }
+}

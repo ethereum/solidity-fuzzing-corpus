@@ -1,0 +1,101 @@
+block {
+  statements {
+    storage_func {
+      loc {
+        lowcall {
+          callty: CALL
+          gas {
+          }
+          addr {
+          }
+          wei {
+          }
+          in {
+          }
+          insize {
+          }
+          out {
+            cons {
+              strval: "["
+            }
+          }
+          outsize {
+          }
+        }
+      }
+      val {
+      }
+      st: MSTORE
+    }
+  }
+  statements {
+    storage_func {
+      loc {
+        binop {
+          op: ADD
+          left {
+            binop {
+              op: GT
+              left {
+              }
+              right {
+                cons {
+                  strval: "["
+                }
+              }
+            }
+          }
+          right {
+            binop {
+              op: ADD
+              left {
+                binop {
+                  op: ADD
+                  left {
+                    binop {
+                      op: GT
+                      left {
+                        nop {
+                          op: MSIZE
+                        }
+                      }
+                      right {
+                      }
+                    }
+                  }
+                  right {
+                    binop {
+                      op: ADD
+                      left {
+                        nop {
+                          op: MSIZE
+                        }
+                      }
+                      right {
+                      }
+                    }
+                  }
+                }
+              }
+              right {
+                binop {
+                  op: ADD
+                  left {
+                    nop {
+                      op: MSIZE
+                    }
+                  }
+                  right {
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+      val {
+      }
+      st: MSTORE
+    }
+  }
+}

@@ -1,0 +1,119 @@
+block {
+  statements {
+    copy_func {
+      ct: CODE
+      target {
+        binop {
+          op: SI
+          left {
+            varref {
+              varnum: 0
+            }
+          }
+          right {
+          }
+        }
+      }
+      source {
+        unop {
+          op: NOT
+          operand {
+          }
+        }
+      }
+      size {
+        unop {
+          op: NOT
+          operand {
+            binop {
+              op: MUL
+              left {
+                unop {
+                  op: NOT
+                  operand {
+                    unop {
+                      op: NOT
+                      operand {
+                        binop {
+                          op: MUL
+                          left {
+                          }
+                          right {
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+              right {
+                cons {
+                  intval: 47278999994368
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  statements {
+    boundedforstmt {
+      for_body {
+      }
+    }
+  }
+  statements {
+  }
+  statements {
+    forstmt {
+      for_body {
+      }
+      for_init {
+      }
+      for_post {
+      }
+      for_cond {
+        top {
+          op: MULM
+          arg1 {
+          }
+          arg2 {
+          }
+          arg3 {
+            binop {
+              op: MUL
+              left {
+                cons {
+                  strval: "QQQQQQQQQQQQQQQQQQQQQQQQ"
+                }
+              }
+              right {
+                binop {
+                  op: XOR
+                  left {
+                    cons {
+                      strval: "QQQQQQQQQQQQQQQQQQQQQQQQ"
+                    }
+                  }
+                  right {
+                    binop {
+                      op: SI
+                      left {
+                        varref {
+                          varnum: 0
+                        }
+                      }
+                      right {
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

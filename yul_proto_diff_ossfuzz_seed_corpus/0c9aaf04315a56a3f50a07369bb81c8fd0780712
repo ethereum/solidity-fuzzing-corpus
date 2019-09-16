@@ -1,0 +1,104 @@
+block {
+  statements {
+    extcode_copy {
+      addr {
+        binop {
+          op: DIV
+          left {
+            unop {
+              op: NOT
+              operand {
+                cons {
+                  intval: 16777216
+                }
+              }
+            }
+          }
+          right {
+          }
+        }
+      }
+      target {
+        binop {
+          op: OR
+          left {
+            binop {
+              op: DIV
+              left {
+                unop {
+                  op: NOT
+                  operand {
+                    cons {
+                      intval: 16777216
+                    }
+                  }
+                }
+              }
+              right {
+              }
+            }
+          }
+          right {
+            binop {
+              op: DIV
+              left {
+                unop {
+                  op: NOT
+                  operand {
+                  }
+                }
+              }
+              right {
+              }
+            }
+          }
+        }
+      }
+      source {
+        binop {
+          op: OR
+          left {
+            unop {
+              op: NOT
+              operand {
+                binop {
+                  op: DIV
+                  left {
+                    unop {
+                      op: NOT
+                      operand {
+                        cons {
+                          intval: 16777216
+                        }
+                      }
+                    }
+                  }
+                  right {
+                  }
+                }
+              }
+            }
+          }
+          right {
+          }
+        }
+      }
+      size {
+      }
+    }
+  }
+  statements {
+    storage_func {
+      loc {
+        cons {
+          strval: "5"
+        }
+      }
+      val {
+      }
+      st: MSTORE
+    }
+  }
+  statements {
+  }
+}

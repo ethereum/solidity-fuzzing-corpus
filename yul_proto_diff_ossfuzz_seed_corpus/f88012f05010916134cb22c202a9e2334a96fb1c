@@ -1,0 +1,39 @@
+block {
+  statements {
+    storage_func {
+      loc {
+      }
+      val {
+      }
+      st: SSTORE
+    }
+  }
+  statements {
+    storage_func {
+      loc {
+        binop {
+          op: GT
+          left {
+            nop {
+              op: CODESIZE
+            }
+          }
+          right {
+            nop {
+              op: CODESIZE
+            }
+          }
+        }
+      }
+      val {
+      }
+      st: SSTORE
+    }
+  }
+  statements {
+    boundedforstmt {
+      for_body {
+      }
+    }
+  }
+}

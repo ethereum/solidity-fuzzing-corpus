@@ -1,0 +1,111 @@
+block {
+  statements {
+    extcode_copy {
+      addr {
+      }
+      target {
+      }
+      source {
+        binop {
+          op: EQ
+          left {
+            cons {
+              strval: "%"
+            }
+          }
+          right {
+            cons {
+              strval: "%"
+            }
+          }
+        }
+      }
+      size {
+      }
+    }
+  }
+  statements {
+  }
+  statements {
+    boundedforstmt {
+      for_body {
+        statements {
+          forstmt {
+            for_body {
+            }
+            for_init {
+            }
+            for_post {
+            }
+            for_cond {
+              binop {
+                op: EQ
+                left {
+                }
+                right {
+                  binop {
+                    op: EQ
+                    left {
+                      binop {
+                        op: EQ
+                        left {
+                        }
+                        right {
+                          binop {
+                            op: EQ
+                            left {
+                              cons {
+                                strval: "%"
+                              }
+                            }
+                            right {
+                              cons {
+                                strval: "%"
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                    right {
+                      binop {
+                        op: SHL
+                        left {
+                        }
+                        right {
+                          binop {
+                            op: BYTE
+                            left {
+                            }
+                            right {
+                              binop {
+                                op: EQ
+                                left {
+                                }
+                                right {
+                                  nop {
+                                    op: GASPRICE
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  statements {
+    boundedforstmt {
+      for_body {
+      }
+    }
+  }
+}

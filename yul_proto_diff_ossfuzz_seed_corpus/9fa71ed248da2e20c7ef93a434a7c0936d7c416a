@@ -1,0 +1,78 @@
+block {
+  statements {
+    storage_func {
+      loc {
+      }
+      val {
+        binop {
+          op: GT
+          left {
+          }
+          right {
+            varref {
+              varnum: 6422528
+            }
+          }
+        }
+      }
+      st: MSTORE
+    }
+  }
+  statements {
+    ifstmt {
+      cond {
+        binop {
+          op: KECCAK
+          left {
+          }
+          right {
+            varref {
+              varnum: 6422528
+            }
+          }
+        }
+      }
+      if_body {
+        statements {
+        }
+      }
+    }
+  }
+  statements {
+    decl {
+      expr {
+        varref {
+          varnum: 6422528
+        }
+      }
+    }
+  }
+  statements {
+    ifstmt {
+      cond {
+        nop {
+          op: MSIZE
+        }
+      }
+      if_body {
+        statements {
+          ifstmt {
+            cond {
+              binop {
+                op: KECCAK
+                left {
+                }
+                right {
+                }
+              }
+            }
+            if_body {
+              statements {
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

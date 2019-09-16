@@ -1,0 +1,62 @@
+block {
+  statements {
+    forstmt {
+      for_body {
+      }
+      for_init {
+      }
+      for_post {
+      }
+      for_cond {
+        top {
+          op: ADDM
+          arg1 {
+          }
+          arg2 {
+            binop {
+              op: LT
+              left {
+              }
+              right {
+              }
+            }
+          }
+          arg3 {
+            binop {
+              op: SMOD
+              left {
+                cons {
+                  strval: "QQQQQQQQQQQQQQQQQQQQQQQQ"
+                }
+              }
+              right {
+                binop {
+                  op: SMOD
+                  left {
+                    cons {
+                      strval: "QQQQQQQQQQQQQQQQQQQQQQQQ"
+                    }
+                  }
+                  right {
+                    binop {
+                      op: SMOD
+                      left {
+                        cons {
+                          strval: "QQ\000\000\000\000QQQQQQQQQQQQQQQQQQQQQQ"
+                        }
+                      }
+                      right {
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  statements {
+  }
+}

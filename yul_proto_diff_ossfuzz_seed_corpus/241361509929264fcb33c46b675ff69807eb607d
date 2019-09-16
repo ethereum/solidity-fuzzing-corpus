@@ -1,0 +1,143 @@
+block {
+  statements {
+    forstmt {
+      for_body {
+        statements {
+          terminatestmt {
+            stop_invalid {
+              stmt: STOP
+            }
+          }
+        }
+      }
+      for_init {
+      }
+      for_post {
+      }
+      for_cond {
+        binop {
+          op: OR
+          left {
+            binop {
+              op: MOD
+              left {
+                binop {
+                  op: OR
+                  left {
+                    binop {
+                      op: SHR
+                      left {
+                      }
+                      right {
+                      }
+                    }
+                  }
+                  right {
+                    nop {
+                      op: CODESIZE
+                    }
+                  }
+                }
+              }
+              right {
+                nop {
+                  op: CODESIZE
+                }
+              }
+            }
+          }
+          right {
+            nop {
+              op: PC
+            }
+          }
+        }
+      }
+    }
+  }
+  statements {
+    terminatestmt {
+      ret_rev {
+        stmt: RETURN
+        pos {
+          top {
+            op: ADDM
+            arg1 {
+            }
+            arg2 {
+              top {
+                op: ADDM
+                arg1 {
+                }
+                arg2 {
+                  top {
+                    op: MULM
+                    arg1 {
+                    }
+                    arg2 {
+                    }
+                    arg3 {
+                    }
+                  }
+                }
+                arg3 {
+                }
+              }
+            }
+            arg3 {
+            }
+          }
+        }
+        size {
+          top {
+            op: ADDM
+            arg1 {
+            }
+            arg2 {
+              binop {
+                op: SI
+                left {
+                }
+                right {
+                  binop {
+                    op: SHL
+                    left {
+                    }
+                    right {
+                      binop {
+                        op: SHL
+                        left {
+                        }
+                        right {
+                          binop {
+                            op: SHR
+                            left {
+                            }
+                            right {
+                              binop {
+                                op: SI
+                                left {
+                                  nop {
+                                    op: PC
+                                  }
+                                }
+                                right {
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+            arg3 {
+            }
+          }
+        }
+      }
+    }
+  }
+}

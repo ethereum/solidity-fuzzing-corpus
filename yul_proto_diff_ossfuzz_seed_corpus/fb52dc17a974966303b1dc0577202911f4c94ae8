@@ -1,0 +1,81 @@
+block {
+  statements {
+    storage_func {
+      loc {
+        top {
+          op: ADDM
+          arg1 {
+          }
+          arg2 {
+          }
+          arg3 {
+            nop {
+              op: GASPRICE
+            }
+          }
+        }
+      }
+      val {
+        nop {
+          op: GASPRICE
+        }
+      }
+      st: MSTORE
+    }
+  }
+  statements {
+    forstmt {
+      for_body {
+      }
+      for_init {
+      }
+      for_post {
+        statements {
+          storage_func {
+            loc {
+              top {
+                op: ADDM
+                arg1 {
+                  nop {
+                    op: GASPRICE
+                  }
+                }
+                arg2 {
+                  binop {
+                    op: SHL
+                    left {
+                      nop {
+                        op: GASPRICE
+                      }
+                    }
+                    right {
+                      nop {
+                        op: GASPRICE
+                      }
+                    }
+                  }
+                }
+                arg3 {
+                  nop {
+                    op: GASPRICE
+                  }
+                }
+              }
+            }
+            val {
+              nop {
+                op: GASPRICE
+              }
+            }
+            st: MSTORE
+          }
+        }
+      }
+      for_cond {
+        nop {
+          op: GASPRICE
+        }
+      }
+    }
+  }
+}

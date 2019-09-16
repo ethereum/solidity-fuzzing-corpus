@@ -1,0 +1,73 @@
+block {
+  statements {
+  }
+  statements {
+    blockstmt {
+      statements {
+        storage_func {
+          loc {
+          }
+          val {
+            cons {
+              intval: 0
+            }
+          }
+          st: SSTORE
+        }
+      }
+      statements {
+        storage_func {
+          loc {
+          }
+          val {
+            cons {
+              intval: 0
+            }
+          }
+          st: SSTORE
+        }
+      }
+    }
+  }
+  statements {
+    storage_func {
+      loc {
+      }
+      val {
+        unop {
+          op: ISZERO
+          operand {
+          }
+        }
+      }
+      st: SSTORE
+    }
+  }
+  statements {
+    boundedforstmt {
+      for_body {
+        statements {
+          terminatestmt {
+            stop_invalid {
+              stmt: STOP
+            }
+          }
+        }
+      }
+    }
+  }
+  statements {
+    storage_func {
+      loc {
+      }
+      val {
+        unop {
+          op: ISZERO
+          operand {
+          }
+        }
+      }
+      st: SSTORE
+    }
+  }
+}

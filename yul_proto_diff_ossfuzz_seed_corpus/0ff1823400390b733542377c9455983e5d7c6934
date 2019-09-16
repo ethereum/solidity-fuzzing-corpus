@@ -1,0 +1,37 @@
+block {
+  statements {
+    forstmt {
+      for_body {
+      }
+      for_init {
+      }
+      for_post {
+      }
+      for_cond {
+        binop {
+          op: MOD
+          left {
+            nop {
+              op: ORIGIN
+            }
+          }
+          right {
+            binop {
+              op: MOD
+              left {
+                nop {
+                  op: ORIGIN
+                }
+              }
+              right {
+                cons {
+                  intval: 0
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,72 @@
+block {
+  statements {
+    log_func {
+      pos {
+      }
+      size {
+        binop {
+          op: SI
+          left {
+            binop {
+              op: XOR
+              left {
+                binop {
+                  op: XOR
+                  left {
+                    nop {
+                      op: CODESIZE
+                    }
+                  }
+                  right {
+                    nop {
+                      op: MSIZE
+                    }
+                  }
+                }
+              }
+              right {
+                nop {
+                  op: CODESIZE
+                }
+              }
+            }
+          }
+          right {
+            binop {
+              op: XOR
+              left {
+                binop {
+                  op: XOR
+                  left {
+                    nop {
+                      op: CODESIZE
+                    }
+                  }
+                  right {
+                    nop {
+                      op: MSIZE
+                    }
+                  }
+                }
+              }
+              right {
+                nop {
+                  op: CODESIZE
+                }
+              }
+            }
+          }
+        }
+      }
+      num_topics: ONE
+      t1 {
+      }
+      t2 {
+      }
+      t3 {
+      }
+      t4 {
+      }
+    }
+  }
+}

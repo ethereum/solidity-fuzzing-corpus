@@ -1,0 +1,84 @@
+block {
+  statements {
+    copy_func {
+      ct: CODE
+      target {
+        nop {
+          op: ADDRESS
+        }
+      }
+      source {
+        nop {
+          op: ADDRESS
+        }
+      }
+      size {
+      }
+    }
+  }
+  statements {
+    copy_func {
+      ct: CODE
+      target {
+      }
+      source {
+        nop {
+          op: ADDRESS
+        }
+      }
+      size {
+      }
+    }
+  }
+  statements {
+    copy_func {
+      ct: CODE
+      target {
+        nop {
+          op: ADDRESS
+        }
+      }
+      source {
+        nop {
+          op: ADDRESS
+        }
+      }
+      size {
+      }
+    }
+  }
+  statements {
+  }
+  statements {
+    copy_func {
+      ct: CODE
+      target {
+        binop {
+          op: EXP
+          left {
+            unop {
+              op: SLOAD
+              operand {
+                nop {
+                  op: ADDRESS
+                }
+              }
+            }
+          }
+          right {
+            nop {
+              op: ADDRESS
+            }
+          }
+        }
+      }
+      source {
+        nop {
+          op: ADDRESS
+        }
+      }
+      size {
+      }
+    }
+  }
+}

@@ -1,0 +1,88 @@
+block {
+  statements {
+    log_func {
+      pos {
+        binop {
+          op: LT
+          left {
+            binop {
+              op: LT
+              left {
+              }
+              right {
+              }
+            }
+          }
+          right {
+          }
+        }
+      }
+      size {
+      }
+      num_topics: ONE
+      t1 {
+      }
+      t2 {
+      }
+      t3 {
+      }
+      t4 {
+      }
+    }
+  }
+  statements {
+    boundedforstmt {
+      for_body {
+        statements {
+          log_func {
+            pos {
+              top {
+                op: MULM
+                arg1 {
+                }
+                arg2 {
+                }
+                arg3 {
+                  binop {
+                    op: ADD
+                    left {
+                    }
+                    right {
+                      unop {
+                        op: NOT
+                        operand {
+                          nop {
+                            op: CODESIZE
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+            size {
+              cons {
+                intval: 576460752303423488
+              }
+            }
+            num_topics: TWO
+            t1 {
+            }
+            t2 {
+            }
+            t3 {
+            }
+            t4 {
+              nop {
+                op: PC
+              }
+            }
+          }
+        }
+        statements {
+        }
+      }
+    }
+  }
+}

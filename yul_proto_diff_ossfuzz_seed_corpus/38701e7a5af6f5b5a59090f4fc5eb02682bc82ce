@@ -1,0 +1,145 @@
+block {
+  statements {
+    decl {
+      expr {
+        cons {
+          intval: 0
+        }
+      }
+    }
+  }
+  statements {
+    boundedforstmt {
+      for_body {
+      }
+    }
+  }
+  statements {
+  }
+  statements {
+    decl {
+      expr {
+        binop {
+          op: ADD
+          left {
+            unopdata {
+              op: OFFSET
+              identifier { id: 28772
+              }
+            }
+          }
+          right {
+          }
+        }
+      }
+    }
+  }
+  statements {
+    boundedforstmt {
+      for_body {
+        statements {
+          funcdef {
+            num_input_params: 64
+            num_output_params: 64
+            block {
+            }
+          }
+        }
+      }
+    }
+  }
+  statements {
+  }
+  statements {
+    boundedforstmt {
+      for_body {
+      }
+    }
+  }
+  statements {
+  }
+  statements {
+  }
+  statements {
+    funcdef {
+      num_input_params: 64
+      num_output_params: 64
+      block {
+      }
+    }
+  }
+  statements {
+    boundedforstmt {
+      for_body {
+        statements {
+          storage_func {
+            loc {
+              nop {
+                op: MSIZE
+              }
+            }
+            val {
+              unop {
+                op: BLOCKHASH
+                operand {
+                }
+              }
+            }
+            st: SSTORE
+          }
+        }
+        statements {
+          boundedforstmt {
+            for_body {
+              statements {
+                ifstmt {
+                  cond {
+                  }
+                  if_body {
+                    statements {
+                      storage_func {
+                        loc {
+                          nop {
+                            op: MSIZE
+                          }
+                        }
+                        val {
+                        }
+                        st: MSTORE
+                      }
+                    }
+                  }
+                }
+              }
+              statements {
+                ifstmt {
+                  cond {
+                  }
+                  if_body {
+                    statements {
+                      storage_func {
+                        loc {
+                          nop {
+                            op: MSIZE
+                          }
+                        }
+                        val {
+                          cons {
+                            hexval: "P"
+                          }
+                        }
+                        st: SSTORE
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  statements {
+  }
+}

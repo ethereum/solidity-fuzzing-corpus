@@ -1,0 +1,80 @@
+block {
+  statements {
+  }
+  statements {
+    boundedforstmt {
+      for_body {
+      }
+    }
+  }
+  statements {
+    boundedforstmt {
+      for_body {
+        statements {
+        }
+      }
+    }
+  }
+  statements {
+  }
+  statements {
+    forstmt {
+      for_body {
+      }
+      for_init {
+        statements {
+        }
+      }
+      for_post {
+        statements {
+          forstmt {
+            for_body {
+              statements {
+              }
+            }
+            for_init {
+            }
+            for_post {
+            }
+            for_cond {
+              binop {
+                op: OR
+                left {
+                  binop {
+                    op: OR
+                    left {
+                    }
+                    right {
+                      nop {
+                        op: PC
+                      }
+                    }
+                  }
+                }
+                right {
+                  cons {
+                    strval: "-"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+      for_cond {
+        binop {
+          op: DIV
+          left {
+            unop {
+              op: NOT
+              operand {
+              }
+            }
+          }
+          right {
+          }
+        }
+      }
+    }
+  }
+}

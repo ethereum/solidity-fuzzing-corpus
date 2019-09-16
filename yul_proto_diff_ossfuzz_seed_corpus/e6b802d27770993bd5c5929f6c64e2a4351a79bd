@@ -1,0 +1,66 @@
+block {
+  statements {
+    storage_func {
+      loc {
+        binop {
+          op: ADD
+          left {
+          }
+          right {
+            nop {
+              op: CODESIZE
+            }
+          }
+        }
+      }
+      val {
+      }
+      st: MSTORE
+    }
+  }
+  statements {
+    storage_func {
+      loc {
+        binop {
+          op: ADD
+          left {
+            binop {
+              op: ADD
+              left {
+              }
+              right {
+                nop {
+                  op: CODESIZE
+                }
+              }
+            }
+          }
+          right {
+            binop {
+              op: ADD
+              left {
+                nop {
+                  op: CODESIZE
+                }
+              }
+              right {
+              }
+            }
+          }
+        }
+      }
+      val {
+      }
+      st: MSTORE
+    }
+  }
+  statements {
+    storage_func {
+      loc {
+      }
+      val {
+      }
+      st: MSTORE
+    }
+  }
+}

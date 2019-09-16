@@ -1,0 +1,56 @@
+block {
+  statements {
+    extcode_copy {
+      addr {
+        binop {
+          op: DIV
+          left {
+            unop {
+              op: NOT
+              operand {
+                cons {
+                  strval: "+"
+                }
+              }
+            }
+          }
+          right {
+          }
+        }
+      }
+      target {
+      }
+      source {
+        top {
+          op: ADDM
+          arg1 {
+          }
+          arg2 {
+          }
+          arg3 {
+            nop {
+              op: PC
+            }
+          }
+        }
+      }
+      size {
+        binop {
+          op: DIV
+          left {
+            unop {
+              op: NOT
+              operand {
+                cons {
+                  strval: "+"
+                }
+              }
+            }
+          }
+          right {
+          }
+        }
+      }
+    }
+  }
+}

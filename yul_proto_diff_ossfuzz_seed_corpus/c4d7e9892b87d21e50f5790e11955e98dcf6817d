@@ -1,0 +1,56 @@
+block {
+  statements {
+    funcdef {
+      num_input_params: 67108864
+      num_output_params: 64
+      block {
+        statements {
+          funcdef {
+            num_input_params: 2
+            num_output_params: 2
+            block {
+            }
+          }
+        }
+        statements {
+          funcdef {
+            num_input_params: 64
+            num_output_params: 2
+            block {
+            }
+          }
+        }
+      }
+    }
+  }
+  statements {
+  }
+  statements {
+    boundedforstmt {
+      for_body {
+        statements {
+          forstmt {
+            for_body {
+            }
+            for_init {
+            }
+            for_post {
+            }
+            for_cond {
+              binop {
+                op: BYTE
+                left {
+                }
+                right {
+                  nop {
+                    op: GAS
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

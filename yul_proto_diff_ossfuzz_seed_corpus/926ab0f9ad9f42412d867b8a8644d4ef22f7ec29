@@ -1,0 +1,77 @@
+block {
+  statements {
+    forstmt {
+      for_body {
+      }
+      for_init {
+      }
+      for_post {
+      }
+      for_cond {
+        binop {
+          op: SHR
+          left {
+            cons {
+              hexval: "3v\006\353"
+            }
+          }
+          right {
+            binop {
+              op: SHR
+              left {
+              }
+              right {
+                nop {
+                  op: MSIZE
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  statements {
+    storage_func {
+      loc {
+        binop {
+          op: XOR
+          left {
+            nop {
+              op: CALLDATASIZE
+            }
+          }
+          right {
+            binop {
+              op: XOR
+              left {
+                nop {
+                  op: CALLDATASIZE
+                }
+              }
+              right {
+              }
+            }
+          }
+        }
+      }
+      val {
+      }
+      st: SSTORE
+    }
+  }
+  statements {
+  }
+  statements {
+    storage_func {
+      loc {
+        cons {
+          intval: 0
+        }
+      }
+      val {
+      }
+      st: SSTORE
+    }
+  }
+}

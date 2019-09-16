@@ -1,0 +1,74 @@
+block {
+  statements {
+    forstmt {
+      for_body {
+      }
+      for_init {
+      }
+      for_post {
+      }
+      for_cond {
+        binop {
+          op: SHR
+          left {
+          }
+          right {
+            binop {
+              op: SHR
+              left {
+              }
+              right {
+                nop {
+                  op: PC
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  statements {
+    boundedforstmt {
+      for_body {
+      }
+    }
+  }
+  statements {
+    boundedforstmt {
+      for_body {
+        statements {
+          forstmt {
+            for_body {
+            }
+            for_init {
+            }
+            for_post {
+            }
+            for_cond {
+              binop {
+                op: SHR
+                left {
+                }
+                right {
+                  binop {
+                    op: SHR
+                    left {
+                    }
+                    right {
+                      nop {
+                        op: PC
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  statements {
+  }
+}

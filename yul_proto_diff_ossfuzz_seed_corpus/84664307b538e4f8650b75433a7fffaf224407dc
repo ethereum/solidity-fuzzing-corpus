@@ -1,0 +1,58 @@
+block {
+  statements {
+    ifstmt {
+      cond {
+        unop {
+          op: NOT
+          operand {
+          }
+        }
+      }
+      if_body {
+        statements {
+          storage_func {
+            loc {
+              cons {
+                intval: 32
+              }
+            }
+            val {
+            }
+            st: MSTORE
+          }
+        }
+        statements {
+          terminatestmt {
+            stop_invalid {
+              stmt: STOP
+            }
+          }
+        }
+      }
+    }
+  }
+  statements {
+    storage_func {
+      loc {
+        cons {
+          intval: 0
+        }
+      }
+      val {
+      }
+      st: MSTORE
+    }
+  }
+  statements {
+    storage_func {
+      loc {
+        cons {
+          intval: 0
+        }
+      }
+      val {
+      }
+      st: MSTORE
+    }
+  }
+}

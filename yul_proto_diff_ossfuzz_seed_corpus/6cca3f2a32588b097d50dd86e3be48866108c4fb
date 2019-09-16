@@ -1,0 +1,54 @@
+block {
+  statements {
+    decl {
+      expr {
+      }
+    }
+  }
+  statements {
+    switchstmt {
+      switch_expr {
+        binop {
+          op: LT
+          left {
+          }
+          right {
+          }
+        }
+      }
+      case_stmt {
+        case_lit {
+        }
+        case_block {
+        }
+      }
+      case_stmt {
+        case_lit {
+        }
+        case_block {
+          statements {
+            assignment {
+              ref_id {
+                varnum: 0
+              }
+              expr {
+                binop {
+                  op: LT
+                  left {
+                    unop {
+                      op: NOT
+                      operand {
+                      }
+                    }
+                  }
+                  right {
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

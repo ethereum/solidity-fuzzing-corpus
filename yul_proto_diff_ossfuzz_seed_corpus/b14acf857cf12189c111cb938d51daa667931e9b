@@ -1,0 +1,34 @@
+block {
+  statements {
+    storage_func {
+      loc {
+        binop {
+          op: XOR
+          left {
+            nop {
+              op: CALLDATASIZE
+            }
+          }
+          right {
+            binop {
+              op: XOR
+              left {
+                nop {
+                  op: CALLDATASIZE
+                }
+              }
+              right {
+                nop {
+                  op: PC
+                }
+              }
+            }
+          }
+        }
+      }
+      val {
+      }
+      st: SSTORE
+    }
+  }
+}

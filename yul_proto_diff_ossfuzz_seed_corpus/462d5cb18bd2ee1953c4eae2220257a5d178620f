@@ -1,0 +1,89 @@
+block {
+  statements {
+    forstmt {
+      for_body {
+      }
+      for_init {
+      }
+      for_post {
+        statements {
+          storage_func {
+            loc {
+              binop {
+                op: SDIV
+                left {
+                  unop {
+                    op: NOT
+                    operand {
+                      nop {
+                        op: PC
+                      }
+                    }
+                  }
+                }
+                right {
+                  unop {
+                    op: NOT
+                    operand {
+                      nop {
+                        op: RETURNDATASIZE
+                      }
+                    }
+                  }
+                }
+              }
+            }
+            val {
+              binop {
+                op: SDIV
+                left {
+                  unop {
+                    op: NOT
+                    operand {
+                      binop {
+                        op: SDIV
+                        left {
+                          unop {
+                            op: NOT
+                            operand {
+                              nop {
+                                op: GAS
+                              }
+                            }
+                          }
+                        }
+                        right {
+                          unop {
+                            op: NOT
+                            operand {
+                              nop {
+                                op: GAS
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+                right {
+                  unop {
+                    op: NOT
+                    operand {
+                      nop {
+                        op: RETURNDATASIZE
+                      }
+                    }
+                  }
+                }
+              }
+            }
+            st: MSTORE
+          }
+        }
+      }
+      for_cond {
+      }
+    }
+  }
+}

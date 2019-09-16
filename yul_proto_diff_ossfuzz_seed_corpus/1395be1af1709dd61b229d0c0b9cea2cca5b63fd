@@ -1,0 +1,87 @@
+block {
+  statements {
+    boundedforstmt {
+      for_body {
+        statements {
+          forstmt {
+            for_body {
+            }
+            for_init {
+            }
+            for_post {
+            }
+            for_cond {
+              binop {
+                op: SHL
+                left {
+                }
+                right {
+                  binop {
+                    op: SHL
+                    left {
+                      varref {
+                        varnum: 0
+                      }
+                    }
+                    right {
+                      binop {
+                        op: SHL
+                        left {
+                        }
+                        right {
+                          binop {
+                            op: SHL
+                            left {
+                            }
+                            right {
+                              unop {
+                                op: SLOAD
+                                operand {
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+        statements {
+          boundedforstmt {
+            for_body {
+              statements {
+                boundedforstmt {
+                  for_body {
+                    statements {
+                      boundedforstmt {
+                        for_body {
+                          statements {
+                            boundedforstmt {
+                              for_body {
+                                statements {
+                                  terminatestmt {
+                                    stop_invalid {
+                                      stmt: STOP
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

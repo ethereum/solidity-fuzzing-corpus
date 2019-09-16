@@ -1,0 +1,95 @@
+block {
+  statements {
+    boundedforstmt {
+      for_body {
+      }
+    }
+  }
+  statements {
+    boundedforstmt {
+      for_body {
+      }
+    }
+  }
+  statements {
+    forstmt {
+      for_body {
+        statements {
+          storage_func {
+            loc {
+              unop {
+                op: EXTCODEHASH
+                operand {
+                }
+              }
+            }
+            val {
+              unop {
+                op: EXTCODEHASH
+                operand {
+                }
+              }
+            }
+            st: MSTORE
+          }
+        }
+      }
+      for_init {
+      }
+      for_post {
+        statements {
+          forstmt {
+            for_body {
+              statements {
+                storage_func {
+                  loc {
+                    unop {
+                      op: EXTCODEHASH
+                      operand {
+                      }
+                    }
+                  }
+                  val {
+                  }
+                  st: MSTORE
+                }
+              }
+            }
+            for_init {
+            }
+            for_post {
+              statements {
+                storage_func {
+                  loc {
+                    unop {
+                      op: EXTCODEHASH
+                      operand {
+                        unop {
+                          op: EXTCODEHASH
+                          operand {
+                          }
+                        }
+                      }
+                    }
+                  }
+                  val {
+                    unop {
+                      op: EXTCODEHASH
+                      operand {
+                      }
+                    }
+                  }
+                  st: MSTORE
+                }
+              }
+            }
+            for_cond {
+            }
+          }
+        }
+      }
+      for_cond {
+      }
+    }
+  }
+}

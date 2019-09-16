@@ -1,0 +1,111 @@
+block {
+  statements {
+    forstmt {
+      for_body {
+      }
+      for_init {
+      }
+      for_post {
+        statements {
+          copy_func {
+            ct: RETURNDATA
+            target {
+            }
+            source {
+            }
+            size {
+            }
+          }
+        }
+        statements {
+          forstmt {
+            for_body {
+            }
+            for_init {
+            }
+            for_post {
+            }
+            for_cond {
+              top {
+                op: MULM
+                arg1 {
+                }
+                arg2 {
+                  binop {
+                    op: SMOD
+                    left {
+                      unop {
+                        op: NOT
+                        operand {
+                          varref {
+                            varnum: 2112115
+                          }
+                        }
+                      }
+                    }
+                    right {
+                      binop {
+                        op: SMOD
+                        left {
+                          unop {
+                            op: NOT
+                            operand {
+                              cons {
+                                strval: ""
+                              }
+                            }
+                          }
+                        }
+                        right {
+                        }
+                      }
+                    }
+                  }
+                }
+                arg3 {
+                  binop {
+                    op: SMOD
+                    left {
+                      unop {
+                        op: NOT
+                        operand {
+                        }
+                      }
+                    }
+                    right {
+                      unop {
+                        op: NOT
+                        operand {
+                          cons {
+                            strval: ""
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+        statements {
+          extcode_copy {
+            addr {
+              cons {
+                strval: ""
+              }
+            }
+            target {
+            }
+            source {
+            }
+            size {
+            }
+          }
+        }
+      }
+      for_cond {
+      }
+    }
+  }
+}

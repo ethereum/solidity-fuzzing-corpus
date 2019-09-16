@@ -1,0 +1,45 @@
+block {
+  statements {
+    copy_func {
+      ct: CODE
+      target {
+      }
+      source {
+      }
+      size {
+        nop {
+          op: PC
+        }
+      }
+    }
+  }
+  statements {
+    boundedforstmt {
+      for_body {
+        statements {
+          decl {
+            expr {
+              binop {
+                op: SDIV
+                left {
+                  binop {
+                    op: MUL
+                    left {
+                    }
+                    right {
+                      nop {
+                        op: PC
+                      }
+                    }
+                  }
+                }
+                right {
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

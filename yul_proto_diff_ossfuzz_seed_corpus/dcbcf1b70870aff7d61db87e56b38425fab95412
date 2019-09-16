@@ -1,0 +1,48 @@
+block {
+  statements {
+    forstmt {
+      for_body {
+        statements {
+          copy_func {
+            ct: CODE
+            target {
+            }
+            source {
+              binop {
+                op: MOD
+                left {
+                  unop {
+                    op: NOT
+                    operand {
+                      nop {
+                        op: PC
+                      }
+                    }
+                  }
+                }
+                right {
+                  unop {
+                    op: NOT
+                    operand {
+                      nop {
+                        op: PC
+                      }
+                    }
+                  }
+                }
+              }
+            }
+            size {
+            }
+          }
+        }
+      }
+      for_init {
+      }
+      for_post {
+      }
+      for_cond {
+      }
+    }
+  }
+}

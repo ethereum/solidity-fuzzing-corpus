@@ -1,0 +1,135 @@
+block {
+  statements {
+    storage_func {
+      loc {
+        binop {
+          op: MOD
+          left {
+            cons {
+              strval: "."
+            }
+          }
+          right {
+          }
+        }
+      }
+      val {
+      }
+      st: SSTORE
+    }
+  }
+  statements {
+  }
+  statements {
+    forstmt {
+      for_body {
+      }
+      for_init {
+      }
+      for_post {
+      }
+      for_cond {
+        binop {
+          op: SGT
+          left {
+            nop {
+              op: CODESIZE
+            }
+          }
+          right {
+            nop {
+              op: CODESIZE
+            }
+          }
+        }
+      }
+    }
+  }
+  statements {
+    storage_func {
+      loc {
+        cons {
+          strval: ""
+        }
+      }
+      val {
+      }
+      st: MSTORE
+    }
+  }
+  statements {
+    forstmt {
+      for_body {
+        statements {
+        }
+      }
+      for_init {
+      }
+      for_post {
+      }
+      for_cond {
+        binop {
+          op: SGT
+          left {
+            nop {
+              op: CODESIZE
+            }
+          }
+          right {
+            nop {
+              op: CODESIZE
+            }
+          }
+        }
+      }
+    }
+  }
+  statements {
+    storage_func {
+      loc {
+      }
+      val {
+        binop {
+          op: MOD
+          left {
+            cons {
+              strval: "."
+            }
+          }
+          right {
+          }
+        }
+      }
+      st: MSTORE
+    }
+  }
+  statements {
+    forstmt {
+      for_body {
+      }
+      for_init {
+      }
+      for_post {
+      }
+      for_cond {
+        binop {
+          op: SGT
+          left {
+            nop {
+              op: CODESIZE
+            }
+          }
+          right {
+            nop {
+              op: CODESIZE
+            }
+          }
+        }
+      }
+    }
+  }
+  statements {
+  }
+  statements {
+  }
+}

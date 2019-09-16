@@ -1,0 +1,52 @@
+block {
+  statements {
+    storage_func {
+      loc {
+        binop {
+          op: ADD
+          left {
+            cons {
+              strval: "."
+            }
+          }
+          right {
+          }
+        }
+      }
+      val {
+        binop {
+          op: ADD
+          left {
+          }
+          right {
+          }
+        }
+      }
+      st: MSTORE
+    }
+  }
+  statements {
+    ifstmt {
+      cond {
+      }
+      if_body {
+        statements {
+          terminatestmt {
+            stop_invalid {
+              stmt: INVALID
+            }
+          }
+        }
+      }
+    }
+  }
+  statements {
+    storage_func {
+      loc {
+      }
+      val {
+      }
+      st: MSTORE
+    }
+  }
+}

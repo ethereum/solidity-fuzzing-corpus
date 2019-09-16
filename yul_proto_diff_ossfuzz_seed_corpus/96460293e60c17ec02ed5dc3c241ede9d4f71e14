@@ -1,0 +1,38 @@
+block {
+  statements {
+    copy_func {
+      ct: CALLDATA
+      target {
+        binop {
+          op: LT
+          left {
+            binop {
+              op: LT
+              left {
+              }
+              right {
+                unop {
+                  op: NOT
+                  operand {
+                  }
+                }
+              }
+            }
+          }
+          right {
+            nop {
+              op: PC
+            }
+          }
+        }
+      }
+      source {
+        nop {
+          op: PC
+        }
+      }
+      size {
+      }
+    }
+  }
+}

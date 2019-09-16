@@ -1,0 +1,45 @@
+block {
+  statements {
+    terminatestmt {
+      self_des {
+        addr {
+          top {
+            op: ADDM
+            arg1 {
+            }
+            arg2 {
+              binop {
+                op: GT
+                left {
+                  nop {
+                    op: MSIZE
+                  }
+                }
+                right {
+                  nop {
+                    op: MSIZE
+                  }
+                }
+              }
+            }
+            arg3 {
+              binop {
+                op: GT
+                left {
+                  nop {
+                    op: MSIZE
+                  }
+                }
+                right {
+                  nop {
+                    op: MSIZE
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,54 @@
+block {
+  statements {
+    boundedforstmt {
+      for_body {
+      }
+    }
+  }
+  statements {
+    storage_func {
+      loc {
+        binop {
+          op: XOR
+          left {
+            nop {
+              op: CALLDATASIZE
+            }
+          }
+          right {
+            binop {
+              op: XOR
+              left {
+                binop {
+                  op: XOR
+                  left {
+                  }
+                  right {
+                    nop {
+                      op: CALLDATASIZE
+                    }
+                  }
+                }
+              }
+              right {
+                binop {
+                  op: XOR
+                  left {
+                  }
+                  right {
+                    nop {
+                      op: ORIGIN
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+      val {
+      }
+      st: SSTORE
+    }
+  }
+}

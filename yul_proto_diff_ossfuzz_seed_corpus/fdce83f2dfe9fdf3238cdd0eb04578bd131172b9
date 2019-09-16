@@ -1,0 +1,94 @@
+block {
+  statements {
+    forstmt {
+      for_body {
+        statements {
+          terminatestmt {
+            stop_invalid {
+              stmt: STOP
+            }
+          }
+        }
+      }
+      for_init {
+      }
+      for_post {
+      }
+      for_cond {
+        binop {
+          op: LT
+          left {
+            binop {
+              op: SHR
+              left {
+                binop {
+                  op: LT
+                  left {
+                    binop {
+                      op: SHR
+                      left {
+                        binop {
+                          op: LT
+                          left {
+                            binop {
+                              op: SHR
+                              left {
+                                binop {
+                                  op: LT
+                                  left {
+                                    nop {
+                                      op: CODESIZE
+                                    }
+                                  }
+                                  right {
+                                    nop {
+                                      op: CODESIZE
+                                    }
+                                  }
+                                }
+                              }
+                              right {
+                                nop {
+                                  op: CODESIZE
+                                }
+                              }
+                            }
+                          }
+                          right {
+                            nop {
+                              op: CODESIZE
+                            }
+                          }
+                        }
+                      }
+                      right {
+                        nop {
+                          op: CODESIZE
+                        }
+                      }
+                    }
+                  }
+                  right {
+                    nop {
+                      op: CODESIZE
+                    }
+                  }
+                }
+              }
+              right {
+                nop {
+                  op: CODESIZE
+                }
+              }
+            }
+          }
+          right {
+            nop {
+              op: CODESIZE
+            }
+          }
+        }
+      }
+    }
+  }
+}

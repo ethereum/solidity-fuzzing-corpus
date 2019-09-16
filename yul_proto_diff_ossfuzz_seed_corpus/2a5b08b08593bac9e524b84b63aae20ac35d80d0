@@ -1,0 +1,85 @@
+block {
+  statements {
+  }
+  statements {
+    forstmt {
+      for_body {
+        statements {
+          copy_func {
+            ct: CALLDATA
+            target {
+            }
+            source {
+              top {
+                op: MULM
+                arg1 {
+                }
+                arg2 {
+                }
+                arg3 {
+                }
+              }
+            }
+            size {
+            }
+          }
+        }
+      }
+      for_init {
+        statements {
+          forstmt {
+            for_body {
+            }
+            for_init {
+            }
+            for_post {
+              statements {
+              }
+            }
+            for_cond {
+              binop {
+                op: DIV
+                left {
+                }
+                right {
+                }
+              }
+            }
+          }
+        }
+      }
+      for_post {
+        statements {
+          blockstmt {
+          }
+        }
+      }
+      for_cond {
+        binop {
+          op: SDIV
+          left {
+            binop {
+              op: MUL
+              left {
+              }
+              right {
+              }
+            }
+          }
+          right {
+            binop {
+              op: ADD
+              left {
+              }
+              right {
+                nop {
+                  op: PC
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

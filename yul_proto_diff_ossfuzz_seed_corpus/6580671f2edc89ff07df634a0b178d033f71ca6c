@@ -1,0 +1,24 @@
+block {
+  statements {
+    terminatestmt {
+      ret_rev {
+        stmt: RETURN
+        pos {
+          unop {
+            op: NOT
+            operand {
+              nop {
+                op: MSIZE
+              }
+            }
+          }
+        }
+        size {
+          nop {
+            op: MSIZE
+          }
+        }
+      }
+    }
+  }
+}

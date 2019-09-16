@@ -1,0 +1,105 @@
+block {
+  statements {
+    storage_func {
+      loc {
+        binop {
+          op: DIV
+          left {
+            binop {
+              op: DIV
+              left {
+                binop {
+                  op: DIV
+                  left {
+                    binop {
+                      op: DIV
+                      left {
+                        unop {
+                          op: NOT
+                          operand {
+                          }
+                        }
+                      }
+                      right {
+                      }
+                    }
+                  }
+                  right {
+                  }
+                }
+              }
+              right {
+              }
+            }
+          }
+          right {
+          }
+        }
+      }
+      val {
+      }
+      st: SSTORE
+    }
+  }
+  statements {
+    storage_func {
+      loc {
+        binop {
+          op: GT
+          left {
+            binop {
+              op: DIV
+              left {
+                binop {
+                  op: DIV
+                  left {
+                    binop {
+                      op: DIV
+                      left {
+                        unop {
+                          op: NOT
+                          operand {
+                          }
+                        }
+                      }
+                      right {
+                        cons {
+                          intval: 16777216
+                        }
+                      }
+                    }
+                  }
+                  right {
+                  }
+                }
+              }
+              right {
+              }
+            }
+          }
+          right {
+          }
+        }
+      }
+      val {
+        cons {
+          intval: 16777216
+        }
+      }
+      st: SSTORE
+    }
+  }
+  statements {
+    ifstmt {
+      cond {
+        varref {
+          varnum: 0
+        }
+      }
+      if_body {
+      }
+    }
+  }
+  statements {
+  }
+}

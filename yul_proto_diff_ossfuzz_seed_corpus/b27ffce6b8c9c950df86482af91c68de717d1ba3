@@ -1,0 +1,122 @@
+block {
+  statements {
+  }
+  statements {
+  }
+  statements {
+    decl {
+      expr {
+        nop {
+          op: CALLDATASIZE
+        }
+      }
+    }
+  }
+  statements {
+    forstmt {
+      for_body {
+      }
+      for_init {
+      }
+      for_post {
+        statements {
+          forstmt {
+            for_body {
+            }
+            for_init {
+            }
+            for_post {
+            }
+            for_cond {
+              top {
+                op: MULM
+                arg1 {
+                  unop {
+                    op: NOT
+                    operand {
+                      cons {
+                        intval: 0
+                      }
+                    }
+                  }
+                }
+                arg2 {
+                }
+                arg3 {
+                  unop {
+                    op: NOT
+                    operand {
+                      cons {
+                        intval: 0
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+        statements {
+          extcode_copy {
+            addr {
+            }
+            target {
+            }
+            source {
+            }
+            size {
+            }
+          }
+        }
+        statements {
+          copy_func {
+            ct: DATA
+            target {
+            }
+            source {
+            }
+            size {
+            }
+          }
+        }
+        statements {
+          forstmt {
+            for_body {
+            }
+            for_init {
+            }
+            for_post {
+            }
+            for_cond {
+              binop {
+                op: ADD
+                left {
+                }
+                right {
+                  unop {
+                    op: EXTCODESIZE
+                    operand {
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+      for_cond {
+        cons {
+          hexval: "\377\377\377\002"
+        }
+      }
+    }
+  }
+  statements {
+  }
+  statements {
+  }
+  statements {
+  }
+  statements {
+  }
+}

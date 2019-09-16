@@ -1,0 +1,107 @@
+block {
+  statements {
+    boundedforstmt {
+      for_body {
+        statements {
+          terminatestmt {
+            stop_invalid {
+              stmt: STOP
+            }
+          }
+        }
+      }
+    }
+  }
+  statements {
+  }
+  statements {
+    forstmt {
+      for_body {
+      }
+      for_init {
+      }
+      for_post {
+      }
+      for_cond {
+        binop {
+          op: OR
+          left {
+            unop {
+              op: NOT
+              operand {
+                nop {
+                  op: CALLER
+                }
+              }
+            }
+          }
+          right {
+            nop {
+              op: CALLER
+            }
+          }
+        }
+      }
+    }
+  }
+  statements {
+    forstmt {
+      for_body {
+      }
+      for_init {
+      }
+      for_post {
+      }
+      for_cond {
+        binop {
+          op: OR
+          left {
+            unop {
+              op: NOT
+              operand {
+                nop {
+                  op: CALLER
+                }
+              }
+            }
+          }
+          right {
+            nop {
+              op: CALLER
+            }
+          }
+        }
+      }
+    }
+  }
+  statements {
+    forstmt {
+      for_body {
+      }
+      for_init {
+      }
+      for_post {
+      }
+      for_cond {
+        binop {
+          op: OR
+          left {
+            unop {
+              op: NOT
+              operand {
+                nop {
+                  op: CODESIZE
+                }
+              }
+            }
+          }
+          right {
+            nop {
+              op: CODESIZE
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,143 @@
+block {
+  statements {
+    boundedforstmt {
+      for_body {
+      }
+    }
+  }
+  statements {
+  }
+  statements {
+    forstmt {
+      for_body {
+      }
+      for_init {
+        statements {
+          forstmt {
+            for_body {
+              statements {
+                terminatestmt {
+                  stop_invalid {
+                    stmt: STOP
+                  }
+                }
+              }
+            }
+            for_init {
+            }
+            for_post {
+            }
+            for_cond {
+              top {
+                op: MULM
+                arg1 {
+                  unop {
+                    op: NOT
+                    operand {
+                      varref {
+                        varnum: 0
+                      }
+                    }
+                  }
+                }
+                arg2 {
+                  binop {
+                    op: SUB
+                    left {
+                      unop {
+                        op: NOT
+                        operand {
+                          varref {
+                            varnum: 540701472
+                          }
+                        }
+                      }
+                    }
+                    right {
+                    }
+                  }
+                }
+                arg3 {
+                  binop {
+                    op: SI
+                    left {
+                      cons {
+                        strval: "QQQQQQQQQQQQQQQQQQQQQQQQ"
+                      }
+                    }
+                    right {
+                      top {
+                        op: MULM
+                        arg1 {
+                          unop {
+                            op: NOT
+                            operand {
+                              varref {
+                                varnum: 2112032
+                              }
+                            }
+                          }
+                        }
+                        arg2 {
+                        }
+                        arg3 {
+                          binop {
+                            op: SDIV
+                            left {
+                              cons {
+                                strval: "QQQQQQQQQQQQQQQQQQQQQQQQ"
+                              }
+                            }
+                            right {
+                              varref {
+                                varnum: 2112032
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+      for_post {
+      }
+      for_cond {
+        top {
+          op: MULM
+          arg1 {
+          }
+          arg2 {
+          }
+          arg3 {
+            binop {
+              op: SDIV
+              left {
+                cons {
+                  strval: "QQQQQQQQQQQQQQQQQQQQQQQQ"
+                }
+              }
+              right {
+                varref {
+                  varnum: 2112032
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  statements {
+    ifstmt {
+      cond {
+      }
+      if_body {
+      }
+    }
+  }
+}

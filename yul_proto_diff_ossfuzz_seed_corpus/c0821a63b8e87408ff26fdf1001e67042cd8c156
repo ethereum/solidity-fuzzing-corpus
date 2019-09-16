@@ -1,0 +1,88 @@
+block {
+  statements {
+    decl {
+      expr {
+        binop {
+          op: KECCAK
+          left {
+          }
+          right {
+          }
+        }
+      }
+    }
+  }
+  statements {
+    ifstmt {
+      cond {
+        unop {
+          op: EXTCODESIZE
+          operand {
+          }
+        }
+      }
+      if_body {
+      }
+    }
+  }
+  statements {
+    log_func {
+      pos {
+      }
+      size {
+      }
+      num_topics: ONE
+      t1 {
+      }
+      t2 {
+      }
+      t3 {
+      }
+      t4 {
+      }
+    }
+  }
+  statements {
+    ifstmt {
+      cond {
+        top {
+          op: ADDM
+          arg1 {
+          }
+          arg2 {
+          }
+          arg3 {
+            nop {
+              op: COINBASE
+            }
+          }
+        }
+      }
+      if_body {
+      }
+    }
+  }
+  statements {
+    boundedforstmt {
+      for_body {
+      }
+    }
+  }
+  statements {
+    log_func {
+      pos {
+      }
+      size {
+      }
+      num_topics: ONE
+      t1 {
+      }
+      t2 {
+      }
+      t3 {
+      }
+      t4 {
+      }
+    }
+  }
+}

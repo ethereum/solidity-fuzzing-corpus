@@ -1,0 +1,40 @@
+block {
+  statements {
+    extcode_copy {
+      addr {
+        binop {
+          op: DIV
+          left {
+            unop {
+              op: NOT
+              operand {
+              }
+            }
+          }
+          right {
+          }
+        }
+      }
+      target {
+        cons {
+          hexval: "!\000\000\000\000\000u\000"
+        }
+      }
+      source {
+        nop {
+          op: PC
+        }
+      }
+      size {
+      }
+    }
+  }
+  statements {
+    funcdef {
+      num_input_params: 0
+      num_output_params: 0
+      block {
+      }
+    }
+  }
+}

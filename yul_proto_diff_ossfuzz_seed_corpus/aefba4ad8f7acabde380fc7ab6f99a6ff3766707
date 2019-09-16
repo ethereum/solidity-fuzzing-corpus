@@ -1,0 +1,116 @@
+block {
+  statements {
+    forstmt {
+      for_body {
+      }
+      for_init {
+      }
+      for_post {
+        statements {
+          extcode_copy {
+            addr {
+              nop {
+                op: MSIZE
+              }
+            }
+            target {
+            }
+            source {
+            }
+            size {
+            }
+          }
+        }
+        statements {
+          forstmt {
+            for_body {
+            }
+            for_init {
+            }
+            for_post {
+            }
+            for_cond {
+              top {
+                op: MULM
+                arg1 {
+                }
+                arg2 {
+                  binop {
+                    op: SMOD
+                    left {
+                      unop {
+                        op: NOT
+                        operand {
+                          varref {
+                            varnum: 540701472
+                          }
+                        }
+                      }
+                    }
+                    right {
+                      binop {
+                        op: SI
+                        left {
+                          binop {
+                            op: SMOD
+                            left {
+                              unop {
+                                op: NOT
+                                operand {
+                                  nop {
+                                    op: MSIZE
+                                  }
+                                }
+                              }
+                            }
+                            right {
+                            }
+                          }
+                        }
+                        right {
+                        }
+                      }
+                    }
+                  }
+                }
+                arg3 {
+                }
+              }
+            }
+          }
+        }
+        statements {
+          extcode_copy {
+            addr {
+            }
+            target {
+            }
+            source {
+            }
+            size {
+            }
+          }
+        }
+      }
+      for_cond {
+      }
+    }
+  }
+  statements {
+  }
+  statements {
+    storage_func {
+      loc {
+        nop {
+          op: PC
+        }
+      }
+      val {
+        varref {
+          varnum: 540701472
+        }
+      }
+      st: SSTORE
+    }
+  }
+}

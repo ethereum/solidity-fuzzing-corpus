@@ -1,0 +1,86 @@
+block {
+  statements {
+    forstmt {
+      for_body {
+        statements {
+          blockstmt {
+          }
+        }
+        statements {
+          blockstmt {
+            statements {
+            }
+          }
+        }
+      }
+      for_init {
+      }
+      for_post {
+      }
+      for_cond {
+        top {
+          op: ADDM
+          arg1 {
+            top {
+              op: ADDM
+              arg1 {
+                nop {
+                  op: PC
+                }
+              }
+              arg2 {
+                top {
+                  op: ADDM
+                  arg1 {
+                  }
+                  arg2 {
+                    unop {
+                      op: EXTCODESIZE
+                      operand {
+                      }
+                    }
+                  }
+                  arg3 {
+                    unop {
+                      op: EXTCODESIZE
+                      operand {
+                      }
+                    }
+                  }
+                }
+              }
+              arg3 {
+                unop {
+                  op: EXTCODESIZE
+                  operand {
+                  }
+                }
+              }
+            }
+          }
+          arg2 {
+            unop {
+              op: EXTCODESIZE
+              operand {
+                nop {
+                  op: PC
+                }
+              }
+            }
+          }
+          arg3 {
+            unop {
+              op: EXTCODESIZE
+              operand {
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  statements {
+  }
+  statements {
+  }
+}

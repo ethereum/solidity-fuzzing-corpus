@@ -1,0 +1,38 @@
+block {
+  statements {
+    storage_func {
+      loc {
+        binop {
+          op: LT
+          left {
+            unop {
+              op: ISZERO
+              operand {
+              }
+            }
+          }
+          right {
+            nop {
+              op: MSIZE
+            }
+          }
+        }
+      }
+      val {
+      }
+      st: SSTORE
+    }
+  }
+  statements {
+    storage_func {
+      loc {
+        cons {
+          intval: 0
+        }
+      }
+      val {
+      }
+      st: SSTORE
+    }
+  }
+}

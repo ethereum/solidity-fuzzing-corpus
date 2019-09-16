@@ -1,0 +1,148 @@
+block {
+  statements {
+  }
+  statements {
+  }
+  statements {
+    boundedforstmt {
+      for_body {
+        statements {
+          terminatestmt {
+            stop_invalid {
+              stmt: STOP
+            }
+          }
+        }
+      }
+    }
+  }
+  statements {
+  }
+  statements {
+    forstmt {
+      for_body {
+      }
+      for_init {
+      }
+      for_post {
+      }
+      for_cond {
+        binop {
+          op: MOD
+          left {
+            nop {
+              op: MSIZE
+            }
+          }
+          right {
+          }
+        }
+      }
+    }
+  }
+  statements {
+    storage_func {
+      loc {
+        nop {
+          op: MSIZE
+        }
+      }
+      val {
+      }
+      st: MSTORE
+    }
+  }
+  statements {
+    storage_func {
+      loc {
+        unop {
+          op: NOT
+          operand {
+            cons {
+              intval: 0
+            }
+          }
+        }
+      }
+      val {
+      }
+      st: MSTORE
+    }
+  }
+  statements {
+    forstmt {
+      for_body {
+      }
+      for_init {
+      }
+      for_post {
+      }
+      for_cond {
+        binop {
+          op: MOD
+          left {
+            nop {
+              op: MSIZE
+            }
+          }
+          right {
+          }
+        }
+      }
+    }
+  }
+  statements {
+    storage_func {
+      loc {
+        nop {
+          op: MSIZE
+        }
+      }
+      val {
+      }
+      st: MSTORE
+    }
+  }
+  statements {
+    boundedforstmt {
+      for_body {
+        statements {
+        }
+      }
+    }
+  }
+  statements {
+    storage_func {
+      loc {
+        unop {
+          op: NOT
+          operand {
+            cons {
+              intval: 0
+            }
+          }
+        }
+      }
+      val {
+      }
+      st: MSTORE
+    }
+  }
+  statements {
+  }
+  statements {
+    forstmt {
+      for_body {
+      }
+      for_init {
+      }
+      for_post {
+      }
+      for_cond {
+        nop {
+          op: GAS
+        }
+      }
+    }
+  }
+}

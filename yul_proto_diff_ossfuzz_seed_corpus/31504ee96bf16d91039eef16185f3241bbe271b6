@@ -1,0 +1,32 @@
+block {
+  statements {
+    ifstmt {
+      cond {
+        top {
+          op: ADDM
+          arg1 {
+            unop {
+              op: MLOAD
+              operand {
+              }
+            }
+          }
+          arg2 {
+          }
+          arg3 {
+            unop {
+              op: MLOAD
+              operand {
+                nop {
+                  op: MSIZE
+                }
+              }
+            }
+          }
+        }
+      }
+      if_body {
+      }
+    }
+  }
+}

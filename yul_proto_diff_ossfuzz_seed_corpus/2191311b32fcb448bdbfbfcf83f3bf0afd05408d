@@ -1,0 +1,207 @@
+block {
+  statements {
+  }
+  statements {
+  }
+  statements {
+  }
+  statements {
+    storage_func {
+      loc {
+        binop {
+          op: XOR
+          left {
+            nop {
+              op: CODESIZE
+            }
+          }
+          right {
+            binop {
+              op: XOR
+              left {
+                binop {
+                  op: XOR
+                  left {
+                    nop {
+                      op: CALLDATASIZE
+                    }
+                  }
+                  right {
+                    binop {
+                      op: XOR
+                      left {
+                        binop {
+                          op: XOR
+                          left {
+                            nop {
+                              op: CALLDATASIZE
+                            }
+                          }
+                          right {
+                          }
+                        }
+                      }
+                      right {
+                        nop {
+                          op: CALLDATASIZE
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+              right {
+                nop {
+                  op: CALLDATASIZE
+                }
+              }
+            }
+          }
+        }
+      }
+      val {
+      }
+      st: SSTORE
+    }
+  }
+  statements {
+  }
+  statements {
+  }
+  statements {
+  }
+  statements {
+    storage_func {
+      loc {
+        cons {
+          intval: 0
+        }
+      }
+      val {
+      }
+      st: SSTORE
+    }
+  }
+  statements {
+    extcode_copy {
+      addr {
+        binop {
+          op: DIV
+          left {
+            unop {
+              op: NOT
+              operand {
+              }
+            }
+          }
+          right {
+            unop {
+              op: NOT
+              operand {
+              }
+            }
+          }
+        }
+      }
+      target {
+      }
+      source {
+        unop {
+          op: NOT
+          operand {
+            cons {
+              intval: 16777216
+            }
+          }
+        }
+      }
+      size {
+      }
+    }
+  }
+  statements {
+    storage_func {
+      loc {
+        binop {
+          op: XOR
+          left {
+            nop {
+              op: GAS
+            }
+          }
+          right {
+            binop {
+              op: XOR
+              left {
+                binop {
+                  op: XOR
+                  left {
+                    nop {
+                      op: CALLDATASIZE
+                    }
+                  }
+                  right {
+                    binop {
+                      op: XOR
+                      left {
+                        binop {
+                          op: XOR
+                          left {
+                            nop {
+                              op: CALLDATASIZE
+                            }
+                          }
+                          right {
+                          }
+                        }
+                      }
+                      right {
+                        nop {
+                          op: CALLDATASIZE
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+              right {
+                nop {
+                  op: CALLDATASIZE
+                }
+              }
+            }
+          }
+        }
+      }
+      val {
+      }
+      st: SSTORE
+    }
+  }
+  statements {
+    storage_func {
+      loc {
+        cons {
+          intval: 0
+        }
+      }
+      val {
+      }
+      st: SSTORE
+    }
+  }
+  statements {
+  }
+  statements {
+    storage_func {
+      loc {
+        cons {
+          intval: 0
+        }
+      }
+      val {
+      }
+      st: SSTORE
+    }
+  }
+}

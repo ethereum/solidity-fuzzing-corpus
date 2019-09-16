@@ -1,0 +1,59 @@
+block {
+  statements {
+  }
+  statements {
+    storage_func {
+      loc {
+        nop {
+          op: PC
+        }
+      }
+      val {
+        binop {
+          op: DIV
+          left {
+          }
+          right {
+          }
+        }
+      }
+      st: SSTORE
+    }
+  }
+  statements {
+    extcode_copy {
+      addr {
+        binop {
+          op: DIV
+          left {
+          }
+          right {
+          }
+        }
+      }
+      target {
+      }
+      source {
+        binop {
+          op: OR
+          left {
+            binop {
+              op: DIV
+              left {
+              }
+              right {
+              }
+            }
+          }
+          right {
+          }
+        }
+      }
+      size {
+        nop {
+          op: PC
+        }
+      }
+    }
+  }
+}

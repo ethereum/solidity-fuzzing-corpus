@@ -1,0 +1,35 @@
+block {
+  statements {
+    ifstmt {
+      cond {
+        binop {
+          op: GT
+          left {
+            binop {
+              op: GT
+              left {
+                unop {
+                  op: ISZERO
+                  operand {
+                  }
+                }
+              }
+              right {
+                nop {
+                  op: MSIZE
+                }
+              }
+            }
+          }
+          right {
+            nop {
+              op: MSIZE
+            }
+          }
+        }
+      }
+      if_body {
+      }
+    }
+  }
+}

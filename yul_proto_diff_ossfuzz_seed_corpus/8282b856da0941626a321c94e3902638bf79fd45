@@ -1,0 +1,47 @@
+block {
+  statements {
+  }
+  statements {
+    extcode_copy {
+      addr {
+      }
+      target {
+        nop {
+          op: MSIZE
+        }
+      }
+      source {
+      }
+      size {
+        unop {
+          op: NOT
+          operand {
+            nop {
+              op: MSIZE
+            }
+          }
+        }
+      }
+    }
+  }
+  statements {
+    extcode_copy {
+      addr {
+      }
+      target {
+        unop {
+          op: SLOAD
+          operand {
+          }
+        }
+      }
+      source {
+      }
+      size {
+        nop {
+          op: MSIZE
+        }
+      }
+    }
+  }
+}

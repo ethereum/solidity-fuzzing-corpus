@@ -1,0 +1,86 @@
+block {
+  statements {
+    log_func {
+      pos {
+        unop {
+          op: MLOAD
+          operand {
+          }
+        }
+      }
+      size {
+        top {
+          op: ADDM
+          arg1 {
+          }
+          arg2 {
+            unop {
+              op: CALLDATALOAD
+              operand {
+              }
+            }
+          }
+          arg3 {
+            top {
+              op: MULM
+              arg1 {
+              }
+              arg2 {
+              }
+              arg3 {
+                unop {
+                  op: NOT
+                  operand {
+                    nop {
+                      op: CODESIZE
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+      num_topics: ONE
+      t1 {
+        top {
+          op: ADDM
+          arg1 {
+          }
+          arg2 {
+            unop {
+              op: BLOCKHASH
+              operand {
+              }
+            }
+          }
+          arg3 {
+            top {
+              op: MULM
+              arg1 {
+              }
+              arg2 {
+              }
+              arg3 {
+                unop {
+                  op: NOT
+                  operand {
+                    nop {
+                      op: CODESIZE
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+      t2 {
+      }
+      t3 {
+      }
+      t4 {
+      }
+    }
+  }
+}

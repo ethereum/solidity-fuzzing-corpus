@@ -1,0 +1,179 @@
+block {
+  statements {
+    extcode_copy {
+      addr {
+      }
+      target {
+        varref {
+          varnum: 0
+        }
+      }
+      source {
+      }
+      size {
+        unop {
+          op: BALANCE
+          operand {
+          }
+        }
+      }
+    }
+  }
+  statements {
+    extcode_copy {
+      addr {
+        unop {
+          op: BALANCE
+          operand {
+          }
+        }
+      }
+      target {
+      }
+      source {
+      }
+      size {
+        unop {
+          op: BALANCE
+          operand {
+            unop {
+              op: BALANCE
+              operand {
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  statements {
+    extcode_copy {
+      addr {
+      }
+      target {
+      }
+      source {
+      }
+      size {
+        unop {
+          op: BALANCE
+          operand {
+            unop {
+              op: BALANCE
+              operand {
+                unop {
+                  op: BALANCE
+                  operand {
+                    unop {
+                      op: BALANCE
+                      operand {
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  statements {
+    extcode_copy {
+      addr {
+      }
+      target {
+        unop {
+          op: BALANCE
+          operand {
+            unop {
+              op: BALANCE
+              operand {
+              }
+            }
+          }
+        }
+      }
+      source {
+        unop {
+          op: BALANCE
+          operand {
+            unop {
+              op: BALANCE
+              operand {
+                unop {
+                  op: BALANCE
+                  operand {
+                    unop {
+                      op: BALANCE
+                      operand {
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+      size {
+      }
+    }
+  }
+  statements {
+  }
+  statements {
+    ifstmt {
+      cond {
+        unop {
+          op: EXTCODESIZE
+          operand {
+          }
+        }
+      }
+      if_body {
+      }
+    }
+  }
+  statements {
+    extcode_copy {
+      addr {
+      }
+      target {
+        varref {
+          varnum: 0
+        }
+      }
+      source {
+      }
+      size {
+        unop {
+          op: BALANCE
+          operand {
+            unop {
+              op: BALANCE
+              operand {
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  statements {
+    forstmt {
+      for_body {
+      }
+      for_init {
+      }
+      for_post {
+        statements {
+        }
+        statements {
+        }
+      }
+      for_cond {
+      }
+    }
+  }
+}

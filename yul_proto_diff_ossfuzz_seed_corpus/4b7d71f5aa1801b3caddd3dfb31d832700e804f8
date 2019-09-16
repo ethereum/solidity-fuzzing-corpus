@@ -1,0 +1,116 @@
+block {
+  statements {
+    log_func {
+      pos {
+      }
+      size {
+        binop {
+          op: ADD
+          left {
+            binop {
+              op: ADD
+              left {
+                binop {
+                  op: ADD
+                  left {
+                  }
+                  right {
+                    nop {
+                      op: PC
+                    }
+                  }
+                }
+              }
+              right {
+                binop {
+                  op: ADD
+                  left {
+                    nop {
+                      op: PC
+                    }
+                  }
+                  right {
+                  }
+                }
+              }
+            }
+          }
+          right {
+            binop {
+              op: ADD
+              left {
+                binop {
+                  op: ADD
+                  left {
+                  }
+                  right {
+                    nop {
+                      op: PC
+                    }
+                  }
+                }
+              }
+              right {
+                binop {
+                  op: ADD
+                  left {
+                  }
+                  right {
+                    nop {
+                      op: PC
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+      num_topics: ONE
+      t1 {
+      }
+      t2 {
+      }
+      t3 {
+      }
+      t4 {
+      }
+    }
+  }
+  statements {
+    switchstmt {
+      switch_expr {
+        binop {
+          op: OR
+          left {
+          }
+          right {
+            nop {
+              op: PC
+            }
+          }
+        }
+      }
+      case_stmt {
+        case_lit {
+        }
+        case_block {
+        }
+      }
+      case_stmt {
+        case_lit {
+        }
+        case_block {
+        }
+      }
+      default_block {
+        statements {
+          boundedforstmt {
+            for_body {
+            }
+          }
+        }
+      }
+    }
+  }
+}

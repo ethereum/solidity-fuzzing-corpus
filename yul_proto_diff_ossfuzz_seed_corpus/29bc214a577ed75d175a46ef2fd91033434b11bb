@@ -1,0 +1,44 @@
+block {
+  statements {
+    log_func {
+      pos {
+      }
+      size {
+        binop {
+          op: SHR
+          left {
+            unop {
+              op: ISZERO
+              operand {
+              }
+            }
+          }
+          right {
+            binop {
+              op: SHR
+              left {
+                cons {
+                  intval: 0
+                }
+              }
+              right {
+                nop {
+                  op: PC
+                }
+              }
+            }
+          }
+        }
+      }
+      num_topics: ONE
+      t1 {
+      }
+      t2 {
+      }
+      t3 {
+      }
+      t4 {
+      }
+    }
+  }
+}

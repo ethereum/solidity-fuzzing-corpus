@@ -1,0 +1,56 @@
+block {
+  statements {
+    boundedforstmt {
+      for_body {
+        statements {
+          boundedforstmt {
+            for_body {
+              statements {
+                boundedforstmt {
+                  for_body {
+                    statements {
+                      storage_func {
+                        loc {
+                          nop {
+                            op: MSIZE
+                          }
+                        }
+                        val {
+                        }
+                        st: MSTORE
+                      }
+                    }
+                    statements {
+                      storage_func {
+                        loc {
+                          binop {
+                            op: OR
+                            left {
+                              nop {
+                                op: MSIZE
+                              }
+                            }
+                            right {
+                              cons {
+                                intval: 43
+                              }
+                            }
+                          }
+                        }
+                        val {
+                        }
+                        st: MSTORE
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  statements {
+  }
+}

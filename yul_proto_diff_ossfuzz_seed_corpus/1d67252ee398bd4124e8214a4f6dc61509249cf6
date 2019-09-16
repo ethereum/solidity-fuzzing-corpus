@@ -1,0 +1,153 @@
+block {
+  statements {
+    copy_func {
+      ct: CALLDATA
+      target {
+        binop {
+          op: SI
+          left {
+            binop {
+              op: EQ
+              left {
+              }
+              right {
+                binop {
+                  op: EQ
+                  left {
+                    binop {
+                      op: EQ
+                      left {
+                      }
+                      right {
+                      }
+                    }
+                  }
+                  right {
+                    varref {
+                      varnum: 0
+                    }
+                  }
+                }
+              }
+            }
+          }
+          right {
+          }
+        }
+      }
+      source {
+      }
+      size {
+      }
+    }
+  }
+  statements {
+    boundedforstmt {
+      for_body {
+        statements {
+          copy_func {
+            ct: CODE
+            target {
+              binop {
+                op: GT
+                left {
+                  binop {
+                    op: MOD
+                    left {
+                      varref {
+                        varnum: 538976288
+                      }
+                    }
+                    right {
+                      binop {
+                        op: OR
+                        left {
+                        }
+                        right {
+                          varref {
+                            varnum: 538976288
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+                right {
+                }
+              }
+            }
+            source {
+            }
+            size {
+            }
+          }
+        }
+      }
+    }
+  }
+  statements {
+    blockstmt {
+      statements {
+        storage_func {
+          loc {
+          }
+          val {
+            varref {
+              varnum: 538976288
+            }
+          }
+          st: MSTORE
+        }
+      }
+    }
+  }
+  statements {
+    ifstmt {
+      cond {
+        top {
+          op: ADDM
+          arg1 {
+          }
+          arg2 {
+          }
+          arg3 {
+            binop {
+              op: GT
+              left {
+              }
+              right {
+                varref {
+                  varnum: 538976288
+                }
+              }
+            }
+          }
+        }
+      }
+      if_body {
+        statements {
+          extcode_copy {
+            addr {
+            }
+            target {
+            }
+            source {
+              binop {
+                op: SI
+                left {
+                }
+                right {
+                  varref {
+                    varnum: 538976288
+                  }
+                }
+              }
+            }
+            size {
+            }
+          }
+        }
+      }
+    }
+  }
+}

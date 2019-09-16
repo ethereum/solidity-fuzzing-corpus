@@ -1,0 +1,38 @@
+block {
+  statements {
+    boundedforstmt {
+      for_body {
+        statements {
+          ifstmt {
+            cond {
+              binop {
+                op: SDIV
+                left {
+                  unop {
+                    op: NOT
+                    operand {
+                    }
+                  }
+                }
+                right {
+                  unop {
+                    op: NOT
+                    operand {
+                      nop {
+                        op: MSIZE
+                      }
+                    }
+                  }
+                }
+              }
+            }
+            if_body {
+            }
+          }
+        }
+      }
+    }
+  }
+  statements {
+  }
+}

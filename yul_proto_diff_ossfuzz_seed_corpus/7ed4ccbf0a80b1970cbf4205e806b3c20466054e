@@ -1,0 +1,32 @@
+block {
+  statements {
+    copy_func {
+      ct: CODE
+      target {
+        unop {
+          op: NOT
+          operand {
+            nop {
+              op: CALLDATASIZE
+            }
+          }
+        }
+      }
+      source {
+        unop {
+          op: NOT
+          operand {
+            nop {
+              op: CALLDATASIZE
+            }
+          }
+        }
+      }
+      size {
+        nop {
+          op: PC
+        }
+      }
+    }
+  }
+}

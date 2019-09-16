@@ -1,0 +1,129 @@
+block {
+  statements {
+    contstmt {
+    }
+  }
+  statements {
+  }
+  statements {
+    contstmt {
+    }
+  }
+  statements {
+    forstmt {
+      for_body {
+      }
+      for_init {
+      }
+      for_post {
+        statements {
+          storage_func {
+            loc {
+              top {
+                op: ADDM
+                arg1 {
+                }
+                arg2 {
+                  binop {
+                    op: SDIV
+                    left {
+                      unop {
+                        op: NOT
+                        operand {
+                        }
+                      }
+                    }
+                    right {
+                      unop {
+                        op: NOT
+                        operand {
+                          unop {
+                            op: EXTCODESIZE
+                            operand {
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+                arg3 {
+                }
+              }
+            }
+            val {
+            }
+            st: MSTORE
+          }
+        }
+        statements {
+          storage_func {
+            loc {
+              top {
+                op: ADDM
+                arg1 {
+                }
+                arg2 {
+                  binop {
+                    op: SDIV
+                    left {
+                      unop {
+                        op: NOT
+                        operand {
+                          binop {
+                            op: SDIV
+                            left {
+                              unop {
+                                op: NOT
+                                operand {
+                                }
+                              }
+                            }
+                            right {
+                              unop {
+                                op: NOT
+                                operand {
+                                  unop {
+                                    op: SLOAD
+                                    operand {
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                    right {
+                      unop {
+                        op: NOT
+                        operand {
+                          unop {
+                            op: SLOAD
+                            operand {
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+                arg3 {
+                }
+              }
+            }
+            val {
+            }
+            st: SSTORE
+          }
+        }
+      }
+      for_cond {
+        cons {
+          intval: 140737488355328
+        }
+      }
+    }
+  }
+}

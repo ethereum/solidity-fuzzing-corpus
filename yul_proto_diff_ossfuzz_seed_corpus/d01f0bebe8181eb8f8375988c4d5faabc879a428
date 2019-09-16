@@ -1,0 +1,103 @@
+block {
+  statements {
+    log_func {
+      pos {
+        binop {
+          op: LT
+          left {
+            binop {
+              op: OR
+              left {
+                unop {
+                  op: NOT
+                  operand {
+                  }
+                }
+              }
+              right {
+              }
+            }
+          }
+          right {
+            nop {
+              op: PC
+            }
+          }
+        }
+      }
+      size {
+      }
+      num_topics: ONE
+      t1 {
+        binop {
+          op: LT
+          left {
+            unop {
+              op: NOT
+              operand {
+                cons {
+                  intval: 0
+                }
+              }
+            }
+          }
+          right {
+            nop {
+              op: PC
+            }
+          }
+        }
+      }
+      t2 {
+      }
+      t3 {
+      }
+      t4 {
+      }
+    }
+  }
+  statements {
+    log_func {
+      pos {
+        nop {
+          op: PC
+        }
+      }
+      size {
+      }
+      num_topics: ONE
+      t1 {
+        binop {
+          op: LT
+          left {
+            binop {
+              op: OR
+              left {
+                unop {
+                  op: NOT
+                  operand {
+                  }
+                }
+              }
+              right {
+              }
+            }
+          }
+          right {
+            nop {
+              op: PC
+            }
+          }
+        }
+      }
+      t2 {
+      }
+      t3 {
+      }
+      t4 {
+      }
+    }
+  }
+  statements {
+  }
+}

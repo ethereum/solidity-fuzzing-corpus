@@ -1,0 +1,90 @@
+block {
+  statements {
+    boundedforstmt {
+      for_body {
+        statements {
+        }
+        statements {
+        }
+        statements {
+          boundedforstmt {
+            for_body {
+            }
+          }
+        }
+        statements {
+          log_func {
+            pos {
+              binop {
+                op: SUB
+                left {
+                  binop {
+                    op: SUB
+                    left {
+                      nop {
+                        op: MSIZE
+                      }
+                    }
+                    right {
+                    }
+                  }
+                }
+                right {
+                  binop {
+                    op: SMOD
+                    left {
+                      nop {
+                        op: MSIZE
+                      }
+                    }
+                    right {
+                    }
+                  }
+                }
+              }
+            }
+            size {
+            }
+            num_topics: ONE
+            t1 {
+              binop {
+                op: LT
+                left {
+                }
+                right {
+                  varref {
+                    varnum: 1073741824
+                  }
+                }
+              }
+            }
+            t2 {
+            }
+            t3 {
+            }
+            t4 {
+            }
+          }
+        }
+        statements {
+        }
+        statements {
+        }
+      }
+    }
+  }
+  statements {
+    funcdef {
+      num_input_params: 687866880
+      num_output_params: 0
+      block {
+      }
+    }
+  }
+  statements {
+    contstmt {
+    }
+  }
+  statements {
+  }
+}

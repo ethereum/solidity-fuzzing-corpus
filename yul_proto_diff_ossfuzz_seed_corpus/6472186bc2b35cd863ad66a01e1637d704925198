@@ -1,0 +1,145 @@
+block {
+  statements {
+    log_func {
+      pos {
+        binop {
+          op: OR
+          left {
+            binop {
+              op: OR
+              left {
+                cons {
+                  hexval: "\037\000\000\000\000\000\000\000"
+                }
+              }
+              right {
+              }
+            }
+          }
+          right {
+            nop {
+              op: PC
+            }
+          }
+        }
+      }
+      size {
+      }
+      num_topics: TWO
+      t1 {
+      }
+      t2 {
+      }
+      t3 {
+      }
+      t4 {
+      }
+    }
+  }
+  statements {
+    boundedforstmt {
+      for_body {
+        statements {
+          boundedforstmt {
+            for_body {
+              statements {
+                boundedforstmt {
+                  for_body {
+                    statements {
+                      blockstmt {
+                        statements {
+                          extcode_copy {
+                            addr {
+                            }
+                            target {
+                            }
+                            source {
+                            }
+                            size {
+                              binop {
+                                op: DIV
+                                left {
+                                  unop {
+                                    op: NOT
+                                    operand {
+                                      varref {
+                                        varnum: 67108865
+                                      }
+                                    }
+                                  }
+                                }
+                                right {
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  statements {
+    ifstmt {
+      cond {
+        top {
+          op: ADDM
+          arg1 {
+          }
+          arg2 {
+          }
+          arg3 {
+          }
+        }
+      }
+      if_body {
+        statements {
+          ifstmt {
+            cond {
+              unop {
+                op: NOT
+                operand {
+                  nop {
+                    op: PC
+                  }
+                }
+              }
+            }
+            if_body {
+              statements {
+                funcdef {
+                  num_input_params: 0
+                  num_output_params: 11008
+                  block {
+                  }
+                }
+              }
+            }
+          }
+        }
+        statements {
+          ifstmt {
+            cond {
+            }
+            if_body {
+              statements {
+                funcdef {
+                  num_input_params: 0
+                  num_output_params: 11008
+                  block {
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

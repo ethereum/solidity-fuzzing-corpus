@@ -1,0 +1,192 @@
+block {
+  statements {
+    ifstmt {
+      cond {
+        nop {
+          op: PC
+        }
+      }
+      if_body {
+        statements {
+          boundedforstmt {
+            for_body {
+            }
+          }
+        }
+      }
+    }
+  }
+  statements {
+    boundedforstmt {
+      for_body {
+        statements {
+          breakstmt {
+          }
+        }
+      }
+    }
+  }
+  statements {
+    boundedforstmt {
+      for_body {
+      }
+    }
+  }
+  statements {
+    boundedforstmt {
+      for_body {
+        statements {
+          boundedforstmt {
+            for_body {
+            }
+          }
+        }
+        statements {
+          boundedforstmt {
+            for_body {
+            }
+          }
+        }
+        statements {
+        }
+      }
+    }
+  }
+  statements {
+    log_func {
+      pos {
+        binop {
+          op: SUB
+          left {
+            unop {
+              op: ISZERO
+              operand {
+              }
+            }
+          }
+          right {
+            nop {
+              op: PC
+            }
+          }
+        }
+      }
+      size {
+        binop {
+          op: KECCAK
+          left {
+            binop {
+              op: SUB
+              left {
+                nop {
+                  op: PC
+                }
+              }
+              right {
+                binop {
+                  op: SUB
+                  left {
+                    binop {
+                      op: SUB
+                      left {
+                        nop {
+                          op: PC
+                        }
+                      }
+                      right {
+                      }
+                    }
+                  }
+                  right {
+                    nop {
+                      op: PC
+                    }
+                  }
+                }
+              }
+            }
+          }
+          right {
+            nop {
+              op: PC
+            }
+          }
+        }
+      }
+      num_topics: FOUR
+      t1 {
+        binop {
+          op: SUB
+          left {
+            nop {
+              op: PC
+            }
+          }
+          right {
+            binop {
+              op: SUB
+              left {
+                binop {
+                  op: SUB
+                  left {
+                    nop {
+                      op: PC
+                    }
+                  }
+                  right {
+                  }
+                }
+              }
+              right {
+                nop {
+                  op: PC
+                }
+              }
+            }
+          }
+        }
+      }
+      t2 {
+      }
+      t3 {
+        nop {
+          op: GAS
+        }
+      }
+      t4 {
+      }
+    }
+  }
+  statements {
+    ifstmt {
+      cond {
+      }
+      if_body {
+      }
+    }
+  }
+  statements {
+    boundedforstmt {
+      for_body {
+      }
+    }
+  }
+  statements {
+    boundedforstmt {
+      for_body {
+        statements {
+          breakstmt {
+          }
+        }
+      }
+    }
+  }
+  statements {
+    boundedforstmt {
+      for_body {
+      }
+    }
+  }
+  statements {
+  }
+}

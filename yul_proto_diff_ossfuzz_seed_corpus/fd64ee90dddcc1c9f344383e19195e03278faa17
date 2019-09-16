@@ -1,0 +1,69 @@
+block {
+  statements {
+  }
+  statements {
+  }
+  statements {
+  }
+  statements {
+  }
+  statements {
+    storage_func {
+      loc {
+      }
+      val {
+        varref {
+          varnum: 67108865
+        }
+      }
+      st: MSTORE
+    }
+  }
+  statements {
+    boundedforstmt {
+      for_body {
+        statements {
+          extcode_copy {
+            addr {
+            }
+            target {
+            }
+            source {
+            }
+            size {
+              binop {
+                op: DIV
+                left {
+                  unop {
+                    op: NOT
+                    operand {
+                      varref {
+                        varnum: 67108865
+                      }
+                    }
+                  }
+                }
+                right {
+                  nop {
+                    op: MSIZE
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  statements {
+    storage_func {
+      loc {
+      }
+      val {
+      }
+      st: MSTORE8
+    }
+  }
+  statements {
+  }
+}

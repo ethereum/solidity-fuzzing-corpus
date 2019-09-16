@@ -1,0 +1,55 @@
+block {
+  statements {
+    ifstmt {
+      cond {
+        binop {
+          op: OR
+          left {
+          }
+          right {
+          }
+        }
+      }
+      if_body {
+        statements {
+          storage_func {
+            loc {
+            }
+            val {
+            }
+            st: MSTORE
+          }
+        }
+        statements {
+          terminatestmt {
+            stop_invalid {
+              stmt: STOP
+            }
+          }
+        }
+      }
+    }
+  }
+  statements {
+  }
+  statements {
+    ifstmt {
+      cond {
+        nop {
+          op: GAS
+        }
+      }
+      if_body {
+        statements {
+          storage_func {
+            loc {
+            }
+            val {
+            }
+            st: MSTORE
+          }
+        }
+      }
+    }
+  }
+}

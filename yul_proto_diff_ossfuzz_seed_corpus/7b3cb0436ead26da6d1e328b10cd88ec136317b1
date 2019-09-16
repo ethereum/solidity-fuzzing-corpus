@@ -1,0 +1,75 @@
+block {
+  statements {
+  }
+  statements {
+  }
+  statements {
+  }
+  statements {
+    forstmt {
+      for_body {
+      }
+      for_init {
+        statements {
+          storage_func {
+            loc {
+            }
+            val {
+            }
+            st: MSTORE8
+          }
+        }
+      }
+      for_post {
+        statements {
+          storage_func {
+            loc {
+              top {
+                op: ADDM
+                arg1 {
+                }
+                arg2 {
+                }
+                arg3 {
+                }
+              }
+            }
+            val {
+              binop {
+                op: SDIV
+                left {
+                  binop {
+                    op: EXP
+                    left {
+                    }
+                    right {
+                    }
+                  }
+                }
+                right {
+                }
+              }
+            }
+            st: MSTORE
+          }
+        }
+      }
+      for_cond {
+        binop {
+          op: SDIV
+          left {
+            binop {
+              op: EXP
+              left {
+              }
+              right {
+              }
+            }
+          }
+          right {
+          }
+        }
+      }
+    }
+  }
+}

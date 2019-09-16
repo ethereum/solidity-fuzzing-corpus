@@ -1,0 +1,114 @@
+block {
+  statements {
+    copy_func {
+      ct: CODE
+      target {
+      }
+      source {
+      }
+      size {
+      }
+    }
+  }
+  statements {
+    forstmt {
+      for_body {
+        statements {
+          extcode_copy {
+            addr {
+            }
+            target {
+            }
+            source {
+              binop {
+                op: DIV
+                left {
+                  unop {
+                    op: NOT
+                    operand {
+                      varref {
+                        varnum: 67108865
+                      }
+                    }
+                  }
+                }
+                right {
+                  nop {
+                    op: MSIZE
+                  }
+                }
+              }
+            }
+            size {
+              binop {
+                op: DIV
+                left {
+                  unop {
+                    op: NOT
+                    operand {
+                    }
+                  }
+                }
+                right {
+                  nop {
+                    op: MSIZE
+                  }
+                }
+              }
+            }
+          }
+        }
+        statements {
+          storage_func {
+            loc {
+              cons {
+                strval: "\005@\000\000\000\000\000\000"
+              }
+            }
+            val {
+            }
+            st: MSTORE
+          }
+        }
+        statements {
+          extcode_copy {
+            addr {
+            }
+            target {
+              binop {
+                op: SI
+                left {
+                }
+                right {
+                }
+              }
+            }
+            source {
+            }
+            size {
+            }
+          }
+        }
+        statements {
+        }
+      }
+      for_init {
+      }
+      for_post {
+      }
+      for_cond {
+        varref {
+          varnum: 67108865
+        }
+      }
+    }
+  }
+  statements {
+  }
+  statements {
+    boundedforstmt {
+      for_body {
+      }
+    }
+  }
+}

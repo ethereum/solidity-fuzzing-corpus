@@ -1,0 +1,72 @@
+block {
+  statements {
+  }
+  statements {
+    copy_func {
+      ct: CODE
+      target {
+        binop {
+          op: AND
+          left {
+            binop {
+              op: AND
+              left {
+                binop {
+                  op: SHR
+                  left {
+                  }
+                  right {
+                    binop {
+                      op: SI
+                      left {
+                        nop {
+                          op: PC
+                        }
+                      }
+                      right {
+                      }
+                    }
+                  }
+                }
+              }
+              right {
+                unop {
+                  op: NOT
+                  operand {
+                    cons {
+                      intval: 0
+                    }
+                  }
+                }
+              }
+            }
+          }
+          right {
+          }
+        }
+      }
+      source {
+      }
+      size {
+        binop {
+          op: SI
+          left {
+            nop {
+              op: PC
+            }
+          }
+          right {
+          }
+        }
+      }
+    }
+  }
+  statements {
+    funcdef {
+      num_input_params: 0
+      num_output_params: 8257536
+      block {
+      }
+    }
+  }
+}

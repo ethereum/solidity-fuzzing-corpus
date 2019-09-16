@@ -1,0 +1,159 @@
+block {
+  statements {
+    ifstmt {
+      cond {
+        nop {
+          op: GAS
+        }
+      }
+      if_body {
+        statements {
+          storage_func {
+            loc {
+            }
+            val {
+              cons {
+                intval: 0
+              }
+            }
+            st: MSTORE
+          }
+        }
+      }
+    }
+  }
+  statements {
+    boundedforstmt {
+      for_body {
+        statements {
+          ifstmt {
+            cond {
+              create {
+                createty: CREATE
+                wei {
+                }
+                position {
+                }
+                size {
+                }
+                value {
+                  nop {
+                    op: COINBASE
+                  }
+                }
+              }
+            }
+            if_body {
+            }
+          }
+        }
+      }
+    }
+  }
+  statements {
+    storage_func {
+      loc {
+        binop {
+          op: SI
+          left {
+            cons {
+              strval: ":"
+            }
+          }
+          right {
+          }
+        }
+      }
+      val {
+        nop {
+          op: PC
+        }
+      }
+      st: MSTORE
+    }
+  }
+  statements {
+  }
+  statements {
+  }
+  statements {
+  }
+  statements {
+  }
+  statements {
+    boundedforstmt {
+      for_body {
+        statements {
+          ifstmt {
+            cond {
+              create {
+                createty: CREATE
+                wei {
+                }
+                position {
+                }
+                size {
+                }
+                value {
+                  nop {
+                    op: COINBASE
+                  }
+                }
+              }
+            }
+            if_body {
+            }
+          }
+        }
+      }
+    }
+  }
+  statements {
+    storage_func {
+      loc {
+        nop {
+          op: GAS
+        }
+      }
+      val {
+        nop {
+          op: PC
+        }
+      }
+      st: MSTORE
+    }
+  }
+  statements {
+    ifstmt {
+      cond {
+        cons {
+          strval: "uuuuu"
+        }
+      }
+      if_body {
+        statements {
+          ifstmt {
+            cond {
+              create {
+                createty: CREATE
+                wei {
+                }
+                position {
+                }
+                size {
+                }
+                value {
+                  nop {
+                    op: COINBASE
+                  }
+                }
+              }
+            }
+            if_body {
+            }
+          }
+        }
+      }
+    }
+  }
+}

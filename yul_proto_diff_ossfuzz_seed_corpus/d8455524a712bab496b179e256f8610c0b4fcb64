@@ -1,0 +1,59 @@
+block {
+  statements {
+    log_func {
+      pos {
+        binop {
+          op: DIV
+          left {
+            nop {
+              op: PC
+            }
+          }
+          right {
+            binop {
+              op: DIV
+              left {
+                nop {
+                  op: PC
+                }
+              }
+              right {
+                cons {
+                  intval: 0
+                }
+              }
+            }
+          }
+        }
+      }
+      size {
+        binop {
+          op: DIV
+          left {
+            nop {
+              op: PC
+            }
+          }
+          right {
+            binop {
+              op: EQ
+              left {
+              }
+              right {
+              }
+            }
+          }
+        }
+      }
+      num_topics: ONE
+      t1 {
+      }
+      t2 {
+      }
+      t3 {
+      }
+      t4 {
+      }
+    }
+  }
+}

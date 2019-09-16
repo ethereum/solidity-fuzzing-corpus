@@ -1,0 +1,31 @@
+block {
+  statements {
+    storage_func {
+      loc {
+        binop {
+          op: XOR
+          left {
+            nop {
+              op: TIMESTAMP
+            }
+          }
+          right {
+            binop {
+              op: XOR
+              left {
+                nop {
+                  op: TIMESTAMP
+                }
+              }
+              right {
+              }
+            }
+          }
+        }
+      }
+      val {
+      }
+      st: SSTORE
+    }
+  }
+}

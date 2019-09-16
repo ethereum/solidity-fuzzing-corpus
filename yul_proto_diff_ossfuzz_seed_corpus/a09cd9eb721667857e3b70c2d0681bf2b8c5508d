@@ -1,0 +1,44 @@
+block {
+  statements {
+    decl {
+      expr {
+        binop {
+          op: SDIV
+          left {
+            unop {
+              op: EXTCODEHASH
+              operand {
+                binop {
+                  op: SDIV
+                  left {
+                    unop {
+                      op: EXTCODEHASH
+                      operand {
+                      }
+                    }
+                  }
+                  right {
+                  }
+                }
+              }
+            }
+          }
+          right {
+            binop {
+              op: SDIV
+              left {
+                unop {
+                  op: EXTCODEHASH
+                  operand {
+                  }
+                }
+              }
+              right {
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

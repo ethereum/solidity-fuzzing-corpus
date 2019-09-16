@@ -1,0 +1,135 @@
+block {
+  statements {
+  }
+  statements {
+    forstmt {
+      for_body {
+      }
+      for_init {
+      }
+      for_post {
+        statements {
+          storage_func {
+            loc {
+              lowcall {
+                callty: CALL
+                gas {
+                }
+                addr {
+                }
+                wei {
+                }
+                in {
+                  unop {
+                    op: NOT
+                    operand {
+                    }
+                  }
+                }
+                insize {
+                }
+                out {
+                }
+                outsize {
+                }
+              }
+            }
+            val {
+            }
+            st: MSTORE
+          }
+        }
+      }
+      for_cond {
+        top {
+          op: MULM
+          arg1 {
+            unop {
+              op: NOT
+              operand {
+                varref {
+                  varnum: 2112032
+                }
+              }
+            }
+          }
+          arg2 {
+            binop {
+              op: OR
+              left {
+                unop {
+                  op: NOT
+                  operand {
+                    varref {
+                      varnum: 540701472
+                    }
+                  }
+                }
+              }
+              right {
+              }
+            }
+          }
+          arg3 {
+            binop {
+              op: SI
+              left {
+                unop {
+                  op: NOT
+                  operand {
+                  }
+                }
+              }
+              right {
+                top {
+                  op: MULM
+                  arg1 {
+                    unop {
+                      op: NOT
+                      operand {
+                        varref {
+                          varnum: 2112032
+                        }
+                      }
+                    }
+                  }
+                  arg2 {
+                    create {
+                      createty: CREATE
+                      wei {
+                      }
+                      position {
+                        varref {
+                          varnum: 2112032
+                        }
+                      }
+                      size {
+                      }
+                      value {
+                      }
+                    }
+                  }
+                  arg3 {
+                    binop {
+                      op: OR
+                      left {
+                        cons {
+                          strval: "QQQQQQQQQQQQQQQQQQQQQQQQ"
+                        }
+                      }
+                      right {
+                        varref {
+                          varnum: 2112032
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

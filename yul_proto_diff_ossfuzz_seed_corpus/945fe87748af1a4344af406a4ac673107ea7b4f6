@@ -1,0 +1,184 @@
+block {
+  statements {
+    forstmt {
+      for_body {
+      }
+      for_init {
+      }
+      for_post {
+      }
+      for_cond {
+        binop {
+          op: SGT
+          left {
+            nop {
+              op: CALLER
+            }
+          }
+          right {
+            nop {
+              op: CALLER
+            }
+          }
+        }
+      }
+    }
+  }
+  statements {
+  }
+  statements {
+    boundedforstmt {
+      for_body {
+        statements {
+          forstmt {
+            for_body {
+            }
+            for_init {
+            }
+            for_post {
+            }
+            for_cond {
+              binop {
+                op: SHL
+                left {
+                }
+                right {
+                  binop {
+                    op: SHR
+                    left {
+                      binop {
+                        op: SGT
+                        left {
+                          nop {
+                            op: CODESIZE
+                          }
+                        }
+                        right {
+                          nop {
+                            op: CODESIZE
+                          }
+                        }
+                      }
+                    }
+                    right {
+                      binop {
+                        op: SHL
+                        left {
+                          cons {
+                            hexval: "3[v\006]"
+                          }
+                        }
+                        right {
+                          binop {
+                            op: SHR
+                            left {
+                            }
+                            right {
+                              nop {
+                                op: MSIZE
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  statements {
+    forstmt {
+      for_body {
+      }
+      for_init {
+      }
+      for_post {
+      }
+      for_cond {
+        binop {
+          op: SGT
+          left {
+            nop {
+              op: CODESIZE
+            }
+          }
+          right {
+            nop {
+              op: CODESIZE
+            }
+          }
+        }
+      }
+    }
+  }
+  statements {
+    forstmt {
+      for_body {
+      }
+      for_init {
+      }
+      for_post {
+      }
+      for_cond {
+        binop {
+          op: SHL
+          left {
+            cons {
+              hexval: "3[v\006]"
+            }
+          }
+          right {
+            binop {
+              op: SHR
+              left {
+              }
+              right {
+                nop {
+                  op: MSIZE
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  statements {
+  }
+  statements {
+  }
+  statements {
+    contstmt {
+    }
+  }
+  statements {
+    forstmt {
+      for_body {
+      }
+      for_init {
+      }
+      for_post {
+      }
+      for_cond {
+        binop {
+          op: SGT
+          left {
+            nop {
+              op: CODESIZE
+            }
+          }
+          right {
+            nop {
+              op: CODESIZE
+            }
+          }
+        }
+      }
+    }
+  }
+}

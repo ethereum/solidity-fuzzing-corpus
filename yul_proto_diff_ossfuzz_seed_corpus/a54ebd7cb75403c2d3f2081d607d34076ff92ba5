@@ -1,0 +1,87 @@
+block {
+  statements {
+    breakstmt {
+    }
+  }
+  statements {
+    forstmt {
+      for_body {
+      }
+      for_init {
+      }
+      for_post {
+        statements {
+          forstmt {
+            for_body {
+            }
+            for_init {
+              statements {
+                forstmt {
+                  for_body {
+                  }
+                  for_init {
+                  }
+                  for_post {
+                  }
+                  for_cond {
+                    binop {
+                      op: DIV
+                      left {
+                        binop {
+                          op: KECCAK
+                          left {
+                            nop {
+                              op: MSIZE
+                            }
+                          }
+                          right {
+                          }
+                        }
+                      }
+                      right {
+                        varref {
+                          varnum: -64257
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+            for_post {
+              statements {
+                terminatestmt {
+                  ret_rev {
+                    stmt: REVERT
+                    pos {
+                    }
+                    size {
+                    }
+                  }
+                }
+              }
+            }
+            for_cond {
+              binop {
+                op: DIV
+                left {
+                  binop {
+                    op: LT
+                    left {
+                    }
+                    right {
+                    }
+                  }
+                }
+                right {
+                }
+              }
+            }
+          }
+        }
+      }
+      for_cond {
+      }
+    }
+  }
+}

@@ -1,0 +1,68 @@
+block {
+  statements {
+    boundedforstmt {
+      for_body {
+      }
+    }
+  }
+  statements {
+    boundedforstmt {
+      for_body {
+        statements {
+          ifstmt {
+            cond {
+              binop {
+                op: SDIV
+                left {
+                  unop {
+                    op: EXTCODEHASH
+                    operand {
+                    }
+                  }
+                }
+                right {
+                  cons {
+                    hexval: "\306"
+                  }
+                }
+              }
+            }
+            if_body {
+              statements {
+                ifstmt {
+                  cond {
+                    binop {
+                      op: SDIV
+                      left {
+                        unop {
+                          op: EXTCODEHASH
+                          operand {
+                          }
+                        }
+                      }
+                      right {
+                        cons {
+                          hexval: "\306"
+                        }
+                      }
+                    }
+                  }
+                  if_body {
+                    statements {
+                      contstmt {
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  statements {
+    contstmt {
+    }
+  }
+}

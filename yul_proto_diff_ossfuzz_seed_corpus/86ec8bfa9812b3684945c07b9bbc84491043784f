@@ -1,0 +1,128 @@
+block {
+  statements {
+  }
+  statements {
+    storage_func {
+      loc {
+        binop {
+          op: ADD
+          left {
+            nop {
+              op: CALLDATASIZE
+            }
+          }
+          right {
+          }
+        }
+      }
+      val {
+      }
+      st: MSTORE
+    }
+  }
+  statements {
+  }
+  statements {
+  }
+  statements {
+    forstmt {
+      for_body {
+      }
+      for_init {
+      }
+      for_post {
+      }
+      for_cond {
+        binop {
+          op: SHR
+          left {
+          }
+          right {
+            binop {
+              op: SHL
+              left {
+                cons {
+                  hexval: "3v"
+                }
+              }
+              right {
+                binop {
+                  op: SHR
+                  left {
+                  }
+                  right {
+                    binop {
+                      op: SHL
+                      left {
+                        cons {
+                          hexval: "3v"
+                        }
+                      }
+                      right {
+                        binop {
+                          op: SHR
+                          left {
+                            cons {
+                              hexval: "3v\006\353"
+                            }
+                          }
+                          right {
+                            binop {
+                              op: SHL
+                              left {
+                                cons {
+                                  hexval: "3v"
+                                }
+                              }
+                              right {
+                                binop {
+                                  op: SHL
+                                  left {
+                                  }
+                                  right {
+                                    nop {
+                                      op: MSIZE
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  statements {
+    storage_func {
+      loc {
+        binop {
+          op: ADD
+          left {
+            nop {
+              op: MSIZE
+            }
+          }
+          right {
+            cons {
+              intval: 8
+            }
+          }
+        }
+      }
+      val {
+        cons {
+          intval: 8
+        }
+      }
+      st: MSTORE
+    }
+  }
+}

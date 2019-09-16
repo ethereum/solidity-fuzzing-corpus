@@ -1,0 +1,105 @@
+block {
+  statements {
+    storage_func {
+      loc {
+        cons {
+          intval: 0
+        }
+      }
+      val {
+      }
+      st: SSTORE
+    }
+  }
+  statements {
+    storage_func {
+      loc {
+        binop {
+          op: XOR
+          left {
+            nop {
+              op: PC
+            }
+          }
+          right {
+            binop {
+              op: XOR
+              left {
+                binop {
+                  op: XOR
+                  left {
+                    nop {
+                      op: CALLDATASIZE
+                    }
+                  }
+                  right {
+                    binop {
+                      op: XOR
+                      left {
+                        binop {
+                          op: XOR
+                          left {
+                            nop {
+                              op: CALLDATASIZE
+                            }
+                          }
+                          right {
+                            binop {
+                              op: XOR
+                              left {
+                                binop {
+                                  op: XOR
+                                  left {
+                                    nop {
+                                      op: CALLDATASIZE
+                                    }
+                                  }
+                                  right {
+                                  }
+                                }
+                              }
+                              right {
+                                nop {
+                                  op: CALLDATASIZE
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                      right {
+                        nop {
+                          op: CALLDATASIZE
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+              right {
+                nop {
+                  op: CALLDATASIZE
+                }
+              }
+            }
+          }
+        }
+      }
+      val {
+      }
+      st: SSTORE
+    }
+  }
+  statements {
+    storage_func {
+      loc {
+        cons {
+          intval: 0
+        }
+      }
+      val {
+      }
+      st: SSTORE
+    }
+  }
+}

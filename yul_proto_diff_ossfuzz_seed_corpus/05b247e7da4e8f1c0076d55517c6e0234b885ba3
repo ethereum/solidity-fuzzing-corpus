@@ -1,0 +1,95 @@
+block {
+  statements {
+    storage_func {
+      loc {
+        cons {
+          intval: 0
+        }
+      }
+      val {
+      }
+      st: SSTORE
+    }
+  }
+  statements {
+    storage_func {
+      loc {
+        binop {
+          op: XOR
+          left {
+            binop {
+              op: XOR
+              left {
+                binop {
+                  op: XOR
+                  left {
+                    binop {
+                      op: XOR
+                      left {
+                        binop {
+                          op: XOR
+                          left {
+                            nop {
+                              op: CALLDATASIZE
+                            }
+                          }
+                          right {
+                          }
+                        }
+                      }
+                      right {
+                        binop {
+                          op: XOR
+                          left {
+                            nop {
+                              op: CODESIZE
+                            }
+                          }
+                          right {
+                          }
+                        }
+                      }
+                    }
+                  }
+                  right {
+                    binop {
+                      op: XOR
+                      left {
+                        nop {
+                          op: CODESIZE
+                        }
+                      }
+                      right {
+                      }
+                    }
+                  }
+                }
+              }
+              right {
+                nop {
+                  op: CALLDATASIZE
+                }
+              }
+            }
+          }
+          right {
+            nop {
+              op: MSIZE
+            }
+          }
+        }
+      }
+      val {
+      }
+      st: SSTORE
+    }
+  }
+  statements {
+    boundedforstmt {
+      for_body {
+        statements {
+        }
+      }
+    }
+  }
+}

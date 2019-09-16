@@ -1,0 +1,142 @@
+block {
+  statements {
+  }
+  statements {
+    copy_func {
+      ct: CODE
+      target {
+        binop {
+          op: SDIV
+          left {
+            binop {
+              op: SDIV
+              left {
+              }
+              right {
+                binop {
+                  op: XOR
+                  left {
+                  }
+                  right {
+                  }
+                }
+              }
+            }
+          }
+          right {
+            cons {
+              hexval: "\001\000\000\000"
+            }
+          }
+        }
+      }
+      source {
+      }
+      size {
+      }
+    }
+  }
+  statements {
+    copy_func {
+      ct: CODE
+      target {
+        binop {
+          op: LT
+          left {
+            binop {
+              op: EQ
+              left {
+              }
+              right {
+                binop {
+                  op: LT
+                  left {
+                  }
+                  right {
+                    cons {
+                      hexval: "="
+                    }
+                  }
+                }
+              }
+            }
+          }
+          right {
+          }
+        }
+      }
+      source {
+      }
+      size {
+        varref {
+          varnum: 544940064
+        }
+      }
+    }
+  }
+  statements {
+  }
+  statements {
+    copy_func {
+      ct: CODE
+      target {
+        binop {
+          op: LT
+          left {
+          }
+          right {
+            varref {
+              varnum: 544940064
+            }
+          }
+        }
+      }
+      source {
+        varref {
+          varnum: 544940064
+        }
+      }
+      size {
+      }
+    }
+  }
+  statements {
+    copy_func {
+      ct: CODE
+      target {
+        binop {
+          op: SDIV
+          left {
+            binop {
+              op: LT
+              left {
+              }
+              right {
+                varref {
+                  varnum: 544940064
+                }
+              }
+            }
+          }
+          right {
+          }
+        }
+      }
+      source {
+        varref {
+          varnum: 544940064
+        }
+      }
+      size {
+      }
+    }
+  }
+  statements {
+    funcdef {
+      num_input_params: 0
+      num_output_params: 1
+      block {
+      }
+    }
+  }
+}

@@ -1,0 +1,80 @@
+block {
+  statements {
+    boundedforstmt {
+      for_body {
+      }
+    }
+  }
+  statements {
+    boundedforstmt {
+      for_body {
+        statements {
+          forstmt {
+            for_body {
+            }
+            for_init {
+            }
+            for_post {
+            }
+            for_cond {
+              binop {
+                op: LT
+                left {
+                }
+                right {
+                  binop {
+                    op: SHR
+                    left {
+                    }
+                    right {
+                      binop {
+                        op: LT
+                        left {
+                        }
+                        right {
+                          nop {
+                            op: PC
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  statements {
+    log_func {
+      pos {
+        binop {
+          op: LT
+          left {
+          }
+          right {
+          }
+        }
+      }
+      size {
+        nop {
+          op: PC
+        }
+      }
+      num_topics: ONE
+      t1 {
+        nop {
+          op: PC
+        }
+      }
+      t2 {
+      }
+      t3 {
+      }
+      t4 {
+      }
+    }
+  }
+}

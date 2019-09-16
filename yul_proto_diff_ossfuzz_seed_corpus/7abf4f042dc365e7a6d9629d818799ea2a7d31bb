@@ -1,0 +1,82 @@
+block {
+  statements {
+    extcode_copy {
+      addr {
+      }
+      target {
+      }
+      source {
+        binop {
+          op: DIV
+          left {
+            unop {
+              op: EXTCODESIZE
+              operand {
+              }
+            }
+          }
+          right {
+            unop {
+              op: ISZERO
+              operand {
+              }
+            }
+          }
+        }
+      }
+      size {
+      }
+    }
+  }
+  statements {
+    forstmt {
+      for_body {
+        statements {
+          extcode_copy {
+            addr {
+              unop {
+                op: EXTCODESIZE
+                operand {
+                }
+              }
+            }
+            target {
+            }
+            source {
+            }
+            size {
+            }
+          }
+        }
+        statements {
+          extcode_copy {
+            addr {
+              unop {
+                op: EXTCODESIZE
+                operand {
+                }
+              }
+            }
+            target {
+            }
+            source {
+            }
+            size {
+              unop {
+                op: EXTCODESIZE
+                operand {
+                }
+              }
+            }
+          }
+        }
+      }
+      for_init {
+      }
+      for_post {
+      }
+      for_cond {
+      }
+    }
+  }
+}

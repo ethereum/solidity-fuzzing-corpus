@@ -1,0 +1,87 @@
+block {
+  statements {
+  }
+  statements {
+    contstmt {
+    }
+  }
+  statements {
+  }
+  statements {
+    decl {
+      expr {
+        binop {
+          op: MOD
+          left {
+            top {
+              op: ADDM
+              arg1 {
+              }
+              arg2 {
+                nop {
+                  op: ADDRESS
+                }
+              }
+              arg3 {
+              }
+            }
+          }
+          right {
+          }
+        }
+      }
+    }
+  }
+  statements {
+    contstmt {
+    }
+  }
+  statements {
+  }
+  statements {
+    boundedforstmt {
+      for_body {
+        statements {
+          extcode_copy {
+            addr {
+            }
+            target {
+              binop {
+                op: GT
+                left {
+                  unop {
+                    op: NOT
+                    operand {
+                      top {
+                        op: ADDM
+                        arg1 {
+                        }
+                        arg2 {
+                          unop {
+                            op: BLOCKHASH
+                            operand {
+                            }
+                          }
+                        }
+                        arg3 {
+                        }
+                      }
+                    }
+                  }
+                }
+                right {
+                }
+              }
+            }
+            source {
+            }
+            size {
+            }
+          }
+        }
+      }
+    }
+  }
+  statements {
+  }
+}

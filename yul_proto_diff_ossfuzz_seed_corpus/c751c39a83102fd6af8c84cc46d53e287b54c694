@@ -1,0 +1,81 @@
+block {
+  statements {
+    storage_func {
+      loc {
+      }
+      val {
+        unop {
+          op: CALLDATALOAD
+          operand {
+          }
+        }
+      }
+      st: MSTORE
+    }
+  }
+  statements {
+    blockstmt {
+      statements {
+        boundedforstmt {
+          for_body {
+            statements {
+              blockstmt {
+                statements {
+                  copy_func {
+                    ct: RETURNDATA
+                    target {
+                    }
+                    source {
+                    }
+                    size {
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+      statements {
+      }
+    }
+  }
+  statements {
+    blockstmt {
+      statements {
+        switchstmt {
+          switch_expr {
+            nop {
+              op: GAS
+            }
+          }
+        }
+      }
+      statements {
+        copy_func {
+          ct: RETURNDATA
+          target {
+          }
+          source {
+          }
+          size {
+          }
+        }
+      }
+    }
+  }
+  statements {
+    copy_func {
+      ct: CODE
+      target {
+      }
+      source {
+      }
+      size {
+        nop {
+          op: GAS
+        }
+      }
+    }
+  }
+}

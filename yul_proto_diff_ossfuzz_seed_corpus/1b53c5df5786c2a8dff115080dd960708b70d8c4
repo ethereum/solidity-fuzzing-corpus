@@ -1,0 +1,80 @@
+block {
+  statements {
+    forstmt {
+      for_body {
+        statements {
+          ifstmt {
+            cond {
+              nop {
+                op: PC
+              }
+            }
+            if_body {
+              statements {
+                breakstmt {
+                }
+              }
+            }
+          }
+        }
+        statements {
+          breakstmt {
+          }
+        }
+      }
+      for_init {
+      }
+      for_post {
+      }
+      for_cond {
+      }
+    }
+  }
+  statements {
+  }
+  statements {
+  }
+  statements {
+  }
+  statements {
+  }
+  statements {
+    boundedforstmt {
+      for_body {
+      }
+    }
+  }
+  statements {
+    forstmt {
+      for_body {
+        statements {
+          breakstmt {
+          }
+        }
+      }
+      for_init {
+      }
+      for_post {
+      }
+      for_cond {
+        binop {
+          op: GT
+          left {
+          }
+          right {
+            binop {
+              op: GT
+              left {
+              }
+              right {
+                nop {
+                  op: CODESIZE
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

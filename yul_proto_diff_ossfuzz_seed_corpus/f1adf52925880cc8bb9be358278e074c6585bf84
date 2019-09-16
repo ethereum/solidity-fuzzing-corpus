@@ -1,0 +1,128 @@
+block {
+  statements {
+  }
+  statements {
+    boundedforstmt {
+      for_body {
+        statements {
+          boundedforstmt {
+            for_body {
+              statements {
+                storage_func {
+                  loc {
+                    nop {
+                      op: PC
+                    }
+                  }
+                  val {
+                    cons {
+                      strval: "\000\000\000\000\000\000\000\000\000\000\000\000"
+                    }
+                  }
+                  st: MSTORE
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  statements {
+  }
+  statements {
+  }
+  statements {
+  }
+  statements {
+    forstmt {
+      for_body {
+        statements {
+          storage_func {
+            loc {
+              top {
+                op: ADDM
+                arg1 {
+                }
+                arg2 {
+                  binop {
+                    op: OR
+                    left {
+                    }
+                    right {
+                      binop {
+                        op: OR
+                        left {
+                          top {
+                            op: MULM
+                            arg1 {
+                              nop {
+                                op: PC
+                              }
+                            }
+                            arg2 {
+                            }
+                            arg3 {
+                            }
+                          }
+                        }
+                        right {
+                        }
+                      }
+                    }
+                  }
+                }
+                arg3 {
+                }
+              }
+            }
+            val {
+              top {
+                op: MULM
+                arg1 {
+                  nop {
+                    op: PC
+                  }
+                }
+                arg2 {
+                }
+                arg3 {
+                }
+              }
+            }
+            st: MSTORE
+          }
+        }
+      }
+      for_init {
+      }
+      for_post {
+        statements {
+          storage_func {
+            loc {
+            }
+            val {
+              top {
+                op: MULM
+                arg1 {
+                  nop {
+                    op: PC
+                  }
+                }
+                arg2 {
+                }
+                arg3 {
+                }
+              }
+            }
+            st: MSTORE
+          }
+        }
+      }
+      for_cond {
+      }
+    }
+  }
+  statements {
+  }
+}

@@ -1,0 +1,91 @@
+block {
+  statements {
+    boundedforstmt {
+      for_body {
+      }
+    }
+  }
+  statements {
+    extcode_copy {
+      addr {
+      }
+      target {
+      }
+      source {
+        binop {
+          op: EQ
+          left {
+            binop {
+              op: EQ
+              left {
+              }
+              right {
+                cons {
+                  hexval: "\n\000"
+                }
+              }
+            }
+          }
+          right {
+            cons {
+              strval: "%"
+            }
+          }
+        }
+      }
+      size {
+        binop {
+          op: EQ
+          left {
+            binop {
+              op: MOD
+              left {
+                nop {
+                  op: CODESIZE
+                }
+              }
+              right {
+              }
+            }
+          }
+          right {
+            cons {
+              strval: "%"
+            }
+          }
+        }
+      }
+    }
+  }
+  statements {
+  }
+  statements {
+    forstmt {
+      for_body {
+      }
+      for_init {
+      }
+      for_post {
+      }
+      for_cond {
+        binop {
+          op: SHR
+          left {
+          }
+          right {
+            binop {
+              op: MOD
+              left {
+                nop {
+                  op: ORIGIN
+                }
+              }
+              right {
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

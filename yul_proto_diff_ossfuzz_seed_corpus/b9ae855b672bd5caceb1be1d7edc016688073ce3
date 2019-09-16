@@ -1,0 +1,45 @@
+block {
+  statements {
+    switchstmt {
+      switch_expr {
+        binop {
+          op: SI
+          left {
+            unop {
+              op: BLOCKHASH
+              operand {
+              }
+            }
+          }
+          right {
+          }
+        }
+      }
+      case_stmt {
+        case_lit {
+        }
+        case_block {
+        }
+      }
+      default_block {
+        statements {
+          extcode_copy {
+            addr {
+              unop {
+                op: NOT
+                operand {
+                }
+              }
+            }
+            target {
+            }
+            source {
+            }
+            size {
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,55 @@
+block {
+  statements {
+    log_func {
+      pos {
+        binop {
+          op: EQ
+          left {
+            cons {
+              hexval: "!\000\000\000\000\000\000\000"
+            }
+          }
+          right {
+            nop {
+              op: PC
+            }
+          }
+        }
+      }
+      size {
+        nop {
+          op: PC
+        }
+      }
+      num_topics: ONE
+      t1 {
+        binop {
+          op: ADD
+          left {
+            binop {
+              op: EXP
+              left {
+              }
+              right {
+              }
+            }
+          }
+          right {
+          }
+        }
+      }
+      t2 {
+        nop {
+          op: PC
+        }
+      }
+      t3 {
+      }
+      t4 {
+        cons {
+          hexval: "CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC"
+        }
+      }
+    }
+  }
+}

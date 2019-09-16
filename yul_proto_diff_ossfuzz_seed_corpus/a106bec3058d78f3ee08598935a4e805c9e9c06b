@@ -1,0 +1,147 @@
+block {
+  statements {
+    forstmt {
+      for_body {
+      }
+      for_init {
+        statements {
+        }
+        statements {
+          copy_func {
+            ct: CALLDATA
+            target {
+            }
+            source {
+            }
+            size {
+              nop {
+                op: DIFFICULTY
+              }
+            }
+          }
+        }
+        statements {
+        }
+        statements {
+          assignment {
+            ref_id {
+              varnum: 0
+            }
+            expr {
+              nop {
+                op: GASPRICE
+              }
+            }
+          }
+        }
+        statements {
+          funcdef {
+            num_input_params: 0
+            num_output_params: 0
+            block {
+            }
+          }
+        }
+        statements {
+        }
+      }
+      for_post {
+      }
+      for_cond {
+        binop {
+          op: MOD
+          left {
+            binop {
+              op: SHR
+              left {
+              }
+              right {
+                binop {
+                  op: SI
+                  left {
+                    nop {
+                      op: PC
+                    }
+                  }
+                  right {
+                  }
+                }
+              }
+            }
+          }
+          right {
+          }
+        }
+      }
+    }
+  }
+  statements {
+    storage_func {
+      loc {
+      }
+      val {
+      }
+      st: MSTORE
+    }
+  }
+  statements {
+  }
+  statements {
+    boundedforstmt {
+      for_body {
+        statements {
+          boundedforstmt {
+            for_body {
+              statements {
+                boundedforstmt {
+                  for_body {
+                    statements {
+                      boundedforstmt {
+                        for_body {
+                          statements {
+                            boundedforstmt {
+                              for_body {
+                                statements {
+                                  terminatestmt {
+                                    stop_invalid {
+                                      stmt: STOP
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  statements {
+    storage_func {
+      loc {
+      }
+      val {
+        binop {
+          op: SI
+          left {
+            nop {
+              op: PC
+            }
+          }
+          right {
+          }
+        }
+      }
+      st: MSTORE
+    }
+  }
+  statements {
+  }
+}

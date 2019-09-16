@@ -1,0 +1,102 @@
+block {
+  statements {
+    pop {
+      expr {
+        binop {
+          op: EXP
+          left {
+          }
+          right {
+          }
+        }
+      }
+    }
+  }
+  statements {
+    boundedforstmt {
+      for_body {
+        statements {
+          boundedforstmt {
+            for_body {
+              statements {
+                ifstmt {
+                  cond {
+                  }
+                  if_body {
+                    statements {
+                      storage_func {
+                        loc {
+                          nop {
+                            op: GAS
+                          }
+                        }
+                        val {
+                          top {
+                            op: MULM
+                            arg1 {
+                            }
+                            arg2 {
+                            }
+                            arg3 {
+                            }
+                          }
+                        }
+                        st: MSTORE
+                      }
+                    }
+                  }
+                }
+              }
+              statements {
+                ifstmt {
+                  cond {
+                  }
+                  if_body {
+                    statements {
+                      breakstmt {
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+        statements {
+          storage_func {
+            loc {
+              nop {
+                op: GAS
+              }
+            }
+            val {
+              unop {
+                op: BLOCKHASH
+                operand {
+                }
+              }
+            }
+            st: SSTORE
+          }
+        }
+        statements {
+          storage_func {
+            loc {
+              nop {
+                op: GAS
+              }
+            }
+            val {
+              unop {
+                op: BLOCKHASH
+                operand {
+                }
+              }
+            }
+            st: SSTORE
+          }
+        }
+      }
+    }
+  }
+}

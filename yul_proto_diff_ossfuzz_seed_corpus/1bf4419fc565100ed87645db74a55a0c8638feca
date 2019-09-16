@@ -1,0 +1,66 @@
+block {
+  statements {
+    boundedforstmt {
+      for_body {
+        statements {
+          blockstmt {
+            statements {
+            }
+            statements {
+              ifstmt {
+                cond {
+                  binop {
+                    op: SDIV
+                    left {
+                      unop {
+                        op: NOT
+                        operand {
+                          cons {
+                            strval: "1\000@("
+                          }
+                        }
+                      }
+                    }
+                    right {
+                    }
+                  }
+                }
+                if_body {
+                }
+              }
+            }
+            statements {
+              boundedforstmt {
+                for_body {
+                }
+              }
+            }
+          }
+        }
+        statements {
+          ifstmt {
+            cond {
+              binop {
+                op: SDIV
+                left {
+                  unop {
+                    op: NOT
+                    operand {
+                      cons {
+                        strval: "1\000@("
+                      }
+                    }
+                  }
+                }
+                right {
+                }
+              }
+            }
+            if_body {
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,183 @@
+block {
+  statements {
+    boundedforstmt {
+      for_body {
+        statements {
+          forstmt {
+            for_body {
+            }
+            for_init {
+            }
+            for_post {
+            }
+            for_cond {
+              binop {
+                op: SHL
+                left {
+                  cons {
+                    hexval: "3v\006\353"
+                  }
+                }
+                right {
+                  binop {
+                    op: SHR
+                    left {
+                    }
+                    right {
+                      nop {
+                        op: GAS
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  statements {
+    forstmt {
+      for_body {
+      }
+      for_init {
+      }
+      for_post {
+      }
+      for_cond {
+        binop {
+          op: SHL
+          left {
+            binop {
+              op: SHL
+              left {
+                cons {
+                  hexval: "3v\006\353"
+                }
+              }
+              right {
+                binop {
+                  op: SHR
+                  left {
+                  }
+                  right {
+                    nop {
+                      op: PC
+                    }
+                  }
+                }
+              }
+            }
+          }
+          right {
+            binop {
+              op: SHL
+              left {
+                cons {
+                  hexval: "3v\006\353"
+                }
+              }
+              right {
+                binop {
+                  op: SHR
+                  left {
+                  }
+                  right {
+                    nop {
+                      op: PC
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  statements {
+    ifstmt {
+      cond {
+        nop {
+          op: PC
+        }
+      }
+      if_body {
+        statements {
+          ifstmt {
+            cond {
+              nop {
+                op: PC
+              }
+            }
+            if_body {
+              statements {
+                ifstmt {
+                  cond {
+                    nop {
+                      op: PC
+                    }
+                  }
+                  if_body {
+                    statements {
+                      ifstmt {
+                        cond {
+                          nop {
+                            op: PC
+                          }
+                        }
+                        if_body {
+                          statements {
+                            ifstmt {
+                              cond {
+                              }
+                              if_body {
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  statements {
+    forstmt {
+      for_body {
+      }
+      for_init {
+      }
+      for_post {
+      }
+      for_cond {
+        binop {
+          op: SHL
+          left {
+            cons {
+              hexval: "3v\006\353"
+            }
+          }
+          right {
+            binop {
+              op: SHR
+              left {
+              }
+              right {
+                nop {
+                  op: PC
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

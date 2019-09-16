@@ -1,0 +1,157 @@
+block {
+  statements {
+  }
+  statements {
+    funcdef {
+      num_input_params: 32
+      num_output_params: 64
+      block {
+      }
+    }
+  }
+  statements {
+    storage_func {
+      loc {
+        cons {
+          strval: "A"
+        }
+      }
+      val {
+        cons {
+          strval: "A"
+        }
+      }
+      st: MSTORE
+    }
+  }
+  statements {
+    funcdef {
+      num_input_params: 64
+      num_output_params: 64
+      block {
+      }
+    }
+  }
+  statements {
+    log_func {
+      pos {
+        binop {
+          op: LT
+          left {
+            create {
+              createty: CREATE
+              wei {
+              }
+              position {
+                create {
+                  createty: CREATE
+                  wei {
+                  }
+                  position {
+                    varref {
+                      varnum: 0
+                    }
+                  }
+                  size {
+                  }
+                  value {
+                  }
+                }
+              }
+              size {
+              }
+              value {
+              }
+            }
+          }
+          right {
+            nop {
+              op: PC
+            }
+          }
+        }
+      }
+      size {
+        binop {
+          op: SUB
+          left {
+            binop {
+              op: SUB
+              left {
+                nop {
+                  op: PC
+                }
+              }
+              right {
+                binop {
+                  op: SUB
+                  left {
+                    binop {
+                      op: SUB
+                      left {
+                        nop {
+                          op: PC
+                        }
+                      }
+                      right {
+                      }
+                    }
+                  }
+                  right {
+                    nop {
+                      op: PC
+                    }
+                  }
+                }
+              }
+            }
+          }
+          right {
+            nop {
+              op: GAS
+            }
+          }
+        }
+      }
+      num_topics: FOUR
+      t1 {
+        binop {
+          op: SUB
+          left {
+            nop {
+              op: PC
+            }
+          }
+          right {
+            binop {
+              op: SUB
+              left {
+                binop {
+                  op: SUB
+                  left {
+                    nop {
+                      op: PC
+                    }
+                  }
+                  right {
+                  }
+                }
+              }
+              right {
+                nop {
+                  op: PC
+                }
+              }
+            }
+          }
+        }
+      }
+      t2 {
+      }
+      t3 {
+      }
+      t4 {
+      }
+    }
+  }
+}

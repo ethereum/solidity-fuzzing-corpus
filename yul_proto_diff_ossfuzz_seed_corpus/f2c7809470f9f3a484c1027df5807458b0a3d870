@@ -1,0 +1,60 @@
+block {
+  statements {
+    extcode_copy {
+      addr {
+        binop {
+          op: GT
+          left {
+            unop {
+              op: NOT
+              operand {
+                cons {
+                  intval: 0
+                }
+              }
+            }
+          }
+          right {
+            unop {
+              op: NOT
+              operand {
+                nop {
+                  op: PC
+                }
+              }
+            }
+          }
+        }
+      }
+      target {
+      }
+      source {
+        binop {
+          op: GT
+          left {
+            unop {
+              op: NOT
+              operand {
+                cons {
+                  intval: 0
+                }
+              }
+            }
+          }
+          right {
+            unop {
+              op: NOT
+              operand {
+                nop {
+                  op: PC
+                }
+              }
+            }
+          }
+        }
+      }
+      size {
+      }
+    }
+  }
+}

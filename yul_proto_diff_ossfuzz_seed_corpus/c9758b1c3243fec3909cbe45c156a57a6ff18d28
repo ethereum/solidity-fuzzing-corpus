@@ -1,0 +1,69 @@
+block {
+  statements {
+    forstmt {
+      for_body {
+        statements {
+          terminatestmt {
+            ret_rev {
+              stmt: RETURN
+              pos {
+                cons {
+                  intval: 0
+                }
+              }
+              size {
+              }
+            }
+          }
+        }
+      }
+      for_init {
+      }
+      for_post {
+      }
+      for_cond {
+      }
+    }
+  }
+  statements {
+    storage_func {
+      loc {
+        cons {
+          intval: 0
+        }
+      }
+      val {
+      }
+      st: SSTORE
+    }
+  }
+  statements {
+    storage_func {
+      loc {
+        binop {
+          op: XOR
+          left {
+            binop {
+              op: XOR
+              left {
+              }
+              right {
+                nop {
+                  op: CALLDATASIZE
+                }
+              }
+            }
+          }
+          right {
+            nop {
+              op: CALLDATASIZE
+            }
+          }
+        }
+      }
+      val {
+      }
+      st: SSTORE
+    }
+  }
+}

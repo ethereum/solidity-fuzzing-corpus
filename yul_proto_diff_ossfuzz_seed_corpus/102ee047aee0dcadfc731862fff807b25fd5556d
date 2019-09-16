@@ -1,0 +1,49 @@
+block {
+  statements {
+    storage_func {
+      loc {
+        binop {
+          op: ADD
+          left {
+            nop {
+              op: CALLDATASIZE
+            }
+          }
+          right {
+            cons {
+              intval: 8
+            }
+          }
+        }
+      }
+      val {
+      }
+      st: MSTORE
+    }
+  }
+  statements {
+    storage_func {
+      loc {
+        cons {
+          intval: 8
+        }
+      }
+      val {
+        binop {
+          op: ADD
+          left {
+            nop {
+              op: CALLDATASIZE
+            }
+          }
+          right {
+            cons {
+              intval: 8
+            }
+          }
+        }
+      }
+      st: MSTORE
+    }
+  }
+}

@@ -1,0 +1,155 @@
+block {
+  statements {
+    functioncall {
+      ret: MULTIDECL
+      func_index: 0
+      in_param1 {
+        binop {
+          op: SAR
+          left {
+          }
+          right {
+          }
+        }
+      }
+      in_param2 {
+        nop {
+          op: PC
+        }
+      }
+      in_param3 {
+        nop {
+          op: PC
+        }
+      }
+      in_param4 {
+      }
+      out_param1 {
+        varnum: 0
+      }
+      out_param2 {
+        varnum: 0
+      }
+      out_param3 {
+        varnum: 0
+      }
+      out_param4 {
+        varnum: 0
+      }
+    }
+  }
+  statements {
+    functioncall {
+      ret: MULTIDECL
+      func_index: 0
+      in_param1 {
+        varref {
+          varnum: 0
+        }
+      }
+      in_param2 {
+        varref {
+          varnum: 0
+        }
+      }
+      in_param3 {
+        nop {
+          op: PC
+        }
+      }
+      in_param4 {
+      }
+      out_param1 {
+        varnum: 0
+      }
+      out_param2 {
+        varnum: 0
+      }
+      out_param3 {
+        varnum: 0
+      }
+      out_param4 {
+        varnum: 0
+      }
+    }
+  }
+  statements {
+    ifstmt {
+      cond {
+        cons {
+          strval: "-"
+        }
+      }
+      if_body {
+        statements {
+          ifstmt {
+            cond {
+              cons {
+                strval: ""
+              }
+            }
+            if_body {
+              statements {
+                ifstmt {
+                  cond {
+                    cons {
+                      strval: ""
+                    }
+                  }
+                  if_body {
+                    statements {
+                      ifstmt {
+                        cond {
+                          nop {
+                            op: PC
+                          }
+                        }
+                        if_body {
+                          statements {
+                            ifstmt {
+                              cond {
+                              }
+                              if_body {
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  statements {
+  }
+  statements {
+    funcdef {
+      num_input_params: 98
+      num_output_params: 64
+      block {
+        statements {
+          boundedforstmt {
+            for_body {
+              statements {
+                copy_func {
+                  ct: CODE
+                  target {
+                  }
+                  source {
+                  }
+                  size {
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

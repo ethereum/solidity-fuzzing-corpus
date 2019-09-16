@@ -1,0 +1,150 @@
+block {
+  statements {
+    extcode_copy {
+      addr {
+        binop {
+          op: GT
+          left {
+            unop {
+              op: NOT
+              operand {
+                cons {
+                  intval: 16777216
+                }
+              }
+            }
+          }
+          right {
+          }
+        }
+      }
+      target {
+        binop {
+          op: EQ
+          left {
+            binop {
+              op: DIV
+              left {
+                unop {
+                  op: NOT
+                  operand {
+                    cons {
+                      intval: 17196646400
+                    }
+                  }
+                }
+              }
+              right {
+              }
+            }
+          }
+          right {
+            nop {
+              op: PC
+            }
+          }
+        }
+      }
+      source {
+        binop {
+          op: DIV
+          left {
+            binop {
+              op: OR
+              left {
+                unop {
+                  op: NOT
+                  operand {
+                    cons {
+                      intval: 16777216
+                    }
+                  }
+                }
+              }
+              right {
+              }
+            }
+          }
+          right {
+            binop {
+              op: DIV
+              left {
+              }
+              right {
+              }
+            }
+          }
+        }
+      }
+      size {
+      }
+    }
+  }
+  statements {
+    storage_func {
+      loc {
+      }
+      val {
+        nop {
+          op: PC
+        }
+      }
+      st: SSTORE
+    }
+  }
+  statements {
+    extcode_copy {
+      addr {
+        binop {
+          op: DIV
+          left {
+            unop {
+              op: NOT
+              operand {
+                cons {
+                  intval: 16777216
+                }
+              }
+            }
+          }
+          right {
+          }
+        }
+      }
+      target {
+        binop {
+          op: OR
+          left {
+            binop {
+              op: DIV
+              left {
+                unop {
+                  op: NOT
+                  operand {
+                    cons {
+                      intval: 16777216
+                    }
+                  }
+                }
+              }
+              right {
+              }
+            }
+          }
+          right {
+            cons {
+              intval: 17196646400
+            }
+          }
+        }
+      }
+      source {
+      }
+      size {
+        cons {
+          intval: 17196646400
+        }
+      }
+    }
+  }
+}

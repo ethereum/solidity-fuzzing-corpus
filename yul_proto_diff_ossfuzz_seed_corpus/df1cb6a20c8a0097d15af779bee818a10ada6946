@@ -1,0 +1,59 @@
+block {
+  statements {
+    boundedforstmt {
+      for_body {
+        statements {
+          boundedforstmt {
+            for_body {
+              statements {
+                ifstmt {
+                  cond {
+                    binop {
+                      op: SDIV
+                      left {
+                        unop {
+                          op: EXTCODEHASH
+                          operand {
+                            cons {
+                              strval: "*"
+                            }
+                          }
+                        }
+                      }
+                      right {
+                      }
+                    }
+                  }
+                  if_body {
+                    statements {
+                      log_func {
+                        pos {
+                          nop {
+                            op: PC
+                          }
+                        }
+                        size {
+                        }
+                        num_topics: ONE
+                        t1 {
+                        }
+                        t2 {
+                        }
+                        t3 {
+                        }
+                        t4 {
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  statements {
+  }
+}

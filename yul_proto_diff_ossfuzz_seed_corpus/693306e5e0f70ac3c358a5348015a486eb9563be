@@ -1,0 +1,180 @@
+block {
+  statements {
+    funcdef {
+      num_input_params: 0
+      num_output_params: 64
+      block {
+        statements {
+          terminatestmt {
+            self_des {
+              addr {
+                unop {
+                  op: CALLDATALOAD
+                  operand {
+                    varref {
+                      varnum: 2
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  statements {
+  }
+  statements {
+    extcode_copy {
+      addr {
+      }
+      target {
+      }
+      source {
+      }
+      size {
+      }
+    }
+  }
+  statements {
+    boundedforstmt {
+      for_body {
+        statements {
+          extcode_copy {
+            addr {
+            }
+            target {
+            }
+            source {
+            }
+            size {
+            }
+          }
+        }
+      }
+    }
+  }
+  statements {
+    forstmt {
+      for_body {
+        statements {
+          ifstmt {
+            cond {
+            }
+            if_body {
+              statements {
+                forstmt {
+                  for_body {
+                    statements {
+                      ifstmt {
+                        cond {
+                        }
+                        if_body {
+                          statements {
+                            breakstmt {
+                            }
+                          }
+                        }
+                      }
+                    }
+                    statements {
+                      ifstmt {
+                        cond {
+                        }
+                        if_body {
+                        }
+                      }
+                    }
+                  }
+                  for_init {
+                  }
+                  for_post {
+                  }
+                  for_cond {
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+      for_init {
+      }
+      for_post {
+      }
+      for_cond {
+      }
+    }
+  }
+  statements {
+    funcdef {
+      num_input_params: 0
+      num_output_params: 64
+      block {
+        statements {
+          terminatestmt {
+            self_des {
+              addr {
+                unop {
+                  op: CALLDATALOAD
+                  operand {
+                    varref {
+                      varnum: 9
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  statements {
+    storage_func {
+      loc {
+      }
+      val {
+      }
+      st: MSTORE
+    }
+  }
+  statements {
+  }
+  statements {
+  }
+  statements {
+    funcdef {
+      num_input_params: 0
+      num_output_params: 64
+      block {
+        statements {
+          terminatestmt {
+            self_des {
+              addr {
+                unop {
+                  op: CALLDATALOAD
+                  operand {
+                    varref {
+                      varnum: 0
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+        statements {
+          switchstmt {
+            switch_expr {
+              varref {
+                varnum: 0
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,59 @@
+block {
+  statements {
+    copy_func {
+      ct: CODE
+      target {
+        binop {
+          op: SDIV
+          left {
+            nop {
+              op: PC
+            }
+          }
+          right {
+            binop {
+              op: SDIV
+              left {
+                nop {
+                  op: PC
+                }
+              }
+              right {
+                cons {
+                  intval: 0
+                }
+              }
+            }
+          }
+        }
+      }
+      source {
+        binop {
+          op: SDIV
+          left {
+            nop {
+              op: PC
+            }
+          }
+          right {
+            binop {
+              op: SDIV
+              left {
+                nop {
+                  op: PC
+                }
+              }
+              right {
+                cons {
+                  intval: 0
+                }
+              }
+            }
+          }
+        }
+      }
+      size {
+      }
+    }
+  }
+}

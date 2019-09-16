@@ -1,0 +1,56 @@
+block {
+  statements {
+    pop {
+      expr {
+        nop {
+          op: PC
+        }
+      }
+    }
+  }
+  statements {
+  }
+  statements {
+    forstmt {
+      for_body {
+      }
+      for_init {
+      }
+      for_post {
+      }
+      for_cond {
+        binop {
+          op: SHL
+          left {
+            binop {
+              op: AND
+              left {
+              }
+              right {
+              }
+            }
+          }
+          right {
+            binop {
+              op: AND
+              left {
+              }
+              right {
+                binop {
+                  op: SHR
+                  left {
+                  }
+                  right {
+                    nop {
+                      op: PC
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

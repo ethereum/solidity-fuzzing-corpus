@@ -1,0 +1,49 @@
+block {
+  statements {
+  }
+  statements {
+    storage_func {
+      loc {
+      }
+      val {
+      }
+      st: MSTORE
+    }
+  }
+  statements {
+    copy_func {
+      ct: CODE
+      target {
+        binop {
+          op: XOR
+          left {
+            binop {
+              op: XOR
+              left {
+              }
+              right {
+                nop {
+                  op: MSIZE
+                }
+              }
+            }
+          }
+          right {
+            nop {
+              op: MSIZE
+            }
+          }
+        }
+      }
+      source {
+        nop {
+          op: GAS
+        }
+      }
+      size {
+      }
+    }
+  }
+  statements {
+  }
+}

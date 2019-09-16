@@ -1,0 +1,40 @@
+block {
+  statements {
+  }
+  statements {
+    storage_func {
+      loc {
+        binop {
+          op: SHL
+          left {
+          }
+          right {
+            binop {
+              op: MOD
+              left {
+                nop {
+                  op: PC
+                }
+              }
+              right {
+              }
+            }
+          }
+        }
+      }
+      val {
+        binop {
+          op: MOD
+          left {
+            nop {
+              op: PC
+            }
+          }
+          right {
+          }
+        }
+      }
+      st: SSTORE
+    }
+  }
+}

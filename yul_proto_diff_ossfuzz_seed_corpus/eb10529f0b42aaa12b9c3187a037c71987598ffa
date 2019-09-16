@@ -1,0 +1,87 @@
+block {
+  statements {
+    boundedforstmt {
+      for_body {
+        statements {
+          boundedforstmt {
+            for_body {
+              statements {
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  statements {
+  }
+  statements {
+    forstmt {
+      for_body {
+      }
+      for_init {
+      }
+      for_post {
+        statements {
+          forstmt {
+            for_body {
+            }
+            for_init {
+              statements {
+                boundedforstmt {
+                  for_body {
+                    statements {
+                      ifstmt {
+                        cond {
+                        }
+                        if_body {
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+            for_post {
+            }
+            for_cond {
+              binop {
+                op: SMOD
+                left {
+                  binop {
+                    op: MUL
+                    left {
+                      varref {
+                        varnum: 0
+                      }
+                    }
+                    right {
+                    }
+                  }
+                }
+                right {
+                  binop {
+                    op: DIV
+                    left {
+                      binop {
+                        op: MUL
+                        left {
+                        }
+                        right {
+                        }
+                      }
+                    }
+                    right {
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+      for_cond {
+      }
+    }
+  }
+}

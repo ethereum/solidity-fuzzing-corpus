@@ -1,0 +1,90 @@
+block {
+  statements {
+    storage_func {
+      loc {
+        binop {
+          op: XOR
+          left {
+            binop {
+              op: XOR
+              left {
+                binop {
+                  op: XOR
+                  left {
+                  }
+                  right {
+                    nop {
+                      op: ORIGIN
+                    }
+                  }
+                }
+              }
+              right {
+                binop {
+                  op: XOR
+                  left {
+                    nop {
+                      op: ORIGIN
+                    }
+                  }
+                  right {
+                  }
+                }
+              }
+            }
+          }
+          right {
+            binop {
+              op: XOR
+              left {
+                nop {
+                  op: ORIGIN
+                }
+              }
+              right {
+              }
+            }
+          }
+        }
+      }
+      val {
+      }
+      st: SSTORE
+    }
+  }
+  statements {
+    ifstmt {
+      cond {
+        binop {
+          op: SGT
+          left {
+          }
+          right {
+          }
+        }
+      }
+      if_body {
+        statements {
+          storage_func {
+            loc {
+              cons {
+                intval: 0
+              }
+            }
+            val {
+            }
+            st: SSTORE
+          }
+        }
+        statements {
+        }
+        statements {
+        }
+        statements {
+        }
+      }
+    }
+  }
+  statements {
+  }
+}

@@ -1,0 +1,77 @@
+block {
+  statements {
+    forstmt {
+      for_body {
+        statements {
+          extcode_copy {
+            addr {
+              unop {
+                op: EXTCODESIZE
+                operand {
+                }
+              }
+            }
+            target {
+            }
+            source {
+            }
+            size {
+            }
+          }
+        }
+        statements {
+          storage_func {
+            loc {
+              unop {
+                op: EXTCODESIZE
+                operand {
+                }
+              }
+            }
+            val {
+              unop {
+                op: EXTCODESIZE
+                operand {
+                }
+              }
+            }
+            st: MSTORE
+          }
+        }
+        statements {
+          extcode_copy {
+            addr {
+              unop {
+                op: EXTCODESIZE
+                operand {
+                }
+              }
+            }
+            target {
+              unop {
+                op: EXTCODESIZE
+                operand {
+                }
+              }
+            }
+            source {
+            }
+            size {
+              unop {
+                op: EXTCODESIZE
+                operand {
+                }
+              }
+            }
+          }
+        }
+      }
+      for_init {
+      }
+      for_post {
+      }
+      for_cond {
+      }
+    }
+  }
+}

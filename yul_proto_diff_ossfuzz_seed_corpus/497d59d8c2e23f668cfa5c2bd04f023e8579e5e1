@@ -1,0 +1,56 @@
+block {
+  statements {
+    extcode_copy {
+      addr {
+      }
+      target {
+        nop {
+          op: PC
+        }
+      }
+      source {
+      }
+      size {
+      }
+    }
+  }
+  statements {
+  }
+  statements {
+  }
+  statements {
+    boundedforstmt {
+      for_body {
+        statements {
+          storage_func {
+            loc {
+              top {
+                op: MULM
+                arg1 {
+                }
+                arg2 {
+                  nop {
+                    op: MSIZE
+                  }
+                }
+                arg3 {
+                  nop {
+                    op: MSIZE
+                  }
+                }
+              }
+            }
+            val {
+              nop {
+                op: PC
+              }
+            }
+            st: MSTORE
+          }
+        }
+      }
+    }
+  }
+  statements {
+  }
+}

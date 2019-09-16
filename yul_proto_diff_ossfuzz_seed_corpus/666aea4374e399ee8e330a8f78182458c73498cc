@@ -1,0 +1,175 @@
+block {
+  statements {
+  }
+  statements {
+    log_func {
+      pos {
+        cons {
+          strval: "\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000"
+        }
+      }
+      size {
+      }
+      num_topics: ONE
+      t1 {
+        binop {
+          op: LT
+          left {
+            binop {
+              op: OR
+              left {
+                unop {
+                  op: SLOAD
+                  operand {
+                  }
+                }
+              }
+              right {
+              }
+            }
+          }
+          right {
+            nop {
+              op: GAS
+            }
+          }
+        }
+      }
+      t2 {
+      }
+      t3 {
+        binop {
+          op: ADD
+          left {
+            binop {
+              op: EXP
+              left {
+                cons {
+                  hexval: "\306"
+                }
+              }
+              right {
+              }
+            }
+          }
+          right {
+            nop {
+              op: GAS
+            }
+          }
+        }
+      }
+      t4 {
+      }
+    }
+  }
+  statements {
+    decl {
+      expr {
+        nop {
+          op: MSIZE
+        }
+      }
+    }
+  }
+  statements {
+    log_func {
+      pos {
+      }
+      size {
+      }
+      num_topics: ONE
+      t1 {
+        binop {
+          op: LT
+          left {
+            binop {
+              op: OR
+              left {
+                unop {
+                  op: NOT
+                  operand {
+                  }
+                }
+              }
+              right {
+              }
+            }
+          }
+          right {
+            nop {
+              op: GAS
+            }
+          }
+        }
+      }
+      t2 {
+      }
+      t3 {
+        binop {
+          op: ADD
+          left {
+            binop {
+              op: OR
+              left {
+                binop {
+                  op: OR
+                  left {
+                    cons {
+                    }
+                  }
+                  right {
+                  }
+                }
+              }
+              right {
+                varref {
+                  varnum: 67108864
+                }
+              }
+            }
+          }
+          right {
+          }
+        }
+      }
+      t4 {
+        nop {
+          op: GAS
+        }
+      }
+    }
+  }
+  statements {
+  }
+  statements {
+    log_func {
+      pos {
+        binop {
+          op: EQ
+          left {
+            nop {
+              op: GAS
+            }
+          }
+          right {
+          }
+        }
+      }
+      size {
+      }
+      num_topics: ONE
+      t1 {
+      }
+      t2 {
+      }
+      t3 {
+        nop {
+          op: GAS
+        }
+      }
+      t4 {
+      }
+    }
+  }
+}

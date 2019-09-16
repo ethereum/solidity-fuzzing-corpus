@@ -1,0 +1,42 @@
+obj {
+  code {
+    block {
+    }
+  }
+  sub_obj {
+    code {
+      block {
+        statements {
+          pop {
+            expr {
+              nop {
+                op: RETURNDATASIZE
+              }
+            }
+          }
+        }
+      }
+    }
+    sub_obj {
+      code {
+        block {
+          statements {
+            extcode_copy {
+              addr {
+              }
+              target {
+              }
+              source {
+                nop {
+                  op: RETURNDATASIZE
+                }
+              }
+              size {
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

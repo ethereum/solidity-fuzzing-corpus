@@ -1,0 +1,54 @@
+block {
+  statements {
+  }
+  statements {
+    terminatestmt {
+      ret_rev {
+        stmt: RETURN
+        pos {
+          top {
+            op: ADDM
+            arg1 {
+            }
+            arg2 {
+              binop {
+                op: SHR
+                left {
+                }
+                right {
+                  nop {
+                    op: PC
+                  }
+                }
+              }
+            }
+            arg3 {
+              binop {
+                op: SHR
+                left {
+                }
+                right {
+                  nop {
+                    op: PC
+                  }
+                }
+              }
+            }
+          }
+        }
+        size {
+          binop {
+            op: SHR
+            left {
+            }
+            right {
+              nop {
+                op: PC
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

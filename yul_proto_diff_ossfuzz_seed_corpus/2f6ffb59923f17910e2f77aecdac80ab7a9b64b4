@@ -1,0 +1,45 @@
+block {
+  statements {
+    storage_func {
+      loc {
+        binop {
+          op: ADD
+          left {
+          }
+          right {
+            cons {
+              strval: "\340"
+            }
+          }
+        }
+      }
+      val {
+      }
+      st: MSTORE
+    }
+  }
+  statements {
+    boundedforstmt {
+      for_body {
+        statements {
+          boundedforstmt {
+            for_body {
+            }
+          }
+        }
+      }
+    }
+  }
+  statements {
+    storage_func {
+      loc {
+        nop {
+          op: CALLDATASIZE
+        }
+      }
+      val {
+      }
+      st: MSTORE
+    }
+  }
+}

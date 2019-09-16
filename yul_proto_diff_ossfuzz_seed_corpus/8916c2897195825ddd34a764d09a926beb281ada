@@ -1,0 +1,56 @@
+block {
+  statements {
+  }
+  statements {
+    boundedforstmt {
+      for_body {
+        statements {
+          blockstmt {
+            statements {
+              blockstmt {
+                statements {
+                  ifstmt {
+                    cond {
+                      binop {
+                        op: SDIV
+                        left {
+                          unop {
+                            op: NOT
+                            operand {
+                              cons {
+                                strval: "1/\000 "
+                              }
+                            }
+                          }
+                        }
+                        right {
+                        }
+                      }
+                    }
+                    if_body {
+                    }
+                  }
+                }
+              }
+            }
+            statements {
+              contstmt {
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  statements {
+    assignment {
+      ref_id {
+        varnum: 512
+      }
+      expr {
+      }
+    }
+  }
+  statements {
+  }
+}

@@ -1,0 +1,50 @@
+block {
+  statements {
+    boundedforstmt {
+      for_body {
+      }
+    }
+  }
+  statements {
+  }
+  statements {
+    forstmt {
+      for_body {
+      }
+      for_init {
+      }
+      for_post {
+        statements {
+          ifstmt {
+            cond {
+            }
+            if_body {
+            }
+          }
+        }
+      }
+      for_cond {
+        top {
+          op: MULM
+          arg1 {
+            unop {
+              op: NOT
+              operand {
+                nop {
+                  op: GAS
+                }
+              }
+            }
+          }
+          arg2 {
+          }
+          arg3 {
+            nop {
+              op: GAS
+            }
+          }
+        }
+      }
+    }
+  }
+}

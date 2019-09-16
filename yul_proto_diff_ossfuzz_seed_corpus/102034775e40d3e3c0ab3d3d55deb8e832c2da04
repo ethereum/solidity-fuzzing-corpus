@@ -1,0 +1,32 @@
+block {
+  statements {
+    decl {
+      expr {
+        binop {
+          op: MOD
+          left {
+            nop {
+              op: PC
+            }
+          }
+          right {
+            varref {
+              varnum: 32768
+            }
+          }
+        }
+      }
+    }
+  }
+  statements {
+    assignment {
+      ref_id {
+        varnum: 32768
+      }
+      expr {
+      }
+    }
+  }
+  statements {
+  }
+}

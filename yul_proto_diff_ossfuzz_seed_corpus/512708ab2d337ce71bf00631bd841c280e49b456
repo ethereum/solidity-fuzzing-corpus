@@ -1,0 +1,75 @@
+block {
+  statements {
+    storage_func {
+      loc {
+        binop {
+          op: ADD
+          left {
+            cons {
+              strval: "."
+            }
+          }
+          right {
+          }
+        }
+      }
+      val {
+      }
+      st: MSTORE
+    }
+  }
+  statements {
+  }
+  statements {
+  }
+  statements {
+    ifstmt {
+      cond {
+      }
+      if_body {
+        statements {
+          terminatestmt {
+            stop_invalid {
+              stmt: STOP
+            }
+          }
+        }
+      }
+    }
+  }
+  statements {
+    storage_func {
+      loc {
+        cons {
+          strval: "."
+        }
+      }
+      val {
+      }
+      st: MSTORE
+    }
+  }
+  statements {
+    forstmt {
+      for_body {
+      }
+      for_init {
+        statements {
+          storage_func {
+            loc {
+            }
+            val {
+            }
+            st: MSTORE
+          }
+        }
+      }
+      for_post {
+      }
+      for_cond {
+      }
+    }
+  }
+  statements {
+  }
+}

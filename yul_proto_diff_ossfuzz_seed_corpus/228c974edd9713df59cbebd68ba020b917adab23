@@ -1,0 +1,34 @@
+block {
+  statements {
+    extcode_copy {
+      addr {
+        unop {
+          op: MLOAD
+          operand {
+          }
+        }
+      }
+      target {
+      }
+      source {
+        binop {
+          op: DIV
+          left {
+            unop {
+              op: CALLDATALOAD
+              operand {
+              }
+            }
+          }
+          right {
+            nop {
+              op: MSIZE
+            }
+          }
+        }
+      }
+      size {
+      }
+    }
+  }
+}

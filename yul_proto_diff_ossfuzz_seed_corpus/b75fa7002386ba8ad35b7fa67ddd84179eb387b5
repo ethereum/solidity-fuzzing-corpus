@@ -1,0 +1,131 @@
+block {
+  statements {
+    storage_func {
+      loc {
+      }
+      val {
+      }
+      st: SSTORE
+    }
+  }
+  statements {
+    log_func {
+      pos {
+      }
+      size {
+        unop {
+          op: EXTCODESIZE
+          operand {
+            unop {
+              op: EXTCODESIZE
+              operand {
+              }
+            }
+          }
+        }
+      }
+      num_topics: ONE
+      t1 {
+      }
+      t2 {
+      }
+      t3 {
+      }
+      t4 {
+      }
+    }
+  }
+  statements {
+    log_func {
+      pos {
+      }
+      size {
+        unop {
+          op: EXTCODESIZE
+          operand {
+            unop {
+              op: EXTCODESIZE
+              operand {
+              }
+            }
+          }
+        }
+      }
+      num_topics: ONE
+      t1 {
+      }
+      t2 {
+      }
+      t3 {
+      }
+      t4 {
+        unop {
+          op: EXTCODESIZE
+          operand {
+            varref {
+              varnum: 1024
+            }
+          }
+        }
+      }
+    }
+  }
+  statements {
+    boundedforstmt {
+      for_body {
+        statements {
+          log_func {
+            pos {
+            }
+            size {
+              unop {
+                op: EXTCODESIZE
+                operand {
+                  unop {
+                    op: EXTCODESIZE
+                    operand {
+                      binop {
+                        op: OR
+                        left {
+                          nop {
+                            op: PC
+                          }
+                        }
+                        right {
+                          unop {
+                            op: EXTCODESIZE
+                            operand {
+                              unop {
+                                op: EXTCODESIZE
+                                operand {
+                                  cons {
+                                    hexval: "\002\000\000\000\000\000\000\000"
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+            num_topics: ONE
+            t1 {
+            }
+            t2 {
+            }
+            t3 {
+            }
+            t4 {
+            }
+          }
+        }
+      }
+    }
+  }
+  statements {
+  }
+}

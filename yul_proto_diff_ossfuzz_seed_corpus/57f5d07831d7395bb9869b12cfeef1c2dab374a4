@@ -1,0 +1,150 @@
+block {
+  statements {
+    copy_func {
+      ct: CODE
+      target {
+        binop {
+          op: SI
+          left {
+            nop {
+              op: PC
+            }
+          }
+          right {
+            cons {
+              intval: 0
+            }
+          }
+        }
+      }
+      source {
+      }
+      size {
+        binop {
+          op: OR
+          left {
+            nop {
+              op: PC
+            }
+          }
+          right {
+            cons {
+              intval: 0
+            }
+          }
+        }
+      }
+    }
+  }
+  statements {
+    storage_func {
+      loc {
+      }
+      val {
+      }
+      st: SSTORE
+    }
+  }
+  statements {
+    boundedforstmt {
+      for_body {
+        statements {
+          contstmt {
+          }
+        }
+      }
+    }
+  }
+  statements {
+    extcode_copy {
+      addr {
+        binop {
+          op: DIV
+          left {
+            unop {
+              op: NOT
+              operand {
+                cons {
+                  intval: 16777216
+                }
+              }
+            }
+          }
+          right {
+          }
+        }
+      }
+      target {
+        binop {
+          op: SI
+          left {
+            binop {
+              op: DIV
+              left {
+                unop {
+                  op: NOT
+                  operand {
+                    cons {
+                      intval: 16777216
+                    }
+                  }
+                }
+              }
+              right {
+              }
+            }
+          }
+          right {
+          }
+        }
+      }
+      source {
+        binop {
+          op: DIV
+          left {
+            binop {
+              op: DIV
+              left {
+                unop {
+                  op: NOT
+                  operand {
+                  }
+                }
+              }
+              right {
+                cons {
+                  intval: 16777216
+                }
+              }
+            }
+          }
+          right {
+            top {
+              op: ADDM
+              arg1 {
+                varref {
+                  varnum: -1
+                }
+              }
+              arg2 {
+              }
+              arg3 {
+              }
+            }
+          }
+        }
+      }
+      size {
+        binop {
+          op: EQ
+          left {
+          }
+          right {
+          }
+        }
+      }
+    }
+  }
+  statements {
+  }
+}

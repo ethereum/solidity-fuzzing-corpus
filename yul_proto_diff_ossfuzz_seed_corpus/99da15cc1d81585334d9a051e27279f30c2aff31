@@ -1,0 +1,72 @@
+block {
+  statements {
+    copy_func {
+      ct: CODE
+      target {
+        binop {
+          op: SDIV
+          left {
+            binop {
+              op: SDIV
+              left {
+                binop {
+                  op: GT
+                  left {
+                    cons {
+                      intval: 0
+                    }
+                  }
+                  right {
+                    cons {
+                      strval: "QQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQ"
+                    }
+                  }
+                }
+              }
+              right {
+              }
+            }
+          }
+          right {
+          }
+        }
+      }
+      source {
+      }
+      size {
+        binop {
+          op: GT
+          left {
+            binop {
+              op: GT
+              left {
+                cons {
+                  intval: 0
+                }
+              }
+              right {
+                binop {
+                  op: KECCAK
+                  left {
+                  }
+                  right {
+                  }
+                }
+              }
+            }
+          }
+          right {
+          }
+        }
+      }
+    }
+  }
+  statements {
+    boundedforstmt {
+      for_body {
+      }
+    }
+  }
+  statements {
+  }
+}

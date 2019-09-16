@@ -1,0 +1,124 @@
+block {
+  statements {
+    copy_func {
+      ct: CODE
+      target {
+      }
+      source {
+        binop {
+          op: MOD
+          left {
+            nop {
+              op: PC
+            }
+          }
+          right {
+            binop {
+              op: MOD
+              left {
+                nop {
+                  op: GAS
+                }
+              }
+              right {
+                unop {
+                  op: ISZERO
+                  operand {
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+      size {
+        binop {
+          op: MOD
+          left {
+            nop {
+              op: GAS
+            }
+          }
+          right {
+            binop {
+              op: MOD
+              left {
+                nop {
+                  op: GAS
+                }
+              }
+              right {
+                unop {
+                  op: ISZERO
+                  operand {
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  statements {
+    copy_func {
+      ct: CODE
+      target {
+      }
+      source {
+        binop {
+          op: MOD
+          left {
+            nop {
+              op: GAS
+            }
+          }
+          right {
+            binop {
+              op: MOD
+              left {
+                nop {
+                  op: GAS
+                }
+              }
+              right {
+                unop {
+                  op: ISZERO
+                  operand {
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+      size {
+        binop {
+          op: MOD
+          left {
+            nop {
+              op: GAS
+            }
+          }
+          right {
+            binop {
+              op: MOD
+              left {
+                nop {
+                  op: GAS
+                }
+              }
+              right {
+                unop {
+                  op: ISZERO
+                  operand {
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

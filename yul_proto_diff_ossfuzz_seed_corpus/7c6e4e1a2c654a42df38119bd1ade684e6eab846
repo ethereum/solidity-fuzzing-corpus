@@ -1,0 +1,103 @@
+block {
+  statements {
+  }
+  statements {
+    forstmt {
+      for_body {
+        statements {
+          boundedforstmt {
+            for_body {
+            }
+          }
+        }
+      }
+      for_init {
+      }
+      for_post {
+      }
+      for_cond {
+        top {
+          op: ADDM
+          arg1 {
+          }
+          arg2 {
+            binop {
+              op: SI
+              left {
+              }
+              right {
+                unop {
+                  op: NOT
+                  operand {
+                  }
+                }
+              }
+            }
+          }
+          arg3 {
+            top {
+              op: ADDM
+              arg1 {
+              }
+              arg2 {
+                binop {
+                  op: SI
+                  left {
+                  }
+                  right {
+                    unop {
+                      op: NOT
+                      operand {
+                      }
+                    }
+                  }
+                }
+              }
+              arg3 {
+                binop {
+                  op: SI
+                  left {
+                  }
+                  right {
+                    unop {
+                      op: NOT
+                      operand {
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  statements {
+    boundedforstmt {
+      for_body {
+      }
+    }
+  }
+  statements {
+    switchstmt {
+      switch_expr {
+      }
+    }
+  }
+  statements {
+    boundedforstmt {
+      for_body {
+      }
+    }
+  }
+  statements {
+    decl {
+      expr {
+        nop {
+          op: PC
+        }
+      }
+    }
+  }
+}

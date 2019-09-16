@@ -1,0 +1,107 @@
+block {
+  statements {
+  }
+  statements {
+    copy_func {
+      ct: CODE
+      target {
+        varref {
+          varnum: 16777216
+        }
+      }
+      source {
+        cons {
+          hexval: "z"
+        }
+      }
+      size {
+        cons {
+          strval: "QQQQQQQQQQQQQQQQQQQQQQQQ"
+        }
+      }
+    }
+  }
+  statements {
+    boundedforstmt {
+      for_body {
+        statements {
+          boundedforstmt {
+            for_body {
+              statements {
+                blockstmt {
+                  statements {
+                    blockstmt {
+                      statements {
+                        ifstmt {
+                          cond {
+                            binop {
+                              op: SDIV
+                              left {
+                                unop {
+                                  op: EXTCODEHASH
+                                  operand {
+                                    cons {
+                                      hexval: "z"
+                                    }
+                                  }
+                                }
+                              }
+                              right {
+                              }
+                            }
+                          }
+                          if_body {
+                          }
+                        }
+                      }
+                    }
+                  }
+                  statements {
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  statements {
+    forstmt {
+      for_body {
+        statements {
+          storage_func {
+            loc {
+            }
+            val {
+            }
+            st: SSTORE
+          }
+        }
+      }
+      for_init {
+      }
+      for_post {
+      }
+      for_cond {
+      }
+    }
+  }
+  statements {
+    forstmt {
+      for_body {
+      }
+      for_init {
+      }
+      for_post {
+        statements {
+        }
+      }
+      for_cond {
+        cons {
+          intval: 463856493056
+        }
+      }
+    }
+  }
+}

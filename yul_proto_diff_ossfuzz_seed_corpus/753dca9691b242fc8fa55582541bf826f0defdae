@@ -1,0 +1,34 @@
+block {
+  statements {
+    storage_func {
+      loc {
+      }
+      val {
+      }
+      st: MSTORE
+    }
+  }
+  statements {
+    switchstmt {
+      switch_expr {
+        binop {
+          op: GT
+          left {
+            nop {
+              op: MSIZE
+            }
+          }
+          right {
+            nop {
+              op: MSIZE
+            }
+          }
+        }
+      }
+      default_block {
+        statements {
+        }
+      }
+    }
+  }
+}

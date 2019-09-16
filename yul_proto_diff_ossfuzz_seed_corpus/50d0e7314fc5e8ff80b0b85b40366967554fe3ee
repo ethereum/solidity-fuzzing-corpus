@@ -1,0 +1,61 @@
+block {
+  statements {
+  }
+  statements {
+    blockstmt {
+      statements {
+        switchstmt {
+          switch_expr {
+          }
+          default_block {
+            statements {
+              terminatestmt {
+                stop_invalid {
+                  stmt: STOP
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  statements {
+    storage_func {
+      loc {
+        cons {
+          intval: 0
+        }
+      }
+      val {
+      }
+      st: SSTORE
+    }
+  }
+  statements {
+    ifstmt {
+      cond {
+        nop {
+          op: GAS
+        }
+      }
+      if_body {
+        statements {
+          storage_func {
+            loc {
+              cons {
+                intval: 0
+              }
+            }
+            val {
+              cons {
+                intval: 0
+              }
+            }
+            st: SSTORE
+          }
+        }
+      }
+    }
+  }
+}

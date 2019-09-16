@@ -1,0 +1,37 @@
+block {
+  statements {
+    extcode_copy {
+      addr {
+      }
+      target {
+        nop {
+          op: PC
+        }
+      }
+      source {
+      }
+      size {
+        binop {
+          op: SMOD
+          left {
+            unop {
+              op: NOT
+              operand {
+              }
+            }
+          }
+          right {
+            unop {
+              op: NOT
+              operand {
+                nop {
+                  op: MSIZE
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

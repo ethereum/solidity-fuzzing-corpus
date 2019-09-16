@@ -1,0 +1,36 @@
+block {
+  statements {
+    funcdef {
+      num_input_params: 1
+      num_output_params: 64
+      block {
+        statements {
+          storage_func {
+            loc {
+              unop {
+                op: ISZERO
+                operand {
+                  nop {
+                    op: CODESIZE
+                  }
+                }
+              }
+            }
+            val {
+              nop {
+                op: NUMBER
+              }
+            }
+            st: MSTORE
+          }
+        }
+        statements {
+          boundedforstmt {
+            for_body {
+            }
+          }
+        }
+      }
+    }
+  }
+}

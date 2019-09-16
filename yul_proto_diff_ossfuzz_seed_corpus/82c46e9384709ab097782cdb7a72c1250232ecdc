@@ -1,0 +1,52 @@
+block {
+  statements {
+    boundedforstmt {
+      for_body {
+        statements {
+          blockstmt {
+            statements {
+              boundedforstmt {
+                for_body {
+                  statements {
+                    ifstmt {
+                      cond {
+                        binop {
+                          op: SDIV
+                          left {
+                            unop {
+                              op: EXTCODEHASH
+                              operand {
+                                cons {
+                                  strval: "="
+                                }
+                              }
+                            }
+                          }
+                          right {
+                          }
+                        }
+                      }
+                      if_body {
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  statements {
+    storage_func {
+      loc {
+      }
+      val {
+      }
+      st: MSTORE
+    }
+  }
+  statements {
+  }
+}

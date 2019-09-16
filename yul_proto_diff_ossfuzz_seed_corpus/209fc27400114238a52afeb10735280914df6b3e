@@ -1,0 +1,55 @@
+block {
+  statements {
+    copy_func {
+      ct: CODE
+      target {
+      }
+      source {
+      }
+      size {
+        nop {
+          op: CALLDATASIZE
+        }
+      }
+    }
+  }
+  statements {
+    boundedforstmt {
+      for_body {
+      }
+    }
+  }
+  statements {
+    switchstmt {
+      switch_expr {
+        nop {
+          op: CALLDATASIZE
+        }
+      }
+      case_stmt {
+        case_lit {
+        }
+        case_block {
+          statements {
+            boundedforstmt {
+              for_body {
+              }
+            }
+          }
+        }
+      }
+      case_stmt {
+        case_lit {
+        }
+        case_block {
+          statements {
+            boundedforstmt {
+              for_body {
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

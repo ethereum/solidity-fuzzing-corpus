@@ -1,0 +1,99 @@
+block {
+  statements {
+    log_func {
+      pos {
+        top {
+          op: ADDM
+          arg1 {
+            binop {
+              op: OR
+              left {
+              }
+              right {
+              }
+            }
+          }
+          arg2 {
+          }
+          arg3 {
+          }
+        }
+      }
+      size {
+      }
+      num_topics: ZERO
+      t1 {
+      }
+      t2 {
+      }
+      t3 {
+      }
+      t4 {
+      }
+    }
+  }
+  statements {
+    storage_func {
+      loc {
+      }
+      val {
+      }
+      st: MSTORE
+    }
+  }
+  statements {
+    copy_func {
+      ct: CODE
+      target {
+      }
+      source {
+      }
+      size {
+      }
+    }
+  }
+  statements {
+    boundedforstmt {
+      for_body {
+        statements {
+          boundedforstmt {
+            for_body {
+              statements {
+                boundedforstmt {
+                  for_body {
+                    statements {
+                      storage_func {
+                        loc {
+                          nop {
+                            op: MSIZE
+                          }
+                        }
+                        val {
+                          cons {
+                          }
+                        }
+                        st: SSTORE
+                      }
+                    }
+                    statements {
+                      storage_func {
+                        loc {
+                          nop {
+                            op: MSIZE
+                          }
+                        }
+                        val {
+                        }
+                        st: MSTORE
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

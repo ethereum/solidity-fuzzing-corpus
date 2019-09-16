@@ -1,0 +1,74 @@
+block {
+  statements {
+    decl {
+      expr {
+        binop {
+          op: EXP
+          left {
+            nop {
+              op: ADDRESS
+            }
+          }
+          right {
+          }
+        }
+      }
+    }
+  }
+  statements {
+    extcode_copy {
+      addr {
+        binop {
+          op: GT
+          left {
+          }
+          right {
+            varref {
+              varnum: 0
+            }
+          }
+        }
+      }
+      target {
+        binop {
+          op: GT
+          left {
+          }
+          right {
+            varref {
+              varnum: 0
+            }
+          }
+        }
+      }
+      source {
+        top {
+          op: ADDM
+          arg1 {
+          }
+          arg2 {
+          }
+          arg3 {
+            varref {
+              varnum: 0
+            }
+          }
+        }
+      }
+      size {
+        top {
+          op: ADDM
+          arg1 {
+          }
+          arg2 {
+          }
+          arg3 {
+            varref {
+              varnum: 0
+            }
+          }
+        }
+      }
+    }
+  }
+}

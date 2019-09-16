@@ -1,0 +1,85 @@
+block {
+  statements {
+    extcode_copy {
+      addr {
+        binop {
+          op: LT
+          left {
+            unop {
+              op: NOT
+              operand {
+              }
+            }
+          }
+          right {
+            cons {
+            }
+          }
+        }
+      }
+      target {
+        binop {
+          op: DIV
+          left {
+            binop {
+              op: DIV
+              left {
+                unop {
+                  op: NOT
+                  operand {
+                  }
+                }
+              }
+              right {
+                cons {
+                }
+              }
+            }
+          }
+          right {
+            binop {
+              op: DIV
+              left {
+                cons {
+                  hexval: "O"
+                }
+              }
+              right {
+              }
+            }
+          }
+        }
+      }
+      source {
+        binop {
+          op: DIV
+          left {
+            binop {
+              op: DIV
+              left {
+                unop {
+                  op: NOT
+                  operand {
+                  }
+                }
+              }
+              right {
+              }
+            }
+          }
+          right {
+            varref {
+              varnum: 4
+            }
+          }
+        }
+      }
+      size {
+        cons {
+        }
+      }
+    }
+  }
+  statements {
+  }
+}

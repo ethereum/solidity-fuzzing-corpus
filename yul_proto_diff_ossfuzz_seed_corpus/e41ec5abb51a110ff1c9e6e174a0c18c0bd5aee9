@@ -1,0 +1,61 @@
+block {
+  statements {
+    decl {
+      expr {
+        binop {
+          op: ADD
+          left {
+          }
+          right {
+            nop {
+              op: PC
+            }
+          }
+        }
+      }
+    }
+  }
+  statements {
+    copy_func {
+      ct: CODE
+      target {
+      }
+      source {
+        binop {
+          op: SDIV
+          left {
+          }
+          right {
+            unop {
+              op: NOT
+              operand {
+                varref {
+                  varnum: 0
+                }
+              }
+            }
+          }
+        }
+      }
+      size {
+        binop {
+          op: SDIV
+          left {
+          }
+          right {
+            unop {
+              op: NOT
+              operand {
+                varref {
+                  varnum: 0
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  statements {
+  }
+}

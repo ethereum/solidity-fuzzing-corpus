@@ -1,0 +1,35 @@
+block {
+  statements {
+    copy_func {
+      ct: CODE
+      target {
+        binop {
+          op: SAR
+          left {
+          }
+          right {
+          }
+        }
+      }
+      source {
+      }
+      size {
+        binop {
+          op: MUL
+          left {
+            cons {
+              intval: 0
+            }
+          }
+          right {
+            unop {
+              op: EXTCODEHASH
+              operand {
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

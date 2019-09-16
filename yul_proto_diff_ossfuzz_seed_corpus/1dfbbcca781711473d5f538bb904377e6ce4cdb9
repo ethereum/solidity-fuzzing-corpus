@@ -1,0 +1,57 @@
+block {
+  statements {
+  }
+  statements {
+    copy_func {
+      ct: CODE
+      target {
+        unop {
+          op: NOT
+          operand {
+          }
+        }
+      }
+      source {
+        cons {
+          intval: 512
+        }
+      }
+      size {
+      }
+    }
+  }
+  statements {
+    boundedforstmt {
+      for_body {
+        statements {
+          boundedforstmt {
+            for_body {
+              statements {
+                extcode_copy {
+                  addr {
+                  }
+                  target {
+                  }
+                  source {
+                  }
+                  size {
+                    binop {
+                      op: DIV
+                      left {
+                        nop {
+                          op: MSIZE
+                        }
+                      }
+                      right {
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

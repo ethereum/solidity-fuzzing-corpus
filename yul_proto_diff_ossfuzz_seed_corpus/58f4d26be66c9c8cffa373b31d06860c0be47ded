@@ -1,0 +1,121 @@
+block {
+  statements {
+    copy_func {
+      ct: CODE
+      target {
+        binop {
+          op: AND
+          left {
+            nop {
+              op: GAS
+            }
+          }
+          right {
+            binop {
+              op: AND
+              left {
+                unop {
+                  op: SLOAD
+                  operand {
+                    binop {
+                      op: AND
+                      left {
+                        nop {
+                          op: MSIZE
+                        }
+                      }
+                      right {
+                        cons {
+                          intval: 0
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+              right {
+                binop {
+                  op: AND
+                  left {
+                    nop {
+                      op: PC
+                    }
+                  }
+                  right {
+                    binop {
+                      op: AND
+                      left {
+                        nop {
+                          op: MSIZE
+                        }
+                      }
+                      right {
+                        cons {
+                          intval: 0
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+      source {
+      }
+      size {
+        binop {
+          op: AND
+          left {
+            unop {
+              op: SLOAD
+              operand {
+                binop {
+                  op: AND
+                  left {
+                    nop {
+                      op: MSIZE
+                    }
+                  }
+                  right {
+                    cons {
+                      intval: 0
+                    }
+                  }
+                }
+              }
+            }
+          }
+          right {
+            binop {
+              op: AND
+              left {
+                nop {
+                  op: PC
+                }
+              }
+              right {
+                binop {
+                  op: AND
+                  left {
+                    nop {
+                      op: MSIZE
+                    }
+                  }
+                  right {
+                    cons {
+                      intval: 0
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  statements {
+  }
+}

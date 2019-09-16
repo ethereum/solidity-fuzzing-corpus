@@ -1,0 +1,152 @@
+block {
+  statements {
+    pop {
+      expr {
+        top {
+          op: ADDM
+          arg1 {
+          }
+          arg2 {
+            binop {
+              op: SUB
+              left {
+              }
+              right {
+              }
+            }
+          }
+          arg3 {
+          }
+        }
+      }
+    }
+  }
+  statements {
+  }
+  statements {
+    storage_func {
+      loc {
+        binop {
+          op: GT
+          left {
+            binop {
+              op: ADD
+              left {
+              }
+              right {
+                nop {
+                  op: GAS
+                }
+              }
+            }
+          }
+          right {
+            cons {
+              intval: 0
+            }
+          }
+        }
+      }
+      val {
+      }
+      st: SSTORE
+    }
+  }
+  statements {
+  }
+  statements {
+  }
+  statements {
+    log_func {
+      pos {
+        nop {
+          op: CODESIZE
+        }
+      }
+      size {
+        nop {
+          op: CODESIZE
+        }
+      }
+      num_topics: ONE
+      t1 {
+        nop {
+          op: CODESIZE
+        }
+      }
+      t2 {
+      }
+      t3 {
+      }
+      t4 {
+      }
+    }
+  }
+  statements {
+    storage_func {
+      loc {
+        binop {
+          op: ADD
+          left {
+            cons {
+              strval: ""
+            }
+          }
+          right {
+          }
+        }
+      }
+      val {
+      }
+      st: MSTORE
+    }
+  }
+  statements {
+  }
+  statements {
+    storage_func {
+      loc {
+        binop {
+          op: ADD
+          left {
+            cons {
+              strval: ""
+            }
+          }
+          right {
+          }
+        }
+      }
+      val {
+      }
+      st: MSTORE
+    }
+  }
+  statements {
+  }
+  statements {
+    storage_func {
+      loc {
+      }
+      val {
+      }
+      st: MSTORE
+    }
+  }
+  statements {
+  }
+  statements {
+  }
+  statements {
+    storage_func {
+      loc {
+        cons {
+          intval: 0
+        }
+      }
+      val {
+      }
+      st: SSTORE
+    }
+  }
+}

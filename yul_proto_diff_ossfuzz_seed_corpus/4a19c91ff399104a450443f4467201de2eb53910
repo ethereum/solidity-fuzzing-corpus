@@ -1,0 +1,39 @@
+block {
+  statements {
+    boundedforstmt {
+      for_body {
+        statements {
+          ifstmt {
+            cond {
+              binop {
+                op: SDIV
+                left {
+                  unop {
+                    op: NOT
+                    operand {
+                      cons {
+                        strval: "1\000\000\000"
+                      }
+                    }
+                  }
+                }
+                right {
+                }
+              }
+            }
+            if_body {
+            }
+          }
+        }
+      }
+    }
+  }
+  statements {
+    funcdef {
+      num_input_params: 16384
+      num_output_params: 16384
+      block {
+      }
+    }
+  }
+}

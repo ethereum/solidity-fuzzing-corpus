@@ -1,0 +1,49 @@
+block {
+  statements {
+    log_func {
+      pos {
+        binop {
+          op: SAR
+          left {
+            nop {
+              op: CALLDATASIZE
+            }
+          }
+          right {
+            unop {
+              op: NOT
+              operand {
+              }
+            }
+          }
+        }
+      }
+      size {
+        binop {
+          op: SAR
+          left {
+            nop {
+              op: CALLDATASIZE
+            }
+          }
+          right {
+            unop {
+              op: NOT
+              operand {
+              }
+            }
+          }
+        }
+      }
+      num_topics: TWO
+      t1 {
+      }
+      t2 {
+      }
+      t3 {
+      }
+      t4 {
+      }
+    }
+  }
+}

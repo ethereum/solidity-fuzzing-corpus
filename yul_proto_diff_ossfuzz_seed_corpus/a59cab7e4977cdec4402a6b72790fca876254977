@@ -1,0 +1,108 @@
+block {
+  statements {
+  }
+  statements {
+    copy_func {
+      ct: CODE
+      target {
+        binop {
+          op: LT
+          left {
+            nop {
+              op: CALLER
+            }
+          }
+          right {
+          }
+        }
+      }
+      source {
+      }
+      size {
+      }
+    }
+  }
+  statements {
+    extcode_copy {
+      addr {
+      }
+      target {
+        nop {
+          op: CALLER
+        }
+      }
+      source {
+        binop {
+          op: DIV
+          left {
+          }
+          right {
+          }
+        }
+      }
+      size {
+      }
+    }
+  }
+  statements {
+    copy_func {
+      ct: CODE
+      target {
+        nop {
+          op: CALLER
+        }
+      }
+      source {
+        nop {
+          op: CALLER
+        }
+      }
+      size {
+        nop {
+          op: CALLER
+        }
+      }
+    }
+  }
+  statements {
+    extcode_copy {
+      addr {
+      }
+      target {
+        nop {
+          op: CALLER
+        }
+      }
+      source {
+        binop {
+          op: LT
+          left {
+          }
+          right {
+          }
+        }
+      }
+      size {
+      }
+    }
+  }
+  statements {
+    copy_func {
+      ct: CODE
+      target {
+      }
+      source {
+        nop {
+          op: CALLER
+        }
+      }
+      size {
+        nop {
+          op: CALLER
+        }
+      }
+    }
+  }
+  statements {
+  }
+}

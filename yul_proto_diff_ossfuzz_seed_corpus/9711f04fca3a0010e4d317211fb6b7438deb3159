@@ -1,0 +1,137 @@
+block {
+  statements {
+    forstmt {
+      for_body {
+      }
+      for_init {
+      }
+      for_post {
+        statements {
+          forstmt {
+            for_body {
+            }
+            for_init {
+            }
+            for_post {
+            }
+            for_cond {
+              binop {
+                op: OR
+                left {
+                  binop {
+                    op: OR
+                    left {
+                      unop {
+                        op: NOT
+                        operand {
+                          nop {
+                            op: CODESIZE
+                          }
+                        }
+                      }
+                    }
+                    right {
+                      nop {
+                        op: CODESIZE
+                      }
+                    }
+                  }
+                }
+                right {
+                  binop {
+                    op: OR
+                    left {
+                      unop {
+                        op: NOT
+                        operand {
+                          nop {
+                            op: CODESIZE
+                          }
+                        }
+                      }
+                    }
+                    right {
+                      nop {
+                        op: CODESIZE
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+      for_cond {
+        binop {
+          op: LT
+          left {
+            binop {
+              op: OR
+              left {
+                unop {
+                  op: NOT
+                  operand {
+                    nop {
+                      op: CODESIZE
+                    }
+                  }
+                }
+              }
+              right {
+                nop {
+                  op: CODESIZE
+                }
+              }
+            }
+          }
+          right {
+            binop {
+              op: LT
+              left {
+                binop {
+                  op: OR
+                  left {
+                    unop {
+                      op: NOT
+                      operand {
+                        nop {
+                          op: CODESIZE
+                        }
+                      }
+                    }
+                  }
+                  right {
+                    nop {
+                      op: CODESIZE
+                    }
+                  }
+                }
+              }
+              right {
+                binop {
+                  op: OR
+                  left {
+                    unop {
+                      op: NOT
+                      operand {
+                        nop {
+                          op: CODESIZE
+                        }
+                      }
+                    }
+                  }
+                  right {
+                    nop {
+                      op: CODESIZE
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

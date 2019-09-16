@@ -1,0 +1,112 @@
+block {
+  statements {
+    extcode_copy {
+      addr {
+      }
+      target {
+      }
+      source {
+        binop {
+          op: DIV
+          left {
+            cons {
+              strval: "\377\377\377\377\377\377\377\000"
+            }
+          }
+          right {
+            unop {
+              op: NOT
+              operand {
+                nop {
+                  op: PC
+                }
+              }
+            }
+          }
+        }
+      }
+      size {
+      }
+    }
+  }
+  statements {
+    forstmt {
+      for_body {
+        statements {
+          assignment {
+            ref_id {
+              varnum: 0
+            }
+            expr {
+              varref {
+                varnum: 0
+              }
+            }
+          }
+        }
+      }
+      for_init {
+      }
+      for_post {
+        statements {
+          assignment {
+            ref_id {
+              varnum: 0
+            }
+            expr {
+              varref {
+                varnum: 0
+              }
+            }
+          }
+        }
+      }
+      for_cond {
+        top {
+          op: ADDM
+          arg1 {
+            unop {
+              op: BLOCKHASH
+              operand {
+              }
+            }
+          }
+          arg2 {
+          }
+          arg3 {
+          }
+        }
+      }
+    }
+  }
+  statements {
+    extcode_copy {
+      addr {
+      }
+      target {
+      }
+      source {
+        binop {
+          op: DIV
+          left {
+            cons {
+              strval: "\377\377\377\377\377\377\377\000"
+            }
+          }
+          right {
+            unop {
+              op: NOT
+              operand {
+                nop {
+                  op: PC
+                }
+              }
+            }
+          }
+        }
+      }
+      size {
+      }
+    }
+  }
+}

@@ -1,0 +1,75 @@
+block {
+  statements {
+    ifstmt {
+      cond {
+      }
+      if_body {
+      }
+    }
+  }
+  statements {
+    storage_func {
+      loc {
+        nop {
+          op: GAS
+        }
+      }
+      val {
+        cons {
+          intval: 8
+        }
+      }
+      st: MSTORE
+    }
+  }
+  statements {
+    storage_func {
+      loc {
+      }
+      val {
+        cons {
+          intval: 8
+        }
+      }
+      st: MSTORE
+    }
+  }
+  statements {
+  }
+  statements {
+    boundedforstmt {
+      for_body {
+        statements {
+          copy_func {
+            ct: CODE
+            target {
+            }
+            source {
+              cons {
+                hexval: "0"
+              }
+            }
+            size {
+              top {
+                op: ADDM
+                arg1 {
+                }
+                arg2 {
+                  cons {
+                    intval: 8
+                  }
+                }
+                arg3 {
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  statements {
+  }
+  statements {
+  }
+}

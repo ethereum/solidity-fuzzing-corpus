@@ -1,0 +1,50 @@
+block {
+  statements {
+    boundedforstmt {
+      for_body {
+        statements {
+          boundedforstmt {
+            for_body {
+              statements {
+                boundedforstmt {
+                  for_body {
+                    statements {
+                      extcode_copy {
+                        addr {
+                        }
+                        target {
+                        }
+                        source {
+                        }
+                        size {
+                          binop {
+                            op: SMOD
+                            left {
+                              varref {
+                                varnum: 1048576
+                              }
+                            }
+                            right {
+                              unop {
+                                op: NOT
+                                operand {
+                                  varref {
+                                    varnum: 1048576
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

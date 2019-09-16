@@ -1,0 +1,74 @@
+block {
+  statements {
+    copy_func {
+      ct: CODE
+      target {
+        cons {
+        }
+      }
+      source {
+      }
+      size {
+      }
+    }
+  }
+  statements {
+    extcode_copy {
+      addr {
+        binop {
+          op: DIV
+          left {
+            unop {
+              op: NOT
+              operand {
+              }
+            }
+          }
+          right {
+          }
+        }
+      }
+      target {
+      }
+      source {
+        binop {
+          op: DIV
+          left {
+            binop {
+              op: DIV
+              left {
+                binop {
+                  op: DIV
+                  left {
+                    unop {
+                      op: NOT
+                      operand {
+                        cons {
+                          intval: 16777216
+                        }
+                      }
+                    }
+                  }
+                  right {
+                  }
+                }
+              }
+              right {
+                varref {
+                  varnum: 503316480
+                }
+              }
+            }
+          }
+          right {
+          }
+        }
+      }
+      size {
+        varref {
+          varnum: 503316480
+        }
+      }
+    }
+  }
+}

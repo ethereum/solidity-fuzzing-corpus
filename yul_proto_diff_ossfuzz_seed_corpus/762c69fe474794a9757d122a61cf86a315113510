@@ -1,0 +1,47 @@
+block {
+  statements {
+    storage_func {
+      loc {
+        unop {
+          op: NOT
+          operand {
+            unop {
+              op: NOT
+              operand {
+                nop {
+                  op: PC
+                }
+              }
+            }
+          }
+        }
+      }
+      val {
+        unop {
+          op: NOT
+          operand {
+            unop {
+              op: NOT
+              operand {
+                unop {
+                  op: NOT
+                  operand {
+                    unop {
+                      op: NOT
+                      operand {
+                        nop {
+                          op: PC
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+      st: MSTORE
+    }
+  }
+}

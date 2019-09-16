@@ -1,0 +1,109 @@
+block {
+  statements {
+    storage_func {
+      loc {
+        binop {
+          op: SI
+          left {
+            cons {
+              strval: ":"
+            }
+          }
+          right {
+          }
+        }
+      }
+      val {
+        nop {
+          op: PC
+        }
+      }
+      st: MSTORE
+    }
+  }
+  statements {
+    storage_func {
+      loc {
+        nop {
+          op: PC
+        }
+      }
+      val {
+        nop {
+          op: PC
+        }
+      }
+      st: MSTORE
+    }
+  }
+  statements {
+    ifstmt {
+      cond {
+        cons {
+          strval: "uuuuu"
+        }
+      }
+      if_body {
+      }
+    }
+  }
+  statements {
+    boundedforstmt {
+      for_body {
+        statements {
+          boundedforstmt {
+            for_body {
+              statements {
+                extcode_copy {
+                  addr {
+                  }
+                  target {
+                  }
+                  source {
+                  }
+                  size {
+                    binop {
+                      op: SI
+                      left {
+                        top {
+                          op: MULM
+                          arg1 {
+                          }
+                          arg2 {
+                          }
+                          arg3 {
+                          }
+                        }
+                      }
+                      right {
+                        unop {
+                          op: NOT
+                          operand {
+                            top {
+                              op: ADDM
+                              arg1 {
+                              }
+                              arg2 {
+                              }
+                              arg3 {
+                                unop {
+                                  op: NOT
+                                  operand {
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
