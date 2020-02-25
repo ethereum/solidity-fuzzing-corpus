@@ -1,0 +1,206 @@
+block {
+  statements {
+    storage_func {
+      loc {
+        binop {
+          op: MUL
+          left {
+          }
+          right {
+            binop {
+              op: MUL
+              left {
+              }
+              right {
+                nop {
+                  op: GASPRICE
+                }
+              }
+            }
+          }
+        }
+      }
+      val {
+        binop {
+          op: BYTE
+          left {
+          }
+          right {
+          }
+        }
+      }
+      st: SSTORE
+    }
+  }
+  statements {
+    storage_func {
+      loc {
+        binop {
+          op: MUL
+          left {
+          }
+          right {
+            binop {
+              op: MUL
+              left {
+              }
+              right {
+                nop {
+                  op: GASPRICE
+                }
+              }
+            }
+          }
+        }
+      }
+      val {
+        binop {
+          op: BYTE
+          left {
+          }
+          right {
+          }
+        }
+      }
+      st: MSTORE8
+    }
+  }
+  statements {
+  }
+  statements {
+    storage_func {
+      loc {
+        binop {
+          op: SDIV
+          left {
+            nop {
+              op: NUMBER
+            }
+          }
+          right {
+            binop {
+              op: SLT
+              left {
+              }
+              right {
+              }
+            }
+          }
+        }
+      }
+      val {
+      }
+      st: MSTORE
+    }
+  }
+  statements {
+    storage_func {
+      loc {
+        binop {
+          op: MUL
+          left {
+          }
+          right {
+            binop {
+              op: MUL
+              left {
+              }
+              right {
+                nop {
+                  op: GASPRICE
+                }
+              }
+            }
+          }
+        }
+      }
+      val {
+        binop {
+          op: BYTE
+          left {
+          }
+          right {
+          }
+        }
+      }
+      st: MSTORE8
+    }
+  }
+  statements {
+    ifstmt {
+      cond {
+        unop {
+          op: NOT
+          operand {
+          }
+        }
+      }
+      if_body {
+        statements {
+          storage_func {
+            loc {
+              cons {
+                intval: 0
+              }
+            }
+            val {
+              varref {
+                varnum: 1271213601
+              }
+            }
+            st: MSTORE
+          }
+        }
+        statements {
+          storage_func {
+            loc {
+              cons {
+                intval: 0
+              }
+            }
+            val {
+              varref {
+                varnum: 765905063
+              }
+            }
+            st: MSTORE8
+          }
+        }
+      }
+    }
+  }
+  statements {
+    storage_func {
+      loc {
+        binop {
+          op: MUL
+          left {
+          }
+          right {
+            binop {
+              op: MUL
+              left {
+              }
+              right {
+                nop {
+                  op: GASPRICE
+                }
+              }
+            }
+          }
+        }
+      }
+      val {
+        binop {
+          op: BYTE
+          left {
+          }
+          right {
+          }
+        }
+      }
+      st: MSTORE8
+    }
+  }
+}
+ver: ISTANBUL

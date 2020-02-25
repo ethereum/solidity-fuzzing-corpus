@@ -1,0 +1,139 @@
+block {
+  statements {
+    decl {
+    }
+  }
+  statements {
+  }
+  statements {
+    forstmt {
+      for_body {
+        statements {
+        }
+        statements {
+          forstmt {
+          }
+        }
+      }
+      for_init {
+        statements {
+          boundedforstmt {
+          }
+        }
+        statements {
+          pop {
+            expr {
+              create {
+                createty: CREATE2
+              }
+            }
+          }
+        }
+      }
+      for_post {
+        statements {
+          breakstmt {
+          }
+        }
+        statements {
+          breakstmt {
+          }
+        }
+        statements {
+          ifstmt {
+            cond {
+              varref {
+                varnum: 41467796
+              }
+            }
+            if_body {
+              statements {
+                assignment {
+                  ref_id {
+                    varnum: 35088135
+                  }
+                  expr {
+                    varref {
+                      varnum: 26832103
+                    }
+                  }
+                }
+              }
+              statements {
+                switchstmt {
+                  switch_expr {
+                    varref {
+                      varnum: 35801816
+                    }
+                  }
+                  case_stmt {
+                  }
+                }
+              }
+              statements {
+                boundedforstmt {
+                }
+              }
+              statements {
+                pop {
+                  expr {
+                    lowcall {
+                      callty: CALL
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+        statements {
+          pop {
+            expr {
+              lowcall {
+                callty: CALL
+              }
+            }
+          }
+        }
+        statements {
+          pop {
+            expr {
+              create {
+                createty: CREATE2
+              }
+            }
+          }
+        }
+      }
+      for_cond {
+      }
+    }
+  }
+  statements {
+  }
+  statements {
+    copy_func {
+      ct: CALLDATA
+      target {
+      }
+      source {
+      }
+      size {
+      }
+    }
+  }
+  statements {
+    forstmt {
+    }
+  }
+  statements {
+    pop {
+      expr {
+        lowcall {
+          callty: CALLCODE
+        }
+      }
+    }
+  }
+}
+ver: ISTANBUL

@@ -1,0 +1,209 @@
+block {
+  statements {
+    boundedforstmt {
+      for_body {
+        statements {
+          boundedforstmt {
+          }
+        }
+        statements {
+          pop {
+            expr {
+              unop {
+                op: MLOAD
+                operand {
+                  unop {
+                    op: CALLDATALOAD
+                    operand {
+                      varref {
+                        varnum: 175926877
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  statements {
+    funcdef {
+      num_input_params: 412206455
+      num_output_params: 1181799850
+      block {
+        statements {
+          pop {
+            expr {
+              varref {
+                varnum: 77177437
+              }
+            }
+          }
+        }
+        statements {
+          assignment {
+            ref_id {
+              varnum: 1729398203
+            }
+            expr {
+              varref {
+                varnum: 663988338
+              }
+            }
+          }
+        }
+        statements {
+          switchstmt {
+            switch_expr {
+              varref {
+                varnum: 287391047
+              }
+            }
+            case_stmt {
+            }
+          }
+        }
+      }
+      force_call: false
+    }
+  }
+  statements {
+    forstmt {
+      for_body {
+        statements {
+          assignment {
+            ref_id {
+              varnum: 1158247308
+            }
+            expr {
+              func_expr {
+                ret: SINGLE
+                func_index: 58109374
+              }
+            }
+          }
+        }
+        statements {
+          boundedforstmt {
+          }
+        }
+        statements {
+          forstmt {
+            for_cond {
+              func_expr {
+                ret: SINGLE
+                func_index: 1894821928
+              }
+            }
+          }
+        }
+        statements {
+          functioncall {
+            in_param1 {
+              unop {
+                op: SLOAD
+                operand {
+                  cons {
+                    intval: 0
+                  }
+                }
+              }
+            }
+            in_param2 {
+              func_expr {
+                ret: SINGLE
+                func_index: 912686478
+              }
+            }
+            in_param3 {
+              unop {
+                op: CALLDATALOAD
+                operand {
+                  cons {
+                    intval: 0
+                  }
+                }
+              }
+            }
+            in_param4 {
+              varref {
+                varnum: 980024783
+              }
+            }
+            out_param1 {
+              varnum: 997080053
+            }
+            out_param2 {
+              varnum: 647741799
+            }
+            out_param3 {
+              varnum: 1929962856
+            }
+            out_param4 {
+              varnum: 1667122431
+            }
+          }
+        }
+      }
+      for_init {
+        statements {
+          contstmt {
+          }
+        }
+        statements {
+          forstmt {
+            for_cond {
+              unopdata {
+                op: OFFSET
+                identifier: 1138253668
+              }
+            }
+          }
+        }
+      }
+      for_post {
+        statements {
+          pop {
+            expr {
+              func_expr {
+                ret: SINGLE
+                func_index: 1248967272
+              }
+            }
+          }
+        }
+      }
+      for_cond {
+        unop {
+          op: NOT
+          operand {
+            varref {
+              varnum: 611070486
+            }
+          }
+        }
+      }
+    }
+  }
+  statements {
+    pop {
+      expr {
+        unop {
+          op: CALLDATALOAD
+          operand {
+            varref {
+              varnum: 491773759
+            }
+          }
+        }
+      }
+    }
+  }
+  statements {
+    terminatestmt {
+    }
+  }
+}
+ver: BERLIN

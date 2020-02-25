@@ -1,0 +1,43 @@
+block {
+  statements {
+    contstmt {
+    }
+  }
+  statements {
+    switchstmt {
+      switch_expr {
+        binop {
+          op: MUL
+          left {
+            cons {
+              strval: "\000\000\000\000\000\000\000\000\000\000\000\000\000\000"
+            }
+          }
+          right {
+            cons {
+              intval: 0
+            }
+          }
+        }
+      }
+      default_block {
+        statements {
+          switchstmt {
+            switch_expr {
+            }
+            default_block {
+            }
+          }
+        }
+      }
+    }
+  }
+  statements {
+    multidecl {
+      num_vars: 0
+    }
+  }
+  statements {
+  }
+}
+ver: ISTANBUL

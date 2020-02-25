@@ -1,0 +1,128 @@
+block {
+  statements {
+    copy_func {
+      ct: RETURNDATA
+      target {
+        binop {
+          op: MOD
+          left {
+            unop {
+              op: MLOAD
+              operand {
+                cons {
+                  intval: 0
+                }
+              }
+            }
+          }
+          right {
+            binop {
+              op: LT
+              left {
+                binop {
+                  op: SHL
+                  left {
+                    nop {
+                      op: PC
+                    }
+                  }
+                  right {
+                  }
+                }
+              }
+              right {
+                binop {
+                  op: DIV
+                  left {
+                  }
+                  right {
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+      source {
+        binop {
+          op: SI
+          left {
+            binop {
+              op: SHL
+              left {
+                nop {
+                  op: PC
+                }
+              }
+              right {
+              }
+            }
+          }
+          right {
+            unop {
+              op: CALLDATALOAD
+              operand {
+                cons {
+                  intval: 0
+                }
+              }
+            }
+          }
+        }
+      }
+      size {
+        nop {
+          op: PC
+        }
+      }
+    }
+  }
+  statements {
+    copy_func {
+      ct: RETURNDATA
+      target {
+        binop {
+          op: EQ
+          left {
+            nop {
+              op: PC
+            }
+          }
+          right {
+          }
+        }
+      }
+      source {
+        unop {
+          op: SLOAD
+          operand {
+            cons {
+              intval: 0
+            }
+          }
+        }
+      }
+      size {
+        unop {
+        }
+      }
+    }
+  }
+  statements {
+    breakstmt {
+    }
+  }
+  statements {
+    breakstmt {
+    }
+  }
+  statements {
+    breakstmt {
+    }
+  }
+  statements {
+    breakstmt {
+    }
+  }
+}
+ver: ISTANBUL

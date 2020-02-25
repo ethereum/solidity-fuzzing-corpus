@@ -1,0 +1,46 @@
+block {
+  statements {
+    funcdef {
+      num_input_params: 4096
+      num_output_params: 4096
+      block {
+      }
+    }
+  }
+  statements {
+    pop {
+      expr {
+        unop {
+          op: NOT
+          operand {
+            create {
+              createty: CREATE
+              wei {
+                unop {
+                  op: BLOCKHASH
+                  operand {
+                  }
+                }
+              }
+              position {
+              }
+              size {
+              }
+              value {
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  statements {
+    boundedforstmt {
+      for_body {
+        statements {
+        }
+      }
+    }
+  }
+}
+ver: SPURIOUS

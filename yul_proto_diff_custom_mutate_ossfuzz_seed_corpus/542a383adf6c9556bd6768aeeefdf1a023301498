@@ -1,0 +1,101 @@
+block {
+  statements {
+    funcdef {
+      num_input_params: 1
+      num_output_params: 258
+      block {
+        statements {
+          storage_func {
+            loc {
+              varref {
+                varnum: 0
+              }
+            }
+            val {
+            }
+            st: MSTORE8
+          }
+        }
+        statements {
+        }
+      }
+      force_call: true
+    }
+  }
+  statements {
+    funcdef {
+      num_input_params: 258
+      num_output_params: 258
+      block {
+        statements {
+        }
+        statements {
+          funcdef {
+            num_input_params: 256
+            num_output_params: 258
+            block {
+              statements {
+              }
+            }
+            force_call: true
+          }
+        }
+        statements {
+          funcdef {
+            num_input_params: 1
+            num_output_params: 258
+            block {
+              statements {
+                storage_func {
+                  loc {
+                    varref {
+                      varnum: 0
+                    }
+                  }
+                  val {
+                  }
+                  st: MSTORE8
+                }
+              }
+              statements {
+              }
+            }
+            force_call: true
+          }
+        }
+      }
+      force_call: true
+    }
+  }
+  statements {
+  }
+  statements {
+    ifstmt {
+      cond {
+        varref {
+          varnum: 0
+        }
+      }
+      if_body {
+        statements {
+          funcdef {
+            num_input_params: 1
+            num_output_params: 258
+            block {
+              statements {
+                breakstmt {
+                }
+              }
+              statements {
+              }
+            }
+            force_call: true
+          }
+        }
+        statements {
+        }
+      }
+    }
+  }
+}
+ver: BERLIN

@@ -1,0 +1,52 @@
+block {
+  statements {
+    boundedforstmt {
+      for_body {
+        statements {
+          ifstmt {
+            cond {
+              unop {
+                op: NOT
+                operand {
+                  cons {
+                  }
+                }
+              }
+            }
+            if_body {
+              statements {
+                boundedforstmt {
+                  for_body {
+                    statements {
+                      ifstmt {
+                        cond {
+                        }
+                        if_body {
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+              statements {
+                terminatestmt {
+                  stop_invalid {
+                    stmt: INVALID
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  statements {
+    terminatestmt {
+      stop_invalid {
+        stmt: STOP
+      }
+    }
+  }
+}
+ver: ISTANBUL

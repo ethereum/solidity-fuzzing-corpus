@@ -1,0 +1,166 @@
+block {
+  statements {
+    storage_func {
+      loc {
+        nop {
+          op: RETURNDATASIZE
+        }
+      }
+      val {
+        nop {
+          op: RETURNDATASIZE
+        }
+      }
+      st: MSTORE
+    }
+  }
+  statements {
+  }
+  statements {
+    storage_func {
+      loc {
+        nop {
+          op: RETURNDATASIZE
+        }
+      }
+      val {
+        unop {
+          op: CALLDATALOAD
+          operand {
+            cons {
+              intval: 0
+            }
+          }
+        }
+      }
+      st: MSTORE
+    }
+  }
+  statements {
+    storage_func {
+      loc {
+        unop {
+          op: MLOAD
+          operand {
+            cons {
+              intval: 0
+            }
+          }
+        }
+      }
+      val {
+        unop {
+          op: CALLDATALOAD
+          operand {
+            cons {
+              intval: 0
+            }
+          }
+        }
+      }
+      st: MSTORE
+    }
+  }
+  statements {
+    storage_func {
+      loc {
+        nop {
+          op: RETURNDATASIZE
+        }
+      }
+      val {
+        nop {
+          op: RETURNDATASIZE
+        }
+      }
+      st: MSTORE
+    }
+  }
+  statements {
+    storage_func {
+      loc {
+      }
+      val {
+        nop {
+          op: CODESIZE
+        }
+      }
+      st: MSTORE
+    }
+  }
+  statements {
+    storage_func {
+      loc {
+        unop {
+          op: CALLDATALOAD
+          operand {
+            cons {
+              intval: 0
+            }
+          }
+        }
+      }
+      val {
+        nop {
+          op: RETURNDATASIZE
+        }
+      }
+      st: MSTORE
+    }
+  }
+  statements {
+    storage_func {
+      loc {
+        nop {
+          op: RETURNDATASIZE
+        }
+      }
+      val {
+      }
+      st: MSTORE8
+    }
+  }
+  statements {
+    storage_func {
+      loc {
+        nop {
+          op: RETURNDATASIZE
+        }
+      }
+      val {
+        nop {
+          op: RETURNDATASIZE
+        }
+      }
+      st: MSTORE
+    }
+  }
+  statements {
+    storage_func {
+      loc {
+        nop {
+          op: RETURNDATASIZE
+        }
+      }
+      val {
+        nop {
+          op: RETURNDATASIZE
+        }
+      }
+      st: MSTORE
+    }
+  }
+  statements {
+    breakstmt {
+    }
+  }
+  statements {
+    breakstmt {
+    }
+  }
+  statements {
+    breakstmt {
+    }
+  }
+}
+ver: HOMESTEAD

@@ -1,0 +1,104 @@
+obj {
+  code {
+    block {
+      statements {
+        decl {
+        }
+      }
+      statements {
+        storage_func {
+          loc {
+            varref {
+              varnum: 54045367
+            }
+          }
+          val {
+            varref {
+              varnum: 101908726
+            }
+          }
+          st: MSTORE8
+        }
+      }
+      statements {
+        storage_func {
+          loc {
+            binop {
+              op: SHL
+              left {
+                cons {
+                  intval: 65
+                }
+              }
+              right {
+                binop {
+                  op: SHR
+                  left {
+                    cons {
+                      intval: 64
+                    }
+                  }
+                  right {
+                    binop {
+                      op: SHL
+                      left {
+                        cons {
+                          intval: 65
+                        }
+                      }
+                      right {
+                        cons {
+                          intval: 65
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+          val {
+          }
+          st: MSTORE
+        }
+      }
+      statements {
+        functioncall {
+          ret: SINGLE
+          func_index: 31268377
+          in_param1 {
+            varref {
+              varnum: 31268377
+            }
+          }
+          in_param2 {
+            unop {
+              op: MLOAD
+              operand {
+                varref {
+                  varnum: 4761103
+                }
+              }
+            }
+          }
+          in_param3 {
+            varref {
+              varnum: 10422792
+            }
+          }
+          in_param4 {
+            unop {
+              op: CALLDATALOAD
+              operand {
+                varref {
+                  varnum: 399317
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+ver: PETERSBURG

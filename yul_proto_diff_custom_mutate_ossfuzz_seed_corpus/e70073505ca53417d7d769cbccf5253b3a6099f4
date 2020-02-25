@@ -1,0 +1,126 @@
+block {
+  statements {
+  }
+  statements {
+    funcdef {
+      num_input_params: 14
+      num_output_params: 4096
+      block {
+        statements {
+          funcdef {
+            num_input_params: 1024
+            num_output_params: 14
+            block {
+            }
+            force_call: true
+          }
+        }
+        statements {
+          funcdef {
+            num_input_params: 1024
+            num_output_params: 14
+            block {
+              statements {
+                funcdef {
+                  num_input_params: 14
+                  num_output_params: 14
+                  block {
+                  }
+                  force_call: true
+                }
+              }
+            }
+            force_call: true
+          }
+        }
+        statements {
+          funcdef {
+            num_input_params: 1024
+            num_output_params: 14
+            block {
+              statements {
+                funcdef {
+                  num_input_params: 14
+                  num_output_params: 14
+                  block {
+                  }
+                  force_call: true
+                }
+              }
+            }
+            force_call: true
+          }
+        }
+      }
+      force_call: true
+    }
+  }
+  statements {
+    extcode_copy {
+      addr {
+        binop {
+          op: SUB
+          left {
+          }
+          right {
+            binop {
+              op: ADD
+              left {
+                cons {
+                  strval: "1"
+                }
+              }
+              right {
+              }
+            }
+          }
+        }
+      }
+      target {
+      }
+      source {
+      }
+      size {
+        binop {
+          op: SUB
+          left {
+          }
+          right {
+            binop {
+              op: ADD
+              left {
+              }
+              right {
+                nop {
+                  op: CODESIZE
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  statements {
+  }
+  statements {
+  }
+  statements {
+    decl {
+      expr {
+      }
+    }
+  }
+  statements {
+  }
+  statements {
+    funcdef {
+      num_input_params: 1024
+      num_output_params: 14
+      block {
+      }
+      force_call: true
+    }
+  }
+}
+ver: BERLIN

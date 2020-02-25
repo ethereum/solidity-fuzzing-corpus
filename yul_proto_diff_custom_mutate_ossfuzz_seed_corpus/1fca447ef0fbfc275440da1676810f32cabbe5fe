@@ -1,0 +1,130 @@
+block {
+  statements {
+    breakstmt {
+    }
+  }
+  statements {
+  }
+  statements {
+    extcode_copy {
+      addr {
+      }
+      target {
+        nop {
+          op: CALLDATASIZE
+        }
+      }
+      source {
+      }
+      size {
+        binop {
+          op: SDIV
+          left {
+            binop {
+              op: SAR
+              left {
+                unop {
+                  op: NOT
+                  operand {
+                  }
+                }
+              }
+              right {
+              }
+            }
+          }
+          right {
+            nop {
+              op: ADDRESS
+            }
+          }
+        }
+      }
+    }
+  }
+  statements {
+    breakstmt {
+    }
+  }
+  statements {
+    breakstmt {
+    }
+  }
+  statements {
+    breakstmt {
+    }
+  }
+  statements {
+    breakstmt {
+    }
+  }
+  statements {
+    breakstmt {
+    }
+  }
+  statements {
+    pop {
+      expr {
+        cons {
+          intval: 2314885530817035040
+        }
+      }
+    }
+  }
+  statements {
+  }
+  statements {
+  }
+  statements {
+    extcode_copy {
+      addr {
+      }
+      target {
+        nop {
+          op: ADDRESS
+        }
+      }
+      source {
+      }
+      size {
+        binop {
+          op: SDIV
+          left {
+            binop {
+              op: SDIV
+              left {
+                binop {
+                  op: SDIV
+                  left {
+                  }
+                  right {
+                  }
+                }
+              }
+              right {
+                unop {
+                  op: CALLDATALOAD
+                  operand {
+                    cons {
+                      intval: 0
+                    }
+                  }
+                }
+              }
+            }
+          }
+          right {
+            nop {
+              op: ADDRESS
+            }
+          }
+        }
+      }
+    }
+  }
+  statements {
+    breakstmt {
+    }
+  }
+}
+ver: SPURIOUS

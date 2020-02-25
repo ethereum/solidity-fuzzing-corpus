@@ -1,0 +1,126 @@
+obj {
+  code {
+    block {
+      statements {
+        extcode_copy {
+          addr {
+          }
+          target {
+          }
+          source {
+            binop {
+              op: SI
+              left {
+                binop {
+                  op: SI
+                  left {
+                  }
+                  right {
+                    binop {
+                      op: SI
+                      left {
+                        binop {
+                          op: SI
+                          left {
+                          }
+                          right {
+                            binop {
+                              op: SI
+                              left {
+                              }
+                              right {
+                              }
+                            }
+                          }
+                        }
+                      }
+                      right {
+                      }
+                    }
+                  }
+                }
+              }
+              right {
+                binop {
+                  op: SI
+                  left {
+                  }
+                  right {
+                    unop {
+                      op: MLOAD
+                      operand {
+                        cons {
+                          intval: 0
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+          size {
+            binop {
+              op: SI
+              left {
+                cons {
+                  hexval: "\020\000\000\000"
+                }
+              }
+              right {
+              }
+            }
+          }
+        }
+      }
+      statements {
+        extcode_copy {
+          addr {
+          }
+          target {
+          }
+          source {
+            unop {
+              op: CALLDATALOAD
+              operand {
+                cons {
+                  intval: 0
+                }
+              }
+            }
+          }
+          size {
+            binop {
+              op: SI
+              left {
+              }
+              right {
+              }
+            }
+          }
+        }
+      }
+      statements {
+        breakstmt {
+        }
+      }
+    }
+  }
+  data {
+    hex: "{"
+  }
+  sub_obj {
+    code {
+      block {
+        statements {
+          breakstmt {
+          }
+        }
+      }
+    }
+    data {
+      hex: ""
+    }
+  }
+}
+ver: ISTANBUL

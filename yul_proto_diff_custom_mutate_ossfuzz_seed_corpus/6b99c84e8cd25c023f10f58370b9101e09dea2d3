@@ -1,0 +1,110 @@
+obj {
+  code {
+    block {
+      statements {
+        decl {
+          expr {
+            unop {
+              op: NOT
+              operand {
+                top {
+                  op: MULM
+                  arg1 {
+                    nop {
+                      op: CALLVALUE
+                    }
+                  }
+                  arg2 {
+                  }
+                  arg3 {
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+      statements {
+        forstmt {
+          for_body {
+            statements {
+              contstmt {
+              }
+            }
+          }
+          for_init {
+          }
+          for_post {
+          }
+          for_cond {
+            lowcall {
+              callty: CALL
+              gas {
+                varref {
+                  varnum: 0
+                }
+              }
+              addr {
+              }
+              wei {
+                lowcall {
+                  callty: CALL
+                  gas {
+                    lowcall {
+                      callty: CALL
+                      gas {
+                      }
+                      addr {
+                      }
+                      wei {
+                      }
+                      in {
+                      }
+                      insize {
+                      }
+                      out {
+                      }
+                      outsize {
+                      }
+                    }
+                  }
+                  addr {
+                    binop {
+                      op: SI
+                      left {
+                      }
+                      right {
+                        varref {
+                          varnum: 0
+                        }
+                      }
+                    }
+                  }
+                  wei {
+                  }
+                  in {
+                  }
+                  insize {
+                  }
+                  out {
+                  }
+                  outsize {
+                  }
+                }
+              }
+              in {
+              }
+              insize {
+              }
+              out {
+              }
+              outsize {
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+ver: SPURIOUS

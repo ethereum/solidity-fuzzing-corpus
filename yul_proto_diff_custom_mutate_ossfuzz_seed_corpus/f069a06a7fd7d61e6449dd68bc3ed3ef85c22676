@@ -1,0 +1,62 @@
+block {
+  statements {
+    extcode_copy {
+      addr {
+      }
+      target {
+        binop {
+          op: MOD
+          left {
+            binop {
+              op: SDIV
+              left {
+              }
+              right {
+              }
+            }
+          }
+          right {
+            cons {
+              strval: "\310"
+            }
+          }
+        }
+      }
+      source {
+      }
+      size {
+        binop {
+          op: MOD
+          left {
+            binop {
+              op: MOD
+              left {
+                binop {
+                  op: MOD
+                  left {
+                  }
+                  right {
+                    nop {
+                      op: GAS
+                    }
+                  }
+                }
+              }
+              right {
+                cons {
+                  strval: "\310"
+                }
+              }
+            }
+          }
+          right {
+            cons {
+              strval: "\310"
+            }
+          }
+        }
+      }
+    }
+  }
+}
+ver: SPURIOUS

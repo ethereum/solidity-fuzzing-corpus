@@ -1,0 +1,72 @@
+block {
+	statements {
+		decl {
+			expr {
+				unop {
+					op: CALLDATALOAD
+					operand {
+						cons {
+							intval: 1
+						}
+					}
+				}
+			}
+		}
+	}
+	statements {
+		storage_func {
+			st: SSTORE
+			loc {
+				varref {
+					varnum: 0
+				}
+			}
+			val {
+				cons {
+					intval: 1337
+				}
+			}
+		}
+	}
+	statements {
+		storage_func {
+			st: SSTORE
+			loc {
+				unop {
+					op: CALLDATALOAD
+					operand {
+						cons {
+							intval: 0
+						}
+					}
+				}
+			}
+			val {
+				cons {
+					intval: 1337
+				}
+			}
+		}
+	}
+	statements {
+		storage_func {
+			st: MSTORE
+			loc {
+				cons {
+					intval: 0
+				}
+			}
+			val {
+				unop {
+					op: SLOAD
+					operand {
+						varref {
+							varnum: 0
+						}
+					}
+				}
+			}
+		}
+	}
+}
+ver: SPURIOUS

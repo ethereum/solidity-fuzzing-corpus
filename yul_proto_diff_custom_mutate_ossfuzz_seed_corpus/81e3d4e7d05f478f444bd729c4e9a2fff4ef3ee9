@@ -1,0 +1,133 @@
+block {
+  statements {
+    boundedforstmt {
+      for_body {
+        statements {
+          storage_func {
+            loc {
+            }
+            val {
+            }
+            st: MSTORE
+          }
+        }
+        statements {
+          switchstmt {
+            switch_expr {
+              top {
+                op: ADDM
+                arg1 {
+                  nop {
+                    op: MSIZE
+                  }
+                }
+                arg2 {
+                }
+                arg3 {
+                }
+              }
+            }
+          }
+        }
+        statements {
+          boundedforstmt {
+            for_body {
+              statements {
+                storage_func {
+                  loc {
+                    lowcall {
+                      callty: CALL
+                      gas {
+                      }
+                      addr {
+                      }
+                      wei {
+                        varref {
+                          varnum: 4096
+                        }
+                      }
+                      in {
+                      }
+                      insize {
+                      }
+                      out {
+                      }
+                      outsize {
+                      }
+                    }
+                  }
+                  val {
+                    lowcall {
+                      callty: CALL
+                      gas {
+                        nop {
+                          op: GAS
+                        }
+                      }
+                      addr {
+                        binop {
+                          op: SDIV
+                          left {
+                            nop {
+                              op: GAS
+                            }
+                          }
+                          right {
+                          }
+                        }
+                      }
+                      wei {
+                        nop {
+                          op: GAS
+                        }
+                      }
+                      in {
+                      }
+                      insize {
+                        nop {
+                          op: GAS
+                        }
+                      }
+                      out {
+                        binop {
+                          op: MUL
+                          left {
+                            nop {
+                              op: MSIZE
+                            }
+                          }
+                          right {
+                          }
+                        }
+                      }
+                      outsize {
+                      }
+                    }
+                  }
+                  st: MSTORE8
+                }
+              }
+              statements {
+                boundedforstmt {
+                  for_body {
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  statements {
+    decl {
+    }
+  }
+  statements {
+    decl {
+    }
+  }
+  statements {
+  }
+}
+ver: HOMESTEAD

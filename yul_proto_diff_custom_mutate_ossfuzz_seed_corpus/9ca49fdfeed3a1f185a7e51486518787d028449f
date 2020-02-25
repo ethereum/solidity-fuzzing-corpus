@@ -1,0 +1,174 @@
+block {
+  statements {
+    boundedforstmt {
+      for_body {
+      }
+    }
+  }
+  statements {
+  }
+  statements {
+    boundedforstmt {
+      for_body {
+        statements {
+          ifstmt {
+            cond {
+              unop {
+                op: BLOCKHASH
+                operand {
+                }
+              }
+            }
+            if_body {
+              statements {
+                breakstmt {
+                }
+              }
+            }
+          }
+        }
+        statements {
+          ifstmt {
+            cond {
+              nop {
+                op: NUMBER
+              }
+            }
+            if_body {
+              statements {
+                breakstmt {
+                }
+              }
+            }
+          }
+        }
+        statements {
+          blockstmt {
+          }
+        }
+        statements {
+          blockstmt {
+            statements {
+            }
+          }
+        }
+      }
+    }
+  }
+  statements {
+    funcdef {
+      num_input_params: 0
+      num_output_params: 0
+      block {
+        statements {
+          funcdef {
+            num_input_params: 1886322688
+            num_output_params: 1886322688
+            block {
+              statements {
+              }
+              statements {
+                switchstmt {
+                }
+              }
+            }
+            force_call: false
+          }
+        }
+      }
+      force_call: true
+    }
+  }
+  statements {
+    funcdef {
+      num_input_params: 14
+      num_output_params: 1024
+      block {
+        statements {
+          funcdef {
+            num_input_params: 1024
+            num_output_params: 14
+            block {
+            }
+            force_call: true
+          }
+        }
+      }
+      force_call: true
+    }
+  }
+  statements {
+    funcdef {
+      num_input_params: 0
+      num_output_params: 4096
+      block {
+        statements {
+          boundedforstmt {
+            for_body {
+              statements {
+                ifstmt {
+                  cond {
+                    unop {
+                      op: BLOCKHASH
+                      operand {
+                      }
+                    }
+                  }
+                  if_body {
+                    statements {
+                      blockstmt {
+                      }
+                    }
+                  }
+                }
+              }
+              statements {
+                ifstmt {
+                  cond {
+                    unop {
+                      op: BLOCKHASH
+                      operand {
+                      }
+                    }
+                  }
+                  if_body {
+                    statements {
+                      breakstmt {
+                      }
+                    }
+                    statements {
+                      switchstmt {
+                        switch_expr {
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+              statements {
+                blockstmt {
+                }
+              }
+              statements {
+              }
+            }
+          }
+        }
+      }
+      force_call: true
+    }
+  }
+  statements {
+    ifstmt {
+      cond {
+      }
+      if_body {
+      }
+    }
+  }
+  statements {
+    switchstmt {
+    }
+  }
+}
+ver: ISTANBUL

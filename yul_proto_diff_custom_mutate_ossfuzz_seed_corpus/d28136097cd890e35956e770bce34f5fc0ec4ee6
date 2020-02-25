@@ -1,0 +1,61 @@
+block {
+	statements {
+		decl {}
+	}
+	statements {
+		decl {}
+	}
+	statements {
+		decl {}
+	}
+	statements {
+		ifstmt {
+			cond {
+				varref {
+					varnum: 0
+				}
+			}
+			if_body {
+				statements {
+					ifstmt {
+						cond {
+							varref {
+								varnum: 1
+							}
+						}
+						if_body {
+							statements {
+								assignment {
+									ref_id {
+										varnum: 2
+									}
+									expr {
+										cons {
+											intval: 1337
+										}
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+	statements {
+		storage_func {
+			st: MSTORE
+			loc {
+				cons {
+					intval: 0
+				}
+			}
+			val {
+				varref {
+					varnum: 2
+				}
+			}
+		}
+	}
+}		
+ver: ISTANBUL

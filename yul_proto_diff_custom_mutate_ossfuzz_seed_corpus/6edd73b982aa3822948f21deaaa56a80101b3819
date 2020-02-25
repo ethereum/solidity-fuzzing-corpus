@@ -1,0 +1,116 @@
+block {
+  statements {
+    funcdef {
+      num_input_params: 33554432
+      num_output_params: 33554432
+      block {
+        statements {
+          extcode_copy {
+            addr {
+              lowcall {
+                callty: CALL
+                gas {
+                  unop {
+                    op: NOT
+                    operand {
+                      varref {
+                        varnum: 16777216
+                      }
+                    }
+                  }
+                }
+                addr {
+                  unop {
+                    op: BLOCKHASH
+                    operand {
+                      unop {
+                        op: NOT
+                        operand {
+                          lowcall {
+                            callty: CALL
+                            gas {
+                            }
+                            addr {
+                              create {
+                                createty: CREATE
+                                wei {
+                                  create {
+                                    createty: CREATE
+                                    wei {
+                                    }
+                                    position {
+                                      unop {
+                                        op: ISZERO
+                                        operand {
+                                          unop {
+                                            op: NOT
+                                            operand {
+                                              varref {
+                                                varnum: 16777216
+                                              }
+                                            }
+                                          }
+                                        }
+                                      }
+                                    }
+                                    size {
+                                    }
+                                    value {
+                                    }
+                                  }
+                                }
+                                position {
+                                }
+                                size {
+                                }
+                                value {
+                                }
+                              }
+                            }
+                            wei {
+                            }
+                            in {
+                            }
+                            insize {
+                            }
+                            out {
+                            }
+                            outsize {
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+                wei {
+                  varref {
+                    varnum: 16787200
+                  }
+                }
+                in {
+                }
+                insize {
+                }
+                out {
+                }
+                outsize {
+                }
+              }
+            }
+            target {
+            }
+            source {
+            }
+            size {
+            }
+          }
+        }
+        statements {
+        }
+      }
+      force_call: true
+    }
+  }
+}
+ver: SPURIOUS

@@ -1,0 +1,162 @@
+block {
+  statements {
+    pop {
+      expr {
+      }
+    }
+  }
+  statements {
+    contstmt {
+    }
+  }
+  statements {
+  }
+  statements {
+  }
+  statements {
+    pop {
+      expr {
+        unop {
+          op: CALLDATALOAD
+          operand {
+            varref {
+              varnum: 134195962
+            }
+          }
+        }
+      }
+    }
+  }
+  statements {
+    storage_func {
+      loc {
+        unop {
+          op: SLOAD
+          operand {
+            varref {
+              varnum: 379939612
+            }
+          }
+        }
+      }
+      val {
+        varref {
+          varnum: 1802803781
+        }
+      }
+      st: MSTORE
+    }
+  }
+  statements {
+    funcdef {
+      num_input_params: 1
+      num_output_params: 1
+      block {
+        statements {
+          decl {
+            expr {
+              binop {
+                op: XOR
+                left {
+                  varref {
+                    varnum: 2074238501
+                  }
+                }
+                right {
+                  unopdata {
+                    op: OFFSET
+                    identifier: 1344422164
+                  }
+                }
+              }
+            }
+          }
+        }
+        statements {
+          contstmt {
+          }
+        }
+        statements {
+          assignment {
+            ref_id {
+              varnum: 2007053702
+            }
+            expr {
+              func_expr {
+                ret: SINGLE
+                func_index: 1993847534
+              }
+            }
+          }
+        }
+        statements {
+          assignment {
+            ref_id {
+              varnum: 1599517715
+            }
+            expr {
+              varref {
+                varnum: 388760241
+              }
+            }
+          }
+        }
+        statements {
+          decl {
+            expr {
+              binop {
+                op: SDIV
+                left {
+                  func_expr {
+                    ret: SINGLE
+                    func_index: 710119434
+                  }
+                }
+                right {
+                  unop {
+                    op: SLOAD
+                    operand {
+                      func_expr {
+                        ret: SINGLE
+                        func_index: 540997927
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  statements {
+    leave {
+    }
+  }
+  statements {
+    assignment {
+      ref_id {
+        varnum: 1236351751
+      }
+      expr {
+        cons {
+          intval: 1364822391
+        }
+      }
+    }
+  }
+  statements {
+    switchstmt {
+      switch_expr {
+        func_expr {
+          ret: SINGLE
+          func_index: 1825990583
+        }
+      }
+      case_stmt {
+      }
+    }
+  }
+}
+ver: ISTANBUL

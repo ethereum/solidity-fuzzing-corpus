@@ -1,0 +1,106 @@
+block {
+  statements {
+    decl {
+      expr {
+        unop {
+          op: MLOAD
+          operand {
+            cons {
+              intval: 0
+            }
+          }
+        }
+      }
+    }
+  }
+  statements {
+    boundedforstmt {
+      for_body {
+        statements {
+          copy_func {
+            ct: CALLDATA
+            target {
+              lowcall {
+                callty: CALL
+                gas {
+                  lowcall {
+                    callty: CALL
+                    gas {
+                      lowcall {
+                        callty: CALL
+                        gas {
+                        }
+                        addr {
+                          varref {
+                            varnum: 0
+                          }
+                        }
+                        wei {
+                        }
+                        in {
+                        }
+                        insize {
+                        }
+                        out {
+                        }
+                        outsize {
+                        }
+                      }
+                    }
+                    addr {
+                      varref {
+                        varnum: 0
+                      }
+                    }
+                    wei {
+                    }
+                    in {
+                    }
+                    insize {
+                    }
+                    out {
+                    }
+                    outsize {
+                    }
+                  }
+                }
+                addr {
+                }
+                wei {
+                }
+                in {
+                }
+                insize {
+                }
+                out {
+                }
+                outsize {
+                }
+              }
+            }
+            source {
+            }
+            size {
+            }
+          }
+        }
+      }
+    }
+  }
+  statements {
+    funcdef {
+      num_input_params: 134217728
+      num_output_params: 268435456
+      block {
+        statements {
+        }
+      }
+      force_call: false
+    }
+  }
+  statements {
+    breakstmt {
+    }
+  }
+}
+ver: ISTANBUL

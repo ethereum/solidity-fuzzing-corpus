@@ -1,0 +1,44 @@
+block {
+  statements {
+    decl {
+      expr {
+        binop {
+          op: SDIV
+          left {
+            unop {
+              op: NOT
+              operand {
+                nop {
+                  op: CALLER
+                }
+              }
+            }
+          }
+          right {
+            binop {
+              op: SDIV
+              left {
+                unop {
+                  op: NOT
+                  operand {
+                    nop {
+                      op: CALLER
+                    }
+                  }
+                }
+              }
+              right {
+                nop {
+                  op: CALLER
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  statements {
+  }
+}
+ver: ISTANBUL

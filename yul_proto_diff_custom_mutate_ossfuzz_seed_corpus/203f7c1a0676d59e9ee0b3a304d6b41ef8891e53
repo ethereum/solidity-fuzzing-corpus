@@ -1,0 +1,89 @@
+obj {
+  code {
+    block {
+    }
+  }
+  sub_obj {
+    code {
+      block {
+        statements {
+          storage_func {
+            loc {
+              binop {
+                op: ADD
+                left {
+                }
+                right {
+                  nop {
+                    op: CALLDATASIZE
+                  }
+                }
+              }
+            }
+            val {
+              nop {
+                op: ADDRESS
+              }
+            }
+            st: SSTORE
+          }
+        }
+        statements {
+          forstmt {
+            for_body {
+            }
+            for_init {
+            }
+            for_post {
+            }
+            for_cond {
+              binop {
+                op: SDIV
+                left {
+                  binop {
+                    op: EXP
+                    left {
+                    }
+                    right {
+                    }
+                  }
+                }
+                right {
+                }
+              }
+            }
+          }
+        }
+        statements {
+          storage_func {
+            loc {
+              binop {
+                op: ADD
+                left {
+                }
+                right {
+                  nop {
+                    op: CODESIZE
+                  }
+                }
+              }
+            }
+            val {
+              nop {
+                op: ADDRESS
+              }
+            }
+            st: SSTORE
+          }
+        }
+      }
+    }
+    sub_obj {
+      code {
+        block {
+        }
+      }
+    }
+  }
+}
+ver: TANGERINE

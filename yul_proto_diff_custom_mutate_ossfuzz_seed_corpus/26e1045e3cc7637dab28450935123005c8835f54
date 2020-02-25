@@ -1,0 +1,35 @@
+block {
+  statements {
+    pop {
+      expr {
+        binop {
+          op: KECCAK
+          left {
+            unop {
+              op: MLOAD
+              operand {
+                cons {
+                  intval: 0
+                }
+              }
+            }
+          }
+          right {
+            binop {
+              op: KECCAK
+              left {
+              }
+              right {
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  statements {
+    breakstmt {
+    }
+  }
+}
+ver: CONSTANTINOPLE

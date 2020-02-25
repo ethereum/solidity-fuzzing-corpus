@@ -1,0 +1,130 @@
+obj {
+  code {
+    block {
+      statements {
+        storage_func {
+          loc {
+            nop {
+              op: MSIZE
+            }
+          }
+          val {
+            binop {
+              op: DIV
+              left {
+              }
+              right {
+                binop {
+                  op: SHL
+                  left {
+                    nop {
+                      op: GASLIMIT
+                    }
+                  }
+                  right {
+                    binop {
+                      op: AND
+                      left {
+                      }
+                      right {
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+          st: SSTORE
+        }
+      }
+    }
+  }
+  data {
+    hex: "]"
+  }
+  sub_obj {
+    code {
+      block {
+        statements {
+          storage_func {
+            loc {
+              nop {
+                op: MSIZE
+              }
+            }
+            val {
+              binop {
+                op: DIV
+                left {
+                }
+                right {
+                  binop {
+                    op: SHL
+                    left {
+                      nop {
+                        op: GASLIMIT
+                      }
+                    }
+                    right {
+                      binop {
+                        op: AND
+                        left {
+                        }
+                        right {
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+            st: MSTORE8
+          }
+        }
+      }
+    }
+    sub_obj {
+      code {
+        block {
+          statements {
+            storage_func {
+              loc {
+                nop {
+                  op: MSIZE
+                }
+              }
+              val {
+                binop {
+                  op: DIV
+                  left {
+                  }
+                  right {
+                    binop {
+                      op: SHL
+                      left {
+                        nop {
+                          op: GASLIMIT
+                        }
+                      }
+                      right {
+                        binop {
+                          op: AND
+                          left {
+                          }
+                          right {
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+              st: SSTORE
+            }
+          }
+        }
+      }
+    }
+  }
+}
+ver: ISTANBUL

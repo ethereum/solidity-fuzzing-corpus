@@ -1,0 +1,70 @@
+block {
+  statements {
+  }
+  statements {
+  }
+  statements {
+    leave {
+    }
+  }
+  statements {
+    switchstmt {
+      switch_expr {
+        varref {
+          varnum: 1772677519
+        }
+      }
+      case_stmt {
+      }
+    }
+  }
+  statements {
+    terminatestmt {
+      ret_rev {
+        stmt: REVERT
+        pos {
+          binop {
+            op: SDIV
+            left {
+              unop {
+                op: CALLDATALOAD
+                operand {
+                  unop {
+                    op: MLOAD
+                    operand {
+                      varref {
+                        varnum: 1995818658
+                      }
+                    }
+                  }
+                }
+              }
+            }
+            right {
+              func_expr {
+                ret: SINGLE
+                func_index: 1009528112
+              }
+            }
+          }
+        }
+        size {
+          binop {
+            op: SLT
+            left {
+              varref {
+                varnum: 1831143022
+              }
+            }
+            right {
+              varref {
+                varnum: 757955118
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+ver: ISTANBUL

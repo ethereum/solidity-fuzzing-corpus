@@ -1,0 +1,123 @@
+block {
+  statements {
+  }
+  statements {
+  }
+  statements {
+    pop {
+      expr {
+        func_expr {
+          ret: SINGLE
+          func_index: 1374059491
+        }
+      }
+    }
+  }
+  statements {
+    contstmt {
+    }
+  }
+  statements {
+    funcdef {
+      num_input_params: 558769604
+      num_output_params: 2120432011
+      block {
+        statements {
+          decl {
+            expr {
+              binop {
+                op: SHR
+                left {
+                  varref {
+                    varnum: 382162963
+                  }
+                }
+                right {
+                  varref {
+                    varnum: 540967694
+                  }
+                }
+              }
+            }
+          }
+        }
+        statements {
+          assignment {
+            ref_id {
+              varnum: 1081949366
+            }
+            expr {
+              unop {
+                op: SLOAD
+                operand {
+                  varref {
+                    varnum: 196593873
+                  }
+                }
+              }
+            }
+          }
+        }
+        statements {
+          storage_func {
+            loc {
+              varref {
+                varnum: 1090479036
+              }
+            }
+            val {
+              varref {
+                varnum: 1541875139
+              }
+            }
+            st: MSTORE8
+          }
+        }
+        statements {
+          terminatestmt {
+            ret_rev {
+              stmt: REVERT
+              pos {
+                func_expr {
+                  ret: SINGLE
+                  func_index: 913828299
+                }
+              }
+              size {
+                binop {
+                  op: SHR
+                  left {
+                    unop {
+                      op: EXTCODESIZE
+                      operand {
+                        unopdata {
+                          op: SIZE
+                          identifier: 83311116
+                        }
+                      }
+                    }
+                  }
+                  right {
+                    varref {
+                      varnum: 1582395395
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  statements {
+    pop {
+      expr {
+        lowcall {
+          callty: CALL
+        }
+      }
+    }
+  }
+}
+ver: CONSTANTINOPLE

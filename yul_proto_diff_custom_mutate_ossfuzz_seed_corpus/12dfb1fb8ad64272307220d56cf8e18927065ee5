@@ -1,0 +1,112 @@
+block {
+  statements {
+    breakstmt {
+    }
+  }
+  statements {
+    storage_func {
+      loc {
+        binop {
+          op: SHR
+          left {
+            unop {
+              op: NOT
+              operand {
+              }
+            }
+          }
+          right {
+            unop {
+              op: SLOAD
+              operand {
+                cons {
+                  intval: 0
+                }
+              }
+            }
+          }
+        }
+      }
+      val {
+        unop {
+          op: MLOAD
+          operand {
+            cons {
+              intval: 0
+            }
+          }
+        }
+      }
+      st: MSTORE
+    }
+  }
+  statements {
+    breakstmt {
+    }
+  }
+  statements {
+    storage_func {
+      loc {
+        unop {
+          op: SLOAD
+          operand {
+            cons {
+              intval: 0
+            }
+          }
+        }
+      }
+      val {
+        binop {
+          op: SAR
+          left {
+            cons {
+              intval: 88
+            }
+          }
+          right {
+          }
+        }
+      }
+      st: MSTORE
+    }
+  }
+  statements {
+  }
+  statements {
+    storage_func {
+      loc {
+        unop {
+          op: CALLDATALOAD
+          operand {
+            cons {
+              intval: 0
+            }
+          }
+        }
+      }
+      val {
+        binop {
+          op: SAR
+          left {
+            cons {
+              intval: 88
+            }
+          }
+          right {
+          }
+        }
+      }
+      st: MSTORE
+    }
+  }
+  statements {
+    breakstmt {
+    }
+  }
+  statements {
+    breakstmt {
+    }
+  }
+}
+ver: PETERSBURG

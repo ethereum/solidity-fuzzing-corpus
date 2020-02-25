@@ -1,0 +1,84 @@
+obj {
+  code {
+    block {
+      statements {
+        extcode_copy {
+          addr {
+            nop {
+              op: COINBASE
+            }
+          }
+          target {
+            binop {
+              op: SHR
+              left {
+                cons {
+                  intval: 65
+                }
+              }
+              right {
+                binop {
+                  op: AND
+                  left {
+                    cons {
+                      intval: 64
+                    }
+                  }
+                  right {
+                    binop {
+                      op: SHR
+                      left {
+                        cons {
+                          intval: 0
+                        }
+                      }
+                      right {
+                        binop {
+                          op: AND
+                          left {
+                            cons {
+                              intval: 65
+                            }
+                          }
+                          right {
+                            binop {
+                              op: SHR
+                              left {
+                              }
+                              right {
+                                nop {
+                                  op: COINBASE
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+          source {
+            cons {
+              intval: 65
+            }
+          }
+          size {
+          }
+        }
+      }
+    }
+  }
+  data {
+    hex: "\000\000\000\000\000\000\000\0001\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000"
+  }
+  sub_obj {
+    code {
+      block {
+      }
+    }
+  }
+}
+ver: CONSTANTINOPLE

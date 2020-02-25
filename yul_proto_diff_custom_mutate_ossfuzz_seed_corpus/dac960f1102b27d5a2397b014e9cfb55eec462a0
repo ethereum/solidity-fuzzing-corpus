@@ -1,0 +1,133 @@
+block {
+  statements {
+    storage_func {
+      loc {
+        unop {
+          op: CALLDATALOAD
+          operand {
+            cons {
+              intval: 0
+            }
+          }
+        }
+      }
+      val {
+        binop {
+          op: GT
+          left {
+            binop {
+              op: GT
+              left {
+              }
+              right {
+                unop {
+                  op: SLOAD
+                  operand {
+                    cons {
+                      intval: 0
+                    }
+                  }
+                }
+              }
+            }
+          }
+          right {
+            binop {
+              op: BYTE
+              left {
+              }
+              right {
+                nop {
+                  op: ADDRESS
+                }
+              }
+            }
+          }
+        }
+      }
+      st: SSTORE
+    }
+  }
+  statements {
+  }
+  statements {
+    storage_func {
+      loc {
+      }
+      val {
+        binop {
+          op: BYTE
+          left {
+          }
+          right {
+            nop {
+              op: CODESIZE
+            }
+          }
+        }
+      }
+      st: MSTORE8
+    }
+  }
+  statements {
+    storage_func {
+      loc {
+        binop {
+          op: XOR
+          left {
+            binop {
+              op: GT
+              left {
+                binop {
+                  op: GT
+                  left {
+                  }
+                  right {
+                  }
+                }
+              }
+              right {
+                unop {
+                  op: SLOAD
+                  operand {
+                    cons {
+                      intval: 0
+                    }
+                  }
+                }
+              }
+            }
+          }
+          right {
+          }
+        }
+      }
+      val {
+        binop {
+          op: BYTE
+          left {
+          }
+          right {
+            nop {
+              op: ADDRESS
+            }
+          }
+        }
+      }
+      st: MSTORE8
+    }
+  }
+  statements {
+  }
+  statements {
+  }
+  statements {
+    breakstmt {
+    }
+  }
+  statements {
+    breakstmt {
+    }
+  }
+}
+ver: ISTANBUL

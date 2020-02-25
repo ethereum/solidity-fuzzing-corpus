@@ -1,0 +1,36 @@
+block {
+  statements {
+    storage_func {
+      loc {
+        unop {
+          op: BALANCE
+          operand {
+          }
+        }
+      }
+      val {
+      }
+      st: MSTORE
+    }
+  }
+  statements {
+    storage_func {
+      loc {
+        binop {
+          op: MOD
+          left {
+            nop {
+              op: GASPRICE
+            }
+          }
+          right {
+          }
+        }
+      }
+      val {
+      }
+      st: MSTORE
+    }
+  }
+}
+ver: TANGERINE

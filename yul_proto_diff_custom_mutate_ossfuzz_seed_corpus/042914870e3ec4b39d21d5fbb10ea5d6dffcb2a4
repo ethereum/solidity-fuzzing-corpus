@@ -1,0 +1,134 @@
+obj {
+  code {
+    block {
+      statements {
+        extcode_copy {
+          addr {
+            binop {
+              op: SHR
+              left {
+                cons {
+                  intval: 65
+                }
+              }
+              right {
+                binop {
+                  op: AND
+                  left {
+                  }
+                  right {
+                    nop {
+                      op: COINBASE
+                    }
+                  }
+                }
+              }
+            }
+          }
+          target {
+          }
+          source {
+            binop {
+              op: SHR
+              left {
+                cons {
+                  intval: 65
+                }
+              }
+              right {
+                binop {
+                  op: AND
+                  left {
+                  }
+                  right {
+                    nop {
+                      op: COINBASE
+                    }
+                  }
+                }
+              }
+            }
+          }
+          size {
+          }
+        }
+      }
+    }
+  }
+  sub_obj {
+    code {
+      block {
+        statements {
+          extcode_copy {
+            addr {
+              binop {
+                op: SHR
+                left {
+                  cons {
+                    intval: 65
+                  }
+                }
+                right {
+                  binop {
+                    op: AND
+                    left {
+                    }
+                    right {
+                      nop {
+                        op: COINBASE
+                      }
+                    }
+                  }
+                }
+              }
+            }
+            target {
+            }
+            source {
+              binop {
+                op: SHR
+                left {
+                  cons {
+                    intval: 65
+                  }
+                }
+                right {
+                  binop {
+                    op: AND
+                    left {
+                    }
+                    right {
+                      nop {
+                        op: PC
+                      }
+                    }
+                  }
+                }
+              }
+            }
+            size {
+              unop {
+                op: ISZERO
+                operand {
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    sub_obj {
+      code {
+        block {
+        }
+      }
+      sub_obj {
+        code {
+          block {
+          }
+        }
+      }
+    }
+  }
+}
+ver: CONSTANTINOPLE

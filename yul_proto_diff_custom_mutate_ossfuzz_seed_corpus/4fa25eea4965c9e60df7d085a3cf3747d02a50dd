@@ -1,0 +1,64 @@
+obj {
+  code {
+    block {
+      statements {
+        storage_func {
+          loc {
+            unopdata {
+              op: SIZE
+              identifier: 1016832416
+            }
+          }
+          val {
+            unop {
+              op: SLOAD
+              operand {
+                unopdata {
+                  op: SIZE
+                  identifier: 850674839
+                }
+              }
+            }
+          }
+          st: MSTORE8
+        }
+      }
+      statements {
+        contstmt {
+        }
+      }
+      statements {
+        terminatestmt {
+          ret_rev {
+            stmt: REVERT
+            pos {
+              unop {
+                op: MLOAD
+                operand {
+                  unopdata {
+                    op: OFFSET
+                    identifier: 1514180976
+                  }
+                }
+              }
+            }
+            size {
+              unop {
+                op: CALLDATALOAD
+                operand {
+                  varref {
+                    varnum: 1024433713
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  data {
+    hex: ""
+  }
+}
+ver: BERLIN

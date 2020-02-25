@@ -1,0 +1,38 @@
+block {
+  statements {
+    terminatestmt {
+      ret_rev {
+        stmt: RETURN
+        pos {
+        }
+        size {
+          binop {
+            op: GT
+            left {
+              cons {
+                strval: "TTTTTTTTTTTTTTTTTTTTTTTT"
+              }
+            }
+            right {
+              binop {
+                op: SDIV
+                left {
+                  cons {
+                    strval: "TTTTTTTT\000TTTTTTTTTTTTTTT"
+                  }
+                }
+                right {
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  statements {
+  }
+  statements {
+  }
+}
+ver: ISTANBUL

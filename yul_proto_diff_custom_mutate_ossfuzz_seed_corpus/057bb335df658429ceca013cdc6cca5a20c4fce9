@@ -1,0 +1,165 @@
+block {
+  statements {
+    funcdef {
+      num_input_params: 126494812
+      num_output_params: 81849584
+      block {
+        statements {
+          decl {
+          }
+        }
+        statements {
+          forstmt {
+            for_body {
+              statements {
+                multidecl {
+                  num_vars: 69087684
+                }
+              }
+              statements {
+                assignment {
+                  ref_id {
+                    varnum: 79802829
+                  }
+                  expr {
+                    varref {
+                      varnum: 51637124
+                    }
+                  }
+                }
+              }
+              statements {
+                decl {
+                }
+              }
+            }
+            for_init {
+              statements {
+                multidecl {
+                  num_vars: 89907575
+                }
+              }
+            }
+            for_post {
+            }
+            for_cond {
+              func_expr {
+                ret: SINGLE
+                func_index: 117137477
+              }
+            }
+          }
+        }
+        statements {
+          terminatestmt {
+            ret_rev {
+              stmt: REVERT
+              pos {
+                varref {
+                  varnum: 7232143
+                }
+              }
+              size {
+                cons {
+                  intval: 0
+                }
+              }
+            }
+          }
+        }
+        statements {
+          switchstmt {
+            switch_expr {
+              varref {
+                varnum: 106256189
+              }
+            }
+            case_stmt {
+            }
+          }
+        }
+        statements {
+        }
+      }
+      force_call: true
+    }
+  }
+  statements {
+    boundedforstmt {
+      for_body {
+        statements {
+          boundedforstmt {
+          }
+        }
+        statements {
+          forstmt {
+          }
+        }
+        statements {
+          terminatestmt {
+            ret_rev {
+              stmt: REVERT
+              pos {
+                cons {
+                  intval: 0
+                }
+              }
+              size {
+                cons {
+                  intval: 0
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  statements {
+    contstmt {
+    }
+  }
+  statements {
+    funcdef {
+      num_input_params: 1
+      num_output_params: 1
+      block {
+        statements {
+        }
+        statements {
+          storage_func {
+            loc {
+              cons {
+                intval: 0
+              }
+            }
+            val {
+              varref {
+                varnum: 177236229
+              }
+            }
+            st: MSTORE8
+          }
+        }
+        statements {
+          assignment {
+            ref_id {
+              varnum: 128727546
+            }
+            expr {
+              unop {
+                op: CALLDATALOAD
+                operand {
+                  cons {
+                    intval: 0
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+ver: ISTANBUL

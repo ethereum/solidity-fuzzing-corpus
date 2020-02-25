@@ -1,0 +1,118 @@
+block {
+  statements {
+    funcdef {
+      num_input_params: 0
+      num_output_params: 4096
+      block {
+        statements {
+        }
+        statements {
+          storage_func {
+            loc {
+            }
+            val {
+              lowcall {
+                callty: CALL
+                gas {
+                }
+                addr {
+                }
+                wei {
+                  unop {
+                    op: CALLDATALOAD
+                    operand {
+                      cons {
+                        intval: 0
+                      }
+                    }
+                  }
+                }
+                in {
+                }
+                insize {
+                }
+                out {
+                }
+                outsize {
+                }
+              }
+            }
+            st: MSTORE
+          }
+        }
+        statements {
+          terminatestmt {
+            ret_rev {
+              stmt: REVERT
+              pos {
+              }
+              size {
+              }
+            }
+          }
+        }
+        statements {
+          breakstmt {
+          }
+        }
+      }
+      force_call: true
+    }
+  }
+  statements {
+    funcdef {
+      num_input_params: 0
+      num_output_params: 4096
+      block {
+        statements {
+        }
+        statements {
+          storage_func {
+            loc {
+            }
+            val {
+              unop {
+                op: CALLDATALOAD
+                operand {
+                  cons {
+                    intval: 0
+                  }
+                }
+              }
+            }
+            st: MSTORE
+          }
+        }
+        statements {
+          terminatestmt {
+            ret_rev {
+              stmt: REVERT
+              pos {
+              }
+              size {
+              }
+            }
+          }
+        }
+        statements {
+          breakstmt {
+          }
+        }
+        statements {
+          breakstmt {
+          }
+        }
+      }
+      force_call: true
+    }
+  }
+  statements {
+    breakstmt {
+    }
+  }
+  statements {
+    breakstmt {
+    }
+  }
+}
+ver: ISTANBUL

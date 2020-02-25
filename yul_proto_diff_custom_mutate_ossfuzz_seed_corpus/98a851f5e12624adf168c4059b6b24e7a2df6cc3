@@ -1,0 +1,130 @@
+block {
+  statements {
+    leave {
+    }
+  }
+  statements {
+    switchstmt {
+      switch_expr {
+        unop {
+          op: CALLDATALOAD
+          operand {
+            func_expr {
+              ret: SINGLE
+              func_index: 1691793679
+            }
+          }
+        }
+      }
+      case_stmt {
+        case_lit {
+          strval: ""
+        }
+        case_block {
+          statements {
+            leave {
+            }
+          }
+          statements {
+            terminatestmt {
+              ret_rev {
+                stmt: REVERT
+                pos {
+                  func_expr {
+                    ret: SINGLE
+                    func_index: 757835943
+                  }
+                }
+                size {
+                  unop {
+                    op: SLOAD
+                    operand {
+                      varref {
+                        varnum: 1018677707
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+      case_stmt {
+        case_lit {
+        }
+        case_block {
+          statements {
+            decl {
+              expr {
+                varref {
+                  varnum: 1741175133
+                }
+              }
+            }
+          }
+          statements {
+            switchstmt {
+              switch_expr {
+                varref {
+                  varnum: 1699043506
+                }
+              }
+              case_stmt {
+              }
+            }
+          }
+          statements {
+            assignment {
+              ref_id {
+                varnum: 525928051
+              }
+              expr {
+                varref {
+                  varnum: 958357822
+                }
+              }
+            }
+          }
+          statements {
+            boundedforstmt {
+            }
+          }
+          statements {
+            pop {
+              expr {
+                lowcall {
+                  callty: STATICCALL
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  statements {
+    assignment {
+      ref_id {
+        varnum: 127471169
+      }
+      expr {
+        func_expr {
+          ret: SINGLE
+          func_index: 672949419
+        }
+      }
+    }
+  }
+  statements {
+    pop {
+      expr {
+        func_expr {
+          ret: SINGLE
+          func_index: 1234351456
+        }
+      }
+    }
+  }
+}
+ver: ISTANBUL

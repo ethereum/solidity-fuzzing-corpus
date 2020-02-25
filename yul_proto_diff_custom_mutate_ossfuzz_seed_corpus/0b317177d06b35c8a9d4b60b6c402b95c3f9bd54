@@ -1,0 +1,197 @@
+block {
+  statements {
+    decl {
+      expr {
+        unop {
+          op: SLOAD
+          operand {
+            func_expr {
+              ret: SINGLE
+              func_index: 2018984242
+            }
+          }
+        }
+      }
+    }
+  }
+  statements {
+    storage_func {
+      loc {
+        varref {
+          varnum: 46196614
+        }
+      }
+      val {
+        unop {
+          op: SLOAD
+          operand {
+            varref {
+              varnum: 1611011253
+            }
+          }
+        }
+      }
+      st: MSTORE8
+    }
+  }
+  statements {
+    funcdef {
+      num_input_params: 1
+      num_output_params: 1
+      block {
+        statements {
+          assignment {
+            ref_id {
+              varnum: 816074185
+            }
+            expr {
+              unopdata {
+                op: SIZE
+                identifier: 427329959
+              }
+            }
+          }
+        }
+        statements {
+          assignment {
+            ref_id {
+              varnum: 1789495499
+            }
+            expr {
+              cons {
+                intval: 355015301
+              }
+            }
+          }
+        }
+        statements {
+          extcode_copy {
+          }
+        }
+      }
+    }
+  }
+  statements {
+    leave {
+    }
+  }
+  statements {
+    functioncall {
+      ret: ZERO
+      func_index: 4671813
+      in_param1 {
+        varref {
+          varnum: 1026524793
+        }
+      }
+      in_param2 {
+        unop {
+          op: BLOCKHASH
+          operand {
+            varref {
+              varnum: 548257343
+            }
+          }
+        }
+      }
+      in_param3 {
+        varref {
+          varnum: 288251086
+        }
+      }
+      in_param4 {
+        varref {
+          varnum: 27302388
+        }
+      }
+    }
+  }
+  statements {
+    funcdef {
+      num_input_params: 0
+      num_output_params: 0
+      block {
+        statements {
+          assignment {
+            ref_id {
+              varnum: 358295290
+            }
+            expr {
+              cons {
+                intval: 1586134299
+              }
+            }
+          }
+        }
+        statements {
+          ifstmt {
+            cond {
+              func_expr {
+                ret: SINGLE
+                func_index: 639768383
+              }
+            }
+            if_body {
+              statements {
+                multidecl {
+                  num_vars: 2073218698
+                }
+              }
+              statements {
+                leave {
+                }
+              }
+              statements {
+                assignment {
+                  ref_id {
+                    varnum: 54280538
+                  }
+                  expr {
+                    func_expr {
+                      ret: SINGLE
+                      func_index: 1396893706
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+        statements {
+          terminatestmt {
+            ret_rev {
+              stmt: REVERT
+              pos {
+                func_expr {
+                  ret: SINGLE
+                  func_index: 1812033321
+                }
+              }
+              size {
+                func_expr {
+                  ret: SINGLE
+                  func_index: 944491556
+                }
+              }
+            }
+          }
+        }
+        statements {
+          pop {
+            expr {
+              lowcall {
+                callty: STATICCALL
+              }
+            }
+          }
+        }
+      }
+      force_call: false
+    }
+  }
+  statements {
+    funcdef {
+    }
+  }
+}
+ver: PETERSBURG

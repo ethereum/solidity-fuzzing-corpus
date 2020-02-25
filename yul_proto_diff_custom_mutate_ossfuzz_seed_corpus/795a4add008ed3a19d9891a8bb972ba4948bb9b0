@@ -1,0 +1,117 @@
+block {
+  statements {
+    decl {
+      expr {
+        varref {
+          varnum: 425116348
+        }
+      }
+    }
+  }
+  statements {
+    storage_func {
+      loc {
+        unop {
+          op: MLOAD
+          operand {
+            varref {
+              varnum: 469168172
+            }
+          }
+        }
+      }
+      val {
+        unop {
+          op: MLOAD
+          operand {
+            unop {
+              op: SLOAD
+              operand {
+                varref {
+                  varnum: 1989152911
+                }
+              }
+            }
+          }
+        }
+      }
+      st: MSTORE8
+    }
+  }
+  statements {
+  }
+  statements {
+    storage_func {
+      loc {
+        varref {
+          varnum: 269130169
+        }
+      }
+      val {
+        binop {
+          op: GT
+          left {
+            varref {
+              varnum: 1495644524
+            }
+          }
+          right {
+            varref {
+              varnum: 4089511
+            }
+          }
+        }
+      }
+      st: SSTORE
+    }
+  }
+  statements {
+  }
+  statements {
+    terminatestmt {
+      ret_rev {
+        stmt: REVERT
+        pos {
+          binop {
+            op: OR
+            left {
+              unop {
+              }
+            }
+            right {
+              varref {
+                varnum: 551850362
+              }
+            }
+          }
+        }
+        size {
+          binop {
+            op: MOD
+            left {
+              varref {
+                varnum: 423179418
+              }
+            }
+            right {
+              func_expr {
+                ret: SINGLE
+                func_index: 1409482388
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  statements {
+    pop {
+      expr {
+        varref {
+          varnum: 800148418
+        }
+      }
+    }
+  }
+}
+ver: HOMESTEAD

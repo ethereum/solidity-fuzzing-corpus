@@ -1,0 +1,117 @@
+obj {
+  code {
+    block {
+      statements {
+        forstmt {
+          for_body {
+            statements {
+              storage_func {
+                loc {
+                  nop {
+                    op: MSIZE
+                  }
+                }
+                val {
+                  nop {
+                    op: MSIZE
+                  }
+                }
+                st: SSTORE
+              }
+            }
+          }
+          for_init {
+          }
+          for_post {
+            statements {
+              blockstmt {
+                statements {
+                  boundedforstmt {
+                    for_body {
+                      statements {
+                        breakstmt {
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+            statements {
+              storage_func {
+                loc {
+                }
+                val {
+                  lowcall {
+                    callty: CALL
+                    gas {
+                    }
+                    addr {
+                    }
+                    wei {
+                      unop {
+                        op: EXTCODESIZE
+                        operand {
+                        }
+                      }
+                    }
+                    in {
+                      nop {
+                        op: MSIZE
+                      }
+                    }
+                    insize {
+                    }
+                    out {
+                    }
+                    outsize {
+                      unop {
+                        op: EXTCODESIZE
+                        operand {
+                        }
+                      }
+                    }
+                  }
+                }
+                st: SSTORE
+              }
+            }
+          }
+          for_cond {
+            unop {
+              op: EXTCODESIZE
+              operand {
+              }
+            }
+          }
+        }
+      }
+      statements {
+      }
+      statements {
+      }
+      statements {
+      }
+      statements {
+      }
+    }
+  }
+  data {
+    hex: "2"
+  }
+  sub_obj {
+    code {
+      block {
+      }
+    }
+    sub_obj {
+      code {
+        block {
+        }
+      }
+      data {
+        hex: "\001\000\000\000\000\000\000\001"
+      }
+    }
+  }
+}

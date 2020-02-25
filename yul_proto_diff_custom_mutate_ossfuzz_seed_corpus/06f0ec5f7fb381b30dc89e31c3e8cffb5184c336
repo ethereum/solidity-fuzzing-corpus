@@ -1,0 +1,162 @@
+block {
+  statements {
+    boundedforstmt {
+      for_body {
+        statements {
+          copy_func {
+            ct: RETURNDATA
+            target {
+              binop {
+                op: DIV
+                left {
+                  binop {
+                    op: DIV
+                    left {
+                      unop {
+                        op: SLOAD
+                        operand {
+                          unop {
+                            op: CALLDATALOAD
+                            operand {
+                              cons {
+                                intval: 0
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                    right {
+                      unop {
+                        op: SLOAD
+                        operand {
+                          cons {
+                            intval: 0
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+                right {
+                  nop {
+                    op: CALLDATASIZE
+                  }
+                }
+              }
+            }
+            source {
+            }
+            size {
+              binop {
+                op: DIV
+                left {
+                  binop {
+                    op: DIV
+                    left {
+                      binop {
+                        op: DIV
+                        left {
+                          unop {
+                            op: NOT
+                            operand {
+                              cons {
+                                intval: 2199023255552
+                              }
+                            }
+                          }
+                        }
+                        right {
+                        }
+                      }
+                    }
+                    right {
+                    }
+                  }
+                }
+                right {
+                }
+              }
+            }
+          }
+        }
+        statements {
+          copy_func {
+            ct: RETURNDATA
+            target {
+              unop {
+                op: MLOAD
+                operand {
+                  cons {
+                    intval: 0
+                  }
+                }
+              }
+            }
+            source {
+            }
+            size {
+              binop {
+                op: DIV
+                left {
+                  binop {
+                    op: DIV
+                    left {
+                      binop {
+                        op: DIV
+                        left {
+                          unop {
+                            op: NOT
+                            operand {
+                            }
+                          }
+                        }
+                        right {
+                          cons {
+                            intval: 2199023255552
+                          }
+                        }
+                      }
+                    }
+                    right {
+                    }
+                  }
+                }
+                right {
+                }
+              }
+            }
+          }
+        }
+        statements {
+          copy_func {
+            ct: RETURNDATA
+            target {
+            }
+            source {
+            }
+            size {
+            }
+          }
+        }
+        statements {
+          breakstmt {
+          }
+        }
+        statements {
+          breakstmt {
+          }
+        }
+      }
+    }
+  }
+  statements {
+    breakstmt {
+    }
+  }
+  statements {
+    breakstmt {
+    }
+  }
+}
+ver: ISTANBUL

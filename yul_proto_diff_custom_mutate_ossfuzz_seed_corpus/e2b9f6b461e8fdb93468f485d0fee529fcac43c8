@@ -1,0 +1,49 @@
+block {
+  statements {
+    forstmt {
+      for_body {
+        statements {
+          storage_func {
+            loc {
+              cons {
+                intval: 4
+              }
+            }
+            val {
+              cons {
+                intval: 5
+              }
+            }
+            st: MSTORE
+          }
+        }
+        statements {
+          contstmt {
+          }
+        }
+      }
+      for_init {
+      }
+      for_post {
+        statements {
+          storage_func {
+            loc {
+              cons {
+                intval: 1
+              }
+            }
+            val {
+            }
+            st: MSTORE
+          }
+        }
+      }
+      for_cond {
+        nop {
+          op: CALLDATASIZE
+        }
+      }
+    }
+  }
+}
+ver: ISTANBUL

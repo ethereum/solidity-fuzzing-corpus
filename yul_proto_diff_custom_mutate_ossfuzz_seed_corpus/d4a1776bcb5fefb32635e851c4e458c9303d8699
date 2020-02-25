@@ -1,0 +1,170 @@
+obj {
+  code {
+    block {
+      statements {
+        breakstmt {
+        }
+      }
+      statements {
+        extcode_copy {
+          addr {
+            binop {
+              op: SI
+              left {
+                cons {
+                  intval: 24
+                }
+              }
+              right {
+              }
+            }
+          }
+          target {
+            binop {
+              op: MOD
+              left {
+                binop {
+                  op: SI
+                  left {
+                    cons {
+                      intval: 24
+                    }
+                  }
+                  right {
+                  }
+                }
+              }
+              right {
+                nop {
+                  op: GAS
+                }
+              }
+            }
+          }
+          source {
+          }
+          size {
+            binop {
+              op: SI
+              left {
+                cons {
+                  intval: 24
+                }
+              }
+              right {
+              }
+            }
+          }
+        }
+      }
+      statements {
+        extcode_copy {
+          addr {
+            binop {
+              op: SI
+              left {
+                cons {
+                  intval: 576460752303423488
+                }
+              }
+              right {
+              }
+            }
+          }
+          target {
+            binop {
+              op: SGT
+              left {
+                binop {
+                  op: SI
+                  left {
+                    cons {
+                      intval: 24
+                    }
+                  }
+                  right {
+                    unop {
+                      op: SLOAD
+                      operand {
+                        cons {
+                          intval: 0
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+              right {
+                nop {
+                  op: MSIZE
+                }
+              }
+            }
+          }
+          source {
+            unop {
+              op: CALLDATALOAD
+              operand {
+                cons {
+                  intval: 0
+                }
+              }
+            }
+          }
+          size {
+            unop {
+              op: MLOAD
+              operand {
+                cons {
+                  intval: 0
+                }
+              }
+            }
+          }
+        }
+      }
+      statements {
+        breakstmt {
+        }
+      }
+    }
+  }
+  data {
+    hex: ""
+  }
+  sub_obj {
+    code {
+      block {
+        statements {
+          breakstmt {
+          }
+        }
+        statements {
+          breakstmt {
+          }
+        }
+        statements {
+          breakstmt {
+          }
+        }
+        statements {
+        }
+        statements {
+          breakstmt {
+          }
+        }
+        statements {
+          breakstmt {
+          }
+        }
+        statements {
+        }
+        statements {
+          breakstmt {
+          }
+        }
+      }
+    }
+  }
+}
+ver: SPURIOUS

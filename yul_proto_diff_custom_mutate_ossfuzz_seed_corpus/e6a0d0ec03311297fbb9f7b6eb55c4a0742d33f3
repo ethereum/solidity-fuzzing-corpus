@@ -1,0 +1,145 @@
+block {
+  statements {
+    extcode_copy {
+      addr {
+        unop {
+          op: BLOCKHASH
+          operand {
+            unopdata {
+              op: SIZE
+              identifier: 565439951
+            }
+          }
+        }
+      }
+      target {
+        func_expr {
+          ret: SINGLE
+          func_index: 1485691863
+        }
+      }
+      source {
+        unopdata {
+          op: SIZE
+          identifier: 1103673834
+        }
+      }
+      size {
+        unop {
+          op: SLOAD
+          operand {
+            varref {
+              varnum: 1905755173
+            }
+          }
+        }
+      }
+    }
+  }
+  statements {
+  }
+  statements {
+    funcdef {
+      num_input_params: 1
+      num_output_params: 1
+      block {
+        statements {
+          assignment {
+            ref_id {
+              varnum: 118716552
+            }
+            expr {
+              binop {
+                op: BYTE
+                left {
+                  varref {
+                    varnum: 1080311396
+                  }
+                }
+                right {
+                  varref {
+                    varnum: 293751544
+                  }
+                }
+              }
+            }
+          }
+        }
+        statements {
+          functioncall {
+            ret: MULTIASSIGN
+            func_index: 32831048
+            in_param1 {
+              unop {
+              }
+            }
+            in_param2 {
+              unop {
+                op: SLOAD
+                operand {
+                  varref {
+                    varnum: 1211651592
+                  }
+                }
+              }
+            }
+            in_param3 {
+              varref {
+                varnum: 673116823
+              }
+            }
+            in_param4 {
+              unop {
+                op: CALLDATALOAD
+                operand {
+                  varref {
+                    varnum: 493114163
+                  }
+                }
+              }
+            }
+            out_param1 {
+              varnum: 2120062934
+            }
+            out_param2 {
+              varnum: 776551318
+            }
+            out_param3 {
+              varnum: 581612793
+            }
+            out_param4 {
+              varnum: 1713238428
+            }
+          }
+        }
+        statements {
+          pop {
+            expr {
+              lowcall {
+                callty: STATICCALL
+              }
+            }
+          }
+        }
+        statements {
+          pop {
+            expr {
+              unop {
+                op: CALLDATALOAD
+                operand {
+                  func_expr {
+                    ret: SINGLE
+                    func_index: 753362918
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  statements {
+  }
+}
+ver: BERLIN

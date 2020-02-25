@@ -1,0 +1,165 @@
+block {
+  statements {
+    decl {
+      expr {
+        func_expr {
+          ret: SINGLE
+          func_index: 1205184822
+        }
+      }
+    }
+  }
+  statements {
+  }
+  statements {
+    storage_func {
+      loc {
+        binop {
+          op: SHR
+          left {
+            func_expr {
+              ret: SINGLE
+              func_index: 1138856699
+            }
+          }
+          right {
+            varref {
+              varnum: 14873062
+            }
+          }
+        }
+      }
+      val {
+        varref {
+          varnum: 459622877
+        }
+      }
+      st: MSTORE8
+    }
+  }
+  statements {
+    multidecl {
+      num_vars: 0
+    }
+  }
+  statements {
+    contstmt {
+    }
+  }
+  statements {
+    funcdef {
+      num_input_params: 1
+      num_output_params: 1
+      block {
+        statements {
+          assignment {
+            ref_id {
+              varnum: 1153239181
+            }
+            expr {
+              unop {
+                op: MLOAD
+                operand {
+                  varref {
+                    varnum: 937408517
+                  }
+                }
+              }
+            }
+          }
+        }
+        statements {
+          contstmt {
+          }
+        }
+        statements {
+          storage_func {
+            loc {
+              binop {
+                op: SGT
+                left {
+                  unop {
+                    op: MLOAD
+                    operand {
+                      varref {
+                        varnum: 296764402
+                      }
+                    }
+                  }
+                }
+                right {
+                  varref {
+                    varnum: 123441117
+                  }
+                }
+              }
+            }
+            val {
+              binop {
+                op: MOD
+                left {
+                  varref {
+                    varnum: 1566314637
+                  }
+                }
+                right {
+                  varref {
+                    varnum: 837505482
+                  }
+                }
+              }
+            }
+            st: MSTORE8
+          }
+        }
+        statements {
+          forstmt {
+            for_cond {
+              varref {
+                varnum: 141254177
+              }
+            }
+          }
+        }
+        statements {
+          pop {
+            expr {
+              func_expr {
+                ret: SINGLE
+                func_index: 1387315748
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  statements {
+  }
+  statements {
+  }
+  statements {
+    forstmt {
+      for_cond {
+        unop {
+          op: CALLDATALOAD
+          operand {
+            varref {
+              varnum: 1942749352
+            }
+          }
+        }
+      }
+    }
+  }
+  statements {
+    pop {
+      expr {
+        lowcall {
+          callty: CALL
+        }
+      }
+    }
+  }
+}
+ver: TANGERINE

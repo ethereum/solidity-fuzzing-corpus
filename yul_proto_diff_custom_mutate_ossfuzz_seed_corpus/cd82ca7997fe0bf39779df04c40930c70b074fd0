@@ -1,0 +1,130 @@
+block {
+  statements {
+    decl {
+      expr {
+      }
+    }
+  }
+  statements {
+  }
+  statements {
+    boundedforstmt {
+      for_body {
+        statements {
+          ifstmt {
+            cond {
+              unop {
+                op: BLOCKHASH
+                operand {
+                }
+              }
+            }
+            if_body {
+              statements {
+                assignment {
+                  ref_id {
+                    varnum: 5376
+                  }
+                  expr {
+                    unop {
+                      op: BLOCKHASH
+                      operand {
+                      }
+                    }
+                  }
+                }
+              }
+              statements {
+              }
+              statements {
+                contstmt {
+                }
+              }
+            }
+          }
+        }
+        statements {
+          ifstmt {
+            cond {
+              unop {
+                op: BLOCKHASH
+                operand {
+                }
+              }
+            }
+            if_body {
+              statements {
+                assignment {
+                  ref_id {
+                    varnum: 5376
+                  }
+                  expr {
+                    unop {
+                      op: BLOCKHASH
+                      operand {
+                      }
+                    }
+                  }
+                }
+              }
+              statements {
+              }
+              statements {
+                contstmt {
+                }
+              }
+            }
+          }
+        }
+        statements {
+          ifstmt {
+            cond {
+              nop {
+                op: COINBASE
+              }
+            }
+            if_body {
+              statements {
+              }
+              statements {
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  statements {
+  }
+  statements {
+  }
+  statements {
+  }
+  statements {
+    decl {
+      expr {
+        lowcall {
+          callty: CALL
+          gas {
+          }
+          addr {
+          }
+          wei {
+          }
+          in {
+          }
+          insize {
+          }
+          out {
+            cons {
+              strval: ""
+            }
+          }
+          outsize {
+          }
+        }
+      }
+    }
+  }
+}
+ver: ISTANBUL

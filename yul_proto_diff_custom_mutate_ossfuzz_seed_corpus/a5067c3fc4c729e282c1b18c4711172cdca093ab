@@ -1,0 +1,142 @@
+block {
+  statements {
+    storage_func {
+      loc {
+      }
+      val {
+      }
+      st: SSTORE
+    }
+  }
+  statements {
+    storage_func {
+      loc {
+        binop {
+          op: OR
+          left {
+            unop {
+              op: NOT
+              operand {
+              }
+            }
+          }
+          right {
+            varref {
+              varnum: 536870912
+            }
+          }
+        }
+      }
+      val {
+      }
+      st: SSTORE
+    }
+  }
+  statements {
+    funcdef {
+      num_input_params: 0
+      num_output_params: 134217728
+      block {
+        statements {
+          storage_func {
+            loc {
+            }
+            val {
+            }
+            st: MSTORE8
+          }
+        }
+      }
+      force_call: true
+    }
+  }
+  statements {
+    boundedforstmt {
+      for_body {
+        statements {
+          switchstmt {
+            switch_expr {
+            }
+            case_stmt {
+              case_lit {
+              }
+              case_block {
+                statements {
+                  boundedforstmt {
+                    for_body {
+                      statements {
+                        leave {
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  statements {
+    storage_func {
+      loc {
+        binop {
+          op: OR
+          left {
+            unop {
+              op: NOT
+              operand {
+                varref {
+                  varnum: 536870912
+                }
+              }
+            }
+          }
+          right {
+            varref {
+              varnum: 536870912
+            }
+          }
+        }
+      }
+      val {
+      }
+      st: SSTORE
+    }
+  }
+  statements {
+    funcdef {
+      num_input_params: 0
+      num_output_params: 134217728
+      block {
+        statements {
+        }
+        statements {
+          storage_func {
+            st: SSTORE
+          }
+        }
+      }
+      force_call: true
+    }
+  }
+  statements {
+    storage_func {
+      loc {
+      }
+      val {
+        unop {
+          op: MLOAD
+          operand {
+            cons {
+              intval: 0
+            }
+          }
+        }
+      }
+      st: MSTORE8
+    }
+  }
+}
+ver: ISTANBUL

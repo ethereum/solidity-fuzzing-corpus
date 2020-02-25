@@ -1,0 +1,67 @@
+obj {
+  code {
+    block {
+      statements {
+        terminatestmt {
+          self_des {
+            addr {
+              nop {
+                op: ORIGIN
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  sub_obj {
+    code {
+      block {
+        statements {
+          terminatestmt {
+            self_des {
+              addr {
+                nop {
+                  op: CHAINID
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    sub_obj {
+      code {
+        block {
+          statements {
+            ifstmt {
+              cond {
+              }
+              if_body {
+                statements {
+                  boundedforstmt {
+                    for_body {
+                      statements {
+                      }
+                      statements {
+                      }
+                    }
+                  }
+                }
+                statements {
+                  boundedforstmt {
+                    for_body {
+                      statements {
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+ver: ISTANBUL

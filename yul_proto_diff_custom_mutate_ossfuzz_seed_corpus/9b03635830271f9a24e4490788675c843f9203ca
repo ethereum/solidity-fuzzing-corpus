@@ -1,0 +1,125 @@
+block {
+  statements {
+    storage_func {
+      loc {
+        binop {
+          op: OR
+          left {
+            binop {
+              op: AND
+              left {
+                binop {
+                  op: OR
+                  left {
+                  }
+                  right {
+                  }
+                }
+              }
+              right {
+                nop {
+                  op: ADDRESS
+                }
+              }
+            }
+          }
+          right {
+            binop {
+              op: AND
+              left {
+                binop {
+                  op: OR
+                  left {
+                  }
+                  right {
+                    nop {
+                      op: ADDRESS
+                    }
+                  }
+                }
+              }
+              right {
+                nop {
+                  op: ADDRESS
+                }
+              }
+            }
+          }
+        }
+      }
+      val {
+        varref {
+          varnum: 6
+        }
+      }
+      st: SSTORE
+    }
+  }
+  statements {
+    terminatestmt {
+      ret_rev {
+        stmt: REVERT
+        pos {
+          func_expr {
+            ret: SINGLE
+            func_index: 125583199
+          }
+        }
+        size {
+        }
+      }
+    }
+  }
+  statements {
+  }
+  statements {
+    multidecl {
+      num_vars: 3069106
+    }
+  }
+  statements {
+    pop {
+      expr {
+        varref {
+          varnum: 43854553
+        }
+      }
+    }
+  }
+  statements {
+    assignment {
+      ref_id {
+        varnum: 178962134
+      }
+      expr {
+        varref {
+          varnum: 115799028
+        }
+      }
+    }
+  }
+  statements {
+    pop {
+      expr {
+        lowcall {
+          callty: DELEGATECALL
+          gas {
+          }
+          addr {
+          }
+          wei {
+          }
+          in {
+          }
+          insize {
+          }
+          out {
+          }
+          outsize {
+          }
+        }
+      }
+    }
+  }
+}
+ver: ISTANBUL

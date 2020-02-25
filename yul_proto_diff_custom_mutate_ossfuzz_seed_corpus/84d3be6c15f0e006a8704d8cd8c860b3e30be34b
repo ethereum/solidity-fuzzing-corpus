@@ -1,0 +1,102 @@
+block {
+  statements {
+    assignment {
+      ref_id {
+        varnum: 585982123
+      }
+      expr {
+        unop {
+          op: MLOAD
+          operand {
+            varref {
+              varnum: 1031254379
+            }
+          }
+        }
+      }
+    }
+  }
+  statements {
+    switchstmt {
+      switch_expr {
+        varref {
+          varnum: 1506526639
+        }
+      }
+      case_stmt {
+        case_lit {
+        }
+        case_block {
+          statements {
+            assignment {
+              ref_id {
+                varnum: 1428158969
+              }
+              expr {
+                varref {
+                  varnum: 948064521
+                }
+              }
+            }
+          }
+        }
+      }
+      default_block {
+        statements {
+        }
+        statements {
+          breakstmt {
+          }
+        }
+        statements {
+          storage_func {
+            loc {
+              varref {
+                varnum: 1105815609
+              }
+            }
+            val {
+              func_expr {
+                ret: SINGLE
+                func_index: 1765495022
+              }
+            }
+            st: SSTORE
+          }
+        }
+        statements {
+          assignment {
+            ref_id {
+              varnum: 2082957725
+            }
+            expr {
+              unop {
+                op: CALLDATALOAD
+                operand {
+                  unop {
+                    op: SLOAD
+                    operand {
+                      unop {
+                        op: SLOAD
+                        operand {
+                          varref {
+                            varnum: 1142685411
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  statements {
+    boundedforstmt {
+    }
+  }
+}
+ver: PETERSBURG

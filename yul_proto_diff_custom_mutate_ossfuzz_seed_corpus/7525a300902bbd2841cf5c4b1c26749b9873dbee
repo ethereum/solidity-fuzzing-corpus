@@ -1,0 +1,145 @@
+obj {
+  code {
+    block {
+      statements {
+      }
+      statements {
+      }
+      statements {
+        extcode_copy {
+          addr {
+            binop {
+              op: SHL
+              left {
+                cons {
+                  intval: 1
+                }
+              }
+              right {
+                binop {
+                  op: SHL
+                  left {
+                    cons {
+                      intval: 1
+                    }
+                  }
+                  right {
+                    binop {
+                      op: SHL
+                      left {
+                        cons {
+                        }
+                      }
+                      right {
+                        binop {
+                          op: SHR
+                          left {
+                            cons {
+                            }
+                          }
+                          right {
+                            nop {
+                              op: ORIGIN
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+          target {
+            binop {
+              op: SHL
+              left {
+                cons {
+                  intval: 1
+                }
+              }
+              right {
+                binop {
+                  op: SHL
+                  left {
+                    cons {
+                      intval: 1
+                    }
+                  }
+                  right {
+                    binop {
+                      op: SHL
+                      left {
+                        cons {
+                          intval: 1
+                        }
+                      }
+                      right {
+                        binop {
+                          op: SHL
+                          left {
+                            cons {
+                              intval: 1
+                            }
+                          }
+                          right {
+                            binop {
+                              op: SHR
+                              left {
+                                cons {
+                                }
+                              }
+                              right {
+                                nop {
+                                  op: COINBASE
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+          source {
+            binop {
+              op: OR
+              left {
+              }
+              right {
+                nop {
+                  op: COINBASE
+                }
+              }
+            }
+          }
+          size {
+          }
+        }
+      }
+      statements {
+        storage_func {
+          loc {
+            binop {
+              op: ADD
+              left {
+                nop {
+                  op: ORIGIN
+                }
+              }
+              right {
+              }
+            }
+          }
+          val {
+          }
+          st: SSTORE
+        }
+      }
+    }
+  }
+}
+ver: ISTANBUL

@@ -1,0 +1,136 @@
+obj {
+  code {
+    block {
+      statements {
+        breakstmt {
+        }
+      }
+      statements {
+        breakstmt {
+        }
+      }
+      statements {
+        breakstmt {
+        }
+      }
+    }
+  }
+  sub_obj {
+    code {
+      block {
+        statements {
+          extcode_copy {
+            addr {
+              nop {
+                op: COINBASE
+              }
+            }
+            target {
+            }
+            source {
+            }
+            size {
+              nop {
+                op: COINBASE
+              }
+            }
+          }
+        }
+        statements {
+          extcode_copy {
+            addr {
+              unop {
+                op: NOT
+                operand {
+                }
+              }
+            }
+            target {
+              binop {
+                op: AND
+                left {
+                  unop {
+                    op: NOT
+                    operand {
+                    }
+                  }
+                }
+                right {
+                  unop {
+                    op: SLOAD
+                    operand {
+                    }
+                  }
+                }
+              }
+            }
+            source {
+              binop {
+                op: OR
+                left {
+                  binop {
+                    op: AND
+                    left {
+                      unop {
+                        op: NOT
+                        operand {
+                        }
+                      }
+                    }
+                    right {
+                      unop {
+                        op: NOT
+                        operand {
+                          cons {
+                            intval: 0
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+                right {
+                }
+              }
+            }
+            size {
+              binop {
+                op: AND
+                left {
+                  unop {
+                    op: NOT
+                    operand {
+                      cons {
+                        intval: 0
+                      }
+                    }
+                  }
+                }
+                right {
+                  unop {
+                    op: SLOAD
+                    operand {
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+        statements {
+          breakstmt {
+          }
+        }
+        statements {
+          breakstmt {
+          }
+        }
+        statements {
+          breakstmt {
+          }
+        }
+      }
+    }
+  }
+}
+ver: ISTANBUL

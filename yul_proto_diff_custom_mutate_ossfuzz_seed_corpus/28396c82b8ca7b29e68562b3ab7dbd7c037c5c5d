@@ -1,0 +1,80 @@
+block {
+  statements {
+  }
+  statements {
+    storage_func {
+      loc {
+        binop {
+          op: OR
+          left {
+            binop {
+              op: OR
+              left {
+                binop {
+                  op: OR
+                  left {
+                  }
+                  right {
+                    nop {
+                      op: ORIGIN
+                    }
+                  }
+                }
+              }
+              right {
+                binop {
+                  op: OR
+                  left {
+                  }
+                  right {
+                    nop {
+                      op: ORIGIN
+                    }
+                  }
+                }
+              }
+            }
+          }
+          right {
+          }
+        }
+      }
+      val {
+        nop {
+          op: ORIGIN
+        }
+      }
+      st: SSTORE
+    }
+  }
+  statements {
+    storage_func {
+      loc {
+        binop {
+          op: OR
+          left {
+          }
+          right {
+            binop {
+              op: OR
+              left {
+              }
+              right {
+                nop {
+                  op: ORIGIN
+                }
+              }
+            }
+          }
+        }
+      }
+      val {
+        varref {
+          varnum: 6
+        }
+      }
+      st: MSTORE
+    }
+  }
+}
+ver: ISTANBUL

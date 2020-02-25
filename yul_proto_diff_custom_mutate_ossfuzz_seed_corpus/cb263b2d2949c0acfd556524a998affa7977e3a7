@@ -1,0 +1,90 @@
+obj {
+  code {
+    block {
+      statements {
+        storage_func {
+          loc {
+            varref {
+              varnum: 1513767868
+            }
+          }
+          val {
+            binop {
+              op: SDIV
+              left {
+                cons {
+                  hexval: "9\006\000\000\000999999999999999999999999999999999999999999999999999999999999999999999999999999999"
+                }
+              }
+              right {
+                binop {
+                  op: SMOD
+                  left {
+                    cons {
+                      hexval: "9\006\000\000\000999999999999999999999999999999999999999999999999999999999999999999999999999999999"
+                    }
+                  }
+                  right {
+                  }
+                }
+              }
+            }
+          }
+          st: MSTORE
+        }
+      }
+      statements {
+        pop {
+          expr {
+            unop {
+              op: SLOAD
+              operand {
+                cons {
+                  intval: 0
+                }
+              }
+            }
+          }
+        }
+      }
+      statements {
+        breakstmt {
+        }
+      }
+      statements {
+        terminatestmt {
+          ret_rev {
+            stmt: REVERT
+            pos {
+              cons {
+                intval: 0
+              }
+            }
+            size {
+              unop {
+                op: SLOAD
+                operand {
+                  func_expr {
+                    ret: SINGLE
+                    func_index: 2078443959
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+      statements {
+        pop {
+          expr {
+            unopdata {
+              op: OFFSET
+              identifier: 692141868
+            }
+          }
+        }
+      }
+    }
+  }
+}
+ver: HOMESTEAD

@@ -1,0 +1,97 @@
+block {
+  statements {
+    contstmt {
+    }
+  }
+  statements {
+  }
+  statements {
+  }
+  statements {
+    funcdef {
+      num_input_params: 0
+      num_output_params: 4096
+      block {
+        statements {
+        }
+        statements {
+          blockstmt {
+            statements {
+              assignment {
+                ref_id {
+                  varnum: 0
+                }
+                expr {
+                  binop {
+                    op: SUB
+                    left {
+                      binop {
+                        op: SDIV
+                        left {
+                          nop {
+                            op: MSIZE
+                          }
+                        }
+                        right {
+                        }
+                      }
+                    }
+                    right {
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+      force_call: true
+    }
+  }
+  statements {
+  }
+  statements {
+    storage_func {
+      loc {
+        unop {
+          op: NOT
+          operand {
+          }
+        }
+      }
+      val {
+      }
+      st: MSTORE
+    }
+  }
+  statements {
+    contstmt {
+    }
+  }
+  statements {
+    contstmt {
+    }
+  }
+  statements {
+    storage_func {
+      loc {
+        unop {
+          op: NOT
+          operand {
+            unop {
+              op: ISZERO
+              operand {
+              }
+            }
+          }
+        }
+      }
+      val {
+      }
+      st: MSTORE
+    }
+  }
+  statements {
+  }
+}
+ver: BYZANTIUM

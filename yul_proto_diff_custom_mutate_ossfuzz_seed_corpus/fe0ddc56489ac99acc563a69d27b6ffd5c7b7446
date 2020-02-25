@@ -1,0 +1,74 @@
+block {
+	statements {
+		funcdef {
+			num_input_params: 0
+			num_output_params: 1
+			force_call: true
+			block {
+				statements {
+					assignment {
+						ref_id {
+							varnum: 0
+						}
+						expr {
+							cons {
+								intval: 42
+							}
+						}
+					}
+				}
+				statements {
+					leave {}
+				}
+			}
+		}
+	}
+	statements {
+		funcdef {
+			num_input_params: 0
+			num_output_params: 1
+			force_call: true
+			block {
+				statements {
+					leave {}
+				}
+				statements {
+					assignment {
+						ref_id {
+							varnum: 0
+						}
+						expr {
+							cons {
+								intval: 42
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+	statements {
+		funcdef {
+			num_input_params: 0
+			num_output_params: 1
+			force_call: true
+			block {
+				statements {
+					ifstmt {
+						cond {
+							varref {
+								varnum: 0
+							}
+						}
+						if_body {
+							statements {
+								leave {}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
+ver: SPURIOUS

@@ -1,0 +1,87 @@
+block {
+  statements {
+    storage_func {
+      loc {
+        varref {
+          varnum: 52855188
+        }
+      }
+      val {
+        binop {
+          op: GT
+          left {
+            nop {
+              op: CALLVALUE
+            }
+          }
+          right {
+            unop {
+              op: NOT
+              operand {
+                binop {
+                  op: GT
+                  left {
+                    nop {
+                      op: CALLDATASIZE
+                    }
+                  }
+                  right {
+                    unop {
+                      op: NOT
+                      operand {
+                        cons {
+                          intval: 0
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+      st: SSTORE
+    }
+  }
+  statements {
+    pop {
+      expr {
+        func_expr {
+          ret: SINGLE
+          in_param1 {
+            unop {
+              op: SLOAD
+              operand {
+                varref {
+                  varnum: 2961938
+                }
+              }
+            }
+          }
+          in_param2 {
+            unop {
+              op: MLOAD
+              operand {
+                varref {
+                  varnum: 1742406
+                }
+              }
+            }
+          }
+          in_param3 {
+            varref {
+              varnum: 585825552
+            }
+          }
+          in_param4 {
+            varref {
+              varnum: 439369164
+            }
+          }
+        }
+      }
+    }
+  }
+}
+ver: ISTANBUL

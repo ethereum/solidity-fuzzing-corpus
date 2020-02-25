@@ -1,0 +1,139 @@
+block {
+  statements {
+  }
+  statements {
+    switchstmt {
+      switch_expr {
+        unop {
+          op: MLOAD
+          operand {
+            unopdata {
+              op: OFFSET
+              identifier: 531795344
+            }
+          }
+        }
+      }
+    }
+  }
+  statements {
+  }
+  statements {
+    funcdef {
+      num_input_params: 1991140913
+      num_output_params: 1584906291
+      block {
+        statements {
+          decl {
+          }
+        }
+        statements {
+          extcode_copy {
+            addr {
+              unop {
+                op: SLOAD
+                operand {
+                  unopdata {
+                    op: OFFSET
+                    identifier: 2089776214
+                  }
+                }
+              }
+            }
+            target {
+              varref {
+                varnum: 432830231
+              }
+            }
+            source {
+              unopdata {
+                op: SIZE
+                identifier: 154596877
+              }
+            }
+            size {
+              unop {
+                op: CALLDATALOAD
+                operand {
+                  unopdata {
+                    op: SIZE
+                    identifier: 263414623
+                  }
+                }
+              }
+            }
+          }
+        }
+        statements {
+          assignment {
+            ref_id {
+              varnum: 676473701
+            }
+            expr {
+              binop {
+                op: EQ
+                left {
+                  func_expr {
+                    ret: SINGLE
+                    func_index: 272256599
+                  }
+                }
+                right {
+                  unopdata {
+                    op: SIZE
+                    identifier: 265234609
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+      force_call: false
+    }
+  }
+  statements {
+    pop {
+      expr {
+        func_expr {
+          ret: SINGLE
+          func_index: 1125649522
+        }
+      }
+    }
+  }
+  statements {
+    assignment {
+      ref_id {
+        varnum: 513658571
+      }
+      expr {
+        unop {
+          op: CALLDATALOAD
+          operand {
+            unop {
+              op: MLOAD
+              operand {
+                func_expr {
+                  ret: SINGLE
+                  func_index: 1930716592
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  statements {
+    pop {
+      expr {
+        func_expr {
+          ret: SINGLE
+          func_index: 1473115124
+        }
+      }
+    }
+  }
+}
+ver: TANGERINE

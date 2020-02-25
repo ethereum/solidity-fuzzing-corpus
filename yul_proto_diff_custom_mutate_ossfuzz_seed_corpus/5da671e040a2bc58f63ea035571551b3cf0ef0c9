@@ -1,0 +1,86 @@
+block {
+  statements {
+    funcdef {
+      num_input_params: 0
+      num_output_params: 16
+      block {
+        statements {
+          assignment {
+            ref_id {
+              varnum: 0
+            }
+            expr {
+              lowcall {
+                callty: CALL
+                gas {
+                }
+                addr {
+                }
+                wei {
+                }
+                in {
+                }
+                insize {
+                  lowcall {
+                    callty: CALL
+                    gas {
+                    }
+                    addr {
+                    }
+                    wei {
+                      create {
+                        createty: CREATE
+                        wei {
+                        }
+                        position {
+                        }
+                        size {
+                        }
+                        value {
+                        }
+                      }
+                    }
+                    in {
+                    }
+                    insize {
+                    }
+                    out {
+                    }
+                    outsize {
+                    }
+                  }
+                }
+                out {
+                }
+                outsize {
+                }
+              }
+            }
+          }
+        }
+      }
+      force_call: true
+    }
+  }
+  statements {
+    funcdef {
+      num_input_params: 0
+      num_output_params: 4096
+      block {
+        statements {
+        }
+      }
+      force_call: true
+    }
+  }
+  statements {
+    funcdef {
+      num_input_params: 4294967295
+      num_output_params: 4096
+      block {
+      }
+      force_call: true
+    }
+  }
+}
+ver: TANGERINE

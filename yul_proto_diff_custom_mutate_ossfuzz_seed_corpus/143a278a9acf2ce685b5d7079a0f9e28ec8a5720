@@ -1,0 +1,148 @@
+block {
+  statements {
+    multidecl {
+      num_vars: 1560740393
+    }
+  }
+  statements {
+    assignment {
+      ref_id {
+        varnum: 1576202521
+      }
+      expr {
+        unop {
+          op: MLOAD
+          operand {
+            func_expr {
+              ret: SINGLE
+              func_index: 1636783276
+            }
+          }
+        }
+      }
+    }
+  }
+  statements {
+    switchstmt {
+      switch_expr {
+        varref {
+          varnum: 200610301
+        }
+      }
+      case_stmt {
+      }
+    }
+  }
+  statements {
+    boundedforstmt {
+      for_body {
+        statements {
+          storage_func {
+            loc {
+              binop {
+                op: SMOD
+                left {
+                  varref {
+                    varnum: 618257613
+                  }
+                }
+                right {
+                  func_expr {
+                    ret: SINGLE
+                    func_index: 1588193796
+                  }
+                }
+              }
+            }
+            val {
+              binop {
+                op: SI
+                left {
+                  varref {
+                    varnum: 719144696
+                  }
+                }
+                right {
+                  varref {
+                    varnum: 1907950508
+                  }
+                }
+              }
+            }
+            st: MSTORE8
+          }
+        }
+        statements {
+          switchstmt {
+            switch_expr {
+              unop {
+                op: SLOAD
+                operand {
+                  varref {
+                    varnum: 1002509930
+                  }
+                }
+              }
+            }
+            case_stmt {
+            }
+          }
+        }
+        statements {
+          pop {
+            expr {
+              unopdata {
+                op: OFFSET
+                identifier: 1301535712
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  statements {
+    functioncall {
+      ret: MULTIASSIGN
+      func_index: 1472144077
+      in_param1 {
+        varref {
+          varnum: 720339598
+        }
+      }
+      in_param2 {
+        varref {
+          varnum: 1186819803
+        }
+      }
+      in_param3 {
+        varref {
+          varnum: 500311532
+        }
+      }
+      in_param4 {
+        unop {
+          op: CALLDATALOAD
+          operand {
+            varref {
+              varnum: 1936926429
+            }
+          }
+        }
+      }
+      out_param1 {
+        varnum: 1934218450
+      }
+      out_param2 {
+        varnum: 512279331
+      }
+      out_param3 {
+        varnum: 831747256
+      }
+      out_param4 {
+        varnum: 344709012
+      }
+    }
+  }
+}
+ver: BERLIN

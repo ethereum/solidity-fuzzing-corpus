@@ -1,0 +1,130 @@
+block {
+  statements {
+  }
+  statements {
+    breakstmt {
+    }
+  }
+  statements {
+    storage_func {
+      loc {
+      }
+      val {
+      }
+      st: MSTORE
+    }
+  }
+  statements {
+    breakstmt {
+    }
+  }
+  statements {
+  }
+  statements {
+    storage_func {
+      loc {
+        binop {
+          op: MOD
+          left {
+          }
+          right {
+            unop {
+              op: NOT
+              operand {
+              }
+            }
+          }
+        }
+      }
+      val {
+      }
+      st: MSTORE
+    }
+  }
+  statements {
+    extcode_copy {
+      addr {
+        binop {
+          op: SI
+          left {
+            binop {
+              op: SI
+              left {
+              }
+              right {
+              }
+            }
+          }
+          right {
+          }
+        }
+      }
+      target {
+        binop {
+          op: OR
+          left {
+          }
+          right {
+            unop {
+              op: SLOAD
+              operand {
+                cons {
+                  intval: 0
+                }
+              }
+            }
+          }
+        }
+      }
+      source {
+        binop {
+          op: SAR
+          left {
+            binop {
+              op: SUB
+              left {
+              }
+              right {
+                unop {
+                  op: SLOAD
+                  operand {
+                    cons {
+                      intval: 0
+                    }
+                  }
+                }
+              }
+            }
+          }
+          right {
+          }
+        }
+      }
+      size {
+        binop {
+          op: SI
+          left {
+            binop {
+              op: SI
+              left {
+              }
+              right {
+              }
+            }
+          }
+          right {
+          }
+        }
+      }
+    }
+  }
+  statements {
+    breakstmt {
+    }
+  }
+  statements {
+    breakstmt {
+    }
+  }
+}
+ver: SPURIOUS

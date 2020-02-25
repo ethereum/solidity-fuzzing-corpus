@@ -1,0 +1,136 @@
+obj {
+  code {
+    block {
+      statements {
+      }
+      statements {
+        storage_func {
+          loc {
+            unop {
+              op: MLOAD
+              operand {
+                cons {
+                  intval: 0
+                }
+              }
+            }
+          }
+          val {
+            unop {
+            }
+          }
+          st: MSTORE
+        }
+      }
+      statements {
+        breakstmt {
+        }
+      }
+      statements {
+        breakstmt {
+        }
+      }
+      statements {
+        breakstmt {
+        }
+      }
+      statements {
+        extcode_copy {
+          addr {
+            unop {
+              op: MLOAD
+              operand {
+                cons {
+                  intval: 0
+                }
+              }
+            }
+          }
+          target {
+            unop {
+              op: MLOAD
+              operand {
+                cons {
+                  intval: 0
+                }
+              }
+            }
+          }
+          source {
+            binop {
+              op: DIV
+              left {
+                unop {
+                  op: NOT
+                  operand {
+                  }
+                }
+              }
+              right {
+              }
+            }
+          }
+          size {
+            unop {
+              op: MLOAD
+              operand {
+                cons {
+                  intval: 0
+                }
+              }
+            }
+          }
+        }
+      }
+      statements {
+        breakstmt {
+        }
+      }
+      statements {
+        breakstmt {
+        }
+      }
+      statements {
+        extcode_copy {
+          addr {
+            unop {
+              op: SLOAD
+              operand {
+                cons {
+                  intval: 0
+                }
+              }
+            }
+          }
+          target {
+          }
+          source {
+            binop {
+              op: DIV
+              left {
+                unop {
+                  op: NOT
+                  operand {
+                  }
+                }
+              }
+              right {
+              }
+            }
+          }
+          size {
+          }
+        }
+      }
+      statements {
+        breakstmt {
+        }
+      }
+      statements {
+        breakstmt {
+        }
+      }
+    }
+  }
+}
+ver: PETERSBURG

@@ -1,0 +1,96 @@
+obj {
+  code {
+    block {
+      statements {
+        boundedforstmt {
+          for_body {
+            statements {
+              boundedforstmt {
+                for_body {
+                  statements {
+                    extcode_copy {
+                      addr {
+                        binop {
+                          op: SGT
+                          left {
+                          }
+                          right {
+                            unop {
+                              op: NOT
+                              operand {
+                                lowcall {
+                                  callty: CALLCODE
+                                  gas {
+                                  }
+                                  addr {
+                                  }
+                                  wei {
+                                  }
+                                  in {
+                                  }
+                                  insize {
+                                  }
+                                  out {
+                                  }
+                                  outsize {
+                                    binop {
+                                      op: SHL
+                                      left {
+                                        nop {
+                                          op: GAS
+                                        }
+                                      }
+                                      right {
+                                      }
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                      target {
+                        binop {
+                          op: SHL
+                          left {
+                            nop {
+                              op: GAS
+                            }
+                          }
+                          right {
+                          }
+                        }
+                      }
+                      source {
+                      }
+                      size {
+                        unop {
+                          op: ISZERO
+                          operand {
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+      statements {
+      }
+    }
+  }
+  sub_obj {
+    code {
+      block {
+      }
+    }
+    data {
+      hex: "\001/\000\006"
+    }
+  }
+}
+ver: ISTANBUL

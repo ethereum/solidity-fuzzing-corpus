@@ -1,0 +1,193 @@
+block {
+  statements {
+    multidecl {
+      num_vars: 675630335
+    }
+  }
+  statements {
+    functioncall {
+      ret: MULTIASSIGN
+      func_index: 352804395
+      in_param1 {
+        unopdata {
+          op: SIZE
+          identifier: 952216189
+        }
+      }
+      in_param2 {
+        varref {
+          varnum: 1537355977
+        }
+      }
+      in_param3 {
+        unopdata {
+          op: SIZE
+          identifier: 1996494217
+        }
+      }
+      in_param4 {
+        varref {
+          varnum: 1020327007
+        }
+      }
+      out_param1 {
+        varnum: 394556696
+      }
+      out_param2 {
+        varnum: 2008269161
+      }
+      out_param3 {
+        varnum: 1665237443
+      }
+      out_param4 {
+        varnum: 675630335
+      }
+    }
+  }
+  statements {
+    leave {
+    }
+  }
+  statements {
+    funcdef {
+      num_input_params: 1665237443
+      num_output_params: 216220196
+      block {
+        statements {
+          storage_func {
+            loc {
+              func_expr {
+                ret: SINGLE
+                func_index: 1302442566
+              }
+            }
+            val {
+              binop {
+                op: BYTE
+                left {
+                  varref {
+                    varnum: 955201008
+                  }
+                }
+                right {
+                  func_expr {
+                    ret: SINGLE
+                    func_index: 430258691
+                  }
+                }
+              }
+            }
+            st: MSTORE
+          }
+        }
+        statements {
+          funcdef {
+            num_input_params: 1
+            num_output_params: 1
+            block {
+              statements {
+                assignment {
+                  ref_id {
+                    varnum: 1388543181
+                  }
+                  expr {
+                    varref {
+                      varnum: 1201665243
+                    }
+                  }
+                }
+              }
+              statements {
+                leave {
+                }
+              }
+              statements {
+                pop {
+                  expr {
+                    unopdata {
+                      op: OFFSET
+                      identifier: 1925001437
+                    }
+                  }
+                }
+              }
+              statements {
+                pop {
+                  expr {
+                    varref {
+                      varnum: 1811971523
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+        statements {
+          pop {
+            expr {
+              varref {
+                varnum: 1282585857
+              }
+            }
+          }
+        }
+        statements {
+          pop {
+            expr {
+              binop {
+                op: SHR
+                left {
+                  func_expr {
+                    ret: SINGLE
+                    func_index: 20086422
+                  }
+                }
+                right {
+                  unop {
+                    op: SLOAD
+                    operand {
+                      unop {
+                        op: SLOAD
+                        operand {
+                          varref {
+                            varnum: 1554833355
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  statements {
+    pop {
+      expr {
+        unop {
+          op: CALLDATALOAD
+          operand {
+            varref {
+              varnum: 2119726669
+            }
+          }
+        }
+      }
+    }
+  }
+  statements {
+    pop {
+      expr {
+        func_expr {
+          ret: SINGLE
+          func_index: 1132180834
+        }
+      }
+    }
+  }
+}
+ver: TANGERINE

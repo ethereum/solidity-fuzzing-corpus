@@ -1,0 +1,134 @@
+block {
+  statements {
+    storage_func {
+      loc {
+        cons {
+          intval: 0
+        }
+      }
+      val {
+        func_expr {
+          ret: SINGLE
+          func_index: 1362193718
+        }
+      }
+      st: MSTORE8
+    }
+  }
+  statements {
+    funcdef {
+      num_input_params: 1
+      num_output_params: 1
+      block {
+        statements {
+          assignment {
+            ref_id {
+              varnum: 1313254919
+            }
+            expr {
+              varref {
+                varnum: 558419256
+              }
+            }
+          }
+        }
+        statements {
+          storage_func {
+            loc {
+              varref {
+                varnum: 323200418
+              }
+            }
+            val {
+              unop {
+                op: EXTCODESIZE
+                operand {
+                  varref {
+                    varnum: 229220511
+                  }
+                }
+              }
+            }
+            st: SSTORE
+          }
+        }
+        statements {
+          boundedforstmt {
+          }
+        }
+        statements {
+          terminatestmt {
+            ret_rev {
+              stmt: REVERT
+              pos {
+                unop {
+                  op: CALLDATALOAD
+                  operand {
+                    varref {
+                      varnum: 1686926604
+                    }
+                  }
+                }
+              }
+              size {
+                unop {
+                  op: MLOAD
+                  operand {
+                    func_expr {
+                      ret: SINGLE
+                      func_index: 624438279
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  statements {
+    leave {
+    }
+  }
+  statements {
+    functioncall {
+      ret: MULTIASSIGN
+      func_index: 460487171
+      in_param1 {
+        varref {
+          varnum: 1525601223
+        }
+      }
+      in_param2 {
+        func_expr {
+          ret: SINGLE
+          func_index: 1222668337
+        }
+      }
+      in_param3 {
+        varref {
+          varnum: 895004981
+        }
+      }
+      in_param4 {
+        varref {
+          varnum: 1832392257
+        }
+      }
+      out_param1 {
+        varnum: 1314482489
+      }
+      out_param2 {
+        varnum: 2139102633
+      }
+      out_param3 {
+        varnum: 2038576677
+      }
+      out_param4 {
+        varnum: 1720484891
+      }
+    }
+  }
+}
+ver: CONSTANTINOPLE

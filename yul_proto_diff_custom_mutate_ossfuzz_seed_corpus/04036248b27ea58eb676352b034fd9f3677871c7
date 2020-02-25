@@ -1,0 +1,102 @@
+block {
+  statements {
+    storage_func {
+      loc {
+        binop {
+          op: GT
+          left {
+            nop {
+              op: ORIGIN
+            }
+          }
+          right {
+            binop {
+              op: GT
+              left {
+                binop {
+                  op: GT
+                  left {
+                  }
+                  right {
+                  }
+                }
+              }
+              right {
+                binop {
+                  op: GT
+                  left {
+                    nop {
+                      op: ORIGIN
+                    }
+                  }
+                  right {
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+      val {
+      }
+      st: MSTORE
+    }
+  }
+  statements {
+    ifstmt {
+      cond {
+        unop {
+          op: ISZERO
+          operand {
+          }
+        }
+      }
+      if_body {
+      }
+    }
+  }
+  statements {
+    storage_func {
+      loc {
+        binop {
+          op: GT
+          left {
+            binop {
+              op: GT
+              left {
+              }
+              right {
+              }
+            }
+          }
+          right {
+            binop {
+              op: GT
+              left {
+                nop {
+                  op: ORIGIN
+                }
+              }
+              right {
+              }
+            }
+          }
+        }
+      }
+      val {
+        binop {
+          op: GT
+          left {
+            nop {
+              op: ORIGIN
+            }
+          }
+          right {
+          }
+        }
+      }
+      st: MSTORE
+    }
+  }
+}
+ver: ISTANBUL

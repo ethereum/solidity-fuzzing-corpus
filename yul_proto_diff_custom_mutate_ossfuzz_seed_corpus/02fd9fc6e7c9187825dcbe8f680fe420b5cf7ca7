@@ -1,0 +1,161 @@
+block {
+  statements {
+  }
+  statements {
+  }
+  statements {
+    decl {
+      expr {
+        create {
+          createty: CREATE
+          wei {
+          }
+          position {
+          }
+          size {
+          }
+          value {
+          }
+        }
+      }
+    }
+  }
+  statements {
+  }
+  statements {
+    extcode_copy {
+      addr {
+        lowcall {
+          callty: CALL
+          gas {
+            unop {
+              op: NOT
+              operand {
+                varref {
+                  varnum: 0
+                }
+              }
+            }
+          }
+          addr {
+            unop {
+              op: SLOAD
+              operand {
+                create {
+                  createty: CREATE
+                  wei {
+                  }
+                  position {
+                    lowcall {
+                      callty: CALL
+                      gas {
+                        varref {
+                          varnum: 0
+                        }
+                      }
+                      addr {
+                      }
+                      wei {
+                      }
+                      in {
+                      }
+                      insize {
+                      }
+                      out {
+                      }
+                      outsize {
+                      }
+                    }
+                  }
+                  size {
+                  }
+                  value {
+                  }
+                }
+              }
+            }
+          }
+          wei {
+            lowcall {
+              callty: CALL
+              gas {
+                unop {
+                  op: NOT
+                  operand {
+                    varref {
+                      varnum: 0
+                    }
+                  }
+                }
+              }
+              addr {
+                unop {
+                  op: SLOAD
+                  operand {
+                  }
+                }
+              }
+              wei {
+              }
+              in {
+              }
+              insize {
+              }
+              out {
+              }
+              outsize {
+              }
+            }
+          }
+          in {
+          }
+          insize {
+          }
+          out {
+          }
+          outsize {
+            lowcall {
+              callty: CALL
+              gas {
+              }
+              addr {
+              }
+              wei {
+              }
+              in {
+              }
+              insize {
+              }
+              out {
+              }
+              outsize {
+              }
+            }
+          }
+        }
+      }
+      target {
+      }
+      source {
+      }
+      size {
+      }
+    }
+  }
+  statements {
+  }
+  statements {
+  }
+  statements {
+  }
+  statements {
+    storage_func {
+      loc {
+      }
+      val {
+      }
+      st: MSTORE
+    }
+  }
+}
+ver: HOMESTEAD

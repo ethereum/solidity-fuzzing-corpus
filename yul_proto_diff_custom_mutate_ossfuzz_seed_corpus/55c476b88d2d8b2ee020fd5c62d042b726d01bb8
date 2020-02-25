@@ -1,0 +1,135 @@
+block {
+  statements {
+    storage_func {
+      loc {
+        binop {
+          op: OR
+          left {
+            varref {
+              varnum: 15878691
+            }
+          }
+          right {
+            binop {
+              op: OR
+              left {
+                nop {
+                  op: ADDRESS
+                }
+              }
+              right {
+                binop {
+                  op: OR
+                  left {
+                    unopdata {
+                      op: SIZE
+                      identifier: 1826104273
+                    }
+                  }
+                  right {
+                    binop {
+                      op: OR
+                      left {
+                        varref {
+                          varnum: 1379146537
+                        }
+                      }
+                      right {
+                        binop {
+                          op: KECCAK
+                          left {
+                            varref {
+                              varnum: 1367373898
+                            }
+                          }
+                          right {
+                            nop {
+                              op: ADDRESS
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+      val {
+        unop {
+          op: BALANCE
+          operand {
+            varref {
+              varnum: 1959198033
+            }
+          }
+        }
+      }
+      st: SSTORE
+    }
+  }
+  statements {
+    decl {
+      expr {
+        unop {
+          op: CALLDATALOAD
+          operand {
+            varref {
+              varnum: 1083191825
+            }
+          }
+        }
+      }
+    }
+  }
+  statements {
+    decl {
+      expr {
+        varref {
+          varnum: 1968231066
+        }
+      }
+    }
+  }
+  statements {
+    assignment {
+      ref_id {
+        varnum: 1963476142
+      }
+      expr {
+        binop {
+          op: SMOD
+          left {
+            varref {
+              varnum: 107611788
+            }
+          }
+          right {
+            varref {
+              varnum: 1704538687
+            }
+          }
+        }
+      }
+    }
+  }
+  statements {
+    switchstmt {
+      switch_expr {
+        unop {
+          op: CALLDATALOAD
+          operand {
+            varref {
+              varnum: 130701407
+            }
+          }
+        }
+      }
+      case_stmt {
+      }
+    }
+  }
+}
+ver: HOMESTEAD

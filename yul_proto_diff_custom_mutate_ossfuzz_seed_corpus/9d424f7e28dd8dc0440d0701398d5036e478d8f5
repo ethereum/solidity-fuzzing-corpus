@@ -1,0 +1,162 @@
+block {
+  statements {
+  }
+  statements {
+    decl {
+      expr {
+        varref {
+          varnum: 127767772
+        }
+      }
+    }
+  }
+  statements {
+    functioncall {
+      ret: ZERO
+      func_index: 0
+      in_param1 {
+        varref {
+          varnum: 1749518754
+        }
+      }
+      in_param2 {
+        unop {
+          op: NOT
+          operand {
+          }
+        }
+      }
+      in_param3 {
+        varref {
+          varnum: 998611172
+        }
+      }
+      in_param4 {
+        varref {
+          varnum: 2121474133
+        }
+      }
+      out_param1 {
+        varnum: 1234302286
+      }
+      out_param2 {
+        varnum: 2132580426
+      }
+      out_param3 {
+        varnum: 777359422
+      }
+      out_param4 {
+        varnum: 934895331
+      }
+    }
+  }
+  statements {
+    ifstmt {
+      cond {
+        unop {
+          op: EXTCODEHASH
+        }
+      }
+      if_body {
+        statements {
+          assignment {
+            ref_id {
+              varnum: 1842261939
+            }
+            expr {
+              varref {
+                varnum: 1342106879
+              }
+            }
+          }
+        }
+        statements {
+          storage_func {
+            loc {
+              varref {
+                varnum: 1533089434
+              }
+            }
+            val {
+              varref {
+                varnum: 1024620742
+              }
+            }
+            st: SSTORE
+          }
+        }
+        statements {
+          leave {
+          }
+        }
+        statements {
+          switchstmt {
+            switch_expr {
+              binop {
+                op: SDIV
+                left {
+                  varref {
+                    varnum: 1867416897
+                  }
+                }
+                right {
+                  varref {
+                    varnum: 1454952262
+                  }
+                }
+              }
+            }
+            case_stmt {
+            }
+          }
+        }
+        statements {
+          boundedforstmt {
+          }
+        }
+        statements {
+          pop {
+            expr {
+              lowcall {
+                callty: CALLCODE
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  statements {
+    terminatestmt {
+      ret_rev {
+        stmt: REVERT
+        pos {
+          unop {
+            op: MLOAD
+            operand {
+              func_expr {
+                ret: SINGLE
+                func_index: 1088551616
+              }
+            }
+          }
+        }
+        size {
+          varref {
+            varnum: 1417594499
+          }
+        }
+      }
+    }
+  }
+  statements {
+    pop {
+      expr {
+        create {
+          createty: CREATE2
+        }
+      }
+    }
+  }
+}
+ver: CONSTANTINOPLE

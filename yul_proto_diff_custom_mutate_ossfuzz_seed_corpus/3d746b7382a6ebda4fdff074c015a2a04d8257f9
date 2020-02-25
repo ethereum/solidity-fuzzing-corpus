@@ -1,0 +1,62 @@
+block {
+  statements {
+    storage_func {
+      loc {
+      }
+      val {
+        binop {
+          op: BYTE
+          left {
+            binop {
+              op: BYTE
+              left {
+              }
+              right {
+              }
+            }
+          }
+          right {
+            nop {
+              op: MSIZE
+            }
+          }
+        }
+      }
+      st: MSTORE
+    }
+  }
+  statements {
+    storage_func {
+      loc {
+      }
+      val {
+        binop {
+          op: BYTE
+          left {
+            binop {
+              op: SLT
+              left {
+                binop {
+                  op: ADD
+                  left {
+                  }
+                  right {
+                  }
+                }
+              }
+              right {
+              }
+            }
+          }
+          right {
+            nop {
+              op: MSIZE
+            }
+          }
+        }
+      }
+      st: MSTORE
+    }
+  }
+}
+ver: BYZANTIUM

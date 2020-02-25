@@ -1,0 +1,57 @@
+block {
+  statements {
+    terminatestmt {
+      self_des {
+        addr {
+          cons {
+            strval: "CCCCCCCCCCCCCCCCCCCCCCC"
+          }
+        }
+      }
+    }
+  }
+  statements {
+    breakstmt {
+    }
+  }
+  statements {
+    assignment {
+      ref_id {
+        varnum: 700571024
+      }
+      expr {
+        unop {
+          op: MLOAD
+          operand {
+            cons {
+              intval: 0
+            }
+          }
+        }
+      }
+    }
+  }
+  statements {
+    boundedforstmt {
+    }
+  }
+  statements {
+    pop {
+      expr {
+        lowcall {
+          callty: CALL
+        }
+      }
+    }
+  }
+  statements {
+    pop {
+      expr {
+        create {
+          createty: CREATE
+        }
+      }
+    }
+  }
+}
+ver: SPURIOUS

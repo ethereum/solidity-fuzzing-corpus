@@ -1,0 +1,79 @@
+obj {
+  code {
+    block {
+      statements {
+        boundedforstmt {
+          for_body {
+            statements {
+              boundedforstmt {
+                for_body {
+                  statements {
+                    extcode_copy {
+                      addr {
+                        binop {
+                          op: SDIV
+                          left {
+                          }
+                          right {
+                            unop {
+                              op: NOT
+                              operand {
+                                varref {
+                                  varnum: 0
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                      target {
+                      }
+                      source {
+                      }
+                      size {
+                        unop {
+                          op: NOT
+                          operand {
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+            statements {
+              pop {
+                expr {
+                  binop {
+                    op: SDIV
+                    left {
+                      unop {
+                        op: NOT
+                        operand {
+                        }
+                      }
+                    }
+                    right {
+                      unop {
+                        op: NOT
+                        operand {
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+      statements {
+      }
+    }
+  }
+  data {
+    hex: "\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\356\377\377\377\377\377\377\377\377\377\377\377\377\377"
+  }
+}
+ver: SPURIOUS

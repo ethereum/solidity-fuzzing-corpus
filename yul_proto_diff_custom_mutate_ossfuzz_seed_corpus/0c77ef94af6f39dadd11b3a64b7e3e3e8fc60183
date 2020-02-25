@@ -1,0 +1,66 @@
+block {
+  statements {
+    boundedforstmt {
+      for_body {
+        statements {
+          boundedforstmt {
+            for_body {
+              statements {
+                extcode_copy {
+                  addr {
+                  }
+                  target {
+                    binop {
+                      op: SMOD
+                      left {
+                        varref {
+                          varnum: -1
+                        }
+                      }
+                      right {
+                      }
+                    }
+                  }
+                  source {
+                    nop {
+                      op: MSIZE
+                    }
+                  }
+                  size {
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  statements {
+    pop {
+      expr {
+      }
+    }
+  }
+  statements {
+    pop {
+      expr {
+        unop {
+          op: NOT
+          operand {
+            binop {
+              op: SMOD
+              left {
+              }
+              right {
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  statements {
+  }
+}
+ver: ISTANBUL

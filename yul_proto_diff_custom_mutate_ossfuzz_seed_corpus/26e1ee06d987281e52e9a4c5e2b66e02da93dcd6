@@ -1,0 +1,85 @@
+block {
+  statements {
+    extcode_copy {
+      addr {
+        binop {
+          op: ADD
+          left {
+            binop {
+              op: DIV
+              left {
+                binop {
+                  op: DIV
+                  left {
+                    binop {
+                      op: SI
+                      left {
+                        binop {
+                          op: DIV
+                          left {
+                          }
+                          right {
+                          }
+                        }
+                      }
+                      right {
+                      }
+                    }
+                  }
+                  right {
+                  }
+                }
+              }
+              right {
+              }
+            }
+          }
+          right {
+          }
+        }
+      }
+      target {
+        binop {
+          op: OR
+          left {
+            unop {
+              op: BALANCE
+              operand {
+                binop {
+                  op: ADD
+                  left {
+                  }
+                  right {
+                    varref {
+                      varnum: 2
+                    }
+                  }
+                }
+              }
+            }
+          }
+          right {
+            binop {
+              op: DIV
+              left {
+                binop {
+                  op: SI
+                  left {
+                  }
+                  right {
+                  }
+                }
+              }
+              right {
+              }
+            }
+          }
+        }
+      }
+      source {
+      }
+      size {
+      }
+    }
+  }
+}

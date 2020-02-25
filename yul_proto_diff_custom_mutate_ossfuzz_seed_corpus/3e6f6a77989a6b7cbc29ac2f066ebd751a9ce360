@@ -1,0 +1,211 @@
+block {
+  statements {
+    decl {
+      expr {
+        varref {
+          varnum: 279084271
+        }
+      }
+    }
+  }
+  statements {
+  }
+  statements {
+    contstmt {
+    }
+  }
+  statements {
+    assignment {
+      ref_id {
+        varnum: 1189745288
+      }
+      expr {
+        cons {
+          intval: 39625327
+        }
+      }
+    }
+  }
+  statements {
+  }
+  statements {
+    forstmt {
+      for_body {
+        statements {
+          pop {
+            expr {
+              varref {
+                varnum: 2136681641
+              }
+            }
+          }
+        }
+      }
+      for_init {
+        statements {
+          breakstmt {
+          }
+        }
+        statements {
+          contstmt {
+          }
+        }
+        statements {
+          switchstmt {
+            switch_expr {
+              func_expr {
+                ret: SINGLE
+                func_index: 993499586
+              }
+            }
+            case_stmt {
+            }
+          }
+        }
+        statements {
+          pop {
+            expr {
+              lowcall {
+                callty: CALLCODE
+              }
+            }
+          }
+        }
+        statements {
+          pop {
+            expr {
+              varref {
+                varnum: 1547143326
+              }
+            }
+          }
+        }
+      }
+      for_post {
+        statements {
+          leave {
+          }
+        }
+        statements {
+          forstmt {
+          }
+        }
+        statements {
+          pop {
+            expr {
+              unop {
+              }
+            }
+          }
+        }
+      }
+      for_cond {
+        varref {
+          varnum: 1275227143
+        }
+      }
+    }
+  }
+  statements {
+    breakstmt {
+    }
+  }
+  statements {
+    funcdef {
+      num_input_params: 1
+      num_output_params: 1
+      block {
+        statements {
+          assignment {
+            ref_id {
+              varnum: 532951160
+            }
+            expr {
+              varref {
+                varnum: 1378836947
+              }
+            }
+          }
+        }
+        statements {
+          functioncall {
+            ret: SINGLE
+            func_index: 136077767
+            in_param1 {
+              varref {
+                varnum: 433765216
+              }
+            }
+            in_param2 {
+              binop {
+                op: SDIV
+                left {
+                  unop {
+                    op: CALLDATALOAD
+                    operand {
+                      varref {
+                        varnum: 1298761223
+                      }
+                    }
+                  }
+                }
+                right {
+                  func_expr {
+                    ret: SINGLE
+                    func_index: 1396465778
+                  }
+                }
+              }
+            }
+            in_param3 {
+              unop {
+                op: NOT
+                operand {
+                  varref {
+                    varnum: 1816369073
+                  }
+                }
+              }
+            }
+            in_param4 {
+              varref {
+                varnum: 196459746
+              }
+            }
+          }
+        }
+        statements {
+          terminatestmt {
+            ret_rev {
+              stmt: REVERT
+              pos {
+                cons {
+                  intval: 0
+                }
+              }
+              size {
+                varref {
+                  varnum: 297879948
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  statements {
+    leave {
+    }
+  }
+  statements {
+    forstmt {
+      for_cond {
+        varref {
+          varnum: 1588238254
+        }
+      }
+    }
+  }
+}
+ver: SPURIOUS

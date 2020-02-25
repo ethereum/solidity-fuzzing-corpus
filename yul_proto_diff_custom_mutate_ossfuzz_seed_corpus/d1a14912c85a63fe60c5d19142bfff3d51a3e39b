@@ -1,0 +1,169 @@
+block {
+  statements {
+  }
+  statements {
+    assignment {
+      ref_id {
+        varnum: 1165535074
+      }
+      expr {
+        varref {
+          varnum: 457620014
+        }
+      }
+    }
+  }
+  statements {
+    decl {
+      expr {
+        binop {
+          op: EXP
+          left {
+            varref {
+              varnum: 1592756328
+            }
+          }
+          right {
+            func_expr {
+              ret: SINGLE
+              func_index: 1027793559
+            }
+          }
+        }
+      }
+    }
+  }
+  statements {
+    boundedforstmt {
+      for_body {
+        statements {
+          pop {
+            expr {
+              unopdata {
+                op: SIZE
+                identifier: 1826874906
+              }
+            }
+          }
+        }
+        statements {
+          leave {
+          }
+        }
+        statements {
+          switchstmt {
+            switch_expr {
+              binop {
+                op: KECCAK
+                left {
+                  unop {
+                    op: MLOAD
+                    operand {
+                      varref {
+                        varnum: 1102470911
+                      }
+                    }
+                  }
+                }
+                right {
+                  varref {
+                    varnum: 1198310763
+                  }
+                }
+              }
+            }
+            case_stmt {
+            }
+          }
+        }
+        statements {
+          functioncall {
+            ret: MULTIASSIGN
+            func_index: 1986795101
+            in_param1 {
+              unop {
+                op: EXTCODESIZE
+                operand {
+                  varref {
+                    varnum: 1542227544
+                  }
+                }
+              }
+            }
+            in_param2 {
+              unopdata {
+                op: SIZE
+                identifier: 1921654532
+              }
+            }
+            in_param3 {
+              varref {
+                varnum: 1511677133
+              }
+            }
+            in_param4 {
+              unop {
+                op: MLOAD
+                operand {
+                  varref {
+                    varnum: 2004024226
+                  }
+                }
+              }
+            }
+            out_param1 {
+              varnum: 1127817284
+            }
+            out_param2 {
+              varnum: 10180867
+            }
+            out_param3 {
+              varnum: 1814359441
+            }
+            out_param4 {
+              varnum: 119000910
+            }
+          }
+        }
+        statements {
+          pop {
+            expr {
+              unop {
+                op: SLOAD
+                operand {
+                  varref {
+                    varnum: 2119185322
+                  }
+                }
+              }
+            }
+          }
+        }
+        statements {
+          copy_func {
+          }
+        }
+      }
+    }
+  }
+  statements {
+    pop {
+      expr {
+        binop {
+          op: SGT
+          left {
+            varref {
+              varnum: 1796177856
+            }
+          }
+          right {
+            varref {
+              varnum: 91354768
+            }
+          }
+        }
+      }
+    }
+  }
+}
+ver: ISTANBUL

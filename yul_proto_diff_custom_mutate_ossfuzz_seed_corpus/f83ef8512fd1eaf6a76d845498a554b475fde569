@@ -1,0 +1,133 @@
+block {
+  statements {
+  }
+  statements {
+    copy_func {
+      ct: CALLDATA
+      target {
+        unop {
+          op: EXTCODESIZE
+          operand {
+            unop {
+              op: MLOAD
+              operand {
+                func_expr {
+                  ret: SINGLE
+                  func_index: 1420298291
+                }
+              }
+            }
+          }
+        }
+      }
+      source {
+        unop {
+          op: CALLDATALOAD
+          operand {
+            cons {
+              intval: 0
+            }
+          }
+        }
+      }
+      size {
+        unop {
+          op: EXTCODESIZE
+          operand {
+            varref {
+              varnum: 1930748143
+            }
+          }
+        }
+      }
+    }
+  }
+  statements {
+    boundedforstmt {
+      for_body {
+        statements {
+          pop {
+            expr {
+              top {
+                op: MULM
+                arg1 {
+                  unop {
+                    op: SLOAD
+                    operand {
+                      varref {
+                        varnum: 1765462449
+                      }
+                    }
+                  }
+                }
+                arg2 {
+                  unop {
+                    op: CALLDATALOAD
+                    operand {
+                      unopdata {
+                        op: SIZE
+                        identifier: 1215393699
+                      }
+                    }
+                  }
+                }
+                arg3 {
+                  unopdata {
+                    op: SIZE
+                    identifier: 246245247
+                  }
+                }
+              }
+            }
+          }
+        }
+        statements {
+          leave {
+          }
+        }
+        statements {
+          pop {
+            expr {
+              lowcall {
+                callty: CALL
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  statements {
+    leave {
+    }
+  }
+  statements {
+    forstmt {
+    }
+  }
+  statements {
+    pop {
+      expr {
+        func_expr {
+          ret: SINGLE
+          func_index: 1535537696
+        }
+      }
+    }
+  }
+  statements {
+    pop {
+      expr {
+        unopdata {
+          op: OFFSET
+          identifier: 1650504164
+        }
+      }
+    }
+  }
+  statements {
+    breakstmt {
+    }
+  }
+}
+ver: BERLIN

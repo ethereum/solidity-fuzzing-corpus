@@ -1,0 +1,96 @@
+block {
+  statements {
+  }
+  statements {
+    pop {
+      expr {
+        unop {
+          op: NOT
+          operand {
+            binop {
+              op: SMOD
+              left {
+              }
+              right {
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  statements {
+    extcode_copy {
+      addr {
+      }
+      target {
+        nop {
+          op: ADDRESS
+        }
+      }
+      source {
+        binop {
+          op: SDIV
+          left {
+            unop {
+              op: EXTCODEHASH
+              operand {
+              }
+            }
+          }
+          right {
+          }
+        }
+      }
+      size {
+        binop {
+          op: SDIV
+          left {
+            binop {
+              op: SDIV
+              left {
+                unop {
+                  op: EXTCODEHASH
+                  operand {
+                  }
+                }
+              }
+              right {
+              }
+            }
+          }
+          right {
+            cons {
+              intval: 0
+            }
+          }
+        }
+      }
+    }
+  }
+  statements {
+  }
+  statements {
+    pop {
+      expr {
+        unop {
+          op: NOT
+          operand {
+            binop {
+              op: SMOD
+              left {
+              }
+              right {
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  statements {
+  }
+  statements {
+  }
+}
+ver: ISTANBUL

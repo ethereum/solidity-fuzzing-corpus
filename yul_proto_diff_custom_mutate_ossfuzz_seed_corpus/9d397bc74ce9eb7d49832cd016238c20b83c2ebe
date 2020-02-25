@@ -1,0 +1,129 @@
+block {
+  statements {
+    decl {
+    }
+  }
+  statements {
+    leave {
+    }
+  }
+  statements {
+    funcdef {
+      num_input_params: 1
+      num_output_params: 1
+      block {
+        statements {
+          assignment {
+            ref_id {
+              varnum: 603169931
+            }
+            expr {
+              unop {
+                op: SLOAD
+                operand {
+                  cons {
+                    intval: 0
+                  }
+                }
+              }
+            }
+          }
+        }
+        statements {
+          forstmt {
+            for_cond {
+              unop {
+                op: SLOAD
+                operand {
+                  unop {
+                    op: CALLDATALOAD
+                    operand {
+                      unopdata {
+                        op: SIZE
+                        identifier: 1270147046
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+        statements {
+          pop {
+            expr {
+              lowcall {
+                callty: DELEGATECALL
+              }
+            }
+          }
+        }
+        statements {
+          functioncall {
+            ret: ZERO
+            func_index: 1390773506
+            in_param1 {
+              func_expr {
+                ret: SINGLE
+                func_index: 2065790229
+              }
+            }
+            in_param2 {
+              varref {
+                varnum: 501477532
+              }
+            }
+            in_param3 {
+              varref {
+                varnum: 1333723130
+              }
+            }
+            in_param4 {
+              unop {
+                op: MLOAD
+                operand {
+                  varref {
+                    varnum: 736954817
+                  }
+                }
+              }
+            }
+            out_param1 {
+              varnum: 341772483
+            }
+            out_param2 {
+              varnum: 730150639
+            }
+            out_param3 {
+              varnum: 1523529180
+            }
+            out_param4 {
+              varnum: 1699556265
+            }
+          }
+        }
+      }
+    }
+  }
+  statements {
+    assignment {
+      ref_id {
+        varnum: 133383143
+      }
+      expr {
+        unop {
+          op: SLOAD
+          operand {
+            func_expr {
+              ret: SINGLE
+              func_index: 1267029891
+            }
+          }
+        }
+      }
+    }
+  }
+  statements {
+  }
+}
+ver: CONSTANTINOPLE

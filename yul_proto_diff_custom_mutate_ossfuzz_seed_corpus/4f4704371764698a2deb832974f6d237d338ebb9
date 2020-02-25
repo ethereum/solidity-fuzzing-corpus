@@ -1,0 +1,261 @@
+block {
+  statements {
+  }
+  statements {
+    breakstmt {
+    }
+  }
+  statements {
+    breakstmt {
+    }
+  }
+  statements {
+    storage_func {
+      loc {
+        binop {
+          op: MOD
+          left {
+            unop {
+              op: CALLDATALOAD
+              operand {
+                cons {
+                  intval: 0
+                }
+              }
+            }
+          }
+          right {
+            binop {
+              op: KECCAK
+              left {
+              }
+              right {
+                unop {
+                  op: CALLDATALOAD
+                  operand {
+                    unop {
+                      op: CALLDATALOAD
+                      operand {
+                        cons {
+                          intval: 0
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+      val {
+        unop {
+          op: CALLDATALOAD
+          operand {
+            cons {
+              intval: 0
+            }
+          }
+        }
+      }
+      st: MSTORE8
+    }
+  }
+  statements {
+    storage_func {
+      loc {
+        unop {
+          op: NOT
+          operand {
+          }
+        }
+      }
+      val {
+        unop {
+          op: SLOAD
+          operand {
+            cons {
+              intval: 47244640256
+            }
+          }
+        }
+      }
+      st: MSTORE
+    }
+  }
+  statements {
+  }
+  statements {
+    breakstmt {
+    }
+  }
+  statements {
+  }
+  statements {
+  }
+  statements {
+    storage_func {
+      loc {
+        binop {
+          op: MOD
+          left {
+            unop {
+              op: SLOAD
+              operand {
+                unop {
+                  op: SLOAD
+                  operand {
+                    cons {
+                      intval: 0
+                    }
+                  }
+                }
+              }
+            }
+          }
+          right {
+            unop {
+              op: CALLDATALOAD
+              operand {
+                cons {
+                  intval: 0
+                }
+              }
+            }
+          }
+        }
+      }
+      val {
+        unop {
+          op: CALLDATALOAD
+          operand {
+            cons {
+              intval: 0
+            }
+          }
+        }
+      }
+      st: MSTORE
+    }
+  }
+  statements {
+    breakstmt {
+    }
+  }
+  statements {
+  }
+  statements {
+    storage_func {
+      loc {
+        unop {
+          op: MLOAD
+          operand {
+            unop {
+              op: CALLDATALOAD
+              operand {
+                cons {
+                  intval: 0
+                }
+              }
+            }
+          }
+        }
+      }
+      val {
+      }
+      st: MSTORE
+    }
+  }
+  statements {
+    breakstmt {
+    }
+  }
+  statements {
+  }
+  statements {
+  }
+  statements {
+  }
+  statements {
+  }
+  statements {
+    storage_func {
+      loc {
+        binop {
+          op: MOD
+          left {
+          }
+          right {
+          }
+        }
+      }
+      val {
+        unop {
+          op: SLOAD
+          operand {
+            cons {
+              intval: 0
+            }
+          }
+        }
+      }
+      st: MSTORE8
+    }
+  }
+  statements {
+  }
+  statements {
+  }
+  statements {
+    storage_func {
+      loc {
+        binop {
+          op: MOD
+          left {
+            unop {
+            }
+          }
+          right {
+          }
+        }
+      }
+      val {
+        binop {
+          op: MOD
+          left {
+          }
+          right {
+            unop {
+              op: MLOAD
+              operand {
+                cons {
+                  intval: 0
+                }
+              }
+            }
+          }
+        }
+      }
+      st: MSTORE
+    }
+  }
+  statements {
+    leave {
+    }
+  }
+  statements {
+  }
+  statements {
+    breakstmt {
+    }
+  }
+  statements {
+    breakstmt {
+    }
+  }
+  statements {
+    breakstmt {
+    }
+  }
+}
+ver: PETERSBURG

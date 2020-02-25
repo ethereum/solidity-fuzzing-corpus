@@ -1,0 +1,132 @@
+obj {
+  code {
+    block {
+      statements {
+        storage_func {
+          loc {
+          }
+          val {
+          }
+          st: MSTORE
+        }
+      }
+      statements {
+      }
+      statements {
+        forstmt {
+          for_body {
+            statements {
+              storage_func {
+                loc {
+                  nop {
+                    op: MSIZE
+                  }
+                }
+                val {
+                  varref {
+                    varnum: 0
+                  }
+                }
+                st: SSTORE
+              }
+            }
+          }
+          for_init {
+          }
+          for_post {
+            statements {
+              storage_func {
+                loc {
+                }
+                val {
+                  lowcall {
+                    callty: CALL
+                    gas {
+                      lowcall {
+                        callty: CALL
+                        gas {
+                        }
+                        addr {
+                        }
+                        wei {
+                          unop {
+                            op: SLOAD
+                            operand {
+                            }
+                          }
+                        }
+                        in {
+                          nop {
+                            op: MSIZE
+                          }
+                        }
+                        insize {
+                        }
+                        out {
+                        }
+                        outsize {
+                        }
+                      }
+                    }
+                    addr {
+                    }
+                    wei {
+                      unop {
+                        op: SLOAD
+                        operand {
+                        }
+                      }
+                    }
+                    in {
+                    }
+                    insize {
+                    }
+                    out {
+                    }
+                    outsize {
+                      varref {
+                        varnum: 0
+                      }
+                    }
+                  }
+                }
+                st: SSTORE
+              }
+            }
+          }
+          for_cond {
+            nop {
+              op: MSIZE
+            }
+          }
+        }
+      }
+      statements {
+        storage_func {
+          loc {
+          }
+          val {
+          }
+          st: MSTORE8
+        }
+      }
+      statements {
+      }
+      statements {
+        storage_func {
+          loc {
+          }
+          val {
+          }
+          st: MSTORE8
+        }
+      }
+      statements {
+      }
+    }
+  }
+  data {
+    hex: "9"
+  }
+}
+ver: HOMESTEAD

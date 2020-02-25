@@ -1,0 +1,55 @@
+block {
+  statements {
+    copy_func {
+      ct: RETURNDATA
+      target {
+        unop {
+          op: MLOAD
+          operand {
+            unop {
+              op: MLOAD
+              operand {
+                unop {
+                  op: MLOAD
+                  operand {
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+      source {
+      }
+      size {
+      }
+    }
+  }
+  statements {
+    copy_func {
+      ct: DATA
+      target {
+        unop {
+          op: EXTCODESIZE
+          operand {
+            unop {
+              op: MLOAD
+              operand {
+                unop {
+                  op: MLOAD
+                  operand {
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+      source {
+      }
+      size {
+      }
+    }
+  }
+}
+ver: ISTANBUL

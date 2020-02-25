@@ -1,0 +1,46 @@
+block {
+  statements {
+  }
+  statements {
+    boundedforstmt {
+      for_body {
+        statements {
+          boundedforstmt {
+            for_body {
+              statements {
+                ifstmt {
+                  cond {
+                    nop {
+                      op: CALLER
+                    }
+                  }
+                  if_body {
+                  }
+                }
+              }
+              statements {
+                decl {
+                  expr {
+                    nop {
+                      op: MSIZE
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+        statements {
+          decl {
+            expr {
+              nop {
+                op: MSIZE
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+ver: SPURIOUS

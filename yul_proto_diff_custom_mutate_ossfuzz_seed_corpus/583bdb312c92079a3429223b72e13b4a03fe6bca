@@ -1,0 +1,40 @@
+block {
+  statements {
+    terminatestmt {
+      ret_rev {
+        stmt: RETURN
+        pos {
+          cons {
+            strval: "TTTTTTTTTTTTTTTTTTTTTTTT"
+          }
+        }
+        size {
+          binop {
+            op: GT
+            left {
+              cons {
+                strval: "TTTTTTTTTTTTTTTTTTTTTTTT"
+              }
+            }
+            right {
+              binop {
+                op: LT
+                left {
+                  cons {
+                    strval: "TTTTTTTTTTTTTTTTTTTTTTTT"
+                  }
+                }
+                right {
+                  cons {
+                    strval: "TTTTTTTTTTTTTTTTTTTTTTTT"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+ver: SPURIOUS

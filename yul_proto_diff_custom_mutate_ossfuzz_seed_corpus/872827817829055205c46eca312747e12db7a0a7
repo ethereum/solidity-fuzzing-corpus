@@ -1,0 +1,155 @@
+block {
+  statements {
+    multidecl {
+      num_vars: 12930830
+    }
+  }
+  statements {
+  }
+  statements {
+    boundedforstmt {
+      for_body {
+        statements {
+          multidecl {
+            num_vars: 12915159
+          }
+        }
+        statements {
+          boundedforstmt {
+            for_body {
+              statements {
+                multidecl {
+                  num_vars: 125713211
+                }
+              }
+              statements {
+                storage_func {
+                  loc {
+                    lowcall {
+                      callty: CALL
+                      gas {
+                      }
+                      addr {
+                      }
+                      wei {
+                      }
+                      in {
+                      }
+                      insize {
+                        varref {
+                          varnum: 87826240
+                        }
+                      }
+                      out {
+                      }
+                      outsize {
+                        binop {
+                          op: SDIV
+                          left {
+                            nop {
+                              op: MSIZE
+                            }
+                          }
+                          right {
+                            nop {
+                              op: MSIZE
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                  val {
+                    lowcall {
+                      callty: CALL
+                      gas {
+                      }
+                      addr {
+                      }
+                      wei {
+                        nop {
+                          op: MSIZE
+                        }
+                      }
+                      in {
+                      }
+                      insize {
+                        varref {
+                          varnum: 3835058
+                        }
+                      }
+                      out {
+                      }
+                      outsize {
+                      }
+                    }
+                  }
+                  st: MSTORE
+                }
+              }
+              statements {
+                decl {
+                }
+              }
+            }
+          }
+        }
+        statements {
+          storage_func {
+            loc {
+              unop {
+                op: CALLDATALOAD
+                operand {
+                  varref {
+                    varnum: 5295546
+                  }
+                }
+              }
+            }
+            val {
+              varref {
+                varnum: 154009256
+              }
+            }
+            st: SSTORE
+          }
+        }
+        statements {
+          storage_func {
+            loc {
+            }
+            val {
+              unop {
+                op: EXTCODESIZE
+                operand {
+                  varref {
+                    varnum: 6228205
+                  }
+                }
+              }
+            }
+            st: MSTORE
+          }
+        }
+        statements {
+          decl {
+          }
+        }
+      }
+    }
+  }
+  statements {
+    breakstmt {
+    }
+  }
+  statements {
+    decl {
+      expr {
+        varref {
+          varnum: 154634155
+        }
+      }
+    }
+  }
+}
+ver: SPURIOUS

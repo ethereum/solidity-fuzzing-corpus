@@ -1,0 +1,93 @@
+block {
+  statements {
+    funcdef {
+      num_input_params: 44
+      num_output_params: 1589292
+      block {
+        statements {
+          ifstmt {
+            cond {
+              unop {
+                op: BLOCKHASH
+                operand {
+                  varref {
+                    varnum: 587202560
+                  }
+                }
+              }
+            }
+            if_body {
+              statements {
+              }
+            }
+          }
+        }
+        statements {
+        }
+        statements {
+          boundedforstmt {
+            for_body {
+              statements {
+              }
+              statements {
+                switchstmt {
+                  switch_expr {
+                    unop {
+                      op: BLOCKHASH
+                      operand {
+                        varref {
+                          varnum: 587202560
+                        }
+                      }
+                    }
+                  }
+                  case_stmt {
+                    case_lit {
+                    }
+                    case_block {
+                      statements {
+                        assignment {
+                          ref_id {
+                            varnum: 587202560
+                          }
+                          expr {
+                            unop {
+                              op: BALANCE
+                              operand {
+                                nop {
+                                  op: COINBASE
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                      statements {
+                      }
+                      statements {
+                        contstmt {
+                        }
+                      }
+                    }
+                  }
+                  default_block {
+                    statements {
+                      contstmt {
+                      }
+                    }
+                  }
+                }
+              }
+              statements {
+                contstmt {
+                }
+              }
+            }
+          }
+        }
+      }
+      force_call: true
+    }
+  }
+}
+ver: ISTANBUL

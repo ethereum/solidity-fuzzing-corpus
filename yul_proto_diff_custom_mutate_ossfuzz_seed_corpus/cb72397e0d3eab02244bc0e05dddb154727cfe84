@@ -1,0 +1,152 @@
+obj {
+  code {
+    block {
+      statements {
+        breakstmt {
+        }
+      }
+    }
+  }
+  sub_obj {
+    code {
+      block {
+        statements {
+          funcdef {
+            num_input_params: 655360
+            num_output_params: 1
+            block {
+              statements {
+                breakstmt {
+                }
+              }
+            }
+            force_call: true
+          }
+        }
+        statements {
+          funcdef {
+            num_input_params: 1
+            num_output_params: 824180736
+            block {
+              statements {
+                storage_func {
+                  loc {
+                    binop {
+                      op: OR
+                      left {
+                        nop {
+                          op: GASLIMIT
+                        }
+                      }
+                      right {
+                        unop {
+                          op: NOT
+                          operand {
+                            nop {
+                              op: GASLIMIT
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                  val {
+                    unop {
+                      op: SLOAD
+                      operand {
+                        cons {
+                          intval: 0
+                        }
+                      }
+                    }
+                  }
+                  st: MSTORE
+                }
+              }
+              statements {
+                breakstmt {
+                }
+              }
+            }
+            force_call: true
+          }
+        }
+        statements {
+          breakstmt {
+          }
+        }
+      }
+    }
+    sub_obj {
+      code {
+        block {
+          statements {
+          }
+          statements {
+            funcdef {
+              num_input_params: 1
+              num_output_params: 1
+              block {
+                statements {
+                  storage_func {
+                    loc {
+                      binop {
+                        op: OR
+                        left {
+                          nop {
+                            op: GASLIMIT
+                          }
+                        }
+                        right {
+                          unop {
+                            op: NOT
+                            operand {
+                              nop {
+                                op: GASLIMIT
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                    val {
+                      binop {
+                        op: OR
+                        left {
+                          nop {
+                            op: COINBASE
+                          }
+                        }
+                        right {
+                          unop {
+                            op: NOT
+                            operand {
+                              nop {
+                                op: COINBASE
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                    st: MSTORE
+                  }
+                }
+                statements {
+                  breakstmt {
+                  }
+                }
+              }
+              force_call: true
+            }
+          }
+          statements {
+            breakstmt {
+            }
+          }
+        }
+      }
+    }
+  }
+}
+ver: SPURIOUS

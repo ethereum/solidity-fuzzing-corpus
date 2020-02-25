@@ -1,0 +1,115 @@
+block {
+  statements {
+    multidecl {
+      num_vars: 790167525
+    }
+  }
+  statements {
+  }
+  statements {
+  }
+  statements {
+    pop {
+      expr {
+        varref {
+          varnum: 33302099
+        }
+      }
+    }
+  }
+  statements {
+    breakstmt {
+    }
+  }
+  statements {
+  }
+  statements {
+    ifstmt {
+      cond {
+        binop {
+          op: EXP
+          left {
+            varref {
+              varnum: 1319049281
+            }
+          }
+          right {
+            varref {
+              varnum: 129384852
+            }
+          }
+        }
+      }
+      if_body {
+        statements {
+          assignment {
+            ref_id {
+              varnum: 432169107
+            }
+            expr {
+              unop {
+                op: ISZERO
+                operand {
+                  cons {
+                    intval: 0
+                  }
+                }
+              }
+            }
+          }
+        }
+        statements {
+          boundedforstmt {
+          }
+        }
+      }
+    }
+  }
+  statements {
+    boundedforstmt {
+    }
+  }
+  statements {
+    terminatestmt {
+      ret_rev {
+        stmt: REVERT
+        pos {
+          varref {
+            varnum: 977762059
+          }
+        }
+        size {
+          binop {
+            op: SDIV
+            left {
+              unop {
+                op: CALLDATALOAD
+                operand {
+                  varref {
+                    varnum: 371970665
+                  }
+                }
+              }
+            }
+            right {
+              varref {
+                varnum: 487350945
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  statements {
+    pop {
+      expr {
+        func_expr {
+          ret: SINGLE
+          func_index: 2122883476
+        }
+      }
+    }
+  }
+}
+ver: ISTANBUL

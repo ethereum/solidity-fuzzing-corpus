@@ -1,0 +1,114 @@
+block {
+  statements {
+    decl {
+      expr {
+        unop {
+          op: SLOAD
+          operand {
+            varref {
+              varnum: 1639443180
+            }
+          }
+        }
+      }
+    }
+  }
+  statements {
+    storage_func {
+      loc {
+        func_expr {
+          ret: SINGLE
+          func_index: 1124335662
+        }
+      }
+      val {
+        binop {
+          op: EXP
+          left {
+            varref {
+              varnum: 1293656588
+            }
+          }
+          right {
+            varref {
+              varnum: 2055649253
+            }
+          }
+        }
+      }
+      st: SSTORE
+    }
+  }
+  statements {
+    switchstmt {
+      switch_expr {
+        unop {
+          op: MLOAD
+          operand {
+            varref {
+              varnum: 1820788382
+            }
+          }
+        }
+      }
+      case_stmt {
+      }
+    }
+  }
+  statements {
+    storage_func {
+      loc {
+        unopdata {
+          op: SIZE
+          identifier: 1324661491
+        }
+      }
+      val {
+        varref {
+          varnum: 2093344808
+        }
+      }
+      st: SSTORE
+    }
+  }
+  statements {
+    terminatestmt {
+      ret_rev {
+        stmt: REVERT
+        pos {
+          binop {
+            op: GT
+            left {
+              func_expr {
+                ret: SINGLE
+                func_index: 1057139607
+              }
+            }
+            right {
+              func_expr {
+                ret: SINGLE
+                func_index: 94820694
+              }
+            }
+          }
+        }
+        size {
+          binop {
+            op: GT
+            left {
+              varref {
+                varnum: 1646056439
+              }
+            }
+            right {
+              varref {
+                varnum: 2042911616
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+ver: SPURIOUS

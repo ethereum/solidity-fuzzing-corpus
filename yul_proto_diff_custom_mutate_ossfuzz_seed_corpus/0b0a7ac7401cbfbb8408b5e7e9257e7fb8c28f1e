@@ -1,0 +1,185 @@
+block {
+  statements {
+    decl {
+    }
+  }
+  statements {
+    pop {
+      expr {
+        lowcall {
+          callty: CALL
+          gas {
+            top {
+              op: ADDM
+              arg1 {
+                top {
+                  op: ADDM
+                  arg1 {
+                    unop {
+                      op: CALLDATALOAD
+                      operand {
+                        varref {
+                          varnum: 2370976
+                        }
+                      }
+                    }
+                  }
+                  arg2 {
+                    nop {
+                      op: CODESIZE
+                    }
+                  }
+                  arg3 {
+                  }
+                }
+              }
+              arg2 {
+              }
+              arg3 {
+              }
+            }
+          }
+          addr {
+          }
+          wei {
+          }
+          in {
+          }
+          insize {
+          }
+          out {
+          }
+          outsize {
+            varref {
+              varnum: 68418863
+            }
+          }
+        }
+      }
+    }
+  }
+  statements {
+    pop {
+      expr {
+        lowcall {
+          callty: CALL
+          gas {
+            top {
+              op: ADDM
+              arg1 {
+                top {
+                  op: ADDM
+                  arg1 {
+                    unop {
+                      op: CALLDATALOAD
+                      operand {
+                        varref {
+                          varnum: 2370976
+                        }
+                      }
+                    }
+                  }
+                  arg2 {
+                    nop {
+                      op: CODESIZE
+                    }
+                  }
+                  arg3 {
+                    varref {
+                      varnum: 94805345
+                    }
+                  }
+                }
+              }
+              arg2 {
+                varref {
+                  varnum: 5576785
+                }
+              }
+              arg3 {
+                varref {
+                  varnum: 74593269
+                }
+              }
+            }
+          }
+          addr {
+            varref {
+              varnum: 18961069
+            }
+          }
+          wei {
+            varref {
+              varnum: 94805345
+            }
+          }
+          in {
+            varref {
+              varnum: 74593269
+            }
+          }
+          insize {
+            varref {
+              varnum: 8618667
+            }
+          }
+          out {
+            unop {
+              op: MLOAD
+              operand {
+                varref {
+                  varnum: 3627743
+                }
+              }
+            }
+          }
+          outsize {
+            func_expr {
+              ret: SINGLE
+              func_index: 114616907
+            }
+          }
+        }
+      }
+    }
+  }
+  statements {
+  }
+  statements {
+    storage_func {
+      loc {
+        cons {
+          intval: 0
+        }
+      }
+      val {
+        func_expr {
+          ret: SINGLE
+          func_index: 46671091
+        }
+      }
+      st: MSTORE
+    }
+  }
+  statements {
+  }
+  statements {
+    pop {
+      expr {
+        lowcall {
+          callty: CALLCODE
+        }
+      }
+    }
+  }
+  statements {
+    pop {
+      expr {
+        create {
+          createty: CREATE
+        }
+      }
+    }
+  }
+}
+ver: HOMESTEAD

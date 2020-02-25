@@ -1,0 +1,78 @@
+block {
+  statements {
+  }
+  statements {
+  }
+  statements {
+    funcdef {
+      num_input_params: 1
+      num_output_params: 10
+      block {
+        statements {
+          ifstmt {
+            cond {
+              varref {
+                varnum: 6
+              }
+            }
+            if_body {
+              statements {
+                terminatestmt {
+                  self_des {
+                    addr {
+                      varref {
+                        varnum: 4
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+        statements {
+          assignment {
+            ref_id {
+              varnum: 6
+            }
+            expr {
+            }
+          }
+        }
+        statements {
+        }
+      }
+      force_call: false
+    }
+  }
+  statements {
+    functioncall {
+      ret: ZERO
+      func_index: 0
+      in_param1 {
+      }
+      in_param2 {
+        varref {
+          varnum: 6
+        }
+      }
+      in_param3 {
+      }
+      in_param4 {
+      }
+      out_param1 {
+        varnum: 0
+      }
+      out_param2 {
+        varnum: 9472
+      }
+      out_param3 {
+        varnum: 0
+      }
+      out_param4 {
+        varnum: 0
+      }
+    }
+  }
+}
+ver: TANGERINE

@@ -1,0 +1,49 @@
+block {
+  statements {
+    forstmt {
+      for_body {
+        statements {
+          ifstmt {
+            cond {
+            }
+            if_body {
+              statements {
+                breakstmt {
+                }
+              }
+            }
+          }
+        }
+        statements {
+          forstmt {
+            for_body {
+            }
+            for_init {
+            }
+            for_post {
+            }
+            for_cond {
+              unop {
+                op: BLOCKHASH
+                operand {
+                }
+              }
+            }
+          }
+        }
+      }
+      for_init {
+      }
+      for_post {
+      }
+      for_cond {
+        unop {
+          op: BLOCKHASH
+          operand {
+          }
+        }
+      }
+    }
+  }
+}
+ver: HOMESTEAD

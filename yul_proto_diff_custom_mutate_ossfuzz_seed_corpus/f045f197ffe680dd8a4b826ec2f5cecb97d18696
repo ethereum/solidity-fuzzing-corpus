@@ -1,0 +1,74 @@
+block {
+  statements {
+    storage_func {
+      loc {
+        top {
+          op: MULM
+          arg1 {
+            binop {
+              op: SGT
+              left {
+              }
+              right {
+              }
+            }
+          }
+          arg2 {
+          }
+          arg3 {
+          }
+        }
+      }
+      val {
+        binop {
+          op: SGT
+          left {
+          }
+          right {
+          }
+        }
+      }
+      st: MSTORE8
+    }
+  }
+  statements {
+    storage_func {
+      loc {
+        top {
+          op: MULM
+          arg1 {
+            binop {
+              op: SGT
+              left {
+              }
+              right {
+              }
+            }
+          }
+          arg2 {
+          }
+          arg3 {
+            binop {
+              op: SGT
+              left {
+              }
+              right {
+              }
+            }
+          }
+        }
+      }
+      val {
+        unop {
+          op: BLOCKHASH
+          operand {
+          }
+        }
+      }
+      st: MSTORE8
+    }
+  }
+  statements {
+  }
+}
+ver: ISTANBUL

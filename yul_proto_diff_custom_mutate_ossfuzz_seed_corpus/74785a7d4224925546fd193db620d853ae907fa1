@@ -1,0 +1,110 @@
+block {
+  statements {
+    storage_func {
+      loc {
+        binop {
+          op: ADD
+          left {
+            varref {
+              varnum: 94800507
+            }
+          }
+          right {
+            func_expr {
+              ret: SINGLE
+              func_index: 784175597
+            }
+          }
+        }
+      }
+      val {
+        unop {
+          op: CALLDATALOAD
+          operand {
+            func_expr {
+              ret: SINGLE
+              func_index: 530366974
+            }
+          }
+        }
+      }
+      st: SSTORE
+    }
+  }
+  statements {
+  }
+  statements {
+    storage_func {
+      loc {
+        varref {
+          varnum: 105019891
+        }
+      }
+      val {
+        varref {
+          varnum: 1353751541
+        }
+      }
+      st: SSTORE
+    }
+  }
+  statements {
+    funcdef {
+      num_input_params: 1
+      num_output_params: 1
+      block {
+        statements {
+          assignment {
+            ref_id {
+              varnum: 869766016
+            }
+            expr {
+              varref {
+                varnum: 1745928582
+              }
+            }
+          }
+        }
+        statements {
+          pop {
+            expr {
+              unop {
+                op: EXTCODESIZE
+                operand {
+                  varref {
+                    varnum: 1382342126
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  statements {
+    pop {
+      expr {
+        unopdata {
+          op: SIZE
+          identifier: 1063767061
+        }
+      }
+    }
+  }
+  statements {
+    pop {
+      expr {
+        unop {
+          op: CALLDATALOAD
+          operand {
+            varref {
+              varnum: 816479106
+            }
+          }
+        }
+      }
+    }
+  }
+}
+ver: ISTANBUL

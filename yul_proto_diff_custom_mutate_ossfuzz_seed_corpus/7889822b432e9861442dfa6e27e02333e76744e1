@@ -1,0 +1,108 @@
+block {
+  statements {
+    multidecl {
+      num_vars: 62163688
+    }
+  }
+  statements {
+  }
+  statements {
+    multidecl {
+      num_vars: 14253819
+    }
+  }
+  statements {
+    forstmt {
+      for_body {
+        statements {
+          multidecl {
+            num_vars: 28845972
+          }
+        }
+        statements {
+          decl {
+            expr {
+              varref {
+                varnum: 26331013
+              }
+            }
+          }
+        }
+        statements {
+          funcdef {
+            num_input_params: 66487268
+            num_output_params: 43021174
+            block {
+              statements {
+              }
+              statements {
+              }
+            }
+          }
+        }
+        statements {
+          pop {
+            expr {
+              lowcall {
+                callty: DELEGATECALL
+              }
+            }
+          }
+        }
+      }
+      for_init {
+      }
+      for_post {
+        statements {
+          assignment {
+            ref_id {
+              varnum: 32083474
+            }
+            expr {
+              varref {
+                varnum: 20759895
+              }
+            }
+          }
+        }
+      }
+      for_cond {
+        unop {
+          op: CALLDATALOAD
+          operand {
+            varref {
+              varnum: 1028305
+            }
+          }
+        }
+      }
+    }
+  }
+  statements {
+    pop {
+      expr {
+        create {
+          createty: CREATE2
+          wei {
+          }
+          position {
+          }
+          size {
+          }
+          value {
+          }
+        }
+      }
+    }
+  }
+  statements {
+    pop {
+      expr {
+        lowcall {
+          callty: CALL
+        }
+      }
+    }
+  }
+}
+ver: BYZANTIUM

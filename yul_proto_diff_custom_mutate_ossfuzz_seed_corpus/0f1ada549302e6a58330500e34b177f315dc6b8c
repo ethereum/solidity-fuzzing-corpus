@@ -1,0 +1,81 @@
+block {
+  statements {
+  }
+  statements {
+    decl {
+      expr {
+        nop {
+          op: TIMESTAMP
+        }
+      }
+    }
+  }
+  statements {
+    extcode_copy {
+      addr {
+        binop {
+          op: SHL
+          left {
+          }
+          right {
+          }
+        }
+      }
+      target {
+      }
+      source {
+      }
+      size {
+        binop {
+          op: SHL
+          left {
+          }
+          right {
+            binop {
+              op: SHL
+              left {
+              }
+              right {
+                varref {
+                  varnum: 0
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  statements {
+  }
+  statements {
+    forstmt {
+      for_body {
+      }
+      for_init {
+      }
+      for_post {
+        statements {
+          assignment {
+            ref_id {
+              varnum: -134217729
+            }
+            expr {
+              nop {
+                op: COINBASE
+              }
+            }
+          }
+        }
+      }
+      for_cond {
+        unop {
+          op: BLOCKHASH
+          operand {
+          }
+        }
+      }
+    }
+  }
+}
+ver: ISTANBUL

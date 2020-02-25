@@ -1,0 +1,64 @@
+block {
+  statements {
+    storage_func {
+      loc {
+        cons {
+        }
+      }
+      val {
+        unop {
+          op: MLOAD
+          operand {
+          }
+        }
+      }
+      st: MSTORE
+    }
+  }
+  statements {
+  }
+  statements {
+    forstmt {
+      for_body {
+        statements {
+          switchstmt {
+            switch_expr {
+              binop {
+                op: DIV
+                left {
+                }
+                right {
+                }
+              }
+            }
+            case_stmt {
+              case_lit {
+              }
+              case_block {
+              }
+            }
+            case_stmt {
+              case_lit {
+                strval: "\377\377\377\001"
+              }
+              case_block {
+              }
+            }
+          }
+        }
+      }
+      for_init {
+      }
+      for_post {
+      }
+      for_cond {
+        nop {
+          op: CHAINID
+        }
+      }
+    }
+  }
+  statements {
+  }
+}
+ver: ISTANBUL

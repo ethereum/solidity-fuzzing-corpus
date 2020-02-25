@@ -1,0 +1,150 @@
+block {
+  statements {
+  }
+  statements {
+    funcdef {
+      num_input_params: 10
+      num_output_params: 3
+      block {
+        statements {
+          assignment {
+            ref_id {
+              varnum: 2
+            }
+            expr {
+              cons {
+              }
+            }
+          }
+        }
+        statements {
+          assignment {
+            ref_id {
+              varnum: 1
+            }
+            expr {
+            }
+          }
+        }
+        statements {
+          assignment {
+            ref_id {
+              varnum: 2
+            }
+            expr {
+              nop {
+                op: GASLIMIT
+              }
+            }
+          }
+        }
+        statements {
+          assignment {
+            ref_id {
+              varnum: -10
+            }
+            expr {
+            }
+          }
+        }
+        statements {
+          boundedforstmt {
+            for_body {
+              statements {
+                blockstmt {
+                  statements {
+                    storage_func {
+                      loc {
+                      }
+                      val {
+                      }
+                      st: MSTORE8
+                    }
+                  }
+                }
+              }
+              statements {
+                boundedforstmt {
+                  for_body {
+                  }
+                }
+              }
+            }
+          }
+        }
+        statements {
+          assignment {
+            ref_id {
+              varnum: -10
+            }
+            expr {
+            }
+          }
+        }
+      }
+      force_call: true
+    }
+  }
+  statements {
+    funcdef {
+      num_input_params: 10
+      num_output_params: 3
+      block {
+        statements {
+          assignment {
+            ref_id {
+              varnum: 2
+            }
+            expr {
+              cons {
+                intval: 42
+              }
+            }
+          }
+        }
+        statements {
+          assignment {
+            ref_id {
+              varnum: 1
+            }
+            expr {
+            }
+          }
+        }
+        statements {
+          assignment {
+            ref_id {
+              varnum: 2
+            }
+            expr {
+              cons {
+              }
+            }
+          }
+        }
+        statements {
+          assignment {
+            ref_id {
+              varnum: -10
+            }
+            expr {
+            }
+          }
+        }
+        statements {
+        }
+        statements {
+          assignment {
+            ref_id {
+              varnum: -10
+            }
+            expr {
+            }
+          }
+        }
+      }
+      force_call: true
+    }
+  }
+}
+ver: ISTANBUL

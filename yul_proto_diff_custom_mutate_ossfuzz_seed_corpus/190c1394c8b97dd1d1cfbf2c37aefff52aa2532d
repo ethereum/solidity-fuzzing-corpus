@@ -1,0 +1,81 @@
+block {
+  statements {
+    storage_func {
+      loc {
+        binop {
+          op: SDIV
+          left {
+          }
+          right {
+            binop {
+              op: BYTE
+              left {
+              }
+              right {
+                unop {
+                  op: CALLDATALOAD
+                  operand {
+                    cons {
+                      intval: 0
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+      val {
+        nop {
+          op: CODESIZE
+        }
+      }
+      st: MSTORE
+    }
+  }
+  statements {
+    storage_func {
+      loc {
+        binop {
+          op: BYTE
+          left {
+          }
+          right {
+            binop {
+              op: BYTE
+              left {
+              }
+              right {
+                unop {
+                  op: CALLDATALOAD
+                  operand {
+                    cons {
+                      intval: 0
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+      val {
+        nop {
+          op: RETURNDATASIZE
+        }
+      }
+      st: MSTORE
+    }
+  }
+  statements {
+  }
+  statements {
+    breakstmt {
+    }
+  }
+  statements {
+    breakstmt {
+    }
+  }
+}
+ver: ISTANBUL

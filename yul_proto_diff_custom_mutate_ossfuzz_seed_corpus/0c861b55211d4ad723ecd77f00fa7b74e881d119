@@ -1,0 +1,87 @@
+obj {
+  code {
+    block {
+      statements {
+        storage_func {
+          loc {
+            binop {
+              op: OR
+              left {
+                nop {
+                  op: GASLIMIT
+                }
+              }
+              right {
+                unop {
+                  op: NOT
+                  operand {
+                    nop {
+                      op: GASLIMIT
+                    }
+                  }
+                }
+              }
+            }
+          }
+          val {
+            unop {
+              op: NOT
+              operand {
+                nop {
+                  op: GASLIMIT
+                }
+              }
+            }
+          }
+          st: MSTORE
+        }
+      }
+    }
+  }
+  sub_obj {
+    code {
+      block {
+        statements {
+          funcdef {
+            num_input_params: 655360
+            num_output_params: 538968064
+            block {
+              statements {
+                storage_func {
+                  loc {
+                    binop {
+                      op: OR
+                      left {
+                        nop {
+                          op: GASLIMIT
+                        }
+                      }
+                      right {
+                        unop {
+                          op: NOT
+                          operand {
+                            nop {
+                              op: GASLIMIT
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                  val {
+                    nop {
+                      op: GASLIMIT
+                    }
+                  }
+                  st: MSTORE
+                }
+              }
+            }
+            force_call: true
+          }
+        }
+      }
+    }
+  }
+}
+ver: HOMESTEAD

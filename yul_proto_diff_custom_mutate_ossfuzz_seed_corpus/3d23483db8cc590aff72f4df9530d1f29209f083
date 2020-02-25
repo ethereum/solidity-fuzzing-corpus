@@ -1,0 +1,79 @@
+block {
+  statements {
+    storage_func {
+      loc {
+        binop {
+          op: SDIV
+          left {
+            binop {
+              op: SDIV
+              left {
+              }
+              right {
+                unop {
+                  op: BALANCE
+                  operand {
+                  }
+                }
+              }
+            }
+          }
+          right {
+            unop {
+              op: BALANCE
+              operand {
+              }
+            }
+          }
+        }
+      }
+      val {
+        varref {
+          varnum: 6
+        }
+      }
+      st: MSTORE
+    }
+  }
+  statements {
+  }
+  statements {
+  }
+  statements {
+    storage_func {
+      loc {
+        binop {
+          op: SI
+          left {
+            binop {
+              op: SDIV
+              left {
+              }
+              right {
+                unop {
+                  op: BALANCE
+                  operand {
+                  }
+                }
+              }
+            }
+          }
+          right {
+            unop {
+              op: BALANCE
+              operand {
+              }
+            }
+          }
+        }
+      }
+      val {
+        varref {
+          varnum: 6
+        }
+      }
+      st: MSTORE
+    }
+  }
+}
+ver: TANGERINE

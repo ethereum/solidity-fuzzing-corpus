@@ -1,0 +1,132 @@
+block {
+  statements {
+    pop {
+      expr {
+        varref {
+          varnum: 2119003223
+        }
+      }
+    }
+  }
+  statements {
+  }
+  statements {
+  }
+  statements {
+    leave {
+    }
+  }
+  statements {
+  }
+  statements {
+    contstmt {
+    }
+  }
+  statements {
+    leave {
+    }
+  }
+  statements {
+    storage_func {
+      loc {
+        unop {
+          op: CALLDATALOAD
+          operand {
+            func_expr {
+              ret: SINGLE
+              func_index: 1622577487
+            }
+          }
+        }
+      }
+      val {
+        unop {
+          op: MLOAD
+          operand {
+            func_expr {
+              ret: SINGLE
+              func_index: 543651142
+            }
+          }
+        }
+      }
+      st: MSTORE
+    }
+  }
+  statements {
+    switchstmt {
+      switch_expr {
+        unopdata {
+          op: OFFSET
+          identifier: 784068731
+        }
+      }
+      case_stmt {
+      }
+    }
+  }
+  statements {
+    funcdef {
+      num_input_params: 368334179
+      num_output_params: 842040996
+      block {
+        statements {
+          functioncall {
+            ret: SINGLE
+            func_index: 283654119
+            in_param1 {
+              unop {
+                op: SLOAD
+                operand {
+                  varref {
+                    varnum: 550744871
+                  }
+                }
+              }
+            }
+            in_param2 {
+              func_expr {
+                ret: SINGLE
+                func_index: 1664263788
+              }
+            }
+            in_param3 {
+              func_expr {
+                ret: SINGLE
+                func_index: 878024389
+              }
+            }
+            in_param4 {
+              varref {
+                varnum: 2059728624
+              }
+            }
+          }
+        }
+        statements {
+          pop {
+            expr {
+              lowcall {
+                callty: DELEGATECALL
+              }
+            }
+          }
+        }
+        statements {
+          pop {
+            expr {
+              create {
+                createty: CREATE
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  statements {
+    terminatestmt {
+    }
+  }
+}
+ver: TANGERINE

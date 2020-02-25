@@ -1,0 +1,44 @@
+block {
+  statements {
+    decl {
+      expr {
+        binop {
+          op: SDIV
+          left {
+            unop {
+              op: NOT
+              operand {
+                nop {
+                  op: CALLER
+                }
+              }
+            }
+          }
+          right {
+          }
+        }
+      }
+    }
+  }
+  statements {
+    decl {
+      expr {
+        binop {
+          op: MOD
+          left {
+            unop {
+              op: NOT
+              operand {
+                nop {
+                  op: ORIGIN
+                }
+              }
+            }
+          }
+          right {
+          }
+        }
+      }
+    }
+  }
+}

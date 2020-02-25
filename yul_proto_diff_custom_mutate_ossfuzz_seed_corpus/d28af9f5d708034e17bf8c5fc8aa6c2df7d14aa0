@@ -1,0 +1,149 @@
+block {
+  statements {
+    funcdef {
+      num_input_params: 14
+      num_output_params: 0
+      block {
+        statements {
+          functioncall {
+            ret: ZERO
+            func_index: 0
+            in_param1 {
+              binop {
+                op: SHR
+                left {
+                }
+                right {
+                  binop {
+                    op: SHR
+                    left {
+                    }
+                    right {
+                    }
+                  }
+                }
+              }
+            }
+            in_param2 {
+              binop {
+                op: SHR
+                left {
+                }
+                right {
+                }
+              }
+            }
+            in_param3 {
+            }
+            in_param4 {
+            }
+            out_param1 {
+              varnum: 25856
+            }
+            out_param2 {
+              varnum: 25856
+            }
+            out_param3 {
+              varnum: 0
+            }
+            out_param4 {
+              varnum: 0
+            }
+          }
+        }
+        statements {
+          contstmt {
+          }
+        }
+        statements {
+          boundedforstmt {
+            for_body {
+              statements {
+                copy_func {
+                  ct: CALLDATA
+                  target {
+                  }
+                  source {
+                  }
+                  size {
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+      force_call: false
+    }
+  }
+  statements {
+  }
+  statements {
+    copy_func {
+      ct: CALLDATA
+      target {
+        unop {
+          op: EXTCODESIZE
+          operand {
+          }
+        }
+      }
+      source {
+      }
+      size {
+      }
+    }
+  }
+  statements {
+    pop {
+      expr {
+        cons {
+          hexval: "$#\"\204\344\234\362\313"
+        }
+      }
+    }
+  }
+  statements {
+    functioncall {
+      ret: ZERO
+      func_index: 0
+      in_param1 {
+      }
+      in_param2 {
+        binop {
+          op: SDIV
+          left {
+          }
+          right {
+          }
+        }
+      }
+      in_param3 {
+      }
+      in_param4 {
+      }
+      out_param1 {
+        varnum: 0
+      }
+      out_param2 {
+        varnum: 0
+      }
+      out_param3 {
+        varnum: 0
+      }
+      out_param4 {
+        varnum: 0
+      }
+    }
+  }
+  statements {
+    pop {
+      expr {
+        cons {
+          hexval: "$#\"\204\344\234\362\313"
+        }
+      }
+    }
+  }
+}
+ver: ISTANBUL

@@ -1,0 +1,177 @@
+block {
+  statements {
+    pop {
+      expr {
+        varref {
+          varnum: 2033936403
+        }
+      }
+    }
+  }
+  statements {
+    storage_func {
+      loc {
+        func_expr {
+          ret: SINGLE
+          func_index: 1534903699
+        }
+      }
+      val {
+        unop {
+          op: EXTCODESIZE
+          operand {
+            cons {
+              intval: 0
+            }
+          }
+        }
+      }
+      st: SSTORE
+    }
+  }
+  statements {
+    leave {
+    }
+  }
+  statements {
+    pop {
+      expr {
+        varref {
+          varnum: 343086159
+        }
+      }
+    }
+  }
+  statements {
+    funcdef {
+      num_input_params: 1
+      num_output_params: 1
+      block {
+        statements {
+          assignment {
+            ref_id {
+              varnum: 1090831717
+            }
+            expr {
+              varref {
+                varnum: 1386270514
+              }
+            }
+          }
+        }
+        statements {
+          assignment {
+            ref_id {
+              varnum: 1190492642
+            }
+            expr {
+              binop {
+                op: BYTE
+                left {
+                  varref {
+                    varnum: 1755411909
+                  }
+                }
+                right {
+                  unopdata {
+                    op: OFFSET
+                    identifier: 953817444
+                  }
+                }
+              }
+            }
+          }
+        }
+        statements {
+          assignment {
+            ref_id {
+              varnum: 1197899853
+            }
+            expr {
+              binop {
+                op: SHR
+                left {
+                  varref {
+                    varnum: 679125041
+                  }
+                }
+                right {
+                  unop {
+                    op: MLOAD
+                    operand {
+                      varref {
+                        varnum: 24563378
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+        statements {
+          functioncall {
+            ret: SINGLE
+            func_index: 933883339
+            in_param1 {
+              unop {
+                op: CALLDATALOAD
+                operand {
+                  unopdata {
+                    op: SIZE
+                    identifier: 1895230086
+                  }
+                }
+              }
+            }
+            in_param2 {
+              varref {
+                varnum: 1227404724
+              }
+            }
+            in_param3 {
+              varref {
+                varnum: 1137024777
+              }
+            }
+            in_param4 {
+              func_expr {
+                ret: SINGLE
+                func_index: 950103241
+              }
+            }
+          }
+        }
+        statements {
+          pop {
+            expr {
+              lowcall {
+                callty: DELEGATECALL
+              }
+            }
+          }
+        }
+        statements {
+          pop {
+            expr {
+              func_expr {
+                ret: SINGLE
+                func_index: 227940601
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  statements {
+    pop {
+      expr {
+        varref {
+          varnum: 577604408
+        }
+      }
+    }
+  }
+}
+ver: CONSTANTINOPLE

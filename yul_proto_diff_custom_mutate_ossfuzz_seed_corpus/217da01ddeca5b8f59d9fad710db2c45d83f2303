@@ -1,0 +1,84 @@
+block {
+  statements {
+    breakstmt {
+    }
+  }
+  statements {
+    breakstmt {
+    }
+  }
+  statements {
+    copy_func {
+      ct: CALLDATA
+      target {
+        binop {
+          op: DIV
+          left {
+            unop {
+              op: SLOAD
+              operand {
+                cons {
+                  intval: 0
+                }
+              }
+            }
+          }
+          right {
+            binop {
+              op: DIV
+              left {
+              }
+              right {
+                binop {
+                  op: DIV
+                  left {
+                  }
+                  right {
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+      source {
+        binop {
+          op: XOR
+          left {
+            unop {
+              op: CALLDATALOAD
+              operand {
+                cons {
+                  intval: 0
+                }
+              }
+            }
+          }
+          right {
+            binop {
+              op: DIV
+              left {
+              }
+              right {
+              }
+            }
+          }
+        }
+      }
+      size {
+        binop {
+          op: DIV
+          left {
+          }
+          right {
+          }
+        }
+      }
+    }
+  }
+  statements {
+    breakstmt {
+    }
+  }
+}
+ver: PETERSBURG

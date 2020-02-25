@@ -1,0 +1,82 @@
+obj {
+  code {
+    block {
+      statements {
+        storage_func {
+          loc {
+            binop {
+              op: SHL
+              left {
+                cons {
+                  intval: 65
+                }
+              }
+              right {
+                binop {
+                  op: SHR
+                  left {
+                    cons {
+                      intval: 64
+                    }
+                  }
+                  right {
+                    binop {
+                      op: SHL
+                      left {
+                        cons {
+                          intval: 65
+                        }
+                      }
+                      right {
+                        binop {
+                          op: SHR
+                          left {
+                            cons {
+                              intval: 64
+                            }
+                          }
+                          right {
+                            unop {
+                              op: CALLDATALOAD
+                              operand {
+                                varref {
+                                  varnum: 2401847
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+          val {
+          }
+          st: MSTORE
+        }
+      }
+      statements {
+        pop {
+          expr {
+            lowcall {
+              callty: DELEGATECALL
+            }
+          }
+        }
+      }
+      statements {
+        pop {
+          expr {
+            create {
+              createty: CREATE
+            }
+          }
+        }
+      }
+    }
+  }
+}
+ver: PETERSBURG

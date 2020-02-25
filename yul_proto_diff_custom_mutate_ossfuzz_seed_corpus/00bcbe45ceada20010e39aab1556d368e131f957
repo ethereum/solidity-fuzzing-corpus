@@ -1,0 +1,201 @@
+block {
+  statements {
+    storage_func {
+      loc {
+        binop {
+          op: SHR
+          left {
+            varref {
+              varnum: 192589647
+            }
+          }
+          right {
+            func_expr {
+              ret: SINGLE
+              func_index: 1586614332
+            }
+          }
+        }
+      }
+      val {
+        unopdata {
+          op: SIZE
+          identifier: 391173838
+        }
+      }
+      st: MSTORE8
+    }
+  }
+  statements {
+    copy_func {
+      ct: CALLDATA
+      target {
+        func_expr {
+          ret: SINGLE
+          func_index: 76299753
+        }
+      }
+      source {
+        func_expr {
+          ret: SINGLE
+          func_index: 76299753
+          in_param1 {
+          }
+          in_param2 {
+            varref {
+              varnum: 1832760784
+            }
+          }
+          in_param3 {
+            func_expr {
+              ret: SINGLE
+              func_index: 420422007
+            }
+          }
+          in_param4 {
+            varref {
+              varnum: 1952340221
+            }
+          }
+          out_param1 {
+            varnum: 0
+          }
+          out_param2 {
+            varnum: 0
+          }
+          out_param3 {
+            varnum: 1570433398
+          }
+          out_param4 {
+            varnum: 0
+          }
+        }
+      }
+      size {
+        unop {
+          op: SLOAD
+          operand {
+            func_expr {
+              ret: SINGLE
+              func_index: 1639105584
+            }
+          }
+        }
+      }
+    }
+  }
+  statements {
+    functioncall {
+      ret: MULTIDECL
+      func_index: 39570888
+      in_param1 {
+        varref {
+          varnum: 2114592353
+        }
+      }
+      in_param2 {
+        varref {
+          varnum: 36095263
+        }
+      }
+      in_param3 {
+        unopdata {
+          op: SIZE
+          identifier: 1321493426
+        }
+      }
+      in_param4 {
+        func_expr {
+          ret: SINGLE
+          func_index: 1743685354
+        }
+      }
+    }
+  }
+  statements {
+    funcdef {
+      num_input_params: 1119746649
+      num_output_params: 1274582536
+      block {
+        statements {
+          contstmt {
+          }
+        }
+        statements {
+          ifstmt {
+            cond {
+              unop {
+                op: MLOAD
+                operand {
+                  varref {
+                    varnum: 217089802
+                  }
+                }
+              }
+            }
+            if_body {
+              statements {
+                assignment {
+                  ref_id {
+                    varnum: 358327332
+                  }
+                  expr {
+                    unop {
+                      op: SLOAD
+                      operand {
+                        cons {
+                          intval: 0
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+              statements {
+                assignment {
+                  ref_id {
+                    varnum: 1427457059
+                  }
+                  expr {
+                    unop {
+                      op: CALLDATALOAD
+                      operand {
+                        unop {
+                          op: SLOAD
+                          operand {
+                            varref {
+                              varnum: 843529794
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+              statements {
+                forstmt {
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  statements {
+    pop {
+      expr {
+        unopdata {
+          op: OFFSET
+          identifier: 798378064
+        }
+      }
+    }
+  }
+  statements {
+    ifstmt {
+    }
+  }
+}
+ver: PETERSBURG

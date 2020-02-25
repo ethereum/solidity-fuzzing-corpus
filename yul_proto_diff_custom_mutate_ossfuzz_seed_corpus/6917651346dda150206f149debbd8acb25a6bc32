@@ -1,0 +1,131 @@
+obj {
+  code {
+    block {
+      statements {
+        extcode_copy {
+          addr {
+            unop {
+              op: NOT
+              operand {
+                nop {
+                  op: RETURNDATASIZE
+                }
+              }
+            }
+          }
+          target {
+            binop {
+              op: SLT
+              left {
+                unop {
+                  op: NOT
+                  operand {
+                    unop {
+                      op: NOT
+                      operand {
+                        nop {
+                          op: GASPRICE
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+              right {
+                nop {
+                  op: GASPRICE
+                }
+              }
+            }
+          }
+          source {
+          }
+          size {
+          }
+        }
+      }
+      statements {
+        ifstmt {
+          cond {
+            cons {
+              strval: "\377"
+            }
+          }
+          if_body {
+          }
+        }
+      }
+      statements {
+      }
+    }
+  }
+  sub_obj {
+    code {
+      block {
+      }
+    }
+    sub_obj {
+      code {
+        block {
+          statements {
+            extcode_copy {
+              addr {
+                unop {
+                  op: NOT
+                  operand {
+                  }
+                }
+              }
+              target {
+                binop {
+                  op: SLT
+                  left {
+                    unop {
+                      op: NOT
+                      operand {
+                        unop {
+                          op: NOT
+                          operand {
+                            nop {
+                              op: GASPRICE
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                  right {
+                    nop {
+                      op: GASPRICE
+                    }
+                  }
+                }
+              }
+              source {
+              }
+              size {
+              }
+            }
+          }
+          statements {
+          }
+          statements {
+          }
+        }
+      }
+      sub_obj {
+        code {
+          block {
+          }
+        }
+        sub_obj {
+          code {
+            block {
+            }
+          }
+        }
+      }
+    }
+  }
+}
+ver: SPURIOUS

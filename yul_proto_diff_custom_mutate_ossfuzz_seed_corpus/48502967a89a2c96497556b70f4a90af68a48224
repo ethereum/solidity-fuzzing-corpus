@@ -1,0 +1,138 @@
+block {
+  statements {
+  }
+  statements {
+    decl {
+      expr {
+        unop {
+          op: CALLDATALOAD
+          operand {
+            unop {
+              op: SLOAD
+              operand {
+                varref {
+                  varnum: 1148009
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  statements {
+  }
+  statements {
+  }
+  statements {
+    boundedforstmt {
+      for_body {
+        statements {
+          pop {
+            expr {
+              lowcall {
+                callty: STATICCALL
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  statements {
+    pop {
+      expr {
+        lowcall {
+          callty: DELEGATECALL
+          gas {
+          }
+          addr {
+          }
+          wei {
+          }
+          in {
+            top {
+              op: MULM
+              arg1 {
+              }
+              arg2 {
+              }
+              arg3 {
+              }
+            }
+          }
+          insize {
+          }
+          out {
+          }
+          outsize {
+            unop {
+              op: MLOAD
+              operand {
+                func_expr {
+                  ret: SINGLE
+                  func_index: 1322164
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  statements {
+    switchstmt {
+      switch_expr {
+        varref {
+          varnum: 22360443
+        }
+      }
+      case_stmt {
+      }
+    }
+  }
+  statements {
+    funcdef {
+      num_input_params: 155058879
+      num_output_params: 100332216
+      block {
+        statements {
+          pop {
+            expr {
+              func_expr {
+                ret: SINGLE
+                in_param1 {
+                  varref {
+                    varnum: 826335202
+                  }
+                }
+                in_param2 {
+                  varref {
+                    varnum: 413167601
+                  }
+                }
+                in_param3 {
+                  unop {
+                    op: MLOAD
+                    operand {
+                      func_expr {
+                        ret: SINGLE
+                        func_index: 93077284
+                      }
+                    }
+                  }
+                }
+                in_param4 {
+                  varref {
+                    varnum: 206583800
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+ver: ISTANBUL

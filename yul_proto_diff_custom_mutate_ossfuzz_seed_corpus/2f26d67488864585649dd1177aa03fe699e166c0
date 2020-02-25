@@ -1,0 +1,94 @@
+obj {
+  code {
+    block {
+      statements {
+        funcdef {
+          num_input_params: 1
+          num_output_params: 1
+          block {
+            statements {
+              assignment {
+                ref_id {
+                  varnum: 600648050
+                }
+                expr {
+                  varref {
+                    varnum: 1709130484
+                  }
+                }
+              }
+            }
+            statements {
+              breakstmt {
+              }
+            }
+            statements {
+              storage_func {
+                loc {
+                  unop {
+                    op: SLOAD
+                    operand {
+                      varref {
+                        varnum: 119017351
+                      }
+                    }
+                  }
+                }
+                val {
+                  unop {
+                    op: CALLDATALOAD
+                    operand {
+                      unop {
+                        op: MLOAD
+                        operand {
+                          varref {
+                            varnum: 1751402451
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+                st: SSTORE
+              }
+            }
+            statements {
+            }
+          }
+        }
+      }
+      statements {
+        leave {
+        }
+      }
+      statements {
+        terminatestmt {
+          ret_rev {
+            stmt: REVERT
+            pos {
+              unopdata {
+                op: OFFSET
+                identifier: 774477447
+              }
+            }
+            size {
+              unop {
+                op: CALLDATALOAD
+                operand {
+                  unopdata {
+                    op: OFFSET
+                    identifier: 586488082
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  data {
+    hex: "\364"
+  }
+}
+ver: CONSTANTINOPLE

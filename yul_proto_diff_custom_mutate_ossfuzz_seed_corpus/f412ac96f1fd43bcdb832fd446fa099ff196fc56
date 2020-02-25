@@ -1,0 +1,82 @@
+block {
+  statements {
+  }
+  statements {
+    boundedforstmt {
+      for_body {
+        statements {
+          storage_func {
+            loc {
+            }
+            val {
+              top {
+                op: MULM
+                arg1 {
+                }
+                arg2 {
+                  unop {
+                    op: NOT
+                    operand {
+                      nop {
+                        op: ORIGIN
+                      }
+                    }
+                  }
+                }
+                arg3 {
+                }
+              }
+            }
+            st: MSTORE
+          }
+        }
+      }
+    }
+  }
+  statements {
+    boundedforstmt {
+      for_body {
+        statements {
+          boundedforstmt {
+            for_body {
+              statements {
+                storage_func {
+                  loc {
+                  }
+                  val {
+                    top {
+                      op: MULM
+                      arg1 {
+                      }
+                      arg2 {
+                        unop {
+                          op: NOT
+                          operand {
+                            nop {
+                              op: ORIGIN
+                            }
+                          }
+                        }
+                      }
+                      arg3 {
+                        unop {
+                          op: NOT
+                          operand {
+                            nop {
+                              op: ORIGIN
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                  st: MSTORE
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

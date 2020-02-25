@@ -1,0 +1,160 @@
+block {
+  statements {
+  }
+  statements {
+    assignment {
+      ref_id {
+        varnum: 519095218
+      }
+      expr {
+        cons {
+          intval: 406074882
+        }
+      }
+    }
+  }
+  statements {
+    decl {
+      expr {
+        unop {
+          op: MLOAD
+          operand {
+            func_expr {
+              ret: SINGLE
+              func_index: 500909609
+            }
+          }
+        }
+      }
+    }
+  }
+  statements {
+    copy_func {
+      ct: CALLDATA
+      target {
+        unop {
+          op: MLOAD
+          operand {
+            unopdata {
+              op: OFFSET
+              identifier: 1262825888
+            }
+          }
+        }
+      }
+      source {
+        unop {
+          op: SLOAD
+          operand {
+            cons {
+              intval: 0
+            }
+          }
+        }
+      }
+      size {
+        unop {
+          op: CALLDATALOAD
+          operand {
+            varref {
+              varnum: 1726141116
+            }
+          }
+        }
+      }
+    }
+  }
+  statements {
+    assignment {
+      ref_id {
+        varnum: 519095218
+      }
+      expr {
+        func_expr {
+          ret: SINGLE
+          func_index: 87032394
+        }
+      }
+    }
+  }
+  statements {
+    extcode_copy {
+      addr {
+        unopdata {
+          op: SIZE
+          identifier: 1343040218
+        }
+      }
+      target {
+        func_expr {
+          ret: SINGLE
+          func_index: 2120679846
+        }
+      }
+      source {
+        unopdata {
+          op: OFFSET
+          identifier: 936819106
+        }
+      }
+      size {
+        unop {
+          op: CALLDATALOAD
+          operand {
+            func_expr {
+              ret: SINGLE
+              func_index: 303921596
+            }
+          }
+        }
+      }
+    }
+  }
+  statements {
+    assignment {
+      ref_id {
+        varnum: 730841118
+      }
+      expr {
+        func_expr {
+          ret: SINGLE
+          func_index: 1904370693
+        }
+      }
+    }
+  }
+  statements {
+    funcdef {
+      num_input_params: 793847254
+      num_output_params: 102600766
+      block {
+        statements {
+          switchstmt {
+            switch_expr {
+              unop {
+                op: MLOAD
+                operand {
+                  varref {
+                    varnum: 1697077918
+                  }
+                }
+              }
+            }
+            case_stmt {
+            }
+          }
+        }
+        statements {
+          pop {
+            expr {
+              lowcall {
+                callty: CALLCODE
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+ver: ISTANBUL

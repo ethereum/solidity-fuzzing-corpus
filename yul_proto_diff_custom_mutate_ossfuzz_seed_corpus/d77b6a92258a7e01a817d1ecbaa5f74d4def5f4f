@@ -1,0 +1,176 @@
+block {
+  statements {
+  }
+  statements {
+    storage_func {
+      loc {
+        binop {
+          op: MOD
+          left {
+          }
+          right {
+            binop {
+              op: GT
+              left {
+              }
+              right {
+                nop {
+                  op: MSIZE
+                }
+              }
+            }
+          }
+        }
+      }
+      val {
+        varref {
+          varnum: 4
+        }
+      }
+      st: MSTORE
+    }
+  }
+  statements {
+    boundedforstmt {
+      for_body {
+        statements {
+          storage_func {
+            loc {
+            }
+            val {
+              lowcall {
+                callty: CALL
+                gas {
+                }
+                addr {
+                  nop {
+                    op: MSIZE
+                  }
+                }
+                wei {
+                  varref {
+                    varnum: 4096
+                  }
+                }
+                in {
+                }
+                insize {
+                  nop {
+                    op: GAS
+                  }
+                }
+                out {
+                  nop {
+                    op: GAS
+                  }
+                }
+                outsize {
+                  binop {
+                    op: SDIV
+                    left {
+                      nop {
+                        op: MSIZE
+                      }
+                    }
+                    right {
+                    }
+                  }
+                }
+              }
+            }
+            st: MSTORE
+          }
+        }
+        statements {
+          boundedforstmt {
+            for_body {
+              statements {
+                storage_func {
+                  loc {
+                    lowcall {
+                      callty: CALL
+                      gas {
+                      }
+                      addr {
+                      }
+                      wei {
+                        varref {
+                          varnum: 4096
+                        }
+                      }
+                      in {
+                      }
+                      insize {
+                      }
+                      out {
+                      }
+                      outsize {
+                        binop {
+                          op: GT
+                          left {
+                          }
+                          right {
+                          }
+                        }
+                      }
+                    }
+                  }
+                  val {
+                    lowcall {
+                      callty: CALL
+                      gas {
+                        binop {
+                          op: GT
+                          left {
+                          }
+                          right {
+                          }
+                        }
+                      }
+                      addr {
+                        binop {
+                          op: SDIV
+                          left {
+                          }
+                          right {
+                          }
+                        }
+                      }
+                      wei {
+                        nop {
+                          op: GAS
+                        }
+                      }
+                      in {
+                      }
+                      insize {
+                      }
+                      out {
+                        binop {
+                          op: SDIV
+                          left {
+                            nop {
+                              op: MSIZE
+                            }
+                          }
+                          right {
+                          }
+                        }
+                      }
+                      outsize {
+                      }
+                    }
+                  }
+                  st: MSTORE8
+                }
+              }
+              statements {
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+ver: SPURIOUS

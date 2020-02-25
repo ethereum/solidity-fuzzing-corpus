@@ -1,0 +1,53 @@
+block {
+	statements {
+		storage_func {
+			st: SSTORE
+			loc {
+				cons {
+					intval: 4
+				}
+			}
+			val {
+				cons {
+					intval: 5
+				}
+			}
+		}
+	}
+	statements {
+		storage_func {
+			st: SSTORE
+			loc {
+				cons {
+					intval: 4
+				}
+			}
+			val {
+				cons {
+					intval: 3
+				}
+			}
+		}
+	}
+	statements {
+		storage_func {
+			st: SSTORE
+			loc {
+				cons {
+					intval: 8
+				}
+			}
+			val {
+				unop {
+					op: SLOAD
+					operand {
+						cons {
+							intval: 4
+						}
+					}
+				}
+			}
+		}
+	}
+}
+ver: PETERSBURG

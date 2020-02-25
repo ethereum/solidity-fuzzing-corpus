@@ -1,0 +1,31 @@
+block {
+  statements {
+    pop {
+      expr {
+        binop {
+          op: KECCAK
+          left {
+            unop {
+              op: MLOAD
+              operand {
+                unop {
+                  op: SLOAD
+                  operand {
+                    unop {
+                    }
+                  }
+                }
+              }
+            }
+          }
+          right {
+            varref {
+              varnum: 1763213393
+            }
+          }
+        }
+      }
+    }
+  }
+}
+ver: CONSTANTINOPLE

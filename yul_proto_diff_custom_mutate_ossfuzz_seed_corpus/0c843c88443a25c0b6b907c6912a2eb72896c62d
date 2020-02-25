@@ -1,0 +1,197 @@
+block {
+  statements {
+    contstmt {
+    }
+  }
+  statements {
+    pop {
+      expr {
+        unop {
+          op: SLOAD
+          operand {
+            func_expr {
+              ret: SINGLE
+              func_index: 280119057
+            }
+          }
+        }
+      }
+    }
+  }
+  statements {
+    boundedforstmt {
+      for_body {
+        statements {
+          pop {
+            expr {
+              binop {
+                op: KECCAK
+                left {
+                  varref {
+                    varnum: 450338981
+                  }
+                }
+                right {
+                  varref {
+                    varnum: 1700337483
+                  }
+                }
+              }
+            }
+          }
+        }
+        statements {
+          contstmt {
+          }
+        }
+        statements {
+          storage_func {
+            loc {
+              func_expr {
+                ret: SINGLE
+                func_index: 366455149
+              }
+            }
+            val {
+              unop {
+                op: SLOAD
+                operand {
+                  varref {
+                    varnum: 1762465340
+                  }
+                }
+              }
+            }
+            st: MSTORE8
+          }
+        }
+        statements {
+          leave {
+          }
+        }
+        statements {
+          terminatestmt {
+            ret_rev {
+              stmt: REVERT
+              pos {
+                unop {
+                  op: MLOAD
+                  operand {
+                    varref {
+                      varnum: 1071986772
+                    }
+                  }
+                }
+              }
+              size {
+                func_expr {
+                  ret: SINGLE
+                  func_index: 1324403419
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  statements {
+    terminatestmt {
+      ret_rev {
+        stmt: REVERT
+        pos {
+          varref {
+            varnum: 72096694
+          }
+        }
+        size {
+          unopdata {
+            op: OFFSET
+            identifier: 1657154386
+          }
+        }
+      }
+    }
+  }
+  statements {
+    pop {
+      expr {
+        create {
+          createty: CREATE
+          wei {
+            unop {
+              op: SLOAD
+              operand {
+                varref {
+                  varnum: 1220990351
+                }
+              }
+            }
+          }
+          position {
+            varref {
+              varnum: 644769307
+            }
+          }
+          size {
+          }
+          value {
+            unopdata {
+              op: OFFSET
+              identifier: 580285992
+            }
+          }
+        }
+      }
+    }
+  }
+  statements {
+    pop {
+      expr {
+        func_expr {
+          ret: SINGLE
+          func_index: 985884369
+        }
+      }
+    }
+  }
+  statements {
+    storage_func {
+      loc {
+        cons {
+          intval: 0
+        }
+      }
+      val {
+        unopdata {
+          op: OFFSET
+          identifier: 210059458
+        }
+      }
+      st: MSTORE
+    }
+  }
+  statements {
+    assignment {
+      ref_id {
+        varnum: 1927294859
+      }
+      expr {
+        func_expr {
+          ret: SINGLE
+          func_index: 849336838
+        }
+      }
+    }
+  }
+  statements {
+    forstmt {
+      for_cond {
+        varref {
+          varnum: 2019692531
+        }
+      }
+    }
+  }
+}
+ver: ISTANBUL

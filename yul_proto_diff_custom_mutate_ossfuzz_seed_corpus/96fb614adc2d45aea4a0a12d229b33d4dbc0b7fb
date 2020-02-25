@@ -1,0 +1,99 @@
+block {
+	statements {
+		funcdef {
+			num_input_params: 1
+			num_output_params: 1
+			force_call: true
+			block {
+				statements {
+					ifstmt {
+						cond {
+							binop {
+								op: LT
+								left {
+									varref {
+										varnum: 0
+									}
+								}
+								right {
+									cons {
+										intval: 2
+									}
+								}
+							}
+						}
+						if_body {
+							statements {
+								assignment {
+									ref_id {
+										varnum: 1
+									}
+									expr {
+										varref {
+											varnum: 0
+										}
+									}
+								}
+							}
+						}
+					}
+				}
+				statements {
+					assignment {
+						ref_id {
+							varnum: 1
+						}
+						expr {
+							binop {
+								op: ADD
+								left {
+									func_expr {
+										ret: SINGLE
+										func_index: 0
+										in_param1 {
+											binop {
+												op: SUB
+												left {
+													varref {
+														varnum: 0
+													}
+												}
+												right {
+													cons {
+														intval: 1
+													}
+												}
+											}
+										}
+									}
+								}
+								right {
+									func_expr {
+										ret: SINGLE
+										func_index: 0
+										in_param1 {
+											binop {
+												op: SUB
+												left {
+													varref {
+														varnum: 0
+													}
+												}
+												right {
+													cons {
+														intval: 2
+													}
+												}
+											}
+										}
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}						
+ver: SPURIOUS

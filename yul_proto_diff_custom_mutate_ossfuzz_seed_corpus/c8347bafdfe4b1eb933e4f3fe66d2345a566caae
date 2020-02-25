@@ -1,0 +1,142 @@
+block {
+  statements {
+    pop {
+      expr {
+        create {
+          createty: CREATE2
+          wei {
+          }
+          position {
+          }
+          size {
+            varref {
+              varnum: 1961569
+            }
+          }
+          value {
+            func_expr {
+              ret: SINGLE
+              func_index: 65132966
+            }
+          }
+        }
+      }
+    }
+  }
+  statements {
+    pop {
+      expr {
+        unop {
+          op: BLOCKHASH
+          operand {
+          }
+        }
+      }
+    }
+  }
+  statements {
+  }
+  statements {
+  }
+  statements {
+    forstmt {
+      for_body {
+        statements {
+          pop {
+            expr {
+              create {
+                createty: CREATE2
+              }
+            }
+          }
+        }
+      }
+      for_init {
+      }
+      for_post {
+        statements {
+          ifstmt {
+            cond {
+              varref {
+                varnum: 123704893
+              }
+            }
+            if_body {
+              statements {
+                assignment {
+                  ref_id {
+                    varnum: 104673371
+                  }
+                  expr {
+                    varref {
+                      varnum: 80044342
+                    }
+                  }
+                }
+              }
+              statements {
+                assignment {
+                  ref_id {
+                    varnum: 42361698
+                  }
+                  expr {
+                    varref {
+                      varnum: 27410510
+                    }
+                  }
+                }
+              }
+              statements {
+                boundedforstmt {
+                }
+              }
+            }
+          }
+        }
+      }
+      for_cond {
+        top {
+          op: ADDM
+          arg1 {
+          }
+          arg2 {
+          }
+          arg3 {
+            nop {
+              op: GASPRICE
+            }
+          }
+        }
+      }
+    }
+  }
+  statements {
+    forstmt {
+      for_cond {
+        binop {
+          op: GT
+          left {
+            varref {
+              varnum: 94695
+            }
+          }
+          right {
+            varref {
+              varnum: 76658
+            }
+          }
+        }
+      }
+    }
+  }
+  statements {
+    pop {
+      expr {
+        create {
+          createty: CREATE2
+        }
+      }
+    }
+  }
+}
+ver: BERLIN

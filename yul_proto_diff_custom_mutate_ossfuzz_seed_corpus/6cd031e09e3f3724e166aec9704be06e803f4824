@@ -1,0 +1,136 @@
+block {
+  statements {
+    assignment {
+      ref_id {
+        varnum: 128164455
+      }
+      expr {
+        varref {
+          varnum: 46301595
+        }
+      }
+    }
+  }
+  statements {
+    storage_func {
+      loc {
+      }
+      val {
+        varref {
+          varnum: 130596078
+        }
+      }
+      st: MSTORE8
+    }
+  }
+  statements {
+  }
+  statements {
+    breakstmt {
+    }
+  }
+  statements {
+    breakstmt {
+    }
+  }
+  statements {
+    breakstmt {
+    }
+  }
+  statements {
+  }
+  statements {
+    breakstmt {
+    }
+  }
+  statements {
+    breakstmt {
+    }
+  }
+  statements {
+    storage_func {
+      loc {
+        cons {
+          intval: 0
+        }
+      }
+      val {
+        func_expr {
+          ret: SINGLE
+          func_index: 72194524
+        }
+      }
+      st: MSTORE8
+    }
+  }
+  statements {
+    assignment {
+      ref_id {
+        varnum: 185382743
+      }
+      expr {
+        varref {
+          varnum: 119953539
+        }
+      }
+    }
+  }
+  statements {
+    funcdef {
+      num_input_params: 130161367
+      num_output_params: 84222061
+      block {
+        statements {
+          multidecl {
+            num_vars: 22172159
+          }
+        }
+        statements {
+          assignment {
+            ref_id {
+              varnum: 30373554
+            }
+            expr {
+              unop {
+                op: CALLDATALOAD
+                operand {
+                  cons {
+                    intval: 0
+                  }
+                }
+              }
+            }
+          }
+        }
+        statements {
+          terminatestmt {
+            ret_rev {
+              stmt: REVERT
+              pos {
+                cons {
+                  intval: 0
+                }
+              }
+              size {
+                func_expr {
+                  ret: SINGLE
+                  func_index: 89824971
+                }
+              }
+            }
+          }
+        }
+        statements {
+          pop {
+            expr {
+              lowcall {
+                callty: DELEGATECALL
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+ver: CONSTANTINOPLE

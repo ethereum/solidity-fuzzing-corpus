@@ -1,0 +1,93 @@
+obj {
+  code {
+    block {
+      statements {
+        extcode_copy {
+          addr {
+            binop {
+              op: AND
+              left {
+              }
+              right {
+                nop {
+                  op: ORIGIN
+                }
+              }
+            }
+          }
+          target {
+            binop {
+              op: SHR
+              left {
+                cons {
+                  intval: 65
+                }
+              }
+              right {
+                binop {
+                  op: SHR
+                  left {
+                    cons {
+                      intval: 64
+                    }
+                  }
+                  right {
+                    binop {
+                      op: SHR
+                      left {
+                        cons {
+                          intval: 64
+                        }
+                      }
+                      right {
+                        binop {
+                          op: SHR
+                          left {
+                            cons {
+                              intval: 65
+                            }
+                          }
+                          right {
+                            binop {
+                              op: AND
+                              left {
+                              }
+                              right {
+                                nop {
+                                  op: ORIGIN
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+          source {
+            cons {
+            }
+          }
+          size {
+            cons {
+              intval: 64
+            }
+          }
+        }
+      }
+    }
+  }
+  sub_obj {
+    code {
+      block {
+      }
+    }
+    data {
+      hex: "&"
+    }
+  }
+}
+ver: ISTANBUL

@@ -1,0 +1,44 @@
+block {
+  statements {
+  }
+  statements {
+    boundedforstmt {
+      for_body {
+        statements {
+          boundedforstmt {
+            for_body {
+              statements {
+                extcode_copy {
+                  addr {
+                  }
+                  target {
+                    binop {
+                      op: SMOD
+                      left {
+                        unop {
+                          op: BLOCKHASH
+                          operand {
+                          }
+                        }
+                      }
+                      right {
+                      }
+                    }
+                  }
+                  source {
+                    nop {
+                      op: ORIGIN
+                    }
+                  }
+                  size {
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+ver: SPURIOUS

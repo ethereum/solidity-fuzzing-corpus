@@ -1,0 +1,163 @@
+obj {
+  code {
+    block {
+      statements {
+      }
+      statements {
+      }
+      statements {
+        extcode_copy {
+          addr {
+          }
+          target {
+            lowcall {
+              callty: CALL
+              gas {
+                nop {
+                  op: PC
+                }
+              }
+              addr {
+              }
+              wei {
+              }
+              in {
+              }
+              insize {
+                binop {
+                  op: SHR
+                  left {
+                    cons {
+                      intval: 1
+                    }
+                  }
+                  right {
+                    binop {
+                      op: SHR
+                      left {
+                        cons {
+                          intval: 1
+                        }
+                      }
+                      right {
+                      }
+                    }
+                  }
+                }
+              }
+              out {
+              }
+              outsize {
+              }
+            }
+          }
+          source {
+            lowcall {
+              callty: CALL
+              gas {
+                lowcall {
+                  callty: CALL
+                  gas {
+                  }
+                  addr {
+                  }
+                  wei {
+                  }
+                  in {
+                  }
+                  insize {
+                  }
+                  out {
+                  }
+                  outsize {
+                    varref {
+                      varnum: -12
+                    }
+                  }
+                }
+              }
+              addr {
+              }
+              wei {
+                binop {
+                  op: SHR
+                  left {
+                    unop {
+                      op: CALLDATALOAD
+                      operand {
+                        unop {
+                          op: SLOAD
+                          operand {
+                            cons {
+                              intval: 0
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                  right {
+                    binop {
+                      op: SHR
+                      left {
+                      }
+                      right {
+                      }
+                    }
+                  }
+                }
+              }
+              in {
+              }
+              insize {
+                binop {
+                  op: SHR
+                  left {
+                    cons {
+                      intval: 1
+                    }
+                  }
+                  right {
+                  }
+                }
+              }
+              out {
+              }
+              outsize {
+                unop {
+                  op: MLOAD
+                  operand {
+                    cons {
+                      intval: 0
+                    }
+                  }
+                }
+              }
+            }
+          }
+          size {
+            unop {
+              op: CALLDATALOAD
+              operand {
+                cons {
+                  intval: 0
+                }
+              }
+            }
+          }
+        }
+      }
+      statements {
+      }
+      statements {
+        breakstmt {
+        }
+      }
+      statements {
+        breakstmt {
+        }
+      }
+    }
+  }
+}
+ver: ISTANBUL

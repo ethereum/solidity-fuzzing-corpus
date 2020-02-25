@@ -1,0 +1,190 @@
+obj {
+  code {
+    block {
+      statements {
+        breakstmt {
+        }
+      }
+      statements {
+        storage_func {
+          loc {
+          }
+          val {
+            unop {
+              op: CALLDATALOAD
+              operand {
+                cons {
+                  intval: 0
+                }
+              }
+            }
+          }
+          st: SSTORE
+        }
+      }
+      statements {
+        breakstmt {
+        }
+      }
+      statements {
+        ifstmt {
+          cond {
+            binop {
+              op: DIV
+              left {
+                unop {
+                  op: NOT
+                  operand {
+                    binop {
+                      op: DIV
+                      left {
+                        unop {
+                          op: NOT
+                          operand {
+                            binop {
+                              op: DIV
+                              left {
+                                unop {
+                                  op: NOT
+                                  operand {
+                                  }
+                                }
+                              }
+                              right {
+                              }
+                            }
+                          }
+                        }
+                      }
+                      right {
+                      }
+                    }
+                  }
+                }
+              }
+              right {
+              }
+            }
+          }
+          if_body {
+            statements {
+              breakstmt {
+              }
+            }
+            statements {
+              breakstmt {
+              }
+            }
+            statements {
+              breakstmt {
+              }
+            }
+          }
+        }
+      }
+      statements {
+        funcdef {
+          num_input_params: 0
+          num_output_params: 10027008
+          block {
+            statements {
+              breakstmt {
+              }
+            }
+            statements {
+              breakstmt {
+              }
+            }
+            statements {
+              breakstmt {
+              }
+            }
+          }
+          force_call: false
+        }
+      }
+      statements {
+      }
+      statements {
+        breakstmt {
+        }
+      }
+      statements {
+        breakstmt {
+        }
+      }
+    }
+  }
+  data {
+    hex: "\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377"
+  }
+  sub_obj {
+    code {
+      block {
+        statements {
+          storage_func {
+            loc {
+              binop {
+                op: SHL
+                left {
+                  varref {
+                    varnum: 0
+                  }
+                }
+                right {
+                }
+              }
+            }
+            val {
+              unop {
+                op: MLOAD
+                operand {
+                  unop {
+                    op: MLOAD
+                    operand {
+                    }
+                  }
+                }
+              }
+            }
+            st: SSTORE
+          }
+        }
+        statements {
+          storage_func {
+            loc {
+            }
+            val {
+              unop {
+                op: MLOAD
+                operand {
+                  cons {
+                    intval: 0
+                  }
+                }
+              }
+            }
+            st: SSTORE
+          }
+        }
+        statements {
+          breakstmt {
+          }
+        }
+        statements {
+          breakstmt {
+          }
+        }
+        statements {
+          breakstmt {
+          }
+        }
+        statements {
+          breakstmt {
+          }
+        }
+      }
+    }
+  }
+}
+ver: ISTANBUL

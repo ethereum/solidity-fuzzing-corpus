@@ -1,0 +1,127 @@
+obj {
+  code {
+    block {
+      statements {
+        boundedforstmt {
+          for_body {
+            statements {
+              boundedforstmt {
+                for_body {
+                  statements {
+                    extcode_copy {
+                      addr {
+                        binop {
+                          op: SDIV
+                          left {
+                            unop {
+                              op: NOT
+                              operand {
+                              }
+                            }
+                          }
+                          right {
+                            unop {
+                              op: EXTCODESIZE
+                              operand {
+                              }
+                            }
+                          }
+                        }
+                      }
+                      target {
+                        binop {
+                          op: SDIV
+                          left {
+                            unop {
+                              op: NOT
+                              operand {
+                                binop {
+                                  op: SDIV
+                                  left {
+                                    unop {
+                                      op: NOT
+                                      operand {
+                                      }
+                                    }
+                                  }
+                                  right {
+                                    unop {
+                                      op: EXTCODESIZE
+                                      operand {
+                                      }
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          }
+                          right {
+                            unop {
+                              op: EXTCODESIZE
+                              operand {
+                              }
+                            }
+                          }
+                        }
+                      }
+                      source {
+                      }
+                      size {
+                        unop {
+                          op: EXTCODESIZE
+                          operand {
+                            create {
+                              createty: CREATE2
+                              wei {
+                              }
+                              position {
+                              }
+                              size {
+                                unop {
+                                  op: SLOAD
+                                  operand {
+                                    cons {
+                                      intval: 0
+                                    }
+                                  }
+                                }
+                              }
+                              value {
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                  statements {
+                    breakstmt {
+                    }
+                  }
+                }
+              }
+            }
+            statements {
+              pop {
+                expr {
+                  varref {
+                    varnum: 36213240
+                  }
+                }
+              }
+            }
+            statements {
+              breakstmt {
+              }
+            }
+          }
+        }
+      }
+      statements {
+        breakstmt {
+        }
+      }
+    }
+  }
+}
+ver: SPURIOUS

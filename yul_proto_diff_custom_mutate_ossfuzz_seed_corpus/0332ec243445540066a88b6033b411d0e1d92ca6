@@ -1,0 +1,120 @@
+block {
+  statements {
+    boundedforstmt {
+      for_body {
+        statements {
+          boundedforstmt {
+            for_body {
+              statements {
+                decl {
+                  expr {
+                    binop {
+                      op: SAR
+                      left {
+                        unop {
+                          op: ISZERO
+                          operand {
+                            varref {
+                              varnum: 274422329
+                            }
+                          }
+                        }
+                      }
+                      right {
+                        varref {
+                          varnum: 1467860047
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+              statements {
+                funcdef {
+                  num_input_params: 1
+                  num_output_params: 1
+                  block {
+                    statements {
+                      multidecl {
+                        num_vars: 529887756
+                      }
+                    }
+                    statements {
+                      breakstmt {
+                      }
+                    }
+                    statements {
+                      assignment {
+                        ref_id {
+                          varnum: 850403982
+                        }
+                        expr {
+                          varref {
+                            varnum: 525722808
+                          }
+                        }
+                      }
+                    }
+                    statements {
+                      pop {
+                        expr {
+                          unopdata {
+                            op: SIZE
+                            identifier: 1318338183
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+              statements {
+                pop {
+                  expr {
+                    lowcall {
+                      callty: DELEGATECALL
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  statements {
+  }
+  statements {
+    contstmt {
+    }
+  }
+  statements {
+    terminatestmt {
+      ret_rev {
+        stmt: REVERT
+        pos {
+          varref {
+            varnum: 757486651
+          }
+        }
+        size {
+          cons {
+            intval: 0
+          }
+        }
+      }
+    }
+  }
+  statements {
+    pop {
+      expr {
+        func_expr {
+          ret: SINGLE
+          func_index: 1653259397
+        }
+      }
+    }
+  }
+}
+ver: PETERSBURG

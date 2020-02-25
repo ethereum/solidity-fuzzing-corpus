@@ -1,0 +1,179 @@
+block {
+  statements {
+    copy_func {
+      ct: CALLDATA
+      target {
+        binop {
+          op: DIV
+          left {
+            unop {
+              op: SLOAD
+              operand {
+                cons {
+                  intval: 0
+                }
+              }
+            }
+          }
+          right {
+          }
+        }
+      }
+      source {
+      }
+      size {
+        unop {
+          op: SLOAD
+          operand {
+            cons {
+              intval: 0
+            }
+          }
+        }
+      }
+    }
+  }
+  statements {
+    copy_func {
+      ct: CALLDATA
+      target {
+        binop {
+          op: DIV
+          left {
+          }
+          right {
+          }
+        }
+      }
+      source {
+        binop {
+          op: SUB
+          left {
+          }
+          right {
+          }
+        }
+      }
+      size {
+        binop {
+          op: DIV
+          left {
+          }
+          right {
+          }
+        }
+      }
+    }
+  }
+  statements {
+    copy_func {
+      ct: CALLDATA
+      target {
+        binop {
+          op: DIV
+          left {
+          }
+          right {
+          }
+        }
+      }
+      source {
+        binop {
+          op: DIV
+          left {
+            unop {
+              op: CALLDATALOAD
+              operand {
+                unop {
+                  op: SLOAD
+                  operand {
+                    cons {
+                      intval: 0
+                    }
+                  }
+                }
+              }
+            }
+          }
+          right {
+          }
+        }
+      }
+      size {
+        binop {
+          op: GT
+          left {
+            binop {
+              op: DIV
+              left {
+                binop {
+                  op: SUB
+                  left {
+                  }
+                  right {
+                  }
+                }
+              }
+              right {
+              }
+            }
+          }
+          right {
+          }
+        }
+      }
+    }
+  }
+  statements {
+    copy_func {
+      ct: CALLDATA
+      target {
+        unop {
+          op: SLOAD
+          operand {
+            cons {
+              intval: 0
+            }
+          }
+        }
+      }
+      source {
+        binop {
+          op: DIV
+          left {
+          }
+          right {
+          }
+        }
+      }
+      size {
+        binop {
+          op: GT
+          left {
+            binop {
+              op: DIV
+              left {
+                binop {
+                  op: DIV
+                  left {
+                  }
+                  right {
+                  }
+                }
+              }
+              right {
+              }
+            }
+          }
+          right {
+          }
+        }
+      }
+    }
+  }
+  statements {
+    breakstmt {
+    }
+  }
+}
+ver: SPURIOUS

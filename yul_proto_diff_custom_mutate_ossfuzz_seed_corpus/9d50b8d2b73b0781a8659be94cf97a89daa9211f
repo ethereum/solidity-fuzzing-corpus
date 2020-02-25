@@ -1,0 +1,90 @@
+block {
+  statements {
+    boundedforstmt {
+      for_body {
+        statements {
+          boundedforstmt {
+            for_body {
+              statements {
+                extcode_copy {
+                  addr {
+                  }
+                  target {
+                    unop {
+                      op: NOT
+                      operand {
+                      }
+                    }
+                  }
+                  source {
+                    nop {
+                      op: ORIGIN
+                    }
+                  }
+                  size {
+                  }
+                }
+              }
+              statements {
+                extcode_copy {
+                  addr {
+                  }
+                  target {
+                    binop {
+                      op: SMOD
+                      left {
+                        unop {
+                          op: NOT
+                          operand {
+                            create {
+                              createty: CREATE
+                              wei {
+                              }
+                              position {
+                                unop {
+                                  op: BLOCKHASH
+                                  operand {
+                                  }
+                                }
+                              }
+                              size {
+                              }
+                              value {
+                              }
+                            }
+                          }
+                        }
+                      }
+                      right {
+                      }
+                    }
+                  }
+                  source {
+                    nop {
+                      op: ORIGIN
+                    }
+                  }
+                  size {
+                  }
+                }
+              }
+              statements {
+                breakstmt {
+                }
+              }
+            }
+          }
+        }
+        statements {
+          breakstmt {
+          }
+        }
+      }
+    }
+  }
+  statements {
+    breakstmt {
+    }
+  }
+}
+ver: HOMESTEAD

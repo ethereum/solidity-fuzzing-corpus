@@ -1,0 +1,44 @@
+block {
+  statements {
+    extcode_copy {
+      addr {
+      }
+      target {
+      }
+      source {
+        binop {
+          op: SAR
+          left {
+            binop {
+              op: SHL
+              left {
+              }
+              right {
+              }
+            }
+          }
+          right {
+            unop {
+              op: NOT
+              operand {
+                binop {
+                  op: ADD
+                  left {
+                    cons {
+                      hexval: "\003\000\000\000"
+                    }
+                  }
+                  right {
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+      size {
+      }
+    }
+  }
+}
+ver: PETERSBURG

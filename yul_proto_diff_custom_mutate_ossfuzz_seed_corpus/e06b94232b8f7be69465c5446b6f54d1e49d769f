@@ -1,0 +1,165 @@
+block {
+  statements {
+  }
+  statements {
+    copy_func {
+      ct: CALLDATA
+      target {
+        varref {
+          varnum: 301184097
+        }
+      }
+      source {
+        varref {
+          varnum: 72365969
+        }
+      }
+      size {
+        varref {
+          varnum: 316956479
+        }
+      }
+    }
+  }
+  statements {
+    boundedforstmt {
+      for_body {
+        statements {
+          decl {
+            expr {
+              binop {
+                op: KECCAK
+                left {
+                  varref {
+                    varnum: 2024518954
+                  }
+                }
+                right {
+                  varref {
+                    varnum: 83960988
+                  }
+                }
+              }
+            }
+          }
+        }
+        statements {
+          assignment {
+            ref_id {
+              varnum: 166637009
+            }
+            expr {
+              unop {
+                op: MLOAD
+                operand {
+                  func_expr {
+                    ret: SINGLE
+                    func_index: 1466462386
+                  }
+                }
+              }
+            }
+          }
+        }
+        statements {
+          contstmt {
+          }
+        }
+        statements {
+          boundedforstmt {
+          }
+        }
+        statements {
+          terminatestmt {
+            ret_rev {
+              stmt: REVERT
+              pos {
+                unop {
+                  op: BALANCE
+                  operand {
+                    unop {
+                      op: CALLDATALOAD
+                      operand {
+                        varref {
+                          varnum: 359567606
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+              size {
+                unop {
+                  op: EXTCODESIZE
+                  operand {
+                    varref {
+                      varnum: 1542875519
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  statements {
+  }
+  statements {
+  }
+  statements {
+  }
+  statements {
+    copy_func {
+      ct: CALLDATA
+      target {
+        varref {
+          varnum: 925310060
+        }
+      }
+      source {
+        varref {
+          varnum: 616812272
+        }
+      }
+      size {
+        varref {
+          varnum: 1561626267
+        }
+      }
+    }
+  }
+  statements {
+    breakstmt {
+    }
+  }
+  statements {
+    assignment {
+      ref_id {
+        varnum: 1096478248
+      }
+      expr {
+        unop {
+          op: MLOAD
+          operand {
+            func_expr {
+              ret: SINGLE
+              func_index: 1881473403
+            }
+          }
+        }
+      }
+    }
+  }
+  statements {
+    ifstmt {
+      cond {
+        varref {
+          varnum: 737700495
+        }
+      }
+    }
+  }
+}
+ver: TANGERINE

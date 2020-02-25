@@ -1,0 +1,206 @@
+block {
+  statements {
+  }
+  statements {
+    pop {
+      expr {
+        varref {
+          varnum: 1295594877
+        }
+      }
+    }
+  }
+  statements {
+  }
+  statements {
+    funcdef {
+      num_input_params: 1198444204
+      num_output_params: 1
+      block {
+        statements {
+          decl {
+            expr {
+              varref {
+                varnum: 894705818
+              }
+            }
+          }
+        }
+        statements {
+        }
+        statements {
+        }
+        statements {
+          extcode_copy {
+            addr {
+              nop {
+                op: COINBASE
+              }
+            }
+            target {
+              varref {
+                varnum: 2004917084
+              }
+            }
+            source {
+              unopdata {
+                op: OFFSET
+                identifier: 612277027
+              }
+            }
+            size {
+              varref {
+                varnum: 109600821
+              }
+            }
+          }
+        }
+        statements {
+          assignment {
+            ref_id {
+              varnum: 51173827
+            }
+            expr {
+              func_expr {
+                ret: SINGLE
+                func_index: 1052670043
+              }
+            }
+          }
+        }
+        statements {
+        }
+        statements {
+          leave {
+          }
+        }
+        statements {
+          assignment {
+            ref_id {
+              varnum: 65537310
+            }
+            expr {
+              varref {
+                varnum: 255978397
+              }
+            }
+          }
+        }
+        statements {
+        }
+        statements {
+        }
+        statements {
+          assignment {
+            ref_id {
+              varnum: 1165817202
+            }
+            expr {
+              func_expr {
+                ret: SINGLE
+                func_index: 1173671066
+              }
+            }
+          }
+        }
+        statements {
+        }
+        statements {
+          terminatestmt {
+            ret_rev {
+              stmt: REVERT
+              pos {
+                varref {
+                  varnum: 1705748434
+                }
+              }
+              size {
+                unopdata {
+                  op: SIZE
+                  identifier: 2073802594
+                }
+              }
+            }
+          }
+        }
+      }
+      force_call: false
+    }
+  }
+  statements {
+    leave {
+    }
+  }
+  statements {
+    pop {
+      expr {
+        binop {
+          op: SLT
+          left {
+            varref {
+              varnum: 2128489316
+            }
+          }
+          right {
+            unop {
+              op: SLOAD
+              operand {
+                unopdata {
+                  op: SIZE
+                  identifier: 446596088
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  statements {
+    forstmt {
+      for_cond {
+        unop {
+          op: CALLDATALOAD
+          operand {
+            unop {
+              op: SLOAD
+              operand {
+                varref {
+                  varnum: 691231570
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  statements {
+    terminatestmt {
+      ret_rev {
+        stmt: REVERT
+        pos {
+          unop {
+            op: MLOAD
+            operand {
+              varref {
+                varnum: 1420026080
+              }
+            }
+          }
+        }
+        size {
+          func_expr {
+            ret: SINGLE
+            func_index: 1775281726
+          }
+        }
+      }
+    }
+  }
+  statements {
+    multidecl {
+    }
+  }
+}
+ver: SPURIOUS

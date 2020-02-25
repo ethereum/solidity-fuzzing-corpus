@@ -1,0 +1,169 @@
+block {
+  statements {
+    funcdef {
+      num_input_params: 121
+      num_output_params: 10
+      block {
+        statements {
+          forstmt {
+            for_body {
+              statements {
+                functioncall {
+                  ret: ZERO
+                  func_index: 0
+                  in_param1 {
+                  }
+                  in_param2 {
+                  }
+                  in_param3 {
+                  }
+                  in_param4 {
+                  }
+                  out_param1 {
+                    varnum: 0
+                  }
+                  out_param2 {
+                    varnum: 49
+                  }
+                  out_param3 {
+                    varnum: 0
+                  }
+                  out_param4 {
+                    varnum: 0
+                  }
+                }
+              }
+              statements {
+                breakstmt {
+                }
+              }
+            }
+            for_init {
+              statements {
+                breakstmt {
+                }
+              }
+            }
+            for_post {
+              statements {
+                extcode_copy {
+                  addr {
+                  }
+                  target {
+                  }
+                  source {
+                  }
+                  size {
+                  }
+                }
+              }
+              statements {
+                breakstmt {
+                }
+              }
+            }
+            for_cond {
+              lowcall {
+                callty: CALL
+                gas {
+                  lowcall {
+                    callty: CALL
+                    gas {
+                      lowcall {
+                        callty: CALL
+                        gas {
+                          nop {
+                            op: MSIZE
+                          }
+                        }
+                        addr {
+                        }
+                        wei {
+                          varref {
+                            varnum: 167772160
+                          }
+                        }
+                        in {
+                        }
+                        insize {
+                        }
+                        out {
+                          nop {
+                            op: MSIZE
+                          }
+                        }
+                        outsize {
+                        }
+                      }
+                    }
+                    addr {
+                    }
+                    wei {
+                    }
+                    in {
+                    }
+                    insize {
+                    }
+                    out {
+                      nop {
+                        op: MSIZE
+                      }
+                    }
+                    outsize {
+                      cons {
+                      }
+                    }
+                  }
+                }
+                addr {
+                }
+                wei {
+                }
+                in {
+                }
+                insize {
+                  nop {
+                    op: MSIZE
+                  }
+                }
+                out {
+                }
+                outsize {
+                  unop {
+                    op: BALANCE
+                    operand {
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+        statements {
+          copy_func {
+            ct: CALLDATA
+            target {
+            }
+            source {
+            }
+            size {
+              varref {
+                varnum: 0
+              }
+            }
+          }
+        }
+        statements {
+          breakstmt {
+          }
+        }
+      }
+      force_call: true
+    }
+  }
+  statements {
+    breakstmt {
+    }
+  }
+}
+ver: SPURIOUS

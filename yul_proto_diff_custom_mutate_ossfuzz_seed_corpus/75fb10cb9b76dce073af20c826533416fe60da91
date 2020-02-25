@@ -1,0 +1,29 @@
+block {
+  statements {
+    boundedforstmt {
+      for_body {
+        statements {
+          ifstmt {
+            cond {
+              unop {
+                op: SLOAD
+                operand {
+                }
+              }
+            }
+            if_body {
+              statements {
+                terminatestmt {
+                  stop_invalid {
+                    stmt: STOP
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+ver: HOMESTEAD

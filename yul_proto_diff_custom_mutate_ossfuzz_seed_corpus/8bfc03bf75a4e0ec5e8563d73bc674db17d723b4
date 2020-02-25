@@ -1,0 +1,75 @@
+block {
+  statements {
+    extcode_copy {
+      addr {
+      }
+      target {
+      }
+      source {
+        nop {
+          op: GASPRICE
+        }
+      }
+      size {
+        nop {
+          op: GASPRICE
+        }
+      }
+    }
+  }
+  statements {
+    extcode_copy {
+      addr {
+      }
+      target {
+        nop {
+          op: TIMESTAMP
+        }
+      }
+      source {
+      }
+      size {
+        nop {
+          op: GASPRICE
+        }
+      }
+    }
+  }
+  statements {
+    copy_func {
+      ct: RETURNDATA
+      target {
+        unop {
+          op: ISZERO
+          operand {
+          }
+        }
+      }
+      source {
+      }
+      size {
+      }
+    }
+  }
+  statements {
+  }
+  statements {
+    extcode_copy {
+      addr {
+      }
+      target {
+      }
+      source {
+        nop {
+          op: CHAINID
+        }
+      }
+      size {
+        nop {
+          op: GASPRICE
+        }
+      }
+    }
+  }
+}
+ver: HOMESTEAD

@@ -1,0 +1,171 @@
+block {
+  statements {
+    decl {
+      expr {
+        varref {
+          varnum: 1
+        }
+      }
+    }
+  }
+  statements {
+    breakstmt {
+    }
+  }
+  statements {
+    breakstmt {
+    }
+  }
+  statements {
+    forstmt {
+      for_body {
+        statements {
+          contstmt {
+          }
+        }
+        statements {
+          breakstmt {
+          }
+        }
+        statements {
+          breakstmt {
+          }
+        }
+        statements {
+          breakstmt {
+          }
+        }
+        statements {
+          breakstmt {
+          }
+        }
+        statements {
+          breakstmt {
+          }
+        }
+      }
+      for_init {
+        statements {
+          breakstmt {
+          }
+        }
+        statements {
+          breakstmt {
+          }
+        }
+        statements {
+          contstmt {
+          }
+        }
+        statements {
+          breakstmt {
+          }
+        }
+        statements {
+          breakstmt {
+          }
+        }
+      }
+      for_post {
+        statements {
+          breakstmt {
+          }
+        }
+        statements {
+          breakstmt {
+          }
+        }
+        statements {
+          breakstmt {
+          }
+        }
+        statements {
+          breakstmt {
+          }
+        }
+        statements {
+          breakstmt {
+          }
+        }
+      }
+      for_cond {
+        binop {
+          op: SDIV
+          left {
+            top {
+              op: ADDM
+              arg1 {
+                top {
+                  op: ADDM
+                  arg1 {
+                    unop {
+                    }
+                  }
+                  arg2 {
+                    unop {
+                      op: NOT
+                      operand {
+                      }
+                    }
+                  }
+                  arg3 {
+                    unop {
+                      op: CALLDATALOAD
+                      operand {
+                        cons {
+                          intval: 0
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+              arg2 {
+                unop {
+                  op: MLOAD
+                  operand {
+                    unop {
+                      op: MLOAD
+                      operand {
+                        cons {
+                          intval: 0
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+              arg3 {
+              }
+            }
+          }
+          right {
+            unop {
+              op: CALLDATALOAD
+              operand {
+                cons {
+                  intval: 0
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  statements {
+    breakstmt {
+    }
+  }
+  statements {
+  }
+  statements {
+    breakstmt {
+    }
+  }
+  statements {
+    breakstmt {
+    }
+  }
+}
+ver: PETERSBURG

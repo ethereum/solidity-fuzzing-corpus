@@ -1,0 +1,95 @@
+block {
+  statements {
+    decl {
+      expr {
+        binop {
+          op: MUL
+          left {
+            varref {
+              varnum: 1833326662
+            }
+          }
+          right {
+            varref {
+              varnum: 857692179
+            }
+          }
+        }
+      }
+    }
+  }
+  statements {
+    switchstmt {
+      switch_expr {
+        varref {
+          varnum: 1981584075
+        }
+      }
+      case_stmt {
+      }
+    }
+  }
+  statements {
+    functioncall {
+      ret: MULTIDECL
+      func_index: 173910841
+      in_param1 {
+        varref {
+          varnum: 1041621948
+        }
+      }
+      in_param2 {
+        varref {
+          varnum: 834987334
+        }
+      }
+      in_param3 {
+        varref {
+          varnum: 687304457
+        }
+      }
+      in_param4 {
+        unop {
+          op: CALLDATALOAD
+          operand {
+            varref {
+              varnum: 1065265144
+            }
+          }
+        }
+      }
+    }
+  }
+  statements {
+    pop {
+      expr {
+        binop {
+          op: DIV
+          left {
+            unop {
+              op: NOT
+              operand {
+                unop {
+                  op: CALLDATALOAD
+                  operand {
+                    func_expr {
+                      ret: SINGLE
+                      func_index: 1858208328
+                    }
+                  }
+                }
+              }
+            }
+          }
+          right {
+            func_expr {
+              ret: SINGLE
+              func_index: 859088436
+            }
+          }
+        }
+      }
+    }
+  }
+}
+ver: ISTANBUL

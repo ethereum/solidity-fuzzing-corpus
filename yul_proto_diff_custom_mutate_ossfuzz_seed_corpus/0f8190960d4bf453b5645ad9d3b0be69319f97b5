@@ -1,0 +1,136 @@
+obj {
+  code {
+    block {
+      statements {
+        extcode_copy {
+          addr {
+            binop {
+              op: LT
+              left {
+                varref {
+                  varnum: 1652662461
+                }
+              }
+              right {
+                varref {
+                  varnum: 1401388833
+                }
+              }
+            }
+          }
+          target {
+            lowcall {
+              callty: CALL
+              gas {
+              }
+              addr {
+              }
+              wei {
+                unopdata {
+                  op: SIZE
+                  identifier: 1075141866
+                }
+              }
+              in {
+                lowcall {
+                  callty: CALL
+                  gas {
+                  }
+                  addr {
+                  }
+                  wei {
+                    unop {
+                      op: SLOAD
+                      operand {
+                        varref {
+                          varnum: 2054629109
+                        }
+                      }
+                    }
+                  }
+                  in {
+                    func_expr {
+                      ret: SINGLE
+                      func_index: 1587353604
+                    }
+                  }
+                  insize {
+                    varref {
+                      varnum: 2040777458
+                    }
+                  }
+                  out {
+                    unopdata {
+                      op: OFFSET
+                      identifier: 881675317
+                    }
+                  }
+                  outsize {
+                  }
+                }
+              }
+              insize {
+                varref {
+                  varnum: 459281081
+                }
+              }
+              out {
+              }
+              outsize {
+                varref {
+                  varnum: 1661089771
+                }
+              }
+            }
+          }
+          source {
+            binop {
+              op: AND
+              left {
+                unop {
+                  op: SLOAD
+                  operand {
+                    varref {
+                      varnum: 1207041370
+                    }
+                  }
+                }
+              }
+              right {
+                unop {
+                  op: BLOCKHASH
+                  operand {
+                    func_expr {
+                      ret: SINGLE
+                      func_index: 271826824
+                    }
+                  }
+                }
+              }
+            }
+          }
+          size {
+            binop {
+              op: SGT
+              left {
+                varref {
+                  varnum: 652098428
+                }
+              }
+              right {
+                varref {
+                  varnum: 2086501770
+                }
+              }
+            }
+          }
+        }
+      }
+      statements {
+        leave {
+        }
+      }
+    }
+  }
+}
+ver: SPURIOUS

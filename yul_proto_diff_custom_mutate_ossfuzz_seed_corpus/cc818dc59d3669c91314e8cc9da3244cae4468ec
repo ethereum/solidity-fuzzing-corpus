@@ -1,0 +1,182 @@
+obj {
+  code {
+    block {
+      statements {
+        forstmt {
+          for_body {
+            statements {
+              breakstmt {
+              }
+            }
+          }
+          for_init {
+            statements {
+              breakstmt {
+              }
+            }
+          }
+          for_post {
+            statements {
+              breakstmt {
+              }
+            }
+          }
+          for_cond {
+            lowcall {
+              callty: CALL
+              gas {
+                binop {
+                  op: OR
+                  left {
+                    nop {
+                      op: CALLVALUE
+                    }
+                  }
+                  right {
+                  }
+                }
+              }
+              addr {
+                binop {
+                  op: OR
+                  left {
+                    nop {
+                      op: CALLVALUE
+                    }
+                  }
+                  right {
+                  }
+                }
+              }
+              wei {
+              }
+              in {
+              }
+              insize {
+              }
+              out {
+              }
+              outsize {
+                binop {
+                  op: OR
+                  left {
+                    nop {
+                      op: CALLVALUE
+                    }
+                  }
+                  right {
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+      statements {
+        forstmt {
+          for_body {
+            statements {
+              breakstmt {
+              }
+            }
+          }
+          for_init {
+            statements {
+              breakstmt {
+              }
+            }
+          }
+          for_post {
+            statements {
+              breakstmt {
+              }
+            }
+          }
+          for_cond {
+            lowcall {
+              callty: CALL
+              gas {
+                binop {
+                  op: OR
+                  left {
+                    nop {
+                      op: GAS
+                    }
+                  }
+                  right {
+                  }
+                }
+              }
+              addr {
+                binop {
+                  op: OR
+                  left {
+                    nop {
+                      op: CALLVALUE
+                    }
+                  }
+                  right {
+                  }
+                }
+              }
+              wei {
+              }
+              in {
+                unop {
+                  op: SLOAD
+                  operand {
+                    unop {
+                      op: SLOAD
+                      operand {
+                        cons {
+                          intval: 0
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+              insize {
+              }
+              out {
+                nop {
+                  op: CALLVALUE
+                }
+              }
+              outsize {
+                binop {
+                  op: OR
+                  left {
+                    nop {
+                      op: CALLVALUE
+                    }
+                  }
+                  right {
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+      statements {
+        breakstmt {
+        }
+      }
+    }
+  }
+  data {
+    hex: ""
+  }
+  sub_obj {
+    code {
+      block {
+        statements {
+          breakstmt {
+          }
+        }
+      }
+    }
+  }
+}
+ver: SPURIOUS

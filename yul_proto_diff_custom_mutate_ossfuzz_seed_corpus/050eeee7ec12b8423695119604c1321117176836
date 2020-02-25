@@ -1,0 +1,190 @@
+obj {
+  code {
+    block {
+      statements {
+        breakstmt {
+        }
+      }
+      statements {
+        pop {
+          expr {
+            create {
+              createty: CREATE
+              wei {
+              }
+              position {
+              }
+              size {
+              }
+              value {
+                unop {
+                  op: MLOAD
+                  operand {
+                    cons {
+                      intval: 0
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+      statements {
+        pop {
+          expr {
+            binop {
+              op: KECCAK
+              left {
+              }
+              right {
+              }
+            }
+          }
+        }
+      }
+      statements {
+        storage_func {
+          loc {
+            unop {
+              op: SLOAD
+              operand {
+                unop {
+                  op: NOT
+                  operand {
+                  }
+                }
+              }
+            }
+          }
+          val {
+            binop {
+              op: SDIV
+              left {
+                cons {
+                  hexval: "9\006\000\000\000999999999999999999999999999999999999999999999999999999999999999999999999999999999"
+                }
+              }
+              right {
+                binop {
+                  op: SMOD
+                  left {
+                    cons {
+                      hexval: "9\006\000\000\000999999999999999999999999999999999999999999999999999999999999999999999999999999999"
+                    }
+                  }
+                  right {
+                  }
+                }
+              }
+            }
+          }
+          st: MSTORE
+        }
+      }
+      statements {
+        breakstmt {
+        }
+      }
+      statements {
+        breakstmt {
+        }
+      }
+      statements {
+        breakstmt {
+        }
+      }
+      statements {
+        breakstmt {
+        }
+      }
+      statements {
+        log_func {
+          pos {
+            cons {
+              strval: "["
+            }
+          }
+          size {
+            unop {
+            }
+          }
+          num_topics: THREE
+          t1 {
+            unop {
+              op: MLOAD
+              operand {
+                cons {
+                  intval: 0
+                }
+              }
+            }
+          }
+          t2 {
+          }
+          t3 {
+            binop {
+              op: SDIV
+              left {
+                cons {
+                  hexval: "9\006\000\000\000999999999999999999999999999999999999999999999999999999999999999999999999999999999"
+                }
+              }
+              right {
+                binop {
+                  op: SMOD
+                  left {
+                    cons {
+                      hexval: "9\006\000\000\000999999999999999999999999999999999999999999999999999999999999999999999999999999999"
+                    }
+                  }
+                  right {
+                    unop {
+                      op: MLOAD
+                      operand {
+                        cons {
+                          intval: 0
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+          t4 {
+          }
+        }
+      }
+      statements {
+        breakstmt {
+        }
+      }
+      statements {
+        breakstmt {
+        }
+      }
+      statements {
+        breakstmt {
+        }
+      }
+      statements {
+        breakstmt {
+        }
+      }
+      statements {
+        breakstmt {
+        }
+      }
+      statements {
+        breakstmt {
+        }
+      }
+      statements {
+        breakstmt {
+        }
+      }
+    }
+  }
+}
+ver: SPURIOUS

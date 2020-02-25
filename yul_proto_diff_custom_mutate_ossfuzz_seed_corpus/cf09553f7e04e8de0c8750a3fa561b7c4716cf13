@@ -1,0 +1,98 @@
+block {
+  statements {
+  }
+  statements {
+    pop {
+      expr {
+        unop {
+        }
+      }
+    }
+  }
+  statements {
+    decl {
+      expr {
+        varref {
+          varnum: 360754333
+        }
+      }
+    }
+  }
+  statements {
+    ifstmt {
+      cond {
+        unopdata {
+          op: OFFSET
+          identifier: 1737747113
+        }
+      }
+      if_body {
+        statements {
+          assignment {
+            ref_id {
+              varnum: 2046556116
+            }
+            expr {
+              unop {
+                op: SLOAD
+                operand {
+                  func_expr {
+                    ret: SINGLE
+                    func_index: 1091042789
+                  }
+                }
+              }
+            }
+          }
+        }
+        statements {
+          forstmt {
+            for_cond {
+              unop {
+                op: MLOAD
+                operand {
+                  varref {
+                    varnum: 510544788
+                  }
+                }
+              }
+            }
+          }
+        }
+        statements {
+          pop {
+            expr {
+              lowcall {
+                callty: DELEGATECALL
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  statements {
+    terminatestmt {
+      ret_rev {
+        stmt: REVERT
+        pos {
+          cons {
+            intval: 0
+          }
+        }
+        size {
+          unop {
+            op: EXTCODEHASH
+            operand {
+              unopdata {
+                op: OFFSET
+                identifier: 1285566379
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+ver: SPURIOUS

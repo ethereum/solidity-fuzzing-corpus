@@ -1,0 +1,43 @@
+block {
+  statements {
+    storage_func {
+      loc {
+        varref {
+          varnum: 0
+        }
+      }
+      val {
+      }
+      st: MSTORE
+    }
+  }
+  statements {
+    storage_func {
+      loc {
+        binop {
+          op: SDIV
+          left {
+            nop {
+              op: COINBASE
+            }
+          }
+          right {
+          }
+        }
+      }
+      val {
+      }
+      st: MSTORE
+    }
+  }
+  statements {
+    storage_func {
+      loc {
+      }
+      val {
+      }
+      st: SSTORE
+    }
+  }
+}
+ver: HOMESTEAD

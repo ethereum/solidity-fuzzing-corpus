@@ -1,0 +1,84 @@
+block {
+  statements {
+    storage_func {
+      loc {
+      }
+      val {
+        binop {
+          op: GT
+          left {
+            binop {
+              op: EXP
+              left {
+                binop {
+                  op: EXP
+                  left {
+                  }
+                  right {
+                  }
+                }
+              }
+              right {
+                unop {
+                  op: NOT
+                  operand {
+                  }
+                }
+              }
+            }
+          }
+          right {
+          }
+        }
+      }
+      st: MSTORE
+    }
+  }
+  statements {
+    breakstmt {
+    }
+  }
+  statements {
+    breakstmt {
+    }
+  }
+  statements {
+    storage_func {
+      loc {
+        binop {
+          op: EXP
+          left {
+          }
+          right {
+            unop {
+            }
+          }
+        }
+      }
+      val {
+        unop {
+          op: MLOAD
+          operand {
+            cons {
+              intval: 0
+            }
+          }
+        }
+      }
+      st: MSTORE
+    }
+  }
+  statements {
+    breakstmt {
+    }
+  }
+  statements {
+    breakstmt {
+    }
+  }
+  statements {
+    breakstmt {
+    }
+  }
+}
+ver: SPURIOUS

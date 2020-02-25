@@ -1,0 +1,164 @@
+block {
+  statements {
+    multidecl {
+      num_vars: 410057357
+    }
+  }
+  statements {
+    funcdef {
+      num_input_params: 1
+      num_output_params: 1
+      block {
+        statements {
+          decl {
+            expr {
+              unop {
+                op: MLOAD
+                operand {
+                  varref {
+                    varnum: 1875303348
+                  }
+                }
+              }
+            }
+          }
+        }
+        statements {
+          breakstmt {
+          }
+        }
+        statements {
+          assignment {
+            ref_id {
+              varnum: 1627073738
+            }
+            expr {
+              varref {
+                varnum: 778397059
+              }
+            }
+          }
+        }
+        statements {
+          assignment {
+            ref_id {
+              varnum: 861282221
+            }
+            expr {
+              binop {
+                op: BYTE
+                left {
+                  unopdata {
+                    op: SIZE
+                    identifier: 248472739
+                  }
+                }
+                right {
+                  varref {
+                    varnum: 1407402882
+                  }
+                }
+              }
+            }
+          }
+        }
+        statements {
+          assignment {
+            ref_id {
+              varnum: 1209085028
+            }
+            expr {
+              func_expr {
+                ret: SINGLE
+                func_index: 1370272951
+              }
+            }
+          }
+        }
+        statements {
+          boundedforstmt {
+          }
+        }
+        statements {
+          terminatestmt {
+            ret_rev {
+              stmt: REVERT
+              pos {
+                unop {
+                  op: NOT
+                  operand {
+                    unop {
+                      op: EXTCODEHASH
+                      operand {
+                        varref {
+                          varnum: 1657858107
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+              size {
+                unop {
+                  op: SLOAD
+                  operand {
+                    func_expr {
+                      ret: SINGLE
+                      func_index: 729554896
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  statements {
+    leave {
+    }
+  }
+  statements {
+    storage_func {
+      loc {
+        unop {
+          op: SLOAD
+          operand {
+            varref {
+              varnum: 1871122367
+            }
+          }
+        }
+      }
+      val {
+        unop {
+          op: CALLDATALOAD
+          operand {
+            unop {
+              op: SLOAD
+              operand {
+                func_expr {
+                  ret: SINGLE
+                  func_index: 400126247
+                }
+              }
+            }
+          }
+        }
+      }
+      st: MSTORE8
+    }
+  }
+  statements {
+    pop {
+      expr {
+        func_expr {
+          ret: SINGLE
+          func_index: 14675426
+        }
+      }
+    }
+  }
+}
+ver: HOMESTEAD

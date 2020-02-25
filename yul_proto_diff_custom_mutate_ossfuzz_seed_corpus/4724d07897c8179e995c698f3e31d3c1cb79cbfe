@@ -1,0 +1,72 @@
+obj {
+  code {
+    block {
+    }
+  }
+  sub_obj {
+    code {
+      block {
+      }
+    }
+    sub_obj {
+      code {
+        block {
+          statements {
+            extcode_copy {
+              addr {
+                binop {
+                  op: DIV
+                  left {
+                    cons {
+                      intval: 0
+                    }
+                  }
+                  right {
+                    nop {
+                      op: CHAINID
+                    }
+                  }
+                }
+              }
+              target {
+                binop {
+                  op: DIV
+                  left {
+                    cons {
+                      intval: 0
+                    }
+                  }
+                  right {
+                    nop {
+                      op: CHAINID
+                    }
+                  }
+                }
+              }
+              source {
+              }
+              size {
+                nop {
+                  op: CHAINID
+                }
+              }
+            }
+          }
+        }
+      }
+      sub_obj {
+        code {
+          block {
+          }
+        }
+        sub_obj {
+          code {
+            block {
+            }
+          }
+        }
+      }
+    }
+  }
+}
+ver: ISTANBUL

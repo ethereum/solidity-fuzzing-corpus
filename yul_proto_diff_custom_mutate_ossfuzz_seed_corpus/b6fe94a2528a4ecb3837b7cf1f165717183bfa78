@@ -1,0 +1,185 @@
+block {
+  statements {
+    pop {
+      expr {
+        unop {
+          op: CALLDATALOAD
+          operand {
+            unopdata {
+              op: SIZE
+              identifier: 1090364641
+            }
+          }
+        }
+      }
+    }
+  }
+  statements {
+  }
+  statements {
+    multidecl {
+      num_vars: 867674614
+    }
+  }
+  statements {
+  }
+  statements {
+    funcdef {
+      num_input_params: 1
+      num_output_params: 1
+      block {
+        statements {
+          assignment {
+            ref_id {
+              varnum: 303370099
+            }
+            expr {
+              unop {
+                op: BLOCKHASH
+                operand {
+                  varref {
+                    varnum: 1593458946
+                  }
+                }
+              }
+            }
+          }
+        }
+        statements {
+          funcdef {
+            num_input_params: 1
+            num_output_params: 1
+            block {
+              statements {
+                decl {
+                  expr {
+                    unopdata {
+                      op: OFFSET
+                      identifier: 1753184678
+                    }
+                  }
+                }
+              }
+              statements {
+                assignment {
+                  ref_id {
+                    varnum: 2069119926
+                  }
+                  expr {
+                    func_expr {
+                      ret: SINGLE
+                      func_index: 620074778
+                    }
+                  }
+                }
+              }
+              statements {
+                assignment {
+                  ref_id {
+                    varnum: 1458792248
+                  }
+                  expr {
+                    varref {
+                      varnum: 1690179208
+                    }
+                  }
+                }
+              }
+              statements {
+                pop {
+                  expr {
+                    create {
+                      createty: CREATE
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+        statements {
+          functioncall {
+            ret: ZERO
+            func_index: 435775148
+            in_param1 {
+              varref {
+                varnum: 961816069
+              }
+            }
+            in_param2 {
+              varref {
+                varnum: 1494315776
+              }
+            }
+            in_param3 {
+              varref {
+                varnum: 288604213
+              }
+            }
+            in_param4 {
+              varref {
+                varnum: 487547634
+              }
+            }
+          }
+        }
+        statements {
+          pop {
+            expr {
+              binop {
+                op: SMOD
+                left {
+                  func_expr {
+                    ret: SINGLE
+                    func_index: 1225676752
+                  }
+                }
+                right {
+                  varref {
+                    varnum: 838366928
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  statements {
+    extcode_copy {
+      addr {
+        varref {
+          varnum: 1555909617
+        }
+      }
+      target {
+        func_expr {
+          ret: SINGLE
+          func_index: 1346721709
+        }
+      }
+      source {
+        unop {
+          op: CALLDATALOAD
+          operand {
+            cons {
+              intval: 0
+            }
+          }
+        }
+      }
+      size {
+        unop {
+          op: CALLDATALOAD
+          operand {
+            cons {
+              intval: 0
+            }
+          }
+        }
+      }
+    }
+  }
+}
+ver: SPURIOUS

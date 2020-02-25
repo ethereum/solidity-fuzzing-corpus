@@ -1,0 +1,186 @@
+block {
+  statements {
+    leave {
+    }
+  }
+  statements {
+    contstmt {
+    }
+  }
+  statements {
+    forstmt {
+      for_body {
+        statements {
+          leave {
+          }
+        }
+        statements {
+          assignment {
+            ref_id {
+              varnum: 1943099514
+            }
+            expr {
+              func_expr {
+                ret: SINGLE
+                func_index: 471339233
+              }
+            }
+          }
+        }
+      }
+      for_init {
+        statements {
+          multidecl {
+            num_vars: 1017460092
+          }
+        }
+        statements {
+          assignment {
+            ref_id {
+              varnum: 892358369
+            }
+            expr {
+              varref {
+                varnum: 2043743988
+              }
+            }
+          }
+        }
+        statements {
+          breakstmt {
+          }
+        }
+        statements {
+          pop {
+            expr {
+              func_expr {
+                ret: SINGLE
+                func_index: 697010358
+              }
+            }
+          }
+        }
+      }
+      for_post {
+        statements {
+          storage_func {
+            loc {
+              cons {
+                intval: 0
+              }
+            }
+            val {
+              varref {
+                varnum: 768654628
+              }
+            }
+            st: MSTORE8
+          }
+        }
+        statements {
+          pop {
+            expr {
+              unopdata {
+                op: SIZE
+                identifier: 1127713664
+              }
+            }
+          }
+        }
+      }
+      for_cond {
+        unop {
+          op: NOT
+          operand {
+            binop {
+              op: SHR
+              left {
+                unop {
+                  op: ISZERO
+                  operand {
+                    unopdata {
+                      op: OFFSET
+                      identifier: 807583407
+                    }
+                  }
+                }
+              }
+              right {
+                func_expr {
+                  ret: SINGLE
+                  func_index: 1334962626
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  statements {
+    contstmt {
+    }
+  }
+  statements {
+    funcdef {
+      num_input_params: 2106406588
+      num_output_params: 1444174839
+      block {
+        statements {
+          decl {
+            expr {
+              unop {
+                op: MLOAD
+                operand {
+                  varref {
+                    varnum: 657413273
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  statements {
+    terminatestmt {
+      ret_rev {
+        stmt: REVERT
+        pos {
+          func_expr {
+            ret: SINGLE
+            func_index: 754114159
+          }
+        }
+        size {
+          binop {
+            op: SMOD
+            left {
+              func_expr {
+                ret: SINGLE
+                func_index: 1834959002
+              }
+            }
+            right {
+              func_expr {
+                ret: SINGLE
+                func_index: 330807341
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  statements {
+    pop {
+      expr {
+        lowcall {
+          callty: STATICCALL
+        }
+      }
+    }
+  }
+}
+ver: PETERSBURG

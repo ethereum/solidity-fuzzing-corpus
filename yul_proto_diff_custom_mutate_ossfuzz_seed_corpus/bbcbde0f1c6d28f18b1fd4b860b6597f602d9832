@@ -1,0 +1,153 @@
+block {
+  statements {
+    breakstmt {
+    }
+  }
+  statements {
+    decl {
+      expr {
+        varref {
+          varnum: 587340037
+        }
+      }
+    }
+  }
+  statements {
+    multidecl {
+      num_vars: 367732011
+    }
+  }
+  statements {
+    assignment {
+      ref_id {
+        varnum: 965488217
+      }
+      expr {
+        varref {
+          varnum: 1781461769
+        }
+      }
+    }
+  }
+  statements {
+    ifstmt {
+      cond {
+        unop {
+          op: SLOAD
+          operand {
+            unopdata {
+              op: SIZE
+              identifier: 956620888
+            }
+          }
+        }
+      }
+      if_body {
+        statements {
+          assignment {
+            ref_id {
+              varnum: 252497934
+            }
+            expr {
+              varref {
+                varnum: 591564036
+              }
+            }
+          }
+        }
+        statements {
+          leave {
+          }
+        }
+        statements {
+          ifstmt {
+            cond {
+              varref {
+                varnum: 272358627
+              }
+            }
+            if_body {
+              statements {
+                assignment {
+                  ref_id {
+                    varnum: 586640543
+                  }
+                  expr {
+                    binop {
+                      op: ADD
+                      left {
+                        varref {
+                          varnum: 870027819
+                        }
+                      }
+                      right {
+                        varref {
+                          varnum: 2045508380
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+        statements {
+          forstmt {
+            for_cond {
+              unopdata {
+                op: SIZE
+                identifier: 936228442
+              }
+            }
+          }
+        }
+        statements {
+          terminatestmt {
+            ret_rev {
+              stmt: REVERT
+              pos {
+                cons {
+                  intval: 0
+                }
+              }
+              size {
+                cons {
+                  intval: 0
+                }
+              }
+            }
+          }
+        }
+        statements {
+          pop {
+            expr {
+              unop {
+                op: MLOAD
+                operand {
+                  varref {
+                    varnum: 614179499
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  statements {
+    pop {
+      expr {
+        create {
+          createty: CREATE2
+        }
+      }
+    }
+  }
+  statements {
+    switchstmt {
+    }
+  }
+}
+ver: CONSTANTINOPLE

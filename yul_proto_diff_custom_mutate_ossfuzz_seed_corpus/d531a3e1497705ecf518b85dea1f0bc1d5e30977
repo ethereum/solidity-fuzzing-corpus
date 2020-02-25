@@ -1,0 +1,74 @@
+obj {
+  code {
+    block {
+      statements {
+        storage_func {
+          loc {
+            cons {
+              intval: 0
+            }
+          }
+          val {
+            binop {
+              op: EXP
+              left {
+              }
+              right {
+              }
+            }
+          }
+          st: SSTORE
+        }
+      }
+      statements {
+        storage_func {
+          loc {
+            binop {
+              op: XOR
+              left {
+                unop {
+                  op: SLOAD
+                  operand {
+                    cons {
+                      intval: 0
+                    }
+                  }
+                }
+              }
+              right {
+                unop {
+                  op: SLOAD
+                  operand {
+                    cons {
+                      intval: 0
+                    }
+                  }
+                }
+              }
+            }
+          }
+          val {
+          }
+          st: SSTORE
+        }
+      }
+      statements {
+        breakstmt {
+        }
+      }
+      statements {
+        breakstmt {
+        }
+      }
+      statements {
+        breakstmt {
+        }
+      }
+      statements {
+        breakstmt {
+        }
+      }
+    }
+  }
+}
+ver: CONSTANTINOPLE

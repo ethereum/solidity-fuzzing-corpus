@@ -1,0 +1,126 @@
+obj {
+  code {
+    block {
+      statements {
+        forstmt {
+          for_body {
+            statements {
+              breakstmt {
+              }
+            }
+          }
+          for_init {
+            statements {
+              breakstmt {
+              }
+            }
+          }
+          for_post {
+            statements {
+              breakstmt {
+              }
+            }
+          }
+          for_cond {
+            lowcall {
+              callty: CALL
+              gas {
+                binop {
+                  op: OR
+                  left {
+                    nop {
+                      op: GAS
+                    }
+                  }
+                  right {
+                  }
+                }
+              }
+              addr {
+                binop {
+                  op: OR
+                  left {
+                    nop {
+                      op: CALLVALUE
+                    }
+                  }
+                  right {
+                  }
+                }
+              }
+              wei {
+              }
+              in {
+              }
+              insize {
+              }
+              out {
+                nop {
+                  op: CALLVALUE
+                }
+              }
+              outsize {
+                binop {
+                  op: OR
+                  left {
+                    nop {
+                      op: CALLVALUE
+                    }
+                  }
+                  right {
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+      statements {
+        extcode_copy {
+          addr {
+            unop {
+            }
+          }
+          target {
+            unop {
+              op: MLOAD
+              operand {
+                unop {
+                  op: SLOAD
+                  operand {
+                    cons {
+                      intval: 0
+                    }
+                  }
+                }
+              }
+            }
+          }
+          source {
+            unop {
+              op: SLOAD
+              operand {
+                cons {
+                  intval: 0
+                }
+              }
+            }
+          }
+          size {
+            cons {
+              intval: 1970324836974592
+            }
+          }
+        }
+      }
+      statements {
+        breakstmt {
+        }
+      }
+    }
+  }
+  data {
+    hex: ""
+  }
+}
+ver: SPURIOUS

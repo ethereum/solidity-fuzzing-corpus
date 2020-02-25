@@ -1,0 +1,137 @@
+block {
+  statements {
+    boundedforstmt {
+      for_body {
+        statements {
+          copy_func {
+            ct: RETURNDATA
+            target {
+            }
+            source {
+            }
+            size {
+            }
+          }
+        }
+        statements {
+          boundedforstmt {
+            for_body {
+            }
+          }
+        }
+        statements {
+          storage_func {
+            loc {
+            }
+            val {
+              nop {
+                op: CALLVALUE
+              }
+            }
+            st: MSTORE
+          }
+        }
+        statements {
+        }
+      }
+    }
+  }
+  statements {
+    funcdef {
+      num_input_params: 1
+      num_output_params: 54
+      block {
+        statements {
+          storage_func {
+            loc {
+            }
+            val {
+              unop {
+                op: NOT
+                operand {
+                  lowcall {
+                    callty: CALL
+                    gas {
+                      unop {
+                        op: NOT
+                        operand {
+                          lowcall {
+                            callty: CALL
+                            gas {
+                              varref {
+                                varnum: 0
+                              }
+                            }
+                            addr {
+                            }
+                            wei {
+                              varref {
+                                varnum: 0
+                              }
+                            }
+                            in {
+                            }
+                            insize {
+                            }
+                            out {
+                            }
+                            outsize {
+                            }
+                          }
+                        }
+                      }
+                    }
+                    addr {
+                    }
+                    wei {
+                    }
+                    in {
+                    }
+                    insize {
+                    }
+                    out {
+                    }
+                    outsize {
+                    }
+                  }
+                }
+              }
+            }
+            st: MSTORE
+          }
+        }
+      }
+      force_call: true
+    }
+  }
+  statements {
+    functioncall {
+      ret: MULTIDECL
+      func_index: 538968064
+      in_param1 {
+      }
+      in_param2 {
+        varref {
+          varnum: 0
+        }
+      }
+      in_param3 {
+      }
+      in_param4 {
+      }
+      out_param1 {
+        varnum: 0
+      }
+      out_param2 {
+        varnum: 0
+      }
+      out_param3 {
+        varnum: 0
+      }
+      out_param4 {
+        varnum: 4608
+      }
+    }
+  }
+}
+ver: HOMESTEAD

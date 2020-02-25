@@ -1,0 +1,179 @@
+obj {
+  code {
+    block {
+      statements {
+        multidecl {
+          num_vars: 1373728835
+        }
+      }
+      statements {
+        storage_func {
+          loc {
+            func_expr {
+              ret: SINGLE
+              func_index: 1731870727
+            }
+          }
+          val {
+            unopdata {
+              op: OFFSET
+              identifier: 1620105591
+            }
+          }
+          st: SSTORE
+        }
+      }
+      statements {
+        terminatestmt {
+          ret_rev {
+            stmt: REVERT
+            pos {
+              varref {
+                varnum: 1610610923
+              }
+            }
+            size {
+              func_expr {
+                ret: SINGLE
+                func_index: 1991711884
+              }
+            }
+          }
+        }
+      }
+      statements {
+        storage_func {
+          loc {
+            varref {
+              varnum: 150777101
+            }
+          }
+          val {
+            unopdata {
+              op: SIZE
+              identifier: 371053132
+            }
+          }
+          st: SSTORE
+        }
+      }
+      statements {
+        leave {
+        }
+      }
+      statements {
+        copy_func {
+          ct: CALLDATA
+          target {
+            varref {
+              varnum: 1416992609
+            }
+          }
+          source {
+            varref {
+              varnum: 1138702444
+            }
+          }
+          size {
+            binop {
+              op: SGT
+              left {
+                unop {
+                  op: SLOAD
+                  operand {
+                    varref {
+                      varnum: 1246438321
+                    }
+                  }
+                }
+              }
+              right {
+                varref {
+                  varnum: 904976693
+                }
+              }
+            }
+          }
+        }
+      }
+      statements {
+        funcdef {
+          num_input_params: 1264542219
+          num_output_params: 642271021
+          block {
+            statements {
+              contstmt {
+              }
+            }
+            statements {
+              storage_func {
+                loc {
+                  varref {
+                    varnum: 972202170
+                  }
+                }
+                val {
+                  unop {
+                    op: SLOAD
+                    operand {
+                      varref {
+                        varnum: 210810179
+                      }
+                    }
+                  }
+                }
+                st: SSTORE
+              }
+            }
+            statements {
+              leave {
+              }
+            }
+            statements {
+              terminatestmt {
+                ret_rev {
+                  stmt: REVERT
+                  pos {
+                    varref {
+                      varnum: 1895749256
+                    }
+                  }
+                  size {
+                    cons {
+                      intval: 0
+                    }
+                  }
+                }
+              }
+            }
+            statements {
+              pop {
+                expr {
+                  unop {
+                    op: EXTCODESIZE
+                    operand {
+                      func_expr {
+                        ret: SINGLE
+                        func_index: 444551836
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+      statements {
+        pop {
+          expr {
+            lowcall {
+              callty: CALLCODE
+            }
+          }
+        }
+      }
+    }
+  }
+}
+ver: CONSTANTINOPLE

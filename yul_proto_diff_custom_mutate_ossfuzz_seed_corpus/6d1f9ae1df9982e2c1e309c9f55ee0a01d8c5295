@@ -1,0 +1,93 @@
+obj {
+  code {
+    block {
+      statements {
+        forstmt {
+          for_body {
+            statements {
+            }
+            statements {
+              copy_func {
+                ct: DATA
+                target {
+                  unop {
+                    op: NOT
+                    operand {
+                    }
+                  }
+                }
+                source {
+                  binop {
+                    op: SDIV
+                    left {
+                    }
+                    right {
+                      lowcall {
+                        callty: CALL
+                        gas {
+                        }
+                        addr {
+                        }
+                        wei {
+                        }
+                        in {
+                        }
+                        insize {
+                        }
+                        out {
+                        }
+                        outsize {
+                          nop {
+                            op: RETURNDATASIZE
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+                size {
+                }
+              }
+            }
+          }
+          for_init {
+          }
+          for_post {
+            statements {
+              forstmt {
+                for_body {
+                }
+                for_init {
+                }
+                for_post {
+                }
+                for_cond {
+                  nop {
+                    op: RETURNDATASIZE
+                  }
+                }
+              }
+            }
+            statements {
+            }
+          }
+          for_cond {
+            unop {
+              op: NOT
+              operand {
+                binop {
+                  op: SGT
+                  left {
+                  }
+                  right {
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+ver: SPURIOUS

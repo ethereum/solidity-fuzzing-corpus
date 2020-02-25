@@ -1,0 +1,42 @@
+block {
+  statements {
+  }
+  statements {
+  }
+  statements {
+  }
+  statements {
+    storage_func {
+      loc {
+        binop {
+          op: DIV
+          left {
+            unop {
+              op: NOT
+              operand {
+              }
+            }
+          }
+          right {
+          }
+        }
+      }
+      val {
+        unop {
+          op: CALLDATALOAD
+          operand {
+            cons {
+              intval: 0
+            }
+          }
+        }
+      }
+      st: SSTORE
+    }
+  }
+  statements {
+    breakstmt {
+    }
+  }
+}
+ver: ISTANBUL

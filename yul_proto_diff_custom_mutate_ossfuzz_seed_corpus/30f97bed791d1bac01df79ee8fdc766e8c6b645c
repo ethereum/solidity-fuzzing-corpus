@@ -1,0 +1,152 @@
+obj {
+  code {
+    block {
+      statements {
+        storage_func {
+          loc {
+            cons {
+              intval: 0
+            }
+          }
+          val {
+            varref {
+              varnum: 273583667
+            }
+          }
+          st: MSTORE8
+        }
+      }
+      statements {
+        funcdef {
+          num_input_params: 1
+          num_output_params: 1
+          block {
+            statements {
+              assignment {
+                ref_id {
+                  varnum: 1
+                }
+                expr {
+                  varref {
+                    varnum: 0
+                  }
+                }
+              }
+            }
+          }
+          force_call: true
+        }
+      }
+      statements {
+        extcode_copy {
+          addr {
+          }
+          target {
+            unop {
+              op: NOT
+              operand {
+                varref {
+                  varnum: 273583667
+                }
+              }
+            }
+          }
+          source {
+          }
+          size {
+            unop {
+              op: ISZERO
+              operand {
+                binop {
+                  op: XOR
+                  left {
+                    cons {
+                    }
+                  }
+                  right {
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  data {
+    hex: "\001\000"
+  }
+  sub_obj {
+    code {
+      block {
+        statements {
+          funcdef {
+            num_input_params: 1
+            num_output_params: 1
+            block {
+              statements {
+                assignment {
+                  ref_id {
+                    varnum: 1
+                  }
+                  expr {
+                    varref {
+                      varnum: 0
+                    }
+                  }
+                }
+              }
+            }
+            force_call: true
+          }
+        }
+        statements {
+          storage_func {
+            loc {
+            }
+            val {
+            }
+            st: SSTORE
+          }
+        }
+        statements {
+          funcdef {
+            num_input_params: 1
+            num_output_params: 1
+            block {
+              statements {
+                assignment {
+                  ref_id {
+                    varnum: 1
+                  }
+                  expr {
+                    varref {
+                      varnum: 0
+                    }
+                  }
+                }
+              }
+              statements {
+                storage_func {
+                  loc {
+                    cons {
+                      intval: 0
+                    }
+                  }
+                  val {
+                    varref {
+                      varnum: 298616871
+                    }
+                  }
+                  st: MSTORE
+                }
+              }
+            }
+            force_call: false
+          }
+        }
+      }
+    }
+  }
+}
+ver: ISTANBUL

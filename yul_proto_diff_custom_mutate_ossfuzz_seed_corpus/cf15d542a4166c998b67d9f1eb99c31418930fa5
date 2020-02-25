@@ -1,0 +1,165 @@
+block {
+  statements {
+    decl {
+      expr {
+        varref {
+          varnum: 63239488
+        }
+      }
+    }
+  }
+  statements {
+    assignment {
+      ref_id {
+        varnum: 1587444927
+      }
+      expr {
+        func_expr {
+          ret: SINGLE
+          func_index: 424299588
+        }
+      }
+    }
+  }
+  statements {
+  }
+  statements {
+    funcdef {
+      num_input_params: 1
+      num_output_params: 1
+      block {
+        statements {
+          decl {
+            expr {
+              varref {
+                varnum: 1051778233
+              }
+            }
+          }
+        }
+        statements {
+          assignment {
+            ref_id {
+              varnum: 98081869
+            }
+            expr {
+              unop {
+                op: SLOAD
+                operand {
+                  cons {
+                    intval: 0
+                  }
+                }
+              }
+            }
+          }
+        }
+        statements {
+          assignment {
+            ref_id {
+              varnum: 1157858584
+            }
+            expr {
+              binop {
+                op: EXP
+                left {
+                  varref {
+                    varnum: 528640383
+                  }
+                }
+                right {
+                  varref {
+                    varnum: 342161199
+                  }
+                }
+              }
+            }
+          }
+        }
+        statements {
+          boundedforstmt {
+          }
+        }
+        statements {
+          forstmt {
+            for_cond {
+              unop {
+                op: MLOAD
+                operand {
+                  varref {
+                    varnum: 1615167873
+                  }
+                }
+              }
+            }
+          }
+        }
+        statements {
+          terminatestmt {
+            ret_rev {
+              stmt: REVERT
+              pos {
+                func_expr {
+                  ret: SINGLE
+                  func_index: 1451848923
+                }
+              }
+              size {
+                unop {
+                  op: CALLDATALOAD
+                  operand {
+                    unopdata {
+                      op: SIZE
+                      identifier: 1576219412
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+        statements {
+          pop {
+            expr {
+              unop {
+                op: SLOAD
+                operand {
+                  func_expr {
+                    ret: SINGLE
+                    func_index: 1258032897
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  statements {
+    leave {
+    }
+  }
+  statements {
+    assignment {
+      ref_id {
+        varnum: 1522384306
+      }
+      expr {
+        cons {
+          intval: 122434586
+        }
+      }
+    }
+  }
+  statements {
+    pop {
+      expr {
+        varref {
+          varnum: 1123355004
+        }
+      }
+    }
+  }
+}
+ver: BERLIN

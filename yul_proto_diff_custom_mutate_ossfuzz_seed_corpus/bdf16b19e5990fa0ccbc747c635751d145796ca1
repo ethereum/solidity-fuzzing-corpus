@@ -1,0 +1,47 @@
+block {
+  statements {
+    decl {
+      expr {
+        lowcall {
+          callty: CALL
+          gas {
+          }
+          addr {
+            binop {
+              op: OR
+              left {
+                unop {
+                  op: NOT
+                  operand {
+                    cons {
+                      strval: "_"
+                    }
+                  }
+                }
+              }
+              right {
+                cons {
+                  strval: "\377\377\377\377\377\377\377"
+                }
+              }
+            }
+          }
+          wei {
+          }
+          in {
+          }
+          insize {
+          }
+          out {
+          }
+          outsize {
+            varref {
+              varnum: 1024
+            }
+          }
+        }
+      }
+    }
+  }
+}
+ver: HOMESTEAD

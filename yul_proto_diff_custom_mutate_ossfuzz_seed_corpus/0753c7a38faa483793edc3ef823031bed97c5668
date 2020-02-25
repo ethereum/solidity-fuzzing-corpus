@@ -1,0 +1,98 @@
+block {
+  statements {
+    log_func {
+      pos {
+        unop {
+        }
+      }
+      size {
+        varref {
+          varnum: 806930162
+        }
+      }
+      num_topics: FOUR
+      t1 {
+        varref {
+          varnum: 664617140
+        }
+      }
+      t2 {
+        unop {
+          op: SLOAD
+          operand {
+            unopdata {
+              op: OFFSET
+              identifier: 1401719888
+            }
+          }
+        }
+      }
+      t3 {
+        unop {
+          op: SLOAD
+          operand {
+            varref {
+              varnum: 1189819387
+            }
+          }
+        }
+      }
+      t4 {
+        unop {
+        }
+      }
+    }
+  }
+  statements {
+    assignment {
+      ref_id {
+        varnum: 747027177
+      }
+      expr {
+        unop {
+        }
+      }
+    }
+  }
+  statements {
+    assignment {
+      ref_id {
+        varnum: 41258677
+      }
+      expr {
+        unop {
+          op: MLOAD
+          operand {
+            cons {
+              intval: 0
+            }
+          }
+        }
+      }
+    }
+  }
+  statements {
+    pop {
+      expr {
+        unop {
+          op: EXTCODEHASH
+        }
+      }
+    }
+  }
+  statements {
+    pop {
+      expr {
+        unop {
+          op: CALLDATALOAD
+          operand {
+            varref {
+              varnum: 641794523
+            }
+          }
+        }
+      }
+    }
+  }
+}
+ver: BYZANTIUM

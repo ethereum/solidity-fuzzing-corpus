@@ -1,0 +1,134 @@
+obj {
+  code {
+    block {
+      statements {
+        assignment {
+          ref_id {
+            varnum: 216596553
+          }
+          expr {
+            varref {
+              varnum: 515830677
+            }
+          }
+        }
+      }
+      statements {
+        pop {
+          expr {
+            varref {
+              varnum: 229171687
+            }
+          }
+        }
+      }
+    }
+  }
+  sub_obj {
+    code {
+      block {
+        statements {
+          copy_func {
+            ct: CALLDATA
+            target {
+              unop {
+                op: MLOAD
+                operand {
+                  varref {
+                    varnum: 294171815
+                  }
+                }
+              }
+            }
+            source {
+              unop {
+                op: SLOAD
+                operand {
+                  unop {
+                    op: SLOAD
+                    operand {
+                      varref {
+                        varnum: 1607468358
+                      }
+                    }
+                  }
+                }
+              }
+            }
+            size {
+              unop {
+                op: SLOAD
+                operand {
+                  func_expr {
+                    ret: SINGLE
+                    func_index: 181405104
+                  }
+                }
+              }
+            }
+          }
+        }
+        statements {
+          breakstmt {
+          }
+        }
+        statements {
+          contstmt {
+          }
+        }
+        statements {
+          storage_func {
+            loc {
+              unopdata {
+                op: SIZE
+                identifier: 1976603301
+              }
+            }
+            val {
+              unopdata {
+                op: SIZE
+                identifier: 1021923666
+              }
+            }
+            st: MSTORE8
+          }
+        }
+        statements {
+          leave {
+          }
+        }
+        statements {
+          pop {
+            expr {
+              unop {
+                op: CALLDATALOAD
+                operand {
+                  unop {
+                    op: CALLDATALOAD
+                    operand {
+                      unopdata {
+                        op: SIZE
+                        identifier: 1998714278
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+        statements {
+          pop {
+            expr {
+              unopdata {
+                op: SIZE
+                identifier: 1740016103
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+ver: PETERSBURG

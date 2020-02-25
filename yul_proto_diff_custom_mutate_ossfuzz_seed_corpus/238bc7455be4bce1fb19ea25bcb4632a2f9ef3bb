@@ -1,0 +1,88 @@
+block {
+	statements {
+		decl {
+			expr {
+				cons {
+					intval: 0
+				}
+			}
+		}
+	}
+	statements {
+		switchstmt {
+			switch_expr {
+				unop {
+					op: MLOAD
+					operand {
+						varref {
+							varnum: 0
+						}
+					}
+				}
+			}
+			case_stmt {
+				case_lit {
+					intval: 0
+				}
+				case_block {
+					statements {
+						assignment {
+							ref_id {
+								varnum: 0
+							}
+							expr {
+								varref {
+									varnum: 0
+								}
+							}
+						}
+					}
+				}
+			}
+			case_stmt {
+				case_lit {
+					intval: 1
+				}
+				case_block {
+					statements {
+						assignment {
+							ref_id {
+								varnum: 0
+							}
+							expr {
+								cons {
+									intval: 1
+								}
+							}
+						}
+					}
+				}
+			}
+			default_block {
+				statements {
+					terminatestmt {
+						stop_invalid {
+							stmt: INVALID
+						}
+					}
+				}
+			}
+		}
+	}
+	statements {
+		storage_func {
+			st: MSTORE
+			loc {
+				cons {
+					intval: 1
+				}
+			}
+			val {
+				cons {
+					intval: 1
+				}
+			}
+		}
+	}
+}
+ver: ISTANBUL

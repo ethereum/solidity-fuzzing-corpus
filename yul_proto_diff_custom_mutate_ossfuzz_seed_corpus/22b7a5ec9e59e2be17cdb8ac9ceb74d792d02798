@@ -1,0 +1,142 @@
+block {
+  statements {
+    funcdef {
+      num_input_params: 14
+      num_output_params: 0
+      block {
+        statements {
+          funcdef {
+            num_input_params: 1024
+            num_output_params: 14
+            block {
+            }
+            force_call: true
+          }
+        }
+      }
+      force_call: true
+    }
+  }
+  statements {
+  }
+  statements {
+  }
+  statements {
+    funcdef {
+      num_input_params: 14
+      num_output_params: 4096
+      block {
+        statements {
+          funcdef {
+            num_input_params: 1024
+            num_output_params: 14
+            block {
+            }
+            force_call: true
+          }
+        }
+      }
+      force_call: true
+    }
+  }
+  statements {
+    funcdef {
+      num_input_params: 14
+      num_output_params: 4096
+      block {
+        statements {
+          funcdef {
+            num_input_params: 1024
+            num_output_params: 14
+            block {
+            }
+            force_call: true
+          }
+        }
+      }
+      force_call: true
+    }
+  }
+  statements {
+    ifstmt {
+      cond {
+        nop {
+          op: CODESIZE
+        }
+      }
+      if_body {
+      }
+    }
+  }
+  statements {
+  }
+  statements {
+  }
+  statements {
+    forstmt {
+      for_body {
+        statements {
+        }
+        statements {
+          copy_func {
+            ct: CALLDATA
+            target {
+            }
+            source {
+            }
+            size {
+            }
+          }
+        }
+      }
+      for_init {
+        statements {
+          decl {
+            expr {
+              cons {
+                intval: 1
+              }
+            }
+          }
+        }
+        statements {
+        }
+      }
+      for_post {
+        statements {
+          decl {
+          }
+        }
+        statements {
+          assignment {
+            ref_id {
+              varnum: 0
+            }
+            expr {
+              nop {
+                op: ORIGIN
+              }
+            }
+          }
+        }
+      }
+      for_cond {
+        unop {
+          op: BLOCKHASH
+          operand {
+            nop {
+              op: COINBASE
+            }
+          }
+        }
+      }
+    }
+  }
+  statements {
+    boundedforstmt {
+      for_body {
+      }
+    }
+  }
+}
+ver: SPURIOUS

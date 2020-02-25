@@ -1,0 +1,158 @@
+block {
+  statements {
+    funcdef {
+      num_input_params: 1024
+      num_output_params: 16777224
+      block {
+      }
+      force_call: false
+    }
+  }
+  statements {
+    forstmt {
+      for_body {
+        statements {
+          decl {
+            expr {
+              top {
+                op: MULM
+                arg1 {
+                  unop {
+                    op: NOT
+                    operand {
+                      binop {
+                        op: SHL
+                        left {
+                          top {
+                            op: ADDM
+                            arg1 {
+                            }
+                            arg2 {
+                            }
+                            arg3 {
+                            }
+                          }
+                        }
+                        right {
+                          top {
+                            op: MULM
+                            arg1 {
+                              top {
+                                op: MULM
+                                arg1 {
+                                }
+                                arg2 {
+                                }
+                                arg3 {
+                                }
+                              }
+                            }
+                            arg2 {
+                            }
+                            arg3 {
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+                arg2 {
+                  unop {
+                    op: NOT
+                    operand {
+                      binop {
+                        op: ADD
+                        left {
+                          varref {
+                            varnum: 0
+                          }
+                        }
+                        right {
+                          top {
+                            op: MULM
+                            arg1 {
+                            }
+                            arg2 {
+                            }
+                            arg3 {
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+                arg3 {
+                  create {
+                    createty: CREATE
+                    wei {
+                      cons {
+                        hexval: ":"
+                      }
+                    }
+                    position {
+                    }
+                    size {
+                    }
+                    value {
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+      for_init {
+      }
+      for_post {
+        statements {
+          multidecl {
+            num_vars: 0
+          }
+        }
+      }
+      for_cond {
+        unop {
+          op: NOT
+          operand {
+            top {
+              op: MULM
+              arg1 {
+                unop {
+                  op: NOT
+                  operand {
+                  }
+                }
+              }
+              arg2 {
+              }
+              arg3 {
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  statements {
+    funcdef {
+      num_input_params: 1024
+      num_output_params: 16121870
+      block {
+      }
+      force_call: true
+    }
+  }
+  statements {
+    funcdef {
+      num_input_params: 1024
+      num_output_params: 14
+      block {
+      }
+      force_call: false
+    }
+  }
+}
+ver: PETERSBURG

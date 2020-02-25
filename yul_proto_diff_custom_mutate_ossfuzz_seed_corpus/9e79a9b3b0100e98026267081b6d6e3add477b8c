@@ -1,0 +1,153 @@
+block {
+  statements {
+    multidecl {
+      num_vars: 206873691
+    }
+  }
+  statements {
+    contstmt {
+    }
+  }
+  statements {
+    log_func {
+      pos {
+        binop {
+          op: SHL
+          left {
+            varref {
+              varnum: 807613921
+            }
+          }
+          right {
+            varref {
+              varnum: 673255707
+            }
+          }
+        }
+      }
+      size {
+        binop {
+          op: KECCAK
+          left {
+            varref {
+              varnum: 296315776
+            }
+          }
+          right {
+            func_expr {
+              ret: SINGLE
+              func_index: 981227223
+            }
+          }
+        }
+      }
+      num_topics: ONE
+      t1 {
+        binop {
+          op: KECCAK
+          left {
+            func_expr {
+              ret: SINGLE
+              func_index: 1362317251
+            }
+          }
+          right {
+            func_expr {
+              ret: SINGLE
+              func_index: 2031147206
+            }
+          }
+        }
+      }
+      t2 {
+        binop {
+          op: SHL
+          left {
+            varref {
+              varnum: 379357232
+            }
+          }
+          right {
+            func_expr {
+              ret: SINGLE
+              func_index: 1737752579
+            }
+          }
+        }
+      }
+      t3 {
+        binop {
+          op: SMOD
+          left {
+            varref {
+              varnum: 351353189
+            }
+          }
+          right {
+            unop {
+              op: SLOAD
+              operand {
+                unop {
+                  op: MLOAD
+                  operand {
+                    func_expr {
+                      ret: SINGLE
+                      func_index: 699354386
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+      t4 {
+        binop {
+          op: XOR
+          left {
+            varref {
+              varnum: 1060936600
+            }
+          }
+          right {
+            varref {
+              varnum: 297460408
+            }
+          }
+        }
+      }
+    }
+  }
+  statements {
+    terminatestmt {
+      ret_rev {
+        stmt: REVERT
+        pos {
+          cons {
+            intval: 0
+          }
+        }
+        size {
+          varref {
+            varnum: 1173938763
+          }
+        }
+      }
+    }
+  }
+  statements {
+    pop {
+      expr {
+        unop {
+          op: EXTCODEHASH
+          operand {
+            varref {
+              varnum: 1169602201
+            }
+          }
+        }
+      }
+    }
+  }
+}
+ver: CONSTANTINOPLE

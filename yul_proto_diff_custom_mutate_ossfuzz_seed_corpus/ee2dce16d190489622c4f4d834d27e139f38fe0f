@@ -1,0 +1,109 @@
+block {
+  statements {
+    funcdef {
+      num_input_params: 1
+      num_output_params: 258
+      block {
+        statements {
+          funcdef {
+            num_input_params: 1
+            num_output_params: 65794
+            block {
+              statements {
+              }
+              statements {
+              }
+            }
+            force_call: true
+          }
+        }
+        statements {
+        }
+      }
+      force_call: true
+    }
+  }
+  statements {
+    extcode_copy {
+      addr {
+      }
+      target {
+      }
+      source {
+        varref {
+          varnum: 6
+        }
+      }
+      size {
+      }
+    }
+  }
+  statements {
+    copy_func {
+      ct: CALLDATA
+      target {
+      }
+      source {
+      }
+      size {
+        binop {
+          op: OR
+          left {
+          }
+          right {
+            create {
+              createty: CREATE
+              wei {
+              }
+              position {
+              }
+              size {
+                nop {
+                  op: ADDRESS
+                }
+              }
+              value {
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  statements {
+    ifstmt {
+      cond {
+        nop {
+          op: MSIZE
+        }
+      }
+      if_body {
+        statements {
+          funcdef {
+            num_input_params: 1
+            num_output_params: 65794
+            block {
+              statements {
+                storage_func {
+                  loc {
+                  }
+                  val {
+                  }
+                  st: MSTORE8
+                }
+              }
+              statements {
+              }
+            }
+            force_call: true
+          }
+        }
+        statements {
+        }
+        statements {
+        }
+      }
+    }
+  }
+}
+ver: ISTANBUL

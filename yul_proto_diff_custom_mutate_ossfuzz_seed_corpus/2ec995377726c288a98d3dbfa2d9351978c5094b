@@ -1,0 +1,32 @@
+block {
+  statements {
+  }
+  statements {
+    copy_func {
+      ct: CALLDATA
+      target {
+        unop {
+          op: NOT
+          operand {
+            nop {
+              op: NUMBER
+            }
+          }
+        }
+      }
+      source {
+      }
+      size {
+        unop {
+          op: ISZERO
+          operand {
+            nop {
+              op: NUMBER
+            }
+          }
+        }
+      }
+    }
+  }
+}
+ver: BERLIN

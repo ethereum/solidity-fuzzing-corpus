@@ -1,0 +1,81 @@
+block {
+  statements {
+    storage_func {
+      loc {
+        binop {
+          op: MOD
+          left {
+          }
+          right {
+            binop {
+              op: SHR
+              left {
+              }
+              right {
+              }
+            }
+          }
+        }
+      }
+      val {
+      }
+      st: SSTORE
+    }
+  }
+  statements {
+    storage_func {
+      loc {
+        binop {
+          op: DIV
+          left {
+            binop {
+              op: EXP
+              left {
+              }
+              right {
+                binop {
+                  op: DIV
+                  left {
+                    binop {
+                      op: EXP
+                      left {
+                        unop {
+                          op: NOT
+                          operand {
+                            nop {
+                              op: CODESIZE
+                            }
+                          }
+                        }
+                      }
+                      right {
+                      }
+                    }
+                  }
+                  right {
+                  }
+                }
+              }
+            }
+          }
+          right {
+          }
+        }
+      }
+      val {
+      }
+      st: MSTORE
+    }
+  }
+  statements {
+    switchstmt {
+      switch_expr {
+      }
+    }
+  }
+  statements {
+  }
+  statements {
+  }
+}
+ver: ISTANBUL

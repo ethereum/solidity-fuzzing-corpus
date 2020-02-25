@@ -1,0 +1,135 @@
+block {
+  statements {
+    decl {
+      expr {
+        unop {
+          op: SLOAD
+          operand {
+            unop {
+              op: MLOAD
+              operand {
+                varref {
+                  varnum: 149549956
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  statements {
+    breakstmt {
+    }
+  }
+  statements {
+    assignment {
+      ref_id {
+        varnum: 511331081
+      }
+      expr {
+        varref {
+          varnum: 1433055980
+        }
+      }
+    }
+  }
+  statements {
+    ifstmt {
+      cond {
+        varref {
+          varnum: 301973416
+        }
+      }
+      if_body {
+        statements {
+          assignment {
+            ref_id {
+              varnum: 100923092
+            }
+            expr {
+              func_expr {
+                ret: SINGLE
+                func_index: 1031285868
+              }
+            }
+          }
+        }
+        statements {
+          breakstmt {
+          }
+        }
+        statements {
+          storage_func {
+            loc {
+              varref {
+                varnum: 941033358
+              }
+            }
+            val {
+              unop {
+                op: EXTCODESIZE
+                operand {
+                  func_expr {
+                    ret: SINGLE
+                    func_index: 1530299641
+                  }
+                }
+              }
+            }
+            st: MSTORE8
+          }
+        }
+        statements {
+          forstmt {
+            for_cond {
+              func_expr {
+                ret: SINGLE
+                func_index: 1774429483
+              }
+            }
+          }
+        }
+        statements {
+          switchstmt {
+          }
+        }
+      }
+    }
+  }
+  statements {
+    terminatestmt {
+      ret_rev {
+        stmt: REVERT
+        pos {
+          func_expr {
+            ret: SINGLE
+            func_index: 1875692229
+          }
+        }
+        size {
+          binop {
+            op: SMOD
+            left {
+              func_expr {
+                ret: SINGLE
+                func_index: 1055101242
+              }
+            }
+            right {
+              unop {
+                op: ISZERO
+                operand {
+                  varref {
+                    varnum: 2685721
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+ver: HOMESTEAD

@@ -1,0 +1,101 @@
+block {
+  statements {
+    breakstmt {
+    }
+  }
+  statements {
+    ifstmt {
+      cond {
+        nop {
+          op: CODESIZE
+        }
+      }
+      if_body {
+        statements {
+          ifstmt {
+            cond {
+            }
+            if_body {
+            }
+          }
+        }
+      }
+    }
+  }
+  statements {
+    ifstmt {
+      cond {
+        nop {
+          op: MSIZE
+        }
+      }
+      if_body {
+        statements {
+          switchstmt {
+            switch_expr {
+            }
+            default_block {
+              statements {
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  statements {
+    ifstmt {
+      cond {
+        nop {
+          op: CODESIZE
+        }
+      }
+      if_body {
+        statements {
+        }
+      }
+    }
+  }
+  statements {
+    ifstmt {
+      cond {
+        nop {
+          op: NUMBER
+        }
+      }
+      if_body {
+        statements {
+          switchstmt {
+            switch_expr {
+            }
+            default_block {
+            }
+          }
+        }
+      }
+    }
+  }
+  statements {
+    ifstmt {
+      cond {
+        nop {
+          op: CODESIZE
+        }
+      }
+      if_body {
+        statements {
+          ifstmt {
+            cond {
+              nop {
+                op: CODESIZE
+              }
+            }
+            if_body {
+            }
+          }
+        }
+      }
+    }
+  }
+}
+ver: ISTANBUL

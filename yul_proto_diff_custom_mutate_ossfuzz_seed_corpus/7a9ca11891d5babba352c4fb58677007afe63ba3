@@ -1,0 +1,40 @@
+block {
+  statements {
+    storage_func {
+      loc {
+      }
+      val {
+      }
+      st: MSTORE8
+    }
+  }
+  statements {
+    boundedforstmt {
+      for_body {
+        statements {
+          ifstmt {
+            cond {
+              unop {
+                op: BLOCKHASH
+                operand {
+                }
+              }
+            }
+            if_body {
+            }
+          }
+        }
+        statements {
+          decl {
+            expr {
+              nop {
+                op: MSIZE
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+ver: BYZANTIUM

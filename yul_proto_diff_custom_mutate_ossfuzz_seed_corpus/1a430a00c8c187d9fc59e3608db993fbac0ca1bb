@@ -1,0 +1,126 @@
+block {
+  statements {
+    forstmt {
+      for_body {
+        statements {
+          storage_func {
+            loc {
+            }
+            val {
+              top {
+                op: ADDM
+                arg1 {
+                }
+                arg2 {
+                  binop {
+                    op: SAR
+                    left {
+                    }
+                    right {
+                    }
+                  }
+                }
+                arg3 {
+                  lowcall {
+                    callty: CALL
+                    gas {
+                      unop {
+                        op: BLOCKHASH
+                        operand {
+                        }
+                      }
+                    }
+                    addr {
+                    }
+                    wei {
+                      binop {
+                        op: SAR
+                        left {
+                          binop {
+                            op: SAR
+                            left {
+                            }
+                            right {
+                            }
+                          }
+                        }
+                        right {
+                        }
+                      }
+                    }
+                    in {
+                    }
+                    insize {
+                      binop {
+                        op: SAR
+                        left {
+                          binop {
+                            op: SAR
+                            left {
+                            }
+                            right {
+                            }
+                          }
+                        }
+                        right {
+                          binop {
+                            op: SAR
+                            left {
+                              binop {
+                                op: SAR
+                                left {
+                                }
+                                right {
+                                  binop {
+                                    op: SAR
+                                    left {
+                                      binop {
+                                        op: SAR
+                                        left {
+                                        }
+                                        right {
+                                        }
+                                      }
+                                    }
+                                    right {
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                            right {
+                            }
+                          }
+                        }
+                      }
+                    }
+                    out {
+                    }
+                    outsize {
+                    }
+                  }
+                }
+              }
+            }
+            st: MSTORE
+          }
+        }
+      }
+      for_init {
+      }
+      for_post {
+      }
+      for_cond {
+        unop {
+          op: NOT
+          operand {
+            nop {
+              op: GAS
+            }
+          }
+        }
+      }
+    }
+  }
+}
+ver: CONSTANTINOPLE

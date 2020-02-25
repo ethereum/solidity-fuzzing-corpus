@@ -1,0 +1,175 @@
+block {
+  statements {
+    breakstmt {
+    }
+  }
+  statements {
+    breakstmt {
+    }
+  }
+  statements {
+    extcode_copy {
+      addr {
+      }
+      target {
+        binop {
+          op: SMOD
+          left {
+          }
+          right {
+            binop {
+              op: SMOD
+              left {
+              }
+              right {
+                nop {
+                  op: CALLER
+                }
+              }
+            }
+          }
+        }
+      }
+      source {
+        unop {
+          op: MLOAD
+          operand {
+            cons {
+              intval: 0
+            }
+          }
+        }
+      }
+      size {
+        binop {
+          op: SMOD
+          left {
+          }
+          right {
+            binop {
+              op: SMOD
+              left {
+              }
+              right {
+                nop {
+                  op: PC
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  statements {
+    extcode_copy {
+      addr {
+        unop {
+          op: SLOAD
+          operand {
+            cons {
+              intval: 0
+            }
+          }
+        }
+      }
+      target {
+        binop {
+          op: ADD
+          left {
+          }
+          right {
+            binop {
+              op: ADD
+              left {
+                unop {
+                  op: SLOAD
+                  operand {
+                    cons {
+                      intval: 0
+                    }
+                  }
+                }
+              }
+              right {
+                nop {
+                  op: CALLER
+                }
+              }
+            }
+          }
+        }
+      }
+      source {
+      }
+      size {
+        binop {
+          op: SMOD
+          left {
+            unop {
+              op: CALLDATALOAD
+              operand {
+                cons {
+                  intval: 0
+                }
+              }
+            }
+          }
+          right {
+            binop {
+              op: SMOD
+              left {
+              }
+              right {
+                nop {
+                  op: PC
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  statements {
+    breakstmt {
+    }
+  }
+  statements {
+    breakstmt {
+    }
+  }
+  statements {
+    extcode_copy {
+      addr {
+      }
+      target {
+        unop {
+          op: CALLDATALOAD
+          operand {
+            unop {
+              op: CALLDATALOAD
+              operand {
+                cons {
+                  intval: 0
+                }
+              }
+            }
+          }
+        }
+      }
+      source {
+        nop {
+          op: CHAINID
+        }
+      }
+      size {
+      }
+    }
+  }
+  statements {
+    breakstmt {
+    }
+  }
+}
+ver: SPURIOUS

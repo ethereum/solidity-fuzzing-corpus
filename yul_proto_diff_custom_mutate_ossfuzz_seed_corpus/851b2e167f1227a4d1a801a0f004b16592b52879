@@ -1,0 +1,145 @@
+block {
+  statements {
+    leave {
+    }
+  }
+  statements {
+  }
+  statements {
+  }
+  statements {
+    leave {
+    }
+  }
+  statements {
+    multidecl {
+      num_vars: 987778265
+    }
+  }
+  statements {
+    leave {
+    }
+  }
+  statements {
+    assignment {
+      ref_id {
+        varnum: 423158318
+      }
+      expr {
+        func_expr {
+          ret: SINGLE
+          func_index: 1640204028
+        }
+      }
+    }
+  }
+  statements {
+  }
+  statements {
+    funcdef {
+      num_input_params: 1
+      num_output_params: 1
+      block {
+        statements {
+          assignment {
+            ref_id {
+              varnum: 1906243514
+            }
+            expr {
+              unop {
+                op: CALLDATALOAD
+                operand {
+                  varref {
+                    varnum: 901357638
+                  }
+                }
+              }
+            }
+          }
+        }
+        statements {
+          pop {
+            expr {
+              lowcall {
+                callty: CALLCODE
+              }
+            }
+          }
+        }
+        statements {
+          pop {
+            expr {
+              unop {
+                op: MLOAD
+                operand {
+                  unopdata {
+                    op: SIZE
+                    identifier: 1211159806
+                  }
+                }
+              }
+            }
+          }
+        }
+        statements {
+          copy_func {
+            target {
+              varref {
+                varnum: 907631741
+              }
+            }
+            source {
+              binop {
+                op: GT
+                left {
+                  unopdata {
+                    op: OFFSET
+                    identifier: 649822443
+                  }
+                }
+                right {
+                  func_expr {
+                    ret: SINGLE
+                    func_index: 2082261477
+                  }
+                }
+              }
+            }
+            size {
+              binop {
+                op: XOR
+                left {
+                  unopdata {
+                    op: OFFSET
+                    identifier: 524531387
+                  }
+                }
+                right {
+                  varref {
+                    varnum: 248524688
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  statements {
+    pop {
+      expr {
+        unop {
+          op: MLOAD
+          operand {
+            unopdata {
+              op: SIZE
+              identifier: 1242886287
+            }
+          }
+        }
+      }
+    }
+  }
+}
+ver: TANGERINE

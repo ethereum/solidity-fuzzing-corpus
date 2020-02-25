@@ -1,0 +1,81 @@
+obj {
+  code {
+    block {
+      statements {
+        funcdef {
+          num_input_params: 655360
+          num_output_params: 538970624
+          block {
+            statements {
+              storage_func {
+                loc {
+                  unop {
+                    op: NOT
+                    operand {
+                      nop {
+                        op: COINBASE
+                      }
+                    }
+                  }
+                }
+                val {
+                  binop {
+                    op: OR
+                    left {
+                      nop {
+                        op: CALLER
+                      }
+                    }
+                    right {
+                      binop {
+                        op: OR
+                        left {
+                          nop {
+                            op: COINBASE
+                          }
+                        }
+                        right {
+                          binop {
+                            op: OR
+                            left {
+                              nop {
+                                op: GASLIMIT
+                              }
+                            }
+                            right {
+                              binop {
+                                op: OR
+                                left {
+                                  nop {
+                                    op: COINBASE
+                                  }
+                                }
+                                right {
+                                  unop {
+                                    op: NOT
+                                    operand {
+                                      nop {
+                                        op: COINBASE
+                                      }
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+                st: MSTORE
+              }
+            }
+          }
+          force_call: true
+        }
+      }
+    }
+  }
+}
+ver: BYZANTIUM

@@ -1,0 +1,189 @@
+block {
+  statements {
+  }
+  statements {
+    boundedforstmt {
+      for_body {
+        statements {
+          pop {
+            expr {
+              unop {
+                op: MLOAD
+                operand {
+                  varref {
+                    varnum: 644088476
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  statements {
+    boundedforstmt {
+      for_body {
+        statements {
+          leave {
+          }
+        }
+        statements {
+          pop {
+            expr {
+              unop {
+                op: SLOAD
+                operand {
+                  varref {
+                    varnum: 1273989691
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  statements {
+    funcdef {
+      num_input_params: 1
+      num_output_params: 1
+      block {
+        statements {
+          assignment {
+            ref_id {
+              varnum: 1574048612
+            }
+            expr {
+              unop {
+                op: CALLDATALOAD
+                operand {
+                  varref {
+                    varnum: 1746527544
+                  }
+                }
+              }
+            }
+          }
+        }
+        statements {
+          storage_func {
+            loc {
+              cons {
+                intval: 0
+              }
+            }
+            val {
+              func_expr {
+                ret: SINGLE
+                func_index: 701265111
+              }
+            }
+            st: SSTORE
+          }
+        }
+        statements {
+          leave {
+          }
+        }
+        statements {
+          boundedforstmt {
+          }
+        }
+        statements {
+          pop {
+            expr {
+              func_expr {
+                ret: SINGLE
+                func_index: 1148914274
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  statements {
+    blockstmt {
+      statements {
+        assignment {
+          ref_id {
+            varnum: 139109323
+          }
+          expr {
+            unop {
+              op: CALLDATALOAD
+              operand {
+                varref {
+                  varnum: 120855084
+                }
+              }
+            }
+          }
+        }
+      }
+      statements {
+        functioncall {
+          ret: ZERO
+          func_index: 270102033
+          in_param1 {
+            unopdata {
+              op: OFFSET
+              identifier: 1684951231
+            }
+          }
+          in_param2 {
+            unop {
+              op: CALLDATALOAD
+              operand {
+                unop {
+                  op: BLOCKHASH
+                  operand {
+                    varref {
+                      varnum: 1339362874
+                    }
+                  }
+                }
+              }
+            }
+          }
+          in_param3 {
+            varref {
+              varnum: 1061457986
+            }
+          }
+          in_param4 {
+            unop {
+              op: MLOAD
+              operand {
+                varref {
+                  varnum: 786382203
+                }
+              }
+            }
+          }
+        }
+      }
+      statements {
+        terminatestmt {
+          ret_rev {
+            stmt: REVERT
+            pos {
+              func_expr {
+                ret: SINGLE
+                func_index: 837281829
+              }
+            }
+            size {
+              cons {
+                intval: 0
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+ver: BYZANTIUM

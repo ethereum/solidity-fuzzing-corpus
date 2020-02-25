@@ -1,0 +1,202 @@
+block {
+  statements {
+    multidecl {
+      num_vars: 582052817
+    }
+  }
+  statements {
+    funcdef {
+      num_input_params: 1
+      num_output_params: 1
+      block {
+        statements {
+          assignment {
+            ref_id {
+              varnum: 919436649
+            }
+            expr {
+              unop {
+                op: MLOAD
+                operand {
+                  varref {
+                    varnum: 81951330
+                  }
+                }
+              }
+            }
+          }
+        }
+        statements {
+          boundedforstmt {
+            for_body {
+              statements {
+                leave {
+                }
+              }
+            }
+          }
+        }
+        statements {
+          terminatestmt {
+            ret_rev {
+              stmt: REVERT
+              pos {
+                binop {
+                  op: EQ
+                  left {
+                    varref {
+                      varnum: 1068537594
+                    }
+                  }
+                  right {
+                    unopdata {
+                      op: SIZE
+                      identifier: 2013151313
+                    }
+                  }
+                }
+              }
+              size {
+                func_expr {
+                  ret: SINGLE
+                  func_index: 742648909
+                }
+              }
+            }
+          }
+        }
+        statements {
+          pop {
+            expr {
+              unopdata {
+                op: SIZE
+                identifier: 2053278009
+              }
+            }
+          }
+        }
+      }
+      force_call: false
+    }
+  }
+  statements {
+    forstmt {
+      for_body {
+        statements {
+          funcdef {
+            num_input_params: 1
+            num_output_params: 1
+            block {
+              statements {
+                assignment {
+                  ref_id {
+                    varnum: 936817096
+                  }
+                  expr {
+                    unopdata {
+                      op: SIZE
+                      identifier: 393323781
+                    }
+                  }
+                }
+              }
+              statements {
+                contstmt {
+                }
+              }
+            }
+          }
+        }
+        statements {
+          boundedforstmt {
+          }
+        }
+        statements {
+          pop {
+            expr {
+              lowcall {
+                callty: STATICCALL
+              }
+            }
+          }
+        }
+      }
+      for_init {
+        statements {
+          multidecl {
+            num_vars: 48695068
+          }
+        }
+        statements {
+          storage_func {
+            loc {
+              varref {
+                varnum: 290928464
+              }
+            }
+            val {
+              varref {
+                varnum: 1275693369
+              }
+            }
+            st: MSTORE
+          }
+        }
+        statements {
+          boundedforstmt {
+          }
+        }
+      }
+      for_post {
+        statements {
+          boundedforstmt {
+          }
+        }
+        statements {
+          pop {
+            expr {
+              create {
+                createty: CREATE
+              }
+            }
+          }
+        }
+      }
+      for_cond {
+        unop {
+          op: CALLDATALOAD
+          operand {
+            func_expr {
+              ret: SINGLE
+              func_index: 1567499956
+            }
+          }
+        }
+      }
+    }
+  }
+  statements {
+  }
+  statements {
+    storage_func {
+      loc {
+        func_expr {
+          ret: SINGLE
+          func_index: 110066769
+        }
+      }
+      val {
+        unop {
+          op: SLOAD
+          operand {
+            varref {
+              varnum: 539225628
+            }
+          }
+        }
+      }
+      st: SSTORE
+    }
+  }
+}
+ver: ISTANBUL

@@ -1,0 +1,165 @@
+block {
+  statements {
+    leave {
+    }
+  }
+  statements {
+    multidecl {
+      num_vars: 1640663700
+    }
+  }
+  statements {
+  }
+  statements {
+    assignment {
+      ref_id {
+        varnum: 2093354491
+      }
+      expr {
+        unopdata {
+          op: OFFSET
+          identifier: 1608923408
+        }
+      }
+    }
+  }
+  statements {
+    assignment {
+      ref_id {
+        varnum: 1339253673
+      }
+      expr {
+        func_expr {
+          ret: SINGLE
+          func_index: 1593394306
+        }
+      }
+    }
+  }
+  statements {
+    pop {
+      expr {
+        unopdata {
+          op: SIZE
+          identifier: 1517946904
+        }
+      }
+    }
+  }
+  statements {
+  }
+  statements {
+    storage_func {
+      loc {
+        func_expr {
+          ret: SINGLE
+          func_index: 550709101
+        }
+      }
+      val {
+        unop {
+          op: CALLDATALOAD
+          operand {
+            varref {
+              varnum: 1575528634
+            }
+          }
+        }
+      }
+      st: MSTORE8
+    }
+  }
+  statements {
+    pop {
+      expr {
+        func_expr {
+          ret: SINGLE
+          func_index: 498322689
+        }
+      }
+    }
+  }
+  statements {
+    multidecl {
+      num_vars: 522476062
+    }
+  }
+  statements {
+    funcdef {
+      num_input_params: 1
+      num_output_params: 1
+      block {
+        statements {
+          assignment {
+            ref_id {
+              varnum: 64382403
+            }
+            expr {
+              varref {
+                varnum: 1155302782
+              }
+            }
+          }
+        }
+        statements {
+          breakstmt {
+          }
+        }
+        statements {
+          assignment {
+            ref_id {
+              varnum: 1750017948
+            }
+            expr {
+              binop {
+                op: GT
+                left {
+                  unop {
+                    op: CALLDATALOAD
+                    operand {
+                      varref {
+                        varnum: 922799732
+                      }
+                    }
+                  }
+                }
+                right {
+                  unop {
+                    op: CALLDATALOAD
+                    operand {
+                      varref {
+                        varnum: 1512707758
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+        statements {
+          terminatestmt {
+            ret_rev {
+              stmt: REVERT
+              pos {
+                unop {
+                }
+              }
+              size {
+                unop {
+                  op: CALLDATALOAD
+                  operand {
+                    varref {
+                      varnum: 1043486121
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+ver: SPURIOUS

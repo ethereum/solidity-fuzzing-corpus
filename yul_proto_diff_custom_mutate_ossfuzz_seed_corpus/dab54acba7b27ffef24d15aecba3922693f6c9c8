@@ -1,0 +1,70 @@
+block {
+	statements {
+		storage_func {
+			st: MSTORE
+			loc {
+				cons {
+					intval: 2
+				}
+			}
+			val {
+				cons {
+					intval: 9
+				}
+			}
+		}
+	}
+	statements {
+		storage_func {
+			st: SSTORE
+			loc {
+				cons {
+					intval: 0
+				}
+			}
+			val {
+				unop {
+					op: MLOAD
+					operand {
+						cons {
+							intval: 2
+						}
+					}
+				}
+			}
+		}	
+	}
+	statements {
+		forstmt {
+			for_init {}
+			for_cond {
+				nop {
+					op: CALLER
+				}
+			}
+			for_post {}
+			for_body {}
+		}
+	}
+	statements {
+		storage_func {
+			st: SSTORE
+			loc {
+				cons {
+					intval: 0
+				}
+			}
+			val {
+				unop {
+					op: MLOAD
+					operand {
+						cons {
+							intval: 2
+						}
+					}
+				}
+			}
+		}	
+	}
+}
+ver: ISTANBUL

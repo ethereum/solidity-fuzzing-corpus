@@ -1,0 +1,176 @@
+block {
+  statements {
+    breakstmt {
+    }
+  }
+  statements {
+    extcode_copy {
+      addr {
+        binop {
+          op: AND
+          left {
+          }
+          right {
+            binop {
+              op: SMOD
+              left {
+              }
+              right {
+              }
+            }
+          }
+        }
+      }
+      target {
+        unop {
+        }
+      }
+      source {
+        unop {
+          op: NOT
+          operand {
+          }
+        }
+      }
+      size {
+        unop {
+          op: MLOAD
+          operand {
+            unop {
+              op: CALLDATALOAD
+              operand {
+                cons {
+                  intval: 0
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  statements {
+    breakstmt {
+    }
+  }
+  statements {
+  }
+  statements {
+    extcode_copy {
+      addr {
+        unop {
+          op: MLOAD
+          operand {
+            unop {
+              op: CALLDATALOAD
+              operand {
+                cons {
+                  intval: 0
+                }
+              }
+            }
+          }
+        }
+      }
+      target {
+        binop {
+          op: SMOD
+          left {
+          }
+          right {
+          }
+        }
+      }
+      source {
+        nop {
+          op: ORIGIN
+        }
+      }
+      size {
+      }
+    }
+  }
+  statements {
+  }
+  statements {
+    breakstmt {
+    }
+  }
+  statements {
+    extcode_copy {
+      addr {
+        unop {
+          op: MLOAD
+          operand {
+            unop {
+              op: CALLDATALOAD
+              operand {
+                cons {
+                  intval: 0
+                }
+              }
+            }
+          }
+        }
+      }
+      target {
+        binop {
+          op: SMOD
+          left {
+          }
+          right {
+          }
+        }
+      }
+      source {
+        nop {
+          op: ORIGIN
+        }
+      }
+      size {
+      }
+    }
+  }
+  statements {
+    breakstmt {
+    }
+  }
+  statements {
+    breakstmt {
+    }
+  }
+  statements {
+  }
+  statements {
+    extcode_copy {
+      addr {
+        unop {
+          op: CALLDATALOAD
+          operand {
+            cons {
+              intval: 0
+            }
+          }
+        }
+      }
+      target {
+      }
+      source {
+        nop {
+          op: ORIGIN
+        }
+      }
+      size {
+      }
+    }
+  }
+  statements {
+    breakstmt {
+    }
+  }
+  statements {
+    breakstmt {
+    }
+  }
+}
+ver: TANGERINE

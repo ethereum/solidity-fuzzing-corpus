@@ -1,0 +1,175 @@
+block {
+  statements {
+    decl {
+      expr {
+        binop {
+          op: OR
+          left {
+            varref {
+              varnum: 1194404218
+            }
+          }
+          right {
+            varref {
+              varnum: 1592536069
+            }
+          }
+        }
+      }
+    }
+  }
+  statements {
+    storage_func {
+      loc {
+        unop {
+          op: MLOAD
+          operand {
+            varref {
+              varnum: 728218979
+            }
+          }
+        }
+      }
+      val {
+        binop {
+          op: BYTE
+          left {
+            unop {
+              op: CALLDATALOAD
+              operand {
+                varref {
+                  varnum: 1900355923
+                }
+              }
+            }
+          }
+          right {
+            varref {
+              varnum: 288748195
+            }
+          }
+        }
+      }
+      st: SSTORE
+    }
+  }
+  statements {
+  }
+  statements {
+    switchstmt {
+      switch_expr {
+        varref {
+          varnum: 1465372438
+        }
+      }
+      case_stmt {
+        case_lit {
+        }
+        case_block {
+          statements {
+            storage_func {
+              loc {
+                varref {
+                  varnum: 1962524050
+                }
+              }
+              val {
+                varref {
+                  varnum: 1098430472
+                }
+              }
+              st: SSTORE
+            }
+          }
+          statements {
+            boundedforstmt {
+            }
+          }
+          statements {
+            forstmt {
+              for_cond {
+                unopdata {
+                  op: OFFSET
+                  identifier: 638649976
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  statements {
+    contstmt {
+    }
+  }
+  statements {
+    leave {
+    }
+  }
+  statements {
+    switchstmt {
+      switch_expr {
+        binop {
+          op: OR
+          left {
+            varref {
+              varnum: 1036650666
+            }
+          }
+          right {
+            unopdata {
+              op: SIZE
+              identifier: 1312414548
+            }
+          }
+        }
+      }
+      case_stmt {
+        case_lit {
+          strval: "\'"
+        }
+        case_block {
+          statements {
+            decl {
+            }
+          }
+          statements {
+          }
+          statements {
+            decl {
+              expr {
+                unop {
+                  op: SLOAD
+                  operand {
+                    cons {
+                      intval: 0
+                    }
+                  }
+                }
+              }
+            }
+          }
+          statements {
+            pop {
+              expr {
+                unop {
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  statements {
+    pop {
+      expr {
+        varref {
+          varnum: 1896782024
+        }
+      }
+    }
+  }
+}
+ver: PETERSBURG

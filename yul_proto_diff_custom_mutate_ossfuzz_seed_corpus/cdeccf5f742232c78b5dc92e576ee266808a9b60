@@ -1,0 +1,124 @@
+block {
+  statements {
+  }
+  statements {
+  }
+  statements {
+  }
+  statements {
+    pop {
+      expr {
+        func_expr {
+          ret: SINGLE
+          func_index: 1281585667
+        }
+      }
+    }
+  }
+  statements {
+    storage_func {
+      loc {
+        func_expr {
+          ret: SINGLE
+          func_index: 270312171
+        }
+      }
+      val {
+        func_expr {
+          ret: SINGLE
+          func_index: 2135259714
+        }
+      }
+      st: MSTORE8
+    }
+  }
+  statements {
+    funcdef {
+      num_input_params: 1
+      num_output_params: 1
+      block {
+        statements {
+        }
+        statements {
+        }
+        statements {
+          assignment {
+            ref_id {
+              varnum: 953056000
+            }
+            expr {
+              varref {
+                varnum: 1571489966
+              }
+            }
+          }
+        }
+        statements {
+          pop {
+            expr {
+              lowcall {
+                callty: CALL
+              }
+            }
+          }
+        }
+        statements {
+          pop {
+            expr {
+              binop {
+                op: AND
+                left {
+                  func_expr {
+                    ret: SINGLE
+                    func_index: 46548233
+                  }
+                }
+                right {
+                  varref {
+                    varnum: 1259173159
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  statements {
+    leave {
+    }
+  }
+  statements {
+    switchstmt {
+      switch_expr {
+        unop {
+          op: CALLDATALOAD
+          operand {
+            unop {
+              op: MLOAD
+              operand {
+                varref {
+                  varnum: 2108715425
+                }
+              }
+            }
+          }
+        }
+      }
+      case_stmt {
+      }
+    }
+  }
+  statements {
+    pop {
+      expr {
+        func_expr {
+          ret: SINGLE
+          func_index: 198298098
+        }
+      }
+    }
+  }
+}
+ver: ISTANBUL

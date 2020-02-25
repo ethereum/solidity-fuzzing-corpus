@@ -1,0 +1,89 @@
+block {
+  statements {
+    multidecl {
+      num_vars: 1028869928
+    }
+  }
+  statements {
+    storage_func {
+      loc {
+        cons {
+          intval: 0
+        }
+      }
+      val {
+        varref {
+          varnum: 1650047313
+        }
+      }
+      st: MSTORE
+    }
+  }
+  statements {
+    assignment {
+      ref_id {
+        varnum: 603058713
+      }
+      expr {
+        unop {
+          op: MLOAD
+          operand {
+            func_expr {
+              ret: SINGLE
+              func_index: 61660181
+            }
+          }
+        }
+      }
+    }
+  }
+  statements {
+    boundedforstmt {
+      for_body {
+        statements {
+          assignment {
+            ref_id {
+              varnum: 991435848
+            }
+            expr {
+              binop {
+                op: ADD
+                left {
+                  varref {
+                    varnum: 1940201888
+                  }
+                }
+                right {
+                  func_expr {
+                    ret: SINGLE
+                    func_index: 1196879126
+                  }
+                }
+              }
+            }
+          }
+        }
+        statements {
+          forstmt {
+            for_cond {
+              unop {
+                op: SLOAD
+                operand {
+                  unopdata {
+                    op: OFFSET
+                    identifier: 2121656863
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  statements {
+    terminatestmt {
+    }
+  }
+}
+ver: ISTANBUL

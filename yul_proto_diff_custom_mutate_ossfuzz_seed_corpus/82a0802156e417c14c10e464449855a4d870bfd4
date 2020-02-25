@@ -1,0 +1,125 @@
+block {
+  statements {
+    contstmt {
+    }
+  }
+  statements {
+  }
+  statements {
+    forstmt {
+      for_body {
+        statements {
+        }
+        statements {
+          leave {
+          }
+        }
+        statements {
+          pop {
+            expr {
+              binop {
+                op: XOR
+                left {
+                  varref {
+                    varnum: 2033559559
+                  }
+                }
+                right {
+                  func_expr {
+                    ret: SINGLE
+                    func_index: 434132274
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+      for_init {
+        statements {
+          leave {
+          }
+        }
+        statements {
+          pop {
+            expr {
+              unopdata {
+                op: SIZE
+                identifier: 1980739222
+              }
+            }
+          }
+        }
+      }
+      for_post {
+        statements {
+          contstmt {
+          }
+        }
+        statements {
+          storage_func {
+            loc {
+              varref {
+                varnum: 784534182
+              }
+            }
+            val {
+              unop {
+                op: MLOAD
+                operand {
+                  func_expr {
+                    ret: SINGLE
+                    func_index: 975621931
+                  }
+                }
+              }
+            }
+            st: MSTORE8
+          }
+        }
+        statements {
+          assignment {
+            ref_id {
+              varnum: 25039736
+            }
+            expr {
+              unop {
+                op: CALLDATALOAD
+                operand {
+                  varref {
+                    varnum: 1020706577
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+      for_cond {
+        binop {
+          op: DIV
+          left {
+            varref {
+              varnum: 812889602
+            }
+          }
+          right {
+            unopdata {
+              op: SIZE
+              identifier: 323761353
+            }
+          }
+        }
+      }
+    }
+  }
+  statements {
+    contstmt {
+    }
+  }
+  statements {
+    breakstmt {
+    }
+  }
+}
+ver: ISTANBUL

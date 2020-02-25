@@ -1,0 +1,220 @@
+block {
+  statements {
+    storage_func {
+      loc {
+        unop {
+          op: MLOAD
+          operand {
+            cons {
+              intval: 0
+            }
+          }
+        }
+      }
+      val {
+        binop {
+          op: XOR
+          left {
+            binop {
+              op: XOR
+              left {
+                binop {
+                  op: XOR
+                  left {
+                    binop {
+                      op: XOR
+                      left {
+                        binop {
+                          op: MOD
+                          left {
+                            binop {
+                              op: SDIV
+                              left {
+                              }
+                              right {
+                              }
+                            }
+                          }
+                          right {
+                            nop {
+                              op: COINBASE
+                            }
+                          }
+                        }
+                      }
+                      right {
+                      }
+                    }
+                  }
+                  right {
+                    unop {
+                      op: NOT
+                      operand {
+                      }
+                    }
+                  }
+                }
+              }
+              right {
+              }
+            }
+          }
+          right {
+          }
+        }
+      }
+      st: MSTORE
+    }
+  }
+  statements {
+    storage_func {
+      loc {
+      }
+      val {
+        unop {
+          op: SLOAD
+          operand {
+            cons {
+              intval: 0
+            }
+          }
+        }
+      }
+      st: MSTORE
+    }
+  }
+  statements {
+    multidecl {
+      num_vars: 32
+    }
+  }
+  statements {
+    storage_func {
+      loc {
+      }
+      val {
+        unop {
+          op: MLOAD
+          operand {
+            cons {
+              intval: 0
+            }
+          }
+        }
+      }
+      st: MSTORE
+    }
+  }
+  statements {
+    breakstmt {
+    }
+  }
+  statements {
+    breakstmt {
+    }
+  }
+  statements {
+    storage_func {
+      loc {
+      }
+      val {
+        binop {
+          op: XOR
+          left {
+            binop {
+              op: XOR
+              left {
+                unop {
+                  op: NOT
+                  operand {
+                  }
+                }
+              }
+              right {
+              }
+            }
+          }
+          right {
+          }
+        }
+      }
+      st: MSTORE
+    }
+  }
+  statements {
+    storage_func {
+      loc {
+        unop {
+          op: SLOAD
+          operand {
+            cons {
+              intval: 0
+            }
+          }
+        }
+      }
+      val {
+        unop {
+          op: NOT
+          operand {
+            unop {
+            }
+          }
+        }
+      }
+      st: MSTORE
+    }
+  }
+  statements {
+    multidecl {
+      num_vars: 32
+    }
+  }
+  statements {
+    breakstmt {
+    }
+  }
+  statements {
+    breakstmt {
+    }
+  }
+  statements {
+    breakstmt {
+    }
+  }
+  statements {
+    storage_func {
+      loc {
+        unop {
+          op: SLOAD
+          operand {
+            unop {
+              op: MLOAD
+              operand {
+                cons {
+                  intval: 0
+                }
+              }
+            }
+          }
+        }
+      }
+      val {
+        unop {
+          op: CALLDATALOAD
+          operand {
+            cons {
+              intval: 0
+            }
+          }
+        }
+      }
+      st: MSTORE
+    }
+  }
+  statements {
+    breakstmt {
+    }
+  }
+}
+ver: ISTANBUL

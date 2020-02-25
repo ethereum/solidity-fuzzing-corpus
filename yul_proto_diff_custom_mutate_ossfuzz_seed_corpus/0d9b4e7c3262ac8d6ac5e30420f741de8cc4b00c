@@ -1,0 +1,142 @@
+block {
+  statements {
+    multidecl {
+      num_vars: 13530117
+    }
+  }
+  statements {
+    multidecl {
+      num_vars: 21653326
+    }
+  }
+  statements {
+  }
+  statements {
+    extcode_copy {
+      addr {
+        nop {
+          op: CODESIZE
+        }
+      }
+      target {
+        binop {
+          op: DIV
+          left {
+          }
+          right {
+            varref {
+              varnum: 579904
+            }
+          }
+        }
+      }
+      source {
+        nop {
+          op: CODESIZE
+        }
+      }
+      size {
+        binop {
+          op: SMOD
+          left {
+          }
+          right {
+            varref {
+              varnum: 896215
+            }
+          }
+        }
+      }
+    }
+  }
+  statements {
+  }
+  statements {
+    extcode_copy {
+      addr {
+        nop {
+          op: CODESIZE
+        }
+      }
+      target {
+        binop {
+          op: DIV
+          left {
+          }
+          right {
+            varref {
+              varnum: 579904
+            }
+          }
+        }
+      }
+      source {
+        varref {
+          varnum: 92443274
+        }
+      }
+      size {
+        binop {
+          op: SMOD
+          left {
+          }
+          right {
+            varref {
+              varnum: 896215
+            }
+          }
+        }
+      }
+    }
+  }
+  statements {
+    funcdef {
+      num_input_params: 2368558
+      num_output_params: 1532596
+      block {
+        statements {
+          switchstmt {
+            switch_expr {
+              varref {
+                varnum: 13197416
+              }
+            }
+            case_stmt {
+            }
+          }
+        }
+        statements {
+          forstmt {
+          }
+        }
+        statements {
+          terminatestmt {
+            ret_rev {
+              stmt: REVERT
+              pos {
+                cons {
+                  intval: 0
+                }
+              }
+              size {
+                cons {
+                  intval: 0
+                }
+              }
+            }
+          }
+        }
+        statements {
+          pop {
+            expr {
+              lowcall {
+                callty: CALLCODE
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+ver: TANGERINE

@@ -1,0 +1,93 @@
+block {
+  statements {
+    assignment {
+      ref_id {
+        varnum: 436256371
+      }
+      expr {
+        unop {
+          op: CALLDATALOAD
+          operand {
+            varref {
+              varnum: 990803926
+            }
+          }
+        }
+      }
+    }
+  }
+  statements {
+    pop {
+      expr {
+        binop {
+          op: KECCAK
+          left {
+            unop {
+              op: SLOAD
+              operand {
+                unopdata {
+                  op: SIZE
+                  identifier: 762316519
+                }
+              }
+            }
+          }
+          right {
+            varref {
+              varnum: 1392655240
+            }
+          }
+        }
+      }
+    }
+  }
+  statements {
+    leave {
+    }
+  }
+  statements {
+    terminatestmt {
+      ret_rev {
+        stmt: REVERT
+        pos {
+          unop {
+            op: EXTCODEHASH
+            operand {
+              unopdata {
+                op: OFFSET
+                identifier: 1440813933
+              }
+            }
+          }
+        }
+        size {
+          unop {
+            op: SLOAD
+            operand {
+              varref {
+                varnum: 1351082579
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  statements {
+    storage_func {
+      loc {
+        cons {
+          intval: 0
+        }
+      }
+      val {
+        unopdata {
+          op: SIZE
+          identifier: 1614994301
+        }
+      }
+      st: MSTORE8
+    }
+  }
+}
+ver: ISTANBUL

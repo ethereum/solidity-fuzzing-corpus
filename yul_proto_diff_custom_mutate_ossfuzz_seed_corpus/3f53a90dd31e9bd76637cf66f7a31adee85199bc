@@ -1,0 +1,162 @@
+obj {
+  code {
+    block {
+      statements {
+        assignment {
+          ref_id {
+            varnum: 86354353
+          }
+          expr {
+            func_expr {
+              ret: SINGLE
+              func_index: 116600049
+            }
+          }
+        }
+      }
+      statements {
+      }
+      statements {
+      }
+      statements {
+        pop {
+          expr {
+            lowcall {
+              callty: CALL
+            }
+          }
+        }
+      }
+    }
+  }
+  data {
+    hex: "\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377"
+  }
+  sub_obj {
+    code {
+      block {
+        statements {
+          assignment {
+            ref_id {
+              varnum: 140000358
+            }
+            expr {
+              unop {
+                op: SLOAD
+                operand {
+                  varref {
+                    varnum: 591553
+                  }
+                }
+              }
+            }
+          }
+        }
+        statements {
+          storage_func {
+            loc {
+              cons {
+                intval: 0
+              }
+            }
+            val {
+              varref {
+                varnum: 159268215
+              }
+            }
+            st: MSTORE8
+          }
+        }
+        statements {
+          funcdef {
+            num_input_params: 134011765
+            num_output_params: 86713495
+            block {
+              statements {
+                multidecl {
+                  num_vars: 63260002
+                }
+              }
+              statements {
+                storage_func {
+                  loc {
+                    cons {
+                      intval: 0
+                    }
+                  }
+                  val {
+                    varref {
+                      varnum: 64792565
+                    }
+                  }
+                  st: MSTORE8
+                }
+              }
+              statements {
+                decl {
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    sub_obj {
+      code {
+        block {
+          statements {
+            decl {
+              expr {
+                varref {
+                  varnum: 40310465
+                }
+              }
+            }
+          }
+          statements {
+            forstmt {
+            }
+          }
+          statements {
+            pop {
+              expr {
+                create {
+                  createty: CREATE2
+                }
+              }
+            }
+          }
+        }
+      }
+      sub_obj {
+        code {
+          block {
+            statements {
+              boundedforstmt {
+                for_body {
+                  statements {
+                    pop {
+                      expr {
+                        lowcall {
+                          callty: CALLCODE
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+            statements {
+              forstmt {
+              }
+            }
+          }
+        }
+        data {
+          hex: ""
+        }
+      }
+    }
+  }
+}
+ver: ISTANBUL

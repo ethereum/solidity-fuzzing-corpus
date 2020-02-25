@@ -1,0 +1,143 @@
+block {
+  statements {
+    decl {
+      expr {
+        unop {
+          op: MLOAD
+          operand {
+            cons {
+              intval: 2
+            }
+          }
+        }
+      }
+    }
+  }
+  statements {
+    decl {
+      expr {
+        unop {
+          op: MLOAD
+          operand {
+            cons {
+              intval: 1
+            }
+          }
+        }
+      }
+    }
+  }
+  statements {
+    ifstmt {
+      cond {
+        unop {
+          op: MLOAD
+          operand {
+            cons {
+              intval: 2
+            }
+          }
+        }
+      }
+      if_body {
+        statements {
+          assignment {
+            ref_id {
+              varnum: 0
+            }
+            expr {
+              unop {
+                op: MLOAD
+                operand {
+                  varref {
+                    varnum: 1
+                  }
+                }
+              }
+            }
+          }
+        }
+        statements {
+          assignment {
+            ref_id {
+              varnum: 1
+            }
+            expr {
+              unop {
+                op: MLOAD
+                operand {
+                  varref {
+                    varnum: 0
+                  }
+                }
+              }
+            }
+          }
+        }
+        statements {
+          assignment {
+            ref_id {
+              varnum: 0
+            }
+            expr {
+              unop {
+                op: MLOAD
+                operand {
+                  varref {
+                    varnum: 1
+                  }
+                }
+              }
+            }
+          }
+        }
+        statements {
+          assignment {
+            ref_id {
+              varnum: 1
+            }
+            expr {
+              unop {
+                op: MLOAD
+                operand {
+                  varref {
+                    varnum: 0
+                  }
+                }
+              }
+            }
+          }
+        }
+        statements {
+          breakstmt {
+          }
+        }
+        statements {
+          breakstmt {
+          }
+        }
+      }
+    }
+  }
+  statements {
+    storage_func {
+      loc {
+        varref {
+          varnum: 1
+        }
+      }
+      val {
+      }
+      st: MSTORE
+    }
+  }
+  statements {
+    breakstmt {
+    }
+  }
+  statements {
+    breakstmt {
+    }
+  }
+}
+ver: SPURIOUS

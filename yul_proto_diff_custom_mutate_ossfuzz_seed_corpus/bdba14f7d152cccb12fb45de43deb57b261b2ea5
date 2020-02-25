@@ -1,0 +1,76 @@
+obj {
+  code {
+    block {
+      statements {
+        storage_func {
+          loc {
+            binop {
+              op: SHL
+              left {
+              }
+              right {
+                binop {
+                  op: SHL
+                  left {
+                  }
+                  right {
+                    nop {
+                      op: PC
+                    }
+                  }
+                }
+              }
+            }
+          }
+          val {
+            binop {
+              op: SHL
+              left {
+              }
+              right {
+                nop {
+                  op: GAS
+                }
+              }
+            }
+          }
+          st: MSTORE
+        }
+      }
+      statements {
+        storage_func {
+          loc {
+            binop {
+              op: SHL
+              left {
+              }
+              right {
+              }
+            }
+          }
+          val {
+            binop {
+              op: SHL
+              left {
+              }
+              right {
+                binop {
+                  op: SHL
+                  left {
+                  }
+                  right {
+                    nop {
+                      op: GAS
+                    }
+                  }
+                }
+              }
+            }
+          }
+          st: MSTORE8
+        }
+      }
+    }
+  }
+}
+ver: ISTANBUL

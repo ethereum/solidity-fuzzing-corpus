@@ -1,0 +1,121 @@
+block {
+  statements {
+    multidecl {
+      num_vars: 0
+    }
+  }
+  statements {
+  }
+  statements {
+    assignment {
+      ref_id {
+        varnum: 136328135
+      }
+      expr {
+        varref {
+          varnum: 88212322
+        }
+      }
+    }
+  }
+  statements {
+    boundedforstmt {
+      for_body {
+        statements {
+          storage_func {
+            loc {
+              varref {
+                varnum: 14904629
+              }
+            }
+            val {
+              varref {
+                varnum: 56162216
+              }
+            }
+            st: MSTORE
+          }
+        }
+        statements {
+          assignment {
+            ref_id {
+              varnum: 163749700
+            }
+            expr {
+              unop {
+                op: SLOAD
+                operand {
+                  unop {
+                    op: MLOAD
+                    operand {
+                      varref {
+                        varnum: 5054502
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+        statements {
+          ifstmt {
+            cond {
+              varref {
+                varnum: 60167780
+              }
+            }
+            if_body {
+              statements {
+              }
+              statements {
+                storage_func {
+                  loc {
+                    cons {
+                      intval: 0
+                    }
+                  }
+                  val {
+                    varref {
+                      varnum: 73428661
+                    }
+                  }
+                  st: MSTORE
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  statements {
+    terminatestmt {
+      ret_rev {
+        stmt: REVERT
+        pos {
+          cons {
+            intval: 0
+          }
+        }
+        size {
+          cons {
+          }
+        }
+      }
+    }
+  }
+  statements {
+    assignment {
+      ref_id {
+        varnum: 179404019
+      }
+      expr {
+        cons {
+          intval: 33448207
+        }
+      }
+    }
+  }
+}
+ver: CONSTANTINOPLE

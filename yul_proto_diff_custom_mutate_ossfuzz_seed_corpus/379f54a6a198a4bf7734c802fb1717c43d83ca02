@@ -1,0 +1,181 @@
+block {
+  statements {
+    decl {
+      expr {
+        varref {
+          varnum: 643338454
+        }
+      }
+    }
+  }
+  statements {
+    leave {
+    }
+  }
+  statements {
+    assignment {
+      ref_id {
+        varnum: 696428229
+      }
+      expr {
+        func_expr {
+          ret: SINGLE
+          func_index: 435445322
+        }
+      }
+    }
+  }
+  statements {
+    pop {
+      expr {
+        unop {
+          op: CALLDATALOAD
+          operand {
+            varref {
+              varnum: 1868937929
+            }
+          }
+        }
+      }
+    }
+  }
+  statements {
+    terminatestmt {
+      ret_rev {
+        stmt: REVERT
+        pos {
+          unop {
+            op: CALLDATALOAD
+            operand {
+              func_expr {
+                ret: SINGLE
+                func_index: 1785080534
+              }
+            }
+          }
+        }
+        size {
+          varref {
+            varnum: 773388887
+          }
+        }
+      }
+    }
+  }
+  statements {
+    leave {
+    }
+  }
+  statements {
+    funcdef {
+      num_input_params: 835705544
+      num_output_params: 2009489176
+      block {
+        statements {
+          storage_func {
+            loc {
+              binop {
+                op: SHL
+                left {
+                  unop {
+                    op: MLOAD
+                    operand {
+                      varref {
+                        varnum: 994377256
+                      }
+                    }
+                  }
+                }
+                right {
+                  varref {
+                    varnum: 250817247
+                  }
+                }
+              }
+            }
+            val {
+              binop {
+                op: SHL
+                left {
+                  varref {
+                    varnum: 138716762
+                  }
+                }
+                right {
+                  varref {
+                    varnum: 684125831
+                  }
+                }
+              }
+            }
+            st: MSTORE8
+          }
+        }
+        statements {
+          pop {
+            expr {
+              func_expr {
+                ret: SINGLE
+                func_index: 735182827
+              }
+            }
+          }
+        }
+        statements {
+          assignment {
+            ref_id {
+              varnum: 867713961
+            }
+            expr {
+              varref {
+                varnum: 1669741723
+              }
+            }
+          }
+        }
+        statements {
+          terminatestmt {
+            ret_rev {
+              stmt: REVERT
+              pos {
+                cons {
+                  intval: 0
+                }
+              }
+              size {
+                cons {
+                  intval: 0
+                }
+              }
+            }
+          }
+        }
+      }
+      force_call: false
+    }
+  }
+  statements {
+    pop {
+      expr {
+        lowcall {
+          callty: CALLCODE
+        }
+      }
+    }
+  }
+  statements {
+    pop {
+      expr {
+        unop {
+          op: CALLDATALOAD
+          operand {
+            varref {
+              varnum: 512198467
+            }
+          }
+        }
+      }
+    }
+  }
+}
+ver: PETERSBURG

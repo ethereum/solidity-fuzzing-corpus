@@ -1,0 +1,180 @@
+block {
+  statements {
+  }
+  statements {
+    storage_func {
+      loc {
+        binop {
+          op: EXP
+          left {
+          }
+          right {
+            binop {
+              op: SI
+              left {
+                binop {
+                  op: EXP
+                  left {
+                    binop {
+                      op: EXP
+                      left {
+                      }
+                      right {
+                      }
+                    }
+                  }
+                  right {
+                  }
+                }
+              }
+              right {
+              }
+            }
+          }
+        }
+      }
+      val {
+        binop {
+          op: EXP
+          left {
+            binop {
+              op: GT
+              left {
+                unop {
+                  op: MLOAD
+                  operand {
+                    cons {
+                      intval: 0
+                    }
+                  }
+                }
+              }
+              right {
+              }
+            }
+          }
+          right {
+          }
+        }
+      }
+      st: MSTORE
+    }
+  }
+  statements {
+  }
+  statements {
+    storage_func {
+      loc {
+        binop {
+          op: EXP
+          left {
+            binop {
+              op: EXP
+              left {
+                binop {
+                  op: EXP
+                  left {
+                  }
+                  right {
+                  }
+                }
+              }
+              right {
+              }
+            }
+          }
+          right {
+          }
+        }
+      }
+      val {
+        binop {
+          op: EXP
+          left {
+            binop {
+              op: XOR
+              left {
+                unop {
+                  op: SLOAD
+                  operand {
+                    cons {
+                      intval: 0
+                    }
+                  }
+                }
+              }
+              right {
+              }
+            }
+          }
+          right {
+          }
+        }
+      }
+      st: MSTORE
+    }
+  }
+  statements {
+    breakstmt {
+    }
+  }
+  statements {
+    storage_func {
+      loc {
+        binop {
+          op: EXP
+          left {
+          }
+          right {
+            binop {
+              op: EXP
+              left {
+                unop {
+                  op: CALLDATALOAD
+                  operand {
+                    cons {
+                      intval: 0
+                    }
+                  }
+                }
+              }
+              right {
+              }
+            }
+          }
+        }
+      }
+      val {
+        binop {
+          op: EXP
+          left {
+            binop {
+              op: EXP
+              left {
+                binop {
+                  op: EXP
+                  left {
+                  }
+                  right {
+                  }
+                }
+              }
+              right {
+              }
+            }
+          }
+          right {
+          }
+        }
+      }
+      st: MSTORE
+    }
+  }
+  statements {
+  }
+  statements {
+    breakstmt {
+    }
+  }
+}
+ver: HOMESTEAD

@@ -1,0 +1,115 @@
+block {
+  statements {
+    funcdef {
+      num_input_params: 1
+      num_output_params: 4096
+      block {
+        statements {
+        }
+        statements {
+          funcdef {
+            num_input_params: 1024
+            num_output_params: 14
+            block {
+              statements {
+                breakstmt {
+                }
+              }
+            }
+            force_call: true
+          }
+        }
+        statements {
+          assignment {
+            ref_id {
+              varnum: -16777472
+            }
+            expr {
+            }
+          }
+        }
+        statements {
+          breakstmt {
+          }
+        }
+      }
+      force_call: true
+    }
+  }
+  statements {
+    funcdef {
+      num_input_params: 1
+      num_output_params: 4096
+      block {
+        statements {
+        }
+        statements {
+          funcdef {
+            num_input_params: 1024
+            num_output_params: 14
+            block {
+              statements {
+              }
+              statements {
+                funcdef {
+                  num_input_params: 1024
+                  num_output_params: 14
+                  block {
+                    statements {
+                      breakstmt {
+                      }
+                    }
+                  }
+                  force_call: true
+                }
+              }
+              statements {
+                assignment {
+                  ref_id {
+                    varnum: -16777472
+                  }
+                  expr {
+                    unop {
+                      op: MLOAD
+                      operand {
+                      }
+                    }
+                  }
+                }
+              }
+              statements {
+                breakstmt {
+                }
+              }
+            }
+            force_call: true
+          }
+        }
+        statements {
+          assignment {
+            ref_id {
+              varnum: -16777472
+            }
+            expr {
+              unop {
+                op: MLOAD
+                operand {
+                }
+              }
+            }
+          }
+        }
+        statements {
+          breakstmt {
+          }
+        }
+      }
+      force_call: true
+    }
+  }
+  statements {
+    breakstmt {
+    }
+  }
+}
+ver: ISTANBUL

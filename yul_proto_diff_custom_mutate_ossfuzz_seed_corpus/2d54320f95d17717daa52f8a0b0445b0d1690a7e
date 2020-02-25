@@ -1,0 +1,130 @@
+block {
+  statements {
+    contstmt {
+    }
+  }
+  statements {
+    breakstmt {
+    }
+  }
+  statements {
+    storage_func {
+      loc {
+        varref {
+          varnum: 1331785592
+        }
+      }
+      val {
+        varref {
+          varnum: 1397770726
+        }
+      }
+      st: SSTORE
+    }
+  }
+  statements {
+    assignment {
+      ref_id {
+        varnum: 1343667218
+      }
+      expr {
+        varref {
+          varnum: 645550888
+        }
+      }
+    }
+  }
+  statements {
+    boundedforstmt {
+      for_body {
+        statements {
+          pop {
+            expr {
+              varref {
+                varnum: 1217875332
+              }
+            }
+          }
+        }
+        statements {
+          assignment {
+            ref_id {
+              varnum: 338330648
+            }
+            expr {
+              unopdata {
+                op: SIZE
+                identifier: 1330888811
+              }
+            }
+          }
+        }
+        statements {
+          assignment {
+            ref_id {
+              varnum: 687185957
+            }
+            expr {
+              unop {
+                op: MLOAD
+                operand {
+                  cons {
+                    intval: 0
+                  }
+                }
+              }
+            }
+          }
+        }
+        statements {
+          boundedforstmt {
+          }
+        }
+        statements {
+          pop {
+            expr {
+              unop {
+                op: SLOAD
+                operand {
+                  varref {
+                    varnum: 1424003425
+                  }
+                }
+              }
+            }
+          }
+        }
+        statements {
+          pop {
+            expr {
+              binop {
+                op: SMOD
+                left {
+                  unop {
+                    op: CALLDATALOAD
+                    operand {
+                      unop {
+                        op: SLOAD
+                        operand {
+                          varref {
+                            varnum: 1834532231
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+                right {
+                  varref {
+                    varnum: 657694773
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+ver: SPURIOUS

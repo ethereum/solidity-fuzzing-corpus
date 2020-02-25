@@ -1,0 +1,64 @@
+block {
+  statements {
+    boundedforstmt {
+      for_body {
+        statements {
+          boundedforstmt {
+            for_body {
+              statements {
+                ifstmt {
+                  cond {
+                  }
+                  if_body {
+                    statements {
+                      breakstmt {
+                      }
+                    }
+                  }
+                }
+              }
+              statements {
+                blockstmt {
+                  statements {
+                    breakstmt {
+                    }
+                  }
+                }
+              }
+              statements {
+              }
+            }
+          }
+        }
+        statements {
+          ifstmt {
+            cond {
+              unop {
+                op: BLOCKHASH
+                operand {
+                }
+              }
+            }
+            if_body {
+              statements {
+                breakstmt {
+                }
+              }
+            }
+          }
+        }
+        statements {
+          blockstmt {
+            statements {
+            }
+          }
+        }
+        statements {
+          blockstmt {
+          }
+        }
+      }
+    }
+  }
+}
+ver: CONSTANTINOPLE

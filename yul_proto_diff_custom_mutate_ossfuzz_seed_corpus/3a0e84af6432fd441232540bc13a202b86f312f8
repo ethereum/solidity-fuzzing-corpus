@@ -1,0 +1,214 @@
+block {
+  statements {
+  }
+  statements {
+    breakstmt {
+    }
+  }
+  statements {
+    storage_func {
+      loc {
+        unop {
+          op: BALANCE
+          operand {
+          }
+        }
+      }
+      val {
+        unop {
+          op: EXTCODESIZE
+          operand {
+            cons {
+              intval: 0
+            }
+          }
+        }
+      }
+      st: MSTORE
+    }
+  }
+  statements {
+    multidecl {
+      num_vars: 5
+    }
+  }
+  statements {
+    breakstmt {
+    }
+  }
+  statements {
+    breakstmt {
+    }
+  }
+  statements {
+    funcdef {
+      num_input_params: 14
+      num_output_params: 1024
+      block {
+        statements {
+          funcdef {
+            num_input_params: 14
+            num_output_params: 14
+            block {
+              statements {
+                breakstmt {
+                }
+              }
+              statements {
+                breakstmt {
+                }
+              }
+              statements {
+                breakstmt {
+                }
+              }
+              statements {
+                breakstmt {
+                }
+              }
+              statements {
+                breakstmt {
+                }
+              }
+            }
+            force_call: true
+          }
+        }
+        statements {
+          breakstmt {
+          }
+        }
+        statements {
+          breakstmt {
+          }
+        }
+        statements {
+          breakstmt {
+          }
+        }
+        statements {
+          breakstmt {
+          }
+        }
+        statements {
+          breakstmt {
+          }
+        }
+      }
+      force_call: true
+    }
+  }
+  statements {
+    breakstmt {
+    }
+  }
+  statements {
+    breakstmt {
+    }
+  }
+  statements {
+    boundedforstmt {
+      for_body {
+        statements {
+          funcdef {
+            num_input_params: 44
+            num_output_params: 4096
+            block {
+              statements {
+                breakstmt {
+                }
+              }
+              statements {
+                breakstmt {
+                }
+              }
+              statements {
+                breakstmt {
+                }
+              }
+              statements {
+                breakstmt {
+                }
+              }
+            }
+            force_call: true
+          }
+        }
+        statements {
+          breakstmt {
+          }
+        }
+        statements {
+          breakstmt {
+          }
+        }
+        statements {
+          breakstmt {
+          }
+        }
+        statements {
+          breakstmt {
+          }
+        }
+      }
+    }
+  }
+  statements {
+    funcdef {
+      num_input_params: 33554432
+      num_output_params: 33554432
+      block {
+        statements {
+          extcode_copy {
+            addr {
+              unop {
+              }
+            }
+            target {
+            }
+            source {
+              unop {
+                op: CALLDATALOAD
+                operand {
+                  cons {
+                    intval: 0
+                  }
+                }
+              }
+            }
+            size {
+            }
+          }
+        }
+        statements {
+        }
+        statements {
+          breakstmt {
+          }
+        }
+        statements {
+          breakstmt {
+          }
+        }
+        statements {
+          breakstmt {
+          }
+        }
+        statements {
+          breakstmt {
+          }
+        }
+      }
+      force_call: true
+    }
+  }
+  statements {
+    breakstmt {
+    }
+  }
+  statements {
+    breakstmt {
+    }
+  }
+}
+ver: ISTANBUL

@@ -1,0 +1,55 @@
+block {
+  statements {
+    copy_func {
+      ct: RETURNDATA
+      target {
+        unop {
+          op: BLOCKHASH
+          operand {
+          }
+        }
+      }
+      source {
+      }
+      size {
+      }
+    }
+  }
+  statements {
+    copy_func {
+      ct: CALLDATA
+      target {
+      }
+      source {
+      }
+      size {
+        binop {
+          op: SUB
+          left {
+          }
+          right {
+          }
+        }
+      }
+    }
+  }
+  statements {
+    copy_func {
+      ct: CALLDATA
+      target {
+      }
+      source {
+      }
+      size {
+        binop {
+          op: SUB
+          left {
+          }
+          right {
+          }
+        }
+      }
+    }
+  }
+}
+ver: SPURIOUS

@@ -1,0 +1,84 @@
+block {
+  statements {
+    boundedforstmt {
+      for_body {
+        statements {
+          extcode_copy {
+            addr {
+              binop {
+                op: SGT
+                left {
+                  binop {
+                    op: DIV
+                    left {
+                      binop {
+                        op: SGT
+                        left {
+                        }
+                        right {
+                        }
+                      }
+                    }
+                    right {
+                    }
+                  }
+                }
+                right {
+                }
+              }
+            }
+            target {
+              binop {
+                op: ADD
+                left {
+                  unop {
+                    op: BALANCE
+                    operand {
+                    }
+                  }
+                }
+                right {
+                  binop {
+                    op: DIV
+                    left {
+                      binop {
+                        op: EXP
+                        left {
+                        }
+                        right {
+                        }
+                      }
+                    }
+                    right {
+                    }
+                  }
+                }
+              }
+            }
+            source {
+            }
+            size {
+              lowcall {
+                callty: CALL
+                gas {
+                }
+                addr {
+                }
+                wei {
+                }
+                in {
+                }
+                insize {
+                }
+                out {
+                }
+                outsize {
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

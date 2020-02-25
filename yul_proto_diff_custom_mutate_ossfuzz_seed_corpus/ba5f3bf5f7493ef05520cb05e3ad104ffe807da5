@@ -1,0 +1,169 @@
+block {
+  statements {
+    breakstmt {
+    }
+  }
+  statements {
+    breakstmt {
+    }
+  }
+  statements {
+    storage_func {
+      loc {
+        binop {
+          op: MOD
+          left {
+            binop {
+              op: SHR
+              left {
+              }
+              right {
+                unop {
+                  op: MLOAD
+                  operand {
+                    cons {
+                      intval: 0
+                    }
+                  }
+                }
+              }
+            }
+          }
+          right {
+            binop {
+              op: SHR
+              left {
+                cons {
+                  intval: 88
+                }
+              }
+              right {
+              }
+            }
+          }
+        }
+      }
+      val {
+        binop {
+          op: SHR
+          left {
+            cons {
+              intval: 88
+            }
+          }
+          right {
+          }
+        }
+      }
+      st: MSTORE
+    }
+  }
+  statements {
+    storage_func {
+      loc {
+        binop {
+          op: MOD
+          left {
+            binop {
+              op: SHR
+              left {
+                cons {
+                  intval: 88
+                }
+              }
+              right {
+              }
+            }
+          }
+          right {
+            binop {
+              op: OR
+              left {
+              }
+              right {
+                binop {
+                  op: SHR
+                  left {
+                    cons {
+                      intval: 88
+                    }
+                  }
+                  right {
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+      val {
+        binop {
+          op: SHR
+          left {
+            cons {
+              intval: 88
+            }
+          }
+          right {
+          }
+        }
+      }
+      st: MSTORE
+    }
+  }
+  statements {
+    breakstmt {
+    }
+  }
+  statements {
+    terminatestmt {
+      ret_rev {
+        stmt: RETURN
+        pos {
+          unop {
+            op: MLOAD
+            operand {
+              cons {
+                intval: 0
+              }
+            }
+          }
+        }
+        size {
+        }
+      }
+    }
+  }
+  statements {
+    breakstmt {
+    }
+  }
+  statements {
+    breakstmt {
+    }
+  }
+  statements {
+    breakstmt {
+    }
+  }
+  statements {
+  }
+  statements {
+    funcdef {
+      num_input_params: 1
+      num_output_params: 2
+      block {
+        statements {
+          breakstmt {
+          }
+        }
+      }
+      force_call: false
+    }
+  }
+  statements {
+    breakstmt {
+    }
+  }
+}
+ver: ISTANBUL

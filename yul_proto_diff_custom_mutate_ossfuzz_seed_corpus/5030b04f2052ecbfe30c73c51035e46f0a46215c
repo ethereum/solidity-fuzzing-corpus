@@ -1,0 +1,84 @@
+block {
+  statements {
+  }
+  statements {
+    boundedforstmt {
+      for_body {
+        statements {
+          ifstmt {
+            cond {
+              unop {
+                op: BALANCE
+                operand {
+                }
+              }
+            }
+            if_body {
+              statements {
+                breakstmt {
+                }
+              }
+            }
+          }
+        }
+        statements {
+          blockstmt {
+            statements {
+              breakstmt {
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  statements {
+    boundedforstmt {
+      for_body {
+        statements {
+          ifstmt {
+            cond {
+              unop {
+                op: BLOCKHASH
+                operand {
+                }
+              }
+            }
+            if_body {
+              statements {
+                ifstmt {
+                  cond {
+                    unop {
+                      op: BALANCE
+                      operand {
+                      }
+                    }
+                  }
+                  if_body {
+                  }
+                }
+              }
+              statements {
+                blockstmt {
+                  statements {
+                    breakstmt {
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+        statements {
+          blockstmt {
+            statements {
+              breakstmt {
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+ver: BYZANTIUM

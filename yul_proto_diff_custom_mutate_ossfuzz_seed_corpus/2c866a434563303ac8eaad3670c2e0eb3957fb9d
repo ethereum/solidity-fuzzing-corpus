@@ -1,0 +1,133 @@
+block {
+  statements {
+  }
+  statements {
+    storage_func {
+      loc {
+        unop {
+          op: MLOAD
+          operand {
+            varref {
+              varnum: 64366186
+            }
+          }
+        }
+      }
+      val {
+        func_expr {
+          ret: SINGLE
+          func_index: 59742087
+        }
+      }
+      st: MSTORE8
+    }
+  }
+  statements {
+    storage_func {
+      loc {
+        func_expr {
+          ret: SINGLE
+          func_index: 25569474
+        }
+      }
+      val {
+        varref {
+          varnum: 20704018
+        }
+      }
+      st: SSTORE
+    }
+  }
+  statements {
+    funcdef {
+      num_input_params: 1
+      num_output_params: 1
+      block {
+        statements {
+        }
+        statements {
+          assignment {
+            ref_id {
+              varnum: 97636402
+            }
+            expr {
+              cons {
+                intval: 18203397
+              }
+            }
+          }
+        }
+        statements {
+        }
+        statements {
+          pop {
+            expr {
+              create {
+                createty: CREATE
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  statements {
+    assignment {
+      ref_id {
+        varnum: 139025722
+      }
+      expr {
+        cons {
+          intval: 25920050
+        }
+      }
+    }
+  }
+  statements {
+    switchstmt {
+      switch_expr {
+        varref {
+          varnum: 166207231
+        }
+      }
+      case_stmt {
+      }
+    }
+  }
+  statements {
+    terminatestmt {
+      ret_rev {
+        stmt: REVERT
+        pos {
+          cons {
+            intval: 0
+          }
+        }
+        size {
+          cons {
+            intval: 0
+          }
+        }
+      }
+    }
+  }
+  statements {
+    pop {
+      expr {
+        lowcall {
+          callty: CALLCODE
+        }
+      }
+    }
+  }
+  statements {
+    pop {
+      expr {
+        create {
+          createty: CREATE
+        }
+      }
+    }
+  }
+}
+ver: BERLIN

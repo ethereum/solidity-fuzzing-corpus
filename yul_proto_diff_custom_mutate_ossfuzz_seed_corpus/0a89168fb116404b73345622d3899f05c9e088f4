@@ -1,0 +1,74 @@
+block {
+  statements {
+    ifstmt {
+      cond {
+        nop {
+          op: CODESIZE
+        }
+      }
+      if_body {
+        statements {
+          ifstmt {
+            cond {
+              nop {
+                op: CODESIZE
+              }
+            }
+            if_body {
+            }
+          }
+        }
+      }
+    }
+  }
+  statements {
+  }
+  statements {
+    copy_func {
+      ct: RETURNDATA
+      target {
+        cons {
+          intval: 0
+        }
+      }
+      source {
+      }
+      size {
+      }
+    }
+  }
+  statements {
+    forstmt {
+      for_body {
+      }
+      for_init {
+      }
+      for_post {
+        statements {
+          funcdef {
+            num_input_params: 0
+            num_output_params: 0
+            block {
+            }
+            force_call: false
+          }
+        }
+      }
+      for_cond {
+      }
+    }
+  }
+  statements {
+    boundedforstmt {
+      for_body {
+        statements {
+          pop {
+            expr {
+            }
+          }
+        }
+      }
+    }
+  }
+}
+ver: ISTANBUL

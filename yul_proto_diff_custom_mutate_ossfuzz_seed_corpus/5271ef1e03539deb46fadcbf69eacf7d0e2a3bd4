@@ -1,0 +1,88 @@
+obj {
+  code {
+    block {
+      statements {
+        funcdef {
+          num_input_params: 1
+          num_output_params: 824180736
+          block {
+            statements {
+              storage_func {
+                loc {
+                  binop {
+                    op: OR
+                    left {
+                      nop {
+                        op: GASLIMIT
+                      }
+                    }
+                    right {
+                      unop {
+                        op: NOT
+                        operand {
+                          nop {
+                            op: GASLIMIT
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+                val {
+                }
+                st: MSTORE
+              }
+            }
+          }
+          force_call: true
+        }
+      }
+    }
+  }
+  sub_obj {
+    code {
+      block {
+        statements {
+          funcdef {
+            num_input_params: 1
+            num_output_params: 824180736
+            block {
+              statements {
+                storage_func {
+                  loc {
+                    binop {
+                      op: OR
+                      left {
+                        nop {
+                          op: GASLIMIT
+                        }
+                      }
+                      right {
+                        unop {
+                          op: NOT
+                          operand {
+                            nop {
+                              op: GASLIMIT
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                  val {
+                    nop {
+                      op: ORIGIN
+                    }
+                  }
+                  st: MSTORE
+                }
+              }
+            }
+            force_call: true
+          }
+        }
+      }
+    }
+  }
+}
+ver: BYZANTIUM

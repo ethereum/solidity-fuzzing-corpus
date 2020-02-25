@@ -1,0 +1,84 @@
+block {
+  statements {
+  }
+  statements {
+    extcode_copy {
+      addr {
+        nop {
+          op: ORIGIN
+        }
+      }
+      target {
+      }
+      source {
+      }
+      size {
+        binop {
+          op: SUB
+          left {
+          }
+          right {
+            binop {
+              op: SUB
+              left {
+                cons {
+                  strval: "1"
+                }
+              }
+              right {
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  statements {
+    extcode_copy {
+      addr {
+      }
+      target {
+      }
+      source {
+      }
+      size {
+        binop {
+          op: SUB
+          left {
+          }
+          right {
+            binop {
+              op: SUB
+              left {
+              }
+              right {
+                binop {
+                  op: ADD
+                  left {
+                    cons {
+                      strval: "1"
+                    }
+                  }
+                  right {
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  statements {
+    funcdef {
+      num_input_params: 0
+      num_output_params: 0
+      block {
+        statements {
+        }
+      }
+      force_call: false
+    }
+  }
+}
+ver: SPURIOUS

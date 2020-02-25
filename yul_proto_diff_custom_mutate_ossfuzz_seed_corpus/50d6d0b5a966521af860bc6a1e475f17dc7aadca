@@ -1,0 +1,140 @@
+block {
+  statements {
+    breakstmt {
+    }
+  }
+  statements {
+    functioncall {
+      ret: ZERO
+      func_index: 1447848678
+      in_param1 {
+        varref {
+          varnum: 379750323
+        }
+      }
+      in_param2 {
+        varref {
+          varnum: 7430741
+        }
+      }
+      in_param3 {
+        unopdata {
+          op: SIZE
+          identifier: 957671458
+        }
+      }
+      in_param4 {
+        varref {
+          varnum: 228021816
+        }
+      }
+    }
+  }
+  statements {
+    funcdef {
+      num_input_params: 170728339
+      num_output_params: 1332898330
+      block {
+        statements {
+          functioncall {
+            ret: ZERO
+            func_index: 1011706880
+            in_param1 {
+              binop {
+                op: SGT
+                left {
+                  varref {
+                    varnum: 1468395692
+                  }
+                }
+                right {
+                  varref {
+                    varnum: 1323670753
+                  }
+                }
+              }
+            }
+            in_param2 {
+              func_expr {
+                ret: SINGLE
+                func_index: 1274260566
+              }
+            }
+            in_param3 {
+              binop {
+                op: SUB
+                left {
+                  varref {
+                    varnum: 1925582029
+                  }
+                }
+                right {
+                  varref {
+                    varnum: 235428758
+                  }
+                }
+              }
+            }
+            in_param4 {
+              unop {
+                op: CALLDATALOAD
+                operand {
+                  func_expr {
+                    ret: SINGLE
+                    func_index: 48621273
+                  }
+                }
+              }
+            }
+          }
+        }
+        statements {
+          contstmt {
+          }
+        }
+        statements {
+          boundedforstmt {
+          }
+        }
+        statements {
+          pop {
+            expr {
+              unopdata {
+                op: OFFSET
+                identifier: 1400520033
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  statements {
+    forstmt {
+      for_cond {
+        varref {
+          varnum: 837615350
+        }
+      }
+    }
+  }
+  statements {
+    terminatestmt {
+      ret_rev {
+        stmt: REVERT
+        pos {
+          unopdata {
+            op: SIZE
+            identifier: 1698257217
+          }
+        }
+        size {
+          varref {
+            varnum: 2089367314
+          }
+        }
+      }
+    }
+  }
+}
+ver: ISTANBUL

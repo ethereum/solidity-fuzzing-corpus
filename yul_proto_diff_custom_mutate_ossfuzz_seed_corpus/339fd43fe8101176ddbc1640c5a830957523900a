@@ -1,0 +1,168 @@
+block {
+  statements {
+    multidecl {
+      num_vars: 744358639
+    }
+  }
+  statements {
+  }
+  statements {
+    funcdef {
+      num_input_params: 1
+      num_output_params: 1
+      block {
+        statements {
+          decl {
+            expr {
+              varref {
+                varnum: 2125831568
+              }
+            }
+          }
+        }
+        statements {
+          breakstmt {
+          }
+        }
+        statements {
+          storage_func {
+            loc {
+              cons {
+                intval: 0
+              }
+            }
+            val {
+              varref {
+                varnum: 534619716
+              }
+            }
+            st: SSTORE
+          }
+        }
+        statements {
+          switchstmt {
+            switch_expr {
+              unop {
+                op: SLOAD
+                operand {
+                  unopdata {
+                    op: SIZE
+                    identifier: 2057784464
+                  }
+                }
+              }
+            }
+            case_stmt {
+            }
+          }
+        }
+        statements {
+          assignment {
+            ref_id {
+              varnum: 1750628719
+            }
+            expr {
+              func_expr {
+                ret: SINGLE
+                func_index: 1331194529
+              }
+            }
+          }
+        }
+        statements {
+          boundedforstmt {
+          }
+        }
+      }
+    }
+  }
+  statements {
+    breakstmt {
+    }
+  }
+  statements {
+    funcdef {
+      num_input_params: 1832184272
+      num_output_params: 1547959311
+      block {
+        statements {
+          breakstmt {
+          }
+        }
+        statements {
+          storage_func {
+            loc {
+              varref {
+                varnum: 1379720328
+              }
+            }
+            val {
+              varref {
+                varnum: 569608477
+              }
+            }
+            st: MSTORE
+          }
+        }
+        statements {
+        }
+      }
+    }
+  }
+  statements {
+    pop {
+      expr {
+        create {
+          createty: CREATE2
+        }
+      }
+    }
+  }
+  statements {
+    extcode_copy {
+      addr {
+        unop {
+          op: CALLDATALOAD
+          operand {
+            varref {
+              varnum: 854499351
+            }
+          }
+        }
+      }
+      target {
+        unop {
+          op: SLOAD
+          operand {
+            func_expr {
+              ret: SINGLE
+              func_index: 890879356
+            }
+          }
+        }
+      }
+      source {
+        unop {
+          op: SLOAD
+          operand {
+            varref {
+              varnum: 812416503
+            }
+          }
+        }
+      }
+      size {
+        unop {
+          op: MLOAD
+          operand {
+            unopdata {
+              op: SIZE
+              identifier: 1185998944
+            }
+          }
+        }
+      }
+    }
+  }
+}
+ver: PETERSBURG

@@ -1,0 +1,85 @@
+block {
+  statements {
+    extcode_copy {
+      addr {
+      }
+      target {
+      }
+      source {
+      }
+      size {
+        binop {
+          op: SAR
+          left {
+            binop {
+              op: SHL
+              left {
+              }
+              right {
+              }
+            }
+          }
+          right {
+          }
+        }
+      }
+    }
+  }
+  statements {
+    extcode_copy {
+      addr {
+      }
+      target {
+      }
+      source {
+        binop {
+          op: SAR
+          left {
+            binop {
+              op: LT
+              left {
+              }
+              right {
+              }
+            }
+          }
+          right {
+          }
+        }
+      }
+      size {
+        binop {
+          op: SAR
+          left {
+            binop {
+              op: LT
+              left {
+              }
+              right {
+              }
+            }
+          }
+          right {
+          }
+        }
+      }
+    }
+  }
+  statements {
+    copy_func {
+      ct: DATA
+      target {
+        unop {
+          op: EXTCODESIZE
+          operand {
+          }
+        }
+      }
+      source {
+      }
+      size {
+      }
+    }
+  }
+}
+ver: PETERSBURG

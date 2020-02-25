@@ -1,0 +1,187 @@
+block {
+  statements {
+    copy_func {
+      ct: CALLDATA
+      target {
+        binop {
+          op: ADD
+          left {
+            varref {
+              varnum: 976507217
+            }
+          }
+          right {
+            varref {
+              varnum: 1281547596
+            }
+          }
+        }
+      }
+      source {
+        binop {
+          op: GT
+          left {
+            varref {
+              varnum: 593417119
+            }
+          }
+          right {
+            unopdata {
+              op: SIZE
+              identifier: 1182417724
+            }
+          }
+        }
+      }
+      size {
+        binop {
+          op: SAR
+          left {
+            unopdata {
+              op: SIZE
+              identifier: 1669268161
+            }
+          }
+          right {
+            func_expr {
+              ret: SINGLE
+              func_index: 1194352403
+            }
+          }
+        }
+      }
+    }
+  }
+  statements {
+    copy_func {
+      ct: CALLDATA
+      target {
+        binop {
+          op: SAR
+          left {
+            varref {
+              varnum: 680295774
+            }
+          }
+          right {
+            varref {
+              varnum: 1524324192
+            }
+          }
+        }
+      }
+      source {
+        unopdata {
+          op: OFFSET
+          identifier: 445748484
+        }
+      }
+      size {
+        binop {
+          op: SHL
+          left {
+            unop {
+              op: CALLDATALOAD
+              operand {
+                func_expr {
+                  ret: SINGLE
+                  func_index: 1359504258
+                }
+              }
+            }
+          }
+          right {
+            unopdata {
+              op: OFFSET
+              identifier: 1048880319
+            }
+          }
+        }
+      }
+    }
+  }
+  statements {
+  }
+  statements {
+    assignment {
+      ref_id {
+        varnum: 475211578
+      }
+      expr {
+        unop {
+          op: CALLDATALOAD
+          operand {
+            unopdata {
+              op: OFFSET
+              identifier: 599951694
+            }
+          }
+        }
+      }
+    }
+  }
+  statements {
+    terminatestmt {
+      ret_rev {
+        stmt: REVERT
+        pos {
+          varref {
+            varnum: 1433286636
+          }
+        }
+        size {
+          binop {
+            op: SHR
+            left {
+              varref {
+                varnum: 1983110706
+              }
+            }
+            right {
+              varref {
+                varnum: 1131112020
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  statements {
+  }
+  statements {
+    contstmt {
+    }
+  }
+  statements {
+  }
+  statements {
+  }
+  statements {
+    assignment {
+      ref_id {
+        varnum: 1911960653
+      }
+      expr {
+        unopdata {
+          op: SIZE
+          identifier: 116949222
+        }
+      }
+    }
+  }
+  statements {
+    boundedforstmt {
+    }
+  }
+  statements {
+    pop {
+      expr {
+        varref {
+          varnum: 285780552
+        }
+      }
+    }
+  }
+}
+ver: TANGERINE

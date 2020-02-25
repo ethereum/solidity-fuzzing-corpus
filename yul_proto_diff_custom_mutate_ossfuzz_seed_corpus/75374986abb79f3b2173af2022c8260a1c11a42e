@@ -1,0 +1,64 @@
+block {
+  statements {
+    forstmt {
+      for_body {
+        statements {
+          pop {
+            expr {
+              create {
+                createty: CREATE2
+                wei {
+                  binop {
+                    op: SDIV
+                    left {
+                    }
+                    right {
+                      unop {
+                        op: NOT
+                        operand {
+                        }
+                      }
+                    }
+                  }
+                }
+                position {
+                }
+                size {
+                }
+                value {
+                }
+              }
+            }
+          }
+        }
+        statements {
+        }
+      }
+      for_init {
+      }
+      for_post {
+        statements {
+        }
+        statements {
+        }
+      }
+      for_cond {
+        unop {
+          op: NOT
+          operand {
+            top {
+              op: MULM
+              arg1 {
+              }
+              arg2 {
+              }
+              arg3 {
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+ver: ISTANBUL

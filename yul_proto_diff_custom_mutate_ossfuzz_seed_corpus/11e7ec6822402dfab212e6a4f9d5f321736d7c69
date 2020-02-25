@@ -1,0 +1,175 @@
+obj {
+  code {
+    block {
+      statements {
+        extcode_copy {
+          addr {
+            nop {
+              op: TIMESTAMP
+            }
+          }
+          target {
+          }
+          source {
+          }
+          size {
+          }
+        }
+      }
+      statements {
+        ifstmt {
+          cond {
+          }
+          if_body {
+            statements {
+              storage_func {
+                loc {
+                  binop {
+                    op: SDIV
+                    left {
+                      top {
+                        op: MULM
+                        arg1 {
+                        }
+                        arg2 {
+                        }
+                        arg3 {
+                          binop {
+                            op: MUL
+                            left {
+                            }
+                            right {
+                            }
+                          }
+                        }
+                      }
+                    }
+                    right {
+                    }
+                  }
+                }
+                val {
+                  create {
+                    createty: CREATE
+                    wei {
+                    }
+                    position {
+                      binop {
+                        op: MUL
+                        left {
+                        }
+                        right {
+                        }
+                      }
+                    }
+                    size {
+                    }
+                    value {
+                    }
+                  }
+                }
+                st: MSTORE
+              }
+            }
+          }
+        }
+      }
+      statements {
+        ifstmt {
+          cond {
+          }
+          if_body {
+            statements {
+              storage_func {
+                loc {
+                  binop {
+                    op: MUL
+                    left {
+                      top {
+                        op: MULM
+                        arg1 {
+                        }
+                        arg2 {
+                        }
+                        arg3 {
+                          binop {
+                            op: MUL
+                            left {
+                            }
+                            right {
+                            }
+                          }
+                        }
+                      }
+                    }
+                    right {
+                    }
+                  }
+                }
+                val {
+                  create {
+                    createty: CREATE2
+                    wei {
+                    }
+                    position {
+                      binop {
+                        op: SUB
+                        left {
+                        }
+                        right {
+                        }
+                      }
+                    }
+                    size {
+                    }
+                    value {
+                    }
+                  }
+                }
+                st: MSTORE
+              }
+            }
+          }
+        }
+      }
+      statements {
+        ifstmt {
+          cond {
+          }
+          if_body {
+            statements {
+              storage_func {
+                loc {
+                }
+                val {
+                  create {
+                    createty: CREATE
+                    wei {
+                    }
+                    position {
+                      top {
+                        op: ADDM
+                        arg1 {
+                        }
+                        arg2 {
+                        }
+                        arg3 {
+                        }
+                      }
+                    }
+                    size {
+                    }
+                    value {
+                    }
+                  }
+                }
+                st: MSTORE
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+ver: ISTANBUL

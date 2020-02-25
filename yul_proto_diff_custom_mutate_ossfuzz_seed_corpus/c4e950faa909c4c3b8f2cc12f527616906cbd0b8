@@ -1,0 +1,157 @@
+obj {
+  code {
+    block {
+      statements {
+      }
+      statements {
+        contstmt {
+        }
+      }
+      statements {
+      }
+      statements {
+        storage_func {
+          loc {
+            binop {
+              op: DIV
+              left {
+              }
+              right {
+                nop {
+                  op: ADDRESS
+                }
+              }
+            }
+          }
+          val {
+            binop {
+              op: DIV
+              left {
+                binop {
+                  op: ADD
+                  left {
+                  }
+                  right {
+                    binop {
+                      op: SLT
+                      left {
+                        nop {
+                          op: CALLVALUE
+                        }
+                      }
+                      right {
+                        nop {
+                          op: CALLVALUE
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+              right {
+              }
+            }
+          }
+          st: SSTORE
+        }
+      }
+    }
+  }
+  sub_obj {
+    code {
+      block {
+        statements {
+        }
+        statements {
+          contstmt {
+          }
+        }
+        statements {
+        }
+        statements {
+          storage_func {
+            loc {
+              binop {
+                op: SLT
+                left {
+                  nop {
+                    op: CALLVALUE
+                  }
+                }
+                right {
+                  nop {
+                    op: CALLVALUE
+                  }
+                }
+              }
+            }
+            val {
+            }
+            st: SSTORE
+          }
+        }
+      }
+    }
+    data {
+      hex: "l"
+    }
+    sub_obj {
+      code {
+        block {
+          statements {
+          }
+          statements {
+            contstmt {
+            }
+          }
+          statements {
+            storage_func {
+              loc {
+              }
+              val {
+                binop {
+                  op: DIV
+                  left {
+                    binop {
+                      op: GT
+                      left {
+                      }
+                      right {
+                        binop {
+                          op: SLT
+                          left {
+                            nop {
+                              op: CALLVALUE
+                            }
+                          }
+                          right {
+                            nop {
+                              op: CALLVALUE
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                  right {
+                  }
+                }
+              }
+              st: SSTORE
+            }
+          }
+        }
+      }
+      data {
+        hex: ""
+      }
+      sub_obj {
+        code {
+          block {
+          }
+        }
+      }
+    }
+  }
+}
+ver: ISTANBUL

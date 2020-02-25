@@ -1,0 +1,155 @@
+obj {
+  code {
+    block {
+      statements {
+        ifstmt {
+          if_body {
+            statements {
+              ifstmt {
+                if_body {
+                  statements {
+                    terminatestmt {
+                      self_des {
+                        addr {
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  data {
+    hex: "\273\373"
+  }
+  sub_obj {
+    code {
+      block {
+      }
+    }
+    data {
+      hex: "\373"
+    }
+    sub_obj {
+      code {
+        block {
+          statements {
+            terminatestmt {
+              self_des {
+                addr {
+                  nop {
+                    op: CHAINID
+                  }
+                }
+              }
+            }
+          }
+          statements {
+            terminatestmt {
+              stop_invalid {
+                stmt: INVALID
+              }
+            }
+          }
+        }
+      }
+      data {
+        hex: "u"
+      }
+      sub_obj {
+        code {
+          block {
+            statements {
+              terminatestmt {
+                self_des {
+                  addr {
+                    unop {
+                      op: NOT
+                      operand {
+                        unop {
+                          op: EXTCODESIZE
+                          operand {
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+            statements {
+              terminatestmt {
+                self_des {
+                  addr {
+                    nop {
+                      op: CHAINID
+                    }
+                  }
+                }
+              }
+            }
+            statements {
+              terminatestmt {
+                self_des {
+                  addr {
+                    unop {
+                      op: NOT
+                      operand {
+                        unop {
+                          op: EXTCODESIZE
+                          operand {
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+            statements {
+              terminatestmt {
+                self_des {
+                  addr {
+                    nop {
+                      op: CHAINID
+                    }
+                  }
+                }
+              }
+            }
+            statements {
+              terminatestmt {
+                self_des {
+                  addr {
+                    nop {
+                      op: CHAINID
+                    }
+                  }
+                }
+              }
+            }
+            statements {
+              terminatestmt {
+                self_des {
+                  addr {
+                    nop {
+                      op: CHAINID
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+        data {
+          hex: "u"
+        }
+      }
+    }
+  }
+}
+ver: HOMESTEAD

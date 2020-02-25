@@ -1,0 +1,32 @@
+block {
+  statements {
+    storage_func {
+      loc {
+        binop {
+          op: MUL
+          left {
+          }
+          right {
+            binop {
+              op: MUL
+              left {
+              }
+              right {
+                nop {
+                  op: GASPRICE
+                }
+              }
+            }
+          }
+        }
+      }
+      val {
+        cons {
+          strval: "\377\377\377\377\377\377\377\377"
+        }
+      }
+      st: MSTORE
+    }
+  }
+}
+ver: SPURIOUS

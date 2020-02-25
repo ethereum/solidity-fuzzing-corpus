@@ -1,0 +1,179 @@
+block {
+  statements {
+  }
+  statements {
+    breakstmt {
+    }
+  }
+  statements {
+  }
+  statements {
+  }
+  statements {
+  }
+  statements {
+    forstmt {
+      for_body {
+        statements {
+          breakstmt {
+          }
+        }
+      }
+      for_init {
+        statements {
+        }
+        statements {
+          boundedforstmt {
+          }
+        }
+        statements {
+          pop {
+            expr {
+              lowcall {
+                callty: STATICCALL
+              }
+            }
+          }
+        }
+        statements {
+          pop {
+            expr {
+              func_expr {
+                ret: SINGLE
+                func_index: 1636028876
+              }
+            }
+          }
+        }
+      }
+      for_post {
+        statements {
+          leave {
+          }
+        }
+      }
+      for_cond {
+        varref {
+          varnum: 1958798894
+        }
+      }
+    }
+  }
+  statements {
+  }
+  statements {
+  }
+  statements {
+    forstmt {
+      for_body {
+        statements {
+          boundedforstmt {
+          }
+        }
+        statements {
+          pop {
+            expr {
+              create {
+                createty: CREATE
+              }
+            }
+          }
+        }
+      }
+      for_init {
+        statements {
+          switchstmt {
+            switch_expr {
+              unop {
+                op: MLOAD
+                operand {
+                  cons {
+                    intval: 0
+                  }
+                }
+              }
+            }
+            case_stmt {
+            }
+          }
+        }
+        statements {
+          boundedforstmt {
+          }
+        }
+        statements {
+          forstmt {
+            for_cond {
+              unop {
+                op: SLOAD
+                operand {
+                  unop {
+                    op: CALLDATALOAD
+                    operand {
+                      func_expr {
+                        ret: SINGLE
+                        func_index: 1615765292
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+        statements {
+          terminatestmt {
+            ret_rev {
+              stmt: REVERT
+              pos {
+                cons {
+                  intval: 0
+                }
+              }
+              size {
+                varref {
+                  varnum: 467599834
+                }
+              }
+            }
+          }
+        }
+      }
+      for_post {
+        statements {
+          terminatestmt {
+            ret_rev {
+              stmt: REVERT
+              pos {
+                varref {
+                  varnum: 632720730
+                }
+              }
+              size {
+                func_expr {
+                  ret: SINGLE
+                  func_index: 230464124
+                }
+              }
+            }
+          }
+        }
+        statements {
+          leave {
+          }
+        }
+      }
+      for_cond {
+        func_expr {
+          ret: SINGLE
+          func_index: 631460448
+        }
+      }
+    }
+  }
+  statements {
+    contstmt {
+    }
+  }
+}
+ver: TANGERINE

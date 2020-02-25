@@ -1,0 +1,228 @@
+block {
+  statements {
+  }
+  statements {
+    decl {
+      expr {
+        binop {
+          op: EXP
+          left {
+            unop {
+              op: BALANCE
+              operand {
+                func_expr {
+                  ret: SINGLE
+                  func_index: 1368205438
+                }
+              }
+            }
+          }
+          right {
+            func_expr {
+              ret: SINGLE
+              func_index: 1882387147
+            }
+          }
+        }
+      }
+    }
+  }
+  statements {
+    extcode_copy {
+      addr {
+        varref {
+          varnum: 138450737
+        }
+      }
+      target {
+        unop {
+          op: CALLDATALOAD
+          operand {
+            varref {
+              varnum: 1693865348
+            }
+          }
+        }
+      }
+      source {
+        unopdata {
+          op: SIZE
+          identifier: 164700348
+        }
+      }
+      size {
+        varref {
+          varnum: 865578965
+        }
+      }
+    }
+  }
+  statements {
+    assignment {
+      ref_id {
+        varnum: 1777930552
+      }
+      expr {
+        func_expr {
+          ret: SINGLE
+          func_index: 664868129
+        }
+      }
+    }
+  }
+  statements {
+    decl {
+      expr {
+        func_expr {
+          ret: SINGLE
+          func_index: 170084533
+        }
+      }
+    }
+  }
+  statements {
+    decl {
+      expr {
+        unop {
+          op: MLOAD
+          operand {
+            varref {
+              varnum: 801946319
+            }
+          }
+        }
+      }
+    }
+  }
+  statements {
+    contstmt {
+    }
+  }
+  statements {
+    contstmt {
+    }
+  }
+  statements {
+    pop {
+      expr {
+        unop {
+          op: SLOAD
+          operand {
+            unop {
+              op: MLOAD
+              operand {
+                varref {
+                  varnum: 957202050
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  statements {
+    contstmt {
+    }
+  }
+  statements {
+    extcode_copy {
+      addr {
+        unop {
+          op: MLOAD
+          operand {
+            varref {
+              varnum: 2001865296
+            }
+          }
+        }
+      }
+      target {
+        unopdata {
+          op: OFFSET
+          identifier: 524251839
+        }
+      }
+      source {
+        binop {
+          op: OR
+          left {
+            unop {
+              op: BLOCKHASH
+              operand {
+                varref {
+                  varnum: 954256732
+                }
+              }
+            }
+          }
+          right {
+            varref {
+              varnum: 248740554
+            }
+          }
+        }
+      }
+      size {
+        binop {
+          op: OR
+          left {
+            varref {
+              varnum: 417871838
+            }
+          }
+          right {
+            varref {
+              varnum: 611159442
+            }
+          }
+        }
+      }
+    }
+  }
+  statements {
+  }
+  statements {
+    multidecl {
+      num_vars: 980878649
+    }
+  }
+  statements {
+    contstmt {
+    }
+  }
+  statements {
+  }
+  statements {
+    storage_func {
+      loc {
+        func_expr {
+          ret: SINGLE
+          func_index: 1475304659
+        }
+      }
+      val {
+        binop {
+          op: EQ
+          left {
+            unopdata {
+              op: OFFSET
+              identifier: 887081832
+            }
+          }
+          right {
+            varref {
+              varnum: 1808589583
+            }
+          }
+        }
+      }
+      st: MSTORE8
+    }
+  }
+  statements {
+    boundedforstmt {
+    }
+  }
+}
+ver: CONSTANTINOPLE

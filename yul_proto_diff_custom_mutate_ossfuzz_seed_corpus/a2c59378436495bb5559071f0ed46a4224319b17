@@ -1,0 +1,81 @@
+block {
+  statements {
+    contstmt {
+    }
+  }
+  statements {
+  }
+  statements {
+    storage_func {
+      loc {
+      }
+      val {
+      }
+      st: MSTORE
+    }
+  }
+  statements {
+    contstmt {
+    }
+  }
+  statements {
+    storage_func {
+      loc {
+        unop {
+          op: NOT
+          operand {
+            varref {
+              varnum: 0
+            }
+          }
+        }
+      }
+      val {
+      }
+      st: MSTORE
+    }
+  }
+  statements {
+    boundedforstmt {
+      for_body {
+        statements {
+          contstmt {
+          }
+        }
+        statements {
+          boundedforstmt {
+            for_body {
+            }
+          }
+        }
+      }
+    }
+  }
+  statements {
+    storage_func {
+      loc {
+        unop {
+          op: NOT
+          operand {
+          }
+        }
+      }
+      val {
+      }
+      st: MSTORE
+    }
+  }
+  statements {
+    storage_func {
+      loc {
+        varref {
+          varnum: 0
+        }
+      }
+      val {
+      }
+      st: MSTORE
+    }
+  }
+}
+ver: SPURIOUS

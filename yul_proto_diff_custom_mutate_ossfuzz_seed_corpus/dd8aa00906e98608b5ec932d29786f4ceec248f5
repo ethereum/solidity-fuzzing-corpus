@@ -1,0 +1,187 @@
+block {
+  statements {
+    extcode_copy {
+      addr {
+        binop {
+          op: SHL
+          left {
+          }
+          right {
+          }
+        }
+      }
+      target {
+      }
+      source {
+        binop {
+          op: SHL
+          left {
+          }
+          right {
+          }
+        }
+      }
+      size {
+        binop {
+          op: SHL
+          left {
+          }
+          right {
+            binop {
+              op: SI
+              left {
+              }
+              right {
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  statements {
+    storage_func {
+      loc {
+        cons {
+          intval: 0
+        }
+      }
+      val {
+        varref {
+          varnum: 866645283
+        }
+      }
+      st: MSTORE
+    }
+  }
+  statements {
+    ifstmt {
+      cond {
+        unop {
+          op: BLOCKHASH
+          operand {
+          }
+        }
+      }
+      if_body {
+        statements {
+          storage_func {
+            loc {
+              cons {
+                intval: 0
+              }
+            }
+            val {
+              varref {
+                varnum: 1224265
+              }
+            }
+            st: SSTORE
+          }
+        }
+      }
+    }
+  }
+  statements {
+    decl {
+      expr {
+        binop {
+          op: KECCAK
+          left {
+            unop {
+              op: MLOAD
+              operand {
+              }
+            }
+          }
+          right {
+          }
+        }
+      }
+    }
+  }
+  statements {
+  }
+  statements {
+    boundedforstmt {
+      for_body {
+        statements {
+          boundedforstmt {
+            for_body {
+              statements {
+                copy_func {
+                  ct: CALLDATA
+                  target {
+                    lowcall {
+                      callty: CALL
+                      gas {
+                        lowcall {
+                          callty: CALL
+                          gas {
+                            varref {
+                              varnum: 0
+                            }
+                          }
+                          addr {
+                            varref {
+                              varnum: 0
+                            }
+                          }
+                          wei {
+                          }
+                          in {
+                            varref {
+                              varnum: 0
+                            }
+                          }
+                          insize {
+                          }
+                          out {
+                          }
+                          outsize {
+                          }
+                        }
+                      }
+                      addr {
+                        varref {
+                          varnum: 0
+                        }
+                      }
+                      wei {
+                      }
+                      in {
+                      }
+                      insize {
+                      }
+                      out {
+                      }
+                      outsize {
+                      }
+                    }
+                  }
+                  source {
+                    varref {
+                      varnum: 0
+                    }
+                  }
+                  size {
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  statements {
+    storage_func {
+      loc {
+      }
+      val {
+      }
+      st: MSTORE
+    }
+  }
+}
+ver: SPURIOUS

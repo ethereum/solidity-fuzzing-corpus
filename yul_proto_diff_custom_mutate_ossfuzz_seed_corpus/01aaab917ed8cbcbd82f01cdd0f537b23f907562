@@ -1,0 +1,103 @@
+block {
+  statements {
+    extcode_copy {
+      addr {
+      }
+      target {
+      }
+      source {
+      }
+      size {
+      }
+    }
+  }
+  statements {
+    extcode_copy {
+      addr {
+      }
+      target {
+      }
+      source {
+      }
+      size {
+        binop {
+          op: SAR
+          left {
+            binop {
+              op: SAR
+              left {
+              }
+              right {
+              }
+            }
+          }
+          right {
+          }
+        }
+      }
+    }
+  }
+  statements {
+    boundedforstmt {
+      for_body {
+        statements {
+          boundedforstmt {
+            for_body {
+              statements {
+                extcode_copy {
+                  addr {
+                  }
+                  target {
+                    binop {
+                      op: SAR
+                      left {
+                      }
+                      right {
+                      }
+                    }
+                  }
+                  source {
+                    unop {
+                      op: BLOCKHASH
+                      operand {
+                      }
+                    }
+                  }
+                  size {
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  statements {
+    extcode_copy {
+      addr {
+      }
+      target {
+      }
+      source {
+      }
+      size {
+        binop {
+          op: SAR
+          left {
+            binop {
+              op: SHL
+              left {
+              }
+              right {
+              }
+            }
+          }
+          right {
+          }
+        }
+      }
+    }
+  }
+}
+ver: PETERSBURG

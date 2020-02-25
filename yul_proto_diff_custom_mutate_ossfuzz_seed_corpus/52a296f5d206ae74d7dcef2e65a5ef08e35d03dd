@@ -1,0 +1,68 @@
+block {
+  statements {
+    forstmt {
+      for_body {
+        statements {
+          decl {
+            expr {
+              top {
+                op: ADDM
+                arg1 {
+                  unop {
+                    op: NOT
+                    operand {
+                      binop {
+                        op: ADD
+                        left {
+                        }
+                        right {
+                        }
+                      }
+                    }
+                  }
+                }
+                arg2 {
+                  cons {
+                    strval: "\000\000\000\000\000\000\000\017"
+                  }
+                }
+                arg3 {
+                }
+              }
+            }
+          }
+        }
+      }
+      for_init {
+      }
+      for_post {
+      }
+      for_cond {
+        unop {
+          op: NOT
+          operand {
+            create {
+              createty: CREATE
+              wei {
+                binop {
+                  op: SGT
+                  left {
+                  }
+                  right {
+                  }
+                }
+              }
+              position {
+              }
+              size {
+              }
+              value {
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+ver: CONSTANTINOPLE

@@ -1,0 +1,132 @@
+block {
+  statements {
+    decl {
+      expr {
+        unop {
+          op: SLOAD
+          operand {
+            cons {
+              intval: 0
+            }
+          }
+        }
+      }
+    }
+  }
+  statements {
+  }
+  statements {
+  }
+  statements {
+    leave {
+    }
+  }
+  statements {
+    extcode_copy {
+      addr {
+        varref {
+          varnum: 1568108813
+        }
+      }
+      target {
+        varref {
+          varnum: 1824406514
+        }
+      }
+      source {
+        varref {
+          varnum: 1917441118
+        }
+      }
+      size {
+        varref {
+          varnum: 1160003608
+        }
+      }
+    }
+  }
+  statements {
+    contstmt {
+    }
+  }
+  statements {
+    storage_func {
+      loc {
+        unopdata {
+          op: OFFSET
+          identifier: 1348882953
+        }
+      }
+      val {
+        unopdata {
+          op: SIZE
+          identifier: 1263738564
+        }
+      }
+      st: MSTORE8
+    }
+  }
+  statements {
+    assignment {
+      ref_id {
+        varnum: 1840573301
+      }
+      expr {
+        binop {
+          op: EXP
+          left {
+            unopdata {
+              op: OFFSET
+              identifier: 1338150917
+            }
+          }
+          right {
+            unop {
+              op: BALANCE
+              operand {
+                varref {
+                  varnum: 527941082
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  statements {
+    assignment {
+      ref_id {
+        varnum: 572061998
+      }
+      expr {
+        unop {
+          op: MLOAD
+          operand {
+            unopdata {
+              op: SIZE
+              identifier: 109446632
+            }
+          }
+        }
+      }
+    }
+  }
+  statements {
+    leave {
+    }
+  }
+  statements {
+  }
+  statements {
+    pop {
+      expr {
+        unopdata {
+          op: SIZE
+          identifier: 571376107
+        }
+      }
+    }
+  }
+}
+ver: ISTANBUL

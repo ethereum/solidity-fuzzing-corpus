@@ -1,0 +1,236 @@
+block {
+  statements {
+    multidecl {
+      num_vars: 10439327
+    }
+  }
+  statements {
+  }
+  statements {
+    leave {
+    }
+  }
+  statements {
+    leave {
+    }
+  }
+  statements {
+    contstmt {
+    }
+  }
+  statements {
+    pop {
+      expr {
+        binop {
+          op: KECCAK
+          left {
+            unop {
+              op: MLOAD
+              operand {
+                varref {
+                  varnum: 103977987
+                }
+              }
+            }
+          }
+          right {
+            unopdata {
+              op: SIZE
+              identifier: 1463015557
+            }
+          }
+        }
+      }
+    }
+  }
+  statements {
+  }
+  statements {
+  }
+  statements {
+  }
+  statements {
+    decl {
+      expr {
+        varref {
+          varnum: 1251614848
+        }
+      }
+    }
+  }
+  statements {
+    pop {
+      expr {
+        func_expr {
+          ret: SINGLE
+          func_index: 277291862
+        }
+      }
+    }
+  }
+  statements {
+    decl {
+      expr {
+        func_expr {
+          ret: SINGLE
+          func_index: 1712846351
+          in_param1 {
+            func_expr {
+              ret: SINGLE
+              func_index: 613426492
+            }
+          }
+          in_param2 {
+            varref {
+              varnum: 1440047682
+            }
+          }
+          in_param3 {
+            varref {
+              varnum: 1932571454
+            }
+          }
+          in_param4 {
+          }
+          out_param1 {
+            varnum: 0
+          }
+          out_param2 {
+            varnum: 0
+          }
+          out_param3 {
+            varnum: 992948367
+          }
+          out_param4 {
+            varnum: 0
+          }
+        }
+      }
+    }
+  }
+  statements {
+    extcode_copy {
+      addr {
+        varref {
+          varnum: 437319161
+        }
+      }
+      target {
+      }
+      source {
+        lowcall {
+          callty: CALL
+          gas {
+            unop {
+              op: MLOAD
+              operand {
+                func_expr {
+                  ret: SINGLE
+                  func_index: 1314632101
+                }
+              }
+            }
+          }
+          addr {
+            varref {
+              varnum: 588696822
+            }
+          }
+          wei {
+          }
+          in {
+            varref {
+              varnum: 547429479
+            }
+          }
+          insize {
+          }
+          out {
+            func_expr {
+              ret: SINGLE
+              func_index: 1251412867
+            }
+          }
+          outsize {
+            cons {
+              boolval: true
+            }
+          }
+        }
+      }
+      size {
+      }
+    }
+  }
+  statements {
+  }
+  statements {
+  }
+  statements {
+    ifstmt {
+      cond {
+        varref {
+          varnum: 1800856094
+        }
+      }
+      if_body {
+        statements {
+        }
+        statements {
+          terminatestmt {
+            ret_rev {
+              stmt: REVERT
+              pos {
+                unop {
+                  op: CALLDATALOAD
+                  operand {
+                    func_expr {
+                      ret: SINGLE
+                      func_index: 59421714
+                    }
+                  }
+                }
+              }
+              size {
+                func_expr {
+                  ret: SINGLE
+                  func_index: 656149528
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  statements {
+    contstmt {
+    }
+  }
+  statements {
+    boundedforstmt {
+    }
+  }
+  statements {
+    pop {
+      expr {
+        binop {
+          op: SDIV
+          left {
+            func_expr {
+              ret: SINGLE
+              func_index: 1950605193
+            }
+          }
+          right {
+            func_expr {
+              ret: SINGLE
+              func_index: 430460152
+            }
+          }
+        }
+      }
+    }
+  }
+}
+ver: HOMESTEAD

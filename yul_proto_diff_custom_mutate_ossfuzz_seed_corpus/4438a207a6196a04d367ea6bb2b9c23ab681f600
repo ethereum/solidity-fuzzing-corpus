@@ -1,0 +1,97 @@
+block {
+  statements {
+    decl {
+      expr {
+        unopdata {
+          op: SIZE
+          identifier: 982942774
+        }
+      }
+    }
+  }
+  statements {
+    assignment {
+      ref_id {
+        varnum: 1113053712
+      }
+      expr {
+        unop {
+          op: EXTCODESIZE
+          operand {
+            varref {
+              varnum: 1085945392
+            }
+          }
+        }
+      }
+    }
+  }
+  statements {
+    pop {
+      expr {
+        unop {
+          op: SLOAD
+          operand {
+            unopdata {
+              op: SIZE
+              identifier: 2039586277
+            }
+          }
+        }
+      }
+    }
+  }
+  statements {
+    boundedforstmt {
+      for_body {
+        statements {
+          pop {
+            expr {
+              unopdata {
+                op: SIZE
+                identifier: 982774234
+              }
+            }
+          }
+        }
+        statements {
+          storage_func {
+            loc {
+              binop {
+                op: SMOD
+                left {
+                  unopdata {
+                    op: OFFSET
+                    identifier: 127216262
+                  }
+                }
+                right {
+                  varref {
+                    varnum: 796620729
+                  }
+                }
+              }
+            }
+            val {
+              binop {
+                op: SDIV
+                left {
+                  varref {
+                    varnum: 1773533134
+                  }
+                }
+                right {
+                  varref {
+                    varnum: 782323659
+                  }
+                }
+              }
+            }
+            st: MSTORE
+          }
+        }
+      }
+    }
+  }
+}
+ver: ISTANBUL

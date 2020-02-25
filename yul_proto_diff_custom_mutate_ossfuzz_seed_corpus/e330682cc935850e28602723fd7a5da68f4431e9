@@ -1,0 +1,35 @@
+block {
+  statements {
+    storage_func {
+      loc {
+        binop {
+          op: MOD
+          left {
+            nop {
+              op: COINBASE
+            }
+          }
+          right {
+            binop {
+              op: MOD
+              left {
+                nop {
+                  op: COINBASE
+                }
+              }
+              right {
+                nop {
+                  op: COINBASE
+                }
+              }
+            }
+          }
+        }
+      }
+      val {
+      }
+      st: MSTORE
+    }
+  }
+}
+ver: BYZANTIUM

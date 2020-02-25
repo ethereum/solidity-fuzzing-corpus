@@ -1,0 +1,155 @@
+block {
+  statements {
+    multidecl {
+      num_vars: 1013301845
+    }
+  }
+  statements {
+    pop {
+      expr {
+        varref {
+          varnum: 1190762029
+        }
+      }
+    }
+  }
+  statements {
+    pop {
+      expr {
+        unop {
+          op: MLOAD
+          operand {
+            unopdata {
+              op: SIZE
+              identifier: 990819619
+            }
+          }
+        }
+      }
+    }
+  }
+  statements {
+    extcode_copy {
+      addr {
+        func_expr {
+          ret: SINGLE
+          func_index: 568056388
+        }
+      }
+      target {
+        varref {
+          varnum: 1340362562
+        }
+      }
+      source {
+        unopdata {
+          op: SIZE
+          identifier: 831292011
+        }
+      }
+      size {
+        func_expr {
+          ret: SINGLE
+          func_index: 105609677
+        }
+      }
+    }
+  }
+  statements {
+    funcdef {
+      num_input_params: 2005815923
+      num_output_params: 1292710491
+      block {
+        statements {
+          storage_func {
+            loc {
+              binop {
+                op: OR
+                left {
+                  unopdata {
+                    op: SIZE
+                    identifier: 812123696
+                  }
+                }
+                right {
+                  varref {
+                    varnum: 1711074094
+                  }
+                }
+              }
+            }
+            val {
+              unopdata {
+                op: SIZE
+                identifier: 1689397014
+              }
+            }
+            st: SSTORE
+          }
+        }
+        statements {
+          boundedforstmt {
+          }
+        }
+        statements {
+          forstmt {
+            for_cond {
+              func_expr {
+                ret: SINGLE
+                func_index: 1614203103
+              }
+            }
+          }
+        }
+        statements {
+          boundedforstmt {
+            for_body {
+              statements {
+                pop {
+                  expr {
+                    unop {
+                      op: SLOAD
+                      operand {
+                        cons {
+                          intval: 0
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+              statements {
+                leave {
+                }
+              }
+              statements {
+                assignment {
+                  expr {
+                    varref {
+                      varnum: 651738068
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  statements {
+    pop {
+      expr {
+        unop {
+          op: MLOAD
+          operand {
+            cons {
+              intval: 0
+            }
+          }
+        }
+      }
+    }
+  }
+}
+ver: SPURIOUS

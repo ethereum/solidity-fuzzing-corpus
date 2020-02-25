@@ -1,0 +1,84 @@
+block {
+  statements {
+    storage_func {
+      loc {
+      }
+      val {
+        lowcall {
+          callty: CALL
+          gas {
+          }
+          addr {
+          }
+          wei {
+            varref {
+              varnum: 4096
+            }
+          }
+          in {
+          }
+          insize {
+          }
+          out {
+            binop {
+              op: SDIV
+              left {
+              }
+              right {
+              }
+            }
+          }
+          outsize {
+          }
+        }
+      }
+      st: MSTORE
+    }
+  }
+  statements {
+    boundedforstmt {
+      for_body {
+        statements {
+          storage_func {
+            loc {
+            }
+            val {
+              lowcall {
+                callty: CALL
+                gas {
+                }
+                addr {
+                }
+                wei {
+                }
+                in {
+                }
+                insize {
+                }
+                out {
+                  binop {
+                    op: SDIV
+                    left {
+                    }
+                    right {
+                    }
+                  }
+                }
+                outsize {
+                }
+              }
+            }
+            st: MSTORE
+          }
+        }
+        statements {
+          boundedforstmt {
+            for_body {
+            }
+          }
+        }
+      }
+    }
+  }
+}
+ver: ISTANBUL

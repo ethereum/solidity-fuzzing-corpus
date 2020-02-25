@@ -1,0 +1,128 @@
+obj {
+  code {
+    block {
+      statements {
+        extcode_copy {
+          addr {
+            nop {
+              op: MSIZE
+            }
+          }
+          target {
+            binop {
+              op: SHL
+              left {
+                cons {
+                  intval: 65
+                }
+              }
+              right {
+                binop {
+                  op: SHR
+                  left {
+                  }
+                  right {
+                    binop {
+                      op: SHR
+                      left {
+                        cons {
+                          intval: 65
+                        }
+                      }
+                      right {
+                        binop {
+                          op: SHL
+                          left {
+                            cons {
+                              intval: 65
+                            }
+                          }
+                          right {
+                            binop {
+                              op: AND
+                              left {
+                              }
+                              right {
+                                nop {
+                                  op: COINBASE
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+          source {
+          }
+          size {
+          }
+        }
+      }
+      statements {
+        storage_func {
+          loc {
+            binop {
+              op: SHL
+              left {
+                cons {
+                  intval: 65
+                }
+              }
+              right {
+                binop {
+                  op: SHR
+                  left {
+                  }
+                  right {
+                    binop {
+                      op: SHR
+                      left {
+                        cons {
+                          intval: 65
+                        }
+                      }
+                      right {
+                        binop {
+                          op: SHL
+                          left {
+                            cons {
+                              intval: 65
+                            }
+                          }
+                          right {
+                            binop {
+                              op: AND
+                              left {
+                              }
+                              right {
+                                nop {
+                                  op: COINBASE
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+          val {
+            cons {
+              intval: 64
+            }
+          }
+          st: MSTORE
+        }
+      }
+    }
+  }
+}
+ver: BERLIN

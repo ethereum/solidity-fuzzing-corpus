@@ -1,0 +1,181 @@
+block {
+  statements {
+    multidecl {
+      num_vars: 1283580501
+    }
+  }
+  statements {
+    assignment {
+      ref_id {
+        varnum: 1525000083
+      }
+      expr {
+        unop {
+          op: EXTCODEHASH
+          operand {
+            varref {
+              varnum: 630671123
+            }
+          }
+        }
+      }
+    }
+  }
+  statements {
+    functioncall {
+      ret: ZERO
+      func_index: 40746269
+      in_param1 {
+        unop {
+          op: ISZERO
+          operand {
+            unop {
+              op: MLOAD
+              operand {
+                unopdata {
+                  op: SIZE
+                  identifier: 1740230686
+                }
+              }
+            }
+          }
+        }
+      }
+      in_param2 {
+        unop {
+          op: MLOAD
+          operand {
+            varref {
+              varnum: 1394495434
+            }
+          }
+        }
+      }
+      in_param3 {
+        varref {
+          varnum: 1526416312
+        }
+      }
+      in_param4 {
+        varref {
+          varnum: 1674439108
+        }
+      }
+      out_param1 {
+        varnum: 2127226239
+      }
+      out_param2 {
+        varnum: 1378744687
+      }
+      out_param3 {
+        varnum: 2114114134
+      }
+      out_param4 {
+        varnum: 1029035539
+      }
+    }
+  }
+  statements {
+    funcdef {
+      num_input_params: 1
+      num_output_params: 1
+      block {
+        statements {
+          assignment {
+            ref_id {
+              varnum: 382132407
+            }
+            expr {
+              binop {
+                op: MOD
+                left {
+                  varref {
+                    varnum: 1176374214
+                  }
+                }
+                right {
+                  unopdata {
+                    op: SIZE
+                    identifier: 983448867
+                  }
+                }
+              }
+            }
+          }
+        }
+        statements {
+          pop {
+            expr {
+              lowcall {
+                callty: DELEGATECALL
+              }
+            }
+          }
+        }
+        statements {
+          pop {
+            expr {
+              func_expr {
+                ret: SINGLE
+                in_param1 {
+                  unopdata {
+                    op: OFFSET
+                    identifier: 1718098514
+                  }
+                }
+                in_param2 {
+                  varref {
+                    varnum: 2141880200
+                  }
+                }
+                in_param3 {
+                  func_expr {
+                    ret: SINGLE
+                    func_index: 242549348
+                  }
+                }
+                in_param4 {
+                  varref {
+                    varnum: 1028047574
+                  }
+                }
+              }
+            }
+          }
+        }
+        statements {
+          switchstmt {
+            switch_expr {
+              varref {
+                varnum: 640565436
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  statements {
+    leave {
+    }
+  }
+  statements {
+    terminatestmt {
+      ret_rev {
+        stmt: REVERT
+        pos {
+          varref {
+            varnum: 23007836
+          }
+        }
+        size {
+          func_expr {
+            ret: SINGLE
+            func_index: 260523862
+          }
+        }
+      }
+    }
+  }
+}
+ver: ISTANBUL

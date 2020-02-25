@@ -1,0 +1,112 @@
+obj {
+  code {
+    block {
+      statements {
+        forstmt {
+          for_body {
+            statements {
+              storage_func {
+                loc {
+                  nop {
+                    op: MSIZE
+                  }
+                }
+                val {
+                  nop {
+                    op: MSIZE
+                  }
+                }
+                st: MSTORE8
+              }
+            }
+            statements {
+              storage_func {
+                loc {
+                  nop {
+                    op: MSIZE
+                  }
+                }
+                val {
+                  nop {
+                    op: MSIZE
+                  }
+                }
+                st: MSTORE8
+              }
+            }
+          }
+          for_init {
+            statements {
+              extcode_copy {
+                addr {
+                }
+                target {
+                  top {
+                    op: MULM
+                    arg1 {
+                    }
+                    arg2 {
+                    }
+                    arg3 {
+                    }
+                  }
+                }
+                source {
+                }
+                size {
+                }
+              }
+            }
+          }
+          for_post {
+            statements {
+              storage_func {
+                loc {
+                }
+                val {
+                  lowcall {
+                    callty: CALL
+                    gas {
+                    }
+                    addr {
+                    }
+                    wei {
+                      unop {
+                        op: EXTCODESIZE
+                        operand {
+                        }
+                      }
+                    }
+                    in {
+                      nop {
+                        op: MSIZE
+                      }
+                    }
+                    insize {
+                    }
+                    out {
+                      nop {
+                        op: MSIZE
+                      }
+                    }
+                    outsize {
+                    }
+                  }
+                }
+                st: SSTORE
+              }
+            }
+          }
+          for_cond {
+            unop {
+              op: EXTCODESIZE
+              operand {
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+ver: ISTANBUL

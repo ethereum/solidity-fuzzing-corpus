@@ -1,0 +1,135 @@
+obj {
+  code {
+    block {
+      statements {
+        ifstmt {
+          cond {
+            binop {
+              op: SHL
+              left {
+              }
+              right {
+                binop {
+                  op: SHL
+                  left {
+                    cons {
+                      intval: 16
+                    }
+                  }
+                  right {
+                  }
+                }
+              }
+            }
+          }
+          if_body {
+            statements {
+              breakstmt {
+              }
+            }
+            statements {
+              breakstmt {
+              }
+            }
+          }
+        }
+      }
+      statements {
+        ifstmt {
+          cond {
+            binop {
+              op: SHL
+              left {
+                cons {
+                  intval: 8
+                }
+              }
+              right {
+              }
+            }
+          }
+          if_body {
+            statements {
+              breakstmt {
+              }
+            }
+            statements {
+              breakstmt {
+              }
+            }
+          }
+        }
+      }
+      statements {
+        ifstmt {
+          cond {
+            binop {
+              op: SHL
+              left {
+                cons {
+                  intval: 8
+                }
+              }
+              right {
+                binop {
+                  op: SHL
+                  left {
+                    cons {
+                      intval: 16
+                    }
+                  }
+                  right {
+                    binop {
+                      op: SHL
+                      left {
+                        cons {
+                          intval: 8
+                        }
+                      }
+                      right {
+                        top {
+                          op: MULM
+                          arg1 {
+                            varref {
+                              varnum: 0
+                            }
+                          }
+                          arg2 {
+                          }
+                          arg3 {
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+          if_body {
+            statements {
+              breakstmt {
+              }
+            }
+            statements {
+              breakstmt {
+              }
+            }
+          }
+        }
+      }
+      statements {
+        breakstmt {
+        }
+      }
+      statements {
+        breakstmt {
+        }
+      }
+    }
+  }
+  data {
+    hex: "\377\377"
+  }
+}
+ver: ISTANBUL

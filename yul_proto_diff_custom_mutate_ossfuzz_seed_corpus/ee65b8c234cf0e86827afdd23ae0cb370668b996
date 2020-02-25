@@ -1,0 +1,216 @@
+block {
+  statements {
+    decl {
+    }
+  }
+  statements {
+    forstmt {
+      for_body {
+        statements {
+          decl {
+          }
+        }
+        statements {
+          storage_func {
+            loc {
+              cons {
+                intval: 0
+              }
+            }
+            val {
+              varref {
+                varnum: 185910095
+              }
+            }
+            st: MSTORE8
+          }
+        }
+        statements {
+          boundedforstmt {
+          }
+        }
+        statements {
+          pop {
+            expr {
+              lowcall {
+                callty: CALLCODE
+              }
+            }
+          }
+        }
+        statements {
+          storage_func {
+            loc {
+              varref {
+                varnum: 5105564
+              }
+            }
+            val {
+              varref {
+                varnum: 4001658
+              }
+            }
+          }
+        }
+      }
+      for_init {
+        statements {
+          funcdef {
+            num_input_params: 1
+            num_output_params: 1
+            block {
+              statements {
+                assignment {
+                  ref_id {
+                    varnum: 6480257
+                  }
+                  expr {
+                    varref {
+                      varnum: 3855342
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+        statements {
+          ifstmt {
+            cond {
+              varref {
+                varnum: 59438076
+              }
+            }
+            if_body {
+              statements {
+                decl {
+                }
+              }
+              statements {
+                switchstmt {
+                  switch_expr {
+                    varref {
+                      varnum: 191277727
+                    }
+                  }
+                  case_stmt {
+                  }
+                }
+              }
+              statements {
+                assignment {
+                  ref_id {
+                    varnum: 50293756
+                  }
+                  expr {
+                    varref {
+                      varnum: 38459931
+                    }
+                  }
+                }
+              }
+              statements {
+                pop {
+                  expr {
+                    lowcall {
+                      callty: CALLCODE
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+      for_post {
+        statements {
+          pop {
+            expr {
+              lowcall {
+                callty: CALL
+              }
+            }
+          }
+        }
+      }
+      for_cond {
+      }
+    }
+  }
+  statements {
+    assignment {
+      ref_id {
+        varnum: 16255615
+      }
+      expr {
+        cons {
+          intval: 3030708
+        }
+      }
+    }
+  }
+  statements {
+  }
+  statements {
+    functioncall {
+      ret: MULTIASSIGN
+      func_index: 30551759
+      in_param1 {
+        varref {
+          varnum: 30551759
+        }
+      }
+      in_param2 {
+        varref {
+          varnum: 15275879
+        }
+      }
+      in_param3 {
+        varref {
+          varnum: 10183919
+        }
+      }
+      in_param4 {
+        unop {
+          op: CALLDATALOAD
+          operand {
+            unop {
+              op: MLOAD
+              operand {
+                varref {
+                  varnum: 2269176
+                }
+              }
+            }
+          }
+        }
+      }
+      out_param1 {
+        varnum: 305
+      }
+      out_param2 {
+        varnum: 302492
+      }
+      out_param3 {
+        varnum: 4364537
+      }
+      out_param4 {
+        varnum: 22850
+      }
+    }
+  }
+  statements {
+    boundedforstmt {
+    }
+  }
+  statements {
+    pop {
+      expr {
+        lowcall {
+          callty: CALL
+        }
+      }
+    }
+  }
+}
+ver: HOMESTEAD

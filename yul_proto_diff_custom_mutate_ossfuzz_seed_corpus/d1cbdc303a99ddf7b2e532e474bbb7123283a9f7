@@ -1,0 +1,59 @@
+obj {
+  code {
+    block {
+      statements {
+        storage_func {
+          loc {
+            binop {
+              op: SHR
+              left {
+                cons {
+                  intval: 64
+                }
+              }
+              right {
+                binop {
+                  op: SHR
+                  left {
+                    cons {
+                      intval: 64
+                    }
+                  }
+                  right {
+                    binop {
+                      op: SHL
+                      left {
+                        cons {
+                          intval: 65
+                        }
+                      }
+                      right {
+                        binop {
+                          op: MOD
+                          left {
+                          }
+                          right {
+                            nop {
+                              op: COINBASE
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+          val {
+          }
+          st: MSTORE
+        }
+      }
+    }
+  }
+  data {
+    hex: "\203"
+  }
+}
+ver: ISTANBUL

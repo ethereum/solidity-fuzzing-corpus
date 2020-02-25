@@ -1,0 +1,128 @@
+block {
+  statements {
+    funcdef {
+      num_input_params: 1
+      num_output_params: 1
+      block {
+        statements {
+          assignment {
+            ref_id {
+              varnum: 899475957
+            }
+            expr {
+              unop {
+                op: BALANCE
+                operand {
+                  varref {
+                    varnum: 742380562
+                  }
+                }
+              }
+            }
+          }
+        }
+        statements {
+          ifstmt {
+            cond {
+              varref {
+                varnum: 26688829
+              }
+            }
+            if_body {
+              statements {
+                assignment {
+                  ref_id {
+                    varnum: 1564614388
+                  }
+                  expr {
+                    unop {
+                      op: SLOAD
+                      operand {
+                        unop {
+                          op: SLOAD
+                          operand {
+                            varref {
+                              varnum: 1981130872
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+              statements {
+                switchstmt {
+                  switch_expr {
+                    varref {
+                      varnum: 1480860397
+                    }
+                  }
+                  case_stmt {
+                  }
+                }
+              }
+              statements {
+                terminatestmt {
+                  ret_rev {
+                    stmt: REVERT
+                    pos {
+                      varref {
+                        varnum: 851494876
+                      }
+                    }
+                    size {
+                      varref {
+                        varnum: 372171777
+                      }
+                    }
+                  }
+                }
+              }
+              statements {
+                funcdef {
+                }
+              }
+            }
+          }
+        }
+        statements {
+          boundedforstmt {
+          }
+        }
+      }
+    }
+  }
+  statements {
+    switchstmt {
+      switch_expr {
+        func_expr {
+          ret: SINGLE
+          func_index: 1901774161
+        }
+      }
+      case_stmt {
+      }
+    }
+  }
+  statements {
+    terminatestmt {
+      ret_rev {
+        stmt: REVERT
+        pos {
+          func_expr {
+            ret: SINGLE
+            func_index: 1161750533
+          }
+        }
+        size {
+          func_expr {
+            ret: SINGLE
+            func_index: 796811749
+          }
+        }
+      }
+    }
+  }
+}
+ver: TANGERINE

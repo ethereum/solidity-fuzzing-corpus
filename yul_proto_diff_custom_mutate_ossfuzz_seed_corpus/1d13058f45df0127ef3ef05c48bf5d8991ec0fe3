@@ -1,0 +1,181 @@
+obj {
+  code {
+    block {
+      statements {
+        extcode_copy {
+          addr {
+            cons {
+              hexval: ""
+            }
+          }
+          target {
+            binop {
+              op: SDIV
+              left {
+                unop {
+                  op: NOT
+                  operand {
+                    nop {
+                      op: PC
+                    }
+                  }
+                }
+              }
+              right {
+                binop {
+                  op: SLT
+                  left {
+                  }
+                  right {
+                  }
+                }
+              }
+            }
+          }
+          source {
+          }
+          size {
+          }
+        }
+      }
+      statements {
+        storage_func {
+          st: SSTORE
+        }
+      }
+    }
+  }
+  sub_obj {
+    code {
+      block {
+        statements {
+          extcode_copy {
+            addr {
+              nop {
+                op: PC
+              }
+            }
+            target {
+              binop {
+                op: SDIV
+                left {
+                  unop {
+                    op: NOT
+                    operand {
+                      nop {
+                        op: GASPRICE
+                      }
+                    }
+                  }
+                }
+                right {
+                  binop {
+                    op: SLT
+                    left {
+                      cons {
+                        hexval: ""
+                      }
+                    }
+                    right {
+                    }
+                  }
+                }
+              }
+            }
+            source {
+            }
+            size {
+            }
+          }
+        }
+      }
+    }
+    sub_obj {
+      code {
+        block {
+          statements {
+            extcode_copy {
+              addr {
+              }
+              target {
+                binop {
+                  op: SDIV
+                  left {
+                    unop {
+                      op: NOT
+                      operand {
+                        nop {
+                          op: GASPRICE
+                        }
+                      }
+                    }
+                  }
+                  right {
+                    binop {
+                      op: SLT
+                      left {
+                        cons {
+                          hexval: ""
+                        }
+                      }
+                      right {
+                      }
+                    }
+                  }
+                }
+              }
+              source {
+              }
+              size {
+              }
+            }
+          }
+        }
+      }
+      sub_obj {
+        code {
+          block {
+            statements {
+              extcode_copy {
+                addr {
+                  cons {
+                    hexval: ""
+                  }
+                }
+                target {
+                  binop {
+                    op: SDIV
+                    left {
+                      unop {
+                        op: NOT
+                        operand {
+                          nop {
+                            op: PC
+                          }
+                        }
+                      }
+                    }
+                    right {
+                      binop {
+                        op: SLT
+                        left {
+                        }
+                        right {
+                        }
+                      }
+                    }
+                  }
+                }
+                source {
+                }
+                size {
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+ver: BERLIN

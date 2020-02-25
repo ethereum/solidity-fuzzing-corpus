@@ -1,0 +1,150 @@
+block {
+  statements {
+    decl {
+      expr {
+        create {
+          createty: CREATE
+          wei {
+          }
+          position {
+            cons {
+              strval: "\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000"
+            }
+          }
+          size {
+          }
+          value {
+          }
+        }
+      }
+    }
+  }
+  statements {
+  }
+  statements {
+    extcode_copy {
+      addr {
+        lowcall {
+          callty: CALL
+          gas {
+            unop {
+              op: NOT
+              operand {
+                varref {
+                  varnum: 0
+                }
+              }
+            }
+          }
+          addr {
+            unop {
+              op: SLOAD
+              operand {
+                create {
+                  createty: CREATE
+                  wei {
+                  }
+                  position {
+                    lowcall {
+                      callty: CALL
+                      gas {
+                        varref {
+                          varnum: 0
+                        }
+                      }
+                      addr {
+                      }
+                      wei {
+                      }
+                      in {
+                      }
+                      insize {
+                      }
+                      out {
+                      }
+                      outsize {
+                      }
+                    }
+                  }
+                  size {
+                  }
+                  value {
+                  }
+                }
+              }
+            }
+          }
+          wei {
+            lowcall {
+              callty: CALL
+              gas {
+                unop {
+                  op: NOT
+                  operand {
+                    varref {
+                      varnum: 0
+                    }
+                  }
+                }
+              }
+              addr {
+                unop {
+                  op: NOT
+                  operand {
+                  }
+                }
+              }
+              wei {
+              }
+              in {
+              }
+              insize {
+              }
+              out {
+              }
+              outsize {
+              }
+            }
+          }
+          in {
+          }
+          insize {
+          }
+          out {
+          }
+          outsize {
+            lowcall {
+              callty: CALL
+              gas {
+              }
+              addr {
+              }
+              wei {
+              }
+              in {
+              }
+              insize {
+              }
+              out {
+              }
+              outsize {
+                cons {
+                  strval: "\001\000\000\000\000\000\000\204"
+                }
+              }
+            }
+          }
+        }
+      }
+      target {
+      }
+      source {
+      }
+      size {
+      }
+    }
+  }
+  statements {
+  }
+}
+ver: CONSTANTINOPLE

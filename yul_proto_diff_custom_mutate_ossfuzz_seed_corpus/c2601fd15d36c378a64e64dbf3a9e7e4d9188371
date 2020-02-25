@@ -1,0 +1,68 @@
+block {
+  statements {
+    breakstmt {
+    }
+  }
+  statements {
+    storage_func {
+      loc {
+        binop {
+          op: AND
+          left {
+            nop {
+              op: CALLDATASIZE
+            }
+          }
+          right {
+            unop {
+              op: NOT
+              operand {
+                cons {
+                  intval: 0
+                }
+              }
+            }
+          }
+        }
+      }
+      val {
+        varref {
+          varnum: 33468835
+        }
+      }
+      st: SSTORE
+    }
+  }
+  statements {
+    breakstmt {
+    }
+  }
+  statements {
+    terminatestmt {
+      ret_rev {
+        stmt: REVERT
+        pos {
+          cons {
+            intval: 0
+          }
+        }
+        size {
+          varref {
+            varnum: 57926062
+          }
+        }
+      }
+    }
+  }
+  statements {
+  }
+  statements {
+    leave {
+    }
+  }
+  statements {
+  }
+  statements {
+  }
+}
+ver: BYZANTIUM

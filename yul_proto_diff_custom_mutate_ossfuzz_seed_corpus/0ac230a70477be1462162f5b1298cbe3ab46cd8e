@@ -1,0 +1,186 @@
+block {
+  statements {
+    decl {
+      expr {
+        unop {
+          op: MLOAD
+          operand {
+            varref {
+              varnum: 1343958594
+            }
+          }
+        }
+      }
+    }
+  }
+  statements {
+    switchstmt {
+      switch_expr {
+        varref {
+          varnum: 884158522
+        }
+      }
+      case_stmt {
+        case_lit {
+        }
+        case_block {
+          statements {
+            decl {
+              expr {
+                unop {
+                  op: MLOAD
+                  operand {
+                    varref {
+                      varnum: 588320296
+                    }
+                  }
+                }
+              }
+            }
+          }
+          statements {
+            pop {
+              expr {
+                create {
+                  createty: CREATE2
+                }
+              }
+            }
+          }
+          statements {
+            funcdef {
+            }
+          }
+        }
+      }
+    }
+  }
+  statements {
+    functioncall {
+      ret: ZERO
+      func_index: 1542254893
+      in_param1 {
+        varref {
+          varnum: 547410605
+        }
+      }
+      in_param2 {
+        unop {
+          op: MLOAD
+          operand {
+            varref {
+              varnum: 1418521267
+            }
+          }
+        }
+      }
+      in_param3 {
+        unop {
+          op: SLOAD
+          operand {
+            unop {
+              op: CALLDATALOAD
+              operand {
+                varref {
+                  varnum: 189371029
+                }
+              }
+            }
+          }
+        }
+      }
+      in_param4 {
+        unop {
+          op: SLOAD
+          operand {
+            cons {
+              intval: 0
+            }
+          }
+        }
+      }
+      out_param1 {
+        varnum: 2090255883
+      }
+      out_param2 {
+        varnum: 1370057645
+      }
+      out_param3 {
+        varnum: 146188783
+      }
+      out_param4 {
+        varnum: 47480151
+      }
+    }
+  }
+  statements {
+    forstmt {
+      for_body {
+        statements {
+          leave {
+          }
+        }
+      }
+      for_init {
+        statements {
+          decl {
+            expr {
+              varref {
+                varnum: 395813453
+              }
+            }
+          }
+        }
+        statements {
+          boundedforstmt {
+          }
+        }
+        statements {
+          pop {
+            expr {
+              func_expr {
+                ret: SINGLE
+                func_index: 2000763732
+              }
+            }
+          }
+        }
+        statements {
+          funcdef {
+          }
+        }
+      }
+      for_post {
+        statements {
+          forstmt {
+            for_cond {
+            }
+          }
+        }
+        statements {
+          funcdef {
+          }
+        }
+      }
+      for_cond {
+        varref {
+          varnum: 312271844
+        }
+      }
+    }
+  }
+  statements {
+    pop {
+      expr {
+        create {
+          createty: CREATE2
+        }
+      }
+    }
+  }
+  statements {
+    funcdef {
+    }
+  }
+}
+ver: HOMESTEAD

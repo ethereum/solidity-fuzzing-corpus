@@ -1,0 +1,205 @@
+block {
+  statements {
+    storage_func {
+      loc {
+        unop {
+          op: CALLDATALOAD
+          operand {
+            func_expr {
+              ret: SINGLE
+              func_index: 1169440629
+            }
+          }
+        }
+      }
+      val {
+        unop {
+          op: EXTCODEHASH
+          operand {
+            unop {
+              op: SLOAD
+              operand {
+                func_expr {
+                  ret: SINGLE
+                  func_index: 404096729
+                }
+              }
+            }
+          }
+        }
+      }
+      st: MSTORE
+    }
+  }
+  statements {
+    pop {
+      expr {
+        unop {
+          op: MLOAD
+          operand {
+            varref {
+              varnum: 725773277
+            }
+          }
+        }
+      }
+    }
+  }
+  statements {
+    storage_func {
+      loc {
+        unopdata {
+          op: OFFSET
+          identifier: 937819391
+        }
+      }
+      val {
+        unop {
+          op: MLOAD
+          operand {
+            unop {
+              op: MLOAD
+              operand {
+                unop {
+                  op: CALLDATALOAD
+                  operand {
+                    unop {
+                      op: SLOAD
+                      operand {
+                        varref {
+                          varnum: 1045105676
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+      st: SSTORE
+    }
+  }
+  statements {
+    storage_func {
+      loc {
+        varref {
+          varnum: 771639142
+        }
+      }
+      val {
+        unop {
+          op: MLOAD
+          operand {
+            unopdata {
+              op: OFFSET
+              identifier: 363509113
+            }
+          }
+        }
+      }
+      st: MSTORE8
+    }
+  }
+  statements {
+    storage_func {
+      loc {
+        varref {
+          varnum: 1904318076
+        }
+      }
+      val {
+        func_expr {
+          ret: SINGLE
+          func_index: 322287933
+        }
+      }
+      st: MSTORE8
+    }
+  }
+  statements {
+    storage_func {
+      loc {
+        unop {
+          op: CALLDATALOAD
+          operand {
+            func_expr {
+              ret: SINGLE
+              func_index: 1968520627
+            }
+          }
+        }
+      }
+      val {
+        unopdata {
+          op: OFFSET
+          identifier: 1433502993
+        }
+      }
+      st: SSTORE
+    }
+  }
+  statements {
+    contstmt {
+    }
+  }
+  statements {
+    pop {
+      expr {
+        varref {
+          varnum: 1812465638
+        }
+      }
+    }
+  }
+  statements {
+  }
+  statements {
+    funcdef {
+      num_input_params: 1
+      num_output_params: 1
+      block {
+        statements {
+          assignment {
+            ref_id {
+              varnum: 1650601457
+            }
+            expr {
+              varref {
+                varnum: 1603207334
+              }
+            }
+          }
+        }
+        statements {
+          assignment {
+            ref_id {
+              varnum: 455383649
+            }
+            expr {
+              binop {
+                op: MOD
+                left {
+                  varref {
+                    varnum: 826115734
+                  }
+                }
+                right {
+                  varref {
+                    varnum: 808754771
+                  }
+                }
+              }
+            }
+          }
+        }
+        statements {
+          terminatestmt {
+          }
+        }
+      }
+    }
+  }
+}
+ver: ISTANBUL

@@ -1,0 +1,174 @@
+block {
+  statements {
+    leave {
+    }
+  }
+  statements {
+    assignment {
+      ref_id {
+        varnum: 185998026
+      }
+      expr {
+        unop {
+          op: SLOAD
+          operand {
+            unop {
+              op: SLOAD
+              operand {
+                varref {
+                  varnum: 841912570
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  statements {
+    switchstmt {
+      switch_expr {
+        unop {
+          op: CALLDATALOAD
+          operand {
+            varref {
+              varnum: 861648983
+            }
+          }
+        }
+      }
+      case_stmt {
+      }
+    }
+  }
+  statements {
+    boundedforstmt {
+    }
+  }
+  statements {
+    pop {
+      expr {
+        unop {
+          op: SLOAD
+          operand {
+            func_expr {
+              ret: SINGLE
+              func_index: 1101752203
+            }
+          }
+        }
+      }
+    }
+  }
+  statements {
+    pop {
+      expr {
+        unop {
+          op: MLOAD
+          operand {
+            unopdata {
+              op: OFFSET
+              identifier: 698564917
+            }
+          }
+        }
+      }
+    }
+  }
+  statements {
+    boundedforstmt {
+      for_body {
+        statements {
+          pop {
+            expr {
+              unopdata {
+                op: SIZE
+                identifier: 1458129463
+              }
+            }
+          }
+        }
+        statements {
+          funcdef {
+            num_input_params: 1
+            num_output_params: 1
+            block {
+              statements {
+                assignment {
+                  ref_id {
+                    varnum: 961643317
+                  }
+                  expr {
+                    unop {
+                      op: CALLDATALOAD
+                      operand {
+                        varref {
+                          varnum: 815943564
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+              statements {
+                pop {
+                  expr {
+                    create {
+                      createty: CREATE2
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+        statements {
+          ifstmt {
+            cond {
+              func_expr {
+                ret: SINGLE
+                func_index: 663759903
+              }
+            }
+            if_body {
+              statements {
+                assignment {
+                  ref_id {
+                    varnum: 454079445
+                  }
+                  expr {
+                    unop {
+                      op: SLOAD
+                      operand {
+                        varref {
+                          varnum: 732298308
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+              statements {
+                breakstmt {
+                }
+              }
+            }
+          }
+        }
+        statements {
+          switchstmt {
+            switch_expr {
+              func_expr {
+                ret: SINGLE
+                func_index: 401182071
+              }
+            }
+            case_stmt {
+            }
+          }
+        }
+      }
+    }
+  }
+}
+ver: PETERSBURG

@@ -1,0 +1,105 @@
+block {
+  statements {
+    funcdef {
+      num_input_params: 1
+      num_output_params: 10
+      block {
+        statements {
+          forstmt {
+            for_body {
+              statements {
+              }
+            }
+            for_init {
+            }
+            for_post {
+            }
+            for_cond {
+              lowcall {
+                callty: CALL
+                gas {
+                  lowcall {
+                    callty: CALL
+                    gas {
+                      lowcall {
+                        callty: CALL
+                        gas {
+                        }
+                        addr {
+                        }
+                        wei {
+                          varref {
+                            varnum: 0
+                          }
+                        }
+                        in {
+                        }
+                        insize {
+                        }
+                        out {
+                          nop {
+                            op: MSIZE
+                          }
+                        }
+                        outsize {
+                        }
+                      }
+                    }
+                    addr {
+                    }
+                    wei {
+                    }
+                    in {
+                    }
+                    insize {
+                    }
+                    out {
+                      nop {
+                        op: MSIZE
+                      }
+                    }
+                    outsize {
+                    }
+                  }
+                }
+                addr {
+                }
+                wei {
+                }
+                in {
+                }
+                insize {
+                }
+                out {
+                }
+                outsize {
+                  unop {
+                    op: ISZERO
+                    operand {
+                      nop {
+                        op: ADDRESS
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+        statements {
+          copy_func {
+            ct: CALLDATA
+            target {
+            }
+            source {
+            }
+            size {
+            }
+          }
+        }
+      }
+      force_call: true
+    }
+  }
+}
+ver: SPURIOUS

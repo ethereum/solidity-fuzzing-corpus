@@ -1,0 +1,160 @@
+obj {
+  code {
+    block {
+      statements {
+        multidecl {
+          num_vars: 2119584079
+        }
+      }
+      statements {
+        extcode_copy {
+          addr {
+            varref {
+              varnum: 1366554569
+            }
+          }
+          target {
+            varref {
+              varnum: 819712299
+            }
+          }
+          source {
+            lowcall {
+              callty: CALL
+              gas {
+                unop {
+                  op: MLOAD
+                  operand {
+                    unop {
+                      op: SLOAD
+                      operand {
+                        func_expr {
+                          ret: SINGLE
+                          func_index: 447837354
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+              addr {
+                unopdata {
+                  op: OFFSET
+                  identifier: 1259195771
+                }
+              }
+              wei {
+                lowcall {
+                  callty: CALL
+                  gas {
+                    unop {
+                      op: ISZERO
+                      operand {
+                      }
+                    }
+                  }
+                  addr {
+                    func_expr {
+                      ret: SINGLE
+                      func_index: 1083430836
+                    }
+                  }
+                  wei {
+                    varref {
+                      varnum: 850036691
+                    }
+                  }
+                  in {
+                    func_expr {
+                      ret: SINGLE
+                      func_index: 1338687714
+                    }
+                  }
+                  insize {
+                    binop {
+                      op: XOR
+                      left {
+                        unopdata {
+                          op: OFFSET
+                          identifier: 718599037
+                        }
+                      }
+                      right {
+                      }
+                    }
+                  }
+                  out {
+                  }
+                  outsize {
+                    varref {
+                      varnum: 878572914
+                    }
+                  }
+                }
+              }
+              in {
+                unopdata {
+                  op: OFFSET
+                  identifier: 1707712634
+                }
+              }
+              insize {
+                binop {
+                  op: BYTE
+                  left {
+                    varref {
+                      varnum: 1180918118
+                    }
+                  }
+                  right {
+                  }
+                }
+              }
+              out {
+              }
+              outsize {
+                func_expr {
+                  ret: SINGLE
+                  func_index: 1362335577
+                }
+              }
+            }
+          }
+          size {
+            binop {
+              op: SLT
+              left {
+                varref {
+                  varnum: 1335348385
+                }
+              }
+              right {
+                varref {
+                  varnum: 1880227630
+                }
+              }
+            }
+          }
+        }
+      }
+      statements {
+        forstmt {
+          for_cond {
+            unop {
+              op: EXTCODEHASH
+              operand {
+                varref {
+                  varnum: 1235818074
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  data {
+    hex: ","
+  }
+}
+ver: BERLIN

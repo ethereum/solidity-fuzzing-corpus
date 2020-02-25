@@ -1,0 +1,152 @@
+block {
+  statements {
+    storage_func {
+      loc {
+        unop {
+          op: NOT
+          operand {
+            cons {
+              intval: 0
+            }
+          }
+        }
+      }
+      val {
+        func_expr {
+          ret: SINGLE
+          func_index: 689739556
+        }
+      }
+      st: SSTORE
+    }
+  }
+  statements {
+    funcdef {
+      num_input_params: 1
+      num_output_params: 1
+      block {
+        statements {
+          assignment {
+            ref_id {
+              varnum: 450011243
+            }
+            expr {
+              unopdata {
+                op: OFFSET
+                identifier: 2075572289
+              }
+            }
+          }
+        }
+        statements {
+          contstmt {
+          }
+        }
+        statements {
+          storage_func {
+            loc {
+              varref {
+                varnum: 493940382
+              }
+            }
+            val {
+              unop {
+                op: MLOAD
+                operand {
+                  varref {
+                    varnum: 708942314
+                  }
+                }
+              }
+            }
+            st: SSTORE
+          }
+        }
+        statements {
+          funcdef {
+            num_input_params: 1379547984
+            num_output_params: 840325841
+            block {
+              statements {
+                contstmt {
+                }
+              }
+            }
+          }
+        }
+        statements {
+          terminatestmt {
+            ret_rev {
+              stmt: REVERT
+              pos {
+                unop {
+                  op: SLOAD
+                  operand {
+                    unop {
+                      op: BLOCKHASH
+                      operand {
+                        func_expr {
+                          ret: SINGLE
+                          func_index: 1051214453
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+              size {
+                unop {
+                  op: MLOAD
+                  operand {
+                    func_expr {
+                      ret: SINGLE
+                      func_index: 1941683303
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+        statements {
+          pop {
+            expr {
+              varref {
+                varnum: 2101601119
+              }
+            }
+          }
+        }
+        statements {
+          pop {
+            expr {
+              varref {
+                varnum: 908746933
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  statements {
+    pop {
+      expr {
+        func_expr {
+          ret: SINGLE
+          func_index: 103374276
+        }
+      }
+    }
+  }
+  statements {
+    pop {
+      expr {
+        varref {
+          varnum: 419622206
+        }
+      }
+    }
+  }
+}
+ver: HOMESTEAD

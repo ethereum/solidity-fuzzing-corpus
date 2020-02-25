@@ -1,0 +1,85 @@
+obj {
+  code {
+    block {
+      statements {
+        breakstmt {
+        }
+      }
+      statements {
+        breakstmt {
+        }
+      }
+      statements {
+        extcode_copy {
+          addr {
+          }
+          target {
+            unop {
+              op: SLOAD
+              operand {
+                unop {
+                  op: CALLDATALOAD
+                  operand {
+                    cons {
+                      intval: 0
+                    }
+                  }
+                }
+              }
+            }
+          }
+          source {
+            binop {
+              op: EXP
+              left {
+              }
+              right {
+                unop {
+                }
+              }
+            }
+          }
+          size {
+            unop {
+              op: CALLDATALOAD
+              operand {
+                unop {
+                  op: MLOAD
+                  operand {
+                    cons {
+                      intval: 0
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+      statements {
+        breakstmt {
+        }
+      }
+      statements {
+        breakstmt {
+        }
+      }
+      statements {
+        breakstmt {
+        }
+      }
+      statements {
+        breakstmt {
+        }
+      }
+      statements {
+        breakstmt {
+        }
+      }
+    }
+  }
+  data {
+    hex: "\001\000\000\000\000\000\000\001"
+  }
+}
+ver: TANGERINE

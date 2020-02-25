@@ -1,0 +1,130 @@
+block {
+  statements {
+  }
+  statements {
+    contstmt {
+    }
+  }
+  statements {
+    funcdef {
+      num_input_params: 1
+      num_output_params: 1
+      block {
+        statements {
+          assignment {
+            ref_id {
+              varnum: 1375126285
+            }
+            expr {
+              unop {
+                op: SLOAD
+                operand {
+                  varref {
+                    varnum: 661256528
+                  }
+                }
+              }
+            }
+          }
+        }
+        statements {
+        }
+        statements {
+        }
+        statements {
+          pop {
+            expr {
+              lowcall {
+                callty: DELEGATECALL
+              }
+            }
+          }
+        }
+        statements {
+          pop {
+            expr {
+              unopdata {
+                op: OFFSET
+                identifier: 793930248
+              }
+            }
+          }
+        }
+        statements {
+          extcode_copy {
+            addr {
+              unopdata {
+                op: SIZE
+                identifier: 2115352754
+              }
+            }
+            target {
+              unop {
+                op: CALLDATALOAD
+                operand {
+                  unop {
+                    op: NOT
+                    operand {
+                      varref {
+                        varnum: 1030509365
+                      }
+                    }
+                  }
+                }
+              }
+            }
+            source {
+              func_expr {
+                ret: SINGLE
+                func_index: 959383713
+              }
+            }
+            size {
+              unop {
+                op: CALLDATALOAD
+                operand {
+                  varref {
+                    varnum: 1685266460
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  statements {
+    leave {
+    }
+  }
+  statements {
+  }
+  statements {
+    copy_func {
+      ct: CALLDATA
+      target {
+        unop {
+          op: EXTCODEHASH
+        }
+      }
+      source {
+        varref {
+          varnum: 1760710049
+        }
+      }
+      size {
+        unop {
+          op: CALLDATALOAD
+          operand {
+            func_expr {
+              ret: SINGLE
+              func_index: 2070649651
+            }
+          }
+        }
+      }
+    }
+  }
+}
+ver: TANGERINE

@@ -1,0 +1,83 @@
+block {
+  statements {
+    storage_func {
+      loc {
+        unop {
+          op: NOT
+          operand {
+            cons {
+              intval: 0
+            }
+          }
+        }
+      }
+      val {
+      }
+      st: SSTORE
+    }
+  }
+  statements {
+    storage_func {
+      loc {
+        binop {
+          op: SI
+          left {
+            binop {
+              op: SMOD
+              left {
+                unop {
+                  op: NOT
+                  operand {
+                  }
+                }
+              }
+              right {
+                varref {
+                  varnum: 0
+                }
+              }
+            }
+          }
+          right {
+          }
+        }
+      }
+      val {
+      }
+      st: SSTORE
+    }
+  }
+  statements {
+    breakstmt {
+    }
+  }
+  statements {
+  }
+  statements {
+  }
+  statements {
+    breakstmt {
+    }
+  }
+  statements {
+    breakstmt {
+    }
+  }
+  statements {
+    breakstmt {
+    }
+  }
+  statements {
+    breakstmt {
+    }
+  }
+  statements {
+    breakstmt {
+    }
+  }
+  statements {
+    breakstmt {
+    }
+  }
+}
+ver: ISTANBUL

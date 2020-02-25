@@ -1,0 +1,124 @@
+obj {
+  code {
+    block {
+      statements {
+        multidecl {
+          num_vars: 1169734624
+        }
+      }
+      statements {
+        storage_func {
+          loc {
+            varref {
+              varnum: 1598612645
+            }
+          }
+          val {
+            unop {
+              op: MLOAD
+              operand {
+                varref {
+                  varnum: 1566911313
+                }
+              }
+            }
+          }
+          st: MSTORE
+        }
+      }
+      statements {
+        funcdef {
+          num_input_params: 1
+          num_output_params: 1
+          block {
+            statements {
+              assignment {
+                ref_id {
+                  varnum: 89545726
+                }
+                expr {
+                  varref {
+                    varnum: 563132092
+                  }
+                }
+              }
+            }
+            statements {
+              storage_func {
+                loc {
+                  cons {
+                    intval: 0
+                  }
+                }
+                val {
+                  varref {
+                    varnum: 1282099528
+                  }
+                }
+                st: SSTORE
+              }
+            }
+            statements {
+              terminatestmt {
+                ret_rev {
+                  stmt: REVERT
+                  pos {
+                    unop {
+                      op: CALLDATALOAD
+                    }
+                  }
+                  size {
+                    unopdata {
+                      op: OFFSET
+                      identifier: 202866491
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+      statements {
+        switchstmt {
+          switch_expr {
+            binop {
+              op: KECCAK
+              left {
+                varref {
+                  varnum: 1507540059
+                }
+              }
+              right {
+                unopdata {
+                  op: OFFSET
+                  identifier: 2076853364
+                }
+              }
+            }
+          }
+          case_stmt {
+          }
+        }
+      }
+      statements {
+        contstmt {
+        }
+      }
+      statements {
+        pop {
+          expr {
+            unopdata {
+              op: SIZE
+              identifier: 1659614586
+            }
+          }
+        }
+      }
+    }
+  }
+  data {
+    hex: "!"
+  }
+}
+ver: SPURIOUS

@@ -1,0 +1,156 @@
+block {
+  statements {
+    funcdef {
+      num_input_params: 1024
+      num_output_params: 0
+      block {
+        statements {
+          funcdef {
+            num_input_params: 15074311
+            num_output_params: 14
+            block {
+              statements {
+                breakstmt {
+                }
+              }
+            }
+            force_call: true
+          }
+        }
+        statements {
+          breakstmt {
+          }
+        }
+      }
+      force_call: true
+    }
+  }
+  statements {
+    funcdef {
+      num_input_params: 14
+      num_output_params: 4096
+      block {
+        statements {
+          funcdef {
+            num_input_params: 1024
+            num_output_params: 14
+            block {
+              statements {
+                breakstmt {
+                }
+              }
+            }
+            force_call: true
+          }
+        }
+        statements {
+          breakstmt {
+          }
+        }
+      }
+      force_call: true
+    }
+  }
+  statements {
+    funcdef {
+      num_input_params: 1024
+      num_output_params: 10240
+      block {
+        statements {
+          breakstmt {
+          }
+        }
+      }
+      force_call: true
+    }
+  }
+  statements {
+    funcdef {
+      num_input_params: 1024
+      num_output_params: 0
+      block {
+        statements {
+          funcdef {
+            num_input_params: 15074311
+            num_output_params: 14
+            block {
+              statements {
+                breakstmt {
+                }
+              }
+            }
+            force_call: true
+          }
+        }
+        statements {
+          breakstmt {
+          }
+        }
+      }
+      force_call: true
+    }
+  }
+  statements {
+    boundedforstmt {
+      for_body {
+        statements {
+          copy_func {
+            ct: RETURNDATA
+            target {
+              binop {
+                op: LT
+                left {
+                  binop {
+                    op: SHL
+                    left {
+                      nop {
+                        op: PC
+                      }
+                    }
+                    right {
+                    }
+                  }
+                }
+                right {
+                }
+              }
+            }
+            source {
+              unop {
+                op: CALLDATALOAD
+                operand {
+                  cons {
+                    intval: 0
+                  }
+                }
+              }
+            }
+            size {
+              unop {
+                op: CALLDATALOAD
+                operand {
+                  cons {
+                    intval: 0
+                  }
+                }
+              }
+            }
+          }
+        }
+        statements {
+          breakstmt {
+          }
+        }
+      }
+    }
+  }
+  statements {
+  }
+  statements {
+  }
+  statements {
+    breakstmt {
+    }
+  }
+}
+ver: ISTANBUL

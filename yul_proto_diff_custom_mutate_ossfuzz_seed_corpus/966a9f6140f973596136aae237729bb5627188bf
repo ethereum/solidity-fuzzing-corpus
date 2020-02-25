@@ -1,0 +1,137 @@
+block {
+  statements {
+    multidecl {
+      num_vars: 80547882
+    }
+  }
+  statements {
+    multidecl {
+      num_vars: 32
+    }
+  }
+  statements {
+    storage_func {
+      loc {
+      }
+      val {
+        binop {
+          op: MUL
+          left {
+            varref {
+              varnum: 84087745
+            }
+          }
+          right {
+            binop {
+              op: LT
+              left {
+                binop {
+                  op: MUL
+                  left {
+                    unop {
+                      op: NOT
+                      operand {
+                        varref {
+                          varnum: 218103808
+                        }
+                      }
+                    }
+                  }
+                  right {
+                    nop {
+                      op: TIMESTAMP
+                    }
+                  }
+                }
+              }
+              right {
+                binop {
+                  op: MUL
+                  left {
+                    unop {
+                      op: NOT
+                      operand {
+                        varref {
+                          varnum: 218103808
+                        }
+                      }
+                    }
+                  }
+                  right {
+                    nop {
+                      op: COINBASE
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+      st: MSTORE
+    }
+  }
+  statements {
+  }
+  statements {
+    storage_func {
+      loc {
+        unop {
+          op: SLOAD
+          operand {
+            varref {
+              varnum: 1488917
+            }
+          }
+        }
+      }
+      val {
+        unop {
+          op: CALLDATALOAD
+          operand {
+            varref {
+              varnum: 1166989
+            }
+          }
+        }
+      }
+      st: MSTORE
+    }
+  }
+  statements {
+    functioncall {
+      ret: SINGLE
+      func_index: 1417111121
+      in_param1 {
+        varref {
+          varnum: 1417111121
+        }
+      }
+      in_param2 {
+        varref {
+          varnum: 708555560
+        }
+      }
+      in_param3 {
+        varref {
+          varnum: 472370373
+        }
+      }
+      in_param4 {
+        varref {
+          varnum: 354277780
+        }
+      }
+    }
+  }
+  statements {
+    multidecl {
+      num_vars: 32
+    }
+  }
+  statements {
+    decl {
+    }
+  }
+}
+ver: ISTANBUL

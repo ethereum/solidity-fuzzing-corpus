@@ -1,0 +1,156 @@
+block {
+  statements {
+    storage_func {
+      loc {
+        func_expr {
+          ret: SINGLE
+          func_index: 1984561647
+        }
+      }
+      val {
+        func_expr {
+          ret: SINGLE
+          func_index: 1108826171
+        }
+      }
+      st: MSTORE8
+    }
+  }
+  statements {
+  }
+  statements {
+    storage_func {
+      loc {
+        func_expr {
+          ret: SINGLE
+          func_index: 151274291
+        }
+      }
+      val {
+        unop {
+          op: BLOCKHASH
+          operand {
+            varref {
+              varnum: 790379036
+            }
+          }
+        }
+      }
+      st: MSTORE8
+    }
+  }
+  statements {
+    storage_func {
+      loc {
+        unop {
+          op: CALLDATALOAD
+          operand {
+            varref {
+              varnum: 329407726
+            }
+          }
+        }
+      }
+      val {
+        unop {
+          op: SLOAD
+          operand {
+            cons {
+              intval: 0
+            }
+          }
+        }
+      }
+      st: MSTORE
+    }
+  }
+  statements {
+    breakstmt {
+    }
+  }
+  statements {
+    storage_func {
+      loc {
+        func_expr {
+          ret: SINGLE
+          func_index: 1486181916
+        }
+      }
+      val {
+        varref {
+          varnum: 1623971983
+        }
+      }
+      st: MSTORE
+    }
+  }
+  statements {
+    assignment {
+      ref_id {
+        varnum: 1682846123
+      }
+      expr {
+        func_expr {
+          ret: SINGLE
+          func_index: 2108077931
+        }
+      }
+    }
+  }
+  statements {
+    funcdef {
+      num_input_params: 480811755
+      num_output_params: 1408452476
+      block {
+        statements {
+          decl {
+            expr {
+              varref {
+                varnum: 1570228342
+              }
+            }
+          }
+        }
+        statements {
+          switchstmt {
+            switch_expr {
+              unop {
+                op: CALLDATALOAD
+                operand {
+                  varref {
+                    varnum: 1709883043
+                  }
+                }
+              }
+            }
+            case_stmt {
+            }
+          }
+        }
+        statements {
+          assignment {
+            ref_id {
+              varnum: 277601282
+            }
+            expr {
+              unop {
+                op: EXTCODESIZE
+                operand {
+                  unopdata {
+                    op: SIZE
+                    identifier: 2121494046
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  statements {
+    boundedforstmt {
+    }
+  }
+}
+ver: PETERSBURG

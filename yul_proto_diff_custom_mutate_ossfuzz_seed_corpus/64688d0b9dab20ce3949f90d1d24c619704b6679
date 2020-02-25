@@ -1,0 +1,66 @@
+obj {
+  code {
+    block {
+      statements {
+        extcode_copy {
+          addr {
+            binop {
+              op: SHL
+              left {
+              }
+              right {
+                binop {
+                  op: SHR
+                  left {
+                    cons {
+                      intval: 1
+                    }
+                  }
+                  right {
+                    nop {
+                      op: COINBASE
+                    }
+                  }
+                }
+              }
+            }
+          }
+          target {
+            cons {
+              strval: "\212"
+            }
+          }
+          source {
+            binop {
+              op: OR
+              left {
+              }
+              right {
+              }
+            }
+          }
+          size {
+            unop {
+              op: SLOAD
+              operand {
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  data {
+    hex: "\000\000\000\000\000\000\000\000"
+  }
+  sub_obj {
+    code {
+      block {
+      }
+    }
+    data {
+      hex: "\000\000\000\000\000\000\000\000"
+    }
+  }
+}
+ver: ISTANBUL

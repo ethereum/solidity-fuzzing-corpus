@@ -1,0 +1,163 @@
+block {
+  statements {
+    decl {
+    }
+  }
+  statements {
+    terminatestmt {
+      ret_rev {
+        stmt: REVERT
+        pos {
+          func_expr {
+            ret: SINGLE
+            func_index: 514816643
+          }
+        }
+        size {
+          func_expr {
+            ret: SINGLE
+            func_index: 1127107963
+          }
+        }
+      }
+    }
+  }
+  statements {
+    pop {
+      expr {
+        varref {
+          varnum: 1264554691
+        }
+      }
+    }
+  }
+  statements {
+  }
+  statements {
+    storage_func {
+      loc {
+        varref {
+          varnum: 919010994
+        }
+      }
+      val {
+        binop {
+          op: MOD
+          left {
+            unopdata {
+              op: SIZE
+              identifier: 116222766
+            }
+          }
+          right {
+            varref {
+              varnum: 1520146968
+            }
+          }
+        }
+      }
+      st: MSTORE8
+    }
+  }
+  statements {
+    funcdef {
+      num_input_params: 1
+      num_output_params: 1
+      block {
+        statements {
+          assignment {
+            ref_id {
+              varnum: 1786912295
+            }
+            expr {
+              varref {
+                varnum: 215226543
+              }
+            }
+          }
+        }
+        statements {
+          ifstmt {
+            cond {
+              binop {
+                op: SDIV
+                left {
+                  varref {
+                    varnum: 231289974
+                  }
+                }
+                right {
+                  unopdata {
+                    op: OFFSET
+                    identifier: 454938243
+                  }
+                }
+              }
+            }
+            if_body {
+              statements {
+                assignment {
+                  ref_id {
+                    varnum: 440888963
+                  }
+                  expr {
+                    func_expr {
+                      ret: SINGLE
+                      func_index: 1399493811
+                    }
+                  }
+                }
+              }
+              statements {
+                boundedforstmt {
+                }
+              }
+              statements {
+                pop {
+                  expr {
+                    unop {
+                      op: CALLDATALOAD
+                      operand {
+                        varref {
+                          varnum: 119599969
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+        statements {
+          leave {
+          }
+        }
+      }
+    }
+  }
+  statements {
+    leave {
+    }
+  }
+  statements {
+  }
+  statements {
+    terminatestmt {
+      ret_rev {
+        stmt: REVERT
+        pos {
+          varref {
+            varnum: 998120634
+          }
+        }
+        size {
+          varref {
+            varnum: 1485503369
+          }
+        }
+      }
+    }
+  }
+}
+ver: BERLIN

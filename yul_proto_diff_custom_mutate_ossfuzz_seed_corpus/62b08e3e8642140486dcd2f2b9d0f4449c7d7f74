@@ -1,0 +1,108 @@
+block {
+  statements {
+  }
+  statements {
+    breakstmt {
+    }
+  }
+  statements {
+    pop {
+      expr {
+        unop {
+          op: CALLDATALOAD
+        }
+      }
+    }
+  }
+  statements {
+    storage_func {
+      loc {
+        varref {
+          varnum: 1436049527
+        }
+      }
+      val {
+        unopdata {
+          op: OFFSET
+          identifier: 1057299012
+        }
+      }
+      st: MSTORE
+    }
+  }
+  statements {
+  }
+  statements {
+  }
+  statements {
+  }
+  statements {
+  }
+  statements {
+    leave {
+    }
+  }
+  statements {
+    contstmt {
+    }
+  }
+  statements {
+    storage_func {
+      loc {
+        varref {
+          varnum: 881973259
+        }
+      }
+      val {
+        varref {
+          varnum: 1724981942
+        }
+      }
+      st: MSTORE
+    }
+  }
+  statements {
+    ifstmt {
+      cond {
+        unop {
+          op: CALLDATALOAD
+          operand {
+            cons {
+              intval: 0
+            }
+          }
+        }
+      }
+      if_body {
+        statements {
+          assignment {
+            ref_id {
+              varnum: 1745790515
+            }
+            expr {
+              unop {
+                op: MLOAD
+                operand {
+                  unop {
+                    op: SLOAD
+                    operand {
+                      func_expr {
+                        ret: SINGLE
+                        func_index: 169596466
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  statements {
+    contstmt {
+    }
+  }
+}
+ver: SPURIOUS

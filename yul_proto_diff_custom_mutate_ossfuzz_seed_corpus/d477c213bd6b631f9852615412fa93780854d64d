@@ -1,0 +1,169 @@
+block {
+  statements {
+    storage_func {
+      loc {
+        unop {
+          op: SLOAD
+          operand {
+            cons {
+              intval: 0
+            }
+          }
+        }
+      }
+      val {
+      }
+      st: MSTORE8
+    }
+  }
+  statements {
+    breakstmt {
+    }
+  }
+  statements {
+    storage_func {
+      loc {
+        binop {
+          op: SDIV
+          left {
+            binop {
+              op: SDIV
+              left {
+                unop {
+                  op: MLOAD
+                  operand {
+                    unop {
+                      op: CALLDATALOAD
+                      operand {
+                        unop {
+                          op: MLOAD
+                          operand {
+                            cons {
+                              intval: 0
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+              right {
+              }
+            }
+          }
+          right {
+            unop {
+            }
+          }
+        }
+      }
+      val {
+        unop {
+          op: SLOAD
+          operand {
+            cons {
+              intval: 0
+            }
+          }
+        }
+      }
+      st: MSTORE8
+    }
+  }
+  statements {
+    breakstmt {
+    }
+  }
+  statements {
+    storage_func {
+      loc {
+        binop {
+          op: SDIV
+          left {
+            unop {
+              op: MLOAD
+              operand {
+                cons {
+                  intval: 0
+                }
+              }
+            }
+          }
+          right {
+          }
+        }
+      }
+      val {
+      }
+      st: MSTORE
+    }
+  }
+  statements {
+    storage_func {
+      loc {
+        binop {
+          op: SDIV
+          left {
+            binop {
+              op: EXP
+              left {
+                binop {
+                  op: SDIV
+                  left {
+                    binop {
+                      op: SDIV
+                      left {
+                        unop {
+                          op: SLOAD
+                          operand {
+                            cons {
+                              intval: 0
+                            }
+                          }
+                        }
+                      }
+                      right {
+                      }
+                    }
+                  }
+                  right {
+                    unop {
+                      op: CALLDATALOAD
+                      operand {
+                        cons {
+                          intval: 0
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+              right {
+                unop {
+                  op: NOT
+                  operand {
+                  }
+                }
+              }
+            }
+          }
+          right {
+          }
+        }
+      }
+      val {
+      }
+      st: MSTORE
+    }
+  }
+  statements {
+    breakstmt {
+    }
+  }
+  statements {
+    breakstmt {
+    }
+  }
+}
+ver: BERLIN

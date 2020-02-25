@@ -1,0 +1,92 @@
+block {
+  statements {
+    storage_func {
+      loc {
+        binop {
+          op: AND
+          left {
+          }
+          right {
+            binop {
+              op: SHR
+              left {
+                cons {
+                  intval: 88
+                }
+              }
+              right {
+              }
+            }
+          }
+        }
+      }
+      val {
+        binop {
+          op: SHR
+          left {
+            cons {
+              intval: 88
+            }
+          }
+          right {
+          }
+        }
+      }
+      st: MSTORE
+    }
+  }
+  statements {
+    storage_func {
+      loc {
+        binop {
+          op: MOD
+          left {
+            binop {
+              op: SHR
+              left {
+                cons {
+                  intval: 88
+                }
+              }
+              right {
+              }
+            }
+          }
+          right {
+            binop {
+              op: OR
+              left {
+              }
+              right {
+                binop {
+                  op: SHR
+                  left {
+                    cons {
+                      intval: 88
+                    }
+                  }
+                  right {
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+      val {
+        binop {
+          op: SHR
+          left {
+            cons {
+              intval: 88
+            }
+          }
+          right {
+          }
+        }
+      }
+      st: MSTORE
+    }
+  }
+}
+ver: PETERSBURG

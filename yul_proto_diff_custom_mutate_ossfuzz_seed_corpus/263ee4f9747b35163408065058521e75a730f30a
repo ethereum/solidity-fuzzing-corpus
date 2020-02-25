@@ -1,0 +1,113 @@
+obj {
+  code {
+    block {
+      statements {
+        extcode_copy {
+          addr {
+            binop {
+              op: SHR
+              left {
+                cons {
+                  intval: 1
+                }
+              }
+              right {
+                binop {
+                  op: SHR
+                  left {
+                    cons {
+                      intval: 1
+                    }
+                  }
+                  right {
+                    nop {
+                      op: COINBASE
+                    }
+                  }
+                }
+              }
+            }
+          }
+          target {
+            nop {
+              op: ORIGIN
+            }
+          }
+          source {
+            binop {
+              op: OR
+              left {
+              }
+              right {
+              }
+            }
+          }
+          size {
+            unop {
+              op: ISZERO
+              operand {
+              }
+            }
+          }
+        }
+      }
+      statements {
+        extcode_copy {
+          addr {
+            binop {
+              op: SHR
+              left {
+                cons {
+                  intval: 65
+                }
+              }
+              right {
+                binop {
+                  op: SHR
+                  left {
+                    cons {
+                      intval: 1
+                    }
+                  }
+                  right {
+                    nop {
+                      op: COINBASE
+                    }
+                  }
+                }
+              }
+            }
+          }
+          target {
+            nop {
+              op: ORIGIN
+            }
+          }
+          source {
+            binop {
+              op: OR
+              left {
+              }
+              right {
+              }
+            }
+          }
+          size {
+            nop {
+              op: ORIGIN
+            }
+          }
+        }
+      }
+      statements {
+      }
+      statements {
+      }
+      statements {
+      }
+      statements {
+      }
+    }
+  }
+}
+ver: CONSTANTINOPLE

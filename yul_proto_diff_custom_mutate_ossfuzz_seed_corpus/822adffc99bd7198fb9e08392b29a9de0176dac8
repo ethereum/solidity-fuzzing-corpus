@@ -1,0 +1,124 @@
+obj {
+  code {
+    block {
+      statements {
+        storage_func {
+          loc {
+            binop {
+              op: GT
+              left {
+                cons {
+                  strval: "z"
+                }
+              }
+              right {
+                cons {
+                  strval: "z"
+                }
+              }
+            }
+          }
+          val {
+          }
+          st: SSTORE
+        }
+      }
+      statements {
+      }
+      statements {
+        storage_func {
+          loc {
+            binop {
+              op: EXP
+              left {
+                cons {
+                  strval: "r"
+                }
+              }
+              right {
+                unop {
+                  op: ISZERO
+                  operand {
+                  }
+                }
+              }
+            }
+          }
+          val {
+          }
+          st: SSTORE
+        }
+      }
+      statements {
+        pop {
+          expr {
+            varref {
+              varnum: 0
+            }
+          }
+        }
+      }
+      statements {
+      }
+      statements {
+      }
+      statements {
+        storage_func {
+          loc {
+            binop {
+              op: GT
+              left {
+              }
+              right {
+              }
+            }
+          }
+          val {
+            binop {
+              op: EXP
+              left {
+              }
+              right {
+              }
+            }
+          }
+          st: SSTORE
+        }
+      }
+      statements {
+      }
+      statements {
+        storage_func {
+          loc {
+            binop {
+              op: ADD
+              left {
+              }
+              right {
+                binop {
+                  op: EXP
+                  left {
+                    nop {
+                      op: MSIZE
+                    }
+                  }
+                  right {
+                  }
+                }
+              }
+            }
+          }
+          val {
+            varref {
+              varnum: 0
+            }
+          }
+          st: SSTORE
+        }
+      }
+      statements {
+      }
+    }
+  }
+}
+ver: CONSTANTINOPLE

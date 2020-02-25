@@ -1,0 +1,93 @@
+block {
+  statements {
+    forstmt {
+      for_body {
+        statements {
+          storage_func {
+            loc {
+            }
+            val {
+              top {
+                op: ADDM
+                arg1 {
+                }
+                arg2 {
+                }
+                arg3 {
+                  lowcall {
+                    callty: CALL
+                    gas {
+                      unop {
+                        op: NOT
+                        operand {
+                        }
+                      }
+                    }
+                    addr {
+                    }
+                    wei {
+                    }
+                    in {
+                    }
+                    insize {
+                      binop {
+                        op: XOR
+                        left {
+                          binop {
+                            op: SAR
+                            left {
+                            }
+                            right {
+                            }
+                          }
+                        }
+                        right {
+                        }
+                      }
+                    }
+                    out {
+                    }
+                    outsize {
+                    }
+                  }
+                }
+              }
+            }
+            st: MSTORE
+          }
+        }
+        statements {
+          storage_func {
+            loc {
+            }
+            val {
+            }
+            st: MSTORE
+          }
+        }
+      }
+      for_init {
+      }
+      for_post {
+      }
+      for_cond {
+        nop {
+          op: DIFFICULTY
+        }
+      }
+    }
+  }
+  statements {
+    storage_func {
+      loc {
+      }
+      val {
+        nop {
+          op: ADDRESS
+        }
+      }
+      st: MSTORE
+    }
+  }
+}
+ver: PETERSBURG

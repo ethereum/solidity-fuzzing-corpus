@@ -1,0 +1,68 @@
+block {
+  statements {
+  }
+  statements {
+    contstmt {
+    }
+  }
+  statements {
+  }
+  statements {
+  }
+  statements {
+    boundedforstmt {
+      for_body {
+        statements {
+          pop {
+            expr {
+              binop {
+                op: SDIV
+                left {
+                  varref {
+                    varnum: 13344531
+                  }
+                }
+                right {
+                  unop {
+                    op: EXTCODESIZE
+                    operand {
+                      unop {
+                        op: CALLDATALOAD
+                        operand {
+                          varref {
+                            varnum: 1495663746
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+        statements {
+          forstmt {
+            for_cond {
+              unop {
+                op: CALLDATALOAD
+                operand {
+                  unop {
+                    op: MLOAD
+                    operand {
+                      unopdata {
+                        op: SIZE
+                        identifier: 2083168971
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+ver: BERLIN

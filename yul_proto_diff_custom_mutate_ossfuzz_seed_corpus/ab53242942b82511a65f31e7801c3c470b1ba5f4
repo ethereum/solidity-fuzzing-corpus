@@ -1,0 +1,161 @@
+obj {
+  code {
+    block {
+      statements {
+        multidecl {
+          num_vars: 57877279
+        }
+      }
+      statements {
+        forstmt {
+          for_body {
+            statements {
+              multidecl {
+                num_vars: 84657757
+              }
+            }
+            statements {
+              storage_func {
+                loc {
+                  nop {
+                    op: MSIZE
+                  }
+                }
+                val {
+                  nop {
+                    op: MSIZE
+                  }
+                }
+                st: SSTORE
+              }
+            }
+            statements {
+              storage_func {
+                loc {
+                  nop {
+                    op: MSIZE
+                  }
+                }
+                val {
+                  nop {
+                    op: MSIZE
+                  }
+                }
+                st: MSTORE8
+              }
+            }
+            statements {
+              decl {
+              }
+            }
+          }
+          for_init {
+            statements {
+              multidecl {
+                num_vars: 47197419
+              }
+            }
+            statements {
+              extcode_copy {
+                addr {
+                }
+                target {
+                  top {
+                    op: MULM
+                    arg1 {
+                    }
+                    arg2 {
+                    }
+                    arg3 {
+                    }
+                  }
+                }
+                source {
+                }
+                size {
+                }
+              }
+            }
+            statements {
+              decl {
+              }
+            }
+          }
+          for_post {
+            statements {
+              multidecl {
+                num_vars: 55893291
+              }
+            }
+            statements {
+              storage_func {
+                loc {
+                  binop {
+                    op: SLT
+                    left {
+                      varref {
+                        varnum: 3135914
+                      }
+                    }
+                    right {
+                      varref {
+                        varnum: 2538597
+                      }
+                    }
+                  }
+                }
+                val {
+                  binop {
+                    op: KECCAK
+                    left {
+                      varref {
+                        varnum: 2457878
+                      }
+                    }
+                    right {
+                      unop {
+                        op: CALLDATALOAD
+                        operand {
+                          varref {
+                            varnum: 2202850
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+                st: SSTORE
+              }
+            }
+            statements {
+              decl {
+              }
+            }
+          }
+          for_cond {
+            unop {
+              op: EXTCODESIZE
+              operand {
+              }
+            }
+          }
+        }
+      }
+      statements {
+        decl {
+          expr {
+            unop {
+              op: SLOAD
+              operand {
+                cons {
+                  intval: 0
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+ver: ISTANBUL

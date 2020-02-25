@@ -1,0 +1,186 @@
+block {
+  statements {
+    switchstmt {
+      switch_expr {
+      }
+      case_stmt {
+        case_lit {
+        }
+        case_block {
+          statements {
+            breakstmt {
+            }
+          }
+        }
+      }
+      case_stmt {
+        case_lit {
+          strval: "\001\000\000\002"
+        }
+        case_block {
+          statements {
+            breakstmt {
+            }
+          }
+        }
+      }
+      default_block {
+        statements {
+          switchstmt {
+            switch_expr {
+              unop {
+                op: ISZERO
+                operand {
+                }
+              }
+            }
+            case_stmt {
+              case_lit {
+                intval: 0
+              }
+              case_block {
+                statements {
+                  breakstmt {
+                  }
+                }
+              }
+            }
+            default_block {
+              statements {
+                switchstmt {
+                  switch_expr {
+                  }
+                  case_stmt {
+                    case_lit {
+                    }
+                    case_block {
+                      statements {
+                        breakstmt {
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+              statements {
+                breakstmt {
+                }
+              }
+            }
+          }
+        }
+        statements {
+          breakstmt {
+          }
+        }
+      }
+    }
+  }
+  statements {
+    switchstmt {
+      switch_expr {
+        unop {
+          op: ISZERO
+          operand {
+            unop {
+              op: SLOAD
+              operand {
+                cons {
+                  intval: 0
+                }
+              }
+            }
+          }
+        }
+      }
+      case_stmt {
+        case_lit {
+          strval: "\001\000\000\002"
+        }
+        case_block {
+          statements {
+            breakstmt {
+            }
+          }
+        }
+      }
+      default_block {
+        statements {
+          switchstmt {
+            switch_expr {
+            }
+            case_stmt {
+              case_lit {
+              }
+              case_block {
+                statements {
+                  breakstmt {
+                  }
+                }
+              }
+            }
+            default_block {
+              statements {
+                breakstmt {
+                }
+              }
+            }
+          }
+        }
+        statements {
+          breakstmt {
+          }
+        }
+      }
+    }
+  }
+  statements {
+    switchstmt {
+      switch_expr {
+        unop {
+          op: ISZERO
+          operand {
+          }
+        }
+      }
+      case_stmt {
+        case_lit {
+          strval: "\001\000\000\002"
+        }
+        case_block {
+          statements {
+            breakstmt {
+            }
+          }
+        }
+      }
+      default_block {
+        statements {
+          switchstmt {
+            switch_expr {
+            }
+            case_stmt {
+              case_lit {
+              }
+              case_block {
+                statements {
+                  breakstmt {
+                  }
+                }
+              }
+            }
+          }
+        }
+        statements {
+          breakstmt {
+          }
+        }
+      }
+    }
+  }
+  statements {
+    breakstmt {
+    }
+  }
+}
+ver: ISTANBUL

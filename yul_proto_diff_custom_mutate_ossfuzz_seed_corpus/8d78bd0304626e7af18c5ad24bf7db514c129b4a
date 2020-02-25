@@ -1,0 +1,205 @@
+block {
+  statements {
+    multidecl {
+      num_vars: 370701460
+    }
+  }
+  statements {
+    functioncall {
+      ret: MULTIDECL
+      func_index: 890957880
+      in_param1 {
+        unop {
+          op: MLOAD
+          operand {
+            varref {
+              varnum: 1335429458
+            }
+          }
+        }
+      }
+      in_param2 {
+        varref {
+          varnum: 1931892578
+        }
+      }
+      in_param3 {
+        varref {
+          varnum: 1004465606
+        }
+      }
+      in_param4 {
+        varref {
+          varnum: 1632071976
+        }
+      }
+      out_param1 {
+        varnum: 210266769
+      }
+      out_param2 {
+        varnum: 1789167838
+      }
+      out_param3 {
+        varnum: 2044662317
+      }
+      out_param4 {
+        varnum: 751244891
+      }
+    }
+  }
+  statements {
+    pop {
+      expr {
+        func_expr {
+          ret: SINGLE
+          func_index: 1031549974
+        }
+      }
+    }
+  }
+  statements {
+  }
+  statements {
+  }
+  statements {
+    multidecl {
+      num_vars: 370701460
+    }
+  }
+  statements {
+    breakstmt {
+    }
+  }
+  statements {
+    storage_func {
+      loc {
+        unop {
+          op: MLOAD
+          operand {
+            func_expr {
+              ret: SINGLE
+              func_index: 382179299
+            }
+          }
+        }
+      }
+      val {
+        func_expr {
+          ret: SINGLE
+          func_index: 1832091779
+        }
+      }
+      st: SSTORE
+    }
+  }
+  statements {
+    funcdef {
+      num_input_params: 1323816233
+      num_output_params: 1409983011
+      block {
+        statements {
+          storage_func {
+            loc {
+              binop {
+                op: SDIV
+                left {
+                  varref {
+                    varnum: 115652906
+                  }
+                }
+                right {
+                  unopdata {
+                    op: SIZE
+                    identifier: 1820511261
+                  }
+                }
+              }
+            }
+            val {
+              unopdata {
+                op: SIZE
+                identifier: 752007867
+              }
+            }
+            st: MSTORE
+          }
+        }
+        statements {
+          assignment {
+            ref_id {
+              varnum: 232854514
+            }
+            expr {
+              cons {
+                intval: 190836896
+              }
+            }
+          }
+        }
+        statements {
+          pop {
+            expr {
+              lowcall {
+                callty: CALL
+              }
+            }
+          }
+        }
+        statements {
+          pop {
+            expr {
+              unop {
+                op: CALLDATALOAD
+                operand {
+                  func_expr {
+                    ret: SINGLE
+                    func_index: 1428185697
+                  }
+                }
+              }
+            }
+          }
+        }
+        statements {
+          decl {
+            expr {
+              binop {
+                op: SGT
+                left {
+                  func_expr {
+                    ret: SINGLE
+                    func_index: 1752490727
+                  }
+                }
+                right {
+                  varref {
+                    varnum: 283944339
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  statements {
+    terminatestmt {
+      ret_rev {
+        stmt: REVERT
+        pos {
+          func_expr {
+            ret: SINGLE
+            func_index: 1262183012
+          }
+        }
+        size {
+          varref {
+            varnum: 847166271
+          }
+        }
+      }
+    }
+  }
+}
+ver: ISTANBUL

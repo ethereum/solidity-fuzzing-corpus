@@ -1,0 +1,165 @@
+block {
+  statements {
+    multidecl {
+      num_vars: 1132819659
+    }
+  }
+  statements {
+    storage_func {
+      loc {
+        func_expr {
+          ret: SINGLE
+          func_index: 1637599269
+        }
+      }
+      val {
+        unop {
+          op: CALLDATALOAD
+          operand {
+            func_expr {
+              ret: SINGLE
+              func_index: 766668111
+            }
+          }
+        }
+      }
+      st: MSTORE
+    }
+  }
+  statements {
+    funcdef {
+      num_input_params: 1
+      num_output_params: 1
+      block {
+        statements {
+          assignment {
+            ref_id {
+              varnum: 1849803747
+            }
+            expr {
+              binop {
+                op: MOD
+                left {
+                  unopdata {
+                    op: OFFSET
+                    identifier: 1860385166
+                  }
+                }
+                right {
+                  unop {
+                    op: SLOAD
+                    operand {
+                      varref {
+                        varnum: 1004972574
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+        statements {
+          breakstmt {
+          }
+        }
+        statements {
+          switchstmt {
+            switch_expr {
+              varref {
+                varnum: 1312545352
+              }
+            }
+            case_stmt {
+            }
+          }
+        }
+      }
+    }
+  }
+  statements {
+    boundedforstmt {
+      for_body {
+        statements {
+          copy_func {
+            ct: CALLDATA
+            target {
+              unop {
+                op: MLOAD
+                operand {
+                  unop {
+                    op: MLOAD
+                    operand {
+                      func_expr {
+                        ret: SINGLE
+                        func_index: 825964123
+                      }
+                    }
+                  }
+                }
+              }
+            }
+            source {
+              unop {
+                op: EXTCODEHASH
+                operand {
+                  varref {
+                    varnum: 97281118
+                  }
+                }
+              }
+            }
+            size {
+              func_expr {
+                ret: SINGLE
+                func_index: 1626699857
+              }
+            }
+          }
+        }
+        statements {
+          pop {
+            expr {
+              unop {
+                op: SLOAD
+                operand {
+                  cons {
+                    intval: 0
+                  }
+                }
+              }
+            }
+          }
+        }
+        statements {
+          pop {
+            expr {
+              unop {
+                op: SLOAD
+                operand {
+                  unop {
+                    op: CALLDATALOAD
+                    operand {
+                      varref {
+                        varnum: 1521246161
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  statements {
+    decl {
+    }
+  }
+  statements {
+    breakstmt {
+    }
+  }
+}
+ver: CONSTANTINOPLE

@@ -1,0 +1,101 @@
+block {
+	statements {
+		funcdef {
+			num_input_params: 2
+			num_output_params: 1
+			force_call: true
+			block {
+				statements {
+					decl {}
+				}
+				statements {
+					assignment {
+						ref_id {
+							varnum: 0
+						}
+						expr {
+							cons {
+								intval: 2
+							}
+						}
+					}
+				}
+				statements {
+					assignment {
+						ref_id {
+							varnum: 2
+						}
+						expr {
+							cons {
+								intval: 2
+							}
+						}
+					}
+				}
+				statements {
+					assignment {
+						ref_id {
+							varnum: 3
+						}
+						expr {
+							cons {
+								intval: 2
+							}
+						}
+					}
+				}
+				statements {
+					ifstmt {
+						cond {
+							varref {
+								varnum: 1
+							}
+						}
+						if_body {
+							statements {
+								leave {}
+							}
+						}
+					}
+				}
+				statements {
+					assignment {
+						ref_id {
+							varnum: 0
+						}
+						expr {
+							cons {
+								intval: 8
+							}
+						}
+					}
+				}
+				statements {
+					assignment {
+						ref_id {
+							varnum: 2
+						}
+						expr {
+							cons {
+								intval: 8
+							}
+						}
+					}
+				}
+				statements {
+					assignment {
+						ref_id {
+							varnum: 3
+						}
+						expr {
+							cons {
+								intval: 8
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}	
+ver: ISTANBUL

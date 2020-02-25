@@ -1,0 +1,60 @@
+block {
+  statements {
+    boundedforstmt {
+      for_body {
+        statements {
+          extcode_copy {
+            addr {
+              binop {
+                op: DIV
+                left {
+                }
+                right {
+                  binop {
+                    op: DIV
+                    left {
+                      unop {
+                        op: NOT
+                        operand {
+                        }
+                      }
+                    }
+                    right {
+                    }
+                  }
+                }
+              }
+            }
+            target {
+              binop {
+                op: MOD
+                left {
+                }
+                right {
+                }
+              }
+            }
+            source {
+            }
+            size {
+              binop {
+                op: DIV
+                left {
+                  unop {
+                    op: NOT
+                    operand {
+                    }
+                  }
+                }
+                right {
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  statements {
+  }
+}

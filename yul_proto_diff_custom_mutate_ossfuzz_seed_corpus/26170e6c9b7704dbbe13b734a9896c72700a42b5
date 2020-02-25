@@ -1,0 +1,85 @@
+block {
+  statements {
+    forstmt {
+      for_body {
+        statements {
+          copy_func {
+            ct: CALLDATA
+            target {
+              create {
+                createty: CREATE
+                wei {
+                  binop {
+                    op: MUL
+                    left {
+                    }
+                    right {
+                    }
+                  }
+                }
+                position {
+                }
+                size {
+                }
+                value {
+                  unop {
+                    op: NOT
+                    operand {
+                      binop {
+                        op: MUL
+                        left {
+                        }
+                        right {
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+            source {
+            }
+            size {
+            }
+          }
+        }
+      }
+      for_init {
+      }
+      for_post {
+      }
+      for_cond {
+        nop {
+          op: CHAINID
+        }
+      }
+    }
+  }
+  statements {
+    forstmt {
+      for_body {
+      }
+      for_init {
+      }
+      for_post {
+      }
+      for_cond {
+        binop {
+          op: SAR
+          left {
+            binop {
+              op: SAR
+              left {
+              }
+              right {
+              }
+            }
+          }
+          right {
+          }
+        }
+      }
+    }
+  }
+}
+ver: BERLIN

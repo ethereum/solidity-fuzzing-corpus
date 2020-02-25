@@ -1,0 +1,122 @@
+obj {
+  code {
+    block {
+      statements {
+        storage_func {
+          loc {
+            binop {
+              op: ADD
+              left {
+                binop {
+                  op: SUB
+                  left {
+                    nop {
+                      op: ORIGIN
+                    }
+                  }
+                  right {
+                    binop {
+                      op: ADD
+                      left {
+                        nop {
+                          op: ORIGIN
+                        }
+                      }
+                      right {
+                      }
+                    }
+                  }
+                }
+              }
+              right {
+                binop {
+                  op: SHL
+                  left {
+                  }
+                  right {
+                  }
+                }
+              }
+            }
+          }
+          val {
+            nop {
+              op: CALLER
+            }
+          }
+          st: MSTORE
+        }
+      }
+      statements {
+        storage_func {
+          loc {
+            binop {
+              op: ADD
+              left {
+                binop {
+                  op: SUB
+                  left {
+                    nop {
+                      op: ORIGIN
+                    }
+                  }
+                  right {
+                    binop {
+                      op: ADD
+                      left {
+                        nop {
+                          op: CALLER
+                        }
+                      }
+                      right {
+                      }
+                    }
+                  }
+                }
+              }
+              right {
+                binop {
+                  op: ADD
+                  left {
+                    binop {
+                      op: SUB
+                      left {
+                        nop {
+                          op: ORIGIN
+                        }
+                      }
+                      right {
+                        binop {
+                          op: ADD
+                          left {
+                            nop {
+                              op: ORIGIN
+                            }
+                          }
+                          right {
+                          }
+                        }
+                      }
+                    }
+                  }
+                  right {
+                  }
+                }
+              }
+            }
+          }
+          val {
+            nop {
+              op: CALLER
+            }
+          }
+          st: MSTORE
+        }
+      }
+    }
+  }
+  data {
+    hex: "\000\000\000\010"
+  }
+}
+ver: TANGERINE

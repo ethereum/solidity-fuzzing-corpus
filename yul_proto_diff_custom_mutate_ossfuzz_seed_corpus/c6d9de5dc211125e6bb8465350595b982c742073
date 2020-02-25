@@ -1,0 +1,43 @@
+block {
+  statements {
+    extcode_copy {
+      addr {
+      }
+      target {
+        binop {
+          op: SMOD
+          left {
+            unop {
+              op: NOT
+              operand {
+                create {
+                  createty: CREATE
+                  wei {
+                    unop {
+                      op: BLOCKHASH
+                      operand {
+                      }
+                    }
+                  }
+                  position {
+                  }
+                  size {
+                  }
+                  value {
+                  }
+                }
+              }
+            }
+          }
+          right {
+          }
+        }
+      }
+      source {
+      }
+      size {
+      }
+    }
+  }
+}
+ver: HOMESTEAD

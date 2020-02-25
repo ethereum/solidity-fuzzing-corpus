@@ -1,0 +1,136 @@
+block {
+  statements {
+    copy_func {
+      ct: CALLDATA
+      target {
+        unop {
+          op: MLOAD
+          operand {
+            varref {
+              varnum: 81064912
+            }
+          }
+        }
+      }
+      source {
+        varref {
+          varnum: 1533984261
+        }
+      }
+      size {
+        unop {
+          op: ISZERO
+          operand {
+            unop {
+              op: SLOAD
+              operand {
+                varref {
+                  varnum: 146909598
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  statements {
+    pop {
+      expr {
+        unopdata {
+          op: OFFSET
+          identifier: 1950263722
+        }
+      }
+    }
+  }
+  statements {
+    pop {
+      expr {
+        varref {
+          varnum: 828028184
+        }
+      }
+    }
+  }
+  statements {
+    contstmt {
+    }
+  }
+  statements {
+    funcdef {
+      num_input_params: 1
+      num_output_params: 1
+      block {
+        statements {
+          multidecl {
+            num_vars: 581050914
+          }
+        }
+        statements {
+          switchstmt {
+            switch_expr {
+              unop {
+                op: MLOAD
+                operand {
+                  unop {
+                    op: CALLDATALOAD
+                    operand {
+                      func_expr {
+                        ret: SINGLE
+                        func_index: 1158965317
+                      }
+                    }
+                  }
+                }
+              }
+            }
+            case_stmt {
+            }
+          }
+        }
+        statements {
+          assignment {
+            ref_id {
+              varnum: 1151587209
+            }
+            expr {
+              varref {
+                varnum: 1955575449
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  statements {
+    leave {
+    }
+  }
+  statements {
+    assignment {
+      ref_id {
+        varnum: 507781807
+      }
+      expr {
+        varref {
+          varnum: 639579381
+        }
+      }
+    }
+  }
+  statements {
+    switchstmt {
+      switch_expr {
+        func_expr {
+          ret: SINGLE
+          func_index: 210360522
+        }
+      }
+      case_stmt {
+      }
+    }
+  }
+}
+ver: ISTANBUL

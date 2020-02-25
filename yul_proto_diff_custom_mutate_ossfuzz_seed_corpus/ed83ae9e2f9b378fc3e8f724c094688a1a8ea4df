@@ -1,0 +1,166 @@
+block {
+  statements {
+    storage_func {
+      loc {
+        varref {
+          varnum: 317759256
+        }
+      }
+      val {
+        varref {
+          varnum: 1645646888
+        }
+      }
+      st: MSTORE8
+    }
+  }
+  statements {
+  }
+  statements {
+    storage_func {
+      loc {
+        varref {
+          varnum: 19977297
+        }
+      }
+      val {
+        varref {
+          varnum: 103945984
+        }
+      }
+      st: MSTORE8
+    }
+  }
+  statements {
+    storage_func {
+      loc {
+        unopdata {
+          op: OFFSET
+          identifier: 1080134436
+        }
+      }
+      val {
+        unop {
+          op: NOT
+          operand {
+            unop {
+              op: SLOAD
+              operand {
+                varref {
+                  varnum: 1588245982
+                }
+              }
+            }
+          }
+        }
+      }
+      st: MSTORE8
+    }
+  }
+  statements {
+    funcdef {
+      num_input_params: 1
+      num_output_params: 1
+      block {
+        statements {
+          assignment {
+            ref_id {
+              varnum: 1990006435
+            }
+            expr {
+              unop {
+                op: MLOAD
+                operand {
+                  cons {
+                    intval: 0
+                  }
+                }
+              }
+            }
+          }
+        }
+        statements {
+          breakstmt {
+          }
+        }
+        statements {
+          assignment {
+            ref_id {
+              varnum: 441097937
+            }
+            expr {
+              varref {
+                varnum: 1720637372
+              }
+            }
+          }
+        }
+        statements {
+          pop {
+            expr {
+              binop {
+                op: SI
+                left {
+                  varref {
+                    varnum: 1358098416
+                  }
+                }
+                right {
+                  func_expr {
+                    ret: SINGLE
+                    func_index: 1608923993
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  statements {
+    pop {
+      expr {
+        unop {
+          op: SLOAD
+          operand {
+            varref {
+              varnum: 1075070224
+            }
+          }
+        }
+      }
+    }
+  }
+  statements {
+    extcode_copy {
+      addr {
+        func_expr {
+          ret: SINGLE
+          func_index: 1112151462
+        }
+      }
+      target {
+        unop {
+        }
+      }
+      source {
+        func_expr {
+          ret: SINGLE
+          func_index: 2112024949
+        }
+      }
+      size {
+        unop {
+          op: EXTCODEHASH
+          operand {
+            varref {
+              varnum: 1457196498
+            }
+          }
+        }
+      }
+    }
+  }
+}
+ver: PETERSBURG

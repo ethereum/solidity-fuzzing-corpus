@@ -1,0 +1,180 @@
+block {
+  statements {
+    breakstmt {
+    }
+  }
+  statements {
+    leave {
+    }
+  }
+  statements {
+    functioncall {
+      ret: MULTIDECL
+      func_index: 1210177549
+      in_param1 {
+        func_expr {
+          ret: SINGLE
+          func_index: 1001608146
+        }
+      }
+      in_param2 {
+        func_expr {
+          ret: SINGLE
+          func_index: 395323656
+        }
+      }
+      in_param3 {
+        unop {
+          op: MLOAD
+          operand {
+            unop {
+              op: MLOAD
+              operand {
+                func_expr {
+                  ret: SINGLE
+                  func_index: 293064441
+                }
+              }
+            }
+          }
+        }
+      }
+      in_param4 {
+        unop {
+          op: SLOAD
+          operand {
+            varref {
+              varnum: 2113052651
+            }
+          }
+        }
+      }
+      out_param1 {
+        varnum: 1553855724
+      }
+      out_param2 {
+        varnum: 1829068534
+      }
+      out_param3 {
+        varnum: 1776716277
+      }
+      out_param4 {
+        varnum: 1964480475
+      }
+    }
+  }
+  statements {
+    funcdef {
+      num_input_params: 1911117986
+      num_output_params: 2121278027
+      block {
+        statements {
+          contstmt {
+          }
+        }
+        statements {
+          storage_func {
+            loc {
+              varref {
+                varnum: 476496393
+              }
+            }
+            val {
+              unop {
+                op: MLOAD
+                operand {
+                  varref {
+                    varnum: 653451936
+                  }
+                }
+              }
+            }
+            st: SSTORE
+          }
+        }
+        statements {
+          assignment {
+            ref_id {
+              varnum: 59580004
+            }
+            expr {
+              cons {
+                intval: 505769751
+              }
+            }
+          }
+        }
+        statements {
+          functioncall {
+            ret: MULTIDECL
+            func_index: 976228207
+            in_param1 {
+              unopdata {
+                op: SIZE
+                identifier: 47563851
+              }
+            }
+            in_param2 {
+              varref {
+                varnum: 1425502777
+              }
+            }
+            in_param3 {
+              unop {
+                op: CALLDATALOAD
+                operand {
+                  func_expr {
+                    ret: SINGLE
+                    func_index: 2007996371
+                  }
+                }
+              }
+            }
+            in_param4 {
+              varref {
+                varnum: 1278113976
+              }
+            }
+          }
+        }
+        statements {
+          breakstmt {
+          }
+        }
+      }
+    }
+  }
+  statements {
+    terminatestmt {
+      ret_rev {
+        stmt: REVERT
+        pos {
+          func_expr {
+            ret: SINGLE
+            func_index: 944721421
+          }
+        }
+        size {
+          cons {
+            intval: 0
+          }
+        }
+      }
+    }
+  }
+  statements {
+    decl {
+      expr {
+        unop {
+          op: MLOAD
+          operand {
+            varref {
+              varnum: 410591137
+            }
+          }
+        }
+      }
+    }
+  }
+}
+ver: ISTANBUL

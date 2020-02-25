@@ -1,0 +1,61 @@
+obj {
+  code {
+    block {
+      statements {
+        ifstmt {
+          cond {
+            binop {
+              op: SHL
+              left {
+                cons {
+                  intval: 8
+                }
+              }
+              right {
+                binop {
+                  op: SHL
+                  left {
+                    cons {
+                      intval: 249
+                    }
+                  }
+                  right {
+                    binop {
+                      op: SHL
+                      left {
+                        cons {
+                          intval: 8
+                        }
+                      }
+                      right {
+                        unop {
+                          op: SLOAD
+                          operand {
+                            cons {
+                              intval: 0
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+          if_body {
+            statements {
+              breakstmt {
+              }
+            }
+          }
+        }
+      }
+      statements {
+        breakstmt {
+        }
+      }
+    }
+  }
+}
+ver: ISTANBUL

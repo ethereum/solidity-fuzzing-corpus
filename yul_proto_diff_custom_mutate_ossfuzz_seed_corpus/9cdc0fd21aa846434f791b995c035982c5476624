@@ -1,0 +1,88 @@
+obj {
+  code {
+    block {
+      statements {
+        storage_func {
+          loc {
+          }
+          val {
+            unop {
+              op: SLOAD
+              operand {
+                cons {
+                  intval: 0
+                }
+              }
+            }
+          }
+          st: SSTORE
+        }
+      }
+      statements {
+        storage_func {
+          loc {
+            binop {
+              op: GT
+              left {
+                binop {
+                  op: GT
+                  left {
+                    binop {
+                      op: SHR
+                      left {
+                      }
+                      right {
+                        nop {
+                          op: CHAINID
+                        }
+                      }
+                    }
+                  }
+                  right {
+                    unop {
+                      op: CALLDATALOAD
+                      operand {
+                        cons {
+                          intval: 0
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+              right {
+                nop {
+                  op: GAS
+                }
+              }
+            }
+          }
+          val {
+            unop {
+              op: SLOAD
+              operand {
+                cons {
+                  intval: 0
+                }
+              }
+            }
+          }
+          st: SSTORE
+        }
+      }
+      statements {
+        breakstmt {
+        }
+      }
+      statements {
+        breakstmt {
+        }
+      }
+      statements {
+        breakstmt {
+        }
+      }
+    }
+  }
+}
+ver: ISTANBUL

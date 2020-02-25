@@ -1,0 +1,106 @@
+block {
+  statements {
+    contstmt {
+    }
+  }
+  statements {
+    assignment {
+      ref_id {
+        varnum: 560999634
+      }
+      expr {
+        varref {
+          varnum: 391629043
+        }
+      }
+    }
+  }
+  statements {
+    breakstmt {
+    }
+  }
+  statements {
+    funcdef {
+      num_input_params: 1
+      num_output_params: 1
+      block {
+        statements {
+          assignment {
+            ref_id {
+              varnum: 927615171
+            }
+            expr {
+              binop {
+                op: XOR
+                left {
+                  varref {
+                    varnum: 1877879391
+                  }
+                }
+                right {
+                  unop {
+                    op: CALLDATALOAD
+                    operand {
+                      varref {
+                        varnum: 1049050135
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+        statements {
+          breakstmt {
+          }
+        }
+        statements {
+          storage_func {
+            loc {
+              cons {
+                intval: 0
+              }
+            }
+            val {
+              func_expr {
+                ret: SINGLE
+                func_index: 174623704
+              }
+            }
+            st: SSTORE
+          }
+        }
+        statements {
+          boundedforstmt {
+          }
+        }
+      }
+    }
+  }
+  statements {
+    forstmt {
+      for_cond {
+        unop {
+          op: SLOAD
+          operand {
+            varref {
+              varnum: 1658898953
+            }
+          }
+        }
+      }
+    }
+  }
+  statements {
+    pop {
+      expr {
+        func_expr {
+          ret: SINGLE
+          func_index: 179111088
+        }
+      }
+    }
+  }
+}
+ver: BYZANTIUM

@@ -1,0 +1,111 @@
+block {
+  statements {
+  }
+  statements {
+    forstmt {
+      for_body {
+        statements {
+          decl {
+            expr {
+              binop {
+                op: ADD
+                left {
+                  varref {
+                    varnum: 0
+                  }
+                }
+                right {
+                  varref {
+                    varnum: 1
+                  }
+                }
+              }
+            }
+          }
+        }
+        statements {
+        }
+        statements {
+          forstmt {
+            for_body {
+              statements {
+                ifstmt {
+                  cond {
+                    varref {
+                      varnum: 0
+                    }
+                  }
+                  if_body {
+                    statements {
+                      contstmt {
+                      }
+                    }
+                  }
+                }
+              }
+            }
+            for_init {
+              statements {
+              }
+            }
+            for_post {
+            }
+            for_cond {
+              binop {
+                op: SGT
+                left {
+                  varref {
+                    varnum: 1
+                  }
+                }
+                right {
+                  varref {
+                    varnum: 0
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+      for_init {
+      }
+      for_post {
+        statements {
+          ifstmt {
+            cond {
+              binop {
+                op: EQ
+                left {
+                  varref {
+                    varnum: 1
+                  }
+                }
+                right {
+                  varref {
+                    varnum: 0
+                  }
+                }
+              }
+            }
+            if_body {
+            }
+          }
+        }
+      }
+      for_cond {
+        binop {
+          op: SGT
+          left {
+          }
+          right {
+            varref {
+              varnum: 50331647
+            }
+          }
+        }
+      }
+    }
+  }
+}
+ver: HOMESTEAD

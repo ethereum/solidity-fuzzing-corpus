@@ -1,0 +1,205 @@
+block {
+  statements {
+    multidecl {
+      num_vars: 587202560
+    }
+  }
+  statements {
+    multidecl {
+      num_vars: 587202560
+    }
+  }
+  statements {
+    multidecl {
+      num_vars: 32
+    }
+  }
+  statements {
+  }
+  statements {
+    storage_func {
+      loc {
+        binop {
+          op: EXP
+          left {
+          }
+          right {
+          }
+        }
+      }
+      val {
+      }
+      st: SSTORE
+    }
+  }
+  statements {
+    forstmt {
+      for_body {
+        statements {
+          breakstmt {
+          }
+        }
+      }
+      for_init {
+        statements {
+          breakstmt {
+          }
+        }
+      }
+      for_post {
+        statements {
+          breakstmt {
+          }
+        }
+      }
+      for_cond {
+        binop {
+          op: SHR
+          left {
+            nop {
+              op: COINBASE
+            }
+          }
+          right {
+            binop {
+              op: SHR
+              left {
+                unop {
+                  op: SLOAD
+                  operand {
+                    cons {
+                      intval: 0
+                    }
+                  }
+                }
+              }
+              right {
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  statements {
+    storage_func {
+      loc {
+        unop {
+        }
+      }
+      val {
+        binop {
+          op: MUL
+          left {
+          }
+          right {
+            binop {
+              op: MUL
+              left {
+                unop {
+                  op: MLOAD
+                  operand {
+                    cons {
+                      intval: 0
+                    }
+                  }
+                }
+              }
+              right {
+                unop {
+                  op: SLOAD
+                  operand {
+                    cons {
+                      intval: 0
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+      st: MSTORE
+    }
+  }
+  statements {
+  }
+  statements {
+  }
+  statements {
+    multidecl {
+      num_vars: 587202560
+    }
+  }
+  statements {
+    forstmt {
+      for_body {
+        statements {
+          breakstmt {
+          }
+        }
+      }
+      for_init {
+        statements {
+          breakstmt {
+          }
+        }
+      }
+      for_post {
+        statements {
+          breakstmt {
+          }
+        }
+      }
+      for_cond {
+        binop {
+          op: SHR
+          left {
+            binop {
+              op: SHR
+              left {
+                binop {
+                  op: SHR
+                  left {
+                    unop {
+                      op: CALLDATALOAD
+                      operand {
+                        cons {
+                          intval: 0
+                        }
+                      }
+                    }
+                  }
+                  right {
+                  }
+                }
+              }
+              right {
+                unop {
+                  op: MLOAD
+                  operand {
+                  }
+                }
+              }
+            }
+          }
+          right {
+            unop {
+              op: MLOAD
+              operand {
+                cons {
+                  intval: 0
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  statements {
+    breakstmt {
+    }
+  }
+}
+ver: ISTANBUL

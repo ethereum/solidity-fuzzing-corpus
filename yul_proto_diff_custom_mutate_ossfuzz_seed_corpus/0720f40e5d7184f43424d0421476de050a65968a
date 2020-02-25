@@ -1,0 +1,151 @@
+obj {
+  code {
+    block {
+      statements {
+        switchstmt {
+          switch_expr {
+            unop {
+              op: MLOAD
+              operand {
+                varref {
+                  varnum: 1435146546
+                }
+              }
+            }
+          }
+          case_stmt {
+            case_lit {
+            }
+            case_block {
+              statements {
+                assignment {
+                  ref_id {
+                    varnum: 1277070022
+                  }
+                  expr {
+                    func_expr {
+                      ret: SINGLE
+                      func_index: 1604781436
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+      statements {
+        functioncall {
+          ret: MULTIASSIGN
+          func_index: 1276055848
+          in_param1 {
+            varref {
+              varnum: 1892596861
+            }
+          }
+          in_param2 {
+            func_expr {
+              ret: SINGLE
+              func_index: 483012969
+            }
+          }
+          in_param3 {
+            func_expr {
+              ret: SINGLE
+              func_index: 287814183
+            }
+          }
+          in_param4 {
+            unop {
+              op: SLOAD
+              operand {
+                varref {
+                  varnum: 1887041334
+                }
+              }
+            }
+          }
+          out_param1 {
+            varnum: 905248810
+          }
+          out_param2 {
+            varnum: 1906391959
+          }
+          out_param3 {
+            varnum: 2146003321
+          }
+          out_param4 {
+            varnum: 218391907
+          }
+        }
+      }
+      statements {
+      }
+      statements {
+        boundedforstmt {
+          for_body {
+            statements {
+              pop {
+                expr {
+                  binop {
+                    op: SDIV
+                    left {
+                      varref {
+                        varnum: 7400504
+                      }
+                    }
+                    right {
+                      unopdata {
+                        op: SIZE
+                        identifier: 1704013146
+                      }
+                    }
+                  }
+                }
+              }
+            }
+            statements {
+              assignment {
+                ref_id {
+                  varnum: 544520128
+                }
+                expr {
+                  unop {
+                    op: CALLDATALOAD
+                    operand {
+                      cons {
+                        intval: 0
+                      }
+                    }
+                  }
+                }
+              }
+            }
+            statements {
+              boundedforstmt {
+              }
+            }
+            statements {
+              pop {
+                expr {
+                  func_expr {
+                    ret: SINGLE
+                    func_index: 105436463
+                  }
+                }
+              }
+            }
+            statements {
+              leave {
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  data {
+    hex: "1"
+  }
+}
+ver: ISTANBUL

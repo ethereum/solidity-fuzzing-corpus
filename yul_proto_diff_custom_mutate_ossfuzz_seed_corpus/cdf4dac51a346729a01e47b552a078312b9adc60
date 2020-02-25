@@ -1,0 +1,83 @@
+block {
+  statements {
+    copy_func {
+      ct: RETURNDATA
+      target {
+        binop {
+          op: LT
+          left {
+            unop {
+              op: SLOAD
+              operand {
+                cons {
+                  intval: 0
+                }
+              }
+            }
+          }
+          right {
+            binop {
+              op: LT
+              left {
+                binop {
+                  op: SHL
+                  left {
+                    nop {
+                      op: PC
+                    }
+                  }
+                  right {
+                  }
+                }
+              }
+              right {
+                binop {
+                  op: DIV
+                  left {
+                  }
+                  right {
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+      source {
+        unop {
+          op: CALLDATALOAD
+          operand {
+            unop {
+              op: NOT
+              operand {
+                top {
+                  op: MULM
+                  arg1 {
+                  }
+                  arg2 {
+                  }
+                  arg3 {
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+      size {
+        nop {
+          op: PC
+        }
+      }
+    }
+  }
+  statements {
+    breakstmt {
+    }
+  }
+  statements {
+    breakstmt {
+    }
+  }
+}
+ver: ISTANBUL

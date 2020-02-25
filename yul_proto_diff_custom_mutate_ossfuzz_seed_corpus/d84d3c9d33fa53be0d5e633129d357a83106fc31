@@ -1,0 +1,86 @@
+block {
+  statements {
+    funcdef {
+      num_input_params: 587202560
+      num_output_params: 10
+      block {
+        statements {
+          funcdef {
+            num_input_params: 0
+            num_output_params: 587202560
+            block {
+              statements {
+                storage_func {
+                  loc {
+                  }
+                  val {
+                  }
+                  st: SSTORE
+                }
+              }
+              statements {
+                storage_func {
+                  loc {
+                    cons {
+                      intval: 0
+                    }
+                  }
+                  val {
+                    varref {
+                      varnum: 521148215
+                    }
+                  }
+                  st: MSTORE8
+                }
+              }
+            }
+            force_call: true
+          }
+        }
+        statements {
+          storage_func {
+            loc {
+              unop {
+                op: CALLDATALOAD
+                operand {
+                  cons {
+                    intval: 0
+                  }
+                }
+              }
+            }
+            val {
+              nop {
+                op: CALLDATASIZE
+              }
+            }
+            st: MSTORE
+          }
+        }
+        statements {
+          storage_func {
+            loc {
+              varref {
+                varnum: 6
+              }
+            }
+            val {
+            }
+            st: MSTORE
+          }
+        }
+        statements {
+          storage_func {
+            loc {
+            }
+            val {
+            }
+            st: MSTORE8
+          }
+        }
+      }
+      force_call: true
+    }
+  }
+}
+ver: ISTANBUL

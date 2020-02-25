@@ -1,0 +1,77 @@
+obj {
+  code {
+    block {
+      statements {
+        boundedforstmt {
+          for_body {
+            statements {
+              boundedforstmt {
+                for_body {
+                  statements {
+                    extcode_copy {
+                      addr {
+                        cons {
+                          strval: "+"
+                        }
+                      }
+                      target {
+                        binop {
+                          op: ADD
+                          left {
+                            binop {
+                              op: SMOD
+                              left {
+                                cons {
+                                  strval: "+"
+                                }
+                              }
+                              right {
+                              }
+                            }
+                          }
+                          right {
+                          }
+                        }
+                      }
+                      source {
+                      }
+                      size {
+                        unop {
+                          op: MLOAD
+                          operand {
+                            top {
+                              op: MULM
+                              arg1 {
+                              }
+                              arg2 {
+                              }
+                              arg3 {
+                                binop {
+                                  op: SMOD
+                                  left {
+                                    cons {
+                                      strval: "+"
+                                    }
+                                  }
+                                  right {
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+      statements {
+      }
+    }
+  }
+}
+ver: ISTANBUL

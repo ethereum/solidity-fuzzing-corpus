@@ -1,0 +1,160 @@
+block {
+  statements {
+    multidecl {
+      num_vars: 347193224
+    }
+  }
+  statements {
+    storage_func {
+      loc {
+        unop {
+          op: MLOAD
+          operand {
+            varref {
+              varnum: 12286479
+            }
+          }
+        }
+      }
+      val {
+        varref {
+          varnum: 1955147669
+        }
+      }
+      st: MSTORE
+    }
+  }
+  statements {
+    assignment {
+      ref_id {
+        varnum: 778331047
+      }
+      expr {
+        varref {
+          varnum: 2130196643
+        }
+      }
+    }
+  }
+  statements {
+    multidecl {
+      num_vars: 39060808
+    }
+  }
+  statements {
+  }
+  statements {
+    assignment {
+      ref_id {
+        varnum: 1077501925
+      }
+      expr {
+        unop {
+          op: MLOAD
+          operand {
+            cons {
+              intval: 0
+            }
+          }
+        }
+      }
+    }
+  }
+  statements {
+    funcdef {
+      num_input_params: 0
+      num_output_params: 1048576
+      block {
+        statements {
+          storage_func {
+            loc {
+              varref {
+                varnum: 1662627242
+              }
+            }
+            val {
+              unop {
+                op: CALLDATALOAD
+                operand {
+                  unop {
+                    op: CALLDATALOAD
+                    operand {
+                      varref {
+                        varnum: 599555228
+                      }
+                    }
+                  }
+                }
+              }
+            }
+            st: MSTORE
+          }
+        }
+        statements {
+          assignment {
+            ref_id {
+              varnum: 130084602
+            }
+            expr {
+              varref {
+                varnum: 137542533
+              }
+            }
+          }
+        }
+        statements {
+          terminatestmt {
+            ret_rev {
+              stmt: REVERT
+              pos {
+                unop {
+                  op: SLOAD
+                  operand {
+                    cons {
+                      intval: 0
+                    }
+                  }
+                }
+              }
+              size {
+                varref {
+                  varnum: 1170392641
+                }
+              }
+            }
+          }
+        }
+        statements {
+          breakstmt {
+          }
+        }
+        statements {
+          switchstmt {
+            switch_expr {
+              varref {
+                varnum: 2011396120
+              }
+            }
+            case_stmt {
+            }
+          }
+        }
+        statements {
+          pop {
+            expr {
+              varref {
+                varnum: 1023737228
+              }
+            }
+          }
+        }
+        statements {
+          contstmt {
+          }
+        }
+      }
+      force_call: true
+    }
+  }
+}
+ver: ISTANBUL

@@ -1,0 +1,72 @@
+block {
+  statements {
+    decl {
+      expr {
+        nop {
+          op: CODESIZE
+        }
+      }
+    }
+  }
+  statements {
+  }
+  statements {
+    terminatestmt {
+      ret_rev {
+        stmt: REVERT
+        pos {
+          varref {
+            varnum: 1029531841
+          }
+        }
+        size {
+          unop {
+            op: SLOAD
+            operand {
+              varref {
+                varnum: 364649851
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  statements {
+    pop {
+      expr {
+        lowcall {
+          callty: STATICCALL
+        }
+      }
+    }
+  }
+  statements {
+    extcode_copy {
+      addr {
+        varref {
+          varnum: 1436936974
+        }
+      }
+      target {
+        func_expr {
+          ret: SINGLE
+          func_index: 998283568
+        }
+      }
+      source {
+        func_expr {
+          ret: SINGLE
+          func_index: 2035321574
+        }
+      }
+      size {
+        unopdata {
+          op: OFFSET
+          identifier: 394380207
+        }
+      }
+    }
+  }
+}
+ver: ISTANBUL

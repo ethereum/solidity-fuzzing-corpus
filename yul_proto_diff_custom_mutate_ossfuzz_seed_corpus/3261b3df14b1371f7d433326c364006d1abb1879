@@ -1,0 +1,195 @@
+block {
+  statements {
+  }
+  statements {
+  }
+  statements {
+    funcdef {
+      num_input_params: 1198444204
+      num_output_params: 1
+      block {
+        statements {
+        }
+        statements {
+        }
+        statements {
+        }
+        statements {
+          extcode_copy {
+            addr {
+              nop {
+                op: TIMESTAMP
+              }
+            }
+            target {
+              varref {
+                varnum: 1678396136
+              }
+            }
+            source {
+              unopdata {
+                op: OFFSET
+                identifier: 612277027
+              }
+            }
+            size {
+              varref {
+                varnum: 477522252
+              }
+            }
+          }
+        }
+        statements {
+          assignment {
+            ref_id {
+              varnum: 51173827
+            }
+            expr {
+              unop {
+                op: MLOAD
+                operand {
+                  func_expr {
+                    ret: SINGLE
+                    func_index: 1380947882
+                  }
+                }
+              }
+            }
+          }
+        }
+        statements {
+        }
+        statements {
+          leave {
+          }
+        }
+        statements {
+          assignment {
+            ref_id {
+              varnum: 1118216158
+            }
+            expr {
+              varref {
+                varnum: 1461618654
+              }
+            }
+          }
+        }
+        statements {
+        }
+        statements {
+        }
+      }
+      force_call: false
+    }
+  }
+  statements {
+    pop {
+      expr {
+        func_expr {
+          ret: SINGLE
+          func_index: 107519088
+        }
+      }
+    }
+  }
+  statements {
+    pop {
+      expr {
+        varref {
+          varnum: 36111958
+        }
+      }
+    }
+  }
+  statements {
+  }
+  statements {
+  }
+  statements {
+    contstmt {
+    }
+  }
+  statements {
+    funcdef {
+      num_input_params: 1
+      num_output_params: 1
+      block {
+        statements {
+          assignment {
+            ref_id {
+              varnum: 1502861816
+            }
+            expr {
+              unop {
+                op: EXTCODEHASH
+              }
+            }
+          }
+        }
+        statements {
+          assignment {
+            ref_id {
+              varnum: 969667517
+            }
+            expr {
+              func_expr {
+                ret: SINGLE
+                func_index: 61579676
+              }
+            }
+          }
+        }
+        statements {
+          pop {
+            expr {
+              unop {
+                op: EXTCODESIZE
+                operand {
+                  unop {
+                    op: SLOAD
+                    operand {
+                      varref {
+                        varnum: 111585139
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  statements {
+    leave {
+    }
+  }
+  statements {
+  }
+  statements {
+    switchstmt {
+      switch_expr {
+        unop {
+        }
+      }
+      case_stmt {
+      }
+    }
+  }
+  statements {
+    boundedforstmt {
+    }
+  }
+  statements {
+    pop {
+      expr {
+        lowcall {
+          callty: STATICCALL
+        }
+      }
+    }
+  }
+}
+ver: SPURIOUS

@@ -1,0 +1,82 @@
+block {
+  statements {
+    pop {
+      expr {
+        unop {
+          op: NOT
+          operand {
+            create {
+              createty: CREATE
+              wei {
+                unop {
+                  op: SLOAD
+                  operand {
+                  }
+                }
+              }
+              position {
+              }
+              size {
+              }
+              value {
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  statements {
+    copy_func {
+      ct: RETURNDATA
+      target {
+      }
+      source {
+      }
+      size {
+      }
+    }
+  }
+  statements {
+    ifstmt {
+      cond {
+        nop {
+          op: CODESIZE
+        }
+      }
+      if_body {
+        statements {
+          ifstmt {
+            cond {
+              nop {
+                op: CODESIZE
+              }
+            }
+            if_body {
+            }
+          }
+        }
+      }
+    }
+  }
+  statements {
+    boundedforstmt {
+      for_body {
+        statements {
+          pop {
+            expr {
+              binop {
+                op: OR
+                left {
+                }
+                right {
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+ver: HOMESTEAD

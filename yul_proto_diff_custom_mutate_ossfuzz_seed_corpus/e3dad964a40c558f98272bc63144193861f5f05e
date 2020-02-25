@@ -1,0 +1,212 @@
+block {
+  statements {
+  }
+  statements {
+    decl {
+      expr {
+        unop {
+          op: SLOAD
+          operand {
+            varref {
+              varnum: 7547400
+            }
+          }
+        }
+      }
+    }
+  }
+  statements {
+  }
+  statements {
+    contstmt {
+    }
+  }
+  statements {
+    extcode_copy {
+      addr {
+        lowcall {
+          callty: CALL
+          gas {
+          }
+          addr {
+            top {
+              op: ADDM
+              arg1 {
+              }
+              arg2 {
+                lowcall {
+                  callty: CALL
+                  gas {
+                  }
+                  addr {
+                  }
+                  wei {
+                  }
+                  in {
+                  }
+                  insize {
+                    lowcall {
+                      callty: CALL
+                      gas {
+                      }
+                      addr {
+                        varref {
+                          varnum: 26842963
+                        }
+                      }
+                      wei {
+                        varref {
+                          varnum: 104196891
+                        }
+                      }
+                      in {
+                        unop {
+                          op: SLOAD
+                          operand {
+                            varref {
+                              varnum: 2022171
+                            }
+                          }
+                        }
+                      }
+                      insize {
+                        func_expr {
+                          ret: SINGLE
+                          func_index: 28507722
+                        }
+                      }
+                      out {
+                        varref {
+                          varnum: 51748807
+                        }
+                      }
+                      outsize {
+                      }
+                    }
+                  }
+                  out {
+                  }
+                  outsize {
+                  }
+                }
+              }
+              arg3 {
+              }
+            }
+          }
+          wei {
+            unop {
+              op: MLOAD
+              operand {
+                varref {
+                  varnum: 4287513
+                }
+              }
+            }
+          }
+          in {
+          }
+          insize {
+          }
+          out {
+            func_expr {
+              ret: SINGLE
+              func_index: 115300994
+            }
+          }
+          outsize {
+          }
+        }
+      }
+      target {
+        varref {
+          varnum: 71460312
+        }
+      }
+      source {
+        varref {
+          varnum: 7547400
+        }
+      }
+      size {
+        nop {
+          op: TIMESTAMP
+        }
+      }
+    }
+  }
+  statements {
+    contstmt {
+    }
+  }
+  statements {
+  }
+  statements {
+  }
+  statements {
+    boundedforstmt {
+      for_body {
+        statements {
+          assignment {
+            ref_id {
+              varnum: 143585661
+            }
+            expr {
+              unop {
+                op: SLOAD
+                operand {
+                  cons {
+                    intval: 0
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  statements {
+    pop {
+      expr {
+        varref {
+          varnum: 51877366
+        }
+      }
+    }
+  }
+  statements {
+    contstmt {
+    }
+  }
+  statements {
+    funcdef {
+      num_input_params: 186806030
+      num_output_params: 120874490
+      block {
+        statements {
+          breakstmt {
+          }
+        }
+      }
+    }
+  }
+  statements {
+    terminatestmt {
+      ret_rev {
+        stmt: REVERT
+        pos {
+          cons {
+            intval: 0
+          }
+        }
+        size {
+          cons {
+            intval: 0
+          }
+        }
+      }
+    }
+  }
+}
+ver: PETERSBURG

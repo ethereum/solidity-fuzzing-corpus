@@ -1,0 +1,111 @@
+block {
+  statements {
+    decl {
+      expr {
+        varref {
+          varnum: 1
+        }
+      }
+    }
+  }
+  statements {
+    forstmt {
+      for_body {
+        statements {
+          decl {
+            expr {
+              varref {
+                varnum: 1
+              }
+            }
+          }
+        }
+        statements {
+          decl {
+            expr {
+              binop {
+                op: GT
+                left {
+                  varref {
+                    varnum: 0
+                  }
+                }
+                right {
+                  varref {
+                    varnum: 1
+                  }
+                }
+              }
+            }
+          }
+        }
+        statements {
+          decl {
+            expr {
+              varref {
+                varnum: 0
+              }
+            }
+          }
+        }
+      }
+      for_init {
+      }
+      for_post {
+        statements {
+          decl {
+            expr {
+              varref {
+                varnum: 1
+              }
+            }
+          }
+        }
+        statements {
+          decl {
+            expr {
+              binop {
+                op: GT
+                left {
+                  varref {
+                    varnum: 0
+                  }
+                }
+                right {
+                  varref {
+                    varnum: 1
+                  }
+                }
+              }
+            }
+          }
+        }
+        statements {
+          decl {
+            expr {
+              varref {
+                varnum: 0
+              }
+            }
+          }
+        }
+      }
+      for_cond {
+        binop {
+          op: AND
+          left {
+            varref {
+              varnum: 1
+            }
+          }
+          right {
+            varref {
+              varnum: 0
+            }
+          }
+        }
+      }
+    }
+  }
+}
+ver: ISTANBUL

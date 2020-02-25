@@ -1,0 +1,94 @@
+obj {
+  code {
+    block {
+      statements {
+        pop {
+          expr {
+            lowcall {
+              callty: DELEGATECALL
+            }
+          }
+        }
+      }
+    }
+  }
+  sub_obj {
+    code {
+      block {
+        statements {
+          pop {
+            expr {
+              lowcall {
+                callty: CALL
+              }
+            }
+          }
+        }
+      }
+    }
+    sub_obj {
+      code {
+        block {
+          statements {
+          }
+          statements {
+            assignment {
+              ref_id {
+                varnum: 80333801
+              }
+              expr {
+                cons {
+                  intval: 14977488
+                }
+              }
+            }
+          }
+          statements {
+            pop {
+              expr {
+                lowcall {
+                  callty: CALLCODE
+                }
+              }
+            }
+          }
+        }
+      }
+      sub_obj {
+        code {
+          block {
+            statements {
+              multidecl {
+                num_vars: 24877948
+              }
+            }
+            statements {
+              switchstmt {
+                switch_expr {
+                  varref {
+                    varnum: 48994936
+                  }
+                }
+                case_stmt {
+                }
+              }
+            }
+            statements {
+              pop {
+                expr {
+                  create {
+                    createty: CREATE
+                  }
+                }
+              }
+            }
+          }
+        }
+        data {
+          hex: "\377\377\377\377\377\377\377\377\377\377\377\377"
+        }
+      }
+    }
+  }
+}
+ver: HOMESTEAD

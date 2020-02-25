@@ -1,0 +1,84 @@
+block {
+  statements {
+    pop {
+      expr {
+        binop {
+          op: SI
+          left {
+          }
+          right {
+          }
+        }
+      }
+    }
+  }
+  statements {
+  }
+  statements {
+    boundedforstmt {
+      for_body {
+        statements {
+          ifstmt {
+            cond {
+              unop {
+                op: BLOCKHASH
+                operand {
+                }
+              }
+            }
+            if_body {
+              statements {
+                pop {
+                  expr {
+                    varref {
+                      varnum: 538976266
+                    }
+                  }
+                }
+              }
+              statements {
+                contstmt {
+                }
+              }
+              statements {
+              }
+            }
+          }
+        }
+        statements {
+          blockstmt {
+            statements {
+              breakstmt {
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  statements {
+    boundedforstmt {
+      for_body {
+        statements {
+          copy_func {
+            ct: RETURNDATA
+            target {
+              binop {
+                op: DIV
+                left {
+                }
+                right {
+                }
+              }
+            }
+            source {
+            }
+            size {
+            }
+          }
+        }
+      }
+    }
+  }
+}
+ver: SPURIOUS

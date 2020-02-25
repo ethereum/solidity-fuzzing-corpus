@@ -1,0 +1,119 @@
+obj {
+  code {
+    block {
+      statements {
+        extcode_copy {
+          addr {
+            binop {
+              op: SHR
+              left {
+                cons {
+                  intval: 1
+                }
+              }
+              right {
+                binop {
+                  op: SHL
+                  left {
+                    cons {
+                      intval: 1
+                    }
+                  }
+                  right {
+                    binop {
+                      op: SHL
+                      left {
+                        cons {
+                          intval: 1
+                        }
+                      }
+                      right {
+                        binop {
+                          op: SHR
+                          left {
+                            cons {
+                              intval: 1
+                            }
+                          }
+                          right {
+                            binop {
+                              op: SHL
+                              left {
+                                cons {
+                                  intval: 1
+                                }
+                              }
+                              right {
+                                binop {
+                                  op: SHL
+                                  left {
+                                    cons {
+                                      intval: 1
+                                    }
+                                  }
+                                  right {
+                                    binop {
+                                      op: SHR
+                                      left {
+                                        cons {
+                                          intval: 1
+                                        }
+                                      }
+                                      right {
+                                        nop {
+                                          op: COINBASE
+                                        }
+                                      }
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+          target {
+            binop {
+              op: SHR
+              left {
+              }
+              right {
+              }
+            }
+          }
+          source {
+            lowcall {
+              callty: CALL
+              gas {
+                cons {
+                  intval: 1
+                }
+              }
+              addr {
+              }
+              wei {
+              }
+              in {
+              }
+              insize {
+              }
+              out {
+              }
+              outsize {
+              }
+            }
+          }
+          size {
+          }
+        }
+      }
+    }
+  }
+}
+ver: PETERSBURG

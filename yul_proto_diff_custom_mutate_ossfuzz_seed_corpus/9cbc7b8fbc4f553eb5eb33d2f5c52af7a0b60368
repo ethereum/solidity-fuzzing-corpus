@@ -1,0 +1,81 @@
+block {
+  statements {
+    log_func {
+      pos {
+        unop {
+          op: EXTCODESIZE
+          operand {
+          }
+        }
+      }
+      size {
+        unop {
+          op: BLOCKHASH
+          operand {
+            func_expr {
+              ret: SINGLE
+              func_index: 49113446
+            }
+          }
+        }
+      }
+      num_topics: FOUR
+      t1 {
+      }
+      t2 {
+        unop {
+          op: BLOCKHASH
+          operand {
+          }
+        }
+      }
+      t3 {
+        unop {
+          op: BLOCKHASH
+          operand {
+          }
+        }
+      }
+      t4 {
+      }
+    }
+  }
+  statements {
+    breakstmt {
+    }
+  }
+  statements {
+    pop {
+      expr {
+        create {
+          createty: CREATE2
+          wei {
+          }
+          position {
+          }
+          size {
+          }
+          value {
+          }
+        }
+      }
+    }
+  }
+  statements {
+    assignment {
+      ref_id {
+        varnum: 31169757
+      }
+      expr {
+        varref {
+          varnum: 90850694
+        }
+      }
+    }
+  }
+  statements {
+    boundedforstmt {
+    }
+  }
+}
+ver: BYZANTIUM

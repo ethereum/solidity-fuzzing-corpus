@@ -1,0 +1,107 @@
+block {
+  statements {
+	decl {
+		expr {
+			cons {
+				intval: 256
+			}
+		}
+	}
+  }
+  statements {
+    forstmt {
+      for_body {
+	statements {
+	  decl {
+	    expr {
+		binop {
+			op: 0
+			left {
+				varref {
+				      varnum: 0
+	    			}
+			}
+			right {
+				varref {
+					varnum: 1
+				}
+			}
+		}
+            }
+	  }
+	}
+	statements {
+	  decl {
+	    expr {
+		binop {
+			op: 2
+			left {
+				varref {
+				      varnum: 0
+	    			}
+			}
+			right {
+				varref {
+					varnum: 1
+				}
+			}
+		}
+            }
+	  }
+	
+	}
+      }
+      for_init {
+        statements {
+          decl {
+            expr {
+              cons {
+                intval: 1
+              }
+            }
+          }	
+        }
+      }
+      for_post {
+	statements {
+		assignment {
+			ref_id {
+				varnum: 1
+			}
+			expr {
+				binop {
+					op: 0
+					left {
+						varref {
+							varnum: 1
+						}
+					}
+					right {
+						cons {
+							intval: 1
+						}
+					}
+				}
+			}
+		}
+	}
+      }
+      for_cond {
+	binop {
+		op: 9
+		left {
+			varref {
+				varnum: 1
+			}
+		}
+		right {
+			cons {
+				intval: 2
+			}
+		}
+	}
+      }
+    }
+  }
+}
+ver: HOMESTEAD

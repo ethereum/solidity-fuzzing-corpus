@@ -1,0 +1,112 @@
+block {
+  statements {
+  }
+  statements {
+    funcdef {
+      num_input_params: 1
+      num_output_params: 10
+      block {
+        statements {
+          forstmt {
+            for_body {
+              statements {
+                leave {
+                }
+              }
+            }
+            for_init {
+            }
+            for_post {
+              statements {
+              }
+            }
+            for_cond {
+              lowcall {
+                callty: CALL
+                gas {
+                  lowcall {
+                    callty: CALL
+                    gas {
+                      lowcall {
+                        callty: CALL
+                        gas {
+                        }
+                        addr {
+                        }
+                        wei {
+                          varref {
+                            varnum: 0
+                          }
+                        }
+                        in {
+                        }
+                        insize {
+                        }
+                        out {
+                          nop {
+                            op: MSIZE
+                          }
+                        }
+                        outsize {
+                        }
+                      }
+                    }
+                    addr {
+                    }
+                    wei {
+                    }
+                    in {
+                      cons {
+                        intval: 21
+                      }
+                    }
+                    insize {
+                    }
+                    out {
+                      nop {
+                        op: MSIZE
+                      }
+                    }
+                    outsize {
+                    }
+                  }
+                }
+                addr {
+                }
+                wei {
+                }
+                in {
+                }
+                insize {
+                }
+                out {
+                  cons {
+                    intval: 59954170039369728
+                  }
+                }
+                outsize {
+                  unop {
+                    op: BLOCKHASH
+                    operand {
+                      nop {
+                        op: CALLER
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+        statements {
+        }
+      }
+      force_call: true
+    }
+  }
+  statements {
+  }
+  statements {
+  }
+}
+ver: HOMESTEAD

@@ -1,0 +1,168 @@
+block {
+  statements {
+    breakstmt {
+    }
+  }
+  statements {
+    storage_func {
+      loc {
+        binop {
+          op: MUL
+          left {
+          }
+          right {
+            binop {
+              op: MUL
+              left {
+              }
+              right {
+                nop {
+                  op: GASPRICE
+                }
+              }
+            }
+          }
+        }
+      }
+      val {
+        binop {
+          op: BYTE
+          left {
+          }
+          right {
+          }
+        }
+      }
+      st: MSTORE8
+    }
+  }
+  statements {
+    storage_func {
+      loc {
+        binop {
+          op: MUL
+          left {
+          }
+          right {
+            unop {
+              op: CALLDATALOAD
+              operand {
+                unop {
+                  op: MLOAD
+                  operand {
+                    cons {
+                      intval: 0
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+      val {
+        unop {
+          op: SLOAD
+          operand {
+            unop {
+              op: CALLDATALOAD
+              operand {
+                cons {
+                  intval: 0
+                }
+              }
+            }
+          }
+        }
+      }
+      st: MSTORE8
+    }
+  }
+  statements {
+    storage_func {
+      loc {
+        binop {
+          op: MUL
+          left {
+            unop {
+              op: NOT
+              operand {
+              }
+            }
+          }
+          right {
+            binop {
+              op: MUL
+              left {
+              }
+              right {
+                nop {
+                  op: GASPRICE
+                }
+              }
+            }
+          }
+        }
+      }
+      val {
+        binop {
+          op: BYTE
+          left {
+          }
+          right {
+          }
+        }
+      }
+      st: MSTORE8
+    }
+  }
+  statements {
+    breakstmt {
+    }
+  }
+  statements {
+  }
+  statements {
+    storage_func {
+      loc {
+        binop {
+          op: MUL
+          left {
+          }
+          right {
+            binop {
+              op: MUL
+              left {
+                unop {
+                  op: NOT
+                  operand {
+                  }
+                }
+              }
+              right {
+                nop {
+                  op: GASPRICE
+                }
+              }
+            }
+          }
+        }
+      }
+      val {
+        binop {
+          op: BYTE
+          left {
+          }
+          right {
+          }
+        }
+      }
+      st: SSTORE
+    }
+  }
+  statements {
+    breakstmt {
+    }
+  }
+}
+ver: HOMESTEAD

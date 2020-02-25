@@ -1,0 +1,72 @@
+block {
+  statements {
+    storage_func {
+      loc {
+        binop {
+          op: OR
+          left {
+            unop {
+              op: NOT
+              operand {
+              }
+            }
+          }
+          right {
+          }
+        }
+      }
+      val {
+      }
+      st: SSTORE
+    }
+  }
+  statements {
+    funcdef {
+      num_input_params: 14
+      num_output_params: 4096
+      block {
+        statements {
+          funcdef {
+            num_input_params: 1024
+            num_output_params: 14
+            block {
+            }
+            force_call: true
+          }
+        }
+        statements {
+        }
+      }
+      force_call: true
+    }
+  }
+  statements {
+  }
+  statements {
+    funcdef {
+      num_input_params: 14
+      num_output_params: 4096
+      block {
+      }
+      force_call: true
+    }
+  }
+  statements {
+    storage_func {
+      loc {
+        cons {
+        }
+      }
+      val {
+      }
+      st: SSTORE
+    }
+  }
+  statements {
+    breakstmt {
+    }
+  }
+  statements {
+  }
+}
+ver: ISTANBUL

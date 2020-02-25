@@ -1,0 +1,126 @@
+obj {
+  code {
+    block {
+      statements {
+        extcode_copy {
+          addr {
+            top {
+              op: ADDM
+              arg1 {
+                unop {
+                  op: NOT
+                  operand {
+                  }
+                }
+              }
+              arg2 {
+              }
+              arg3 {
+                unop {
+                  op: SLOAD
+                  operand {
+                    cons {
+                      intval: 0
+                    }
+                  }
+                }
+              }
+            }
+          }
+          target {
+          }
+          source {
+            binop {
+              op: DIV
+              left {
+                unop {
+                  op: CALLDATALOAD
+                  operand {
+                    cons {
+                      intval: 0
+                    }
+                  }
+                }
+              }
+              right {
+              }
+            }
+          }
+          size {
+            unop {
+              op: MLOAD
+              operand {
+                cons {
+                  intval: 0
+                }
+              }
+            }
+          }
+        }
+      }
+      statements {
+        extcode_copy {
+          addr {
+            top {
+              op: ADDM
+              arg1 {
+                unop {
+                  op: NOT
+                  operand {
+                  }
+                }
+              }
+              arg2 {
+              }
+              arg3 {
+                binop {
+                  op: DIV
+                  left {
+                    unop {
+                      op: NOT
+                      operand {
+                      }
+                    }
+                  }
+                  right {
+                  }
+                }
+              }
+            }
+          }
+          target {
+          }
+          source {
+            binop {
+              op: DIV
+              left {
+                unop {
+                  op: NOT
+                  operand {
+                    unop {
+                      op: CALLDATALOAD
+                      operand {
+                        cons {
+                          intval: 0
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+              right {
+              }
+            }
+          }
+          size {
+          }
+        }
+      }
+      statements {
+        breakstmt {
+        }
+      }
+    }
+  }
+}
+ver: SPURIOUS

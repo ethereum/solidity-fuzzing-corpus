@@ -1,0 +1,85 @@
+block {
+  statements {
+    storage_func {
+      loc {
+        binop {
+          op: SHR
+          left {
+          }
+          right {
+            create {
+              createty: CREATE
+              wei {
+              }
+              position {
+                nop {
+                  op: GAS
+                }
+              }
+              size {
+              }
+              value {
+                nop {
+                  op: GAS
+                }
+              }
+            }
+          }
+        }
+      }
+      val {
+      }
+      st: SSTORE
+    }
+  }
+  statements {
+    storage_func {
+      loc {
+        binop {
+          op: BYTE
+          left {
+          }
+          right {
+            create {
+              createty: CREATE
+              wei {
+              }
+              position {
+              }
+              size {
+              }
+              value {
+                nop {
+                  op: ADDRESS
+                }
+              }
+            }
+          }
+        }
+      }
+      val {
+      }
+      st: SSTORE
+    }
+  }
+  statements {
+    storage_func {
+      loc {
+        binop {
+          op: SHR
+          left {
+          }
+          right {
+            nop {
+              op: ADDRESS
+            }
+          }
+        }
+      }
+      val {
+      }
+      st: SSTORE
+    }
+  }
+}
+ver: ISTANBUL

@@ -1,0 +1,162 @@
+obj {
+  code {
+    block {
+      statements {
+        breakstmt {
+        }
+      }
+      statements {
+        breakstmt {
+        }
+      }
+      statements {
+        storage_func {
+          loc {
+            binop {
+              op: SAR
+              left {
+                unop {
+                }
+              }
+              right {
+                binop {
+                  op: SDIV
+                  left {
+                    unop {
+                      op: NOT
+                      operand {
+                        unop {
+                          op: CALLDATALOAD
+                          operand {
+                            unop {
+                              op: MLOAD
+                              operand {
+                                cons {
+                                  intval: 0
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                  right {
+                    binop {
+                      op: SAR
+                      left {
+                        cons {
+                          intval: 64
+                        }
+                      }
+                      right {
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+          val {
+            unop {
+              op: MLOAD
+              operand {
+              }
+            }
+          }
+          st: MSTORE
+        }
+      }
+      statements {
+        breakstmt {
+        }
+      }
+      statements {
+      }
+      statements {
+        storage_func {
+          loc {
+            binop {
+              op: SAR
+              left {
+                unop {
+                  op: CALLDATALOAD
+                  operand {
+                    cons {
+                      intval: 0
+                    }
+                  }
+                }
+              }
+              right {
+                binop {
+                  op: SDIV
+                  left {
+                    unop {
+                      op: NOT
+                      operand {
+                        unop {
+                        }
+                      }
+                    }
+                  }
+                  right {
+                    binop {
+                      op: SAR
+                      left {
+                        cons {
+                          intval: 64
+                        }
+                      }
+                      right {
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+          val {
+            unop {
+              op: MLOAD
+              operand {
+                unop {
+                  op: NOT
+                  operand {
+                  }
+                }
+              }
+            }
+          }
+          st: MSTORE
+        }
+      }
+      statements {
+        breakstmt {
+        }
+      }
+      statements {
+        breakstmt {
+        }
+      }
+      statements {
+        breakstmt {
+        }
+      }
+      statements {
+        breakstmt {
+        }
+      }
+      statements {
+      }
+      statements {
+        breakstmt {
+        }
+      }
+    }
+  }
+  data {
+    hex: ")"
+  }
+}
+ver: ISTANBUL

@@ -1,0 +1,176 @@
+block {
+  statements {
+  }
+  statements {
+    extcode_copy {
+      addr {
+      }
+      target {
+      }
+      source {
+      }
+      size {
+        nop {
+          op: TIMESTAMP
+        }
+      }
+    }
+  }
+  statements {
+    forstmt {
+      for_body {
+        statements {
+          decl {
+            expr {
+              top {
+                op: MULM
+                arg1 {
+                }
+                arg2 {
+                }
+                arg3 {
+                }
+              }
+            }
+          }
+        }
+      }
+      for_init {
+      }
+      for_post {
+        statements {
+          decl {
+            expr {
+              top {
+                op: MULM
+                arg1 {
+                }
+                arg2 {
+                }
+                arg3 {
+                  binop {
+                    op: GT
+                    left {
+                    }
+                    right {
+                      top {
+                        op: MULM
+                        arg1 {
+                        }
+                        arg2 {
+                          top {
+                            op: MULM
+                            arg1 {
+                            }
+                            arg2 {
+                            }
+                            arg3 {
+                            }
+                          }
+                        }
+                        arg3 {
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+      for_cond {
+        unop {
+          op: NOT
+          operand {
+            binop {
+              op: GT
+              left {
+              }
+              right {
+                top {
+                  op: MULM
+                  arg1 {
+                  }
+                  arg2 {
+                  }
+                  arg3 {
+                    binop {
+                      op: GT
+                      left {
+                      }
+                      right {
+                        top {
+                          op: MULM
+                          arg1 {
+                          }
+                          arg2 {
+                          }
+                          arg3 {
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  statements {
+  }
+  statements {
+    storage_func {
+      loc {
+      }
+      val {
+      }
+      st: MSTORE8
+    }
+  }
+  statements {
+    extcode_copy {
+      addr {
+      }
+      target {
+      }
+      source {
+        top {
+          op: MULM
+          arg1 {
+          }
+          arg2 {
+          }
+          arg3 {
+          }
+        }
+      }
+      size {
+        nop {
+          op: SELFBALANCE
+        }
+      }
+    }
+  }
+  statements {
+    extcode_copy {
+      addr {
+      }
+      target {
+      }
+      source {
+      }
+      size {
+        nop {
+          op: TIMESTAMP
+        }
+      }
+    }
+  }
+  statements {
+  }
+}
+ver: BERLIN

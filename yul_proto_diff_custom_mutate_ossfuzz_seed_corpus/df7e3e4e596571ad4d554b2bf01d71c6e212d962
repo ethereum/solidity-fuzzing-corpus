@@ -1,0 +1,135 @@
+block {
+  statements {
+    multidecl {
+      num_vars: 122984937
+    }
+  }
+  statements {
+    pop {
+      expr {
+        lowcall {
+          callty: CALLCODE
+          gas {
+          }
+          addr {
+          }
+          wei {
+          }
+          in {
+          }
+          insize {
+          }
+          out {
+          }
+          outsize {
+          }
+        }
+      }
+    }
+  }
+  statements {
+    pop {
+      expr {
+        lowcall {
+          callty: DELEGATECALL
+          gas {
+          }
+          addr {
+          }
+          wei {
+          }
+          in {
+          }
+          insize {
+          }
+          out {
+          }
+          outsize {
+          }
+        }
+      }
+    }
+  }
+  statements {
+    assignment {
+      ref_id {
+        varnum: 190067631
+      }
+      expr {
+        cons {
+          intval: 35436338
+        }
+      }
+    }
+  }
+  statements {
+    breakstmt {
+    }
+  }
+  statements {
+    ifstmt {
+      cond {
+        varref {
+          varnum: 36756837
+        }
+      }
+      if_body {
+        statements {
+          multidecl {
+            num_vars: 67242811
+          }
+        }
+        statements {
+          storage_func {
+            loc {
+            }
+            val {
+              varref {
+                varnum: 26517514
+              }
+            }
+            st: MSTORE8
+          }
+        }
+        statements {
+        }
+        statements {
+          pop {
+            expr {
+              lowcall {
+                callty: DELEGATECALL
+              }
+            }
+          }
+        }
+        statements {
+          pop {
+            expr {
+              create {
+                createty: CREATE2
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  statements {
+    terminatestmt {
+      ret_rev {
+        stmt: REVERT
+        pos {
+          cons {
+            intval: 0
+          }
+        }
+        size {
+          cons {
+            intval: 0
+          }
+        }
+      }
+    }
+  }
+}
+ver: ISTANBUL

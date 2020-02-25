@@ -1,0 +1,75 @@
+obj {
+  code {
+    block {
+      statements {
+      }
+      statements {
+      }
+      statements {
+        extcode_copy {
+          addr {
+            binop {
+              op: SHL
+              left {
+                cons {
+                  intval: 1
+                }
+              }
+              right {
+                binop {
+                  op: SHR
+                  left {
+                    cons {
+                      intval: 1
+                    }
+                  }
+                  right {
+                    nop {
+                      op: COINBASE
+                    }
+                  }
+                }
+              }
+            }
+          }
+          target {
+            cons {
+              strval: "p"
+            }
+          }
+          source {
+            binop {
+              op: SHL
+              left {
+                cons {
+                  intval: 1
+                }
+              }
+              right {
+                binop {
+                  op: SHR
+                  left {
+                    cons {
+                      intval: 1
+                    }
+                  }
+                  right {
+                    nop {
+                      op: NUMBER
+                    }
+                  }
+                }
+              }
+            }
+          }
+          size {
+          }
+        }
+      }
+    }
+  }
+  data {
+    hex: "p"
+  }
+}
+ver: ISTANBUL

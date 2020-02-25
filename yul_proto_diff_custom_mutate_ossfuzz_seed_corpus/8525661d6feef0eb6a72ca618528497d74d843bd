@@ -1,0 +1,116 @@
+obj {
+  code {
+    block {
+      statements {
+        extcode_copy {
+          addr {
+            binop {
+              op: SHL
+              left {
+                cons {
+                  intval: 1
+                }
+              }
+              right {
+                binop {
+                  op: SHL
+                  left {
+                    cons {
+                      intval: 1
+                    }
+                  }
+                  right {
+                    binop {
+                      op: AND
+                      left {
+                        cons {
+                        }
+                      }
+                      right {
+                        nop {
+                          op: COINBASE
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+          target {
+          }
+          source {
+            cons {
+              intval: 277076930199552
+            }
+          }
+          size {
+            unop {
+              op: ISZERO
+              operand {
+              }
+            }
+          }
+        }
+      }
+      statements {
+        breakstmt {
+        }
+      }
+      statements {
+        extcode_copy {
+          addr {
+            binop {
+              op: SHL
+              left {
+              }
+              right {
+                binop {
+                  op: SHL
+                  left {
+                    cons {
+                      intval: 1
+                    }
+                  }
+                  right {
+                    binop {
+                      op: AND
+                      left {
+                        cons {
+                        }
+                      }
+                      right {
+                        nop {
+                          op: COINBASE
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+          target {
+            cons {
+              intval: 1
+            }
+          }
+          source {
+          }
+          size {
+            unop {
+              op: ISZERO
+              operand {
+              }
+            }
+          }
+        }
+      }
+      statements {
+        breakstmt {
+        }
+      }
+    }
+  }
+}
+ver: ISTANBUL

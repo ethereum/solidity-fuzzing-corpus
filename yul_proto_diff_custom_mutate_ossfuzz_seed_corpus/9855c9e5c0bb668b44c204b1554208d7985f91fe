@@ -1,0 +1,75 @@
+block {
+  statements {
+    storage_func {
+      loc {
+        binop {
+          op: SDIV
+          left {
+            cons {
+              strval: "\014\000\000\000\000\000"
+            }
+          }
+          right {
+            binop {
+              op: SDIV
+              left {
+              }
+              right {
+              }
+            }
+          }
+        }
+      }
+      val {
+        nop {
+          op: CALLDATASIZE
+        }
+      }
+      st: MSTORE
+    }
+  }
+  statements {
+    storage_func {
+      loc {
+        binop {
+          op: SDIV
+          left {
+            cons {
+              strval: "\014\000\000\000\000\000"
+            }
+          }
+          right {
+            binop {
+              op: SDIV
+              left {
+              }
+              right {
+              }
+            }
+          }
+        }
+      }
+      val {
+        binop {
+          op: SDIV
+          left {
+            nop {
+              op: CALLDATASIZE
+            }
+          }
+          right {
+            binop {
+              op: SDIV
+              left {
+              }
+              right {
+              }
+            }
+          }
+        }
+      }
+      st: MSTORE
+    }
+  }
+}
+ver: ISTANBUL

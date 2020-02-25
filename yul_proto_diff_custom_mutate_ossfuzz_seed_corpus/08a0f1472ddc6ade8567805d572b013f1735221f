@@ -1,0 +1,74 @@
+block {
+  statements {
+    storage_func {
+      loc {
+      }
+      val {
+        create {
+          createty: CREATE
+          wei {
+          }
+          position {
+          }
+          size {
+            binop {
+              op: SMOD
+              left {
+                unop {
+                  op: BLOCKHASH
+                  operand {
+                  }
+                }
+              }
+              right {
+              }
+            }
+          }
+          value {
+          }
+        }
+      }
+      st: MSTORE
+    }
+  }
+  statements {
+    storage_func {
+      loc {
+      }
+      val {
+        create {
+          createty: CREATE
+          wei {
+            unop {
+              op: BLOCKHASH
+              operand {
+              }
+            }
+          }
+          position {
+          }
+          size {
+            binop {
+              op: SMOD
+              left {
+                unop {
+                  op: BLOCKHASH
+                  operand {
+                  }
+                }
+              }
+              right {
+              }
+            }
+          }
+          value {
+          }
+        }
+      }
+      st: MSTORE
+    }
+  }
+  statements {
+  }
+}
+ver: SPURIOUS

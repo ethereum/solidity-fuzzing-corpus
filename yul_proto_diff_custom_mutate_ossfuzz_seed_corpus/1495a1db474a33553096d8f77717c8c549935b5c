@@ -1,0 +1,183 @@
+block {
+  statements {
+    decl {
+      expr {
+        binop {
+          op: SHR
+          left {
+            func_expr {
+              ret: SINGLE
+              func_index: 1403677042
+            }
+          }
+          right {
+            func_expr {
+              ret: SINGLE
+              func_index: 40596594
+            }
+          }
+        }
+      }
+    }
+  }
+  statements {
+    breakstmt {
+    }
+  }
+  statements {
+    breakstmt {
+    }
+  }
+  statements {
+    assignment {
+      ref_id {
+        varnum: 1981634728
+      }
+      expr {
+        unop {
+          op: CALLDATALOAD
+          operand {
+            func_expr {
+              ret: SINGLE
+              func_index: 1319324909
+            }
+          }
+        }
+      }
+    }
+  }
+  statements {
+    pop {
+      expr {
+        func_expr {
+          ret: SINGLE
+          func_index: 163546098
+        }
+      }
+    }
+  }
+  statements {
+  }
+  statements {
+    contstmt {
+    }
+  }
+  statements {
+    funcdef {
+      num_input_params: 1
+      num_output_params: 1
+      block {
+        statements {
+          assignment {
+            ref_id {
+              varnum: 604652791
+            }
+            expr {
+              unop {
+                op: SLOAD
+                operand {
+                  varref {
+                    varnum: 181262056
+                  }
+                }
+              }
+            }
+          }
+        }
+        statements {
+          contstmt {
+          }
+        }
+        statements {
+          assignment {
+            ref_id {
+              varnum: 614036846
+            }
+            expr {
+              unop {
+                op: SLOAD
+                operand {
+                  varref {
+                    varnum: 1346596002
+                  }
+                }
+              }
+            }
+          }
+        }
+        statements {
+          boundedforstmt {
+          }
+        }
+        statements {
+          boundedforstmt {
+          }
+        }
+      }
+    }
+  }
+  statements {
+    assignment {
+      ref_id {
+        varnum: 387187269
+      }
+      expr {
+        func_expr {
+          ret: SINGLE
+          func_index: 1018726648
+        }
+      }
+    }
+  }
+  statements {
+    assignment {
+      ref_id {
+        varnum: 1892104947
+      }
+      expr {
+        func_expr {
+          ret: SINGLE
+          func_index: 1491729168
+        }
+      }
+    }
+  }
+  statements {
+    forstmt {
+      for_cond {
+        unopdata {
+          op: SIZE
+          identifier: 536307497
+        }
+      }
+    }
+  }
+  statements {
+    terminatestmt {
+      ret_rev {
+        stmt: REVERT
+        pos {
+          binop {
+            op: SI
+            left {
+              varref {
+                varnum: 1568014724
+              }
+            }
+            right {
+              varref {
+                varnum: 1577603689
+              }
+            }
+          }
+        }
+        size {
+          varref {
+            varnum: 596680486
+          }
+        }
+      }
+    }
+  }
+}
+ver: ISTANBUL

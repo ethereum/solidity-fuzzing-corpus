@@ -1,0 +1,169 @@
+obj {
+  code {
+    block {
+      statements {
+        storage_func {
+          loc {
+            unop {
+            }
+          }
+          val {
+            binop {
+              op: EXP
+              left {
+              }
+              right {
+                binop {
+                  op: EXP
+                  left {
+                  }
+                  right {
+                  }
+                }
+              }
+            }
+          }
+          st: MSTORE
+        }
+      }
+      statements {
+        storage_func {
+          loc {
+            unop {
+              op: SLOAD
+              operand {
+                cons {
+                  intval: 0
+                }
+              }
+            }
+          }
+          val {
+            binop {
+              op: EXP
+              left {
+                unop {
+                  op: SLOAD
+                  operand {
+                    cons {
+                      intval: 0
+                    }
+                  }
+                }
+              }
+              right {
+              }
+            }
+          }
+          st: MSTORE
+        }
+      }
+      statements {
+        breakstmt {
+        }
+      }
+      statements {
+        breakstmt {
+        }
+      }
+    }
+  }
+  data {
+    hex: "\036"
+  }
+  sub_obj {
+    code {
+      block {
+        statements {
+          storage_func {
+            loc {
+              unop {
+                op: MLOAD
+                operand {
+                  cons {
+                    intval: 0
+                  }
+                }
+              }
+            }
+            val {
+              binop {
+                op: EXP
+                left {
+                }
+                right {
+                  binop {
+                    op: EXP
+                    left {
+                    }
+                    right {
+                    }
+                  }
+                }
+              }
+            }
+            st: MSTORE
+          }
+        }
+        statements {
+          storage_func {
+            loc {
+              unop {
+                op: SLOAD
+                operand {
+                  cons {
+                    intval: 0
+                  }
+                }
+              }
+            }
+            val {
+              binop {
+                op: EXP
+                left {
+                  unop {
+                    op: SLOAD
+                    operand {
+                      cons {
+                        intval: 0
+                      }
+                    }
+                  }
+                }
+                right {
+                }
+              }
+            }
+            st: MSTORE
+          }
+        }
+        statements {
+          breakstmt {
+          }
+        }
+        statements {
+          breakstmt {
+          }
+        }
+      }
+    }
+    data {
+      hex: "\036"
+    }
+    sub_obj {
+      code {
+        block {
+          statements {
+            breakstmt {
+            }
+          }
+          statements {
+            breakstmt {
+            }
+          }
+        }
+      }
+    }
+  }
+}
+ver: BERLIN

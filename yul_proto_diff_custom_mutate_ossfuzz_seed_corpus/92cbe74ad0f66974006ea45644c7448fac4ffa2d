@@ -1,0 +1,211 @@
+obj {
+  code {
+    block {
+      statements {
+        decl {
+          expr {
+            unopdata {
+              op: OFFSET
+              identifier: 2104482139
+            }
+          }
+        }
+      }
+      statements {
+      }
+      statements {
+        extcode_copy {
+          addr {
+            unopdata {
+              op: OFFSET
+              identifier: 217407591
+            }
+          }
+          target {
+            unop {
+              op: NOT
+              operand {
+                func_expr {
+                  ret: SINGLE
+                  func_index: 338296048
+                }
+              }
+            }
+          }
+          source {
+            func_expr {
+              ret: SINGLE
+              func_index: 830664139
+            }
+          }
+          size {
+            unopdata {
+              op: OFFSET
+              identifier: 1843207536
+            }
+          }
+        }
+      }
+      statements {
+      }
+      statements {
+      }
+      statements {
+      }
+      statements {
+        pop {
+          expr {
+            unop {
+              op: MLOAD
+              operand {
+                func_expr {
+                  ret: SINGLE
+                  func_index: 1007367976
+                }
+              }
+            }
+          }
+        }
+      }
+      statements {
+        pop {
+          expr {
+            func_expr {
+              ret: SINGLE
+              func_index: 1055918011
+            }
+          }
+        }
+      }
+      statements {
+      }
+      statements {
+        extcode_copy {
+          addr {
+            binop {
+              op: BYTE
+              left {
+                varref {
+                  varnum: 899777877
+                }
+              }
+              right {
+                unopdata {
+                  op: SIZE
+                  identifier: 1216416886
+                }
+              }
+            }
+          }
+          target {
+            binop {
+              op: KECCAK
+              left {
+                unop {
+                  op: SLOAD
+                  operand {
+                    unop {
+                      op: EXTCODEHASH
+                    }
+                  }
+                }
+              }
+              right {
+                varref {
+                  varnum: 329329067
+                }
+              }
+            }
+          }
+          source {
+            binop {
+              op: SGT
+              left {
+                varref {
+                  varnum: 941956956
+                }
+              }
+              right {
+                varref {
+                  varnum: 1281110422
+                }
+              }
+            }
+          }
+          size {
+            binop {
+              op: LT
+              left {
+                func_expr {
+                  ret: SINGLE
+                  func_index: 861038562
+                }
+              }
+              right {
+                varref {
+                  varnum: 2080904309
+                }
+              }
+            }
+          }
+        }
+      }
+      statements {
+        terminatestmt {
+          ret_rev {
+            stmt: REVERT
+            pos {
+              unop {
+              }
+            }
+            size {
+              unop {
+              }
+            }
+          }
+        }
+      }
+      statements {
+        leave {
+        }
+      }
+      statements {
+        assignment {
+          ref_id {
+            varnum: 1442990507
+          }
+          expr {
+            unop {
+              op: MLOAD
+              operand {
+                cons {
+                  intval: 0
+                }
+              }
+            }
+          }
+        }
+      }
+      statements {
+        multidecl {
+          num_vars: 1034880174
+        }
+      }
+      statements {
+      }
+      statements {
+        pop {
+          expr {
+            lowcall {
+              callty: DELEGATECALL
+            }
+          }
+        }
+      }
+    }
+  }
+  data {
+    hex: "UUUUUUU\005"
+  }
+}
+ver: ISTANBUL

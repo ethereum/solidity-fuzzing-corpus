@@ -1,0 +1,103 @@
+obj {
+  code {
+    block {
+      statements {
+        storage_func {
+          loc {
+            binop {
+              op: OR
+              left {
+                nop {
+                  op: GASLIMIT
+                }
+              }
+              right {
+                unop {
+                  op: NOT
+                  operand {
+                    nop {
+                      op: GASLIMIT
+                    }
+                  }
+                }
+              }
+            }
+          }
+          val {
+            binop {
+              op: LT
+              left {
+                nop {
+                  op: GASLIMIT
+                }
+              }
+              right {
+                unop {
+                  op: NOT
+                  operand {
+                    nop {
+                      op: GASLIMIT
+                    }
+                  }
+                }
+              }
+            }
+          }
+          st: MSTORE
+        }
+      }
+    }
+  }
+  sub_obj {
+    code {
+      block {
+        statements {
+          storage_func {
+            loc {
+              binop {
+                op: OR
+                left {
+                  nop {
+                    op: GASLIMIT
+                  }
+                }
+                right {
+                  unop {
+                    op: NOT
+                    operand {
+                      nop {
+                        op: GASLIMIT
+                      }
+                    }
+                  }
+                }
+              }
+            }
+            val {
+              binop {
+                op: LT
+                left {
+                  nop {
+                    op: GASLIMIT
+                  }
+                }
+                right {
+                  unop {
+                    op: NOT
+                    operand {
+                      nop {
+                        op: GASLIMIT
+                      }
+                    }
+                  }
+                }
+              }
+            }
+            st: MSTORE
+          }
+        }
+      }
+    }
+  }
+}
+ver: BYZANTIUM

@@ -1,0 +1,118 @@
+block {
+  statements {
+    boundedforstmt {
+      for_body {
+        statements {
+          leave {
+          }
+        }
+        statements {
+          boundedforstmt {
+          }
+        }
+        statements {
+          copy_func {
+            target {
+              unopdata {
+                op: OFFSET
+                identifier: 1172437568
+              }
+            }
+            source {
+              varref {
+                varnum: 1620116086
+              }
+            }
+            size {
+              unop {
+                op: MLOAD
+                operand {
+                  cons {
+                    intval: 0
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  statements {
+  }
+  statements {
+    pop {
+      expr {
+        unop {
+          op: CALLDATALOAD
+          operand {
+            varref {
+              varnum: 1636288018
+            }
+          }
+        }
+      }
+    }
+  }
+  statements {
+    breakstmt {
+    }
+  }
+  statements {
+    funcdef {
+      num_input_params: 1
+      num_output_params: 1
+      block {
+        statements {
+          assignment {
+            ref_id {
+              varnum: 1665354619
+            }
+            expr {
+              unop {
+                op: CALLDATALOAD
+                operand {
+                  func_expr {
+                    ret: SINGLE
+                    func_index: 1433761366
+                  }
+                }
+              }
+            }
+          }
+        }
+        statements {
+          pop {
+            expr {
+              func_expr {
+                ret: SINGLE
+                func_index: 1223827382
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  statements {
+    forstmt {
+      for_cond {
+        func_expr {
+          ret: SINGLE
+          func_index: 1707766379
+        }
+      }
+    }
+  }
+  statements {
+    pop {
+      expr {
+        func_expr {
+          ret: SINGLE
+          func_index: 780619119
+        }
+      }
+    }
+  }
+}
+ver: SPURIOUS

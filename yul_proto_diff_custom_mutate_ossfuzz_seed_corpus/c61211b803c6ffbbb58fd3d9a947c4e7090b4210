@@ -1,0 +1,87 @@
+block {
+  statements {
+    contstmt {
+    }
+  }
+  statements {
+    terminatestmt {
+      ret_rev {
+        stmt: REVERT
+        pos {
+          func_expr {
+            ret: SINGLE
+            func_index: 1986776982
+          }
+        }
+        size {
+          varref {
+            varnum: 577116386
+          }
+        }
+      }
+    }
+  }
+  statements {
+    copy_func {
+      ct: CALLDATA
+      target {
+        func_expr {
+          ret: SINGLE
+          func_index: 447869411
+        }
+      }
+      source {
+        cons {
+          intval: 7133702288314597376
+        }
+      }
+      size {
+        unop {
+          op: SLOAD
+          operand {
+            varref {
+              varnum: 706344563
+            }
+          }
+        }
+      }
+    }
+  }
+  statements {
+    functioncall {
+      ret: SINGLE
+      func_index: 1159613244
+      in_param1 {
+        unop {
+          op: CALLDATALOAD
+          operand {
+            varref {
+              varnum: 193291472
+            }
+          }
+        }
+      }
+      in_param2 {
+        unop {
+          op: SLOAD
+          operand {
+            varref {
+              varnum: 460813572
+            }
+          }
+        }
+      }
+      in_param3 {
+        varref {
+          varnum: 422077898
+        }
+      }
+      in_param4 {
+        varref {
+          varnum: 1953692142
+        }
+      }
+    }
+  }
+}
+ver: PETERSBURG

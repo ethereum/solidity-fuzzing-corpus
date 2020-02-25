@@ -1,0 +1,111 @@
+block {
+  statements {
+    storage_func {
+      loc {
+        top {
+          op: ADDM
+          arg1 {
+          }
+          arg2 {
+            lowcall {
+              callty: CALL
+              gas {
+              }
+              addr {
+              }
+              wei {
+                top {
+                  op: ADDM
+                  arg1 {
+                  }
+                  arg2 {
+                    unop {
+                      op: MLOAD
+                      operand {
+                        unop {
+                          op: SLOAD
+                          operand {
+                            varref {
+                              varnum: 2715592
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                  arg3 {
+                  }
+                }
+              }
+              in {
+              }
+              insize {
+              }
+              out {
+              }
+              outsize {
+              }
+            }
+          }
+          arg3 {
+          }
+        }
+      }
+      val {
+        varref {
+          varnum: 159509887
+        }
+      }
+      st: MSTORE
+    }
+  }
+  statements {
+    copy_func {
+      ct: CALLDATA
+      target {
+        func_expr {
+          ret: SINGLE
+          func_index: 91232492
+        }
+      }
+      source {
+        varref {
+          varnum: 161132641
+        }
+      }
+      size {
+        func_expr {
+          ret: SINGLE
+          func_index: 41214193
+        }
+      }
+    }
+  }
+  statements {
+    assignment {
+      ref_id {
+        varnum: 99519344
+      }
+      expr {
+        unop {
+          op: ISZERO
+          operand {
+            varref {
+              varnum: 1858545
+            }
+          }
+        }
+      }
+    }
+  }
+  statements {
+    pop {
+      expr {
+        lowcall {
+          callty: STATICCALL
+        }
+      }
+    }
+  }
+}
+ver: HOMESTEAD

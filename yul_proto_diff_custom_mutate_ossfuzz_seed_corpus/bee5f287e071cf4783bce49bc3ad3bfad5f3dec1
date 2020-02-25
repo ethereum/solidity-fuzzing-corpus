@@ -1,0 +1,126 @@
+block {
+  statements {
+    extcode_copy {
+      addr {
+        func_expr {
+          ret: SINGLE
+          func_index: 2071614026
+        }
+      }
+      target {
+        unop {
+          op: SLOAD
+          operand {
+            cons {
+              intval: 0
+            }
+          }
+        }
+      }
+      source {
+        unop {
+          op: SLOAD
+          operand {
+            func_expr {
+              ret: SINGLE
+              func_index: 1047515062
+            }
+          }
+        }
+      }
+      size {
+        varref {
+          varnum: 347634023
+        }
+      }
+    }
+  }
+  statements {
+    storage_func {
+      loc {
+        func_expr {
+          ret: SINGLE
+          func_index: 907121936
+        }
+      }
+      val {
+        unopdata {
+          op: OFFSET
+          identifier: 1190092363
+        }
+      }
+      st: SSTORE
+    }
+  }
+  statements {
+    assignment {
+      ref_id {
+        varnum: 1345889116
+      }
+      expr {
+        varref {
+          varnum: 1236371597
+        }
+      }
+    }
+  }
+  statements {
+    switchstmt {
+      switch_expr {
+        varref {
+          varnum: 2139766782
+        }
+      }
+      case_stmt {
+      }
+    }
+  }
+  statements {
+    funcdef {
+      num_input_params: 1610901344
+      num_output_params: 1583402001
+      block {
+        statements {
+          storage_func {
+            loc {
+              varref {
+                varnum: 1020247026
+              }
+            }
+            val {
+              unop {
+                op: CALLDATALOAD
+                operand {
+                  varref {
+                    varnum: 1002258157
+                  }
+                }
+              }
+            }
+            st: MSTORE
+          }
+        }
+        statements {
+          pop {
+            expr {
+              lowcall {
+                callty: CALLCODE
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  statements {
+    pop {
+      expr {
+        func_expr {
+          ret: SINGLE
+          func_index: 493599746
+        }
+      }
+    }
+  }
+}
+ver: SPURIOUS

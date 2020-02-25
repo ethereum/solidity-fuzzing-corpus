@@ -1,0 +1,209 @@
+block {
+  statements {
+    pop {
+      expr {
+        binop {
+          op: SI
+          left {
+            varref {
+              varnum: 1825171250
+            }
+          }
+          right {
+            func_expr {
+              ret: SINGLE
+              func_index: 241294878
+            }
+          }
+        }
+      }
+    }
+  }
+  statements {
+    breakstmt {
+    }
+  }
+  statements {
+  }
+  statements {
+    storage_func {
+      loc {
+        func_expr {
+          ret: SINGLE
+          func_index: 1333986851
+        }
+      }
+      val {
+        func_expr {
+          ret: SINGLE
+          func_index: 1764742894
+        }
+      }
+      st: MSTORE
+    }
+  }
+  statements {
+    terminatestmt {
+      ret_rev {
+        stmt: REVERT
+        pos {
+          binop {
+            op: SDIV
+            left {
+              func_expr {
+                ret: SINGLE
+                func_index: 515538189
+              }
+            }
+            right {
+              varref {
+                varnum: 1626790592
+              }
+            }
+          }
+        }
+        size {
+          unop {
+            op: CALLDATALOAD
+            operand {
+              varref {
+                varnum: 1653739588
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  statements {
+  }
+  statements {
+    assignment {
+      ref_id {
+        varnum: 648771932
+      }
+      expr {
+        unopdata {
+          op: SIZE
+          identifier: 1945980881
+        }
+      }
+    }
+  }
+  statements {
+    breakstmt {
+    }
+  }
+  statements {
+    breakstmt {
+    }
+  }
+  statements {
+    funcdef {
+      num_input_params: 1
+      num_output_params: 1
+      block {
+        statements {
+          assignment {
+            ref_id {
+              varnum: 5427098
+            }
+            expr {
+              varref {
+                varnum: 1672015359
+              }
+            }
+          }
+        }
+        statements {
+          functioncall {
+            ret: ZERO
+            func_index: 1439629549
+            in_param1 {
+              unop {
+                op: SLOAD
+                operand {
+                  func_expr {
+                    ret: SINGLE
+                    func_index: 1277314892
+                  }
+                }
+              }
+            }
+            in_param2 {
+              varref {
+                varnum: 1980004468
+              }
+            }
+            in_param3 {
+              unop {
+                op: CALLDATALOAD
+                operand {
+                  varref {
+                    varnum: 1307173607
+                  }
+                }
+              }
+            }
+            in_param4 {
+              unop {
+                op: MLOAD
+                operand {
+                  varref {
+                    varnum: 1902524909
+                  }
+                }
+              }
+            }
+            out_param1 {
+              varnum: 1120345710
+            }
+            out_param2 {
+              varnum: 127085009
+            }
+            out_param3 {
+              varnum: 798956504
+            }
+            out_param4 {
+              varnum: 1212667343
+            }
+          }
+        }
+        statements {
+          boundedforstmt {
+          }
+        }
+        statements {
+          storage_func {
+            loc {
+              binop {
+                op: BYTE
+                left {
+                  varref {
+                    varnum: 1296755441
+                  }
+                }
+                right {
+                  unop {
+                    op: MLOAD
+                    operand {
+                      varref {
+                        varnum: 189781877
+                      }
+                    }
+                  }
+                }
+              }
+            }
+            val {
+              varref {
+                varnum: 434337451
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+ver: ISTANBUL

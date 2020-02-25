@@ -1,0 +1,127 @@
+block {
+  statements {
+    multidecl {
+      num_vars: 1015751205
+    }
+  }
+  statements {
+    log_func {
+      pos {
+        varref {
+          varnum: 153943121
+        }
+      }
+      size {
+        varref {
+          varnum: 590108698
+        }
+      }
+      num_topics: ONE
+      t1 {
+        unopdata {
+          op: OFFSET
+          identifier: 2067531334
+        }
+      }
+      t2 {
+        unop {
+          op: EXTCODEHASH
+          operand {
+            unopdata {
+              op: SIZE
+              identifier: 2083676896
+            }
+          }
+        }
+      }
+      t3 {
+        varref {
+          varnum: 1753047034
+        }
+      }
+      t4 {
+        varref {
+          varnum: 818397210
+        }
+      }
+    }
+  }
+  statements {
+    funcdef {
+      num_input_params: 2127271898
+      num_output_params: 1463723406
+      block {
+        statements {
+          storage_func {
+            loc {
+              binop {
+                op: SHL
+                left {
+                  varref {
+                    varnum: 623256044
+                  }
+                }
+                right {
+                  varref {
+                    varnum: 689234918
+                  }
+                }
+              }
+            }
+            val {
+              unop {
+                op: MLOAD
+                operand {
+                  varref {
+                    varnum: 1989128366
+                  }
+                }
+              }
+            }
+            st: MSTORE
+          }
+        }
+        statements {
+          assignment {
+            ref_id {
+              varnum: 927939968
+            }
+            expr {
+              func_expr {
+                ret: SINGLE
+                func_index: 1621255602
+              }
+            }
+          }
+        }
+        statements {
+          switchstmt {
+            switch_expr {
+              unop {
+                op: CALLDATALOAD
+                operand {
+                  varref {
+                    varnum: 1606952129
+                  }
+                }
+              }
+            }
+            case_stmt {
+            }
+          }
+        }
+      }
+    }
+  }
+  statements {
+    pop {
+      expr {
+        func_expr {
+          ret: SINGLE
+          func_index: 1982082547
+        }
+      }
+    }
+  }
+}
+ver: CONSTANTINOPLE

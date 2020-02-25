@@ -1,0 +1,155 @@
+block {
+  statements {
+    breakstmt {
+    }
+  }
+  statements {
+    forstmt {
+      for_body {
+        statements {
+          forstmt {
+            for_body {
+              statements {
+                ifstmt {
+                  cond {
+                    binop {
+                      op: SGT
+                      left {
+                        varref {
+                          varnum: 1
+                        }
+                      }
+                      right {
+                        varref {
+                          varnum: 0
+                        }
+                      }
+                    }
+                  }
+                  if_body {
+                    statements {
+                      contstmt {
+                      }
+                    }
+                  }
+                }
+              }
+            }
+            for_init {
+              statements {
+              }
+            }
+            for_post {
+              statements {
+                assignment {
+                  ref_id {
+                    varnum: 2
+                  }
+                  expr {
+                    binop {
+                      op: SGT
+                      left {
+                        varref {
+                          varnum: 1
+                        }
+                      }
+                      right {
+                        varref {
+                          varnum: 0
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+            for_cond {
+              binop {
+                op: SGT
+                left {
+                  varref {
+                    varnum: 1
+                  }
+                }
+                right {
+                  varref {
+                    varnum: 0
+                  }
+                }
+              }
+            }
+          }
+        }
+        statements {
+        }
+        statements {
+          copy_func {
+            ct: CALLDATA
+            target {
+            }
+            source {
+              varref {
+                varnum: 0
+              }
+            }
+            size {
+            }
+          }
+        }
+      }
+      for_init {
+        statements {
+          decl {
+            expr {
+              cons {
+              }
+            }
+          }
+        }
+      }
+      for_post {
+        statements {
+          ifstmt {
+            cond {
+              binop {
+                op: SGT
+                left {
+                  varref {
+                    varnum: 1
+                  }
+                }
+                right {
+                  varref {
+                    varnum: 0
+                  }
+                }
+              }
+            }
+            if_body {
+              statements {
+                contstmt {
+                }
+              }
+            }
+          }
+        }
+      }
+      for_cond {
+        binop {
+          op: SGT
+          left {
+            varref {
+              varnum: 1
+            }
+          }
+          right {
+            varref {
+              varnum: 0
+            }
+          }
+        }
+      }
+    }
+  }
+}
+ver: HOMESTEAD

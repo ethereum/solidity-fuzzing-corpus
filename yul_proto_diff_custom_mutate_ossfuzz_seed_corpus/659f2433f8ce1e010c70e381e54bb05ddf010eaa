@@ -1,0 +1,114 @@
+block {
+  statements {
+    pop {
+      expr {
+      }
+    }
+  }
+  statements {
+    multidecl {
+      num_vars: 4294836224
+    }
+  }
+  statements {
+    extcode_copy {
+      addr {
+      }
+      target {
+        binop {
+          op: SMOD
+          left {
+            unop {
+              op: NOT
+              operand {
+              }
+            }
+          }
+          right {
+          }
+        }
+      }
+      source {
+      }
+      size {
+      }
+    }
+  }
+  statements {
+    extcode_copy {
+      addr {
+      }
+      target {
+        nop {
+          op: CHAINID
+        }
+      }
+      source {
+        binop {
+          op: SMOD
+          left {
+            unop {
+              op: NOT
+              operand {
+              }
+            }
+          }
+          right {
+          }
+        }
+      }
+      size {
+      }
+    }
+  }
+  statements {
+    pop {
+      expr {
+      }
+    }
+  }
+  statements {
+    extcode_copy {
+      addr {
+      }
+      target {
+        binop {
+          op: SMOD
+          left {
+            unop {
+              op: NOT
+              operand {
+                create {
+                  createty: CREATE
+                  wei {
+                    unop {
+                      op: BLOCKHASH
+                      operand {
+                      }
+                    }
+                  }
+                  position {
+                  }
+                  size {
+                  }
+                  value {
+                  }
+                }
+              }
+            }
+          }
+          right {
+          }
+        }
+      }
+      source {
+        nop {
+          op: ORIGIN
+        }
+      }
+      size {
+      }
+    }
+  }
+}
+ver: TANGERINE

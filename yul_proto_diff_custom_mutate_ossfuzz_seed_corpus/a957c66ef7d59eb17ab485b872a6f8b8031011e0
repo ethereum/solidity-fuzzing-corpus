@@ -1,0 +1,125 @@
+block {
+  statements {
+    decl {
+      expr {
+        unop {
+          op: MLOAD
+          operand {
+            func_expr {
+              ret: SINGLE
+              func_index: 1686092684
+            }
+          }
+        }
+      }
+    }
+  }
+  statements {
+    breakstmt {
+    }
+  }
+  statements {
+    contstmt {
+    }
+  }
+  statements {
+    funcdef {
+      num_input_params: 1
+      num_output_params: 1
+      block {
+        statements {
+          assignment {
+            ref_id {
+              varnum: 1592282916
+            }
+            expr {
+              binop {
+                op: SMOD
+                left {
+                  unop {
+                    op: CALLDATALOAD
+                    operand {
+                      varref {
+                        varnum: 331711689
+                      }
+                    }
+                  }
+                }
+                right {
+                  varref {
+                    varnum: 504179118
+                  }
+                }
+              }
+            }
+          }
+        }
+        statements {
+          storage_func {
+            loc {
+              unopdata {
+                op: OFFSET
+                identifier: 73117614
+              }
+            }
+            val {
+              func_expr {
+                ret: SINGLE
+                func_index: 828301857
+              }
+            }
+            st: SSTORE
+          }
+        }
+        statements {
+          assignment {
+            ref_id {
+              varnum: 1258029911
+            }
+            expr {
+              varref {
+                varnum: 1966747662
+              }
+            }
+          }
+        }
+        statements {
+          pop {
+            expr {
+              func_expr {
+                ret: SINGLE
+                func_index: 1023043028
+              }
+            }
+          }
+        }
+        statements {
+          pop {
+            expr {
+              func_expr {
+                ret: SINGLE
+                func_index: 940216401
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  statements {
+    pop {
+      expr {
+        unop {
+          op: CALLDATALOAD
+          operand {
+            unopdata {
+              op: OFFSET
+              identifier: 1141416863
+            }
+          }
+        }
+      }
+    }
+  }
+}
+ver: HOMESTEAD

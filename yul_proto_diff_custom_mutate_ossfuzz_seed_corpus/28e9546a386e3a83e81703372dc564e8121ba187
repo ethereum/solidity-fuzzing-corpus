@@ -1,0 +1,104 @@
+obj {
+  code {
+    block {
+      statements {
+        storage_func {
+          loc {
+            binop {
+              op: SHR
+              left {
+                func_expr {
+                  ret: SINGLE
+                  func_index: 85769685
+                }
+              }
+              right {
+                binop {
+                  op: SHR
+                  left {
+                  }
+                  right {
+                    binop {
+                      op: SHL
+                      left {
+                        cons {
+                          intval: 65
+                        }
+                      }
+                      right {
+                        nop {
+                          op: TIMESTAMP
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+          val {
+            cons {
+            }
+          }
+          st: MSTORE
+        }
+      }
+      statements {
+        storage_func {
+          loc {
+            cons {
+              intval: 0
+            }
+          }
+          val {
+            func_expr {
+              ret: SINGLE
+              func_index: 45977140
+            }
+          }
+          st: MSTORE
+        }
+      }
+      statements {
+        assignment {
+          ref_id {
+            varnum: 137631270
+          }
+          expr {
+            cons {
+              intval: 25660067
+            }
+          }
+        }
+      }
+      statements {
+        terminatestmt {
+          ret_rev {
+            stmt: REVERT
+            pos {
+              cons {
+                intval: 0
+              }
+            }
+            size {
+              func_expr {
+                ret: SINGLE
+                func_index: 36389673
+              }
+            }
+          }
+        }
+      }
+      statements {
+        pop {
+          expr {
+            create {
+              createty: CREATE2
+            }
+          }
+        }
+      }
+    }
+  }
+}
+ver: ISTANBUL

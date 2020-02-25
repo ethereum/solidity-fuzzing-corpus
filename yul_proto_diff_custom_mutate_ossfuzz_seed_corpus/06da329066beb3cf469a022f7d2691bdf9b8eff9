@@ -1,0 +1,33 @@
+block {
+  statements {
+    boundedforstmt {
+      for_body {
+        statements {
+          copy_func {
+            ct: CALLDATA
+            target {
+            }
+            source {
+              unop {
+                op: NOT
+                operand {
+                  unop {
+                    op: NOT
+                    operand {
+                      nop {
+                        op: GAS
+                      }
+                    }
+                  }
+                }
+              }
+            }
+            size {
+            }
+          }
+        }
+      }
+    }
+  }
+}
+ver: PETERSBURG

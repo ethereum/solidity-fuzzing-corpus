@@ -1,0 +1,84 @@
+block {
+  statements {
+    extcode_copy {
+      addr {
+      }
+      target {
+      }
+      source {
+        unop {
+          op: NOT
+          operand {
+            unop {
+              op: NOT
+              operand {
+                unop {
+                  op: NOT
+                  operand {
+                    unop {
+                      op: NOT
+                      operand {
+                        unop {
+                          op: NOT
+                          operand {
+                            unop {
+                              op: NOT
+                              operand {
+                                unop {
+                                  op: CALLDATALOAD
+                                  operand {
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+      size {
+      }
+    }
+  }
+  statements {
+    blockstmt {
+      statements {
+        extcode_copy {
+          addr {
+          }
+          target {
+          }
+          source {
+            unop {
+              op: NOT
+              operand {
+                unop {
+                  op: NOT
+                  operand {
+                    nop {
+                      op: CALLDATASIZE
+                    }
+                  }
+                }
+              }
+            }
+          }
+          size {
+            unop {
+              op: CALLDATALOAD
+              operand {
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+ver: ISTANBUL

@@ -1,0 +1,158 @@
+block {
+  statements {
+    decl {
+      expr {
+        unop {
+          op: NOT
+          operand {
+            func_expr {
+              ret: SINGLE
+              func_index: 1353201319
+            }
+          }
+        }
+      }
+    }
+  }
+  statements {
+    boundedforstmt {
+      for_body {
+        statements {
+          decl {
+            expr {
+              binop {
+                op: MOD
+                left {
+                  varref {
+                    varnum: 2106929112
+                  }
+                }
+                right {
+                  unopdata {
+                    op: SIZE
+                    identifier: 1546861662
+                  }
+                }
+              }
+            }
+          }
+        }
+        statements {
+          assignment {
+            ref_id {
+              varnum: 1774134485
+            }
+            expr {
+              func_expr {
+                ret: SINGLE
+                func_index: 1585326792
+              }
+            }
+          }
+        }
+        statements {
+          forstmt {
+            for_cond {
+              binop {
+                op: SUB
+                left {
+                  varref {
+                    varnum: 388541763
+                  }
+                }
+                right {
+                  varref {
+                    varnum: 791203623
+                  }
+                }
+              }
+            }
+          }
+        }
+        statements {
+          pop {
+            expr {
+              binop {
+                op: DIV
+                left {
+                  varref {
+                    varnum: 1443385422
+                  }
+                }
+                right {
+                  varref {
+                    varnum: 1566883267
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  statements {
+    storage_func {
+      loc {
+        unop {
+          op: MLOAD
+          operand {
+            func_expr {
+              ret: SINGLE
+              func_index: 853261052
+            }
+          }
+        }
+      }
+      val {
+        func_expr {
+          ret: SINGLE
+          func_index: 541889252
+        }
+      }
+      st: MSTORE8
+    }
+  }
+  statements {
+    assignment {
+      ref_id {
+        varnum: 1217556460
+      }
+      expr {
+        unop {
+          op: SLOAD
+          operand {
+            func_expr {
+              ret: SINGLE
+              func_index: 727750301
+            }
+          }
+        }
+      }
+    }
+  }
+  statements {
+    terminatestmt {
+      ret_rev {
+        stmt: REVERT
+        pos {
+          unop {
+            op: SLOAD
+            operand {
+              func_expr {
+                ret: SINGLE
+                func_index: 624704331
+              }
+            }
+          }
+        }
+        size {
+          varref {
+            varnum: 507920578
+          }
+        }
+      }
+    }
+  }
+}
+ver: SPURIOUS

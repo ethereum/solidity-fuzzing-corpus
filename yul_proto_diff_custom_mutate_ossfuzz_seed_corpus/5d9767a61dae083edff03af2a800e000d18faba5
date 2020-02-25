@@ -1,0 +1,64 @@
+block {
+  statements {
+    boundedforstmt {
+      for_body {
+        statements {
+          decl {
+            expr {
+              unop {
+                op: NOT
+                operand {
+                  nop {
+                    op: CALLDATASIZE
+                  }
+                }
+              }
+            }
+          }
+        }
+        statements {
+        }
+      }
+    }
+  }
+  statements {
+  }
+  statements {
+    pop {
+      expr {
+        lowcall {
+          callty: CALLCODE
+        }
+      }
+    }
+  }
+  statements {
+    functioncall {
+      ret: ZERO
+      func_index: 105486980
+      in_param1 {
+        varref {
+          varnum: 2045729400
+        }
+      }
+      in_param2 {
+        func_expr {
+          ret: SINGLE
+          func_index: 2004037061
+        }
+      }
+      in_param3 {
+        varref {
+          varnum: 562963168
+        }
+      }
+      in_param4 {
+        func_expr {
+          ret: SINGLE
+          func_index: 274454898
+        }
+      }
+    }
+  }
+}
+ver: PETERSBURG

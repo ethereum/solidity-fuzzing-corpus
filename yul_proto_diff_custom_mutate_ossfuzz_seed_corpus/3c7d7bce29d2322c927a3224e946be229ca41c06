@@ -1,0 +1,165 @@
+block {
+  statements {
+    decl {
+      expr {
+        func_expr {
+          ret: SINGLE
+          func_index: 1636756652
+        }
+      }
+    }
+  }
+  statements {
+    storage_func {
+      loc {
+        binop {
+          op: SHR
+          left {
+            varref {
+              varnum: 1083866398
+            }
+          }
+          right {
+            varref {
+              varnum: 251879298
+            }
+          }
+        }
+      }
+      val {
+        binop {
+          op: SUB
+          left {
+            varref {
+              varnum: 779375395
+            }
+          }
+          right {
+            unop {
+              op: SLOAD
+              operand {
+                varref {
+                  varnum: 1611163899
+                }
+              }
+            }
+          }
+        }
+      }
+      st: MSTORE
+    }
+  }
+  statements {
+    forstmt {
+      for_body {
+        statements {
+          leave {
+          }
+        }
+        statements {
+          assignment {
+            ref_id {
+              varnum: 768392209
+            }
+            expr {
+              binop {
+                op: SDIV
+                left {
+                  unopdata {
+                    op: SIZE
+                    identifier: 1801100403
+                  }
+                }
+                right {
+                  varref {
+                    varnum: 1033388621
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+      for_init {
+        statements {
+          breakstmt {
+          }
+        }
+        statements {
+          leave {
+          }
+        }
+        statements {
+          boundedforstmt {
+          }
+        }
+      }
+      for_post {
+        statements {
+          decl {
+            expr {
+              varref {
+                varnum: 1466379438
+              }
+            }
+          }
+        }
+        statements {
+          leave {
+          }
+        }
+      }
+      for_cond {
+        unop {
+          op: NOT
+          operand {
+            unop {
+              op: SLOAD
+              operand {
+                unopdata {
+                  op: SIZE
+                  identifier: 615083333
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  statements {
+    leave {
+    }
+  }
+  statements {
+    assignment {
+      ref_id {
+        varnum: 1775419062
+      }
+      expr {
+        varref {
+          varnum: 1623640973
+        }
+      }
+    }
+  }
+  statements {
+    pop {
+      expr {
+        unop {
+          op: MLOAD
+          operand {
+            varref {
+              varnum: 1736701072
+            }
+          }
+        }
+      }
+    }
+  }
+  statements {
+    contstmt {
+    }
+  }
+}
+ver: HOMESTEAD

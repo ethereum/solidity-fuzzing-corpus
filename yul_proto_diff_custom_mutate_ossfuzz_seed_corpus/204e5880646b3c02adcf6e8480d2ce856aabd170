@@ -1,0 +1,139 @@
+block {
+  statements {
+    contstmt {
+    }
+  }
+  statements {
+    storage_func {
+      loc {
+        unop {
+        }
+      }
+      val {
+        unop {
+          op: MLOAD
+          operand {
+            cons {
+              intval: 0
+            }
+          }
+        }
+      }
+      st: SSTORE
+    }
+  }
+  statements {
+    storage_func {
+      loc {
+        unop {
+          op: NOT
+          operand {
+            cons {
+              intval: 0
+            }
+          }
+        }
+      }
+      val {
+        unop {
+          op: CALLDATALOAD
+          operand {
+            func_expr {
+              ret: SINGLE
+              func_index: 2095528107
+            }
+          }
+        }
+      }
+      st: SSTORE
+    }
+  }
+  statements {
+    contstmt {
+    }
+  }
+  statements {
+    funcdef {
+      num_input_params: 1
+      num_output_params: 1
+      block {
+        statements {
+          assignment {
+            ref_id {
+              varnum: 878607926
+            }
+            expr {
+              unop {
+                op: CALLDATALOAD
+                operand {
+                  cons {
+                    intval: 0
+                  }
+                }
+              }
+            }
+          }
+        }
+        statements {
+          ifstmt {
+            cond {
+              unopdata {
+                op: SIZE
+                identifier: 1047864519
+              }
+            }
+            if_body {
+              statements {
+              }
+              statements {
+              }
+              statements {
+                assignment {
+                  ref_id {
+                    varnum: 1281731839
+                  }
+                  expr {
+                    unop {
+                      op: CALLDATALOAD
+                      operand {
+                        func_expr {
+                          ret: SINGLE
+                          func_index: 1922552823
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+              statements {
+                multidecl {
+                }
+              }
+            }
+          }
+        }
+        statements {
+          switchstmt {
+            switch_expr {
+              varref {
+                varnum: 591586236
+              }
+            }
+            case_stmt {
+            }
+          }
+        }
+        statements {
+          pop {
+            expr {
+              varref {
+                varnum: 825042556
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+ver: SPURIOUS

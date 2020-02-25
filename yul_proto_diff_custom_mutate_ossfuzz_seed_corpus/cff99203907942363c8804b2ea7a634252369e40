@@ -1,0 +1,118 @@
+obj {
+  code {
+    block {
+      statements {
+        storage_func {
+          loc {
+            binop {
+              op: SHR
+              left {
+                cons {
+                  intval: 64
+                }
+              }
+              right {
+                binop {
+                  op: SHR
+                  left {
+                    cons {
+                      intval: 64
+                    }
+                  }
+                  right {
+                    binop {
+                      op: SHL
+                      left {
+                        cons {
+                          intval: 65
+                        }
+                      }
+                      right {
+                        binop {
+                          op: MOD
+                          left {
+                          }
+                          right {
+                            nop {
+                              op: COINBASE
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+          val {
+          }
+          st: MSTORE
+        }
+      }
+      statements {
+      }
+      statements {
+        extcode_copy {
+          addr {
+            nop {
+              op: COINBASE
+            }
+          }
+          target {
+            binop {
+              op: SHR
+              left {
+                cons {
+                  intval: 64
+                }
+              }
+              right {
+                binop {
+                  op: SHR
+                  left {
+                    cons {
+                      intval: 64
+                    }
+                  }
+                  right {
+                    binop {
+                      op: SHL
+                      left {
+                        cons {
+                          intval: 65
+                        }
+                      }
+                      right {
+                        binop {
+                          op: DIV
+                          left {
+                          }
+                          right {
+                            nop {
+                              op: COINBASE
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+          source {
+          }
+          size {
+            unop {
+              op: SLOAD
+              operand {
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+ver: ISTANBUL

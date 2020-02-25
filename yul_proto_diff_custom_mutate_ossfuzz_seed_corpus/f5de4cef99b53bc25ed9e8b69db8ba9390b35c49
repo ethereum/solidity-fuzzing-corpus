@@ -1,0 +1,133 @@
+block {
+  statements {
+    decl {
+      expr {
+        unop {
+          op: BALANCE
+          operand {
+            varref {
+              varnum: 1154504831
+            }
+          }
+        }
+      }
+    }
+  }
+  statements {
+  }
+  statements {
+    pop {
+      expr {
+        varref {
+          varnum: 469672028
+        }
+      }
+    }
+  }
+  statements {
+    pop {
+      expr {
+        unopdata {
+          op: SIZE
+          identifier: 2046566268
+        }
+      }
+    }
+  }
+  statements {
+    storage_func {
+      loc {
+        func_expr {
+          ret: SINGLE
+          func_index: 464824248
+        }
+      }
+      val {
+        binop {
+          op: SHR
+          left {
+            varref {
+              varnum: 1383350313
+            }
+          }
+          right {
+            unop {
+              op: MLOAD
+              operand {
+                func_expr {
+                  ret: SINGLE
+                  func_index: 300690623
+                }
+              }
+            }
+          }
+        }
+      }
+      st: MSTORE
+    }
+  }
+  statements {
+    extcode_copy {
+      addr {
+        varref {
+          varnum: 1434449549
+        }
+      }
+      target {
+        varref {
+          varnum: 305350369
+        }
+      }
+      source {
+        binop {
+          op: XOR
+          left {
+            unop {
+              op: SLOAD
+              operand {
+                varref {
+                  varnum: 2009223530
+                }
+              }
+            }
+          }
+          right {
+            func_expr {
+              ret: SINGLE
+              func_index: 2030540747
+            }
+          }
+        }
+      }
+      size {
+        binop {
+          op: SHR
+          left {
+            varref {
+              varnum: 1572080541
+            }
+          }
+          right {
+            varref {
+              varnum: 246430950
+            }
+          }
+        }
+      }
+    }
+  }
+  statements {
+    boundedforstmt {
+    }
+  }
+  statements {
+    decl {
+      expr {
+        varref {
+          varnum: 1090823441
+        }
+      }
+    }
+  }
+}
+ver: ISTANBUL

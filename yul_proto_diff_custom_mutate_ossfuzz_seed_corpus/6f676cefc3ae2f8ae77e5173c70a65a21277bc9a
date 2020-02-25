@@ -1,0 +1,164 @@
+block {
+  statements {
+    decl {
+      expr {
+        unop {
+          op: SLOAD
+          operand {
+            varref {
+              varnum: 544527588
+            }
+          }
+        }
+      }
+    }
+  }
+  statements {
+    assignment {
+      ref_id {
+        varnum: 1586729173
+      }
+      expr {
+        unop {
+          op: NOT
+          operand {
+            func_expr {
+              ret: SINGLE
+              func_index: 1034139889
+            }
+          }
+        }
+      }
+    }
+  }
+  statements {
+    contstmt {
+    }
+  }
+  statements {
+    boundedforstmt {
+      for_body {
+        statements {
+        }
+        statements {
+          leave {
+          }
+        }
+        statements {
+          assignment {
+            ref_id {
+              varnum: 1270601239
+            }
+            expr {
+              unop {
+                op: SLOAD
+                operand {
+                  unop {
+                    op: MLOAD
+                    operand {
+                      unop {
+                        op: SLOAD
+                        operand {
+                          varref {
+                            varnum: 128235657
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+        statements {
+          pop {
+            expr {
+              func_expr {
+                ret: SINGLE
+                func_index: 419126594
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  statements {
+    pop {
+      expr {
+        unop {
+        }
+      }
+    }
+  }
+  statements {
+    breakstmt {
+    }
+  }
+  statements {
+    terminatestmt {
+      ret_rev {
+        stmt: REVERT
+        pos {
+          unop {
+            op: CALLDATALOAD
+            operand {
+              cons {
+                intval: 0
+              }
+            }
+          }
+        }
+        size {
+          varref {
+            varnum: 1275465714
+          }
+        }
+      }
+    }
+  }
+  statements {
+    pop {
+      expr {
+        unop {
+          op: MLOAD
+          operand {
+            varref {
+              varnum: 1732865573
+            }
+          }
+        }
+      }
+    }
+  }
+  statements {
+    functioncall {
+      ret: ZERO
+      func_index: 466261819
+      in_param1 {
+        varref {
+          varnum: 1911354838
+        }
+      }
+      in_param2 {
+        varref {
+          varnum: 1322180561
+        }
+      }
+      in_param3 {
+        func_expr {
+          ret: SINGLE
+          func_index: 806329644
+        }
+      }
+      in_param4 {
+        func_expr {
+          ret: SINGLE
+          func_index: 1354020087
+        }
+      }
+    }
+  }
+}
+ver: PETERSBURG

@@ -1,0 +1,180 @@
+block {
+  statements {
+    breakstmt {
+    }
+  }
+  statements {
+    breakstmt {
+    }
+  }
+  statements {
+  }
+  statements {
+    breakstmt {
+    }
+  }
+  statements {
+    copy_func {
+      ct: CALLDATA
+      target {
+        unop {
+          op: NOT
+          operand {
+            unop {
+              op: MLOAD
+              operand {
+                cons {
+                  intval: 0
+                }
+              }
+            }
+          }
+        }
+      }
+      source {
+        top {
+          op: MULM
+          arg1 {
+            unop {
+              op: CALLDATALOAD
+              operand {
+                unop {
+                }
+              }
+            }
+          }
+          arg2 {
+          }
+          arg3 {
+            lowcall {
+              callty: CALL
+              gas {
+              }
+              addr {
+                unop {
+                  op: CALLDATALOAD
+                  operand {
+                    cons {
+                      intval: 0
+                    }
+                  }
+                }
+              }
+              wei {
+                unop {
+                  op: MLOAD
+                  operand {
+                    cons {
+                      intval: 0
+                    }
+                  }
+                }
+              }
+              in {
+              }
+              insize {
+              }
+              out {
+              }
+              outsize {
+                unop {
+                }
+              }
+            }
+          }
+        }
+      }
+      size {
+        unop {
+          op: NOT
+          operand {
+            unop {
+              op: SLOAD
+              operand {
+                unop {
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  statements {
+    copy_func {
+      ct: CALLDATA
+      target {
+        unop {
+          op: NOT
+          operand {
+          }
+        }
+      }
+      source {
+        unop {
+          op: SLOAD
+          operand {
+            cons {
+              intval: 0
+            }
+          }
+        }
+      }
+      size {
+        unop {
+          op: NOT
+          operand {
+            unop {
+              op: NOT
+              operand {
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  statements {
+    breakstmt {
+    }
+  }
+  statements {
+    breakstmt {
+    }
+  }
+  statements {
+    multidecl {
+      num_vars: 248
+    }
+  }
+  statements {
+    breakstmt {
+    }
+  }
+  statements {
+    breakstmt {
+    }
+  }
+  statements {
+    multidecl {
+      num_vars: 248
+    }
+  }
+  statements {
+    breakstmt {
+    }
+  }
+  statements {
+    breakstmt {
+    }
+  }
+  statements {
+    breakstmt {
+    }
+  }
+  statements {
+    breakstmt {
+    }
+  }
+}
+ver: HOMESTEAD

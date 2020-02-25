@@ -1,0 +1,112 @@
+obj {
+  code {
+    block {
+      statements {
+      }
+      statements {
+        extcode_copy {
+          addr {
+            binop {
+              op: SHR
+              left {
+                cons {
+                  intval: 1
+                }
+              }
+              right {
+                binop {
+                  op: SHR
+                  left {
+                    cons {
+                      intval: 1
+                    }
+                  }
+                  right {
+                    binop {
+                      op: SHR
+                      left {
+                        cons {
+                          intval: 1
+                        }
+                      }
+                      right {
+                        binop {
+                          op: SHR
+                          left {
+                            cons {
+                              intval: 1
+                            }
+                          }
+                          right {
+                            create {
+                              createty: CREATE
+                              wei {
+                              }
+                              position {
+                              }
+                              size {
+                              }
+                              value {
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+          target {
+            cons {
+              hexval: "."
+            }
+          }
+          source {
+            binop {
+              op: OR
+              left {
+              }
+              right {
+                binop {
+                  op: SHR
+                  left {
+                    cons {
+                      intval: 1
+                    }
+                  }
+                  right {
+                    binop {
+                      op: SHR
+                      left {
+                        cons {
+                          intval: 1
+                        }
+                      }
+                      right {
+                        unop {
+                          op: EXTCODEHASH
+                          operand {
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+          size {
+            varref {
+              varnum: 12032
+            }
+          }
+        }
+      }
+      statements {
+      }
+    }
+  }
+}
+ver: ISTANBUL

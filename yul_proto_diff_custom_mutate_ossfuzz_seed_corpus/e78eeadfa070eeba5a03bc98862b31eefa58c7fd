@@ -1,0 +1,159 @@
+obj {
+  code {
+    block {
+      statements {
+      }
+      statements {
+        breakstmt {
+        }
+      }
+      statements {
+        storage_func {
+          loc {
+            binop {
+              op: SHR
+              left {
+                cons {
+                  intval: 64
+                }
+              }
+              right {
+                binop {
+                  op: SHR
+                  left {
+                    cons {
+                      intval: 64
+                    }
+                  }
+                  right {
+                    binop {
+                      op: SHL
+                      left {
+                        cons {
+                          intval: 65
+                        }
+                      }
+                      right {
+                        binop {
+                          op: SHR
+                          left {
+                            cons {
+                              intval: 64
+                            }
+                          }
+                          right {
+                            binop {
+                              op: SHR
+                              left {
+                                cons {
+                                  intval: 64
+                                }
+                              }
+                              right {
+                                binop {
+                                  op: SHL
+                                  left {
+                                    cons {
+                                      intval: 65
+                                    }
+                                  }
+                                  right {
+                                    binop {
+                                      op: MOD
+                                      left {
+                                      }
+                                      right {
+                                        nop {
+                                          op: COINBASE
+                                        }
+                                      }
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+          val {
+          }
+          st: MSTORE
+        }
+      }
+      statements {
+        boundedforstmt {
+          for_body {
+            statements {
+              pop {
+                expr {
+                  cons {
+                    intval: 4611686018427387904
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+      statements {
+        extcode_copy {
+          addr {
+            binop {
+              op: SHR
+              left {
+                cons {
+                  intval: 65
+                }
+              }
+              right {
+                binop {
+                  op: AND
+                  left {
+                  }
+                  right {
+                    nop {
+                      op: COINBASE
+                    }
+                  }
+                }
+              }
+            }
+          }
+          target {
+          }
+          source {
+            binop {
+              op: SHR
+              left {
+                cons {
+                  intval: 65
+                }
+              }
+              right {
+                binop {
+                  op: AND
+                  left {
+                  }
+                  right {
+                    nop {
+                      op: COINBASE
+                    }
+                  }
+                }
+              }
+            }
+          }
+          size {
+          }
+        }
+      }
+    }
+  }
+}
+ver: ISTANBUL

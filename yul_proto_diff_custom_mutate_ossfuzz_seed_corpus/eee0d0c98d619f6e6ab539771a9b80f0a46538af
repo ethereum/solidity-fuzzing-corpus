@@ -1,0 +1,69 @@
+block {
+  statements {
+    forstmt {
+      for_body {
+        statements {
+        }
+      }
+      for_init {
+      }
+      for_post {
+        statements {
+          multidecl {
+            num_vars: 0
+          }
+        }
+      }
+      for_cond {
+        func_expr {
+          ret: SINGLE
+          func_index: 0
+        }
+      }
+    }
+  }
+  statements {
+    funcdef {
+      num_input_params: 4096
+      num_output_params: 4096
+      block {
+        statements {
+          funcdef {
+            num_input_params: 4096
+            num_output_params: 4096
+            block {
+            }
+            force_call: false
+          }
+        }
+        statements {
+        }
+      }
+      force_call: false
+    }
+  }
+  statements {
+    copy_func {
+      ct: CALLDATA
+      target {
+      }
+      source {
+        nop {
+          op: CHAINID
+        }
+      }
+      size {
+        binop {
+          op: SHL
+          left {
+          }
+          right {
+          }
+        }
+      }
+    }
+  }
+  statements {
+  }
+}
+ver: PETERSBURG

@@ -1,0 +1,73 @@
+block {
+  statements {
+    decl {
+    }
+  }
+  statements {
+    forstmt {
+      for_body {
+        statements {
+          assignment {
+            ref_id {
+              varnum: 2
+            }
+            expr {
+              binop {
+                op: LT
+                left {
+                  varref {
+                    varnum: 2
+                  }
+                }
+                right {
+                  varref {
+                    varnum: 0
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+      for_init {
+        statements {
+          assignment {
+            ref_id {
+              varnum: 2
+            }
+            expr {
+              binop {
+                op: LT
+                left {
+                  varref {
+                    varnum: 1
+                  }
+                }
+                right {
+                }
+              }
+            }
+          }
+        }
+      }
+      for_post {
+      }
+      for_cond {
+        binop {
+          op: LT
+          left {
+            varref {
+              varnum: 1
+            }
+          }
+          right {
+            varref {
+              varnum: 0
+            }
+          }
+        }
+      }
+    }
+  }
+}
+ver: HOMESTEAD

@@ -1,0 +1,100 @@
+block {
+  statements {
+  }
+  statements {
+    pop {
+      expr {
+        unop {
+          op: CALLDATALOAD
+          operand {
+            varref {
+              varnum: 1065265144
+            }
+          }
+        }
+      }
+    }
+  }
+  statements {
+    storage_func {
+      loc {
+        binop {
+          op: DIV
+          left {
+            unop {
+              op: NOT
+              operand {
+                unop {
+                  op: CALLDATALOAD
+                  operand {
+                    func_expr {
+                      ret: SINGLE
+                      func_index: 1858208328
+                    }
+                  }
+                }
+              }
+            }
+          }
+          right {
+            func_expr {
+              ret: SINGLE
+              func_index: 859088436
+            }
+          }
+        }
+      }
+      val {
+        binop {
+          op: LT
+          left {
+            unop {
+              op: EXTCODEHASH
+              operand {
+                unop {
+                  op: CALLDATALOAD
+                  operand {
+                    func_expr {
+                      ret: SINGLE
+                      func_index: 1625862834
+                    }
+                  }
+                }
+              }
+            }
+          }
+          right {
+            varref {
+              varnum: 417025554
+            }
+          }
+        }
+      }
+      st: MSTORE8
+    }
+  }
+  statements {
+    assignment {
+      ref_id {
+        varnum: 1474121604
+      }
+      expr {
+        varref {
+          varnum: 1947197833
+        }
+      }
+    }
+  }
+  statements {
+  }
+  statements {
+    multidecl {
+      num_vars: 1576603744
+    }
+  }
+  statements {
+    boundedforstmt {
+    }
+  }
+}
+ver: BERLIN

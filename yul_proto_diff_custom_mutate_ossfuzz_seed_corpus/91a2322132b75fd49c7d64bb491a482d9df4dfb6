@@ -1,0 +1,174 @@
+obj {
+  code {
+    block {
+      statements {
+        extcode_copy {
+          addr {
+            nop {
+              op: NUMBER
+            }
+          }
+          target {
+            binop {
+              op: LT
+              left {
+                binop {
+                  op: SHR
+                  left {
+                    binop {
+                      op: SHL
+                      left {
+                        cons {
+                          intval: 136
+                        }
+                      }
+                      right {
+                      }
+                    }
+                  }
+                  right {
+                  }
+                }
+              }
+              right {
+              }
+            }
+          }
+          source {
+          }
+          size {
+            binop {
+              op: SGT
+              left {
+                binop {
+                  op: SHL
+                  left {
+                    cons {
+                      intval: 136
+                    }
+                  }
+                  right {
+                  }
+                }
+              }
+              right {
+                binop {
+                  op: SHL
+                  left {
+                    cons {
+                      intval: 136
+                    }
+                  }
+                  right {
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+      statements {
+        breakstmt {
+        }
+      }
+      statements {
+      }
+      statements {
+        extcode_copy {
+          addr {
+            nop {
+              op: NUMBER
+            }
+          }
+          target {
+            binop {
+              op: SGT
+              left {
+                binop {
+                  op: SGT
+                  left {
+                    binop {
+                      op: SHL
+                      left {
+                        cons {
+                          intval: 136
+                        }
+                      }
+                      right {
+                      }
+                    }
+                  }
+                  right {
+                    binop {
+                      op: SHL
+                      left {
+                        unop {
+                          op: MLOAD
+                          operand {
+                            cons {
+                              intval: 0
+                            }
+                          }
+                        }
+                      }
+                      right {
+                        cons {
+                          intval: 136
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+              right {
+                unop {
+                  op: SLOAD
+                  operand {
+                    cons {
+                      intval: 0
+                    }
+                  }
+                }
+              }
+            }
+          }
+          source {
+          }
+          size {
+            unop {
+              op: CALLDATALOAD
+              operand {
+                cons {
+                  intval: 0
+                }
+              }
+            }
+          }
+        }
+      }
+      statements {
+        boundedforstmt {
+          for_body {
+            statements {
+              breakstmt {
+              }
+            }
+            statements {
+              breakstmt {
+              }
+            }
+          }
+        }
+      }
+      statements {
+        breakstmt {
+        }
+      }
+      statements {
+        breakstmt {
+        }
+      }
+    }
+  }
+}
+ver: CONSTANTINOPLE

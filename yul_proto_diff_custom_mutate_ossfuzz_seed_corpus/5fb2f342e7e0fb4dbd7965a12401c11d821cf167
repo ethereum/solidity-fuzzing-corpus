@@ -1,0 +1,66 @@
+block {
+  statements {
+    copy_func {
+      ct: CALLDATA
+      target {
+      }
+      source {
+        top {
+          op: ADDM
+          arg1 {
+            unop {
+              op: CALLDATALOAD
+              operand {
+                unop {
+                  op: SLOAD
+                  operand {
+                    varref {
+                      varnum: 1747803900
+                    }
+                  }
+                }
+              }
+            }
+          }
+          arg2 {
+            unopdata {
+              op: SIZE
+              identifier: 155318073
+            }
+          }
+          arg3 {
+            varref {
+              varnum: 1777816756
+            }
+          }
+        }
+      }
+      size {
+        unopdata {
+          op: SIZE
+          identifier: 2142243977
+        }
+      }
+    }
+  }
+  statements {
+    breakstmt {
+    }
+  }
+  statements {
+    storage_func {
+      loc {
+        varref {
+          varnum: 1913576953
+        }
+      }
+      val {
+        varref {
+          varnum: 1512484883
+        }
+      }
+      st: MSTORE8
+    }
+  }
+}
+ver: SPURIOUS

@@ -1,0 +1,115 @@
+obj {
+  code {
+    block {
+      statements {
+        pop {
+          expr {
+            lowcall {
+              callty: CALLCODE
+            }
+          }
+        }
+      }
+      statements {
+        pop {
+          expr {
+            create {
+              createty: CREATE
+            }
+          }
+        }
+      }
+    }
+  }
+  sub_obj {
+    code {
+      block {
+        statements {
+          pop {
+            expr {
+              lowcall {
+                callty: STATICCALL
+              }
+            }
+          }
+        }
+      }
+    }
+    sub_obj {
+      code {
+        block {
+          statements {
+            assignment {
+              ref_id {
+                varnum: 28290242
+              }
+              expr {
+                varref {
+                  varnum: 18305450
+                }
+              }
+            }
+          }
+          statements {
+            boundedforstmt {
+            }
+          }
+          statements {
+            pop {
+              expr {
+                create {
+                  createty: CREATE
+                }
+              }
+            }
+          }
+        }
+      }
+      sub_obj {
+        code {
+          block {
+            statements {
+              decl {
+                expr {
+                  unop {
+                    op: ISZERO
+                    operand {
+                    }
+                  }
+                }
+              }
+            }
+            statements {
+              terminatestmt {
+                ret_rev {
+                  stmt: REVERT
+                  pos {
+                    cons {
+                      intval: 0
+                    }
+                  }
+                  size {
+                    func_expr {
+                      ret: SINGLE
+                      func_index: 125404357
+                    }
+                  }
+                }
+              }
+            }
+            statements {
+              pop {
+                expr {
+                  varref {
+                    varnum: 25943290
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+ver: BYZANTIUM

@@ -1,0 +1,131 @@
+block {
+  statements {
+    decl {
+      expr {
+        func_expr {
+          ret: SINGLE
+          func_index: 2090154473
+        }
+      }
+    }
+  }
+  statements {
+  }
+  statements {
+  }
+  statements {
+  }
+  statements {
+    contstmt {
+    }
+  }
+  statements {
+  }
+  statements {
+  }
+  statements {
+    contstmt {
+    }
+  }
+  statements {
+  }
+  statements {
+    pop {
+      expr {
+        func_expr {
+          ret: SINGLE
+          func_index: 239596369
+        }
+      }
+    }
+  }
+  statements {
+    funcdef {
+      num_input_params: 1
+      num_output_params: 1
+      block {
+        statements {
+        }
+        statements {
+        }
+        statements {
+          assignment {
+            ref_id {
+              varnum: 659499112
+            }
+            expr {
+              unopdata {
+                op: SIZE
+                identifier: 1712081276
+              }
+            }
+          }
+        }
+        statements {
+          decl {
+            expr {
+              unop {
+                op: CALLDATALOAD
+                operand {
+                  varref {
+                    varnum: 372263884
+                  }
+                }
+              }
+            }
+          }
+        }
+        statements {
+          pop {
+            expr {
+              lowcall {
+                callty: CALLCODE
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  statements {
+    pop {
+      expr {
+        varref {
+          varnum: 1642732279
+        }
+      }
+    }
+  }
+  statements {
+  }
+  statements {
+    terminatestmt {
+      ret_rev {
+        stmt: REVERT
+        pos {
+          unop {
+            op: EXTCODEHASH
+            operand {
+              func_expr {
+                ret: SINGLE
+                func_index: 900736631
+              }
+            }
+          }
+        }
+        size {
+          unop {
+            op: CALLDATALOAD
+            operand {
+              func_expr {
+                ret: SINGLE
+                func_index: 1496862061
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+ver: TANGERINE

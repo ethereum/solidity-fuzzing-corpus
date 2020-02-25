@@ -1,0 +1,109 @@
+block {
+	statements {
+		decl {
+			expr {
+				unop {
+					op: CALLDATALOAD
+					operand {
+						cons {
+							intval: 1
+						}
+					}
+				}
+			}
+		}
+	}
+	statements {
+		decl {
+			expr {
+				binop {
+					op: ADD
+					left {
+						varref {
+							varnum: 0
+						}
+					}
+					right {
+						cons {
+							intval: 10
+						}
+					}
+				}
+			}
+		}
+	}
+	statements {
+		decl {
+			expr {
+				binop {
+					op: ADD
+					left {
+						varref {
+							varnum: 0
+						}
+					}
+					right {
+						cons {
+							intval: 42
+						}
+					}
+				}
+			}
+		}
+	}
+	statements {
+		storage_func {
+			st: MSTORE
+			loc {
+				varref {
+					varnum: 1
+				}
+			}
+			val {
+				cons {
+					intval: 7
+				}
+			}
+		}
+	}
+	statements {
+		storage_func {
+			st: MSTORE
+			loc {
+				varref {
+					varnum: 2
+				}
+			}
+			val {
+				cons {
+					intval: 8
+				}
+			}
+		}
+	}
+	statements {
+		storage_func {
+			st: SSTORE
+			loc {
+				unop {
+					op: MLOAD
+					operand {
+						varref {
+							varnum: 1
+						}
+					}
+				}
+			}
+			val {
+				unop {
+					op: MLOAD
+					operand {
+						varref {
+							varnum: 2
+						}
+					}
+				}
+			}
+		}
+	}
+}

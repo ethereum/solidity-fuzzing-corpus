@@ -1,0 +1,142 @@
+block {
+  statements {
+    breakstmt {
+    }
+  }
+  statements {
+    forstmt {
+      for_body {
+        statements {
+          breakstmt {
+          }
+        }
+        statements {
+          breakstmt {
+          }
+        }
+      }
+      for_init {
+        statements {
+          forstmt {
+            for_body {
+              statements {
+                breakstmt {
+                }
+              }
+              statements {
+                breakstmt {
+                }
+              }
+            }
+            for_init {
+              statements {
+                storage_func {
+                  loc {
+                  }
+                  val {
+                    unop {
+                      op: SLOAD
+                      operand {
+                        cons {
+                          intval: 0
+                        }
+                      }
+                    }
+                  }
+                  st: MSTORE8
+                }
+              }
+              statements {
+                breakstmt {
+                }
+              }
+              statements {
+                breakstmt {
+                }
+              }
+            }
+            for_post {
+              statements {
+                breakstmt {
+                }
+              }
+              statements {
+                breakstmt {
+                }
+              }
+            }
+            for_cond {
+            }
+          }
+        }
+        statements {
+          breakstmt {
+          }
+        }
+        statements {
+          breakstmt {
+          }
+        }
+      }
+      for_post {
+        statements {
+          breakstmt {
+          }
+        }
+        statements {
+          breakstmt {
+          }
+        }
+      }
+      for_cond {
+        unop {
+        }
+      }
+    }
+  }
+  statements {
+    breakstmt {
+    }
+  }
+  statements {
+    extcode_copy {
+      addr {
+        nop {
+          op: ORIGIN
+        }
+      }
+      target {
+      }
+      source {
+      }
+      size {
+        binop {
+          op: SUB
+          left {
+          }
+          right {
+            binop {
+              op: SUB
+              left {
+                cons {
+                  strval: "1"
+                }
+              }
+              right {
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  statements {
+    breakstmt {
+    }
+  }
+  statements {
+    breakstmt {
+    }
+  }
+}
+ver: HOMESTEAD

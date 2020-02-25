@@ -1,0 +1,209 @@
+block {
+  statements {
+    multidecl {
+      num_vars: 1353767493
+    }
+  }
+  statements {
+    assignment {
+      ref_id {
+        varnum: 1973052813
+      }
+      expr {
+        unop {
+          op: MLOAD
+          operand {
+            varref {
+              varnum: 1408033527
+            }
+          }
+        }
+      }
+    }
+  }
+  statements {
+    storage_func {
+      loc {
+        varref {
+          varnum: 1692286606
+        }
+      }
+      val {
+        unop {
+          op: SLOAD
+          operand {
+            cons {
+              intval: 0
+            }
+          }
+        }
+      }
+      st: MSTORE8
+    }
+  }
+  statements {
+    decl {
+      expr {
+        func_expr {
+          ret: SINGLE
+          func_index: 1178790408
+        }
+      }
+    }
+  }
+  statements {
+    boundedforstmt {
+      for_body {
+        statements {
+          leave {
+          }
+        }
+        statements {
+          assignment {
+            ref_id {
+              varnum: 489278466
+            }
+            expr {
+              unop {
+                op: MLOAD
+                operand {
+                  varref {
+                    varnum: 481963524
+                  }
+                }
+              }
+            }
+          }
+        }
+        statements {
+          pop {
+            expr {
+              unop {
+                op: MLOAD
+                operand {
+                  varref {
+                    varnum: 2108301977
+                  }
+                }
+              }
+            }
+          }
+        }
+        statements {
+          contstmt {
+          }
+        }
+      }
+    }
+  }
+  statements {
+    pop {
+      expr {
+        binop {
+          op: SGT
+          left {
+            varref {
+              varnum: 1049542873
+            }
+          }
+          right {
+            unop {
+              op: SLOAD
+              operand {
+                varref {
+                  varnum: 216468528
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  statements {
+    ifstmt {
+      cond {
+        varref {
+          varnum: 1964822060
+        }
+      }
+      if_body {
+        statements {
+          assignment {
+            ref_id {
+              varnum: 1488589692
+            }
+            expr {
+              varref {
+                varnum: 1697268754
+              }
+            }
+          }
+        }
+        statements {
+          breakstmt {
+          }
+        }
+        statements {
+          contstmt {
+          }
+        }
+        statements {
+          switchstmt {
+          }
+        }
+      }
+    }
+  }
+  statements {
+    forstmt {
+      for_cond {
+        unopdata {
+          op: OFFSET
+          identifier: 1224923514
+        }
+      }
+    }
+  }
+  statements {
+    extcode_copy {
+      addr {
+        unop {
+          op: CALLDATALOAD
+          operand {
+            func_expr {
+              ret: SINGLE
+              func_index: 1626579153
+            }
+          }
+        }
+      }
+      target {
+        unop {
+          op: EXTCODEHASH
+          operand {
+            cons {
+              intval: 0
+            }
+          }
+        }
+      }
+      source {
+        unop {
+          op: MLOAD
+          operand {
+            varref {
+              varnum: 157209411
+            }
+          }
+        }
+      }
+      size {
+        varref {
+          varnum: 1524640906
+        }
+      }
+    }
+  }
+}
+ver: BYZANTIUM

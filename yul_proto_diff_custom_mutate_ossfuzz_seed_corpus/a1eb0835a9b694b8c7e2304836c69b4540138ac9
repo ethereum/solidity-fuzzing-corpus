@@ -1,0 +1,103 @@
+block {
+  statements {
+    boundedforstmt {
+      for_body {
+        statements {
+          terminatestmt {
+            stop_invalid {
+              stmt: INVALID
+            }
+          }
+        }
+      }
+    }
+  }
+  statements {
+    storage_func {
+      loc {
+        binop {
+          op: EQ
+          left {
+            binop {
+              op: EQ
+              left {
+              }
+              right {
+                unop {
+                  op: BALANCE
+                  operand {
+                  }
+                }
+              }
+            }
+          }
+          right {
+          }
+        }
+      }
+      val {
+      }
+      st: SSTORE
+    }
+  }
+  statements {
+  }
+  statements {
+    storage_func {
+      loc {
+        binop {
+          op: EQ
+          left {
+          }
+          right {
+            unop {
+              op: BALANCE
+              operand {
+              }
+            }
+          }
+        }
+      }
+      val {
+      }
+      st: MSTORE
+    }
+  }
+  statements {
+  }
+  statements {
+    storage_func {
+      loc {
+        binop {
+          op: EQ
+          left {
+          }
+          right {
+          }
+        }
+      }
+      val {
+        varref {
+          varnum: 0
+        }
+      }
+      st: SSTORE
+    }
+  }
+  statements {
+  }
+  statements {
+    funcdef {
+      num_input_params: 0
+      num_output_params: 14
+      block {
+        statements {
+        }
+      }
+      force_call: true
+    }
+  }
+  statements {
+  }
+}
+ver: HOMESTEAD

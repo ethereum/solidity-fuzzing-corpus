@@ -1,0 +1,36 @@
+block {
+  statements {
+    storage_func {
+      loc {
+      }
+      val {
+      }
+      st: MSTORE
+    }
+  }
+  statements {
+    storage_func {
+      loc {
+        binop {
+          op: SLT
+          left {
+            nop {
+              op: COINBASE
+            }
+          }
+          right {
+            nop {
+              op: COINBASE
+            }
+          }
+        }
+      }
+      val {
+      }
+      st: MSTORE
+    }
+  }
+  statements {
+  }
+}
+ver: ISTANBUL

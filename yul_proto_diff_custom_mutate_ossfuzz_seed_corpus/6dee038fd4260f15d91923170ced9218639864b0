@@ -1,0 +1,136 @@
+block {
+  statements {
+  }
+  statements {
+  }
+  statements {
+    funcdef {
+      num_input_params: 33554432
+      num_output_params: 503316480
+      block {
+        statements {
+          extcode_copy {
+            addr {
+              lowcall {
+                callty: CALL
+                gas {
+                  unop {
+                    op: NOT
+                    operand {
+                      lowcall {
+                        callty: CALL
+                        gas {
+                          unop {
+                            op: NOT
+                            operand {
+                            }
+                          }
+                        }
+                        addr {
+                        }
+                        wei {
+                        }
+                        in {
+                        }
+                        insize {
+                        }
+                        out {
+                        }
+                        outsize {
+                        }
+                      }
+                    }
+                  }
+                }
+                addr {
+                  unop {
+                    op: BLOCKHASH
+                    operand {
+                      unop {
+                        op: NOT
+                        operand {
+                          varref {
+                            varnum: 16777216
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+                wei {
+                }
+                in {
+                  nop {
+                    op: CALLER
+                  }
+                }
+                insize {
+                }
+                out {
+                }
+                outsize {
+                }
+              }
+            }
+            target {
+              unop {
+                op: BLOCKHASH
+                operand {
+                  unop {
+                    op: NOT
+                    operand {
+                      varref {
+                        varnum: 16777216
+                      }
+                    }
+                  }
+                }
+              }
+            }
+            source {
+              unop {
+                op: BLOCKHASH
+                operand {
+                  unop {
+                    op: NOT
+                    operand {
+                      varref {
+                        varnum: 16777216
+                      }
+                    }
+                  }
+                }
+              }
+            }
+            size {
+            }
+          }
+        }
+        statements {
+        }
+        statements {
+          breakstmt {
+          }
+        }
+        statements {
+          breakstmt {
+          }
+        }
+        statements {
+          breakstmt {
+          }
+        }
+      }
+      force_call: true
+    }
+  }
+  statements {
+    breakstmt {
+    }
+  }
+  statements {
+    breakstmt {
+    }
+  }
+}
+ver: ISTANBUL

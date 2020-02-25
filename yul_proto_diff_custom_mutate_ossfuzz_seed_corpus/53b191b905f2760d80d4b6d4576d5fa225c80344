@@ -1,0 +1,102 @@
+obj {
+  code {
+    block {
+      statements {
+      }
+      statements {
+      }
+      statements {
+      }
+      statements {
+        forstmt {
+          for_body {
+            statements {
+              storage_func {
+                loc {
+                  nop {
+                    op: MSIZE
+                  }
+                }
+                val {
+                  nop {
+                    op: MSIZE
+                  }
+                }
+                st: SSTORE
+              }
+            }
+          }
+          for_init {
+          }
+          for_post {
+            statements {
+              blockstmt {
+                statements {
+                  boundedforstmt {
+                    for_body {
+                    }
+                  }
+                }
+              }
+            }
+            statements {
+              storage_func {
+                loc {
+                }
+                val {
+                  lowcall {
+                    callty: CALL
+                    gas {
+                    }
+                    addr {
+                    }
+                    wei {
+                      unop {
+                        op: EXTCODESIZE
+                        operand {
+                        }
+                      }
+                    }
+                    in {
+                      nop {
+                        op: MSIZE
+                      }
+                    }
+                    insize {
+                    }
+                    out {
+                    }
+                    outsize {
+                    }
+                  }
+                }
+                st: SSTORE
+              }
+            }
+          }
+          for_cond {
+            unop {
+              op: EXTCODESIZE
+              operand {
+              }
+            }
+          }
+        }
+      }
+      statements {
+      }
+      statements {
+        ifstmt {
+          cond {
+          }
+          if_body {
+            statements {
+            }
+          }
+        }
+      }
+      statements {
+      }
+    }
+  }
+}

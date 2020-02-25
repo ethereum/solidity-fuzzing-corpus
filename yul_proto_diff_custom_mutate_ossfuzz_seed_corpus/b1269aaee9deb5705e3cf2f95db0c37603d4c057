@@ -1,0 +1,163 @@
+block {
+  statements {
+    forstmt {
+      for_body {
+        statements {
+          boundedforstmt {
+          }
+        }
+        statements {
+          pop {
+            expr {
+              lowcall {
+                callty: CALL
+              }
+            }
+          }
+        }
+      }
+      for_init {
+        statements {
+          leave {
+          }
+        }
+        statements {
+          assignment {
+            ref_id {
+              varnum: 292988208
+            }
+            expr {
+              unopdata {
+                op: SIZE
+                identifier: 1925008064
+              }
+            }
+          }
+        }
+        statements {
+          pop {
+            expr {
+              lowcall {
+                callty: CALLCODE
+              }
+            }
+          }
+        }
+        statements {
+          pop {
+            expr {
+              unopdata {
+                op: SIZE
+                identifier: 1607308974
+              }
+            }
+          }
+        }
+      }
+      for_post {
+        statements {
+          extcode_copy {
+            addr {
+              binop {
+                op: EXP
+                left {
+                  varref {
+                    varnum: 1452060117
+                  }
+                }
+                right {
+                  varref {
+                    varnum: 986844154
+                  }
+                }
+              }
+            }
+            target {
+              unop {
+                op: SLOAD
+                operand {
+                  varref {
+                    varnum: 467881322
+                  }
+                }
+              }
+            }
+            source {
+              func_expr {
+                ret: SINGLE
+                func_index: 60346953
+              }
+            }
+            size {
+              varref {
+                varnum: 542965554
+              }
+            }
+          }
+        }
+        statements {
+          breakstmt {
+          }
+        }
+        statements {
+          boundedforstmt {
+          }
+        }
+        statements {
+          forstmt {
+            for_cond {
+              func_expr {
+                ret: SINGLE
+                func_index: 2048050183
+              }
+            }
+          }
+        }
+        statements {
+          pop {
+            expr {
+              lowcall {
+                callty: STATICCALL
+              }
+            }
+          }
+        }
+      }
+      for_cond {
+        varref {
+          varnum: 660490448
+        }
+      }
+    }
+  }
+  statements {
+    assignment {
+      ref_id {
+        varnum: 1464534012
+      }
+      expr {
+        varref {
+          varnum: 121239536
+        }
+      }
+    }
+  }
+  statements {
+    terminatestmt {
+      ret_rev {
+        stmt: REVERT
+        pos {
+          cons {
+            intval: 0
+          }
+        }
+        size {
+          cons {
+            intval: 0
+          }
+        }
+      }
+    }
+  }
+}
+ver: ISTANBUL

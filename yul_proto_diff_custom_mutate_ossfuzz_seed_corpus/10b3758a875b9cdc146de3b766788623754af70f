@@ -1,0 +1,158 @@
+block {
+  statements {
+    multidecl {
+      num_vars: 76870684
+    }
+  }
+  statements {
+  }
+  statements {
+  }
+  statements {
+    assignment {
+      ref_id {
+        varnum: 79028551
+      }
+      expr {
+        varref {
+          varnum: 51136121
+        }
+      }
+    }
+  }
+  statements {
+    forstmt {
+      for_body {
+        statements {
+          ifstmt {
+            cond {
+              varref {
+                varnum: 193793887
+              }
+            }
+            if_body {
+              statements {
+                assignment {
+                  ref_id {
+                    varnum: 163979442
+                  }
+                  expr {
+                    varref {
+                      varnum: 125396044
+                    }
+                  }
+                }
+              }
+              statements {
+                contstmt {
+                }
+              }
+              statements {
+                pop {
+                  expr {
+                    create {
+                      createty: CREATE2
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+        statements {
+          pop {
+            expr {
+              lowcall {
+                callty: DELEGATECALL
+              }
+            }
+          }
+        }
+      }
+      for_init {
+        statements {
+          decl {
+          }
+        }
+        statements {
+          assignment {
+            ref_id {
+              varnum: 62923913
+            }
+            expr {
+              varref {
+                varnum: 40715473
+              }
+            }
+          }
+        }
+        statements {
+          assignment {
+            ref_id {
+              varnum: 13914166
+            }
+            expr {
+              lowcall {
+                callty: CALL
+                gas {
+                }
+                addr {
+                }
+                wei {
+                }
+                in {
+                }
+                insize {
+                }
+                out {
+                }
+                outsize {
+                  top {
+                    op: MULM
+                    arg1 {
+                    }
+                    arg2 {
+                    }
+                    arg3 {
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+        statements {
+          pop {
+            expr {
+              lowcall {
+                callty: CALLCODE
+              }
+            }
+          }
+        }
+      }
+      for_post {
+        statements {
+          contstmt {
+          }
+        }
+        statements {
+          pop {
+            expr {
+              lowcall {
+                callty: STATICCALL
+              }
+            }
+          }
+        }
+      }
+      for_cond {
+      }
+    }
+  }
+  statements {
+    forstmt {
+    }
+  }
+}
+ver: BYZANTIUM

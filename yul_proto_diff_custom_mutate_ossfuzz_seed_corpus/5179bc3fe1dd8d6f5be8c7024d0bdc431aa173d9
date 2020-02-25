@@ -1,0 +1,70 @@
+block {
+  statements {
+    storage_func {
+      loc {
+        binop {
+          op: SLT
+          left {
+            cons {
+              strval: "\014\000\000\000\000\000\000\000"
+            }
+          }
+          right {
+            binop {
+              op: SDIV
+              left {
+                cons {
+                  strval: "\014\000\000\000\000\000\000\000"
+                }
+              }
+              right {
+                binop {
+                  op: SGT
+                  left {
+                  }
+                  right {
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+      val {
+        nop {
+          op: DIFFICULTY
+        }
+      }
+      st: MSTORE
+    }
+  }
+  statements {
+    storage_func {
+      loc {
+      }
+      val {
+      }
+      st: MSTORE
+    }
+  }
+  statements {
+  }
+  statements {
+    forstmt {
+      for_body {
+      }
+      for_init {
+      }
+      for_post {
+      }
+      for_cond {
+        unop {
+          op: BLOCKHASH
+          operand {
+          }
+        }
+      }
+    }
+  }
+}
+ver: ISTANBUL

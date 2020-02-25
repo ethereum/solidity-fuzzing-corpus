@@ -1,0 +1,147 @@
+obj {
+  code {
+    block {
+      statements {
+        breakstmt {
+        }
+      }
+      statements {
+        breakstmt {
+        }
+      }
+      statements {
+        storage_func {
+          loc {
+            unop {
+              op: MLOAD
+              operand {
+                unop {
+                  op: NOT
+                  operand {
+                  }
+                }
+              }
+            }
+          }
+          val {
+            binop {
+              op: SDIV
+              left {
+                unop {
+                  op: NOT
+                  operand {
+                  }
+                }
+              }
+              right {
+              }
+            }
+          }
+          st: MSTORE
+        }
+      }
+      statements {
+        storage_func {
+          loc {
+            binop {
+              op: EQ
+              left {
+                unop {
+                  op: MLOAD
+                  operand {
+                    cons {
+                      intval: 0
+                    }
+                  }
+                }
+              }
+              right {
+                unop {
+                  op: NOT
+                  operand {
+                  }
+                }
+              }
+            }
+          }
+          val {
+          }
+          st: MSTORE
+        }
+      }
+      statements {
+        storage_func {
+          loc {
+            binop {
+              op: SDIV
+              left {
+                cons {
+                  hexval: "9999999999999999999999999999999999999999999999999999:999999999999999999999999999999"
+                }
+              }
+              right {
+              }
+            }
+          }
+          val {
+            binop {
+              op: SDIV
+              left {
+                unop {
+                  op: CALLDATALOAD
+                  operand {
+                    cons {
+                      intval: 0
+                    }
+                  }
+                }
+              }
+              right {
+              }
+            }
+          }
+          st: MSTORE
+        }
+      }
+      statements {
+      }
+      statements {
+        breakstmt {
+        }
+      }
+      statements {
+        pop {
+          expr {
+            binop {
+              op: EQ
+              left {
+                unop {
+                }
+              }
+              right {
+                unop {
+                  op: NOT
+                  operand {
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+      statements {
+        breakstmt {
+        }
+      }
+      statements {
+        breakstmt {
+        }
+      }
+      statements {
+        breakstmt {
+        }
+      }
+    }
+  }
+}
+ver: HOMESTEAD

@@ -1,0 +1,113 @@
+obj {
+  code {
+    block {
+      statements {
+        extcode_copy {
+          addr {
+            binop {
+              op: AND
+              left {
+              }
+              right {
+                unop {
+                  op: SLOAD
+                  operand {
+                    varref {
+                      varnum: 999621726
+                    }
+                  }
+                }
+              }
+            }
+          }
+          target {
+            binop {
+              op: SHR
+              left {
+                cons {
+                  intval: 65
+                }
+              }
+              right {
+                binop {
+                  op: SHR
+                  left {
+                    cons {
+                      intval: 64
+                    }
+                  }
+                  right {
+                    varref {
+                      varnum: 862244489
+                    }
+                  }
+                }
+              }
+            }
+          }
+          source {
+            cons {
+            }
+          }
+          size {
+            unop {
+              op: MLOAD
+              operand {
+                unop {
+                  op: MLOAD
+                  operand {
+                    func_expr {
+                      ret: SINGLE
+                      func_index: 1910874591
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+      statements {
+        assignment {
+          ref_id {
+            varnum: 885317369
+          }
+          expr {
+            unop {
+              op: MLOAD
+              operand {
+                cons {
+                  intval: 0
+                }
+              }
+            }
+          }
+        }
+      }
+      statements {
+        pop {
+          expr {
+            func_expr {
+              ret: SINGLE
+              func_index: 846760139
+            }
+          }
+        }
+      }
+    }
+  }
+  sub_obj {
+    code {
+      block {
+        statements {
+          contstmt {
+          }
+        }
+      }
+    }
+    data {
+      hex: "&"
+    }
+  }
+}
+ver: ISTANBUL

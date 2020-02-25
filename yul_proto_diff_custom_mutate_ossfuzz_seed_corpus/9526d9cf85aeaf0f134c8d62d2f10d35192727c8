@@ -1,0 +1,153 @@
+block {
+  statements {
+    storage_func {
+      loc {
+        binop {
+          op: MUL
+          left {
+            nop {
+              op: GASPRICE
+            }
+          }
+          right {
+            cons {
+              intval: 0
+            }
+          }
+        }
+      }
+      val {
+      }
+      st: MSTORE
+    }
+  }
+  statements {
+    storage_func {
+      loc {
+        binop {
+          op: MUL
+          left {
+            binop {
+              op: EQ
+              left {
+                unop {
+                  op: ISZERO
+                  operand {
+                  }
+                }
+              }
+              right {
+                nop {
+                  op: GAS
+                }
+              }
+            }
+          }
+          right {
+            cons {
+              intval: 0
+            }
+          }
+        }
+      }
+      val {
+      }
+      st: MSTORE
+    }
+  }
+  statements {
+    contstmt {
+    }
+  }
+  statements {
+  }
+  statements {
+  }
+  statements {
+    storage_func {
+      loc {
+        binop {
+          op: MUL
+          left {
+            binop {
+              op: EQ
+              left {
+                unop {
+                  op: ISZERO
+                  operand {
+                  }
+                }
+              }
+              right {
+                nop {
+                  op: GASPRICE
+                }
+              }
+            }
+          }
+          right {
+            cons {
+              intval: 0
+            }
+          }
+        }
+      }
+      val {
+      }
+      st: MSTORE
+    }
+  }
+  statements {
+  }
+  statements {
+    ifstmt {
+      cond {
+      }
+      if_body {
+      }
+    }
+  }
+  statements {
+    storage_func {
+      loc {
+        binop {
+          op: MUL
+          left {
+            binop {
+              op: EQ
+              left {
+                unop {
+                  op: ISZERO
+                  operand {
+                  }
+                }
+              }
+              right {
+                nop {
+                  op: GASPRICE
+                }
+              }
+            }
+          }
+          right {
+            cons {
+              intval: 0
+            }
+          }
+        }
+      }
+      val {
+      }
+      st: MSTORE
+    }
+  }
+  statements {
+    ifstmt {
+      cond {
+      }
+      if_body {
+      }
+    }
+  }
+}
+ver: ISTANBUL

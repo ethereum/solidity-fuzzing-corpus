@@ -1,0 +1,126 @@
+block {
+  statements {
+  }
+  statements {
+    pop {
+      expr {
+        top {
+          op: MULM
+          arg1 {
+            varref {
+              varnum: 1454701568
+            }
+          }
+          arg2 {
+            unopdata {
+              op: SIZE
+              identifier: 2013381498
+            }
+          }
+          arg3 {
+            func_expr {
+              ret: SINGLE
+              func_index: 491947071
+            }
+          }
+        }
+      }
+    }
+  }
+  statements {
+    pop {
+      expr {
+        varref {
+          varnum: 1830670296
+        }
+      }
+    }
+  }
+  statements {
+    forstmt {
+      for_body {
+        statements {
+          storage_func {
+            loc {
+              varref {
+                varnum: 568415121
+              }
+            }
+            val {
+              varref {
+                varnum: 982812882
+              }
+            }
+            st: MSTORE8
+          }
+        }
+        statements {
+          pop {
+            expr {
+              varref {
+                varnum: 1054531894
+              }
+            }
+          }
+        }
+      }
+      for_init {
+      }
+      for_post {
+      }
+      for_cond {
+        unopdata {
+          op: OFFSET
+          identifier: 965790387
+        }
+      }
+    }
+  }
+  statements {
+    terminatestmt {
+      ret_rev {
+        stmt: REVERT
+        pos {
+          unop {
+            op: CALLDATALOAD
+            operand {
+              func_expr {
+                ret: SINGLE
+                func_index: 1056619038
+              }
+            }
+          }
+        }
+        size {
+          unopdata {
+            op: OFFSET
+            identifier: 707131351
+          }
+        }
+      }
+    }
+  }
+  statements {
+    decl {
+      expr {
+        unop {
+          op: SLOAD
+          operand {
+            cons {
+              intval: 0
+            }
+          }
+        }
+      }
+    }
+  }
+  statements {
+    breakstmt {
+    }
+  }
+  statements {
+    contstmt {
+    }
+  }
+}
+ver: PETERSBURG

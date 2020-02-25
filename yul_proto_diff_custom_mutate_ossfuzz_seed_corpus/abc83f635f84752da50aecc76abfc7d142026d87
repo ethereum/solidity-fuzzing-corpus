@@ -1,0 +1,127 @@
+obj {
+  code {
+    block {
+    }
+  }
+  sub_obj {
+    code {
+      block {
+        statements {
+          storage_func {
+            loc {
+              nop {
+                op: MSIZE
+              }
+            }
+            val {
+              binop {
+                op: DIV
+                left {
+                  binop {
+                    op: DIV
+                    left {
+                    }
+                    right {
+                      binop {
+                        op: SHL
+                        left {
+                          nop {
+                            op: GASLIMIT
+                          }
+                        }
+                        right {
+                          binop {
+                            op: AND
+                            left {
+                            }
+                            right {
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+                right {
+                  binop {
+                    op: SHL
+                    left {
+                      nop {
+                        op: GASLIMIT
+                      }
+                    }
+                    right {
+                      binop {
+                        op: AND
+                        left {
+                        }
+                        right {
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+            st: MSTORE8
+          }
+        }
+        statements {
+          storage_func {
+            loc {
+              nop {
+                op: CHAINID
+              }
+            }
+            val {
+              binop {
+                op: AND
+                left {
+                }
+                right {
+                }
+              }
+            }
+            st: MSTORE8
+          }
+        }
+      }
+    }
+    sub_obj {
+      code {
+        block {
+          statements {
+            storage_func {
+              loc {
+                cons {
+                  intval: 0
+                }
+              }
+              val {
+                varref {
+                  varnum: 700706349
+                }
+              }
+              st: MSTORE
+            }
+          }
+          statements {
+            storage_func {
+              loc {
+              }
+              val {
+              }
+              st: MSTORE8
+            }
+          }
+          statements {
+            storage_func {
+              st: SSTORE
+            }
+          }
+        }
+      }
+    }
+  }
+}
+ver: PETERSBURG

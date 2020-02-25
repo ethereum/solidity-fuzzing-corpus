@@ -1,0 +1,186 @@
+obj {
+  code {
+    block {
+      statements {
+        ifstmt {
+          cond {
+            binop {
+              op: SHL
+              left {
+                cons {
+                  intval: 1
+                }
+              }
+              right {
+                binop {
+                  op: SHR
+                  left {
+                    cons {
+                      intval: 8
+                    }
+                  }
+                  right {
+                    nop {
+                      op: COINBASE
+                    }
+                  }
+                }
+              }
+            }
+          }
+          if_body {
+            statements {
+              breakstmt {
+              }
+            }
+          }
+        }
+      }
+      statements {
+        breakstmt {
+        }
+      }
+    }
+  }
+  sub_obj {
+    code {
+      block {
+        statements {
+          breakstmt {
+          }
+        }
+      }
+    }
+    sub_obj {
+      code {
+        block {
+          statements {
+            breakstmt {
+            }
+          }
+        }
+      }
+      sub_obj {
+        code {
+          block {
+            statements {
+              ifstmt {
+                cond {
+                  binop {
+                    op: SHL
+                    left {
+                      cons {
+                        intval: 1
+                      }
+                    }
+                    right {
+                      binop {
+                        op: SHR
+                        left {
+                          cons {
+                            intval: 8
+                          }
+                        }
+                        right {
+                          nop {
+                            op: CALLER
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+                if_body {
+                  statements {
+                    breakstmt {
+                    }
+                  }
+                }
+              }
+            }
+            statements {
+              breakstmt {
+              }
+            }
+          }
+        }
+        sub_obj {
+          code {
+            block {
+              statements {
+                breakstmt {
+                }
+              }
+            }
+          }
+          sub_obj {
+            code {
+              block {
+                statements {
+                  ifstmt {
+                    cond {
+                      binop {
+                        op: SHL
+                        left {
+                          cons {
+                            intval: 8
+                          }
+                        }
+                        right {
+                          binop {
+                            op: SHR
+                            left {
+                              cons {
+                                intval: 8
+                              }
+                            }
+                            right {
+                              nop {
+                                op: COINBASE
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                    if_body {
+                      statements {
+                        breakstmt {
+                        }
+                      }
+                    }
+                  }
+                }
+                statements {
+                  breakstmt {
+                  }
+                }
+              }
+            }
+            sub_obj {
+              code {
+                block {
+                  statements {
+                    breakstmt {
+                    }
+                  }
+                }
+              }
+              sub_obj {
+                code {
+                  block {
+                    statements {
+                      breakstmt {
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+ver: ISTANBUL

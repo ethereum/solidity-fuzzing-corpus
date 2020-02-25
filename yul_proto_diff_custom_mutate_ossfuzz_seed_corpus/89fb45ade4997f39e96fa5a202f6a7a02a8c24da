@@ -1,0 +1,155 @@
+block {
+  statements {
+    leave {
+    }
+  }
+  statements {
+    assignment {
+      ref_id {
+        varnum: 1138131594
+      }
+      expr {
+        func_expr {
+          ret: SINGLE
+          func_index: 1382622483
+        }
+      }
+    }
+  }
+  statements {
+    storage_func {
+      loc {
+        varref {
+          varnum: 290125023
+        }
+      }
+      val {
+        varref {
+          varnum: 105037603
+        }
+      }
+      st: MSTORE8
+    }
+  }
+  statements {
+    funcdef {
+      num_input_params: 1954776504
+      num_output_params: 732659051
+      block {
+        statements {
+          multidecl {
+            num_vars: 979435311
+          }
+        }
+        statements {
+          pop {
+            expr {
+              binop {
+                op: SMOD
+                left {
+                  unop {
+                    op: MLOAD
+                    operand {
+                      varref {
+                        varnum: 1714717997
+                      }
+                    }
+                  }
+                }
+                right {
+                  varref {
+                    varnum: 75724587
+                  }
+                }
+              }
+            }
+          }
+        }
+        statements {
+          storage_func {
+            loc {
+              cons {
+                intval: 0
+              }
+            }
+            val {
+              func_expr {
+                ret: SINGLE
+                func_index: 1101129503
+              }
+            }
+            st: MSTORE
+          }
+        }
+        statements {
+          terminatestmt {
+            ret_rev {
+              stmt: REVERT
+              pos {
+                unopdata {
+                  op: SIZE
+                  identifier: 486927081
+                }
+              }
+              size {
+                func_expr {
+                  ret: SINGLE
+                  func_index: 1068020253
+                }
+              }
+            }
+          }
+        }
+        statements {
+          pop {
+            expr {
+              lowcall {
+                callty: CALLCODE
+              }
+            }
+          }
+        }
+      }
+      force_call: false
+    }
+  }
+  statements {
+    terminatestmt {
+      ret_rev {
+        stmt: REVERT
+        pos {
+          binop {
+            op: GT
+            left {
+              varref {
+                varnum: 937143592
+              }
+            }
+            right {
+              func_expr {
+                ret: SINGLE
+                func_index: 1741021227
+              }
+            }
+          }
+        }
+        size {
+          binop {
+            op: EXP
+            left {
+              varref {
+                varnum: 1300780732
+              }
+            }
+            right {
+              varref {
+                varnum: 1859843386
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+ver: BYZANTIUM

@@ -1,0 +1,75 @@
+block {
+  statements {
+    switchstmt {
+      switch_expr {
+      }
+      default_block {
+        statements {
+          terminatestmt {
+            ret_rev {
+              stmt: RETURN
+              pos {
+              }
+              size {
+                cons {
+                  strval: "~"
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  statements {
+    funcdef {
+      num_input_params: 14
+      num_output_params: 4096
+      block {
+        statements {
+          boundedforstmt {
+            for_body {
+              statements {
+                funcdef {
+                  num_input_params: 14
+                  num_output_params: 4096
+                  block {
+                    statements {
+                    }
+                  }
+                  force_call: true
+                }
+              }
+              statements {
+                funcdef {
+                  num_input_params: 14
+                  num_output_params: 4096
+                  block {
+                    statements {
+                      boundedforstmt {
+                        for_body {
+                        }
+                      }
+                    }
+                  }
+                  force_call: true
+                }
+              }
+            }
+          }
+        }
+      }
+      force_call: true
+    }
+  }
+  statements {
+    funcdef {
+      num_input_params: 14
+      num_output_params: 4096
+      block {
+      }
+      force_call: true
+    }
+  }
+}
+ver: ISTANBUL

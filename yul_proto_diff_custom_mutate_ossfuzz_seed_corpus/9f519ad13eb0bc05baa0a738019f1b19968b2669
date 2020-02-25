@@ -1,0 +1,159 @@
+block {
+  statements {
+    multidecl {
+      num_vars: 107972632
+    }
+  }
+  statements {
+    pop {
+      expr {
+        varref {
+          varnum: 1826054304
+        }
+      }
+    }
+  }
+  statements {
+    storage_func {
+      loc {
+        func_expr {
+          ret: SINGLE
+          func_index: 486633554
+        }
+      }
+      val {
+        varref {
+          varnum: 781691933
+        }
+      }
+      st: MSTORE8
+    }
+  }
+  statements {
+    funcdef {
+      num_input_params: 1
+      num_output_params: 1
+      block {
+        statements {
+          assignment {
+            ref_id {
+              varnum: 822106227
+            }
+            expr {
+              varref {
+                varnum: 105909037
+              }
+            }
+          }
+        }
+        statements {
+          storage_func {
+            loc {
+              binop {
+                op: BYTE
+                left {
+                  varref {
+                    varnum: 1466298542
+                  }
+                }
+                right {
+                  varref {
+                    varnum: 1574933492
+                  }
+                }
+              }
+            }
+            val {
+              binop {
+                op: SHL
+                left {
+                  varref {
+                    varnum: 135004204
+                  }
+                }
+                right {
+                  varref {
+                    varnum: 1322546286
+                  }
+                }
+              }
+            }
+            st: MSTORE8
+          }
+        }
+        statements {
+          pop {
+            expr {
+              lowcall {
+                callty: DELEGATECALL
+              }
+            }
+          }
+        }
+        statements {
+          pop {
+            expr {
+              unop {
+                op: SLOAD
+                operand {
+                  func_expr {
+                    ret: SINGLE
+                    func_index: 248052926
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  statements {
+    ifstmt {
+      cond {
+        func_expr {
+          ret: SINGLE
+          func_index: 514821709
+        }
+      }
+      if_body {
+        statements {
+          assignment {
+            ref_id {
+              varnum: 124274334
+            }
+            expr {
+              unop {
+                op: CALLDATALOAD
+                operand {
+                  varref {
+                    varnum: 790980801
+                  }
+                }
+              }
+            }
+          }
+        }
+        statements {
+          breakstmt {
+          }
+        }
+        statements {
+          pop {
+            expr {
+              func_expr {
+                ret: SINGLE
+                func_index: 1894909512
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  statements {
+    boundedforstmt {
+    }
+  }
+}
+ver: ISTANBUL

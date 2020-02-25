@@ -1,0 +1,88 @@
+obj {
+  code {
+    block {
+      statements {
+        extcode_copy {
+          addr {
+          }
+          target {
+            binop {
+              op: SGT
+              left {
+                nop {
+                  op: DIFFICULTY
+                }
+              }
+              right {
+                nop {
+                  op: DIFFICULTY
+                }
+              }
+            }
+          }
+          source {
+            unop {
+              op: CALLDATALOAD
+              operand {
+              }
+            }
+          }
+          size {
+          }
+        }
+      }
+      statements {
+        terminatestmt {
+        }
+      }
+    }
+  }
+  data {
+    hex: "\001/\000\006"
+  }
+  sub_obj {
+    code {
+      block {
+        statements {
+        }
+        statements {
+          extcode_copy {
+            addr {
+            }
+            target {
+              binop {
+                op: SGT
+                left {
+                  nop {
+                    op: DIFFICULTY
+                  }
+                }
+                right {
+                  nop {
+                    op: DIFFICULTY
+                  }
+                }
+              }
+            }
+            source {
+              nop {
+                op: NUMBER
+              }
+            }
+            size {
+            }
+          }
+        }
+        statements {
+        }
+      }
+    }
+    sub_obj {
+      code {
+        block {
+        }
+      }
+    }
+  }
+}
+ver: ISTANBUL

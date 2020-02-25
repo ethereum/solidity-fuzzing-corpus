@@ -1,0 +1,214 @@
+block {
+  statements {
+  }
+  statements {
+    storage_func {
+      loc {
+        unop {
+          op: CALLDATALOAD
+          operand {
+            varref {
+              varnum: 2049610415
+            }
+          }
+        }
+      }
+      val {
+        unop {
+          op: SLOAD
+          operand {
+            varref {
+              varnum: 394408019
+            }
+          }
+        }
+      }
+      st: SSTORE
+    }
+  }
+  statements {
+    breakstmt {
+    }
+  }
+  statements {
+    assignment {
+      ref_id {
+        varnum: 1860232199
+      }
+      expr {
+        func_expr {
+          ret: SINGLE
+          func_index: 1750434821
+        }
+      }
+    }
+  }
+  statements {
+    boundedforstmt {
+      for_body {
+        statements {
+          copy_func {
+            ct: RETURNDATA
+            target {
+              unopdata {
+                op: SIZE
+                identifier: 194191153
+              }
+            }
+            source {
+            }
+            size {
+            }
+          }
+        }
+        statements {
+          switchstmt {
+            switch_expr {
+              varref {
+                varnum: 1991439189
+              }
+            }
+            case_stmt {
+            }
+          }
+        }
+        statements {
+          functioncall {
+            ret: SINGLE
+            func_index: 281874359
+            in_param1 {
+              varref {
+                varnum: 2026715420
+              }
+            }
+            in_param2 {
+              func_expr {
+                ret: SINGLE
+                func_index: 115931214
+              }
+            }
+            in_param3 {
+              func_expr {
+                ret: SINGLE
+                func_index: 1648043999
+              }
+            }
+            in_param4 {
+              varref {
+                varnum: 1994450464
+              }
+            }
+            out_param1 {
+              varnum: 1687784298
+            }
+            out_param2 {
+              varnum: 1948732519
+            }
+            out_param3 {
+              varnum: 580832893
+            }
+            out_param4 {
+              varnum: 1752623880
+            }
+          }
+        }
+      }
+    }
+  }
+  statements {
+    pop {
+      expr {
+        binop {
+          op: MOD
+          left {
+            unopdata {
+              op: OFFSET
+              identifier: 1751869009
+            }
+          }
+          right {
+            func_expr {
+              ret: SINGLE
+              func_index: 784439757
+            }
+          }
+        }
+      }
+    }
+  }
+  statements {
+    funcdef {
+      num_input_params: 1
+      num_output_params: 1
+      block {
+        statements {
+          assignment {
+            ref_id {
+              varnum: 1312641978
+            }
+            expr {
+              func_expr {
+                ret: SINGLE
+                func_index: 1997427391
+              }
+            }
+          }
+        }
+        statements {
+          contstmt {
+          }
+        }
+        statements {
+          assignment {
+            ref_id {
+              varnum: 1148463133
+            }
+            expr {
+              func_expr {
+                ret: SINGLE
+                func_index: 1856368381
+              }
+            }
+          }
+        }
+        statements {
+          terminatestmt {
+            ret_rev {
+              stmt: REVERT
+              pos {
+                varref {
+                  varnum: 2050531346
+                }
+              }
+              size {
+                cons {
+                  intval: 0
+                }
+              }
+            }
+          }
+        }
+        statements {
+          pop {
+            expr {
+              varref {
+                varnum: 1202782331
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  statements {
+    pop {
+      expr {
+        unopdata {
+          op: SIZE
+          identifier: 1241045628
+        }
+      }
+    }
+  }
+}
+ver: ISTANBUL

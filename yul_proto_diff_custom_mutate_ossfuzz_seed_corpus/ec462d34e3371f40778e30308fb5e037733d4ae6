@@ -1,0 +1,69 @@
+block {
+  statements {
+    boundedforstmt {
+      for_body {
+        statements {
+          storage_func {
+            loc {
+            }
+            val {
+            }
+            st: MSTORE8
+          }
+        }
+        statements {
+          boundedforstmt {
+            for_body {
+              statements {
+                storage_func {
+                  loc {
+                    nop {
+                      op: MSIZE
+                    }
+                  }
+                  val {
+                    lowcall {
+                      callty: CALL
+                      gas {
+                      }
+                      addr {
+                      }
+                      wei {
+                        nop {
+                          op: MSIZE
+                        }
+                      }
+                      in {
+                      }
+                      insize {
+                      }
+                      out {
+                        binop {
+                          op: SDIV
+                          left {
+                            nop {
+                              op: MSIZE
+                            }
+                          }
+                          right {
+                            nop {
+                              op: MSIZE
+                            }
+                          }
+                        }
+                      }
+                      outsize {
+                      }
+                    }
+                  }
+                  st: SSTORE
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+ver: SPURIOUS

@@ -1,0 +1,140 @@
+block {
+  statements {
+    multidecl {
+      num_vars: 937312659
+    }
+  }
+  statements {
+    pop {
+      expr {
+        unop {
+          op: CALLDATALOAD
+          operand {
+            varref {
+              varnum: 1344612715
+            }
+          }
+        }
+      }
+    }
+  }
+  statements {
+    breakstmt {
+    }
+  }
+  statements {
+    storage_func {
+      loc {
+        binop {
+          op: MOD
+          left {
+            unop {
+              op: CALLDATALOAD
+              operand {
+                varref {
+                  varnum: 937169374
+                }
+              }
+            }
+          }
+          right {
+            func_expr {
+              ret: SINGLE
+              func_index: 676218552
+            }
+          }
+        }
+      }
+      val {
+        binop {
+          op: LT
+          left {
+            varref {
+              varnum: 788335001
+            }
+          }
+          right {
+            varref {
+              varnum: 470449643
+            }
+          }
+        }
+      }
+      st: MSTORE
+    }
+  }
+  statements {
+    assignment {
+      ref_id {
+        varnum: 593389567
+      }
+      expr {
+        unop {
+          op: MLOAD
+          operand {
+            cons {
+              intval: 0
+            }
+          }
+        }
+      }
+    }
+  }
+  statements {
+    forstmt {
+      for_cond {
+        unop {
+          op: SLOAD
+          operand {
+            func_expr {
+              ret: SINGLE
+              func_index: 789703751
+            }
+          }
+        }
+      }
+    }
+  }
+  statements {
+    terminatestmt {
+      ret_rev {
+        stmt: REVERT
+        pos {
+          unop {
+            op: SLOAD
+            operand {
+              varref {
+                varnum: 1462991959
+              }
+            }
+          }
+        }
+        size {
+          unop {
+            op: CALLDATALOAD
+            operand {
+              cons {
+                intval: 0
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  statements {
+    pop {
+      expr {
+        unop {
+          op: SLOAD
+          operand {
+            cons {
+              intval: 0
+            }
+          }
+        }
+      }
+    }
+  }
+}
+ver: BERLIN

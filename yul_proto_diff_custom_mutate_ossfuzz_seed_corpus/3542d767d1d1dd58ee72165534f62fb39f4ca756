@@ -1,0 +1,136 @@
+block {
+  statements {
+    decl {
+    }
+  }
+  statements {
+  }
+  statements {
+  }
+  statements {
+  }
+  statements {
+    storage_func {
+      loc {
+        binop {
+          op: SLT
+          left {
+            func_expr {
+              ret: SINGLE
+              func_index: 28155303
+            }
+          }
+          right {
+            func_expr {
+              ret: SINGLE
+              func_index: 1426513516
+            }
+          }
+        }
+      }
+      val {
+        binop {
+          op: BYTE
+          left {
+            varref {
+              varnum: 903675829
+            }
+          }
+          right {
+            varref {
+              varnum: 886060352
+            }
+          }
+        }
+      }
+      st: MSTORE
+    }
+  }
+  statements {
+  }
+  statements {
+    storage_func {
+      loc {
+        varref {
+          varnum: 1383958368
+        }
+      }
+      val {
+        unop {
+        }
+      }
+      st: MSTORE
+    }
+  }
+  statements {
+    switchstmt {
+      switch_expr {
+        unopdata {
+          op: SIZE
+          identifier: 841953509
+        }
+      }
+      case_stmt {
+      }
+    }
+  }
+  statements {
+    switchstmt {
+      switch_expr {
+        varref {
+          varnum: 1007067693
+        }
+      }
+      case_stmt {
+        case_lit {
+        }
+        case_block {
+          statements {
+            terminatestmt {
+              ret_rev {
+                stmt: REVERT
+                pos {
+                  unopdata {
+                    op: OFFSET
+                    identifier: 2137532072
+                  }
+                }
+                size {
+                  unop {
+                    op: SLOAD
+                    operand {
+                      func_expr {
+                        ret: SINGLE
+                        func_index: 1404470549
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  statements {
+    forstmt {
+      for_cond {
+        unop {
+          op: CALLDATALOAD
+          operand {
+            unopdata {
+              op: SIZE
+              identifier: 809758549
+            }
+          }
+        }
+      }
+    }
+  }
+  statements {
+    funcdef {
+    }
+  }
+}
+ver: SPURIOUS

@@ -1,0 +1,157 @@
+block {
+  statements {
+    multidecl {
+      num_vars: 1116113686
+    }
+  }
+  statements {
+  }
+  statements {
+  }
+  statements {
+  }
+  statements {
+  }
+  statements {
+    funcdef {
+      num_input_params: 1
+      num_output_params: 1
+      block {
+        statements {
+          assignment {
+            ref_id {
+              varnum: 830619135
+            }
+            expr {
+              varref {
+                varnum: 1296576095
+              }
+            }
+          }
+        }
+        statements {
+          storage_func {
+            loc {
+              unopdata {
+                op: SIZE
+                identifier: 88981796
+              }
+            }
+            val {
+              varref {
+                varnum: 1621002414
+              }
+            }
+            st: MSTORE8
+          }
+        }
+        statements {
+          forstmt {
+            for_cond {
+              unopdata {
+                op: OFFSET
+                identifier: 2060546153
+              }
+            }
+          }
+        }
+        statements {
+          pop {
+            expr {
+              create {
+                createty: CREATE2
+              }
+            }
+          }
+        }
+        statements {
+          copy_func {
+            target {
+              unop {
+                op: MLOAD
+                operand {
+                  func_expr {
+                    ret: SINGLE
+                    func_index: 40992468
+                  }
+                }
+              }
+            }
+            source {
+              binop {
+                op: MUL
+                left {
+                  varref {
+                    varnum: 1575475201
+                  }
+                }
+                right {
+                  unop {
+                    op: CALLDATALOAD
+                    operand {
+                      varref {
+                        varnum: 672477917
+                      }
+                    }
+                  }
+                }
+              }
+            }
+            size {
+              binop {
+                op: SMOD
+                left {
+                  varref {
+                    varnum: 1576967034
+                  }
+                }
+                right {
+                  varref {
+                    varnum: 2070346652
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  statements {
+    leave {
+    }
+  }
+  statements {
+    assignment {
+      ref_id {
+        varnum: 1193765150
+      }
+      expr {
+        unop {
+          op: MLOAD
+          operand {
+            varref {
+              varnum: 808855699
+            }
+          }
+        }
+      }
+    }
+  }
+  statements {
+    assignment {
+      ref_id {
+        varnum: 1547334606
+      }
+      expr {
+        func_expr {
+          ret: SINGLE
+          func_index: 2028605882
+        }
+      }
+    }
+  }
+  statements {
+  }
+}
+ver: ISTANBUL

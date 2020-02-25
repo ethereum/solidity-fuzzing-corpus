@@ -1,0 +1,39 @@
+block {
+  statements {
+    storage_func {
+      loc {
+        binop {
+          op: SLT
+          left {
+            nop {
+              op: COINBASE
+            }
+          }
+          right {
+          }
+        }
+      }
+      val {
+        unop {
+          op: NOT
+          operand {
+            top {
+              op: ADDM
+              arg1 {
+              }
+              arg2 {
+              }
+              arg3 {
+                cons {
+                  strval: "QQQQ"
+                }
+              }
+            }
+          }
+        }
+      }
+      st: MSTORE
+    }
+  }
+}
+ver: BERLIN

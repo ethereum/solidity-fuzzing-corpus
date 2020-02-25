@@ -1,0 +1,135 @@
+obj {
+  code {
+    block {
+      statements {
+        decl {
+          expr {
+            unopdata {
+              op: OFFSET
+              identifier: 1078316647
+            }
+          }
+        }
+      }
+      statements {
+        copy_func {
+          ct: CALLDATA
+          target {
+            unop {
+              op: MLOAD
+              operand {
+                varref {
+                  varnum: 374144967
+                }
+              }
+            }
+          }
+          source {
+            unop {
+              op: CALLDATALOAD
+              operand {
+                func_expr {
+                  ret: SINGLE
+                  func_index: 1280973551
+                }
+              }
+            }
+          }
+          size {
+            unop {
+              op: SLOAD
+              operand {
+                unopdata {
+                  op: OFFSET
+                  identifier: 737538209
+                }
+              }
+            }
+          }
+        }
+      }
+      statements {
+        copy_func {
+          ct: CALLDATA
+          target {
+            varref {
+              varnum: 1836489808
+            }
+          }
+          source {
+            varref {
+              varnum: 563825821
+            }
+          }
+          size {
+            unopdata {
+              op: OFFSET
+              identifier: 866685884
+            }
+          }
+        }
+      }
+      statements {
+        contstmt {
+        }
+      }
+      statements {
+        extcode_copy {
+          addr {
+            binop {
+              op: SI
+              left {
+                func_expr {
+                  ret: SINGLE
+                  func_index: 1418362542
+                }
+              }
+              right {
+                varref {
+                  varnum: 2123680699
+                }
+              }
+            }
+          }
+          target {
+            binop {
+              op: SDIV
+              left {
+                varref {
+                  varnum: 203874439
+                }
+              }
+              right {
+                varref {
+                  varnum: 291944914
+                }
+              }
+            }
+          }
+          source {
+            func_expr {
+              ret: SINGLE
+              func_index: 1844430503
+            }
+          }
+          size {
+            unopdata {
+              op: OFFSET
+              identifier: 657055722
+            }
+          }
+        }
+      }
+      statements {
+        pop {
+          expr {
+            lowcall {
+              callty: CALLCODE
+            }
+          }
+        }
+      }
+    }
+  }
+}
+ver: HOMESTEAD

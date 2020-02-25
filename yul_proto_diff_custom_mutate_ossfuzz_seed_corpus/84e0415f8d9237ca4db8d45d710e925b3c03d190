@@ -1,0 +1,60 @@
+block {
+  statements {
+    storage_func {
+      loc {
+      }
+      val {
+        nop {
+          op: CODESIZE
+        }
+      }
+      st: MSTORE
+    }
+  }
+  statements {
+    storage_func {
+      loc {
+      }
+      val {
+        unop {
+          op: NOT
+          operand {
+          }
+        }
+      }
+      st: MSTORE
+    }
+  }
+  statements {
+    ifstmt {
+      cond {
+        unop {
+          op: MLOAD
+          operand {
+          }
+        }
+      }
+      if_body {
+        statements {
+          assignment {
+            ref_id {
+              varnum: 0
+            }
+            expr {
+              top {
+                op: MULM
+                arg1 {
+                }
+                arg2 {
+                }
+                arg3 {
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+ver: ISTANBUL

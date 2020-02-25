@@ -1,0 +1,127 @@
+block {
+  statements {
+    forstmt {
+      for_body {
+        statements {
+        }
+        statements {
+          extcode_copy {
+            addr {
+            }
+            target {
+            }
+            source {
+            }
+            size {
+              unop {
+                op: BLOCKHASH
+                operand {
+                }
+              }
+            }
+          }
+        }
+        statements {
+        }
+        statements {
+          copy_func {
+            ct: CALLDATA
+            target {
+            }
+            source {
+              unop {
+                op: SLOAD
+                operand {
+                }
+              }
+            }
+            size {
+            }
+          }
+        }
+        statements {
+          copy_func {
+            ct: CALLDATA
+            target {
+            }
+            source {
+              unop {
+                op: BLOCKHASH
+                operand {
+                }
+              }
+            }
+            size {
+            }
+          }
+        }
+        statements {
+          copy_func {
+            ct: CALLDATA
+            target {
+            }
+            source {
+              unop {
+                op: BLOCKHASH
+                operand {
+                  unop {
+                    op: BLOCKHASH
+                    operand {
+                    }
+                  }
+                }
+              }
+            }
+            size {
+            }
+          }
+        }
+        statements {
+          copy_func {
+            ct: CALLDATA
+            target {
+            }
+            source {
+              unop {
+                op: SLOAD
+                operand {
+                }
+              }
+            }
+            size {
+              unop {
+                op: BLOCKHASH
+                operand {
+                }
+              }
+            }
+          }
+        }
+      }
+      for_init {
+      }
+      for_post {
+      }
+      for_cond {
+        binop {
+          op: EQ
+          left {
+          }
+          right {
+            unop {
+              op: BLOCKHASH
+              operand {
+                unop {
+                  op: BLOCKHASH
+                  operand {
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+ver: SPURIOUS

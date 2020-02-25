@@ -1,0 +1,145 @@
+block {
+  statements {
+    switchstmt {
+      switch_expr {
+        unop {
+          op: BALANCE
+          operand {
+          }
+        }
+      }
+      case_stmt {
+        case_lit {
+          boolval: true
+        }
+        case_block {
+          statements {
+            multidecl {
+              num_vars: 1395968758
+            }
+          }
+          statements {
+          }
+          statements {
+            assignment {
+              ref_id {
+                varnum: 605855294
+              }
+              expr {
+                unop {
+                  op: MLOAD
+                  operand {
+                    varref {
+                      varnum: 808591828
+                    }
+                  }
+                }
+              }
+            }
+          }
+          statements {
+            breakstmt {
+            }
+          }
+          statements {
+            terminatestmt {
+              ret_rev {
+                stmt: REVERT
+                pos {
+                  unop {
+                    op: MLOAD
+                    operand {
+                      varref {
+                        varnum: 1917646751
+                      }
+                    }
+                  }
+                }
+                size {
+                  cons {
+                    boolval: true
+                  }
+                }
+              }
+            }
+          }
+          statements {
+            pop {
+              expr {
+                func_expr {
+                  ret: SINGLE
+                  func_index: 1229215671
+                }
+              }
+            }
+          }
+          statements {
+            multidecl {
+              num_vars: 0
+            }
+          }
+          statements {
+            storage_func {
+              loc {
+                unop {
+                  op: SLOAD
+                  operand {
+                    unop {
+                      op: CALLDATALOAD
+                      operand {
+                        unopdata {
+                          op: OFFSET
+                          identifier: 426336628
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+              val {
+                unop {
+                  op: MLOAD
+                  operand {
+                    varref {
+                      varnum: 865405452
+                    }
+                  }
+                }
+              }
+              st: MSTORE
+            }
+          }
+          statements {
+            funcdef {
+            }
+          }
+        }
+      }
+    }
+  }
+  statements {
+  }
+  statements {
+    pop {
+      expr {
+        varref {
+          varnum: 403928043
+        }
+      }
+    }
+  }
+  statements {
+  }
+  statements {
+  }
+  statements {
+    pop {
+      expr {
+        unop {
+          op: CALLDATALOAD
+        }
+      }
+    }
+  }
+}
+ver: SPURIOUS

@@ -1,0 +1,63 @@
+block {
+  statements {
+  }
+  statements {
+    forstmt {
+      for_body {
+        statements {
+        }
+      }
+      for_init {
+        statements {
+          decl {
+            expr {
+              nop {
+                op: PC
+              }
+            }
+          }
+        }
+        statements {
+          assignment {
+            ref_id {
+              varnum: 0
+            }
+            expr {
+              nop {
+                op: COINBASE
+              }
+            }
+          }
+        }
+      }
+      for_post {
+        statements {
+          decl {
+          }
+        }
+        statements {
+          assignment {
+            ref_id {
+              varnum: 0
+            }
+            expr {
+            }
+          }
+        }
+      }
+      for_cond {
+        unop {
+          op: BLOCKHASH
+          operand {
+            nop {
+              op: SELFBALANCE
+            }
+          }
+        }
+      }
+    }
+  }
+  statements {
+  }
+}
+ver: TANGERINE

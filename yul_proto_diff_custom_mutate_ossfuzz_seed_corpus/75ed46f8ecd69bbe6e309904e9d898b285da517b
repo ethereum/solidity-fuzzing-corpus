@@ -1,0 +1,69 @@
+block {
+  statements {
+    copy_func {
+      ct: RETURNDATA
+      target {
+        binop {
+          op: DIV
+          left {
+            binop {
+              op: DIV
+              left {
+                unop {
+                  op: CALLDATALOAD
+                  operand {
+                    varref {
+                      varnum: 0
+                    }
+                  }
+                }
+              }
+              right {
+                binop {
+                  op: SLT
+                  left {
+                    unop {
+                      op: NOT
+                      operand {
+                        varref {
+                          varnum: 0
+                        }
+                      }
+                    }
+                  }
+                  right {
+                  }
+                }
+              }
+            }
+          }
+          right {
+            binop {
+              op: SLT
+              left {
+                binop {
+                  op: DIV
+                  left {
+                  }
+                  right {
+                  }
+                }
+              }
+              right {
+              }
+            }
+          }
+        }
+      }
+      source {
+      }
+      size {
+      }
+    }
+  }
+  statements {
+  }
+  statements {
+  }
+}
+ver: ISTANBUL

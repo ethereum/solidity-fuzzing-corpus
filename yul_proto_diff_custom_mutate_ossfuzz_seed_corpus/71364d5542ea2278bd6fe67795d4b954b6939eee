@@ -1,0 +1,138 @@
+block {
+  statements {
+    boundedforstmt {
+      for_body {
+        statements {
+          extcode_copy {
+            addr {
+              nop {
+                op: ORIGIN
+              }
+            }
+            target {
+              binop {
+                op: SMOD
+                left {
+                  unop {
+                    op: NOT
+                    operand {
+                      binop {
+                        op: SMOD
+                        left {
+                        }
+                        right {
+                        }
+                      }
+                    }
+                  }
+                }
+                right {
+                  lowcall {
+                    callty: CALL
+                    gas {
+                    }
+                    addr {
+                      unop {
+                        op: NOT
+                        operand {
+                        }
+                      }
+                    }
+                    wei {
+                    }
+                    in {
+                    }
+                    insize {
+                    }
+                    out {
+                    }
+                    outsize {
+                      unop {
+                        op: EXTCODESIZE
+                        operand {
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+            source {
+              nop {
+                op: ORIGIN
+              }
+            }
+            size {
+            }
+          }
+        }
+      }
+    }
+  }
+  statements {
+    forstmt {
+      for_body {
+      }
+      for_init {
+      }
+      for_post {
+        statements {
+          copy_func {
+            ct: CALLDATA
+            target {
+              nop {
+                op: CALLDATASIZE
+              }
+            }
+            source {
+            }
+            size {
+            }
+          }
+        }
+      }
+      for_cond {
+        unop {
+          op: ISZERO
+          operand {
+          }
+        }
+      }
+    }
+  }
+  statements {
+  }
+  statements {
+  }
+  statements {
+  }
+  statements {
+    ifstmt {
+      cond {
+        nop {
+          op: CODESIZE
+        }
+      }
+      if_body {
+        statements {
+          ifstmt {
+            cond {
+            }
+            if_body {
+              statements {
+                assignment {
+                  ref_id {
+                    varnum: 0
+                  }
+                  expr {
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+ver: SPURIOUS

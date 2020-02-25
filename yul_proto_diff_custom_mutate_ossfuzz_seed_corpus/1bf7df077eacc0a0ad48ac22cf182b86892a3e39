@@ -1,0 +1,168 @@
+block {
+  statements {
+    multidecl {
+      num_vars: 1823189129
+    }
+  }
+  statements {
+    decl {
+      expr {
+        func_expr {
+          ret: SINGLE
+          func_index: 364571703
+        }
+      }
+    }
+  }
+  statements {
+    contstmt {
+    }
+  }
+  statements {
+    functioncall {
+      ret: MULTIASSIGN
+      func_index: 774708540
+      in_param1 {
+        varref {
+          varnum: 687100141
+        }
+      }
+      in_param2 {
+        func_expr {
+          ret: SINGLE
+          func_index: 1554005352
+        }
+      }
+      in_param3 {
+        varref {
+          varnum: 1369294176
+        }
+      }
+      in_param4 {
+        func_expr {
+          ret: SINGLE
+          func_index: 394206796
+        }
+      }
+      out_param1 {
+        varnum: 1525881090
+      }
+      out_param2 {
+        varnum: 1912662734
+      }
+      out_param3 {
+        varnum: 1746599124
+      }
+      out_param4 {
+        varnum: 1823189129
+      }
+    }
+  }
+  statements {
+    funcdef {
+      num_input_params: 1
+      num_output_params: 1
+      block {
+        statements {
+          decl {
+            expr {
+              unopdata {
+                op: SIZE
+                identifier: 1155446178
+              }
+            }
+          }
+        }
+        statements {
+          assignment {
+            ref_id {
+              varnum: 769568612
+            }
+            expr {
+              unop {
+                op: CALLDATALOAD
+                operand {
+                  varref {
+                    varnum: 2071240522
+                  }
+                }
+              }
+            }
+          }
+        }
+        statements {
+          pop {
+            expr {
+              varref {
+                varnum: 1395166389
+              }
+            }
+          }
+        }
+        statements {
+          copy_func {
+            ct: CALLDATA
+            target {
+              varref {
+                varnum: 985531733
+              }
+            }
+            source {
+              unop {
+                op: CALLDATALOAD
+                operand {
+                  varref {
+                    varnum: 1359342247
+                  }
+                }
+              }
+            }
+            size {
+              varref {
+                varnum: 1782588567
+              }
+            }
+          }
+        }
+        statements {
+          pop {
+            expr {
+              lowcall {
+                callty: DELEGATECALL
+              }
+            }
+          }
+        }
+        statements {
+          pop {
+            expr {
+              func_expr {
+                ret: SINGLE
+                func_index: 406594797
+              }
+            }
+          }
+        }
+      }
+      force_call: false
+    }
+  }
+  statements {
+    terminatestmt {
+      ret_rev {
+        stmt: REVERT
+        pos {
+          cons {
+            intval: 0
+          }
+        }
+        size {
+          varref {
+            varnum: 1092290516
+          }
+        }
+      }
+    }
+  }
+}
+ver: HOMESTEAD

@@ -1,0 +1,73 @@
+block {
+  statements {
+    multidecl {
+      num_vars: 633250117
+    }
+  }
+  statements {
+    assignment {
+      ref_id {
+        varnum: 158771462
+      }
+      expr {
+        unop {
+          op: BLOCKHASH
+          operand {
+            varref {
+              varnum: 857485212
+            }
+          }
+        }
+      }
+    }
+  }
+  statements {
+    storage_func {
+      loc {
+        unop {
+        }
+      }
+      val {
+        unop {
+          op: MLOAD
+          operand {
+            func_expr {
+              ret: SINGLE
+              func_index: 947236506
+            }
+          }
+        }
+      }
+      st: MSTORE
+    }
+  }
+  statements {
+    pop {
+      expr {
+        lowcall {
+          callty: DELEGATECALL
+        }
+      }
+    }
+  }
+  statements {
+    pop {
+      expr {
+        binop {
+          op: SI
+          left {
+            varref {
+              varnum: 1202091924
+            }
+          }
+          right {
+            varref {
+              varnum: 1163322232
+            }
+          }
+        }
+      }
+    }
+  }
+}
+ver: TANGERINE

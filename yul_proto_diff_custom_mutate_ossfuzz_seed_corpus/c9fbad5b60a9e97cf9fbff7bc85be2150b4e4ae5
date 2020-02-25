@@ -1,0 +1,59 @@
+block {
+  statements {
+    copy_func {
+      ct: CALLDATA
+      target {
+        unop {
+          op: EXTCODESIZE
+          operand {
+          }
+        }
+      }
+      source {
+        unop {
+          op: EXTCODESIZE
+          operand {
+          }
+        }
+      }
+      size {
+      }
+    }
+  }
+  statements {
+  }
+  statements {
+    storage_func {
+      loc {
+        top {
+          op: MULM
+          arg1 {
+            unop {
+              op: EXTCODESIZE
+              operand {
+              }
+            }
+          }
+          arg2 {
+          }
+          arg3 {
+            unop {
+              op: EXTCODESIZE
+              operand {
+              }
+            }
+          }
+        }
+      }
+      val {
+      }
+      st: MSTORE8
+    }
+  }
+  statements {
+    multidecl {
+      num_vars: 513
+    }
+  }
+}
+ver: ISTANBUL

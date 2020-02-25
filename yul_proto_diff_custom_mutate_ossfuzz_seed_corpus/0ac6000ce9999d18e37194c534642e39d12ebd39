@@ -1,0 +1,73 @@
+block {
+  statements {
+    switchstmt {
+      switch_expr {
+        nop {
+          op: CODESIZE
+        }
+      }
+      case_stmt {
+        case_lit {
+          strval: "333333333333333333333333333333333333"
+        }
+        case_block {
+          statements {
+            extcode_copy {
+              addr {
+              }
+              target {
+              }
+              source {
+                nop {
+                  op: GAS
+                }
+              }
+              size {
+              }
+            }
+          }
+        }
+      }
+      case_stmt {
+        case_lit {
+          intval: 0
+        }
+        case_block {
+          statements {
+            extcode_copy {
+              addr {
+              }
+              target {
+              }
+              source {
+                nop {
+                  op: CODESIZE
+                }
+              }
+              size {
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  statements {
+    breakstmt {
+    }
+  }
+  statements {
+  }
+  statements {
+  }
+  statements {
+    switchstmt {
+      switch_expr {
+        nop {
+          op: CODESIZE
+        }
+      }
+    }
+  }
+}
+ver: BERLIN

@@ -1,0 +1,142 @@
+block {
+  statements {
+    multidecl {
+      num_vars: 465575588
+    }
+  }
+  statements {
+    storage_func {
+      loc {
+        cons {
+          intval: 0
+        }
+      }
+      val {
+        unop {
+          op: MLOAD
+          operand {
+            unop {
+              op: SLOAD
+              operand {
+                func_expr {
+                  ret: SINGLE
+                  func_index: 530046781
+                }
+              }
+            }
+          }
+        }
+      }
+      st: MSTORE8
+    }
+  }
+  statements {
+    funcdef {
+      num_input_params: 1
+      num_output_params: 1
+      block {
+        statements {
+          assignment {
+            ref_id {
+              varnum: 1048039159
+            }
+            expr {
+              binop {
+                op: BYTE
+                left {
+                  varref {
+                    varnum: 1465837088
+                  }
+                }
+                right {
+                  varref {
+                    varnum: 904644253
+                  }
+                }
+              }
+            }
+          }
+        }
+        statements {
+          switchstmt {
+            switch_expr {
+              unopdata {
+                op: SIZE
+                identifier: 665506141
+              }
+            }
+            case_stmt {
+            }
+          }
+        }
+        statements {
+          forstmt {
+            for_cond {
+              unop {
+                op: MLOAD
+                operand {
+                  varref {
+                    varnum: 75694227
+                  }
+                }
+              }
+            }
+          }
+        }
+        statements {
+          pop {
+            expr {
+              lowcall {
+                callty: CALLCODE
+              }
+            }
+          }
+        }
+        statements {
+          pop {
+            expr {
+              unop {
+                op: SLOAD
+                operand {
+                  func_expr {
+                    ret: SINGLE
+                    func_index: 1366978624
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  statements {
+    terminatestmt {
+      ret_rev {
+        stmt: REVERT
+        pos {
+          func_expr {
+            ret: SINGLE
+            func_index: 2085383262
+          }
+        }
+        size {
+          unopdata {
+            op: OFFSET
+            identifier: 1479692053
+          }
+        }
+      }
+    }
+  }
+  statements {
+    pop {
+      expr {
+        varref {
+          varnum: 998053394
+        }
+      }
+    }
+  }
+}
+ver: HOMESTEAD

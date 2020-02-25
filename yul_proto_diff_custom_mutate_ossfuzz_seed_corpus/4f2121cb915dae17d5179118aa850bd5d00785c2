@@ -1,0 +1,44 @@
+block {
+  statements {
+    switchstmt {
+      switch_expr {
+        binop {
+          op: SMOD
+          left {
+          }
+          right {
+          }
+        }
+      }
+      case_stmt {
+        case_lit {
+          strval: "\001\000\000\002"
+        }
+        case_block {
+        }
+      }
+      case_stmt {
+        case_lit {
+        }
+        case_block {
+          statements {
+          }
+        }
+      }
+      default_block {
+        statements {
+          terminatestmt {
+            ret_rev {
+              stmt: REVERT
+              pos {
+              }
+              size {
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+ver: SPURIOUS

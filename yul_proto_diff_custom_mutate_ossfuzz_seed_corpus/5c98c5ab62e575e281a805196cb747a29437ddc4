@@ -1,0 +1,57 @@
+block {
+  statements {
+    funcdef {
+      num_input_params: 268435456
+      num_output_params: 134217728
+      block {
+        statements {
+          funcdef {
+            num_input_params: 268435456
+            num_output_params: 134217728
+            block {
+            }
+          }
+        }
+        statements {
+          funcdef {
+            num_input_params: 268435712
+            num_output_params: 134217728
+            block {
+            }
+          }
+        }
+      }
+    }
+  }
+  statements {
+    boundedforstmt {
+      for_body {
+        statements {
+          boundedforstmt {
+            for_body {
+              statements {
+                storage_func {
+                  loc {
+                    binop {
+                      op: SMOD
+                      left {
+                      }
+                      right {
+                        nop {
+                          op: COINBASE
+                        }
+                      }
+                    }
+                  }
+                  val {
+                  }
+                  st: MSTORE
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

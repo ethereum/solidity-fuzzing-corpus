@@ -1,0 +1,178 @@
+obj {
+  code {
+    block {
+      statements {
+        breakstmt {
+        }
+      }
+      statements {
+        breakstmt {
+        }
+      }
+    }
+  }
+  sub_obj {
+    code {
+      block {
+        statements {
+          contstmt {
+          }
+        }
+        statements {
+          extcode_copy {
+            addr {
+              unop {
+                op: MLOAD
+                operand {
+                  cons {
+                    intval: 0
+                  }
+                }
+              }
+            }
+            target {
+              binop {
+                op: SDIV
+                left {
+                }
+                right {
+                  binop {
+                    op: SLT
+                    left {
+                    }
+                    right {
+                    }
+                  }
+                }
+              }
+            }
+            source {
+              binop {
+                op: SDIV
+                left {
+                }
+                right {
+                  binop {
+                    op: SLT
+                    left {
+                    }
+                    right {
+                    }
+                  }
+                }
+              }
+            }
+            size {
+              unop {
+                op: CALLDATALOAD
+                operand {
+                  cons {
+                    intval: 0
+                  }
+                }
+              }
+            }
+          }
+        }
+        statements {
+          extcode_copy {
+            addr {
+            }
+            target {
+              binop {
+                op: SDIV
+                left {
+                }
+                right {
+                  binop {
+                    op: SLT
+                    left {
+                    }
+                    right {
+                    }
+                  }
+                }
+              }
+            }
+            source {
+              binop {
+                op: SDIV
+                left {
+                }
+                right {
+                  binop {
+                    op: SLT
+                    left {
+                    }
+                    right {
+                    }
+                  }
+                }
+              }
+            }
+            size {
+            }
+          }
+        }
+        statements {
+          extcode_copy {
+            addr {
+            }
+            target {
+              binop {
+                op: SDIV
+                left {
+                }
+                right {
+                  unop {
+                    op: SLOAD
+                    operand {
+                      cons {
+                        intval: 0
+                      }
+                    }
+                  }
+                }
+              }
+            }
+            source {
+              binop {
+                op: SDIV
+                left {
+                }
+                right {
+                  binop {
+                    op: SLT
+                    left {
+                    }
+                    right {
+                    }
+                  }
+                }
+              }
+            }
+            size {
+              unop {
+                op: MLOAD
+                operand {
+                  cons {
+                    intval: 0
+                  }
+                }
+              }
+            }
+          }
+        }
+        statements {
+          breakstmt {
+          }
+        }
+        statements {
+          breakstmt {
+          }
+        }
+      }
+    }
+  }
+}
+ver: ISTANBUL

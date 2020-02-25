@@ -1,0 +1,215 @@
+block {
+  statements {
+    storage_func {
+      loc {
+        binop {
+          op: MUL
+          left {
+            top {
+              op: MULM
+              arg1 {
+              }
+              arg2 {
+              }
+              arg3 {
+                binop {
+                  op: ADD
+                  left {
+                  }
+                  right {
+                    binop {
+                      op: OR
+                      left {
+                      }
+                      right {
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+          right {
+            cons {
+              hexval: "-"
+            }
+          }
+        }
+      }
+      val {
+      }
+      st: MSTORE
+    }
+  }
+  statements {
+    funcdef {
+      num_input_params: 1024
+      num_output_params: 4096
+      block {
+        statements {
+        }
+      }
+      force_call: false
+    }
+  }
+  statements {
+    storage_func {
+      loc {
+        binop {
+          op: MUL
+          left {
+            top {
+              op: MULM
+              arg1 {
+              }
+              arg2 {
+              }
+              arg3 {
+                binop {
+                  op: ADD
+                  left {
+                  }
+                  right {
+                    binop {
+                      op: OR
+                      left {
+                      }
+                      right {
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+          right {
+            cons {
+              hexval: "-"
+            }
+          }
+        }
+      }
+      val {
+      }
+      st: MSTORE
+    }
+  }
+  statements {
+  }
+  statements {
+  }
+  statements {
+    storage_func {
+      loc {
+        lowcall {
+          callty: CALL
+          gas {
+          }
+          addr {
+          }
+          wei {
+          }
+          in {
+          }
+          insize {
+          }
+          out {
+            binop {
+              op: OR
+              left {
+                create {
+                  createty: CREATE
+                  wei {
+                  }
+                  position {
+                    unop {
+                      op: NOT
+                      operand {
+                        unop {
+                          op: MLOAD
+                          operand {
+                          }
+                        }
+                      }
+                    }
+                  }
+                  size {
+                  }
+                  value {
+                  }
+                }
+              }
+              right {
+              }
+            }
+          }
+          outsize {
+          }
+        }
+      }
+      val {
+      }
+      st: MSTORE8
+    }
+  }
+  statements {
+  }
+  statements {
+  }
+  statements {
+  }
+  statements {
+    extcode_copy {
+      addr {
+        binop {
+          op: SHL
+          left {
+          }
+          right {
+          }
+        }
+      }
+      target {
+      }
+      source {
+      }
+      size {
+        binop {
+          op: SAR
+          left {
+          }
+          right {
+          }
+        }
+      }
+    }
+  }
+  statements {
+    storage_func {
+      loc {
+        top {
+          op: MULM
+          arg1 {
+          }
+          arg2 {
+          }
+          arg3 {
+            binop {
+              op: ADD
+              left {
+              }
+              right {
+              }
+            }
+          }
+        }
+      }
+      val {
+      }
+      st: SSTORE
+    }
+  }
+  statements {
+  }
+}
+ver: CONSTANTINOPLE

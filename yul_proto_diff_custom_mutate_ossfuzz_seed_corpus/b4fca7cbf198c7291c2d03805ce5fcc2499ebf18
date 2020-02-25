@@ -1,0 +1,50 @@
+block {
+  statements {
+    storage_func {
+      loc {
+      }
+      val {
+        binop {
+          op: SDIV
+          left {
+            unop {
+              op: NOT
+              operand {
+              }
+            }
+          }
+          right {
+            unop {
+              op: NOT
+              operand {
+              }
+            }
+          }
+        }
+      }
+      st: MSTORE8
+    }
+  }
+  statements {
+    funcdef {
+      num_input_params: 4096
+      num_output_params: 4096
+      block {
+      }
+      force_call: true
+    }
+  }
+  statements {
+    storage_func {
+      loc {
+        cons {
+          strval: "\231\231\231\231\231\231\231\231\231\231\231\231\231\231\231\231\231\231\231\231\231\231\231\231\231\231\231\231\231\231\231\231\231\231\231\231\231\231\231\231\231\231\231\231\231\231\231\231\231\231\231\231\231\231\231\231"
+        }
+      }
+      val {
+      }
+      st: MSTORE8
+    }
+  }
+}
+ver: TANGERINE

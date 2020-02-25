@@ -1,0 +1,194 @@
+block {
+  statements {
+    storage_func {
+      loc {
+        unop {
+          op: SLOAD
+          operand {
+          }
+        }
+      }
+      val {
+        nop {
+          op: COINBASE
+        }
+      }
+      st: MSTORE
+    }
+  }
+  statements {
+  }
+  statements {
+    funcdef {
+      num_input_params: 14
+      num_output_params: 14
+      block {
+        statements {
+        }
+        statements {
+          switchstmt {
+            switch_expr {
+              varref {
+                varnum: 128
+              }
+            }
+            case_stmt {
+              case_lit {
+              }
+              case_block {
+                statements {
+                  leave {
+                  }
+                }
+              }
+            }
+            case_stmt {
+              case_lit {
+                hexval: "222222222obj {\n  code {\n    block {\n      s222222222tatem22ent2s "
+              }
+              case_block {
+                statements {
+                  leave {
+                  }
+                }
+              }
+            }
+            default_block {
+              statements {
+                leave {
+                }
+              }
+            }
+          }
+        }
+        statements {
+          forstmt {
+            for_body {
+              statements {
+                leave {
+                }
+              }
+            }
+            for_init {
+            }
+            for_post {
+              statements {
+                leave {
+                }
+              }
+            }
+            for_cond {
+              lowcall {
+                callty: CALL
+                gas {
+                  lowcall {
+                    callty: CALLCODE
+                    gas {
+                      varref {
+                        varnum: 0
+                      }
+                    }
+                    addr {
+                      varref {
+                        varnum: 128
+                      }
+                    }
+                    wei {
+                    }
+                    in {
+                    }
+                    insize {
+                    }
+                    out {
+                      varref {
+                        varnum: 16
+                      }
+                    }
+                    outsize {
+                    }
+                  }
+                }
+                addr {
+                }
+                wei {
+                  cons {
+                    strval: "B"
+                  }
+                }
+                in {
+                }
+                insize {
+                }
+                out {
+                }
+                outsize {
+                }
+              }
+            }
+          }
+        }
+        statements {
+          switchstmt {
+            switch_expr {
+              varref {
+                varnum: 128
+              }
+            }
+            case_stmt {
+              case_lit {
+              }
+              case_block {
+                statements {
+                  leave {
+                  }
+                }
+              }
+            }
+            case_stmt {
+              case_lit {
+              }
+              case_block {
+                statements {
+                  leave {
+                  }
+                }
+              }
+            }
+            default_block {
+              statements {
+                leave {
+                }
+              }
+            }
+          }
+        }
+      }
+      force_call: true
+    }
+  }
+  statements {
+    storage_func {
+      loc {
+      }
+      val {
+      }
+      st: MSTORE
+    }
+  }
+  statements {
+    storage_func {
+      loc {
+        cons {
+          intval: 0
+        }
+      }
+      val {
+        varref {
+          varnum: 1692643981
+        }
+      }
+      st: SSTORE
+    }
+  }
+}
+ver: BYZANTIUM

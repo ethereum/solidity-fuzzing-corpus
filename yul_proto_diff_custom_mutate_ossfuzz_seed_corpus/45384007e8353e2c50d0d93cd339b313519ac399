@@ -1,0 +1,110 @@
+block {
+  statements {
+    multidecl {
+      num_vars: 2019910772
+    }
+  }
+  statements {
+    assignment {
+      ref_id {
+        varnum: 92921926
+      }
+      expr {
+        unop {
+          op: ISZERO
+          operand {
+            varref {
+              varnum: 403633812
+            }
+          }
+        }
+      }
+    }
+  }
+  statements {
+    ifstmt {
+      cond {
+        unop {
+          op: MLOAD
+          operand {
+            varref {
+              varnum: 1092945606
+            }
+          }
+        }
+      }
+      if_body {
+        statements {
+          assignment {
+            ref_id {
+              varnum: 651727322
+            }
+            expr {
+              varref {
+                varnum: 1951697016
+              }
+            }
+          }
+        }
+        statements {
+          breakstmt {
+          }
+        }
+        statements {
+          pop {
+            expr {
+              varref {
+                varnum: 1623897256
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  statements {
+    storage_func {
+      loc {
+        unop {
+          op: SLOAD
+          operand {
+            unop {
+              op: SLOAD
+              operand {
+                varref {
+                  varnum: 1510314538
+                }
+              }
+            }
+          }
+        }
+      }
+      val {
+        unop {
+          op: MLOAD
+          operand {
+            varref {
+              varnum: 502915799
+            }
+          }
+        }
+      }
+      st: MSTORE
+    }
+  }
+  statements {
+    forstmt {
+    }
+  }
+  statements {
+    pop {
+      expr {
+        func_expr {
+          ret: SINGLE
+          func_index: 542815078
+        }
+      }
+    }
+  }
+}
+ver: BERLIN

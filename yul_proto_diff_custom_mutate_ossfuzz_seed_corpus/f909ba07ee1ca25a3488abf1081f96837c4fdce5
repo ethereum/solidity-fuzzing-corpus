@@ -1,0 +1,135 @@
+block {
+  statements {
+    storage_func {
+      loc {
+        unop {
+          op: SLOAD
+          operand {
+            varref {
+              varnum: 1206414868
+            }
+          }
+        }
+      }
+      val {
+        func_expr {
+          ret: SINGLE
+          func_index: 415096161
+        }
+      }
+      st: MSTORE
+    }
+  }
+  statements {
+  }
+  statements {
+    funcdef {
+      num_input_params: 1
+      num_output_params: 1
+      block {
+        statements {
+          assignment {
+            ref_id {
+              varnum: 408357171
+            }
+            expr {
+              unopdata {
+                op: SIZE
+                identifier: 932512742
+              }
+            }
+          }
+        }
+        statements {
+          breakstmt {
+          }
+        }
+        statements {
+          assignment {
+            ref_id {
+              varnum: 1379155638
+            }
+            expr {
+              binop {
+                op: EXP
+                left {
+                  varref {
+                    varnum: 1228744898
+                  }
+                }
+                right {
+                  varref {
+                    varnum: 13328993
+                  }
+                }
+              }
+            }
+          }
+        }
+        statements {
+          switchstmt {
+            switch_expr {
+              unop {
+                op: SLOAD
+                operand {
+                  unopdata {
+                    op: SIZE
+                    identifier: 72255016
+                  }
+                }
+              }
+            }
+            case_stmt {
+            }
+          }
+        }
+        statements {
+          pop {
+            expr {
+              lowcall {
+                callty: CALLCODE
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  statements {
+    switchstmt {
+      switch_expr {
+        unopdata {
+          op: OFFSET
+          identifier: 779475037
+        }
+      }
+      case_stmt {
+      }
+    }
+  }
+  statements {
+    terminatestmt {
+      ret_rev {
+        stmt: REVERT
+        pos {
+          func_expr {
+            ret: SINGLE
+            func_index: 231444539
+          }
+        }
+        size {
+          unop {
+            op: SLOAD
+            operand {
+              unopdata {
+                op: OFFSET
+                identifier: 564579637
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+ver: SPURIOUS

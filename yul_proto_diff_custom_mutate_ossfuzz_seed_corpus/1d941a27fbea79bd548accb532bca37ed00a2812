@@ -1,0 +1,64 @@
+block {
+  statements {
+    storage_func {
+      loc {
+        binop {
+          op: MOD
+          left {
+            nop {
+              op: TIMESTAMP
+            }
+          }
+          right {
+          }
+        }
+      }
+      val {
+        binop {
+          op: MOD
+          left {
+            binop {
+              op: MOD
+              left {
+                binop {
+                  op: MOD
+                  left {
+                    binop {
+                      op: MOD
+                      left {
+                        nop {
+                          op: TIMESTAMP
+                        }
+                      }
+                      right {
+                      }
+                    }
+                  }
+                  right {
+                  }
+                }
+              }
+              right {
+              }
+            }
+          }
+          right {
+          }
+        }
+      }
+      st: MSTORE
+    }
+  }
+  statements {
+    terminatestmt {
+      self_des {
+        addr {
+          cons {
+            strval: "+"
+          }
+        }
+      }
+    }
+  }
+}
+ver: BERLIN

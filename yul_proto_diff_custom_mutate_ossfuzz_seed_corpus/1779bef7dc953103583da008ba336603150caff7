@@ -1,0 +1,77 @@
+block {
+  statements {
+    decl {
+      expr {
+        nop {
+          op: TIMESTAMP
+        }
+      }
+    }
+  }
+  statements {
+    assignment {
+      ref_id {
+        varnum: 747751062
+      }
+      expr {
+        varref {
+          varnum: 88909003
+        }
+      }
+    }
+  }
+  statements {
+    pop {
+      expr {
+        varref {
+          varnum: 2098235239
+        }
+      }
+    }
+  }
+  statements {
+    ifstmt {
+      cond {
+        unop {
+          op: BLOCKHASH
+          operand {
+            unopdata {
+              op: OFFSET
+              identifier: 1660282604
+            }
+          }
+        }
+      }
+      if_body {
+        statements {
+        }
+        statements {
+          leave {
+          }
+        }
+        statements {
+          pop {
+            expr {
+              create {
+                createty: CREATE
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  statements {
+  }
+  statements {
+    pop {
+      expr {
+        func_expr {
+          ret: SINGLE
+          func_index: 1713980873
+        }
+      }
+    }
+  }
+}
+ver: TANGERINE

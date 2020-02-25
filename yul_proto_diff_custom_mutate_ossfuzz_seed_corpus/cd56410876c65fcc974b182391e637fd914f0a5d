@@ -1,0 +1,128 @@
+block {
+  statements {
+    breakstmt {
+    }
+  }
+  statements {
+    breakstmt {
+    }
+  }
+  statements {
+    breakstmt {
+    }
+  }
+  statements {
+    decl {
+      expr {
+        cons {
+          intval: 0
+        }
+      }
+    }
+  }
+  statements {
+    switchstmt {
+      switch_expr {
+        unop {
+          op: CALLDATALOAD
+          operand {
+            cons {
+              intval: 0
+            }
+          }
+        }
+      }
+      case_stmt {
+        case_lit {
+          intval: 0
+        }
+        case_block {
+          statements {
+          }
+          statements {
+            breakstmt {
+            }
+          }
+          statements {
+            breakstmt {
+            }
+          }
+          statements {
+            breakstmt {
+            }
+          }
+        }
+      }
+      case_stmt {
+        case_lit {
+          intval: 1
+        }
+        case_block {
+          statements {
+            assignment {
+              ref_id {
+                varnum: 0
+              }
+              expr {
+                unop {
+                  op: CALLDATALOAD
+                  operand {
+                    cons {
+                      intval: 0
+                    }
+                  }
+                }
+              }
+            }
+          }
+          statements {
+            breakstmt {
+            }
+          }
+          statements {
+            breakstmt {
+            }
+          }
+          statements {
+            breakstmt {
+            }
+          }
+        }
+      }
+      default_block {
+        statements {
+          terminatestmt {
+            stop_invalid {
+              stmt: INVALID
+            }
+          }
+        }
+        statements {
+          breakstmt {
+          }
+        }
+        statements {
+          breakstmt {
+          }
+        }
+        statements {
+          breakstmt {
+          }
+        }
+      }
+    }
+  }
+  statements {
+    breakstmt {
+    }
+  }
+  statements {
+    breakstmt {
+    }
+  }
+  statements {
+    breakstmt {
+    }
+  }
+}
+ver: HOMESTEAD

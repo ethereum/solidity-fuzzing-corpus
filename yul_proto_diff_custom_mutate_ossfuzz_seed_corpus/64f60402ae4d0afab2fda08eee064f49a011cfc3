@@ -1,0 +1,55 @@
+block {
+  statements {
+    ifstmt {
+      cond {
+        nop {
+          op: MSIZE
+        }
+      }
+      if_body {
+        statements {
+          funcdef {
+            num_input_params: 256
+            num_output_params: 65794
+            block {
+              statements {
+                storage_func {
+                  loc {
+                    varref {
+                      varnum: 0
+                    }
+                  }
+                  val {
+                  }
+                  st: MSTORE8
+                }
+              }
+              statements {
+              }
+            }
+            force_call: true
+          }
+        }
+      }
+    }
+  }
+  statements {
+    funcdef {
+      num_input_params: 14
+      num_output_params: 1024
+      block {
+        statements {
+          funcdef {
+            num_input_params: 8
+            num_output_params: 16777224
+            block {
+            }
+            force_call: true
+          }
+        }
+      }
+      force_call: true
+    }
+  }
+}
+ver: ISTANBUL

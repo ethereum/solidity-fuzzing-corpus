@@ -1,0 +1,84 @@
+obj {
+  code {
+    block {
+    }
+  }
+  sub_obj {
+    code {
+      block {
+      }
+    }
+    sub_obj {
+      code {
+        block {
+          statements {
+            storage_func {
+              loc {
+                unop {
+                  op: NOT
+                  operand {
+                    nop {
+                      op: COINBASE
+                    }
+                  }
+                }
+              }
+              val {
+                binop {
+                  op: OR
+                  left {
+                    nop {
+                      op: COINBASE
+                    }
+                  }
+                  right {
+                    binop {
+                      op: OR
+                      left {
+                        nop {
+                          op: GAS
+                        }
+                      }
+                      right {
+                        binop {
+                          op: OR
+                          left {
+                            nop {
+                              op: PC
+                            }
+                          }
+                          right {
+                            binop {
+                              op: OR
+                              left {
+                                nop {
+                                  op: COINBASE
+                                }
+                              }
+                              right {
+                                unop {
+                                  op: NOT
+                                  operand {
+                                    nop {
+                                      op: COINBASE
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+              st: MSTORE
+            }
+          }
+        }
+      }
+    }
+  }
+}
+ver: ISTANBUL

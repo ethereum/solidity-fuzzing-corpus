@@ -1,0 +1,56 @@
+obj {
+  code {
+    block {
+      statements {
+        decl {
+          expr {
+            unop {
+              op: BLOCKHASH
+              operand {
+              }
+            }
+          }
+        }
+      }
+      statements {
+        decl {
+          expr {
+            unop {
+              op: BLOCKHASH
+              operand {
+                unop {
+                  op: BLOCKHASH
+                  operand {
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  sub_obj {
+    code {
+      block {
+        statements {
+          decl {
+            expr {
+              unop {
+                op: BLOCKHASH
+                operand {
+                }
+              }
+            }
+          }
+        }
+        statements {
+        }
+      }
+    }
+    data {
+      hex: ":"
+    }
+  }
+}
+ver: HOMESTEAD

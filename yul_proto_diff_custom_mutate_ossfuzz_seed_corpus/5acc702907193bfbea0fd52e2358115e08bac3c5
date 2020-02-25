@@ -1,0 +1,96 @@
+obj {
+  code {
+    block {
+      statements {
+      }
+      statements {
+        storage_func {
+          loc {
+          }
+          val {
+            nop {
+              op: ORIGIN
+            }
+          }
+          st: SSTORE
+        }
+      }
+      statements {
+      }
+      statements {
+        ifstmt {
+          cond {
+            binop {
+              op: SMOD
+              left {
+                unop {
+                  op: NOT
+                  operand {
+                  }
+                }
+              }
+              right {
+                nop {
+                  op: TIMESTAMP
+                }
+              }
+            }
+          }
+          if_body {
+            statements {
+              extcode_copy {
+                addr {
+                }
+                target {
+                }
+                source {
+                }
+                size {
+                }
+              }
+            }
+          }
+        }
+      }
+      statements {
+        ifstmt {
+          cond {
+            binop {
+              op: SMOD
+              left {
+                unop {
+                  op: NOT
+                  operand {
+                    cons {
+                      hexval: "\002\000\000\000\000\000\000\000"
+                    }
+                  }
+                }
+              }
+              right {
+                nop {
+                  op: TIMESTAMP
+                }
+              }
+            }
+          }
+          if_body {
+            statements {
+              extcode_copy {
+                addr {
+                }
+                target {
+                }
+                source {
+                }
+                size {
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+ver: ISTANBUL

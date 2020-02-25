@@ -1,0 +1,48 @@
+block {
+  statements {
+    storage_func {
+      loc {
+        cons {
+          intval: 0
+        }
+      }
+      val {
+        nop {
+          op: CALLER
+        }
+      }
+      st: MSTORE
+    }
+  }
+  statements {
+    decl {
+      expr {
+        binop {
+          op: SHL
+          left {
+          }
+          right {
+            binop {
+              op: SMOD
+              left {
+              }
+              right {
+                binop {
+                  op: SMOD
+                  left {
+                    cons {
+                      strval: "0\375u\361\363*Ms"
+                    }
+                  }
+                  right {
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+ver: CONSTANTINOPLE

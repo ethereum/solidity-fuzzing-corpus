@@ -1,0 +1,82 @@
+block {
+  statements {
+    switchstmt {
+      switch_expr {
+        binop {
+          op: MOD
+          left {
+            unop {
+              op: NOT
+              operand {
+              }
+            }
+          }
+          right {
+          }
+        }
+      }
+      case_stmt {
+        case_lit {
+        }
+        case_block {
+        }
+      }
+      case_stmt {
+        case_lit {
+          strval: "\005\000"
+        }
+        case_block {
+        }
+      }
+      case_stmt {
+        case_lit {
+        }
+        case_block {
+        }
+      }
+      default_block {
+        statements {
+          switchstmt {
+            switch_expr {
+              binop {
+                op: MOD
+                left {
+                  unop {
+                    op: NOT
+                    operand {
+                    }
+                  }
+                }
+                right {
+                }
+              }
+            }
+            case_stmt {
+              case_lit {
+                intval: 7864320
+              }
+              case_block {
+              }
+            }
+            default_block {
+            }
+          }
+        }
+      }
+    }
+  }
+  statements {
+    storage_func {
+      loc {
+      }
+      val {
+      }
+      st: MSTORE
+    }
+  }
+  statements {
+  }
+  statements {
+  }
+}
+ver: ISTANBUL

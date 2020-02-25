@@ -1,0 +1,150 @@
+obj {
+  code {
+    block {
+      statements {
+        breakstmt {
+        }
+      }
+      statements {
+        contstmt {
+        }
+      }
+      statements {
+        storage_func {
+          loc {
+            binop {
+              op: OR
+              left {
+                varref {
+                  varnum: 918155762
+                }
+              }
+              right {
+                varref {
+                  varnum: 529280716
+                }
+              }
+            }
+          }
+          val {
+            binop {
+              op: SAR
+              left {
+                varref {
+                  varnum: 1215258859
+                }
+              }
+              right {
+                unopdata {
+                  op: OFFSET
+                  identifier: 1551881062
+                }
+              }
+            }
+          }
+          st: SSTORE
+        }
+      }
+      statements {
+        switchstmt {
+          switch_expr {
+            varref {
+              varnum: 206851622
+            }
+          }
+          case_stmt {
+          }
+        }
+      }
+      statements {
+        terminatestmt {
+          ret_rev {
+            stmt: REVERT
+            pos {
+              varref {
+                varnum: 1340942199
+              }
+            }
+            size {
+              unop {
+                op: MLOAD
+                operand {
+                  cons {
+                    intval: 0
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  sub_obj {
+    code {
+      block {
+        statements {
+          decl {
+            expr {
+              unopdata {
+                op: OFFSET
+                identifier: 205793256
+              }
+            }
+          }
+        }
+        statements {
+          pop {
+            expr {
+              lowcall {
+                callty: CALL
+              }
+            }
+          }
+        }
+        statements {
+          pop {
+            expr {
+              unop {
+                op: BALANCE
+                operand {
+                  varref {
+                    varnum: 1232858926
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    sub_obj {
+      code {
+        block {
+          statements {
+            boundedforstmt {
+            }
+          }
+          statements {
+            pop {
+              expr {
+                unop {
+                  op: MLOAD
+                  operand {
+                    varref {
+                      varnum: 2011930832
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+      data {
+        hex: "\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000"
+      }
+    }
+  }
+}
+ver: PETERSBURG

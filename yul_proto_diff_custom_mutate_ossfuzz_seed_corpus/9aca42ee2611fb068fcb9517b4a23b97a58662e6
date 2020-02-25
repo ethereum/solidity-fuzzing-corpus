@@ -1,0 +1,72 @@
+block {
+  statements {
+    storage_func {
+      loc {
+        nop {
+          op: ADDRESS
+        }
+      }
+      val {
+        nop {
+          op: ADDRESS
+        }
+      }
+      st: MSTORE8
+    }
+  }
+  statements {
+    storage_func {
+      loc {
+        nop {
+          op: ADDRESS
+        }
+      }
+      val {
+        cons {
+          intval: 0
+        }
+      }
+      st: SSTORE
+    }
+  }
+  statements {
+    extcode_copy {
+      addr {
+        binop {
+          op: EXP
+          left {
+          }
+          right {
+          }
+        }
+      }
+      target {
+        varref {
+          varnum: -1895825408
+        }
+      }
+      source {
+        nop {
+          op: ADDRESS
+        }
+      }
+      size {
+        binop {
+          op: DIV
+          left {
+            binop {
+              op: EXP
+              left {
+              }
+              right {
+              }
+            }
+          }
+          right {
+          }
+        }
+      }
+    }
+  }
+}
+ver: ISTANBUL

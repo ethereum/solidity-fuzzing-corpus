@@ -1,0 +1,61 @@
+block {
+  statements {
+    storage_func {
+      loc {
+      }
+      val {
+        binop {
+          op: OR
+          left {
+            binop {
+              op: OR
+              left {
+                varref {
+                  varnum: 23441094
+                }
+              }
+              right {
+                binop {
+                  op: AND
+                  left {
+                  }
+                  right {
+                    varref {
+                      varnum: 51547541
+                    }
+                  }
+                }
+              }
+            }
+          }
+          right {
+            binop {
+              op: AND
+              left {
+                varref {
+                  varnum: 110849390
+                }
+              }
+              right {
+                nop {
+                  op: ADDRESS
+                }
+              }
+            }
+          }
+        }
+      }
+      st: MSTORE
+    }
+  }
+  statements {
+    pop {
+      expr {
+        create {
+          createty: CREATE
+        }
+      }
+    }
+  }
+}
+ver: CONSTANTINOPLE

@@ -1,0 +1,146 @@
+block {
+  statements {
+    multidecl {
+      num_vars: 1925052438
+    }
+  }
+  statements {
+    pop {
+      expr {
+        varref {
+          varnum: 1240645398
+        }
+      }
+    }
+  }
+  statements {
+    terminatestmt {
+    }
+  }
+  statements {
+    decl {
+      expr {
+        func_expr {
+          ret: SINGLE
+          func_index: 2092529604
+        }
+      }
+    }
+  }
+  statements {
+    assignment {
+      ref_id {
+        varnum: 630531267
+      }
+      expr {
+        func_expr {
+          ret: SINGLE
+          func_index: 754665651
+        }
+      }
+    }
+  }
+  statements {
+    contstmt {
+    }
+  }
+  statements {
+  }
+  statements {
+    funcdef {
+      num_input_params: 1
+      num_output_params: 1
+      block {
+        statements {
+          assignment {
+            ref_id {
+              varnum: 428846869
+            }
+            expr {
+              unop {
+                op: EXTCODEHASH
+              }
+            }
+          }
+        }
+        statements {
+          storage_func {
+            loc {
+              cons {
+                intval: 0
+              }
+            }
+            val {
+              varref {
+                varnum: 2078985768
+              }
+            }
+            st: MSTORE8
+          }
+        }
+        statements {
+          forstmt {
+            for_cond {
+              unop {
+                op: NOT
+                operand {
+                  func_expr {
+                    ret: SINGLE
+                    func_index: 2072701998
+                  }
+                }
+              }
+            }
+          }
+        }
+        statements {
+          pop {
+            expr {
+              lowcall {
+                callty: CALLCODE
+              }
+            }
+          }
+        }
+        statements {
+          pop {
+            expr {
+              unop {
+                op: MLOAD
+                operand {
+                  func_expr {
+                    ret: SINGLE
+                    func_index: 2067449503
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  statements {
+    leave {
+    }
+  }
+  statements {
+  }
+  statements {
+  }
+  statements {
+    decl {
+    }
+  }
+  statements {
+    forstmt {
+      for_cond {
+        unopdata {
+          op: OFFSET
+          identifier: 1895312831
+        }
+      }
+    }
+  }
+}
+ver: ISTANBUL

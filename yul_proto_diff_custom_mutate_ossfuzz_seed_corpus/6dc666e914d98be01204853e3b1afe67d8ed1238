@@ -1,0 +1,141 @@
+block {
+  statements {
+    multidecl {
+      num_vars: 1832237256
+    }
+  }
+  statements {
+    breakstmt {
+    }
+  }
+  statements {
+    storage_func {
+      loc {
+        unopdata {
+          op: SIZE
+          identifier: 1219245008
+        }
+      }
+      val {
+        func_expr {
+          ret: SINGLE
+          func_index: 1270239749
+        }
+      }
+      st: MSTORE8
+    }
+  }
+  statements {
+    assignment {
+      ref_id {
+        varnum: 327326831
+      }
+      expr {
+        unop {
+          op: CALLDATALOAD
+          operand {
+            cons {
+              intval: 0
+            }
+          }
+        }
+      }
+    }
+  }
+  statements {
+  }
+  statements {
+    breakstmt {
+    }
+  }
+  statements {
+    leave {
+    }
+  }
+  statements {
+    assignment {
+      ref_id {
+        varnum: 1840190427
+      }
+      expr {
+        binop {
+          op: AND
+          left {
+            varref {
+              varnum: 1848820081
+            }
+          }
+          right {
+            varref {
+              varnum: 855832301
+            }
+          }
+        }
+      }
+    }
+  }
+  statements {
+    ifstmt {
+      cond {
+        unop {
+          op: CALLDATALOAD
+          operand {
+            varref {
+              varnum: 1848692061
+            }
+          }
+        }
+      }
+      if_body {
+        statements {
+          assignment {
+            ref_id {
+              varnum: 780486388
+            }
+            expr {
+              unopdata {
+                op: SIZE
+                identifier: 1527345873
+              }
+            }
+          }
+        }
+        statements {
+          assignment {
+            ref_id {
+              varnum: 961577731
+            }
+            expr {
+              varref {
+                varnum: 1597905091
+              }
+            }
+          }
+        }
+        statements {
+          pop {
+            expr {
+              lowcall {
+                callty: CALL
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  statements {
+    breakstmt {
+    }
+  }
+  statements {
+    pop {
+      expr {
+        lowcall {
+          callty: STATICCALL
+        }
+      }
+    }
+  }
+}
+ver: CONSTANTINOPLE

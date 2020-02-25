@@ -1,0 +1,106 @@
+block {
+  statements {
+    decl {
+      expr {
+        unop {
+          op: ISZERO
+          operand {
+            cons {
+              intval: 0
+            }
+          }
+        }
+      }
+    }
+  }
+  statements {
+  }
+  statements {
+  }
+  statements {
+  }
+  statements {
+    terminatestmt {
+      ret_rev {
+        stmt: REVERT
+        pos {
+          binop {
+            op: SGT
+            left {
+              varref {
+                varnum: 1040496978
+              }
+            }
+            right {
+              unop {
+                op: SLOAD
+                operand {
+                  varref {
+                    varnum: 1965649485
+                  }
+                }
+              }
+            }
+          }
+        }
+        size {
+          binop {
+            op: EXP
+            left {
+              func_expr {
+                ret: SINGLE
+                func_index: 96366199
+              }
+            }
+            right {
+              varref {
+                varnum: 1716229642
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  statements {
+    storage_func {
+      loc {
+        varref {
+          varnum: 112713412
+        }
+      }
+      val {
+        unop {
+          op: SLOAD
+          operand {
+            varref {
+              varnum: 750761584
+            }
+          }
+        }
+      }
+      st: SSTORE
+    }
+  }
+  statements {
+  }
+  statements {
+    pop {
+      expr {
+        varref {
+          varnum: 1037649534
+        }
+      }
+    }
+  }
+  statements {
+    pop {
+      expr {
+        create {
+          createty: CREATE
+        }
+      }
+    }
+  }
+}
+ver: SPURIOUS

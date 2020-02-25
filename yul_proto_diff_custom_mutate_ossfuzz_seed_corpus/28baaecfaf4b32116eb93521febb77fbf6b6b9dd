@@ -1,0 +1,218 @@
+block {
+  statements {
+    copy_func {
+      ct: CALLDATA
+      target {
+        top {
+          op: ADDM
+          arg1 {
+          }
+          arg2 {
+          }
+          arg3 {
+          }
+        }
+      }
+      source {
+        top {
+          op: ADDM
+          arg1 {
+            top {
+              op: ADDM
+              arg1 {
+              }
+              arg2 {
+              }
+              arg3 {
+              }
+            }
+          }
+          arg2 {
+          }
+          arg3 {
+          }
+        }
+      }
+      size {
+        top {
+          op: ADDM
+          arg1 {
+          }
+          arg2 {
+          }
+          arg3 {
+          }
+        }
+      }
+    }
+  }
+  statements {
+    copy_func {
+      ct: CALLDATA
+      target {
+        top {
+          op: ADDM
+          arg1 {
+            unop {
+              op: MLOAD
+              operand {
+                cons {
+                  intval: 0
+                }
+              }
+            }
+          }
+          arg2 {
+          }
+          arg3 {
+          }
+        }
+      }
+      source {
+        top {
+          op: ADDM
+          arg1 {
+            top {
+              op: ADDM
+              arg1 {
+              }
+              arg2 {
+              }
+              arg3 {
+              }
+            }
+          }
+          arg2 {
+          }
+          arg3 {
+          }
+        }
+      }
+      size {
+        top {
+          op: ADDM
+          arg1 {
+          }
+          arg2 {
+          }
+          arg3 {
+          }
+        }
+      }
+    }
+  }
+  statements {
+    copy_func {
+      ct: CALLDATA
+      target {
+        unop {
+          op: SLOAD
+          operand {
+            cons {
+              intval: 0
+            }
+          }
+        }
+      }
+      source {
+        top {
+          op: ADDM
+          arg1 {
+            unop {
+              op: SLOAD
+              operand {
+                cons {
+                  intval: 0
+                }
+              }
+            }
+          }
+          arg2 {
+          }
+          arg3 {
+          }
+        }
+      }
+      size {
+        top {
+          op: ADDM
+          arg1 {
+          }
+          arg2 {
+          }
+          arg3 {
+          }
+        }
+      }
+    }
+  }
+  statements {
+    copy_func {
+      ct: CALLDATA
+      target {
+        top {
+          op: ADDM
+          arg1 {
+          }
+          arg2 {
+          }
+          arg3 {
+            top {
+              op: ADDM
+              arg1 {
+              }
+              arg2 {
+              }
+              arg3 {
+              }
+            }
+          }
+        }
+      }
+      source {
+        top {
+          op: ADDM
+          arg1 {
+            top {
+              op: ADDM
+              arg1 {
+              }
+              arg2 {
+              }
+              arg3 {
+              }
+            }
+          }
+          arg2 {
+          }
+          arg3 {
+            unop {
+              op: CALLDATALOAD
+              operand {
+                cons {
+                  intval: 0
+                }
+              }
+            }
+          }
+        }
+      }
+      size {
+        top {
+          op: ADDM
+          arg1 {
+          }
+          arg2 {
+          }
+          arg3 {
+          }
+        }
+      }
+    }
+  }
+  statements {
+    breakstmt {
+    }
+  }
+}
+ver: HOMESTEAD

@@ -1,0 +1,178 @@
+block {
+  statements {
+    multidecl {
+      num_vars: 479647470
+    }
+  }
+  statements {
+    leave {
+    }
+  }
+  statements {
+    switchstmt {
+      switch_expr {
+        varref {
+          varnum: 705285067
+        }
+      }
+      case_stmt {
+      }
+    }
+  }
+  statements {
+    storage_func {
+      loc {
+        lowcall {
+          callty: CALL
+          gas {
+            lowcall {
+              callty: CALL
+              gas {
+              }
+              addr {
+              }
+              wei {
+                varref {
+                  varnum: 2071672673
+                }
+              }
+              in {
+                func_expr {
+                  ret: SINGLE
+                  func_index: 1407755802
+                }
+              }
+              insize {
+              }
+              out {
+                varref {
+                  varnum: 2065702922
+                }
+              }
+              outsize {
+                func_expr {
+                  ret: SINGLE
+                  func_index: 99262284
+                }
+              }
+            }
+          }
+          addr {
+          }
+          wei {
+          }
+          in {
+            varref {
+              varnum: 110224871
+            }
+          }
+          insize {
+            varref {
+              varnum: 2142695988
+            }
+          }
+          out {
+            func_expr {
+              ret: SINGLE
+              func_index: 525723174
+            }
+          }
+          outsize {
+            unop {
+              op: ISZERO
+              operand {
+                varref {
+                  varnum: 121779893
+                }
+              }
+            }
+          }
+        }
+      }
+      val {
+        unop {
+          op: CALLDATALOAD
+          operand {
+            varref {
+              varnum: 1699524781
+            }
+          }
+        }
+      }
+      st: SSTORE
+    }
+  }
+  statements {
+    funcdef {
+      num_input_params: 1041826063
+      num_output_params: 213841627
+      block {
+        statements {
+          boundedforstmt {
+          }
+        }
+        statements {
+          terminatestmt {
+            ret_rev {
+              stmt: REVERT
+              pos {
+                cons {
+                  intval: 0
+                }
+              }
+              size {
+                unop {
+                  op: CALLDATALOAD
+                  operand {
+                    unop {
+                      op: SLOAD
+                      operand {
+                        varref {
+                          varnum: 1709036700
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+        statements {
+          pop {
+            expr {
+              func_expr {
+                ret: SINGLE
+                func_index: 1225146998
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  statements {
+    terminatestmt {
+      ret_rev {
+        stmt: REVERT
+        pos {
+          unopdata {
+            op: OFFSET
+            identifier: 2075999929
+          }
+        }
+        size {
+          unop {
+            op: MLOAD
+            operand {
+              varref {
+                varnum: 2024914739
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+ver: SPURIOUS

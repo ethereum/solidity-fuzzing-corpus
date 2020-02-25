@@ -1,0 +1,151 @@
+obj {
+  code {
+    block {
+      statements {
+        extcode_copy {
+          addr {
+          }
+          target {
+            nop {
+              op: COINBASE
+            }
+          }
+          source {
+            nop {
+              op: COINBASE
+            }
+          }
+          size {
+            nop {
+              op: COINBASE
+            }
+          }
+        }
+      }
+    }
+  }
+  sub_obj {
+    code {
+      block {
+        statements {
+          extcode_copy {
+            addr {
+              nop {
+                op: COINBASE
+              }
+            }
+            target {
+              nop {
+                op: COINBASE
+              }
+            }
+            source {
+              binop {
+                op: OR
+                left {
+                  binop {
+                    op: OR
+                    left {
+                      nop {
+                        op: COINBASE
+                      }
+                    }
+                    right {
+                    }
+                  }
+                }
+                right {
+                }
+              }
+            }
+            size {
+              nop {
+                op: COINBASE
+              }
+            }
+          }
+        }
+        statements {
+          extcode_copy {
+            addr {
+            }
+            target {
+              nop {
+                op: COINBASE
+              }
+            }
+            source {
+              nop {
+                op: COINBASE
+              }
+            }
+            size {
+              nop {
+                op: COINBASE
+              }
+            }
+          }
+        }
+      }
+    }
+    sub_obj {
+      code {
+        block {
+          statements {
+            extcode_copy {
+              addr {
+              }
+              target {
+                nop {
+                  op: COINBASE
+                }
+              }
+              source {
+                binop {
+                  op: OR
+                  left {
+                    nop {
+                      op: COINBASE
+                    }
+                  }
+                  right {
+                  }
+                }
+              }
+              size {
+                nop {
+                  op: COINBASE
+                }
+              }
+            }
+          }
+          statements {
+            extcode_copy {
+              addr {
+              }
+              target {
+                nop {
+                  op: COINBASE
+                }
+              }
+              source {
+                nop {
+                  op: COINBASE
+                }
+              }
+              size {
+                nop {
+                  op: COINBASE
+                }
+              }
+            }
+          }
+        }
+      }
+      data {
+        hex: "z"
+      }
+    }
+  }
+}
+ver: ISTANBUL

@@ -1,0 +1,116 @@
+block {
+  statements {
+    decl {
+      expr {
+        varref {
+          varnum: 32
+        }
+      }
+    }
+  }
+  statements {
+    forstmt {
+      for_body {
+        statements {
+          decl {
+            expr {
+              varref {
+                varnum: 65824
+              }
+            }
+          }
+        }
+        statements {
+          decl {
+            expr {
+              binop {
+                op: ADD
+                left {
+                  varref {
+                    varnum: 0
+                  }
+                }
+                right {
+                }
+              }
+            }
+          }
+        }
+        statements {
+          decl {
+            expr {
+              binop {
+                op: MOD
+                left {
+                  varref {
+                    varnum: 0
+                  }
+                }
+                right {
+                  varref {
+                    varnum: 1
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+      for_init {
+      }
+      for_post {
+        statements {
+          decl {
+            expr {
+              varref {
+                varnum: 4
+              }
+            }
+          }
+        }
+        statements {
+        }
+        statements {
+          extcode_copy {
+            addr {
+            }
+            target {
+            }
+            source {
+            }
+            size {
+              lowcall {
+                callty: CALL
+                gas {
+                }
+                addr {
+                }
+                wei {
+                }
+                in {
+                }
+                insize {
+                }
+                out {
+                }
+                outsize {
+                  unop {
+                    op: MLOAD
+                    operand {
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+      for_cond {
+        varref {
+          varnum: 0
+        }
+      }
+    }
+  }
+}
+ver: ISTANBUL

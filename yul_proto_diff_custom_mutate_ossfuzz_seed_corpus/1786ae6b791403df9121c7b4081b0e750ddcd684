@@ -1,0 +1,140 @@
+block {
+  statements {
+    extcode_copy {
+      addr {
+        lowcall {
+          callty: CALL
+          gas {
+            lowcall {
+              callty: CALL
+              gas {
+              }
+              addr {
+                unop {
+                  op: BLOCKHASH
+                  operand {
+                  }
+                }
+              }
+              wei {
+              }
+              in {
+              }
+              insize {
+              }
+              out {
+              }
+              outsize {
+              }
+            }
+          }
+          addr {
+          }
+          wei {
+          }
+          in {
+            lowcall {
+              callty: CALL
+              gas {
+              }
+              addr {
+                unop {
+                  op: BLOCKHASH
+                  operand {
+                  }
+                }
+              }
+              wei {
+              }
+              in {
+              }
+              insize {
+              }
+              out {
+              }
+              outsize {
+              }
+            }
+          }
+          insize {
+          }
+          out {
+          }
+          outsize {
+          }
+        }
+      }
+      target {
+        varref {
+          varnum: 0
+        }
+      }
+      source {
+      }
+      size {
+        lowcall {
+          callty: CALL
+          gas {
+            lowcall {
+              callty: CALL
+              gas {
+              }
+              addr {
+                unop {
+                  op: BLOCKHASH
+                  operand {
+                  }
+                }
+              }
+              wei {
+              }
+              in {
+              }
+              insize {
+              }
+              out {
+              }
+              outsize {
+              }
+            }
+          }
+          addr {
+          }
+          wei {
+          }
+          in {
+            lowcall {
+              callty: CALLCODE
+              gas {
+                unop {
+                  op: BLOCKHASH
+                  operand {
+                  }
+                }
+              }
+              addr {
+              }
+              wei {
+              }
+              in {
+              }
+              insize {
+              }
+              out {
+              }
+              outsize {
+              }
+            }
+          }
+          insize {
+          }
+          out {
+          }
+          outsize {
+          }
+        }
+      }
+    }
+  }
+}
+ver: ISTANBUL

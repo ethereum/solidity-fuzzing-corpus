@@ -1,0 +1,81 @@
+block {
+  statements {
+    decl {
+    }
+  }
+  statements {
+    storage_func {
+      loc {
+        unop {
+          op: SLOAD
+          operand {
+            varref {
+              varnum: 1314555
+            }
+          }
+        }
+      }
+      val {
+        top {
+          op: ADDM
+          arg1 {
+            func_expr {
+              ret: SINGLE
+              func_index: 109020311
+            }
+          }
+          arg2 {
+          }
+          arg3 {
+            top {
+              op: ADDM
+              arg1 {
+                top {
+                  op: ADDM
+                  arg1 {
+                  }
+                  arg2 {
+                  }
+                  arg3 {
+                    top {
+                      op: ADDM
+                      arg1 {
+                      }
+                      arg2 {
+                        nop {
+                          op: GASPRICE
+                        }
+                      }
+                      arg3 {
+                      }
+                    }
+                  }
+                }
+              }
+              arg2 {
+                nop {
+                  op: GASPRICE
+                }
+              }
+              arg3 {
+              }
+            }
+          }
+        }
+      }
+      st: MSTORE
+    }
+  }
+  statements {
+  }
+  statements {
+    pop {
+      expr {
+        create {
+          createty: CREATE
+        }
+      }
+    }
+  }
+}
+ver: HOMESTEAD

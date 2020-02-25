@@ -1,0 +1,211 @@
+block {
+  statements {
+    breakstmt {
+    }
+  }
+  statements {
+    copy_func {
+      ct: RETURNDATA
+      target {
+        binop {
+          op: LT
+          left {
+            binop {
+              op: EQ
+              left {
+                nop {
+                  op: PC
+                }
+              }
+              right {
+              }
+            }
+          }
+          right {
+            binop {
+              op: LT
+              left {
+                unop {
+                  op: CALLDATALOAD
+                  operand {
+                    binop {
+                      op: SHL
+                      left {
+                        unop {
+                          op: CALLDATALOAD
+                          operand {
+                            cons {
+                              intval: 0
+                            }
+                          }
+                        }
+                      }
+                      right {
+                      }
+                    }
+                  }
+                }
+              }
+              right {
+                binop {
+                  op: DIV
+                  left {
+                  }
+                  right {
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+      source {
+        binop {
+          op: LT
+          left {
+            binop {
+              op: SHL
+              left {
+                nop {
+                  op: PC
+                }
+              }
+              right {
+              }
+            }
+          }
+          right {
+            binop {
+              op: LT
+              left {
+                binop {
+                  op: SHL
+                  left {
+                    unop {
+                      op: CALLDATALOAD
+                      operand {
+                        cons {
+                          intval: 0
+                        }
+                      }
+                    }
+                  }
+                  right {
+                  }
+                }
+              }
+              right {
+                unop {
+                  op: MLOAD
+                  operand {
+                    unop {
+                      op: MLOAD
+                      operand {
+                        cons {
+                          intval: 0
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+      size {
+        nop {
+          op: PC
+        }
+      }
+    }
+  }
+  statements {
+    breakstmt {
+    }
+  }
+  statements {
+    copy_func {
+      ct: RETURNDATA
+      target {
+        unop {
+          op: CALLDATALOAD
+          operand {
+            cons {
+              intval: 0
+            }
+          }
+        }
+      }
+      source {
+        binop {
+          op: LT
+          left {
+            binop {
+              op: EQ
+              left {
+                nop {
+                  op: PC
+                }
+              }
+              right {
+              }
+            }
+          }
+          right {
+            binop {
+              op: LT
+              left {
+                binop {
+                  op: SHL
+                  left {
+                    nop {
+                      op: PC
+                    }
+                  }
+                  right {
+                  }
+                }
+              }
+              right {
+                binop {
+                  op: DIV
+                  left {
+                  }
+                  right {
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+      size {
+        unop {
+          op: NOT
+          operand {
+          }
+        }
+      }
+    }
+  }
+  statements {
+  }
+  statements {
+    breakstmt {
+    }
+  }
+  statements {
+    breakstmt {
+    }
+  }
+  statements {
+    breakstmt {
+    }
+  }
+  statements {
+    breakstmt {
+    }
+  }
+}
+ver: ISTANBUL

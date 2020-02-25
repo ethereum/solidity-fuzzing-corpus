@@ -1,0 +1,219 @@
+block {
+  statements {
+    multidecl {
+      num_vars: 867674614
+    }
+  }
+  statements {
+    assignment {
+      ref_id {
+        varnum: 701041778
+      }
+      expr {
+        varref {
+          varnum: 537211969
+        }
+      }
+    }
+  }
+  statements {
+    copy_func {
+      ct: CALLDATA
+      target {
+        unop {
+          op: MLOAD
+          operand {
+            varref {
+              varnum: 1283939033
+            }
+          }
+        }
+      }
+      source {
+        unopdata {
+          op: OFFSET
+          identifier: 1209626184
+        }
+      }
+      size {
+        varref {
+          varnum: 1799588714
+        }
+      }
+    }
+  }
+  statements {
+    copy_func {
+      ct: CALLDATA
+      target {
+      }
+      source {
+        varref {
+          varnum: 1599897348
+        }
+      }
+      size {
+        unop {
+          op: NOT
+          operand {
+            unop {
+              op: CALLDATALOAD
+              operand {
+                varref {
+                  varnum: 1586759859
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  statements {
+    pop {
+      expr {
+        func_expr {
+          ret: SINGLE
+          func_index: 819276207
+        }
+      }
+    }
+  }
+  statements {
+    copy_func {
+      ct: CALLDATA
+      target {
+        func_expr {
+          ret: SINGLE
+          func_index: 179816818
+        }
+      }
+      source {
+        unop {
+          op: MLOAD
+          operand {
+            cons {
+              intval: 0
+            }
+          }
+        }
+      }
+      size {
+        func_expr {
+          ret: SINGLE
+          func_index: 2036732616
+        }
+      }
+    }
+  }
+  statements {
+    funcdef {
+      num_input_params: 1
+      num_output_params: 1
+      block {
+        statements {
+          decl {
+            expr {
+              unopdata {
+                op: OFFSET
+                identifier: 160192607
+              }
+            }
+          }
+        }
+        statements {
+          storage_func {
+            loc {
+              varref {
+                varnum: 1553854419
+              }
+            }
+            val {
+              varref {
+                varnum: 770981378
+              }
+            }
+            st: SSTORE
+          }
+        }
+        statements {
+          assignment {
+            ref_id {
+              varnum: 423135249
+            }
+            expr {
+              varref {
+                varnum: 444637862
+              }
+            }
+          }
+        }
+        statements {
+          assignment {
+            ref_id {
+              varnum: 25252274
+            }
+            expr {
+              unop {
+                op: BLOCKHASH
+                operand {
+                  cons {
+                    intval: 0
+                  }
+                }
+              }
+            }
+          }
+        }
+        statements {
+          pop {
+            expr {
+              varref {
+                varnum: 786931297
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  statements {
+    copy_func {
+      ct: CALLDATA
+      target {
+        unop {
+          op: NOT
+          operand {
+            unop {
+              op: CALLDATALOAD
+              operand {
+                func_expr {
+                  ret: SINGLE
+                  func_index: 1867327493
+                }
+              }
+            }
+          }
+        }
+      }
+      source {
+        unop {
+          op: NOT
+          operand {
+            func_expr {
+              ret: SINGLE
+              func_index: 1770719893
+            }
+          }
+        }
+      }
+      size {
+        unopdata {
+          op: SIZE
+          identifier: 2024925258
+        }
+      }
+    }
+  }
+}
+ver: SPURIOUS

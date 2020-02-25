@@ -1,0 +1,200 @@
+block {
+  statements {
+  }
+  statements {
+    assignment {
+      ref_id {
+        varnum: 612913952
+      }
+      expr {
+        varref {
+          varnum: 60165827
+        }
+      }
+    }
+  }
+  statements {
+  }
+  statements {
+    leave {
+    }
+  }
+  statements {
+    funcdef {
+      num_input_params: 1
+      num_output_params: 1
+      block {
+        statements {
+          assignment {
+            ref_id {
+              varnum: 2138485357
+            }
+            expr {
+              unop {
+                op: EXTCODEHASH
+                operand {
+                  func_expr {
+                    ret: SINGLE
+                    func_index: 819441419
+                  }
+                }
+              }
+            }
+          }
+        }
+        statements {
+          contstmt {
+          }
+        }
+        statements {
+          extcode_copy {
+            addr {
+              varref {
+                varnum: 1705223306
+              }
+            }
+            target {
+            }
+            source {
+              cons {
+                boolval: true
+              }
+            }
+            size {
+              varref {
+                varnum: 1979535561
+              }
+            }
+          }
+        }
+        statements {
+        }
+        statements {
+          terminatestmt {
+            ret_rev {
+              stmt: REVERT
+              pos {
+                unop {
+                  op: CALLDATALOAD
+                  operand {
+                    unop {
+                      op: CALLDATALOAD
+                      operand {
+                        func_expr {
+                          ret: SINGLE
+                          func_index: 50135621
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+              size {
+                unopdata {
+                  op: SIZE
+                  identifier: 660472864
+                }
+              }
+            }
+          }
+        }
+        statements {
+          functioncall {
+            ret: MULTIDECL
+            func_index: 401152957
+            in_param1 {
+              unop {
+                op: SLOAD
+                operand {
+                  func_expr {
+                    ret: SINGLE
+                    func_index: 589236389
+                  }
+                }
+              }
+            }
+            in_param2 {
+              varref {
+                varnum: 388961635
+              }
+            }
+            in_param3 {
+              func_expr {
+                ret: SINGLE
+                func_index: 1236462086
+              }
+            }
+            in_param4 {
+              unop {
+                op: SLOAD
+                operand {
+                  varref {
+                    varnum: 957018131
+                  }
+                }
+              }
+            }
+            out_param1 {
+              varnum: 89690540
+            }
+            out_param2 {
+              varnum: 125023988
+            }
+            out_param3 {
+              varnum: 1535123526
+            }
+            out_param4 {
+              varnum: 1935583007
+            }
+          }
+        }
+      }
+      force_call: false
+    }
+  }
+  statements {
+    assignment {
+      ref_id {
+        varnum: 138006832
+      }
+      expr {
+        varref {
+          varnum: 561291069
+        }
+      }
+    }
+  }
+  statements {
+    pop {
+      expr {
+        varref {
+          varnum: 942092724
+        }
+      }
+    }
+  }
+  statements {
+    breakstmt {
+    }
+  }
+  statements {
+  }
+  statements {
+    terminatestmt {
+      ret_rev {
+        stmt: REVERT
+        pos {
+          func_expr {
+            ret: SINGLE
+            func_index: 495492674
+          }
+        }
+        size {
+          unop {
+          }
+        }
+      }
+    }
+  }
+}
+ver: TANGERINE

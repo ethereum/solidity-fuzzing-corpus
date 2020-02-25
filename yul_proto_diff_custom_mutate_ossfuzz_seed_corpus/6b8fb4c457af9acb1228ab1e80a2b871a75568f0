@@ -1,0 +1,42 @@
+block {
+	statements {
+		funcdef {
+			num_input_params: 0
+			num_output_params: 1
+			force_call: false
+			block {
+				statements {
+					forstmt {
+						for_init {}
+						for_post {}
+						for_body {}
+						for_cond {
+							nop {
+								op: CALLER
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+	statements {
+		decl {
+			expr {
+				func_expr {
+					ret: SINGLE
+					func_index: 0
+					in_param1 {}
+					in_param2 {}
+					in_param3 {}
+					in_param4 {}
+					out_param1 {}
+					out_param2 {}
+					out_param3 {}
+					out_param4 {}
+				}
+			}
+		}
+	}
+}
+ver: ISTANBUL

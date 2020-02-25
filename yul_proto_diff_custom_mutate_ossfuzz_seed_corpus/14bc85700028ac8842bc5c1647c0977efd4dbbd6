@@ -1,0 +1,138 @@
+block {
+  statements {
+    forstmt {
+      for_body {
+        statements {
+          breakstmt {
+          }
+        }
+      }
+      for_init {
+        statements {
+          breakstmt {
+          }
+        }
+      }
+      for_post {
+        statements {
+          breakstmt {
+          }
+        }
+      }
+      for_cond {
+        binop {
+          op: DIV
+          left {
+            binop {
+              op: GT
+              left {
+              }
+              right {
+                binop {
+                  op: ADD
+                  left {
+                  }
+                  right {
+                    nop {
+                      op: TIMESTAMP
+                    }
+                  }
+                }
+              }
+            }
+          }
+          right {
+            binop {
+              op: GT
+              left {
+              }
+              right {
+                binop {
+                  op: LT
+                  left {
+                  }
+                  right {
+                    nop {
+                      op: TIMESTAMP
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  statements {
+    forstmt {
+      for_body {
+        statements {
+          breakstmt {
+          }
+        }
+      }
+      for_init {
+        statements {
+          breakstmt {
+          }
+        }
+      }
+      for_post {
+        statements {
+          breakstmt {
+          }
+        }
+      }
+      for_cond {
+        binop {
+          op: DIV
+          left {
+            binop {
+              op: GT
+              left {
+                varref {
+                  varnum: 0
+                }
+              }
+              right {
+                unop {
+                  op: MLOAD
+                  operand {
+                    cons {
+                      intval: 0
+                    }
+                  }
+                }
+              }
+            }
+          }
+          right {
+            binop {
+              op: GT
+              left {
+              }
+              right {
+                unop {
+                  op: SLOAD
+                  operand {
+                    cons {
+                      intval: 0
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  statements {
+  }
+  statements {
+    breakstmt {
+    }
+  }
+}
+ver: SPURIOUS

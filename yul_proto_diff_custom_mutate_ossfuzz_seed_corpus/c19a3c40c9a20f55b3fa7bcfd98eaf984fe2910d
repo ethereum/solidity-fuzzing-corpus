@@ -1,0 +1,62 @@
+block {
+  statements {
+  }
+  statements {
+    decl {
+      expr {
+        top {
+          op: ADDM
+          arg1 {
+          }
+          arg2 {
+          }
+          arg3 {
+          }
+        }
+      }
+    }
+  }
+  statements {
+    decl {
+      expr {
+        binop {
+          op: SDIV
+          left {
+            unop {
+              op: MLOAD
+              operand {
+              }
+            }
+          }
+          right {
+            nop {
+              op: PC
+            }
+          }
+        }
+      }
+    }
+  }
+  statements {
+    decl {
+      expr {
+        binop {
+          op: SDIV
+          left {
+            unop {
+              op: NOT
+              operand {
+              }
+            }
+          }
+          right {
+            nop {
+              op: PC
+            }
+          }
+        }
+      }
+    }
+  }
+}
+ver: ISTANBUL

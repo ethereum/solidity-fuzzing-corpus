@@ -1,0 +1,34 @@
+block {
+	statements {
+		switchstmt {
+			switch_expr {
+				unop {
+					op: MLOAD
+					operand {
+						cons {
+							intval: 0
+						}
+					}
+				}
+			}
+			default_block {
+				statements {
+					storage_func {
+						st: MSTORE
+						loc {
+							cons {
+								intval: 1
+							}
+						}
+						val {
+							cons {
+								intval: 2
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}	
+ver: SPURIOUS

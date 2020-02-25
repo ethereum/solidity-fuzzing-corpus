@@ -1,0 +1,79 @@
+block {
+  statements {
+    copy_func {
+      ct: CALLDATA
+      target {
+        binop {
+          op: DIV
+          left {
+          }
+          right {
+            binop {
+              op: DIV
+              left {
+              }
+              right {
+              }
+            }
+          }
+        }
+      }
+      source {
+        lowcall {
+          callty: CALL
+          gas {
+          }
+          addr {
+          }
+          wei {
+            top {
+              op: MULM
+              arg1 {
+              }
+              arg2 {
+              }
+              arg3 {
+              }
+            }
+          }
+          in {
+          }
+          insize {
+          }
+          out {
+          }
+          outsize {
+          }
+        }
+      }
+      size {
+        binop {
+          op: DIV
+          left {
+          }
+          right {
+          }
+        }
+      }
+    }
+  }
+  statements {
+    copy_func {
+      ct: CALLDATA
+      target {
+      }
+      source {
+      }
+      size {
+        binop {
+          op: DIV
+          left {
+          }
+          right {
+          }
+        }
+      }
+    }
+  }
+}
+ver: HOMESTEAD

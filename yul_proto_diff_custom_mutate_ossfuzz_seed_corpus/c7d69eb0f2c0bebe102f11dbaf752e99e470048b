@@ -1,0 +1,155 @@
+block {
+  statements {
+  }
+  statements {
+    assignment {
+      ref_id {
+        varnum: 68031311
+      }
+      expr {
+        varref {
+          varnum: 1495239337
+        }
+      }
+    }
+  }
+  statements {
+    switchstmt {
+      switch_expr {
+        unop {
+          op: ISZERO
+          operand {
+            varref {
+              varnum: 851758014
+            }
+          }
+        }
+      }
+      case_stmt {
+        case_lit {
+        }
+        case_block {
+          statements {
+            multidecl {
+              num_vars: 1429489300
+            }
+          }
+          statements {
+            assignment {
+              ref_id {
+                varnum: 1600827160
+              }
+              expr {
+                unop {
+                }
+              }
+            }
+          }
+          statements {
+            boundedforstmt {
+            }
+          }
+          statements {
+            boundedforstmt {
+            }
+          }
+        }
+      }
+    }
+  }
+  statements {
+    boundedforstmt {
+      for_body {
+        statements {
+          ifstmt {
+            cond {
+              varref {
+                varnum: 1075646933
+              }
+            }
+            if_body {
+              statements {
+                assignment {
+                  ref_id {
+                    varnum: 662949433
+                  }
+                  expr {
+                    unop {
+                      op: BALANCE
+                      operand {
+                        cons {
+                          intval: 0
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+              statements {
+                boundedforstmt {
+                }
+              }
+            }
+          }
+        }
+        statements {
+        }
+        statements {
+          pop {
+            expr {
+              unop {
+                op: MLOAD
+                operand {
+                  varref {
+                    varnum: 739907666
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  statements {
+    extcode_copy {
+      addr {
+        unopdata {
+          op: OFFSET
+          identifier: 68745326
+        }
+      }
+      target {
+        unop {
+          op: CALLDATALOAD
+          operand {
+            varref {
+              varnum: 1444084459
+            }
+          }
+        }
+      }
+      source {
+        func_expr {
+          ret: SINGLE
+          func_index: 1541987377
+        }
+      }
+      size {
+        func_expr {
+          ret: SINGLE
+          func_index: 946970051
+        }
+      }
+    }
+  }
+  statements {
+    leave {
+    }
+  }
+  statements {
+    boundedforstmt {
+    }
+  }
+}
+ver: SPURIOUS

@@ -1,0 +1,110 @@
+obj {
+  code {
+    block {
+      statements {
+        pop {
+          expr {
+            varref {
+              varnum: 2063974664
+            }
+          }
+        }
+      }
+      statements {
+        multidecl {
+          num_vars: 694725134
+        }
+      }
+      statements {
+        storage_func {
+          loc {
+            binop {
+              op: SUB
+              left {
+                varref {
+                  varnum: 855481600
+                }
+              }
+              right {
+                func_expr {
+                  ret: SINGLE
+                  func_index: 2063974664
+                }
+              }
+            }
+          }
+          val {
+            binop {
+              op: GT
+              left {
+                varref {
+                  varnum: 1770847775
+                }
+              }
+              right {
+                unopdata {
+                  op: OFFSET
+                  identifier: 791447969
+                }
+              }
+            }
+          }
+          st: MSTORE8
+        }
+      }
+      statements {
+        storage_func {
+          loc {
+            binop {
+              op: KECCAK
+              left {
+                unopdata {
+                  op: SIZE
+                  identifier: 1261740071
+                }
+              }
+              right {
+                func_expr {
+                  ret: SINGLE
+                  func_index: 274676999
+                }
+              }
+            }
+          }
+          val {
+            varref {
+              varnum: 571713518
+            }
+          }
+          st: MSTORE
+        }
+      }
+      statements {
+        assignment {
+          ref_id {
+            varnum: 1618090762
+          }
+          expr {
+            unopdata {
+              op: OFFSET
+              identifier: 921942688
+            }
+          }
+        }
+      }
+      statements {
+        pop {
+          expr {
+            lowcall {
+              callty: DELEGATECALL
+            }
+          }
+        }
+      }
+    }
+  }
+  data {
+    hex: "\235"
+  }
+}
+ver: BYZANTIUM

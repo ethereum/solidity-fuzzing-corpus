@@ -1,0 +1,57 @@
+obj {
+  code {
+    block {
+      statements {
+        extcode_copy {
+          addr {
+            binop {
+              op: SHR
+              left {
+                cons {
+                  intval: 1
+                }
+              }
+              right {
+                binop {
+                  op: SHL
+                  left {
+                    cons {
+                      intval: 1
+                    }
+                  }
+                  right {
+                    unop {
+                      op: CALLDATALOAD
+                      operand {
+                        unopdata {
+                          op: OFFSET
+                          identifier: 1391025032
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+          target {
+            varref {
+              varnum: 1985693516
+            }
+          }
+          source {
+            varref {
+              varnum: 378280589
+            }
+          }
+          size {
+            varref {
+              varnum: 143768258
+            }
+          }
+        }
+      }
+    }
+  }
+}
+ver: ISTANBUL

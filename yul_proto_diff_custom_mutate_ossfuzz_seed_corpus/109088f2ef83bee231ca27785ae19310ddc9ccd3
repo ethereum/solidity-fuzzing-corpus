@@ -1,0 +1,236 @@
+block {
+  statements {
+    storage_func {
+      loc {
+        unop {
+          op: MLOAD
+          operand {
+            cons {
+              intval: 0
+            }
+          }
+        }
+      }
+      val {
+      }
+      st: MSTORE
+    }
+  }
+  statements {
+  }
+  statements {
+    storage_func {
+      loc {
+        binop {
+          op: SAR
+          left {
+          }
+          right {
+            create {
+              createty: CREATE
+              wei {
+              }
+              position {
+              }
+              size {
+                unop {
+                  op: MLOAD
+                  operand {
+                    cons {
+                      intval: 0
+                    }
+                  }
+                }
+              }
+              value {
+                nop {
+                  op: ADDRESS
+                }
+              }
+            }
+          }
+        }
+      }
+      val {
+        unop {
+          op: CALLDATALOAD
+          operand {
+            cons {
+              intval: 0
+            }
+          }
+        }
+      }
+      st: SSTORE
+    }
+  }
+  statements {
+    storage_func {
+      loc {
+        binop {
+          op: SHR
+          left {
+          }
+          right {
+            create {
+              createty: CREATE
+              wei {
+              }
+              position {
+              }
+              size {
+              }
+              value {
+                nop {
+                  op: ADDRESS
+                }
+              }
+            }
+          }
+        }
+      }
+      val {
+      }
+      st: MSTORE
+    }
+  }
+  statements {
+    assignment {
+      ref_id {
+        varnum: 2099257454
+      }
+      expr {
+      }
+    }
+  }
+  statements {
+    switchstmt {
+      switch_expr {
+        create {
+          createty: CREATE
+          wei {
+          }
+          position {
+          }
+          size {
+          }
+          value {
+          }
+        }
+      }
+      case_stmt {
+        case_lit {
+        }
+        case_block {
+          statements {
+            breakstmt {
+            }
+          }
+          statements {
+            breakstmt {
+            }
+          }
+        }
+      }
+      case_stmt {
+        case_lit {
+        }
+        case_block {
+          statements {
+          }
+          statements {
+            breakstmt {
+            }
+          }
+          statements {
+            breakstmt {
+            }
+          }
+        }
+      }
+      default_block {
+        statements {
+          switchstmt {
+            switch_expr {
+            }
+            case_stmt {
+              case_lit {
+              }
+              case_block {
+                statements {
+                  breakstmt {
+                  }
+                }
+                statements {
+                  breakstmt {
+                  }
+                }
+              }
+            }
+          }
+        }
+        statements {
+          breakstmt {
+          }
+        }
+        statements {
+          breakstmt {
+          }
+        }
+      }
+    }
+  }
+  statements {
+  }
+  statements {
+    forstmt {
+      for_body {
+        statements {
+          breakstmt {
+          }
+        }
+        statements {
+          breakstmt {
+          }
+        }
+        statements {
+          breakstmt {
+          }
+        }
+      }
+      for_init {
+        statements {
+        }
+        statements {
+          breakstmt {
+          }
+        }
+        statements {
+          breakstmt {
+          }
+        }
+      }
+      for_post {
+        statements {
+          breakstmt {
+          }
+        }
+        statements {
+          breakstmt {
+          }
+        }
+      }
+      for_cond {
+      }
+    }
+  }
+  statements {
+    breakstmt {
+    }
+  }
+  statements {
+    breakstmt {
+    }
+  }
+}
+ver: PETERSBURG

@@ -1,0 +1,46 @@
+block {
+  statements {
+    terminatestmt {
+      ret_rev {
+        stmt: RETURN
+        pos {
+        }
+        size {
+          binop {
+            op: ADD
+            left {
+              cons {
+                strval: "TTT\000\000\000\000TTTTTTTTTTTTTTTTT"
+              }
+            }
+            right {
+              binop {
+                op: ADD
+                left {
+                  cons {
+                    strval: "TTT\000\000\000\000TTTTTTTTTTTTTTTTT"
+                  }
+                }
+                right {
+                  binop {
+                    op: ADD
+                    left {
+                    }
+                    right {
+                      unop {
+                        op: EXTCODESIZE
+                        operand {
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+ver: ISTANBUL

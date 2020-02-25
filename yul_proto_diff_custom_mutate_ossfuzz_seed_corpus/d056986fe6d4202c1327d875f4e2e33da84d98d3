@@ -1,0 +1,103 @@
+obj {
+  code {
+    block {
+      statements {
+        boundedforstmt {
+          for_body {
+            statements {
+              boundedforstmt {
+                for_body {
+                  statements {
+                    extcode_copy {
+                      addr {
+                        binop {
+                          op: SDIV
+                          left {
+                            unop {
+                              op: NOT
+                              operand {
+                              }
+                            }
+                          }
+                          right {
+                            unop {
+                              op: EXTCODESIZE
+                              operand {
+                              }
+                            }
+                          }
+                        }
+                      }
+                      target {
+                        binop {
+                          op: SDIV
+                          left {
+                            top {
+                              op: ADDM
+                              arg1 {
+                                binop {
+                                  op: SMOD
+                                  left {
+                                  }
+                                  right {
+                                  }
+                                }
+                              }
+                              arg2 {
+                              }
+                              arg3 {
+                              }
+                            }
+                          }
+                          right {
+                          }
+                        }
+                      }
+                      source {
+                      }
+                      size {
+                        unop {
+                          op: EXTCODESIZE
+                          operand {
+                            create {
+                              createty: CREATE
+                              wei {
+                              }
+                              position {
+                              }
+                              size {
+                              }
+                              value {
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  sub_obj {
+    code {
+      block {
+        statements {
+        }
+        statements {
+        }
+        statements {
+          decl {
+            expr {
+            }
+          }
+        }
+      }
+    }
+  }
+}
+ver: BYZANTIUM

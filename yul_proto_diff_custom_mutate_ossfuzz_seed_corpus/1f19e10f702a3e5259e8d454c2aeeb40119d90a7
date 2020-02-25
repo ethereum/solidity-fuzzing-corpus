@@ -1,0 +1,83 @@
+obj {
+  code {
+    block {
+      statements {
+        breakstmt {
+        }
+      }
+      statements {
+        extcode_copy {
+          addr {
+            binop {
+              op: AND
+              left {
+              }
+              right {
+              }
+            }
+          }
+          target {
+          }
+          source {
+            unop {
+              op: MLOAD
+              operand {
+              }
+            }
+          }
+          size {
+            binop {
+              op: AND
+              left {
+                binop {
+                  op: AND
+                  left {
+                  }
+                  right {
+                    nop {
+                      op: COINBASE
+                    }
+                  }
+                }
+              }
+              right {
+                binop {
+                  op: AND
+                  left {
+                    binop {
+                      op: AND
+                      left {
+                      }
+                      right {
+                        nop {
+                          op: COINBASE
+                        }
+                      }
+                    }
+                  }
+                  right {
+                    binop {
+                      op: AND
+                      left {
+                      }
+                      right {
+                        nop {
+                          op: COINBASE
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+      statements {
+        breakstmt {
+        }
+      }
+    }
+  }
+}
+ver: ISTANBUL

@@ -1,0 +1,76 @@
+block {
+  statements {
+    multidecl {
+      num_vars: 1321133238
+    }
+  }
+  statements {
+    boundedforstmt {
+    }
+  }
+  statements {
+    forstmt {
+      for_cond {
+        unopdata {
+          op: SIZE
+          identifier: 1398270832
+        }
+      }
+    }
+  }
+  statements {
+    terminatestmt {
+      ret_rev {
+        stmt: REVERT
+        pos {
+          binop {
+            op: DIV
+            left {
+              unopdata {
+                op: OFFSET
+                identifier: 1893391856
+              }
+            }
+            right {
+              varref {
+                varnum: 1107210759
+              }
+            }
+          }
+        }
+        size {
+          binop {
+            op: MUL
+            left {
+              unop {
+                op: NOT
+                operand {
+                  varref {
+                    varnum: 355189311
+                  }
+                }
+              }
+            }
+            right {
+              unop {
+                op: SLOAD
+                operand {
+                  unop {
+                    op: ISZERO
+                    operand {
+                      unopdata {
+                        op: SIZE
+                        identifier: 1545784368
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+ver: HOMESTEAD

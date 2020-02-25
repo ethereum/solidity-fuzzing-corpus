@@ -1,0 +1,95 @@
+block {
+  statements {
+    ifstmt {
+      cond {
+        unop {
+          op: CALLDATALOAD
+          operand {
+            varref {
+              varnum: 460662042
+            }
+          }
+        }
+      }
+      if_body {
+        statements {
+          assignment {
+            ref_id {
+              varnum: 275321432
+            }
+            expr {
+              func_expr {
+                ret: SINGLE
+                func_index: 823783527
+              }
+            }
+          }
+        }
+        statements {
+          breakstmt {
+          }
+        }
+        statements {
+          storage_func {
+            loc {
+              unopdata {
+                op: SIZE
+                identifier: 1495089814
+              }
+            }
+            val {
+              unop {
+                op: CALLDATALOAD
+                operand {
+                  func_expr {
+                    ret: SINGLE
+                    func_index: 656808168
+                  }
+                }
+              }
+            }
+            st: SSTORE
+          }
+        }
+      }
+    }
+  }
+  statements {
+    boundedforstmt {
+    }
+  }
+  statements {
+    forstmt {
+      for_cond {
+        unop {
+          op: BALANCE
+          operand {
+            cons {
+              intval: 0
+            }
+          }
+        }
+      }
+    }
+  }
+  statements {
+    pop {
+      expr {
+        varref {
+          varnum: 2064265874
+        }
+      }
+    }
+  }
+  statements {
+    pop {
+      expr {
+        unopdata {
+          op: OFFSET
+          identifier: 1258346434
+        }
+      }
+    }
+  }
+}
+ver: SPURIOUS

@@ -1,0 +1,107 @@
+block {
+  statements {
+    storage_func {
+      loc {
+        binop {
+          op: MOD
+          left {
+            nop {
+              op: TIMESTAMP
+            }
+          }
+          right {
+          }
+        }
+      }
+      val {
+        binop {
+          op: MOD
+          left {
+            binop {
+              op: XOR
+              left {
+                binop {
+                  op: XOR
+                  left {
+                    binop {
+                      op: XOR
+                      left {
+                        binop {
+                          op: MOD
+                          left {
+                            nop {
+                              op: TIMESTAMP
+                            }
+                          }
+                          right {
+                          }
+                        }
+                      }
+                      right {
+                      }
+                    }
+                  }
+                  right {
+                  }
+                }
+              }
+              right {
+              }
+            }
+          }
+          right {
+          }
+        }
+      }
+      st: MSTORE
+    }
+  }
+  statements {
+    storage_func {
+      loc {
+        unop {
+          op: NOT
+          operand {
+            cons {
+            }
+          }
+        }
+      }
+      val {
+        binop {
+          op: XOR
+          left {
+            binop {
+              op: XOR
+              left {
+                binop {
+                  op: XOR
+                  left {
+                    binop {
+                      op: MOD
+                      left {
+                        nop {
+                          op: TIMESTAMP
+                        }
+                      }
+                      right {
+                      }
+                    }
+                  }
+                  right {
+                  }
+                }
+              }
+              right {
+              }
+            }
+          }
+          right {
+          }
+        }
+      }
+      st: MSTORE
+    }
+  }
+}
+ver: ISTANBUL

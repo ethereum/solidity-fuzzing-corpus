@@ -1,0 +1,90 @@
+block {
+  statements {
+    copy_func {
+      ct: CODE
+      target {
+        unop {
+          op: NOT
+          operand {
+            nop {
+              op: NUMBER
+            }
+          }
+        }
+      }
+      source {
+      }
+      size {
+        unop {
+          op: EXTCODESIZE
+          operand {
+            nop {
+              op: NUMBER
+            }
+          }
+        }
+      }
+    }
+  }
+  statements {
+    breakstmt {
+    }
+  }
+  statements {
+    copy_func {
+      ct: CALLDATA
+      target {
+        unop {
+          op: NOT
+          operand {
+            nop {
+              op: NUMBER
+            }
+          }
+        }
+      }
+      source {
+      }
+      size {
+        unop {
+          op: BLOCKHASH
+          operand {
+            nop {
+              op: NUMBER
+            }
+          }
+        }
+      }
+    }
+  }
+  statements {
+    copy_func {
+      ct: CALLDATA
+      target {
+      }
+      source {
+      }
+      size {
+        unop {
+          op: BLOCKHASH
+          operand {
+            nop {
+              op: NUMBER
+            }
+          }
+        }
+      }
+    }
+  }
+  statements {
+  }
+  statements {
+    breakstmt {
+    }
+  }
+  statements {
+    breakstmt {
+    }
+  }
+}
+ver: SPURIOUS

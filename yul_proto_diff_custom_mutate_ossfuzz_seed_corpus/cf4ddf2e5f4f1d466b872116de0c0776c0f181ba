@@ -1,0 +1,76 @@
+block {
+  statements {
+    forstmt {
+      for_body {
+        statements {
+          decl {
+            expr {
+              top {
+                op: ADDM
+                arg1 {
+                  unop {
+                    op: NOT
+                    operand {
+                      binop {
+                        op: ADD
+                        left {
+                        }
+                        right {
+                          top {
+                            op: MULM
+                            arg1 {
+                            }
+                            arg2 {
+                            }
+                            arg3 {
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+                arg2 {
+                  cons {
+                  }
+                }
+                arg3 {
+                }
+              }
+            }
+          }
+        }
+      }
+      for_init {
+      }
+      for_post {
+      }
+      for_cond {
+        unop {
+          op: NOT
+          operand {
+            create {
+              createty: CREATE
+              wei {
+                binop {
+                  op: SGT
+                  left {
+                  }
+                  right {
+                  }
+                }
+              }
+              position {
+              }
+              size {
+              }
+              value {
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+ver: ISTANBUL

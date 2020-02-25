@@ -1,0 +1,167 @@
+block {
+  statements {
+    extcode_copy {
+      addr {
+      }
+      target {
+        unop {
+          op: BALANCE
+          operand {
+          }
+        }
+      }
+      source {
+      }
+      size {
+        binop {
+          op: OR
+          left {
+            binop {
+              op: OR
+              left {
+              }
+              right {
+              }
+            }
+          }
+          right {
+          }
+        }
+      }
+    }
+  }
+  statements {
+    extcode_copy {
+      addr {
+        binop {
+          op: OR
+          left {
+            binop {
+              op: SMOD
+              left {
+                binop {
+                  op: OR
+                  left {
+                    binop {
+                      op: OR
+                      left {
+                        unop {
+                          op: MLOAD
+                          operand {
+                            cons {
+                              intval: 0
+                            }
+                          }
+                        }
+                      }
+                      right {
+                      }
+                    }
+                  }
+                  right {
+                  }
+                }
+              }
+              right {
+                varref {
+                  varnum: 7602176
+                }
+              }
+            }
+          }
+          right {
+          }
+        }
+      }
+      target {
+      }
+      source {
+      }
+      size {
+        unop {
+          op: SLOAD
+          operand {
+            cons {
+              intval: 0
+            }
+          }
+        }
+      }
+    }
+  }
+  statements {
+    extcode_copy {
+      addr {
+        binop {
+          op: OR
+          left {
+            binop {
+              op: OR
+              left {
+                binop {
+                  op: OR
+                  left {
+                    binop {
+                      op: OR
+                      left {
+                      }
+                      right {
+                      }
+                    }
+                  }
+                  right {
+                  }
+                }
+              }
+              right {
+                varref {
+                  varnum: 7602176
+                }
+              }
+            }
+          }
+          right {
+            varref {
+              varnum: 7602176
+            }
+          }
+        }
+      }
+      target {
+      }
+      source {
+      }
+      size {
+        binop {
+          op: SI
+          left {
+            binop {
+              op: OR
+              left {
+                binop {
+                  op: OR
+                  left {
+                  }
+                  right {
+                  }
+                }
+              }
+              right {
+              }
+            }
+          }
+          right {
+            nop {
+              op: CALLER
+            }
+          }
+        }
+      }
+    }
+  }
+  statements {
+    breakstmt {
+    }
+  }
+}
+ver: ISTANBUL

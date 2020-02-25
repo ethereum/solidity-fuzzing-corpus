@@ -1,0 +1,71 @@
+block {
+  statements {
+  }
+  statements {
+  }
+  statements {
+  }
+  statements {
+  }
+  statements {
+  }
+  statements {
+    storage_func {
+      loc {
+        top {
+          op: ADDM
+          arg1 {
+            unop {
+              op: MLOAD
+              operand {
+              }
+            }
+          }
+          arg2 {
+            nop {
+              op: CHAINID
+            }
+          }
+          arg3 {
+          }
+        }
+      }
+      val {
+      }
+      st: MSTORE
+    }
+  }
+  statements {
+  }
+  statements {
+    boundedforstmt {
+      for_body {
+        statements {
+          copy_func {
+            ct: CALLDATA
+            target {
+            }
+            source {
+            }
+            size {
+              binop {
+                op: SHL
+                left {
+                  nop {
+                    op: CHAINID
+                  }
+                }
+                right {
+                  varref {
+                    varnum: 1954226193
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+ver: ISTANBUL

@@ -1,0 +1,135 @@
+block {
+  statements {
+  }
+  statements {
+  }
+  statements {
+    contstmt {
+    }
+  }
+  statements {
+  }
+  statements {
+  }
+  statements {
+    extcode_copy {
+      addr {
+        binop {
+          op: SHL
+          left {
+          }
+          right {
+            binop {
+              op: SHL
+              left {
+                func_expr {
+                  ret: SINGLE
+                  func_index: 1181070109
+                }
+              }
+              right {
+                func_expr {
+                  ret: SINGLE
+                  func_index: 431553517
+                }
+              }
+            }
+          }
+        }
+      }
+      target {
+        varref {
+          varnum: 1041873708
+        }
+      }
+      source {
+        unop {
+          op: EXTCODESIZE
+          operand {
+            varref {
+              varnum: 1789423166
+            }
+          }
+        }
+      }
+      size {
+        binop {
+          op: SHL
+          left {
+            func_expr {
+              ret: SINGLE
+              func_index: 2020780552
+            }
+          }
+          right {
+            unopdata {
+              op: SIZE
+              identifier: 1546123169
+            }
+          }
+        }
+      }
+    }
+  }
+  statements {
+  }
+  statements {
+    extcode_copy {
+      addr {
+        unop {
+        }
+      }
+      target {
+        unopdata {
+          op: SIZE
+          identifier: 1302062083
+        }
+      }
+      source {
+        unop {
+          op: CALLDATALOAD
+          operand {
+            unop {
+              op: SLOAD
+              operand {
+                varref {
+                  varnum: 901433950
+                }
+              }
+            }
+          }
+        }
+      }
+      size {
+        unop {
+        }
+      }
+    }
+  }
+  statements {
+  }
+  statements {
+  }
+  statements {
+    boundedforstmt {
+    }
+  }
+  statements {
+    terminatestmt {
+      ret_rev {
+        stmt: REVERT
+        pos {
+          varref {
+            varnum: 1125845998
+          }
+        }
+        size {
+          varref {
+            varnum: 652171627
+          }
+        }
+      }
+    }
+  }
+}
+ver: ISTANBUL

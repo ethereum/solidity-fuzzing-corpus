@@ -1,0 +1,143 @@
+block {
+  statements {
+    boundedforstmt {
+      for_body {
+        statements {
+          storage_func {
+            loc {
+            }
+            val {
+              lowcall {
+                callty: CALL
+                gas {
+                }
+                addr {
+                }
+                wei {
+                  varref {
+                    varnum: 4096
+                  }
+                }
+                in {
+                }
+                insize {
+                }
+                out {
+                  binop {
+                    op: MUL
+                    left {
+                    }
+                    right {
+                    }
+                  }
+                }
+                outsize {
+                }
+              }
+            }
+            st: MSTORE8
+          }
+        }
+        statements {
+          boundedforstmt {
+            for_body {
+              statements {
+                storage_func {
+                  loc {
+                    lowcall {
+                      callty: CALL
+                      gas {
+                      }
+                      addr {
+                      }
+                      wei {
+                        varref {
+                          varnum: 4096
+                        }
+                      }
+                      in {
+                      }
+                      insize {
+                        binop {
+                          op: ADD
+                          left {
+                            cons {
+                              hexval: "\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\353\343\260\300\202\325\t\n\000\000\000\000\000\000\000\000\000\000\000\000"
+                            }
+                          }
+                          right {
+                          }
+                        }
+                      }
+                      out {
+                        binop {
+                          op: ADD
+                          left {
+                          }
+                          right {
+                          }
+                        }
+                      }
+                      outsize {
+                      }
+                    }
+                  }
+                  val {
+                    lowcall {
+                      callty: CALL
+                      gas {
+                      }
+                      addr {
+                        binop {
+                          op: SDIV
+                          left {
+                            nop {
+                              op: MSIZE
+                            }
+                          }
+                          right {
+                          }
+                        }
+                      }
+                      wei {
+                        nop {
+                          op: MSIZE
+                        }
+                      }
+                      in {
+                      }
+                      insize {
+                      }
+                      out {
+                        binop {
+                          op: SDIV
+                          left {
+                            nop {
+                              op: MSIZE
+                            }
+                          }
+                          right {
+                          }
+                        }
+                      }
+                      outsize {
+                      }
+                    }
+                  }
+                  st: MSTORE8
+                }
+              }
+              statements {
+                boundedforstmt {
+                  for_body {
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+ver: BERLIN

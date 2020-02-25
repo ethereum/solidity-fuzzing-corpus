@@ -1,0 +1,100 @@
+block {
+	statements {
+		decl {
+			expr {
+				cons {
+					intval: 0
+				}
+			}
+		}
+	}
+	statements {
+		decl {
+			expr {
+				cons {
+					intval: 1
+				}
+			}
+		}
+	}
+	statements {
+		decl {
+			expr {
+				cons {
+					intval: 2
+				}
+			}
+		}
+	}
+	statements {
+		storage_func {
+			st: MSTORE
+			loc {
+				varref {
+					varnum: 0
+				}
+			}
+			val {
+				varref {
+					varnum: 1
+				}
+			}
+		}
+	}
+	statements {
+		storage_func {
+			st: SSTORE
+			loc {
+				cons {
+					intval: 0
+				}
+			}
+			val {
+				unop {
+					op: MLOAD
+					operand {
+						varref {
+							varnum: 0
+						}
+					}
+				}
+			}
+		}
+	}
+	statements {
+		storage_func {
+			st: MSTORE
+			loc {
+				varref {
+					varnum: 0
+				}
+			}
+			val {
+				varref {
+					varnum: 2
+				}
+			}
+		}
+	}
+	statements {
+		storage_func {
+			st: SSTORE
+			loc {
+				cons {
+					intval: 10
+				}
+			}
+			val {
+				unop {
+					op: MLOAD
+					operand {
+						varref {
+							varnum: 0
+						}
+					}
+				}
+			}
+		}
+	}
+}
+ver: SPURIOUS

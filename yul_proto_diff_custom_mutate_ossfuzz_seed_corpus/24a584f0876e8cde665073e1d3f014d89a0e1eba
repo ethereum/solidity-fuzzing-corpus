@@ -1,0 +1,214 @@
+block {
+  statements {
+    multidecl {
+      num_vars: 1747427235
+    }
+  }
+  statements {
+    extcode_copy {
+      addr {
+        varref {
+          varnum: 697262706
+        }
+      }
+      target {
+        varref {
+          varnum: 93229382
+        }
+      }
+      source {
+        func_expr {
+          ret: SINGLE
+          func_index: 742946238
+        }
+      }
+      size {
+        unopdata {
+          op: SIZE
+          identifier: 1786866083
+        }
+      }
+    }
+  }
+  statements {
+  }
+  statements {
+  }
+  statements {
+    contstmt {
+    }
+  }
+  statements {
+    pop {
+      expr {
+        unop {
+          op: CALLDATALOAD
+          operand {
+            varref {
+              varnum: 426408757
+            }
+          }
+        }
+      }
+    }
+  }
+  statements {
+    switchstmt {
+      switch_expr {
+        func_expr {
+          ret: SINGLE
+          func_index: 581154727
+        }
+      }
+      case_stmt {
+      }
+    }
+  }
+  statements {
+    functioncall {
+      ret: MULTIDECL
+      func_index: 830628475
+      in_param1 {
+        unop {
+          op: CALLDATALOAD
+          operand {
+            cons {
+              intval: 0
+            }
+          }
+        }
+      }
+      in_param2 {
+        unop {
+          op: SLOAD
+          operand {
+            varref {
+              varnum: 1209923939
+            }
+          }
+        }
+      }
+      in_param3 {
+        func_expr {
+          ret: SINGLE
+          func_index: 892862427
+        }
+      }
+      in_param4 {
+        func_expr {
+          ret: SINGLE
+          func_index: 1696565423
+        }
+      }
+    }
+  }
+  statements {
+    terminatestmt {
+      ret_rev {
+        stmt: REVERT
+        pos {
+          varref {
+            varnum: 1667962336
+          }
+        }
+        size {
+          unop {
+            op: CALLDATALOAD
+            operand {
+              func_expr {
+                ret: SINGLE
+                func_index: 1875372269
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  statements {
+    funcdef {
+      num_input_params: 1197373819
+      num_output_params: 1056741591
+      block {
+        statements {
+          multidecl {
+            num_vars: 1098241918
+          }
+        }
+        statements {
+          assignment {
+            ref_id {
+              varnum: 510540511
+            }
+            expr {
+              unop {
+                op: SLOAD
+                operand {
+                  unop {
+                    op: CALLDATALOAD
+                    operand {
+                      unop {
+                        op: CALLDATALOAD
+                        operand {
+                          unop {
+                            op: MLOAD
+                            operand {
+                              func_expr {
+                                ret: SINGLE
+                                func_index: 2074946902
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+        statements {
+          breakstmt {
+          }
+        }
+      }
+    }
+  }
+  statements {
+    terminatestmt {
+      ret_rev {
+        stmt: REVERT
+        pos {
+          varref {
+            varnum: 1365074157
+          }
+        }
+        size {
+          varref {
+            varnum: 1888534926
+          }
+        }
+      }
+    }
+  }
+  statements {
+    pop {
+      expr {
+        create {
+          createty: CREATE
+        }
+      }
+    }
+  }
+  statements {
+    ifstmt {
+      cond {
+        varref {
+          varnum: 387120755
+        }
+      }
+    }
+  }
+}
+ver: HOMESTEAD

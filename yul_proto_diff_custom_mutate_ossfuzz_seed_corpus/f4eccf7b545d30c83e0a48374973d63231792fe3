@@ -1,0 +1,130 @@
+block {
+  statements {
+    decl {
+    }
+  }
+  statements {
+    funcdef {
+      num_input_params: 1
+      num_output_params: 1
+      block {
+        statements {
+          assignment {
+            ref_id {
+              varnum: 619586671
+            }
+            expr {
+              unop {
+                op: MLOAD
+                operand {
+                  varref {
+                    varnum: 80037093
+                  }
+                }
+              }
+            }
+          }
+        }
+        statements {
+          assignment {
+            ref_id {
+              varnum: 1509949063
+            }
+            expr {
+              binop {
+                op: DIV
+                left {
+                  varref {
+                    varnum: 1156240893
+                  }
+                }
+                right {
+                  varref {
+                    varnum: 1748137098
+                  }
+                }
+              }
+            }
+          }
+        }
+        statements {
+          terminatestmt {
+            ret_rev {
+              stmt: REVERT
+              pos {
+                func_expr {
+                  ret: SINGLE
+                  func_index: 451154992
+                }
+              }
+              size {
+                unop {
+                  op: ISZERO
+                  operand {
+                    unopdata {
+                      op: SIZE
+                      identifier: 404484223
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+        statements {
+          pop {
+            expr {
+              create {
+                createty: CREATE
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  statements {
+    storage_func {
+      loc {
+        cons {
+          intval: 0
+        }
+      }
+      val {
+        func_expr {
+          ret: SINGLE
+          func_index: 1524614636
+        }
+      }
+      st: MSTORE8
+    }
+  }
+  statements {
+    terminatestmt {
+      ret_rev {
+        stmt: REVERT
+        pos {
+          unopdata {
+            op: SIZE
+            identifier: 1395380161
+          }
+        }
+        size {
+          varref {
+            varnum: 940423865
+          }
+        }
+      }
+    }
+  }
+  statements {
+    pop {
+      expr {
+        lowcall {
+          callty: CALLCODE
+        }
+      }
+    }
+  }
+}
+ver: SPURIOUS

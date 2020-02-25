@@ -1,0 +1,116 @@
+obj {
+  code {
+    block {
+      statements {
+        extcode_copy {
+          addr {
+            binop {
+              op: SHL
+              left {
+                cons {
+                  intval: 1
+                }
+              }
+              right {
+                binop {
+                  op: SHL
+                  left {
+                    cons {
+                      intval: 1
+                    }
+                  }
+                  right {
+                    binop {
+                      op: AND
+                      left {
+                        cons {
+                        }
+                      }
+                      right {
+                        nop {
+                          op: ADDRESS
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+          target {
+            cons {
+              strval: "\212"
+            }
+          }
+          source {
+          }
+          size {
+          }
+        }
+      }
+    }
+  }
+  sub_obj {
+    code {
+      block {
+        statements {
+          extcode_copy {
+            addr {
+              binop {
+                op: SHL
+                left {
+                  cons {
+                    intval: 1
+                  }
+                }
+                right {
+                  binop {
+                    op: SHL
+                    left {
+                      cons {
+                        intval: 1
+                      }
+                    }
+                    right {
+                      binop {
+                        op: AND
+                        left {
+                          cons {
+                          }
+                        }
+                        right {
+                          nop {
+                            op: ADDRESS
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+            target {
+              cons {
+                strval: "\212"
+              }
+            }
+            source {
+            }
+            size {
+            }
+          }
+        }
+      }
+    }
+    sub_obj {
+      code {
+        block {
+        }
+      }
+      data {
+        hex: "\001\007"
+      }
+    }
+  }
+}
+ver: ISTANBUL

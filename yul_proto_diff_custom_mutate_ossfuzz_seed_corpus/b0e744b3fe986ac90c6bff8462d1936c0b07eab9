@@ -1,0 +1,177 @@
+block {
+  statements {
+    leave {
+    }
+  }
+  statements {
+    decl {
+      expr {
+        varref {
+          varnum: 1092095977
+        }
+      }
+    }
+  }
+  statements {
+  }
+  statements {
+    ifstmt {
+      cond {
+        unop {
+          op: SLOAD
+          operand {
+            cons {
+              intval: 0
+            }
+          }
+        }
+      }
+      if_body {
+        statements {
+          assignment {
+            ref_id {
+              varnum: 1981571037
+            }
+            expr {
+              func_expr {
+                ret: SINGLE
+                func_index: 935691688
+              }
+            }
+          }
+        }
+        statements {
+          boundedforstmt {
+            for_body {
+              statements {
+                assignment {
+                  ref_id {
+                    varnum: 318033247
+                  }
+                  expr {
+                    func_expr {
+                      ret: SINGLE
+                      func_index: 310924944
+                    }
+                  }
+                }
+              }
+              statements {
+                pop {
+                  expr {
+                    func_expr {
+                      ret: SINGLE
+                      func_index: 582352379
+                    }
+                  }
+                }
+              }
+              statements {
+                pop {
+                  expr {
+                    create {
+                      createty: CREATE
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+        statements {
+          pop {
+            expr {
+              varref {
+                varnum: 1029324916
+              }
+            }
+          }
+        }
+        statements {
+          breakstmt {
+          }
+        }
+        statements {
+          assignment {
+            ref_id {
+              varnum: 1133781771
+            }
+            expr {
+              varref {
+                varnum: 1870592362
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  statements {
+    breakstmt {
+    }
+  }
+  statements {
+    funcdef {
+      num_input_params: 1
+      num_output_params: 1
+      block {
+        statements {
+          assignment {
+            ref_id {
+              varnum: 1528498251
+            }
+            expr {
+              unop {
+                op: SLOAD
+                operand {
+                  varref {
+                    varnum: 145821183
+                  }
+                }
+              }
+            }
+          }
+        }
+        statements {
+          storage_func {
+            loc {
+              cons {
+                intval: 0
+              }
+            }
+            val {
+              varref {
+                varnum: 1714287774
+              }
+            }
+            st: MSTORE8
+          }
+        }
+      }
+    }
+  }
+  statements {
+    leave {
+    }
+  }
+  statements {
+    pop {
+      expr {
+        lowcall {
+          callty: CALLCODE
+        }
+      }
+    }
+  }
+  statements {
+    pop {
+      expr {
+        func_expr {
+          ret: SINGLE
+          func_index: 1565430753
+        }
+      }
+    }
+  }
+}
+ver: TANGERINE

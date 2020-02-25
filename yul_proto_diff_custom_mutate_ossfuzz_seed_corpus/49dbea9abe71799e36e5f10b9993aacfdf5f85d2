@@ -1,0 +1,85 @@
+obj {
+  code {
+    block {
+    }
+  }
+  sub_obj {
+    code {
+      block {
+        statements {
+          extcode_copy {
+            addr {
+              binop {
+                op: SHR
+                left {
+                  cons {
+                    intval: 65
+                  }
+                }
+                right {
+                  binop {
+                    op: AND
+                    left {
+                    }
+                    right {
+                      nop {
+                        op: COINBASE
+                      }
+                    }
+                  }
+                }
+              }
+            }
+            target {
+            }
+            source {
+              binop {
+                op: OR
+                left {
+                }
+                right {
+                }
+              }
+            }
+            size {
+              unop {
+                op: ISZERO
+                operand {
+                }
+              }
+            }
+          }
+        }
+        statements {
+          multidecl {
+            num_vars: 0
+          }
+        }
+        statements {
+          storage_func {
+            loc {
+            }
+            val {
+              unop {
+                op: EXTCODEHASH
+                operand {
+                }
+              }
+            }
+            st: SSTORE
+          }
+        }
+        statements {
+          blockstmt {
+            statements {
+              multidecl {
+                num_vars: 0
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+ver: ISTANBUL

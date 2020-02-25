@@ -1,0 +1,197 @@
+obj {
+  code {
+    block {
+      statements {
+        extcode_copy {
+          addr {
+            unop {
+              op: CALLDATALOAD
+              operand {
+                cons {
+                  intval: 0
+                }
+              }
+            }
+          }
+          target {
+            binop {
+              op: SGT
+              left {
+                binop {
+                  op: SI
+                  left {
+                    cons {
+                      intval: 24
+                    }
+                  }
+                  right {
+                    unop {
+                      op: NOT
+                      operand {
+                        unop {
+                          op: SLOAD
+                          operand {
+                            cons {
+                              intval: 0
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+              right {
+                nop {
+                  op: MSIZE
+                }
+              }
+            }
+          }
+          source {
+            unop {
+              op: MLOAD
+              operand {
+                cons {
+                  intval: 0
+                }
+              }
+            }
+          }
+          size {
+            binop {
+              op: SI
+              left {
+                cons {
+                  intval: 24
+                }
+              }
+              right {
+                unop {
+                }
+              }
+            }
+          }
+        }
+      }
+      statements {
+        breakstmt {
+        }
+      }
+      statements {
+        extcode_copy {
+          addr {
+            binop {
+              op: SI
+              left {
+                cons {
+                  intval: 24
+                }
+              }
+              right {
+                unop {
+                  op: CALLDATALOAD
+                  operand {
+                    cons {
+                      intval: 0
+                    }
+                  }
+                }
+              }
+            }
+          }
+          target {
+            unop {
+              op: MLOAD
+              operand {
+                unop {
+                  op: CALLDATALOAD
+                  operand {
+                    cons {
+                      intval: 0
+                    }
+                  }
+                }
+              }
+            }
+          }
+          source {
+          }
+          size {
+            binop {
+              op: SI
+              left {
+                cons {
+                  intval: 24
+                }
+              }
+              right {
+              }
+            }
+          }
+        }
+      }
+      statements {
+        breakstmt {
+        }
+      }
+      statements {
+        storage_func {
+          loc {
+          }
+          val {
+            unop {
+              op: SLOAD
+              operand {
+                unop {
+                  op: MLOAD
+                  operand {
+                    cons {
+                      intval: 0
+                    }
+                  }
+                }
+              }
+            }
+          }
+          st: MSTORE
+        }
+      }
+      statements {
+      }
+      statements {
+        breakstmt {
+        }
+      }
+      statements {
+        breakstmt {
+        }
+      }
+    }
+  }
+  sub_obj {
+    code {
+      block {
+        statements {
+          breakstmt {
+          }
+        }
+        statements {
+          breakstmt {
+          }
+        }
+        statements {
+        }
+        statements {
+          breakstmt {
+          }
+        }
+        statements {
+          breakstmt {
+          }
+        }
+      }
+    }
+  }
+}
+ver: ISTANBUL

@@ -1,0 +1,67 @@
+block {
+  statements {
+  }
+  statements {
+    extcode_copy {
+      addr {
+        nop {
+          op: CODESIZE
+        }
+      }
+      target {
+        binop {
+          op: OR
+          left {
+          }
+          right {
+          }
+        }
+      }
+      source {
+        binop {
+          op: KECCAK
+          left {
+          }
+          right {
+          }
+        }
+      }
+      size {
+      }
+    }
+  }
+  statements {
+    funcdef {
+      num_input_params: 4
+      num_output_params: 4
+      block {
+        statements {
+          storage_func {
+            loc {
+              varref {
+                varnum: 0
+              }
+            }
+            val {
+            }
+            st: SSTORE
+          }
+        }
+        statements {
+          storage_func {
+            loc {
+              varref {
+                varnum: 6
+              }
+            }
+            val {
+            }
+            st: SSTORE
+          }
+        }
+      }
+      force_call: true
+    }
+  }
+}
+ver: ISTANBUL

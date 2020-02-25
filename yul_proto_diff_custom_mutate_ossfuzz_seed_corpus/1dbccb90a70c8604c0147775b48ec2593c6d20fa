@@ -1,0 +1,139 @@
+obj {
+  code {
+    block {
+      statements {
+        forstmt {
+          for_body {
+            statements {
+              copy_func {
+                ct: DATA
+                target {
+                  unop {
+                    op: EXTCODEHASH
+                    operand {
+                      unop {
+                        op: EXTCODEHASH
+                        operand {
+                        }
+                      }
+                    }
+                  }
+                }
+                source {
+                }
+                size {
+                }
+              }
+            }
+            statements {
+              copy_func {
+                ct: DATA
+                target {
+                  binop {
+                    op: EQ
+                    left {
+                      unop {
+                        op: CALLDATALOAD
+                        operand {
+                          unop {
+                            op: EXTCODEHASH
+                            operand {
+                            }
+                          }
+                        }
+                      }
+                    }
+                    right {
+                    }
+                  }
+                }
+                source {
+                  lowcall {
+                    callty: CALL
+                    gas {
+                    }
+                    addr {
+                    }
+                    wei {
+                    }
+                    in {
+                    }
+                    insize {
+                    }
+                    out {
+                    }
+                    outsize {
+                    }
+                  }
+                }
+                size {
+                  unop {
+                    op: CALLDATALOAD
+                    operand {
+                      unop {
+                        op: EXTCODEHASH
+                        operand {
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+          for_init {
+          }
+          for_post {
+            statements {
+              copy_func {
+                ct: DATA
+                target {
+                  unop {
+                    op: CALLDATALOAD
+                    operand {
+                      binop {
+                        op: ADD
+                        left {
+                          unop {
+                            op: NOT
+                            operand {
+                              unop {
+                                op: CALLDATALOAD
+                                operand {
+                                }
+                              }
+                            }
+                          }
+                        }
+                        right {
+                        }
+                      }
+                    }
+                  }
+                }
+                source {
+                }
+                size {
+                }
+              }
+            }
+          }
+          for_cond {
+            unop {
+              op: CALLDATALOAD
+              operand {
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  sub_obj {
+    code {
+      block {
+      }
+    }
+  }
+}
+ver: ISTANBUL

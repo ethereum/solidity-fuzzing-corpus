@@ -1,0 +1,105 @@
+block {
+  statements {
+    funcdef {
+      num_input_params: 1024
+      num_output_params: 14
+      block {
+        statements {
+        }
+      }
+      force_call: true
+    }
+  }
+  statements {
+  }
+  statements {
+  }
+  statements {
+    extcode_copy {
+      addr {
+        unop {
+          op: NOT
+          operand {
+            binop {
+              op: AND
+              left {
+                varref {
+                  varnum: 0
+                }
+              }
+              right {
+                unop {
+                  op: NOT
+                  operand {
+                    varref {
+                      varnum: 16777216
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+      target {
+        unop {
+          op: NOT
+          operand {
+            binop {
+              op: AND
+              left {
+                varref {
+                  varnum: 0
+                }
+              }
+              right {
+                unop {
+                  op: NOT
+                  operand {
+                    varref {
+                      varnum: 0
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+      source {
+      }
+      size {
+      }
+    }
+  }
+  statements {
+  }
+  statements {
+    funcdef {
+      num_input_params: 1
+      num_output_params: 4096
+      block {
+      }
+      force_call: true
+    }
+  }
+  statements {
+    funcdef {
+      num_input_params: 0
+      num_output_params: 0
+      block {
+        statements {
+          funcdef {
+            num_input_params: 1024
+            num_output_params: 14
+            block {
+            }
+            force_call: true
+          }
+        }
+      }
+      force_call: true
+    }
+  }
+}
+ver: ISTANBUL

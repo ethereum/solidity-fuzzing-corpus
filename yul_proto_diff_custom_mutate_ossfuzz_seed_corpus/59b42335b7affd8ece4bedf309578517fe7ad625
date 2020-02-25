@@ -1,0 +1,78 @@
+block {
+  statements {
+    multidecl {
+      num_vars: 1754937873
+    }
+  }
+  statements {
+    breakstmt {
+    }
+  }
+  statements {
+    contstmt {
+    }
+  }
+  statements {
+    assignment {
+      ref_id {
+        varnum: 1628317583
+      }
+      expr {
+        varref {
+          varnum: 93004762
+        }
+      }
+    }
+  }
+  statements {
+    pop {
+      expr {
+        unop {
+          op: CALLDATALOAD
+          operand {
+            varref {
+              varnum: 899306209
+            }
+          }
+        }
+      }
+    }
+  }
+  statements {
+  }
+  statements {
+    storage_func {
+      loc {
+        cons {
+          intval: 0
+        }
+      }
+      val {
+        unop {
+          op: BLOCKHASH
+          operand {
+            unop {
+              op: BLOCKHASH
+              operand {
+                varref {
+                  varnum: 2083139192
+                }
+              }
+            }
+          }
+        }
+      }
+      st: MSTORE
+    }
+  }
+  statements {
+    pop {
+      expr {
+        lowcall {
+          callty: CALLCODE
+        }
+      }
+    }
+  }
+}
+ver: HOMESTEAD

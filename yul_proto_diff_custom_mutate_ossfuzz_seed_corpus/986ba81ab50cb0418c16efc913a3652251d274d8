@@ -1,0 +1,48 @@
+block {
+  statements {
+    extcode_copy {
+      addr {
+      }
+      target {
+        nop {
+          op: ADDRESS
+        }
+      }
+      source {
+      }
+      size {
+        binop {
+          op: SDIV
+          left {
+            binop {
+              op: SDIV
+              left {
+              }
+              right {
+              }
+            }
+          }
+          right {
+          }
+        }
+      }
+    }
+  }
+  statements {
+    copy_func {
+      ct: CALLDATA
+      target {
+        unop {
+          op: ISZERO
+          operand {
+          }
+        }
+      }
+      source {
+      }
+      size {
+      }
+    }
+  }
+}
+ver: SPURIOUS

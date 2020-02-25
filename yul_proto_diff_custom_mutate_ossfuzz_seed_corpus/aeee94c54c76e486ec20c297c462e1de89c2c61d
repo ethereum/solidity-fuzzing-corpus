@@ -1,0 +1,128 @@
+obj {
+  code {
+    block {
+      statements {
+        terminatestmt {
+        }
+      }
+      statements {
+        terminatestmt {
+          ret_rev {
+            stmt: RETURN
+            pos {
+              unop {
+                op: BALANCE
+                operand {
+                }
+              }
+            }
+            size {
+              unop {
+                op: BALANCE
+                operand {
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  sub_obj {
+    code {
+      block {
+        statements {
+          terminatestmt {
+            ret_rev {
+              stmt: REVERT
+              pos {
+              }
+              size {
+                unop {
+                  op: BALANCE
+                  operand {
+                  }
+                }
+              }
+            }
+          }
+        }
+        statements {
+          terminatestmt {
+            ret_rev {
+              stmt: RETURN
+              pos {
+                unop {
+                  op: BALANCE
+                  operand {
+                  }
+                }
+              }
+              size {
+                unop {
+                  op: BALANCE
+                  operand {
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    sub_obj {
+      code {
+        block {
+          statements {
+            terminatestmt {
+            }
+          }
+          statements {
+            terminatestmt {
+            }
+          }
+          statements {
+          }
+          statements {
+            terminatestmt {
+              ret_rev {
+                stmt: RETURN
+                pos {
+                  unop {
+                    op: BALANCE
+                    operand {
+                    }
+                  }
+                }
+                size {
+                  unop {
+                    op: BALANCE
+                    operand {
+                    }
+                  }
+                }
+              }
+            }
+          }
+          statements {
+            terminatestmt {
+              ret_rev {
+                stmt: RETURN
+                pos {
+                }
+                size {
+                  unop {
+                    op: BALANCE
+                    operand {
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+ver: ISTANBUL

@@ -1,0 +1,38 @@
+block {
+	statements {
+		funcdef {
+			num_input_params: 0
+			num_output_params: 1
+			force_call: true
+			block {
+				statements {
+					ifstmt {
+						cond {
+							nop {
+								op: MSIZE
+							}
+						}
+						if_body {
+							statements {
+								leave {}
+							}
+						}
+					}
+				}
+				statements {
+					forstmt {
+						for_init {}
+						for_cond {
+							nop {
+								op: CALLER
+							}
+						}
+						for_post {}
+						for_body {}
+					}
+				}
+			}
+		}
+	}
+}
+ver: ISTANBUL

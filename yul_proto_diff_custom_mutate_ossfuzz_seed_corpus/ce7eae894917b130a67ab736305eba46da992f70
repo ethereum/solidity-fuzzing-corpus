@@ -1,0 +1,145 @@
+block {
+  statements {
+  }
+  statements {
+  }
+  statements {
+    breakstmt {
+    }
+  }
+  statements {
+    funcdef {
+      num_input_params: 1
+      num_output_params: 1
+      block {
+        statements {
+          assignment {
+            ref_id {
+              varnum: 1584663799
+            }
+            expr {
+              unop {
+                op: SLOAD
+                operand {
+                  unop {
+                    op: BALANCE
+                    operand {
+                      unop {
+                        op: CALLDATALOAD
+                        operand {
+                          func_expr {
+                            ret: SINGLE
+                            func_index: 2117622481
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+        statements {
+          functioncall {
+            ret: SINGLE
+            func_index: 1560989823
+            in_param1 {
+              unopdata {
+                op: OFFSET
+                identifier: 562248457
+              }
+            }
+            in_param2 {
+              unopdata {
+                op: SIZE
+                identifier: 1673724701
+              }
+            }
+            in_param3 {
+              varref {
+                varnum: 1584306273
+              }
+            }
+            in_param4 {
+              func_expr {
+                ret: SINGLE
+                func_index: 1343496246
+              }
+            }
+          }
+        }
+        statements {
+          assignment {
+            ref_id {
+              varnum: 747204568
+            }
+            expr {
+              unop {
+                op: CALLDATALOAD
+                operand {
+                  cons {
+                    intval: 0
+                  }
+                }
+              }
+            }
+          }
+        }
+        statements {
+          terminatestmt {
+            ret_rev {
+              stmt: REVERT
+              pos {
+                cons {
+                  intval: 0
+                }
+              }
+              size {
+                varref {
+                  varnum: 660320929
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  statements {
+    switchstmt {
+      switch_expr {
+        func_expr {
+          ret: SINGLE
+          func_index: 989862557
+        }
+      }
+      case_stmt {
+      }
+    }
+  }
+  statements {
+    forstmt {
+      for_cond {
+        unop {
+          op: SLOAD
+          operand {
+            varref {
+              varnum: 834933937
+            }
+          }
+        }
+      }
+    }
+  }
+  statements {
+    pop {
+      expr {
+        lowcall {
+          callty: CALL
+        }
+      }
+    }
+  }
+}
+ver: SPURIOUS

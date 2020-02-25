@@ -1,0 +1,85 @@
+block {
+  statements {
+    extcode_copy {
+      addr {
+      }
+      target {
+      }
+      source {
+      }
+      size {
+        binop {
+          op: SAR
+          left {
+            binop {
+              op: SHL
+              left {
+              }
+              right {
+              }
+            }
+          }
+          right {
+          }
+        }
+      }
+    }
+  }
+  statements {
+    extcode_copy {
+      addr {
+      }
+      target {
+      }
+      source {
+      }
+      size {
+        binop {
+          op: SAR
+          left {
+            binop {
+              op: SAR
+              left {
+              }
+              right {
+              }
+            }
+          }
+          right {
+          }
+        }
+      }
+    }
+  }
+  statements {
+    copy_func {
+      ct: CALLDATA
+      target {
+        unop {
+          op: EXTCODESIZE
+          operand {
+          }
+        }
+      }
+      source {
+      }
+      size {
+        binop {
+          op: SAR
+          left {
+            binop {
+              op: SAR
+              left {
+              }
+              right {
+              }
+            }
+          }
+          right {
+          }
+        }
+      }
+    }
+  }
+}
+ver: ISTANBUL

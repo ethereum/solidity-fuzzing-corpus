@@ -1,0 +1,200 @@
+block {
+	statements {
+		storage_func {
+			st: MSTORE
+			loc {
+				cons {
+					intval: 2
+				}
+			}
+			val {
+				cons {
+					intval: 9
+				}
+			}
+		}
+	}
+	statements {
+		storage_func {
+			st: SSTORE
+			loc {
+				cons {
+					intval: 0
+				}
+			}
+			val {
+				unop {
+					op: MLOAD
+					operand {
+						cons {
+							intval: 2
+						}
+					}
+				}
+			}
+		}	
+	}
+	statements {
+		pop {
+			expr {
+				lowcall {
+					callty: CALL
+					gas {
+						cons {
+							intval: 0
+						}
+					}
+					addr {
+						cons {
+							intval: 0
+						}
+					}
+					wei {
+						cons {
+							intval: 0
+						}
+					}
+					in {
+						cons {
+							intval: 0
+						}
+					}
+					insize {
+						cons {
+							intval: 0
+						}
+					}
+					out {
+						cons {
+							intval: 0
+						}
+					}
+					outsize {
+						cons {
+							intval: 0
+						}
+					}
+				}
+			}
+		}
+	}
+	statements {
+		storage_func {
+			st: SSTORE
+			loc {
+				cons {
+					intval: 0
+				}
+			}
+			val {
+				unop {
+					op: MLOAD
+					operand {
+						cons {
+							intval: 2
+						}
+					}
+				}
+			}
+		}	
+	}
+	statements {
+		storage_func {
+			st: MSTORE
+			loc {
+				cons {
+					intval: 2
+				}
+			}
+			val {
+				cons {
+					intval: 10
+				}
+			}
+		}
+	}
+	statements {
+		storage_func {
+			st: MSTORE8
+			loc {
+				unop {
+					op: CALLDATALOAD
+					operand {
+						cons {
+							intval: 0
+						}
+					}
+				}
+			}
+			val {
+				cons {
+					intval: 4
+				}
+			}
+		}
+	}
+	statements {
+		storage_func {
+			st: SSTORE
+			loc {
+				cons {
+					intval: 0
+				}
+			}
+			val {
+				unop {
+					op: MLOAD
+					operand {
+						cons {
+							intval: 2
+						}
+					}
+				}
+			}
+		}	
+	}
+	statements {
+		storage_func {
+			st: MSTORE
+			loc {
+				cons {
+					intval: 2
+				}
+			}
+			val {
+				cons {
+					intval: 10
+				}
+			}
+		}
+	}
+	statements {
+		funcdef {
+			num_input_params: 0
+			num_output_params: 0
+			force_call: true
+			block {}
+		}
+	}
+	statements {
+		storage_func {
+			st: SSTORE
+			loc {
+				cons {
+					intval: 0
+				}
+			}
+			val {
+				unop {
+					op: MLOAD
+					operand {
+						cons {
+							intval: 2
+						}
+					}
+				}
+			}
+		}	
+	}
+}
+ver: SPURIOUS

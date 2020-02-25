@@ -1,0 +1,100 @@
+block {
+  statements {
+    pop {
+      expr {
+        binop {
+          op: EXP
+          left {
+            varref {
+              varnum: 328986132
+            }
+          }
+          right {
+            varref {
+              varnum: 1995491854
+            }
+          }
+        }
+      }
+    }
+  }
+  statements {
+    storage_func {
+      loc {
+        varref {
+          varnum: 1077875129
+        }
+      }
+      val {
+        func_expr {
+          ret: SINGLE
+          func_index: 634361033
+        }
+      }
+      st: MSTORE
+    }
+  }
+  statements {
+    leave {
+    }
+  }
+  statements {
+    assignment {
+      ref_id {
+        varnum: 491167641
+      }
+      expr {
+        unop {
+          op: MLOAD
+          operand {
+            cons {
+              intval: 0
+            }
+          }
+        }
+      }
+    }
+  }
+  statements {
+    terminatestmt {
+      ret_rev {
+        stmt: REVERT
+        pos {
+          unop {
+            op: CALLDATALOAD
+            operand {
+              varref {
+                varnum: 1454314494
+              }
+            }
+          }
+        }
+        size {
+          unop {
+            op: MLOAD
+            operand {
+              varref {
+                varnum: 1540845619
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  statements {
+    pop {
+      expr {
+        unop {
+          op: CALLDATALOAD
+          operand {
+            cons {
+              intval: 0
+            }
+          }
+        }
+      }
+    }
+  }
+}
+ver: TANGERINE

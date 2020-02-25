@@ -1,0 +1,162 @@
+obj {
+  code {
+    block {
+      statements {
+        funcdef {
+          num_input_params: 145210179
+          num_output_params: 53926701
+          block {
+            statements {
+              switchstmt {
+                switch_expr {
+                  func_expr {
+                    ret: SINGLE
+                    func_index: 731578354
+                  }
+                }
+                case_stmt {
+                }
+              }
+            }
+            statements {
+              boundedforstmt {
+                for_body {
+                  statements {
+                    pop {
+                      expr {
+                        varref {
+                          varnum: 1667700641
+                        }
+                      }
+                    }
+                  }
+                  statements {
+                    assignment {
+                      ref_id {
+                        varnum: 370096257
+                      }
+                      expr {
+                        unop {
+                          op: SLOAD
+                          operand {
+                            varref {
+                              varnum: 2147445901
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                  statements {
+                    pop {
+                      expr {
+                        lowcall {
+                          callty: CALLCODE
+                        }
+                      }
+                    }
+                  }
+                  statements {
+                    contstmt {
+                    }
+                  }
+                }
+              }
+            }
+            statements {
+              terminatestmt {
+                ret_rev {
+                  stmt: REVERT
+                  pos {
+                    func_expr {
+                      ret: SINGLE
+                      func_index: 2001358647
+                    }
+                  }
+                  size {
+                    func_expr {
+                      ret: SINGLE
+                      func_index: 295002606
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  sub_obj {
+    code {
+      block {
+        statements {
+          copy_func {
+            ct: CALLDATA
+            target {
+              unop {
+                op: SLOAD
+                operand {
+                  func_expr {
+                    ret: SINGLE
+                    func_index: 218009137
+                  }
+                }
+              }
+            }
+            source {
+              unop {
+                op: MLOAD
+                operand {
+                  varref {
+                    varnum: 1947019818
+                  }
+                }
+              }
+            }
+            size {
+              unopdata {
+                op: SIZE
+                identifier: 341331068
+              }
+            }
+          }
+        }
+        statements {
+          switchstmt {
+            switch_expr {
+              unop {
+                op: SLOAD
+                operand {
+                  varref {
+                    varnum: 1624475942
+                  }
+                }
+              }
+            }
+            case_stmt {
+            }
+          }
+        }
+        statements {
+          boundedforstmt {
+          }
+        }
+        statements {
+          forstmt {
+          }
+        }
+        statements {
+          pop {
+            expr {
+              varref {
+                varnum: 2046653437
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+ver: TANGERINE

@@ -1,0 +1,167 @@
+block {
+  statements {
+    decl {
+      expr {
+        unop {
+          op: ISZERO
+          operand {
+            cons {
+              intval: 0
+            }
+          }
+        }
+      }
+    }
+  }
+  statements {
+    storage_func {
+      loc {
+        cons {
+          intval: 0
+        }
+      }
+      val {
+        varref {
+          varnum: 1738421934
+        }
+      }
+      st: MSTORE8
+    }
+  }
+  statements {
+    ifstmt {
+      cond {
+        varref {
+          varnum: 99516676
+        }
+      }
+      if_body {
+        statements {
+          assignment {
+            ref_id {
+              varnum: 1692854546
+            }
+            expr {
+              unop {
+                op: BLOCKHASH
+                operand {
+                  func_expr {
+                    ret: SINGLE
+                    func_index: 1461769883
+                  }
+                }
+              }
+            }
+          }
+        }
+        statements {
+          storage_func {
+            loc {
+              func_expr {
+                ret: SINGLE
+                func_index: 1716080489
+              }
+            }
+            val {
+              func_expr {
+                ret: SINGLE
+                func_index: 775888241
+              }
+            }
+            st: MSTORE8
+          }
+        }
+        statements {
+          assignment {
+            ref_id {
+              varnum: 344668021
+            }
+            expr {
+              unop {
+                op: MLOAD
+                operand {
+                  varref {
+                    varnum: 325868565
+                  }
+                }
+              }
+            }
+          }
+        }
+        statements {
+          functioncall {
+            ret: MULTIASSIGN
+            func_index: 547847743
+            in_param1 {
+              varref {
+                varnum: 435039074
+              }
+            }
+            in_param2 {
+              varref {
+                varnum: 1465778628
+              }
+            }
+            in_param3 {
+              func_expr {
+                ret: SINGLE
+                func_index: 1645810396
+              }
+            }
+            in_param4 {
+              unop {
+                op: CALLDATALOAD
+                operand {
+                  varref {
+                    varnum: 1373266770
+                  }
+                }
+              }
+            }
+            out_param1 {
+              varnum: 1676040688
+            }
+            out_param2 {
+              varnum: 2008617017
+            }
+            out_param3 {
+              varnum: 1212849204
+            }
+            out_param4 {
+              varnum: 744741770
+            }
+          }
+        }
+        statements {
+          funcdef {
+            num_input_params: 740929697
+            num_output_params: 1224746749
+            block {
+              statements {
+                switchstmt {
+                  switch_expr {
+                    unop {
+                      op: MLOAD
+                      operand {
+                        varref {
+                          varnum: 1795368516
+                        }
+                      }
+                    }
+                  }
+                  case_stmt {
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  statements {
+    boundedforstmt {
+    }
+  }
+}
+ver: CONSTANTINOPLE

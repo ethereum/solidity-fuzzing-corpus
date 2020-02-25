@@ -1,0 +1,137 @@
+block {
+  statements {
+    leave {
+    }
+  }
+  statements {
+    breakstmt {
+    }
+  }
+  statements {
+    funcdef {
+      num_input_params: 1
+      num_output_params: 1
+      block {
+        statements {
+          assignment {
+            ref_id {
+              varnum: 770241562
+            }
+            expr {
+              unop {
+                op: NOT
+                operand {
+                  cons {
+                    intval: 0
+                  }
+                }
+              }
+            }
+          }
+        }
+        statements {
+          contstmt {
+          }
+        }
+        statements {
+          forstmt {
+            for_cond {
+              func_expr {
+                ret: SINGLE
+                func_index: 1688749776
+              }
+            }
+          }
+        }
+        statements {
+          terminatestmt {
+            ret_rev {
+              stmt: REVERT
+              pos {
+                binop {
+                  op: ADD
+                  left {
+                    func_expr {
+                      ret: SINGLE
+                      func_index: 218601407
+                    }
+                  }
+                  right {
+                    unopdata {
+                      op: SIZE
+                      identifier: 1343257927
+                    }
+                  }
+                }
+              }
+              size {
+                binop {
+                  op: SMOD
+                  left {
+                    unopdata {
+                      op: OFFSET
+                      identifier: 1714318427
+                    }
+                  }
+                  right {
+                    varref {
+                      varnum: 547907504
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+        statements {
+          pop {
+            expr {
+              unop {
+                op: CALLDATALOAD
+                operand {
+                  cons {
+                    intval: 0
+                  }
+                }
+              }
+            }
+          }
+        }
+        statements {
+          pop {
+            expr {
+              varref {
+                varnum: 1953050546
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  statements {
+    leave {
+    }
+  }
+  statements {
+    forstmt {
+      for_cond {
+        func_expr {
+          ret: SINGLE
+          func_index: 535714549
+        }
+      }
+    }
+  }
+  statements {
+    pop {
+      expr {
+        func_expr {
+          ret: SINGLE
+          func_index: 96214858
+        }
+      }
+    }
+  }
+}
+ver: BYZANTIUM

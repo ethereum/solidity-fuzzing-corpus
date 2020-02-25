@@ -1,0 +1,85 @@
+block {
+  statements {
+    blockstmt {
+      statements {
+        boundedforstmt {
+          for_body {
+            statements {
+              extcode_copy {
+                addr {
+                  binop {
+                    op: XOR
+                    left {
+                    }
+                    right {
+                      nop {
+                        op: ORIGIN
+                      }
+                    }
+                  }
+                }
+                target {
+                  binop {
+                    op: KECCAK
+                    left {
+                    }
+                    right {
+                      top {
+                        op: ADDM
+                        arg1 {
+                          binop {
+                            op: KECCAK
+                            left {
+                            }
+                            right {
+                              top {
+                                op: ADDM
+                                arg1 {
+                                }
+                                arg2 {
+                                }
+                                arg3 {
+                                }
+                              }
+                            }
+                          }
+                        }
+                        arg2 {
+                        }
+                        arg3 {
+                        }
+                      }
+                    }
+                  }
+                }
+                source {
+                  create {
+                    createty: CREATE
+                    wei {
+                    }
+                    position {
+                    }
+                    size {
+                      unop {
+                        op: ISZERO
+                        operand {
+                        }
+                      }
+                    }
+                    value {
+                    }
+                  }
+                }
+                size {
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  statements {
+  }
+}
+ver: HOMESTEAD

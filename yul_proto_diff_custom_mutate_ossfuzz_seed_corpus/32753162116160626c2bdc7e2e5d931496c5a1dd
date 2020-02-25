@@ -1,0 +1,88 @@
+block {
+  statements {
+    multidecl {
+      num_vars: 13097016
+    }
+  }
+  statements {
+    forstmt {
+      for_body {
+        statements {
+          multidecl {
+            num_vars: 67342796
+          }
+        }
+        statements {
+          decl {
+          }
+        }
+      }
+      for_init {
+        statements {
+          multidecl {
+            num_vars: 126178125
+          }
+        }
+        statements {
+          decl {
+            expr {
+              varref {
+                varnum: 19584875
+              }
+            }
+          }
+        }
+      }
+      for_post {
+        statements {
+          multidecl {
+            num_vars: 24233623
+          }
+        }
+        statements {
+          leave {
+          }
+        }
+        statements {
+          decl {
+            expr {
+              unop {
+                op: CALLDATALOAD
+                operand {
+                  cons {
+                    intval: 0
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+      for_cond {
+        unop {
+          op: MLOAD
+          operand {
+            cons {
+              intval: 0
+            }
+          }
+        }
+      }
+    }
+  }
+  statements {
+    decl {
+      expr {
+        unop {
+          op: SLOAD
+          operand {
+            varref {
+              varnum: 2400610
+            }
+          }
+        }
+      }
+    }
+  }
+}
+ver: HOMESTEAD

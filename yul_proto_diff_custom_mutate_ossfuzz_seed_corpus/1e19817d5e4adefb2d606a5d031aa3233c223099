@@ -1,0 +1,136 @@
+obj {
+  code {
+    block {
+      statements {
+        decl {
+          expr {
+            unopdata {
+              op: OFFSET
+              identifier: 2130437848
+            }
+          }
+        }
+      }
+      statements {
+        decl {
+          expr {
+            lowcall {
+              callty: CALL
+              gas {
+                create {
+                  createty: CREATE
+                  wei {
+                    create {
+                      createty: CREATE
+                      wei {
+                      }
+                      position {
+                        varref {
+                          varnum: 1740567352
+                        }
+                      }
+                      size {
+                        func_expr {
+                          ret: SINGLE
+                          func_index: 1186053311
+                        }
+                      }
+                      value {
+                        func_expr {
+                          ret: SINGLE
+                          func_index: 644464078
+                        }
+                      }
+                    }
+                  }
+                  position {
+                  }
+                  size {
+                    func_expr {
+                      ret: SINGLE
+                      func_index: 1995179514
+                    }
+                  }
+                  value {
+                    varref {
+                      varnum: 1638610600
+                    }
+                  }
+                }
+              }
+              addr {
+                unop {
+                  op: MLOAD
+                  operand {
+                    varref {
+                      varnum: 1254586296
+                    }
+                  }
+                }
+              }
+              wei {
+                unopdata {
+                  op: SIZE
+                  identifier: 1439299428
+                }
+              }
+              in {
+              }
+              insize {
+                func_expr {
+                  ret: SINGLE
+                  func_index: 1181745377
+                }
+              }
+              out {
+                func_expr {
+                  ret: SINGLE
+                  func_index: 1642408061
+                }
+              }
+              outsize {
+              }
+            }
+          }
+        }
+      }
+      statements {
+        forstmt {
+          for_cond {
+            varref {
+              varnum: 1923370968
+            }
+          }
+        }
+      }
+      statements {
+        terminatestmt {
+          ret_rev {
+            stmt: REVERT
+            pos {
+              cons {
+                intval: 0
+              }
+            }
+            size {
+              unop {
+                op: CALLDATALOAD
+                operand {
+                  unop {
+                    op: SLOAD
+                    operand {
+                      varref {
+                        varnum: 297170282
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+ver: BERLIN

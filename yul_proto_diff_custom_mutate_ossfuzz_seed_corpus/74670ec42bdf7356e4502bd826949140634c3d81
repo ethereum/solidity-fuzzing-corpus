@@ -1,0 +1,126 @@
+obj {
+  code {
+    block {
+      statements {
+      }
+      statements {
+        storage_func {
+          loc {
+            cons {
+            }
+          }
+          val {
+            binop {
+              op: MUL
+              left {
+                nop {
+                  op: GASLIMIT
+                }
+              }
+              right {
+                unop {
+                  op: NOT
+                  operand {
+                    top {
+                      op: MULM
+                      arg1 {
+                      }
+                      arg2 {
+                      }
+                      arg3 {
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+          st: MSTORE
+        }
+      }
+    }
+  }
+  sub_obj {
+    code {
+      block {
+        statements {
+          funcdef {
+            num_input_params: 0
+            num_output_params: 0
+            block {
+              statements {
+                assignment {
+                  ref_id {
+                    varnum: 2
+                  }
+                  expr {
+                  }
+                }
+              }
+              statements {
+                assignment {
+                  ref_id {
+                    varnum: 2
+                  }
+                  expr {
+                  }
+                }
+              }
+            }
+            force_call: true
+          }
+        }
+      }
+    }
+    sub_obj {
+      code {
+        block {
+          statements {
+            storage_func {
+              loc {
+                cons {
+                }
+              }
+              val {
+                binop {
+                  op: MUL
+                  left {
+                    nop {
+                      op: GASLIMIT
+                    }
+                  }
+                  right {
+                    unop {
+                      op: NOT
+                      operand {
+                        top {
+                          op: MULM
+                          arg1 {
+                          }
+                          arg2 {
+                          }
+                          arg3 {
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+              st: MSTORE
+            }
+          }
+          statements {
+          }
+        }
+      }
+      sub_obj {
+        code {
+          block {
+          }
+        }
+      }
+    }
+  }
+}
+ver: ISTANBUL

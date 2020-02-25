@@ -1,0 +1,46 @@
+block {
+	statements {
+		decl {
+			expr {
+				cons {
+					intval: 1
+				}
+			}
+		}
+	}
+	statements {
+		decl {
+			expr {
+				binop {
+					op: KECCAK
+					left {
+						cons {
+							intval: 1
+						}
+					}
+					right {
+						cons {
+							intval: 1
+						}
+					}	
+				}
+			}
+		}
+	}
+	statements {
+		storage_func {
+			st: SSTORE
+			loc {
+				cons {
+					intval: 0
+				}
+			}
+			val {
+				nop {
+					op: MSIZE
+				}
+			}
+		}
+	}
+}
+ver: SPURIOUS

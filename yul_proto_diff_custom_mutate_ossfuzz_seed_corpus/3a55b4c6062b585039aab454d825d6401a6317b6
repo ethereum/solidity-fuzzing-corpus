@@ -1,0 +1,131 @@
+block {
+  statements {
+    contstmt {
+    }
+  }
+  statements {
+    contstmt {
+    }
+  }
+  statements {
+    assignment {
+      ref_id {
+        varnum: 92740100
+      }
+      expr {
+        unop {
+          op: MLOAD
+          operand {
+            varref {
+              varnum: 255109
+            }
+          }
+        }
+      }
+    }
+  }
+  statements {
+    boundedforstmt {
+      for_body {
+        statements {
+          multidecl {
+            num_vars: 86530868
+          }
+        }
+        statements {
+          boundedforstmt {
+            for_body {
+              statements {
+                forstmt {
+                }
+              }
+              statements {
+                pop {
+                  expr {
+                    lowcall {
+                      callty: STATICCALL
+                    }
+                  }
+                }
+              }
+              statements {
+                pop {
+                  expr {
+                    create {
+                      createty: CREATE2
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+        statements {
+          functioncall {
+            ret: SINGLE
+            func_index: 300367949
+            in_param1 {
+              varref {
+                varnum: 300367949
+              }
+            }
+            in_param2 {
+              varref {
+                varnum: 150183974
+              }
+            }
+            in_param3 {
+              varref {
+                varnum: 100122649
+              }
+            }
+            in_param4 {
+              varref {
+                varnum: 75091987
+              }
+            }
+          }
+        }
+        statements {
+        }
+      }
+    }
+  }
+  statements {
+    storage_func {
+      loc {
+        cons {
+          intval: 0
+        }
+      }
+      val {
+        varref {
+          varnum: 56794398
+        }
+      }
+      st: MSTORE8
+    }
+  }
+  statements {
+    boundedforstmt {
+    }
+  }
+  statements {
+    terminatestmt {
+      ret_rev {
+        stmt: REVERT
+        pos {
+          cons {
+            intval: 0
+          }
+        }
+        size {
+          cons {
+            intval: 0
+          }
+        }
+      }
+    }
+  }
+}
+ver: BERLIN

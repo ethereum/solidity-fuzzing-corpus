@@ -1,0 +1,144 @@
+obj {
+  code {
+    block {
+      statements {
+        blockstmt {
+          statements {
+            decl {
+              expr {
+                nop {
+                  op: CALLER
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  sub_obj {
+    code {
+      block {
+      }
+    }
+    sub_obj {
+      code {
+        block {
+          statements {
+            extcode_copy {
+              addr {
+              }
+              target {
+                binop {
+                  op: DIV
+                  left {
+                    cons {
+                      intval: 0
+                    }
+                  }
+                  right {
+                    nop {
+                      op: CHAINID
+                    }
+                  }
+                }
+              }
+              source {
+              }
+              size {
+                nop {
+                  op: NUMBER
+                }
+              }
+            }
+          }
+        }
+      }
+      sub_obj {
+        code {
+          block {
+            statements {
+              storage_func {
+                loc {
+                }
+                val {
+                }
+                st: MSTORE8
+              }
+            }
+          }
+        }
+        sub_obj {
+          code {
+            block {
+              statements {
+                extcode_copy {
+                  addr {
+                  }
+                  target {
+                    binop {
+                      op: DIV
+                      left {
+                        cons {
+                        }
+                      }
+                      right {
+                        nop {
+                          op: NUMBER
+                        }
+                      }
+                    }
+                  }
+                  source {
+                  }
+                  size {
+                  }
+                }
+              }
+            }
+          }
+          sub_obj {
+            code {
+              block {
+                statements {
+                  extcode_copy {
+                    addr {
+                    }
+                    target {
+                      binop {
+                        op: DIV
+                        left {
+                          cons {
+                            intval: 0
+                          }
+                        }
+                        right {
+                          nop {
+                            op: NUMBER
+                          }
+                        }
+                      }
+                    }
+                    source {
+                    }
+                    size {
+                      cons {
+                        intval: 0
+                      }
+                    }
+                  }
+                }
+                statements {
+                  storage_func {
+                    st: MSTORE8
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+ver: ISTANBUL

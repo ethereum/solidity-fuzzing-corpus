@@ -1,0 +1,185 @@
+block {
+  statements {
+    multidecl {
+      num_vars: 385209219
+    }
+  }
+  statements {
+    contstmt {
+    }
+  }
+  statements {
+    forstmt {
+      for_body {
+        statements {
+          multidecl {
+            num_vars: 12418987
+          }
+        }
+        statements {
+          functioncall {
+            ret: MULTIDECL
+            func_index: 1125059070
+            in_param1 {
+              varref {
+                varnum: 392775087
+              }
+            }
+            in_param2 {
+              func_expr {
+                ret: SINGLE
+                func_index: 1983058107
+              }
+            }
+            in_param3 {
+              varref {
+                varnum: 328983964
+              }
+            }
+            in_param4 {
+              func_expr {
+                ret: SINGLE
+                func_index: 1667531243
+              }
+            }
+          }
+        }
+        statements {
+          ifstmt {
+            cond {
+              func_expr {
+                ret: SINGLE
+                func_index: 1308152886
+              }
+            }
+            if_body {
+              statements {
+                decl {
+                  expr {
+                    varref {
+                      varnum: 1438755417
+                    }
+                  }
+                }
+              }
+              statements {
+                assignment {
+                  ref_id {
+                    varnum: 747993515
+                  }
+                  expr {
+                    varref {
+                      varnum: 752405554
+                    }
+                  }
+                }
+              }
+              statements {
+                terminatestmt {
+                  ret_rev {
+                    stmt: REVERT
+                    pos {
+                      cons {
+                        intval: 0
+                      }
+                    }
+                    size {
+                      varref {
+                        varnum: 336934664
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+      for_init {
+        statements {
+          decl {
+          }
+        }
+        statements {
+          boundedforstmt {
+          }
+        }
+        statements {
+          pop {
+            expr {
+              unopdata {
+                op: OFFSET
+                identifier: 2092703644
+              }
+            }
+          }
+        }
+      }
+      for_post {
+        statements {
+          leave {
+          }
+        }
+        statements {
+          forstmt {
+            for_cond {
+              unop {
+                op: NOT
+                operand {
+                  func_expr {
+                    ret: SINGLE
+                    func_index: 1246950767
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+      for_cond {
+        unop {
+          op: NOT
+          operand {
+            varref {
+              varnum: 167494537
+            }
+          }
+        }
+      }
+    }
+  }
+  statements {
+    terminatestmt {
+      ret_rev {
+        stmt: REVERT
+        pos {
+          func_expr {
+            ret: SINGLE
+            func_index: 1766586616
+          }
+        }
+        size {
+          unopdata {
+            op: SIZE
+            identifier: 108406568
+          }
+        }
+      }
+    }
+  }
+  statements {
+    breakstmt {
+    }
+  }
+  statements {
+    forstmt {
+      for_cond {
+        func_expr {
+          ret: SINGLE
+          func_index: 1552698177
+        }
+      }
+    }
+  }
+}
+ver: ISTANBUL

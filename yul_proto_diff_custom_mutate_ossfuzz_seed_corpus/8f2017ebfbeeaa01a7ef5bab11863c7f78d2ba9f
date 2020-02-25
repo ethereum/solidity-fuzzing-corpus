@@ -1,0 +1,207 @@
+block {
+  statements {
+    blockstmt {
+      statements {
+        multidecl {
+          num_vars: 1483210782
+        }
+      }
+      statements {
+        copy_func {
+          ct: CALLDATA
+          target {
+            func_expr {
+              ret: SINGLE
+              func_index: 1623181803
+            }
+          }
+          source {
+            unop {
+              op: CALLDATALOAD
+              operand {
+                unopdata {
+                  op: SIZE
+                  identifier: 313936984
+                }
+              }
+            }
+          }
+          size {
+            unop {
+              op: CALLDATALOAD
+              operand {
+                unop {
+                  op: SLOAD
+                  operand {
+                    func_expr {
+                      ret: SINGLE
+                      func_index: 875769286
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+      statements {
+        pop {
+          expr {
+            func_expr {
+              ret: SINGLE
+              func_index: 666137764
+            }
+          }
+        }
+      }
+      statements {
+        multidecl {
+          num_vars: 1717131637
+        }
+      }
+      statements {
+        decl {
+          expr {
+            unop {
+              op: SLOAD
+              operand {
+                varref {
+                  varnum: 1433967651
+                }
+              }
+            }
+          }
+        }
+      }
+      statements {
+        multidecl {
+          num_vars: 1483210782
+        }
+      }
+      statements {
+        decl {
+          expr {
+            func_expr {
+              ret: SINGLE
+              func_index: 1503532897
+            }
+          }
+        }
+      }
+    }
+  }
+  statements {
+  }
+  statements {
+    pop {
+      expr {
+        unop {
+          op: CALLDATALOAD
+          operand {
+            func_expr {
+              ret: SINGLE
+              func_index: 1799685811
+            }
+          }
+        }
+      }
+    }
+  }
+  statements {
+    contstmt {
+    }
+  }
+  statements {
+    storage_func {
+      loc {
+        unopdata {
+          op: OFFSET
+          identifier: 1958925541
+        }
+      }
+      val {
+        unopdata {
+          op: SIZE
+          identifier: 658073976
+        }
+      }
+      st: SSTORE
+    }
+  }
+  statements {
+    funcdef {
+      num_input_params: 1
+      num_output_params: 1
+      block {
+        statements {
+          assignment {
+            ref_id {
+              varnum: 1746084603
+            }
+            expr {
+              binop {
+                op: LT
+                left {
+                  unopdata {
+                    op: OFFSET
+                    identifier: 809519753
+                  }
+                }
+                right {
+                  varref {
+                    varnum: 2106736886
+                  }
+                }
+              }
+            }
+          }
+        }
+        statements {
+          ifstmt {
+            cond {
+              binop {
+                op: KECCAK
+                left {
+                  varref {
+                    varnum: 245680391
+                  }
+                }
+                right {
+                  varref {
+                    varnum: 833455227
+                  }
+                }
+              }
+            }
+            if_body {
+              statements {
+                assignment {
+                  ref_id {
+                    varnum: 440242543
+                  }
+                  expr {
+                    func_expr {
+                      ret: SINGLE
+                      func_index: 439408098
+                    }
+                  }
+                }
+              }
+              statements {
+                pop {
+                  expr {
+                    unopdata {
+                      op: OFFSET
+                      identifier: 356044814
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+ver: BERLIN

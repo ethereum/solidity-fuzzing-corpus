@@ -1,0 +1,136 @@
+block {
+  statements {
+    breakstmt {
+    }
+  }
+  statements {
+    terminatestmt {
+      self_des {
+        addr {
+          unop {
+            op: MLOAD
+            operand {
+              unop {
+                op: CALLDATALOAD
+                operand {
+                  func_expr {
+                    ret: SINGLE
+                    func_index: 781766064
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  statements {
+    breakstmt {
+    }
+  }
+  statements {
+    contstmt {
+    }
+  }
+  statements {
+    funcdef {
+      num_input_params: 1
+      num_output_params: 1
+      block {
+        statements {
+          assignment {
+            ref_id {
+              varnum: 446308866
+            }
+            expr {
+              binop {
+                op: SMOD
+                left {
+                  unop {
+                    op: CALLDATALOAD
+                    operand {
+                      varref {
+                        varnum: 910739791
+                      }
+                    }
+                  }
+                }
+                right {
+                  varref {
+                    varnum: 2084247274
+                  }
+                }
+              }
+            }
+          }
+        }
+        statements {
+          contstmt {
+          }
+        }
+        statements {
+          assignment {
+            ref_id {
+              varnum: 1261074966
+            }
+            expr {
+              func_expr {
+                ret: SINGLE
+                func_index: 654282624
+              }
+            }
+          }
+        }
+        statements {
+          switchstmt {
+            switch_expr {
+              func_expr {
+                ret: SINGLE
+                func_index: 1536696301
+              }
+            }
+            case_stmt {
+            }
+          }
+        }
+        statements {
+          boundedforstmt {
+          }
+        }
+      }
+    }
+  }
+  statements {
+    assignment {
+      ref_id {
+        varnum: 912718738
+      }
+      expr {
+        func_expr {
+          ret: SINGLE
+          func_index: 2053469974
+        }
+      }
+    }
+  }
+  statements {
+    boundedforstmt {
+    }
+  }
+  statements {
+    pop {
+      expr {
+        unop {
+          op: CALLDATALOAD
+          operand {
+            cons {
+              intval: 0
+            }
+          }
+        }
+      }
+    }
+  }
+}
+ver: BERLIN

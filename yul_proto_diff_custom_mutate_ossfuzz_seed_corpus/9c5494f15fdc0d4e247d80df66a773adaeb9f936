@@ -1,0 +1,220 @@
+block {
+  statements {
+    decl {
+      expr {
+        func_expr {
+          ret: SINGLE
+          func_index: 660673313
+        }
+      }
+    }
+  }
+  statements {
+    terminatestmt {
+    }
+  }
+  statements {
+  }
+  statements {
+  }
+  statements {
+    funcdef {
+      num_input_params: 1
+      num_output_params: 1
+      block {
+        statements {
+          decl {
+            expr {
+              binop {
+                op: KECCAK
+                left {
+                  func_expr {
+                    ret: SINGLE
+                    func_index: 877186153
+                  }
+                }
+                right {
+                  varref {
+                    varnum: 454627572
+                  }
+                }
+              }
+            }
+          }
+        }
+        statements {
+          storage_func {
+            loc {
+              func_expr {
+                ret: SINGLE
+                func_index: 1268137112
+              }
+            }
+            val {
+              binop {
+                op: SLT
+                left {
+                  func_expr {
+                    ret: SINGLE
+                    func_index: 818492337
+                  }
+                }
+                right {
+                  unop {
+                  }
+                }
+              }
+            }
+            st: MSTORE8
+          }
+        }
+        statements {
+          funcdef {
+            num_input_params: 1
+            num_output_params: 1
+            block {
+              statements {
+                assignment {
+                  ref_id {
+                    varnum: 330377232
+                  }
+                  expr {
+                    unop {
+                      op: BALANCE
+                      operand {
+                        varref {
+                          varnum: 425803250
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+              statements {
+                forstmt {
+                }
+              }
+              statements {
+                boundedforstmt {
+                }
+              }
+            }
+          }
+        }
+        statements {
+          assignment {
+            ref_id {
+              varnum: 377696983
+            }
+            expr {
+              unop {
+                op: SLOAD
+                operand {
+                  varref {
+                    varnum: 725288548
+                  }
+                }
+              }
+            }
+          }
+        }
+        statements {
+          boundedforstmt {
+          }
+        }
+      }
+    }
+  }
+  statements {
+    assignment {
+      ref_id {
+        varnum: 1947516707
+      }
+      expr {
+        varref {
+          varnum: 1526612733
+        }
+      }
+    }
+  }
+  statements {
+    switchstmt {
+      switch_expr {
+        unop {
+          op: SLOAD
+          operand {
+            unop {
+              op: SLOAD
+              operand {
+                varref {
+                  varnum: 870616744
+                }
+              }
+            }
+          }
+        }
+      }
+      case_stmt {
+      }
+    }
+  }
+  statements {
+    terminatestmt {
+    }
+  }
+  statements {
+    pop {
+      expr {
+        unop {
+          op: CALLDATALOAD
+          operand {
+            func_expr {
+              ret: SINGLE
+              func_index: 781018563
+            }
+          }
+        }
+      }
+    }
+  }
+  statements {
+    functioncall {
+      ret: MULTIASSIGN
+      func_index: 1733498446
+      in_param1 {
+        varref {
+          varnum: 142680808
+        }
+      }
+      in_param2 {
+        func_expr {
+          ret: SINGLE
+          func_index: 1330568563
+        }
+      }
+      in_param3 {
+        varref {
+          varnum: 896083814
+        }
+      }
+      in_param4 {
+        varref {
+          varnum: 345836151
+        }
+      }
+      out_param1 {
+        varnum: 1369631554
+      }
+      out_param2 {
+        varnum: 1751906674
+      }
+      out_param3 {
+        varnum: 965961278
+      }
+      out_param4 {
+        varnum: 1003181511
+      }
+    }
+  }
+}
+ver: ISTANBUL

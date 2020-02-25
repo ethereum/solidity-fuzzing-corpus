@@ -1,0 +1,179 @@
+block {
+  statements {
+    multidecl {
+      num_vars: 1227192625
+    }
+  }
+  statements {
+    extcode_copy {
+      addr {
+        unop {
+          op: CALLDATALOAD
+          operand {
+            varref {
+              varnum: 1248729338
+            }
+          }
+        }
+      }
+      target {
+        unopdata {
+          op: SIZE
+          identifier: 525187963
+        }
+      }
+      source {
+        unop {
+          op: CALLDATALOAD
+          operand {
+            func_expr {
+              ret: SINGLE
+              func_index: 1602502003
+            }
+          }
+        }
+      }
+      size {
+        func_expr {
+          ret: SINGLE
+          func_index: 881674432
+        }
+      }
+    }
+  }
+  statements {
+    pop {
+      expr {
+        unopdata {
+          op: SIZE
+          identifier: 831080046
+        }
+      }
+    }
+  }
+  statements {
+    funcdef {
+      num_input_params: 1
+      num_output_params: 1
+      block {
+        statements {
+          assignment {
+            ref_id {
+              varnum: 83770806
+            }
+            expr {
+              binop {
+                op: MOD
+                left {
+                  unop {
+                    op: EXTCODEHASH
+                    operand {
+                      varref {
+                        varnum: 2081408037
+                      }
+                    }
+                  }
+                }
+                right {
+                  varref {
+                    varnum: 1719928272
+                  }
+                }
+              }
+            }
+          }
+        }
+        statements {
+          storage_func {
+            loc {
+              func_expr {
+                ret: SINGLE
+                func_index: 210485346
+              }
+            }
+            val {
+              binop {
+                op: SLT
+                left {
+                  varref {
+                    varnum: 54661479
+                  }
+                }
+                right {
+                  varref {
+                    varnum: 959862088
+                  }
+                }
+              }
+            }
+            st: SSTORE
+          }
+        }
+        statements {
+        }
+        statements {
+          functioncall {
+            ret: SINGLE
+            func_index: 910849324
+            in_param1 {
+              varref {
+                varnum: 679428607
+              }
+            }
+            in_param2 {
+              varref {
+                varnum: 487208169
+              }
+            }
+            in_param3 {
+              unop {
+                op: CALLDATALOAD
+                operand {
+                  varref {
+                    varnum: 731321919
+                  }
+                }
+              }
+            }
+            in_param4 {
+              unop {
+                op: SLOAD
+                operand {
+                  varref {
+                    varnum: 1900277515
+                  }
+                }
+              }
+            }
+          }
+        }
+        statements {
+          multidecl {
+          }
+        }
+      }
+    }
+  }
+  statements {
+  }
+  statements {
+    decl {
+      expr {
+        binop {
+          op: LT
+          left {
+            varref {
+              varnum: 30271219
+            }
+          }
+          right {
+            varref {
+              varnum: 933132389
+            }
+          }
+        }
+      }
+    }
+  }
+}
+ver: ISTANBUL
