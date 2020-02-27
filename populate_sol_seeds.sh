@@ -1,6 +1,7 @@
 #!/usr/bin/env bash
 rm -rf test_sol
 mkdir test_sol
+cd test_sol
 $HOME/work/github/solidity/scripts/isolate_tests.py $HOME/work/github/solidity/test
 $HOME/work/github/solidity/scripts/isolate_tests.py $HOME/work/github/solidity/docs docs
 cd ..
