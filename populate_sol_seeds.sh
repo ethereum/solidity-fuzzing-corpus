@@ -9,5 +9,5 @@ cp -Rf test_sol ./solc_opt_ossfuzz_seed_corpus/
 cp -Rf test_sol ./solc_noopt_ossfuzz_seed_corpus/
 rm -rf test_sol
 git add ./solc_opt_ossfuzz_seed_corpus ./solc_noopt_ossfuzz_seed_corpus
-git commit -m "Updated solidity seed files via unit tests"
+git commit -m "Updated solidity seed files via solidity isolate_tests.py on `date -I`"
 git push origin master
