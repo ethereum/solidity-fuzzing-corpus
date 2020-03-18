@@ -1,0 +1,200 @@
+block {
+  statements {
+    breakstmt {
+    }
+  }
+  statements {
+    breakstmt {
+    }
+  }
+  statements {
+    extcode_copy {
+      addr {
+        unop {
+          op: NOT
+          operand {
+          }
+        }
+      }
+      target {
+        lowcall {
+          callty: CALL
+          gas {
+            lowcall {
+              callty: CALL
+              gas {
+                unop {
+                  op: NOT
+                  operand {
+                  }
+                }
+              }
+              addr {
+                unop {
+                  op: MLOAD
+                  operand {
+                    cons {
+                      intval: 0
+                    }
+                  }
+                }
+              }
+              wei {
+                unop {
+                  op: SLOAD
+                  operand {
+                    cons {
+                      intval: 0
+                    }
+                  }
+                }
+              }
+              in {
+                unop {
+                  op: CALLDATALOAD
+                  operand {
+                    unop {
+                      op: CALLDATALOAD
+                      operand {
+                        cons {
+                          intval: 0
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+              insize {
+                unop {
+                  op: SLOAD
+                  operand {
+                    cons {
+                      intval: 0
+                    }
+                  }
+                }
+              }
+              out {
+                unop {
+                  op: SLOAD
+                  operand {
+                    cons {
+                      intval: 0
+                    }
+                  }
+                }
+              }
+              outsize {
+                unop {
+                  op: CALLDATALOAD
+                  operand {
+                    cons {
+                      intval: 0
+                    }
+                  }
+                }
+              }
+            }
+          }
+          addr {
+          }
+          wei {
+            unop {
+              op: NOT
+              operand {
+              }
+            }
+          }
+          in {
+            unop {
+              op: MLOAD
+              operand {
+                cons {
+                  intval: 0
+                }
+              }
+            }
+          }
+          insize {
+            unop {
+              op: NOT
+              operand {
+                unop {
+                  op: SLOAD
+                  operand {
+                    cons {
+                      intval: 4096
+                    }
+                  }
+                }
+              }
+            }
+          }
+          out {
+            unop {
+              op: NOT
+              operand {
+              }
+            }
+          }
+          outsize {
+          }
+        }
+      }
+      source {
+        unop {
+          op: MLOAD
+          operand {
+            unop {
+              op: MLOAD
+              operand {
+                unop {
+                  op: CALLDATALOAD
+                  operand {
+                    cons {
+                      intval: 0
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+      size {
+        cons {
+          intval: 4096
+        }
+      }
+    }
+  }
+  statements {
+    breakstmt {
+    }
+  }
+  statements {
+    breakstmt {
+    }
+  }
+  statements {
+    breakstmt {
+    }
+  }
+  statements {
+    breakstmt {
+    }
+  }
+  statements {
+    breakstmt {
+    }
+  }
+  statements {
+    breakstmt {
+    }
+  }
+  statements {
+    breakstmt {
+    }
+  }
+}
+ver: HOMESTEAD

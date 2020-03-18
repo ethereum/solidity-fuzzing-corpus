@@ -1,0 +1,42 @@
+block {
+	statements {
+		funcdef {
+			num_input_params: 0
+			num_output_params: 1
+			force_call: true
+			block {
+				statements {
+					assignment {
+						ref_id {
+							varnum: 0
+						}
+						expr {
+							cons {
+								intval: 1337
+							}
+						}
+					}
+				}
+				statements {
+					leave {}
+				}
+				statements {
+					storage_func {
+						st: MSTORE
+						loc {
+							cons {
+								intval: 2
+							}
+						}
+						val {
+							cons {
+								intval: 1337
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
+ver: ISTANBUL

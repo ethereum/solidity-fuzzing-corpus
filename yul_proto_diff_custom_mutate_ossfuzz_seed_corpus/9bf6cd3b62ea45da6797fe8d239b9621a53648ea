@@ -1,0 +1,132 @@
+obj {
+  code {
+    block {
+      statements {
+        breakstmt {
+        }
+      }
+    }
+  }
+  sub_obj {
+    code {
+      block {
+        statements {
+          breakstmt {
+          }
+        }
+        statements {
+          copy_func {
+            ct: DATA
+            target {
+              binop {
+                op: OR
+                left {
+                }
+                right {
+                }
+              }
+            }
+            source {
+              binop {
+                op: OR
+                left {
+                }
+                right {
+                  unop {
+                    op: CALLDATALOAD
+                    operand {
+                      unop {
+                        op: SLOAD
+                        operand {
+                          cons {
+                            intval: 0
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+            size {
+            }
+          }
+        }
+        statements {
+          breakstmt {
+          }
+        }
+      }
+    }
+    sub_obj {
+      code {
+        block {
+          statements {
+          }
+          statements {
+            copy_func {
+              ct: DATA
+              target {
+                binop {
+                  op: OR
+                  left {
+                    cons {
+                      intval: 0
+                    }
+                  }
+                  right {
+                  }
+                }
+              }
+              source {
+              }
+              size {
+              }
+            }
+          }
+          statements {
+            breakstmt {
+            }
+          }
+          statements {
+            breakstmt {
+            }
+          }
+        }
+      }
+      sub_obj {
+        code {
+          block {
+            statements {
+              breakstmt {
+              }
+            }
+            statements {
+              breakstmt {
+              }
+            }
+          }
+        }
+        sub_obj {
+          code {
+            block {
+              statements {
+                breakstmt {
+                }
+              }
+              statements {
+                breakstmt {
+                }
+              }
+              statements {
+                breakstmt {
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+ver: TANGERINE

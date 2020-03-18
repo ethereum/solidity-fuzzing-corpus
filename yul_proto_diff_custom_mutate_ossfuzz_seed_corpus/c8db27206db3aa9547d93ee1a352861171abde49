@@ -1,0 +1,126 @@
+block {
+  statements {
+    breakstmt {
+    }
+  }
+  statements {
+    breakstmt {
+    }
+  }
+  statements {
+    breakstmt {
+    }
+  }
+  statements {
+    breakstmt {
+    }
+  }
+  statements {
+    breakstmt {
+    }
+  }
+  statements {
+  }
+  statements {
+    storage_func {
+      loc {
+        unop {
+          op: CALLDATALOAD
+          operand {
+            unop {
+              op: CALLDATALOAD
+              operand {
+                cons {
+                  intval: 0
+                }
+              }
+            }
+          }
+        }
+      }
+      val {
+        binop {
+          op: SHL
+          left {
+          }
+          right {
+            unop {
+              op: NOT
+              operand {
+                unop {
+                  op: CALLDATALOAD
+                  operand {
+                    cons {
+                      intval: 0
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+      st: MSTORE8
+    }
+  }
+  statements {
+    breakstmt {
+    }
+  }
+  statements {
+    breakstmt {
+    }
+  }
+  statements {
+    breakstmt {
+    }
+  }
+  statements {
+    storage_func {
+      loc {
+        unop {
+          op: CALLDATALOAD
+          operand {
+            unop {
+              op: NOT
+              operand {
+                unop {
+                  op: CALLDATALOAD
+                  operand {
+                    cons {
+                      intval: 0
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+      val {
+        binop {
+          op: SHL
+          left {
+          }
+          right {
+            unop {
+              op: NOT
+              operand {
+              }
+            }
+          }
+        }
+      }
+      st: MSTORE8
+    }
+  }
+  statements {
+    breakstmt {
+    }
+  }
+  statements {
+    breakstmt {
+    }
+  }
+}
+ver: ISTANBUL

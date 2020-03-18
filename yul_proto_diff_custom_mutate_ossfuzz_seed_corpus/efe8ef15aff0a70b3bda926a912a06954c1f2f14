@@ -1,0 +1,31 @@
+block {
+  statements {
+    ifstmt {
+      cond {
+        unop {
+          op: NOT
+          operand {
+            nop {
+              op: GASPRICE
+            }
+          }
+        }
+      }
+      if_body {
+        statements {
+          breakstmt {
+          }
+        }
+      }
+    }
+  }
+  statements {
+    breakstmt {
+    }
+  }
+  statements {
+    breakstmt {
+    }
+  }
+}
+ver: HOMESTEAD

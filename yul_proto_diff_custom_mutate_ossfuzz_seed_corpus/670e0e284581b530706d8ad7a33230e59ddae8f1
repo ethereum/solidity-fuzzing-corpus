@@ -1,0 +1,90 @@
+block {
+  statements {
+    copy_func {
+      ct: CALLDATA
+      target {
+      }
+      source {
+      }
+      size {
+        nop {
+          op: ADDRESS
+        }
+      }
+    }
+  }
+  statements {
+    breakstmt {
+    }
+  }
+  statements {
+    breakstmt {
+    }
+  }
+  statements {
+    copy_func {
+      ct: CALLDATA
+      target {
+      }
+      source {
+      }
+      size {
+        nop {
+          op: ADDRESS
+        }
+      }
+    }
+  }
+  statements {
+    copy_func {
+      ct: CALLDATA
+      target {
+        unop {
+          op: CALLDATALOAD
+          operand {
+            cons {
+              intval: 0
+            }
+          }
+        }
+      }
+      source {
+      }
+      size {
+        nop {
+          op: ADDRESS
+        }
+      }
+    }
+  }
+  statements {
+  }
+  statements {
+    breakstmt {
+    }
+  }
+  statements {
+    copy_func {
+      ct: CALLDATA
+      target {
+      }
+      source {
+      }
+      size {
+        unop {
+          op: CALLDATALOAD
+          operand {
+            cons {
+              intval: 0
+            }
+          }
+        }
+      }
+    }
+  }
+  statements {
+    breakstmt {
+    }
+  }
+}
+ver: SPURIOUS

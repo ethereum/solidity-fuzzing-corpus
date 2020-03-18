@@ -1,0 +1,37 @@
+block {
+  statements {
+    breakstmt {
+    }
+  }
+  statements {
+    decl {
+      expr {
+        binop {
+          op: KECCAK
+          left {
+            unop {
+              op: CALLDATALOAD
+              operand {
+                unop {
+                  op: CALLDATALOAD
+                  operand {
+                    cons {
+                      intval: 0
+                    }
+                  }
+                }
+              }
+            }
+          }
+          right {
+          }
+        }
+      }
+    }
+  }
+  statements {
+    breakstmt {
+    }
+  }
+}
+ver: HOMESTEAD

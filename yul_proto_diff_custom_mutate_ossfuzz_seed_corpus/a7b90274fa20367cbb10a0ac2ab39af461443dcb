@@ -1,0 +1,126 @@
+block {
+  statements {
+  }
+  statements {
+    breakstmt {
+    }
+  }
+  statements {
+  }
+  statements {
+    breakstmt {
+    }
+  }
+  statements {
+    breakstmt {
+    }
+  }
+  statements {
+    storage_func {
+      loc {
+      }
+      val {
+        lowcall {
+          callty: CALL
+          gas {
+            binop {
+              op: SMOD
+              left {
+                binop {
+                  op: SMOD
+                  left {
+                    unop {
+                      op: NOT
+                      operand {
+                      }
+                    }
+                  }
+                  right {
+                  }
+                }
+              }
+              right {
+              }
+            }
+          }
+          addr {
+            unop {
+            }
+          }
+          wei {
+            unop {
+              op: CALLDATALOAD
+              operand {
+                unop {
+                  op: MLOAD
+                  operand {
+                    cons {
+                      intval: 0
+                    }
+                  }
+                }
+              }
+            }
+          }
+          in {
+          }
+          insize {
+            binop {
+              op: SMOD
+              left {
+                binop {
+                  op: SMOD
+                  left {
+                    unop {
+                      op: NOT
+                      operand {
+                      }
+                    }
+                  }
+                  right {
+                  }
+                }
+              }
+              right {
+              }
+            }
+          }
+          out {
+            unop {
+              op: SLOAD
+              operand {
+                cons {
+                  intval: 0
+                }
+              }
+            }
+          }
+          outsize {
+            unop {
+              op: CALLDATALOAD
+              operand {
+                cons {
+                  intval: 0
+                }
+              }
+            }
+          }
+        }
+      }
+      st: MSTORE
+    }
+  }
+  statements {
+    breakstmt {
+    }
+  }
+  statements {
+    breakstmt {
+    }
+  }
+  statements {
+    breakstmt {
+    }
+  }
+}
+ver: HOMESTEAD

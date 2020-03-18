@@ -1,0 +1,176 @@
+obj {
+  code {
+    block {
+      statements {
+        storage_func {
+          loc {
+            binop {
+              op: GT
+              left {
+                unop {
+                  op: MLOAD
+                  operand {
+                    cons {
+                      intval: 0
+                    }
+                  }
+                }
+              }
+              right {
+                unop {
+                  op: ISZERO
+                  operand {
+                  }
+                }
+              }
+            }
+          }
+          val {
+          }
+          st: SSTORE
+        }
+      }
+      statements {
+        breakstmt {
+        }
+      }
+      statements {
+        breakstmt {
+        }
+      }
+    }
+  }
+  data {
+    hex: "\001\000"
+  }
+  sub_obj {
+    code {
+      block {
+        statements {
+          storage_func {
+            loc {
+              binop {
+                op: GT
+                left {
+                  cons {
+                    strval: "z"
+                  }
+                }
+                right {
+                  unop {
+                    op: ISZERO
+                    operand {
+                    }
+                  }
+                }
+              }
+            }
+            val {
+            }
+            st: SSTORE
+          }
+        }
+        statements {
+          breakstmt {
+          }
+        }
+        statements {
+          breakstmt {
+          }
+        }
+      }
+    }
+    sub_obj {
+      code {
+        block {
+          statements {
+            storage_func {
+              loc {
+                unop {
+                  op: CALLDATALOAD
+                  operand {
+                    cons {
+                      intval: 0
+                    }
+                  }
+                }
+              }
+              val {
+              }
+              st: SSTORE
+            }
+          }
+          statements {
+            breakstmt {
+            }
+          }
+          statements {
+            breakstmt {
+            }
+          }
+        }
+      }
+      sub_obj {
+        code {
+          block {
+            statements {
+              storage_func {
+                loc {
+                  binop {
+                    op: GT
+                    left {
+                      unop {
+                        op: CALLDATALOAD
+                        operand {
+                          cons {
+                            intval: 0
+                          }
+                        }
+                      }
+                    }
+                    right {
+                      unop {
+                        op: ISZERO
+                        operand {
+                        }
+                      }
+                    }
+                  }
+                }
+                val {
+                }
+                st: SSTORE
+              }
+            }
+            statements {
+              breakstmt {
+              }
+            }
+            statements {
+              breakstmt {
+              }
+            }
+          }
+        }
+        sub_obj {
+          code {
+            block {
+              statements {
+                breakstmt {
+                }
+              }
+              statements {
+                breakstmt {
+                }
+              }
+            }
+          }
+          data {
+            hex: "2"
+          }
+        }
+      }
+    }
+  }
+}
+ver: ISTANBUL

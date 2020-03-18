@@ -1,0 +1,101 @@
+obj {
+  code {
+    block {
+      statements {
+        breakstmt {
+        }
+      }
+      statements {
+        extcode_copy {
+          addr {
+          }
+          target {
+          }
+          source {
+          }
+          size {
+            binop {
+              op: ADD
+              left {
+              }
+              right {
+                binop {
+                  op: GT
+                  left {
+                    binop {
+                      op: GT
+                      left {
+                      }
+                      right {
+                      }
+                    }
+                  }
+                  right {
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+      statements {
+        breakstmt {
+        }
+      }
+      statements {
+        extcode_copy {
+          addr {
+          }
+          target {
+          }
+          source {
+            unop {
+              op: CALLDATALOAD
+              operand {
+                cons {
+                  intval: 0
+                }
+              }
+            }
+          }
+          size {
+            binop {
+              op: ADD
+              left {
+              }
+              right {
+                binop {
+                  op: GT
+                  left {
+                    binop {
+                      op: GT
+                      left {
+                      }
+                      right {
+                        unop {
+                          op: MLOAD
+                          operand {
+                            cons {
+                              intval: 0
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                  right {
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+      statements {
+        breakstmt {
+        }
+      }
+    }
+  }
+}
+ver: BERLIN

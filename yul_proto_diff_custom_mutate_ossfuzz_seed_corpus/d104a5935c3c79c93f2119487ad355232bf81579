@@ -1,0 +1,84 @@
+block {
+  statements {
+    copy_func {
+      ct: CALLDATA
+      target {
+        binop {
+          op: SI
+          left {
+          }
+          right {
+            unop {
+              op: MLOAD
+              operand {
+                cons {
+                  intval: 0
+                }
+              }
+            }
+          }
+        }
+      }
+      source {
+        unop {
+          op: CALLDATALOAD
+          operand {
+          }
+        }
+      }
+      size {
+      }
+    }
+  }
+  statements {
+    copy_func {
+      ct: RETURNDATA
+      target {
+        binop {
+          op: SI
+          left {
+          }
+          right {
+            unop {
+              op: MLOAD
+              operand {
+                cons {
+                  intval: 0
+                }
+              }
+            }
+          }
+        }
+      }
+      source {
+        unop {
+          op: CALLDATALOAD
+          operand {
+            cons {
+              intval: 0
+            }
+          }
+        }
+      }
+      size {
+      }
+    }
+  }
+  statements {
+    breakstmt {
+    }
+  }
+  statements {
+    breakstmt {
+    }
+  }
+  statements {
+    breakstmt {
+    }
+  }
+  statements {
+    breakstmt {
+    }
+  }
+}
+ver: ISTANBUL

@@ -1,0 +1,188 @@
+block {
+  statements {
+    breakstmt {
+    }
+  }
+  statements {
+    breakstmt {
+    }
+  }
+  statements {
+    breakstmt {
+    }
+  }
+  statements {
+    breakstmt {
+    }
+  }
+  statements {
+    pop {
+      expr {
+        binop {
+          op: ADD
+          left {
+            unop {
+              op: NOT
+              operand {
+              }
+            }
+          }
+          right {
+            binop {
+              op: SAR
+              left {
+                nop {
+                  op: MSIZE
+                }
+              }
+              right {
+                unop {
+                  op: NOT
+                  operand {
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  statements {
+    assignment {
+      ref_id {
+        varnum: 0
+      }
+      expr {
+        binop {
+          op: KECCAK
+          left {
+            binop {
+              op: KECCAK
+              left {
+              }
+              right {
+                unop {
+                  op: MLOAD
+                  operand {
+                    cons {
+                      intval: 0
+                    }
+                  }
+                }
+              }
+            }
+          }
+          right {
+            unop {
+              op: MLOAD
+              operand {
+                cons {
+                  intval: 0
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  statements {
+  }
+  statements {
+    breakstmt {
+    }
+  }
+  statements {
+    breakstmt {
+    }
+  }
+  statements {
+    breakstmt {
+    }
+  }
+  statements {
+    breakstmt {
+    }
+  }
+  statements {
+    breakstmt {
+    }
+  }
+  statements {
+    breakstmt {
+    }
+  }
+  statements {
+    extcode_copy {
+      addr {
+        binop {
+          op: SAR
+          left {
+          }
+          right {
+            unop {
+              op: NOT
+              operand {
+              }
+            }
+          }
+        }
+      }
+      target {
+        binop {
+          op: EQ
+          left {
+            unop {
+              op: NOT
+              operand {
+              }
+            }
+          }
+          right {
+          }
+        }
+      }
+      source {
+      }
+      size {
+      }
+    }
+  }
+  statements {
+    breakstmt {
+    }
+  }
+  statements {
+    copy_func {
+      ct: CALLDATA
+      target {
+      }
+      source {
+      }
+      size {
+      }
+    }
+  }
+  statements {
+    breakstmt {
+    }
+  }
+  statements {
+    breakstmt {
+    }
+  }
+  statements {
+    breakstmt {
+    }
+  }
+  statements {
+    breakstmt {
+    }
+  }
+  statements {
+    breakstmt {
+    }
+  }
+}
+ver: ISTANBUL

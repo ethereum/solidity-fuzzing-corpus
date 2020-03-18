@@ -1,0 +1,83 @@
+block {
+  statements {
+    terminatestmt {
+      self_des {
+        addr {
+          binop {
+            op: EXP
+            left {
+            }
+            right {
+              unop {
+                op: ISZERO
+                operand {
+                  binop {
+                    op: EXP
+                    left {
+                    }
+                    right {
+                      unop {
+                        op: ISZERO
+                        operand {
+                          cons {
+                            intval: 0
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  statements {
+    breakstmt {
+    }
+  }
+  statements {
+  }
+  statements {
+    terminatestmt {
+      self_des {
+        addr {
+          binop {
+            op: EXP
+            left {
+            }
+            right {
+              unop {
+                op: ISZERO
+                operand {
+                  binop {
+                    op: EXP
+                    left {
+                    }
+                    right {
+                      unop {
+                        op: CALLDATALOAD
+                        operand {
+                          cons {
+                            intval: 0
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  statements {
+    breakstmt {
+    }
+  }
+}
+ver: BYZANTIUM

@@ -1,0 +1,187 @@
+block {
+  statements {
+    breakstmt {
+    }
+  }
+  statements {
+    breakstmt {
+    }
+  }
+  statements {
+    breakstmt {
+    }
+  }
+  statements {
+    breakstmt {
+    }
+  }
+  statements {
+    pop {
+      expr {
+        nop {
+          op: PC
+        }
+      }
+    }
+  }
+  statements {
+    breakstmt {
+    }
+  }
+  statements {
+    decl {
+      expr {
+        unop {
+          op: NOT
+          operand {
+            cons {
+            }
+          }
+        }
+      }
+    }
+  }
+  statements {
+    breakstmt {
+    }
+  }
+  statements {
+    breakstmt {
+    }
+  }
+  statements {
+    breakstmt {
+    }
+  }
+  statements {
+    breakstmt {
+    }
+  }
+  statements {
+    breakstmt {
+    }
+  }
+  statements {
+  }
+  statements {
+    breakstmt {
+    }
+  }
+  statements {
+    storage_func {
+      loc {
+        unop {
+          op: CALLDATALOAD
+          operand {
+            cons {
+              intval: 0
+            }
+          }
+        }
+      }
+      val {
+        top {
+          op: ADDM
+          arg1 {
+          }
+          arg2 {
+          }
+          arg3 {
+            nop {
+              op: CALLDATASIZE
+            }
+          }
+        }
+      }
+      st: MSTORE
+    }
+  }
+  statements {
+    storage_func {
+      loc {
+        unop {
+          op: CALLDATALOAD
+          operand {
+            unop {
+              op: MLOAD
+              operand {
+                cons {
+                  intval: 0
+                }
+              }
+            }
+          }
+        }
+      }
+      val {
+        top {
+          op: ADDM
+          arg1 {
+          }
+          arg2 {
+            cons {
+              intval: 0
+            }
+          }
+          arg3 {
+            nop {
+              op: CALLDATASIZE
+            }
+          }
+        }
+      }
+      st: MSTORE
+    }
+  }
+  statements {
+    breakstmt {
+    }
+  }
+  statements {
+    breakstmt {
+    }
+  }
+  statements {
+    breakstmt {
+    }
+  }
+  statements {
+    decl {
+      expr {
+        top {
+          op: ADDM
+          arg1 {
+          }
+          arg2 {
+            varref {
+              varnum: 0
+            }
+          }
+          arg3 {
+          }
+        }
+      }
+    }
+  }
+  statements {
+    breakstmt {
+    }
+  }
+  statements {
+    breakstmt {
+    }
+  }
+  statements {
+    breakstmt {
+    }
+  }
+  statements {
+    breakstmt {
+    }
+  }
+  statements {
+    breakstmt {
+    }
+  }
+}
+ver: BERLIN

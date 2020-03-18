@@ -1,0 +1,124 @@
+block {
+  statements {
+    breakstmt {
+    }
+  }
+  statements {
+    breakstmt {
+    }
+  }
+  statements {
+    breakstmt {
+    }
+  }
+  statements {
+  }
+  statements {
+    pop {
+      expr {
+        binop {
+          op: SHR
+          left {
+          }
+          right {
+            unop {
+              op: SLOAD
+              operand {
+                cons {
+                  intval: 0
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  statements {
+    breakstmt {
+    }
+  }
+  statements {
+    breakstmt {
+    }
+  }
+  statements {
+    ifstmt {
+      cond {
+        unop {
+          op: NOT
+          operand {
+          }
+        }
+      }
+      if_body {
+        statements {
+          forstmt {
+            for_body {
+              statements {
+                switchstmt {
+                  switch_expr {
+                  }
+                  default_block {
+                    statements {
+                      extcode_copy {
+                        addr {
+                          unop {
+                            op: CALLDATALOAD
+                            operand {
+                            }
+                          }
+                        }
+                        target {
+                        }
+                        source {
+                        }
+                        size {
+                        }
+                      }
+                    }
+                    statements {
+                      breakstmt {
+                      }
+                    }
+                  }
+                }
+              }
+              statements {
+                breakstmt {
+                }
+              }
+            }
+            for_init {
+              statements {
+                breakstmt {
+                }
+              }
+            }
+            for_post {
+              statements {
+                breakstmt {
+                }
+              }
+            }
+            for_cond {
+            }
+          }
+        }
+        statements {
+          breakstmt {
+          }
+        }
+      }
+    }
+  }
+  statements {
+    breakstmt {
+    }
+  }
+  statements {
+    breakstmt {
+    }
+  }
+}
+ver: CONSTANTINOPLE

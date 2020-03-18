@@ -1,0 +1,47 @@
+block {
+  statements {
+    breakstmt {
+    }
+  }
+  statements {
+    forstmt {
+      for_body {
+        statements {
+          contstmt {
+          }
+        }
+        statements {
+          breakstmt {
+          }
+        }
+      }
+      for_init {
+        statements {
+          breakstmt {
+          }
+        }
+      }
+      for_post {
+        statements {
+          breakstmt {
+          }
+        }
+      }
+      for_cond {
+        unop {
+          op: CALLDATALOAD
+          operand {
+            cons {
+              intval: 0
+            }
+          }
+        }
+      }
+    }
+  }
+  statements {
+    breakstmt {
+    }
+  }
+}
+ver: ISTANBUL

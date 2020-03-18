@@ -1,0 +1,224 @@
+block {
+  statements {
+    breakstmt {
+    }
+  }
+  statements {
+    breakstmt {
+    }
+  }
+  statements {
+    breakstmt {
+    }
+  }
+  statements {
+    breakstmt {
+    }
+  }
+  statements {
+    storage_func {
+      loc {
+        unop {
+          op: SLOAD
+          operand {
+            unop {
+              op: MLOAD
+              operand {
+                unop {
+                  op: MLOAD
+                  operand {
+                    cons {
+                      intval: 0
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+      val {
+        unop {
+          op: BALANCE
+          operand {
+            unop {
+              op: CALLDATALOAD
+              operand {
+                cons {
+                  intval: 0
+                }
+              }
+            }
+          }
+        }
+      }
+      st: SSTORE
+    }
+  }
+  statements {
+    breakstmt {
+    }
+  }
+  statements {
+    breakstmt {
+    }
+  }
+  statements {
+    breakstmt {
+    }
+  }
+  statements {
+    breakstmt {
+    }
+  }
+  statements {
+    breakstmt {
+    }
+  }
+  statements {
+    storage_func {
+      loc {
+      }
+      val {
+        unop {
+          op: MLOAD
+          operand {
+            cons {
+              intval: 0
+            }
+          }
+        }
+      }
+      st: MSTORE
+    }
+  }
+  statements {
+    funcdef {
+      num_input_params: 0
+      num_output_params: 0
+      block {
+        statements {
+          terminatestmt {
+            self_des {
+              addr {
+                nop {
+                  op: MSIZE
+                }
+              }
+            }
+          }
+        }
+        statements {
+          breakstmt {
+          }
+        }
+        statements {
+          breakstmt {
+          }
+        }
+        statements {
+          breakstmt {
+          }
+        }
+        statements {
+          breakstmt {
+          }
+        }
+        statements {
+          breakstmt {
+          }
+        }
+        statements {
+          breakstmt {
+          }
+        }
+        statements {
+          breakstmt {
+          }
+        }
+        statements {
+          breakstmt {
+          }
+        }
+        statements {
+          breakstmt {
+          }
+        }
+        statements {
+          breakstmt {
+          }
+        }
+        statements {
+          breakstmt {
+          }
+        }
+      }
+      force_call: true
+    }
+  }
+  statements {
+    breakstmt {
+    }
+  }
+  statements {
+    breakstmt {
+    }
+  }
+  statements {
+    breakstmt {
+    }
+  }
+  statements {
+    breakstmt {
+    }
+  }
+  statements {
+    breakstmt {
+    }
+  }
+  statements {
+    breakstmt {
+    }
+  }
+  statements {
+    breakstmt {
+    }
+  }
+  statements {
+    breakstmt {
+    }
+  }
+  statements {
+    copy_func {
+      ct: CALLDATA
+      target {
+      }
+      source {
+      }
+      size {
+        lowcall {
+          callty: DELEGATECALL
+          gas {
+          }
+          addr {
+          }
+          wei {
+          }
+          in {
+          }
+          insize {
+          }
+          out {
+          }
+          outsize {
+          }
+        }
+      }
+    }
+  }
+  statements {
+    breakstmt {
+    }
+  }
+}
+ver: PETERSBURG

@@ -1,0 +1,122 @@
+block {
+  statements {
+    breakstmt {
+    }
+  }
+  statements {
+    breakstmt {
+    }
+  }
+  statements {
+    switchstmt {
+      switch_expr {
+      }
+      case_stmt {
+        case_lit {
+        }
+        case_block {
+          statements {
+            copy_func {
+              ct: CALLDATA
+              target {
+                unop {
+                  op: EXTCODESIZE
+                  operand {
+                  }
+                }
+              }
+              source {
+              }
+              size {
+              }
+            }
+          }
+          statements {
+            breakstmt {
+            }
+          }
+        }
+      }
+      case_stmt {
+        case_lit {
+        }
+        case_block {
+          statements {
+            copy_func {
+              ct: CALLDATA
+              target {
+                unop {
+                  op: CALLDATALOAD
+                  operand {
+                    cons {
+                      intval: 0
+                    }
+                  }
+                }
+              }
+              source {
+                nop {
+                  op: RETURNDATASIZE
+                }
+              }
+              size {
+              }
+            }
+          }
+          statements {
+            breakstmt {
+            }
+          }
+          statements {
+            breakstmt {
+            }
+          }
+          statements {
+            breakstmt {
+            }
+          }
+          statements {
+            breakstmt {
+            }
+          }
+          statements {
+            breakstmt {
+            }
+          }
+          statements {
+            breakstmt {
+            }
+          }
+          statements {
+            breakstmt {
+            }
+          }
+          statements {
+            breakstmt {
+            }
+          }
+        }
+      }
+    }
+  }
+  statements {
+    terminatestmt {
+      stop_invalid {
+        stmt: INVALID
+      }
+    }
+  }
+  statements {
+    breakstmt {
+    }
+  }
+  statements {
+    breakstmt {
+    }
+  }
+  statements {
+    breakstmt {
+    }
+  }
+}
+ver: CONSTANTINOPLE

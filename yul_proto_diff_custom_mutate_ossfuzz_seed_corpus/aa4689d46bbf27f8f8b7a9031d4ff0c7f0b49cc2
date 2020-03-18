@@ -1,0 +1,222 @@
+block {
+  statements {
+    copy_func {
+      ct: CALLDATA
+      target {
+      }
+      source {
+        binop {
+          op: SHR
+          left {
+            binop {
+              op: BYTE
+              left {
+                unop {
+                  op: MLOAD
+                  operand {
+                    cons {
+                      intval: 0
+                    }
+                  }
+                }
+              }
+              right {
+              }
+            }
+          }
+          right {
+            binop {
+              op: BYTE
+              left {
+                binop {
+                  op: BYTE
+                  left {
+                  }
+                  right {
+                    unop {
+                      op: CALLDATALOAD
+                      operand {
+                        cons {
+                          intval: 0
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+              right {
+              }
+            }
+          }
+        }
+      }
+      size {
+      }
+    }
+  }
+  statements {
+    copy_func {
+      ct: CALLDATA
+      target {
+      }
+      source {
+        binop {
+          op: BYTE
+          left {
+            binop {
+              op: BYTE
+              left {
+              }
+              right {
+              }
+            }
+          }
+          right {
+            binop {
+              op: BYTE
+              left {
+                unop {
+                  op: MLOAD
+                  operand {
+                    unop {
+                      op: NOT
+                      operand {
+                      }
+                    }
+                  }
+                }
+              }
+              right {
+              }
+            }
+          }
+        }
+      }
+      size {
+      }
+    }
+  }
+  statements {
+    copy_func {
+      ct: CALLDATA
+      target {
+      }
+      source {
+        binop {
+          op: BYTE
+          left {
+            binop {
+              op: BYTE
+              left {
+              }
+              right {
+              }
+            }
+          }
+          right {
+            binop {
+              op: BYTE
+              left {
+                binop {
+                  op: BYTE
+                  left {
+                  }
+                  right {
+                    unop {
+                      op: CALLDATALOAD
+                      operand {
+                        cons {
+                          intval: 0
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+              right {
+                unop {
+                  op: CALLDATALOAD
+                  operand {
+                    cons {
+                      intval: 0
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+      size {
+      }
+    }
+  }
+  statements {
+    copy_func {
+      ct: CALLDATA
+      target {
+      }
+      source {
+        binop {
+          op: OR
+          left {
+            binop {
+              op: BYTE
+              left {
+              }
+              right {
+              }
+            }
+          }
+          right {
+            binop {
+              op: BYTE
+              left {
+                binop {
+                  op: BYTE
+                  left {
+                  }
+                  right {
+                  }
+                }
+              }
+              right {
+                unop {
+                  op: SLOAD
+                  operand {
+                    cons {
+                      intval: 0
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+      size {
+        unop {
+          op: SLOAD
+          operand {
+            cons {
+              intval: 0
+            }
+          }
+        }
+      }
+    }
+  }
+  statements {
+    breakstmt {
+    }
+  }
+  statements {
+    breakstmt {
+    }
+  }
+  statements {
+    breakstmt {
+    }
+  }
+}
+ver: ISTANBUL

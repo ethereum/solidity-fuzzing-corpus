@@ -1,0 +1,91 @@
+block {
+  statements {
+    storage_func {
+      loc {
+        lowcall {
+          callty: CALL
+          gas {
+          }
+          addr {
+            top {
+              op: ADDM
+              arg1 {
+              }
+              arg2 {
+              }
+              arg3 {
+                lowcall {
+                  callty: CALL
+                  gas {
+                  }
+                  addr {
+                  }
+                  wei {
+                    varref {
+                      varnum: -458752
+                    }
+                  }
+                  in {
+                  }
+                  insize {
+                  }
+                  out {
+                  }
+                  outsize {
+                  }
+                }
+              }
+            }
+          }
+          wei {
+          }
+          in {
+            unop {
+              op: EXTCODESIZE
+              operand {
+              }
+            }
+          }
+          insize {
+          }
+          out {
+          }
+          outsize {
+          }
+        }
+      }
+      val {
+        unop {
+          op: CALLDATALOAD
+          operand {
+            cons {
+              intval: 0
+            }
+          }
+        }
+      }
+      st: MSTORE
+    }
+  }
+  statements {
+    breakstmt {
+    }
+  }
+  statements {
+    breakstmt {
+    }
+  }
+  statements {
+    breakstmt {
+    }
+  }
+  statements {
+    breakstmt {
+    }
+  }
+  statements {
+    breakstmt {
+    }
+  }
+}
+ver: ISTANBUL

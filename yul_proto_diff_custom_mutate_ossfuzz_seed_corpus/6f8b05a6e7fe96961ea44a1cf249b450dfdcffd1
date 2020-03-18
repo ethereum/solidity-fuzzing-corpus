@@ -1,0 +1,166 @@
+block {
+  statements {
+    extcode_copy {
+      addr {
+        unop {
+          op: MLOAD
+          operand {
+            cons {
+              intval: 0
+            }
+          }
+        }
+      }
+      target {
+        lowcall {
+          callty: CALL
+          gas {
+            lowcall {
+              callty: CALL
+              gas {
+                lowcall {
+                  callty: CALL
+                  gas {
+                  }
+                  addr {
+                    unop {
+                      op: NOT
+                      operand {
+                      }
+                    }
+                  }
+                  wei {
+                  }
+                  in {
+                    unop {
+                      op: SLOAD
+                      operand {
+                        cons {
+                          intval: 0
+                        }
+                      }
+                    }
+                  }
+                  insize {
+                  }
+                  out {
+                  }
+                  outsize {
+                  }
+                }
+              }
+              addr {
+              }
+              wei {
+                unop {
+                  op: SLOAD
+                  operand {
+                    cons {
+                      hexval: "\022\000\000\000"
+                    }
+                  }
+                }
+              }
+              in {
+              }
+              insize {
+              }
+              out {
+                unop {
+                  op: NOT
+                  operand {
+                  }
+                }
+              }
+              outsize {
+                unop {
+                  op: CALLDATALOAD
+                  operand {
+                    cons {
+                      intval: 0
+                    }
+                  }
+                }
+              }
+            }
+          }
+          addr {
+          }
+          wei {
+            unop {
+              op: NOT
+              operand {
+              }
+            }
+          }
+          in {
+          }
+          insize {
+          }
+          out {
+            unop {
+              op: NOT
+              operand {
+              }
+            }
+          }
+          outsize {
+          }
+        }
+      }
+      source {
+        unop {
+          op: SLOAD
+          operand {
+            cons {
+              intval: 0
+            }
+          }
+        }
+      }
+      size {
+        unop {
+          op: CALLDATALOAD
+          operand {
+            cons {
+              intval: 0
+            }
+          }
+        }
+      }
+    }
+  }
+  statements {
+    breakstmt {
+    }
+  }
+  statements {
+    breakstmt {
+    }
+  }
+  statements {
+    breakstmt {
+    }
+  }
+  statements {
+    breakstmt {
+    }
+  }
+  statements {
+    breakstmt {
+    }
+  }
+  statements {
+    breakstmt {
+    }
+  }
+  statements {
+    breakstmt {
+    }
+  }
+  statements {
+    breakstmt {
+    }
+  }
+}
+ver: TANGERINE

@@ -1,0 +1,192 @@
+block {
+  statements {
+    extcode_copy {
+      addr {
+        unop {
+          op: SLOAD
+          operand {
+            unop {
+              op: SLOAD
+              operand {
+                cons {
+                  intval: 0
+                }
+              }
+            }
+          }
+        }
+      }
+      target {
+        lowcall {
+          callty: CALL
+          gas {
+            lowcall {
+              callty: CALL
+              gas {
+                lowcall {
+                  callty: CALL
+                  gas {
+                  }
+                  addr {
+                    unop {
+                      op: MLOAD
+                      operand {
+                        cons {
+                          intval: 0
+                        }
+                      }
+                    }
+                  }
+                  wei {
+                  }
+                  in {
+                    unop {
+                    }
+                  }
+                  insize {
+                  }
+                  out {
+                  }
+                  outsize {
+                    unop {
+                      op: CALLDATALOAD
+                      operand {
+                        cons {
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+              addr {
+              }
+              wei {
+                unop {
+                  op: CALLDATALOAD
+                  operand {
+                    cons {
+                      intval: 0
+                    }
+                  }
+                }
+              }
+              in {
+                varref {
+                  varnum: 6422528
+                }
+              }
+              insize {
+              }
+              out {
+                unop {
+                  op: NOT
+                  operand {
+                  }
+                }
+              }
+              outsize {
+                unop {
+                  op: MLOAD
+                  operand {
+                    cons {
+                      intval: 0
+                    }
+                  }
+                }
+              }
+            }
+          }
+          addr {
+            unop {
+              op: MLOAD
+              operand {
+                unop {
+                  op: SLOAD
+                  operand {
+                    cons {
+                      intval: 0
+                    }
+                  }
+                }
+              }
+            }
+          }
+          wei {
+            unop {
+              op: NOT
+              operand {
+              }
+            }
+          }
+          in {
+          }
+          insize {
+          }
+          out {
+            unop {
+              op: SLOAD
+              operand {
+                cons {
+                  intval: 0
+                }
+              }
+            }
+          }
+          outsize {
+            unop {
+              op: SLOAD
+              operand {
+                cons {
+                  intval: 0
+                }
+              }
+            }
+          }
+        }
+      }
+      source {
+        unop {
+          op: CALLDATALOAD
+          operand {
+            cons {
+              intval: 0
+            }
+          }
+        }
+      }
+      size {
+        binop {
+          op: ADD
+          left {
+          }
+          right {
+            nop {
+              op: GASLIMIT
+            }
+          }
+        }
+      }
+    }
+  }
+  statements {
+    breakstmt {
+    }
+  }
+  statements {
+    breakstmt {
+    }
+  }
+  statements {
+    breakstmt {
+    }
+  }
+  statements {
+    breakstmt {
+    }
+  }
+  statements {
+    breakstmt {
+    }
+  }
+}
+ver: ISTANBUL

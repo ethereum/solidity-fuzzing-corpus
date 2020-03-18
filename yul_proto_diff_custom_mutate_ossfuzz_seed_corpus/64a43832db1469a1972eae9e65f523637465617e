@@ -1,0 +1,95 @@
+block {
+  statements {
+    extcode_copy {
+      addr {
+        lowcall {
+          callty: CALL
+          gas {
+            unop {
+              op: NOT
+              operand {
+                cons {
+                  hexval: ":"
+                }
+              }
+            }
+          }
+          addr {
+            unop {
+              op: SLOAD
+              operand {
+                unop {
+                  op: SLOAD
+                  operand {
+                    cons {
+                      intval: 0
+                    }
+                  }
+                }
+              }
+            }
+          }
+          wei {
+            nop {
+              op: GAS
+            }
+          }
+          in {
+            unop {
+              op: CALLDATALOAD
+              operand {
+                cons {
+                  intval: 0
+                }
+              }
+            }
+          }
+          insize {
+            unop {
+              op: SLOAD
+              operand {
+                unop {
+                  op: MLOAD
+                  operand {
+                    cons {
+                      intval: 0
+                    }
+                  }
+                }
+              }
+            }
+          }
+          out {
+          }
+          outsize {
+            unop {
+              op: SLOAD
+              operand {
+                cons {
+                  intval: 0
+                }
+              }
+            }
+          }
+        }
+      }
+      target {
+      }
+      source {
+      }
+      size {
+      }
+    }
+  }
+  statements {
+  }
+  statements {
+    breakstmt {
+    }
+  }
+  statements {
+    breakstmt {
+    }
+  }
+}
+ver: BYZANTIUM

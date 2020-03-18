@@ -1,0 +1,92 @@
+block {
+  statements {
+    breakstmt {
+    }
+  }
+  statements {
+    breakstmt {
+    }
+  }
+  statements {
+    breakstmt {
+    }
+  }
+  statements {
+    breakstmt {
+    }
+  }
+  statements {
+  }
+  statements {
+    breakstmt {
+    }
+  }
+  statements {
+    breakstmt {
+    }
+  }
+  statements {
+    breakstmt {
+    }
+  }
+  statements {
+    storage_func {
+      loc {
+        binop {
+          op: SUB
+          left {
+          }
+          right {
+            binop {
+              op: ADD
+              left {
+                unop {
+                  op: CALLDATALOAD
+                  operand {
+                    cons {
+                      intval: 0
+                    }
+                  }
+                }
+              }
+              right {
+                binop {
+                  op: SUB
+                  left {
+                  }
+                  right {
+                    nop {
+                      op: SELFBALANCE
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+      val {
+        unop {
+          op: MLOAD
+          operand {
+            cons {
+              intval: 0
+            }
+          }
+        }
+      }
+      st: MSTORE8
+    }
+  }
+  statements {
+  }
+  statements {
+    breakstmt {
+    }
+  }
+  statements {
+    breakstmt {
+    }
+  }
+}
+ver: HOMESTEAD

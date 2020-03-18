@@ -1,0 +1,87 @@
+obj {
+  code {
+    block {
+      statements {
+        breakstmt {
+        }
+      }
+      statements {
+        storage_func {
+          loc {
+            unop {
+              op: NOT
+              operand {
+              }
+            }
+          }
+          val {
+          }
+          st: SSTORE
+        }
+      }
+      statements {
+        breakstmt {
+        }
+      }
+      statements {
+        storage_func {
+          loc {
+            unop {
+              op: BLOCKHASH
+              operand {
+                unop {
+                  op: SLOAD
+                  operand {
+                    cons {
+                      intval: 0
+                    }
+                  }
+                }
+              }
+            }
+          }
+          val {
+          }
+          st: SSTORE
+        }
+      }
+      statements {
+        storage_func {
+          loc {
+            unop {
+              op: ISZERO
+              operand {
+                unop {
+                }
+              }
+            }
+          }
+          val {
+            unop {
+              op: SLOAD
+              operand {
+                cons {
+                  intval: 0
+                }
+              }
+            }
+          }
+          st: SSTORE
+        }
+      }
+      statements {
+        breakstmt {
+        }
+      }
+      statements {
+        breakstmt {
+        }
+      }
+      statements {
+        breakstmt {
+        }
+      }
+    }
+  }
+}
+ver: BYZANTIUM

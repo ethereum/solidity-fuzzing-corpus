@@ -1,0 +1,163 @@
+block {
+  statements {
+    breakstmt {
+    }
+  }
+  statements {
+    extcode_copy {
+      addr {
+      }
+      target {
+        lowcall {
+          callty: CALL
+          gas {
+            unop {
+              op: CALLDATALOAD
+              operand {
+                cons {
+                  intval: 0
+                }
+              }
+            }
+          }
+          addr {
+            unop {
+            }
+          }
+          wei {
+            unop {
+              op: CALLDATALOAD
+              operand {
+              }
+            }
+          }
+          in {
+          }
+          insize {
+          }
+          out {
+            unop {
+              op: NOT
+              operand {
+              }
+            }
+          }
+          outsize {
+          }
+        }
+      }
+      source {
+        unop {
+          op: NOT
+          operand {
+          }
+        }
+      }
+      size {
+        unop {
+          op: MLOAD
+          operand {
+            cons {
+              intval: 0
+            }
+          }
+        }
+      }
+    }
+  }
+  statements {
+    extcode_copy {
+      addr {
+      }
+      target {
+        lowcall {
+          callty: CALL
+          gas {
+            unop {
+              op: CALLDATALOAD
+              operand {
+                cons {
+                  intval: 0
+                }
+              }
+            }
+          }
+          addr {
+          }
+          wei {
+            unop {
+              op: SLOAD
+              operand {
+                cons {
+                  intval: 0
+                }
+              }
+            }
+          }
+          in {
+          }
+          insize {
+          }
+          out {
+            unop {
+              op: SLOAD
+              operand {
+                cons {
+                }
+              }
+            }
+          }
+          outsize {
+          }
+        }
+      }
+      source {
+      }
+      size {
+      }
+    }
+  }
+  statements {
+    breakstmt {
+    }
+  }
+  statements {
+    breakstmt {
+    }
+  }
+  statements {
+    breakstmt {
+    }
+  }
+  statements {
+    breakstmt {
+    }
+  }
+  statements {
+    breakstmt {
+    }
+  }
+  statements {
+    breakstmt {
+    }
+  }
+  statements {
+    breakstmt {
+    }
+  }
+  statements {
+    breakstmt {
+    }
+  }
+  statements {
+  }
+  statements {
+    breakstmt {
+    }
+  }
+  statements {
+    breakstmt {
+    }
+  }
+}
+ver: ISTANBUL

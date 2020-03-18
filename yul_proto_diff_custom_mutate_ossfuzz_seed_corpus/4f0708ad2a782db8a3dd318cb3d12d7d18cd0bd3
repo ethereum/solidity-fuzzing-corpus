@@ -1,0 +1,151 @@
+block {
+  statements {
+    storage_func {
+      loc {
+      }
+      val {
+        binop {
+          op: SLT
+          left {
+            varref {
+              varnum: 6
+            }
+          }
+          right {
+            varref {
+              varnum: 100663552
+            }
+          }
+        }
+      }
+      st: MSTORE8
+    }
+  }
+  statements {
+    decl {
+      expr {
+        unop {
+          op: BLOCKHASH
+          operand {
+          }
+        }
+      }
+    }
+  }
+  statements {
+    ifstmt {
+      cond {
+      }
+      if_body {
+        statements {
+          terminatestmt {
+            ret_rev {
+              stmt: REVERT
+              pos {
+              }
+              size {
+                binop {
+                  op: SLT
+                  left {
+                    varref {
+                      varnum: 6
+                    }
+                  }
+                  right {
+                    varref {
+                      varnum: 100663552
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  statements {
+    storage_func {
+      loc {
+      }
+      val {
+        binop {
+          op: SLT
+          left {
+            varref {
+              varnum: 100663296
+            }
+          }
+          right {
+            varref {
+              varnum: 6
+            }
+          }
+        }
+      }
+      st: MSTORE8
+    }
+  }
+  statements {
+    storage_func {
+      loc {
+      }
+      val {
+        binop {
+          op: SLT
+          left {
+            varref {
+              varnum: 6
+            }
+          }
+          right {
+            varref {
+              varnum: 6
+            }
+          }
+        }
+      }
+      st: MSTORE8
+    }
+  }
+  statements {
+  }
+  statements {
+    contstmt {
+    }
+  }
+  statements {
+  }
+  statements {
+  }
+  statements {
+    extcode_copy {
+      addr {
+        cons {
+          strval: "\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377"
+        }
+      }
+      target {
+      }
+      source {
+        varref {
+          varnum: -419430400
+        }
+      }
+      size {
+      }
+    }
+  }
+  statements {
+    decl {
+      expr {
+        unop {
+          op: BLOCKHASH
+          operand {
+          }
+        }
+      }
+    }
+  }
+}
+ver: HOMESTEAD

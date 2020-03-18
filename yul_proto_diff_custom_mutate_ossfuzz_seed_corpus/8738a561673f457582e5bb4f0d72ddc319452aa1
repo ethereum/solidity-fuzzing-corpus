@@ -1,0 +1,86 @@
+block {
+  statements {
+    decl {
+      expr {
+        nop {
+          op: CALLDATASIZE
+        }
+      }
+    }
+  }
+  statements {
+    boundedforstmt {
+      for_body {
+        statements {
+          extcode_copy {
+            addr {
+              lowcall {
+                callty: CALL
+                gas {
+                }
+                addr {
+                }
+                wei {
+                }
+                in {
+                  lowcall {
+                    callty: CALL
+                    gas {
+                    }
+                    addr {
+                    }
+                    wei {
+                    }
+                    in {
+                    }
+                    insize {
+                    }
+                    out {
+                    }
+                    outsize {
+                      top {
+                        op: ADDM
+                        arg1 {
+                          unop {
+                            op: CALLDATALOAD
+                            operand {
+                            }
+                          }
+                        }
+                        arg2 {
+                        }
+                        arg3 {
+                        }
+                      }
+                    }
+                  }
+                }
+                insize {
+                }
+                out {
+                }
+                outsize {
+                }
+              }
+            }
+            target {
+            }
+            source {
+            }
+            size {
+            }
+          }
+        }
+        statements {
+          breakstmt {
+          }
+        }
+      }
+    }
+  }
+  statements {
+    breakstmt {
+    }
+  }
+}
+ver: HOMESTEAD

@@ -1,0 +1,216 @@
+block {
+  statements {
+  }
+  statements {
+  }
+  statements {
+    storage_func {
+      loc {
+        unop {
+          op: SLOAD
+          operand {
+            cons {
+              intval: 0
+            }
+          }
+        }
+      }
+      val {
+        lowcall {
+          callty: CALL
+          gas {
+            binop {
+              op: EQ
+              left {
+              }
+              right {
+                binop {
+                  op: EQ
+                  left {
+                  }
+                  right {
+                  }
+                }
+              }
+            }
+          }
+          addr {
+            unop {
+              op: MLOAD
+              operand {
+                cons {
+                  intval: 0
+                }
+              }
+            }
+          }
+          wei {
+            unop {
+              op: NOT
+              operand {
+                unop {
+                  op: SLOAD
+                  operand {
+                    cons {
+                      intval: 0
+                    }
+                  }
+                }
+              }
+            }
+          }
+          in {
+            unop {
+              op: MLOAD
+              operand {
+                unop {
+                  op: SLOAD
+                  operand {
+                    cons {
+                      intval: 0
+                    }
+                  }
+                }
+              }
+            }
+          }
+          insize {
+          }
+          out {
+            cons {
+              strval: "\010"
+            }
+          }
+          outsize {
+          }
+        }
+      }
+      st: MSTORE
+    }
+  }
+  statements {
+    breakstmt {
+    }
+  }
+  statements {
+    breakstmt {
+    }
+  }
+  statements {
+  }
+  statements {
+    breakstmt {
+    }
+  }
+  statements {
+    breakstmt {
+    }
+  }
+  statements {
+    breakstmt {
+    }
+  }
+  statements {
+    storage_func {
+      loc {
+        unop {
+        }
+      }
+      val {
+        lowcall {
+          callty: CALL
+          gas {
+            binop {
+              op: EQ
+              left {
+              }
+              right {
+                binop {
+                  op: EQ
+                  left {
+                  }
+                  right {
+                  }
+                }
+              }
+            }
+          }
+          addr {
+            unop {
+              op: MLOAD
+              operand {
+                unop {
+                  op: MLOAD
+                  operand {
+                    cons {
+                      intval: 0
+                    }
+                  }
+                }
+              }
+            }
+          }
+          wei {
+            unop {
+              op: NOT
+              operand {
+                unop {
+                  op: CALLDATALOAD
+                  operand {
+                    cons {
+                      intval: 0
+                    }
+                  }
+                }
+              }
+            }
+          }
+          in {
+            unop {
+              op: MLOAD
+              operand {
+                unop {
+                  op: SLOAD
+                  operand {
+                    cons {
+                      intval: 0
+                    }
+                  }
+                }
+              }
+            }
+          }
+          insize {
+          }
+          out {
+            cons {
+              strval: "\010"
+            }
+          }
+          outsize {
+          }
+        }
+      }
+      st: MSTORE
+    }
+  }
+  statements {
+    breakstmt {
+    }
+  }
+  statements {
+  }
+  statements {
+    breakstmt {
+    }
+  }
+  statements {
+    breakstmt {
+    }
+  }
+  statements {
+    breakstmt {
+    }
+  }
+}
+ver: BERLIN

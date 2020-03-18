@@ -1,0 +1,108 @@
+block {
+  statements {
+    decl {
+      expr {
+        lowcall {
+          callty: STATICCALL
+          gas {
+            unop {
+              op: CALLDATALOAD
+              operand {
+                cons {
+                  intval: 0
+                }
+              }
+            }
+          }
+          addr {
+          }
+          wei {
+          }
+          in {
+          }
+          insize {
+          }
+          out {
+          }
+          outsize {
+          }
+        }
+      }
+    }
+  }
+  statements {
+    breakstmt {
+    }
+  }
+  statements {
+    decl {
+      expr {
+        lowcall {
+          callty: STATICCALL
+          gas {
+          }
+          addr {
+            unop {
+              op: CALLDATALOAD
+              operand {
+                cons {
+                  intval: 0
+                }
+              }
+            }
+          }
+          wei {
+          }
+          in {
+          }
+          insize {
+          }
+          out {
+            unop {
+              op: MLOAD
+              operand {
+                cons {
+                  intval: 0
+                }
+              }
+            }
+          }
+          outsize {
+          }
+        }
+      }
+    }
+  }
+  statements {
+    decl {
+      expr {
+        lowcall {
+          callty: STATICCALL
+          gas {
+          }
+          addr {
+          }
+          wei {
+          }
+          in {
+          }
+          insize {
+          }
+          out {
+          }
+          outsize {
+          }
+        }
+      }
+    }
+  }
+  statements {
+    breakstmt {
+    }
+  }
+  statements {
+    breakstmt {
+    }
+  }
+}
+ver: TANGERINE

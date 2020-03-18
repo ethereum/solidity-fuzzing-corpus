@@ -1,0 +1,88 @@
+block {
+  statements {
+    breakstmt {
+    }
+  }
+  statements {
+    breakstmt {
+    }
+  }
+  statements {
+    breakstmt {
+    }
+  }
+  statements {
+    copy_func {
+      ct: CALLDATA
+      target {
+        unop {
+          op: BALANCE
+          operand {
+            binop {
+              op: SMOD
+              left {
+                unop {
+                  op: CALLDATALOAD
+                  operand {
+                    cons {
+                      intval: 0
+                    }
+                  }
+                }
+              }
+              right {
+                unop {
+                  op: EXTCODEHASH
+                  operand {
+                    unop {
+                      op: SLOAD
+                      operand {
+                        cons {
+                          intval: 0
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+      source {
+        unop {
+          op: SLOAD
+          operand {
+            cons {
+              intval: 0
+            }
+          }
+        }
+      }
+      size {
+        unop {
+          op: NOT
+          operand {
+            unop {
+              op: CALLDATALOAD
+              operand {
+                cons {
+                  intval: 0
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  statements {
+    breakstmt {
+    }
+  }
+  statements {
+    breakstmt {
+    }
+  }
+}
+ver: HOMESTEAD

@@ -1,0 +1,205 @@
+block {
+  statements {
+    breakstmt {
+    }
+  }
+  statements {
+    breakstmt {
+    }
+  }
+  statements {
+  }
+  statements {
+    breakstmt {
+    }
+  }
+  statements {
+    breakstmt {
+    }
+  }
+  statements {
+    storage_func {
+      loc {
+        unop {
+          op: MLOAD
+          operand {
+            cons {
+              intval: 0
+            }
+          }
+        }
+      }
+      val {
+        binop {
+          op: OR
+          left {
+            unop {
+              op: SLOAD
+              operand {
+                cons {
+                  intval: 0
+                }
+              }
+            }
+          }
+          right {
+            unop {
+              op: NOT
+              operand {
+              }
+            }
+          }
+        }
+      }
+      st: MSTORE8
+    }
+  }
+  statements {
+  }
+  statements {
+    breakstmt {
+    }
+  }
+  statements {
+  }
+  statements {
+    breakstmt {
+    }
+  }
+  statements {
+  }
+  statements {
+    storage_func {
+      loc {
+        unop {
+          op: CALLDATALOAD
+          operand {
+            cons {
+              intval: 0
+            }
+          }
+        }
+      }
+      val {
+        binop {
+          op: OR
+          left {
+          }
+          right {
+            unop {
+              op: MLOAD
+              operand {
+                binop {
+                  op: SDIV
+                  left {
+                    unop {
+                      op: MLOAD
+                      operand {
+                        cons {
+                          intval: 0
+                        }
+                      }
+                    }
+                  }
+                  right {
+                    unop {
+                      op: NOT
+                      operand {
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+      st: MSTORE8
+    }
+  }
+  statements {
+    breakstmt {
+    }
+  }
+  statements {
+    decl {
+      expr {
+        unop {
+          op: SLOAD
+          operand {
+            cons {
+              intval: 0
+            }
+          }
+        }
+      }
+    }
+  }
+  statements {
+    breakstmt {
+    }
+  }
+  statements {
+    assignment {
+      ref_id {
+        varnum: 7
+      }
+      expr {
+        varref {
+          varnum: 0
+        }
+      }
+    }
+  }
+  statements {
+    breakstmt {
+    }
+  }
+  statements {
+    breakstmt {
+    }
+  }
+  statements {
+    decl {
+      expr {
+        unop {
+          op: SLOAD
+          operand {
+            cons {
+              intval: 0
+            }
+          }
+        }
+      }
+    }
+  }
+  statements {
+    breakstmt {
+    }
+  }
+  statements {
+    breakstmt {
+    }
+  }
+  statements {
+    breakstmt {
+    }
+  }
+  statements {
+    breakstmt {
+    }
+  }
+  statements {
+    breakstmt {
+    }
+  }
+  statements {
+    breakstmt {
+    }
+  }
+  statements {
+    breakstmt {
+    }
+  }
+}
+ver: BERLIN

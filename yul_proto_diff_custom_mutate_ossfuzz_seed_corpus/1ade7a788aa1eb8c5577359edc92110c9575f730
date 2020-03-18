@@ -1,0 +1,178 @@
+obj {
+  code {
+    block {
+      statements {
+        breakstmt {
+        }
+      }
+      statements {
+        breakstmt {
+        }
+      }
+      statements {
+        breakstmt {
+        }
+      }
+    }
+  }
+  sub_obj {
+    code {
+      block {
+        statements {
+          storage_func {
+            loc {
+            }
+            val {
+              top {
+                op: ADDM
+                arg1 {
+                }
+                arg2 {
+                  nop {
+                    op: CODESIZE
+                  }
+                }
+                arg3 {
+                  unop {
+                    op: SLOAD
+                    operand {
+                      cons {
+                        intval: 0
+                      }
+                    }
+                  }
+                }
+              }
+            }
+            st: MSTORE
+          }
+        }
+        statements {
+          breakstmt {
+          }
+        }
+        statements {
+          breakstmt {
+          }
+        }
+        statements {
+          extcode_copy {
+            addr {
+            }
+            target {
+            }
+            source {
+              unop {
+                op: SLOAD
+                operand {
+                  cons {
+                    intval: 0
+                  }
+                }
+              }
+            }
+            size {
+              lowcall {
+                callty: CALL
+                gas {
+                }
+                addr {
+                }
+                wei {
+                }
+                in {
+                }
+                insize {
+                }
+                out {
+                }
+                outsize {
+                }
+              }
+            }
+          }
+        }
+        statements {
+          breakstmt {
+          }
+        }
+        statements {
+        }
+        statements {
+          breakstmt {
+          }
+        }
+        statements {
+          breakstmt {
+          }
+        }
+        statements {
+          breakstmt {
+          }
+        }
+        statements {
+          extcode_copy {
+            addr {
+            }
+            target {
+            }
+            source {
+            }
+            size {
+              lowcall {
+                callty: CALL
+                gas {
+                }
+                addr {
+                }
+                wei {
+                  cons {
+                    intval: 29686813949952
+                  }
+                }
+                in {
+                }
+                insize {
+                }
+                out {
+                }
+                outsize {
+                }
+              }
+            }
+          }
+        }
+        statements {
+          storage_func {
+            loc {
+            }
+            val {
+              top {
+                op: ADDM
+                arg1 {
+                }
+                arg2 {
+                  nop {
+                    op: CODESIZE
+                  }
+                }
+                arg3 {
+                }
+              }
+            }
+            st: MSTORE
+          }
+        }
+        statements {
+          breakstmt {
+          }
+        }
+        statements {
+          breakstmt {
+          }
+        }
+      }
+    }
+  }
+}
+ver: ISTANBUL
