@@ -1,0 +1,57 @@
+
+pragma solidity >=0.0;
+
+
+
+
+
+contract C0BB {
+
+	function f0() virtual public pure
+	
+	returns (uint)
+	{
+		return 1013832414;
+	}
+}
+contract C0B is C0BB {
+
+	function f0() public pure
+	override
+	returns (uint)
+	{
+		return 1104122143;
+	}
+}
+contract C0 is C0B {
+
+	function f1() virtual public pure
+	
+	returns (uint)
+	{
+		return 2089172319;
+	}
+}
+
+
+contract C1B {
+
+	function f0() public view
+	
+	returns (uint)
+	{
+		return 604947329;
+	}
+}
+abstract contract C1 is C1B {
+
+}
+
+
+contract C {
+	function test() public returns (uint)
+	{
+		return 0;
+	}
+}
+

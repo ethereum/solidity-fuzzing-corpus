@@ -1,0 +1,64 @@
+
+pragma solidity >=0.0;
+
+
+library L0 {
+
+	function f0(uint) internal pure returns (uint)
+	{
+		return 1804289383;
+	}
+	function f1(uint) public view returns (uint)
+	{
+		return 846930886;
+	}
+}
+
+
+
+contract C1BB {
+
+	function f0() virtual public pure
+	
+	returns (uint)
+	{
+		return 182605794;
+	}
+}
+contract C1B is C1BB {
+
+	function f0() public pure
+	override
+	returns (uint)
+	{
+		return 2078669041;
+	}
+}
+contract C1 is C1B {
+
+}
+library L2 {
+
+	function f0(uint) internal view returns (uint)
+	{
+		return 1681692777;
+	}
+}
+
+
+contract C {
+	function test() public returns (uint)
+	{
+			C1 tc0 = new C1();
+			if (tc0.f0() != 2078669041)
+				return 1;
+			C1B tc1 = new C1B();
+			if (tc1.f0() != 2078669041)
+				return 2;
+			C1BB tc2 = new C1BB();
+			if (tc2.f0() != 182605794)
+				return 3;
+			return 0;
+	}
+}
+

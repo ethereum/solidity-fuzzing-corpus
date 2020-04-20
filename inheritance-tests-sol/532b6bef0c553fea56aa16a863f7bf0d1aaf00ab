@@ -1,0 +1,112 @@
+
+pragma solidity >=0.0;
+
+
+
+
+
+
+
+interface I2BBBB {
+
+	function f0() external view returns (uint);
+}
+interface I2BBB is I2BBBB {
+
+}
+interface I2BB is I2BBB {
+
+	function f0() override
+	external view returns (uint);
+}
+interface I2B is I2BB {
+
+}
+
+
+
+
+interface I2BBBBBBBB {
+
+	function f0() external view returns (uint);
+}
+interface I2BBBBBBB is I2BBBBBBBB {
+
+}
+interface I2BBBBBB is I2BBBBBBB {
+
+}
+interface I2BBBBB is I2BB, I2BBBBBB {
+
+	function f0() override(I2BB, I2BBBBBBBB)
+	external view returns (uint);
+}
+
+
+
+
+interface I2BBBBBBBBBBBB {
+
+	function f0() external view returns (uint);
+}
+interface I2BBBBBBBBBBB is I2BBBBBBBBBBBB {
+
+}
+interface I2BBBBBBBBBB is I2BBBBBBBBBBB {
+
+}
+interface I2BBBBBBBBB is I2BBBBB, I2BBBBBBBBBB {
+
+	function f0() override(I2BBBBB, I2BBBBBBBBBBBB)
+	external view returns (uint);
+}
+
+interface I2BBBBBBBBBBBBB is I2BBBBBB {
+
+	function f1() external payable returns (uint);
+}
+
+
+
+
+interface I2BBBBBBBBBBBBBBBBB {
+
+	function f0() external view returns (uint);
+}
+interface I2BBBBBBBBBBBBBBBB is I2BBBBBBBBBBBBBBBBB {
+
+}
+interface I2BBBBBBBBBBBBBBB is I2BBBBBBBBBBBBBBBB {
+
+	function f0() override
+	external view returns (uint);
+	function f1() external payable returns (uint);
+}
+interface I2BBBBBBBBBBBBBB is I2BBBBBB, I2BBBBBBBBBBBBBBB {
+
+	function f0() override(I2BBBBBBBB, I2BBBBBBBBBBBBBBB)
+	external view returns (uint);
+	function f1() override
+	external payable returns (uint);
+}
+
+interface I2BBBBBBBBBBBBBBBBBB is I2BBBBBB {
+
+	function f1() external payable returns (uint);
+}
+interface I2 is I2B, I2BBBBB, I2BBBBBBBBB, I2BBBBBBBBBBBBB, I2BBBBBBBBBBBBBB, I2BBBBBBBBBBBBBBBBBB {
+
+	function f0() override(I2BB, I2BBBBB, I2BBBBBBBBB, I2BBBBBBBB, I2BBBBBBBBBBBBBB)
+	external view returns (uint);
+	function f1() override(I2BBBBBBBBBBBBB, I2BBBBBBBBBBBBBB, I2BBBBBBBBBBBBBBBBBB)
+	external payable returns (uint);
+}
+
+
+contract C {
+	function test() public returns (uint)
+	{
+		return 0;
+	}
+}
+

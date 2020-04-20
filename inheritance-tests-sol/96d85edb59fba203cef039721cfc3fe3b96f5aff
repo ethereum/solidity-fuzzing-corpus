@@ -1,0 +1,126 @@
+
+pragma solidity >=0.0;
+
+
+
+
+interface C2B {
+
+}
+contract C2 is C2B {
+
+	function f0() virtual public pure
+	
+	returns (uint)
+	{
+		return 182605794;
+	}
+}
+library L6 {
+
+	function f0(uint) external pure returns (uint)
+	{
+		return 1804289383;
+	}
+}
+
+
+
+
+interface C8BBB {
+
+	function f0() external view returns (uint);
+}
+interface C8BB is C8BBB {
+
+}
+interface C8B is C8BB {
+
+}
+contract C8 is C8B {
+
+	function f0() external view
+	override
+	returns (uint)
+	{
+		return 1250328747;
+	}
+}
+
+
+
+interface C9BB {
+
+}
+contract C9B is C9BB {
+
+}
+
+interface C9BBB {
+
+	function f0() external payable returns (uint);
+}
+contract C9 is C9B, C9BBB {
+
+	function f0() external payable
+	override
+	returns (uint)
+	{
+		return 1098894339;
+	}
+}
+library L16 {
+
+	function f0(uint) internal pure returns (uint)
+	{
+		return 1957747793;
+	}
+	function f1(uint) external pure returns (uint)
+	{
+		return 424238335;
+	}
+}
+
+
+interface I23B {
+
+	function f0() external view returns (uint);
+}
+interface I23 is I23B {
+
+}
+
+
+interface C24B {
+
+}
+contract C24 is C24B {
+
+	function f0() virtual public pure
+	
+	returns (uint)
+	{
+		return 1936030137;
+	}
+}
+
+
+contract C {
+	function test() public returns (uint)
+	{
+			C2 tc0 = new C2();
+			if (tc0.f0() != 182605794)
+				return 1;
+			C24 tc1 = new C24();
+			if (tc1.f0() != 1936030137)
+				return 2;
+			C8 tc2 = new C8();
+			if (tc2.f0() != 1250328747)
+				return 3;
+			C9 tc3 = new C9();
+			if (tc3.f0() != 1098894339)
+				return 4;
+			return 0;
+	}
+}
+

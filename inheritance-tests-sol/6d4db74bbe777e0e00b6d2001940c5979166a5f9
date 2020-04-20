@@ -1,0 +1,137 @@
+
+pragma solidity >=0.0;
+
+
+
+
+
+
+interface I0BBB {
+
+	function f0() external view returns (uint);
+}
+interface I0BB is I0BBB {
+
+	function f1() external payable returns (uint);
+}
+interface I0B is I0BB {
+
+	function f0() override
+	external view returns (uint);
+}
+
+
+
+interface I0BBBBBB {
+
+	function f0() external view returns (uint);
+}
+
+
+
+
+interface I0BBBBBBBBBB {
+
+}
+interface I0BBBBBBBBB is I0BBBBBBBBBB {
+
+}
+interface I0BBBBBBBB is I0BBBBBBBBB {
+
+}
+interface I0BBBBBBB is I0BBBBBB, I0BBBBBBBB {
+
+}
+interface I0BBBBB is I0BBBBBB, I0BBBBBBB {
+
+}
+interface I0BBBB is I0BB, I0BBBBB {
+
+	function f0() override(I0BBB, I0BBBBBB)
+	external view returns (uint);
+	function f2() external payable returns (uint);
+}
+
+
+interface I0BBBBBBBBBBBB {
+
+	function f0() external view returns (uint);
+}
+
+interface I0BBBBBBBBBBBBB is I0BBBBBBBBBBBB {
+
+	function f1() external payable returns (uint);
+}
+interface I0BBBBBBBBBBB is I0BB, I0BBBBBBBBBBBB, I0BBBBBBBBBBBBB {
+
+	function f0() override(I0BBB, I0BBBBBBBBBBBB)
+	external view returns (uint);
+	function f1() override(I0BB, I0BBBBBBBBBBBBB)
+	external payable returns (uint);
+}
+interface I0 is I0B, I0BBBB, I0BBBBBBBBBBB {
+
+	function f0() override(I0B, I0BBBB, I0BBBBBBBBBBB)
+	external view returns (uint);
+	function f1() override(I0BB, I0BBBBBBBBBBB)
+	external payable returns (uint);
+}
+library L1 {
+
+	function f0(uint) external pure returns (uint)
+	{
+		return 1957747793;
+	}
+}
+library L2 {
+
+	function f0(uint) external pure returns (uint)
+	{
+		return 424238335;
+	}
+}
+
+
+interface C3B {
+
+	function f0() external view returns (uint);
+}
+
+interface C3BB is C3B {
+
+	function f1() external view returns (uint);
+}
+contract C3 is C3B, C3BB {
+
+	function f0() external view
+	override
+	returns (uint)
+	{
+		return 1931656580;
+	}
+	function f1() external view
+	override
+	returns (uint)
+	{
+		return 1936030137;
+	}
+	function f2() virtual public pure
+	
+	returns (uint)
+	{
+		return 2064876628;
+	}
+}
+
+
+contract C {
+	using L1 for uint;
+	function test() public returns (uint)
+	{
+		uint x;
+		if (x.f0() != 1957747793)
+			return 1;
+		return 0;
+	}
+}
+

@@ -1,0 +1,53 @@
+
+pragma solidity >=0.0;
+
+
+
+
+
+contract C1BB {
+
+	function f0() virtual public pure
+	
+	returns (uint)
+	{
+		return 433077521;
+	}
+}
+contract C1B is C1BB {
+
+}
+contract C1 is C1B {
+
+}
+
+contract C2 {
+
+	function f0() public payable
+	
+	returns (uint)
+	{
+		return 1227107630;
+	}
+}
+
+
+contract C {
+	function test() public returns (uint)
+	{
+			C1 tc0 = new C1();
+			if (tc0.f0() != 433077521)
+				return 1;
+			C1B tc1 = new C1B();
+			if (tc1.f0() != 433077521)
+				return 2;
+			C1BB tc2 = new C1BB();
+			if (tc2.f0() != 433077521)
+				return 3;
+			C2 tc3 = new C2();
+			if (tc3.f0() != 1227107630)
+				return 4;
+			return 0;
+	}
+}
+

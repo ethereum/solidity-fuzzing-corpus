@@ -1,0 +1,216 @@
+
+pragma solidity >=0.0;
+
+
+
+
+
+
+interface C0BBB {
+
+	function f0() external payable returns (uint);
+}
+contract C0BB is C0BBB {
+
+	function f0() external payable
+	override
+	returns (uint)
+	{
+		return 182605794;
+	}
+}
+contract C0B is C0BB {
+
+}
+contract C0 is C0B {
+
+	function f1() virtual public pure
+	
+	returns (uint)
+	{
+		return 2078669041;
+	}
+}
+
+
+
+abstract contract C2BB {
+
+}
+contract C2B is C2BB {
+
+}
+
+
+
+
+interface C2BBBBBB {
+
+	function f0() external payable returns (uint);
+}
+interface C2BBBBB is C2BBBBBB {
+
+}
+
+interface C2BBBBBBB is C2BBBBBB {
+
+	function f1() external payable returns (uint);
+}
+interface C2BBBB is C2BBBBB, C2BBBBBBB {
+
+	function f2() external payable returns (uint);
+}
+
+
+
+
+interface C2BBBBBBBBBBB {
+
+	function f0() external payable returns (uint);
+}
+interface C2BBBBBBBBBB is C2BBBBBBBBBBB {
+
+}
+interface C2BBBBBBBBB is C2BBBBBBBBBB {
+
+}
+interface C2BBBBBBBB is C2BBBBBBB, C2BBBBBBBBB {
+
+	function f0() override(C2BBBBBB, C2BBBBBBBBBBB)
+	external payable returns (uint);
+	function f1() override
+	external payable returns (uint);
+}
+interface C2BBB is C2BBBB, C2BBBBBBBB {
+
+	function f0() override(C2BBBBBB, C2BBBBBBBB)
+	external payable returns (uint);
+	function f1() override(C2BBBBBBB, C2BBBBBBBB)
+	external payable returns (uint);
+}
+contract C2 is C2B, C2BBB {
+
+	function f0() external payable
+	override
+	returns (uint)
+	{
+		return 1931656580;
+	}
+	function f1() external payable
+	override
+	returns (uint)
+	{
+		return 1936030137;
+	}
+	function f2() virtual external payable
+	override
+	returns (uint)
+	{
+		return 353718330;
+	}
+}
+
+contract C3 {
+
+	function f0() virtual public pure
+	
+	returns (uint)
+	{
+		return 1842513780;
+	}
+}
+library L7 {
+
+	function f0(uint) private pure returns (uint)
+	{
+		return 596516649;
+	}
+}
+
+
+
+
+
+
+
+interface C8BBBBBB {
+
+}
+interface C8BBBBB is C8BBBBBB {
+
+	function f0() external payable returns (uint);
+}
+interface C8BBBB is C8BBBBB {
+
+}
+interface C8BBB is C8BBBB {
+
+	function f1() external payable returns (uint);
+}
+interface C8BB is C8BBB {
+
+}
+contract C8B is C8BB {
+
+	function f0() virtual external payable
+	override
+	returns (uint)
+	{
+		return 1003765604;
+	}
+	function f1() virtual external payable
+	override
+	returns (uint)
+	{
+		return 1447645967;
+	}
+}
+contract C8 is C8B {
+
+	function f0() external payable
+	override
+	returns (uint)
+	{
+		return 837051536;
+	}
+}
+
+
+contract C {
+	function test() public returns (uint)
+	{
+			C0 tc0 = new C0();
+			if (tc0.f0() != 182605794)
+				return 1;
+			if (tc0.f1() != 2078669041)
+				return 2;
+			C0B tc1 = new C0B();
+			if (tc1.f0() != 182605794)
+				return 3;
+			C0BB tc2 = new C0BB();
+			if (tc2.f0() != 182605794)
+				return 4;
+			C2 tc3 = new C2();
+			if (tc3.f0() != 1931656580)
+				return 5;
+			if (tc3.f1() != 1936030137)
+				return 6;
+			if (tc3.f2() != 353718330)
+				return 7;
+			C3 tc4 = new C3();
+			if (tc4.f0() != 1842513780)
+				return 8;
+			C8 tc5 = new C8();
+			if (tc5.f0() != 837051536)
+				return 9;
+			if (tc5.f1() != 1447645967)
+				return 10;
+			C8B tc6 = new C8B();
+			if (tc6.f0() != 1003765604)
+				return 11;
+			if (tc6.f1() != 1447645967)
+				return 12;
+			return 0;
+	}
+}
+

@@ -1,0 +1,253 @@
+
+pragma solidity >=0.0;
+
+
+
+
+contract C1B {
+
+	function f0() public view
+	
+	returns (uint)
+	{
+		return 201345864;
+	}
+}
+contract C1 is C1B {
+
+}
+
+
+contract C2B {
+
+	function f0() public view
+	
+	returns (uint)
+	{
+		return 1802698469;
+	}
+}
+contract C2 is C2B {
+
+}
+library L3 {
+
+	function f0(uint) public pure returns (uint)
+	{
+		return 1804289383;
+	}
+}
+
+contract C4 {
+
+	function f0() external pure
+	
+	returns (uint)
+	{
+		return 1903285731;
+	}
+}
+
+interface I5 {
+
+	function f0() external view returns (uint);
+}
+
+contract C6 {
+
+	function f0() external pure
+	
+	returns (uint)
+	{
+		return 2007618794;
+	}
+}
+
+contract C7 {
+
+	function f0() external pure
+	
+	returns (uint)
+	{
+		return 272267005;
+	}
+}
+
+contract C8 {
+
+	function f0() external pure
+	
+	returns (uint)
+	{
+		return 678715;
+	}
+}
+
+contract C9 {
+
+	function f0() external pure
+	
+	returns (uint)
+	{
+		return 549997060;
+	}
+}
+
+
+contract C12B {
+
+	function f0() public payable
+	
+	returns (uint)
+	{
+		return 116527313;
+	}
+}
+contract C12 is C12B {
+
+	function f1() public view
+	
+	returns (uint)
+	{
+		return 630254330;
+	}
+}
+
+contract C13 {
+
+	function f0() external pure
+	
+	returns (uint)
+	{
+		return 1753420028;
+	}
+}
+
+
+contract C14B {
+
+	function f0() public payable
+	
+	returns (uint)
+	{
+		return 565192377;
+	}
+}
+contract C14 is C14B {
+
+	function f1() public view
+	
+	returns (uint)
+	{
+		return 768978679;
+	}
+}
+
+
+contract C15B {
+
+	function f0() public view
+	
+	returns (uint)
+	{
+		return 114975614;
+	}
+}
+contract C15 is C15B {
+
+}
+
+contract C16 {
+
+	function f0() public view
+	
+	returns (uint)
+	{
+		return 890119546;
+	}
+}
+
+contract C17 {
+
+	function f0() external pure
+	
+	returns (uint)
+	{
+		return 107795790;
+	}
+}
+
+
+
+
+
+
+interface I18BBBBB {
+
+	function f0() external payable returns (uint);
+}
+interface I18BBBB is I18BBBBB {
+
+}
+interface I18BBB is I18BBBB {
+
+	function f1() external view returns (uint);
+}
+interface I18BB is I18BBB {
+
+	function f1() override
+	external view returns (uint);
+}
+interface I18B is I18BB {
+
+	function f0() override
+	external payable returns (uint);
+}
+interface I18 is I18B {
+
+	function f0() override
+	external payable returns (uint);
+}
+
+
+contract C19B {
+
+	function f0() public payable
+	
+	returns (uint)
+	{
+		return 1810573007;
+	}
+}
+contract C19 is C19B {
+
+	function f1() external pure
+	
+	returns (uint)
+	{
+		return 2027638938;
+	}
+}
+
+contract C20 {
+
+	function f0() public view
+	
+	returns (uint)
+	{
+		return 296996879;
+	}
+}
+
+
+contract C {
+	using L3 for uint;
+	function test() public returns (uint)
+	{
+		uint x;
+		if (x.f0() != 1804289383)
+			return 1;
+		return 0;
+	}
+}
+

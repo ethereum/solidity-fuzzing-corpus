@@ -1,0 +1,135 @@
+
+pragma solidity >=0.0;
+
+
+
+
+
+interface I0BB {
+
+	function f0() external view returns (uint);
+}
+interface I0B is I0BB {
+
+	function f1() external payable returns (uint);
+}
+interface I0 is I0B {
+
+	function f0() override
+	external view returns (uint);
+}
+
+
+
+
+interface C1BBB {
+
+}
+
+
+interface C1BBBBB {
+
+	function f0() external payable returns (uint);
+	function f1() external view returns (uint);
+	function f2() external payable returns (uint);
+}
+interface C1BBBB is C1BBB, C1BBBBB {
+
+}
+interface C1BB is C1BBB, C1BBBB {
+
+}
+interface C1B is C1BB {
+
+}
+contract C1 is C1B {
+
+	function f0() external payable
+	override
+	returns (uint)
+	{
+		return 2136927794;
+	}
+	function f1() external view
+	override
+	returns (uint)
+	{
+		return 2075782095;
+	}
+	function f2() virtual external payable
+	override
+	returns (uint)
+	{
+		return 914937185;
+	}
+}
+
+
+
+
+interface C2BBB {
+
+	function f0() external payable returns (uint);
+}
+
+
+interface C2BBBBB {
+
+	function f0() external payable returns (uint);
+	function f1() external payable returns (uint);
+}
+interface C2BBBB is C2BBB, C2BBBBB {
+
+	function f0() override(C2BBB, C2BBBBB)
+	external payable returns (uint);
+	function f1() override
+	external payable returns (uint);
+}
+interface C2BB is C2BBB, C2BBBB {
+
+	function f0() override(C2BBB, C2BBBB)
+	external payable returns (uint);
+}
+interface C2B is C2BB {
+
+	function f0() override
+	external payable returns (uint);
+	function f1() override
+	external payable returns (uint);
+}
+contract C2 is C2B {
+
+	function f0() external payable
+	override
+	returns (uint)
+	{
+		return 2010567813;
+	}
+	function f1() virtual external payable
+	override
+	returns (uint)
+	{
+		return 662405787;
+	}
+}
+
+
+contract C {
+	function test() public returns (uint)
+	{
+			C1 tc0 = new C1();
+			if (tc0.f0() != 2136927794)
+				return 1;
+			if (tc0.f1() != 2075782095)
+				return 2;
+			if (tc0.f2() != 914937185)
+				return 3;
+			C2 tc1 = new C2();
+			if (tc1.f0() != 2010567813)
+				return 4;
+			if (tc1.f1() != 662405787)
+				return 5;
+			return 0;
+	}
+}
+

@@ -1,0 +1,74 @@
+
+pragma solidity >=0.0;
+
+
+library L0 {
+
+	function f0(uint) private view returns (uint)
+	{
+		return 1804289383;
+	}
+	function f1(uint) private pure returns (uint)
+	{
+		return 846930886;
+	}
+	function f2(uint) internal view returns (uint)
+	{
+		return 1681692777;
+	}
+	function f3(uint) private pure returns (uint)
+	{
+		return 1714636915;
+	}
+}
+library L2 {
+
+	function f0(uint) external pure returns (uint)
+	{
+		return 719885386;
+	}
+	function f1(uint) external pure returns (uint)
+	{
+		return 1649760492;
+	}
+}
+
+contract C3 {
+
+	function f0() external pure
+	
+	returns (uint)
+	{
+		return 1003765604;
+	}
+}
+library L4 {
+
+	function f0(uint) public view returns (uint)
+	{
+		return 596516649;
+	}
+	function f1(uint) external view returns (uint)
+	{
+		return 1189641421;
+	}
+}
+library L5 {
+
+	function f0(uint) public view returns (uint)
+	{
+		return 1025202362;
+	}
+}
+
+
+contract C {
+	function test() public returns (uint)
+	{
+			C3 tc0 = new C3();
+			if (tc0.f0() != 1003765604)
+				return 1;
+			return 0;
+	}
+}
+

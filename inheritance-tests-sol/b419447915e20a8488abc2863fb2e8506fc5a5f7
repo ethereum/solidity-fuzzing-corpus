@@ -1,0 +1,121 @@
+
+pragma solidity >=0.0;
+
+
+
+
+
+
+
+interface I0BBBB {
+
+	function f0() external view returns (uint);
+}
+interface I0BBB is I0BBBB {
+
+	function f0() override
+	external view returns (uint);
+}
+interface I0BB is I0BBB {
+
+}
+interface I0B is I0BB {
+
+}
+
+interface I0BBBBB is I0BB {
+
+	function f1() external view returns (uint);
+}
+interface I0 is I0B, I0BBBBB {
+
+	function f0() override
+	external view returns (uint);
+	function f1() override
+	external view returns (uint);
+}
+
+
+contract C2B {
+
+	function f0() public view
+	
+	returns (uint)
+	{
+		return 1728509667;
+	}
+}
+abstract contract C2 is C2B {
+
+}
+library L3 {
+
+	function f0(uint) external pure returns (uint)
+	{
+		return 846930886;
+	}
+}
+
+
+interface I4B {
+
+	function f0() external view returns (uint);
+}
+interface I4 is I4B {
+
+	function f0() override
+	external view returns (uint);
+}
+
+
+
+contract C5BB {
+
+	function f0() virtual public pure
+	
+	returns (uint)
+	{
+		return 1217177185;
+	}
+}
+contract C5B is C5BB {
+
+	function f0() public pure
+	override
+	returns (uint)
+	{
+		return 714404773;
+	}
+}
+contract C5 is C5B {
+
+	function f1() virtual public pure
+	
+	returns (uint)
+	{
+		return 1133844973;
+	}
+}
+
+
+contract C {
+	function test() public returns (uint)
+	{
+			C2B tc0 = new C2B();
+			if (tc0.f0() != 1728509667)
+				return 1;
+			C5 tc1 = new C5();
+			if (tc1.f0() != 714404773)
+				return 2;
+			if (tc1.f1() != 1133844973)
+				return 3;
+			C5B tc2 = new C5B();
+			if (tc2.f0() != 714404773)
+				return 4;
+			C5BB tc3 = new C5BB();
+			if (tc3.f0() != 1217177185)
+				return 5;
+			return 0;
+	}
+}
+

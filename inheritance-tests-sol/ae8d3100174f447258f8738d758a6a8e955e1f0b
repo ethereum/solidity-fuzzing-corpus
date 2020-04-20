@@ -1,0 +1,42 @@
+
+pragma solidity >=0.0;
+
+
+
+
+
+abstract contract C0BB {
+
+}
+contract C0B is C0BB {
+
+}
+contract C0 is C0B {
+
+	function f0() public pure
+	
+	returns (uint)
+	{
+		return 182605794;
+	}
+	function f1() public pure
+	
+	returns (uint)
+	{
+		return 1291394886;
+	}
+}
+
+
+contract C {
+	function test() public returns (uint)
+	{
+			C0 tc0 = new C0();
+			if (tc0.f0() != 182605794)
+				return 1;
+			if (tc0.f1() != 1291394886)
+				return 2;
+			return 0;
+	}
+}
+

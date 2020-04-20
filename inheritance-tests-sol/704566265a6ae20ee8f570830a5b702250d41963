@@ -1,0 +1,60 @@
+
+pragma solidity >=0.0;
+
+
+library L0 {
+
+	function f0(uint) public pure returns (uint)
+	{
+		return 1804289383;
+	}
+}
+
+
+
+contract C2BB {
+
+	function f0() virtual public pure
+	
+	returns (uint)
+	{
+		return 1589081176;
+	}
+}
+contract C2B is C2BB {
+
+}
+contract C2 is C2B {
+
+}
+
+contract C3 {
+
+	function f0() public payable
+	
+	returns (uint)
+	{
+		return 1524036800;
+	}
+}
+
+
+contract C {
+	function test() public returns (uint)
+	{
+			C2 tc0 = new C2();
+			if (tc0.f0() != 1589081176)
+				return 1;
+			C2B tc1 = new C2B();
+			if (tc1.f0() != 1589081176)
+				return 2;
+			C2BB tc2 = new C2BB();
+			if (tc2.f0() != 1589081176)
+				return 3;
+			C3 tc3 = new C3();
+			if (tc3.f0() != 1524036800)
+				return 4;
+			return 0;
+	}
+}
+

@@ -1,0 +1,139 @@
+
+pragma solidity >=0.0;
+
+
+
+
+interface C2B {
+
+	function f0() external payable returns (uint);
+}
+contract C2 is C2B {
+
+	function f0() virtual external payable
+	override
+	returns (uint)
+	{
+		return 783869861;
+	}
+}
+library L4 {
+
+	function f0(uint) external pure returns (uint)
+	{
+		return 1804289383;
+	}
+}
+library L6 {
+
+	function f0(uint) external pure returns (uint)
+	{
+		return 846930886;
+	}
+}
+library L9 {
+
+	function f0(uint) public pure returns (uint)
+	{
+		return 1681692777;
+	}
+}
+
+
+interface I14B {
+
+	function f0() external view returns (uint);
+}
+interface I14 is I14B {
+
+	function f0() override
+	external view returns (uint);
+}
+
+
+
+interface I18BB {
+
+	function f0() external payable returns (uint);
+}
+interface I18B is I18BB {
+
+	function f0() override
+	external payable returns (uint);
+}
+
+interface I18BBB is I18BB {
+
+	function f0() override
+	external payable returns (uint);
+}
+interface I18 is I18B, I18BBB {
+
+	function f0() override(I18B, I18BBB)
+	external payable returns (uint);
+}
+
+
+
+interface I19BB {
+
+	function f0() external payable returns (uint);
+}
+interface I19B is I19BB {
+
+	function f0() override
+	external payable returns (uint);
+}
+
+interface I19BBB is I19BB {
+
+	function f0() override
+	external payable returns (uint);
+}
+interface I19 is I19B, I19BBB {
+
+	function f0() override(I19B, I19BBB)
+	external payable returns (uint);
+}
+
+
+
+interface C24BB {
+
+	function f0() external view returns (uint);
+}
+interface C24B is C24BB {
+
+	function f0() override
+	external view returns (uint);
+}
+
+interface C24BBB is C24BB {
+
+	function f0() override
+	external view returns (uint);
+}
+contract C24 is C24B, C24BBB {
+
+	function f0() external view
+	override(C24BBB, C24B)
+	returns (uint)
+	{
+		return 1429890501;
+	}
+}
+
+
+contract C {
+	function test() public returns (uint)
+	{
+			C2 tc0 = new C2();
+			if (tc0.f0() != 783869861)
+				return 1;
+			C24 tc1 = new C24();
+			if (tc1.f0() != 1429890501)
+				return 2;
+			return 0;
+	}
+}
+

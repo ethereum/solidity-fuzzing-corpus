@@ -1,0 +1,259 @@
+
+pragma solidity >=0.0;
+
+
+
+
+interface C0B {
+
+	function f0() external view returns (uint);
+	function f1() external view returns (uint);
+	function f2() external view returns (uint);
+}
+
+interface C0BB is C0B {
+
+	function f0() override
+	external view returns (uint);
+	function f1() override
+	external view returns (uint);
+	function f3() external view returns (uint);
+	function f4() external view returns (uint);
+}
+
+interface C0BBB is C0BB {
+
+	function f0() override
+	external view returns (uint);
+	function f2() override
+	external view returns (uint);
+	function f3() override
+	external view returns (uint);
+	function f4() override
+	external view returns (uint);
+}
+
+
+interface C0BBBBB {
+
+}
+interface C0BBBB is C0B, C0BBBBB {
+
+	function f0() override
+	external view returns (uint);
+	function f1() override
+	external view returns (uint);
+}
+contract C0 is C0B, C0BB, C0BBB, C0BBBB {
+
+	function f0() virtual external view
+	override(C0BB, C0B, C0BBB, C0BBBB)
+	returns (uint)
+	{
+		return 1448381872;
+	}
+	function f1() virtual external view
+	override(C0BB, C0B, C0BBBB)
+	returns (uint)
+	{
+		return 1870866689;
+	}
+	function f2() virtual external view
+	override(C0BBB, C0B)
+	returns (uint)
+	{
+		return 2100670573;
+	}
+	function f3() external view
+	override(C0BBB, C0BB)
+	returns (uint)
+	{
+		return 1429890501;
+	}
+	function f4() external view
+	override(C0BBB, C0BB)
+	returns (uint)
+	{
+		return 659361917;
+	}
+}
+library L1 {
+
+	function f0(uint) internal view returns (uint)
+	{
+		return 1714636915;
+	}
+	function f1(uint) internal pure returns (uint)
+	{
+		return 1957747793;
+	}
+	function f2(uint) internal view returns (uint)
+	{
+		return 424238335;
+	}
+	function f3(uint) public pure returns (uint)
+	{
+		return 719885386;
+	}
+	function f4(uint) public view returns (uint)
+	{
+		return 1649760492;
+	}
+	function f5(uint) internal view returns (uint)
+	{
+		return 596516649;
+	}
+	function f6(uint) private pure returns (uint)
+	{
+		return 1189641421;
+	}
+	function f7(uint) internal view returns (uint)
+	{
+		return 1025202362;
+	}
+	function f8(uint) private view returns (uint)
+	{
+		return 1350490027;
+	}
+}
+
+
+
+
+
+
+interface C2BBBBB {
+
+}
+interface C2BBBB is C2BBBBB {
+
+	function f0() external view returns (uint);
+}
+interface C2BBB is C2BBBB {
+
+	function f1() external view returns (uint);
+	function f2() external view returns (uint);
+}
+interface C2BB is C2BBB {
+
+	function f0() override
+	external view returns (uint);
+	function f1() override
+	external view returns (uint);
+	function f2() override
+	external view returns (uint);
+}
+interface C2B is C2BB {
+
+	function f0() override
+	external view returns (uint);
+	function f2() override
+	external view returns (uint);
+}
+contract C2 is C2B {
+
+	function f0() external view
+	override
+	returns (uint)
+	{
+		return 174262913;
+	}
+	function f1() virtual external view
+	override
+	returns (uint)
+	{
+		return 616904628;
+	}
+	function f2() virtual external view
+	override
+	returns (uint)
+	{
+		return 873580215;
+	}
+}
+
+
+interface C3B {
+
+	function f0() external view returns (uint);
+}
+
+interface C3BB is C3B {
+
+	function f1() external view returns (uint);
+	function f2() external view returns (uint);
+	function f3() external view returns (uint);
+}
+
+
+interface C3BBBB {
+
+	function f0() external view returns (uint);
+}
+interface C3BBB is C3BB, C3BBBB {
+
+	function f0() override(C3B, C3BBBB)
+	external view returns (uint);
+	function f1() override
+	external view returns (uint);
+	function f2() override
+	external view returns (uint);
+}
+contract C3 is C3B, C3BB, C3BBB {
+
+	function f0() virtual external view
+	override(C3BBB, C3B)
+	returns (uint)
+	{
+		return 695861884;
+	}
+	function f1() external view
+	override(C3BBB, C3BB)
+	returns (uint)
+	{
+		return 562902416;
+	}
+	function f2() virtual external view
+	override(C3BBB, C3BB)
+	returns (uint)
+	{
+		return 131569067;
+	}
+	function f3() virtual external view
+	override
+	returns (uint)
+	{
+		return 2144334765;
+	}
+}
+library L4 {
+
+	function f0(uint) public view returns (uint)
+	{
+		return 2044897763;
+	}
+	function f1(uint) public view returns (uint)
+	{
+		return 1967513926;
+	}
+}
+library L7 {
+
+	function f0(uint) internal pure returns (uint)
+	{
+		return 521595368;
+	}
+}
+
+
+contract C {
+	using L4 for uint;
+	function test() public returns (uint)
+	{
+		uint x;
+		if (x.f1() != 1967513926)
+			return 1;
+		return 0;
+	}
+}
+

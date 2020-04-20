@@ -1,0 +1,45 @@
+
+pragma solidity >=0.0;
+
+
+
+
+
+
+
+interface C0BBBB {
+
+	function f0() external payable returns (uint);
+}
+interface C0BBB is C0BBBB {
+
+}
+interface C0BB is C0BBB {
+
+	function f0() override
+	external payable returns (uint);
+}
+interface C0B is C0BB {
+
+}
+contract C0 is C0B {
+
+	function f0() external payable
+	override
+	returns (uint)
+	{
+		return 854716505;
+	}
+}
+
+
+contract C {
+	function test() public returns (uint)
+	{
+			C0 tc0 = new C0();
+			if (tc0.f0() != 854716505)
+				return 1;
+			return 0;
+	}
+}
+

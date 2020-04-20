@@ -1,0 +1,342 @@
+
+pragma solidity >=0.0;
+
+
+
+
+interface I0B {
+
+}
+
+
+interface I0BBB {
+
+	function f0() external view returns (uint);
+}
+interface I0BB is I0B, I0BBB {
+
+}
+interface I0 is I0B, I0BB {
+
+	function f0() override
+	external view returns (uint);
+}
+
+
+
+interface I1BB {
+
+	function f0() external view returns (uint);
+}
+interface I1B is I1BB {
+
+	function f1() external payable returns (uint);
+}
+
+interface I1BBB is I1B {
+
+	function f2() external payable returns (uint);
+}
+interface I1 is I1B, I1BBB {
+
+}
+
+
+interface I2B {
+
+	function f0() external view returns (uint);
+}
+interface I2 is I2B {
+
+}
+library L3 {
+
+	function f0(uint) internal pure returns (uint)
+	{
+		return 1681692777;
+	}
+	function f1(uint) public view returns (uint)
+	{
+		return 1714636915;
+	}
+}
+
+
+
+interface I4BB {
+
+	function f0() external payable returns (uint);
+}
+interface I4B is I4BB {
+
+}
+interface I4 is I4B {
+
+	function f1() external payable returns (uint);
+}
+library L5 {
+
+	function f0(uint) public pure returns (uint)
+	{
+		return 1957747793;
+	}
+}
+
+
+interface I7B {
+
+}
+
+
+interface I7BBB {
+
+	function f0() external view returns (uint);
+}
+interface I7BB is I7B, I7BBB {
+
+}
+interface I7 is I7B, I7BB {
+
+}
+library L8 {
+
+	function f0(uint) internal pure returns (uint)
+	{
+		return 719885386;
+	}
+	function f1(uint) public pure returns (uint)
+	{
+		return 1649760492;
+	}
+}
+
+
+interface I9B {
+
+}
+
+interface I9BB is I9B {
+
+}
+
+
+
+
+
+interface I9BBBBBBB {
+
+	function f0() external payable returns (uint);
+}
+interface I9BBBBBB is I9BBBBBBB {
+
+}
+interface I9BBBBB is I9BBBBBB {
+
+	function f0() override
+	external payable returns (uint);
+	function f1() external payable returns (uint);
+}
+interface I9BBBB is I9BBBBB {
+
+}
+interface I9BBB is I9BB, I9BBBB {
+
+	function f0() override
+	external payable returns (uint);
+}
+
+interface I9BBBBBBBB is I9B {
+
+}
+interface I9 is I9B, I9BB, I9BBB, I9BBBBBBBB {
+
+	function f1() override
+	external payable returns (uint);
+}
+
+interface I10 {
+
+	function f0() external view returns (uint);
+}
+library L11 {
+
+	function f0(uint) internal pure returns (uint)
+	{
+		return 1350490027;
+	}
+	function f1(uint) internal pure returns (uint)
+	{
+		return 783368690;
+	}
+	function f2(uint) public view returns (uint)
+	{
+		return 1102520059;
+	}
+}
+
+
+
+
+
+
+interface I12BBBBB {
+
+	function f0() external payable returns (uint);
+}
+interface I12BBBB is I12BBBBB {
+
+}
+interface I12BBB is I12BBBB {
+
+	function f0() override
+	external payable returns (uint);
+	function f1() external payable returns (uint);
+}
+interface I12BB is I12BBB {
+
+}
+interface I12B is I12BB {
+
+}
+
+
+
+
+
+interface I12BBBBBBBBBB {
+
+	function f0() external payable returns (uint);
+}
+interface I12BBBBBBBBB is I12BBBBBBBBBB {
+
+}
+interface I12BBBBBBBB is I12BBBBBBBBB {
+
+	function f1() external payable returns (uint);
+}
+interface I12BBBBBBB is I12BBBBBBBB {
+
+}
+interface I12BBBBBB is I12BB, I12BBBBBBB {
+
+	function f0() override(I12BBB, I12BBBBBBBBBB)
+	external payable returns (uint);
+	function f1() override(I12BBB, I12BBBBBBBB)
+	external payable returns (uint);
+}
+
+interface I12BBBBBBBBBBB is I12BBBBBB {
+
+	function f0() override
+	external payable returns (uint);
+}
+
+interface I12BBBBBBBBBBBB is I12B {
+
+	function f1() override
+	external payable returns (uint);
+}
+
+interface I12BBBBBBBBBBBBB is I12BBBBBB {
+
+}
+
+
+
+
+
+interface I12BBBBBBBBBBBBBBBBBB {
+
+	function f0() external payable returns (uint);
+}
+interface I12BBBBBBBBBBBBBBBBB is I12BBBBBBBBBBBBBBBBBB {
+
+}
+interface I12BBBBBBBBBBBBBBBB is I12BBBBBBBBBBBBBBBBB {
+
+	function f1() external payable returns (uint);
+}
+interface I12BBBBBBBBBBBBBBB is I12BBBBBBBBBBBBBBBB {
+
+	function f0() override
+	external payable returns (uint);
+	function f1() override
+	external payable returns (uint);
+}
+interface I12BBBBBBBBBBBBBB is I12BBBBBB, I12BBBBBBBBBBBBBBB {
+
+	function f0() override(I12BBBBBB, I12BBBBBBBBBBBBBBB)
+	external payable returns (uint);
+	function f1() override(I12BBBBBB, I12BBBBBBBBBBBBBBB)
+	external payable returns (uint);
+}
+
+
+
+
+
+interface I12BBBBBBBBBBBBBBBBBBBBBBB {
+
+	function f0() external payable returns (uint);
+}
+interface I12BBBBBBBBBBBBBBBBBBBBBB is I12BBBBBBBBBBBBBBBBBBBBBBB {
+
+}
+interface I12BBBBBBBBBBBBBBBBBBBBB is I12BBBBBBBBBBBBBBBBBBBBBB {
+
+	function f0() override
+	external payable returns (uint);
+	function f1() external payable returns (uint);
+}
+interface I12BBBBBBBBBBBBBBBBBBBB is I12BBBBBBBBBBBBBBBBBBBBB {
+
+	function f0() override
+	external payable returns (uint);
+}
+interface I12BBBBBBBBBBBBBBBBBBB is I12BBBBBBBBBBB, I12BBBBBBBBBBBBBBBBBBBB {
+
+	function f0() override(I12BBBBBBBBBBB, I12BBBBBBBBBBBBBBBBBBBB)
+	external payable returns (uint);
+	function f1() override(I12BBBBBB, I12BBBBBBBBBBBBBBBBBBBBB)
+	external payable returns (uint);
+}
+
+interface I12BBBBBBBBBBBBBBBBBBBBBBBB is I12BBBBBBB {
+
+	function f0() override
+	external payable returns (uint);
+}
+
+interface I12BBBBBBBBBBBBBBBBBBBBBBBBB is I12BBBBBBBBBBBBB {
+
+	function f0() override
+	external payable returns (uint);
+	function f1() override
+	external payable returns (uint);
+}
+
+interface I12BBBBBBBBBBBBBBBBBBBBBBBBBB is I12BBBBBBB {
+
+	function f1() override
+	external payable returns (uint);
+}
+interface I12 is I12B, I12BBBBBB, I12BBBBBBBBBBB, I12BBBBBBBBBBBB, I12BBBBBBBBBBBBB, I12BBBBBBBBBBBBBB, I12BBBBBBBBBBBBBBBBBBB, I12BBBBBBBBBBBBBBBBBBBBBBBB, I12BBBBBBBBBBBBBBBBBBBBBBBBB, I12BBBBBBBBBBBBBBBBBBBBBBBBBB {
+
+	function f0() override(I12BBB, I12BBBBBB, I12BBBBBBBBBBB, I12BBBBBBBBBBBBBB, I12BBBBBBBBBBBBBBBBBBB, I12BBBBBBBBBBBBBBBBBBBBBBBB, I12BBBBBBBBBBBBBBBBBBBBBBBBB, I12BBBBBBBBBB)
+	external payable returns (uint);
+	function f1() override(I12BBB, I12BBBBBB, I12BBBBBBBBBBBB, I12BBBBBBBBBBBBBB, I12BBBBBBBBBBBBBBBBBBB, I12BBBBBBBB, I12BBBBBBBBBBBBBBBBBBBBBBBBB, I12BBBBBBBBBBBBBBBBBBBBBBBBBB)
+	external payable returns (uint);
+}
+
+
+contract C {
+	using L11 for uint;
+	function test() public returns (uint)
+	{
+		uint x;
+		if (x.f2() != 1102520059)
+			return 1;
+		return 0;
+	}
+}
+

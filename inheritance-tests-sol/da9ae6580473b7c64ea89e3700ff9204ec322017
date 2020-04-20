@@ -1,0 +1,36 @@
+
+pragma solidity >=0.0;
+
+
+
+
+
+
+
+interface I6BBBB {
+
+	function f0() external payable returns (uint);
+}
+interface I6BBB is I6BBBB {
+
+}
+interface I6BB is I6BBB {
+
+}
+interface I6B is I6BB {
+
+}
+interface I6 is I6B {
+
+	function f0() override
+	external payable returns (uint);
+}
+
+
+contract C {
+	function test() public returns (uint)
+	{
+		return 0;
+	}
+}
+

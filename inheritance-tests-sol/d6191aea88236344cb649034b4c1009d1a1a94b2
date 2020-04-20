@@ -1,0 +1,141 @@
+
+pragma solidity >=0.0;
+
+
+
+
+
+contract C0BB {
+
+}
+contract C0B is C0BB {
+
+}
+
+
+contract C0BBBB {
+
+}
+
+contract C0BBBBB is C0BBBB {
+
+	function f0() virtual public pure
+	
+	returns (uint)
+	{
+		return 803070398;
+	}
+}
+contract C0BBB is C0BB, C0BBBB, C0BBBBB {
+
+	function f0() virtual public pure
+	override
+	returns (uint)
+	{
+		return 305269445;
+	}
+}
+
+contract C0BBBBBB is C0BB {
+
+}
+contract C0 is C0B, C0BBB, C0BBBBBB {
+
+	function f0() virtual public pure
+	override
+	returns (uint)
+	{
+		return 1986052792;
+	}
+}
+
+
+
+abstract contract C2BB {
+
+}
+
+
+interface C2BBBB {
+
+	function f0() external payable returns (uint);
+}
+interface C2BBB is C2BBBB {
+
+}
+contract C2B is C2BB, C2BBB {
+
+	function f0() external payable
+	override
+	returns (uint)
+	{
+		return 659361917;
+	}
+}
+
+
+contract C2BBBBBB {
+
+}
+
+
+contract C2BBBBBBBB {
+
+}
+
+abstract contract C2BBBBBBBBB is C2BBBBBBBB {
+
+}
+contract C2BBBBBBB is C2BBBBBB, C2BBBBBBBB, C2BBBBBBBBB {
+
+}
+contract C2BBBBB is C2BB, C2BBBBBB, C2BBBBBBB {
+
+}
+
+
+
+contract C2BBBBBBBBBBBB {
+
+}
+
+abstract contract C2BBBBBBBBBBBBB is C2BBBBBBBBBBBB {
+
+}
+contract C2BBBBBBBBBBB is C2BBBBBBBBBBBB, C2BBBBBBBBBBBBB {
+
+}
+
+contract C2BBBBBBBBBBBBBB is C2BBBBBBBBBBB {
+
+}
+contract C2BBBBBBBBBB is C2BBBBBBB, C2BBBBBBBBBBB, C2BBBBBBBBBBBBBB {
+
+}
+
+contract C2BBBBBBBBBBBBBBB is C2B {
+
+}
+contract C2 is C2B, C2BBBBB, C2BBBBBBBBBB, C2BBBBBBBBBBBBBBB {
+
+}
+library L3 {
+
+	function f0(uint) external pure returns (uint)
+	{
+		return 304089172;
+	}
+}
+
+
+contract C {
+	using L3 for uint;
+	function test() public returns (uint)
+	{
+		uint x;
+		if (x.f0() != 304089172)
+			return 1;
+		return 0;
+	}
+}
+

@@ -1,0 +1,143 @@
+
+pragma solidity >=0.0;
+
+
+library L0 {
+
+	function f0(uint) public view returns (uint)
+	{
+		return 1804289383;
+	}
+	function f1(uint) external pure returns (uint)
+	{
+		return 846930886;
+	}
+}
+
+
+
+interface I1BB {
+
+	function f0() external view returns (uint);
+}
+interface I1B is I1BB {
+
+	function f0() override
+	external view returns (uint);
+	function f1() external payable returns (uint);
+}
+
+
+interface I1BBBB {
+
+	function f0() external view returns (uint);
+}
+interface I1BBB is I1BB, I1BBBB {
+
+	function f0() override(I1BB, I1BBBB)
+	external view returns (uint);
+	function f1() external payable returns (uint);
+}
+interface I1 is I1B, I1BBB {
+
+	function f0() override(I1B, I1BBB)
+	external view returns (uint);
+	function f1() override(I1B, I1BBB)
+	external payable returns (uint);
+}
+
+
+
+interface I3BB {
+
+	function f0() external view returns (uint);
+}
+interface I3B is I3BB {
+
+	function f1() external payable returns (uint);
+}
+
+
+interface I3BBBB {
+
+	function f0() external view returns (uint);
+}
+interface I3BBB is I3BB, I3BBBB {
+
+	function f0() override(I3BB, I3BBBB)
+	external view returns (uint);
+	function f1() external payable returns (uint);
+}
+interface I3 is I3B, I3BBB {
+
+	function f0() override(I3BB, I3BBB)
+	external view returns (uint);
+	function f1() override(I3B, I3BBB)
+	external payable returns (uint);
+}
+
+
+interface I4B {
+
+	function f0() external pure returns (uint);
+}
+interface I4 is I4B {
+
+}
+
+
+
+interface I5BB {
+
+	function f0() external payable returns (uint);
+}
+interface I5B is I5BB {
+
+	function f1() external payable returns (uint);
+}
+interface I5 is I5B {
+
+}
+
+
+
+interface I6BB {
+
+	function f0() external view returns (uint);
+}
+interface I6B is I6BB {
+
+	function f1() external payable returns (uint);
+}
+interface I6 is I6B {
+
+	function f1() override
+	external payable returns (uint);
+}
+library L7 {
+
+	function f0(uint) private pure returns (uint)
+	{
+		return 424238335;
+	}
+}
+library L8 {
+
+	function f0(uint) private pure returns (uint)
+	{
+		return 719885386;
+	}
+}
+
+
+contract C {
+	using L0 for uint;
+	function test() public returns (uint)
+	{
+		uint x;
+		if (x.f1() != 846930886)
+			return 1;
+		return 0;
+	}
+}
+

@@ -1,0 +1,167 @@
+
+pragma solidity >=0.0;
+
+
+
+
+contract C0B {
+
+	function f0() public view
+	
+	returns (uint)
+	{
+		return 1073765959;
+	}
+}
+contract C0 is C0B {
+
+}
+library L1 {
+
+	function f0(uint) public view returns (uint)
+	{
+		return 1804289383;
+	}
+	function f1(uint) private pure returns (uint)
+	{
+		return 846930886;
+	}
+}
+
+contract C2 {
+
+	function f0() public view
+	
+	returns (uint)
+	{
+		return 645697443;
+	}
+}
+library L3 {
+
+	function f0(uint) internal pure returns (uint)
+	{
+		return 1681692777;
+	}
+	function f1(uint) private pure returns (uint)
+	{
+		return 1714636915;
+	}
+	function f2(uint) internal pure returns (uint)
+	{
+		return 1957747793;
+	}
+}
+
+
+contract C4B {
+
+	function f0() public view
+	
+	returns (uint)
+	{
+		return 2031102142;
+	}
+}
+contract C4 is C4B {
+
+}
+
+
+
+
+
+interface C5BBBB {
+
+	function f0() external payable returns (uint);
+}
+interface C5BBB is C5BBBB {
+
+	function f0() override
+	external payable returns (uint);
+}
+contract C5BB is C5BBB {
+
+	function f0() virtual external payable
+	override
+	returns (uint)
+	{
+		return 1501100076;
+	}
+}
+contract C5B is C5BB {
+
+}
+contract C5 is C5B {
+
+	function f1() public view
+	
+	returns (uint)
+	{
+		return 1698906197;
+	}
+}
+
+contract C6 {
+
+	function f0() public payable
+	
+	returns (uint)
+	{
+		return 1943007398;
+	}
+}
+
+
+
+
+
+interface C7BBBB {
+
+	function f0() external payable returns (uint);
+}
+interface C7BBB is C7BBBB {
+
+	function f0() override
+	external payable returns (uint);
+}
+contract C7BB is C7BBB {
+
+	function f0() virtual external payable
+	override
+	returns (uint)
+	{
+		return 1068463897;
+	}
+}
+contract C7B is C7BB {
+
+}
+contract C7 is C7B {
+
+	function f0() virtual external payable
+	override
+	returns (uint)
+	{
+		return 1774893867;
+	}
+	function f1() public view
+	
+	returns (uint)
+	{
+		return 2041756892;
+	}
+}
+
+
+contract C {
+	using L1 for uint;
+	function test() public returns (uint)
+	{
+		uint x;
+		if (x.f0() != 1804289383)
+			return 1;
+		return 0;
+	}
+}
+

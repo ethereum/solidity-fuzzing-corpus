@@ -1,0 +1,147 @@
+
+pragma solidity >=0.0;
+
+
+library L0 {
+
+	function f0(uint) public pure returns (uint)
+	{
+		return 1804289383;
+	}
+}
+
+
+
+abstract contract C2BB {
+
+}
+
+interface C2BBB {
+
+	function f0() external payable returns (uint);
+}
+contract C2B is C2BB, C2BBB {
+
+	function f0() virtual external payable
+	override
+	returns (uint)
+	{
+		return 1291394886;
+	}
+}
+contract C2 is C2B {
+
+}
+
+
+
+abstract contract C6BB {
+
+	function f0() virtual public view
+	
+	returns (uint);
+}
+contract C6B is C6BB {
+
+	function f0() public view
+	override
+	returns (uint)
+	{
+		return 1203428207;
+	}
+}
+contract C6 is C6B {
+
+}
+
+
+
+
+interface C10BBB {
+
+	function f0() external payable returns (uint);
+}
+interface C10BB is C10BBB {
+
+}
+contract C10B is C10BB {
+
+	function f0() virtual external payable
+	override
+	returns (uint)
+	{
+		return 1559527823;
+	}
+}
+contract C10 is C10B {
+
+	function f0() external payable
+	override
+	returns (uint)
+	{
+		return 1931656580;
+	}
+}
+library L11 {
+
+	function f0(uint) public pure returns (uint)
+	{
+		return 1681692777;
+	}
+}
+
+
+
+
+interface C12BBB {
+
+	function f0() external payable returns (uint);
+}
+interface C12BB is C12BBB {
+
+}
+contract C12B is C12BB {
+
+	function f0() virtual external payable
+	override
+	returns (uint)
+	{
+		return 1842513780;
+	}
+}
+contract C12 is C12B {
+
+}
+
+
+contract C {
+	function test() public returns (uint)
+	{
+			C10 tc0 = new C10();
+			if (tc0.f0() != 1931656580)
+				return 1;
+			C10B tc1 = new C10B();
+			if (tc1.f0() != 1559527823)
+				return 2;
+			C12 tc2 = new C12();
+			if (tc2.f0() != 1842513780)
+				return 3;
+			C12B tc3 = new C12B();
+			if (tc3.f0() != 1842513780)
+				return 4;
+			C2 tc4 = new C2();
+			if (tc4.f0() != 1291394886)
+				return 5;
+			C2B tc5 = new C2B();
+			if (tc5.f0() != 1291394886)
+				return 6;
+			C6 tc6 = new C6();
+			if (tc6.f0() != 1203428207)
+				return 7;
+			C6B tc7 = new C6B();
+			if (tc7.f0() != 1203428207)
+				return 8;
+			return 0;
+	}
+}
+

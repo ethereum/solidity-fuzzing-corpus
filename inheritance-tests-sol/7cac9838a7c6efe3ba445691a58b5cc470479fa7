@@ -1,0 +1,78 @@
+
+pragma solidity >=0.0;
+
+
+
+
+interface I1B {
+
+	function f0() external payable returns (uint);
+}
+interface I1 is I1B {
+
+}
+
+contract C2 {
+
+	function f0() public view
+	
+	returns (uint)
+	{
+		return 854716505;
+	}
+}
+
+contract C3 {
+
+	function f0() public view
+	
+	returns (uint)
+	{
+		return 564586691;
+	}
+}
+
+
+contract C4B {
+
+}
+contract C4 is C4B {
+
+	function f0() public payable
+	
+	returns (uint)
+	{
+		return 1596680831;
+	}
+}
+
+contract C5 {
+
+	function f0() virtual public pure
+	
+	returns (uint)
+	{
+		return 192302371;
+	}
+}
+
+
+contract C {
+	function test() public returns (uint)
+	{
+			C2 tc0 = new C2();
+			if (tc0.f0() != 854716505)
+				return 1;
+			C3 tc1 = new C3();
+			if (tc1.f0() != 564586691)
+				return 2;
+			C4 tc2 = new C4();
+			if (tc2.f0() != 1596680831)
+				return 3;
+			C5 tc3 = new C5();
+			if (tc3.f0() != 192302371)
+				return 4;
+			return 0;
+	}
+}
+

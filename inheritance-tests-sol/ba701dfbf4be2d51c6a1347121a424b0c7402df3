@@ -1,0 +1,106 @@
+
+pragma solidity >=0.0;
+
+
+library L1 {
+
+	function f0(uint) external view returns (uint)
+	{
+		return 1804289383;
+	}
+}
+library L2 {
+
+	function f0(uint) external view returns (uint)
+	{
+		return 846930886;
+	}
+	function f1(uint) private view returns (uint)
+	{
+		return 1681692777;
+	}
+	function f2(uint) private view returns (uint)
+	{
+		return 1714636915;
+	}
+	function f3(uint) private pure returns (uint)
+	{
+		return 1957747793;
+	}
+	function f4(uint) private view returns (uint)
+	{
+		return 424238335;
+	}
+	function f5(uint) internal pure returns (uint)
+	{
+		return 719885386;
+	}
+	function f6(uint) internal pure returns (uint)
+	{
+		return 1649760492;
+	}
+	function f7(uint) private view returns (uint)
+	{
+		return 596516649;
+	}
+	function f8(uint) internal pure returns (uint)
+	{
+		return 1189641421;
+	}
+	function f9(uint) public pure returns (uint)
+	{
+		return 1025202362;
+	}
+	function f10(uint) private pure returns (uint)
+	{
+		return 1350490027;
+	}
+	function f11(uint) internal pure returns (uint)
+	{
+		return 783368690;
+	}
+	function f12(uint) internal pure returns (uint)
+	{
+		return 1102520059;
+	}
+	function f13(uint) private view returns (uint)
+	{
+		return 2044897763;
+	}
+	function f14(uint) internal pure returns (uint)
+	{
+		return 1967513926;
+	}
+	function f15(uint) private view returns (uint)
+	{
+		return 1365180540;
+	}
+}
+
+
+interface C3B {
+
+	function f0() external view returns (uint);
+}
+contract C3 is C3B {
+
+	function f0() external view
+	override
+	returns (uint)
+	{
+		return 1105902161;
+	}
+}
+
+
+contract C {
+	using L2 for uint;
+	function test() public returns (uint)
+	{
+		uint x;
+		if (x.f9() != 1025202362)
+			return 1;
+		return 0;
+	}
+}
+

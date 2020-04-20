@@ -1,0 +1,162 @@
+
+pragma solidity >=0.0;
+
+
+
+contract C0 {
+
+	function f0() public view
+	
+	returns (uint)
+	{
+		return 1792964908;
+	}
+	function f1() virtual public pure
+	
+	returns (uint)
+	{
+		return 323132674;
+	}
+}
+
+contract C1 {
+
+	function f0() public view
+	
+	returns (uint)
+	{
+		return 763578493;
+	}
+}
+
+
+
+
+interface C2BBB {
+
+	function f0() external payable returns (uint);
+}
+interface C2BB is C2BBB {
+
+	function f0() override
+	external payable returns (uint);
+}
+interface C2B is C2BB {
+
+	function f0() override
+	external payable returns (uint);
+}
+contract C2 is C2B {
+
+	function f0() external payable
+	override
+	returns (uint)
+	{
+		return 233195309;
+	}
+}
+
+contract C3 {
+
+	function f0() public view
+	
+	returns (uint)
+	{
+		return 1608966812;
+	}
+}
+
+contract C4 {
+
+	function f0() virtual public pure
+	
+	returns (uint)
+	{
+		return 543404650;
+	}
+	function f1() public pure
+	
+	returns (uint)
+	{
+		return 1320595692;
+	}
+}
+
+
+
+
+
+
+
+
+interface I5BBBBBBB {
+
+	function f0() external payable returns (uint);
+}
+interface I5BBBBBB is I5BBBBBBB {
+
+	function f0() override
+	external payable returns (uint);
+}
+interface I5BBBBB is I5BBBBBB {
+
+}
+interface I5BBBB is I5BBBBB {
+
+	function f0() override
+	external payable returns (uint);
+}
+interface I5BBB is I5BBBB {
+
+	function f0() override
+	external payable returns (uint);
+}
+interface I5BB is I5BBB {
+
+}
+interface I5B is I5BB {
+
+	function f0() override
+	external payable returns (uint);
+}
+
+interface I5BBBBBBBB is I5BB {
+
+	function f1() external payable returns (uint);
+}
+interface I5 is I5B, I5BBBBBBBB {
+
+	function f0() override(I5B, I5BBB)
+	external payable returns (uint);
+	function f1() override
+	external payable returns (uint);
+}
+
+contract C6 {
+
+	function f0() external pure
+	
+	returns (uint)
+	{
+		return 1518042964;
+	}
+}
+
+contract C7 {
+
+	function f0() public view
+	
+	returns (uint)
+	{
+		return 1014912310;
+	}
+}
+
+
+contract C {
+	function test() public returns (uint)
+	{
+		return 0;
+	}
+}
+

@@ -1,0 +1,60 @@
+
+pragma solidity >=0.0;
+
+
+library L2 {
+
+	function f0(uint) public pure returns (uint)
+	{
+		return 1350490027;
+	}
+}
+
+interface I3 {
+
+	function f0() external payable returns (uint);
+}
+
+
+
+
+interface C5BBB {
+
+	function f0() external payable returns (uint);
+}
+interface C5BB is C5BBB {
+
+}
+contract C5B is C5BB {
+
+	function f0() virtual external payable
+	override
+	returns (uint)
+	{
+		return 1195680747;
+	}
+}
+contract C5 is C5B {
+
+	function f0() virtual external payable
+	override
+	returns (uint)
+	{
+		return 1733068100;
+	}
+}
+
+
+contract C {
+	function test() public returns (uint)
+	{
+			C5 tc0 = new C5();
+			if (tc0.f0() != 1733068100)
+				return 1;
+			C5B tc1 = new C5B();
+			if (tc1.f0() != 1195680747)
+				return 2;
+			return 0;
+	}
+}
+

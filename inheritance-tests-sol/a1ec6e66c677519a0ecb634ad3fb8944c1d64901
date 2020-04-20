@@ -1,0 +1,77 @@
+
+pragma solidity >=0.0;
+
+
+
+
+
+interface I0BB {
+
+	function f0() external view returns (uint);
+}
+interface I0B is I0BB {
+
+	function f1() external payable returns (uint);
+}
+interface I0 is I0B {
+
+}
+
+
+interface I1B {
+
+	function f0() external payable returns (uint);
+}
+interface I1 is I1B {
+
+}
+
+
+
+interface C2BB {
+
+	function f0() external view returns (uint);
+}
+contract C2B is C2BB {
+
+	function f0() virtual external view
+	override
+	returns (uint)
+	{
+		return 39966491;
+	}
+}
+contract C2 is C2B {
+
+	function f0() external view
+	override
+	returns (uint)
+	{
+		return 173363389;
+	}
+}
+library L3 {
+
+	function f0(uint) private pure returns (uint)
+	{
+		return 1804289383;
+	}
+}
+
+
+interface I4B {
+
+	function f0() external payable returns (uint);
+}
+interface I4 is I4B {
+
+}
+
+
+contract C {
+	function test() public returns (uint)
+	{
+		return 0;
+	}
+}
+

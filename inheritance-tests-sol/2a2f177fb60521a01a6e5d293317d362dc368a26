@@ -1,0 +1,102 @@
+
+pragma solidity >=0.0;
+
+
+
+
+contract C0B {
+
+	function f0() public view
+	
+	returns (uint)
+	{
+		return 48271;
+	}
+}
+contract C0 is C0B {
+
+}
+library L2 {
+
+	function f0(uint) public view returns (uint)
+	{
+		return 1804289383;
+	}
+}
+library L3 {
+
+	function f0(uint) private pure returns (uint)
+	{
+		return 846930886;
+	}
+	function f1(uint) private pure returns (uint)
+	{
+		return 1681692777;
+	}
+}
+library L4 {
+
+	function f0(uint) private pure returns (uint)
+	{
+		return 1714636915;
+	}
+	function f1(uint) private pure returns (uint)
+	{
+		return 1957747793;
+	}
+}
+library L5 {
+
+	function f0(uint) public view returns (uint)
+	{
+		return 424238335;
+	}
+}
+
+contract C7 {
+
+	function f0() virtual public view
+	
+	returns (uint)
+	{
+		return 914937185;
+	}
+}
+
+
+contract C8B {
+
+	function f0() public view
+	
+	returns (uint)
+	{
+		return 1931656580;
+	}
+}
+contract C8 is C8B {
+
+}
+library L9 {
+
+	function f0(uint) external pure returns (uint)
+	{
+		return 719885386;
+	}
+	function f1(uint) public view returns (uint)
+	{
+		return 1649760492;
+	}
+}
+
+
+contract C {
+	using L2 for uint;
+	function test() public returns (uint)
+	{
+		uint x;
+		if (x.f0() != 1804289383)
+			return 1;
+		return 0;
+	}
+}
+

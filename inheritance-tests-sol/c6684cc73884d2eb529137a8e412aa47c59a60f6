@@ -1,0 +1,50 @@
+
+pragma solidity >=0.0;
+
+
+
+
+interface I0B {
+
+	function f0() external payable returns (uint);
+}
+interface I0 is I0B {
+
+}
+
+
+abstract contract C2B {
+
+}
+
+
+abstract contract C2BBB {
+
+}
+contract C2BB is C2B, C2BBB {
+
+	function f0() external pure
+	
+	returns (uint)
+	{
+		return 182605794;
+	}
+}
+contract C2 is C2B, C2BB {
+
+	function f1() external pure
+	
+	returns (uint)
+	{
+		return 1914720637;
+	}
+}
+
+
+contract C {
+	function test() public returns (uint)
+	{
+		return 0;
+	}
+}
+

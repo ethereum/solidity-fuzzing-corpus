@@ -1,0 +1,50 @@
+
+pragma solidity >=0.0;
+
+
+
+contract C0 {
+
+	function f0() public view
+	
+	returns (uint)
+	{
+		return 48271;
+	}
+	function f1() virtual public pure
+	
+	returns (uint)
+	{
+		return 182605794;
+	}
+}
+library L1 {
+
+	function f0(uint) public view returns (uint)
+	{
+		return 1804289383;
+	}
+}
+
+
+interface I2B {
+
+	function f0() external view returns (uint);
+}
+interface I2 is I2B {
+
+}
+
+
+contract C {
+	function test() public returns (uint)
+	{
+			C0 tc0 = new C0();
+			if (tc0.f0() != 48271)
+				return 1;
+			if (tc0.f1() != 182605794)
+				return 2;
+			return 0;
+	}
+}
+

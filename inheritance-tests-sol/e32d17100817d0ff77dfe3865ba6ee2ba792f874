@@ -1,0 +1,135 @@
+
+pragma solidity >=0.0;
+
+
+
+
+
+
+
+
+
+
+
+
+
+interface I1BBBBBBBBBB {
+
+	function f0() external view returns (uint);
+}
+interface I1BBBBBBBBB is I1BBBBBBBBBB {
+
+}
+
+interface I1BBBBBBBBBBB is I1BBBBBBBBB {
+
+	function f1() external payable returns (uint);
+}
+interface I1BBBBBBBB is I1BBBBBBBBB, I1BBBBBBBBBBB {
+
+	function f0() override
+	external view returns (uint);
+	function f1() override
+	external payable returns (uint);
+	function f2() external view returns (uint);
+}
+interface I1BBBBBBB is I1BBBBBBBB {
+
+	function f0() override
+	external view returns (uint);
+}
+interface I1BBBBBB is I1BBBBBBB {
+
+	function f1() override
+	external payable returns (uint);
+}
+interface I1BBBBB is I1BBBBBB {
+
+	function f1() override
+	external payable returns (uint);
+}
+interface I1BBBB is I1BBBBB {
+
+	function f0() override
+	external view returns (uint);
+	function f1() override
+	external payable returns (uint);
+}
+
+interface I1BBBBBBBBBBBB is I1BBBB {
+
+	function f0() override
+	external view returns (uint);
+	function f1() override
+	external payable returns (uint);
+	function f3() external payable returns (uint);
+}
+interface I1BBB is I1BBBB, I1BBBBBBBBBBBB {
+
+	function f0() override(I1BBBB, I1BBBBBBBBBBBB)
+	external view returns (uint);
+	function f1() override(I1BBBB, I1BBBBBBBBBBBB)
+	external payable returns (uint);
+	function f2() override
+	external view returns (uint);
+	function f3() override
+	external payable returns (uint);
+	function f4() external view returns (uint);
+}
+interface I1BB is I1BBB {
+
+	function f2() override
+	external view returns (uint);
+	function f3() override
+	external payable returns (uint);
+}
+interface I1B is I1BB {
+
+	function f4() override
+	external view returns (uint);
+}
+interface I1 is I1B {
+
+	function f1() override
+	external payable returns (uint);
+}
+
+
+
+interface C2BB {
+
+	function f0() external payable returns (uint);
+}
+interface C2B is C2BB {
+
+}
+contract C2 is C2B {
+
+	function f0() external payable
+	override
+	returns (uint)
+	{
+		return 1298302928;
+	}
+	function f1() public view
+	
+	returns (uint)
+	{
+		return 365367087;
+	}
+	function f2() public pure
+	
+	returns (uint)
+	{
+		return 1498947413;
+	}
+}
+
+
+contract C {
+	function test() public returns (uint)
+	{
+		return 0;
+	}
+}
+

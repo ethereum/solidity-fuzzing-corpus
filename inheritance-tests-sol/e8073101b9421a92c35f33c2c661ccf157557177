@@ -1,0 +1,74 @@
+
+pragma solidity >=0.0;
+
+
+
+contract C0 {
+
+	function f0() public view
+	
+	returns (uint)
+	{
+		return 2172195;
+	}
+}
+
+contract C1 {
+
+	function f0() virtual public pure
+	
+	returns (uint)
+	{
+		return 1774809789;
+	}
+}
+
+
+
+contract C2BB {
+
+	function f0() virtual public pure
+	
+	returns (uint)
+	{
+		return 130711401;
+	}
+}
+contract C2B is C2BB {
+
+}
+contract C2 is C2B {
+
+	function f1() public view
+	
+	returns (uint)
+	{
+		return 373473364;
+	}
+}
+
+
+contract C {
+	function test() public returns (uint)
+	{
+			C0 tc0 = new C0();
+			if (tc0.f0() != 2172195)
+				return 1;
+			C1 tc1 = new C1();
+			if (tc1.f0() != 1774809789)
+				return 2;
+			C2 tc2 = new C2();
+			if (tc2.f0() != 130711401)
+				return 3;
+			if (tc2.f1() != 373473364)
+				return 4;
+			C2B tc3 = new C2B();
+			if (tc3.f0() != 130711401)
+				return 5;
+			C2BB tc4 = new C2BB();
+			if (tc4.f0() != 130711401)
+				return 6;
+			return 0;
+	}
+}
+

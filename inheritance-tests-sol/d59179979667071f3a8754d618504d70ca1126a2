@@ -1,0 +1,58 @@
+
+pragma solidity >=0.0;
+
+
+
+interface I0 {
+
+	function f0() external view returns (uint);
+}
+library L1 {
+
+	function f0(uint) external view returns (uint)
+	{
+		return 1804289383;
+	}
+}
+library L2 {
+
+	function f0(uint) public pure returns (uint)
+	{
+		return 846930886;
+	}
+}
+
+
+interface C3B {
+
+	function f0() external view returns (uint);
+}
+contract C3 is C3B {
+
+	function f0() virtual external view
+	override
+	returns (uint)
+	{
+		return 1914720637;
+	}
+}
+library L5 {
+
+	function f0(uint) external pure returns (uint)
+	{
+		return 1681692777;
+	}
+}
+
+
+contract C {
+	using L5 for uint;
+	function test() public returns (uint)
+	{
+		uint x;
+		if (x.f0() != 1681692777)
+			return 1;
+		return 0;
+	}
+}
+

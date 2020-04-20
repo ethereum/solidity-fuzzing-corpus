@@ -1,0 +1,130 @@
+
+pragma solidity >=0.0;
+
+
+
+
+
+
+
+
+
+
+
+
+interface C0BBBBBBBBB {
+
+	function f0() external view returns (uint);
+	function f1() external view returns (uint);
+}
+interface C0BBBBBBBB is C0BBBBBBBBB {
+
+	function f0() override
+	external view returns (uint);
+	function f1() override
+	external view returns (uint);
+}
+interface C0BBBBBBB is C0BBBBBBBB {
+
+	function f1() override
+	external view returns (uint);
+}
+interface C0BBBBBB is C0BBBBBBB {
+
+	function f0() override
+	external view returns (uint);
+	function f1() override
+	external view returns (uint);
+}
+interface C0BBBBB is C0BBBBBB {
+
+	function f0() override
+	external view returns (uint);
+	function f1() override
+	external view returns (uint);
+}
+interface C0BBBB is C0BBBBB {
+
+	function f2() external payable returns (uint);
+}
+interface C0BBB is C0BBBB {
+
+	function f1() override
+	external view returns (uint);
+	function f2() override
+	external payable returns (uint);
+}
+contract C0BB is C0BBB {
+
+	function f0() external view
+	override
+	returns (uint)
+	{
+		return 763788370;
+	}
+	function f1() virtual external view
+	override
+	returns (uint)
+	{
+		return 1564254415;
+	}
+	function f2() virtual external payable
+	override
+	returns (uint)
+	{
+		return 2128079709;
+	}
+}
+contract C0B is C0BB {
+
+}
+contract C0 is C0B {
+
+	function f3() public payable
+	
+	returns (uint)
+	{
+		return 78072655;
+	}
+}
+
+
+interface I1B {
+
+	function f0() external payable returns (uint);
+}
+interface I1 is I1B {
+
+}
+
+
+contract C {
+	function test() public returns (uint)
+	{
+			C0 tc0 = new C0();
+			if (tc0.f0() != 763788370)
+				return 1;
+			if (tc0.f1() != 1564254415)
+				return 2;
+			if (tc0.f2() != 2128079709)
+				return 3;
+			if (tc0.f3() != 78072655)
+				return 4;
+			C0B tc1 = new C0B();
+			if (tc1.f0() != 763788370)
+				return 5;
+			if (tc1.f1() != 1564254415)
+				return 6;
+			if (tc1.f2() != 2128079709)
+				return 7;
+			C0BB tc2 = new C0BB();
+			if (tc2.f0() != 763788370)
+				return 8;
+			if (tc2.f1() != 1564254415)
+				return 9;
+			if (tc2.f2() != 2128079709)
+				return 10;
+			return 0;
+	}
+}
+

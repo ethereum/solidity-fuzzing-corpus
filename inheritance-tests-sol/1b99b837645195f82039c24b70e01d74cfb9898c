@@ -1,0 +1,171 @@
+
+pragma solidity >=0.0;
+
+
+
+
+
+
+
+
+
+interface C0BBBBBB {
+
+	function f0() external view returns (uint);
+}
+interface C0BBBBB is C0BBBBBB {
+
+	function f0() override
+	external view returns (uint);
+}
+contract C0BBBB is C0BBBBB {
+
+	function f0() external view
+	override
+	returns (uint)
+	{
+		return 1104122143;
+	}
+}
+abstract contract C0BBB is C0BBBB {
+
+}
+
+
+contract C0BBBBBBBB {
+
+}
+abstract contract C0BBBBBBB is C0BBBB, C0BBBBBBBB {
+
+}
+contract C0BB is C0BBB, C0BBBBBBB {
+
+	function f1() public view
+	
+	returns (uint)
+	{
+		return 2077369900;
+	}
+}
+abstract contract C0B is C0BB {
+
+}
+
+
+contract C0BBBBBBBBBB {
+
+}
+abstract contract C0BBBBBBBBB is C0B, C0BBBBBBBBBB {
+
+}
+contract C0 is C0B, C0BBBBBBBBB {
+
+	function f2() public view
+	
+	returns (uint)
+	{
+		return 1066859737;
+	}
+}
+
+
+
+
+
+
+
+interface C1BBBBBB {
+
+	function f0() external view returns (uint);
+}
+interface C1BBBBB is C1BBBBBB {
+
+}
+contract C1BBBB is C1BBBBB {
+
+	function f0() virtual external view
+	override
+	returns (uint)
+	{
+		return 1217177185;
+	}
+}
+abstract contract C1BBB is C1BBBB {
+
+}
+
+
+contract C1BBBBBBBB {
+
+}
+abstract contract C1BBBBBBB is C1BBBB, C1BBBBBBBB {
+
+}
+contract C1BB is C1BBB, C1BBBBBBB {
+
+	function f1() public view
+	
+	returns (uint)
+	{
+		return 6919657;
+	}
+}
+abstract contract C1B is C1BB {
+
+}
+
+
+contract C1BBBBBBBBBB {
+
+}
+abstract contract C1BBBBBBBBB is C1BB, C1BBBBBBBBBB {
+
+}
+contract C1 is C1B, C1BBBBBBBBB {
+
+	function f2() public view
+	
+	returns (uint)
+	{
+		return 142874745;
+	}
+}
+
+
+contract C {
+	function test() public returns (uint)
+	{
+			C0 tc0 = new C0();
+			if (tc0.f0() != 1104122143)
+				return 1;
+			if (tc0.f1() != 2077369900)
+				return 2;
+			if (tc0.f2() != 1066859737)
+				return 3;
+			C0BB tc1 = new C0BB();
+			if (tc1.f0() != 1104122143)
+				return 4;
+			if (tc1.f1() != 2077369900)
+				return 5;
+			C0BBBB tc2 = new C0BBBB();
+			if (tc2.f0() != 1104122143)
+				return 6;
+			C1 tc3 = new C1();
+			if (tc3.f0() != 1217177185)
+				return 7;
+			if (tc3.f1() != 6919657)
+				return 8;
+			if (tc3.f2() != 142874745)
+				return 9;
+			C1BB tc4 = new C1BB();
+			if (tc4.f0() != 1217177185)
+				return 10;
+			if (tc4.f1() != 6919657)
+				return 11;
+			C1BBBB tc5 = new C1BBBB();
+			if (tc5.f0() != 1217177185)
+				return 12;
+			return 0;
+	}
+}
+

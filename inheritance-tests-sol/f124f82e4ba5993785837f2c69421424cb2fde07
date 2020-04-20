@@ -1,0 +1,46 @@
+
+pragma solidity >=0.0;
+
+
+library L0 {
+
+	function f0(uint) internal view returns (uint)
+	{
+		return 1804289383;
+	}
+}
+library L2 {
+
+	function f0(uint) internal view returns (uint)
+	{
+		return 1681692777;
+	}
+}
+library L3 {
+
+	function f0(uint) public view returns (uint)
+	{
+		return 1714636915;
+	}
+	function f1(uint) public pure returns (uint)
+	{
+		return 1957747793;
+	}
+	function f2(uint) internal pure returns (uint)
+	{
+		return 424238335;
+	}
+}
+
+
+contract C {
+	using L3 for uint;
+	function test() public returns (uint)
+	{
+		uint x;
+		if (x.f1() != 1957747793)
+			return 1;
+		return 0;
+	}
+}
+

@@ -1,0 +1,59 @@
+
+pragma solidity >=0.0;
+
+
+
+
+abstract contract C0B {
+
+	function f0() virtual public pure
+	
+	returns (uint)
+	{
+		return 265263626;
+	}
+}
+contract C0 is C0B {
+
+	function f0() public pure
+	override
+	returns (uint)
+	{
+		return 1269259752;
+	}
+}
+
+
+abstract contract C1B {
+
+	function f0() virtual public pure
+	
+	returns (uint)
+	{
+		return 669620633;
+	}
+}
+contract C1 is C1B {
+
+	function f0() virtual public pure
+	override
+	returns (uint)
+	{
+		return 491448374;
+	}
+}
+
+
+contract C {
+	function test() public returns (uint)
+	{
+			C0 tc0 = new C0();
+			if (tc0.f0() != 1269259752)
+				return 1;
+			C1 tc1 = new C1();
+			if (tc1.f0() != 491448374)
+				return 2;
+			return 0;
+	}
+}
+

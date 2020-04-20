@@ -1,0 +1,137 @@
+
+pragma solidity >=0.0;
+
+
+
+
+
+
+interface C0BBB {
+
+}
+
+
+interface C0BBBBB {
+
+	function f0() external payable returns (uint);
+}
+interface C0BBBB is C0BBB, C0BBBBB {
+
+}
+interface C0BB is C0BBB, C0BBBB {
+
+	function f0() override
+	external payable returns (uint);
+}
+interface C0B is C0BB {
+
+	function f1() external view returns (uint);
+}
+contract C0 is C0B {
+
+	function f0() external payable
+	override
+	returns (uint)
+	{
+		return 854716505;
+	}
+	function f1() external view
+	override
+	returns (uint)
+	{
+		return 1596680831;
+	}
+}
+
+
+
+contract C1BB {
+
+	function f0() virtual public pure
+	
+	returns (uint)
+	{
+		return 192302371;
+	}
+}
+contract C1B is C1BB {
+
+}
+abstract contract C1 is C1B {
+
+}
+
+
+
+interface I2BB {
+
+	function f0() external view returns (uint);
+}
+interface I2B is I2BB {
+
+	function f1() external payable returns (uint);
+}
+interface I2 is I2B {
+
+	function f1() override
+	external payable returns (uint);
+}
+
+
+
+interface I3BB {
+
+	function f0() external view returns (uint);
+}
+interface I3B is I3BB {
+
+	function f1() external payable returns (uint);
+}
+
+
+interface I3BBBB {
+
+	function f0() external view returns (uint);
+}
+interface I3BBB is I3B, I3BBBB {
+
+	function f0() override(I3BB, I3BBBB)
+	external view returns (uint);
+	function f1() override
+	external payable returns (uint);
+	function f2() external payable returns (uint);
+}
+interface I3 is I3B, I3BBB {
+
+	function f0() override(I3BB, I3BBB)
+	external view returns (uint);
+	function f1() override(I3B, I3BBB)
+	external payable returns (uint);
+	function f2() override
+	external payable returns (uint);
+}
+
+interface I4 {
+
+	function f0() external view returns (uint);
+}
+
+
+contract C {
+	function test() public returns (uint)
+	{
+			C0 tc0 = new C0();
+			if (tc0.f0() != 854716505)
+				return 1;
+			if (tc0.f1() != 1596680831)
+				return 2;
+			C1B tc1 = new C1B();
+			if (tc1.f0() != 192302371)
+				return 3;
+			C1BB tc2 = new C1BB();
+			if (tc2.f0() != 192302371)
+				return 4;
+			return 0;
+	}
+}
+

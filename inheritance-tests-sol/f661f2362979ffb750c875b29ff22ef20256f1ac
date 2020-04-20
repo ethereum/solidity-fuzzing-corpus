@@ -1,0 +1,297 @@
+
+pragma solidity >=0.0;
+
+
+library L0 {
+
+	function f0(uint) public view returns (uint)
+	{
+		return 1804289383;
+	}
+}
+library L1 {
+
+	function f0(uint) external view returns (uint)
+	{
+		return 846930886;
+	}
+	function f1(uint) external pure returns (uint)
+	{
+		return 1681692777;
+	}
+}
+library L2 {
+
+	function f0(uint) public view returns (uint)
+	{
+		return 1714636915;
+	}
+}
+library L3 {
+
+	function f0(uint) private pure returns (uint)
+	{
+		return 1957747793;
+	}
+	function f1(uint) internal view returns (uint)
+	{
+		return 424238335;
+	}
+}
+library L4 {
+
+	function f0(uint) external pure returns (uint)
+	{
+		return 719885386;
+	}
+	function f1(uint) internal pure returns (uint)
+	{
+		return 1649760492;
+	}
+	function f2(uint) external pure returns (uint)
+	{
+		return 596516649;
+	}
+}
+library L5 {
+
+	function f0(uint) public view returns (uint)
+	{
+		return 1189641421;
+	}
+	function f1(uint) internal view returns (uint)
+	{
+		return 1025202362;
+	}
+}
+library L7 {
+
+	function f0(uint) private view returns (uint)
+	{
+		return 783368690;
+	}
+	function f1(uint) private pure returns (uint)
+	{
+		return 1102520059;
+	}
+	function f2(uint) external pure returns (uint)
+	{
+		return 2044897763;
+	}
+	function f3(uint) private pure returns (uint)
+	{
+		return 1967513926;
+	}
+}
+library L8 {
+
+	function f0(uint) external pure returns (uint)
+	{
+		return 1365180540;
+	}
+	function f1(uint) internal pure returns (uint)
+	{
+		return 1540383426;
+	}
+	function f2(uint) external pure returns (uint)
+	{
+		return 304089172;
+	}
+}
+library L9 {
+
+	function f0(uint) internal pure returns (uint)
+	{
+		return 1303455736;
+	}
+}
+library L10 {
+
+	function f0(uint) external pure returns (uint)
+	{
+		return 35005211;
+	}
+	function f1(uint) internal pure returns (uint)
+	{
+		return 521595368;
+	}
+	function f2(uint) external pure returns (uint)
+	{
+		return 294702567;
+	}
+}
+library L11 {
+
+	function f0(uint) private pure returns (uint)
+	{
+		return 1726956429;
+	}
+	function f1(uint) internal view returns (uint)
+	{
+		return 336465782;
+	}
+}
+library L12 {
+
+	function f0(uint) private pure returns (uint)
+	{
+		return 861021530;
+	}
+	function f1(uint) private pure returns (uint)
+	{
+		return 278722862;
+	}
+	function f2(uint) external pure returns (uint)
+	{
+		return 233665123;
+	}
+	function f3(uint) private pure returns (uint)
+	{
+		return 2145174067;
+	}
+}
+library L13 {
+
+	function f0(uint) public view returns (uint)
+	{
+		return 468703135;
+	}
+}
+
+contract C14 {
+
+	function f0() public view
+	
+	returns (uint)
+	{
+		return 1271135913;
+	}
+}
+
+
+
+
+
+interface C15BBBB {
+
+	function f0() external payable returns (uint);
+}
+interface C15BBB is C15BBBB {
+
+}
+interface C15BB is C15BBB {
+
+	function f0() override
+	external payable returns (uint);
+}
+contract C15B is C15BB {
+
+	function f0() external payable
+	override
+	returns (uint)
+	{
+		return 638022372;
+	}
+}
+contract C15 is C15B {
+
+}
+
+
+
+
+
+interface C16BBBB {
+
+	function f0() external payable returns (uint);
+}
+interface C16BBB is C16BBBB {
+
+	function f0() override
+	external payable returns (uint);
+}
+interface C16BB is C16BBB {
+
+}
+contract C16B is C16BB {
+
+	function f0() virtual external payable
+	override
+	returns (uint)
+	{
+		return 1842513780;
+	}
+}
+contract C16 is C16B {
+
+}
+library L17 {
+
+	function f0(uint) public view returns (uint)
+	{
+		return 1101513929;
+	}
+}
+library L18 {
+
+	function f0(uint) public view returns (uint)
+	{
+		return 1801979802;
+	}
+}
+library L19 {
+
+	function f0(uint) public view returns (uint)
+	{
+		return 1315634022;
+	}
+}
+library L20 {
+
+	function f0(uint) public view returns (uint)
+	{
+		return 635723058;
+	}
+}
+library L21 {
+
+	function f0(uint) internal pure returns (uint)
+	{
+		return 1369133069;
+	}
+	function f1(uint) public view returns (uint)
+	{
+		return 1125898167;
+	}
+}
+library L22 {
+
+	function f0(uint) public view returns (uint)
+	{
+		return 1059961393;
+	}
+	function f1(uint) internal view returns (uint)
+	{
+		return 2089018456;
+	}
+}
+library L23 {
+
+	function f0(uint) public view returns (uint)
+	{
+		return 628175011;
+	}
+}
+
+
+contract C {
+	using L19 for uint;
+	function test() public returns (uint)
+	{
+		uint x;
+		if (x.f0() != 1315634022)
+			return 1;
+		return 0;
+	}
+}
+

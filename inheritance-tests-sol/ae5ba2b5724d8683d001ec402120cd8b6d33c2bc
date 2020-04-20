@@ -1,0 +1,168 @@
+
+pragma solidity >=0.0;
+
+
+library L5 {
+
+	function f0(uint) external pure returns (uint)
+	{
+		return 1804289383;
+	}
+}
+
+
+
+
+interface C6BBB {
+
+	function f0() external payable returns (uint);
+}
+interface C6BB is C6BBB {
+
+	function f0() override
+	external payable returns (uint);
+}
+interface C6B is C6BB {
+
+}
+contract C6 is C6B {
+
+	function f0() virtual external payable
+	override
+	returns (uint)
+	{
+		return 395281099;
+	}
+}
+
+
+
+
+interface C9BBB {
+
+	function f0() external payable returns (uint);
+}
+interface C9BB is C9BBB {
+
+	function f0() override
+	external payable returns (uint);
+}
+interface C9B is C9BB {
+
+	function f0() override
+	external payable returns (uint);
+}
+contract C9 is C9B {
+
+	function f0() virtual external payable
+	override
+	returns (uint)
+	{
+		return 1023347310;
+	}
+}
+
+
+
+abstract contract C12BB {
+
+}
+
+interface C12BBB {
+
+	function f0() external payable returns (uint);
+}
+contract C12B is C12BB, C12BBB {
+
+	function f0() virtual external payable
+	override
+	returns (uint)
+	{
+		return 201220124;
+	}
+}
+contract C12 is C12B {
+
+}
+
+
+interface C15B {
+
+	function f0() external payable returns (uint);
+}
+contract C15 is C15B {
+
+	function f0() external payable
+	override
+	returns (uint)
+	{
+		return 1573871231;
+	}
+}
+
+
+interface C16B {
+
+}
+contract C16 is C16B {
+
+	function f0() virtual public pure
+	
+	returns (uint)
+	{
+		return 809211682;
+	}
+}
+
+
+
+
+interface C22BBB {
+
+	function f0() external payable returns (uint);
+}
+interface C22BB is C22BBB {
+
+}
+contract C22B is C22BB {
+
+	function f0() virtual external payable
+	override
+	returns (uint)
+	{
+		return 547085471;
+	}
+}
+abstract contract C22 is C22B {
+
+}
+
+
+contract C {
+	function test() public returns (uint)
+	{
+			C12 tc0 = new C12();
+			if (tc0.f0() != 201220124)
+				return 1;
+			C12B tc1 = new C12B();
+			if (tc1.f0() != 201220124)
+				return 2;
+			C15 tc2 = new C15();
+			if (tc2.f0() != 1573871231)
+				return 3;
+			C16 tc3 = new C16();
+			if (tc3.f0() != 809211682)
+				return 4;
+			C22B tc4 = new C22B();
+			if (tc4.f0() != 547085471)
+				return 5;
+			C6 tc5 = new C6();
+			if (tc5.f0() != 395281099)
+				return 6;
+			C9 tc6 = new C9();
+			if (tc6.f0() != 1023347310)
+				return 7;
+			return 0;
+	}
+}
+

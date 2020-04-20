@@ -1,0 +1,47 @@
+
+pragma solidity >=0.0;
+
+
+
+
+
+
+contract C0BBB {
+
+	function f0() external pure
+	
+	returns (uint)
+	{
+		return 494295040;
+	}
+}
+contract C0BB is C0BBB {
+
+}
+contract C0B is C0BB {
+
+}
+contract C0 is C0B {
+
+}
+
+
+contract C {
+	function test() public returns (uint)
+	{
+			C0 tc0 = new C0();
+			if (tc0.f0() != 494295040)
+				return 1;
+			C0B tc1 = new C0B();
+			if (tc1.f0() != 494295040)
+				return 2;
+			C0BB tc2 = new C0BB();
+			if (tc2.f0() != 494295040)
+				return 3;
+			C0BBB tc3 = new C0BBB();
+			if (tc3.f0() != 494295040)
+				return 4;
+			return 0;
+	}
+}
+

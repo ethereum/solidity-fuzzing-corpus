@@ -1,0 +1,236 @@
+
+pragma solidity >=0.0;
+
+
+
+
+
+
+contract C0BBB {
+
+}
+contract C0BB is C0BBB {
+
+}
+abstract contract C0B is C0BB {
+
+}
+
+
+contract C0BBBBB {
+
+	function f0() public view
+	
+	returns (uint)
+	{
+		return 1291394886;
+	}
+	function f1() public payable
+	
+	returns (uint)
+	{
+		return 1914720637;
+	}
+}
+
+contract C0BBBBBB is C0BBBBB {
+
+	function f2() public view
+	
+	returns (uint)
+	{
+		return 2078669041;
+	}
+	function f3() public payable
+	
+	returns (uint)
+	{
+		return 407355683;
+	}
+}
+contract C0BBBB is C0BB, C0BBBBB, C0BBBBBB {
+
+}
+contract C0 is C0B, C0BBBB {
+
+	function f4() public view
+	
+	returns (uint)
+	{
+		return 564586691;
+	}
+	function f5() public view
+	
+	returns (uint)
+	{
+		return 1596680831;
+	}
+	function f6() external view
+	
+	returns (uint)
+	{
+		return 192302371;
+	}
+	function f7() public view
+	
+	returns (uint)
+	{
+		return 1203428207;
+	}
+	function f8() virtual external view
+	
+	returns (uint)
+	{
+		return 1250328747;
+	}
+	function f9() public view
+	
+	returns (uint)
+	{
+		return 1738531149;
+	}
+	function f10() virtual public view
+	
+	returns (uint)
+	{
+		return 1271135913;
+	}
+	function f11() public view
+	
+	returns (uint)
+	{
+		return 1098894339;
+	}
+	function f12() virtual public pure
+	
+	returns (uint)
+	{
+		return 1882556969;
+	}
+}
+library L1 {
+
+	function f0(uint) public pure returns (uint)
+	{
+		return 1681692777;
+	}
+}
+
+
+
+
+contract C2BBB {
+
+}
+contract C2BB is C2BBB {
+
+}
+abstract contract C2B is C2BB {
+
+}
+
+
+contract C2BBBBB {
+
+	function f0() public view
+	
+	returns (uint)
+	{
+		return 638022372;
+	}
+	function f1() public payable
+	
+	returns (uint)
+	{
+		return 914937185;
+	}
+}
+
+contract C2BBBBBB is C2BBBBB {
+
+	function f2() public view
+	
+	returns (uint)
+	{
+		return 1931656580;
+	}
+	function f3() public payable
+	
+	returns (uint)
+	{
+		return 1402304087;
+	}
+}
+contract C2BBBB is C2BB, C2BBBBB, C2BBBBBB {
+
+}
+contract C2 is C2B, C2BBBB {
+
+	function f4() public view
+	
+	returns (uint)
+	{
+		return 353718330;
+	}
+	function f5() public view
+	
+	returns (uint)
+	{
+		return 1842513780;
+	}
+	function f6() external view
+	
+	returns (uint)
+	{
+		return 1947433875;
+	}
+	function f7() public view
+	
+	returns (uint)
+	{
+		return 631416347;
+	}
+	function f8() virtual external view
+	
+	returns (uint)
+	{
+		return 2010567813;
+	}
+	function f9() public view
+	
+	returns (uint)
+	{
+		return 890442452;
+	}
+	function f10() virtual public view
+	
+	returns (uint)
+	{
+		return 662405787;
+	}
+	function f11() public view
+	
+	returns (uint)
+	{
+		return 1105724094;
+	}
+	function f12() virtual public pure
+	
+	returns (uint)
+	{
+		return 849178936;
+	}
+}
+
+
+contract C {
+	using L1 for uint;
+	function test() public returns (uint)
+	{
+		uint x;
+		if (x.f0() != 1681692777)
+			return 1;
+		return 0;
+	}
+}
+

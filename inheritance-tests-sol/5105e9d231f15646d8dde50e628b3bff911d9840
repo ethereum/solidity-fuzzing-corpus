@@ -1,0 +1,270 @@
+
+pragma solidity >=0.0;
+
+
+library L1 {
+
+	function f0(uint) external pure returns (uint)
+	{
+		return 1804289383;
+	}
+	function f1(uint) public view returns (uint)
+	{
+		return 846930886;
+	}
+}
+
+interface I2 {
+
+	function f0() external view returns (uint);
+}
+
+
+
+interface I3BB {
+
+	function f0() external payable returns (uint);
+}
+interface I3B is I3BB {
+
+	function f0() override
+	external payable returns (uint);
+}
+interface I3 is I3B {
+
+}
+library L5 {
+
+	function f0(uint) internal pure returns (uint)
+	{
+		return 1681692777;
+	}
+	function f1(uint) public view returns (uint)
+	{
+		return 1714636915;
+	}
+}
+
+
+interface C8B {
+
+	function f0() external view returns (uint);
+}
+contract C8 is C8B {
+
+	function f0() external view
+	override
+	returns (uint)
+	{
+		return 1098894339;
+	}
+}
+
+contract C9 {
+
+	function f0() public view
+	
+	returns (uint)
+	{
+		return 1882556969;
+	}
+}
+
+
+
+interface C10BB {
+
+	function f0() external view returns (uint);
+}
+interface C10B is C10BB {
+
+	function f0() override
+	external view returns (uint);
+}
+contract C10 is C10B {
+
+	function f0() external view
+	override
+	returns (uint)
+	{
+		return 638022372;
+	}
+}
+library L11 {
+
+	function f0(uint) internal pure returns (uint)
+	{
+		return 1957747793;
+	}
+}
+library L12 {
+
+	function f0(uint) external pure returns (uint)
+	{
+		return 424238335;
+	}
+}
+
+
+
+interface I13BB {
+
+	function f0() external view returns (uint);
+}
+interface I13B is I13BB {
+
+	function f0() override
+	external view returns (uint);
+	function f1() external payable returns (uint);
+}
+
+interface I13BBB is I13B {
+
+	function f1() override
+	external payable returns (uint);
+	function f2() external payable returns (uint);
+}
+interface I13 is I13B, I13BBB {
+
+	function f0() override
+	external view returns (uint);
+	function f1() override(I13B, I13BBB)
+	external payable returns (uint);
+}
+
+
+
+
+
+
+interface C14BBBBB {
+
+	function f0() external view returns (uint);
+}
+interface C14BBBB is C14BBBBB {
+
+}
+interface C14BBB is C14BBBB {
+
+	function f0() override
+	external view returns (uint);
+	function f1() external payable returns (uint);
+}
+
+
+
+abstract contract C14BBBBBBBB {
+
+}
+contract C14BBBBBBB is C14BBBBBBBB {
+
+}
+contract C14BBBBBB is C14BBB, C14BBBBBBB {
+
+	function f0() virtual external view
+	override
+	returns (uint)
+	{
+		return 1696049367;
+	}
+	function f1() virtual external payable
+	override
+	returns (uint)
+	{
+		return 1168816941;
+	}
+}
+contract C14BB is C14BBB, C14BBBBBB {
+
+	function f0() external view
+	override(C14BBBBBB, C14BBB)
+	returns (uint)
+	{
+		return 1308858262;
+	}
+	function f1() virtual external payable
+	override(C14BBBBBB, C14BBB)
+	returns (uint)
+	{
+		return 1287522347;
+	}
+}
+contract C14B is C14BB {
+
+	function f1() external payable
+	override
+	returns (uint)
+	{
+		return 153892771;
+	}
+}
+contract C14 is C14B {
+
+}
+
+
+
+interface C15BB {
+
+	function f0() external view returns (uint);
+}
+interface C15B is C15BB {
+
+}
+contract C15 is C15B {
+
+	function f0() external view
+	override
+	returns (uint)
+	{
+		return 389431516;
+	}
+}
+library L16 {
+
+	function f0(uint) private pure returns (uint)
+	{
+		return 596516649;
+	}
+}
+
+
+contract C {
+	function test() public returns (uint)
+	{
+			C10 tc0 = new C10();
+			if (tc0.f0() != 638022372)
+				return 1;
+			C14 tc1 = new C14();
+			if (tc1.f0() != 1308858262)
+				return 2;
+			if (tc1.f1() != 153892771)
+				return 3;
+			C14B tc2 = new C14B();
+			if (tc2.f0() != 1308858262)
+				return 4;
+			if (tc2.f1() != 153892771)
+				return 5;
+			C14BB tc3 = new C14BB();
+			if (tc3.f0() != 1308858262)
+				return 6;
+			if (tc3.f1() != 1287522347)
+				return 7;
+			C14BBBBBB tc4 = new C14BBBBBB();
+			if (tc4.f0() != 1696049367)
+				return 8;
+			if (tc4.f1() != 1168816941)
+				return 9;
+			C15 tc5 = new C15();
+			if (tc5.f0() != 389431516)
+				return 10;
+			C8 tc6 = new C8();
+			if (tc6.f0() != 1098894339)
+				return 11;
+			C9 tc7 = new C9();
+			if (tc7.f0() != 1882556969)
+				return 12;
+			return 0;
+	}
+}
+

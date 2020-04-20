@@ -1,0 +1,160 @@
+
+pragma solidity >=0.0;
+
+
+
+
+
+interface I0BB {
+
+	function f0() external view returns (uint);
+}
+interface I0B is I0BB {
+
+	function f1() external view returns (uint);
+}
+
+interface I0BBB is I0BB {
+
+	function f0() override
+	external view returns (uint);
+}
+interface I0 is I0B, I0BBB {
+
+	function f0() override(I0BB, I0BBB)
+	external view returns (uint);
+}
+library L2 {
+
+	function f0(uint) internal view returns (uint)
+	{
+		return 846930886;
+	}
+}
+
+
+interface I3B {
+
+}
+interface I3 is I3B {
+
+}
+library L4 {
+
+	function f0(uint) public view returns (uint)
+	{
+		return 1681692777;
+	}
+}
+library L6 {
+
+	function f0(uint) private pure returns (uint)
+	{
+		return 1957747793;
+	}
+}
+
+
+interface I8B {
+
+	function f0() external payable returns (uint);
+}
+
+interface I8BB is I8B {
+
+	function f0() override
+	external payable returns (uint);
+	function f1() external payable returns (uint);
+}
+interface I8 is I8B, I8BB {
+
+	function f0() override(I8B, I8BB)
+	external payable returns (uint);
+}
+library L9 {
+
+	function f0(uint) internal pure returns (uint)
+	{
+		return 719885386;
+	}
+}
+library L10 {
+
+	function f0(uint) private pure returns (uint)
+	{
+		return 1649760492;
+	}
+}
+library L11 {
+
+	function f0(uint) internal pure returns (uint)
+	{
+		return 596516649;
+	}
+}
+
+
+
+
+
+interface C13BBBB {
+
+	function f0() external payable returns (uint);
+}
+interface C13BBB is C13BBBB {
+
+}
+contract C13BB is C13BBB {
+
+	function f0() external payable
+	override
+	returns (uint)
+	{
+		return 1936030137;
+	}
+	function f1() external pure
+	
+	returns (uint)
+	{
+		return 2064876628;
+	}
+}
+contract C13B is C13BB {
+
+}
+
+contract C13BBBBB is C13BB {
+
+}
+contract C13 is C13B, C13BBBBB {
+
+}
+
+
+contract C {
+	function test() public returns (uint)
+	{
+			C13 tc0 = new C13();
+			if (tc0.f0() != 1936030137)
+				return 1;
+			if (tc0.f1() != 2064876628)
+				return 2;
+			C13B tc1 = new C13B();
+			if (tc1.f0() != 1936030137)
+				return 3;
+			if (tc1.f1() != 2064876628)
+				return 4;
+			C13BB tc2 = new C13BB();
+			if (tc2.f0() != 1936030137)
+				return 5;
+			if (tc2.f1() != 2064876628)
+				return 6;
+			C13BBBBB tc3 = new C13BBBBB();
+			if (tc3.f0() != 1936030137)
+				return 7;
+			if (tc3.f1() != 2064876628)
+				return 8;
+			return 0;
+	}
+}
+

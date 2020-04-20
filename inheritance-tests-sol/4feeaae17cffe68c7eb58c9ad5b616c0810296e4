@@ -1,0 +1,312 @@
+
+pragma solidity >=0.0;
+
+
+library L0 {
+
+	function f0(uint) private pure returns (uint)
+	{
+		return 1804289383;
+	}
+}
+library L1 {
+
+	function f0(uint) private pure returns (uint)
+	{
+		return 846930886;
+	}
+}
+library L2 {
+
+	function f0(uint) public view returns (uint)
+	{
+		return 1681692777;
+	}
+	function f1(uint) private pure returns (uint)
+	{
+		return 1714636915;
+	}
+}
+
+
+contract C3B {
+
+	function f0() public view
+	
+	returns (uint)
+	{
+		return 182605794;
+	}
+}
+contract C3 is C3B {
+
+}
+
+
+contract C4B {
+
+	function f0() public view
+	
+	returns (uint)
+	{
+		return 1291394886;
+	}
+}
+
+contract C4BB is C4B {
+
+	function f1() virtual public view
+	
+	returns (uint)
+	{
+		return 1914720637;
+	}
+}
+contract C4 is C4B, C4BB {
+
+}
+library L5 {
+
+	function f0(uint) private pure returns (uint)
+	{
+		return 424238335;
+	}
+	function f1(uint) internal pure returns (uint)
+	{
+		return 719885386;
+	}
+}
+library L6 {
+
+	function f0(uint) internal pure returns (uint)
+	{
+		return 1649760492;
+	}
+}
+library L7 {
+
+	function f0(uint) public pure returns (uint)
+	{
+		return 596516649;
+	}
+}
+library L8 {
+
+	function f0(uint) internal pure returns (uint)
+	{
+		return 1189641421;
+	}
+}
+library L9 {
+
+	function f0(uint) internal pure returns (uint)
+	{
+		return 1025202362;
+	}
+}
+library L11 {
+
+	function f0(uint) private pure returns (uint)
+	{
+		return 1350490027;
+	}
+}
+library L12 {
+
+	function f0(uint) internal pure returns (uint)
+	{
+		return 783368690;
+	}
+}
+library L13 {
+
+	function f0(uint) external pure returns (uint)
+	{
+		return 1102520059;
+	}
+	function f1(uint) internal pure returns (uint)
+	{
+		return 2044897763;
+	}
+}
+library L14 {
+
+	function f0(uint) private pure returns (uint)
+	{
+		return 1967513926;
+	}
+}
+library L15 {
+
+	function f0(uint) internal pure returns (uint)
+	{
+		return 1365180540;
+	}
+}
+library L16 {
+
+	function f0(uint) internal pure returns (uint)
+	{
+		return 1540383426;
+	}
+}
+library L17 {
+
+	function f0(uint) internal pure returns (uint)
+	{
+		return 304089172;
+	}
+}
+library L18 {
+
+	function f0(uint) private pure returns (uint)
+	{
+		return 1303455736;
+	}
+}
+library L19 {
+
+	function f0(uint) internal pure returns (uint)
+	{
+		return 35005211;
+	}
+}
+library L20 {
+
+	function f0(uint) internal pure returns (uint)
+	{
+		return 521595368;
+	}
+}
+library L21 {
+
+	function f0(uint) internal pure returns (uint)
+	{
+		return 294702567;
+	}
+}
+library L22 {
+
+	function f0(uint) internal pure returns (uint)
+	{
+		return 1726956429;
+	}
+	function f1(uint) internal view returns (uint)
+	{
+		return 336465782;
+	}
+	function f2(uint) internal pure returns (uint)
+	{
+		return 861021530;
+	}
+}
+library L23 {
+
+	function f0(uint) private pure returns (uint)
+	{
+		return 278722862;
+	}
+}
+library L24 {
+
+	function f0(uint) internal pure returns (uint)
+	{
+		return 233665123;
+	}
+}
+library L25 {
+
+	function f0(uint) internal pure returns (uint)
+	{
+		return 2145174067;
+	}
+}
+library L26 {
+
+	function f0(uint) internal pure returns (uint)
+	{
+		return 468703135;
+	}
+}
+library L27 {
+
+	function f0(uint) external pure returns (uint)
+	{
+		return 1101513929;
+	}
+	function f1(uint) internal pure returns (uint)
+	{
+		return 1801979802;
+	}
+}
+library L28 {
+
+	function f0(uint) internal pure returns (uint)
+	{
+		return 1315634022;
+	}
+}
+library L29 {
+
+	function f0(uint) internal pure returns (uint)
+	{
+		return 635723058;
+	}
+}
+library L30 {
+
+	function f0(uint) internal pure returns (uint)
+	{
+		return 1369133069;
+	}
+	function f1(uint) internal view returns (uint)
+	{
+		return 1125898167;
+	}
+}
+library L31 {
+
+	function f0(uint) internal pure returns (uint)
+	{
+		return 1059961393;
+	}
+	function f1(uint) private pure returns (uint)
+	{
+		return 2089018456;
+	}
+}
+library L32 {
+
+	function f0(uint) internal pure returns (uint)
+	{
+		return 628175011;
+	}
+}
+
+
+contract C {
+	function test() public returns (uint)
+	{
+			C3 tc0 = new C3();
+			if (tc0.f0() != 182605794)
+				return 1;
+			C3B tc1 = new C3B();
+			if (tc1.f0() != 182605794)
+				return 2;
+			C4 tc2 = new C4();
+			if (tc2.f0() != 1291394886)
+				return 3;
+			if (tc2.f1() != 1914720637)
+				return 4;
+			C4B tc3 = new C4B();
+			if (tc3.f0() != 1291394886)
+				return 5;
+			C4BB tc4 = new C4BB();
+			if (tc4.f0() != 1291394886)
+				return 6;
+			if (tc4.f1() != 1914720637)
+				return 7;
+			return 0;
+	}
+}
+

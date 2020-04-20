@@ -1,0 +1,139 @@
+
+pragma solidity >=0.0;
+
+
+
+
+
+
+interface C0BBB {
+
+}
+
+
+interface C0BBBBB {
+
+	function f0() external payable returns (uint);
+	function f1() external payable returns (uint);
+}
+interface C0BBBB is C0BBB, C0BBBBB {
+
+	function f0() override
+	external payable returns (uint);
+	function f1() override
+	external payable returns (uint);
+}
+interface C0BB is C0BBB, C0BBBB {
+
+	function f0() override
+	external payable returns (uint);
+}
+interface C0B is C0BB {
+
+	function f0() override
+	external payable returns (uint);
+	function f1() override
+	external payable returns (uint);
+}
+
+contract C0BBBBBB is C0B {
+
+	function f0() virtual external payable
+	override
+	returns (uint)
+	{
+		return 1235509981;
+	}
+	function f1() virtual external payable
+	override
+	returns (uint)
+	{
+		return 1343582881;
+	}
+}
+contract C0 is C0B, C0BBBBBB {
+
+	function f0() virtual external payable
+	override(C0BBBBBB, C0B)
+	returns (uint)
+	{
+		return 2038460511;
+	}
+	function f1() external payable
+	override(C0BBBBBB, C0B)
+	returns (uint)
+	{
+		return 1573281751;
+	}
+}
+
+
+
+
+interface C1BBB {
+
+}
+
+
+interface C1BBBBB {
+
+	function f0() external payable returns (uint);
+	function f1() external payable returns (uint);
+}
+interface C1BBBB is C1BBB, C1BBBBB {
+
+	function f1() override
+	external payable returns (uint);
+}
+interface C1BB is C1BBB, C1BBBB {
+
+	function f0() override
+	external payable returns (uint);
+	function f1() override
+	external payable returns (uint);
+}
+interface C1B is C1BB {
+
+	function f1() override
+	external payable returns (uint);
+}
+
+contract C1BBBBBB is C1BB {
+
+	function f0() virtual external payable
+	override
+	returns (uint)
+	{
+		return 1869774084;
+	}
+	function f1() virtual external payable
+	override
+	returns (uint)
+	{
+		return 1519435253;
+	}
+}
+contract C1 is C1B, C1BBBBBB {
+
+	function f0() virtual external payable
+	override(C1BBBBBB, C1BB)
+	returns (uint)
+	{
+		return 5755002;
+	}
+	function f1() external payable
+	override(C1BBBBBB, C1B)
+	returns (uint)
+	{
+		return 1964702021;
+	}
+}
+
+
+contract C {
+	function test() public returns (uint)
+	{
+		return 0;
+	}
+}
+

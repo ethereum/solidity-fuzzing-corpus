@@ -1,0 +1,154 @@
+
+pragma solidity >=0.0;
+
+
+
+
+
+
+
+
+
+interface C0BBBBBB {
+
+	function f0() external view returns (uint);
+}
+interface C0BBBBB is C0BBBBBB {
+
+}
+interface C0BBBB is C0BBBBB {
+
+	function f0() override
+	external view returns (uint);
+}
+contract C0BBB is C0BBBB {
+
+	function f0() virtual external view
+	override
+	returns (uint)
+	{
+		return 1161902063;
+	}
+}
+contract C0BB is C0BBB {
+
+	function f0() virtual external view
+	override
+	returns (uint)
+	{
+		return 489324777;
+	}
+}
+contract C0B is C0BB {
+
+	function f0() external view
+	override
+	returns (uint)
+	{
+		return 699130566;
+	}
+}
+contract C0 is C0B {
+
+	function f1() public view
+	
+	returns (uint)
+	{
+		return 640064156;
+	}
+}
+
+
+
+
+
+interface C1BBBB {
+
+	function f0() external payable returns (uint);
+}
+interface C1BBB is C1BBBB {
+
+}
+contract C1BB is C1BBB {
+
+	function f0() external payable
+	override
+	returns (uint)
+	{
+		return 1162403279;
+	}
+}
+contract C1B is C1BB {
+
+}
+contract C1 is C1B {
+
+	function f1() public view
+	
+	returns (uint)
+	{
+		return 550097914;
+	}
+}
+
+
+contract C2B {
+
+	function f0() public view
+	
+	returns (uint)
+	{
+		return 141111539;
+	}
+}
+contract C2 is C2B {
+
+	function f1() public view
+	
+	returns (uint)
+	{
+		return 1924454432;
+	}
+}
+
+
+contract C {
+	function test() public returns (uint)
+	{
+			C0 tc0 = new C0();
+			if (tc0.f0() != 699130566)
+				return 1;
+			if (tc0.f1() != 640064156)
+				return 2;
+			C0B tc1 = new C0B();
+			if (tc1.f0() != 699130566)
+				return 3;
+			C0BB tc2 = new C0BB();
+			if (tc2.f0() != 489324777)
+				return 4;
+			C0BBB tc3 = new C0BBB();
+			if (tc3.f0() != 1161902063)
+				return 5;
+			C1 tc4 = new C1();
+			if (tc4.f0() != 1162403279)
+				return 6;
+			if (tc4.f1() != 550097914)
+				return 7;
+			C1B tc5 = new C1B();
+			if (tc5.f0() != 1162403279)
+				return 8;
+			C1BB tc6 = new C1BB();
+			if (tc6.f0() != 1162403279)
+				return 9;
+			C2 tc7 = new C2();
+			if (tc7.f0() != 141111539)
+				return 10;
+			if (tc7.f1() != 1924454432)
+				return 11;
+			C2B tc8 = new C2B();
+			if (tc8.f0() != 141111539)
+				return 12;
+			return 0;
+	}
+}
+

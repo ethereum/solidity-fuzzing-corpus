@@ -1,0 +1,165 @@
+
+pragma solidity >=0.0;
+
+
+
+
+contract C1B {
+
+}
+contract C1 is C1B {
+
+	function f0() public view
+	
+	returns (uint)
+	{
+		return 564586691;
+	}
+}
+
+
+
+
+
+
+interface C2BBBBB {
+
+	function f0() external payable returns (uint);
+}
+interface C2BBBB is C2BBBBB {
+
+}
+interface C2BBB is C2BBBB {
+
+}
+interface C2BB is C2BBB {
+
+}
+interface C2B is C2BB {
+
+}
+contract C2 is C2B {
+
+	function f0() virtual external payable
+	override
+	returns (uint)
+	{
+		return 1559527823;
+	}
+}
+
+contract C3 {
+
+	function f0() public view
+	
+	returns (uint)
+	{
+		return 2075782095;
+	}
+}
+
+
+
+
+interface C4BBB {
+
+	function f0() external payable returns (uint);
+}
+interface C4BB is C4BBB {
+
+	function f0() override
+	external payable returns (uint);
+}
+contract C4B is C4BB {
+
+	function f0() virtual external payable
+	override
+	returns (uint)
+	{
+		return 1402304087;
+	}
+}
+abstract contract C4 is C4B {
+
+	function f0() virtual external payable
+	override
+	returns (uint)
+	{
+		return 1842513780;
+	}
+}
+
+
+contract C5B {
+
+}
+contract C5 is C5B {
+
+	function f0() public view
+	
+	returns (uint)
+	{
+		return 1947433875;
+	}
+}
+
+contract C7 {
+
+	function f0() public view
+	
+	returns (uint)
+	{
+		return 1105724094;
+	}
+}
+
+
+contract C8B {
+
+	function f0() virtual public pure
+	
+	returns (uint)
+	{
+		return 849178936;
+	}
+}
+abstract contract C8 is C8B {
+
+}
+library L9 {
+
+	function f0(uint) private pure returns (uint)
+	{
+		return 1714636915;
+	}
+}
+
+
+contract C {
+	function test() public returns (uint)
+	{
+			C1 tc0 = new C1();
+			if (tc0.f0() != 564586691)
+				return 1;
+			C2 tc1 = new C2();
+			if (tc1.f0() != 1559527823)
+				return 2;
+			C3 tc2 = new C3();
+			if (tc2.f0() != 2075782095)
+				return 3;
+			C4B tc3 = new C4B();
+			if (tc3.f0() != 1402304087)
+				return 4;
+			C5 tc4 = new C5();
+			if (tc4.f0() != 1947433875)
+				return 5;
+			C7 tc5 = new C7();
+			if (tc5.f0() != 1105724094)
+				return 6;
+			C8B tc6 = new C8B();
+			if (tc6.f0() != 849178936)
+				return 7;
+			return 0;
+	}
+}
+

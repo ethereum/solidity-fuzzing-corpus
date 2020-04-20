@@ -1,0 +1,146 @@
+
+pragma solidity >=0.0;
+
+
+
+
+
+
+
+interface C1BBBB {
+
+	function f0() external payable returns (uint);
+}
+interface C1BBB is C1BBBB {
+
+}
+
+interface C1BBBBB is C1BBBB {
+
+	function f0() override
+	external payable returns (uint);
+	function f1() external payable returns (uint);
+}
+interface C1BB is C1BBB, C1BBBBB {
+
+	function f0() override(C1BBBB, C1BBBBB)
+	external payable returns (uint);
+	function f2() external payable returns (uint);
+}
+
+
+
+
+interface C1BBBBBBBBB {
+
+	function f0() external payable returns (uint);
+}
+interface C1BBBBBBBB is C1BBBBBBBBB {
+
+}
+
+
+
+
+
+
+interface C1BBBBBBBBBBBBBBB {
+
+	function f0() external payable returns (uint);
+}
+interface C1BBBBBBBBBBBBBB is C1BBBBBBBBBBBBBBB {
+
+}
+interface C1BBBBBBBBBBBBB is C1BBBBBBBBBBBBBB {
+
+}
+interface C1BBBBBBBBBBBB is C1BBBBBBBBBBBBB {
+
+}
+interface C1BBBBBBBBBBB is C1BBBBBBBBBBBB {
+
+}
+interface C1BBBBBBBBBB is C1BBBBBBBBB, C1BBBBBBBBBBB {
+
+	function f0() override(C1BBBBBBBBB, C1BBBBBBBBBBBBBBB)
+	external payable returns (uint);
+}
+interface C1BBBBBBB is C1BBBBBBBB, C1BBBBBBBBBB {
+
+	function f0() override(C1BBBBBBBBB, C1BBBBBBBBBB)
+	external payable returns (uint);
+}
+interface C1BBBBBB is C1BB, C1BBBBBBB {
+
+	function f0() override(C1BB, C1BBBBBBB)
+	external payable returns (uint);
+}
+interface C1B is C1BB, C1BBBBBB {
+
+	function f0() override(C1BB, C1BBBBBB)
+	external payable returns (uint);
+	function f2() override
+	external payable returns (uint);
+}
+
+
+
+interface C1BBBBBBBBBBBBBBBBBB {
+
+	function f0() external payable returns (uint);
+}
+interface C1BBBBBBBBBBBBBBBBB is C1BBBBBBBBBBBBBBBBBB {
+
+}
+abstract contract C1BBBBBBBBBBBBBBBB is C1BBBBBB, C1BBBBBBBBBBBBBBBBB {
+
+	function f0() virtual external payable
+	override(C1BBBBBBBBBBBBBBBBBB, C1BBBBBB)
+	returns (uint)
+	{
+		return 1947433875;
+	}
+	function f1() virtual external payable
+	override
+	returns (uint);
+	function f2() virtual external payable
+	override
+	returns (uint);
+}
+contract C1 is C1B, C1BBBBBBBBBBBBBBBB {
+
+	function f0() virtual external payable
+	override(C1BBBBBBBBBBBBBBBB, C1B)
+	returns (uint)
+	{
+		return 1168816941;
+	}
+	function f1() external payable
+	override(C1BBBBBBBBBBBBBBBB, C1BBBBB)
+	returns (uint)
+	{
+		return 201068705;
+	}
+	function f2() virtual external payable
+	override(C1BBBBBBBBBBBBBBBB, C1B)
+	returns (uint)
+	{
+		return 928270262;
+	}
+}
+
+
+contract C {
+	function test() public returns (uint)
+	{
+			C1 tc0 = new C1();
+			if (tc0.f0() != 1168816941)
+				return 1;
+			if (tc0.f1() != 201068705)
+				return 2;
+			if (tc0.f2() != 928270262)
+				return 3;
+			return 0;
+	}
+}
+

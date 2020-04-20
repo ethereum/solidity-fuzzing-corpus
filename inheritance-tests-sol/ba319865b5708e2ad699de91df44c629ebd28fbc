@@ -1,0 +1,145 @@
+
+pragma solidity >=0.0;
+
+
+
+interface I0 {
+
+	function f0() external payable returns (uint);
+}
+
+
+
+interface I1BB {
+
+	function f0() external view returns (uint);
+}
+interface I1B is I1BB {
+
+}
+
+
+interface I1BBBB {
+
+}
+interface I1BBB is I1BB, I1BBBB {
+
+	function f0() override
+	external view returns (uint);
+}
+interface I1 is I1B, I1BBB {
+
+	function f0() override(I1BB, I1BBB)
+	external view returns (uint);
+	function f1() external payable returns (uint);
+}
+
+interface I3 {
+
+	function f0() external payable returns (uint);
+}
+
+
+
+
+interface I4BBB {
+
+	function f0() external payable returns (uint);
+}
+interface I4BB is I4BBB {
+
+}
+interface I4B is I4BB {
+
+}
+interface I4 is I4B {
+
+}
+
+
+
+interface I6BB {
+
+	function f0() external payable returns (uint);
+}
+interface I6B is I6BB {
+
+	function f1() external view returns (uint);
+}
+interface I6 is I6B {
+
+	function f0() override
+	external payable returns (uint);
+}
+
+
+interface C7B {
+
+	function f0() external view returns (uint);
+}
+contract C7 is C7B {
+
+	function f0() external view
+	override
+	returns (uint)
+	{
+		return 638022372;
+	}
+}
+
+
+
+interface I10BB {
+
+	function f0() external view returns (uint);
+}
+interface I10B is I10BB {
+
+	function f0() override
+	external view returns (uint);
+}
+
+
+interface I10BBBB {
+
+}
+interface I10BBB is I10BB, I10BBBB {
+
+	function f0() override
+	external view returns (uint);
+}
+interface I10 is I10B, I10BBB {
+
+	function f0() override(I10B, I10BBB)
+	external view returns (uint);
+	function f1() external payable returns (uint);
+}
+
+interface I11 {
+
+	function f0() external payable returns (uint);
+}
+
+
+interface C12B {
+
+	function f0() external view returns (uint);
+}
+contract C12 is C12B {
+
+	function f0() external view
+	override
+	returns (uint)
+	{
+		return 2010567813;
+	}
+}
+
+
+contract C {
+	function test() public returns (uint)
+	{
+		return 0;
+	}
+}
+

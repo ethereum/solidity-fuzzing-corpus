@@ -1,0 +1,172 @@
+
+pragma solidity >=0.0;
+
+
+library L0 {
+
+	function f0(uint) private pure returns (uint)
+	{
+		return 1804289383;
+	}
+}
+
+contract C3 {
+
+	function f0() public view
+	
+	returns (uint)
+	{
+		return 1291394886;
+	}
+}
+library L4 {
+
+	function f0(uint) private pure returns (uint)
+	{
+		return 846930886;
+	}
+}
+
+
+contract C6B {
+
+}
+contract C6 is C6B {
+
+	function f0() public view
+	
+	returns (uint)
+	{
+		return 2078669041;
+	}
+}
+
+contract C7 {
+
+	function f0() public view
+	
+	returns (uint)
+	{
+		return 407355683;
+	}
+}
+library L8 {
+
+	function f0(uint) internal pure returns (uint)
+	{
+		return 1681692777;
+	}
+	function f1(uint) public view returns (uint)
+	{
+		return 1714636915;
+	}
+}
+
+
+
+
+contract C10BBB {
+
+	function f0() virtual public pure
+	
+	returns (uint)
+	{
+		return 854716505;
+	}
+}
+
+contract C10BBBB is C10BBB {
+
+}
+contract C10BB is C10BBB, C10BBBB {
+
+}
+contract C10B is C10BB {
+
+}
+contract C10 is C10B {
+
+	function f1() virtual public pure
+	
+	returns (uint)
+	{
+		return 1098894339;
+	}
+}
+
+
+
+interface C11BB {
+
+	function f0() external view returns (uint);
+}
+interface C11B is C11BB {
+
+}
+contract C11 is C11B {
+
+	function f0() external view
+	override
+	returns (uint)
+	{
+		return 2075782095;
+	}
+}
+
+
+contract C12B {
+
+	function f0() public view
+	
+	returns (uint)
+	{
+		return 638022372;
+	}
+}
+contract C12 is C12B {
+
+}
+
+
+contract C {
+	function test() public returns (uint)
+	{
+			C10 tc0 = new C10();
+			if (tc0.f0() != 854716505)
+				return 1;
+			if (tc0.f1() != 1098894339)
+				return 2;
+			C10B tc1 = new C10B();
+			if (tc1.f0() != 854716505)
+				return 3;
+			C10BB tc2 = new C10BB();
+			if (tc2.f0() != 854716505)
+				return 4;
+			C10BBB tc3 = new C10BBB();
+			if (tc3.f0() != 854716505)
+				return 5;
+			C10BBBB tc4 = new C10BBBB();
+			if (tc4.f0() != 854716505)
+				return 6;
+			C11 tc5 = new C11();
+			if (tc5.f0() != 2075782095)
+				return 7;
+			C12 tc6 = new C12();
+			if (tc6.f0() != 638022372)
+				return 8;
+			C12B tc7 = new C12B();
+			if (tc7.f0() != 638022372)
+				return 9;
+			C3 tc8 = new C3();
+			if (tc8.f0() != 1291394886)
+				return 10;
+			C6 tc9 = new C6();
+			if (tc9.f0() != 2078669041)
+				return 11;
+			C7 tc10 = new C7();
+			if (tc10.f0() != 407355683)
+				return 12;
+			return 0;
+	}
+}
+

@@ -1,0 +1,35 @@
+
+pragma solidity >=0.0;
+
+
+
+
+interface I0B {
+
+	function f0() external payable returns (uint);
+}
+
+
+interface I0BBB {
+
+	function f0() external payable returns (uint);
+}
+interface I0BB is I0B, I0BBB {
+
+	function f0() override(I0B, I0BBB)
+	external payable returns (uint);
+}
+interface I0 is I0B, I0BB {
+
+	function f0() override(I0B, I0BB)
+	external payable returns (uint);
+}
+
+
+contract C {
+	function test() public returns (uint)
+	{
+		return 0;
+	}
+}
+

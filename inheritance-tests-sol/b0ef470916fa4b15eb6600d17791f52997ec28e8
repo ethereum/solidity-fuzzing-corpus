@@ -1,0 +1,40 @@
+
+pragma solidity >=0.0;
+
+
+
+
+contract C0B {
+
+	function f0() public view
+	
+	returns (uint)
+	{
+		return 623050818;
+	}
+}
+contract C0 is C0B {
+
+}
+library L1 {
+
+	function f0(uint) private pure returns (uint)
+	{
+		return 1804289383;
+	}
+}
+
+
+contract C {
+	function test() public returns (uint)
+	{
+			C0 tc0 = new C0();
+			if (tc0.f0() != 623050818)
+				return 1;
+			C0B tc1 = new C0B();
+			if (tc1.f0() != 623050818)
+				return 2;
+			return 0;
+	}
+}
+

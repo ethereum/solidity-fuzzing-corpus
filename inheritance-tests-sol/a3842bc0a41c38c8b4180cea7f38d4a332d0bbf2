@@ -1,0 +1,202 @@
+
+pragma solidity >=0.0;
+
+
+library L1 {
+
+	function f0(uint) private pure returns (uint)
+	{
+		return 846930886;
+	}
+}
+
+
+
+contract C4BB {
+
+	function f0() virtual public pure
+	
+	returns (uint)
+	{
+		return 1105902161;
+	}
+}
+contract C4B is C4BB {
+
+}
+
+
+
+contract C4BBBBB {
+
+}
+contract C4BBBB is C4BBBBB {
+
+}
+
+abstract contract C4BBBBBB is C4BBBBB {
+
+}
+abstract contract C4BBB is C4BB, C4BBBB, C4BBBBBB {
+
+}
+contract C4 is C4B, C4BBB {
+
+	function f1() public view
+	
+	returns (uint)
+	{
+		return 1271135913;
+	}
+}
+
+
+
+
+
+
+
+
+interface I6BBBBBBB {
+
+	function f0() external payable returns (uint);
+}
+interface I6BBBBBB is I6BBBBBBB {
+
+}
+interface I6BBBBB is I6BBBBBB {
+
+}
+interface I6BBBB is I6BBBBB {
+
+}
+interface I6BBB is I6BBBB {
+
+	function f0() override
+	external payable returns (uint);
+}
+interface I6BB is I6BBB {
+
+	function f0() override
+	external payable returns (uint);
+}
+interface I6B is I6BB {
+
+}
+interface I6 is I6B {
+
+	function f0() override
+	external payable returns (uint);
+}
+
+contract C7 {
+
+	function f0() public view
+	
+	returns (uint)
+	{
+		return 662405787;
+	}
+}
+
+
+contract C8B {
+
+}
+contract C8 is C8B {
+
+	function f0() public view
+	
+	returns (uint)
+	{
+		return 1105724094;
+	}
+}
+
+
+interface I9B {
+
+}
+
+
+
+interface I9BBBB {
+
+}
+interface I9BBB is I9BBBB {
+
+	function f0() external payable returns (uint);
+}
+interface I9BB is I9B, I9BBB {
+
+}
+interface I9 is I9B, I9BB {
+
+}
+
+
+abstract contract C11B {
+
+}
+
+
+
+contract C11BBBB {
+
+	function f0() virtual public pure
+	
+	returns (uint)
+	{
+		return 1308858262;
+	}
+}
+contract C11BBB is C11BBBB {
+
+	function f0() public pure
+	override
+	returns (uint)
+	{
+		return 1814467857;
+	}
+}
+contract C11BB is C11B, C11BBB {
+
+}
+abstract contract C11 is C11B, C11BB {
+
+}
+
+
+contract C {
+	function test() public returns (uint)
+	{
+			C11BB tc0 = new C11BB();
+			if (tc0.f0() != 1814467857)
+				return 1;
+			C11BBB tc1 = new C11BBB();
+			if (tc1.f0() != 1814467857)
+				return 2;
+			C11BBBB tc2 = new C11BBBB();
+			if (tc2.f0() != 1308858262)
+				return 3;
+			C4 tc3 = new C4();
+			if (tc3.f0() != 1105902161)
+				return 4;
+			if (tc3.f1() != 1271135913)
+				return 5;
+			C4B tc4 = new C4B();
+			if (tc4.f0() != 1105902161)
+				return 6;
+			C4BB tc5 = new C4BB();
+			if (tc5.f0() != 1105902161)
+				return 7;
+			C7 tc6 = new C7();
+			if (tc6.f0() != 662405787)
+				return 8;
+			C8 tc7 = new C8();
+			if (tc7.f0() != 1105724094)
+				return 9;
+			return 0;
+	}
+}
+

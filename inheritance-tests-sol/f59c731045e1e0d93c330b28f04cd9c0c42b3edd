@@ -1,0 +1,34 @@
+
+pragma solidity >=0.0;
+
+
+
+contract C0 {
+
+	function f0() public pure
+	
+	returns (uint)
+	{
+		return 48271;
+	}
+	function f1() public view
+	
+	returns (uint)
+	{
+		return 182605794;
+	}
+}
+
+
+contract C {
+	function test() public returns (uint)
+	{
+			C0 tc0 = new C0();
+			if (tc0.f0() != 48271)
+				return 1;
+			if (tc0.f1() != 182605794)
+				return 2;
+			return 0;
+	}
+}
+

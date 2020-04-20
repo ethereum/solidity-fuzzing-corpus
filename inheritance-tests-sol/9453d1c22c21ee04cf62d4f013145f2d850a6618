@@ -1,0 +1,106 @@
+
+pragma solidity >=0.0;
+
+
+
+
+interface I3B {
+
+	function f0() external view returns (uint);
+}
+interface I3 is I3B {
+
+	function f0() override
+	external view returns (uint);
+}
+library L4 {
+
+	function f0(uint) public view returns (uint)
+	{
+		return 1681692777;
+	}
+}
+
+
+contract C7B {
+
+	function f0() public view
+	
+	returns (uint)
+	{
+		return 399257814;
+	}
+}
+contract C7 is C7B {
+
+}
+
+
+interface I9B {
+
+	function f0() external view returns (uint);
+}
+interface I9 is I9B {
+
+}
+
+
+interface I12B {
+
+	function f0() external view returns (uint);
+}
+interface I12 is I12B {
+
+	function f0() override
+	external view returns (uint);
+}
+
+
+
+
+interface C17BBB {
+
+	function f0() external payable returns (uint);
+}
+interface C17BB is C17BBB {
+
+}
+contract C17B is C17BB {
+
+	function f0() virtual external payable
+	override
+	returns (uint)
+	{
+		return 832006898;
+	}
+}
+contract C17 is C17B {
+
+	function f0() external payable
+	override
+	returns (uint)
+	{
+		return 1849502422;
+	}
+}
+
+
+contract C {
+	function test() public returns (uint)
+	{
+			C17 tc0 = new C17();
+			if (tc0.f0() != 1849502422)
+				return 1;
+			C17B tc1 = new C17B();
+			if (tc1.f0() != 832006898)
+				return 2;
+			C7 tc2 = new C7();
+			if (tc2.f0() != 399257814)
+				return 3;
+			C7B tc3 = new C7B();
+			if (tc3.f0() != 399257814)
+				return 4;
+			return 0;
+	}
+}
+

@@ -1,0 +1,251 @@
+
+pragma solidity >=0.0;
+
+
+
+
+interface I1B {
+
+	function f0() external payable returns (uint);
+}
+interface I1 is I1B {
+
+	function f1() external payable returns (uint);
+}
+
+
+
+
+
+interface C2BBBB {
+
+	function f0() external payable returns (uint);
+}
+interface C2BBB is C2BBBB {
+
+	function f0() override
+	external payable returns (uint);
+}
+interface C2BB is C2BBB {
+
+}
+contract C2B is C2BB {
+
+	function f0() external payable
+	override
+	returns (uint)
+	{
+		return 1105902161;
+	}
+}
+abstract contract C2 is C2B {
+
+}
+
+
+
+
+interface I3BBB {
+
+	function f0() external payable returns (uint);
+}
+interface I3BB is I3BBB {
+
+}
+interface I3B is I3BB {
+
+	function f1() external view returns (uint);
+}
+interface I3 is I3B {
+
+}
+library L5 {
+
+	function f0(uint) external pure returns (uint)
+	{
+		return 1681692777;
+	}
+}
+
+
+
+
+interface I6BBB {
+
+	function f0() external payable returns (uint);
+}
+interface I6BB is I6BBB {
+
+}
+interface I6B is I6BB {
+
+	function f1() external view returns (uint);
+}
+interface I6 is I6B {
+
+	function f1() override
+	external view returns (uint);
+	function f2() external view returns (uint);
+}
+
+
+interface I7B {
+
+	function f0() external payable returns (uint);
+}
+interface I7 is I7B {
+
+	function f0() override
+	external payable returns (uint);
+	function f1() external payable returns (uint);
+}
+
+
+
+interface I8BB {
+
+	function f0() external payable returns (uint);
+	function f1() external payable returns (uint);
+}
+interface I8B is I8BB {
+
+	function f1() override
+	external payable returns (uint);
+}
+interface I8 is I8B {
+
+	function f2() external payable returns (uint);
+}
+
+
+
+
+
+interface I9BBBB {
+
+	function f0() external view returns (uint);
+}
+interface I9BBB is I9BBBB {
+
+	function f0() override
+	external view returns (uint);
+}
+interface I9BB is I9BBB {
+
+}
+interface I9B is I9BB {
+
+	function f0() override
+	external view returns (uint);
+}
+interface I9 is I9B {
+
+}
+
+
+interface I10B {
+
+}
+
+
+
+
+
+interface I10BBBBBB {
+
+	function f0() external view returns (uint);
+}
+interface I10BBBBB is I10BBBBBB {
+
+	function f0() override
+	external view returns (uint);
+}
+
+interface I10BBBBBBB is I10BBBBBB {
+
+	function f0() override
+	external view returns (uint);
+	function f1() external payable returns (uint);
+	function f2() external view returns (uint);
+}
+interface I10BBBB is I10BBBBB, I10BBBBBBB {
+
+	function f0() override(I10BBBBB, I10BBBBBBB)
+	external view returns (uint);
+	function f1() override
+	external payable returns (uint);
+}
+
+
+
+
+interface I10BBBBBBBBBBB {
+
+	function f0() external view returns (uint);
+}
+
+interface I10BBBBBBBBBBBB is I10BBBBBBBBBBB {
+
+	function f0() override
+	external view returns (uint);
+	function f1() external payable returns (uint);
+}
+interface I10BBBBBBBBBB is I10BBBBBBBBBBB, I10BBBBBBBBBBBB {
+
+	function f0() override(I10BBBBBBBBBBB, I10BBBBBBBBBBBB)
+	external view returns (uint);
+	function f1() override
+	external payable returns (uint);
+}
+interface I10BBBBBBBBB is I10BBBBBBBBBB {
+
+}
+interface I10BBBBBBBB is I10BBBBBBB, I10BBBBBBBBB {
+
+	function f0() override(I10BBBBBBB, I10BBBBBBBBBB)
+	external view returns (uint);
+	function f1() override(I10BBBBBBB, I10BBBBBBBBBB)
+	external payable returns (uint);
+}
+interface I10BBB is I10BBBB, I10BBBBBBBB {
+
+	function f0() override(I10BBBB, I10BBBBBBBB)
+	external view returns (uint);
+	function f1() override(I10BBBB, I10BBBBBBBB)
+	external payable returns (uint);
+}
+interface I10BB is I10B, I10BBB {
+
+	function f1() override
+	external payable returns (uint);
+	function f3() external payable returns (uint);
+}
+interface I10 is I10B, I10BB {
+
+	function f0() override
+	external view returns (uint);
+	function f1() override
+	external payable returns (uint);
+	function f2() override
+	external view returns (uint);
+	function f3() override
+	external payable returns (uint);
+}
+
+interface I11 {
+
+	function f0() external view returns (uint);
+}
+
+
+contract C {
+	using L5 for uint;
+	function test() public returns (uint)
+	{
+		uint x;
+		if (x.f0() != 1681692777)
+			return 1;
+		return 0;
+	}
+}
+

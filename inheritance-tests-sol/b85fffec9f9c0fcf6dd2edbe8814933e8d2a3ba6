@@ -1,0 +1,91 @@
+
+pragma solidity >=0.0;
+
+
+library L5 {
+
+	function f0(uint) internal pure returns (uint)
+	{
+		return 1804289383;
+	}
+}
+library L8 {
+
+	function f0(uint) public pure returns (uint)
+	{
+		return 846930886;
+	}
+}
+library L9 {
+
+	function f0(uint) public pure returns (uint)
+	{
+		return 1681692777;
+	}
+}
+library L10 {
+
+	function f0(uint) internal pure returns (uint)
+	{
+		return 1714636915;
+	}
+}
+
+
+
+
+interface C11BBB {
+
+	function f0() external payable returns (uint);
+}
+interface C11BB is C11BBB {
+
+}
+contract C11B is C11BB {
+
+	function f0() external payable
+	override
+	returns (uint)
+	{
+		return 192302371;
+	}
+}
+contract C11 is C11B {
+
+}
+
+
+
+
+interface C13BBB {
+
+	function f0() external payable returns (uint);
+}
+interface C13BB is C13BBB {
+
+}
+contract C13B is C13BB {
+
+	function f0() external payable
+	override
+	returns (uint)
+	{
+		return 1098894339;
+	}
+}
+contract C13 is C13B {
+
+}
+
+
+contract C {
+	using L9 for uint;
+	function test() public returns (uint)
+	{
+		uint x;
+		if (x.f0() != 1681692777)
+			return 1;
+		return 0;
+	}
+}
+

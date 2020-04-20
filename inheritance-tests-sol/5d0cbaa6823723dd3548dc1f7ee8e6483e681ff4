@@ -1,0 +1,381 @@
+
+pragma solidity >=0.0;
+
+
+
+
+interface I1B {
+
+	function f0() external view returns (uint);
+}
+interface I1 is I1B {
+
+}
+
+
+interface I2B {
+
+}
+interface I2 is I2B {
+
+}
+
+interface I3 {
+
+	function f0() external payable returns (uint);
+}
+
+
+
+
+
+
+interface I4BBBBB {
+
+	function f0() external view returns (uint);
+}
+interface I4BBBB is I4BBBBB {
+
+	function f0() override
+	external view returns (uint);
+}
+interface I4BBB is I4BBBB {
+
+}
+interface I4BB is I4BBB {
+
+	function f1() external payable returns (uint);
+}
+interface I4B is I4BB {
+
+}
+interface I4 is I4B {
+
+}
+library L5 {
+
+	function f0(uint) private pure returns (uint)
+	{
+		return 1804289383;
+	}
+}
+
+
+
+
+contract C6BBB {
+
+	function f0() virtual public pure
+	
+	returns (uint)
+	{
+		return 1250328747;
+	}
+}
+
+contract C6BBBB is C6BBB {
+
+}
+contract C6BB is C6BBB, C6BBBB {
+
+}
+contract C6B is C6BB {
+
+	function f0() public pure
+	override
+	returns (uint)
+	{
+		return 2075782095;
+	}
+}
+contract C6 is C6B {
+
+	function f1() virtual public pure
+	
+	returns (uint)
+	{
+		return 914937185;
+	}
+}
+
+
+
+interface C7BB {
+
+	function f0() external view returns (uint);
+}
+interface C7B is C7BB {
+
+	function f0() override
+	external view returns (uint);
+}
+contract C7 is C7B {
+
+	function f0() external view
+	override
+	returns (uint)
+	{
+		return 2064876628;
+	}
+}
+
+
+interface I8B {
+
+	function f0() external view returns (uint);
+}
+interface I8 is I8B {
+
+	function f0() override
+	external view returns (uint);
+}
+library L10 {
+
+	function f0(uint) external pure returns (uint)
+	{
+		return 1681692777;
+	}
+}
+
+interface I11 {
+
+	function f0() external payable returns (uint);
+}
+
+
+
+
+interface I12BBB {
+
+	function f0() external view returns (uint);
+}
+interface I12BB is I12BBB {
+
+}
+interface I12B is I12BB {
+
+}
+interface I12 is I12B {
+
+	function f0() override
+	external view returns (uint);
+	function f1() external view returns (uint);
+}
+library L13 {
+
+	function f0(uint) public pure returns (uint)
+	{
+		return 1714636915;
+	}
+}
+
+
+contract C14B {
+
+}
+contract C14 is C14B {
+
+	function f0() public view
+	
+	returns (uint)
+	{
+		return 1479919876;
+	}
+}
+
+
+
+
+interface I15BBB {
+
+	function f0() external view returns (uint);
+}
+interface I15BB is I15BBB {
+
+}
+interface I15B is I15BB {
+
+}
+interface I15 is I15B {
+
+	function f0() override
+	external view returns (uint);
+	function f1() external view returns (uint);
+}
+
+
+interface I16B {
+
+	function f0() external view returns (uint);
+}
+
+interface I16BB is I16B {
+
+}
+interface I16 is I16B, I16BB {
+
+	function f0() override
+	external view returns (uint);
+	function f1() external view returns (uint);
+}
+library L17 {
+
+	function f0(uint) public pure returns (uint)
+	{
+		return 424238335;
+	}
+}
+
+
+
+
+interface I18BBB {
+
+	function f0() external view returns (uint);
+}
+interface I18BB is I18BBB {
+
+}
+interface I18B is I18BB {
+
+}
+
+
+interface I18BBBBB {
+
+	function f0() external view returns (uint);
+}
+interface I18BBBB is I18B, I18BBBBB {
+
+	function f0() override(I18BBB, I18BBBBB)
+	external view returns (uint);
+	function f1() external payable returns (uint);
+}
+interface I18 is I18B, I18BBBB {
+
+	function f0() override(I18BBB, I18BBBB)
+	external view returns (uint);
+	function f1() override
+	external payable returns (uint);
+}
+
+contract C19 {
+
+	function f0() public view
+	
+	returns (uint)
+	{
+		return 1324346645;
+	}
+}
+library L20 {
+
+	function f0(uint) internal pure returns (uint)
+	{
+		return 1649760492;
+	}
+	function f1(uint) public view returns (uint)
+	{
+		return 596516649;
+	}
+}
+
+
+
+
+
+interface I21BBBB {
+
+	function f0() external view returns (uint);
+}
+interface I21BBB is I21BBBB {
+
+	function f0() override
+	external view returns (uint);
+}
+interface I21BB is I21BBB {
+
+	function f0() override
+	external view returns (uint);
+}
+
+
+
+
+interface I21BBBBBBBB {
+
+	function f0() external view returns (uint);
+}
+interface I21BBBBBBB is I21BBBBBBBB {
+
+}
+interface I21BBBBBB is I21BBBBBBB {
+
+	function f0() override
+	external view returns (uint);
+}
+interface I21BBBBB is I21BBB, I21BBBBBB {
+
+	function f0() override(I21BBB, I21BBBBBB)
+	external view returns (uint);
+}
+interface I21B is I21BB, I21BBBBB {
+
+	function f0() override(I21BB, I21BBBBB)
+	external view returns (uint);
+}
+
+interface I21BBBBBBBBB is I21B {
+
+	function f0() override
+	external view returns (uint);
+	function f1() external pure returns (uint);
+}
+
+
+
+
+interface I21BBBBBBBBBBBBB {
+
+	function f0() external view returns (uint);
+}
+interface I21BBBBBBBBBBBB is I21BBBBBBBBBBBBB {
+
+	function f0() override
+	external view returns (uint);
+}
+interface I21BBBBBBBBBBB is I21BBBBBBBBBBBB {
+
+}
+interface I21BBBBBBBBBB is I21B, I21BBBBBBBBBBB {
+
+	function f0() override(I21B, I21BBBBBBBBBBBB)
+	external view returns (uint);
+}
+interface I21 is I21B, I21BBBBBBBBB, I21BBBBBBBBBB {
+
+	function f0() override(I21B, I21BBBBBBBBB, I21BBBBBBBBBB)
+	external view returns (uint);
+	function f1() override
+	external pure returns (uint);
+}
+library L22 {
+
+	function f0(uint) private pure returns (uint)
+	{
+		return 783368690;
+	}
+}
+
+
+contract C {
+	using L17 for uint;
+	function test() public returns (uint)
+	{
+		uint x;
+		if (x.f0() != 424238335)
+			return 1;
+		return 0;
+	}
+}
+

@@ -1,0 +1,413 @@
+
+pragma solidity >=0.0;
+
+
+library L0 {
+
+	function f0(uint) public view returns (uint)
+	{
+		return 1804289383;
+	}
+	function f1(uint) public view returns (uint)
+	{
+		return 846930886;
+	}
+}
+
+
+contract C1B {
+
+	function f0() public view
+	
+	returns (uint)
+	{
+		return 182605794;
+	}
+}
+contract C1 is C1B {
+
+}
+library L2 {
+
+	function f0(uint) public pure returns (uint)
+	{
+		return 1681692777;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+interface C3BBBBBBBBBBBB {
+
+	function f0() external payable returns (uint);
+}
+interface C3BBBBBBBBBBB is C3BBBBBBBBBBBB {
+
+}
+
+interface C3BBBBBBBBBBBBB is C3BBBBBBBBBBBB {
+
+	function f1() external pure returns (uint);
+}
+interface C3BBBBBBBBBB is C3BBBBBBBBBBB, C3BBBBBBBBBBBBB {
+
+	function f2() external payable returns (uint);
+}
+interface C3BBBBBBBBB is C3BBBBBBBBBB {
+
+	function f3() external view returns (uint);
+	function f4() external pure returns (uint);
+}
+interface C3BBBBBBBB is C3BBBBBBBBB {
+
+	function f3() override
+	external view returns (uint);
+}
+
+
+interface C3BBBBBBBBBBBBBBB {
+
+}
+
+
+interface C3BBBBBBBBBBBBBBBBB {
+
+}
+interface C3BBBBBBBBBBBBBBBB is C3BBBBBBBBBBBBBBB, C3BBBBBBBBBBBBBBBBB {
+
+}
+interface C3BBBBBBBBBBBBBB is C3BBBBBBBBB, C3BBBBBBBBBBBBBBB, C3BBBBBBBBBBBBBBBB {
+
+	function f1() override
+	external pure returns (uint);
+	function f4() override
+	external pure returns (uint);
+	function f5() external view returns (uint);
+}
+interface C3BBBBBBB is C3BBBBBBBB, C3BBBBBBBBBBBBBB {
+
+	function f0() override
+	external payable returns (uint);
+	function f1() override(C3BBBBBBBBBBBBB, C3BBBBBBBBBBBBBB)
+	external pure returns (uint);
+	function f3() override(C3BBBBBBBB, C3BBBBBBBBB)
+	external view returns (uint);
+	function f4() override(C3BBBBBBBBB, C3BBBBBBBBBBBBBB)
+	external pure returns (uint);
+	function f6() external view returns (uint);
+	function f7() external view returns (uint);
+}
+contract C3BBBBBB is C3BBBBBBB {
+
+	function f0() virtual external payable
+	override
+	returns (uint)
+	{
+		return 662405787;
+	}
+	function f1() virtual external pure
+	override
+	returns (uint)
+	{
+		return 849178936;
+	}
+	function f2() external payable
+	override
+	returns (uint)
+	{
+		return 1479919876;
+	}
+	function f3() external view
+	override
+	returns (uint)
+	{
+		return 1272185027;
+	}
+	function f4() external pure
+	override
+	returns (uint)
+	{
+		return 1308858262;
+	}
+	function f5() virtual external view
+	override
+	returns (uint)
+	{
+		return 1287522347;
+	}
+	function f6() external view
+	override
+	returns (uint)
+	{
+		return 1057382352;
+	}
+	function f7() external view
+	override
+	returns (uint)
+	{
+		return 153892771;
+	}
+}
+contract C3BBBBB is C3BBBBBB {
+
+	function f1() external pure
+	override
+	returns (uint)
+	{
+		return 389431516;
+	}
+	function f8() internal view
+	
+	returns (uint)
+	{
+		return 1243696899;
+	}
+}
+contract C3BBBB is C3BBBBB {
+
+	function f5() external view
+	override
+	returns (uint)
+	{
+		return 1951824771;
+	}
+}
+contract C3BBB is C3BBBB {
+
+	function f0() external payable
+	override
+	returns (uint)
+	{
+		return 1500063655;
+	}
+}
+contract C3BB is C3BBB {
+
+}
+
+contract C3BBBBBBBBBBBBBBBBBB is C3BB {
+
+	function f9() external view
+	
+	returns (uint)
+	{
+		return 163677341;
+	}
+}
+contract C3B is C3BB, C3BBBBBBBBBBBBBBBBBB {
+
+}
+
+contract C3BBBBBBBBBBBBBBBBBBB is C3B {
+
+}
+contract C3 is C3B, C3BBBBBBBBBBBBBBBBBBB {
+
+	function f10() public view
+	
+	returns (uint)
+	{
+		return 80100956;
+	}
+}
+
+contract C4 {
+
+	function f0() virtual public pure
+	
+	returns (uint)
+	{
+		return 1082682476;
+	}
+}
+
+
+contract C {
+	function test() public returns (uint)
+	{
+			C1 tc0 = new C1();
+			if (tc0.f0() != 182605794)
+				return 1;
+			C1B tc1 = new C1B();
+			if (tc1.f0() != 182605794)
+				return 2;
+			C3 tc2 = new C3();
+			if (tc2.f0() != 1500063655)
+				return 3;
+			if (tc2.f1() != 389431516)
+				return 4;
+			if (tc2.f10() != 80100956)
+				return 5;
+			if (tc2.f2() != 1479919876)
+				return 6;
+			if (tc2.f3() != 1272185027)
+				return 7;
+			if (tc2.f4() != 1308858262)
+				return 8;
+			if (tc2.f5() != 1951824771)
+				return 9;
+			if (tc2.f6() != 1057382352)
+				return 10;
+			if (tc2.f7() != 153892771)
+				return 11;
+			if (tc2.f9() != 163677341)
+				return 12;
+			C3B tc3 = new C3B();
+			if (tc3.f0() != 1500063655)
+				return 13;
+			if (tc3.f1() != 389431516)
+				return 14;
+			if (tc3.f2() != 1479919876)
+				return 15;
+			if (tc3.f3() != 1272185027)
+				return 16;
+			if (tc3.f4() != 1308858262)
+				return 17;
+			if (tc3.f5() != 1951824771)
+				return 18;
+			if (tc3.f6() != 1057382352)
+				return 19;
+			if (tc3.f7() != 153892771)
+				return 20;
+			if (tc3.f9() != 163677341)
+				return 21;
+			C3BB tc4 = new C3BB();
+			if (tc4.f0() != 1500063655)
+				return 22;
+			if (tc4.f1() != 389431516)
+				return 23;
+			if (tc4.f2() != 1479919876)
+				return 24;
+			if (tc4.f3() != 1272185027)
+				return 25;
+			if (tc4.f4() != 1308858262)
+				return 26;
+			if (tc4.f5() != 1951824771)
+				return 27;
+			if (tc4.f6() != 1057382352)
+				return 28;
+			if (tc4.f7() != 153892771)
+				return 29;
+			C3BBB tc5 = new C3BBB();
+			if (tc5.f0() != 1500063655)
+				return 30;
+			if (tc5.f1() != 389431516)
+				return 31;
+			if (tc5.f2() != 1479919876)
+				return 32;
+			if (tc5.f3() != 1272185027)
+				return 33;
+			if (tc5.f4() != 1308858262)
+				return 34;
+			if (tc5.f5() != 1951824771)
+				return 35;
+			if (tc5.f6() != 1057382352)
+				return 36;
+			if (tc5.f7() != 153892771)
+				return 37;
+			C3BBBB tc6 = new C3BBBB();
+			if (tc6.f0() != 662405787)
+				return 38;
+			if (tc6.f1() != 389431516)
+				return 39;
+			if (tc6.f2() != 1479919876)
+				return 40;
+			if (tc6.f3() != 1272185027)
+				return 41;
+			if (tc6.f4() != 1308858262)
+				return 42;
+			if (tc6.f5() != 1951824771)
+				return 43;
+			if (tc6.f6() != 1057382352)
+				return 44;
+			if (tc6.f7() != 153892771)
+				return 45;
+			C3BBBBB tc7 = new C3BBBBB();
+			if (tc7.f0() != 662405787)
+				return 46;
+			if (tc7.f1() != 389431516)
+				return 47;
+			if (tc7.f2() != 1479919876)
+				return 48;
+			if (tc7.f3() != 1272185027)
+				return 49;
+			if (tc7.f4() != 1308858262)
+				return 50;
+			if (tc7.f5() != 1287522347)
+				return 51;
+			if (tc7.f6() != 1057382352)
+				return 52;
+			if (tc7.f7() != 153892771)
+				return 53;
+			C3BBBBBB tc8 = new C3BBBBBB();
+			if (tc8.f0() != 662405787)
+				return 54;
+			if (tc8.f1() != 849178936)
+				return 55;
+			if (tc8.f2() != 1479919876)
+				return 56;
+			if (tc8.f3() != 1272185027)
+				return 57;
+			if (tc8.f4() != 1308858262)
+				return 58;
+			if (tc8.f5() != 1287522347)
+				return 59;
+			if (tc8.f6() != 1057382352)
+				return 60;
+			if (tc8.f7() != 153892771)
+				return 61;
+			C3BBBBBBBBBBBBBBBBBB tc9 = new C3BBBBBBBBBBBBBBBBBB();
+			if (tc9.f0() != 1500063655)
+				return 62;
+			if (tc9.f1() != 389431516)
+				return 63;
+			if (tc9.f2() != 1479919876)
+				return 64;
+			if (tc9.f3() != 1272185027)
+				return 65;
+			if (tc9.f4() != 1308858262)
+				return 66;
+			if (tc9.f5() != 1951824771)
+				return 67;
+			if (tc9.f6() != 1057382352)
+				return 68;
+			if (tc9.f7() != 153892771)
+				return 69;
+			if (tc9.f9() != 163677341)
+				return 70;
+			C3BBBBBBBBBBBBBBBBBBB tc10 = new C3BBBBBBBBBBBBBBBBBBB();
+			if (tc10.f0() != 1500063655)
+				return 71;
+			if (tc10.f1() != 389431516)
+				return 72;
+			if (tc10.f2() != 1479919876)
+				return 73;
+			if (tc10.f3() != 1272185027)
+				return 74;
+			if (tc10.f4() != 1308858262)
+				return 75;
+			if (tc10.f5() != 1951824771)
+				return 76;
+			if (tc10.f6() != 1057382352)
+				return 77;
+			if (tc10.f7() != 153892771)
+				return 78;
+			if (tc10.f9() != 163677341)
+				return 79;
+			C4 tc11 = new C4();
+			if (tc11.f0() != 1082682476)
+				return 80;
+			return 0;
+	}
+}
+

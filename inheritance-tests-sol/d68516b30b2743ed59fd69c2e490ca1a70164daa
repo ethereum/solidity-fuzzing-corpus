@@ -1,0 +1,48 @@
+
+pragma solidity >=0.0;
+
+
+library L0 {
+
+	function f0(uint) external pure returns (uint)
+	{
+		return 1804289383;
+	}
+}
+
+
+
+
+interface C1BBB {
+
+	function f0() external pure returns (uint);
+}
+interface C1BB is C1BBB {
+
+	function f0() override
+	external pure returns (uint);
+}
+interface C1B is C1BB {
+
+}
+contract C1 is C1B {
+
+	function f0() external pure
+	override
+	returns (uint)
+	{
+		return 1105902161;
+	}
+}
+
+
+contract C {
+	function test() public returns (uint)
+	{
+			C1 tc0 = new C1();
+			if (tc0.f0() != 1105902161)
+				return 1;
+			return 0;
+	}
+}
+

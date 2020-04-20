@@ -1,0 +1,309 @@
+
+pragma solidity >=0.0;
+
+
+
+
+contract C0B {
+
+	function f0() public view
+	
+	returns (uint)
+	{
+		return 48271;
+	}
+	function f1() private pure
+	
+	returns (uint)
+	{
+		return 182605794;
+	}
+}
+
+contract C0BB is C0B {
+
+	function f2() public view
+	
+	returns (uint)
+	{
+		return 1291394886;
+	}
+	function f3() private pure
+	
+	returns (uint)
+	{
+		return 1914720637;
+	}
+}
+
+contract C0BBB is C0BB {
+
+}
+
+contract C0BBBB is C0B {
+
+}
+
+contract C0BBBBB is C0BBBB {
+
+}
+
+contract C0BBBBBB is C0BBBB {
+
+}
+abstract contract C0 is C0B, C0BB, C0BBB, C0BBBB, C0BBBBB, C0BBBBBB {
+
+}
+library L1 {
+
+	function f0(uint) public pure returns (uint)
+	{
+		return 424238335;
+	}
+	function f1(uint) public pure returns (uint)
+	{
+		return 719885386;
+	}
+}
+
+
+contract C2B {
+
+	function f0() public view
+	
+	returns (uint)
+	{
+		return 192302371;
+	}
+	function f1() private pure
+	
+	returns (uint)
+	{
+		return 1203428207;
+	}
+}
+
+contract C2BB is C2B {
+
+	function f2() public view
+	
+	returns (uint)
+	{
+		return 1250328747;
+	}
+	function f3() private pure
+	
+	returns (uint)
+	{
+		return 1738531149;
+	}
+}
+
+contract C2BBB is C2B {
+
+}
+
+contract C2BBBB is C2BB {
+
+}
+
+contract C2BBBBB is C2B {
+
+}
+
+contract C2BBBBBB is C2B {
+
+}
+abstract contract C2 is C2B, C2BB, C2BBB, C2BBBB, C2BBBBB, C2BBBBBB {
+
+}
+library L3 {
+
+	function f0(uint) public pure returns (uint)
+	{
+		return 783368690;
+	}
+	function f1(uint) public pure returns (uint)
+	{
+		return 1102520059;
+	}
+}
+library L4 {
+
+	function f0(uint) public pure returns (uint)
+	{
+		return 2044897763;
+	}
+	function f1(uint) public pure returns (uint)
+	{
+		return 1967513926;
+	}
+}
+
+
+contract C5B {
+
+	function f0() public view
+	
+	returns (uint)
+	{
+		return 914937185;
+	}
+	function f1() private pure
+	
+	returns (uint)
+	{
+		return 1931656580;
+	}
+}
+
+contract C5BB is C5B {
+
+	function f2() public view
+	
+	returns (uint)
+	{
+		return 1402304087;
+	}
+	function f3() private pure
+	
+	returns (uint)
+	{
+		return 1936030137;
+	}
+}
+
+contract C5BBB is C5B {
+
+}
+
+contract C5BBBB is C5B {
+
+}
+
+contract C5BBBBB is C5B {
+
+}
+
+contract C5BBBBBB is C5B {
+
+}
+abstract contract C5 is C5B, C5BB, C5BBB, C5BBBB, C5BBBBB, C5BBBBBB {
+
+}
+library L6 {
+
+	function f0(uint) internal pure returns (uint)
+	{
+		return 521595368;
+	}
+	function f1(uint) private pure returns (uint)
+	{
+		return 294702567;
+	}
+	function f2(uint) private pure returns (uint)
+	{
+		return 1726956429;
+	}
+	function f3(uint) internal pure returns (uint)
+	{
+		return 336465782;
+	}
+}
+library L7 {
+
+	function f0(uint) public pure returns (uint)
+	{
+		return 861021530;
+	}
+	function f1(uint) public pure returns (uint)
+	{
+		return 278722862;
+	}
+}
+library L8 {
+
+	function f0(uint) public pure returns (uint)
+	{
+		return 233665123;
+	}
+	function f1(uint) public pure returns (uint)
+	{
+		return 2145174067;
+	}
+}
+library L9 {
+
+	function f0(uint) public pure returns (uint)
+	{
+		return 468703135;
+	}
+	function f1(uint) public pure returns (uint)
+	{
+		return 1101513929;
+	}
+}
+
+
+contract C {
+	function test() public returns (uint)
+	{
+			C0B tc0 = new C0B();
+			if (tc0.f0() != 48271)
+				return 1;
+			C0BB tc1 = new C0BB();
+			if (tc1.f0() != 48271)
+				return 2;
+			if (tc1.f2() != 1291394886)
+				return 3;
+			C0BBB tc2 = new C0BBB();
+			if (tc2.f0() != 48271)
+				return 4;
+			if (tc2.f2() != 1291394886)
+				return 5;
+			C0BBBB tc3 = new C0BBBB();
+			if (tc3.f0() != 48271)
+				return 6;
+			C0BBBBB tc4 = new C0BBBBB();
+			if (tc4.f0() != 48271)
+				return 7;
+			C0BBBBBB tc5 = new C0BBBBBB();
+			if (tc5.f0() != 48271)
+				return 8;
+			C2B tc6 = new C2B();
+			if (tc6.f0() != 192302371)
+				return 9;
+			C2BB tc7 = new C2BB();
+			if (tc7.f0() != 192302371)
+				return 10;
+			if (tc7.f2() != 1250328747)
+				return 11;
+			C2BBB tc8 = new C2BBB();
+			if (tc8.f0() != 192302371)
+				return 12;
+			C2BBBB tc9 = new C2BBBB();
+			if (tc9.f0() != 192302371)
+				return 13;
+			if (tc9.f2() != 1250328747)
+				return 14;
+			C2BBBBB tc10 = new C2BBBBB();
+			if (tc10.f0() != 192302371)
+				return 15;
+			C2BBBBBB tc11 = new C2BBBBBB();
+			if (tc11.f0() != 192302371)
+				return 16;
+			C5B tc12 = new C5B();
+			if (tc12.f0() != 914937185)
+				return 17;
+			C5BB tc13 = new C5BB();
+			if (tc13.f0() != 914937185)
+				return 18;
+			if (tc13.f2() != 1402304087)
+				return 19;
+			C5BBB tc14 = new C5BBB();
+			if (tc14.f0() != 914937185)
+				return 20;
+			return 0;
+	}
+}
+

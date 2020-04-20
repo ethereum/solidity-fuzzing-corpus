@@ -1,0 +1,27 @@
+
+pragma solidity >=0.0;
+
+
+
+
+
+interface I1BB {
+
+	function f0() external view returns (uint);
+}
+interface I1B is I1BB {
+
+	function f1() external payable returns (uint);
+}
+interface I1 is I1B {
+
+}
+
+
+contract C {
+	function test() public returns (uint)
+	{
+		return 0;
+	}
+}
+

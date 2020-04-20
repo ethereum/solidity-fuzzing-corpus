@@ -1,0 +1,53 @@
+
+pragma solidity >=0.0;
+
+
+library L0 {
+
+	function f0(uint) public view returns (uint)
+	{
+		return 1804289383;
+	}
+	function f1(uint) internal pure returns (uint)
+	{
+		return 846930886;
+	}
+}
+
+interface I1 {
+
+	function f0() external view returns (uint);
+}
+
+
+
+
+interface I2BBB {
+
+	function f0() external payable returns (uint);
+}
+interface I2BB is I2BBB {
+
+	function f0() override
+	external payable returns (uint);
+}
+interface I2B is I2BB {
+
+	function f1() external view returns (uint);
+}
+interface I2 is I2B {
+
+}
+
+
+contract C {
+	using L0 for uint;
+	function test() public returns (uint)
+	{
+		uint x;
+		if (x.f0() != 1804289383)
+			return 1;
+		return 0;
+	}
+}
+

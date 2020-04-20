@@ -1,0 +1,104 @@
+
+pragma solidity >=0.0;
+
+
+library L0 {
+
+	function f0(uint) private pure returns (uint)
+	{
+		return 1804289383;
+	}
+}
+library L1 {
+
+	function f0(uint) private pure returns (uint)
+	{
+		return 846930886;
+	}
+}
+
+
+
+
+contract C2BBB {
+
+	function f0() external pure
+	
+	returns (uint)
+	{
+		return 48271;
+	}
+}
+contract C2BB is C2BBB {
+
+}
+contract C2B is C2BB {
+
+}
+contract C2 is C2B {
+
+}
+
+
+
+
+
+
+interface C3BBBBB {
+
+	function f0() external payable returns (uint);
+}
+interface C3BBBB is C3BBBBB {
+
+}
+interface C3BBB is C3BBBB {
+
+}
+interface C3BB is C3BBB {
+
+	function f1() external view returns (uint);
+}
+interface C3B is C3BB {
+
+}
+contract C3 is C3B {
+
+	function f0() external payable
+	override
+	returns (uint)
+	{
+		return 1738531149;
+	}
+	function f1() external view
+	override
+	returns (uint)
+	{
+		return 1098894339;
+	}
+}
+
+
+contract C {
+	function test() public returns (uint)
+	{
+			C2 tc0 = new C2();
+			if (tc0.f0() != 48271)
+				return 1;
+			C2B tc1 = new C2B();
+			if (tc1.f0() != 48271)
+				return 2;
+			C2BB tc2 = new C2BB();
+			if (tc2.f0() != 48271)
+				return 3;
+			C2BBB tc3 = new C2BBB();
+			if (tc3.f0() != 48271)
+				return 4;
+			C3 tc4 = new C3();
+			if (tc4.f0() != 1738531149)
+				return 5;
+			if (tc4.f1() != 1098894339)
+				return 6;
+			return 0;
+	}
+}
+

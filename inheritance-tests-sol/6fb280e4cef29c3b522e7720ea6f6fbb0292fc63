@@ -1,0 +1,35 @@
+
+pragma solidity >=0.0;
+
+
+
+
+interface C0B {
+
+	function f0() external view returns (uint);
+}
+
+abstract contract C0BB is C0B {
+
+	function f0() virtual external view
+	override
+	returns (uint);
+}
+contract C0 is C0B, C0BB {
+
+	function f0() external view
+	override(C0BB, C0B)
+	returns (uint)
+	{
+		return 407355683;
+	}
+}
+
+
+contract C {
+	function test() public returns (uint)
+	{
+		return 0;
+	}
+}
+

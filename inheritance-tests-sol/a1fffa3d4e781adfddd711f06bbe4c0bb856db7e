@@ -1,0 +1,38 @@
+
+pragma solidity >=0.0;
+
+
+
+
+
+abstract contract C3BB {
+
+}
+contract C3B is C3BB {
+
+	function f0() external pure
+	
+	returns (uint)
+	{
+		return 1600096592;
+	}
+}
+
+abstract contract C3BBB is C3B {
+
+}
+abstract contract C3 is C3B, C3BBB {
+
+}
+
+
+contract C {
+	function test() public returns (uint)
+	{
+			C3B tc0 = new C3B();
+			if (tc0.f0() != 1600096592)
+				return 1;
+			return 0;
+	}
+}
+

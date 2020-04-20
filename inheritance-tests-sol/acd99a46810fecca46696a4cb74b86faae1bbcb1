@@ -1,0 +1,31 @@
+
+pragma solidity >=0.0;
+
+
+
+
+interface C2B {
+
+	function f0() external payable returns (uint);
+}
+contract C2 is C2B {
+
+	function f0() external payable
+	override
+	returns (uint)
+	{
+		return 1275298559;
+	}
+}
+
+
+contract C {
+	function test() public returns (uint)
+	{
+			C2 tc0 = new C2();
+			if (tc0.f0() != 1275298559)
+				return 1;
+			return 0;
+	}
+}
+

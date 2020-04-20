@@ -1,0 +1,78 @@
+
+pragma solidity >=0.0;
+
+
+
+
+
+
+contract C0BBB {
+
+	function f0() external pure
+	
+	returns (uint)
+	{
+		return 48271;
+	}
+}
+contract C0BB is C0BBB {
+
+}
+abstract contract C0B is C0BB {
+
+}
+contract C0 is C0B {
+
+}
+
+
+
+
+contract C1BBB {
+
+	function f0() external pure
+	
+	returns (uint)
+	{
+		return 1914720637;
+	}
+}
+contract C1BB is C1BBB {
+
+}
+contract C1B is C1BB {
+
+}
+contract C1 is C1B {
+
+}
+
+
+contract C {
+	function test() public returns (uint)
+	{
+			C0 tc0 = new C0();
+			if (tc0.f0() != 48271)
+				return 1;
+			C0BB tc1 = new C0BB();
+			if (tc1.f0() != 48271)
+				return 2;
+			C0BBB tc2 = new C0BBB();
+			if (tc2.f0() != 48271)
+				return 3;
+			C1 tc3 = new C1();
+			if (tc3.f0() != 1914720637)
+				return 4;
+			C1B tc4 = new C1B();
+			if (tc4.f0() != 1914720637)
+				return 5;
+			C1BB tc5 = new C1BB();
+			if (tc5.f0() != 1914720637)
+				return 6;
+			C1BBB tc6 = new C1BBB();
+			if (tc6.f0() != 1914720637)
+				return 7;
+			return 0;
+	}
+}
+

@@ -1,0 +1,212 @@
+
+pragma solidity >=0.0;
+
+
+
+contract C0 {
+
+	function f0() virtual public pure
+	
+	returns (uint)
+	{
+		return 48271;
+	}
+}
+
+
+
+contract C1BB {
+
+}
+contract C1B is C1BB {
+
+}
+
+
+
+interface C1BBBBB {
+
+	function f0() external payable returns (uint);
+}
+interface C1BBBB is C1BBBBB {
+
+	function f0() override
+	external payable returns (uint);
+	function f1() external payable returns (uint);
+}
+interface C1BBB is C1BBBB {
+
+}
+contract C1 is C1B, C1BBB {
+
+	function f0() external payable
+	override
+	returns (uint)
+	{
+		return 564586691;
+	}
+	function f1() external payable
+	override
+	returns (uint)
+	{
+		return 192302371;
+	}
+}
+
+
+abstract contract C2B {
+
+	function f0() virtual public view
+	
+	returns (uint);
+}
+contract C2 is C2B {
+
+	function f0() public view
+	override
+	returns (uint)
+	{
+		return 1271135913;
+	}
+}
+
+
+
+
+
+
+abstract contract C3BBBBB {
+
+}
+abstract contract C3BBBB is C3BBBBB {
+
+}
+contract C3BBB is C3BBBB {
+
+}
+
+
+
+abstract contract C3BBBBBBBB {
+
+}
+abstract contract C3BBBBBBB is C3BBBBBBBB {
+
+}
+contract C3BBBBBB is C3BBB, C3BBBBBBB {
+
+}
+contract C3BB is C3BBB, C3BBBBBB {
+
+}
+contract C3B is C3BB {
+
+}
+
+
+
+
+
+abstract contract C3BBBBBBBBBBBBB {
+
+}
+abstract contract C3BBBBBBBBBBBB is C3BBBBBBBBBBBBB {
+
+}
+contract C3BBBBBBBBBBB is C3BBBBBBBBBBBB {
+
+}
+
+
+
+
+
+abstract contract C3BBBBBBBBBBBBBBBBBB {
+
+}
+contract C3BBBBBBBBBBBBBBBBB is C3BBBBBBBBBBBBBBBBBB {
+
+}
+contract C3BBBBBBBBBBBBBBBB is C3BBBBBBBBBBBBBBBBB {
+
+}
+contract C3BBBBBBBBBBBBBBB is C3BBBBBBBBBBBBBBBB {
+
+	function f0() external pure
+	
+	returns (uint)
+	{
+		return 2064876628;
+	}
+}
+contract C3BBBBBBBBBBBBBB is C3BBBBBBBBBBBB, C3BBBBBBBBBBBBBBB {
+
+}
+contract C3BBBBBBBBBB is C3BBBBBBBBBBB, C3BBBBBBBBBBBBBB {
+
+}
+
+abstract contract C3BBBBBBBBBBBBBBBBBBB is C3BBBBBBBBBBBBBB {
+
+}
+contract C3BBBBBBBBB is C3BB, C3BBBBBBBBBB, C3BBBBBBBBBBBBBBBBBBB {
+
+}
+
+
+abstract contract C3BBBBBBBBBBBBBBBBBBBBB {
+
+}
+
+abstract contract C3BBBBBBBBBBBBBBBBBBBBBB is C3BBBBBBBBBBBBBBBBBBBBB {
+
+}
+contract C3BBBBBBBBBBBBBBBBBBBB is C3BB, C3BBBBBBBBBBBBBBBBBBBBB, C3BBBBBBBBBBBBBBBBBBBBBB {
+
+}
+
+
+abstract contract C3BBBBBBBBBBBBBBBBBBBBBBBB {
+
+}
+contract C3BBBBBBBBBBBBBBBBBBBBBBB is C3B, C3BBBBBBBBBBBBBBBBBBBBBBBB {
+
+}
+contract C3 is C3B, C3BBBBBBBBB, C3BBBBBBBBBBBBBBBBBBBB, C3BBBBBBBBBBBBBBBBBBBBBBB {
+
+}
+
+
+contract C {
+	function test() public returns (uint)
+	{
+			C0 tc0 = new C0();
+			if (tc0.f0() != 48271)
+				return 1;
+			C1 tc1 = new C1();
+			if (tc1.f0() != 564586691)
+				return 2;
+			if (tc1.f1() != 192302371)
+				return 3;
+			C2 tc2 = new C2();
+			if (tc2.f0() != 1271135913)
+				return 4;
+			C3 tc3 = new C3();
+			if (tc3.f0() != 2064876628)
+				return 5;
+			C3BBBBBBBBB tc4 = new C3BBBBBBBBB();
+			if (tc4.f0() != 2064876628)
+				return 6;
+			C3BBBBBBBBBB tc5 = new C3BBBBBBBBBB();
+			if (tc5.f0() != 2064876628)
+				return 7;
+			C3BBBBBBBBBBBBBB tc6 = new C3BBBBBBBBBBBBBB();
+			if (tc6.f0() != 2064876628)
+				return 8;
+			C3BBBBBBBBBBBBBBB tc7 = new C3BBBBBBBBBBBBBBB();
+			if (tc7.f0() != 2064876628)
+				return 9;
+			return 0;
+	}
+}
+

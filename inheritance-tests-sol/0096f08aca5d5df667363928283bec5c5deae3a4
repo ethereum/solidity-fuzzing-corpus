@@ -1,0 +1,77 @@
+
+pragma solidity >=0.0;
+
+
+library L0 {
+
+	function f0(uint) internal pure returns (uint)
+	{
+		return 1804289383;
+	}
+}
+library L1 {
+
+	function f0(uint) internal view returns (uint)
+	{
+		return 846930886;
+	}
+	function f1(uint) internal view returns (uint)
+	{
+		return 1681692777;
+	}
+}
+
+
+
+
+interface C2BBB {
+
+	function f0() external payable returns (uint);
+}
+interface C2BB is C2BBB {
+
+	function f0() override
+	external payable returns (uint);
+}
+interface C2B is C2BB {
+
+}
+contract C2 is C2B {
+
+	function f0() external payable
+	override
+	returns (uint)
+	{
+		return 375855352;
+	}
+}
+
+contract C3 {
+
+	function f0() virtual public pure
+	
+	returns (uint)
+	{
+		return 971846536;
+	}
+}
+library L4 {
+
+	function f0(uint) public view returns (uint)
+	{
+		return 1714636915;
+	}
+}
+
+
+contract C {
+	using L4 for uint;
+	function test() public returns (uint)
+	{
+		uint x;
+		if (x.f0() != 1714636915)
+			return 1;
+		return 0;
+	}
+}
+

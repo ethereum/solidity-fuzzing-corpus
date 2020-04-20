@@ -1,0 +1,33 @@
+
+pragma solidity >=0.0;
+
+
+
+interface I0 {
+
+	function f0() external payable returns (uint);
+}
+library L1 {
+
+	function f0(uint) public view returns (uint)
+	{
+		return 1804289383;
+	}
+	function f1(uint) public view returns (uint)
+	{
+		return 846930886;
+	}
+}
+
+
+contract C {
+	using L1 for uint;
+	function test() public returns (uint)
+	{
+		uint x;
+		if (x.f1() != 846930886)
+			return 1;
+		return 0;
+	}
+}
+

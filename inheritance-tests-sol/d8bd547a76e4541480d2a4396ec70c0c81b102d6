@@ -1,0 +1,206 @@
+
+pragma solidity >=0.0;
+
+
+library L0 {
+
+	function f0(uint) public pure returns (uint)
+	{
+		return 1804289383;
+	}
+}
+
+
+
+interface C3BB {
+
+	function f0() external view returns (uint);
+}
+interface C3B is C3BB {
+
+	function f0() override
+	external view returns (uint);
+}
+
+
+interface C3BBBB {
+
+	function f0() external view returns (uint);
+}
+interface C3BBB is C3B, C3BBBB {
+
+	function f0() override(C3B, C3BBBB)
+	external view returns (uint);
+}
+contract C3 is C3B, C3BBB {
+
+	function f0() external view
+	override(C3BBB, C3B)
+	returns (uint)
+	{
+		return 1105902161;
+	}
+}
+library L4 {
+
+	function f0(uint) internal pure returns (uint)
+	{
+		return 1681692777;
+	}
+}
+
+
+
+
+interface C5BBB {
+
+	function f0() external payable returns (uint);
+}
+interface C5BB is C5BBB {
+
+}
+abstract contract C5B is C5BB {
+
+	function f0() virtual external payable
+	override
+	returns (uint);
+}
+contract C5 is C5B {
+
+	function f0() external payable
+	override
+	returns (uint)
+	{
+		return 1271135913;
+	}
+}
+
+
+
+
+
+
+
+
+
+interface C6BBBBBBBB {
+
+	function f0() external view returns (uint);
+}
+interface C6BBBBBBB is C6BBBBBBBB {
+
+}
+interface C6BBBBBB is C6BBBBBBB {
+
+	function f0() override
+	external view returns (uint);
+}
+interface C6BBBBB is C6BBBBBB {
+
+}
+interface C6BBBB is C6BBBBB {
+
+}
+interface C6BBB is C6BBBB {
+
+	function f1() external payable returns (uint);
+}
+interface C6BB is C6BBB {
+
+	function f0() override
+	external view returns (uint);
+	function f1() override
+	external payable returns (uint);
+}
+contract C6B is C6BB {
+
+	function f0() external view
+	override
+	returns (uint)
+	{
+		return 631416347;
+	}
+	function f1() external payable
+	override
+	returns (uint)
+	{
+		return 890442452;
+	}
+}
+contract C6 is C6B {
+
+}
+
+
+
+
+
+interface C7BBBB {
+
+	function f0() external view returns (uint);
+}
+interface C7BBB is C7BBBB {
+
+	function f0() override
+	external view returns (uint);
+}
+interface C7BB is C7BBB {
+
+}
+interface C7B is C7BB {
+
+}
+contract C7 is C7B {
+
+	function f0() external view
+	override
+	returns (uint)
+	{
+		return 1308858262;
+	}
+}
+library L8 {
+
+	function f0(uint) private pure returns (uint)
+	{
+		return 1714636915;
+	}
+}
+
+
+
+interface C9BB {
+
+	function f0() external view returns (uint);
+}
+interface C9B is C9BB {
+
+	function f0() override
+	external view returns (uint);
+}
+
+interface C9BBB is C9BB {
+
+}
+contract C9 is C9B, C9BBB {
+
+	function f0() external view
+	override(C9BB, C9B)
+	returns (uint)
+	{
+		return 153892771;
+	}
+}
+
+
+contract C {
+	using L0 for uint;
+	function test() public returns (uint)
+	{
+		uint x;
+		if (x.f0() != 1804289383)
+			return 1;
+		return 0;
+	}
+}
+

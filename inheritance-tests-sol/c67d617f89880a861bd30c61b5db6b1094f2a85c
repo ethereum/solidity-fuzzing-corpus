@@ -1,0 +1,223 @@
+
+pragma solidity >=0.0;
+
+
+library L0 {
+
+	function f0(uint) private pure returns (uint)
+	{
+		return 1804289383;
+	}
+}
+library L1 {
+
+	function f0(uint) private pure returns (uint)
+	{
+		return 846930886;
+	}
+}
+library L2 {
+
+	function f0(uint) private pure returns (uint)
+	{
+		return 1681692777;
+	}
+	function f1(uint) public pure returns (uint)
+	{
+		return 1714636915;
+	}
+}
+library L3 {
+
+	function f0(uint) private pure returns (uint)
+	{
+		return 1957747793;
+	}
+	function f1(uint) private pure returns (uint)
+	{
+		return 424238335;
+	}
+}
+library L4 {
+
+	function f0(uint) private pure returns (uint)
+	{
+		return 719885386;
+	}
+	function f1(uint) public pure returns (uint)
+	{
+		return 1649760492;
+	}
+}
+
+
+
+
+
+
+
+interface I5BBBBBB {
+
+}
+interface I5BBBBB is I5BBBBBB {
+
+	function f0() external view returns (uint);
+}
+interface I5BBBB is I5BBBBB {
+
+}
+interface I5BBB is I5BBBB {
+
+	function f1() external payable returns (uint);
+}
+interface I5BB is I5BBB {
+
+}
+interface I5B is I5BB {
+
+}
+interface I5 is I5B {
+
+}
+
+interface I6 {
+
+	function f0() external view returns (uint);
+}
+
+
+
+
+
+
+
+
+interface I7BBBBBBB {
+
+	function f0() external payable returns (uint);
+}
+interface I7BBBBBB is I7BBBBBBB {
+
+}
+interface I7BBBBB is I7BBBBBB {
+
+	function f0() override
+	external payable returns (uint);
+}
+
+
+
+
+
+
+interface I7BBBBBBBBBBBBB {
+
+	function f0() external payable returns (uint);
+}
+interface I7BBBBBBBBBBBB is I7BBBBBBBBBBBBB {
+
+}
+interface I7BBBBBBBBBBB is I7BBBBBBBBBBBB {
+
+}
+interface I7BBBBBBBBBB is I7BBBBBBBBBBB {
+
+}
+interface I7BBBBBBBBB is I7BBBBBBBBBB {
+
+	function f0() override
+	external payable returns (uint);
+}
+interface I7BBBBBBBB is I7BBBBBB, I7BBBBBBBBB {
+
+	function f0() override(I7BBBBBBB, I7BBBBBBBBB)
+	external payable returns (uint);
+}
+interface I7BBBB is I7BBBBB, I7BBBBBBBB {
+
+	function f0() override(I7BBBBB, I7BBBBBBBB)
+	external payable returns (uint);
+}
+interface I7BBB is I7BBBB {
+
+}
+interface I7BB is I7BBB {
+
+	function f0() override
+	external payable returns (uint);
+}
+
+
+
+
+
+
+interface I7BBBBBBBBBBBBBBBBBBB {
+
+	function f0() external payable returns (uint);
+}
+interface I7BBBBBBBBBBBBBBBBBB is I7BBBBBBBBBBBBBBBBBBB {
+
+	function f0() override
+	external payable returns (uint);
+}
+interface I7BBBBBBBBBBBBBBBBB is I7BBBBBBBBBBBBBBBBBB {
+
+}
+interface I7BBBBBBBBBBBBBBBB is I7BBBBBBBBBBBBBBBBB {
+
+}
+interface I7BBBBBBBBBBBBBBB is I7BBBBBBBBBBBBBBBB {
+
+}
+interface I7BBBBBBBBBBBBBB is I7BBB, I7BBBBBBBBBBBBBBB {
+
+	function f0() override(I7BBBB, I7BBBBBBBBBBBBBBBBBB)
+	external payable returns (uint);
+}
+interface I7B is I7BB, I7BBBBBBBBBBBBBB {
+
+	function f0() override(I7BB, I7BBBBBBBBBBBBBB)
+	external payable returns (uint);
+}
+interface I7 is I7B {
+
+}
+library L8 {
+
+	function f0(uint) private pure returns (uint)
+	{
+		return 1025202362;
+	}
+}
+
+
+
+contract C9BB {
+
+	function f0() external pure
+	
+	returns (uint)
+	{
+		return 1057382352;
+	}
+}
+contract C9B is C9BB {
+
+}
+contract C9 is C9B {
+
+}
+
+
+contract C {
+	using L4 for uint;
+	function test() public returns (uint)
+	{
+		uint x;
+		if (x.f1() != 1649760492)
+			return 1;
+		return 0;
+	}
+}
+

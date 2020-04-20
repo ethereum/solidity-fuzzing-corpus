@@ -1,0 +1,110 @@
+
+pragma solidity >=0.0;
+
+
+
+
+
+
+interface C0BBB {
+
+	function f0() external payable returns (uint);
+}
+interface C0BB is C0BBB {
+
+}
+interface C0B is C0BB {
+
+}
+contract C0 is C0B {
+
+	function f0() virtual external payable
+	override
+	returns (uint)
+	{
+		return 1277419665;
+	}
+}
+
+
+
+
+
+
+
+interface C1BBBBBB {
+
+}
+interface C1BBBBB is C1BBBBBB {
+
+	function f0() external payable returns (uint);
+}
+interface C1BBBB is C1BBBBB {
+
+	function f0() override
+	external payable returns (uint);
+}
+interface C1BBB is C1BBBB {
+
+	function f1() external payable returns (uint);
+}
+interface C1BB is C1BBB {
+
+}
+contract C1B is C1BB {
+
+	function f0() virtual external payable
+	override
+	returns (uint)
+	{
+		return 1623188993;
+	}
+	function f1() virtual external payable
+	override
+	returns (uint)
+	{
+		return 1068463897;
+	}
+}
+contract C1 is C1B {
+
+	function f1() virtual external payable
+	override
+	returns (uint)
+	{
+		return 965828290;
+	}
+}
+library L3 {
+
+	function f0(uint) external pure returns (uint)
+	{
+		return 846930886;
+	}
+	function f1(uint) internal pure returns (uint)
+	{
+		return 1681692777;
+	}
+}
+
+
+contract C {
+	function test() public returns (uint)
+	{
+			C0 tc0 = new C0();
+			if (tc0.f0() != 1277419665)
+				return 1;
+			C1 tc1 = new C1();
+			if (tc1.f0() != 1623188993)
+				return 2;
+			if (tc1.f1() != 965828290)
+				return 3;
+			C1B tc2 = new C1B();
+			if (tc2.f0() != 1623188993)
+				return 4;
+			if (tc2.f1() != 1068463897)
+				return 5;
+			return 0;
+	}
+}
+

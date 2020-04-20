@@ -1,0 +1,58 @@
+
+pragma solidity >=0.0;
+
+
+
+contract C0 {
+
+	function f0() public view
+	
+	returns (uint)
+	{
+		return 48271;
+	}
+}
+
+
+
+interface C1BB {
+
+}
+interface C1B is C1BB {
+
+}
+
+abstract contract C1BBB is C1BB {
+
+	function f0() virtual public pure
+	
+	returns (uint)
+	{
+		return 1914720637;
+	}
+}
+contract C1 is C1B, C1BBB {
+
+}
+library L2 {
+
+	function f0(uint) public view returns (uint)
+	{
+		return 846930886;
+	}
+}
+
+
+contract C {
+	function test() public returns (uint)
+	{
+			C0 tc0 = new C0();
+			if (tc0.f0() != 48271)
+				return 1;
+			C1 tc1 = new C1();
+			if (tc1.f0() != 1914720637)
+				return 2;
+			return 0;
+	}
+}
+

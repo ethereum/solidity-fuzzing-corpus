@@ -1,0 +1,50 @@
+
+pragma solidity >=0.0;
+
+
+
+
+interface I0B {
+
+	function f0() external pure returns (uint);
+}
+interface I0 is I0B {
+
+}
+library L1 {
+
+	function f0(uint) external pure returns (uint)
+	{
+		return 1804289383;
+	}
+}
+
+contract C2 {
+
+	function f0() public view
+	
+	returns (uint)
+	{
+		return 1291394886;
+	}
+}
+library L3 {
+
+	function f0(uint) external pure returns (uint)
+	{
+		return 846930886;
+	}
+}
+
+
+contract C {
+	using L3 for uint;
+	function test() public returns (uint)
+	{
+		uint x;
+		if (x.f0() != 846930886)
+			return 1;
+		return 0;
+	}
+}
+

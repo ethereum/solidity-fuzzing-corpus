@@ -1,0 +1,90 @@
+
+pragma solidity >=0.0;
+
+
+
+
+contract C0B {
+
+}
+
+
+
+
+interface C0BBBBB {
+
+	function f0() external view returns (uint);
+}
+contract C0BBBB is C0BBBBB {
+
+	function f0() external view
+	override
+	returns (uint)
+	{
+		return 1774809789;
+	}
+}
+contract C0BBB is C0BBBB {
+
+}
+abstract contract C0BB is C0B, C0BBB {
+
+}
+abstract contract C0 is C0B, C0BB {
+
+	function f1() virtual public view
+	
+	returns (uint);
+}
+
+
+contract C2B {
+
+}
+
+
+
+
+interface C2BBBBB {
+
+	function f0() external payable returns (uint);
+}
+contract C2BBBB is C2BBBBB {
+
+	function f0() virtual external payable
+	override
+	returns (uint)
+	{
+		return 983677044;
+	}
+}
+abstract contract C2BBB is C2BBBB {
+
+	function f0() external payable
+	override
+	returns (uint)
+	{
+		return 924490413;
+	}
+}
+abstract contract C2BB is C2B, C2BBB {
+
+}
+abstract contract C2 is C2B, C2BB {
+
+	function f1() public view
+	
+	returns (uint)
+	{
+		return 1672470262;
+	}
+}
+
+
+contract C {
+	function test() public returns (uint)
+	{
+		return 0;
+	}
+}
+

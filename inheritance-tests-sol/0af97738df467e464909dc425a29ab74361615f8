@@ -1,0 +1,64 @@
+
+pragma solidity >=0.0;
+
+
+
+interface I0 {
+
+	function f0() external view returns (uint);
+}
+
+contract C1 {
+
+	function f0() public payable
+	
+	returns (uint)
+	{
+		return 48271;
+	}
+}
+
+
+
+contract C2BB {
+
+	function f0() virtual public pure
+	
+	returns (uint)
+	{
+		return 182605794;
+	}
+}
+contract C2B is C2BB {
+
+	function f0() public pure
+	override
+	returns (uint)
+	{
+		return 2078669041;
+	}
+}
+contract C2 is C2B {
+
+}
+
+
+contract C {
+	function test() public returns (uint)
+	{
+			C1 tc0 = new C1();
+			if (tc0.f0() != 48271)
+				return 1;
+			C2 tc1 = new C2();
+			if (tc1.f0() != 2078669041)
+				return 2;
+			C2B tc2 = new C2B();
+			if (tc2.f0() != 2078669041)
+				return 3;
+			C2BB tc3 = new C2BB();
+			if (tc3.f0() != 182605794)
+				return 4;
+			return 0;
+	}
+}
+

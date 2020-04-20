@@ -1,0 +1,54 @@
+
+pragma solidity >=0.0;
+
+
+
+
+interface C0B {
+
+	function f0() external view returns (uint);
+}
+
+interface C0BB is C0B {
+
+	function f0() override
+	external view returns (uint);
+	function f1() external view returns (uint);
+}
+contract C0 is C0B, C0BB {
+
+	function f0() virtual external view
+	override(C0BB, C0B)
+	returns (uint)
+	{
+		return 1829127610;
+	}
+	function f1() external view
+	override
+	returns (uint)
+	{
+		return 1018497940;
+	}
+	function f2() virtual public pure
+	
+	returns (uint)
+	{
+		return 1570930969;
+	}
+}
+
+
+contract C {
+	function test() public returns (uint)
+	{
+			C0 tc0 = new C0();
+			if (tc0.f0() != 1829127610)
+				return 1;
+			if (tc0.f1() != 1018497940)
+				return 2;
+			if (tc0.f2() != 1570930969)
+				return 3;
+			return 0;
+	}
+}
+

@@ -1,0 +1,104 @@
+
+pragma solidity >=0.0;
+
+
+
+
+
+interface I0BB {
+
+	function f0() external view returns (uint);
+}
+interface I0B is I0BB {
+
+}
+interface I0 is I0B {
+
+	function f0() override
+	external view returns (uint);
+	function f1() external payable returns (uint);
+}
+library L1 {
+
+	function f0(uint) internal pure returns (uint)
+	{
+		return 1804289383;
+	}
+}
+library L2 {
+
+	function f0(uint) internal pure returns (uint)
+	{
+		return 846930886;
+	}
+}
+
+
+
+interface C3BB {
+
+	function f0() external view returns (uint);
+}
+contract C3B is C3BB {
+
+	function f0() external view
+	override
+	returns (uint)
+	{
+		return 2078669041;
+	}
+}
+contract C3 is C3B {
+
+}
+library L4 {
+
+	function f0(uint) public view returns (uint)
+	{
+		return 1681692777;
+	}
+}
+
+
+
+
+interface C5BBB {
+
+	function f0() external payable returns (uint);
+}
+interface C5BB is C5BBB {
+
+}
+contract C5B is C5BB {
+
+	function f0() external payable
+	override
+	returns (uint)
+	{
+		return 192302371;
+	}
+}
+contract C5 is C5B {
+
+}
+
+
+contract C {
+	function test() public returns (uint)
+	{
+			C3 tc0 = new C3();
+			if (tc0.f0() != 2078669041)
+				return 1;
+			C3B tc1 = new C3B();
+			if (tc1.f0() != 2078669041)
+				return 2;
+			C5 tc2 = new C5();
+			if (tc2.f0() != 192302371)
+				return 3;
+			C5B tc3 = new C5B();
+			if (tc3.f0() != 192302371)
+				return 4;
+			return 0;
+	}
+}
+

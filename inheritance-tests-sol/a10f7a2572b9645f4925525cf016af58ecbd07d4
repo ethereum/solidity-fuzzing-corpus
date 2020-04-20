@@ -1,0 +1,40 @@
+
+pragma solidity >=0.0;
+
+
+library L0 {
+
+	function f0(uint) external pure returns (uint)
+	{
+		return 1804289383;
+	}
+}
+library L1 {
+
+	function f0(uint) public view returns (uint)
+	{
+		return 846930886;
+	}
+}
+
+contract C2 {
+
+	function f0() public pure
+	
+	returns (uint)
+	{
+		return 1291394886;
+	}
+}
+
+
+contract C {
+	function test() public returns (uint)
+	{
+			C2 tc0 = new C2();
+			if (tc0.f0() != 1291394886)
+				return 1;
+			return 0;
+	}
+}
+

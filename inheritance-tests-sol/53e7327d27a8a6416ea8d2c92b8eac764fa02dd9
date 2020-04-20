@@ -1,0 +1,157 @@
+
+pragma solidity >=0.0;
+
+
+
+
+
+interface C0BB {
+
+	function f0() external view returns (uint);
+}
+contract C0B is C0BB {
+
+	function f0() external view
+	override
+	returns (uint)
+	{
+		return 182605794;
+	}
+}
+contract C0 is C0B {
+
+}
+
+
+
+interface C1BB {
+
+	function f0() external view returns (uint);
+}
+contract C1B is C1BB {
+
+	function f0() external view
+	override
+	returns (uint)
+	{
+		return 2078669041;
+	}
+}
+contract C1 is C1B {
+
+}
+
+
+
+
+
+
+
+interface C2BBBBBB {
+
+}
+interface C2BBBBB is C2BBBBBB {
+
+}
+interface C2BBBB is C2BBBBB {
+
+}
+interface C2BBB is C2BBBB {
+
+}
+
+
+
+interface C2BBBBBBBBB {
+
+	function f0() external payable returns (uint);
+}
+interface C2BBBBBBBB is C2BBBBBBBBB {
+
+}
+interface C2BBBBBBB is C2BBBB, C2BBBBBBBB {
+
+}
+interface C2BB is C2BBB, C2BBBBBBB {
+
+}
+interface C2B is C2BB {
+
+}
+contract C2 is C2B {
+
+	function f0() virtual external payable
+	override
+	returns (uint)
+	{
+		return 1559527823;
+	}
+}
+
+
+
+interface I3BB {
+
+	function f0() external view returns (uint);
+}
+interface I3B is I3BB {
+
+	function f1() external payable returns (uint);
+}
+interface I3 is I3B {
+
+	function f1() override
+	external payable returns (uint);
+}
+library L4 {
+
+	function f0(uint) internal pure returns (uint)
+	{
+		return 846930886;
+	}
+}
+library L5 {
+
+	function f0(uint) internal pure returns (uint)
+	{
+		return 1681692777;
+	}
+}
+library L6 {
+
+	function f0(uint) internal pure returns (uint)
+	{
+		return 1714636915;
+	}
+}
+library L7 {
+
+	function f0(uint) public view returns (uint)
+	{
+		return 1957747793;
+	}
+}
+
+
+contract C {
+	function test() public returns (uint)
+	{
+			C0 tc0 = new C0();
+			if (tc0.f0() != 182605794)
+				return 1;
+			C0B tc1 = new C0B();
+			if (tc1.f0() != 182605794)
+				return 2;
+			C1 tc2 = new C1();
+			if (tc2.f0() != 2078669041)
+				return 3;
+			C1B tc3 = new C1B();
+			if (tc3.f0() != 2078669041)
+				return 4;
+			C2 tc4 = new C2();
+			if (tc4.f0() != 1559527823)
+				return 5;
+			return 0;
+	}
+}
+

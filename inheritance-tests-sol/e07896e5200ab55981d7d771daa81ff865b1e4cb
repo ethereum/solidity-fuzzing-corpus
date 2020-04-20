@@ -1,0 +1,59 @@
+
+pragma solidity >=0.0;
+
+
+
+
+
+contract C2BB {
+
+}
+contract C2B is C2BB {
+
+}
+
+
+interface C2BBBB {
+
+	function f0() external payable returns (uint);
+}
+interface C2BBB is C2BBBB {
+
+	function f0() override
+	external payable returns (uint);
+}
+contract C2 is C2B, C2BBB {
+
+	function f0() external payable
+	override
+	returns (uint)
+	{
+		return 638022372;
+	}
+}
+library L3 {
+
+	function f0(uint) internal pure returns (uint)
+	{
+		return 719885386;
+	}
+}
+library L4 {
+
+	function f0(uint) external pure returns (uint)
+	{
+		return 1649760492;
+	}
+}
+
+
+contract C {
+	function test() public returns (uint)
+	{
+			C2 tc0 = new C2();
+			if (tc0.f0() != 638022372)
+				return 1;
+			return 0;
+	}
+}
+

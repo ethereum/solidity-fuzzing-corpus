@@ -1,0 +1,140 @@
+
+pragma solidity >=0.0;
+
+
+library L0 {
+
+	function f0(uint) private pure returns (uint)
+	{
+		return 1804289383;
+	}
+	function f1(uint) external pure returns (uint)
+	{
+		return 846930886;
+	}
+}
+
+interface I1 {
+
+	function f0() external pure returns (uint);
+}
+
+
+interface C2B {
+
+	function f0() external view returns (uint);
+	function f1() external view returns (uint);
+	function f2() external view returns (uint);
+}
+
+
+interface C2BBB {
+
+	function f0() external view returns (uint);
+}
+interface C2BB is C2B, C2BBB {
+
+	function f0() override(C2B, C2BBB)
+	external view returns (uint);
+	function f1() override
+	external view returns (uint);
+	function f2() override
+	external view returns (uint);
+}
+
+interface C2BBBB is C2BB {
+
+	function f1() override
+	external view returns (uint);
+	function f2() override
+	external view returns (uint);
+	function f3() external payable returns (uint);
+	function f4() external view returns (uint);
+}
+contract C2 is C2B, C2BB, C2BBBB {
+
+	function f0() external view
+	override(C2BB, C2B)
+	returns (uint)
+	{
+		return 2091756030;
+	}
+	function f1() virtual external view
+	override(C2BB, C2B, C2BBBB)
+	returns (uint)
+	{
+		return 100610062;
+	}
+	function f2() external view
+	override(C2BB, C2B, C2BBBB)
+	returns (uint)
+	{
+		return 2105260235;
+	}
+	function f3() virtual external payable
+	override
+	returns (uint)
+	{
+		return 1860677439;
+	}
+	function f4() external view
+	override
+	returns (uint)
+	{
+		return 1512265093;
+	}
+}
+library L3 {
+
+	function f0(uint) internal view returns (uint)
+	{
+		return 1957747793;
+	}
+}
+library L4 {
+
+	function f0(uint) public view returns (uint)
+	{
+		return 424238335;
+	}
+}
+library L5 {
+
+	function f0(uint) private pure returns (uint)
+	{
+		return 719885386;
+	}
+}
+
+interface I6 {
+
+	function f0() external payable returns (uint);
+}
+library L7 {
+
+	function f0(uint) private pure returns (uint)
+	{
+		return 1649760492;
+	}
+	function f1(uint) private pure returns (uint)
+	{
+		return 596516649;
+	}
+	function f2(uint) public view returns (uint)
+	{
+		return 1189641421;
+	}
+}
+
+
+contract C {
+	using L0 for uint;
+	function test() public returns (uint)
+	{
+		uint x;
+		if (x.f1() != 846930886)
+			return 1;
+		return 0;
+	}
+}
+

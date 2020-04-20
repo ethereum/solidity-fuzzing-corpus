@@ -1,0 +1,397 @@
+
+pragma solidity >=0.0;
+
+
+
+contract C0 {
+
+	function f0() public view
+	
+	returns (uint)
+	{
+		return 48271;
+	}
+}
+
+contract C1 {
+
+	function f0() public view
+	
+	returns (uint)
+	{
+		return 182605794;
+	}
+}
+
+
+
+
+
+
+interface C2BBBBB {
+
+	function f0() external payable returns (uint);
+}
+interface C2BBBB is C2BBBBB {
+
+	function f0() override
+	external payable returns (uint);
+}
+interface C2BBB is C2BBBB {
+
+}
+interface C2BB is C2BBB {
+
+}
+contract C2B is C2BB {
+
+	function f0() external payable
+	override
+	returns (uint)
+	{
+		return 1596680831;
+	}
+}
+contract C2 is C2B {
+
+}
+library L3 {
+
+	function f0(uint) public pure returns (uint)
+	{
+		return 1804289383;
+	}
+	function f1(uint) public pure returns (uint)
+	{
+		return 846930886;
+	}
+}
+
+
+
+
+contract C4BBB {
+
+	function f0() virtual public pure
+	
+	returns (uint)
+	{
+		return 1250328747;
+	}
+}
+contract C4BB is C4BBB {
+
+}
+contract C4B is C4BB {
+
+}
+contract C4 is C4B {
+
+	function f0() public pure
+	override
+	returns (uint)
+	{
+		return 2075782095;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+interface I5BBBBBBBBBB {
+
+	function f0() external payable returns (uint);
+}
+interface I5BBBBBBBBB is I5BBBBBBBBBB {
+
+	function f0() override
+	external payable returns (uint);
+	function f1() external view returns (uint);
+}
+
+interface I5BBBBBBBBBBB is I5BBBBBBBBBB {
+
+	function f0() override
+	external payable returns (uint);
+	function f1() external view returns (uint);
+}
+interface I5BBBBBBBB is I5BBBBBBBBB, I5BBBBBBBBBBB {
+
+	function f0() override(I5BBBBBBBBB, I5BBBBBBBBBBB)
+	external payable returns (uint);
+	function f1() override(I5BBBBBBBBB, I5BBBBBBBBBBB)
+	external view returns (uint);
+	function f2() external payable returns (uint);
+	function f3() external view returns (uint);
+}
+interface I5BBBBBBB is I5BBBBBBBB {
+
+	function f0() override
+	external payable returns (uint);
+	function f1() override
+	external view returns (uint);
+	function f2() override
+	external payable returns (uint);
+}
+interface I5BBBBBB is I5BBBBBBB {
+
+	function f1() override
+	external view returns (uint);
+	function f3() override
+	external view returns (uint);
+}
+interface I5BBBBB is I5BBBBBB {
+
+	function f1() override
+	external view returns (uint);
+	function f4() external payable returns (uint);
+}
+interface I5BBBB is I5BBBBB {
+
+	function f0() override
+	external payable returns (uint);
+	function f1() override
+	external view returns (uint);
+	function f4() override
+	external payable returns (uint);
+}
+
+interface I5BBBBBBBBBBBB is I5BBBBB {
+
+	function f1() override
+	external view returns (uint);
+	function f3() override
+	external view returns (uint);
+	function f5() external payable returns (uint);
+}
+interface I5BBB is I5BBBB, I5BBBBBBBBBBBB {
+
+	function f0() override(I5BBBB, I5BBBBBBB)
+	external payable returns (uint);
+	function f1() override(I5BBBB, I5BBBBBBBBBBBB)
+	external view returns (uint);
+	function f3() override(I5BBBBBB, I5BBBBBBBBBBBB)
+	external view returns (uint);
+	function f4() override(I5BBBB, I5BBBBB)
+	external payable returns (uint);
+	function f6() external view returns (uint);
+}
+interface I5BB is I5BBB {
+
+	function f1() override
+	external view returns (uint);
+	function f5() override
+	external payable returns (uint);
+}
+interface I5B is I5BB {
+
+	function f1() override
+	external view returns (uint);
+	function f3() override
+	external view returns (uint);
+	function f6() override
+	external view returns (uint);
+}
+
+interface I5BBBBBBBBBBBBB is I5BB {
+
+	function f0() override
+	external payable returns (uint);
+	function f1() override
+	external view returns (uint);
+	function f4() override
+	external payable returns (uint);
+	function f6() override
+	external view returns (uint);
+	function f7() external payable returns (uint);
+}
+interface I5 is I5B, I5BBBBBBBBBBBBB {
+
+	function f0() override(I5BBB, I5BBBBBBBBBBBBB)
+	external payable returns (uint);
+	function f1() override(I5B, I5BBBBBBBBBBBBB)
+	external view returns (uint);
+	function f2() override
+	external payable returns (uint);
+	function f3() override(I5B, I5BBB)
+	external view returns (uint);
+	function f4() override(I5BBB, I5BBBBBBBBBBBBB)
+	external payable returns (uint);
+	function f6() override(I5B, I5BBBBBBBBBBBBB)
+	external view returns (uint);
+	function f7() override
+	external payable returns (uint);
+}
+
+
+
+
+
+
+
+
+
+
+
+interface I6BBBBBBBBBB {
+
+	function f0() external view returns (uint);
+}
+interface I6BBBBBBBBB is I6BBBBBBBBBB {
+
+	function f1() external view returns (uint);
+}
+
+interface I6BBBBBBBBBBB is I6BBBBBBBBBB {
+
+	function f0() override
+	external view returns (uint);
+	function f1() external view returns (uint);
+}
+interface I6BBBBBBBB is I6BBBBBBBBB, I6BBBBBBBBBBB {
+
+	function f0() override(I6BBBBBBBBBB, I6BBBBBBBBBBB)
+	external view returns (uint);
+	function f1() override(I6BBBBBBBBB, I6BBBBBBBBBBB)
+	external view returns (uint);
+	function f2() external payable returns (uint);
+	function f3() external view returns (uint);
+}
+interface I6BBBBBBB is I6BBBBBBBB {
+
+	function f1() override
+	external view returns (uint);
+	function f2() override
+	external payable returns (uint);
+}
+interface I6BBBBBB is I6BBBBBBB {
+
+	function f0() override
+	external view returns (uint);
+	function f1() override
+	external view returns (uint);
+	function f2() override
+	external payable returns (uint);
+}
+interface I6BBBBB is I6BBBBBB {
+
+	function f0() override
+	external view returns (uint);
+	function f1() override
+	external view returns (uint);
+	function f4() external payable returns (uint);
+}
+interface I6BBBB is I6BBBBB {
+
+	function f3() override
+	external view returns (uint);
+	function f4() override
+	external payable returns (uint);
+}
+
+interface I6BBBBBBBBBBBB is I6BBBB {
+
+	function f0() override
+	external view returns (uint);
+	function f5() external payable returns (uint);
+}
+interface I6BBB is I6BBBB, I6BBBBBBBBBBBB {
+
+	function f0() override(I6BBBBB, I6BBBBBBBBBBBB)
+	external view returns (uint);
+	function f2() override
+	external payable returns (uint);
+	function f5() override
+	external payable returns (uint);
+	function f6() external payable returns (uint);
+	function f7() external view returns (uint);
+	function f8() external payable returns (uint);
+}
+interface I6BB is I6BBB {
+
+	function f0() override
+	external view returns (uint);
+	function f1() override
+	external view returns (uint);
+	function f2() override
+	external payable returns (uint);
+	function f4() override
+	external payable returns (uint);
+	function f5() override
+	external payable returns (uint);
+	function f7() override
+	external view returns (uint);
+	function f8() override
+	external payable returns (uint);
+}
+interface I6B is I6BB {
+
+	function f0() override
+	external view returns (uint);
+	function f3() override
+	external view returns (uint);
+	function f4() override
+	external payable returns (uint);
+	function f5() override
+	external payable returns (uint);
+	function f6() override
+	external payable returns (uint);
+	function f7() override
+	external view returns (uint);
+	function f8() override
+	external payable returns (uint);
+}
+
+interface I6BBBBBBBBBBBBB is I6B {
+
+	function f3() override
+	external view returns (uint);
+	function f4() override
+	external payable returns (uint);
+	function f5() override
+	external payable returns (uint);
+	function f6() override
+	external payable returns (uint);
+	function f7() override
+	external view returns (uint);
+	function f9() external payable returns (uint);
+}
+interface I6 is I6B, I6BBBBBBBBBBBBB {
+
+	function f0() override
+	external view returns (uint);
+	function f1() override
+	external view returns (uint);
+	function f2() override
+	external payable returns (uint);
+	function f3() override(I6B, I6BBBBBBBBBBBBB)
+	external view returns (uint);
+	function f4() override(I6B, I6BBBBBBBBBBBBB)
+	external payable returns (uint);
+	function f5() override(I6B, I6BBBBBBBBBBBBB)
+	external payable returns (uint);
+	function f6() override(I6B, I6BBBBBBBBBBBBB)
+	external payable returns (uint);
+	function f7() override(I6B, I6BBBBBBBBBBBBB)
+	external view returns (uint);
+}
+
+
+contract C {
+	using L3 for uint;
+	function test() public returns (uint)
+	{
+		uint x;
+		if (x.f1() != 846930886)
+			return 1;
+		return 0;
+	}
+}
+

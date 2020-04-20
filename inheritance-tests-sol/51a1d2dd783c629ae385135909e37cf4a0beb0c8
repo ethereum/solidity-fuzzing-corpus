@@ -1,0 +1,141 @@
+
+pragma solidity >=0.0;
+
+
+
+
+
+
+interface C0BBB {
+
+	function f0() external payable returns (uint);
+}
+interface C0BB is C0BBB {
+
+}
+interface C0B is C0BB {
+
+}
+
+interface C0BBBB is C0BB {
+
+	function f0() override
+	external payable returns (uint);
+}
+
+contract C0BBBBB is C0BBBB {
+
+	function f0() virtual external payable
+	override
+	returns (uint)
+	{
+		return 1501100076;
+	}
+}
+
+
+
+abstract contract C0BBBBBBBB {
+
+}
+abstract contract C0BBBBBBB is C0BBBBBBBB {
+
+}
+abstract contract C0BBBBBB is C0BB, C0BBBBBBB {
+
+	function f0() virtual external payable
+	override
+	returns (uint);
+}
+contract C0 is C0B, C0BBBB, C0BBBBB, C0BBBBBB {
+
+	function f0() external payable
+	override(C0BBBBBB, C0BBBBB, C0BBBB, C0BBB)
+	returns (uint)
+	{
+		return 2111632871;
+	}
+}
+
+
+contract C1B {
+
+	function f0() public view
+	
+	returns (uint)
+	{
+		return 319011186;
+	}
+}
+contract C1 is C1B {
+
+}
+library L3 {
+
+	function f0(uint) external pure returns (uint)
+	{
+		return 1957747793;
+	}
+	function f1(uint) internal pure returns (uint)
+	{
+		return 424238335;
+	}
+}
+
+
+interface I4B {
+
+	function f0() external payable returns (uint);
+}
+
+
+
+
+interface I4BBBBB {
+
+	function f0() external payable returns (uint);
+}
+interface I4BBBB is I4BBBBB {
+
+}
+interface I4BBB is I4BBBB {
+
+	function f0() override
+	external payable returns (uint);
+}
+interface I4BB is I4B, I4BBB {
+
+	function f0() override(I4B, I4BBB)
+	external payable returns (uint);
+}
+
+interface I4BBBBBB is I4B {
+
+	function f1() external view returns (uint);
+}
+interface I4 is I4B, I4BB, I4BBBBBB {
+
+	function f0() override(I4B, I4BB)
+	external payable returns (uint);
+}
+
+
+contract C {
+	function test() public returns (uint)
+	{
+			C0 tc0 = new C0();
+			if (tc0.f0() != 2111632871)
+				return 1;
+			C0BBBBB tc1 = new C0BBBBB();
+			if (tc1.f0() != 1501100076)
+				return 2;
+			C1 tc2 = new C1();
+			if (tc2.f0() != 319011186)
+				return 3;
+			C1B tc3 = new C1B();
+			if (tc3.f0() != 319011186)
+				return 4;
+			return 0;
+	}
+}
+

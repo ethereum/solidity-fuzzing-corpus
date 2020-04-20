@@ -1,0 +1,133 @@
+
+pragma solidity >=0.0;
+
+
+
+
+
+
+
+interface I0BBBB {
+
+	function f0() external payable returns (uint);
+}
+interface I0BBB is I0BBBB {
+
+}
+interface I0BB is I0BBB {
+
+	function f0() override
+	external payable returns (uint);
+}
+
+
+
+
+interface I0BBBBBBBB {
+
+	function f0() external payable returns (uint);
+}
+interface I0BBBBBBB is I0BBBBBBBB {
+
+}
+interface I0BBBBBB is I0BBBBBBB {
+
+}
+interface I0BBBBB is I0BBB, I0BBBBBB {
+
+	function f0() override(I0BBBB, I0BBBBBBBB)
+	external payable returns (uint);
+}
+interface I0B is I0BB, I0BBBBB {
+
+	function f0() override(I0BB, I0BBBBB)
+	external payable returns (uint);
+}
+interface I0 is I0B {
+
+}
+
+
+
+interface I1BB {
+
+	function f0() external payable returns (uint);
+}
+interface I1B is I1BB {
+
+}
+interface I1 is I1B {
+
+}
+library L2 {
+
+	function f0(uint) public pure returns (uint)
+	{
+		return 846930886;
+	}
+}
+library L3 {
+
+	function f0(uint) public view returns (uint)
+	{
+		return 1681692777;
+	}
+}
+library L4 {
+
+	function f0(uint) public pure returns (uint)
+	{
+		return 1714636915;
+	}
+}
+
+
+
+
+
+
+interface I5BBBBB {
+
+	function f0() external payable returns (uint);
+}
+interface I5BBBB is I5BBBBB {
+
+	function f0() override
+	external payable returns (uint);
+}
+interface I5BBB is I5BBBB {
+
+}
+interface I5BB is I5BBB {
+
+}
+interface I5B is I5BB {
+
+}
+
+interface I5BBBBBB is I5BB {
+
+	function f0() override
+	external payable returns (uint);
+	function f1() external payable returns (uint);
+}
+interface I5 is I5B, I5BBBBBB {
+
+	function f0() override(I5BBBB, I5BBBBBB)
+	external payable returns (uint);
+	function f1() override
+	external payable returns (uint);
+}
+
+
+contract C {
+	using L2 for uint;
+	function test() public returns (uint)
+	{
+		uint x;
+		if (x.f0() != 846930886)
+			return 1;
+		return 0;
+	}
+}
+

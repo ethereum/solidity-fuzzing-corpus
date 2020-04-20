@@ -1,0 +1,173 @@
+
+pragma solidity >=0.0;
+
+
+
+
+interface I0B {
+
+}
+interface I0 is I0B {
+
+}
+library L1 {
+
+	function f0(uint) public pure returns (uint)
+	{
+		return 1804289383;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+interface C2BBBBBBBBBB {
+
+	function f0() external view returns (uint);
+}
+interface C2BBBBBBBBB is C2BBBBBBBBBB {
+
+	function f0() override
+	external view returns (uint);
+}
+interface C2BBBBBBBB is C2BBBBBBBBB {
+
+	function f1() external pure returns (uint);
+}
+interface C2BBBBBBB is C2BBBBBBBB {
+
+	function f2() external payable returns (uint);
+}
+interface C2BBBBBB is C2BBBBBBB {
+
+	function f3() external view returns (uint);
+	function f4() external view returns (uint);
+}
+interface C2BBBBB is C2BBBBBB {
+
+}
+
+interface C2BBBBBBBBBBB is C2BBBBB {
+
+	function f2() override
+	external payable returns (uint);
+	function f4() override
+	external view returns (uint);
+	function f5() external view returns (uint);
+}
+interface C2BBBB is C2BBBBB, C2BBBBBBBBBBB {
+
+	function f1() override
+	external pure returns (uint);
+	function f2() override(C2BBBBBBB, C2BBBBBBBBBBB)
+	external payable returns (uint);
+	function f3() override
+	external view returns (uint);
+	function f4() override(C2BBBBBB, C2BBBBBBBBBBB)
+	external view returns (uint);
+	function f5() override
+	external view returns (uint);
+}
+contract C2BBB is C2BBBB {
+
+	function f0() external view
+	override
+	returns (uint)
+	{
+		return 2010567813;
+	}
+	function f1() virtual external pure
+	override
+	returns (uint)
+	{
+		return 662405787;
+	}
+	function f2() virtual external payable
+	override
+	returns (uint)
+	{
+		return 849178936;
+	}
+	function f3() external view
+	override
+	returns (uint)
+	{
+		return 1479919876;
+	}
+	function f4() external view
+	override
+	returns (uint)
+	{
+		return 1272185027;
+	}
+	function f5() external view
+	override
+	returns (uint)
+	{
+		return 1308858262;
+	}
+}
+contract C2BB is C2BBB {
+
+}
+contract C2B is C2BB {
+
+}
+contract C2 is C2B {
+
+	function f2() external payable
+	override
+	returns (uint)
+	{
+		return 389431516;
+	}
+}
+
+
+
+
+interface C3BBB {
+
+	function f0() external payable returns (uint);
+}
+interface C3BB is C3BBB {
+
+}
+contract C3B is C3BB {
+
+	function f0() virtual external payable
+	override
+	returns (uint)
+	{
+		return 674592135;
+	}
+}
+contract C3 is C3B {
+
+	function f1() public view
+	
+	returns (uint)
+	{
+		return 1951824771;
+	}
+}
+
+
+contract C {
+	using L1 for uint;
+	function test() public returns (uint)
+	{
+		uint x;
+		if (x.f0() != 1804289383)
+			return 1;
+		return 0;
+	}
+}
+

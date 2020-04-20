@@ -1,0 +1,181 @@
+
+pragma solidity >=0.0;
+
+
+
+
+contract C0B {
+
+	function f0() public view
+	
+	returns (uint)
+	{
+		return 1073765959;
+	}
+}
+contract C0 is C0B {
+
+}
+
+
+
+
+
+interface C1BBBB {
+
+	function f0() external payable returns (uint);
+}
+interface C1BBB is C1BBBB {
+
+}
+contract C1BB is C1BBB {
+
+	function f0() virtual external payable
+	override
+	returns (uint)
+	{
+		return 2113076344;
+	}
+}
+abstract contract C1B is C1BB {
+
+	function f0() virtual external payable
+	override
+	returns (uint)
+	{
+		return 1356035169;
+	}
+}
+contract C1 is C1B {
+
+	function f1() public view
+	
+	returns (uint)
+	{
+		return 1675455927;
+	}
+}
+
+contract C2 {
+
+	function f0() public view
+	
+	returns (uint)
+	{
+		return 1698906197;
+	}
+}
+
+contract C3 {
+
+	function f0() public view
+	
+	returns (uint)
+	{
+		return 1943007398;
+	}
+}
+
+
+interface I4B {
+
+}
+interface I4 is I4B {
+
+	function f0() external payable returns (uint);
+}
+
+
+
+interface I5BB {
+
+}
+interface I5B is I5BB {
+
+}
+interface I5 is I5B {
+
+}
+
+contract C6 {
+
+	function f0() public view
+	
+	returns (uint)
+	{
+		return 1623188993;
+	}
+}
+
+contract C7 {
+
+	function f0() public view
+	
+	returns (uint)
+	{
+		return 2015020308;
+	}
+	function f1() internal pure
+	
+	returns (uint)
+	{
+		return 1068463897;
+	}
+}
+
+
+
+interface C8BB {
+
+	function f0() external payable returns (uint);
+}
+interface C8B is C8BB {
+
+}
+contract C8 is C8B {
+
+	function f0() virtual external payable
+	override
+	returns (uint)
+	{
+		return 1531210416;
+	}
+}
+
+
+contract C {
+	function test() public returns (uint)
+	{
+			C0 tc0 = new C0();
+			if (tc0.f0() != 1073765959)
+				return 1;
+			C0B tc1 = new C0B();
+			if (tc1.f0() != 1073765959)
+				return 2;
+			C1 tc2 = new C1();
+			if (tc2.f0() != 1356035169)
+				return 3;
+			if (tc2.f1() != 1675455927)
+				return 4;
+			C1BB tc3 = new C1BB();
+			if (tc3.f0() != 2113076344)
+				return 5;
+			C2 tc4 = new C2();
+			if (tc4.f0() != 1698906197)
+				return 6;
+			C3 tc5 = new C3();
+			if (tc5.f0() != 1943007398)
+				return 7;
+			C6 tc6 = new C6();
+			if (tc6.f0() != 1623188993)
+				return 8;
+			C7 tc7 = new C7();
+			if (tc7.f0() != 2015020308)
+				return 9;
+			C8 tc8 = new C8();
+			if (tc8.f0() != 1531210416)
+				return 10;
+			return 0;
+	}
+}
+

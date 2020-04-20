@@ -1,0 +1,184 @@
+
+pragma solidity >=0.0;
+
+
+library L0 {
+
+	function f0(uint) internal view returns (uint)
+	{
+		return 1804289383;
+	}
+}
+
+contract C1 {
+
+	function f0() public pure
+	
+	returns (uint)
+	{
+		return 48271;
+	}
+}
+
+
+
+
+contract C2BBB {
+
+	function f0() virtual public pure
+	
+	returns (uint)
+	{
+		return 182605794;
+	}
+}
+contract C2BB is C2BBB {
+
+	function f0() public pure
+	override
+	returns (uint)
+	{
+		return 2078669041;
+	}
+}
+contract C2B is C2BB {
+
+}
+contract C2 is C2B {
+
+}
+
+
+
+
+contract C3BBB {
+
+	function f0() virtual public pure
+	
+	returns (uint)
+	{
+		return 854716505;
+	}
+}
+contract C3BB is C3BBB {
+
+}
+contract C3B is C3BB {
+
+}
+contract C3 is C3B {
+
+}
+
+
+contract C6B {
+
+	function f0() virtual public pure
+	
+	returns (uint)
+	{
+		return 1738531149;
+	}
+}
+contract C6 is C6B {
+
+}
+
+
+contract C7B {
+
+	function f0() virtual public pure
+	
+	returns (uint)
+	{
+		return 1098894339;
+	}
+}
+contract C7 is C7B {
+
+}
+
+
+
+contract C8BB {
+
+	function f0() virtual public pure
+	
+	returns (uint)
+	{
+		return 2136927794;
+	}
+}
+contract C8B is C8BB {
+
+}
+contract C8 is C8B {
+
+	function f0() public pure
+	override
+	returns (uint)
+	{
+		return 1931656580;
+	}
+}
+library L9 {
+
+	function f0(uint) internal pure returns (uint)
+	{
+		return 846930886;
+	}
+}
+
+
+contract C {
+	function test() public returns (uint)
+	{
+			C1 tc0 = new C1();
+			if (tc0.f0() != 48271)
+				return 1;
+			C2 tc1 = new C2();
+			if (tc1.f0() != 2078669041)
+				return 2;
+			C2B tc2 = new C2B();
+			if (tc2.f0() != 2078669041)
+				return 3;
+			C2BB tc3 = new C2BB();
+			if (tc3.f0() != 2078669041)
+				return 4;
+			C2BBB tc4 = new C2BBB();
+			if (tc4.f0() != 182605794)
+				return 5;
+			C3 tc5 = new C3();
+			if (tc5.f0() != 854716505)
+				return 6;
+			C3B tc6 = new C3B();
+			if (tc6.f0() != 854716505)
+				return 7;
+			C3BB tc7 = new C3BB();
+			if (tc7.f0() != 854716505)
+				return 8;
+			C3BBB tc8 = new C3BBB();
+			if (tc8.f0() != 854716505)
+				return 9;
+			C6 tc9 = new C6();
+			if (tc9.f0() != 1738531149)
+				return 10;
+			C6B tc10 = new C6B();
+			if (tc10.f0() != 1738531149)
+				return 11;
+			C7 tc11 = new C7();
+			if (tc11.f0() != 1098894339)
+				return 12;
+			C7B tc12 = new C7B();
+			if (tc12.f0() != 1098894339)
+				return 13;
+			C8 tc13 = new C8();
+			if (tc13.f0() != 1931656580)
+				return 14;
+			C8B tc14 = new C8B();
+			if (tc14.f0() != 2136927794)
+				return 15;
+			return 0;
+	}
+}
+

@@ -1,0 +1,164 @@
+
+pragma solidity >=0.0;
+
+
+
+interface I0 {
+
+	function f0() external payable returns (uint);
+}
+
+contract C1 {
+
+	function f0() public view
+	
+	returns (uint)
+	{
+		return 48271;
+	}
+	function f1() public pure
+	
+	returns (uint)
+	{
+		return 182605794;
+	}
+}
+
+
+
+interface I2BB {
+
+	function f0() external payable returns (uint);
+	function f1() external view returns (uint);
+}
+interface I2B is I2BB {
+
+	function f0() override
+	external payable returns (uint);
+	function f2() external payable returns (uint);
+}
+interface I2 is I2B {
+
+}
+
+contract C3 {
+
+	function f0() public payable
+	
+	returns (uint)
+	{
+		return 564586691;
+	}
+}
+
+interface I5 {
+
+	function f0() external view returns (uint);
+}
+
+interface I6 {
+
+	function f0() external payable returns (uint);
+}
+
+
+
+
+
+
+
+
+interface C7BBBBBBB {
+
+	function f0() external view returns (uint);
+}
+interface C7BBBBBB is C7BBBBBBB {
+
+}
+interface C7BBBBB is C7BBBBBB {
+
+}
+
+interface C7BBBBBBBB is C7BBBBB {
+
+	function f1() external payable returns (uint);
+}
+interface C7BBBB is C7BBBBB, C7BBBBBBBB {
+
+	function f2() external payable returns (uint);
+}
+interface C7BBB is C7BBBB {
+
+	function f1() override
+	external payable returns (uint);
+}
+interface C7BB is C7BBB {
+
+	function f0() override
+	external view returns (uint);
+	function f1() override
+	external payable returns (uint);
+	function f2() override
+	external payable returns (uint);
+}
+contract C7B is C7BB {
+
+	function f0() external view
+	override
+	returns (uint)
+	{
+		return 2010567813;
+	}
+	function f1() virtual external payable
+	override
+	returns (uint)
+	{
+		return 662405787;
+	}
+	function f2() virtual external payable
+	override
+	returns (uint)
+	{
+		return 849178936;
+	}
+}
+contract C7 is C7B {
+
+	function f1() external payable
+	override
+	returns (uint)
+	{
+		return 1272185027;
+	}
+}
+
+
+contract C {
+	function test() public returns (uint)
+	{
+			C1 tc0 = new C1();
+			if (tc0.f0() != 48271)
+				return 1;
+			if (tc0.f1() != 182605794)
+				return 2;
+			C3 tc1 = new C3();
+			if (tc1.f0() != 564586691)
+				return 3;
+			C7 tc2 = new C7();
+			if (tc2.f0() != 2010567813)
+				return 4;
+			if (tc2.f1() != 1272185027)
+				return 5;
+			if (tc2.f2() != 849178936)
+				return 6;
+			C7B tc3 = new C7B();
+			if (tc3.f0() != 2010567813)
+				return 7;
+			if (tc3.f1() != 662405787)
+				return 8;
+			if (tc3.f2() != 849178936)
+				return 9;
+			return 0;
+	}
+}
+

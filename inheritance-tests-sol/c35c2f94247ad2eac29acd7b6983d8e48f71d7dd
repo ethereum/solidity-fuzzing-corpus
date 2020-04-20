@@ -1,0 +1,205 @@
+
+pragma solidity >=0.0;
+
+
+
+
+
+
+
+interface C1BBBB {
+
+	function f0() external payable returns (uint);
+}
+interface C1BBB is C1BBBB {
+
+	function f0() override
+	external payable returns (uint);
+}
+contract C1BB is C1BBB {
+
+	function f0() external payable
+	override
+	returns (uint)
+	{
+		return 407355683;
+	}
+	function f1() external pure
+	
+	returns (uint)
+	{
+		return 1105902161;
+	}
+}
+contract C1B is C1BB {
+
+}
+
+contract C1BBBBB is C1B {
+
+}
+contract C1 is C1B, C1BBBBB {
+
+}
+library L2 {
+
+	function f0(uint) public pure returns (uint)
+	{
+		return 1681692777;
+	}
+}
+library L3 {
+
+	function f0(uint) private view returns (uint)
+	{
+		return 1714636915;
+	}
+}
+library L4 {
+
+	function f0(uint) private pure returns (uint)
+	{
+		return 1957747793;
+	}
+}
+library L5 {
+
+	function f0(uint) internal pure returns (uint)
+	{
+		return 424238335;
+	}
+}
+library L7 {
+
+	function f0(uint) public view returns (uint)
+	{
+		return 719885386;
+	}
+}
+
+
+interface I8B {
+
+	function f0() external payable returns (uint);
+}
+interface I8 is I8B {
+
+	function f1() external payable returns (uint);
+}
+library L9 {
+
+	function f0(uint) public view returns (uint)
+	{
+		return 1649760492;
+	}
+}
+
+
+interface I10B {
+
+	function f0() external payable returns (uint);
+}
+interface I10 is I10B {
+
+	function f1() external payable returns (uint);
+}
+
+
+
+
+
+interface C11BBBB {
+
+	function f0() external payable returns (uint);
+}
+interface C11BBB is C11BBBB {
+
+}
+contract C11BB is C11BBB {
+
+	function f0() virtual external payable
+	override
+	returns (uint)
+	{
+		return 1559527823;
+	}
+	function f1() external pure
+	
+	returns (uint)
+	{
+		return 2075782095;
+	}
+}
+contract C11B is C11BB {
+
+}
+
+contract C11BBBBB is C11BB {
+
+}
+contract C11 is C11B, C11BBBBB {
+
+	function f0() virtual external payable
+	override
+	returns (uint)
+	{
+		return 1842513780;
+	}
+	function f2() external pure
+	
+	returns (uint)
+	{
+		return 1947433875;
+	}
+}
+
+
+contract C {
+	function test() public returns (uint)
+	{
+			C1 tc0 = new C1();
+			if (tc0.f0() != 407355683)
+				return 1;
+			if (tc0.f1() != 1105902161)
+				return 2;
+			C11 tc1 = new C11();
+			if (tc1.f0() != 1842513780)
+				return 3;
+			if (tc1.f1() != 2075782095)
+				return 4;
+			if (tc1.f2() != 1947433875)
+				return 5;
+			C11B tc2 = new C11B();
+			if (tc2.f0() != 1559527823)
+				return 6;
+			if (tc2.f1() != 2075782095)
+				return 7;
+			C11BB tc3 = new C11BB();
+			if (tc3.f0() != 1559527823)
+				return 8;
+			if (tc3.f1() != 2075782095)
+				return 9;
+			C11BBBBB tc4 = new C11BBBBB();
+			if (tc4.f0() != 1559527823)
+				return 10;
+			if (tc4.f1() != 2075782095)
+				return 11;
+			C1B tc5 = new C1B();
+			if (tc5.f0() != 407355683)
+				return 12;
+			if (tc5.f1() != 1105902161)
+				return 13;
+			C1BB tc6 = new C1BB();
+			if (tc6.f0() != 407355683)
+				return 14;
+			if (tc6.f1() != 1105902161)
+				return 15;
+			C1BBBBB tc7 = new C1BBBBB();
+			if (tc7.f0() != 407355683)
+				return 16;
+			if (tc7.f1() != 1105902161)
+				return 17;
+			return 0;
+	}
+}
+

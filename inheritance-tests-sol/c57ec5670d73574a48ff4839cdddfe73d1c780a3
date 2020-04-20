@@ -1,0 +1,49 @@
+
+pragma solidity >=0.0;
+
+
+library L3 {
+
+	function f0(uint) public pure returns (uint)
+	{
+		return 846930886;
+	}
+}
+
+
+
+
+interface C9BBB {
+
+	function f0() external payable returns (uint);
+}
+interface C9BB is C9BBB {
+
+	function f0() override
+	external payable returns (uint);
+}
+contract C9B is C9BB {
+
+	function f0() external payable
+	override
+	returns (uint)
+	{
+		return 1369023381;
+	}
+}
+contract C9 is C9B {
+
+}
+
+
+contract C {
+	using L3 for uint;
+	function test() public returns (uint)
+	{
+		uint x;
+		if (x.f0() != 846930886)
+			return 1;
+		return 0;
+	}
+}
+

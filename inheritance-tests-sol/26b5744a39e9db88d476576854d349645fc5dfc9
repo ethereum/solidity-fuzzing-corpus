@@ -1,0 +1,106 @@
+
+pragma solidity >=0.0;
+
+
+library L0 {
+
+	function f0(uint) public view returns (uint)
+	{
+		return 1804289383;
+	}
+	function f1(uint) internal view returns (uint)
+	{
+		return 846930886;
+	}
+}
+
+
+
+
+
+
+interface I1BBBBB {
+
+	function f0() external view returns (uint);
+}
+interface I1BBBB is I1BBBBB {
+
+	function f0() override
+	external view returns (uint);
+}
+interface I1BBB is I1BBBB {
+
+}
+interface I1BB is I1BBB {
+
+}
+interface I1B is I1BB {
+
+}
+interface I1 is I1B {
+
+	function f1() external view returns (uint);
+}
+library L2 {
+
+	function f0(uint) public view returns (uint)
+	{
+		return 1681692777;
+	}
+	function f1(uint) public view returns (uint)
+	{
+		return 1714636915;
+	}
+	function f2(uint) public pure returns (uint)
+	{
+		return 1957747793;
+	}
+	function f3(uint) internal pure returns (uint)
+	{
+		return 424238335;
+	}
+}
+library L3 {
+
+	function f0(uint) internal view returns (uint)
+	{
+		return 719885386;
+	}
+}
+library L4 {
+
+	function f0(uint) internal view returns (uint)
+	{
+		return 1649760492;
+	}
+}
+library L5 {
+
+	function f0(uint) internal view returns (uint)
+	{
+		return 596516649;
+	}
+	function f1(uint) internal view returns (uint)
+	{
+		return 1189641421;
+	}
+}
+
+interface I6 {
+
+	function f0() external view returns (uint);
+	function f1() external view returns (uint);
+}
+
+
+contract C {
+	using L2 for uint;
+	function test() public returns (uint)
+	{
+		uint x;
+		if (x.f1() != 1714636915)
+			return 1;
+		return 0;
+	}
+}
+
