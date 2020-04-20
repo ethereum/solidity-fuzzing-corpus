@@ -1,23 +1,17 @@
-
 pragma solidity >=0.0;
-
-
 library L2 {
-
 	function f0(uint) public pure returns (uint)
 	{
 		return 846930886;
 	}
 }
 library L4 {
-
 	function f0(uint) public pure returns (uint)
 	{
 		return 1681692777;
 	}
 }
 library L5 {
-
 	function f0(uint) internal view returns (uint)
 	{
 		return 1714636915;
@@ -28,7 +22,6 @@ library L5 {
 	}
 }
 library L6 {
-
 	function f0(uint) internal view returns (uint)
 	{
 		return 424238335;
@@ -38,19 +31,12 @@ library L6 {
 		return 719885386;
 	}
 }
-
-
-
-
 interface C7BBB {
-
 	function f0() external payable returns (uint);
 }
 interface C7BB is C7BBB {
-
 }
 abstract contract C7B is C7BB {
-
 	function f0() external payable
 	override
 	returns (uint)
@@ -58,16 +44,11 @@ abstract contract C7B is C7BB {
 		return 2075782095;
 	}
 }
-
-
 abstract contract C7BBBBB {
-
 }
 contract C7BBBB is C7B, C7BBBBB {
-
 }
 contract C7 is C7B, C7BBBB {
-
 	function f1() virtual public pure
 	
 	returns (uint)
@@ -76,15 +57,12 @@ contract C7 is C7B, C7BBBB {
 	}
 }
 library L8 {
-
 	function f0(uint) public pure returns (uint)
 	{
 		return 596516649;
 	}
 }
-
 contract C9 {
-
 	function f0() virtual public pure
 	
 	returns (uint)
@@ -93,36 +71,24 @@ contract C9 {
 	}
 }
 library L11 {
-
 	function f0(uint) public pure returns (uint)
 	{
 		return 1025202362;
 	}
 }
-
-
-
-
 interface C12BBB {
-
 	function f0() external payable returns (uint);
 }
 interface C12BB is C12BBB {
-
 }
 abstract contract C12B is C12BB {
-
 	function f0() virtual external payable
 	override
 	returns (uint);
 }
-
-
 abstract contract C12BBBBB {
-
 }
 contract C12BBBB is C12BB, C12BBBBB {
-
 	function f0() virtual external payable
 	override
 	returns (uint)
@@ -131,7 +97,6 @@ contract C12BBBB is C12BB, C12BBBBB {
 	}
 }
 contract C12 is C12B, C12BBBB {
-
 	function f0() virtual external payable
 	override(C12BBBB, C12B)
 	returns (uint)
@@ -145,9 +110,7 @@ contract C12 is C12B, C12BBBB {
 		return 153892771;
 	}
 }
-
 contract C14 {
-
 	function f0() public view
 	
 	returns (uint)
@@ -155,8 +118,6 @@ contract C14 {
 		return 480194461;
 	}
 }
-
-
 contract C {
 	using L5 for uint;
 	function test() public returns (uint)
@@ -167,4 +128,3 @@ contract C {
 		return 0;
 	}
 }
-

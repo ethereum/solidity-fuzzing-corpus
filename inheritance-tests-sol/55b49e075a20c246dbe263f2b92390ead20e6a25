@@ -1,75 +1,53 @@
-
 pragma solidity >=0.0;
-
-
 library L0 {
-
 	function f0(uint) external pure returns (uint)
 	{
 		return 1804289383;
 	}
 }
 library L2 {
-
 	function f0(uint) external pure returns (uint)
 	{
 		return 1681692777;
 	}
 }
 library L3 {
-
 	function f0(uint) external pure returns (uint)
 	{
 		return 1714636915;
 	}
 }
 library L4 {
-
 	function f0(uint) external pure returns (uint)
 	{
 		return 1957747793;
 	}
 }
 library L5 {
-
 	function f0(uint) public view returns (uint)
 	{
 		return 424238335;
 	}
 }
-
-
-
-
 interface I6BBB {
-
 	function f0() external view returns (uint);
 }
-
-
 interface I6BBBBB {
-
 	function f0() external view returns (uint);
 }
 interface I6BBBB is I6BBB, I6BBBBB {
-
 	function f0() override(I6BBB, I6BBBBB)
 	external view returns (uint);
 }
 interface I6BB is I6BBB, I6BBBB {
-
 	function f0() override(I6BBB, I6BBBB)
 	external view returns (uint);
 	function f1() external view returns (uint);
 }
 interface I6B is I6BB {
-
 }
 interface I6 is I6B {
-
 }
-
-
 contract C {
 	using L4 for uint;
 	function test() public returns (uint)
@@ -80,4 +58,3 @@ contract C {
 		return 0;
 	}
 }
-

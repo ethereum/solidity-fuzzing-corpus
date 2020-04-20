@@ -1,10 +1,5 @@
-
 pragma solidity >=0.0;
-
-
-
 contract C0 {
-
 	function f0() external pure
 	
 	returns (uint)
@@ -12,13 +7,9 @@ contract C0 {
 		return 48271;
 	}
 }
-
-
 contract C1B {
-
 }
 contract C1 is C1B {
-
 	function f0() public view
 	
 	returns (uint)
@@ -26,10 +17,7 @@ contract C1 is C1B {
 		return 182605794;
 	}
 }
-
-
 contract C2B {
-
 	function f0() public view
 	
 	returns (uint)
@@ -38,7 +26,6 @@ contract C2B {
 	}
 }
 contract C2 is C2B {
-
 	function f1() private pure
 	
 	returns (uint)
@@ -46,9 +33,7 @@ contract C2 is C2B {
 		return 1914720637;
 	}
 }
-
 contract C3 {
-
 	function f0() public view
 	
 	returns (uint)
@@ -56,38 +41,25 @@ contract C3 {
 		return 2078669041;
 	}
 }
-
-
 interface I4B {
-
 	function f0() external view returns (uint);
 }
 interface I4 is I4B {
-
 }
 library L6 {
-
 	function f0(uint) public view returns (uint)
 	{
 		return 846930886;
 	}
 }
-
-
-
-
 interface C7BBB {
-
 	function f0() external payable returns (uint);
 }
 interface C7BB is C7BBB {
-
 }
 interface C7B is C7BB {
-
 }
 contract C7 is C7B {
-
 	function f0() external payable
 	override
 	returns (uint)
@@ -95,23 +67,14 @@ contract C7 is C7B {
 		return 1250328747;
 	}
 }
-
-
-
-
-
 interface C8BBBB {
-
 	function f0() external payable returns (uint);
 }
 interface C8BBB is C8BBBB {
-
 }
 interface C8BB is C8BBB {
-
 }
 contract C8B is C8BB {
-
 	function f0() virtual external payable
 	override
 	returns (uint)
@@ -120,7 +83,6 @@ contract C8B is C8BB {
 	}
 }
 contract C8 is C8B {
-
 	function f0() external payable
 	override
 	returns (uint)
@@ -128,13 +90,9 @@ contract C8 is C8B {
 		return 1931656580;
 	}
 }
-
-
 contract C10B {
-
 }
 contract C10 is C10B {
-
 	function f0() public view
 	
 	returns (uint)
@@ -142,10 +100,7 @@ contract C10 is C10B {
 		return 1696049367;
 	}
 }
-
-
 contract C11B {
-
 	function f0() public view
 	
 	returns (uint)
@@ -154,16 +109,11 @@ contract C11B {
 	}
 }
 contract C11 is C11B {
-
 }
-
-
 interface C12B {
-
 	function f0() external payable returns (uint);
 }
 contract C12 is C12B {
-
 	function f0() external payable
 	override
 	returns (uint)
@@ -171,8 +121,6 @@ contract C12 is C12B {
 		return 1272185027;
 	}
 }
-
-
 contract C {
 	function test() public returns (uint)
 	{
@@ -215,4 +163,3 @@ contract C {
 			return 0;
 	}
 }
-

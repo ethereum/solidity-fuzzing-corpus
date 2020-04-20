@@ -1,35 +1,22 @@
-
 pragma solidity >=0.0;
-
-
-
 interface I0 {
-
 	function f0() external pure returns (uint);
 }
 library L1 {
-
 	function f0(uint) public view returns (uint)
 	{
 		return 1804289383;
 	}
 }
-
-
 interface C2B {
-
 	function f0() external view returns (uint);
 	function f1() external view returns (uint);
 	function f2() external view returns (uint);
 }
-
-
 interface C2BBB {
-
 	function f0() external view returns (uint);
 }
 interface C2BB is C2B, C2BBB {
-
 	function f0() override(C2B, C2BBB)
 	external view returns (uint);
 	function f1() override
@@ -37,13 +24,10 @@ interface C2BB is C2B, C2BBB {
 	function f2() override
 	external view returns (uint);
 }
-
 interface C2BBBB is C2B {
-
 	function f3() external view returns (uint);
 }
 contract C2 is C2B, C2BB, C2BBBB {
-
 	function f0() external view
 	override(C2BB, C2B)
 	returns (uint)
@@ -69,15 +53,11 @@ contract C2 is C2B, C2BB, C2BBBB {
 		return 1098894339;
 	}
 }
-
-
 interface C3B {
-
 	function f0() external view returns (uint);
 	function f1() external view returns (uint);
 }
 contract C3 is C3B {
-
 	function f0() external view
 	override
 	returns (uint)
@@ -91,36 +71,26 @@ contract C3 is C3B {
 		return 2075782095;
 	}
 }
-
-
 interface C4B {
-
 	function f0() external view returns (uint);
 	function f1() external view returns (uint);
 	function f2() external view returns (uint);
 }
-
-
 interface C4BBB {
-
 	function f0() external view returns (uint);
 }
 interface C4BB is C4B, C4BBB {
-
 	function f0() override(C4B, C4BBB)
 	external view returns (uint);
 	function f1() override
 	external view returns (uint);
 }
-
 interface C4BBBB is C4B {
-
 	function f2() override
 	external view returns (uint);
 	function f3() external view returns (uint);
 }
 contract C4 is C4B, C4BB, C4BBBB {
-
 	function f0() virtual external view
 	override(C4BB, C4B)
 	returns (uint)
@@ -146,8 +116,6 @@ contract C4 is C4B, C4BB, C4BBBB {
 		return 849178936;
 	}
 }
-
-
 contract C {
 	using L1 for uint;
 	function test() public returns (uint)
@@ -158,4 +126,3 @@ contract C {
 		return 0;
 	}
 }
-

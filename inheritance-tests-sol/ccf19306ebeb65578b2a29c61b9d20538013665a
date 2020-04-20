@@ -1,11 +1,5 @@
-
 pragma solidity >=0.0;
-
-
-
-
 contract C0B {
-
 	function f0() public view
 	
 	returns (uint)
@@ -14,11 +8,8 @@ contract C0B {
 	}
 }
 abstract contract C0 is C0B {
-
 }
-
 contract C1 {
-
 	function f0() virtual public pure
 	
 	returns (uint)
@@ -26,9 +17,7 @@ contract C1 {
 		return 182605794;
 	}
 }
-
 contract C2 {
-
 	function f0() public view
 	
 	returns (uint)
@@ -36,20 +25,12 @@ contract C2 {
 		return 1291394886;
 	}
 }
-
-
 interface I3B {
-
 	function f0() external view returns (uint);
 }
 interface I3 is I3B {
-
 }
-
-
-
 contract C4BB {
-
 	function f0() virtual public pure
 	
 	returns (uint)
@@ -58,10 +39,8 @@ contract C4BB {
 	}
 }
 contract C4B is C4BB {
-
 }
 contract C4 is C4B {
-
 	function f1() virtual public pure
 	
 	returns (uint)
@@ -69,12 +48,9 @@ contract C4 is C4B {
 		return 564586691;
 	}
 }
-
-
 contract C {
 	function test() public returns (uint)
 	{
 		return 0;
 	}
 }
-

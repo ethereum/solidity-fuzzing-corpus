@@ -1,9 +1,5 @@
-
 pragma solidity >=0.0;
-
-
 library L0 {
-
 	function f0(uint) public view returns (uint)
 	{
 		return 1804289383;
@@ -18,26 +14,21 @@ library L0 {
 	}
 }
 library L1 {
-
 	function f0(uint) internal view returns (uint)
 	{
 		return 1714636915;
 	}
 }
-
 interface I2 {
-
 	function f0() external payable returns (uint);
 }
 library L3 {
-
 	function f0(uint) public pure returns (uint)
 	{
 		return 1957747793;
 	}
 }
 library L4 {
-
 	function f0(uint) public pure returns (uint)
 	{
 		return 424238335;
@@ -52,7 +43,6 @@ library L4 {
 	}
 }
 library L5 {
-
 	function f0(uint) public view returns (uint)
 	{
 		return 596516649;
@@ -62,74 +52,44 @@ library L5 {
 		return 1189641421;
 	}
 }
-
-
-
-
-
 interface I6BBBB {
-
 	function f0() external payable returns (uint);
 }
-
 interface I6BBBBB is I6BBBB {
-
 	function f1() external payable returns (uint);
 }
 interface I6BBB is I6BBBB, I6BBBBB {
-
 }
 interface I6BB is I6BBB {
-
 }
-
-
 interface I6BBBBBBB {
-
 }
 interface I6BBBBBB is I6BBB, I6BBBBBBB {
-
 }
 interface I6B is I6BB, I6BBBBBB {
-
 }
 interface I6 is I6B {
-
 }
-
-
 interface I7B {
-
 	function f0() external view returns (uint);
 }
 interface I7 is I7B {
-
 	function f0() override
 	external view returns (uint);
 }
-
-
-
 interface C8BB {
-
 	function f0() external view returns (uint);
 }
 interface C8B is C8BB {
-
 }
-
-
 interface C8BBBB {
-
 	function f0() external view returns (uint);
 }
 interface C8BBB is C8B, C8BBBB {
-
 	function f0() override(C8BB, C8BBBB)
 	external view returns (uint);
 }
 contract C8 is C8B, C8BBB {
-
 	function f0() external view
 	override(C8BBB, C8BB)
 	returns (uint)
@@ -137,21 +97,14 @@ contract C8 is C8B, C8BBB {
 		return 2064876628;
 	}
 }
-
-
-
-
 interface C9BBB {
-
 	function f0() external view returns (uint);
 }
 interface C9BB is C9BBB {
-
 	function f0() override
 	external view returns (uint);
 }
 contract C9B is C9BB {
-
 	function f0() external view
 	override
 	returns (uint)
@@ -160,24 +113,20 @@ contract C9B is C9BB {
 	}
 }
 contract C9 is C9B {
-
 }
 library L10 {
-
 	function f0(uint) internal pure returns (uint)
 	{
 		return 1102520059;
 	}
 }
 library L12 {
-
 	function f0(uint) internal pure returns (uint)
 	{
 		return 1967513926;
 	}
 }
 library L13 {
-
 	function f0(uint) public view returns (uint)
 	{
 		return 1365180540;
@@ -188,21 +137,17 @@ library L13 {
 	}
 }
 library L14 {
-
 	function f0(uint) public pure returns (uint)
 	{
 		return 304089172;
 	}
 }
 library L15 {
-
 	function f0(uint) public pure returns (uint)
 	{
 		return 1303455736;
 	}
 }
-
-
 contract C {
 	using L15 for uint;
 	function test() public returns (uint)
@@ -213,4 +158,3 @@ contract C {
 		return 0;
 	}
 }
-

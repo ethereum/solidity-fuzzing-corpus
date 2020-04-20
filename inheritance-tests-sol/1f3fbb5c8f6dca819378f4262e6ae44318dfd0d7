@@ -1,28 +1,18 @@
-
 pragma solidity >=0.0;
-
-
 library L0 {
-
 	function f0(uint) public pure returns (uint)
 	{
 		return 1804289383;
 	}
 }
-
-
-
 interface C1BB {
-
 	function f0() external view returns (uint);
 }
 interface C1B is C1BB {
-
 	function f0() override
 	external view returns (uint);
 }
 contract C1 is C1B {
-
 	function f0() external view
 	override
 	returns (uint)
@@ -30,48 +20,23 @@ contract C1 is C1B {
 		return 2078669041;
 	}
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 interface I2BBBBBBBBBBBBBBBBB {
-
 	function f0() external payable returns (uint);
 }
-
 interface I2BBBBBBBBBBBBBBBBBB is I2BBBBBBBBBBBBBBBBB {
-
 	function f1() external view returns (uint);
 }
 interface I2BBBBBBBBBBBBBBBB is I2BBBBBBBBBBBBBBBBB, I2BBBBBBBBBBBBBBBBBB {
-
 	function f2() external payable returns (uint);
 	function f3() external view returns (uint);
 }
 interface I2BBBBBBBBBBBBBBB is I2BBBBBBBBBBBBBBBB {
-
 }
 interface I2BBBBBBBBBBBBBB is I2BBBBBBBBBBBBBBB {
-
 	function f2() override
 	external payable returns (uint);
 }
 interface I2BBBBBBBBBBBBB is I2BBBBBBBBBBBBBB {
-
 	function f0() override
 	external payable returns (uint);
 	function f2() override
@@ -79,7 +44,6 @@ interface I2BBBBBBBBBBBBB is I2BBBBBBBBBBBBBB {
 	function f4() external payable returns (uint);
 }
 interface I2BBBBBBBBBBBB is I2BBBBBBBBBBBBB {
-
 	function f0() override
 	external payable returns (uint);
 	function f1() override
@@ -87,9 +51,7 @@ interface I2BBBBBBBBBBBB is I2BBBBBBBBBBBBB {
 	function f2() override
 	external payable returns (uint);
 }
-
 interface I2BBBBBBBBBBBBBBBBBBB is I2BBBBBBBBBBBBB {
-
 	function f0() override
 	external payable returns (uint);
 	function f2() override
@@ -99,7 +61,6 @@ interface I2BBBBBBBBBBBBBBBBBBB is I2BBBBBBBBBBBBB {
 	function f5() external payable returns (uint);
 }
 interface I2BBBBBBBBBBB is I2BBBBBBBBBBBB, I2BBBBBBBBBBBBBBBBBBB {
-
 	function f0() override(I2BBBBBBBBBBBB, I2BBBBBBBBBBBBBBBBBBB)
 	external payable returns (uint);
 	function f1() override(I2BBBBBBBBBBBB, I2BBBBBBBBBBBBBBBBBB)
@@ -114,7 +75,6 @@ interface I2BBBBBBBBBBB is I2BBBBBBBBBBBB, I2BBBBBBBBBBBBBBBBBBB {
 	function f9() external payable returns (uint);
 }
 interface I2BBBBBBBBBB is I2BBBBBBBBBBB {
-
 	function f0() override
 	external payable returns (uint);
 	function f1() override
@@ -127,7 +87,6 @@ interface I2BBBBBBBBBB is I2BBBBBBBBBBB {
 	external payable returns (uint);
 }
 interface I2BBBBBBBBB is I2BBBBBBBBBB {
-
 	function f0() override
 	external payable returns (uint);
 	function f3() override
@@ -139,7 +98,6 @@ interface I2BBBBBBBBB is I2BBBBBBBBBB {
 	function f10() external payable returns (uint);
 }
 interface I2BBBBBBBB is I2BBBBBBBBB {
-
 	function f2() override
 	external payable returns (uint);
 	function f4() override
@@ -153,9 +111,7 @@ interface I2BBBBBBBB is I2BBBBBBBBB {
 	function f10() override
 	external payable returns (uint);
 }
-
 interface I2BBBBBBBBBBBBBBBBBBBB is I2BBBBBBBBB {
-
 	function f1() override
 	external view returns (uint);
 	function f3() override
@@ -171,7 +127,6 @@ interface I2BBBBBBBBBBBBBBBBBBBB is I2BBBBBBBBB {
 	function f11() external view returns (uint);
 }
 interface I2BBBBBBB is I2BBBBBBBB, I2BBBBBBBBBBBBBBBBBBBB {
-
 	function f1() override(I2BBBBBBBBBB, I2BBBBBBBBBBBBBBBBBBBB)
 	external view returns (uint);
 	function f2() override(I2BBBBBBBB, I2BBBBBBBBBBB)
@@ -198,7 +153,6 @@ interface I2BBBBBBB is I2BBBBBBBB, I2BBBBBBBBBBBBBBBBBBBB {
 	function f15() external view returns (uint);
 }
 interface I2BBBBBB is I2BBBBBBB {
-
 	function f1() override
 	external view returns (uint);
 	function f2() override
@@ -215,7 +169,6 @@ interface I2BBBBBB is I2BBBBBBB {
 	external view returns (uint);
 }
 interface I2BBBBB is I2BBBBBB {
-
 	function f1() override
 	external view returns (uint);
 	function f8() override
@@ -230,14 +183,10 @@ interface I2BBBBB is I2BBBBBB {
 	external view returns (uint);
 	function f16() external pure returns (uint);
 }
-
-
 interface I2BBBBBBBBBBBBBBBBBBBBBB {
-
 	function f0() external payable returns (uint);
 }
 interface I2BBBBBBBBBBBBBBBBBBBBB is I2BBBBBB, I2BBBBBBBBBBBBBBBBBBBBBB {
-
 	function f0() override(I2BBBBBBBBB, I2BBBBBBBBBBBBBBBBBBBBBB)
 	external payable returns (uint);
 	function f1() override
@@ -266,7 +215,6 @@ interface I2BBBBBBBBBBBBBBBBBBBBB is I2BBBBBB, I2BBBBBBBBBBBBBBBBBBBBBB {
 	external view returns (uint);
 }
 interface I2BBBB is I2BBBBB, I2BBBBBBBBBBBBBBBBBBBBB {
-
 	function f0() override(I2BBBBBBBBB, I2BBBBBBBBBBBBBBBBBBBBB)
 	external payable returns (uint);
 	function f1() override(I2BBBBB, I2BBBBBBBBBBBBBBBBBBBBB)
@@ -296,9 +244,7 @@ interface I2BBBB is I2BBBBB, I2BBBBBBBBBBBBBBBBBBBBB {
 	function f15() override(I2BBBBB, I2BBBBBBBBBBBBBBBBBBBBB)
 	external view returns (uint);
 }
-
 interface I2BBBBBBBBBBBBBBBBBBBBBBB is I2BBBBB {
-
 	function f0() override
 	external payable returns (uint);
 	function f1() override
@@ -320,7 +266,6 @@ interface I2BBBBBBBBBBBBBBBBBBBBBBB is I2BBBBB {
 	function f17() external payable returns (uint);
 }
 interface I2BBB is I2BBBB, I2BBBBBBBBBBBBBBBBBBBBBBB {
-
 	function f0() override(I2BBBB, I2BBBBBBBBBBBBBBBBBBBBBBB)
 	external payable returns (uint);
 	function f1() override(I2BBBB, I2BBBBBBBBBBBBBBBBBBBBBBB)
@@ -358,7 +303,6 @@ interface I2BBB is I2BBBB, I2BBBBBBBBBBBBBBBBBBBBBBB {
 	function f18() external view returns (uint);
 }
 interface I2BB is I2BBB {
-
 	function f0() override
 	external payable returns (uint);
 	function f3() override
@@ -371,7 +315,6 @@ interface I2BB is I2BBB {
 	external payable returns (uint);
 }
 interface I2B is I2BB {
-
 	function f1() override
 	external view returns (uint);
 	function f3() override
@@ -391,9 +334,7 @@ interface I2B is I2BB {
 	function f17() override
 	external payable returns (uint);
 }
-
 interface I2BBBBBBBBBBBBBBBBBBBBBBBB is I2B {
-
 	function f2() override
 	external payable returns (uint);
 	function f3() override
@@ -419,7 +360,6 @@ interface I2BBBBBBBBBBBBBBBBBBBBBBBB is I2B {
 	function f19() external payable returns (uint);
 }
 interface I2 is I2B, I2BBBBBBBBBBBBBBBBBBBBBBBB {
-
 	function f2() override(I2BBB, I2BBBBBBBBBBBBBBBBBBBBBBBB)
 	external payable returns (uint);
 	function f3() override(I2B, I2BBBBBBBBBBBBBBBBBBBBBBBB)
@@ -449,8 +389,6 @@ interface I2 is I2B, I2BBBBBBBBBBBBBBBBBBBBBBBB {
 	function f19() override
 	external payable returns (uint);
 }
-
-
 contract C {
 	function test() public returns (uint)
 	{
@@ -460,4 +398,3 @@ contract C {
 			return 0;
 	}
 }
-

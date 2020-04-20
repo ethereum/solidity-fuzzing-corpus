@@ -1,17 +1,8 @@
-
 pragma solidity >=0.0;
-
-
-
-
-
-
 interface C0BBB {
-
 	function f0() external payable returns (uint);
 }
 contract C0BB is C0BBB {
-
 	function f0() external payable
 	override
 	returns (uint)
@@ -20,72 +11,42 @@ contract C0BB is C0BBB {
 	}
 }
 contract C0B is C0BB {
-
 }
-
 abstract contract C0BBBB is C0BB {
-
 }
 contract C0 is C0B, C0BBBB {
-
 }
-
-
 interface I1B {
-
 	function f0() external payable returns (uint);
 	function f1() external view returns (uint);
 }
 interface I1 is I1B {
-
 }
-
-
 interface I2B {
-
 	function f0() external view returns (uint);
 }
 interface I2 is I2B {
-
 }
-
-
-
-
-
-
-
-
-
-
 interface C3BBBBBBBBB {
-
 	function f0() external view returns (uint);
 	function f1() external pure returns (uint);
 }
 interface C3BBBBBBBB is C3BBBBBBBBB {
-
 }
-
 interface C3BBBBBBBBBB is C3BBBBBBBB {
-
 	function f2() external payable returns (uint);
 }
 interface C3BBBBBBB is C3BBBBBBBB, C3BBBBBBBBBB {
-
 	function f3() external view returns (uint);
 	function f4() external payable returns (uint);
 }
 interface C3BBBBBB is C3BBBBBBB {
-
 	function f2() override
 	external payable returns (uint);
 	function f4() override
 	external payable returns (uint);
 }
-
 interface C3BBBBBBBBBBB is C3BBBBBBB {
-
 	function f1() override
 	external pure returns (uint);
 	function f2() override
@@ -95,7 +56,6 @@ interface C3BBBBBBBBBBB is C3BBBBBBB {
 	function f5() external view returns (uint);
 }
 interface C3BBBBB is C3BBBBBB, C3BBBBBBBBBBB {
-
 	function f1() override(C3BBBBBBBBB, C3BBBBBBBBBBB)
 	external pure returns (uint);
 	function f2() override(C3BBBBBB, C3BBBBBBBBBBB)
@@ -109,7 +69,6 @@ interface C3BBBBB is C3BBBBBB, C3BBBBBBBBBBB {
 	function f6() external view returns (uint);
 }
 contract C3BBBB is C3BBBBB {
-
 	function f0() virtual external view
 	override
 	returns (uint)
@@ -154,7 +113,6 @@ contract C3BBBB is C3BBBBB {
 	}
 }
 contract C3BBB is C3BBBB {
-
 	function f4() external payable
 	override
 	returns (uint)
@@ -163,20 +121,13 @@ contract C3BBB is C3BBBB {
 	}
 }
 contract C3BB is C3BBB {
-
 }
 contract C3B is C3BB {
-
 }
-
 contract C3BBBBBBBBBBBB is C3BB {
-
 }
 contract C3 is C3B, C3BBBBBBBBBBBB {
-
 }
-
-
 contract C {
 	function test() public returns (uint)
 	{
@@ -282,4 +233,3 @@ contract C {
 			return 0;
 	}
 }
-

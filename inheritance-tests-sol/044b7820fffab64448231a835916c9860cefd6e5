@@ -1,9 +1,5 @@
-
 pragma solidity >=0.0;
-
-
 library L0 {
-
 	function f0(uint) internal view returns (uint)
 	{
 		return 1804289383;
@@ -22,14 +18,12 @@ library L0 {
 	}
 }
 library L1 {
-
 	function f0(uint) internal pure returns (uint)
 	{
 		return 1957747793;
 	}
 }
 library L2 {
-
 	function f0(uint) public view returns (uint)
 	{
 		return 424238335;
@@ -47,59 +41,41 @@ library L2 {
 		return 596516649;
 	}
 }
-
-
-
-
 interface I3BBB {
-
 	function f0() external payable returns (uint);
 }
 interface I3BB is I3BBB {
-
 	function f0() override
 	external payable returns (uint);
 	function f1() external payable returns (uint);
 }
 interface I3B is I3BB {
-
 	function f2() external view returns (uint);
 }
-
-
 interface I3BBBBB {
-
 	function f0() external payable returns (uint);
 }
 interface I3BBBB is I3BB, I3BBBBB {
-
 	function f0() override(I3BB, I3BBBBB)
 	external payable returns (uint);
 }
 interface I3 is I3B, I3BBBB {
-
 	function f0() override(I3BB, I3BBBB)
 	external payable returns (uint);
 }
-
-
 interface I4B {
-
 	function f0() external pure returns (uint);
 }
 interface I4 is I4B {
-
 	function f1() external view returns (uint);
 }
 library L5 {
-
 	function f0(uint) internal view returns (uint)
 	{
 		return 1025202362;
 	}
 }
 library L6 {
-
 	function f0(uint) public view returns (uint)
 	{
 		return 1350490027;
@@ -110,7 +86,6 @@ library L6 {
 	}
 }
 library L7 {
-
 	function f0(uint) internal view returns (uint)
 	{
 		return 1102520059;
@@ -149,7 +124,6 @@ library L7 {
 	}
 }
 library L8 {
-
 	function f0(uint) public view returns (uint)
 	{
 		return 294702567;
@@ -160,23 +134,17 @@ library L8 {
 	}
 }
 library L9 {
-
 	function f0(uint) internal pure returns (uint)
 	{
 		return 336465782;
 	}
 }
-
-
 interface I10B {
-
 	function f0() external view returns (uint);
 }
 interface I10 is I10B {
-
 }
 library L11 {
-
 	function f0(uint) internal view returns (uint)
 	{
 		return 861021530;
@@ -198,28 +166,18 @@ library L11 {
 		return 468703135;
 	}
 }
-
-
 interface I12B {
-
 	function f0() external pure returns (uint);
 }
 interface I12 is I12B {
-
 }
-
-
 interface I13B {
-
 	function f0() external pure returns (uint);
 }
 interface I13 is I13B {
-
 	function f0() override
 	external pure returns (uint);
 }
-
-
 contract C {
 	using L8 for uint;
 	function test() public returns (uint)
@@ -230,4 +188,3 @@ contract C {
 		return 0;
 	}
 }
-

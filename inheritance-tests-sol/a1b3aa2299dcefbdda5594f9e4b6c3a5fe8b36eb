@@ -1,11 +1,5 @@
-
 pragma solidity >=0.0;
-
-
-
-
 contract C1B {
-
 	function f0() public view
 	
 	returns (uint)
@@ -14,12 +8,8 @@ contract C1B {
 	}
 }
 contract C1 is C1B {
-
 }
-
-
 contract C2B {
-
 	function f0() public view
 	
 	returns (uint)
@@ -28,18 +18,14 @@ contract C2B {
 	}
 }
 contract C2 is C2B {
-
 }
 library L3 {
-
 	function f0(uint) public pure returns (uint)
 	{
 		return 1804289383;
 	}
 }
-
 contract C4 {
-
 	function f0() external pure
 	
 	returns (uint)
@@ -47,14 +33,10 @@ contract C4 {
 		return 1903285731;
 	}
 }
-
 interface I5 {
-
 	function f0() external view returns (uint);
 }
-
 contract C6 {
-
 	function f0() external pure
 	
 	returns (uint)
@@ -62,9 +44,7 @@ contract C6 {
 		return 2007618794;
 	}
 }
-
 contract C7 {
-
 	function f0() external pure
 	
 	returns (uint)
@@ -72,9 +52,7 @@ contract C7 {
 		return 272267005;
 	}
 }
-
 contract C8 {
-
 	function f0() external pure
 	
 	returns (uint)
@@ -82,9 +60,7 @@ contract C8 {
 		return 678715;
 	}
 }
-
 contract C9 {
-
 	function f0() external pure
 	
 	returns (uint)
@@ -92,10 +68,7 @@ contract C9 {
 		return 549997060;
 	}
 }
-
-
 contract C12B {
-
 	function f0() public payable
 	
 	returns (uint)
@@ -104,7 +77,6 @@ contract C12B {
 	}
 }
 contract C12 is C12B {
-
 	function f1() public view
 	
 	returns (uint)
@@ -112,9 +84,7 @@ contract C12 is C12B {
 		return 630254330;
 	}
 }
-
 contract C13 {
-
 	function f0() external pure
 	
 	returns (uint)
@@ -122,10 +92,7 @@ contract C13 {
 		return 1753420028;
 	}
 }
-
-
 contract C14B {
-
 	function f0() public payable
 	
 	returns (uint)
@@ -134,7 +101,6 @@ contract C14B {
 	}
 }
 contract C14 is C14B {
-
 	function f1() public view
 	
 	returns (uint)
@@ -142,10 +108,7 @@ contract C14 is C14B {
 		return 768978679;
 	}
 }
-
-
 contract C15B {
-
 	function f0() public view
 	
 	returns (uint)
@@ -154,11 +117,8 @@ contract C15B {
 	}
 }
 contract C15 is C15B {
-
 }
-
 contract C16 {
-
 	function f0() public view
 	
 	returns (uint)
@@ -166,9 +126,7 @@ contract C16 {
 		return 890119546;
 	}
 }
-
 contract C17 {
-
 	function f0() external pure
 	
 	returns (uint)
@@ -176,42 +134,27 @@ contract C17 {
 		return 107795790;
 	}
 }
-
-
-
-
-
-
 interface I18BBBBB {
-
 	function f0() external payable returns (uint);
 }
 interface I18BBBB is I18BBBBB {
-
 }
 interface I18BBB is I18BBBB {
-
 	function f1() external view returns (uint);
 }
 interface I18BB is I18BBB {
-
 	function f1() override
 	external view returns (uint);
 }
 interface I18B is I18BB {
-
 	function f0() override
 	external payable returns (uint);
 }
 interface I18 is I18B {
-
 	function f0() override
 	external payable returns (uint);
 }
-
-
 contract C19B {
-
 	function f0() public payable
 	
 	returns (uint)
@@ -220,7 +163,6 @@ contract C19B {
 	}
 }
 contract C19 is C19B {
-
 	function f1() external pure
 	
 	returns (uint)
@@ -228,9 +170,7 @@ contract C19 is C19B {
 		return 2027638938;
 	}
 }
-
 contract C20 {
-
 	function f0() public view
 	
 	returns (uint)
@@ -238,8 +178,6 @@ contract C20 {
 		return 296996879;
 	}
 }
-
-
 contract C {
 	using L3 for uint;
 	function test() public returns (uint)
@@ -250,4 +188,3 @@ contract C {
 		return 0;
 	}
 }
-

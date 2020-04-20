@@ -1,9 +1,5 @@
-
 pragma solidity >=0.0;
-
-
 library L0 {
-
 	function f0(uint) internal pure returns (uint)
 	{
 		return 1804289383;
@@ -142,7 +138,6 @@ library L0 {
 	}
 }
 library L1 {
-
 	function f0(uint) public pure returns (uint)
 	{
 		return 1369133069;
@@ -280,10 +275,7 @@ library L1 {
 		return 1632621729;
 	}
 }
-
-
 contract C2B {
-
 	function f0() public view
 	
 	returns (uint)
@@ -292,10 +284,7 @@ contract C2B {
 	}
 }
 contract C2 is C2B {
-
 }
-
-
 contract C {
 	using L0 for uint;
 	function test() public returns (uint)
@@ -306,4 +295,3 @@ contract C {
 		return 0;
 	}
 }
-

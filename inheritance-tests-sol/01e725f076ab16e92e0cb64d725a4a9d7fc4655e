@@ -1,9 +1,5 @@
-
 pragma solidity >=0.0;
-
-
 library L0 {
-
 	function f0(uint) external pure returns (uint)
 	{
 		return 1804289383;
@@ -26,15 +22,12 @@ library L0 {
 	}
 }
 library L1 {
-
 	function f0(uint) external pure returns (uint)
 	{
 		return 424238335;
 	}
 }
-
 contract C2 {
-
 	function f0() virtual public pure
 	
 	returns (uint)
@@ -43,7 +36,6 @@ contract C2 {
 	}
 }
 library L3 {
-
 	function f0(uint) external pure returns (uint)
 	{
 		return 719885386;
@@ -62,7 +54,6 @@ library L3 {
 	}
 }
 library L5 {
-
 	function f0(uint) external pure returns (uint)
 	{
 		return 1025202362;
@@ -84,14 +75,10 @@ library L5 {
 		return 2044897763;
 	}
 }
-
-
 interface C6B {
-
 	function f0() external pure returns (uint);
 }
 contract C6 is C6B {
-
 	function f0() external pure
 	override
 	returns (uint)
@@ -99,28 +86,19 @@ contract C6 is C6B {
 		return 2077369900;
 	}
 }
-
-
-
-
 interface I7BBB {
-
 	function f0() external payable returns (uint);
 }
 interface I7BB is I7BBB {
-
 	function f0() override
 	external payable returns (uint);
 }
 interface I7B is I7BB {
-
 }
 interface I7 is I7B {
-
 	function f1() external view returns (uint);
 }
 library L8 {
-
 	function f0(uint) public pure returns (uint)
 	{
 		return 1967513926;
@@ -135,34 +113,26 @@ library L8 {
 	}
 }
 library L9 {
-
 	function f0(uint) internal pure returns (uint)
 	{
 		return 304089172;
 	}
 }
 library L10 {
-
 	function f0(uint) internal pure returns (uint)
 	{
 		return 1303455736;
 	}
 }
-
-
-
 interface C11BB {
-
 	function f0() external view returns (uint);
 	function f1() external view returns (uint);
 }
 interface C11B is C11BB {
-
 	function f0() override
 	external view returns (uint);
 }
 contract C11 is C11B {
-
 	function f0() external view
 	override
 	returns (uint)
@@ -177,7 +147,6 @@ contract C11 is C11B {
 	}
 }
 library L12 {
-
 	function f0(uint) internal pure returns (uint)
 	{
 		return 35005211;
@@ -188,28 +157,24 @@ library L12 {
 	}
 }
 library L13 {
-
 	function f0(uint) internal pure returns (uint)
 	{
 		return 294702567;
 	}
 }
 library L14 {
-
 	function f0(uint) external pure returns (uint)
 	{
 		return 1726956429;
 	}
 }
 library L15 {
-
 	function f0(uint) external pure returns (uint)
 	{
 		return 336465782;
 	}
 }
 library L16 {
-
 	function f0(uint) external pure returns (uint)
 	{
 		return 861021530;
@@ -232,14 +197,11 @@ library L16 {
 	}
 }
 library L18 {
-
 	function f0(uint) external pure returns (uint)
 	{
 		return 1801979802;
 	}
 }
-
-
 contract C {
 	using L1 for uint;
 	function test() public returns (uint)
@@ -250,4 +212,3 @@ contract C {
 		return 0;
 	}
 }
-

@@ -1,271 +1,173 @@
-
 pragma solidity >=0.0;
-
-
-
-
-
-
-
-
 interface I0BBBBB {
-
 	function f0() external payable returns (uint);
 }
 interface I0BBBB is I0BBBBB {
-
 }
 interface I0BBB is I0BBBB {
-
 	function f0() override
 	external payable returns (uint);
 	function f1() external payable returns (uint);
 }
 interface I0BB is I0BBB {
-
 }
 interface I0B is I0BB {
-
 }
-
-
-
-
-
 interface I0BBBBBBBBBB {
-
 	function f0() external payable returns (uint);
 }
 interface I0BBBBBBBBB is I0BBBBBBBBBB {
-
 }
 interface I0BBBBBBBB is I0BBBBBBBBB {
-
 	function f1() external payable returns (uint);
 }
 interface I0BBBBBBB is I0BBBBBBBB {
-
 }
 interface I0BBBBBB is I0BB, I0BBBBBBB {
-
 	function f0() override(I0BBB, I0BBBBBBBBBB)
 	external payable returns (uint);
 	function f1() override(I0BBB, I0BBBBBBBB)
 	external payable returns (uint);
 }
-
 interface I0BBBBBBBBBBB is I0BBBBBB {
-
 }
-
 interface I0BBBBBBBBBBBB is I0BB {
-
 	function f1() override
 	external payable returns (uint);
 }
-
 interface I0BBBBBBBBBBBBB is I0BB {
-
 	function f1() override
 	external payable returns (uint);
 }
-
-
-
-
-
 interface I0BBBBBBBBBBBBBBBBBB {
-
 	function f0() external payable returns (uint);
 }
 interface I0BBBBBBBBBBBBBBBBB is I0BBBBBBBBBBBBBBBBBB {
-
 	function f0() override
 	external payable returns (uint);
 }
 interface I0BBBBBBBBBBBBBBBB is I0BBBBBBBBBBBBBBBBB {
-
 	function f1() external payable returns (uint);
 }
 interface I0BBBBBBBBBBBBBBB is I0BBBBBBBBBBBBBBBB {
-
 	function f0() override
 	external payable returns (uint);
 }
 interface I0BBBBBBBBBBBBBB is I0BB, I0BBBBBBBBBBBBBBB {
-
 	function f0() override(I0BBB, I0BBBBBBBBBBBBBBB)
 	external payable returns (uint);
 	function f1() override(I0BBB, I0BBBBBBBBBBBBBBBB)
 	external payable returns (uint);
 }
-
-
-
-
-
-
-
-
-
 interface I0BBBBBBBBBBBBBBBBBBBBBBBBBBB {
-
 	function f0() external payable returns (uint);
 }
 interface I0BBBBBBBBBBBBBBBBBBBBBBBBBB is I0BBBBBBBBBBBBBBBBBBBBBBBBBBB {
-
 }
 interface I0BBBBBBBBBBBBBBBBBBBBBBBBB is I0BBBBBBBBBBBBBBBBBBBBBBBBBB {
-
 	function f1() external payable returns (uint);
 }
 interface I0BBBBBBBBBBBBBBBBBBBBBBBB is I0BBBBBBBBBBBBBBBBBBBBBBBBB {
-
 	function f1() override
 	external payable returns (uint);
 }
 interface I0BBBBBBBBBBBBBBBBBBBBBBB is I0BBBBBBBBBBBBBBBBBBBBBBBB {
-
 }
-
-
-
-
-
 interface I0BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB {
-
 	function f0() external payable returns (uint);
 }
 interface I0BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB is I0BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB {
-
 }
 interface I0BBBBBBBBBBBBBBBBBBBBBBBBBBBBBB is I0BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB {
-
 	function f0() override
 	external payable returns (uint);
 	function f1() external payable returns (uint);
 }
 interface I0BBBBBBBBBBBBBBBBBBBBBBBBBBBBB is I0BBBBBBBBBBBBBBBBBBBBBBBBBBBBBB {
-
 	function f0() override
 	external payable returns (uint);
 }
 interface I0BBBBBBBBBBBBBBBBBBBBBBBBBBBB is I0BBBBBBBBBBBBBBBBBBBBBBB, I0BBBBBBBBBBBBBBBBBBBBBBBBBBBBB {
-
 	function f0() override(I0BBBBBBBBBBBBBBBBBBBBBBBBBBB, I0BBBBBBBBBBBBBBBBBBBBBBBBBBBBB)
 	external payable returns (uint);
 	function f1() override(I0BBBBBBBBBBBBBBBBBBBBBBBB, I0BBBBBBBBBBBBBBBBBBBBBBBBBBBBBB)
 	external payable returns (uint);
 }
-
 interface I0BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB is I0BBBBBBBBBBBBBBBBBBBBBBB {
-
 	function f1() override
 	external payable returns (uint);
 }
-
 interface I0BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB is I0BBBBBBBBBBBBBBBBBBBBBBBBBBBBB {
-
 	function f0() override
 	external payable returns (uint);
 }
-
 interface I0BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB is I0BBBBBBBBBBBBBBBBBBBBBBB {
-
 	function f1() override
 	external payable returns (uint);
 }
-
-
-
-
-
 interface I0BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB {
-
 	function f0() external payable returns (uint);
 }
 interface I0BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB is I0BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB {
-
 }
 interface I0BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB is I0BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB {
-
 	function f0() override
 	external payable returns (uint);
 	function f1() external payable returns (uint);
 }
 interface I0BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB is I0BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB {
-
 	function f0() override
 	external payable returns (uint);
 }
 interface I0BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB is I0BBBBBBBBBBBBBBBBBBBBBBBBBBBB, I0BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB {
-
 	function f0() override(I0BBBBBBBBBBBBBBBBBBBBBBBBBBBB, I0BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB)
 	external payable returns (uint);
 	function f1() override(I0BBBBBBBBBBBBBBBBBBBBBBBBBBBB, I0BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB)
 	external payable returns (uint);
 }
-
-
-
-
-
 interface I0BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB {
-
 	function f0() external payable returns (uint);
 }
 interface I0BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB is I0BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB {
-
 	function f0() override
 	external payable returns (uint);
 }
 interface I0BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB is I0BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB {
-
 	function f0() override
 	external payable returns (uint);
 	function f1() external payable returns (uint);
 }
 interface I0BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB is I0BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB {
-
 	function f1() override
 	external payable returns (uint);
 }
 interface I0BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB is I0BBBBBBBBBBBBBBBBBBBBBBBBBBBBB, I0BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB {
-
 	function f0() override(I0BBBBBBBBBBBBBBBBBBBBBBBBBBBBB, I0BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB)
 	external payable returns (uint);
 	function f1() override(I0BBBBBBBBBBBBBBBBBBBBBBBBBBBBBB, I0BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB)
 	external payable returns (uint);
 }
-
 interface I0BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB is I0BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB {
-
 	function f1() override
 	external payable returns (uint);
 }
-
 interface I0BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB is I0BBBBBBBBBBBBBBBBBBBBBBBBBBBB {
-
 	function f0() override
 	external payable returns (uint);
 }
-
 interface I0BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB is I0BBBBBBBBBBBBBBBBBBBBBBB {
-
 	function f0() override
 	external payable returns (uint);
 	function f1() override
 	external payable returns (uint);
 }
 interface I0BBBBBBBBBBBBBBBBBBBBBB is I0BBBBBBBBBBBBBBBBBBBBBBB, I0BBBBBBBBBBBBBBBBBBBBBBBBBBBB, I0BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB, I0BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB, I0BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB, I0BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB, I0BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB, I0BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB, I0BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB, I0BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB {
-
 	function f0() override(I0BBBBBBBBBBBBBBBBBBBBBBBBBBB, I0BBBBBBBBBBBBBBBBBBBBBBBBBBBB, I0BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB, I0BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB, I0BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB, I0BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB, I0BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB)
 	external payable returns (uint);
 	function f1() override(I0BBBBBBBBBBBBBBBBBBBBBBBB, I0BBBBBBBBBBBBBBBBBBBBBBBBBBBB, I0BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB, I0BBBBBBBBBBBBBBBBBBBBBBBBBBBBBB, I0BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB, I0BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB, I0BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB, I0BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB, I0BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB)
 	external payable returns (uint);
 }
 interface I0BBBBBBBBBBBBBBBBBBBBB is I0BBBBBBBBBBBBBBBBBBBBBB {
-
 	function f0() override
 	external payable returns (uint);
 	function f1() override
@@ -273,7 +175,6 @@ interface I0BBBBBBBBBBBBBBBBBBBBB is I0BBBBBBBBBBBBBBBBBBBBBB {
 	function f2() external payable returns (uint);
 }
 interface I0BBBBBBBBBBBBBBBBBBBB is I0BBBBBBBBBBBBBBBBBBBBB {
-
 	function f0() override
 	external payable returns (uint);
 	function f1() override
@@ -282,41 +183,30 @@ interface I0BBBBBBBBBBBBBBBBBBBB is I0BBBBBBBBBBBBBBBBBBBBB {
 	external payable returns (uint);
 }
 interface I0BBBBBBBBBBBBBBBBBBB is I0BB, I0BBBBBBBBBBBBBBBBBBBB {
-
 	function f0() override(I0BBB, I0BBBBBBBBBBBBBBBBBBBB)
 	external payable returns (uint);
 	function f1() override(I0BBB, I0BBBBBBBBBBBBBBBBBBBB)
 	external payable returns (uint);
 }
-
 interface I0BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB is I0B {
-
 	function f0() override
 	external payable returns (uint);
 	function f1() override
 	external payable returns (uint);
 }
-
 interface I0BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB is I0BBBBBBBBBBBBBBBBBBB {
-
 }
-
 interface I0BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB is I0B {
-
 	function f1() override
 	external payable returns (uint);
 }
 interface I0 is I0B, I0BBBBBB, I0BBBBBBBBBBB, I0BBBBBBBBBBBB, I0BBBBBBBBBBBBB, I0BBBBBBBBBBBBBB, I0BBBBBBBBBBBBBBBBBBB, I0BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB, I0BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB, I0BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB {
-
 	function f0() override(I0BBB, I0BBBBBB, I0BBBBBBBBBBBBBB, I0BBBBBBBBBBBBBBBBBBB, I0BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB)
 	external payable returns (uint);
 	function f1() override(I0BBB, I0BBBBBB, I0BBBBBBBBBBBB, I0BBBBBBBBBBBBB, I0BBBBBBBBBBBBBB, I0BBBBBBBBBBBBBBBBBBB, I0BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB, I0BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB)
 	external payable returns (uint);
 }
-
-
 contract C1B {
-
 	function f0() public view
 	
 	returns (uint)
@@ -325,10 +215,7 @@ contract C1B {
 	}
 }
 contract C1 is C1B {
-
 }
-
-
 contract C {
 	function test() public returns (uint)
 	{
@@ -341,4 +228,3 @@ contract C {
 			return 0;
 	}
 }
-

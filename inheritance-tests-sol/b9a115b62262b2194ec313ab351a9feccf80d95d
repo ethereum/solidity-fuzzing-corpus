@@ -1,45 +1,25 @@
-
 pragma solidity >=0.0;
-
-
-
-
-
-
-
-
 interface I0BBBBB {
-
 }
 interface I0BBBB is I0BBBBB {
-
 }
 interface I0BBB is I0BBBB {
-
 }
 interface I0BB is I0BBB {
-
 }
 interface I0B is I0BB {
-
 	function f0() external view returns (uint);
 }
-
 interface I0BBBBBB is I0BB {
-
 	function f0() external view returns (uint);
 }
 interface I0 is I0B, I0BBBBBB {
-
 	function f0() override(I0B, I0BBBBBB)
 	external view returns (uint);
 }
-
-
 contract C {
 	function test() public returns (uint)
 	{
 		return 0;
 	}
 }
-

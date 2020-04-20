@@ -1,38 +1,25 @@
-
 pragma solidity >=0.0;
-
-
-
-
 interface I0B {
-
 	function f0() external payable returns (uint);
 }
 interface I0 is I0B {
-
 	function f1() external payable returns (uint);
 }
 library L1 {
-
 	function f0(uint) external pure returns (uint)
 	{
 		return 1804289383;
 	}
 }
-
 interface I2 {
-
 	function f0() external payable returns (uint);
 }
 library L3 {
-
 	function f0(uint) external pure returns (uint)
 	{
 		return 846930886;
 	}
 }
-
-
 contract C {
 	using L3 for uint;
 	function test() public returns (uint)
@@ -43,4 +30,3 @@ contract C {
 		return 0;
 	}
 }
-

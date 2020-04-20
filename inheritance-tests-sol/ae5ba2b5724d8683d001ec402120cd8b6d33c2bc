@@ -1,32 +1,20 @@
-
 pragma solidity >=0.0;
-
-
 library L5 {
-
 	function f0(uint) external pure returns (uint)
 	{
 		return 1804289383;
 	}
 }
-
-
-
-
 interface C6BBB {
-
 	function f0() external payable returns (uint);
 }
 interface C6BB is C6BBB {
-
 	function f0() override
 	external payable returns (uint);
 }
 interface C6B is C6BB {
-
 }
 contract C6 is C6B {
-
 	function f0() virtual external payable
 	override
 	returns (uint)
@@ -34,26 +22,18 @@ contract C6 is C6B {
 		return 395281099;
 	}
 }
-
-
-
-
 interface C9BBB {
-
 	function f0() external payable returns (uint);
 }
 interface C9BB is C9BBB {
-
 	function f0() override
 	external payable returns (uint);
 }
 interface C9B is C9BB {
-
 	function f0() override
 	external payable returns (uint);
 }
 contract C9 is C9B {
-
 	function f0() virtual external payable
 	override
 	returns (uint)
@@ -61,19 +41,12 @@ contract C9 is C9B {
 		return 1023347310;
 	}
 }
-
-
-
 abstract contract C12BB {
-
 }
-
 interface C12BBB {
-
 	function f0() external payable returns (uint);
 }
 contract C12B is C12BB, C12BBB {
-
 	function f0() virtual external payable
 	override
 	returns (uint)
@@ -82,16 +55,11 @@ contract C12B is C12BB, C12BBB {
 	}
 }
 contract C12 is C12B {
-
 }
-
-
 interface C15B {
-
 	function f0() external payable returns (uint);
 }
 contract C15 is C15B {
-
 	function f0() external payable
 	override
 	returns (uint)
@@ -99,13 +67,9 @@ contract C15 is C15B {
 		return 1573871231;
 	}
 }
-
-
 interface C16B {
-
 }
 contract C16 is C16B {
-
 	function f0() virtual public pure
 	
 	returns (uint)
@@ -113,19 +77,12 @@ contract C16 is C16B {
 		return 809211682;
 	}
 }
-
-
-
-
 interface C22BBB {
-
 	function f0() external payable returns (uint);
 }
 interface C22BB is C22BBB {
-
 }
 contract C22B is C22BB {
-
 	function f0() virtual external payable
 	override
 	returns (uint)
@@ -134,10 +91,7 @@ contract C22B is C22BB {
 	}
 }
 abstract contract C22 is C22B {
-
 }
-
-
 contract C {
 	function test() public returns (uint)
 	{
@@ -165,4 +119,3 @@ contract C {
 			return 0;
 	}
 }
-

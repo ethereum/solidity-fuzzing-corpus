@@ -1,72 +1,44 @@
-
 pragma solidity >=0.0;
-
-
 library L0 {
-
 	function f0(uint) external pure returns (uint)
 	{
 		return 1804289383;
 	}
 }
-
-
-
-
 interface I1BBB {
-
 	function f0() external view returns (uint);
 }
 interface I1BB is I1BBB {
-
 	function f0() override
 	external view returns (uint);
 }
 interface I1B is I1BB {
-
 }
 interface I1 is I1B {
-
 }
-
-
-
-
 interface I2BBB {
-
 }
 interface I2BB is I2BBB {
-
 	function f0() external view returns (uint);
 }
 interface I2B is I2BB {
-
 }
-
-
-
 interface I2BBBBBB {
-
 	function f0() external view returns (uint);
 }
 interface I2BBBBB is I2BBBBBB {
-
 	function f1() external payable returns (uint);
 }
 interface I2BBBB is I2B, I2BBBBB {
-
 	function f0() override(I2BB, I2BBBBBB)
 	external view returns (uint);
 }
 interface I2 is I2B, I2BBBB {
-
 	function f0() override(I2BB, I2BBBB)
 	external view returns (uint);
 	function f2() external payable returns (uint);
 }
-
 contract C3 {
-
 	function f0() external pure
 	
 	returns (uint)
@@ -80,132 +52,86 @@ contract C3 {
 		return 1098894339;
 	}
 }
-
-
 interface I4B {
-
 	function f0() external payable returns (uint);
 }
 interface I4 is I4B {
-
 }
 library L5 {
-
 	function f0(uint) private pure returns (uint)
 	{
 		return 1681692777;
 	}
 }
-
-
-
 interface I6BB {
-
 	function f0() external pure returns (uint);
 }
 interface I6B is I6BB {
-
 	function f0() override
 	external pure returns (uint);
 	function f1() external payable returns (uint);
 }
 interface I6 is I6B {
-
 	function f1() override
 	external payable returns (uint);
 }
-
-
 interface I7B {
-
 	function f0() external payable returns (uint);
 }
 interface I7 is I7B {
-
 }
-
-
 interface I8B {
-
 	function f0() external view returns (uint);
 }
-
-
-
 interface I8BBBB {
-
 	function f0() external view returns (uint);
 }
 interface I8BBB is I8BBBB {
-
 	function f0() override
 	external view returns (uint);
 	function f1() external payable returns (uint);
 }
 interface I8BB is I8B, I8BBB {
-
 	function f0() override(I8B, I8BBB)
 	external view returns (uint);
 }
 interface I8 is I8B, I8BB {
-
 	function f0() override(I8B, I8BB)
 	external view returns (uint);
 	function f1() override
 	external payable returns (uint);
 }
-
-
-
-
-
-
 interface I9BBBBB {
-
 	function f0() external view returns (uint);
 }
 interface I9BBBB is I9BBBBB {
-
 	function f0() override
 	external view returns (uint);
 }
 interface I9BBB is I9BBBB {
-
 	function f1() external payable returns (uint);
 }
 interface I9BB is I9BBB {
-
 	function f0() override
 	external view returns (uint);
 }
 interface I9B is I9BB {
-
 	function f0() override
 	external view returns (uint);
 }
 interface I9 is I9B {
-
 }
-
-
-
-
-
 interface C10BBBB {
-
 	function f0() external payable returns (uint);
 	function f1() external payable returns (uint);
 }
 interface C10BBB is C10BBBB {
-
 	function f1() override
 	external payable returns (uint);
 }
 interface C10BB is C10BBB {
-
 }
 contract C10B is C10BB {
-
 	function f0() external payable
 	override
 	returns (uint)
@@ -220,34 +146,23 @@ contract C10B is C10BB {
 	}
 }
 abstract contract C10 is C10B {
-
 }
-
-
-
-
 interface I11BBB {
-
 	function f0() external view returns (uint);
 }
 interface I11BB is I11BBB {
-
 	function f0() override
 	external view returns (uint);
 	function f1() external payable returns (uint);
 }
 interface I11B is I11BB {
-
 	function f1() override
 	external payable returns (uint);
 }
 interface I11 is I11B {
-
 	function f0() override
 	external view returns (uint);
 }
-
-
 contract C {
 	using L0 for uint;
 	function test() public returns (uint)
@@ -258,4 +173,3 @@ contract C {
 		return 0;
 	}
 }
-

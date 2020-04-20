@@ -1,34 +1,22 @@
-
 pragma solidity >=0.0;
-
-
 library L1 {
-
 	function f0(uint) public pure returns (uint)
 	{
 		return 1804289383;
 	}
 }
 library L4 {
-
 	function f0(uint) public pure returns (uint)
 	{
 		return 846930886;
 	}
 }
-
-
-
-
 interface C5BBB {
-
 	function f0() external payable returns (uint);
 }
 interface C5BB is C5BBB {
-
 }
 contract C5B is C5BB {
-
 	function f0() virtual external payable
 	override
 	returns (uint)
@@ -37,7 +25,6 @@ contract C5B is C5BB {
 	}
 }
 contract C5 is C5B {
-
 	function f0() external payable
 	override
 	returns (uint)
@@ -45,19 +32,12 @@ contract C5 is C5B {
 		return 2062763411;
 	}
 }
-
-
-
-
 interface C7BBB {
-
 	function f0() external payable returns (uint);
 }
 interface C7BB is C7BBB {
-
 }
 contract C7B is C7BB {
-
 	function f0() external payable
 	override
 	returns (uint)
@@ -66,10 +46,7 @@ contract C7B is C7BB {
 	}
 }
 contract C7 is C7B {
-
 }
-
-
 contract C {
 	using L4 for uint;
 	function test() public returns (uint)
@@ -80,4 +57,3 @@ contract C {
 		return 0;
 	}
 }
-

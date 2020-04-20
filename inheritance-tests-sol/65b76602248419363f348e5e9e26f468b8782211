@@ -1,21 +1,13 @@
-
 pragma solidity >=0.0;
-
-
-
 interface I1 {
-
 	function f0() external view returns (uint);
 }
 library L5 {
-
 	function f0(uint) public pure returns (uint)
 	{
 		return 1804289383;
 	}
 }
-
-
 contract C {
 	using L5 for uint;
 	function test() public returns (uint)
@@ -26,4 +18,3 @@ contract C {
 		return 0;
 	}
 }
-

@@ -1,30 +1,16 @@
-
 pragma solidity >=0.0;
-
-
-
-
-
-
-
-
 interface C1BBBBB {
-
 	function f0() external view returns (uint);
 }
 interface C1BBBB is C1BBBBB {
-
 }
 interface C1BBB is C1BBBB {
-
 	function f0() override
 	external view returns (uint);
 }
 interface C1BB is C1BBB {
-
 }
 contract C1B is C1BB {
-
 	function f0() external view
 	override
 	returns (uint)
@@ -32,15 +18,12 @@ contract C1B is C1BB {
 		return 1931656580;
 	}
 }
-
 abstract contract C1BBBBBB is C1B {
-
 	function f1() virtual external pure
 	
 	returns (uint);
 }
 contract C1 is C1B, C1BBBBBB {
-
 	function f1() virtual external pure
 	override
 	returns (uint)
@@ -48,8 +31,6 @@ contract C1 is C1B, C1BBBBBB {
 		return 1947433875;
 	}
 }
-
-
 contract C {
 	function test() public returns (uint)
 	{
@@ -64,4 +45,3 @@ contract C {
 			return 0;
 	}
 }
-

@@ -1,54 +1,28 @@
-
 pragma solidity >=0.0;
-
-
-
-
-
-
 abstract contract C0BBB {
-
 }
-
-
-
 abstract contract C0BBBBBB {
-
 }
-
-
-
-
-
-
-
 interface C0BBBBBBBBBBBBB {
-
 	function f0() external pure returns (uint);
 	function f1() external pure returns (uint);
 }
 interface C0BBBBBBBBBBBB is C0BBBBBBBBBBBBB {
-
 	function f1() override
 	external pure returns (uint);
 	function f2() external view returns (uint);
 	function f3() external view returns (uint);
 }
 interface C0BBBBBBBBBBB is C0BBBBBBBBBBBB {
-
 }
-
 interface C0BBBBBBBBBBBBBB is C0BBBBBBBBBBBB {
-
 	function f4() external pure returns (uint);
 }
 interface C0BBBBBBBBBB is C0BBBBBBBBBBB, C0BBBBBBBBBBBBBB {
-
 	function f4() override
 	external pure returns (uint);
 }
 abstract contract C0BBBBBBBBB is C0BBBBBBBBBB {
-
 	function f0() virtual external pure
 	override
 	returns (uint);
@@ -75,7 +49,6 @@ abstract contract C0BBBBBBBBB is C0BBBBBBBBBB {
 	}
 }
 contract C0BBBBBBBB is C0BBBBBBBBB {
-
 	function f0() external pure
 	override
 	returns (uint)
@@ -90,7 +63,6 @@ contract C0BBBBBBBB is C0BBBBBBBBB {
 	}
 }
 contract C0BBBBBBB is C0BBBBBB, C0BBBBBBBB {
-
 	function f2() external view
 	override
 	returns (uint)
@@ -99,72 +71,43 @@ contract C0BBBBBBB is C0BBBBBB, C0BBBBBBBB {
 	}
 }
 abstract contract C0BBBBB is C0BBBBBB, C0BBBBBBB {
-
 }
-
 abstract contract C0BBBBBBBBBBBBBBB is C0BBBBBBB {
-
 }
-
 contract C0BBBBBBBBBBBBBBBB is C0BBBBBBB {
-
 }
-
 abstract contract C0BBBBBBBBBBBBBBBBB is C0BBBBBBB {
-
 }
 abstract contract C0BBBB is C0BBB, C0BBBBB, C0BBBBBBBBBBBBBBB, C0BBBBBBBBBBBBBBBB, C0BBBBBBBBBBBBBBBBB {
-
 }
 abstract contract C0BB is C0BBB, C0BBBB {
-
 }
-
 abstract contract C0BBBBBBBBBBBBBBBBBB is C0BB {
-
 }
-
 contract C0BBBBBBBBBBBBBBBBBBB is C0BB {
-
 }
-
 abstract contract C0BBBBBBBBBBBBBBBBBBBB is C0BB {
-
 }
 abstract contract C0B is C0BB, C0BBBBBBBBBBBBBBBBBB, C0BBBBBBBBBBBBBBBBBBB, C0BBBBBBBBBBBBBBBBBBBB {
-
 }
-
 abstract contract C0BBBBBBBBBBBBBBBBBBBBB is C0BB {
-
 }
-
 contract C0BBBBBBBBBBBBBBBBBBBBBB is C0BBBBBBBBBBBBBBBBBBBBB {
-
 }
-
 abstract contract C0BBBBBBBBBBBBBBBBBBBBBBB is C0BB {
-
 }
 abstract contract C0 is C0B, C0BBBBBBBBBBBBBBBBBBBBB, C0BBBBBBBBBBBBBBBBBBBBBB, C0BBBBBBBBBBBBBBBBBBBBBBB {
-
 }
 library L1 {
-
 	function f0(uint) internal pure returns (uint)
 	{
 		return 783368690;
 	}
 }
-
-
-
 interface C3BB {
-
 	function f0() external view returns (uint);
 }
 contract C3B is C3BB {
-
 	function f0() external view
 	override
 	returns (uint)
@@ -173,14 +116,10 @@ contract C3B is C3BB {
 	}
 }
 contract C3 is C3B {
-
 }
-
-
 contract C {
 	function test() public returns (uint)
 	{
 		return 0;
 	}
 }
-

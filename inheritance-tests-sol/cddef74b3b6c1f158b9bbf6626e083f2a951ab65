@@ -1,20 +1,12 @@
-
 pragma solidity >=0.0;
-
-
-
-
 interface I1B {
-
 	function f0() external payable returns (uint);
 	function f1() external view returns (uint);
 }
 interface I1 is I1B {
-
 	function f2() external view returns (uint);
 }
 library L2 {
-
 	function f0(uint) public view returns (uint)
 	{
 		return 1681692777;
@@ -25,7 +17,6 @@ library L2 {
 	}
 }
 library L3 {
-
 	function f0(uint) public view returns (uint)
 	{
 		return 1957747793;
@@ -36,7 +27,6 @@ library L3 {
 	}
 }
 library L4 {
-
 	function f0(uint) public view returns (uint)
 	{
 		return 719885386;
@@ -46,17 +36,12 @@ library L4 {
 		return 1649760492;
 	}
 }
-
-
 interface I6B {
-
 	function f0() external view returns (uint);
 }
 interface I6 is I6B {
-
 }
 library L7 {
-
 	function f0(uint) public pure returns (uint)
 	{
 		return 596516649;
@@ -67,14 +52,11 @@ library L7 {
 	}
 }
 library L8 {
-
 	function f0(uint) internal view returns (uint)
 	{
 		return 1025202362;
 	}
 }
-
-
 contract C {
 	using L3 for uint;
 	function test() public returns (uint)
@@ -85,4 +67,3 @@ contract C {
 		return 0;
 	}
 }
-

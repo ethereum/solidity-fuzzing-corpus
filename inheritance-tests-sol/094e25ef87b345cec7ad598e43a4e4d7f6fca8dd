@@ -1,175 +1,105 @@
-
 pragma solidity >=0.0;
-
-
-
-
 interface I1B {
-
 }
 interface I1 is I1B {
-
 }
-
-
 interface I2B {
-
 	function f0() external view returns (uint);
 }
-
-
-
-
-
 interface I2BBBBBB {
-
 }
-
-
-
-
 interface I2BBBBBBBBBB {
-
 	function f0() external view returns (uint);
 }
 interface I2BBBBBBBBB is I2BBBBBBBBBB {
-
 }
 interface I2BBBBBBBB is I2BBBBBBBBB {
-
 	function f0() override
 	external view returns (uint);
 }
 interface I2BBBBBBB is I2BBBBBB, I2BBBBBBBB {
-
 }
 interface I2BBBBB is I2BBBBBB, I2BBBBBBB {
-
 }
 interface I2BBBB is I2BBBBB {
-
 }
 interface I2BBB is I2BBBB {
-
 }
 interface I2BB is I2B, I2BBB {
-
 	function f0() override(I2B, I2BBBBBBBB)
 	external view returns (uint);
 }
-
 interface I2BBBBBBBBBBB is I2B {
-
 	function f1() external view returns (uint);
 }
-
-
-
 interface I2BBBBBBBBBBBBBB {
-
 	function f0() external view returns (uint);
 }
-
-
-
-
-
 interface I2BBBBBBBBBBBBBBBBBBB {
-
 }
-
-
-
-
 interface I2BBBBBBBBBBBBBBBBBBBBBBB {
-
 	function f0() external view returns (uint);
 }
 interface I2BBBBBBBBBBBBBBBBBBBBBB is I2BBBBBBBBBBBBBBBBBBBBBBB {
-
 }
 interface I2BBBBBBBBBBBBBBBBBBBBB is I2BBBBBBBBBBBBBBBBBBBBBB {
-
 	function f0() override
 	external view returns (uint);
 }
 interface I2BBBBBBBBBBBBBBBBBBBB is I2BBBBBBBBBBBBBBBBBBB, I2BBBBBBBBBBBBBBBBBBBBB {
-
 }
 interface I2BBBBBBBBBBBBBBBBBB is I2BBBBBBBBBBBBBBBBBBB, I2BBBBBBBBBBBBBBBBBBBB {
-
 }
 interface I2BBBBBBBBBBBBBBBBB is I2BBBBBBBBBBBBBBBBBB {
-
 }
 interface I2BBBBBBBBBBBBBBBB is I2BBBBBBBBBBBBBBBBB {
-
 	function f0() override
 	external view returns (uint);
 }
 interface I2BBBBBBBBBBBBBBB is I2BBBBBBBBBBBBBB, I2BBBBBBBBBBBBBBBB {
-
 	function f0() override(I2BBBBBBBBBBBBBB, I2BBBBBBBBBBBBBBBB)
 	external view returns (uint);
 }
-
 interface I2BBBBBBBBBBBBBBBBBBBBBBBB is I2BBBBBBBBBBBBBBB {
-
 	function f1() external view returns (uint);
 }
-
-
-
-
 interface I2BBBBBBBBBBBBBBBBBBBBBBBBBBBB {
-
 	function f0() external view returns (uint);
 }
 interface I2BBBBBBBBBBBBBBBBBBBBBBBBBBB is I2BBBBBBBBBBBBBBBBBBBBBBBBBBBB {
-
 }
-
 interface I2BBBBBBBBBBBBBBBBBBBBBBBBBBBBB is I2BBBBBBBBBBBBBBBBBBBBBBBBBBBB {
-
 	function f1() external view returns (uint);
 }
 interface I2BBBBBBBBBBBBBBBBBBBBBBBBBB is I2BBBBBBBBBBBBBBBBBBBBBBBBBBB, I2BBBBBBBBBBBBBBBBBBBBBBBBBBBBB {
-
 	function f0() override
 	external view returns (uint);
 }
 interface I2BBBBBBBBBBBBBBBBBBBBBBBBB is I2BBBBBBBBBBBBBB, I2BBBBBBBBBBBBBBBBBBBBBBBBBB {
-
 	function f0() override(I2BBBBBBBBBBBBBB, I2BBBBBBBBBBBBBBBBBBBBBBBBBB)
 	external view returns (uint);
 }
 interface I2BBBBBBBBBBBBB is I2BBBBBBBBBBBBBB, I2BBBBBBBBBBBBBBB, I2BBBBBBBBBBBBBBBBBBBBBBBB, I2BBBBBBBBBBBBBBBBBBBBBBBBB {
-
 	function f0() override(I2BBBBBBBBBBBBBB, I2BBBBBBBBBBBBBBB, I2BBBBBBBBBBBBBBBBBBBBBBBBB)
 	external view returns (uint);
 	function f1() override(I2BBBBBBBBBBBBBBBBBBBBBBBB, I2BBBBBBBBBBBBBBBBBBBBBBBBBBBBB)
 	external view returns (uint);
 }
 interface I2BBBBBBBBBBBB is I2B, I2BBBBBBBBBBBBB {
-
 	function f0() override(I2B, I2BBBBBBBBBBBBB)
 	external view returns (uint);
 	function f1() override
 	external view returns (uint);
 }
 interface I2 is I2B, I2BB, I2BBBBBBBBBBB, I2BBBBBBBBBBBB {
-
 	function f0() override(I2B, I2BB, I2BBBBBBBBBBBB)
 	external view returns (uint);
 	function f1() override(I2BBBBBBBBBBB, I2BBBBBBBBBBBB)
 	external view returns (uint);
 }
-
-
 contract C {
 	function test() public returns (uint)
 	{
 		return 0;
 	}
 }
-

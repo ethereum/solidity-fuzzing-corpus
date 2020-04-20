@@ -1,40 +1,24 @@
-
 pragma solidity >=0.0;
-
-
-
-
-
 interface I0BB {
-
 	function f0() external payable returns (uint);
 }
-
-
 interface I0BBBB {
-
 	function f0() external payable returns (uint);
 }
 interface I0BBB is I0BB, I0BBBB {
-
 	function f0() override(I0BB, I0BBBB)
 	external payable returns (uint);
 }
 interface I0B is I0BB, I0BBB {
-
 	function f0() override(I0BB, I0BBB)
 	external payable returns (uint);
 }
 interface I0 is I0B {
-
 	function f1() external payable returns (uint);
 }
-
-
 contract C {
 	function test() public returns (uint)
 	{
 		return 0;
 	}
 }
-

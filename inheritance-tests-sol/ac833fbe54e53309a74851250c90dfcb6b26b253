@@ -1,17 +1,8 @@
-
 pragma solidity >=0.0;
-
-
-
-
-
-
 interface C0BBB {
-
 	function f0() external payable returns (uint);
 }
 contract C0BB is C0BBB {
-
 	function f0() external payable
 	override
 	returns (uint)
@@ -20,10 +11,8 @@ contract C0BB is C0BBB {
 	}
 }
 contract C0B is C0BB {
-
 }
 contract C0 is C0B {
-
 	function f1() virtual public pure
 	
 	returns (uint)
@@ -31,65 +20,41 @@ contract C0 is C0B {
 		return 2078669041;
 	}
 }
-
-
-
 abstract contract C2BB {
-
 }
 contract C2B is C2BB {
-
 }
-
-
-
-
 interface C2BBBBBB {
-
 	function f0() external payable returns (uint);
 }
 interface C2BBBBB is C2BBBBBB {
-
 }
-
 interface C2BBBBBBB is C2BBBBBB {
-
 	function f1() external payable returns (uint);
 }
 interface C2BBBB is C2BBBBB, C2BBBBBBB {
-
 	function f2() external payable returns (uint);
 }
-
-
-
-
 interface C2BBBBBBBBBBB {
-
 	function f0() external payable returns (uint);
 }
 interface C2BBBBBBBBBB is C2BBBBBBBBBBB {
-
 }
 interface C2BBBBBBBBB is C2BBBBBBBBBB {
-
 }
 interface C2BBBBBBBB is C2BBBBBBB, C2BBBBBBBBB {
-
 	function f0() override(C2BBBBBB, C2BBBBBBBBBBB)
 	external payable returns (uint);
 	function f1() override
 	external payable returns (uint);
 }
 interface C2BBB is C2BBBB, C2BBBBBBBB {
-
 	function f0() override(C2BBBBBB, C2BBBBBBBB)
 	external payable returns (uint);
 	function f1() override(C2BBBBBBB, C2BBBBBBBB)
 	external payable returns (uint);
 }
 contract C2 is C2B, C2BBB {
-
 	function f0() external payable
 	override
 	returns (uint)
@@ -109,9 +74,7 @@ contract C2 is C2B, C2BBB {
 		return 353718330;
 	}
 }
-
 contract C3 {
-
 	function f0() virtual public pure
 	
 	returns (uint)
@@ -120,38 +83,24 @@ contract C3 {
 	}
 }
 library L7 {
-
 	function f0(uint) private pure returns (uint)
 	{
 		return 596516649;
 	}
 }
-
-
-
-
-
-
-
 interface C8BBBBBB {
-
 }
 interface C8BBBBB is C8BBBBBB {
-
 	function f0() external payable returns (uint);
 }
 interface C8BBBB is C8BBBBB {
-
 }
 interface C8BBB is C8BBBB {
-
 	function f1() external payable returns (uint);
 }
 interface C8BB is C8BBB {
-
 }
 contract C8B is C8BB {
-
 	function f0() virtual external payable
 	override
 	returns (uint)
@@ -166,7 +115,6 @@ contract C8B is C8BB {
 	}
 }
 contract C8 is C8B {
-
 	function f0() external payable
 	override
 	returns (uint)
@@ -174,8 +122,6 @@ contract C8 is C8B {
 		return 837051536;
 	}
 }
-
-
 contract C {
 	function test() public returns (uint)
 	{
@@ -213,4 +159,3 @@ contract C {
 			return 0;
 	}
 }
-

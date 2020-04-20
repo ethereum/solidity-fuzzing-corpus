@@ -1,16 +1,11 @@
-
 pragma solidity >=0.0;
-
-
 library L0 {
-
 	function f0(uint) internal pure returns (uint)
 	{
 		return 1804289383;
 	}
 }
 library L1 {
-
 	function f0(uint) private pure returns (uint)
 	{
 		return 846930886;
@@ -20,9 +15,7 @@ library L1 {
 		return 1681692777;
 	}
 }
-
 contract C2 {
-
 	function f0() public view
 	
 	returns (uint)
@@ -30,38 +23,19 @@ contract C2 {
 		return 803070398;
 	}
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 interface I3BBBBBBBBBBBBB {
-
 	function f0() external view returns (uint);
 }
-
 interface I3BBBBBBBBBBBBBB is I3BBBBBBBBBBBBB {
-
 	function f1() external view returns (uint);
 }
 interface I3BBBBBBBBBBBB is I3BBBBBBBBBBBBB, I3BBBBBBBBBBBBBB {
-
 	function f0() override
 	external view returns (uint);
 	function f2() external payable returns (uint);
 	function f3() external view returns (uint);
 }
 interface I3BBBBBBBBBBB is I3BBBBBBBBBBBB {
-
 	function f0() override
 	external view returns (uint);
 	function f1() override
@@ -72,7 +46,6 @@ interface I3BBBBBBBBBBB is I3BBBBBBBBBBBB {
 	external view returns (uint);
 }
 interface I3BBBBBBBBBB is I3BBBBBBBBBBB {
-
 	function f1() override
 	external view returns (uint);
 	function f2() override
@@ -81,7 +54,6 @@ interface I3BBBBBBBBBB is I3BBBBBBBBBBB {
 	external view returns (uint);
 }
 interface I3BBBBBBBBB is I3BBBBBBBBBB {
-
 	function f1() override
 	external view returns (uint);
 	function f3() override
@@ -89,13 +61,10 @@ interface I3BBBBBBBBB is I3BBBBBBBBBB {
 	function f4() external payable returns (uint);
 }
 interface I3BBBBBBBB is I3BBBBBBBBB {
-
 	function f4() override
 	external payable returns (uint);
 }
-
 interface I3BBBBBBBBBBBBBBB is I3BBBBBBBBB {
-
 	function f0() override
 	external view returns (uint);
 	function f2() override
@@ -105,7 +74,6 @@ interface I3BBBBBBBBBBBBBBB is I3BBBBBBBBB {
 	function f5() external payable returns (uint);
 }
 interface I3BBBBBBB is I3BBBBBBBB, I3BBBBBBBBBBBBBBB {
-
 	function f0() override(I3BBBBBBBBBBB, I3BBBBBBBBBBBBBBB)
 	external view returns (uint);
 	function f1() override
@@ -124,7 +92,6 @@ interface I3BBBBBBB is I3BBBBBBBB, I3BBBBBBBBBBBBBBB {
 	function f9() external payable returns (uint);
 }
 interface I3BBBBBB is I3BBBBBBB {
-
 	function f0() override
 	external view returns (uint);
 	function f1() override
@@ -141,7 +108,6 @@ interface I3BBBBBB is I3BBBBBBB {
 	external payable returns (uint);
 }
 interface I3BBBBB is I3BBBBBB {
-
 	function f2() override
 	external payable returns (uint);
 	function f3() override
@@ -157,7 +123,6 @@ interface I3BBBBB is I3BBBBBB {
 	function f10() external view returns (uint);
 }
 interface I3BBBB is I3BBBBB {
-
 	function f1() override
 	external view returns (uint);
 	function f4() override
@@ -165,9 +130,7 @@ interface I3BBBB is I3BBBBB {
 	function f10() override
 	external view returns (uint);
 }
-
 interface I3BBBBBBBBBBBBBBBB is I3BBBBB {
-
 	function f1() override
 	external view returns (uint);
 	function f2() override
@@ -183,7 +146,6 @@ interface I3BBBBBBBBBBBBBBBB is I3BBBBB {
 	function f11() external payable returns (uint);
 }
 interface I3BBB is I3BBBB, I3BBBBBBBBBBBBBBBB {
-
 	function f0() override
 	external view returns (uint);
 	function f1() override(I3BBBB, I3BBBBBBBBBBBBBBBB)
@@ -207,7 +169,6 @@ interface I3BBB is I3BBBB, I3BBBBBBBBBBBBBBBB {
 	function f12() external view returns (uint);
 }
 interface I3BB is I3BBB {
-
 	function f1() override
 	external view returns (uint);
 	function f4() override
@@ -222,7 +183,6 @@ interface I3BB is I3BBB {
 	external view returns (uint);
 }
 interface I3B is I3BB {
-
 	function f5() override
 	external payable returns (uint);
 	function f6() override
@@ -232,9 +192,7 @@ interface I3B is I3BB {
 	function f12() override
 	external view returns (uint);
 }
-
 interface I3BBBBBBBBBBBBBBBBB is I3B {
-
 	function f4() override
 	external payable returns (uint);
 	function f7() override
@@ -248,7 +206,6 @@ interface I3BBBBBBBBBBBBBBBBB is I3B {
 	function f13() external payable returns (uint);
 }
 interface I3 is I3B, I3BBBBBBBBBBBBBBBBB {
-
 	function f1() override
 	external view returns (uint);
 	function f3() override
@@ -269,14 +226,11 @@ interface I3 is I3B, I3BBBBBBBBBBBBBBBBB {
 	external view returns (uint);
 }
 library L4 {
-
 	function f0(uint) external pure returns (uint)
 	{
 		return 1649760492;
 	}
 }
-
-
 contract C {
 	using L1 for uint;
 	function test() public returns (uint)
@@ -287,4 +241,3 @@ contract C {
 		return 0;
 	}
 }
-

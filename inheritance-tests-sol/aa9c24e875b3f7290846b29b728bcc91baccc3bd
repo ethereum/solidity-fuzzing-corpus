@@ -1,32 +1,20 @@
-
 pragma solidity >=0.0;
-
-
 library L0 {
-
 	function f0(uint) internal pure returns (uint)
 	{
 		return 1804289383;
 	}
 }
-
-
-
-
 interface C1BBB {
-
 	function f0() external view returns (uint);
 }
 interface C1BB is C1BBB {
-
 	function f0() override
 	external view returns (uint);
 }
 interface C1B is C1BB {
-
 }
 contract C1 is C1B {
-
 	function f0() external view
 	override
 	returns (uint)
@@ -35,7 +23,6 @@ contract C1 is C1B {
 	}
 }
 library L2 {
-
 	function f0(uint) public view returns (uint)
 	{
 		return 846930886;
@@ -45,8 +32,6 @@ library L2 {
 		return 1681692777;
 	}
 }
-
-
 contract C {
 	function test() public returns (uint)
 	{
@@ -56,4 +41,3 @@ contract C {
 			return 0;
 	}
 }
-

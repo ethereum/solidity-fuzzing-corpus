@@ -1,59 +1,35 @@
-
 pragma solidity >=0.0;
-
-
-
-
-
 interface I0BB {
-
 	function f0() external payable returns (uint);
 }
 interface I0B is I0BB {
-
 	function f0() override
 	external payable returns (uint);
 }
-
-
-
-
-
-
-
-
 interface I0BBBBBBBBBB {
-
 	function f0() external payable returns (uint);
 }
 interface I0BBBBBBBBB is I0BBBBBBBBBB {
-
 }
 interface I0BBBBBBBB is I0BBBBBBBBB {
-
 }
 interface I0BBBBBBB is I0BBBBBBBB {
-
 	function f0() override
 	external payable returns (uint);
 }
 interface I0BBBBBB is I0BBBBBBB {
-
 	function f1() external view returns (uint);
 }
 interface I0BBBBB is I0BBBBBB {
-
 	function f2() external payable returns (uint);
 }
 interface I0BBBB is I0BBBBB {
-
 	function f0() override
 	external payable returns (uint);
 	function f2() override
 	external payable returns (uint);
 }
 interface I0BBB is I0BB, I0BBBB {
-
 	function f0() override(I0BB, I0BBBB)
 	external payable returns (uint);
 	function f2() override
@@ -61,32 +37,23 @@ interface I0BBB is I0BB, I0BBBB {
 	function f3() external payable returns (uint);
 }
 interface I0 is I0B, I0BBB {
-
 	function f0() override(I0B, I0BBB)
 	external payable returns (uint);
 }
-
-
 interface I3B {
-
 	function f0() external view returns (uint);
 }
 interface I3 is I3B {
-
 	function f0() override
 	external view returns (uint);
 }
 library L4 {
-
 	function f0(uint) public view returns (uint)
 	{
 		return 1681692777;
 	}
 }
-
-
 contract C7B {
-
 	function f0() public view
 	
 	returns (uint)
@@ -95,46 +62,29 @@ contract C7B {
 	}
 }
 contract C7 is C7B {
-
 }
-
-
 interface I9B {
-
 	function f0() external view returns (uint);
 }
 interface I9 is I9B {
-
 }
 library L10 {
-
 	function f0(uint) public view returns (uint)
 	{
 		return 424238335;
 	}
 }
-
-
 interface I13B {
-
 	function f0() external view returns (uint);
 }
 interface I13 is I13B {
-
 }
-
-
-
-
 interface C18BBB {
-
 	function f0() external payable returns (uint);
 }
 interface C18BB is C18BBB {
-
 }
 contract C18B is C18BB {
-
 	function f0() virtual external payable
 	override
 	returns (uint)
@@ -143,10 +93,7 @@ contract C18B is C18BB {
 	}
 }
 contract C18 is C18B {
-
 }
-
-
 contract C {
 	function test() public returns (uint)
 	{
@@ -165,4 +112,3 @@ contract C {
 			return 0;
 	}
 }
-

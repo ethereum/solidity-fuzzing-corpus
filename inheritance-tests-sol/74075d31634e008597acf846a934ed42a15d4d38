@@ -1,18 +1,11 @@
-
 pragma solidity >=0.0;
-
-
 library L0 {
-
 	function f0(uint) public view returns (uint)
 	{
 		return 1804289383;
 	}
 }
-
-
 abstract contract C1B {
-
 	function f0() virtual public pure
 	
 	returns (uint)
@@ -21,10 +14,7 @@ abstract contract C1B {
 	}
 }
 contract C1 is C1B {
-
 }
-
-
 contract C {
 	using L0 for uint;
 	function test() public returns (uint)
@@ -35,4 +25,3 @@ contract C {
 		return 0;
 	}
 }
-

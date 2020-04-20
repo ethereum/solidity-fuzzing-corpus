@@ -1,31 +1,19 @@
-
 pragma solidity >=0.0;
-
-
-
 interface I0 {
-
 	function f0() external payable returns (uint);
 }
 library L1 {
-
 	function f0(uint) public view returns (uint)
 	{
 		return 1804289383;
 	}
 }
-
 interface I2 {
-
 	function f0() external payable returns (uint);
 }
-
 interface I3 {
-
 	function f0() external view returns (uint);
 }
-
-
 contract C {
 	using L1 for uint;
 	function test() public returns (uint)
@@ -36,4 +24,3 @@ contract C {
 		return 0;
 	}
 }
-

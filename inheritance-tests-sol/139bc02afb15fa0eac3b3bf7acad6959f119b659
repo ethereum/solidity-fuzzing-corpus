@@ -1,18 +1,10 @@
-
 pragma solidity >=0.0;
-
-
-
-
-
 abstract contract C0BB {
-
 	function f0() virtual public payable
 	
 	returns (uint);
 }
 abstract contract C0B is C0BB {
-
 	function f0() virtual public payable
 	override
 	returns (uint);
@@ -20,21 +12,13 @@ abstract contract C0B is C0BB {
 	
 	returns (uint);
 }
-
-
-
-
 interface C0BBBBBB {
-
 }
 contract C0BBBBB is C0BBBBBB {
-
 }
 contract C0BBBB is C0BBBBB {
-
 }
 contract C0BBB is C0BB, C0BBBB {
-
 	function f0() virtual public payable
 	override
 	returns (uint)
@@ -43,7 +27,6 @@ contract C0BBB is C0BB, C0BBBB {
 	}
 }
 abstract contract C0 is C0B, C0BBB {
-
 	function f0() public payable
 	override(C0BBB, C0B)
 	returns (uint)
@@ -57,8 +40,6 @@ abstract contract C0 is C0B, C0BBB {
 		return 689644887;
 	}
 }
-
-
 contract C {
 	function test() public returns (uint)
 	{
@@ -68,4 +49,3 @@ contract C {
 			return 0;
 	}
 }
-

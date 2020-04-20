@@ -1,17 +1,11 @@
-
 pragma solidity >=0.0;
-
-
 library L0 {
-
 	function f0(uint) internal pure returns (uint)
 	{
 		return 1804289383;
 	}
 }
-
 contract C3 {
-
 	function f0() virtual public pure
 	
 	returns (uint)
@@ -19,19 +13,12 @@ contract C3 {
 		return 1847580730;
 	}
 }
-
-
-
-
 interface C4BBB {
-
 	function f0() external payable returns (uint);
 }
 interface C4BB is C4BBB {
-
 }
 contract C4B is C4BB {
-
 	function f0() external payable
 	override
 	returns (uint)
@@ -40,32 +27,21 @@ contract C4B is C4BB {
 	}
 }
 contract C4 is C4B {
-
 }
 library L5 {
-
 	function f0(uint) internal pure returns (uint)
 	{
 		return 846930886;
 	}
 }
-
-
-
 abstract contract C9BB {
-
 }
-
-
 interface C9BBBB {
-
 	function f0() external payable returns (uint);
 }
 interface C9BBB is C9BBBB {
-
 }
 contract C9B is C9BB, C9BBB {
-
 	function f0() external payable
 	override
 	returns (uint)
@@ -74,28 +50,19 @@ contract C9B is C9BB, C9BBB {
 	}
 }
 contract C9 is C9B {
-
 }
 library L10 {
-
 	function f0(uint) public pure returns (uint)
 	{
 		return 1957747793;
 	}
 }
-
-
-
-
 interface C11BBB {
-
 	function f0() external payable returns (uint);
 }
 interface C11BB is C11BBB {
-
 }
 contract C11B is C11BB {
-
 	function f0() virtual external payable
 	override
 	returns (uint)
@@ -104,7 +71,6 @@ contract C11B is C11BB {
 	}
 }
 contract C11 is C11B {
-
 	function f0() virtual external payable
 	override
 	returns (uint)
@@ -112,8 +78,6 @@ contract C11 is C11B {
 		return 1096328782;
 	}
 }
-
-
 contract C {
 	using L10 for uint;
 	function test() public returns (uint)
@@ -124,4 +88,3 @@ contract C {
 		return 0;
 	}
 }
-

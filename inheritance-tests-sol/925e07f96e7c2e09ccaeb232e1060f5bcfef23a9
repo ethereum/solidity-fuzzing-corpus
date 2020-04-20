@@ -1,27 +1,13 @@
-
 pragma solidity >=0.0;
-
-
-
-
 abstract contract C0B {
-
 }
-
-
 abstract contract C0BBB {
-
 }
-
 contract C0BBBB is C0BBB {
-
 }
-
 contract C0BBBBB is C0BBB {
-
 }
 contract C0BB is C0B, C0BBB, C0BBBB, C0BBBBB {
-
 	function f0() public view
 	
 	returns (uint)
@@ -35,41 +21,25 @@ contract C0BB is C0B, C0BBB, C0BBBB, C0BBBBB {
 		return 1691062339;
 	}
 }
-
 abstract contract C0BBBBBB is C0BB {
-
 }
 contract C0 is C0B, C0BB, C0BBBBBB {
-
 }
 library L1 {
-
 	function f0(uint) private pure returns (uint)
 	{
 		return 1957747793;
 	}
 }
-
-
 abstract contract C2B {
-
 }
-
-
 abstract contract C2BBB {
-
 }
-
-
 abstract contract C2BBBBB {
-
 }
-
 contract C2BBBBBB is C2BBBBB {
-
 }
 contract C2BBBB is C2BBB, C2BBBBB, C2BBBBBB {
-
 	function f0() public view
 	
 	returns (uint)
@@ -83,12 +53,9 @@ contract C2BBBB is C2BBB, C2BBBBB, C2BBBBBB {
 		return 904096748;
 	}
 }
-
 contract C2BBBBBBB is C2BBB {
-
 }
 contract C2BB is C2B, C2BBB, C2BBBB, C2BBBBBBB {
-
 	function f2() public view
 	
 	returns (uint)
@@ -102,12 +69,9 @@ contract C2BB is C2B, C2BBB, C2BBBB, C2BBBBBBB {
 		return 180192644;
 	}
 }
-
 contract C2BBBBBBBB is C2BB {
-
 }
 contract C2 is C2B, C2BB, C2BBBBBBBB {
-
 	function f4() public view
 	
 	returns (uint)
@@ -122,14 +86,12 @@ contract C2 is C2B, C2BB, C2BBBBBBBB {
 	}
 }
 library L3 {
-
 	function f0(uint) private pure returns (uint)
 	{
 		return 1025202362;
 	}
 }
 library L4 {
-
 	function f0(uint) public pure returns (uint)
 	{
 		return 1350490027;
@@ -143,8 +105,6 @@ library L4 {
 		return 1102520059;
 	}
 }
-
-
 contract C {
 	using L4 for uint;
 	function test() public returns (uint)
@@ -155,4 +115,3 @@ contract C {
 		return 0;
 	}
 }
-

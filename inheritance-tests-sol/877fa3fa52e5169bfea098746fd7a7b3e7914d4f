@@ -1,14 +1,7 @@
-
 pragma solidity >=0.0;
-
-
-
-
 abstract contract C0B {
-
 }
 contract C0 is C0B {
-
 	function f0() public pure
 	
 	returns (uint)
@@ -17,14 +10,11 @@ contract C0 is C0B {
 	}
 }
 library L1 {
-
 	function f0(uint) external pure returns (uint)
 	{
 		return 1804289383;
 	}
 }
-
-
 contract C {
 	using L1 for uint;
 	function test() public returns (uint)
@@ -35,4 +25,3 @@ contract C {
 		return 0;
 	}
 }
-

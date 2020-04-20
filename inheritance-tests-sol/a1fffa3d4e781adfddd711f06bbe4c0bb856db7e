@@ -1,15 +1,7 @@
-
 pragma solidity >=0.0;
-
-
-
-
-
 abstract contract C3BB {
-
 }
 contract C3B is C3BB {
-
 	function f0() external pure
 	
 	returns (uint)
@@ -17,15 +9,10 @@ contract C3B is C3BB {
 		return 1600096592;
 	}
 }
-
 abstract contract C3BBB is C3B {
-
 }
 abstract contract C3 is C3B, C3BBB {
-
 }
-
-
 contract C {
 	function test() public returns (uint)
 	{
@@ -35,4 +22,3 @@ contract C {
 			return 0;
 	}
 }
-

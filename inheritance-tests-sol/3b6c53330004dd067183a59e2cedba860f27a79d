@@ -1,29 +1,18 @@
-
 pragma solidity >=0.0;
-
-
-
-
 interface I3B {
-
 	function f0() external view returns (uint);
 }
 interface I3 is I3B {
-
 	function f0() override
 	external view returns (uint);
 }
 library L4 {
-
 	function f0(uint) public view returns (uint)
 	{
 		return 1681692777;
 	}
 }
-
-
 contract C7B {
-
 	function f0() public view
 	
 	returns (uint)
@@ -32,41 +21,25 @@ contract C7B {
 	}
 }
 contract C7 is C7B {
-
 }
-
-
 interface I9B {
-
 	function f0() external view returns (uint);
 }
 interface I9 is I9B {
-
 }
-
-
 interface I12B {
-
 	function f0() external view returns (uint);
 }
 interface I12 is I12B {
-
 	function f0() override
 	external view returns (uint);
 }
-
-
-
-
 interface C16BBB {
-
 	function f0() external payable returns (uint);
 }
 interface C16BB is C16BBB {
-
 }
 contract C16B is C16BB {
-
 	function f0() external payable
 	override
 	returns (uint)
@@ -75,10 +48,7 @@ contract C16B is C16BB {
 	}
 }
 contract C16 is C16B {
-
 }
-
-
 contract C {
 	function test() public returns (uint)
 	{
@@ -97,4 +67,3 @@ contract C {
 			return 0;
 	}
 }
-

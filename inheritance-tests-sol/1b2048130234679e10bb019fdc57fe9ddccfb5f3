@@ -1,76 +1,38 @@
-
 pragma solidity >=0.0;
-
-
-
-
-
-
-
-
-
-
 interface C0BBBBBBB {
-
 }
 interface C0BBBBBB is C0BBBBBBB {
-
 }
 interface C0BBBBB is C0BBBBBB {
-
 }
 interface C0BBBB is C0BBBBB {
-
 }
 interface C0BBB is C0BBBB {
-
 }
-
-
-
-
-
 interface C0BBBBBBBBBBBB {
-
 }
 interface C0BBBBBBBBBBB is C0BBBBBBBBBBBB {
-
 }
 interface C0BBBBBBBBBB is C0BBBBBBBBBBB {
-
 }
 interface C0BBBBBBBBB is C0BBBBBBBBBB {
-
 }
 interface C0BBBBBBBB is C0BBBB, C0BBBBBBBBB {
-
 }
 interface C0BB is C0BBB, C0BBBBBBBB {
-
 }
 contract C0B is C0BB {
-
 }
-
-
-
-
-
 interface C0BBBBBBBBBBBBBBBBB {
-
 	function f0() external view returns (uint);
 }
 interface C0BBBBBBBBBBBBBBBB is C0BBBBBBBBBBBBBBBBB {
-
 }
 interface C0BBBBBBBBBBBBBBB is C0BBBBBBBBBBBBBBBB {
-
 }
 interface C0BBBBBBBBBBBBBB is C0BBBBBBBBBBBBBBB {
-
 }
 contract C0BBBBBBBBBBBBB is C0B, C0BBBBBBBBBBBBBB {
-
 	function f0() virtual external view
 	override
 	returns (uint)
@@ -78,22 +40,16 @@ contract C0BBBBBBBBBBBBB is C0B, C0BBBBBBBBBBBBBB {
 		return 280765391;
 	}
 }
-
 abstract contract C0BBBBBBBBBBBBBBBBBB is C0BB {
-
 }
 contract C0 is C0B, C0BBBBBBBBBBBBB, C0BBBBBBBBBBBBBBBBBB {
-
 }
 library L1 {
-
 	function f0(uint) external pure returns (uint)
 	{
 		return 1714636915;
 	}
 }
-
-
 contract C {
 	using L1 for uint;
 	function test() public returns (uint)
@@ -104,4 +60,3 @@ contract C {
 		return 0;
 	}
 }
-

@@ -1,17 +1,11 @@
-
 pragma solidity >=0.0;
-
-
 library L0 {
-
 	function f0(uint) private pure returns (uint)
 	{
 		return 1804289383;
 	}
 }
-
 contract C3 {
-
 	function f0() public view
 	
 	returns (uint)
@@ -20,19 +14,14 @@ contract C3 {
 	}
 }
 library L4 {
-
 	function f0(uint) private pure returns (uint)
 	{
 		return 846930886;
 	}
 }
-
-
 contract C6B {
-
 }
 contract C6 is C6B {
-
 	function f0() public view
 	
 	returns (uint)
@@ -40,9 +29,7 @@ contract C6 is C6B {
 		return 2078669041;
 	}
 }
-
 contract C7 {
-
 	function f0() public view
 	
 	returns (uint)
@@ -51,7 +38,6 @@ contract C7 {
 	}
 }
 library L8 {
-
 	function f0(uint) internal pure returns (uint)
 	{
 		return 1681692777;
@@ -61,12 +47,7 @@ library L8 {
 		return 1714636915;
 	}
 }
-
-
-
-
 contract C10BBB {
-
 	function f0() virtual public pure
 	
 	returns (uint)
@@ -74,18 +55,13 @@ contract C10BBB {
 		return 854716505;
 	}
 }
-
 contract C10BBBB is C10BBB {
-
 }
 contract C10BB is C10BBB, C10BBBB {
-
 }
 contract C10B is C10BB {
-
 }
 contract C10 is C10B {
-
 	function f1() virtual public pure
 	
 	returns (uint)
@@ -93,18 +69,12 @@ contract C10 is C10B {
 		return 1098894339;
 	}
 }
-
-
-
 interface C11BB {
-
 	function f0() external view returns (uint);
 }
 interface C11B is C11BB {
-
 }
 contract C11 is C11B {
-
 	function f0() external view
 	override
 	returns (uint)
@@ -112,10 +82,7 @@ contract C11 is C11B {
 		return 2075782095;
 	}
 }
-
-
 contract C12B {
-
 	function f0() public view
 	
 	returns (uint)
@@ -124,10 +91,7 @@ contract C12B {
 	}
 }
 contract C12 is C12B {
-
 }
-
-
 contract C {
 	function test() public returns (uint)
 	{
@@ -169,4 +133,3 @@ contract C {
 			return 0;
 	}
 }
-

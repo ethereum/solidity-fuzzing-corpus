@@ -1,19 +1,10 @@
-
 pragma solidity >=0.0;
-
-
-
-
 interface I0B {
-
 	function f0() external view returns (uint);
 }
 interface I0 is I0B {
-
 }
-
 contract C1 {
-
 	function f0() virtual public view
 	
 	returns (uint)
@@ -22,7 +13,6 @@ contract C1 {
 	}
 }
 library L2 {
-
 	function f0(uint) public pure returns (uint)
 	{
 		return 1804289383;
@@ -32,20 +22,14 @@ library L2 {
 		return 846930886;
 	}
 }
-
-
-
 interface C3BB {
-
 	function f0() external payable returns (uint);
 }
 interface C3B is C3BB {
-
 	function f0() override
 	external payable returns (uint);
 }
 contract C3 is C3B {
-
 	function f0() external payable
 	override
 	returns (uint)
@@ -53,329 +37,220 @@ contract C3 is C3B {
 		return 1626692904;
 	}
 }
-
-
-
-
 interface I4BBB {
-
 	function f0() external view returns (uint);
 }
-
-
-
-
-
 interface I4BBBBBBBB {
-
 }
-
 interface I4BBBBBBBBB is I4BBBBBBBB {
-
 	function f0() external view returns (uint);
 }
 interface I4BBBBBBB is I4BBBBBBBB, I4BBBBBBBBB {
-
 }
 interface I4BBBBBB is I4BBBBBBB {
-
 }
 interface I4BBBBB is I4BBBBBB {
-
 }
 interface I4BBBB is I4BBB, I4BBBBB {
-
 	function f0() override(I4BBB, I4BBBBBBBBB)
 	external view returns (uint);
 }
-
 interface I4BBBBBBBBBB is I4BBB {
-
 	function f1() external view returns (uint);
 }
-
-
-
 interface I4BBBBBBBBBBBBB {
-
 	function f0() external view returns (uint);
 }
-
-
 interface I4BBBBBBBBBBBBBBB {
-
 }
 interface I4BBBBBBBBBBBBBB is I4BBBBBBBBBBBBB, I4BBBBBBBBBBBBBBB {
-
 }
-
 interface I4BBBBBBBBBBBBBBBB is I4BBBBBBBBBBBBB {
-
 	function f1() external view returns (uint);
 }
-
-
-
 interface I4BBBBBBBBBBBBBBBBBBB {
-
 	function f0() external view returns (uint);
 }
-
 interface I4BBBBBBBBBBBBBBBBBBBB is I4BBBBBBBBBBBBBBBBBBB {
-
 	function f0() override
 	external view returns (uint);
 	function f1() external view returns (uint);
 }
 interface I4BBBBBBBBBBBBBBBBBB is I4BBBBBBBBBBBBBBBBBBB, I4BBBBBBBBBBBBBBBBBBBB {
-
 	function f0() override(I4BBBBBBBBBBBBBBBBBBB, I4BBBBBBBBBBBBBBBBBBBB)
 	external view returns (uint);
 }
 interface I4BBBBBBBBBBBBBBBBB is I4BBBBBBBBBBBBB, I4BBBBBBBBBBBBBBBBBB {
-
 	function f0() override(I4BBBBBBBBBBBBB, I4BBBBBBBBBBBBBBBBBB)
 	external view returns (uint);
 	function f1() override
 	external view returns (uint);
 }
 interface I4BBBBBBBBBBBB is I4BBBBBBBBBBBBB, I4BBBBBBBBBBBBBB, I4BBBBBBBBBBBBBBBB, I4BBBBBBBBBBBBBBBBB {
-
 	function f0() override(I4BBBBBBBBBBBBB, I4BBBBBBBBBBBBBBBBB)
 	external view returns (uint);
 	function f1() override(I4BBBBBBBBBBBBBBBB, I4BBBBBBBBBBBBBBBBB)
 	external view returns (uint);
 }
 interface I4BBBBBBBBBBB is I4BBB, I4BBBBBBBBBBBB {
-
 	function f0() override(I4BBB, I4BBBBBBBBBBBB)
 	external view returns (uint);
 }
 interface I4BB is I4BBB, I4BBBB, I4BBBBBBBBBB, I4BBBBBBBBBBB {
-
 	function f0() override(I4BBB, I4BBBB, I4BBBBBBBBBBB)
 	external view returns (uint);
 	function f1() override(I4BBBBBBBBBB, I4BBBBBBBBBBBB)
 	external view returns (uint);
 }
 interface I4B is I4BB {
-
 	function f0() override
 	external view returns (uint);
 }
-
 interface I4BBBBBBBBBBBBBBBBBBBBB is I4B {
-
 	function f0() override
 	external view returns (uint);
 }
-
-
-
 interface I4BBBBBBBBBBBBBBBBBBBBBBBB {
-
 	function f0() external view returns (uint);
 }
-
-
 interface I4BBBBBBBBBBBBBBBBBBBBBBBBBB {
-
 }
 interface I4BBBBBBBBBBBBBBBBBBBBBBBBB is I4BBBBBBBBBBBBBBBBBBBBBBBB, I4BBBBBBBBBBBBBBBBBBBBBBBBBB {
-
 	function f0() override
 	external view returns (uint);
 }
-
 interface I4BBBBBBBBBBBBBBBBBBBBBBBBBBB is I4BBBBBBBBBBBBBBBBBBBBBBBBB {
-
 	function f0() override
 	external view returns (uint);
 	function f1() external view returns (uint);
 }
-
-
-
 interface I4BBBBBBBBBBBBBBBBBBBBBBBBBBBBBB {
-
 	function f0() external view returns (uint);
 }
-
 interface I4BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB is I4BBBBBBBBBBBBBBBBBBBBBBBBBBBBBB {
-
 	function f1() external view returns (uint);
 }
 interface I4BBBBBBBBBBBBBBBBBBBBBBBBBBBBB is I4BBBBBBBBBBBBBBBBBBBBBBBBBBBBBB, I4BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB {
-
 	function f0() override
 	external view returns (uint);
 	function f1() override
 	external view returns (uint);
 }
 interface I4BBBBBBBBBBBBBBBBBBBBBBBBBBBB is I4BBBBBBBBBBBBBBBBBBBBBBBBBBB, I4BBBBBBBBBBBBBBBBBBBBBBBBBBBBB {
-
 	function f0() override(I4BBBBBBBBBBBBBBBBBBBBBBBBBBB, I4BBBBBBBBBBBBBBBBBBBBBBBBBBBBB)
 	external view returns (uint);
 	function f1() override(I4BBBBBBBBBBBBBBBBBBBBBBBBBBB, I4BBBBBBBBBBBBBBBBBBBBBBBBBBBBB)
 	external view returns (uint);
 }
 interface I4BBBBBBBBBBBBBBBBBBBBBBB is I4BBBBBBBBBBBBBBBBBBBBBBBB, I4BBBBBBBBBBBBBBBBBBBBBBBBB, I4BBBBBBBBBBBBBBBBBBBBBBBBBBB, I4BBBBBBBBBBBBBBBBBBBBBBBBBBBB {
-
 	function f0() override(I4BBBBBBBBBBBBBBBBBBBBBBBB, I4BBBBBBBBBBBBBBBBBBBBBBBBB, I4BBBBBBBBBBBBBBBBBBBBBBBBBBB, I4BBBBBBBBBBBBBBBBBBBBBBBBBBBB)
 	external view returns (uint);
 	function f1() override(I4BBBBBBBBBBBBBBBBBBBBBBBBBBB, I4BBBBBBBBBBBBBBBBBBBBBBBBBBBB)
 	external view returns (uint);
 }
 interface I4BBBBBBBBBBBBBBBBBBBBBB is I4B, I4BBBBBBBBBBBBBBBBBBBBBBB {
-
 	function f0() override(I4B, I4BBBBBBBBBBBBBBBBBBBBBBB)
 	external view returns (uint);
 	function f1() override(I4BB, I4BBBBBBBBBBBBBBBBBBBBBBB)
 	external view returns (uint);
 }
-
-
-
 interface I4BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB {
-
 	function f0() external view returns (uint);
 }
-
-
-
-
-
 interface I4BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB {
-
 }
-
 interface I4BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB is I4BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB {
-
 	function f0() external view returns (uint);
 }
 interface I4BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB is I4BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB, I4BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB {
-
 	function f0() override
 	external view returns (uint);
 }
 interface I4BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB is I4BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB {
-
 	function f0() override
 	external view returns (uint);
 }
 interface I4BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB is I4BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB {
-
 	function f0() override
 	external view returns (uint);
 }
 interface I4BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB is I4BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB, I4BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB {
-
 	function f0() override(I4BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB, I4BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB)
 	external view returns (uint);
 }
-
 interface I4BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB is I4BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB {
-
 	function f1() external view returns (uint);
 }
-
-
-
 interface I4BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB {
-
 	function f0() external view returns (uint);
 }
-
-
 interface I4BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB {
-
 }
 interface I4BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB is I4BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB, I4BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB {
-
 	function f0() override
 	external view returns (uint);
 }
-
 interface I4BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB is I4BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB {
-
 	function f0() override
 	external view returns (uint);
 	function f1() external view returns (uint);
 }
-
-
-
 interface I4BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB {
-
 	function f0() external view returns (uint);
 }
-
 interface I4BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB is I4BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB {
-
 	function f1() external view returns (uint);
 }
 interface I4BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB is I4BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB, I4BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB {
-
 	function f0() override
 	external view returns (uint);
 }
 interface I4BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB is I4BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB, I4BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB {
-
 	function f0() override(I4BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB, I4BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB)
 	external view returns (uint);
 	function f1() override
 	external view returns (uint);
 }
 interface I4BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB is I4BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB, I4BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB, I4BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB, I4BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB {
-
 	function f0() override(I4BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB, I4BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB, I4BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB, I4BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB)
 	external view returns (uint);
 	function f1() override(I4BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB, I4BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB)
 	external view returns (uint);
 }
 interface I4BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB is I4BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB, I4BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB {
-
 	function f0() override(I4BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB, I4BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB)
 	external view returns (uint);
 	function f1() override
 	external view returns (uint);
 }
 interface I4BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB is I4BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB, I4BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB, I4BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB, I4BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB {
-
 	function f0() override(I4BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB, I4BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB, I4BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB)
 	external view returns (uint);
 	function f1() override(I4BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB, I4BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB)
 	external view returns (uint);
 }
 interface I4BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB is I4B, I4BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB {
-
 	function f0() override(I4B, I4BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB)
 	external view returns (uint);
 	function f1() override(I4BB, I4BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB)
 	external view returns (uint);
 }
-
 interface I4BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB is I4BBBBBBBBBBBBBBBBBBBBB {
-
 	function f0() override
 	external view returns (uint);
 }
 interface I4 is I4B, I4BBBBBBBBBBBBBBBBBBBBB, I4BBBBBBBBBBBBBBBBBBBBBB, I4BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB, I4BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB {
-
 	function f0() override(I4B, I4BBBBBBBBBBBBBBBBBBBBB, I4BBBBBBBBBBBBBBBBBBBBBB, I4BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB, I4BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB)
 	external view returns (uint);
 	function f1() override(I4BB, I4BBBBBBBBBBBBBBBBBBBBBB, I4BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB)
 	external view returns (uint);
 }
 library L5 {
-
 	function f0(uint) internal view returns (uint)
 	{
 		return 278722862;
 	}
 }
-
-
 contract C {
 	using L2 for uint;
 	function test() public returns (uint)
@@ -386,4 +261,3 @@ contract C {
 		return 0;
 	}
 }
-

@@ -1,48 +1,22 @@
-
 pragma solidity >=0.0;
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 interface C0BBBBBBBBBBBBBBB {
-
 	function f0() external payable returns (uint);
 }
 interface C0BBBBBBBBBBBBBB is C0BBBBBBBBBBBBBBB {
-
 	function f1() external pure returns (uint);
 	function f2() external view returns (uint);
 }
 interface C0BBBBBBBBBBBBB is C0BBBBBBBBBBBBBB {
-
 	function f0() override
 	external payable returns (uint);
 	function f3() external payable returns (uint);
 	function f4() external payable returns (uint);
 }
 interface C0BBBBBBBBBBBB is C0BBBBBBBBBBBBB {
-
 }
 interface C0BBBBBBBBBBB is C0BBBBBBBBBBBB {
-
 }
-
 interface C0BBBBBBBBBBBBBBBB is C0BBBBBBBBBBBB {
-
 	function f2() override
 	external view returns (uint);
 	function f4() override
@@ -50,7 +24,6 @@ interface C0BBBBBBBBBBBBBBBB is C0BBBBBBBBBBBB {
 	function f5() external payable returns (uint);
 }
 interface C0BBBBBBBBBB is C0BBBBBBBBBBB, C0BBBBBBBBBBBBBBBB {
-
 	function f1() override
 	external pure returns (uint);
 	function f2() override(C0BBBBBBBBBBBBBB, C0BBBBBBBBBBBBBBBB)
@@ -64,7 +37,6 @@ interface C0BBBBBBBBBB is C0BBBBBBBBBBB, C0BBBBBBBBBBBBBBBB {
 	function f6() external payable returns (uint);
 }
 interface C0BBBBBBBBB is C0BBBBBBBBBB {
-
 	function f2() override
 	external view returns (uint);
 	function f4() override
@@ -73,14 +45,12 @@ interface C0BBBBBBBBB is C0BBBBBBBBBB {
 	external payable returns (uint);
 }
 interface C0BBBBBBBB is C0BBBBBBBBB {
-
 	function f3() override
 	external payable returns (uint);
 	function f4() override
 	external payable returns (uint);
 }
 interface C0BBBBBBB is C0BBBBBBBB {
-
 	function f2() override
 	external view returns (uint);
 	function f4() override
@@ -91,7 +61,6 @@ interface C0BBBBBBB is C0BBBBBBBB {
 	function f8() external payable returns (uint);
 }
 interface C0BBBBBB is C0BBBBBBB {
-
 	function f1() override
 	external pure returns (uint);
 	function f3() override
@@ -100,7 +69,6 @@ interface C0BBBBBB is C0BBBBBBB {
 	external payable returns (uint);
 }
 interface C0BBBBB is C0BBBBBB {
-
 	function f1() override
 	external pure returns (uint);
 	function f3() override
@@ -112,9 +80,7 @@ interface C0BBBBB is C0BBBBBB {
 	function f8() override
 	external payable returns (uint);
 }
-
 interface C0BBBBBBBBBBBBBBBBB is C0BBBBB {
-
 	function f2() override
 	external view returns (uint);
 	function f4() override
@@ -126,7 +92,6 @@ interface C0BBBBBBBBBBBBBBBBB is C0BBBBB {
 	function f9() external payable returns (uint);
 }
 interface C0BBBB is C0BBBBB, C0BBBBBBBBBBBBBBBBB {
-
 	function f0() override
 	external payable returns (uint);
 	function f1() override
@@ -146,7 +111,6 @@ interface C0BBBB is C0BBBBB, C0BBBBBBBBBBBBBBBBB {
 	function f10() external pure returns (uint);
 }
 interface C0BBB is C0BBBB {
-
 	function f1() override
 	external pure returns (uint);
 	function f2() override
@@ -161,7 +125,6 @@ interface C0BBB is C0BBBB {
 	external payable returns (uint);
 }
 interface C0BB is C0BBB {
-
 	function f3() override
 	external payable returns (uint);
 	function f4() override
@@ -170,7 +133,6 @@ interface C0BB is C0BBB {
 	external payable returns (uint);
 }
 abstract contract C0B is C0BB {
-
 	function f0() virtual external payable
 	override
 	returns (uint);
@@ -220,9 +182,7 @@ abstract contract C0B is C0BB {
 		return 1291602570;
 	}
 }
-
 interface C0BBBBBBBBBBBBBBBBBB is C0BB {
-
 	function f1() override
 	external pure returns (uint);
 	function f2() override
@@ -235,7 +195,6 @@ interface C0BBBBBBBBBBBBBBBBBB is C0BB {
 	external payable returns (uint);
 }
 contract C0 is C0B, C0BBBBBBBBBBBBBBBBBB {
-
 	function f0() external payable
 	override(C0B, C0BBBB)
 	returns (uint)
@@ -309,17 +268,11 @@ contract C0 is C0B, C0BBBBBBBBBBBBBBBBBB {
 		return 436238233;
 	}
 }
-
-
-
 interface C1BB {
-
 }
 interface C1B is C1BB {
-
 }
 contract C1 is C1B {
-
 	function f0() public view
 	
 	returns (uint)
@@ -327,8 +280,6 @@ contract C1 is C1B {
 		return 777426967;
 	}
 }
-
-
 contract C {
 	function test() public returns (uint)
 	{
@@ -363,4 +314,3 @@ contract C {
 			return 0;
 	}
 }
-

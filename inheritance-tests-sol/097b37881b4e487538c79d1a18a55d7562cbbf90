@@ -1,11 +1,5 @@
-
 pragma solidity >=0.0;
-
-
-
-
 contract C0B {
-
 	function f0() public view
 	
 	returns (uint)
@@ -13,9 +7,7 @@ contract C0B {
 		return 5889062;
 	}
 }
-
 contract C0BB is C0B {
-
 	function f1() public view
 	
 	returns (uint)
@@ -24,7 +16,6 @@ contract C0BB is C0B {
 	}
 }
 contract C0 is C0B, C0BB {
-
 	function f2() public pure
 	
 	returns (uint)
@@ -33,7 +24,6 @@ contract C0 is C0B, C0BB {
 	}
 }
 library L1 {
-
 	function f0(uint) public pure returns (uint)
 	{
 		return 846930886;
@@ -79,8 +69,6 @@ library L1 {
 		return 1350490027;
 	}
 }
-
-
 contract C {
 	using L1 for uint;
 	function test() public returns (uint)
@@ -91,4 +79,3 @@ contract C {
 		return 0;
 	}
 }
-

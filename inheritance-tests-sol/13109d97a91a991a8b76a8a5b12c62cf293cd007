@@ -1,41 +1,26 @@
-
 pragma solidity >=0.0;
-
-
 library L1 {
-
 	function f0(uint) private pure returns (uint)
 	{
 		return 846930886;
 	}
 }
-
-
 interface I3B {
-
 	function f0() external pure returns (uint);
 }
-
 interface I3BB is I3B {
-
 	function f1() external payable returns (uint);
 }
-
 interface I3BBB is I3BB {
-
 	function f2() external view returns (uint);
 }
 interface I3 is I3B, I3BB, I3BBB {
-
 	function f2() override
 	external view returns (uint);
 }
-
-
 contract C {
 	function test() public returns (uint)
 	{
 		return 0;
 	}
 }
-

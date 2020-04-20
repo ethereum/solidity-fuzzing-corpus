@@ -1,32 +1,21 @@
-
 pragma solidity >=0.0;
-
-
 library L0 {
-
 	function f0(uint) internal pure returns (uint)
 	{
 		return 1804289383;
 	}
 }
-
-
-
 interface I1BB {
-
 	function f0() external payable returns (uint);
 }
 interface I1B is I1BB {
-
 	function f1() external payable returns (uint);
 }
 interface I1 is I1B {
-
 	function f0() override
 	external payable returns (uint);
 }
 library L2 {
-
 	function f0(uint) public view returns (uint)
 	{
 		return 846930886;
@@ -37,15 +26,12 @@ library L2 {
 	}
 }
 library L3 {
-
 	function f0(uint) private pure returns (uint)
 	{
 		return 1714636915;
 	}
 }
-
 contract C4 {
-
 	function f0() public payable
 	
 	returns (uint)
@@ -53,37 +39,22 @@ contract C4 {
 		return 407355683;
 	}
 }
-
-
-
-
-
-
-
-
-
 interface C5BBBBBBBB {
-
 	function f0() external payable returns (uint);
 	function f1() external pure returns (uint);
 	function f2() external payable returns (uint);
 }
 interface C5BBBBBBB is C5BBBBBBBB {
-
 }
 interface C5BBBBBB is C5BBBBBBB {
-
 	function f3() external view returns (uint);
 	function f4() external view returns (uint);
 }
 interface C5BBBBB is C5BBBBBB {
-
 	function f3() override
 	external view returns (uint);
 }
-
 interface C5BBBBBBBBB is C5BBBBBB {
-
 	function f0() override
 	external payable returns (uint);
 	function f2() override
@@ -91,7 +62,6 @@ interface C5BBBBBBBBB is C5BBBBBB {
 	function f5() external view returns (uint);
 }
 interface C5BBBB is C5BBBBB, C5BBBBBBBBB {
-
 	function f0() override(C5BBBBBBBB, C5BBBBBBBBB)
 	external payable returns (uint);
 	function f1() override
@@ -104,7 +74,6 @@ interface C5BBBB is C5BBBBB, C5BBBBBBBBB {
 	external view returns (uint);
 }
 contract C5BBB is C5BBBB {
-
 	function f0() external payable
 	override
 	returns (uint)
@@ -143,7 +112,6 @@ contract C5BBB is C5BBBB {
 	}
 }
 contract C5BB is C5BBB {
-
 	function f3() external view
 	override
 	returns (uint)
@@ -158,7 +126,6 @@ contract C5BB is C5BBB {
 	}
 }
 contract C5B is C5BB {
-
 	function f2() external payable
 	override
 	returns (uint)
@@ -167,12 +134,8 @@ contract C5B is C5BB {
 	}
 }
 contract C5 is C5B {
-
 }
-
-
 contract C6B {
-
 	function f0() public view
 	
 	returns (uint)
@@ -181,46 +144,28 @@ contract C6B {
 	}
 }
 abstract contract C6 is C6B {
-
 }
-
-
-
-
-
-
-
-
-
-
 interface C7BBBBBBBBB {
-
 	function f0() external payable returns (uint);
 }
 interface C7BBBBBBBB is C7BBBBBBBBB {
-
 	function f0() override
 	external payable returns (uint);
 	function f1() external payable returns (uint);
 }
 interface C7BBBBBBB is C7BBBBBBBB {
-
 }
 interface C7BBBBBB is C7BBBBBBB {
-
 	function f2() external view returns (uint);
 	function f3() external view returns (uint);
 }
 interface C7BBBBB is C7BBBBBB {
-
 	function f0() override
 	external payable returns (uint);
 	function f2() override
 	external view returns (uint);
 }
-
 interface C7BBBBBBBBBB is C7BBBBBB {
-
 	function f0() override
 	external payable returns (uint);
 	function f1() override
@@ -232,7 +177,6 @@ interface C7BBBBBBBBBB is C7BBBBBB {
 	function f4() external view returns (uint);
 }
 interface C7BBBB is C7BBBBB, C7BBBBBBBBBB {
-
 	function f0() override(C7BBBBB, C7BBBBBBBBBB)
 	external payable returns (uint);
 	function f1() override(C7BBBBBBBB, C7BBBBBBBBBB)
@@ -243,7 +187,6 @@ interface C7BBBB is C7BBBBB, C7BBBBBBBBBB {
 	external view returns (uint);
 }
 contract C7BBB is C7BBBB {
-
 	function f0() external payable
 	override
 	returns (uint)
@@ -276,10 +219,8 @@ contract C7BBB is C7BBBB {
 	}
 }
 contract C7BB is C7BBB {
-
 }
 contract C7B is C7BB {
-
 	function f4() external view
 	override
 	returns (uint)
@@ -288,23 +229,16 @@ contract C7B is C7BB {
 	}
 }
 contract C7 is C7B {
-
 }
-
-
 interface C8B {
-
 	function f0() external view returns (uint);
 }
-
 interface C8BB is C8B {
-
 	function f0() override
 	external view returns (uint);
 	function f1() external view returns (uint);
 }
 contract C8 is C8B, C8BB {
-
 	function f0() external view
 	override(C8BB, C8B)
 	returns (uint)
@@ -324,8 +258,6 @@ contract C8 is C8B, C8BB {
 		return 1358404307;
 	}
 }
-
-
 contract C {
 	function test() public returns (uint)
 	{
@@ -441,4 +373,3 @@ contract C {
 			return 0;
 	}
 }
-

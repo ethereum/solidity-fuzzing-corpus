@@ -1,16 +1,11 @@
-
 pragma solidity >=0.0;
-
-
 library L0 {
-
 	function f0(uint) internal view returns (uint)
 	{
 		return 1804289383;
 	}
 }
 library L1 {
-
 	function f0(uint) public view returns (uint)
 	{
 		return 846930886;
@@ -20,62 +15,40 @@ library L1 {
 		return 1681692777;
 	}
 }
-
-
-
 interface I3BB {
-
 	function f0() external view returns (uint);
 }
 interface I3B is I3BB {
-
 	function f0() override
 	external view returns (uint);
 }
 interface I3 is I3B {
-
 }
-
-
 interface I5B {
-
 	function f0() external view returns (uint);
 }
-
 interface I5BB is I5B {
-
 	function f1() external view returns (uint);
 }
 interface I5 is I5B, I5BB {
-
 }
-
-
-
 interface I6BB {
-
 	function f0() external payable returns (uint);
 }
 interface I6B is I6BB {
-
 }
 interface I6 is I6B {
-
 }
-
 interface I7 {
-
 	function f0() external view returns (uint);
 }
 library L8 {
-
 	function f0(uint) internal pure returns (uint)
 	{
 		return 1957747793;
 	}
 }
 library L9 {
-
 	function f0(uint) internal view returns (uint)
 	{
 		return 424238335;
@@ -86,37 +59,28 @@ library L9 {
 	}
 }
 library L11 {
-
 	function f0(uint) internal pure returns (uint)
 	{
 		return 596516649;
 	}
 }
 library L12 {
-
 	function f0(uint) internal view returns (uint)
 	{
 		return 1189641421;
 	}
 }
-
-
-
 interface I14BB {
-
 	function f0() external view returns (uint);
 }
 interface I14B is I14BB {
-
 	function f1() external payable returns (uint);
 }
 interface I14 is I14B {
-
 	function f0() override
 	external view returns (uint);
 }
 library L15 {
-
 	function f0(uint) private view returns (uint)
 	{
 		return 1025202362;
@@ -131,14 +95,11 @@ library L15 {
 	}
 }
 library L16 {
-
 	function f0(uint) internal pure returns (uint)
 	{
 		return 1102520059;
 	}
 }
-
-
 contract C {
 	using L1 for uint;
 	function test() public returns (uint)
@@ -149,4 +110,3 @@ contract C {
 		return 0;
 	}
 }
-

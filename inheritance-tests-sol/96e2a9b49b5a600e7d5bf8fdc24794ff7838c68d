@@ -1,51 +1,29 @@
-
 pragma solidity >=0.0;
-
-
-
-
-
-
-
-
-
-
-
-
 interface C0BBBBBBBBB {
-
 	function f0() external payable returns (uint);
 	function f1() external pure returns (uint);
 }
 interface C0BBBBBBBB is C0BBBBBBBBB {
-
 	function f1() override
 	external pure returns (uint);
 }
-
 interface C0BBBBBBBBBB is C0BBBBBBBBB {
-
 	function f2() external payable returns (uint);
 }
 interface C0BBBBBBB is C0BBBBBBBB, C0BBBBBBBBBB {
-
 	function f1() override(C0BBBBBBBB, C0BBBBBBBBB)
 	external pure returns (uint);
 	function f3() external view returns (uint);
 	function f4() external view returns (uint);
 }
 interface C0BBBBBB is C0BBBBBBB {
-
 }
-
 interface C0BBBBBBBBBBB is C0BBBBBB {
-
 	function f2() override
 	external payable returns (uint);
 	function f5() external view returns (uint);
 }
 interface C0BBBBB is C0BBBBBB, C0BBBBBBBBBBB {
-
 	function f1() override
 	external pure returns (uint);
 	function f2() override(C0BBBBBBBBBB, C0BBBBBBBBBBB)
@@ -55,7 +33,6 @@ interface C0BBBBB is C0BBBBBB, C0BBBBBBBBBBB {
 	function f6() external view returns (uint);
 }
 contract C0BBBB is C0BBBBB {
-
 	function f0() virtual external payable
 	override
 	returns (uint)
@@ -100,7 +77,6 @@ contract C0BBBB is C0BBBBB {
 	}
 }
 contract C0BBB is C0BBBB {
-
 	function f3() external view
 	override
 	returns (uint)
@@ -109,7 +85,6 @@ contract C0BBB is C0BBBB {
 	}
 }
 contract C0BB is C0BBB {
-
 	function f2() external payable
 	override
 	returns (uint)
@@ -118,29 +93,17 @@ contract C0BB is C0BBB {
 	}
 }
 contract C0B is C0BB {
-
 }
-
 contract C0BBBBBBBBBBBB is C0BB {
-
 }
 contract C0 is C0B, C0BBBBBBBBBBBB {
-
 }
-
-
-
-
-
 interface C1BBBB {
-
 	function f0() external payable returns (uint);
 }
 interface C1BBB is C1BBBB {
-
 }
 contract C1BB is C1BBB {
-
 	function f0() virtual external payable
 	override
 	returns (uint)
@@ -161,14 +124,10 @@ contract C1BB is C1BBB {
 	}
 }
 contract C1B is C1BB {
-
 }
-
 contract C1BBBBB is C1BB {
-
 }
 contract C1 is C1B, C1BBBBB {
-
 	function f0() virtual external payable
 	override
 	returns (uint)
@@ -182,20 +141,12 @@ contract C1 is C1B, C1BBBBB {
 		return 1243427070;
 	}
 }
-
-
-
-
-
 interface C2BBBB {
-
 	function f0() external payable returns (uint);
 }
 interface C2BBB is C2BBBB {
-
 }
 contract C2BB is C2BBB {
-
 	function f0() virtual external payable
 	override
 	returns (uint)
@@ -216,14 +167,10 @@ contract C2BB is C2BBB {
 	}
 }
 contract C2B is C2BB {
-
 }
-
 contract C2BBBBB is C2BB {
-
 }
 contract C2 is C2B, C2BBBBB {
-
 	function f0() virtual external payable
 	override
 	returns (uint)
@@ -238,7 +185,6 @@ contract C2 is C2B, C2BBBBB {
 	}
 }
 library L3 {
-
 	function f0(uint) public view returns (uint)
 	{
 		return 424238335;
@@ -248,8 +194,6 @@ library L3 {
 		return 719885386;
 	}
 }
-
-
 contract C {
 	using L3 for uint;
 	function test() public returns (uint)
@@ -260,4 +204,3 @@ contract C {
 		return 0;
 	}
 }
-

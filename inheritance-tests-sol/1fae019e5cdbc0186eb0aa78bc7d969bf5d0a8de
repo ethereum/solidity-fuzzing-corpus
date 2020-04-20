@@ -1,37 +1,23 @@
-
 pragma solidity >=0.0;
-
-
 library L0 {
-
 	function f0(uint) private pure returns (uint)
 	{
 		return 1804289383;
 	}
 }
-
-
-
 interface C1BB {
-
 	function f0() external view returns (uint);
 }
 interface C1B is C1BB {
-
 }
-
-
 interface C1BBBB {
-
 	function f0() external view returns (uint);
 }
 interface C1BBB is C1B, C1BBBB {
-
 	function f0() override(C1BB, C1BBBB)
 	external view returns (uint);
 }
 contract C1 is C1B, C1BBB {
-
 	function f0() external view
 	override(C1BBB, C1BB)
 	returns (uint)
@@ -39,36 +25,22 @@ contract C1 is C1B, C1BBB {
 		return 2078669041;
 	}
 }
-
-
-
-
 interface I2BBB {
-
 	function f0() external payable returns (uint);
 }
 interface I2BB is I2BBB {
-
 }
 interface I2B is I2BB {
-
 }
 interface I2 is I2B {
-
 }
 library L3 {
-
 	function f0(uint) private pure returns (uint)
 	{
 		return 1681692777;
 	}
 }
-
-
-
-
 contract C4BBB {
-
 	function f0() external pure
 	
 	returns (uint)
@@ -77,16 +49,11 @@ contract C4BBB {
 	}
 }
 contract C4BB is C4BBB {
-
 }
 contract C4B is C4BB {
-
 }
 contract C4 is C4B {
-
 }
-
-
 contract C {
 	function test() public returns (uint)
 	{
@@ -108,4 +75,3 @@ contract C {
 			return 0;
 	}
 }
-

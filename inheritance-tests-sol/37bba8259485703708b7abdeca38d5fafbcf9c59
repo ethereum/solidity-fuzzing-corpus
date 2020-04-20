@@ -1,11 +1,5 @@
-
 pragma solidity >=0.0;
-
-
-
-
 contract C0B {
-
 	function f0() public view
 	
 	returns (uint)
@@ -14,13 +8,8 @@ contract C0B {
 	}
 }
 contract C0 is C0B {
-
 }
-
-
-
 abstract contract C3BB {
-
 	function f0() virtual public view
 	
 	returns (uint)
@@ -29,7 +18,6 @@ abstract contract C3BB {
 	}
 }
 abstract contract C3B is C3BB {
-
 	function f0() virtual public view
 	override
 	returns (uint)
@@ -44,12 +32,8 @@ abstract contract C3B is C3BB {
 	}
 }
 contract C3 is C3B {
-
 }
-
-
 abstract contract C4B {
-
 	function f0() virtual public view
 	
 	returns (uint)
@@ -58,7 +42,6 @@ abstract contract C4B {
 	}
 }
 contract C4 is C4B {
-
 	function f0() public view
 	override
 	returns (uint)
@@ -66,27 +49,17 @@ contract C4 is C4B {
 		return 1595228506;
 	}
 }
-
-
-
 interface I5BB {
-
 	function f0() external view returns (uint);
 }
 interface I5B is I5BB {
-
 	function f1() external payable returns (uint);
 }
 interface I5 is I5B {
-
 	function f0() override
 	external view returns (uint);
 }
-
-
-
 abstract contract C6BB {
-
 	function f0() virtual public view
 	
 	returns (uint)
@@ -95,7 +68,6 @@ abstract contract C6BB {
 	}
 }
 abstract contract C6B is C6BB {
-
 	function f0() virtual public view
 	override
 	returns (uint)
@@ -107,7 +79,6 @@ abstract contract C6B is C6BB {
 	returns (uint);
 }
 contract C6 is C6B {
-
 	function f1() virtual public payable
 	override
 	returns (uint)
@@ -115,12 +86,9 @@ contract C6 is C6B {
 		return 968195138;
 	}
 }
-
-
 contract C {
 	function test() public returns (uint)
 	{
 		return 0;
 	}
 }
-

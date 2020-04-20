@@ -1,20 +1,5 @@
-
 pragma solidity >=0.0;
-
-
-
-
-
-
-
-
-
-
-
-
-
 contract C0BBBBBBBBBB {
-
 	function f0() virtual public pure
 	
 	returns (uint)
@@ -23,7 +8,6 @@ contract C0BBBBBBBBBB {
 	}
 }
 contract C0BBBBBBBBB is C0BBBBBBBBBB {
-
 	function f0() public pure
 	override
 	returns (uint)
@@ -32,44 +16,28 @@ contract C0BBBBBBBBB is C0BBBBBBBBBB {
 	}
 }
 contract C0BBBBBBBB is C0BBBBBBBBB {
-
 }
 contract C0BBBBBBB is C0BBBBBBBB {
-
 }
 contract C0BBBBBB is C0BBBBBBB {
-
 }
 contract C0BBBBB is C0BBBBBB {
-
 }
 contract C0BBBB is C0BBBBB {
-
 }
 contract C0BBB is C0BBBB {
-
 }
 contract C0BB is C0BBB {
-
 }
 contract C0B is C0BB {
-
 }
 contract C0 is C0B {
-
 }
-
-
 interface I1B {
-
 }
 interface I1 is I1B {
-
 }
-
-
 contract C2B {
-
 	function f0() public view
 	
 	returns (uint)
@@ -83,9 +51,7 @@ contract C2B {
 		return 769429449;
 	}
 }
-
 contract C2BB is C2B {
-
 	function f2() public view
 	
 	returns (uint)
@@ -99,27 +65,17 @@ contract C2BB is C2B {
 		return 1055691416;
 	}
 }
-
 contract C2BBB is C2BB {
-
 }
-
 contract C2BBBB is C2B {
-
 }
-
 contract C2BBBBB is C2BBBB {
-
 }
-
 contract C2BBBBBB is C2BBBB {
-
 }
 abstract contract C2 is C2B, C2BB, C2BBB, C2BBBB, C2BBBBB, C2BBBBBB {
-
 }
 library L3 {
-
 	function f0(uint) public pure returns (uint)
 	{
 		return 424238335;
@@ -129,10 +85,7 @@ library L3 {
 		return 719885386;
 	}
 }
-
-
 contract C4B {
-
 	function f0() public view
 	
 	returns (uint)
@@ -146,9 +99,7 @@ contract C4B {
 		return 1943064494;
 	}
 }
-
 contract C4BB is C4B {
-
 	function f2() public view
 	
 	returns (uint)
@@ -162,27 +113,16 @@ contract C4BB is C4B {
 		return 1650497032;
 	}
 }
-
 contract C4BBB is C4B {
-
 }
-
 contract C4BBBB is C4BB {
-
 }
-
 contract C4BBBBB is C4B {
-
 }
-
 contract C4BBBBBB is C4B {
-
 }
 abstract contract C4 is C4B, C4BB, C4BBB, C4BBBB, C4BBBBB, C4BBBBBB {
-
 }
-
-
 contract C {
 	using L3 for uint;
 	function test() public returns (uint)
@@ -193,4 +133,3 @@ contract C {
 		return 0;
 	}
 }
-

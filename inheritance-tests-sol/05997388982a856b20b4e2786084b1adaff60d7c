@@ -1,10 +1,5 @@
-
 pragma solidity >=0.0;
-
-
-
 contract C0 {
-
 	function f0() public payable
 	
 	returns (uint)
@@ -19,14 +14,11 @@ contract C0 {
 	}
 }
 library L2 {
-
 	function f0(uint) external pure returns (uint)
 	{
 		return 846930886;
 	}
 }
-
-
 contract C {
 	using L2 for uint;
 	function test() public returns (uint)
@@ -37,4 +29,3 @@ contract C {
 		return 0;
 	}
 }
-

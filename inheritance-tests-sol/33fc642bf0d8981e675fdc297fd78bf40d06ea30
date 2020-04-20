@@ -1,28 +1,14 @@
-
 pragma solidity >=0.0;
-
-
-
-
-
 contract C0BB {
-
 }
-
 contract C0BBB is C0BB {
-
 }
-
-
 interface C0BBBBB {
-
 	function f0() external view returns (uint);
 }
 interface C0BBBB is C0BBBBB {
-
 }
 contract C0B is C0BB, C0BBB, C0BBBB {
-
 	function f0() external view
 	override
 	returns (uint)
@@ -31,10 +17,7 @@ contract C0B is C0BB, C0BBB, C0BBBB {
 	}
 }
 contract C0 is C0B {
-
 }
-
-
 contract C {
 	function test() public returns (uint)
 	{
@@ -47,4 +30,3 @@ contract C {
 			return 0;
 	}
 }
-

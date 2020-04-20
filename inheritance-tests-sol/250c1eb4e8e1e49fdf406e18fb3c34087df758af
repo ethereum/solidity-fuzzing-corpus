@@ -1,16 +1,11 @@
-
 pragma solidity >=0.0;
-
-
 library L0 {
-
 	function f0(uint) public view returns (uint)
 	{
 		return 1804289383;
 	}
 }
 library L1 {
-
 	function f0(uint) private pure returns (uint)
 	{
 		return 846930886;
@@ -25,21 +20,18 @@ library L1 {
 	}
 }
 library L2 {
-
 	function f0(uint) private pure returns (uint)
 	{
 		return 1957747793;
 	}
 }
 library L3 {
-
 	function f0(uint) internal pure returns (uint)
 	{
 		return 424238335;
 	}
 }
 library L4 {
-
 	function f0(uint) external pure returns (uint)
 	{
 		return 719885386;
@@ -50,14 +42,12 @@ library L4 {
 	}
 }
 library L5 {
-
 	function f0(uint) public view returns (uint)
 	{
 		return 596516649;
 	}
 }
 library L6 {
-
 	function f0(uint) private pure returns (uint)
 	{
 		return 1189641421;
@@ -76,14 +66,11 @@ library L6 {
 	}
 }
 library L7 {
-
 	function f0(uint) internal pure returns (uint)
 	{
 		return 1102520059;
 	}
 }
-
-
 contract C {
 	using L4 for uint;
 	function test() public returns (uint)
@@ -94,4 +81,3 @@ contract C {
 		return 0;
 	}
 }
-

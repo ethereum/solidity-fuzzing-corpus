@@ -1,13 +1,5 @@
-
 pragma solidity >=0.0;
-
-
-
-
-
-
 contract C0BBB {
-
 	function f0() virtual public pure
 	
 	returns (uint)
@@ -16,7 +8,6 @@ contract C0BBB {
 	}
 }
 contract C0BB is C0BBB {
-
 	function f0() public pure
 	override
 	returns (uint)
@@ -25,10 +16,8 @@ contract C0BB is C0BBB {
 	}
 }
 contract C0B is C0BB {
-
 }
 contract C0 is C0B {
-
 	function f1() virtual public pure
 	
 	returns (uint)
@@ -42,13 +31,9 @@ contract C0 is C0B {
 		return 1196198554;
 	}
 }
-
-
 contract C1B {
-
 }
 contract C1 is C1B {
-
 	function f0() public view
 	
 	returns (uint)
@@ -56,30 +41,19 @@ contract C1 is C1B {
 		return 160099598;
 	}
 }
-
 interface I2 {
-
 	function f0() external view returns (uint);
 }
-
-
 interface I3B {
-
 	function f0() external view returns (uint);
 }
 interface I3 is I3B {
-
 	function f0() override
 	external view returns (uint);
 }
-
-
 contract C5B {
-
 }
-
 contract C5BB is C5B {
-
 	function f0() public view
 	
 	returns (uint)
@@ -88,41 +62,27 @@ contract C5BB is C5B {
 	}
 }
 contract C5 is C5B, C5BB {
-
 }
-
-
-
-
-
-
-
 interface C6BBBBBB {
-
 }
 interface C6BBBBB is C6BBBBBB {
-
 	function f0() external payable returns (uint);
 	function f1() external view returns (uint);
 }
 interface C6BBBB is C6BBBBB {
-
 	function f1() override
 	external view returns (uint);
 }
 interface C6BBB is C6BBBB {
-
 	function f2() external payable returns (uint);
 }
 interface C6BB is C6BBB {
-
 	function f1() override
 	external view returns (uint);
 	function f2() override
 	external payable returns (uint);
 }
 contract C6B is C6BB {
-
 	function f0() external payable
 	override
 	returns (uint)
@@ -143,7 +103,6 @@ contract C6B is C6BB {
 	}
 }
 contract C6 is C6B {
-
 	function f1() virtual external view
 	override
 	returns (uint)
@@ -151,12 +110,7 @@ contract C6 is C6B {
 		return 587750710;
 	}
 }
-
-
-
-
 contract C8BBB {
-
 	function f0() virtual public view
 	
 	returns (uint)
@@ -165,13 +119,10 @@ contract C8BBB {
 	}
 }
 contract C8BB is C8BBB {
-
 }
 contract C8B is C8BB {
-
 }
 contract C8 is C8B {
-
 	function f0() public view
 	override
 	returns (uint)
@@ -185,8 +136,6 @@ contract C8 is C8B {
 		return 420960538;
 	}
 }
-
-
 contract C {
 	function test() public returns (uint)
 	{
@@ -246,4 +195,3 @@ contract C {
 			return 0;
 	}
 }
-

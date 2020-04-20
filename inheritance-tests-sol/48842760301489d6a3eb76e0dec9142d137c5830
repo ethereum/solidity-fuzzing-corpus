@@ -1,11 +1,5 @@
-
 pragma solidity >=0.0;
-
-
-
-
 contract C0B {
-
 	function f0() public view
 	
 	returns (uint)
@@ -14,24 +8,15 @@ contract C0B {
 	}
 }
 contract C0 is C0B {
-
 }
-
-
-
-
-
 interface C1BBBB {
-
 	function f0() external payable returns (uint);
 }
 interface C1BBB is C1BBBB {
-
 	function f0() override
 	external payable returns (uint);
 }
 contract C1BB is C1BBB {
-
 	function f0() external payable
 	override
 	returns (uint)
@@ -40,10 +25,8 @@ contract C1BB is C1BBB {
 	}
 }
 contract C1B is C1BB {
-
 }
 contract C1 is C1B {
-
 	function f1() public view
 	
 	returns (uint)
@@ -51,9 +34,7 @@ contract C1 is C1B {
 		return 854716505;
 	}
 }
-
 contract C2 {
-
 	function f0() public view
 	
 	returns (uint)
@@ -61,9 +42,7 @@ contract C2 {
 		return 564586691;
 	}
 }
-
 contract C3 {
-
 	function f0() public view
 	
 	returns (uint)
@@ -71,26 +50,17 @@ contract C3 {
 		return 1596680831;
 	}
 }
-
-
-
 interface I5BB {
-
 	function f0() external view returns (uint);
 }
 interface I5B is I5BB {
-
 	function f1() external payable returns (uint);
 }
 interface I5 is I5B {
-
 	function f0() override
 	external view returns (uint);
 }
-
-
 contract C6B {
-
 	function f0() public view
 	
 	returns (uint)
@@ -99,11 +69,8 @@ contract C6B {
 	}
 }
 contract C6 is C6B {
-
 }
-
 contract C7 {
-
 	function f0() public view
 	
 	returns (uint)
@@ -112,26 +79,17 @@ contract C7 {
 	}
 }
 library L8 {
-
 	function f0(uint) internal pure returns (uint)
 	{
 		return 1804289383;
 	}
 }
-
-
-
-
-
 interface C9BBBB {
-
 	function f0() external payable returns (uint);
 }
 interface C9BBB is C9BBBB {
-
 }
 contract C9BB is C9BBB {
-
 	function f0() external payable
 	override
 	returns (uint)
@@ -140,10 +98,8 @@ contract C9BB is C9BBB {
 	}
 }
 abstract contract C9B is C9BB {
-
 }
 contract C9 is C9B {
-
 	function f1() public view
 	
 	returns (uint)
@@ -151,24 +107,15 @@ contract C9 is C9B {
 		return 1842513780;
 	}
 }
-
-
-
 interface I10BB {
-
 }
 interface I10B is I10BB {
-
 }
 interface I10 is I10B {
-
 }
-
-
 contract C {
 	function test() public returns (uint)
 	{
 		return 0;
 	}
 }
-

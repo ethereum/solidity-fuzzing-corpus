@@ -1,12 +1,5 @@
-
 pragma solidity >=0.0;
-
-
-
-
-
 abstract contract C0BB {
-
 	function f0() virtual public view
 	
 	returns (uint);
@@ -18,13 +11,11 @@ abstract contract C0BB {
 	}
 }
 abstract contract C0B is C0BB {
-
 	function f0() virtual public view
 	override
 	returns (uint);
 }
 contract C0 is C0B {
-
 	function f0() public view
 	override
 	returns (uint)
@@ -32,12 +23,9 @@ contract C0 is C0B {
 		return 854716505;
 	}
 }
-
-
 contract C {
 	function test() public returns (uint)
 	{
 		return 0;
 	}
 }
-

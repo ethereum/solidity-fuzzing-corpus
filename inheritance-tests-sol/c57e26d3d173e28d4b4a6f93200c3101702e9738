@@ -1,11 +1,5 @@
-
 pragma solidity >=0.0;
-
-
-
-
 contract C0B {
-
 	function f0() public view
 	
 	returns (uint)
@@ -14,10 +8,8 @@ contract C0B {
 	}
 }
 contract C0 is C0B {
-
 }
 library L1 {
-
 	function f0(uint) public view returns (uint)
 	{
 		return 1804289383;
@@ -27,9 +19,7 @@ library L1 {
 		return 846930886;
 	}
 }
-
 contract C2 {
-
 	function f0() public view
 	
 	returns (uint)
@@ -38,7 +28,6 @@ contract C2 {
 	}
 }
 library L3 {
-
 	function f0(uint) internal pure returns (uint)
 	{
 		return 1681692777;
@@ -52,10 +41,7 @@ library L3 {
 		return 1957747793;
 	}
 }
-
-
 contract C4B {
-
 	function f0() public view
 	
 	returns (uint)
@@ -64,19 +50,12 @@ contract C4B {
 	}
 }
 contract C4 is C4B {
-
 }
-
-
-
 contract C5BB {
-
 }
 contract C5B is C5BB {
-
 }
 contract C5 is C5B {
-
 	function f0() public view
 	
 	returns (uint)
@@ -84,9 +63,7 @@ contract C5 is C5B {
 		return 1277419665;
 	}
 }
-
 contract C6 {
-
 	function f0() public payable
 	
 	returns (uint)
@@ -94,25 +71,15 @@ contract C6 {
 		return 1626692904;
 	}
 }
-
-
-
-
-
-
-
 interface C7BBBBBB {
-
 	function f0() external payable returns (uint);
 	function f1() external payable returns (uint);
 }
 interface C7BBBBB is C7BBBBBB {
-
 	function f0() override
 	external payable returns (uint);
 }
 contract C7BBBB is C7BBBBB {
-
 	function f0() external payable
 	override
 	returns (uint)
@@ -127,16 +94,12 @@ contract C7BBBB is C7BBBBB {
 	}
 }
 contract C7BBB is C7BBBB {
-
 }
 contract C7BB is C7BBB {
-
 }
 contract C7B is C7BB {
-
 }
 contract C7 is C7B {
-
 	function f2() public payable
 	
 	returns (uint)
@@ -144,8 +107,6 @@ contract C7 is C7B {
 		return 1853505735;
 	}
 }
-
-
 contract C {
 	using L1 for uint;
 	function test() public returns (uint)
@@ -156,4 +117,3 @@ contract C {
 		return 0;
 	}
 }
-

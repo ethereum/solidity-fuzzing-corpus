@@ -1,13 +1,5 @@
-
 pragma solidity >=0.0;
-
-
-
-
-
-
 contract C0BBB {
-
 	function f0() public payable
 	
 	returns (uint)
@@ -22,21 +14,14 @@ contract C0BBB {
 	}
 }
 contract C0BB is C0BBB {
-
 }
 contract C0B is C0BB {
-
 }
 contract C0 is C0B {
-
 }
-
-
 contract C1B {
-
 }
 contract C1 is C1B {
-
 	function f0() public view
 	
 	returns (uint)
@@ -45,16 +30,12 @@ contract C1 is C1B {
 	}
 }
 library L2 {
-
 	function f0(uint) private pure returns (uint)
 	{
 		return 1804289383;
 	}
 }
-
-
 contract C3B {
-
 	function f0() public view
 	
 	returns (uint)
@@ -63,14 +44,8 @@ contract C3B {
 	}
 }
 contract C3 is C3B {
-
 }
-
-
-
-
 contract C4BBB {
-
 	function f0() virtual public pure
 	
 	returns (uint)
@@ -78,18 +53,13 @@ contract C4BBB {
 		return 1105902161;
 	}
 }
-
 contract C4BBBB is C4BBB {
-
 }
 contract C4BB is C4BBB, C4BBBB {
-
 }
 contract C4B is C4BB {
-
 }
 contract C4 is C4B {
-
 	function f1() virtual public pure
 	
 	returns (uint)
@@ -97,9 +67,7 @@ contract C4 is C4B {
 		return 1271135913;
 	}
 }
-
 contract C5 {
-
 	function f0() public view
 	
 	returns (uint)
@@ -107,12 +75,7 @@ contract C5 {
 		return 1098894339;
 	}
 }
-
-
-
-
 contract C6BBB {
-
 	function f0() external pure
 	
 	returns (uint)
@@ -121,16 +84,11 @@ contract C6BBB {
 	}
 }
 contract C6BB is C6BBB {
-
 }
 abstract contract C6B is C6BB {
-
 }
 contract C6 is C6B {
-
 }
-
-
 contract C {
 	function test() public returns (uint)
 	{
@@ -192,4 +150,3 @@ contract C {
 			return 0;
 	}
 }
-

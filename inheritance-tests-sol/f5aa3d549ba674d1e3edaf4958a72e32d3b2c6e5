@@ -1,36 +1,20 @@
-
 pragma solidity >=0.0;
-
-
-
-
-
-
-
-
-
-
-
 interface C1BBBBBBBB {
-
 	function f0() external payable returns (uint);
 	function f1() external pure returns (uint);
 }
 interface C1BBBBBBB is C1BBBBBBBB {
-
 	function f0() override
 	external payable returns (uint);
 	function f2() external payable returns (uint);
 }
 interface C1BBBBBB is C1BBBBBBB {
-
 	function f1() override
 	external pure returns (uint);
 	function f3() external view returns (uint);
 	function f4() external view returns (uint);
 }
 interface C1BBBBB is C1BBBBBB {
-
 	function f1() override
 	external pure returns (uint);
 	function f2() override
@@ -38,9 +22,7 @@ interface C1BBBBB is C1BBBBBB {
 	function f3() override
 	external view returns (uint);
 }
-
 interface C1BBBBBBBBB is C1BBBBBB {
-
 	function f0() override
 	external payable returns (uint);
 	function f1() override
@@ -52,7 +34,6 @@ interface C1BBBBBBBBB is C1BBBBBB {
 	function f5() external view returns (uint);
 }
 interface C1BBBB is C1BBBBB, C1BBBBBBBBB {
-
 	function f0() override(C1BBBBBBB, C1BBBBBBBBB)
 	external payable returns (uint);
 	function f1() override(C1BBBBB, C1BBBBBBBBB)
@@ -67,7 +48,6 @@ interface C1BBBB is C1BBBBB, C1BBBBBBBBB {
 	external view returns (uint);
 }
 contract C1BBB is C1BBBB {
-
 	function f0() external payable
 	override
 	returns (uint)
@@ -106,13 +86,10 @@ contract C1BBB is C1BBBB {
 	}
 }
 contract C1BB is C1BBB {
-
 }
 contract C1B is C1BB {
-
 }
 contract C1 is C1B {
-
 	function f1() external pure
 	override
 	returns (uint)
@@ -126,21 +103,15 @@ contract C1 is C1B {
 		return 88805914;
 	}
 }
-
-
 interface C2B {
-
 	function f0() external view returns (uint);
 }
-
 interface C2BB is C2B {
-
 	function f0() override
 	external view returns (uint);
 	function f1() external view returns (uint);
 }
 contract C2 is C2B, C2BB {
-
 	function f0() external view
 	override(C2BB, C2B)
 	returns (uint)
@@ -160,8 +131,6 @@ contract C2 is C2B, C2BB {
 		return 1617261148;
 	}
 }
-
-
 contract C {
 	function test() public returns (uint)
 	{
@@ -227,4 +196,3 @@ contract C {
 			return 0;
 	}
 }
-

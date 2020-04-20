@@ -1,9 +1,5 @@
-
 pragma solidity >=0.0;
-
-
 library L0 {
-
 	function f0(uint) internal view returns (uint)
 	{
 		return 1804289383;
@@ -74,7 +70,6 @@ library L0 {
 	}
 }
 library L1 {
-
 	function f0(uint) internal view returns (uint)
 	{
 		return 1540383426;
@@ -144,8 +139,6 @@ library L1 {
 		return 635723058;
 	}
 }
-
-
 contract C {
 	using L1 for uint;
 	function test() public returns (uint)
@@ -156,4 +149,3 @@ contract C {
 		return 0;
 	}
 }
-

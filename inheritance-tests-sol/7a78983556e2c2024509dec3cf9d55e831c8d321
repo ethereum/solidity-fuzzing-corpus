@@ -1,19 +1,10 @@
-
 pragma solidity >=0.0;
-
-
-
-
-
 interface C2BB {
-
 	function f0() external view returns (uint);
 }
 interface C2B is C2BB {
-
 }
 contract C2 is C2B {
-
 	function f0() virtual external view
 	override
 	returns (uint)
@@ -22,25 +13,20 @@ contract C2 is C2B {
 	}
 }
 library L5 {
-
 	function f0(uint) private pure returns (uint)
 	{
 		return 1681692777;
 	}
 }
 library L6 {
-
 	function f0(uint) private pure returns (uint)
 	{
 		return 1714636915;
 	}
 }
-
-
 contract C {
 	function test() public returns (uint)
 	{
 		return 0;
 	}
 }
-

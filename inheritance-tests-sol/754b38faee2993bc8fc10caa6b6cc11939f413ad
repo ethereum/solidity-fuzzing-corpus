@@ -1,12 +1,5 @@
-
 pragma solidity >=0.0;
-
-
-
-
-
 contract C0BB {
-
 	function f0() virtual public pure
 	
 	returns (uint)
@@ -15,7 +8,6 @@ contract C0BB {
 	}
 }
 contract C0B is C0BB {
-
 	function f0() public pure
 	override
 	returns (uint)
@@ -24,7 +16,6 @@ contract C0B is C0BB {
 	}
 }
 contract C0 is C0B {
-
 	function f1() virtual public pure
 	
 	returns (uint)
@@ -32,8 +23,6 @@ contract C0 is C0B {
 		return 2089172319;
 	}
 }
-
-
 contract C {
 	function test() public returns (uint)
 	{
@@ -51,4 +40,3 @@ contract C {
 			return 0;
 	}
 }
-

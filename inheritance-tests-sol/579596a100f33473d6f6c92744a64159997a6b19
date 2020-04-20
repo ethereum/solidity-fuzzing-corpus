@@ -1,35 +1,20 @@
-
 pragma solidity >=0.0;
-
-
-
-
-
-
-
-
 interface C0BBBBB {
-
 	function f0() external payable returns (uint);
 }
 interface C0BBBB is C0BBBBB {
-
 }
 interface C0BBB is C0BBBB {
-
 	function f0() override
 	external payable returns (uint);
 	function f1() external view returns (uint);
 	function f2() external view returns (uint);
 }
 interface C0BB is C0BBB {
-
 }
 interface C0B is C0BB {
-
 }
 contract C0 is C0B {
-
 	function f0() external payable
 	override
 	returns (uint)
@@ -49,34 +34,22 @@ contract C0 is C0B {
 		return 2136927794;
 	}
 }
-
-
-
-
-
-
 interface C1BBBBB {
-
 }
 interface C1BBBB is C1BBBBB {
-
 }
 interface C1BBB is C1BBBB {
-
 	function f0() external view returns (uint);
 }
 interface C1BB is C1BBB {
-
 	function f0() override
 	external view returns (uint);
 }
 interface C1B is C1BB {
-
 	function f0() override
 	external view returns (uint);
 }
 contract C1 is C1B {
-
 	function f0() external view
 	override
 	returns (uint)
@@ -84,30 +57,18 @@ contract C1 is C1B {
 		return 2064876628;
 	}
 }
-
-
-
-
-
-
 interface C2BBBBB {
-
 }
 interface C2BBBB is C2BBBBB {
-
 }
 interface C2BBB is C2BBBB {
-
 	function f0() external view returns (uint);
 }
 interface C2BB is C2BBB {
-
 }
 interface C2B is C2BB {
-
 }
 contract C2 is C2B {
-
 	function f0() external view
 	override
 	returns (uint)
@@ -115,40 +76,28 @@ contract C2 is C2B {
 		return 1105724094;
 	}
 }
-
-
-
-
-
-
 interface C3BBBBB {
-
 	function f0() external payable returns (uint);
 }
 interface C3BBBB is C3BBBBB {
-
 	function f0() override
 	external payable returns (uint);
 }
 interface C3BBB is C3BBBB {
-
 	function f0() override
 	external payable returns (uint);
 	function f1() external view returns (uint);
 	function f2() external view returns (uint);
 }
 interface C3BB is C3BBB {
-
 	function f2() override
 	external view returns (uint);
 }
 interface C3B is C3BB {
-
 	function f2() override
 	external view returns (uint);
 }
 contract C3 is C3B {
-
 	function f0() external payable
 	override
 	returns (uint)
@@ -168,12 +117,9 @@ contract C3 is C3B {
 		return 389431516;
 	}
 }
-
-
 contract C {
 	function test() public returns (uint)
 	{
 		return 0;
 	}
 }
-

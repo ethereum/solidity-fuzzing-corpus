@@ -1,10 +1,5 @@
-
 pragma solidity >=0.0;
-
-
-
 contract C0 {
-
 	function f0() public view
 	
 	returns (uint)
@@ -12,21 +7,14 @@ contract C0 {
 		return 1575004944;
 	}
 }
-
-
-
-
 interface C1BBB {
-
 	function f0() external payable returns (uint);
 }
 interface C1BB is C1BBB {
-
 	function f0() override
 	external payable returns (uint);
 }
 contract C1B is C1BB {
-
 	function f0() virtual external payable
 	override
 	returns (uint)
@@ -35,7 +23,6 @@ contract C1B is C1BB {
 	}
 }
 contract C1 is C1B {
-
 	function f0() external payable
 	override
 	returns (uint)
@@ -43,32 +30,20 @@ contract C1 is C1B {
 		return 317172907;
 	}
 }
-
-
 interface I3B {
-
 	function f0() external view returns (uint);
 }
-
-
-
 interface I3BBBB {
-
 }
 interface I3BBB is I3BBBB {
-
 }
 interface I3BB is I3B, I3BBB {
-
 }
 interface I3 is I3B, I3BB {
-
 	function f0() override
 	external view returns (uint);
 }
-
 contract C4 {
-
 	function f0() public view
 	
 	returns (uint)
@@ -76,11 +51,7 @@ contract C4 {
 		return 1640882073;
 	}
 }
-
-
-
 contract C6BB {
-
 	function f0() private pure
 	
 	returns (uint)
@@ -95,18 +66,12 @@ contract C6BB {
 	}
 }
 contract C6B is C6BB {
-
 }
-
-
 abstract contract C6BBBB {
-
 }
 contract C6BBB is C6BB, C6BBBB {
-
 }
 contract C6 is C6B, C6BBB {
-
 	function f1() virtual public pure
 	override
 	returns (uint)
@@ -115,19 +80,14 @@ contract C6 is C6B, C6BBB {
 	}
 }
 library L7 {
-
 	function f0(uint) public pure returns (uint)
 	{
 		return 1714636915;
 	}
 }
-
-
 contract C9B {
-
 }
 contract C9 is C9B {
-
 	function f0() public view
 	
 	returns (uint)
@@ -135,11 +95,7 @@ contract C9 is C9B {
 		return 2007936220;
 	}
 }
-
-
-
 contract C10BB {
-
 	function f0() private pure
 	
 	returns (uint)
@@ -154,10 +110,8 @@ contract C10BB {
 	}
 }
 contract C10B is C10BB {
-
 }
 contract C10 is C10B {
-
 	function f2() virtual public pure
 	
 	returns (uint)
@@ -165,9 +119,7 @@ contract C10 is C10B {
 		return 887838199;
 	}
 }
-
 contract C11 {
-
 	function f0() external pure
 	
 	returns (uint)
@@ -175,8 +127,6 @@ contract C11 {
 		return 1654044397;
 	}
 }
-
-
 contract C {
 	function test() public returns (uint)
 	{
@@ -224,4 +174,3 @@ contract C {
 			return 0;
 	}
 }
-

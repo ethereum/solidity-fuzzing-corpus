@@ -1,11 +1,5 @@
-
 pragma solidity >=0.0;
-
-
-
-
 contract C0B {
-
 	function f0() public view
 	
 	returns (uint)
@@ -14,12 +8,8 @@ contract C0B {
 	}
 }
 contract C0 is C0B {
-
 }
-
-
 contract C1B {
-
 	function f0() public view
 	
 	returns (uint)
@@ -28,19 +18,14 @@ contract C1B {
 	}
 }
 contract C1 is C1B {
-
 }
 library L2 {
-
 	function f0(uint) public view returns (uint)
 	{
 		return 1804289383;
 	}
 }
-
-
 contract C3B {
-
 	function f0() public view
 	
 	returns (uint)
@@ -49,10 +34,8 @@ contract C3B {
 	}
 }
 contract C3 is C3B {
-
 }
 library L4 {
-
 	function f0(uint) internal view returns (uint)
 	{
 		return 846930886;
@@ -63,7 +46,6 @@ library L4 {
 	}
 }
 library L5 {
-
 	function f0(uint) private pure returns (uint)
 	{
 		return 1714636915;
@@ -73,10 +55,7 @@ library L5 {
 		return 1957747793;
 	}
 }
-
-
 contract C6B {
-
 	function f0() public view
 	
 	returns (uint)
@@ -85,68 +64,46 @@ contract C6B {
 	}
 }
 contract C6 is C6B {
-
 }
-
-
 interface I7B {
-
 	function f0() external view returns (uint);
 }
 interface I7 is I7B {
-
 }
 library L8 {
-
 	function f0(uint) external pure returns (uint)
 	{
 		return 424238335;
 	}
 }
-
-
-
 interface I9BB {
-
 	function f0() external view returns (uint);
 }
 interface I9B is I9BB {
-
 	function f1() external payable returns (uint);
 }
-
-
 interface I9BBBB {
-
 	function f0() external view returns (uint);
 }
 interface I9BBB is I9B, I9BBBB {
-
 	function f0() override(I9BB, I9BBBB)
 	external view returns (uint);
 	function f2() external payable returns (uint);
 }
-
-
 interface I9BBBBBB {
-
 	function f0() external view returns (uint);
 }
 interface I9BBBBB is I9B, I9BBBBBB {
-
 	function f0() override(I9BB, I9BBBBBB)
 	external view returns (uint);
 	function f2() external payable returns (uint);
 }
 interface I9 is I9B, I9BBB, I9BBBBB {
-
 	function f0() override(I9BB, I9BBB, I9BBBBB)
 	external view returns (uint);
 	function f2() override(I9BBB, I9BBBBB)
 	external payable returns (uint);
 }
-
-
 contract C {
 	function test() public returns (uint)
 	{
@@ -177,4 +134,3 @@ contract C {
 			return 0;
 	}
 }
-

@@ -1,16 +1,11 @@
-
 pragma solidity >=0.0;
-
-
 library L0 {
-
 	function f0(uint) public view returns (uint)
 	{
 		return 1804289383;
 	}
 }
 library L1 {
-
 	function f0(uint) internal pure returns (uint)
 	{
 		return 846930886;
@@ -21,7 +16,6 @@ library L1 {
 	}
 }
 library L2 {
-
 	function f0(uint) internal pure returns (uint)
 	{
 		return 1714636915;
@@ -32,128 +26,69 @@ library L2 {
 	}
 }
 library L3 {
-
 	function f0(uint) public view returns (uint)
 	{
 		return 424238335;
 	}
 }
-
-
-
-
 contract C4BBB {
-
 }
-
-
 contract C4BBBBB {
-
 }
-
 contract C4BBBBBB is C4BBBBB {
-
 }
 contract C4BBBB is C4BBB, C4BBBBB, C4BBBBBB {
-
 }
 contract C4BB is C4BBB, C4BBBB {
-
 }
-
 contract C4BBBBBBB is C4BBBB {
-
 }
 contract C4B is C4BB, C4BBBBBBB {
-
 }
-
-
 contract C4BBBBBBBBB {
-
 }
-
-
 contract C4BBBBBBBBBBB {
-
 }
-
-
 contract C4BBBBBBBBBBBBB {
-
 }
-
 contract C4BBBBBBBBBBBBBB is C4BBBBBBBBBBBBB {
-
 }
 contract C4BBBBBBBBBBBB is C4BBBBBBBBBBB, C4BBBBBBBBBBBBB, C4BBBBBBBBBBBBBB {
-
 }
 contract C4BBBBBBBBBB is C4BBBBBBBBB, C4BBBBBBBBBBB, C4BBBBBBBBBBBB {
-
 }
 contract C4BBBBBBBB is C4BBBBBBB, C4BBBBBBBBB, C4BBBBBBBBBB {
-
 }
-
-
-
-
 contract C4BBBBBBBBBBBBBBBBBB {
-
 }
-
-
 contract C4BBBBBBBBBBBBBBBBBBBB {
-
 }
-
 abstract contract C4BBBBBBBBBBBBBBBBBBBBB is C4BBBBBBBBBBBBBBBBBBBB {
-
 }
 abstract contract C4BBBBBBBBBBBBBBBBBBB is C4BBBBBBBBBBBBBBBBBB, C4BBBBBBBBBBBBBBBBBBBB, C4BBBBBBBBBBBBBBBBBBBBB {
-
 }
 contract C4BBBBBBBBBBBBBBBBB is C4BBBBBBBBBBBBBBBBBB, C4BBBBBBBBBBBBBBBBBBB {
-
 }
-
 abstract contract C4BBBBBBBBBBBBBBBBBBBBBB is C4BBBBBBBBBBBBBBBBB {
-
 }
 contract C4BBBBBBBBBBBBBBBB is C4BBBBBBBBBBBBBBBBB, C4BBBBBBBBBBBBBBBBBBBBBB {
-
 }
-
-
 contract C4BBBBBBBBBBBBBBBBBBBBBBBB {
-
 }
-
 abstract contract C4BBBBBBBBBBBBBBBBBBBBBBBBB is C4BBBBBBBBBBBBBBBBBBBBBBBB {
-
 }
 abstract contract C4BBBBBBBBBBBBBBBBBBBBBBB is C4BBBBBBBBBBBBBBBB, C4BBBBBBBBBBBBBBBBBBBBBBBB, C4BBBBBBBBBBBBBBBBBBBBBBBBB {
-
 }
 contract C4BBBBBBBBBBBBBBB is C4BBBBBBBBBB, C4BBBBBBBBBBBBBBBB, C4BBBBBBBBBBBBBBBBBBBBBBB {
-
 }
-
 contract C4BBBBBBBBBBBBBBBBBBBBBBBBBB is C4BBBBBBBBBBBBBBB {
-
 }
-
 contract C4BBBBBBBBBBBBBBBBBBBBBBBBBBB is C4BBBBBBBBBB {
-
 }
-
 interface C4BBBBBBBBBBBBBBBBBBBBBBBBBBBB {
-
 	function f0() external payable returns (uint);
 }
 contract C4 is C4B, C4BBBBBBBB, C4BBBBBBBBBBBBBBB, C4BBBBBBBBBBBBBBBBBBBBBBBBBB, C4BBBBBBBBBBBBBBBBBBBBBBBBBBB, C4BBBBBBBBBBBBBBBBBBBBBBBBBBBB {
-
 	function f0() virtual external payable
 	override
 	returns (uint)
@@ -161,8 +96,6 @@ contract C4 is C4B, C4BBBBBBBB, C4BBBBBBBBBBBBBBB, C4BBBBBBBBBBBBBBBBBBBBBBBBBB,
 		return 1402304087;
 	}
 }
-
-
 contract C {
 	using L0 for uint;
 	function test() public returns (uint)
@@ -173,4 +106,3 @@ contract C {
 		return 0;
 	}
 }
-

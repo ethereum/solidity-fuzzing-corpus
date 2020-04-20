@@ -1,10 +1,5 @@
-
 pragma solidity >=0.0;
-
-
-
 contract C1 {
-
 	function f0() external pure
 	
 	returns (uint)
@@ -25,22 +20,18 @@ contract C1 {
 	}
 }
 library L2 {
-
 	function f0(uint) internal view returns (uint)
 	{
 		return 1804289383;
 	}
 }
 library L4 {
-
 	function f0(uint) internal view returns (uint)
 	{
 		return 846930886;
 	}
 }
-
 contract C5 {
-
 	function f0() public view
 	
 	returns (uint)
@@ -49,7 +40,6 @@ contract C5 {
 	}
 }
 library L6 {
-
 	function f0(uint) public view returns (uint)
 	{
 		return 1681692777;
@@ -60,7 +50,6 @@ library L6 {
 	}
 }
 library L7 {
-
 	function f0(uint) public view returns (uint)
 	{
 		return 1957747793;
@@ -71,15 +60,12 @@ library L7 {
 	}
 }
 library L8 {
-
 	function f0(uint) internal view returns (uint)
 	{
 		return 719885386;
 	}
 }
-
 contract C10 {
-
 	function f0() public view
 	
 	returns (uint)
@@ -87,9 +73,7 @@ contract C10 {
 		return 1596680831;
 	}
 }
-
 contract C11 {
-
 	function f0() public view
 	
 	returns (uint)
@@ -98,7 +82,6 @@ contract C11 {
 	}
 }
 library L12 {
-
 	function f0(uint) internal view returns (uint)
 	{
 		return 1649760492;
@@ -109,7 +92,6 @@ library L12 {
 	}
 }
 library L13 {
-
 	function f0(uint) private view returns (uint)
 	{
 		return 1189641421;
@@ -119,24 +101,16 @@ library L13 {
 		return 1025202362;
 	}
 }
-
-
-
-
 interface C14BBB {
-
 	function f0() external view returns (uint);
 	function f1() external payable returns (uint);
 }
 interface C14BB is C14BBB {
-
 	function f2() external payable returns (uint);
 }
 interface C14B is C14BB {
-
 }
 contract C14 is C14B {
-
 	function f0() external view
 	override
 	returns (uint)
@@ -156,9 +130,7 @@ contract C14 is C14B {
 		return 1402304087;
 	}
 }
-
 contract C15 {
-
 	function f0() external pure
 	
 	returns (uint)
@@ -178,9 +150,7 @@ contract C15 {
 		return 353718330;
 	}
 }
-
 contract C16 {
-
 	function f0() public view
 	
 	returns (uint)
@@ -188,9 +158,7 @@ contract C16 {
 		return 1842513780;
 	}
 }
-
 contract C17 {
-
 	function f0() external pure
 	
 	returns (uint)
@@ -210,8 +178,6 @@ contract C17 {
 		return 2010567813;
 	}
 }
-
-
 contract C {
 	using L6 for uint;
 	function test() public returns (uint)
@@ -222,4 +188,3 @@ contract C {
 		return 0;
 	}
 }
-

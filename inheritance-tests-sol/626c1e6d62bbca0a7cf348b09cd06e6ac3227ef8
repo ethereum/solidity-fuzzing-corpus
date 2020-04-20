@@ -1,17 +1,11 @@
-
 pragma solidity >=0.0;
-
-
 library L0 {
-
 	function f0(uint) private pure returns (uint)
 	{
 		return 1804289383;
 	}
 }
-
 contract C2 {
-
 	function f0() external pure
 	
 	returns (uint)
@@ -20,14 +14,12 @@ contract C2 {
 	}
 }
 library L3 {
-
 	function f0(uint) public pure returns (uint)
 	{
 		return 1681692777;
 	}
 }
 library L4 {
-
 	function f0(uint) public pure returns (uint)
 	{
 		return 1714636915;
@@ -37,11 +29,7 @@ library L4 {
 		return 1957747793;
 	}
 }
-
-
-
 contract C5BB {
-
 	function f0() private pure
 	
 	returns (uint)
@@ -56,18 +44,12 @@ contract C5BB {
 	}
 }
 contract C5B is C5BB {
-
 }
-
-
 abstract contract C5BBBB {
-
 }
 contract C5BBB is C5BB, C5BBBB {
-
 }
 contract C5 is C5B, C5BBB {
-
 	function f2() external pure
 	
 	returns (uint)
@@ -75,50 +57,30 @@ contract C5 is C5B, C5BBB {
 		return 1271135913;
 	}
 }
-
 interface I6 {
-
 	function f0() external payable returns (uint);
 }
 library L7 {
-
 	function f0(uint) private pure returns (uint)
 	{
 		return 719885386;
 	}
 }
-
-
-
-
-
-
-
-
-
-
-
 interface C8BBBBBBBBBB {
-
 	function f0() external view returns (uint);
 }
 interface C8BBBBBBBBB is C8BBBBBBBBBB {
-
 }
-
 interface C8BBBBBBBBBBB is C8BBBBBBBBB {
-
 	function f0() override
 	external view returns (uint);
 	function f1() external view returns (uint);
 }
 interface C8BBBBBBBB is C8BBBBBBBBB, C8BBBBBBBBBBB {
-
 	function f0() override(C8BBBBBBBBBB, C8BBBBBBBBBBB)
 	external view returns (uint);
 }
 contract C8BBBBBBB is C8BBBBBBBB {
-
 	function f0() external view
 	override
 	returns (uint)
@@ -133,16 +95,12 @@ contract C8BBBBBBB is C8BBBBBBBB {
 	}
 }
 contract C8BBBBBB is C8BBBBBBB {
-
 }
 contract C8BBBBB is C8BBBBBB {
-
 }
 contract C8BBBB is C8BBBBB {
-
 }
 contract C8BBB is C8BBBB {
-
 	function f2() public view
 	
 	returns (uint)
@@ -151,21 +109,14 @@ contract C8BBB is C8BBBB {
 	}
 }
 contract C8BB is C8BBB {
-
 }
 contract C8B is C8BB {
-
 }
 contract C8 is C8B {
-
 }
-
-
 contract C9B {
-
 }
 contract C9 is C9B {
-
 	function f0() virtual public pure
 	
 	returns (uint)
@@ -173,8 +124,6 @@ contract C9 is C9B {
 		return 1105724094;
 	}
 }
-
-
 contract C {
 	function test() public returns (uint)
 	{
@@ -249,4 +198,3 @@ contract C {
 			return 0;
 	}
 }
-

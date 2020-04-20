@@ -1,9 +1,5 @@
-
 pragma solidity >=0.0;
-
-
 library L1 {
-
 	function f0(uint) internal pure returns (uint)
 	{
 		return 1804289383;
@@ -13,10 +9,7 @@ library L1 {
 		return 846930886;
 	}
 }
-
-
 contract C3B {
-
 	function f0() virtual public pure
 	
 	returns (uint)
@@ -25,7 +18,6 @@ contract C3B {
 	}
 }
 abstract contract C3 is C3B {
-
 	function f0() public pure
 	override
 	returns (uint)
@@ -34,7 +26,6 @@ abstract contract C3 is C3B {
 	}
 }
 library L5 {
-
 	function f0(uint) external pure returns (uint)
 	{
 		return 1681692777;
@@ -49,17 +40,12 @@ library L5 {
 	}
 }
 library L6 {
-
 	function f0(uint) public pure returns (uint)
 	{
 		return 424238335;
 	}
 }
-
-
-
 abstract contract C8BB {
-
 	function f0() public view
 	
 	returns (uint)
@@ -68,19 +54,13 @@ abstract contract C8BB {
 	}
 }
 contract C8B is C8BB {
-
 }
 contract C8 is C8B {
-
 }
-
-
 interface C9B {
-
 	function f0() external payable returns (uint);
 }
 contract C9 is C9B {
-
 	function f0() external payable
 	override
 	returns (uint)
@@ -88,19 +68,12 @@ contract C9 is C9B {
 		return 533364653;
 	}
 }
-
-
-
 abstract contract C11BB {
-
 }
-
 interface C11BBB {
-
 	function f0() external payable returns (uint);
 }
 contract C11B is C11BB, C11BBB {
-
 	function f0() virtual external payable
 	override
 	returns (uint)
@@ -109,7 +82,6 @@ contract C11B is C11BB, C11BBB {
 	}
 }
 contract C11 is C11B {
-
 	function f0() virtual external payable
 	override
 	returns (uint)
@@ -118,7 +90,6 @@ contract C11 is C11B {
 	}
 }
 library L12 {
-
 	function f0(uint) internal pure returns (uint)
 	{
 		return 1649760492;
@@ -132,26 +103,18 @@ library L12 {
 		return 1189641421;
 	}
 }
-
-
-
-
 interface C14BBB {
-
 	function f0() external view returns (uint);
 }
 interface C14BB is C14BBB {
-
 	function f0() override
 	external view returns (uint);
 }
 interface C14B is C14BB {
-
 	function f0() override
 	external view returns (uint);
 }
 contract C14 is C14B {
-
 	function f0() external view
 	override
 	returns (uint)
@@ -159,21 +122,14 @@ contract C14 is C14B {
 		return 189733958;
 	}
 }
-
-
-
-
 interface C15BBB {
-
 	function f0() external payable returns (uint);
 }
 interface C15BB is C15BBB {
-
 	function f0() override
 	external payable returns (uint);
 }
 contract C15B is C15BB {
-
 	function f0() external payable
 	override
 	returns (uint)
@@ -182,12 +138,8 @@ contract C15B is C15BB {
 	}
 }
 contract C15 is C15B {
-
 }
-
-
 contract C16B {
-
 	function f0() virtual public payable
 	
 	returns (uint)
@@ -196,23 +148,15 @@ contract C16B {
 	}
 }
 abstract contract C16 is C16B {
-
 }
-
-
-
-
 interface C17BBB {
-
 	function f0() external payable returns (uint);
 }
 interface C17BB is C17BBB {
-
 	function f0() override
 	external payable returns (uint);
 }
 contract C17B is C17BB {
-
 	function f0() virtual external payable
 	override
 	returns (uint)
@@ -221,7 +165,6 @@ contract C17B is C17BB {
 	}
 }
 contract C17 is C17B {
-
 	function f0() external payable
 	override
 	returns (uint)
@@ -230,14 +173,11 @@ contract C17 is C17B {
 	}
 }
 library L18 {
-
 	function f0(uint) public pure returns (uint)
 	{
 		return 1025202362;
 	}
 }
-
-
 contract C {
 	function test() public returns (uint)
 	{
@@ -280,4 +220,3 @@ contract C {
 			return 0;
 	}
 }
-

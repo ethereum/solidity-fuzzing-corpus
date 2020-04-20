@@ -1,35 +1,13 @@
-
 pragma solidity >=0.0;
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 interface C0BBBBBBBBBBBBBBB {
-
 	function f0() external payable returns (uint);
 	function f1() external pure returns (uint);
 }
 interface C0BBBBBBBBBBBBBB is C0BBBBBBBBBBBBBBB {
-
 	function f0() override
 	external payable returns (uint);
 }
 interface C0BBBBBBBBBBBBB is C0BBBBBBBBBBBBBB {
-
 	function f0() override
 	external payable returns (uint);
 	function f1() override
@@ -38,17 +16,13 @@ interface C0BBBBBBBBBBBBB is C0BBBBBBBBBBBBBB {
 	function f3() external view returns (uint);
 }
 interface C0BBBBBBBBBBBB is C0BBBBBBBBBBBBB {
-
 	function f1() override
 	external pure returns (uint);
 }
-
 interface C0BBBBBBBBBBBBBBBB is C0BBBBBBBBBBBBB {
-
 	function f4() external view returns (uint);
 }
 interface C0BBBBBBBBBBB is C0BBBBBBBBBBBB, C0BBBBBBBBBBBBBBBB {
-
 	function f0() override
 	external payable returns (uint);
 	function f1() override(C0BBBBBBBBBBBB, C0BBBBBBBBBBBBB)
@@ -60,7 +34,6 @@ interface C0BBBBBBBBBBB is C0BBBBBBBBBBBB, C0BBBBBBBBBBBBBBBB {
 	function f5() external view returns (uint);
 }
 contract C0BBBBBBBBBB is C0BBBBBBBBBBB {
-
 	function f0() virtual external payable
 	override
 	returns (uint)
@@ -99,7 +72,6 @@ contract C0BBBBBBBBBB is C0BBBBBBBBBBB {
 	}
 }
 contract C0BBBBBBBBB is C0BBBBBBBBBB {
-
 	function f0() external payable
 	override
 	returns (uint)
@@ -108,7 +80,6 @@ contract C0BBBBBBBBB is C0BBBBBBBBBB {
 	}
 }
 contract C0BBBBBBBB is C0BBBBBBBBB {
-
 	function f1() external pure
 	override
 	returns (uint)
@@ -117,43 +88,27 @@ contract C0BBBBBBBB is C0BBBBBBBBB {
 	}
 }
 contract C0BBBBBBB is C0BBBBBBBB {
-
 }
-
 contract C0BBBBBBBBBBBBBBBBB is C0BBBBBBB {
-
 }
 contract C0BBBBBB is C0BBBBBBB, C0BBBBBBBBBBBBBBBBB {
-
 }
 contract C0BBBBB is C0BBBBBB {
-
 }
-
 contract C0BBBBBBBBBBBBBBBBBB is C0BBBBBB {
-
 }
 contract C0BBBB is C0BBBBB, C0BBBBBBBBBBBBBBBBBB {
-
 }
 contract C0BBB is C0BBBB {
-
 }
 contract C0BB is C0BBB {
-
 }
 contract C0B is C0BB {
-
 }
-
 contract C0BBBBBBBBBBBBBBBBBBB is C0BB {
-
 }
 contract C0 is C0B, C0BBBBBBBBBBBBBBBBBBB {
-
 }
-
-
 contract C {
 	function test() public returns (uint)
 	{
@@ -342,4 +297,3 @@ contract C {
 			return 0;
 	}
 }
-

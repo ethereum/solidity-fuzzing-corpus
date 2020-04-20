@@ -1,11 +1,5 @@
-
 pragma solidity >=0.0;
-
-
-
-
 contract C2B {
-
 	function f0() public view
 	
 	returns (uint)
@@ -14,19 +8,12 @@ contract C2B {
 	}
 }
 contract C2 is C2B {
-
 }
-
-
 contract C5B {
-
 }
-
 contract C5BB is C5B {
-
 }
 contract C5 is C5B, C5BB {
-
 	function f0() public view
 	
 	returns (uint)
@@ -35,50 +22,34 @@ contract C5 is C5B, C5BB {
 	}
 }
 library L6 {
-
 	function f0(uint) external pure returns (uint)
 	{
 		return 846930886;
 	}
 }
-
-
-
-
 interface I8BBB {
-
 }
 interface I8BB is I8BBB {
-
 }
 interface I8B is I8BB {
-
 }
-
 interface I8BBBB is I8BB {
-
 	function f0() external payable returns (uint);
 }
-
 interface I8BBBBB is I8BB {
-
 	function f0() external payable returns (uint);
 	function f1() external view returns (uint);
 }
 interface I8 is I8B, I8BBBB, I8BBBBB {
-
 	function f0() override(I8BBBB, I8BBBBB)
 	external payable returns (uint);
 }
 library L9 {
-
 	function f0(uint) external pure returns (uint)
 	{
 		return 719885386;
 	}
 }
-
-
 contract C {
 	function test() public returns (uint)
 	{
@@ -94,4 +65,3 @@ contract C {
 			return 0;
 	}
 }
-

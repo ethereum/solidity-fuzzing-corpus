@@ -1,30 +1,16 @@
-
 pragma solidity >=0.0;
-
-
-
-
-
-
 interface I0BBB {
-
 	function f0() external view returns (uint);
 }
 interface I0BB is I0BBB {
-
 	function f0() override
 	external view returns (uint);
 }
 interface I0B is I0BB {
-
 }
 interface I0 is I0B {
-
 }
-
-
 contract C1B {
-
 	function f0() public view
 	
 	returns (uint)
@@ -33,15 +19,10 @@ contract C1B {
 	}
 }
 contract C1 is C1B {
-
 }
-
-
 contract C2B {
-
 }
 contract C2 is C2B {
-
 	function f0() public view
 	
 	returns (uint)
@@ -49,9 +30,7 @@ contract C2 is C2B {
 		return 604947329;
 	}
 }
-
 contract C3 {
-
 	function f0() public view
 	
 	returns (uint)
@@ -59,40 +38,24 @@ contract C3 {
 		return 2077369900;
 	}
 }
-
-
 interface I5B {
-
 }
-
-
-
-
 interface I5BBBBB {
-
 	function f0() external view returns (uint);
 }
 interface I5BBBB is I5BBBBB {
-
 }
 interface I5BBB is I5BBBB {
-
 	function f0() override
 	external view returns (uint);
 }
 interface I5BB is I5B, I5BBB {
-
 	function f0() override
 	external view returns (uint);
 }
 interface I5 is I5B, I5BB {
-
 }
-
-
-
 contract C6BB {
-
 	function f0() private pure
 	
 	returns (uint)
@@ -107,10 +70,8 @@ contract C6BB {
 	}
 }
 contract C6B is C6BB {
-
 }
 contract C6 is C6B {
-
 	function f1() public pure
 	override
 	returns (uint)
@@ -124,9 +85,7 @@ contract C6 is C6B {
 		return 461049841;
 	}
 }
-
 contract C8 {
-
 	function f0() external pure
 	
 	returns (uint)
@@ -134,35 +93,22 @@ contract C8 {
 		return 338112295;
 	}
 }
-
-
 interface I9B {
-
 	function f0() external view returns (uint);
 }
-
-
-
 interface I9BBBB {
-
 }
 interface I9BBB is I9BBBB {
-
 }
 interface I9BB is I9B, I9BBB {
-
 	function f0() override
 	external view returns (uint);
 }
 interface I9 is I9B, I9BB {
-
 	function f0() override(I9B, I9BB)
 	external view returns (uint);
 }
-
-
 contract C10B {
-
 	function f0() public view
 	
 	returns (uint)
@@ -171,10 +117,7 @@ contract C10B {
 	}
 }
 contract C10 is C10B {
-
 }
-
-
 contract C {
 	function test() public returns (uint)
 	{
@@ -213,4 +156,3 @@ contract C {
 			return 0;
 	}
 }
-

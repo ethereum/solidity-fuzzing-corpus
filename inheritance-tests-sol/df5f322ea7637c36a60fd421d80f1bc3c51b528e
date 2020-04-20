@@ -1,34 +1,19 @@
-
 pragma solidity >=0.0;
-
-
-
-
-
-
 interface C0BBB {
-
 }
-
-
 interface C0BBBBB {
-
 	function f0() external payable returns (uint);
 	function f1() external payable returns (uint);
 }
 interface C0BBBB is C0BBB, C0BBBBB {
-
 	function f1() override
 	external payable returns (uint);
 }
 interface C0BB is C0BBB, C0BBBB {
-
 }
 interface C0B is C0BB {
-
 }
 contract C0 is C0B {
-
 	function f0() external payable
 	override
 	returns (uint)
@@ -42,22 +27,14 @@ contract C0 is C0B {
 		return 1250328747;
 	}
 }
-
-
-
 interface I1BB {
-
 	function f0() external view returns (uint);
 }
 interface I1B is I1BB {
-
 	function f1() external payable returns (uint);
 }
 interface I1 is I1B {
-
 }
-
-
 contract C {
 	function test() public returns (uint)
 	{
@@ -69,4 +46,3 @@ contract C {
 			return 0;
 	}
 }
-

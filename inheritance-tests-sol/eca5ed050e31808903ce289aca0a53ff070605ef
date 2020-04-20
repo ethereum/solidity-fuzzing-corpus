@@ -1,13 +1,5 @@
-
 pragma solidity >=0.0;
-
-
-
-
-
-
 contract C0BBB {
-
 	function f0() virtual public pure
 	
 	returns (uint)
@@ -16,7 +8,6 @@ contract C0BBB {
 	}
 }
 contract C0BB is C0BBB {
-
 	function f0() virtual public pure
 	override
 	returns (uint)
@@ -25,10 +16,8 @@ contract C0BB is C0BBB {
 	}
 }
 contract C0B is C0BB {
-
 }
 contract C0 is C0B {
-
 	function f1() public view
 	
 	returns (uint)
@@ -42,31 +31,21 @@ contract C0 is C0B {
 		return 1596680831;
 	}
 }
-
 interface I3 {
-
 	function f0() external payable returns (uint);
 }
-
-
-
-
 interface C4BBB {
-
 	function f0() external payable returns (uint);
 }
 interface C4BB is C4BBB {
-
 	function f1() external view returns (uint);
 }
 interface C4B is C4BB {
-
 	function f1() override
 	external view returns (uint);
 	function f2() external payable returns (uint);
 }
 contract C4 is C4B {
-
 	function f0() external payable
 	override
 	returns (uint)
@@ -87,15 +66,12 @@ contract C4 is C4B {
 	}
 }
 library L5 {
-
 	function f0(uint) internal pure returns (uint)
 	{
 		return 1804289383;
 	}
 }
-
 contract C6 {
-
 	function f0() public view
 	
 	returns (uint)
@@ -103,36 +79,23 @@ contract C6 {
 		return 2064876628;
 	}
 }
-
-
 interface I7B {
-
 	function f0() external view returns (uint);
 }
-
 interface I7BB is I7B {
-
 	function f0() override
 	external view returns (uint);
 	function f1() external payable returns (uint);
 }
 interface I7 is I7B, I7BB {
-
 	function f0() override(I7B, I7BB)
 	external view returns (uint);
 	function f2() external view returns (uint);
 }
-
 interface I8 {
-
 	function f0() external payable returns (uint);
 }
-
-
-
-
 contract C9BBB {
-
 	function f0() virtual public pure
 	
 	returns (uint)
@@ -141,13 +104,10 @@ contract C9BBB {
 	}
 }
 contract C9BB is C9BBB {
-
 }
 contract C9B is C9BB {
-
 }
 contract C9 is C9B {
-
 	function f0() public pure
 	override
 	returns (uint)
@@ -156,7 +116,6 @@ contract C9 is C9B {
 	}
 }
 library L10 {
-
 	function f0(uint) public pure returns (uint)
 	{
 		return 1681692777;
@@ -166,12 +125,7 @@ library L10 {
 		return 1714636915;
 	}
 }
-
-
-
-
 contract C11BBB {
-
 	function f0() virtual public pure
 	
 	returns (uint)
@@ -180,10 +134,8 @@ contract C11BBB {
 	}
 }
 contract C11BB is C11BBB {
-
 }
 contract C11B is C11BB {
-
 	function f0() public pure
 	override
 	returns (uint)
@@ -192,7 +144,6 @@ contract C11B is C11BB {
 	}
 }
 contract C11 is C11B {
-
 	function f1() virtual public pure
 	
 	returns (uint)
@@ -200,8 +151,6 @@ contract C11 is C11B {
 		return 1659675143;
 	}
 }
-
-
 contract C {
 	function test() public returns (uint)
 	{
@@ -260,4 +209,3 @@ contract C {
 			return 0;
 	}
 }
-

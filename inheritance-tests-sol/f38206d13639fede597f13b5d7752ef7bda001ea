@@ -1,15 +1,8 @@
-
 pragma solidity >=0.0;
-
-
-
-
 interface C0B {
-
 	function f0() external payable returns (uint);
 }
 contract C0 is C0B {
-
 	function f0() external payable
 	override
 	returns (uint)
@@ -23,8 +16,6 @@ contract C0 is C0B {
 		return 1291394886;
 	}
 }
-
-
 contract C {
 	function test() public returns (uint)
 	{
@@ -36,4 +27,3 @@ contract C {
 			return 0;
 	}
 }
-

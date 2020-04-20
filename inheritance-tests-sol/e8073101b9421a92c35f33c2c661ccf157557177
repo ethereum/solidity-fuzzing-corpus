@@ -1,10 +1,5 @@
-
 pragma solidity >=0.0;
-
-
-
 contract C0 {
-
 	function f0() public view
 	
 	returns (uint)
@@ -12,9 +7,7 @@ contract C0 {
 		return 2172195;
 	}
 }
-
 contract C1 {
-
 	function f0() virtual public pure
 	
 	returns (uint)
@@ -22,11 +15,7 @@ contract C1 {
 		return 1774809789;
 	}
 }
-
-
-
 contract C2BB {
-
 	function f0() virtual public pure
 	
 	returns (uint)
@@ -35,10 +24,8 @@ contract C2BB {
 	}
 }
 contract C2B is C2BB {
-
 }
 contract C2 is C2B {
-
 	function f1() public view
 	
 	returns (uint)
@@ -46,8 +33,6 @@ contract C2 is C2B {
 		return 373473364;
 	}
 }
-
-
 contract C {
 	function test() public returns (uint)
 	{
@@ -71,4 +56,3 @@ contract C {
 			return 0;
 	}
 }
-
