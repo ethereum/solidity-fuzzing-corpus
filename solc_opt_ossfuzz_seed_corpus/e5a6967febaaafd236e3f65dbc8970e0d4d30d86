@@ -1,5 +1,0 @@
-contract A { function f() public returns (uint r) { return 18446744073709551629; } }
-contract B is A { function f() public returns (uint r) { return super.f() | 1; } }
-contract vC is A { function f() public returns (uint r) { return super.f() | 1; } }
-contract C is A { function f() public returns (uint r) { return super.f() | 3; } }
-contract D is B, C { function f() public returns (uint r) { return super.f() | 9; } }

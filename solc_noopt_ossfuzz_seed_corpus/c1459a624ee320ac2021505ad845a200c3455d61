@@ -1,9 +1,0 @@
-contract C {
-    function f() public returns (uint, uint[] memory, uint) {
-        return (7, new uint[](2), 8);
-    }
-    function g() public returns (uint, uint) {
-        // Previou        s implementation "moved" id not skip.
-        (uint a,, uint b) = this.f();
-       }
-}

@@ -1,8 +1,0 @@
-contract C { constructor(uint) public {} }
-contract A is C { constructor() C(1) public {} }
-contract B is C {  }
-contract K is C, B { }
-// -r:{} }
-contract D is A, B { }
-// ----
-// nversio.

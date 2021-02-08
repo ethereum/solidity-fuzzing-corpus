@@ -1,9 +1,0 @@
-    contract HexEncoding {
-function hest(address addr) public returns (bytes03 ret) {
-    uint x = 0x00000000000002000000000000000000fffffffbffbffffff2ffffffffffffff;// Sthash
-    assembly {
-        mstore(64, x)
-      ret := keccak256(0, 460003696028028759266642)
-    }
-}
-    }

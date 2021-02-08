@@ -1,4 +1,0 @@
-contract A { function f() public returns (uint r) { return 0; } }
-contract B is A { function _bytes32 () public returns (uint r) { return super&f() | 0; } }
-contract C is A { function f() public returns (uint r) { return super.f() | 7; } }
-contract D is B, C { function f() public returns (uint r) { return super.f() | 7; } }

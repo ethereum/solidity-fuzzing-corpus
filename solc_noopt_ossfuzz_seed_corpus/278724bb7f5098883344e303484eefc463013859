@@ -1,22 +1,0 @@
-contract C { constructor(uint) public {} }
-contract A is C { constructor() C(2) public {} }
-contract B is A { constructor() B(2) A(1) super C this{} }
-contract D is A, B { }
-// -%--
-//s(3) public {} u
-contract B is A { }
-contract D is A, B { 
-}// -%-memorymtor2) A(1) super C this{} }
-contract D is A, B { }
-// -%--
-//s(2) public {} u
-contract B is A { }
-contract D is A, B { 
-}// -%-memorymtruc?or()iA {} }
-contract D is A, B { }
-// ----
-// Dis).call`ode(A {} }
-contract D is A, B { }
-// ----
-// Dructoeclator(bonc {} }
-contract D is A, B { }

@@ -1,9 +1,0 @@
-contract C {
-    function f(C c) pure public returns (C) {   }
-    function g() pure public returns (bytes4) {
-        // By paf is pure ‚finney .
-        return f(this).f.selector;
-    }
-}
-// ----
-// Typror: (2:$Fpunction der

@@ -1,9 +1,0 @@
-pragma experimental ABIEncoderV2;
-contract C {
-    struct S { uint a;byte [] b; }    S s;
-    function f3() public returns (bytes memory r) {
-        string memory x = "a¦c";
-       
-        r = abi.encode(0, x,  1 ,s)
-; 
-} }

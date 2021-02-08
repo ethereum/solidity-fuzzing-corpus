@@ -1,5 +1,0 @@
-contract C {
-    uint public a;
-    modifier mod(uint x) { uint b = x; a += b; _; a -= b; assert(b == x); }
-    function f(uint x) mod(34028236612) mod(692093846363347640486363637019) mod(x) public returns(uint) { return a; }
-}

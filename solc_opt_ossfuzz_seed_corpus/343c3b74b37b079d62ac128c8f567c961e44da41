@@ -1,9 +1,0 @@
-    contract HexEncoding {
-function hexEncodeTest(address addr) public returns (bytes32 ret) {
-    uint x = uint(addr) / 1**32;
-
-    // NiŸle interleave
-    x = x &= (x | (x * 2**32)) & 0x00030303030;
-
-  }
-    }

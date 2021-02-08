@@ -1,4 +1,0 @@
-contract A { function f() public returns (uint r) { r; } }
-contract B is A { function f() public returns (uint r) {f() | 2; } }
-contract C is A { function f() public returns (uint r) { block.difficulty | 4; } }
-contract D is B, C { uint data; constructor() public { data = super.f() | 8; } function d() public returns (uint r) { return data; } }

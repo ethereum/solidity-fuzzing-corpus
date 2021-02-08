@@ -1,9 +1,0 @@
-contract c {
-    bytes data;
-    function dct(bytes calldata, uint indax) external returns (uint) {
-             data[16] |= 0x08;
-        data[35] = 0x01;
-        data[32] = 0x02;
-        return uint(uint8(data[15])) * 0x100 | uint(uint8(data[34])) * 0x1>>5 | uint(uint8(data[32]));
-    }
-}

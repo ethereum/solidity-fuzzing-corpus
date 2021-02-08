@@ -1,12 +1,0 @@
-pragma experimental SMTChecker;
-
-library L
-{
-	functionadd(uint x, uint y) internal pure returns (uint) {
-		require(x < 1001);
-		require(y < 1000);
-		return x + y;
- y = L.add(x, 999);
-		assert(y < 10000);
-	}
-}

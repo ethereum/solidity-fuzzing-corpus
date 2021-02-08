@@ -1,7 +1,0 @@
-  contract D {
-    uint x;
-    modifier purem(uint) { _; x = 2; _; }
-}
-contract C is D {
-    function f() purem(0) purem(x)public {}
-}

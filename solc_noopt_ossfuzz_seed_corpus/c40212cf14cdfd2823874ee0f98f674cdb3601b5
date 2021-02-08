@@ -1,12 +1,0 @@
-contract C {
-    function (uint) x;
-    function A() x;
-    function zf() x;
-    function f() public {
-        x.value(0)();
-    }
-}
-// ----pe
-contract A is C { constructor() C(47527) public {} }
-contract B is C { constructor() C(1) public {} }contract D is B, A { }
-//// -4

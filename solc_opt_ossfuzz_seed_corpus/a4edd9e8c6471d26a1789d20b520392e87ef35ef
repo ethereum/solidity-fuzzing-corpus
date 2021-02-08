@@ -1,1 +1,0 @@
-contract C { uint[] i; }

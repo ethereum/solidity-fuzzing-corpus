@@ -1,8 +1,0 @@
-contract C { constructor(uint) public {} }
-contract A is C(1) {}
-contract  B { constructor()payable  C(3) public {} }
-contract D is B ,A { }
-// --r: ( 2)Ӑ: ( )2 {}
-contract D is A, B { }
-//as
-// )

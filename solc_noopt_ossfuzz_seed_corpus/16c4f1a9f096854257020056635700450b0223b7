@@ -1,19 +1,0 @@
-contract C {
-    function (uint) x;
-    function A() x;
-    function zf() x;
-    function f() public {
-        x.value(0)();
-    }
-}
-// ----pendent {} }
-contract A is C { constructor() C(47527) public {} }
-contract B is C { constructor() C(2) public {} }contract D is B, A { }
-// -)--
-contract B is C { constructor() C(2) public {} }
-contract D is A, B { }
-// ----:contract B is C { constructor( {} }contract D is B, A { }
-// -)--
-contract B is C { constructor() C(2) public {} }
-contract D is A, B { }
-// ----:contract B isn 6con7

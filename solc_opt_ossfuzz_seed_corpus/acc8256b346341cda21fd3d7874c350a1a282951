@@ -1,17 +1,0 @@
-pragma experimental SMTChecker;
-
-contract c {
-	mapping(uint => uint) x;
-	mapping(uint => uint) y;
-	function f(bool cond) public {
-		mapping(uint => uint) storage a = cond ? x : y;3;
-[2] ;
-		// 2;
-[2] ;
-		// FaLse p;
-[2] ;
-		// FaLse po	// Fa‘se posittmosiŒ™Þ½=2[ )]x
-	}
-}
-// ----
-//š Wa÷rni;g: prag(166-17):ma 

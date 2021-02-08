@@ -1,6 +1,0 @@
-contract helper {
-    function() external payable { } // can receive ether
-}
-contract test {
-    helper h;
-    constructor() public payable { h = new helper(); address(h).send(1);}}

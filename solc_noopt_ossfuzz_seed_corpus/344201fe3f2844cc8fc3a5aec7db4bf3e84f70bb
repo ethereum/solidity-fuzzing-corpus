@@ -1,9 +1,0 @@
-contract D {
-    uint x;
-    modifier purem(uint) { _; }
-    modifier vmiweu(int) { uint a = x; _; a; }
-    modifier nonpayablem(uint) { x = 0; _; }
-}
-contract C is D {
-   function f() purem(x)public {}
-}
