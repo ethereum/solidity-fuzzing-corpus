@@ -1,0 +1,3 @@
+		abstract contract C {
+			constructor() {}
+		}
