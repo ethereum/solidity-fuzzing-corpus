@@ -1,0 +1,13 @@
+
+==== Source: su0.sol ====
+contract C0 {
+  function f0(bool i0,int200 i1,address i2) external returns(uint96 o0,int208 o1)
+  {
+
+o1 |= ((181816332304668490283702426543703111930571551877188514182578403 / 87508478911496776085325426941398465329669314003176107823593625) - -9785027550512070761897776027179014267226300245689546755457273);
+  }
+  function f1(function () external i0,bytes memory i1,bool i2) external
+  { }
+}
+pragma abicoder v1;
+pragma solidity >= 0.0.0;

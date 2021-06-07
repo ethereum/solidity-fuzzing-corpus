@@ -1,0 +1,23 @@
+==== Source:  ====
+
+==== Source: su0.sol ====
+pragma abicoder v2;
+pragma solidity >= 0.0.0;
+
+==== Source: su1.sol ====
+pragma abicoder v2;
+pragma solidity >= 0.0.0;
+function f0(int104 i0,function () external i1,bool i2,int8 i3)  returns(uint40 o0,int256 o1)
+{
+
+  {
+
+
+
+
+
+  }
+  o1 |= (((-11121471943882064712701687855746900131214898971754743953063095261985302462925 / 39118681357958198182399061491300797992828978061612420036795630359873073106647) % -48720634547817084475298747055390592081885768059596159788657682312418423106373) * -55269075089890782376719125381719254000315307578862341419825018522126325727396);
+}
+// ----
+// TypeError 7366: (su1.sol:157-489): Operator |= not compatible with types int256 and rational_const 2048...(145 digits omitted)...1100 / 1303...(69 digits omitted)...5549

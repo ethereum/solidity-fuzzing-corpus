@@ -1,0 +1,21 @@
+
+==== Source: su0.sol ====
+function f0(bytes8 i0)  returns(int232 o0,bool o1,function () external o2,function () external o3)
+{ }
+function f1()  returns(bytes15 o0,function () external o1,uint168 o2)
+{ }
+pragma abicoder v2;
+pragma solidity >= 0.0.0;
+
+==== Source: su1.sol ====
+function f2(int256 i0,int232 i1) 
+{
+  i0 ^= ((39848003749630963474164036526288054918055589710516168003931903045394106116144 * 47335032651719071676839915628660253668238847138074239697010160049167269376549) / -39157616928081175035225861067767448172183087812284205550749401735942259288226);
+
+  {
+
+
+
+  }
+
+}

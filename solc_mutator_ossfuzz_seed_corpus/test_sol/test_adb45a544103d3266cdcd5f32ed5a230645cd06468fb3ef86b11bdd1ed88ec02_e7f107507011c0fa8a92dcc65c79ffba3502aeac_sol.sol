@@ -1,0 +1,22 @@
+==== Source:  ====
+
+==== Source: su0.sol ====
+contract C0 {
+  function f0(bool i0,bool i1) external returns(bytes25 o0,bool o1)
+  { }
+  function f1(bytes memory i0,bytes28 i1,function () external i2) external
+  {
+
+
+(bytes25 l0, bool l1) = this.f0(false,(47959581690476443731121728400190082657747640965057361317729253055720520763491 < (37341410138634233113697036728552538332167275010275448853893668080493769171242 ^ (54909736923645578067121979042170621594661525277861525135068096317486274281607 * -37245239400226010195014782811330463979578812577861414061248816568870947911435))));
+{
+
+
+
+
+}
+
+  }
+}
+// ----
+// TypeError 2271: (su0.sol:212-534): Operator < not compatible with types int_const 4795...(69 digits omitted)...3491 and int_const -204...(147 digits omitted)...3335
