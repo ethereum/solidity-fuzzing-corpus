@@ -1,15 +1,15 @@
 library L {
-function add(uint256 a, uint256 b) internal pure returns (uint256) {
-    return a + b;
-}
+    function add(uint256 a, uint256 b) internal pure returns (uint256) {
+        return a + b;
+    }
 }
 
 contract C {
-using L for uint256;
+    using L for uint256;
 
-function foo(uint256 a, uint256 b) public returns (uint256) {
-    return a.add(b);
-}
+    function foo(uint256 a, uint256 b) public returns (uint256) {
+        return a.add(b);
+    }
 }
 // ====
 // compileViaYul: also

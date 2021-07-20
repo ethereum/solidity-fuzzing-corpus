@@ -1,25 +1,25 @@
 contract C {
-struct S { bool f; }
-S s;
-function f() internal view {
-    S storage c;
-    while((c = s).f) {
+    struct S { bool f; }
+    S s;
+    function f() internal view {
+        S storage c;
+        while((c = s).f) {
+        }
+        c;
     }
-    c;
-}
-function g() internal view {
-    S storage c;
-    c = s;
-    while(false) {
+    function g() internal view {
+        S storage c;
+        c = s;
+        while(false) {
+        }
+        c;
     }
-    c;
-}
-function h() internal view {
-    S storage c;
-    while(false) {
+    function h() internal view {
+        S storage c;
+        while(false) {
+        }
+        c = s;
+        c;
     }
-    c = s;
-    c;
-}
 }
 // ----

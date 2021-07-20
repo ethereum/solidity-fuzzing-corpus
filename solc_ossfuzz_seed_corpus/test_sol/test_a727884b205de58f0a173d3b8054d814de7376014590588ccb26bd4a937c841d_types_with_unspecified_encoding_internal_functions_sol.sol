@@ -1,8 +1,8 @@
 contract C {
-function f() public pure {
-    bytes32 h = keccak256(abi.encodePacked(keccak256, f, this.f{gas: 2}, blockhash));
-    h;
-}
+    function f() public pure {
+        bytes32 h = keccak256(abi.encodePacked(keccak256, f, this.f{gas: 2}, blockhash));
+        h;
+    }
 }
 // ----
 // TypeError 2056: (91-100): This type cannot be encoded.

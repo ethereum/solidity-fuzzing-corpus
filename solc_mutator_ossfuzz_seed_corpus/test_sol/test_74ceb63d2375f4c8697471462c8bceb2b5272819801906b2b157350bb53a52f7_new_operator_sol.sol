@@ -8,7 +8,7 @@ function test() returns (uint) {
 
 contract D {
   function f() public returns (uint) {
-return test();
+    return test();
   }
 }
 // ====

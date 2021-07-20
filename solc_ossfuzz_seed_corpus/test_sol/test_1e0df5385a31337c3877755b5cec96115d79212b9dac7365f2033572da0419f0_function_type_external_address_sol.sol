@@ -1,8 +1,8 @@
 contract C {
-function f(address a, function(uint) external g) internal pure {
+    function f(address a, function(uint) external g) internal pure {
 		address b = g.address;
 		assert(a == b);
-}
+    }
 }
 // ====
 // SMTEngine: all

@@ -1,9 +1,9 @@
+{
+	"methods" :
 	{
-		"methods" :
+		"state()" :
 		{
-			"state()" :
-			{
-				"notice": "example of notice"
-			}
+			"notice": "example of notice"
 		}
 	}
+}

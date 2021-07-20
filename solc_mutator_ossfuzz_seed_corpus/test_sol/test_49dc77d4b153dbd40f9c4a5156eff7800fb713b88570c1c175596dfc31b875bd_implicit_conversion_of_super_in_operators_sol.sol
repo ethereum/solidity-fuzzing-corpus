@@ -1,33 +1,33 @@
 contract C {
-function foo() public {
-    super << this;
-    super >> this;
-    super ^ this;
-    super | this;
-    super & this;
+    function foo() public {
+        super << this;
+        super >> this;
+        super ^ this;
+        super | this;
+        super & this;
 
-    super * this;
-    super / this;
-    super % this;
-    super - this;
-    super + this;
-    super ** this;
+        super * this;
+        super / this;
+        super % this;
+        super - this;
+        super + this;
+        super ** this;
 
-    super == this;
-    super != this;
-    super >= this;
-    super <= this;
-    super < this;
-    super > this;
+        super == this;
+        super != this;
+        super >= this;
+        super <= this;
+        super < this;
+        super > this;
 
-    super || this;
-    super && this;
+        super || this;
+        super && this;
 
-    super -= this;
-    super += this;
+        super -= this;
+        super += this;
 
-    true ? super : this;
-}
+        true ? super : this;
+    }
 }
 // ----
 // TypeError 2271: (49-62): Operator << not compatible with types type(contract super C) and contract C

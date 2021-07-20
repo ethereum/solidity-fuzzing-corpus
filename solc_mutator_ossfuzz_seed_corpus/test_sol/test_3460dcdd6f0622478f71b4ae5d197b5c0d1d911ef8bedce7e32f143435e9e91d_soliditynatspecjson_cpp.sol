@@ -1,1 +1,1 @@
-		contract test { }
+contract test { }

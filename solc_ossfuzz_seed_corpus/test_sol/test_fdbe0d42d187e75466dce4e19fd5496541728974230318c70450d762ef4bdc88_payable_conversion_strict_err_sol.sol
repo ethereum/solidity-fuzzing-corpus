@@ -1,15 +1,15 @@
 contract C {
-function f() public pure {
-    address payable a = payable(uint160(0));
-    address payable b = payable(bytes20(0));
-    address payable c = payable(2);
-    // hex literal that is only 15 bytes long
-    address payable d = payable(0x002190356cBB839Cbe05303d7705Fa);
+    function f() public pure {
+        address payable a = payable(uint160(0));
+        address payable b = payable(bytes20(0));
+        address payable c = payable(2);
+        // hex literal that is only 15 bytes long
+        address payable d = payable(0x002190356cBB839Cbe05303d7705Fa);
 
-    // The opposite should also be disallowed
-    uint160 a1 = uint160(payable(0));
-    bytes20 b1 = bytes20(payable(0));
-}
+        // The opposite should also be disallowed
+        uint160 a1 = uint160(payable(0));
+        bytes20 b1 = bytes20(payable(0));
+    }
 }
 // ----
 // TypeError 9640: (72-91): Explicit type conversion not allowed from "uint160" to "address payable".

@@ -1,15 +1,15 @@
 contract C {
-function f(int a, int b) public pure returns (int) {
-    return a % b; // can div by 0
-}
-function g(bool _check) public pure returns (int) {
-    int x = type(int).min;
-    if (_check) {
-        return x / -1; // can overflow
-    } else {
-        unchecked { return x / -1; } // overflow not reported
+    function f(int a, int b) public pure returns (int) {
+        return a % b; // can div by 0
     }
-}
+    function g(bool _check) public pure returns (int) {
+        int x = type(int).min;
+        if (_check) {
+            return x / -1; // can overflow
+        } else {
+            unchecked { return x / -1; } // overflow not reported
+        }
+    }
 }
 // ====
 // SMTEngine: all

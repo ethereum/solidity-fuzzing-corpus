@@ -1,13 +1,13 @@
 contract C
 {
-function f() public pure returns (uint a)
-{
-    return;
-}
-function g() public pure returns (uint a)
-{
-    return (1, 2);
-}
+    function f() public pure returns (uint a)
+    {
+        return;
+    }
+    function g() public pure returns (uint a)
+    {
+        return (1, 2);
+    }
 }
 // ----
 // TypeError 6777: (73-80): Return arguments required.

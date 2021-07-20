@@ -1,10 +1,10 @@
 contract Interface {
-enum MyEnum { One, Two }
+    enum MyEnum { One, Two }
 }
 contract Impl {
-function test() public returns (Interface.MyEnum) {
-    return Interface.MyEnum.One;
-}
+    function test() public returns (Interface.MyEnum) {
+        return Interface.MyEnum.One;
+    }
 }
 // ----
 // Warning 2018: (72-166): Function state mutability can be restricted to pure

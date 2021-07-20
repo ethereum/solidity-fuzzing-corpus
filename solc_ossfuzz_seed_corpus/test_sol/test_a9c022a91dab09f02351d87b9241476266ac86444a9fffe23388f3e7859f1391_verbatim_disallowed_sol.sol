@@ -1,9 +1,9 @@
 contract C {
-function f() pure public {
-    assembly {
-        let x := verbatim_1o(hex"6001")
+    function f() pure public {
+        assembly {
+            let x := verbatim_1o(hex"6001")
+        }
     }
-}
 }
 // ====
 // optimize-yul: true

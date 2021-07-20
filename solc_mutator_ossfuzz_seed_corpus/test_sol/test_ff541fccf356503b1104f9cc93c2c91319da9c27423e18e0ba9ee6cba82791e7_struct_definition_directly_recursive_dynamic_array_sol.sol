@@ -1,7 +1,7 @@
 contract Test {
-struct MyStructName {
-    address addr;
-    MyStructName[] x;
-}
+    struct MyStructName {
+        address addr;
+        MyStructName[] x;
+    }
 }
 // ----

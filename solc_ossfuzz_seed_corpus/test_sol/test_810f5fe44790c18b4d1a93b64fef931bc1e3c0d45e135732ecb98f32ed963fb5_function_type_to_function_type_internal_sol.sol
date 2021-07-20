@@ -1,10 +1,10 @@
 contract C {
 	function(uint) returns (uint) a;
 	function(uint) returns (uint) b;
-function f(function(uint) returns (uint) g, function(uint) returns (uint) h) internal {
+    function f(function(uint) returns (uint) g, function(uint) returns (uint) h) internal {
 		assert(g(2) == h(2));
 		assert(g == h);
-}
+    }
 	function g() public {
 		f(a, b);
 	}

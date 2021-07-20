@@ -1,10 +1,10 @@
 contract C {
-function f() public view returns (address a1, address a2) {
-    a1 = this.f.address;
-    this.f.address;
-    [this.f.address][0];
-    a2 = [this.f.address][0];
-}
+    function f() public view returns (address a1, address a2) {
+        a1 = this.f.address;
+        this.f.address;
+        [this.f.address][0];
+        a2 = [this.f.address][0];
+    }
 }
 // ====
 // compileViaYul: also

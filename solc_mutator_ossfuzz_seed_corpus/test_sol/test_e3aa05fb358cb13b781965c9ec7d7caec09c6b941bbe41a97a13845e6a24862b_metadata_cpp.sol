@@ -1,3 +1,3 @@
-		pragma solidity >=0.0;
-		contract C {
-		}
+pragma solidity >=0.0;
+contract C {
+}

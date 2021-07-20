@@ -1,7 +1,7 @@
 contract A {
-function f() public {
-    super;
-}
+    function f() public {
+        super;
+    }
 }
 
 // ====

@@ -1,53 +1,53 @@
 contract D {
-constructor(function() external pure returns (uint) ) {
-}
+    constructor(function() external pure returns (uint) ) {
+    }
 }
 
 library L {
-function f() public pure returns (uint) {
-    return 5;
-}
+    function f() public pure returns (uint) {
+        return 5;
+    }
 }
 
 contract C {
-function f() public returns (uint r) {
-    // An assert used to fail if the function types are not exactly equal (pure, view) v/s
-    // default
-    // ok
-    new D(this.testPure);
-    // not okay
-    new D(this.testView);
-    // not okay
-    new D(this.testDefault);
-    // not okay
-    new D(this.testDifferentSignature);
-    // not okay
-    new D(gasleft);
-    // not okay
-    new D(L.f);
-    // not okay
-    new D(testInternalFunction);
-    // not okay
-    new D(this.testInternalFunction);
-}
+    function f() public returns (uint r) {
+        // An assert used to fail if the function types are not exactly equal (pure, view) v/s
+        // default
+        // ok
+        new D(this.testPure);
+        // not okay
+        new D(this.testView);
+        // not okay
+        new D(this.testDefault);
+        // not okay
+        new D(this.testDifferentSignature);
+        // not okay
+        new D(gasleft);
+        // not okay
+        new D(L.f);
+        // not okay
+        new D(testInternalFunction);
+        // not okay
+        new D(this.testInternalFunction);
+    }
 
-function testPure() public pure returns (uint) {
-}
+    function testPure() public pure returns (uint) {
+    }
 
-function testView() public view returns (uint) {
-    block.timestamp;
-}
+    function testView() public view returns (uint) {
+        block.timestamp;
+    }
 
-function testDefault() public returns (uint) {
-    selfdestruct(payable(address(this)));
-}
+    function testDefault() public returns (uint) {
+        selfdestruct(payable(address(this)));
+    }
 
-function testDifferentSignature(uint a) public pure returns (uint) {
-}
+    function testDifferentSignature(uint a) public pure returns (uint) {
+    }
 
-function testInternalFunction() internal pure returns (uint) {
-    return 10;
-}
+    function testInternalFunction() internal pure returns (uint) {
+        return 10;
+    }
 }
 // ----
 // TypeError 9553: (415-428): Invalid type for argument in function call. Invalid implicit conversion from function () view external returns (uint256) to function () pure external returns (uint256) requested.

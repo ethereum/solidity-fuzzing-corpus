@@ -1,10 +1,10 @@
 contract C {
   function f() public pure {
-assembly {
-  function linkersymbol(a) {}
+    assembly {
+      function linkersymbol(a) {}
 
-  linkersymbol("contract/library.sol:L")
-}
+      linkersymbol("contract/library.sol:L")
+    }
   }
 }
 // ----

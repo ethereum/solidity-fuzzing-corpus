@@ -1,12 +1,12 @@
 // This used to cause an internal error because of the visitation order.
 contract Test {
-function createChild() public {
-   Child asset = new Child();
-}
+    function createChild() public {
+       Child asset = new Child();
+    }
 }
 
 contract Parent {
-constructor(address _address) {}
+    constructor(address _address) {}
 }
 
 contract Child is Parent {

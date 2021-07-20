@@ -1,6 +1,6 @@
 contract C {
   function f() public {
-f[0];
+    f[0];
   }
 }
 // ----

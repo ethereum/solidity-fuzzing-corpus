@@ -1,8 +1,8 @@
 contract C {
-function f() public {
-    (bool success, ) = address(10).staticcall{gas: 3}("");
-    success;
-}
+    function f() public {
+        (bool success, ) = address(10).staticcall{gas: 3}("");
+        success;
+    }
 }
 // ====
 // EVMVersion: <byzantium

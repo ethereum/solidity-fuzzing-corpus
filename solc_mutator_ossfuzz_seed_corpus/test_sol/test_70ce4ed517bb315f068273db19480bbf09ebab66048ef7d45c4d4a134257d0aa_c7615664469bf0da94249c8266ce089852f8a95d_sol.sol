@@ -12,8 +12,8 @@ function f1()  returns(bytes30 o0,bool o1)
   { }
 
   {
-if (false)
-{ }
+    if (false)
+    { }
 
 
   }

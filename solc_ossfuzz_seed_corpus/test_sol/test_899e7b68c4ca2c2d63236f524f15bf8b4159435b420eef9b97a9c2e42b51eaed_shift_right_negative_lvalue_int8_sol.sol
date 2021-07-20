@@ -1,7 +1,7 @@
 contract C {
-function f(int8 a, uint8 b) internal pure returns (int256) {
-    return a >> b;
-}
+    function f(int8 a, uint8 b) internal pure returns (int256) {
+        return a >> b;
+    }
 	function t() public pure {
 		assert(f(-66, 0) == -66);
 		// Fails because the above is true.

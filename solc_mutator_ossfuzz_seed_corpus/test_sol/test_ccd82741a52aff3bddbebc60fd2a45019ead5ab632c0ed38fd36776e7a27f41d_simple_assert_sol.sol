@@ -1,5 +1,5 @@
 contract C {
-function f(uint a) public pure { assert(a == 2); }
+    function f(uint a) public pure { assert(a == 2); }
 }
 // ====
 // SMTEngine: all

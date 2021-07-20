@@ -1,21 +1,21 @@
+{
+	"language": "Solidity",
+	"sources":
 	{
-		"language": "Solidity",
-		"sources":
+		"A":
 		{
-			"A":
-			{
-				"content": "pragma solidity >=0.0; contract C { function f() public pure {} }"
-			},
-			"B":
-			{
-				"content": "pragma solidity >=0.0; contract D { function f() public pure {} }"
-			}
+			"content": "pragma solidity >=0.0; contract C { function f() public pure {} }"
 		},
-		"settings":
+		"B":
 		{
-			"outputSelection":
-			{
-				"*": { "D": ["evm.bytecode"] }
-			}
+			"content": "pragma solidity >=0.0; contract D { function f() public pure {} }"
+		}
+	},
+	"settings":
+	{
+		"outputSelection":
+		{
+			"*": { "D": ["evm.bytecode"] }
 		}
 	}
+}

@@ -1,4 +1,4 @@
 contract C {
-constructor() {}
+    constructor() {}
 }
 // ----

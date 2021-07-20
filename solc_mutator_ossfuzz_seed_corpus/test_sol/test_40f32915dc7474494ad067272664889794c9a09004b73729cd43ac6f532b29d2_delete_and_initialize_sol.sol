@@ -1,8 +1,8 @@
 contract C {
-uint immutable x = 3;
-constructor() {
-    delete x;
-}
+    uint immutable x = 3;
+    constructor() {
+        delete x;
+    }
 }
 // ----
 // TypeError 1574: (74-75): Immutable state variable already initialized.

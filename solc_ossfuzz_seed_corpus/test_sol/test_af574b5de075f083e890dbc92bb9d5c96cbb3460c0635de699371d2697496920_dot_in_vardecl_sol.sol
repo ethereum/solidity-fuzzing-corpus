@@ -1,11 +1,11 @@
 contract C {
   function f() public pure {
-assembly {
-  let a. := 2
-  let a.. := 2
-  let a.b := 2
-  let a..b := 2
-}
+    assembly {
+      let a. := 2
+      let a.. := 2
+      let a.b := 2
+      let a..b := 2
+    }
   }
 }
 // ----

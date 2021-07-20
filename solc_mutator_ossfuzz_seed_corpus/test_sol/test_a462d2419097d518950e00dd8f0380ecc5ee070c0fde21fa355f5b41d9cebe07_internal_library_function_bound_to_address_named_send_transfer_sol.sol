@@ -1,18 +1,18 @@
 library L {
-function transfer(address a) internal {}
-function send(address a) internal {}
+    function transfer(address a) internal {}
+    function send(address a) internal {}
 }
 
 contract C {
-using L for address;
+    using L for address;
 
-function useTransfer(address a) public {
-    a.transfer();
-}
+    function useTransfer(address a) public {
+        a.transfer();
+    }
 
-function useSend(address a) public {
-    a.send();
-}
+    function useSend(address a) public {
+        a.send();
+    }
 }
 // ====
 // compileViaYul: also

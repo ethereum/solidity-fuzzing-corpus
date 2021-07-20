@@ -1,8 +1,8 @@
 contract C {
-receive(bytes2) {}
+    receive(bytes2) {}
 }
 contract D is C {
-receive() {}
+    receive() {}
 }
 // ----
 // SyntaxError 4937: (17-35): No visibility specified. Did you intend to add "external"?

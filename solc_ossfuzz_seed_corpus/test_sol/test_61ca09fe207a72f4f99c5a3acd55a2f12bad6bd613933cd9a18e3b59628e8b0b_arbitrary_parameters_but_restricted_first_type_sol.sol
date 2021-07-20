@@ -1,10 +1,10 @@
 contract C {
-function f() pure public {
-    abi.encodeWithSelector();
-    abi.encodeWithSignature();
-    abi.encodeWithSelector(uint(2), 2);
-    abi.encodeWithSignature(uint(2), 2);
-}
+    function f() pure public {
+        abi.encodeWithSelector();
+        abi.encodeWithSignature();
+        abi.encodeWithSelector(uint(2), 2);
+        abi.encodeWithSignature(uint(2), 2);
+    }
 }
 // ----
 // TypeError 9308: (52-76): Need at least 1 arguments for function call, but provided only 0.

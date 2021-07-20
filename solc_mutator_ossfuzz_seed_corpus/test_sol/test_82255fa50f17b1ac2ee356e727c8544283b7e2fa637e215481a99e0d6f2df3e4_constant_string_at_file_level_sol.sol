@@ -7,21 +7,21 @@ ActionChoices constant choices = ActionChoices.GoRight;
 bytes32 constant st = "abc\x00\xff__";
 
 contract C {
-function f() public returns (bytes memory) {
-    return a;
-}
+    function f() public returns (bytes memory) {
+        return a;
+    }
 
-function g() public returns (bytes memory) {
-    return b;
-}
+    function g() public returns (bytes memory) {
+        return b;
+    }
 
-function h() public returns (bytes memory) {
-    return bytes(c);
-}
+    function h() public returns (bytes memory) {
+        return bytes(c);
+    }
 
-function i() public returns (uint, ActionChoices, bytes32) {
-    return (x, choices, st);
-}
+    function i() public returns (uint, ActionChoices, bytes32) {
+        return (x, choices, st);
+    }
 }
 
 // ====

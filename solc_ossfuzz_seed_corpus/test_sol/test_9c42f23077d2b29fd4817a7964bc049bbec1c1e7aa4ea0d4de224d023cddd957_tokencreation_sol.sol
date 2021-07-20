@@ -27,130 +27,130 @@ import "./ManagedAccount.sol";
 
 abstract contract TokenCreationInterface {
 
-// End of token creation, in Unix time
-uint public closingTime;
-// Minimum fueling goal of the token creation, denominated in tokens to
-// be created
-uint public minTokensToCreate;
-// True if the DAO reached its minimum fueling goal, false otherwise
-bool public isFueled;
-// For DAO splits - if privateCreation is 0, then it is a public token
-// creation, otherwise only the address stored in privateCreation is
-// allowed to create tokens
-address public privateCreation;
-// hold extra ether which has been sent after the DAO token
-// creation rate has increased
-ManagedAccount public extraBalance;
-// tracks the amount of wei given from each contributor (used for refund)
-mapping (address => uint256) weiGiven;
+    // End of token creation, in Unix time
+    uint public closingTime;
+    // Minimum fueling goal of the token creation, denominated in tokens to
+    // be created
+    uint public minTokensToCreate;
+    // True if the DAO reached its minimum fueling goal, false otherwise
+    bool public isFueled;
+    // For DAO splits - if privateCreation is 0, then it is a public token
+    // creation, otherwise only the address stored in privateCreation is
+    // allowed to create tokens
+    address public privateCreation;
+    // hold extra ether which has been sent after the DAO token
+    // creation rate has increased
+    ManagedAccount public extraBalance;
+    // tracks the amount of wei given from each contributor (used for refund)
+    mapping (address => uint256) weiGiven;
 
-/// @dev Constructor setting the minimum fueling goal and the
-/// end of the Token Creation
-/// @param _minTokensToCreate Minimum fueling goal in number of
-///        Tokens to be created
-/// @param _closingTime Date (in Unix time) of the end of the Token Creation
-/// @param _privateCreation Zero means that the creation is public.  A
-/// non-zero address represents the only address that can create Tokens
-/// (the address can also create Tokens on behalf of other accounts)
-// This is the constructor: it can not be overloaded so it is commented out
-//  function TokenCreation(
-    //  uint _minTokensTocreate,
-    //  uint _closingTime,
-    //  address _privateCreation
-    //  string _tokenName,
-    //  string _tokenSymbol,
-    //  uint _decimalPlaces
-//  );
+    /// @dev Constructor setting the minimum fueling goal and the
+    /// end of the Token Creation
+    /// @param _minTokensToCreate Minimum fueling goal in number of
+    ///        Tokens to be created
+    /// @param _closingTime Date (in Unix time) of the end of the Token Creation
+    /// @param _privateCreation Zero means that the creation is public.  A
+    /// non-zero address represents the only address that can create Tokens
+    /// (the address can also create Tokens on behalf of other accounts)
+    // This is the constructor: it can not be overloaded so it is commented out
+    //  function TokenCreation(
+        //  uint _minTokensTocreate,
+        //  uint _closingTime,
+        //  address _privateCreation
+        //  string _tokenName,
+        //  string _tokenSymbol,
+        //  uint _decimalPlaces
+    //  );
 
-/// @notice Create Token with `_tokenHolder` as the initial owner of the Token
-/// @param _tokenHolder The address of the Tokens's recipient
-/// @return success Whether the token creation was successful
-function createTokenProxy(address payable _tokenHolder) payable virtual public returns (bool success);
+    /// @notice Create Token with `_tokenHolder` as the initial owner of the Token
+    /// @param _tokenHolder The address of the Tokens's recipient
+    /// @return success Whether the token creation was successful
+    function createTokenProxy(address payable _tokenHolder) payable virtual public returns (bool success);
 
-/// @notice Refund `msg.sender` in the case the Token Creation did
-/// not reach its minimum fueling goal
-function refund() virtual public;
+    /// @notice Refund `msg.sender` in the case the Token Creation did
+    /// not reach its minimum fueling goal
+    function refund() virtual public;
 
-/// @return divisor The divisor used to calculate the token creation rate during
-/// the creation phase
-function divisor() public virtual view returns (uint divisor);
+    /// @return divisor The divisor used to calculate the token creation rate during
+    /// the creation phase
+    function divisor() public virtual view returns (uint divisor);
 
-event FuelingToDate(uint value);
-event CreatedToken(address indexed to, uint amount);
-event Refund(address indexed to, uint value);
+    event FuelingToDate(uint value);
+    event CreatedToken(address indexed to, uint amount);
+    event Refund(address indexed to, uint value);
 }
 
 
 contract TokenCreation is TokenCreationInterface, Token {
-constructor(
-    uint _minTokensToCreate,
-    uint _closingTime,
-    address _privateCreation,
-    string memory _tokenName,
-    string memory _tokenSymbol,
-    uint8 _decimalPlaces) public {
+    constructor(
+        uint _minTokensToCreate,
+        uint _closingTime,
+        address _privateCreation,
+        string memory _tokenName,
+        string memory _tokenSymbol,
+        uint8 _decimalPlaces) public {
 
-    closingTime = _closingTime;
-    minTokensToCreate = _minTokensToCreate;
-    privateCreation = _privateCreation;
-    extraBalance = new ManagedAccount(address(this), true);
-    name = _tokenName;
-    symbol = _tokenSymbol;
-    decimals = _decimalPlaces;
+        closingTime = _closingTime;
+        minTokensToCreate = _minTokensToCreate;
+        privateCreation = _privateCreation;
+        extraBalance = new ManagedAccount(address(this), true);
+        name = _tokenName;
+        symbol = _tokenSymbol;
+        decimals = _decimalPlaces;
 
-}
+    }
 
-function createTokenProxy(address payable _tokenHolder) payable public
+    function createTokenProxy(address payable _tokenHolder) payable public
 override returns (bool success) {
-    if (block.timestamp < closingTime && msg.value > 0
-        && (privateCreation == 0x0000000000000000000000000000000000000000 || privateCreation == msg.sender)) {
+        if (block.timestamp < closingTime && msg.value > 0
+            && (privateCreation == 0x0000000000000000000000000000000000000000 || privateCreation == msg.sender)) {
 
-        uint token = (msg.value * 20) / divisor();
-        address(extraBalance).call{value: msg.value - token}("");
-        balances[_tokenHolder] += token;
-        totalSupply += token;
-        weiGiven[_tokenHolder] += msg.value;
-        emit CreatedToken(_tokenHolder, token);
-        if (totalSupply >= minTokensToCreate && !isFueled) {
-            isFueled = true;
-            emit FuelingToDate(totalSupply);
+            uint token = (msg.value * 20) / divisor();
+            address(extraBalance).call{value: msg.value - token}("");
+            balances[_tokenHolder] += token;
+            totalSupply += token;
+            weiGiven[_tokenHolder] += msg.value;
+            emit CreatedToken(_tokenHolder, token);
+            if (totalSupply >= minTokensToCreate && !isFueled) {
+                isFueled = true;
+                emit FuelingToDate(totalSupply);
+            }
+            return true;
         }
-        return true;
+        revert();
     }
-    revert();
-}
 
-function refund() public override {
-    if (block.timestamp > closingTime && !isFueled) {
-        // Get extraBalance - will only succeed when called for the first time
-        if (address(extraBalance).balance >= extraBalance.accumulatedInput())
-            extraBalance.payOut(payable(this), extraBalance.accumulatedInput());
+    function refund() public override {
+        if (block.timestamp > closingTime && !isFueled) {
+            // Get extraBalance - will only succeed when called for the first time
+            if (address(extraBalance).balance >= extraBalance.accumulatedInput())
+                extraBalance.payOut(payable(this), extraBalance.accumulatedInput());
 
-        // Execute refund
-        (bool success,) = msg.sender.call{value: weiGiven[msg.sender]}("");
-        if (success) {
-            emit Refund(msg.sender, weiGiven[msg.sender]);
-            totalSupply -= balances[msg.sender];
-            balances[msg.sender] = 0;
-            weiGiven[msg.sender] = 0;
+            // Execute refund
+            (bool success,) = msg.sender.call{value: weiGiven[msg.sender]}("");
+            if (success) {
+                emit Refund(msg.sender, weiGiven[msg.sender]);
+                totalSupply -= balances[msg.sender];
+                balances[msg.sender] = 0;
+                weiGiven[msg.sender] = 0;
+            }
         }
     }
-}
 
-function divisor() public override view returns (uint divisor) {
-    // The number of (base unit) tokens per wei is calculated
-    // as `msg.value` * 20 / `divisor`
-    // The fueling period starts with a 1:1 ratio
-    if (closingTime - 2 weeks > block.timestamp) {
-        return 20;
-    // Followed by 10 days with a daily creation rate increase of 5%
-    } else if (closingTime - 4 days > block.timestamp) {
-        return (20 + (block.timestamp - (closingTime - 2 weeks)) / (1 days));
-    // The last 4 days there is a constant creation rate ratio of 1:1.5
-    } else {
-        return 30;
+    function divisor() public override view returns (uint divisor) {
+        // The number of (base unit) tokens per wei is calculated
+        // as `msg.value` * 20 / `divisor`
+        // The fueling period starts with a 1:1 ratio
+        if (closingTime - 2 weeks > block.timestamp) {
+            return 20;
+        // Followed by 10 days with a daily creation rate increase of 5%
+        } else if (closingTime - 4 days > block.timestamp) {
+            return (20 + (block.timestamp - (closingTime - 2 weeks)) / (1 days));
+        // The last 4 days there is a constant creation rate ratio of 1:1.5
+        } else {
+            return 30;
+        }
     }
-}
-receive() external virtual payable {
-}
+    receive() external virtual payable {
+    }
 }

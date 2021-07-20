@@ -1,15 +1,15 @@
 contract B {
-uint immutable x;
+    uint immutable x;
 
-constructor() {
-    x = 3;
-}
+    constructor() {
+        x = 3;
+    }
 }
 
 contract C is B {
-uint immutable y;
-constructor() {
-    y = 3;
-}
+    uint immutable y;
+    constructor() {
+        y = 3;
+    }
 }
 // ----

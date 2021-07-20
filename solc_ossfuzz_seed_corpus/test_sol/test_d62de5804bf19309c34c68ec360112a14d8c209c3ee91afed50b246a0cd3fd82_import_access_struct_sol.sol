@@ -4,10 +4,10 @@ struct S { uint x; }
 import "a" as A;
 struct T { uint x; }
 contract C {
-function f() public pure {
-    T;
-    A.S;
-}
+    function f() public pure {
+        T;
+        A.S;
+    }
 }
 // ----
 // Warning 6133: (b:90-91): Statement has no effect.

@@ -6,7 +6,7 @@ contract C {
 		(uint h,) = (4,5);
 		(uint x,,) = g();
 		(, uint y,) = g();
-    a; b; c; d; e; h; x; y;
+        a; b; c; d; e; h; x; y;
 	}
 	function g() pure public returns (uint, uint, uint) {}
 }

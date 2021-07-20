@@ -1,7 +1,7 @@
 abstract contract C {
-function transfer(uint) public virtual;
-function f() public {
-    this.transfer(10);
-}
+    function transfer(uint) public virtual;
+    function f() public {
+        this.transfer(10);
+    }
 }
 // ----

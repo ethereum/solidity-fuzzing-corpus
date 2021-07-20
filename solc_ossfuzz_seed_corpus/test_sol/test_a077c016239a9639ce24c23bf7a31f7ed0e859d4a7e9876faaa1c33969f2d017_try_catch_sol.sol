@@ -1,13 +1,13 @@
 contract test {
-function f() public returns (uint b) {
-    try this.f() returns (uint a) {
+    function f() public returns (uint b) {
+        try this.f() returns (uint a) {
 
-    } catch Error(string memory message) {
+        } catch Error(string memory message) {
 
-    } catch (bytes memory error) {
+        } catch (bytes memory error) {
 
+        }
     }
-}
 }
 // ====
 // EVMVersion: >=byzantium

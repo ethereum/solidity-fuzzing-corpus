@@ -5,24 +5,24 @@ function f0(bytes11 i0,bool i1)
 {
   if (false)
   {
-{ }
-if (false)
-{
+    { }
+    if (false)
+    {
 
-  if (false)
-  { }
+      if (false)
+      { }
 
-  { }
-  if (false)
-  { }
-
-
-}
-
-address(0x1BB7B036Ba5713c464bC342A48c3F59Ac3753752);
+      { }
+      if (false)
+      { }
 
 
-"ef586aaf7d";
+    }
+
+    address(0x1BB7B036Ba5713c464bC342A48c3F59Ac3753752);
+
+
+    "ef586aaf7d";
 
   }
 

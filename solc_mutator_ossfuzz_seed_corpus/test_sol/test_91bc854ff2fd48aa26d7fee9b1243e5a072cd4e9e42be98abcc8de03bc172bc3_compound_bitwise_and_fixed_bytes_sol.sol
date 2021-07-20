@@ -1,13 +1,13 @@
 contract C {
-function f() public pure returns (bytes1) {
-    bytes1 a = 0xff;
-    bytes1 b = 0xf0;
-    a &= b;
-    assert(a == b);
+    function f() public pure returns (bytes1) {
+        bytes1 a = 0xff;
+        bytes1 b = 0xf0;
+        a &= b;
+        assert(a == b);
 
-    a &= ~b;
-    assert(a != 0); // fails
-}
+        a &= ~b;
+        assert(a != 0); // fails
+    }
 }
 // ====
 // SMTEngine: all

@@ -1,12 +1,12 @@
 contract C {
-function f() public returns (uint8, uint) {
-    // Implicitly convertible, but not exactly the same type.
-    try this.f() returns (uint, int x) {
+    function f() public returns (uint8, uint) {
+        // Implicitly convertible, but not exactly the same type.
+        try this.f() returns (uint, int x) {
 
-    } catch {
+        } catch {
 
+        }
     }
-}
 }
 // ----
 // TypeError 6509: (157-161): Invalid type, expected uint8 but got uint256.

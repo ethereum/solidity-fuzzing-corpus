@@ -1,15 +1,15 @@
 library L {
-function equals(address a, address b) internal pure returns (bool) {
-    return a == b;
-}
+    function equals(address a, address b) internal pure returns (bool) {
+        return a == b;
+    }
 }
 
 contract C {
-using L for address;
+    using L for address;
 
-function foo(address a, address b) public returns (bool) {
-    return a.equals(b);
-}
+    function foo(address a, address b) public returns (bool) {
+        return a.equals(b);
+    }
 }
 // ====
 // compileViaYul: also

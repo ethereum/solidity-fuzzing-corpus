@@ -1,16 +1,16 @@
 library L {
-function f() internal {
-    new C();
-}
+    function f() internal {
+        new C();
+    }
 }
 
 contract D {
-function f() public {
-    L.f();
-}
+    function f() public {
+        L.f();
+    }
 }
 contract C {
-constructor() { new D(); }
+    constructor() { new D(); }
 }
 
 // ----

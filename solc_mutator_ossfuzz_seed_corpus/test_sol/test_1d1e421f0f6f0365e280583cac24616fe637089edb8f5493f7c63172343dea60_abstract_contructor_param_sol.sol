@@ -1,4 +1,4 @@
 abstract contract A {
-constructor (mapping (uint => uint) [] storage) { }
+    constructor (mapping (uint => uint) [] storage) { }
 }
 // ----

@@ -1,11 +1,11 @@
 contract C {
   function f() public pure {
-assembly {
-  let shl := 1
-}
-assembly {
-  pop(shl(1, 2))
-}
+    assembly {
+      let shl := 1
+    }
+    assembly {
+      pop(shl(1, 2))
+    }
   }
 }
 // ====

@@ -4,9 +4,9 @@
 // function type).
 abstract contract C
 {
-modifier only_owner() { _; }
-function foo() only_owner public virtual;
-function bar() public only_owner virtual;
+    modifier only_owner() { _; }
+    function foo() only_owner public virtual;
+    function bar() public only_owner virtual;
 }
 // ----
 // SyntaxError 2668: (212-253): Functions without implementation cannot have modifiers.

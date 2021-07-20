@@ -1,10 +1,10 @@
+{
+	"methods" : {},
+	"stateVariables" :
 	{
-		"methods" : {},
-		"stateVariables" :
+		"state" :
 		{
-			"state" :
-			{
-				"details" : "example of dev"
-			}
+			"details" : "example of dev"
 		}
 	}
+}

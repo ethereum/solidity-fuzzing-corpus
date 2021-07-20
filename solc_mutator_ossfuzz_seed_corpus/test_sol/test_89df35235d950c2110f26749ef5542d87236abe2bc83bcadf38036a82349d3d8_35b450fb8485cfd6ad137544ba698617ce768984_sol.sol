@@ -18,12 +18,12 @@ function f2(bytes3 i0)  returns(C0 o0,bytes memory o1)
   (l0,l1) = f1();
 
   {
-l0;
+    l0;
 
-if (true)
-{ }
-(l0,l1) = f1();
-{ }
+    if (true)
+    { }
+    (l0,l1) = f1();
+    { }
   }
 
   if (false)

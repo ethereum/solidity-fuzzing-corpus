@@ -4,14 +4,14 @@
 contract C0 {
   function f0(function () external i0,bytes23 i1) external returns(uint152 o0)
   {
-unchecked {
-}
-{
-}
-if (true)
-{ }
+    unchecked {
+    }
+    {
+    }
+    if (true)
+    { }
 
-i0;
+    i0;
   }
   function f1(address i0,uint120 i1,function () external i2) external returns(bytes17 o0,address o1,bytes memory o2)
   {

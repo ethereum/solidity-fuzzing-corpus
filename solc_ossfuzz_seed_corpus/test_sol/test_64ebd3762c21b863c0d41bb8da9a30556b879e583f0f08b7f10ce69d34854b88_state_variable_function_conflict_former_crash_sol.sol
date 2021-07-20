@@ -6,7 +6,7 @@ contract SomeContract {
   function balance(uint number) public {}
 
   function doSomething() public {
-balance(3);
+    balance(3);
   }
 }
 // ----

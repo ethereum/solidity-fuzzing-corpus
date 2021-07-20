@@ -1,7 +1,7 @@
 contract test {
-function f(uint k) public returns (uint) {
-    return k;
-}
+    function f(uint k) public returns (uint) {
+        return k;
+    }
 }
 // ----
 //     :test

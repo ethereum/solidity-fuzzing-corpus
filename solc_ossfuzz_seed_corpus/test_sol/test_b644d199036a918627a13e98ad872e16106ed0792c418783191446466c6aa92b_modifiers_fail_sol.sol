@@ -1,11 +1,11 @@
 contract D {
-uint x;
-modifier viewm(uint) { uint a = x; _; a; }
-modifier nonpayablem(uint) { x = 2; _; }
+    uint x;
+    modifier viewm(uint) { uint a = x; _; a; }
+    modifier nonpayablem(uint) { x = 2; _; }
 }
 contract C is D {
-function f() viewm(0) pure public {}
-function g() nonpayablem(0) view public {}
+    function f() viewm(0) pure public {}
+    function g() nonpayablem(0) view public {}
 }
 // ----
 // TypeError 2527: (154-162): Function declared as pure, but this expression (potentially) reads from the environment or state and thus requires "view".

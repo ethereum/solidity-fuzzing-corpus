@@ -1,4 +1,4 @@
 contract C {
-uint immutable x = 0;
+    uint immutable x = 0;
 }
 // ----

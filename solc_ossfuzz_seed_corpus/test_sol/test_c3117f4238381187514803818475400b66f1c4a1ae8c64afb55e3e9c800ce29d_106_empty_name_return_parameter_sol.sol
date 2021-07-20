@@ -1,4 +1,4 @@
 contract test {
-function f() public returns (bool) { }
+    function f() public returns (bool) { }
 }
 // ----

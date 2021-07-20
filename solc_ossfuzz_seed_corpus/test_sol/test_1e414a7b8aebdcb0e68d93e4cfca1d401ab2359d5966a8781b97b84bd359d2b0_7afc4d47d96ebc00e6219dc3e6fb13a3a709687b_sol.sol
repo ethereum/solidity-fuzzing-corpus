@@ -6,17 +6,17 @@ contract C0 {
   { }
   function f1() external returns(bytes18 o0)
   {
-if (false)
-{
-}
+    if (false)
+    {
+    }
 
 
-{
-  { }
-  if (false)
-  {
-  }
-}
+    {
+      { }
+      if (false)
+      {
+      }
+    }
   }
   function f2(bytes20 i0,bytes2 i1,C0 i2) external returns(bytes10 o0,function () external o1)
   { }

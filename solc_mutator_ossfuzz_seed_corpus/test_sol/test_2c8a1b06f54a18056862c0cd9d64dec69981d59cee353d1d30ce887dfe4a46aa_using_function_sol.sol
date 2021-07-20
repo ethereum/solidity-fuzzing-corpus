@@ -1,8 +1,8 @@
 error f(uint, uint);
 contract C {
-function f(uint) public {
-    revert f(10);
-}
+    function f(uint) public {
+        revert f(10);
+    }
 }
 // ----
 // Warning 2519: (38-91): This declaration shadows an existing declaration.

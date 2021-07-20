@@ -3,7 +3,7 @@ contract test {
   s x;
   s y;
   fallback() external {
-x == y;
+    x == y;
   }
 }
 // ----

@@ -1,36 +1,36 @@
 contract C {
-uint[] data;
+    uint[] data;
 
-function len() public returns (uint ret) {
-    data.push(234);
-    data.push(123);
-    delete data;
-    assembly {
-        ret := sload(data.slot)
-    }
-}
-
-function val() public returns (uint ret) {
-    assembly {
-        sstore(0, 2)
-        mstore(0, 0)
-        sstore(keccak256(0, 32), 234)
-        sstore(add(keccak256(0, 32), 1), 123)
+    function len() public returns (uint ret) {
+        data.push(234);
+        data.push(123);
+        delete data;
+        assembly {
+            ret := sload(data.slot)
+        }
     }
 
-    assert(data[0] == 234);
-    assert(data[1] == 123);
+    function val() public returns (uint ret) {
+        assembly {
+            sstore(0, 2)
+            mstore(0, 0)
+            sstore(keccak256(0, 32), 234)
+            sstore(add(keccak256(0, 32), 1), 123)
+        }
 
-    delete data;
+        assert(data[0] == 234);
+        assert(data[1] == 123);
 
-    uint size = 999;
+        delete data;
 
-    assembly {
-        size := sload(0)
-        mstore(0, 0)
-        ret := sload(keccak256(0, 32))
+        uint size = 999;
+
+        assembly {
+            size := sload(0)
+            mstore(0, 0)
+            ret := sload(keccak256(0, 32))
+        }
     }
-}
 }
 
 // ====

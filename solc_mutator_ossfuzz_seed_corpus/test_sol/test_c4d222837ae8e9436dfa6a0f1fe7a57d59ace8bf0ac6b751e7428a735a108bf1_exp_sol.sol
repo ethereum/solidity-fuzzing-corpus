@@ -1,7 +1,7 @@
 contract C {
-function f(uint x, uint y) public returns (uint) {
-    return x**y;
-}
+    function f(uint x, uint y) public returns (uint) {
+        return x**y;
+    }
 }
 // ====
 // compileToEwasm: also

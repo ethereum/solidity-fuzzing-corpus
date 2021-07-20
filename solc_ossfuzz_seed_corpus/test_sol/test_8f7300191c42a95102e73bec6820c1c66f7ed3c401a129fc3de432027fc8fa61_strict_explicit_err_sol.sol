@@ -4,36 +4,36 @@ enum E { Zero }
 
 contract C
 {
-function f() public pure {
+    function f() public pure {
 
-    uint16 a = uint16(int8(-1));
+        uint16 a = uint16(int8(-1));
 
-    int8 b = -1;
-    uint16 c = uint16(b);
+        int8 b = -1;
+        uint16 c = uint16(b);
 
-    int8 d = int8(uint16(type(uint16).max));
+        int8 d = int8(uint16(type(uint16).max));
 
-    uint16 e = type(uint16).max;
-    int8 g = int8(e);
+        uint16 e = type(uint16).max;
+        int8 g = int8(e);
 
-    address h = address(uint(type(uint).max));
+        address h = address(uint(type(uint).max));
 
-    uint i = uint(address(0));
+        uint i = uint(address(0));
 
-    uint j = type(uint).max;
-    address k = address(j);
+        uint j = type(uint).max;
+        address k = address(j);
 
-    int80 l = int80(bytes10("h"));
-    bytes10 m = bytes10(int80(-1));
+        int80 l = int80(bytes10("h"));
+        bytes10 m = bytes10(int80(-1));
 
-    B n = B(int(100));
-    int o = int(new B());
+        B n = B(int(100));
+        int o = int(new B());
 
-    B p = B(0x00);
+        B p = B(0x00);
 
-    int q = int(E(0));
-    int r = int(E.Zero);
-}
+        int q = int(E(0));
+        int r = int(E.Zero);
+    }
 }
 // ----
 // TypeError 9640: (95-111): Explicit type conversion not allowed from "int8" to "uint16".

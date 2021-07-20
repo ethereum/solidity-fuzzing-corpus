@@ -8,13 +8,13 @@ function f1()  returns(function () external o0,bool o1,bytes11 o2,bytes memory o
 
   if (true)
   {
-if (true)
-{ }
-{
-  false;
-}
+    if (true)
+    { }
+    {
+      false;
+    }
 
-(o3,o0) = f0(true,(false || true));
+    (o3,o0) = f0(true,(false || true));
   }
 }
 
@@ -27,10 +27,10 @@ contract C0 {
   function f3() external returns(address o0,bytes memory o1)
   {
 
-o0;
+    o0;
 
-if (false)
-{ }
+    if (false)
+    { }
   }
 }
 // ----

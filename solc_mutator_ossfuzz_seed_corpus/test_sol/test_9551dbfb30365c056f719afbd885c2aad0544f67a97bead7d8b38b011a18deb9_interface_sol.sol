@@ -1,7 +1,7 @@
 interface D {
-function f() view external;
+    function f() view external;
 }
 contract C is D {
-function f() override view external {}
+    function f() override view external {}
 }
 // ----

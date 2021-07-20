@@ -1,18 +1,18 @@
 contract C {
    function f() public pure {
- bytes1 b1 = 0x1;
- bytes1 b2 = 0x100;
- bytes2 b3 = 0xFF;
- bytes2 b4 = 0x100;
- bytes2 b5 = 0x10000;
- bytes3 b6 = 0xFFFF;
- bytes3 b7 = 0x10000;
- bytes3 b8 = 0x1000000;
- bytes4 b9 = 0xFFFFFF;
- bytes4 b10 = 0x1000000;
- bytes4 b11 = 0x100000000;
- bytes16 b12 = 0x1;
- bytes32 b13 = 0x1;
+     bytes1 b1 = 0x1;
+     bytes1 b2 = 0x100;
+     bytes2 b3 = 0xFF;
+     bytes2 b4 = 0x100;
+     bytes2 b5 = 0x10000;
+     bytes3 b6 = 0xFFFF;
+     bytes3 b7 = 0x10000;
+     bytes3 b8 = 0x1000000;
+     bytes4 b9 = 0xFFFFFF;
+     bytes4 b10 = 0x1000000;
+     bytes4 b11 = 0x100000000;
+     bytes16 b12 = 0x1;
+     bytes32 b13 = 0x1;
    }
 }
 // ----

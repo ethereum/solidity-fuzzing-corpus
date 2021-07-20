@@ -8,13 +8,13 @@ import "s2.sol" as T;
 import "s1.sol";
 contract C {
   function x() public pure {
-revert E(1);
+    revert E(1);
   }
   function y() public pure {
-revert S.E(2);
+    revert S.E(2);
   }
   function z() public pure {
-revert T.S.E(3);
+    revert T.S.E(3);
   }
 }
 // ====

@@ -1,8 +1,8 @@
 contract C {
   function f() public pure {
-assembly {
-  let x := super
-}
+    assembly {
+      let x := super
+    }
   }
 }
 // ----

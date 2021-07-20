@@ -1,3 +1,3 @@
-		contract test {
-			function f() public { bool x = false; }
-		}
+contract test {
+	function f() public { bool x = false; }
+}

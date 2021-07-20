@@ -2,21 +2,21 @@
 pragma abicoder               v2;
 
 library L {
-struct Item {
-    uint x;
-}
+    struct Item {
+        uint x;
+    }
 
-function get(Item storage _item) external view {}
+    function get(Item storage _item) external view {}
 }
 ==== Source: B ====
 pragma abicoder v1;
 import "A";
 
 contract Test {
-L.Item item;
+    L.Item item;
 
-function foo() public view {
-    L.get(item);
-}
+    function foo() public view {
+        L.get(item);
+    }
 }
 // ----

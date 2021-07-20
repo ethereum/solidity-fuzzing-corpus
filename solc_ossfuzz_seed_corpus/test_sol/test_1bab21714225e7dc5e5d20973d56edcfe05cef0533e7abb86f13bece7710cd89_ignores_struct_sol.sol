@@ -1,6 +1,6 @@
 contract C {
-struct a {
-    uint msg;
-}
+    struct a {
+        uint msg;
+    }
 }
 // ----

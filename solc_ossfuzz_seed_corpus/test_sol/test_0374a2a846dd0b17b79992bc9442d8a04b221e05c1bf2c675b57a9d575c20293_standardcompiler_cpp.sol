@@ -1,16 +1,16 @@
-	{
-		"language": "Solidity",
-		"sources": {
+{
+	"language": "Solidity",
+	"sources": {
+		"fileA": {
+			"content": "contract A { }"
+		}
+	},
+	"settings": {
+		"outputSelection": {
 			"fileA": {
-				"content": "contract A { }"
-			}
-		},
-		"settings": {
-			"outputSelection": {
-				"fileA": {
-					"A": [ "abi", "devdoc", "userdoc", "evm.bytecode", "evm.assembly", "evm.gasEstimates", "evm.legacyAssembly", "metadata" ],
-					"": [ "ast" ]
-				}
+				"A": [ "abi", "devdoc", "userdoc", "evm.bytecode", "evm.assembly", "evm.gasEstimates", "evm.legacyAssembly", "metadata" ],
+				"": [ "ast" ]
 			}
 		}
 	}
+}

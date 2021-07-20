@@ -1,4 +1,4 @@
 contract c {
-function x() external {}
+    function x() external {}
 }
 // ----

@@ -8,8 +8,8 @@ contract C0 {
   {
 
 
-if (true)
-{ }
+    if (true)
+    { }
   }
 }
 // ----

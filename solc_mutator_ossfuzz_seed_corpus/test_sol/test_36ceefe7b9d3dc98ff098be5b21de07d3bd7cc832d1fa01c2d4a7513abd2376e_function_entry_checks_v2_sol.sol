@@ -1,6 +1,6 @@
 pragma abicoder v2;
 contract C {
-function t(uint) public pure {}
+    function t(uint) public pure {}
 }
 // ====
 // EVMVersion: >=byzantium

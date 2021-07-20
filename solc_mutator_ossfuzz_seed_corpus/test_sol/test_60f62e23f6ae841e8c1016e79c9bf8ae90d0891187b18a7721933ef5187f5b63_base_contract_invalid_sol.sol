@@ -1,12 +1,12 @@
 contract B {
-function f() external {}
-function g() internal {}
+    function f() external {}
+    function g() internal {}
 }
 contract C is B {
-function i() public {
-    B.f();
-    B.g.selector;
-}
+    function i() public {
+        B.f();
+        B.g.selector;
+    }
 }
 // ----
 // TypeError 3419: (125-130): Cannot call function via contract type name.

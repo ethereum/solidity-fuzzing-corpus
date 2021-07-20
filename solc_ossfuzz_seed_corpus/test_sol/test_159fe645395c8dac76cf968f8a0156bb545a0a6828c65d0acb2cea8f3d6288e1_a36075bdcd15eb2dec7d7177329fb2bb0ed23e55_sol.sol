@@ -9,13 +9,13 @@ function f0()  returns(bool o0,function () external o1,int48 o2)
   if (false)
   { }
   {
-{ }
-if (true)
-{
-  if (true)
-  { }
+    { }
+    if (true)
+    {
+      if (true)
+      { }
 
-}
+    }
 
   }
 
@@ -23,24 +23,24 @@ if (true)
 
 
   {
-if (true)
-{
+    if (true)
+    {
 
-  if (false)
-  { }
+      if (false)
+      { }
 
-  {
+      {
 
+        if (true)
+        { }
+      }
+    }
+
+    { }
+
+    { }
     if (true)
     { }
-  }
-}
-
-{ }
-
-{ }
-if (true)
-{ }
   }
 }
 function f1(int256 i0,bool i1,int16 i2) 

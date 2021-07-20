@@ -1,4 +1,4 @@
 interface I {
-event E();
+    event E();
 }
 // ----

@@ -1,13 +1,13 @@
 library Arst {
-enum Foo {Things, Stuff}
+    enum Foo {Things, Stuff}
 }
 
 
 contract Tsra {
-function f() public returns (uint256) {
-    Arst.Foo;
-    return 1;
-}
+    function f() public returns (uint256) {
+        Arst.Foo;
+        return 1;
+    }
 }
 
 // ====

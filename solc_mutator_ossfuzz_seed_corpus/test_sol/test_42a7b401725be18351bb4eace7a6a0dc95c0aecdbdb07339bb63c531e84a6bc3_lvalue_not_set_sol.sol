@@ -1,9 +1,9 @@
 contract C {
-function foo(uint x) public
-{
-    // Used to cause an ICE
-    uint p = new uint[] = x;
-}
+    function foo(uint x) public
+    {
+        // Used to cause an ICE
+        uint p = new uint[] = x;
+    }
 }
 // ----
 // TypeError 4247: (100-110): Expression has to be an lvalue.

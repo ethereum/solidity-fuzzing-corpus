@@ -1,19 +1,19 @@
 contract A {
-function f() public {
-    new B();
-}
+    function f() public {
+        new B();
+    }
 }
 
 
 contract B {
-function f() public {}
+    function f() public {}
 }
 
 
 contract C {
-function f() public {
-    new B();
-}
+    function f() public {
+        new B();
+    }
 }
 
 // ====

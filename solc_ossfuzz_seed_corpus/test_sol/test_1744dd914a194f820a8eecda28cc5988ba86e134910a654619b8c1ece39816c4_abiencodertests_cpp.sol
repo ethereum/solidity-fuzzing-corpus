@@ -1,6 +1,6 @@
-		contract C {
-			event E(bytes);
-			function f(bytes calldata a) external {
-				emit E(a);
-			}
-		}
+contract C {
+	event E(bytes);
+	function f(bytes calldata a) external {
+		emit E(a);
+	}
+}

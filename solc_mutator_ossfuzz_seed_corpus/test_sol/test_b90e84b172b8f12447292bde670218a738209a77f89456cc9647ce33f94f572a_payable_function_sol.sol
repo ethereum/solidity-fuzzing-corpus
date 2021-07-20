@@ -1,6 +1,6 @@
 contract test {
-function f() public {}
-function g() public payable {}
+    function f() public {}
+    function g() public payable {}
 }
 // ----
 //     :test

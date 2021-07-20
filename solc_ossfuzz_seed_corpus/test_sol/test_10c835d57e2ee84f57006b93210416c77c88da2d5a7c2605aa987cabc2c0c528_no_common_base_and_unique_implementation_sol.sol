@@ -1,10 +1,10 @@
 abstract contract A {
-function f() external {}
-function g() external virtual;
+    function f() external {}
+    function g() external virtual;
 }
 abstract contract B {
-function g() external {}
-function f() external virtual;
+    function g() external {}
+    function f() external virtual;
 }
 contract C is A, B {
 }

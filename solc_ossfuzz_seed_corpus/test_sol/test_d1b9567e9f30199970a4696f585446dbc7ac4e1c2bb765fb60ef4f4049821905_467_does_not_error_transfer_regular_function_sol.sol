@@ -1,12 +1,12 @@
 contract A {
-function transfer() pure public {}
+    function transfer() pure public {}
 }
 
 contract B {
-A a;
+    A a;
 
-fallback() external {
-    a.transfer();
-}
+    fallback() external {
+        a.transfer();
+    }
 }
 // ----

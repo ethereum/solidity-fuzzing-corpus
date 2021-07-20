@@ -10,7 +10,7 @@ import "s1.sol";
 import "s2.sol";
 contract C {
   function foo() public pure returns (uint) {
-return h() - f() - g();
+    return h() - f() - g();
   }
 }
 // ----

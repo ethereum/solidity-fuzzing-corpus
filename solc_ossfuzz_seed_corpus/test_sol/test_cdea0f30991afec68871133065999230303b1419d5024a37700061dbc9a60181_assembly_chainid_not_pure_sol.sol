@@ -1,10 +1,10 @@
 contract C {
-function f() public pure {
-    assembly { pop(chainid()) }
-}
-function g() public pure returns (uint) {
-    return block.chainid;
-}
+    function f() public pure {
+        assembly { pop(chainid()) }
+    }
+    function g() public pure returns (uint) {
+        return block.chainid;
+    }
 }
 // ====
 // EVMVersion: >=istanbul

@@ -1,14 +1,14 @@
 contract C {
-uint x;
-function setX(uint y) public {
-    x = y;
-}
-function resetX() public {
-    x = 0;
-}
-function readX() public view returns(uint) {
-    return x;
-}
+    uint x;
+    function setX(uint y) public {
+        x = y;
+    }
+    function resetX() public {
+        x = 0;
+    }
+    function readX() public view returns(uint) {
+        return x;
+    }
 }
 // ====
 // optimize: true

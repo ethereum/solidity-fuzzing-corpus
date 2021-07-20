@@ -21,11 +21,11 @@ function f4(function () external i0,C0 i1,int256 i2)
 {
 
   {
-{ }
+    { }
 
 
-if (true)
-{ }
+    if (true)
+    { }
 
 
   }

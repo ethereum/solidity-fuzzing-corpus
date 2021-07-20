@@ -1,28 +1,28 @@
 library L {
-function f() public {
-}
+    function f() public {
+    }
 }
 
 // error
 struct super {
-uint a;
+    uint a;
 }
 
 // error
 struct this {
-uint a;
+    uint a;
 }
 
 // error
 struct _ {
-uint a;
+    uint a;
 }
 
 contract C {
-// These are not errors
-using L for super;
-using L for _;
-using L for this;
+    // These are not errors
+    using L for super;
+    using L for _;
+    using L for this;
 }
 // ----
 // DeclarationError 3726: (56-84): The name "super" is reserved.

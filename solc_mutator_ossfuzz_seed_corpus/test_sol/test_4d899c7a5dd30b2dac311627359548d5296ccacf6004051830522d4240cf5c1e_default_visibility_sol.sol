@@ -1,6 +1,6 @@
 contract C {
-// Check that visibility is also enforced for the receive ether function.
-receive() {}
+    // Check that visibility is also enforced for the receive ether function.
+    receive() {}
 }
 // ----
 // SyntaxError 4937: (95-107): No visibility specified. Did you intend to add "external"?

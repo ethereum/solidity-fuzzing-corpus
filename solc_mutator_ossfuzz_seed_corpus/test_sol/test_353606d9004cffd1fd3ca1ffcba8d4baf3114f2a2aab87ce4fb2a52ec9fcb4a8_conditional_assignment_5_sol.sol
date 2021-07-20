@@ -1,24 +1,24 @@
 abstract contract D {
-function d() public virtual ;
+    function d() public virtual ;
 }
 
 contract C {
-bool a;
-uint x;
-D d;
-function g() public returns (uint) {
-    x = 2;
-    d.d();
-    return x;
-}
-function f() public {
-    x = 1;
-    uint y = g();
-    assert(x == 2 || x == 1);
-}
-function h() public {
-    x = 3;
-}
+    bool a;
+    uint x;
+    D d;
+    function g() public returns (uint) {
+        x = 2;
+        d.d();
+        return x;
+    }
+    function f() public {
+        x = 1;
+        uint y = g();
+        assert(x == 2 || x == 1);
+    }
+    function h() public {
+        x = 3;
+    }
 }
 // ====
 // SMTEngine: all

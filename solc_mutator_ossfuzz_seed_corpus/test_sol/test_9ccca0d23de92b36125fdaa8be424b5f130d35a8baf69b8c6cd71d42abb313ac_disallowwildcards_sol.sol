@@ -1,16 +1,16 @@
 contract C {
-function fn() public pure {
-    (uint a,) = (1,2,3);
-    (,uint b) = (1,2,3);
-    (,uint c,) = (1,2,3,4,5);
-    (uint d, uint e,) = (1,2,3,4);
-    (,uint f, uint g) = (1,2,3,4);
-    (,uint h, uint i,) = (1,2,3);
-    (uint j,) = 1;
-    (,uint k) = 1;
-    (,uint l,) = 1;
-    a;b;c;d;e;f;g;h;i;j;k;l;
-}
+    function fn() public pure {
+        (uint a,) = (1,2,3);
+        (,uint b) = (1,2,3);
+        (,uint c,) = (1,2,3,4,5);
+        (uint d, uint e,) = (1,2,3,4);
+        (,uint f, uint g) = (1,2,3,4);
+        (,uint h, uint i,) = (1,2,3);
+        (uint j,) = 1;
+        (,uint k) = 1;
+        (,uint l,) = 1;
+        a;b;c;d;e;f;g;h;i;j;k;l;
+    }
 }
 // ----
 // TypeError 7364: (53-72): Different number of components on the left hand side (2) than on the right hand side (3).

@@ -1,6 +1,6 @@
 contract test {
-function callcode() pure public {
-    test.callcode();
-}
+    function callcode() pure public {
+        test.callcode();
+    }
 }
 // ----

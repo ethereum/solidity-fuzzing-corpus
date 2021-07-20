@@ -1,7 +1,7 @@
 contract C {
-function f(uint constant LEN) public {
-    uint[LEN] a;
-}
+    function f(uint constant LEN) public {
+        uint[LEN] a;
+    }
 }
 // ----
 // DeclarationError 1788: (28-45): The "constant" keyword can only be used for state variables or variables at file level.

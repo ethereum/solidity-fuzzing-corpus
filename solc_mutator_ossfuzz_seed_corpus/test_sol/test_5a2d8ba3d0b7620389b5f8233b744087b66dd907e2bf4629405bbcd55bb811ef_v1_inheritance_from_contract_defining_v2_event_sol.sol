@@ -2,11 +2,11 @@
 pragma abicoder               v2;
 
 struct Item {
-uint x;
+    uint x;
 }
 
 contract C {
-event Ev(Item);
+    event Ev(Item);
 }
 ==== Source: B ====
 pragma abicoder v1;

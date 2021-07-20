@@ -1,14 +1,14 @@
 contract C {
-function f() public pure {
-    assembly {
-        function this() {
-        }
-        function super() {
-        }
-        function _() {
+    function f() public pure {
+        assembly {
+            function this() {
+            }
+            function super() {
+            }
+            function _() {
+            }
         }
     }
-}
 }
 // ----
 // DeclarationError 4113: (75-106): The identifier name "this" is reserved.

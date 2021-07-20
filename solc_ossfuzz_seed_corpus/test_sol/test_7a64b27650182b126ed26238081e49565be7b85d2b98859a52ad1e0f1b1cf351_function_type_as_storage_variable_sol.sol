@@ -1,4 +1,4 @@
 contract test {
-function (uint, uint) internal returns (uint) f1;
+    function (uint, uint) internal returns (uint) f1;
 }
 // ----

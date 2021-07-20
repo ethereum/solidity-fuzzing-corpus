@@ -1,14 +1,14 @@
 contract Base {
-constructor(uint256 i) {
-    m_i = i;
-}
+    constructor(uint256 i) {
+        m_i = i;
+    }
 
-uint256 public m_i;
+    uint256 public m_i;
 }
 
 
 contract Derived is Base {
-constructor(uint256 i) Base(i) {}
+    constructor(uint256 i) Base(i) {}
 }
 
 

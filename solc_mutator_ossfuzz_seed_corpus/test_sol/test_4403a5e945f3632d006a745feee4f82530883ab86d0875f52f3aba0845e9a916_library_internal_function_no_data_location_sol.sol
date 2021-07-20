@@ -1,13 +1,13 @@
 library L {
-struct S { uint x; }
-function g() internal pure returns (uint[2]) {}
-function h() internal pure returns (uint[]) {}
-function i() internal pure returns (S) {}
-function j() internal pure returns (mapping(uint => uint)) {}
-function gp(uint[2]) internal pure {}
-function hp(uint[]) internal pure {}
-function ip(S) internal pure {}
-function jp(mapping(uint => uint)) internal pure {}
+    struct S { uint x; }
+    function g() internal pure returns (uint[2]) {}
+    function h() internal pure returns (uint[]) {}
+    function i() internal pure returns (S) {}
+    function j() internal pure returns (mapping(uint => uint)) {}
+    function gp(uint[2]) internal pure {}
+    function hp(uint[]) internal pure {}
+    function ip(S) internal pure {}
+    function jp(mapping(uint => uint)) internal pure {}
 }
 // ----
 // TypeError 6651: (77-84): Data location must be "storage", "memory" or "calldata" for return parameter in function, but none was given.

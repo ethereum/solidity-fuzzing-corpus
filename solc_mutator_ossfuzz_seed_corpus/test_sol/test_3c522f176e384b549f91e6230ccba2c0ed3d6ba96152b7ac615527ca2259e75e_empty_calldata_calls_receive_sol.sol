@@ -1,6 +1,6 @@
 contract A {
-uint public x;
-receive () external payable { ++x; }
+    uint public x;
+    receive () external payable { ++x; }
 }
 // ====
 // compileToEwasm: also

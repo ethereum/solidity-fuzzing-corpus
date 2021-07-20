@@ -1,5 +1,5 @@
 contract D {}
 contract C {
-function f() public { new D(); }
+    function f() public { new D(); }
 }
 // ----

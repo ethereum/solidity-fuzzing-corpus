@@ -1,15 +1,15 @@
 contract C {
-function f() public pure {
-    bytes3 y = "def";
-    y &= "def";
-    assert(y == "def");
+    function f() public pure {
+        bytes3 y = "def";
+        y &= "def";
+        assert(y == "def");
 
-    y |= "dee";
-    assert(y == "def"); // fails
+        y |= "dee";
+        assert(y == "def"); // fails
 
-    y ^= "fed";
-    assert(y == (bytes3("def") | bytes3("dee")) ^ bytes3("fed"));
-}
+        y ^= "fed";
+        assert(y == (bytes3("def") | bytes3("dee")) ^ bytes3("fed"));
+    }
 }
 // ====
 // SMTEngine: all

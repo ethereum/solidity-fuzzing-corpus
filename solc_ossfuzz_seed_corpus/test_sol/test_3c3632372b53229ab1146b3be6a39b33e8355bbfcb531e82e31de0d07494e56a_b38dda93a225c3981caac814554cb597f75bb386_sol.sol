@@ -5,7 +5,7 @@ function f0(int80 i0,bytes24 i1,function () external i2,bool i3)  returns(bool o
 {
 
   {
-{ }
+    { }
 
 
   }

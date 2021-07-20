@@ -5,7 +5,7 @@ import {f as f} from "s1.sol";
 import {f as f} from "s1.sol";
 contract C {
   function g() public pure returns (uint) {
-return f();
+    return f();
   }
 }
 // ----

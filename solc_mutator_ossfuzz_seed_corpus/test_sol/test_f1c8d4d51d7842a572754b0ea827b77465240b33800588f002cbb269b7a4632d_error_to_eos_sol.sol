@@ -8,11 +8,11 @@ contract Error2 {
 // There is no error in this contract
 contract SendCoin {
   function sendCoin(address receiver, uint amount) public returns(bool sufficient) {
-if (balances[msg.sender] < amount) return false;
-balances[msg.sender] -= amount;
-balances[receiver] += amount;
-emit Transfer(msg.sender, receiver, amount);
-return true;
+    if (balances[msg.sender] < amount) return false;
+    balances[msg.sender] -= amount;
+    balances[receiver] += amount;
+    emit Transfer(msg.sender, receiver, amount);
+    return true;
   }
 }
 

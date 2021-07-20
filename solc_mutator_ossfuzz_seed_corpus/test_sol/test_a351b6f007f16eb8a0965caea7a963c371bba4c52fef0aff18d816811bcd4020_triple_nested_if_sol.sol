@@ -1,8 +1,8 @@
 contract C {
 
-uint a;
-uint b;
-uint c;
+    uint a;
+    uint b;
+    uint c;
 
 	function test() public view {
 		if (a == 0) {

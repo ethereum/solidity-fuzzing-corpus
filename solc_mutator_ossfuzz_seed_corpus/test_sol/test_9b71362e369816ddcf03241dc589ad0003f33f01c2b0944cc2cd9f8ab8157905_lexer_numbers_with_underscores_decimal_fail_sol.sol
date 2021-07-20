@@ -1,9 +1,9 @@
 contract C {
   function f() public pure {
-uint D1 = 1234_;
-uint D2 = 12__34;
-uint D3 = 12_e34;
-uint D4 = 12e_34;
+    uint D1 = 1234_;
+    uint D2 = 12__34;
+    uint D3 = 12_e34;
+    uint D4 = 12e_34;
   }
 }
 // ----

@@ -7,20 +7,20 @@ pragma solidity ^0.8.0;
 import "./Address.sol";
 
 library SafeMath {
-function sub(uint256 a, uint256 b) internal pure returns (uint256) {
-    return a - b;
-}
+    function sub(uint256 a, uint256 b) internal pure returns (uint256) {
+        return a - b;
+    }
 }
 
 contract ERC20 {
-using SafeMath for uint256;
-using Address for address;
+    using SafeMath for uint256;
+    using Address for address;
 
-mapping (address => uint256) private _balances;
+    mapping (address => uint256) private _balances;
 
-function transferFrom(uint256 amount) public view {
-    _balances[msg.sender].sub(amount);
-}
+    function transferFrom(uint256 amount) public view {
+        _balances[msg.sender].sub(amount);
+    }
 }
 // ====
 // SMTEngine: all

@@ -1,4 +1,4 @@
 contract c {
-mapping(uint => mapping(uint => int8)[8][][9])[] x;
+    mapping(uint => mapping(uint => int8)[8][][9])[] x;
 }
 // ----

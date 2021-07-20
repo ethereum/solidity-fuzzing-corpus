@@ -1,11 +1,11 @@
 contract C {
-function o(bytes1) public pure {}
-function f() public {
-    o(true ? 99**99 : 99);
-    o(true ? 99 : 99**99);
+    function o(bytes1) public pure {}
+    function f() public {
+        o(true ? 99**99 : 99);
+        o(true ? 99 : 99**99);
 
-    o(true ? 99**99 : 99**99);
-}
+        o(true ? 99**99 : 99**99);
+    }
 }
 // ----
 // TypeError 9717: (94-100): Invalid mobile type in true expression.

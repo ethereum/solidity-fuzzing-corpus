@@ -1,12 +1,12 @@
 contract test {
  struct s { uint a; uint b;}
-function f() pure public returns (bytes1) {
+    function f() pure public returns (bytes1) {
 		s;
 		s(1,2);
 		s[7];
 		uint;
 		uint[7];
-}
+    }
 }
 // ----
 // Warning 6321: (83-89): Unnamed return variable can remain unassigned. Add an explicit return with value to all non-reverting code paths or name the variable.

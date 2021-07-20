@@ -1,4 +1,4 @@
 interface C {
-error E(uint);
+    error E(uint);
 }
 // ----

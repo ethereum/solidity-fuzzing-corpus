@@ -1,10 +1,10 @@
 contract C {
   function f() public pure {
-assembly {
-  let x := 1
+    assembly {
+      let x := 1
 
-  x()
-}
+      x()
+    }
   }
 }
 // ----

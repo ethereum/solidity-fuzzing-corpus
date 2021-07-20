@@ -2,13 +2,13 @@
 contract C {
   uint r = 1337;
   function f() public returns (uint) {
-return r;
+    return r;
   }
 }
 contract D {
   uint r = 42;
   function f() public returns (uint) {
-return r;
+    return r;
   }
 }
 ==== Source: s2.sol ====
@@ -18,7 +18,7 @@ import {C as D, D as C} from "s1.sol";
 import "s2.sol";
 contract E {
   function foo() public returns (uint) {
-return new D().f();
+    return new D().f();
   }
 }
 // ====

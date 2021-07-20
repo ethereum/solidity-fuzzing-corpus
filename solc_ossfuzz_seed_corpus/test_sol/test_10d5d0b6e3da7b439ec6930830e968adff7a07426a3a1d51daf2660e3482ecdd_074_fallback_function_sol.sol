@@ -1,5 +1,5 @@
 contract C {
-uint x;
-fallback() external { x = 2; }
+    uint x;
+    fallback() external { x = 2; }
 }
 // ----

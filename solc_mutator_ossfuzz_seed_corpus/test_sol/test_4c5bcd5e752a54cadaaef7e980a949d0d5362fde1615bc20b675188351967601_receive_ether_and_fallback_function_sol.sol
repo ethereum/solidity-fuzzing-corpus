@@ -1,6 +1,6 @@
 contract test {
-receive() external payable {}
-fallback() external {}
+    receive() external payable {}
+    fallback() external {}
 }
 // ----
 //     :test

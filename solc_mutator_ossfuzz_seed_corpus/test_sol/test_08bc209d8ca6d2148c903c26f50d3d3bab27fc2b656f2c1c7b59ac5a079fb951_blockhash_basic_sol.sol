@@ -1,14 +1,14 @@
 contract C {
-bytes32 public genesisHash;
-bytes32 public currentHash;
-constructor() {
-    require(block.number == 1);
-    genesisHash = blockhash(0);
-    currentHash = blockhash(1);
-}
-function f(uint blockNumber) public returns (bytes32) {
-    return blockhash(blockNumber);
-}
+    bytes32 public genesisHash;
+    bytes32 public currentHash;
+    constructor() {
+        require(block.number == 1);
+        genesisHash = blockhash(0);
+        currentHash = blockhash(1);
+    }
+    function f(uint blockNumber) public returns (bytes32) {
+        return blockhash(blockNumber);
+    }
 }
 // ====
 // compileViaYul: also

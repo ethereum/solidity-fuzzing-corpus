@@ -1,4 +1,4 @@
 contract C {
-fallback() external payable { }
+    fallback() external payable { }
 }
 // ----

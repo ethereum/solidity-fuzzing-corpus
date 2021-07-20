@@ -1,17 +1,17 @@
-	{
-		"language": "Solidity",
-		"settings": {
-			"outputSelection": {
-				"fileA": {
-					"*": [
-						"abi"
-					]
-				}
-			}
-		},
-		"sources": {
+{
+	"language": "Solidity",
+	"settings": {
+		"outputSelection": {
 			"fileA": {
-				"content": "contract A { }"
+				"*": [
+					"abi"
+				]
 			}
 		}
+	},
+	"sources": {
+		"fileA": {
+			"content": "contract A { }"
+		}
 	}
+}

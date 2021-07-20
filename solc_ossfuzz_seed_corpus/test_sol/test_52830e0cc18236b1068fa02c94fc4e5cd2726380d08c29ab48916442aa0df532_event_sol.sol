@@ -1,4 +1,4 @@
 contract c {
-event e();
+    event e();
 }
 // ----

@@ -1,15 +1,15 @@
 contract C {
-function f() public {
-    address payable a = address(new D());
+    function f() public {
+        address payable a = address(new D());
 
-    // This conversion makes no sense anyway.
-    address payable b = address(D);
-}
+        // This conversion makes no sense anyway.
+        address payable b = address(D);
+    }
 }
 
 contract D {
-receive() external payable {
-}
+    receive() external payable {
+    }
 }
 // ----
 // TypeError 9574: (47-83): Type address is not implicitly convertible to expected type address payable.

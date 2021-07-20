@@ -9,39 +9,39 @@ contract C0 {
   function f1(function () external i0) external
   {
 
-{
-  if (true)
-  { }
-}
-if (false)
-{
-  if (true)
-  { }
+    {
+      if (true)
+      { }
+    }
+    if (false)
+    {
+      if (true)
+      { }
 
-}
-{
-  { }
+    }
+    {
+      { }
 
-  this.f0(true);
-  this.f0(true);
-  i0;
-  {
-    "cbf23733fca16b3d15d8ea7fa6a75cda4e9c6f7c4edd4387c172cb28821aad6d";
+      this.f0(true);
+      this.f0(true);
+      i0;
+      {
+        "cbf23733fca16b3d15d8ea7fa6a75cda4e9c6f7c4edd4387c172cb28821aad6d";
+        if (false)
+        { }
+
+        { }
+        this.f0(true);
+      }
+    }
     if (false)
     { }
 
+    this.f0(false);
+
+    if (false)
     { }
-    this.f0(true);
-  }
-}
-if (false)
-{ }
-
-this.f0(false);
-
-if (false)
-{ }
-this.f0(false);
+    this.f0(false);
   }
 }
 // ----

@@ -1,7 +1,7 @@
 contract C {
-function f() public {
-    address(this).send(10);
-}
+    function f() public {
+        address(this).send(10);
+    }
 }
 
 // ----

@@ -1,7 +1,7 @@
 contract C {
   function f() public view {
-address a = this;
-a;
+    address a = this;
+    a;
   }
 }
 // ----

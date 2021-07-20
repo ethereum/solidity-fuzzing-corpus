@@ -7,15 +7,15 @@ pragma solidity >=0.0.0;
 
 contract Error4 {
   constructor() {
-balances[tx.origin] = 1 2; // missing operator
+    balances[tx.origin] = 1 2; // missing operator
   }
 
   function sendCoin(address receiver, uint amount) public returns(bool sufficient) {
-if (balances[msg.sender] < amount) return false;
-balances[msg.sender] -= amount   // Missing ";"
-balances[receiver] += amount   // Another missing ";"
-emit Transfer(msg.sender  // truncated line
-return true;
+    if (balances[msg.sender] < amount) return false;
+    balances[msg.sender] -= amount   // Missing ";"
+    balances[receiver] += amount   // Another missing ";"
+    emit Transfer(msg.sender  // truncated line
+    return true;
   }
 
 

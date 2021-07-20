@@ -1,24 +1,24 @@
 error E1();
 function f() {
-revert E1();
+    revert E1();
 }
 contract C {
-// unreferenced but inherited
-error E2();
+    // unreferenced but inherited
+    error E2();
 }
 contract D {
-// referenced
-error E3(uint);
+    // referenced
+    error E3(uint);
 }
 contract X is C {
-// unreferenced but defined
-error E3();
-function g(uint x) public {
-    if (x == 0)
-        f();
-    else if (x == 2)
-        revert D.E3(1);
-}
+    // unreferenced but defined
+    error E3();
+    function g(uint x) public {
+        if (x == 0)
+            f();
+        else if (x == 2)
+            revert D.E3(1);
+    }
 }
 // ----
 //     :C

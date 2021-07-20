@@ -1,16 +1,16 @@
 contract C {
-/// @inheritdoc
-function f() internal {
-}
-/// @inheritdoc .
-function f() internal {
-}
-/// @inheritdoc C..f
-function f() internal {
-}
-/// @inheritdoc C.
-function f() internal {
-}
+    /// @inheritdoc
+    function f() internal {
+    }
+    /// @inheritdoc .
+    function f() internal {
+    }
+    /// @inheritdoc C..f
+    function f() internal {
+    }
+    /// @inheritdoc C.
+    function f() internal {
+    }
 }
 // ----
 // DocstringParsingError 1933: (17-32): Expected contract name following documentation tag @inheritdoc.

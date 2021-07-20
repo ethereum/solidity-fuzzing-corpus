@@ -1,4 +1,4 @@
 library test {
-function f(bytes memory) external {}
+    function f(bytes memory) external {}
 }
 // ----

@@ -1,5 +1,5 @@
-		contract test {
-			constructor() {
-				 uint x = 1 ether;
-			}
-		}
+contract test {
+	constructor() {
+		 uint x = 1 ether;
+	}
+}

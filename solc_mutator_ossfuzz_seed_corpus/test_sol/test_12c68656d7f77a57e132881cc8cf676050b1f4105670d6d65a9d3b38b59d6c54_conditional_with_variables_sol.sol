@@ -1,10 +1,10 @@
 contract A {
-function f() public {
-    uint x = 3;
-    uint y = 1;
-    uint z = (x > y) ? x : y;
-    uint w = x > y ? x : y;
-}
+    function f() public {
+        uint x = 3;
+        uint y = 1;
+        uint z = (x > y) ? x : y;
+        uint w = x > y ? x : y;
+    }
 }
 // ----
 // Warning 2072: (87-93): Unused local variable.

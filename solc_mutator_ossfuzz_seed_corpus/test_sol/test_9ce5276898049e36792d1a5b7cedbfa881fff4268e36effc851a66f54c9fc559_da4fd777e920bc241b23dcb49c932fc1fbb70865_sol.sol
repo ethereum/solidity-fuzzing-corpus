@@ -7,16 +7,16 @@ function f0(address i0,bool i1,function () external i2)  returns(bool o0,uint256
 {
   {
 
-false;
-if (false)
-{ }
-if (false)
-{ }
+    false;
+    if (false)
+    { }
+    if (false)
+    { }
 
 
-if (false)
-{
-}
+    if (false)
+    {
+    }
   }
 
 }

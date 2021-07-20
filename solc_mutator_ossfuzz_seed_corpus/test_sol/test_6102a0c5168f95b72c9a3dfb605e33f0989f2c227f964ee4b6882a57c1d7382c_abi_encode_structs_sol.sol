@@ -1,15 +1,15 @@
 pragma abicoder v1;
 contract C {
-struct S { uint x; }
-S s;
-struct T { uint y; }
-T t;
-function f() public view {
-    abi.encode(s, t);
-}
-function g() public view {
-    abi.encodePacked(s, t);
-}
+    struct S { uint x; }
+    S s;
+    struct T { uint y; }
+    T t;
+    function f() public view {
+        abi.encode(s, t);
+    }
+    function g() public view {
+        abi.encodePacked(s, t);
+    }
 }
 // ----
 // TypeError 2056: (151-152): This type cannot be encoded.

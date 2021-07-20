@@ -1,13 +1,13 @@
 contract Test {
-function assignment() public {
-    uint8 uint8Min = type(int).min;
-    uint uintMin = type(int).min;
+    function assignment() public {
+        uint8 uint8Min = type(int).min;
+        uint uintMin = type(int).min;
 
-    if (type(int).min == 2**256 - 1) {
-        uintMin;
+        if (type(int).min == 2**256 - 1) {
+            uintMin;
+        }
+
     }
-
-}
 }
 // ----
 // TypeError 9574: (59-89): Type int256 is not implicitly convertible to expected type uint8.

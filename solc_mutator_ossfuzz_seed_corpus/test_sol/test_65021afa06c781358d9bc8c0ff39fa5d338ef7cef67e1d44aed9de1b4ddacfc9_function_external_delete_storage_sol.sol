@@ -1,23 +1,23 @@
 contract C {
-function() external public x;
-uint public y = 0;
+    function() external public x;
+    uint public y = 0;
 
-function increment() public {
-    ++y;
-}
+    function increment() public {
+        ++y;
+    }
 
-function set() external {
-    x = this.increment;
-}
+    function set() external {
+        x = this.increment;
+    }
 
-function incrementIndirectly() public {
-    x();
-}
+    function incrementIndirectly() public {
+        x();
+    }
 
-function deleteFunction() public {
-    // used to lead to an ICE during IR
-    delete x;
-}
+    function deleteFunction() public {
+        // used to lead to an ICE during IR
+        delete x;
+    }
 }
 // ====
 // compileViaYul: also

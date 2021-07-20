@@ -6,16 +6,16 @@ function f0(int152 i0,function () external i1)
 
   {
 
-{ }
-!(true);
+    { }
+    !(true);
 
 
-{
-  (false || false);
-  { }
-}
-if (true)
-{ }
+    {
+      (false || false);
+      { }
+    }
+    if (true)
+    { }
   }
 
   i1;

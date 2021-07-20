@@ -1,7 +1,7 @@
 contract C {
-function f() public returns (uint) {
-    return tx.gasprice;
-}
+    function f() public returns (uint) {
+        return tx.gasprice;
+    }
 }
 // ====
 // compileViaYul: also

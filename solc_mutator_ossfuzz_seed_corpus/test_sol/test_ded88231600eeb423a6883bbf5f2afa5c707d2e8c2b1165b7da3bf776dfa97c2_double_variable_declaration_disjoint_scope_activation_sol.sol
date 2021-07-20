@@ -1,8 +1,8 @@
 contract test {
-function f() pure public {
-    { uint x; }
-    uint x;
-}
+    function f() pure public {
+        { uint x; }
+        uint x;
+    }
 }
 // ----
 // Warning 2519: (57-63): This declaration shadows an existing declaration.

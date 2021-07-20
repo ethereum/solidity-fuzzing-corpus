@@ -1,9 +1,9 @@
 contract C
 {
-function f() public view {
-    assert(c > 0);
-}
-uint c;
+    function f() public view {
+        assert(c > 0);
+    }
+    uint c;
 }
 // ====
 // SMTEngine: all

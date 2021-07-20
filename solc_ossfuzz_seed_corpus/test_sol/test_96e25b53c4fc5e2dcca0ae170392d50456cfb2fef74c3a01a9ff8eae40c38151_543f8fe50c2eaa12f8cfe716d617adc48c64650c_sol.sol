@@ -7,8 +7,8 @@ function f0(bytes memory i0)  returns(address o0,address o1,function () external
 {
   {
 
-if (false)
-{ }
+    if (false)
+    { }
 
   }
 
@@ -27,19 +27,19 @@ contract C0 {
   function f3() external returns(address o0,bool o1,bool o2)
   {
 
-if (false)
-{
-  if (false)
-  { }
-  o2 = o1;
+    if (false)
+    {
+      if (false)
+      { }
+      o2 = o1;
 
 
-  { }
-  if (true)
-  {
-  }
+      { }
+      if (true)
+      {
+      }
 
-}
+    }
 
 
   }

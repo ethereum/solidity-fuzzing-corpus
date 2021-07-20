@@ -1,9 +1,9 @@
 contract C {
-function f(address a) public pure {
-    address b;
-    address payable c = a;
-    c = b;
-}
+    function f(address a) public pure {
+        address b;
+        address payable c = a;
+        c = b;
+    }
 }
 // ----
 // TypeError 9574: (80-101): Type address is not implicitly convertible to expected type address payable.

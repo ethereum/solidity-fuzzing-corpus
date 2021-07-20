@@ -1,8 +1,8 @@
 contract Test {
-function f() public pure {
-    type(C).creationCode = new bytes(6);
-    type(C).runtimeCode = new bytes(6);
-}
+    function f() public pure {
+        type(C).creationCode = new bytes(6);
+        type(C).runtimeCode = new bytes(6);
+    }
 }
 contract C {}
 // ----

@@ -1,5 +1,5 @@
 contract C {
-function f(uint a) pure public {
-}
+    function f(uint a) pure public {
+    }
 }
 // ----

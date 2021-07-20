@@ -1,10 +1,10 @@
 contract C {
-function g() external pure {
-}
+    function g() external pure {
+    }
 
-function f() public pure {
-    assert(msg.sig == this.g.selector);
-}
+    function f() public pure {
+        assert(msg.sig == this.g.selector);
+    }
 }
 // ====
 // SMTEngine: all

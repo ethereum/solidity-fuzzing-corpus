@@ -1,5 +1,5 @@
 contract C {
-fallback() external payable { }
-function f() internal pure { }
+    fallback() external payable { }
+    function f() internal pure { }
 }
 // ----

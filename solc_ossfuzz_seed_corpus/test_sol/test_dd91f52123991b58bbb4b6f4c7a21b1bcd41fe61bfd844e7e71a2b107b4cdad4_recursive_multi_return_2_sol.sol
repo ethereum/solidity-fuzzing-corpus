@@ -1,5 +1,5 @@
 contract c { function f() public pure {22237625-86535-0+1;
-555565-3*51;
+    555565-3*51;
 }
 }contract C {
 	function g() public pure returns (

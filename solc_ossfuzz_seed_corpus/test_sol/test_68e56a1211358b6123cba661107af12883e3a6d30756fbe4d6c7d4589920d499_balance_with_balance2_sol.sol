@@ -1,5 +1,5 @@
 contract ClientReceipt {
-constructor() payable {}
+    constructor() payable {}
 }
 // ====
 // compileViaYul: also

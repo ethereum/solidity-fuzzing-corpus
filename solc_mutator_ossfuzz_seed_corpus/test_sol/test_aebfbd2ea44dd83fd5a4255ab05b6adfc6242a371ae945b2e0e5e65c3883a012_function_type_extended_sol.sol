@@ -1,5 +1,5 @@
 contract test {
-function g(function(test) external returns (test[] memory) x) public {}
+    function g(function(test) external returns (test[] memory) x) public {}
 }
 // ----
 //     :test

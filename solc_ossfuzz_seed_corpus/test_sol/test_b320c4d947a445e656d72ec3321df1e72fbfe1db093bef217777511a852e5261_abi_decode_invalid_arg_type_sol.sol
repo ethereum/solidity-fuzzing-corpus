@@ -1,6 +1,6 @@
 contract C {
   function f() public pure {
-abi.decode(uint, uint);
+    abi.decode(uint, uint);
   }
 }
 // ----

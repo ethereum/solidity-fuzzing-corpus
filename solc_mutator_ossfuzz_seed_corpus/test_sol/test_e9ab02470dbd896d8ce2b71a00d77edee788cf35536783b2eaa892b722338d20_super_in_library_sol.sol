@@ -1,6 +1,6 @@
 library L {
   function f() public {
-(super);
+    (super);
   }
 }
 // ----

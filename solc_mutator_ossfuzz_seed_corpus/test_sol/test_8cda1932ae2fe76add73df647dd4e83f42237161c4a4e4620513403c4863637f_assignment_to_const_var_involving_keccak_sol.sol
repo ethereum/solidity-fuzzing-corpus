@@ -1,9 +1,9 @@
 contract C {
-bytes32 constant x = keccak256("abc");
+    bytes32 constant x = keccak256("abc");
 
-function f() public returns (bytes32) {
-    return x;
-}
+    function f() public returns (bytes32) {
+        return x;
+    }
 }
 // ====
 // compileToEwasm: also

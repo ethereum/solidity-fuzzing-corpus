@@ -1,2 +1,2 @@
-		pragma solidity >= 0.0.0;
-		pragma experimental SMTChecker;
+pragma solidity >= 0.0.0;
+pragma experimental SMTChecker;

@@ -1,7 +1,7 @@
 contract C {
   function f() public {
-bytes[32] memory a;
-a[64];
+    bytes[32] memory a;
+    a[64];
   }
 }
 // ----

@@ -1,12 +1,12 @@
 contract C {
-enum Test { One, Two }
-function f() public {
-    Test(-1);
-    Test(2);
-    Test(13);
-    Test(5/3);
-    Test(0.5);
-}
+    enum Test { One, Two }
+    function f() public {
+        Test(-1);
+        Test(2);
+        Test(13);
+        Test(5/3);
+        Test(0.5);
+    }
 }
 // ----
 // TypeError 9640: (74-82): Explicit type conversion not allowed from "int_const -1" to "enum C.Test".

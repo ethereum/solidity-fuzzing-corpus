@@ -1,20 +1,20 @@
 pragma abicoder               v2;
 
 contract C {
-struct S { function() external f; }
-function ggg(function() external x) external pure returns (uint256 r) {
-    assembly { r := calldataload(4) }
-}
-function h(S calldata x) external pure returns (uint256 r) {
-    x.f; // validation only happens here
-    assembly { r := calldataload(4) }
-}
-function dummy() external {}
-function ffff(uint256 a) external view returns (uint256, uint256) {
-    S memory s = S(this.dummy);
-    assembly { mstore(s, a) }
-    return (this.ggg(s.f), this.h(s));
-}
+    struct S { function() external f; }
+    function ggg(function() external x) external pure returns (uint256 r) {
+        assembly { r := calldataload(4) }
+    }
+    function h(S calldata x) external pure returns (uint256 r) {
+        x.f; // validation only happens here
+        assembly { r := calldataload(4) }
+    }
+    function dummy() external {}
+    function ffff(uint256 a) external view returns (uint256, uint256) {
+        S memory s = S(this.dummy);
+        assembly { mstore(s, a) }
+        return (this.ggg(s.f), this.h(s));
+    }
 }
 // ====
 // compileViaYul: also

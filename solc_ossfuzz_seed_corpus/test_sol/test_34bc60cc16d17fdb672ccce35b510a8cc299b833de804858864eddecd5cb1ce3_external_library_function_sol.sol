@@ -1,14 +1,14 @@
 library L {
-function f(uint) pure external {}
+    function f(uint) pure external {}
 }
 
 contract C {
-using L for *;
+    using L for *;
 
-function f() public pure {
-    L.f(2);
-    uint x;
-    x.f();
-}
+    function f() public pure {
+        L.f(2);
+        uint x;
+        x.f();
+    }
 }
 // ----

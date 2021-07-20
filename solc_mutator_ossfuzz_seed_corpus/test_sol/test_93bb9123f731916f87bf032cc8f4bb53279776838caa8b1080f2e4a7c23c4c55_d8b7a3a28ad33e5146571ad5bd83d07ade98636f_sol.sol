@@ -8,13 +8,13 @@ contract C0 {
   function f1() external returns(address o0,bool o1,bool o2)
   {
 
-o0;
+    o0;
 
-o1 = !(true);
-if (false)
-{ }
-{
-}
+    o1 = !(true);
+    if (false)
+    { }
+    {
+    }
   }
   function f2(C0 i0,bytes9 i1,function () external i2) external
   {

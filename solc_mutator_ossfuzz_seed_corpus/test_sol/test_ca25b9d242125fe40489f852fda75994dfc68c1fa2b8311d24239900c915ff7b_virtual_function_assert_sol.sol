@@ -1,20 +1,20 @@
 contract A {
-int x = 0;
+    int x = 0;
 
-function f() virtual internal view {
-    assert(x == 0);
-}
+    function f() virtual internal view {
+        assert(x == 0);
+    }
 
-function proxy() public view {
-    f();
-}
+    function proxy() public view {
+        f();
+    }
 }
 
 contract C is A {
 
-function f() internal view override {
-    assert(x == 1);
-}
+    function f() internal view override {
+        assert(x == 1);
+    }
 }
 // ====
 // SMTEngine: all

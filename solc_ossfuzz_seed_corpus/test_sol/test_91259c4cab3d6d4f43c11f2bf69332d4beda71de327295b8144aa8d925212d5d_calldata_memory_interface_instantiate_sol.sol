@@ -1,13 +1,13 @@
 interface I {
-function f(uint[] calldata) external pure;
+    function f(uint[] calldata) external pure;
 }
 contract A is I {
-function f(uint[] memory) public override pure {}
+    function f(uint[] memory) public override pure {}
 }
 contract C {
-function f() public {
-    I i = I(new A());
-    i.f(new uint[](1));
-}
+    function f() public {
+        I i = I(new A());
+        i.f(new uint[](1));
+    }
 }
 // ----

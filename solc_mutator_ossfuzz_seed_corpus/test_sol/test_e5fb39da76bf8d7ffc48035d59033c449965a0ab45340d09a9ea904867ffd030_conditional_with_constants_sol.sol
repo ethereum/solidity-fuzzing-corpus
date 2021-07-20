@@ -1,8 +1,8 @@
 contract A {
-function f() public {
-    uint x = 3 > 0 ? 3 : 0;
-    uint y = (3 > 0) ? 3 : 0;
-}
+    function f() public {
+        uint x = 3 > 0 ? 3 : 0;
+        uint y = (3 > 0) ? 3 : 0;
+    }
 }
 // ----
 // Warning 2072: (47-53): Unused local variable.

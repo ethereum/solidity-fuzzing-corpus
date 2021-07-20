@@ -1,12 +1,12 @@
 contract C {
-struct gas { uint a; }
-function f() public returns (uint, uint) {
-    try this.f() {
-        gas memory x;
-    } catch Error(string memory) {
+    struct gas { uint a; }
+    function f() public returns (uint, uint) {
+        try this.f() {
+            gas memory x;
+        } catch Error(string memory) {
 
+        }
     }
-}
 }
 // ====
 // EVMVersion: >=byzantium

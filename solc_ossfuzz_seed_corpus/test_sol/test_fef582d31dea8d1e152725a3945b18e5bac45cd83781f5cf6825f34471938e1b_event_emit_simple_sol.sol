@@ -1,7 +1,7 @@
 contract C {
-event e();
-function f() public {
-    emit e();
-}
+    event e();
+    function f() public {
+        emit e();
+    }
 }
 // ----

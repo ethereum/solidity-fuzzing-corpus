@@ -1,5 +1,5 @@
 contract test {
-function f(bytes calldata) internal;
+    function f(bytes calldata) internal;
 }
 // ----
 // TypeError 3656: (0-58): Contract "test" should be marked as abstract.

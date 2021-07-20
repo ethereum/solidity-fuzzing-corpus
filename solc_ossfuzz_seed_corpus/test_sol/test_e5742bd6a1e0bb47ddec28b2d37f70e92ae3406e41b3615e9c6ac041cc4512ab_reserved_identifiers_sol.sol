@@ -1,10 +1,10 @@
 contract C {
   function f() public pure {
-assembly {
-  let linkersymbol := 1
-  let datacopy := 1
-  let swap16 := 1
-}
+    assembly {
+      let linkersymbol := 1
+      let datacopy := 1
+      let swap16 := 1
+    }
   }
 }
 // ----

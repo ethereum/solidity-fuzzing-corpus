@@ -2,7 +2,7 @@
 pragma solidity >=0.0;
 pragma abicoder v1;
 contract test {
-function f() public pure returns (bool) {
-    return true;
-}
+    function f() public pure returns (bool) {
+        return true;
+    }
 }

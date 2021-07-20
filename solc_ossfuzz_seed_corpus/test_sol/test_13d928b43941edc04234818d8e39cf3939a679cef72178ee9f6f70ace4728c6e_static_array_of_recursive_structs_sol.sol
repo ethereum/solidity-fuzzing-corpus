@@ -1,11 +1,11 @@
 contract Test {
-struct RecursiveStruct {
-    RecursiveStruct[] vals;
-}
+    struct RecursiveStruct {
+        RecursiveStruct[] vals;
+    }
 
-function func() private pure {
-    RecursiveStruct[1] memory val;
-    val;
-}
+    function func() private pure {
+        RecursiveStruct[1] memory val;
+        val;
+    }
 }
 // ----

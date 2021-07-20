@@ -11,8 +11,8 @@ import "s2.sol";
 import "s1.sol";
 contract C {
   function foo() public pure returns (uint) {
-// calls f()->1337 / f()->1337
-return f() / g();
+    // calls f()->1337 / f()->1337
+    return f() / g();
   }
 }
 // ----

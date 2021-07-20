@@ -1,8 +1,8 @@
 contract C {
-modifier m() { _; }
+    modifier m() { _; }
 }
 contract D is C {
-function f() C.m public {
-}
+    function f() C.m public {
+    }
 }
 // ----

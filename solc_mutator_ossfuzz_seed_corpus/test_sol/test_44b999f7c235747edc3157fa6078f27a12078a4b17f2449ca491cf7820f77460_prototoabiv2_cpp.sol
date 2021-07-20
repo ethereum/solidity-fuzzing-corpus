@@ -306,9 +306,9 @@ void ProtoConverter::appendTypedReturn(
 // Adds the qualifier "calldata" to non-value parameter of an external function.
 void ProtoConverter::appendTypedParamsExternal(
 	bool _isValueType,
-std::string const& _typeString,
-std::string const& _varName,
-Delimiter _delimiter
+    std::string const& _typeString,
+    std::string const& _varName,
+    Delimiter _delimiter
 )
 {
 	std::string qualifiedTypeString = (

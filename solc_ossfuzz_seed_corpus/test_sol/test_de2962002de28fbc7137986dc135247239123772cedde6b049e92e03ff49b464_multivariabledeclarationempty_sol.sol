@@ -1,9 +1,9 @@
 contract C {
-function f() public pure {
-    (uint a, uint b) = f();
-    (uint c) = f();
-    uint d = f();
-}
+    function f() public pure {
+        (uint a, uint b) = f();
+        (uint c) = f();
+        uint d = f();
+    }
 }
 // ----
 // TypeError 7364: (52-74): Different number of components on the left hand side (2) than on the right hand side (0).

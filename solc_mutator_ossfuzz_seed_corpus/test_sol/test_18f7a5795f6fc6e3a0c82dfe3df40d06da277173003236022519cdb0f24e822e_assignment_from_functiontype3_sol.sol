@@ -2,9 +2,9 @@ function ff() {}
 
 contract C {
   function f() public pure {
-assembly {
-  let x := ff
-}
+    assembly {
+      let x := ff
+    }
   }
 }
 // ----

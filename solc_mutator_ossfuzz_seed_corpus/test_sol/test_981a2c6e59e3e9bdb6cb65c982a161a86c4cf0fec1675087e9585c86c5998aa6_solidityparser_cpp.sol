@@ -1,5 +1,5 @@
-		contract test {
-			function fun() {
-				uint x = uint64[](3);
-			}
-		}
+contract test {
+	function fun() {
+		uint x = uint64[](3);
+	}
+}

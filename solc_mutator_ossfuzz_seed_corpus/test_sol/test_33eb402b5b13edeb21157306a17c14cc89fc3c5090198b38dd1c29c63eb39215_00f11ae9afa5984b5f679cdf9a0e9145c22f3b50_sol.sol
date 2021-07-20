@@ -10,12 +10,12 @@ function f1()  returns(function () external o0,bytes memory o1,address o2,bool o
   { }
 
   {
-if (true)
-{ }
+    if (true)
+    { }
 
-{ }
-if (false)
-{ }
+    { }
+    if (false)
+    { }
 
   }
 }

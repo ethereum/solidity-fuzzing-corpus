@@ -1,10 +1,10 @@
 contract C {
-function f() public pure returns (address) {
-    return address(-1);
-}
-function g() public pure returns (address) {
-    return -1;
-}
+    function f() public pure returns (address) {
+        return address(-1);
+    }
+    function g() public pure returns (address) {
+        return -1;
+    }
 	function h() public pure returns (address) {
 		return address(2**160);
 	}

@@ -1,5 +1,5 @@
 contract Lotto {
-uint256 public constant ticketPrice = 555;
+    uint256 public constant ticketPrice = 555;
 }
 // ====
 // compileToEwasm: also

@@ -1,6 +1,6 @@
 pragma solidity ^99.99.0;
 contract C {
-uint ;
+    uint ;
 }
 // ----
 // ParserError 6635: (48-49): Expected identifier but got ';'

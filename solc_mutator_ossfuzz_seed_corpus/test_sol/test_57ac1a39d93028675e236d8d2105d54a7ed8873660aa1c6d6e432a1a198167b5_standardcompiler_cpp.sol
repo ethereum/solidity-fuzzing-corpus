@@ -1,11 +1,11 @@
-	{
-		"language": "Solidity",
-		"settings": {
-			"parserErrorRecovery": "1"
-		},
-		"sources": {
-			"empty": {
-				"content": ""
-			}
+{
+	"language": "Solidity",
+	"settings": {
+		"parserErrorRecovery": "1"
+	},
+	"sources": {
+		"empty": {
+			"content": ""
 		}
 	}
+}

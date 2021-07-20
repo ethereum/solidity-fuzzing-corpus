@@ -1,6 +1,6 @@
 // Checks that error is triggered no matter which order
 function l() {
-s();
+    s();
 }
 function s() {
 	new C();

@@ -1,12 +1,12 @@
 contract test {
-modifier m {
-    uint a = 1;
-    assembly {
-        a := 2
+    modifier m {
+        uint a = 1;
+        assembly {
+            a := 2
+        }
+        _;
     }
-    _;
-}
-function f() public m {
-}
+    function f() public m {
+    }
 }
 // ----

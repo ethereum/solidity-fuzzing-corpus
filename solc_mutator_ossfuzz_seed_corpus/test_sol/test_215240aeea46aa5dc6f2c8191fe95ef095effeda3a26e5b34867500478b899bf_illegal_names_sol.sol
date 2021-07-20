@@ -1,42 +1,42 @@
 contract C {
-function f() public {
-    // reserved function names
-    assembly {
-        function this() {
+    function f() public {
+        // reserved function names
+        assembly {
+            function this() {
+            }
+            function super() {
+            }
+            function _() {
+            }
         }
-        function super() {
-        }
-        function _() {
-        }
-    }
 
-    // reserved names as function argument
-    assembly {
-        function a(this) {
+        // reserved names as function argument
+        assembly {
+            function a(this) {
+            }
+            function b(super) {
+            }
+            function c(_) {
+            }
         }
-        function b(super) {
-        }
-        function c(_) {
-        }
-    }
 
-    // reserved names as function return parameter
-    assembly {
-        function d() -> this {
+        // reserved names as function return parameter
+        assembly {
+            function d() -> this {
+            }
+            function g() -> super {
+            }
+            function c() -> _ {
+            }
         }
-        function g() -> super {
-        }
-        function c() -> _ {
-        }
-    }
 
-    // reserved names as variable declaration
-    assembly {
-        let this := 1
-        let super := 1
-        let _ := 1
+        // reserved names as variable declaration
+        assembly {
+            let this := 1
+            let super := 1
+            let _ := 1
+        }
     }
-}
 }
 // ----
 // DeclarationError 4113: (105-136): The identifier name "this" is reserved.

@@ -17,8 +17,8 @@ function f0()  returns(bytes26 o0,C0 o1,function () external o2)
 
 
 
-if (false)
-{ }
+    if (false)
+    { }
   }
   "59b4ac81dcb157";
 

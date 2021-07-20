@@ -1,7 +1,7 @@
 contract C {
-struct S {
-    address payable a;
-    address b;
-}
+    struct S {
+        address payable a;
+        address b;
+    }
 }
 // ----

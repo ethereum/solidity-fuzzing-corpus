@@ -1,13 +1,13 @@
 contract C {
-function _() internal returns(uint) {
-    return 1;
-}
+    function _() internal returns(uint) {
+        return 1;
+    }
 
-function super() internal {
-}
+    function super() internal {
+    }
 
-function this() internal {
-}
+    function this() internal {
+    }
 }
 // ----
 // DeclarationError 3726: (17-78): The name "_" is reserved.

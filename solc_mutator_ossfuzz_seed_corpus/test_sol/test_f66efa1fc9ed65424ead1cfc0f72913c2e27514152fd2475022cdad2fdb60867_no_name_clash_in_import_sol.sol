@@ -6,10 +6,10 @@ contract A
 ==== Source: b ====
 import {A as b} from "a";
 contract B {
-function f() public pure {
-    assembly {
-        let A := 1
+    function f() public pure {
+        assembly {
+            let A := 1
+        }
     }
-}
 }
 // ----

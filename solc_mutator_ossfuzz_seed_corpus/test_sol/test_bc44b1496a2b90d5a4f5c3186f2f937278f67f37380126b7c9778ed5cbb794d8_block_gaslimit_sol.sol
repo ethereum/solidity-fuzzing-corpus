@@ -1,7 +1,7 @@
 contract C {
-function f() public returns (uint) {
-    return block.gaslimit;
-}
+    function f() public returns (uint) {
+        return block.gaslimit;
+    }
 }
 // ====
 // compileToEwasm: also

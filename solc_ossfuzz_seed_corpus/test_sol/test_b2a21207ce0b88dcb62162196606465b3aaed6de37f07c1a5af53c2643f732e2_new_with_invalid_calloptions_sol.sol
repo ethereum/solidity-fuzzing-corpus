@@ -1,6 +1,6 @@
 contract D {}
 contract C {
-function foo() pure internal {
+    function foo() pure internal {
 		new D{salt:"abc", value:3, gas: 4};
 		new D{slt:5, value:3};
 		new D{val:5};
@@ -9,7 +9,7 @@ function foo() pure internal {
 		new D{random:5+5};
 		new D{what:2130+5};
 		new D{gas: 2};
-}
+    }
 }
 // ====
 // EVMVersion: >=constantinople

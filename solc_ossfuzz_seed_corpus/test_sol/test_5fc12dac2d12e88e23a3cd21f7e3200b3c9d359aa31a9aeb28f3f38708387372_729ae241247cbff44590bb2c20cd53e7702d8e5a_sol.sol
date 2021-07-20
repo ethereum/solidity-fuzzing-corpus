@@ -6,14 +6,14 @@ function f0(address i0,bool i1,bool i2)
   if (true)
   {
 
-i1 = (false && false);
-{ }
-if (false)
-{
-}
+    i1 = (false && false);
+    { }
+    if (false)
+    {
+    }
 
-if (true)
-{ }
+    if (true)
+    { }
   }
 }
 

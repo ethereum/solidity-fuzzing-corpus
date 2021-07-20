@@ -1,4 +1,4 @@
 interface I {
-enum A { B, C }
+    enum A { B, C }
 }
 // ----

@@ -1,5 +1,5 @@
 interface A {
-function foo() external returns (uint);
+    function foo() external returns (uint);
 }
 interface B {}
 contract X is A {

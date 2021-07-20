@@ -1,20 +1,20 @@
 error E(uint a);
 library L {
-error E(uint a, uint b);
+    error E(uint a, uint b);
 }
 interface I {
-error E(uint a, uint b, uint c);
+    error E(uint a, uint b, uint c);
 }
 contract C {
-function f() public pure {
-    revert E(1);
-}
-function g() public pure {
-    revert L.E(1, 2);
-}
-function h() public pure {
-    revert I.E(1, 2, 3);
-}
+    function f() public pure {
+        revert E(1);
+    }
+    function g() public pure {
+        revert L.E(1, 2);
+    }
+    function h() public pure {
+        revert I.E(1, 2, 3);
+    }
 }
 // ====
 // compileViaYul: also

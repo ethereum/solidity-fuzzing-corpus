@@ -1,11 +1,11 @@
 contract test {
-function x() public returns (uint) { return 1; }
-function y() public returns (uint) { return 2; }
+    function x() public returns (uint) { return 1; }
+    function y() public returns (uint) { return 2; }
 
-function f(bool cond) public returns (uint) {
-    function () returns (uint) z = cond ? x : y;
-    return z();
-}
+    function f(bool cond) public returns (uint) {
+        function () returns (uint) z = cond ? x : y;
+        return z();
+    }
 }
 // ====
 // compileToEwasm: also

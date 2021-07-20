@@ -1,14 +1,14 @@
 contract C {
-function f() public {
-    (bool success,) = address(this).call();
-    require(success);
-    (success,) = address(this).call(bytes4(0x12345678));
-    require(success);
-    (success,) = address(this).call(uint(1));
-    require(success);
-    (success,) = address(this).call(uint(1), uint(2));
-    require(success);
-}
+    function f() public {
+        (bool success,) = address(this).call();
+        require(success);
+        (success,) = address(this).call(bytes4(0x12345678));
+        require(success);
+        (success,) = address(this).call(uint(1));
+        require(success);
+        (success,) = address(this).call(uint(1), uint(2));
+        require(success);
+    }
 }
 // ----
 // TypeError 6138: (65-85): Wrong argument count for function call: 0 arguments given but expected 1. This function requires a single bytes argument. Use "" as argument to provide empty calldata.

@@ -1,4 +1,4 @@
 library test {
-function f(bytes storage) internal pure {}
+    function f(bytes storage) internal pure {}
 }
 // ----

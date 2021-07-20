@@ -1,11 +1,11 @@
 pragma abicoder               v2;
 contract C {
-function f(uint256[][] calldata x) external pure {
-    x[1:2];
-    x[:];
-    x[1:];
-    x[:2];
-}
+    function f(uint256[][] calldata x) external pure {
+        x[1:2];
+        x[:];
+        x[1:];
+        x[:2];
+    }
 }
 // ----
 // TypeError 2148: (110-116): Index range access is not supported for arrays with dynamically encoded base types.

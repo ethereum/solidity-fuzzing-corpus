@@ -1,12 +1,12 @@
 contract C {
-function f() public {
-    (bool success,) = address(this).delegatecall();
-    require(success);
-    (success,) = address(this).delegatecall(uint(1));
-    require(success);
-    (success,) = address(this).delegatecall(uint(1), uint(2));
-    require(success);
-}
+    function f() public {
+        (bool success,) = address(this).delegatecall();
+        require(success);
+        (success,) = address(this).delegatecall(uint(1));
+        require(success);
+        (success,) = address(this).delegatecall(uint(1), uint(2));
+        require(success);
+    }
 }
 // ----
 // TypeError 6138: (65-93): Wrong argument count for function call: 0 arguments given but expected 1. This function requires a single bytes argument. Use "" as argument to provide empty calldata.

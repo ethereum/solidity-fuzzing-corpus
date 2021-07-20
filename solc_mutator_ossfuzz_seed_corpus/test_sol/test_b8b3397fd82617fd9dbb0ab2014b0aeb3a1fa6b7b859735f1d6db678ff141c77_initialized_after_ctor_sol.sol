@@ -1,8 +1,8 @@
 contract C {
-constructor() {
-    return;
-}
+    constructor() {
+        return;
+    }
 
-uint immutable x = 3;
+    uint immutable x = 3;
 }
 // ----

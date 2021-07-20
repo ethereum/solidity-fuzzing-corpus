@@ -1,7 +1,7 @@
 address constant x = 0xdeadbeefdeadbeefdeadbeefdeadbeefdeadbeef;
 contract C {
   function f() view external returns (address) {
-return x;
+    return x;
   }
 }
 // ====

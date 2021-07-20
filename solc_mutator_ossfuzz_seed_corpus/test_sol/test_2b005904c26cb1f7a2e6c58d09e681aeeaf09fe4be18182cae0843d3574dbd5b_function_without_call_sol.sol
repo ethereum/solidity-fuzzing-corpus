@@ -1,10 +1,10 @@
 contract C {
   function f() public pure {
-assembly {
-  function k() {}
+    assembly {
+      function k() {}
 
-  k
-}
+      k
+    }
   }
 }
 // ----

@@ -1,17 +1,17 @@
 contract C {
-function a(bool payable) public pure {}
-function b(string payable) public pure {}
-function c(int payable) public pure {}
-function d(int256 payable) public pure {}
-function e(uint payable) public pure {}
-function f(uint256 payable) public pure {}
-function g(bytes1 payable) public pure {}
-function h(bytes payable) public pure {}
-function i(bytes32 payable) public pure {}
-function j(fixed payable) public pure {}
-function k(fixed80x80 payable) public pure {}
-function l(ufixed payable) public pure {}
-function m(ufixed80x80 payable) public pure {}
+    function a(bool payable) public pure {}
+    function b(string payable) public pure {}
+    function c(int payable) public pure {}
+    function d(int256 payable) public pure {}
+    function e(uint payable) public pure {}
+    function f(uint256 payable) public pure {}
+    function g(bytes1 payable) public pure {}
+    function h(bytes payable) public pure {}
+    function i(bytes32 payable) public pure {}
+    function j(fixed payable) public pure {}
+    function k(fixed80x80 payable) public pure {}
+    function l(ufixed payable) public pure {}
+    function m(ufixed80x80 payable) public pure {}
 }
 // ----
 // ParserError 9106: (33-40): State mutability can only be specified for address types.

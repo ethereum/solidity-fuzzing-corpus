@@ -1,14 +1,14 @@
-	{
-		"language": "Solidity",
-		"settings": {
-			"outputSelection": {
-				"fileA": { "A": [ "metadata" ] }
-			},
-			"optimizer": { "enabled": true }
+{
+	"language": "Solidity",
+	"settings": {
+		"outputSelection": {
+			"fileA": { "A": [ "metadata" ] }
 		},
-		"sources": {
-			"fileA": {
-				"content": "contract A { }"
-			}
+		"optimizer": { "enabled": true }
+	},
+	"sources": {
+		"fileA": {
+			"content": "contract A { }"
 		}
 	}
+}

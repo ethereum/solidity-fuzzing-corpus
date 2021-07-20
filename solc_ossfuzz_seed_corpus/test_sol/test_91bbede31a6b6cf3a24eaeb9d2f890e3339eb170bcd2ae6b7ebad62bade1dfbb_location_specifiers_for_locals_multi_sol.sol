@@ -1,10 +1,10 @@
 contract Foo {
-uint[] m_x;
-function f() public view {
-    uint[] storage memory x = m_x;
-    uint[] memory storage calldata y;
-    x; y;
-}
+    uint[] m_x;
+    function f() public view {
+        uint[] storage memory x = m_x;
+        uint[] memory storage calldata y;
+        x; y;
+    }
 }
 // ----
 // ParserError 3548: (85-91): Location already specified.

@@ -12,11 +12,11 @@ import "A" as A;
 import "B" as B;
 
 contract Test {
-function f() public pure {
-    revert A.E();
-}
-function g() public pure {
-    revert B.E();
-}
+    function f() public pure {
+        revert A.E();
+    }
+    function g() public pure {
+        revert B.E();
+    }
 }
 // ----

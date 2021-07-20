@@ -5,22 +5,22 @@ function f0(bool i0,address i1,address i2)  returns(bool o0,bool o1,bool o2)
 {
   if (true)
   {
-if (true)
-{ }
+    if (true)
+    { }
 
-i1 = i2;
+    i1 = i2;
 
-{
+    {
 
-  o0 = (false && false);
-  { }
-  if (false)
-  {
-  }
+      o0 = (false && false);
+      { }
+      if (false)
+      {
+      }
 
-  if (true)
-  { }
-}
+      if (true)
+      { }
+    }
   }
   { }
 

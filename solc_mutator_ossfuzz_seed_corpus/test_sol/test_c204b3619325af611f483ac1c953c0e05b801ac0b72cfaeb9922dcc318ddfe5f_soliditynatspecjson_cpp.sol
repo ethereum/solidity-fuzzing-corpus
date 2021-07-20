@@ -1,8 +1,8 @@
-	{
-		"methods": {
-			"f()":
-			{
-			"notice": "world"
-			}
+{
+	"methods": {
+		"f()":
+		{
+		"notice": "world"
 		}
 	}
+}

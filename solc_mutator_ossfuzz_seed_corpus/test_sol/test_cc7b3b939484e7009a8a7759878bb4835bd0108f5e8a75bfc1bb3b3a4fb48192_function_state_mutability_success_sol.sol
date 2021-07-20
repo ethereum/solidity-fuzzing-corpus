@@ -21,26 +21,26 @@ contract Test
 
   function tests() internal
   {
-funcTakesInternalPure(internalPureFunc);
+    funcTakesInternalPure(internalPureFunc);
 
-funcTakesInternalView(internalPureFunc);
-funcTakesInternalView(internalViewFunc);
+    funcTakesInternalView(internalPureFunc);
+    funcTakesInternalView(internalViewFunc);
 
-funcTakesInternalMutable(internalPureFunc);
-funcTakesInternalMutable(internalViewFunc);
-funcTakesInternalMutable(internalMutableFunc);
+    funcTakesInternalMutable(internalPureFunc);
+    funcTakesInternalMutable(internalViewFunc);
+    funcTakesInternalMutable(internalMutableFunc);
 
-funcTakesExternalPure(this.externalPureFunc);
+    funcTakesExternalPure(this.externalPureFunc);
 
-funcTakesExternalView(this.externalPureFunc);
-funcTakesExternalView(this.externalViewFunc);
+    funcTakesExternalView(this.externalPureFunc);
+    funcTakesExternalView(this.externalViewFunc);
 
-funcTakesExternalPayable(this.externalPayableFunc);
+    funcTakesExternalPayable(this.externalPayableFunc);
 
-funcTakesExternalMutable(this.externalPureFunc);
-funcTakesExternalMutable(this.externalViewFunc);
-funcTakesExternalMutable(this.externalPayableFunc);
-funcTakesExternalMutable(this.externalMutableFunc);
+    funcTakesExternalMutable(this.externalPureFunc);
+    funcTakesExternalMutable(this.externalViewFunc);
+    funcTakesExternalMutable(this.externalPayableFunc);
+    funcTakesExternalMutable(this.externalMutableFunc);
   }
 }
 // ----

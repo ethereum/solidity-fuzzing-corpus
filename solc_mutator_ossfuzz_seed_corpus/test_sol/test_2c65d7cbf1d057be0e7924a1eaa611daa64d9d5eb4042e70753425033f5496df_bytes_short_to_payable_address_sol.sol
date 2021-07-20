@@ -1,7 +1,7 @@
 contract C {
-function f(bytes10 x) public pure returns (address payable) {
-    return address(x);
-}
+    function f(bytes10 x) public pure returns (address payable) {
+        return address(x);
+    }
 }
 // ----
 // TypeError 9640: (94-104): Explicit type conversion not allowed from "bytes10" to "address".

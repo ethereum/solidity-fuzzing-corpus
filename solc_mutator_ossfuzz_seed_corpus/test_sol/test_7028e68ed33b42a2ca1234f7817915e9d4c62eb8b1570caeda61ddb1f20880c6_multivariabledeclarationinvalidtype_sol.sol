@@ -1,7 +1,7 @@
 contract C {
   function f() internal returns (string memory, uint, uint, uint) {
-(uint a, string memory b,,) = f();
-a; b;
+    (uint a, string memory b,,) = f();
+    a; b;
   }
 }
 // ----

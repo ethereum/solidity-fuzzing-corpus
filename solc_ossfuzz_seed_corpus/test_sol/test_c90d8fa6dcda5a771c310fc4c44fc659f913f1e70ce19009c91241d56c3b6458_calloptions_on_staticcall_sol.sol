@@ -1,7 +1,7 @@
 contract C {
-function foo() pure internal {
-    address(10).staticcall{value: 7, gas: 3}("");
-}
+    function foo() pure internal {
+        address(10).staticcall{value: 7, gas: 3}("");
+    }
 }
 // ====
 // EVMVersion: >=byzantium

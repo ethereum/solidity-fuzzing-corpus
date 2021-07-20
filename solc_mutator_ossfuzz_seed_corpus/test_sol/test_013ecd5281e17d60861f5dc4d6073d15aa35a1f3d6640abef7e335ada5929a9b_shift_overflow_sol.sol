@@ -1,11 +1,11 @@
 contract C {
-function leftU(uint8 x, uint8 y) internal pure returns (uint8) {
-    return x << y;
-}
+    function leftU(uint8 x, uint8 y) internal pure returns (uint8) {
+        return x << y;
+    }
 
-function leftS(int8 x, uint8 y) internal pure returns (int8) {
-    return x << y;
-}
+    function leftS(int8 x, uint8 y) internal pure returns (int8) {
+        return x << y;
+    }
 
 	function t() public pure {
 		assert(leftU(255, 8) == 0);

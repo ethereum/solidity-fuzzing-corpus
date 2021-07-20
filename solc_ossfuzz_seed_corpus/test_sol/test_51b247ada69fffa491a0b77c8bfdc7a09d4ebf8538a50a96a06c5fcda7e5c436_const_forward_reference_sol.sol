@@ -1,8 +1,8 @@
 contract C {
   function f() {
-assembly {
-  c := add(add(1, 2), c)
-}
+    assembly {
+      c := add(add(1, 2), c)
+    }
   }
   int constant c = 0 + 1;
 }

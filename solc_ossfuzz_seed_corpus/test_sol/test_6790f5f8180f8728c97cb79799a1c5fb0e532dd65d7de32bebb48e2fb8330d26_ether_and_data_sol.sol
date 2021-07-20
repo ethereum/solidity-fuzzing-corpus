@@ -1,5 +1,5 @@
 contract C {
-receive () payable external { }
+    receive () payable external { }
 }
 // ====
 // compileToEwasm: also

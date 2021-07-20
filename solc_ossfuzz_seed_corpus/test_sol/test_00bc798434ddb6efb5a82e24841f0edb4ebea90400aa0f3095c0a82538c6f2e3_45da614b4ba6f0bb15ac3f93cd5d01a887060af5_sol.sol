@@ -10,13 +10,13 @@ function f0(bool i0)  returns(function () external o0,function () external o1,by
 
   {
 
-if (true)
-{ }
+    if (true)
+    { }
 
 
 
-if (false)
-{ }
+    if (false)
+    { }
   }
   if (false)
   { }

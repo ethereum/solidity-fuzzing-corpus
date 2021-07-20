@@ -1,5 +1,5 @@
 error E();
 function f() pure {
-revert E();
+    revert E();
 }
 // ----

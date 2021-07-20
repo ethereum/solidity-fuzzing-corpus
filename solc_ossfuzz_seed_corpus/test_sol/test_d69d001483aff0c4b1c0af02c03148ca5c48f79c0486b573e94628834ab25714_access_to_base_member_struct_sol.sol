@@ -1,18 +1,18 @@
 contract A {
-struct S { uint x; }
-S s;
+    struct S { uint x; }
+    S s;
 }
 
 contract B is A {
-function f() public view {
-    A.s = A.S(2);
-}
-function g() public view {
-    A.s.x = 2;
-}
-function h() public pure returns (uint) {
-    return A.s.x;
-}
+    function f() public view {
+        A.s = A.S(2);
+    }
+    function g() public view {
+        A.s.x = 2;
+    }
+    function h() public pure returns (uint) {
+        return A.s.x;
+    }
 }
 // ----
 // TypeError 8961: (107-110): Function declared as view, but this expression (potentially) modifies the state and thus requires non-payable (the default) or payable.

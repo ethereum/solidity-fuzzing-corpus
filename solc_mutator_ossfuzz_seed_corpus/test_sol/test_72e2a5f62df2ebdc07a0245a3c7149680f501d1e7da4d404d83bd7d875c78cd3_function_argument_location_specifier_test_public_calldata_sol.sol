@@ -1,5 +1,5 @@
 contract test {
-function f(bytes calldata) public;
+    function f(bytes calldata) public;
 }
 // ----
 // TypeError 3656: (0-56): Contract "test" should be marked as abstract.

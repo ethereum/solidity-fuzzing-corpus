@@ -1,9 +1,9 @@
 contract C
 {
-function f() public
-{
-    int x = delete (,0);
-}
+    function f() public
+    {
+        int x = delete (,0);
+    }
 }
 // ----
 // TypeError 4247: (68-69): Expression has to be an lvalue.

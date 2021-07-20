@@ -1,18 +1,18 @@
 contract C {
-function f() public pure {
-    bytes32 y = "abcdefghabcdefghabcdefghabcdefgh";
-    bytes32 z = y;
-    y &= "bcdefghabcdefghabcdefghabcdefgha";
-    z &= "bcdefghabcdefghabcdefghabcdefgha";
-    assert(y == "abcdefghabcdefghabcdefghabcdefgh"); // fails
+    function f() public pure {
+        bytes32 y = "abcdefghabcdefghabcdefghabcdefgh";
+        bytes32 z = y;
+        y &= "bcdefghabcdefghabcdefghabcdefgha";
+        z &= "bcdefghabcdefghabcdefghabcdefgha";
+        assert(y == "abcdefghabcdefghabcdefghabcdefgh"); // fails
 
-    y |= "cdefghabcdefghabcdefghabcdefghab";
-    z |= "cdefghabcdefghabcdefghabcdefghab";
-    assert(y == "abcdefghabcdefghabcdefghabcd"); // fails
+        y |= "cdefghabcdefghabcdefghabcdefghab";
+        z |= "cdefghabcdefghabcdefghabcdefghab";
+        assert(y == "abcdefghabcdefghabcdefghabcd"); // fails
 
-    y ^= "abcdefghabcdefghabcdefghabcdefgh";
-    assert(y == z ^ "abcdefghabcdefghabcdefghabcdefgh");
-}
+        y ^= "abcdefghabcdefghabcdefghabcdefgh";
+        assert(y == z ^ "abcdefghabcdefghabcdefghabcdefgh");
+    }
 }
 // ====
 // SMTEngine: all

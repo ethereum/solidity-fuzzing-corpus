@@ -1,4 +1,4 @@
-		contract A {
-			uint public x;
-			fallback() external { x = 2; }
-		}
+contract A {
+	uint public x;
+	fallback() external { x = 2; }
+}

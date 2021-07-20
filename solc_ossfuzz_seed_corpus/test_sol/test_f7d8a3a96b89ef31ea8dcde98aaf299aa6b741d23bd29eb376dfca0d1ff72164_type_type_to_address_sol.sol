@@ -1,31 +1,31 @@
 struct S {
-uint x;
+    uint x;
 }
 
 enum E {A, B, C}
 
 contract C {
-function f() public pure {
-    address(uint);
-    address(bytes16);
-    address(bool);
-    address(address);
-    address(fixed);
+    function f() public pure {
+        address(uint);
+        address(bytes16);
+        address(bool);
+        address(address);
+        address(fixed);
 
-    address(S);
-    address(E);
+        address(S);
+        address(E);
 
-    address(uint[]);
-    address(uint[][]);
-    address(uint[5]);
-    address(string);
-    address(bytes);
-    address(S[]);
-    address(E[]);
-    address((uint, uint));
+        address(uint[]);
+        address(uint[][]);
+        address(uint[5]);
+        address(string);
+        address(bytes);
+        address(S[]);
+        address(E[]);
+        address((uint, uint));
 
-    address(type(uint));
-}
+        address(type(uint));
+    }
 }
 // ----
 // TypeError 9640: (96-109): Explicit type conversion not allowed from "type(uint256)" to "address".

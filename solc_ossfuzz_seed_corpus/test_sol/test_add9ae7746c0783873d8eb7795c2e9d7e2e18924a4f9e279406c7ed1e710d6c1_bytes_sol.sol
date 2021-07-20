@@ -1,8 +1,8 @@
 contract C {
-bytes public b;
-constructor() {
-    b = "abc";
-}
+    bytes public b;
+    constructor() {
+        b = "abc";
+    }
 }
 // ====
 // compileViaYul: also

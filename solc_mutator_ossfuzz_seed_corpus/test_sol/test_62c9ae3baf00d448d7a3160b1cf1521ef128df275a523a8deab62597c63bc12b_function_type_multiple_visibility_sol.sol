@@ -1,6 +1,6 @@
 contract C {
   function f() public pure {
-function() public public g;
+    function() public public g;
   }
 }
 // ----

@@ -1,6 +1,6 @@
-		contract test {
-			///
-			///
-			function f() public {
-			}
-		}
+contract test {
+	///
+	///
+	function f() public {
+	}
+}

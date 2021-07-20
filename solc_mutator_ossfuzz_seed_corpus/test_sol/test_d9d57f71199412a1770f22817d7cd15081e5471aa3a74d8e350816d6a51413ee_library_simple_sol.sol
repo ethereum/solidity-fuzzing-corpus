@@ -1,4 +1,4 @@
 library Lib {
-function f() public { }
+    function f() public { }
 }
 // ----

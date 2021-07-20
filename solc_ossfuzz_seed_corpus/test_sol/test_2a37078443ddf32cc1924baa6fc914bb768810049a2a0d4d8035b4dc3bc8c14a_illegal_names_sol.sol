@@ -1,24 +1,24 @@
 enum this {
-a
+    a
 }
 enum super {
-b
+    b
 }
 enum _ {
-c
+    c
 }
 
 enum E {
-this,
-super,
-_
+    this,
+    super,
+    _
 }
 
 contract C {
-this a;
-super b;
-_ c;
-E e;
+    this a;
+    super b;
+    _ c;
+    E e;
 }
 // ----
 // DeclarationError 3726: (0-19): The name "this" is reserved.

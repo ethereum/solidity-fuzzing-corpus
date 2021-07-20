@@ -1,5 +1,5 @@
 contract c {
-function f() pure public { }
-modifier m() { msg.value; _; }
+    function f() pure public { }
+    modifier m() { msg.value; _; }
 }
 // ----

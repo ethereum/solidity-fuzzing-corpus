@@ -1,10 +1,10 @@
 contract A {}
 contract C is A {
-modifier m() { _; }
+    modifier m() { _; }
 }
 contract D is A {
-function f() C.m public {
-}
+    function f() C.m public {
+    }
 }
 contract T is D, C {}
 // ----

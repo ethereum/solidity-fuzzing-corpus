@@ -4,7 +4,7 @@ function add(uint a, uint b) pure returns (uint) {
 
 contract C {
   function f(uint x) public pure returns (uint) {
-return add(x, 2);
+    return add(x, 2);
   }
 }
 // ====

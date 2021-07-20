@@ -1,6 +1,6 @@
 library L {
 }
 contract C {
-using L for address payable;
+    using L for address payable;
 }
 // ----

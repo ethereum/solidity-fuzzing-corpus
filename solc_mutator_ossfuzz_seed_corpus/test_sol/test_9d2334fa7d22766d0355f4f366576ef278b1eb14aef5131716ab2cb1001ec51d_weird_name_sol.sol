@@ -1,8 +1,8 @@
 error error(uint a);
 contract C {
-function f() public pure {
-    revert error(2);
-}
+    function f() public pure {
+        revert error(2);
+    }
 }
 // ====
 // compileViaYul: also

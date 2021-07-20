@@ -5,13 +5,13 @@ contract InvalidTest {
   bool flag;
 
   constructor() {
-function() internal invalid;
-storedFn = invalid;
+    function() internal invalid;
+    storedFn = invalid;
   }
   function f() public returns (uint) {
-if (flag) return 2;
-flag = true;
-storedFn();
+    if (flag) return 2;
+    flag = true;
+    storedFn();
   }
 }
 // ====

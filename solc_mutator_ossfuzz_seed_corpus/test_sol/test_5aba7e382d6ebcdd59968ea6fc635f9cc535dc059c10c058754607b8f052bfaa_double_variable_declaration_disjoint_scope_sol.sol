@@ -1,8 +1,8 @@
 contract test {
-function f() pure public {
-    { uint x; }
-    { uint x; }
-}
+    function f() pure public {
+        { uint x; }
+        { uint x; }
+    }
 }
 // ----
 // Warning 2072: (57-63): Unused local variable.

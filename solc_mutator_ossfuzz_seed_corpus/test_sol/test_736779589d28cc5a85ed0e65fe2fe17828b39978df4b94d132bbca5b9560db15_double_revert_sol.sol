@@ -1,16 +1,16 @@
 contract C {
-function f() public pure {
-    assembly {
-        revert(0, 0)
-        revert(0, 0)
+    function f() public pure {
+        assembly {
+            revert(0, 0)
+            revert(0, 0)
+        }
     }
-}
-function g() public pure {
-    assembly {
-        revert(0, 0)
+    function g() public pure {
+        assembly {
+            revert(0, 0)
+        }
+        revert();
     }
-    revert();
-}
 }
 // ----
 // Warning 5740: (100-112): Unreachable code.

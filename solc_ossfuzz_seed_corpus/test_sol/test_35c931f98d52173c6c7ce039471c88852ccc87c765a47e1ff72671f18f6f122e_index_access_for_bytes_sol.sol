@@ -1,10 +1,10 @@
 contract C {
-function f() public pure {
-    bytes memory x = hex"00112233";
-    assert(x[0] == 0x00);
-    assert(x[1] == 0x11);
-    assert(x.length == 3);
-}
+    function f() public pure {
+        bytes memory x = hex"00112233";
+        assert(x[0] == 0x00);
+        assert(x[1] == 0x11);
+        assert(x.length == 3);
+    }
 }
 // ====
 // SMTEngine: all

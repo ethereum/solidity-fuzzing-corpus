@@ -1,5 +1,5 @@
 contract Other {
-function f(uint) public pure returns (uint) {}
+    function f(uint) public pure returns (uint) {}
 }
 contract SuperTest is Other {
 	function creationSuper() public pure returns (bytes memory) {

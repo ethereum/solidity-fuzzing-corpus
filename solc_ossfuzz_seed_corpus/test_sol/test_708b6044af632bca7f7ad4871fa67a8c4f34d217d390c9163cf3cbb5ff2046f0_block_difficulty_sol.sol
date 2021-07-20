@@ -1,7 +1,7 @@
 contract C {
-function f() public returns (uint) {
-    return block.difficulty;
-}
+    function f() public returns (uint) {
+        return block.difficulty;
+    }
 }
 // ====
 // compileViaYul: also

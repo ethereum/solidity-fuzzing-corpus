@@ -1,7 +1,7 @@
 contract C {
-function f() public returns (uint) {
-    try this.f() {
-    } catch Error(string memory) {
+    function f() public returns (uint) {
+        try this.f() {
+        } catch Error(string memory) {
 			g();
 		}
 	}

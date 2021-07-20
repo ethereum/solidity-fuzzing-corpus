@@ -2,18 +2,18 @@ interface I {}
 contract E is I {}
 
 library L {
-function foo(I i) internal pure returns (uint) {
-    return 42;
-}
+    function foo(I i) internal pure returns (uint) {
+        return 42;
+    }
 }
 
 contract C {
-using L for I;
+    using L for I;
 
-function test() public returns (uint) {
-    E e = new E();
-    return I(e).foo();
-}
+    function test() public returns (uint) {
+        E e = new E();
+        return I(e).foo();
+    }
 }
 
 // ====

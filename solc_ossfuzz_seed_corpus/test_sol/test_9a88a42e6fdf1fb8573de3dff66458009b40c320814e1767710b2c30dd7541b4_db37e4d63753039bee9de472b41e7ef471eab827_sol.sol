@@ -5,8 +5,8 @@ contract C0 {
   function f0() external returns(C0 o0)
   {
 
-if (false)
-{ }
+    if (false)
+    { }
 
 
 

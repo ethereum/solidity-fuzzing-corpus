@@ -1,11 +1,11 @@
 contract C {
-function f() public pure {
-    abi.encode;
-    abi.encodePacked;
-    abi.encodeWithSelector;
-    abi.encodeWithSignature;
-    abi.decode;
-}
+    function f() public pure {
+        abi.encode;
+        abi.encodePacked;
+        abi.encodeWithSelector;
+        abi.encodeWithSignature;
+        abi.decode;
+    }
 }
 // ----
 // Warning 6133: (52-62): Statement has no effect.

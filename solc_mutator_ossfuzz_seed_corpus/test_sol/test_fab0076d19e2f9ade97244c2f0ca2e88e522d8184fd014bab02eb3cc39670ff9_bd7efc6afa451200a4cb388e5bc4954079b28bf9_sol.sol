@@ -12,18 +12,18 @@ function f1(int40 i0,address i1,address i2)  returns(bytes26 o0,address o1)
   if (false)
   {
 
-if (true)
-{ }
+    if (true)
+    { }
 
-"fb0827d3d90aea5d233b688958ccd9a5732de8cd3ceca84cbacc1f9c";
+    "fb0827d3d90aea5d233b688958ccd9a5732de8cd3ceca84cbacc1f9c";
 
 
-if (false)
-{
-  if (false)
-  { }
-}
-o1;
+    if (false)
+    {
+      if (false)
+      { }
+    }
+    o1;
   }
 
   { }

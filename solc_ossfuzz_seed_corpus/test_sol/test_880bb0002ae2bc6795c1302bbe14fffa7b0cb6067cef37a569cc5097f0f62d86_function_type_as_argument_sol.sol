@@ -1,6 +1,6 @@
 contract C {
-function f(function(uint) external g) public {
-}
+    function f(function(uint) external g) public {
+    }
 }
 // ====
 // SMTEngine: all

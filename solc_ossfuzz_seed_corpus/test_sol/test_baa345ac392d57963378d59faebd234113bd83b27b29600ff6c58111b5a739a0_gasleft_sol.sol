@@ -1,7 +1,7 @@
 contract C {
-function f() public returns (bool) {
-    return gasleft() > 0;
-}
+    function f() public returns (bool) {
+        return gasleft() > 0;
+    }
 }
 // ====
 // compileToEwasm: also

@@ -7,9 +7,9 @@ contract C0 {
   }
   function f1(bytes memory i0,bytes memory i1) external returns(bool o0,function () external o1)
   {
-if (false)
-{ }
-address(0x17397702293D722cd72Ee3f430452d6553733A23);
+    if (false)
+    { }
+    address(0x17397702293D722cd72Ee3f430452d6553733A23);
 
 
   }

@@ -1,14 +1,14 @@
 contract C {
-uint a;
-function f(uint x) public {
-    this.g(x);
-    assert(a == x);
-    assert(a != 42);
-}
+    uint a;
+    function f(uint x) public {
+        this.g(x);
+        assert(a == x);
+        assert(a != 42);
+    }
 
-function g(uint x) public {
-    a = x;
-}
+    function g(uint x) public {
+        a = x;
+    }
 }
 // ====
 // SMTEngine: all

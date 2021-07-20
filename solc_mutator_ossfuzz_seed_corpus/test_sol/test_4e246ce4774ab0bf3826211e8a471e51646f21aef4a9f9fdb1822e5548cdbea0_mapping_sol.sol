@@ -1,4 +1,4 @@
 contract test {
-mapping(address => bytes32) names;
+    mapping(address => bytes32) names;
 }
 // ----

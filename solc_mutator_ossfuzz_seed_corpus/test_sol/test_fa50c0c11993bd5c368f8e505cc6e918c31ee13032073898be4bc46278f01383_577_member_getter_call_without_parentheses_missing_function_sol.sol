@@ -2,13 +2,13 @@ contract A{
 
 }
 contract B{
-A public a;
+    A public a;
 }
 contract C{
-B b;
-function f() public view{
-    b.a.f();
-}
+    B b;
+    function f() public view{
+        b.a.f();
+    }
 }
 
 // ----

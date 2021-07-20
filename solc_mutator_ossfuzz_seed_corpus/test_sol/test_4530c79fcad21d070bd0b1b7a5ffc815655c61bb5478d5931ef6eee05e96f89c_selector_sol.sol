@@ -1,11 +1,11 @@
 contract C {
-uint immutable x;
-constructor() {
-    x = 3;
-    this.readX.selector;
-}
+    uint immutable x;
+    constructor() {
+        x = 3;
+        this.readX.selector;
+    }
 
-function readX() external view returns(uint) { return x; }
+    function readX() external view returns(uint) { return x; }
 }
 // ----
 // Warning 6133: (78-97): Statement has no effect.

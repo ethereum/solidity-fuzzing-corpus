@@ -1,7 +1,7 @@
 contract test {
-function f() public {
-    bytes32 bytes10abc = "abc";
-}
+    function f() public {
+        bytes32 bytes10abc = "abc";
+    }
 }
 // ----
 // Warning 2072: (50-68): Unused local variable.

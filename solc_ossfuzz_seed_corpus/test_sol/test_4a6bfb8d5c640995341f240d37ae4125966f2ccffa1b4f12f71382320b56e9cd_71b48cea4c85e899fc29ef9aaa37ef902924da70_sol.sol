@@ -4,11 +4,11 @@
 contract C0 {
   function f0(uint112 i0,address i1) external returns(bytes memory o0)
   {
-"73e60c9d65cd05484c";
+    "73e60c9d65cd05484c";
 
 
-{
-}
+    {
+    }
 
   }
   function f1(bytes memory i0,address i1) external returns(bytes6 o0)

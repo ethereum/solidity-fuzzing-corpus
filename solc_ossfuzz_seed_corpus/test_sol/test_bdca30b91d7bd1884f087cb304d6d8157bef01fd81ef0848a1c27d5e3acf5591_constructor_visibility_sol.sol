@@ -2,10 +2,10 @@
 contract A { constructor(string memory) { } }
 contract B is A {
   function f() pure public {
-A x = A(address(0)); // convert from address
-string memory y = "ab";
-A(y); // call as a function is invalid
-x;
+    A x = A(address(0)); // convert from address
+    string memory y = "ab";
+    A(y); // call as a function is invalid
+    x;
   }
 }
 // ----

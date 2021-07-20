@@ -1,7 +1,7 @@
 contract test {
-function fun() public {
-    uint256 x = address(0).balance;
-}
+    function fun() public {
+        uint256 x = address(0).balance;
+    }
 }
 // ----
 // Warning 2072: (52-61): Unused local variable.

@@ -8,7 +8,7 @@ contract C is kakkas.X
 {
   function f() public view returns (uint)
   {
-return kakkas.X.x;
+    return kakkas.X.x;
   }
 }
 // ----

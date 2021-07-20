@@ -1,13 +1,13 @@
 contract C {
   function f() public {
-assembly {
-  super := 1
-  this := 1
-  msg := 1
-  block := 1
-  f := 1
-  C := 1
-}
+    assembly {
+      super := 1
+      this := 1
+      msg := 1
+      block := 1
+      f := 1
+      C := 1
+    }
   }
 }
 // ----

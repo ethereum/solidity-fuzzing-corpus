@@ -15,16 +15,16 @@ contract C0 {
   function f2(C0 i0) external returns(bool o0,bool o1)
   {
 
-if (false)
-{
-}
-i0;
+    if (false)
+    {
+    }
+    i0;
 
--1777335975852830676478;
+    -1777335975852830676478;
 
-if (true)
-{
-}
+    if (true)
+    {
+    }
 
   }
   function f3() external returns(function () external o0)

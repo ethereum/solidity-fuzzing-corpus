@@ -1,34 +1,34 @@
 contract C {
-struct S { bool f; }
-S s;
-function f() internal pure {
-    S storage c;
-    assembly {
-        for {} eq(0,0) { c.slot := s.slot } {}
+    struct S { bool f; }
+    S s;
+    function f() internal pure {
+        S storage c;
+        assembly {
+            for {} eq(0,0) { c.slot := s.slot } {}
+        }
+        c;
     }
-    c;
-}
-function g() internal pure {
-    S storage c;
-    assembly {
-        for {} eq(0,1) { c.slot := s.slot } {}
+    function g() internal pure {
+        S storage c;
+        assembly {
+            for {} eq(0,1) { c.slot := s.slot } {}
+        }
+        c;
     }
-    c;
-}
-function h() internal pure {
-    S storage c;
-    assembly {
-        for {} eq(0,0) {} { c.slot := s.slot }
+    function h() internal pure {
+        S storage c;
+        assembly {
+            for {} eq(0,0) {} { c.slot := s.slot }
+        }
+        c;
     }
-    c;
-}
-function i() internal pure {
-    S storage c;
-    assembly {
-        for {} eq(0,1) {} { c.slot := s.slot }
+    function i() internal pure {
+        S storage c;
+        assembly {
+            for {} eq(0,1) {} { c.slot := s.slot }
+        }
+        c;
     }
-    c;
-}
 }
 // ----
 // TypeError 3464: (189-190): This variable is of storage pointer type and can be accessed without prior assignment, which would lead to undefined behaviour.

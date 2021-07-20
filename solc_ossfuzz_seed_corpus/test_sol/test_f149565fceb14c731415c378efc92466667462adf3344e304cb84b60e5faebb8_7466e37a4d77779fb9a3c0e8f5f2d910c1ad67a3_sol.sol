@@ -12,10 +12,10 @@ function f1(uint32 i0,function () external i1,function () external i2,bytes memo
 function f2()  returns(bytes12 o0,bool o1)
 {
   {
-"c485221fc38a5c059014e57f27a410120d03ada49ee0fdd9a39b";
+    "c485221fc38a5c059014e57f27a410120d03ada49ee0fdd9a39b";
 
-if (true)
-{ }
+    if (true)
+    { }
 
 
   }

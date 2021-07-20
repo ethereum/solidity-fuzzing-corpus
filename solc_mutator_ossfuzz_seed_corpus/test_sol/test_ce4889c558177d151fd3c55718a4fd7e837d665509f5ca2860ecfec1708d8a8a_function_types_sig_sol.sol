@@ -1,25 +1,25 @@
 contract C {
-uint256 public x;
+    uint256 public x;
 
-function f() public pure returns (bytes4) {
-    return this.f.selector;
-}
+    function f() public pure returns (bytes4) {
+        return this.f.selector;
+    }
 
-function g() public view returns (bytes4) {
-    function () pure external returns (bytes4) fun = this.f;
-    return fun.selector;
-}
+    function g() public view returns (bytes4) {
+        function () pure external returns (bytes4) fun = this.f;
+        return fun.selector;
+    }
 
-function i() public pure returns (bytes4) {
-    return this.x.selector;
-}
+    function i() public pure returns (bytes4) {
+        return this.x.selector;
+    }
 
-function check() public view {
-    assert(f() == 0x26121ff0);
-    assert(g() == 0x26121ff0);
-    assert(i() == 0x0c55699c);
-    assert(i() == 0x26121ff0);
-}
+    function check() public view {
+        assert(f() == 0x26121ff0);
+        assert(g() == 0x26121ff0);
+        assert(i() == 0x0c55699c);
+        assert(i() == 0x26121ff0);
+    }
 }
 // ====
 // SMTEngine: all

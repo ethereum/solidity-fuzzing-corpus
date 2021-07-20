@@ -1,9 +1,9 @@
 contract test {
-constructor() payable {}
+    constructor() payable {}
 
-function getBalance() public returns (uint256 balance) {
-    return address(this).balance;
-}
+    function getBalance() public returns (uint256 balance) {
+        return address(this).balance;
+    }
 }
 
 // ====

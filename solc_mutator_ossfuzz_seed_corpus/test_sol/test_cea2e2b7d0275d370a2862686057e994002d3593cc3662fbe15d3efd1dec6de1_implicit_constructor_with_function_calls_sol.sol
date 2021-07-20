@@ -2,7 +2,7 @@ contract C {
 	uint x = initX();
 	uint y = initY();
 
-function initX() internal pure returns (uint) {
+    function initX() internal pure returns (uint) {
 		return 42;
 	}
 

@@ -1,8 +1,8 @@
 contract test {
-function f(uint x) pure public {
-    uint y = +x;
-    y;
-}
+    function f(uint x) pure public {
+        uint y = +x;
+        y;
+    }
 }
 // ----
 // SyntaxError 9636: (70-72): Use of unary + is disallowed.

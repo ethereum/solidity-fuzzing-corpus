@@ -1,25 +1,25 @@
 contract A {
-function f(uint256 a) public returns (uint256) {
-    return 2 * a;
-}
+    function f(uint256 a) public returns (uint256) {
+        return 2 * a;
+    }
 }
 
 
 contract B {
-function f() public returns (uint256) {
-    return 10;
-}
+    function f() public returns (uint256) {
+        return 10;
+    }
 }
 
 
 contract C is A, B {
-function g() public returns (uint256) {
-    return f();
-}
+    function g() public returns (uint256) {
+        return f();
+    }
 
-function h() public returns (uint256) {
-    return f(1);
-}
+    function h() public returns (uint256) {
+        return f(1);
+    }
 }
 
 // ====

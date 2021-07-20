@@ -1,7 +1,7 @@
 contract C {
-uint immutable super;
-uint immutable _;
-uint immutable this;
+    uint immutable super;
+    uint immutable _;
+    uint immutable this;
 }
 // ----
 // DeclarationError 3726: (17-37): The name "super" is reserved.

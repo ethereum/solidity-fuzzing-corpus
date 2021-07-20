@@ -1,15 +1,15 @@
 contract C {
-uint a;
-bool b;
+    uint a;
+    bool b;
 
 	constructor(bool _b) {
 		b = _b;
 	}
 
-function f() public returns(uint c) {
-    c = b ? a + 10 : ++a;
-    assert(c >= a);
-}
+    function f() public returns(uint c) {
+        c = b ? a + 10 : ++a;
+        assert(c >= a);
+    }
 }
 // ====
 // SMTEngine: all

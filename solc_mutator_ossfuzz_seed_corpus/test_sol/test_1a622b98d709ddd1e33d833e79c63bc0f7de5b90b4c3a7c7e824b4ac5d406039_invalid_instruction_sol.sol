@@ -1,9 +1,9 @@
 contract C {
-function f() public {
-    assembly {
-        invalid()
+    function f() public {
+        assembly {
+            invalid()
+        }
     }
-}
 }
 
 // ====

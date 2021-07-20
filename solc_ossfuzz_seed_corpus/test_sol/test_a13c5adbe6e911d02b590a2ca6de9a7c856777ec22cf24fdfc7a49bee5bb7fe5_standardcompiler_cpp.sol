@@ -1,10 +1,10 @@
-	{
-		"language": "Solidity",
-		"sources": {
-			"A": {
-				"content": "contract A { function f() {} }"
-			}
+{
+	"language": "Solidity",
+	"sources": {
+		"A": {
+			"content": "contract A { function f() {} }"
 		}
 	}
-	}
-	}
+}
+}
+}

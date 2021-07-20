@@ -1,3 +1,3 @@
-	{
-		"language": "Solidity"
-	}
+{
+	"language": "Solidity"
+}

@@ -1,4 +1,4 @@
-	{
-		"language": "Solidity",
-		"sources": ["aa", "bb"]
-	}
+{
+	"language": "Solidity",
+	"sources": ["aa", "bb"]
+}

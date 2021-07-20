@@ -3,8 +3,8 @@
 import "ExtSource.sol";
 import "/ExtSource.sol";
 contract C {
-External _external;
-OtherExternal _otherExternal;
+    External _external;
+    OtherExternal _otherExternal;
 }
 // ====
 // compileViaYul: also

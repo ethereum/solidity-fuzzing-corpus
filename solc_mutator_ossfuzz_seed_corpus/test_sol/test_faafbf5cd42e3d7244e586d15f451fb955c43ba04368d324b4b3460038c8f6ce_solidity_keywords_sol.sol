@@ -1,6 +1,6 @@
 contract C {
   function f() view public {
-assembly {
+    assembly {
   // These are keywords of Solidity -- a copy from liblangutil/Token.h.
   let abstract := 1
   let anonymous := 1
@@ -106,7 +106,7 @@ assembly {
   let typeof := 1
   let unchecked := 1
   let var := 1
-}
+    }
   }
 }
 // ----

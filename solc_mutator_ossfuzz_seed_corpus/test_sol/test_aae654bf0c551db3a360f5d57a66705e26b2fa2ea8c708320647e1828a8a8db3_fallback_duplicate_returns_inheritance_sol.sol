@@ -1,8 +1,8 @@
 contract C {
-fallback(bytes calldata _input) external returns (bytes memory _output) {}
+    fallback(bytes calldata _input) external returns (bytes memory _output) {}
 }
 contract D is C {
-fallback() external {}
+    fallback() external {}
 }
 // ----
 // TypeError 9456: (116-138): Overriding function is missing "override" specifier.

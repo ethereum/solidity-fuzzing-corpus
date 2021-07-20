@@ -1,11 +1,11 @@
 // This used to work pre-0.6.0.
 library L {
-function f() public returns(uint[] storage);
-function g() public returns(uint[] storage s);
+    function f() public returns(uint[] storage);
+    function g() public returns(uint[] storage s);
 }
 abstract library T {
-function f() public returns(uint[] storage);
-function g() public returns(uint[] storage s);
+    function f() public returns(uint[] storage);
+    function g() public returns(uint[] storage s);
 }
 // ----
 // TypeError 9571: (146-268): Libraries cannot be abstract.

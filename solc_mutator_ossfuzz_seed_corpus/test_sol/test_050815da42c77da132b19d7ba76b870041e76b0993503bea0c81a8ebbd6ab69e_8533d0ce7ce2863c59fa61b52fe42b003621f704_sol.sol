@@ -6,23 +6,23 @@ function f0()  returns(bool o0,address o1,uint72 o2)
 
   {
 
-if (true)
-{ }
-{
-
-  if (true)
-  { }
-  {
-    if (false)
+    if (true)
     { }
+    {
+
+      if (true)
+      { }
+      {
+        if (false)
+        { }
 
 
-  }
+      }
 
-  if (false)
-  {
-  }
-}
+      if (false)
+      {
+      }
+    }
 
   }
   o1;

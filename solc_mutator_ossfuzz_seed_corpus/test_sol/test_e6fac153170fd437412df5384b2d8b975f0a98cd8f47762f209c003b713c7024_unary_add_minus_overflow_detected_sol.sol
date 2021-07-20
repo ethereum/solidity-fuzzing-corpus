@@ -9,15 +9,15 @@ contract C {
 		--x;
 	}
 
-/* Commented out because Spacer segfaults in Z3 4.8.9
+    /* Commented out because Spacer segfaults in Z3 4.8.9
 	function inc_post() public {
 		x++;
 	}
 
-function dec_post() public {
+    function dec_post() public {
 		x--;
 	}
-*/
+    */
 }
 // ====
 // SMTEngine: all

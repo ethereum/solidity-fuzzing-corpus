@@ -1,8 +1,8 @@
 pragma experimental SMTChecker;
 contract C {
-function f(uint x) public pure {
-    assert(x > 0);
-}
+    function f(uint x) public pure {
+        assert(x > 0);
+    }
 }
 // ----
 // Warning 5523: (0-31): The SMTChecker pragma has been deprecated and will be removed in the future. Please use the "model checker engine" compiler setting to activate the SMTChecker instead. If the pragma is enabled, all engines will be used.

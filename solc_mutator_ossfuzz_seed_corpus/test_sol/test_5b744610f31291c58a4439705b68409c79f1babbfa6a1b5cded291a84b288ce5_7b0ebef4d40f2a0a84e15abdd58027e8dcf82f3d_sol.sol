@@ -7,13 +7,13 @@ contract C0 {
   }
   function f1() external returns(address o0,bool o1,bool o2)
   {
-this.f0();
-{
-  this.f0();
-  o1 = (false || (18328 <= 12182));
-  o0;
-}
-this.f0();
+    this.f0();
+    {
+      this.f0();
+      o1 = (false || (18328 <= 12182));
+      o0;
+    }
+    this.f0();
   }
   function f2(C0 i0,bytes9 i1,function () external i2) external
   {

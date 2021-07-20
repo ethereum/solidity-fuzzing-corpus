@@ -1,12 +1,12 @@
 
 contract C {
-int public x;
-int public y;
+    int public x;
+    int public y;
 
-function f() public pure {
-    assert(this.x.selector != this.y.selector);
-    assert(this.x.selector == this.y.selector);
-}
+    function f() public pure {
+        assert(this.x.selector != this.y.selector);
+        assert(this.x.selector == this.y.selector);
+    }
 }
 // ====
 // SMTEngine: all

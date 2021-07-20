@@ -1,7 +1,7 @@
 contract C {
-function f(uint32 a, uint32 b) internal pure returns (uint256) {
-    return a << b;
-}
+    function f(uint32 a, uint32 b) internal pure returns (uint256) {
+        return a << b;
+    }
 	function t() public pure {
 		assert(f(0x4266, 0) == 0x4266);
 		// Fails because the above is true.

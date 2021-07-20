@@ -1,12 +1,12 @@
 contract c {
-function f () public
-{
-    a = land;
-    a = lost;
-    a = lang;
-}
-uint256 long;
-uint256 abc;
+    function f () public
+    {
+        a = land;
+        a = lost;
+        a = lang;
+    }
+    uint256 long;
+    uint256 abc;
 }
 // ----
 // DeclarationError 7576: (52-53): Undeclared identifier.

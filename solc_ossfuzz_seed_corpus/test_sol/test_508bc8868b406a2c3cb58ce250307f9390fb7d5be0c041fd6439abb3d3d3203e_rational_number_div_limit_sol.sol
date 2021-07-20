@@ -1,8 +1,8 @@
 contract c {
-function f() public pure {
-    int a;
-    a = 1/(2<<4094)/(2<<4094);
-}
+    function f() public pure {
+        int a;
+        a = 1/(2<<4094)/(2<<4094);
+    }
 }
 // ----
 // TypeError 2271: (71-92): Operator / not compatible with types rational_const 1 / 5221...(1225 digits omitted)...5168 and int_const 5221...(1225 digits omitted)...5168. Precision of rational constants is limited to 4096 bits.

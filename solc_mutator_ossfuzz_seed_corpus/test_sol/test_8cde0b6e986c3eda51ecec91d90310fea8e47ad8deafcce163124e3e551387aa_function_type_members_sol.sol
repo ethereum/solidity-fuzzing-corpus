@@ -1,8 +1,8 @@
 contract C {
-function f(function(uint) external payable g) internal {
+    function f(function(uint) external payable g) internal {
 		g.selector;
 		g{gas: 2, value: 3}(4);
-}
+    }
 }
 // ====
 // SMTEngine: all

@@ -1,11 +1,11 @@
 interface I {}
 contract J {}
 contract C {
-mapping(I => bool) i;
-mapping(J => bool) j;
-function f(I x, J y, address z) public view returns (bool, bool, bool) {
-    return (i[y], j[x], i[z]);
-}
+    mapping(I => bool) i;
+    mapping(J => bool) j;
+    function f(I x, J y, address z) public view returns (bool, bool, bool) {
+        return (i[y], j[x], i[z]);
+    }
 }
 // ----
 // TypeError 7407: (189-190): Type contract J is not implicitly convertible to expected type contract I.

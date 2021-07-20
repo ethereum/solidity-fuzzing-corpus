@@ -1,8 +1,8 @@
 contract C {
   function f() public pure {
-assembly {
-  function (a, b) {}
-}
+    assembly {
+      function (a, b) {}
+    }
   }
 }
 // ----

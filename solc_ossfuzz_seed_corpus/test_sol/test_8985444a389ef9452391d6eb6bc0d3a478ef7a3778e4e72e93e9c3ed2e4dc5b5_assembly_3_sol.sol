@@ -1,12 +1,12 @@
 contract C {
-function f() public pure returns (bool) {
-    bool b;
-    bool c = true;
-    assembly { b := c }
-    assert(c); // should hold, c is not assigned in the assembly
-    assert(b); // should hold, but fails currently because of overapproximation
-    return b;
-}
+    function f() public pure returns (bool) {
+        bool b;
+        bool c = true;
+        assembly { b := c }
+        assert(c); // should hold, c is not assigned in the assembly
+        assert(b); // should hold, but fails currently because of overapproximation
+        return b;
+    }
 }
 // ====
 // SMTEngine: all

@@ -1,35 +1,35 @@
 contract C {
-function f(bool a, bool b) public pure {
-    bool c;
-    // OK
-    c = !a;
-    c = !b;
-    c = a == b;
-    c = a != b;
-    c = a || b;
-    c = a && b;
+    function f(bool a, bool b) public pure {
+        bool c;
+        // OK
+        c = !a;
+        c = !b;
+        c = a == b;
+        c = a != b;
+        c = a || b;
+        c = a && b;
 
-    // Not OK
-    c = a > b;
-    c = a < b;
-    c = a >= b;
-    c = a <= b;
-    c = a & b;
-    c = a | b;
-    c = a ^ b;
-    c = ~a;
-    c = ~b;
-    c = a + b;
-    c = a - b;
-    c = -a;
-    c = -b;
-    c = a * b;
-    c = a / b;
-    c = a ** b;
-    c = a % b;
-    c = a << b;
-    c = a >> b;
-}
+        // Not OK
+        c = a > b;
+        c = a < b;
+        c = a >= b;
+        c = a <= b;
+        c = a & b;
+        c = a | b;
+        c = a ^ b;
+        c = ~a;
+        c = ~b;
+        c = a + b;
+        c = a - b;
+        c = -a;
+        c = -b;
+        c = a * b;
+        c = a / b;
+        c = a ** b;
+        c = a % b;
+        c = a << b;
+        c = a >> b;
+    }
 }
 // ----
 // TypeError 2271: (231-236): Operator > not compatible with types bool and bool

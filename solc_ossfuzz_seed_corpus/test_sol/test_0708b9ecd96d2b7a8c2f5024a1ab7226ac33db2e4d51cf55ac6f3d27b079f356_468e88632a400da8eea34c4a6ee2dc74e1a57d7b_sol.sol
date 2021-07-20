@@ -7,18 +7,18 @@ contract C0 {
   function f1(bytes23 i0) external returns(bool o0,C0 o1)
   {
 
-if (false)
-{ }
-{
-}
-{
-  if (false)
-  { }
-  f0(address(0xBffd460f7baa71268EB7E0ce2277438C401b1101));
-}
+    if (false)
+    { }
+    {
+    }
+    {
+      if (false)
+      { }
+      f0(address(0xBffd460f7baa71268EB7E0ce2277438C401b1101));
+    }
 
-if (false)
-{ }
+    if (false)
+    { }
   }
   function f2(address i0,C0 i1) external returns(int192 o0)
   { }

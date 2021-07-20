@@ -1,12 +1,12 @@
 contract test {
-struct s { uint a; uint b;}
-function f() pure public returns (bytes1) {
+    struct s { uint a; uint b;}
+    function f() pure public returns (bytes1) {
 		s;
 		s(1,2);
 		s[7];
 		uint;
 		uint[7];
-}
+    }
 }
 // ====
 // SMTEngine: all

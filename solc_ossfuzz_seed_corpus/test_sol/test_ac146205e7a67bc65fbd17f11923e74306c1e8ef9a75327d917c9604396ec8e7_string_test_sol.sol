@@ -1,7 +1,7 @@
 string constant b = "010";
 contract C {
   function f() external view returns (string memory) {
-return b;
+    return b;
   }
 }
 // ====

@@ -13,10 +13,10 @@ contract C0 {
   function f1() external returns(address o0,bytes memory o1)
   {
 
-o0;
+    o0;
 
-if (false)
-{ }
+    if (false)
+    { }
   }
 }
 // ----

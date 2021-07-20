@@ -1,19 +1,19 @@
 contract C {
-function f(uint super) public {
-}
-function g(uint this) public {
-}
-function h(uint _) public {
-}
-function i() public returns (uint super) {
-    return 1;
-}
-function j() public returns (uint this) {
-    return 1;
-}
-function k() public returns (uint _) {
-    return 1;
-}
+    function f(uint super) public {
+    }
+    function g(uint this) public {
+    }
+    function h(uint _) public {
+    }
+    function i() public returns (uint super) {
+        return 1;
+    }
+    function j() public returns (uint this) {
+        return 1;
+    }
+    function k() public returns (uint _) {
+        return 1;
+    }
 }
 // ----
 // DeclarationError 3726: (28-38): The name "super" is reserved.

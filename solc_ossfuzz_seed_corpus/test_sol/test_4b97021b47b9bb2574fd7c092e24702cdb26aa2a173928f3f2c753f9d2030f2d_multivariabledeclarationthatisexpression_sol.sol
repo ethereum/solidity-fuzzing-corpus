@@ -2,7 +2,7 @@ contract C {
   struct S { function() returns (S storage)[] x; }
   S s;
   function f() internal pure returns (uint, uint, uint, S storage, uint, uint) {
-(,,,s.x[2](),,) = f();
+    (,,,s.x[2](),,) = f();
   }
 }
 // ----

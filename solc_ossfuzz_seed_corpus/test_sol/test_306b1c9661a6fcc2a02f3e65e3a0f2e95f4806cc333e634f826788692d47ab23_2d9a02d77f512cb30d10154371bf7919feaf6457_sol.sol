@@ -6,9 +6,9 @@ pragma solidity >= 0.0.0;
 contract C0 {
   function f0(C0 i0,uint240 i1) external returns(bool o0,int192 o1)
   {
-{
-}
-address(0x452B89b40b9b6DA7BD918291d21B074C6C38f8c2);
+    {
+    }
+    address(0x452B89b40b9b6DA7BD918291d21B074C6C38f8c2);
   }
 }
 function f1(function () external i0,int176 i1,function () external i2)  returns(address o0,bool o1,function () external o2)

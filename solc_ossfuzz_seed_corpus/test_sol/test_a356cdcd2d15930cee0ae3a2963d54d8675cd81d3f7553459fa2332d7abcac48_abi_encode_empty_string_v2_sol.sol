@@ -4,9 +4,9 @@ pragma abicoder               v2;
 
 
 contract C {
-function f() public pure returns (bytes memory, bytes memory) {
-    return (abi.encode(""), abi.encodePacked(""));
-}
+    function f() public pure returns (bytes memory, bytes memory) {
+        return (abi.encode(""), abi.encodePacked(""));
+    }
 }
 
 // ====

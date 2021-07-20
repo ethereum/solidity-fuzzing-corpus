@@ -1,3 +1,3 @@
-		abstract contract C {
-			constructor() {}
-		}
+abstract contract C {
+	constructor() {}
+}

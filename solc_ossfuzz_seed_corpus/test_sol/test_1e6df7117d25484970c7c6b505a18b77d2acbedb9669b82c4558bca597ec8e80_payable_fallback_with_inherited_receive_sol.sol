@@ -1,7 +1,7 @@
 contract A {
-receive() external payable { }
+    receive() external payable { }
 }
 contract C is A {
-fallback() external payable { }
+    fallback() external payable { }
 }
 // ----

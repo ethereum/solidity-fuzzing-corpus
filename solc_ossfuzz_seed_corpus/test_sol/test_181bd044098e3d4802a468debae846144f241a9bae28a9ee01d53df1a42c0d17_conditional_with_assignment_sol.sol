@@ -1,5 +1,5 @@
 contract A {
-function f() public pure returns (uint, uint, uint, uint) {
+    function f() public pure returns (uint, uint, uint, uint) {
 		uint y1 = 1;
 		uint y2 = 1;
 		uint x = 3 < 0 ? y1 = 3 : 6;

@@ -1,28 +1,28 @@
 contract C {
-mapping (uint => address payable [ ]) public a = a ;
+    mapping (uint => address payable [ ]) public a = a ;
 }
 
 contract D {
-mapping (uint => uint) a;
-mapping (uint => uint) b = a;
+    mapping (uint => uint) a;
+    mapping (uint => uint) b = a;
 }
 
 contract F {
-mapping (uint => uint) a;
-mapping (uint => uint) b;
+    mapping (uint => uint) a;
+    mapping (uint => uint) b;
 
-function foo() public {
-    a = b;
-}
+    function foo() public {
+        a = b;
+    }
 }
 
 contract G {
-uint x = 1;
-mapping (uint => uint) b = x;
+    uint x = 1;
+    mapping (uint => uint) b = x;
 }
 
 contract H {
-struct S {mapping (uint => uint) a;}
+    struct S {mapping (uint => uint) a;}
 
 	S x;
 	S y = x;

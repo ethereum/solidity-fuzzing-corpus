@@ -1,7 +1,7 @@
 contract C {
-function f() view public {
-    C[0];
-}
+    function f() view public {
+        C[0];
+    }
 }
 // ----
 // Warning 6133: (52-56): Statement has no effect.

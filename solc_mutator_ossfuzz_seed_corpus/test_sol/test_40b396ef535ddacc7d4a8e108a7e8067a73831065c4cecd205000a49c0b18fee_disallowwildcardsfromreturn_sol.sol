@@ -1,22 +1,22 @@
 abstract contract C {
-function fn() public pure {
-    (uint a,) = three();
-    (,uint b) = three();
-    (,uint c,) = five();
-    (uint d, uint e,) = four();
-    (,uint f, uint g) = four();
-    (,uint h, uint i,) = three();
-    (uint j,) = one();
-    (,uint k) = one();
-    (,uint l,) = one();
-    (,uint m, uint n,) = five();
-    a;b;c;d;e;f;g;h;i;j;k;l;m;n;
-}
-function one() public pure returns (uint) {}
-function two() public pure returns (uint, uint) {}
-function three() public pure returns (uint, uint, uint) {}
-function four() public pure returns (uint, uint, uint, uint) {}
-function five() public pure returns (uint, uint, uint, uint, uint) {}
+    function fn() public pure {
+        (uint a,) = three();
+        (,uint b) = three();
+        (,uint c,) = five();
+        (uint d, uint e,) = four();
+        (,uint f, uint g) = four();
+        (,uint h, uint i,) = three();
+        (uint j,) = one();
+        (,uint k) = one();
+        (,uint l,) = one();
+        (,uint m, uint n,) = five();
+        a;b;c;d;e;f;g;h;i;j;k;l;m;n;
+    }
+    function one() public pure returns (uint) {}
+    function two() public pure returns (uint, uint) {}
+    function three() public pure returns (uint, uint, uint) {}
+    function four() public pure returns (uint, uint, uint, uint) {}
+    function five() public pure returns (uint, uint, uint, uint, uint) {}
 }
 // ----
 // TypeError 7364: (62-81): Different number of components on the left hand side (2) than on the right hand side (3).

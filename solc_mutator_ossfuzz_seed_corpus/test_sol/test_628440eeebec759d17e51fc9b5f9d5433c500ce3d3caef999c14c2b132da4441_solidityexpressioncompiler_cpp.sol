@@ -1,3 +1,3 @@
-		contract test {
-			function f(int y) public { unchecked { !(~- y == 2); } }
-		}
+contract test {
+	function f(int y) public { unchecked { !(~- y == 2); } }
+}

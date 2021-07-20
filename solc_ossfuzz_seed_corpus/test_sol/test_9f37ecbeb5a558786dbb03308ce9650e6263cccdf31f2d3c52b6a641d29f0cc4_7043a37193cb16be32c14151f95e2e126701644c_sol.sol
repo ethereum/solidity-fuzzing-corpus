@@ -10,24 +10,24 @@ function f0()
   {
 
 
-{ }
-if (false)
-{ }
+    { }
+    if (false)
+    { }
 
 
-if (true)
-{
+    if (true)
+    {
 
-  if (false)
-  { }
+      if (false)
+      { }
 
-  { }
+      { }
 
 
-  if (true)
-  { }
-  true;
-}
+      if (true)
+      { }
+      true;
+    }
 
   }
 

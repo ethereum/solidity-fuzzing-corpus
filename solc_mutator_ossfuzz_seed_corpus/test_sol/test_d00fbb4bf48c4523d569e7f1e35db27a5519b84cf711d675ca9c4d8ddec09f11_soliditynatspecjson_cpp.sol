@@ -1,4 +1,4 @@
-		contract test {
-			/// @dev example of dev
-			uint private state;
-		}
+contract test {
+	/// @dev example of dev
+	uint private state;
+}

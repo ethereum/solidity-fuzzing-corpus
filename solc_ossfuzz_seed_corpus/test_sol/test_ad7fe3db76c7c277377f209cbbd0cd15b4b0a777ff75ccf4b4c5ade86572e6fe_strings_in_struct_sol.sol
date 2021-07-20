@@ -1,32 +1,32 @@
 contract buggystruct {
-Buggy public bug;
+    Buggy public bug;
 
-struct Buggy {
-    uint256 first;
-    uint256 second;
-    uint256 third;
-    string last;
-}
+    struct Buggy {
+        uint256 first;
+        uint256 second;
+        uint256 third;
+        string last;
+    }
 
-constructor() {
-    bug = Buggy(10, 20, 30, "asdfghjkl");
-}
+    constructor() {
+        bug = Buggy(10, 20, 30, "asdfghjkl");
+    }
 
-function getFirst() public returns (uint256) {
-    return bug.first;
-}
+    function getFirst() public returns (uint256) {
+        return bug.first;
+    }
 
-function getSecond() public returns (uint256) {
-    return bug.second;
-}
+    function getSecond() public returns (uint256) {
+        return bug.second;
+    }
 
-function getThird() public returns (uint256) {
-    return bug.third;
-}
+    function getThird() public returns (uint256) {
+        return bug.third;
+    }
 
-function getLast() public returns (string memory) {
-    return bug.last;
-}
+    function getLast() public returns (string memory) {
+        return bug.last;
+    }
 }
 // ====
 // compileViaYul: also

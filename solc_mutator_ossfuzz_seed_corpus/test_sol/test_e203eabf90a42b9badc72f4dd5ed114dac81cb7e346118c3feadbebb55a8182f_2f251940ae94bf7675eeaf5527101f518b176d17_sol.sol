@@ -4,8 +4,8 @@
 contract C0 {
   function f0(bool i0,uint32 i1) external returns(int8 o0,bytes memory o1)
   {
-if (false)
-{ }
+    if (false)
+    { }
 
 
 

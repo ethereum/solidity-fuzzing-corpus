@@ -1,9 +1,9 @@
 library L {
   function pub() public pure returns (uint) {
-return 7;
+    return 7;
   }
   function inter() internal pure returns (uint) {
-return 8;
+    return 8;
   }
 }
 
@@ -13,7 +13,7 @@ function fu() pure returns (uint, uint) {
 
 contract C {
   function f() public pure returns (uint, uint) {
-return fu();
+    return fu();
   }
 }
 // ====

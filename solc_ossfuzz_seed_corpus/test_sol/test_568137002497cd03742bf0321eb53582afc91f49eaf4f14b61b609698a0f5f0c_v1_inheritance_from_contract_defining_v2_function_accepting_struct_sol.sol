@@ -2,11 +2,11 @@
 pragma abicoder               v2;
 
 contract C {
-struct Item {
-    uint x;
-}
+    struct Item {
+        uint x;
+    }
 
-function get(Item memory) external view {}
+    function get(Item memory) external view {}
 }
 ==== Source: B ====
 pragma abicoder v1;

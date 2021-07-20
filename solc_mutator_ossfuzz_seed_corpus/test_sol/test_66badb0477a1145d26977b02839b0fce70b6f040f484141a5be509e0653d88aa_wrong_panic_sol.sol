@@ -1,9 +1,9 @@
 contract C {
-function f() public {
-    try this.f() {
-    } catch Panic() {
+    function f() public {
+        try this.f() {
+        } catch Panic() {
+        }
     }
-}
 }
 // ====
 // EVMVersion: >=byzantium

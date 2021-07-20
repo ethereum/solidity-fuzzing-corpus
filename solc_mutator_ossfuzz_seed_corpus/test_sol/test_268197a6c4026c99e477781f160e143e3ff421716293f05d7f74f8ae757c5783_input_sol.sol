@@ -3,6 +3,6 @@ pragma solidity >=0.0.0;
 pragma abicoder v2;
 
 contract D {
-constructor() { assembly {}}
-function f() public pure {}
+    constructor() { assembly {}}
+    function f() public pure {}
 }

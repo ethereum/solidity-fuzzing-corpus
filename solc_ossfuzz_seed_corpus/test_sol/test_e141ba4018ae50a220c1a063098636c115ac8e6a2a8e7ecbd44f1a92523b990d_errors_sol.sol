@@ -1,13 +1,13 @@
 error FreeError();
 contract X {
-error E(uint);
-error E2(uint a, uint b);
-error E4(uint a, bytes[][] c);
-struct S { uint x; }
-error E5(S t);
-function f() public pure {
-    revert FreeError();
-}
+    error E(uint);
+    error E2(uint a, uint b);
+    error E4(uint a, bytes[][] c);
+    struct S { uint x; }
+    error E5(S t);
+    function f() public pure {
+        revert FreeError();
+    }
 }
 // ----
 //     :X

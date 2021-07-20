@@ -1,4 +1,4 @@
 contract C {
-fallback () external { }
+    fallback () external { }
 }
 // ----

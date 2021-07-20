@@ -4,7 +4,7 @@ pragma abicoder v2;
 
 contract C {}
 contract D {
-function f() public {
-    C c = new C();
-}
+    function f() public {
+        C c = new C();
+    }
 }

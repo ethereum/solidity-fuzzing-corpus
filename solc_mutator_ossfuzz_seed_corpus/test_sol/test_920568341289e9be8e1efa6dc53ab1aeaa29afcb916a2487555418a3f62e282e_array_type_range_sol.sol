@@ -1,10 +1,10 @@
 contract C {
-function f() public pure {
-    uint[][1:] memory x;
-    uint[][1:2] memory x;
-    uint[1:] memory x;
-    uint[1:2] memory x;
-}
+    function f() public pure {
+        uint[][1:] memory x;
+        uint[][1:2] memory x;
+        uint[1:] memory x;
+        uint[1:2] memory x;
+    }
 }
 
 // ----

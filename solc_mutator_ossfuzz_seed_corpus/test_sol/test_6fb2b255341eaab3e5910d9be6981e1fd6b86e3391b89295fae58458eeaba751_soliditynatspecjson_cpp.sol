@@ -1,15 +1,15 @@
+{
+	"methods" : {},
+	"stateVariables" :
 	{
-		"methods" : {},
-		"stateVariables" :
+		"state" :
 		{
-			"state" :
+			"details" : "example of dev",
+			"return" : "returns state",
+			"returns" :
 			{
-				"details" : "example of dev",
-				"return" : "returns state",
-				"returns" :
-				{
-					"_0" : "returns state"
-				}
+				"_0" : "returns state"
 			}
 		}
 	}
+}

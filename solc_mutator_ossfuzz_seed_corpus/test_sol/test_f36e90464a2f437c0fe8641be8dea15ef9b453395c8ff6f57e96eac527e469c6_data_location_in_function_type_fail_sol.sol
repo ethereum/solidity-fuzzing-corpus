@@ -1,7 +1,7 @@
 library L {
-struct Nested { uint y; }
-function b(function(Nested calldata) external returns (uint)[] storage) external pure {}
-function d(function(Nested storage) external returns (uint)[] storage) external pure {}
+    struct Nested { uint y; }
+    function b(function(Nested calldata) external returns (uint)[] storage) external pure {}
+    function d(function(Nested storage) external returns (uint)[] storage) external pure {}
 }
 
 // ----

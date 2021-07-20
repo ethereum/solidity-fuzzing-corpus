@@ -1,0 +1,42 @@
+==== Source:  ====
+
+==== Source: su0.sol ====
+
+==== Source: su1.sol ====
+function f0()  returns(uint216 o0,bytes30 o1)
+{
+  do
+  {
+    (int16 l0, int96 l1, uint96 l2, bytes22 l3) = abi.decode(abi.decode(abi.decode(abi.decode(address(0xe1238285Cc7de4b58b9cE213DEBcA2522c6B10cd).code, (bytes)), (bytes)), (bytes)), (int16, int96, uint96, bytes22));
+    (bytes30 l4) = abi.decode("f10693ad4355b19ae966e5b32778b84dbc0a7aad2147", (bytes30));
+    require(true);
+    do
+    {
+      bytes19 l5 = bytes19(0x18066fc64afca9b914f272773290cd8fd38d0f);
+    }
+    while ((abi.decode("1dd159de324523b4813b65ba3a473e4d80deed13c959d4", (bool)) || ((int200(-755518519603681139459768901201977397289558532150754640376685) >= ((((int200(-78885550746206204624935505957098058666031084765144865939261) ^ ((type(int200).max & int200((int200(-323977108165350628830205770997646172760917844003784777475976) / (int200(557548675237967839227348315568509469841239279181344257310375) * (int200(-451660890029610395610425277666063082534467581531306901342247) & int200(9573753869482870402666039045905612034430832066018591430639)))))) ^ (int200(-740259944737745747774494748535535025287712165487043858680749) & int200(-294481922442127476012890205668775042042379969512143517075996)))) ^ int200(-373742983491860609482945494226038475944392532192397815781091)) - ((int200(-251708373104397118805386825084044956421840140294509346303107) | int200(574345839154965399213537958447624748747829301941548331620050)) % ((int200(-277956808551315004194718254002437116981667665995960561551742) - int200(-711286729187550866369232208217489217880718552671449901828751)) + int200(-767260596117874182989581527314938098298504417484896288794368)))) + int200(-109861447549732260483069418653130147515198415410429790125833))) || true)));
+  }
+  while (abi.decode("d0a6a06f0e4386b71517a69a2a2a5307268cb7b75af365f8b054474d6e021cfc63", (bool)));
+  if (!(false))
+  { }
+  else if (!((((o0++ & uint216((--o0 / --o0))) & (((type(uint216).max % type(uint216).min) | o0) >> abi.decode("386462f3163352aed8c5508d45d994673ee8b77b2401260bb32eff40fbb4b2", (uint216)))) != (uint216(54129351536343366082837745907879523479556150299660359761795799735) ** abi.decode("766fefeb08d8955c7b98dbe39aa415b5a23031eb793429bf0eae660320763ed931fc", (uint216))))))
+  { }
+  else if (true)
+  { }
+  else if ((true || ((-((type(int8).max ^ ((int8((int8(-63) / ((int8(-18) | int8((int8(85) / int8(-6)))) % (int8(54) | type(int8).min)))) & -(abi.decode(abi.decode("b2f264556c64e9c019345aa3ccdf969963230eb82fbebffa78d9ea8e8c5d", (bytes)), (int8)))) ^ -((-(int8((int8(-83) / (int8((int8(-64) / int8(122))) * int8(90))))) % int8(-81)))))) % int8(107)) != int8(-10))))
+  { }
+  else if (((int40(-247337808191) % int40(-233477125702)) < int40(((int40(186389404222) | abi.decode("2a5b4baed219a5296dccbbc25d98ace788525b365440e674f332f94fe618e1097ef2b74dcd4b6f77829824a7ac52d358e16f41", (int40))) / abi.decode(address(0x975e88c9aba7855b598697f07D8F86107C843fB2).code, (int40))))))
+  { }
+
+
+}
+pragma solidity >= 0.0.0;
+// ----
+// Warning 5667: (su1.sol:34-44): Unused function parameter. Remove or comment out the variable name to silence this warning.
+// Warning 2072: (su1.sol:62-70): Unused local variable.
+// Warning 2072: (su1.sol:72-80): Unused local variable.
+// Warning 2072: (su1.sol:82-91): Unused local variable.
+// Warning 2072: (su1.sol:93-103): Unused local variable.
+// Warning 2072: (su1.sol:278-288): Unused local variable.
+// Warning 2072: (su1.sol:401-411): Unused local variable.
+// Warning 2018: (su1.sol:0-2904): Function state mutability can be restricted to view

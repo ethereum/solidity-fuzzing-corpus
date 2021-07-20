@@ -5,14 +5,14 @@ function f0(address i0)  returns(bytes memory o0,int152 o1,function () external 
 {
   {
 
-if (false)
-{ }
+    if (false)
+    { }
 
-{
+    {
 
-  if (true)
-  { }
-}
+      if (true)
+      { }
+    }
   }
   o2;
 

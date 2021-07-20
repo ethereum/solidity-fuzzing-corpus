@@ -1,3 +1,3 @@
-		contract test {
-			function f(uint a, uint b) public { unchecked { (a += b) * 2; } }
-		}
+contract test {
+	function f(uint a, uint b) public { unchecked { (a += b) * 2; } }
+}

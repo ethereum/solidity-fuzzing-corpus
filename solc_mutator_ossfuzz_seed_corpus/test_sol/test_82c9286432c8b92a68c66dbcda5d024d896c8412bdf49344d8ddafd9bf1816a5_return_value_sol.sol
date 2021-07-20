@@ -1,5 +1,5 @@
 contract C {
-receive() external returns (uint256) {}
+    receive() external returns (uint256) {}
 }
 // ----
 // DeclarationError 7793: (17-56): Receive ether function must be payable, but is "nonpayable".

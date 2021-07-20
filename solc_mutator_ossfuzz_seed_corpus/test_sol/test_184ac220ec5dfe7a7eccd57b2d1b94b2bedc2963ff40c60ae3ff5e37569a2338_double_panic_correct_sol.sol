@@ -1,10 +1,10 @@
 contract C {
-function f() public {
-    try this.f() {
-    } catch Panic(uint) {
-    } catch Panic(uint) {
+    function f() public {
+        try this.f() {
+        } catch Panic(uint) {
+        } catch Panic(uint) {
+        }
     }
-}
 }
 // ====
 // EVMVersion: >=byzantium

@@ -1,8 +1,8 @@
 contract C {
   function f() public pure {
-assembly {
-  let x := hex"0011"
-}
+    assembly {
+      let x := hex"0011"
+    }
   }
 }
 // ----

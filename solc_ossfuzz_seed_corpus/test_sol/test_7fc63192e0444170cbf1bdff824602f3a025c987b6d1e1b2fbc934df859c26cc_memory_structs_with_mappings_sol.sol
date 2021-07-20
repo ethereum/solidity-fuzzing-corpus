@@ -1,14 +1,14 @@
 contract Test {
-struct S {
-    uint8 a;
-    mapping(uint256 => uint256) b;
-    uint8 c;
-}
-S s;
+    struct S {
+        uint8 a;
+        mapping(uint256 => uint256) b;
+        uint8 c;
+    }
+    S s;
 
-function f() public returns (uint256) {
-    S memory x;
-}
+    function f() public returns (uint256) {
+        S memory x;
+    }
 }
 
 // ----

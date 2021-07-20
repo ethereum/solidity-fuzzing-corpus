@@ -1,9 +1,9 @@
 contract C {
-function f() public pure {
-    (bool a,) = address(this).call(abi.encode(address(this).delegatecall, super));
-    (a,) = address(this).delegatecall(abi.encode(block, tx, mulmod));
-    a;
-}
+    function f() public pure {
+        (bool a,) = address(this).call(abi.encode(address(this).delegatecall, super));
+        (a,) = address(this).delegatecall(abi.encode(block, tx, mulmod));
+        a;
+    }
 }
 // ----
 // TypeError 2056: (94-120): This type cannot be encoded.

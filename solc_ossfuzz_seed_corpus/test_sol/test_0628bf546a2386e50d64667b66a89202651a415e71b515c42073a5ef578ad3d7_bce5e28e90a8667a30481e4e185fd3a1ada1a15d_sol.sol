@@ -11,20 +11,20 @@ function f0(int16 i0)  returns(bytes memory o0,bytes17 o1)
 
   if (false)
   {
-if (false)
-{ }
-o0;
+    if (false)
+    { }
+    o0;
 
-if (false)
-{ }
-(bytes20(address(0xED3E92b4267Ef1820F7897791c9d31B9E73c0eE4)) & bytes20(address(0x28c70263fb78cc854a822d66497ab04FCE34322a)));
-{
-}
+    if (false)
+    { }
+    (bytes20(address(0xED3E92b4267Ef1820F7897791c9d31B9E73c0eE4)) & bytes20(address(0x28c70263fb78cc854a822d66497ab04FCE34322a)));
+    {
+    }
 
 
-if (true)
-{
-}
+    if (true)
+    {
+    }
   }
 }
 function f1(bytes30 i0)  returns(bool o0,bool o1)

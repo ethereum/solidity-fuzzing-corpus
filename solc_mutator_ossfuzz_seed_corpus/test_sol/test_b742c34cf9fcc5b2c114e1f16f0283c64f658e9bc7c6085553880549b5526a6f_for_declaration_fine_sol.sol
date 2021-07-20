@@ -1,19 +1,19 @@
 contract C {
-struct S { bool f; }
-S s;
-function f() internal pure {
-    S storage c;
-    assembly {
-        for { c.slot := s.slot } iszero(0) {} {}
+    struct S { bool f; }
+    S s;
+    function f() internal pure {
+        S storage c;
+        assembly {
+            for { c.slot := s.slot } iszero(0) {} {}
+        }
+        c;
     }
-    c;
-}
-function g() internal pure {
-    S storage c;
-    assembly {
-        for { c.slot := s.slot } iszero(1) {} {}
+    function g() internal pure {
+        S storage c;
+        assembly {
+            for { c.slot := s.slot } iszero(1) {} {}
+        }
+        c;
     }
-    c;
-}
 }
 // ----

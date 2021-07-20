@@ -1,7 +1,7 @@
 contract test {
-function f() public { int x = 3; int y = 4; x ** y; }
-function h() public { uint8 x = 3; int16 y = 4; x ** y; }
-function i() public { int16 x = 4; x ** -3; }
+    function f() public { int x = 3; int y = 4; x ** y; }
+    function h() public { uint8 x = 3; int16 y = 4; x ** y; }
+    function i() public { int16 x = 4; x ** -3; }
 }
 // ----
 // TypeError 2271: (64-70): Operator ** not compatible with types int256 and int256. Exponentiation power is not allowed to be a signed integer type.

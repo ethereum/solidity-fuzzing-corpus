@@ -1,10 +1,10 @@
 contract B {
-event dup();
+    event dup();
 }
 contract A {
-function dup() public returns (uint) {
-    return 1;
-}
+    function dup() public returns (uint) {
+        return 1;
+    }
 }
 contract C is B, A {
 }

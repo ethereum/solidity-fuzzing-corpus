@@ -1,12 +1,12 @@
 contract C
 {
-function f() public
-{
-    int x = +(0, 0);
-    int y = -(0, 0);
-    (int z) = ~(0, 0);
-    (int t) = !(0, 0);
-}
+    function f() public
+    {
+        int x = +(0, 0);
+        int y = -(0, 0);
+        (int z) = ~(0, 0);
+        (int t) = !(0, 0);
+    }
 }
 // ----
 // SyntaxError 9636: (59-66): Use of unary + is disallowed.

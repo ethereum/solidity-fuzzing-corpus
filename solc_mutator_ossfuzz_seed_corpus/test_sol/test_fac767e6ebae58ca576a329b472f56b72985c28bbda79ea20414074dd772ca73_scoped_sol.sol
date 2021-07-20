@@ -1,9 +1,9 @@
 contract A {
-error E();
+    error E();
 }
 contract C {
-function f() public pure {
-    revert A.E();
-}
+    function f() public pure {
+        revert A.E();
+    }
 }
 // ----

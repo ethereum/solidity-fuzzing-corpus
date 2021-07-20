@@ -1,12 +1,12 @@
 contract C {
-function f() public returns (uint, uint) {
-    try this.f() {
+    function f() public returns (uint, uint) {
+        try this.f() {
 
-    } catch {
-    } catch (bytes memory y) {
-        y;
+        } catch {
+        } catch (bytes memory y) {
+            y;
+        }
     }
-}
 }
 // ====
 // EVMVersion: >=byzantium

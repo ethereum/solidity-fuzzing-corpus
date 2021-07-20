@@ -1,6 +1,6 @@
-		contract A {
-			function f() public returns (bool) {
-				(bool success,) = address(this).call("");
-				return success;
-			}
-		}
+contract A {
+	function f() public returns (bool) {
+		(bool success,) = address(this).call("");
+		return success;
+	}
+}

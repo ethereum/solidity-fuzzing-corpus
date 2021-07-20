@@ -1,5 +1,5 @@
 contract test {
-event e() anonymous;
+    event e() anonymous;
 }
 // ----
 //     :test

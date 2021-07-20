@@ -1,10 +1,10 @@
 contract C {
-function f() public returns (uint, uint) {
-    try this.f() {
+    function f() public returns (uint, uint) {
+        try this.f() {
 
-    } catch Error(uint) {
+        } catch Error(uint) {
+        }
     }
-}
 }
 // ====
 // EVMVersion: >=byzantium

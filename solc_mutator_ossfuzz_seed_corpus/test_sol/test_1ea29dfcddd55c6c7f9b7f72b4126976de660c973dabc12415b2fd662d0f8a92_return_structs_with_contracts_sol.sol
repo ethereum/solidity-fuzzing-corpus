@@ -1,8 +1,8 @@
 pragma abicoder               v2;
 contract C {
-struct S { C[] x; C y; }
-function f() public returns (S memory s, C c) {
-}
+    struct S { C[] x; C y; }
+    function f() public returns (S memory s, C c) {
+    }
 }
 // ----
 //     :C

@@ -7,7 +7,7 @@ contract C
 		}
 		_;
 	}
-function f() m public payable {
-}
+    function f() m public payable {
+    }
 }
 // ----

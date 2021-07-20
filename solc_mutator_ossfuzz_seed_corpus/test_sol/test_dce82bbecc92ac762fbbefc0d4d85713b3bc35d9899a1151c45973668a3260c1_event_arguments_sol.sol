@@ -1,4 +1,4 @@
 contract c {
-event e(uint a, bytes32 s);
+    event e(uint a, bytes32 s);
 }
 // ----

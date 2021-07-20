@@ -1,8 +1,8 @@
 contract C {
-constructor() {}
-function f() public returns (uint) {
-    return block.timestamp;
-}
+    constructor() {}
+    function f() public returns (uint) {
+        return block.timestamp;
+    }
 }
 // ====
 // compileToEwasm: also

@@ -1,7 +1,7 @@
 pragma abicoder               v2;
 
 contract C {
-struct S { string[] s; }
-function f() public pure returns (S memory) {}
+    struct S { string[] s; }
+    function f() public pure returns (S memory) {}
 }
 // ----

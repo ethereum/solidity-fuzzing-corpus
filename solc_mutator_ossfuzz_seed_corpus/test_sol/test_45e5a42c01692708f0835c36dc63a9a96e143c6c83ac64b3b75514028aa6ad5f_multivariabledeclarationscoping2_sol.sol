@@ -1,8 +1,8 @@
 contract C {
   function f() internal {
-{
-  (uint a, uint b, uint c) = (a, b, c);
-}
+    {
+      (uint a, uint b, uint c) = (a, b, c);
+    }
   }
 }
 // ----

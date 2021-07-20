@@ -1,8 +1,8 @@
-	{
-		"language": "Solidity",
-		"sources": {
-			"fileA": {
-				"content": "import \"missing.sol\"; contract A { }"
-			}
+{
+	"language": "Solidity",
+	"sources": {
+		"fileA": {
+			"content": "import \"missing.sol\"; contract A { }"
 		}
 	}
+}

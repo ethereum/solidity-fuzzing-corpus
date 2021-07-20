@@ -1,17 +1,17 @@
 contract C {
-struct S { bool f; }
-S s;
-function f() internal view {
-    S storage c;
-    for(c = s;;) {
+    struct S { bool f; }
+    S s;
+    function f() internal view {
+        S storage c;
+        for(c = s;;) {
+        }
+        c;
     }
-    c;
-}
-function g() internal view {
-    S storage c;
-    for(; (c = s).f;) {
+    function g() internal view {
+        S storage c;
+        for(; (c = s).f;) {
+        }
+        c;
     }
-    c;
-}
 }
 // ----

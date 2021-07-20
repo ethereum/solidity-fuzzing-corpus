@@ -1,10 +1,10 @@
 contract C
 {
-fallback() external {
-    uint x;
-    assembly {
-        x := callvalue()
+    fallback() external {
+        uint x;
+        assembly {
+            x := callvalue()
+        }
     }
-}
 }
 // ----

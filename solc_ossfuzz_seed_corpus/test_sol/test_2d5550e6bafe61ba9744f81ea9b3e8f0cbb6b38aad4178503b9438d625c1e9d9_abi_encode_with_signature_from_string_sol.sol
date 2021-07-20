@@ -1,12 +1,12 @@
 contract C {
-function f() public pure returns (bytes memory r1, bytes memory r2) {
-    string memory x = "my_signature";
-    r1 = abi.encodeWithSignature("my_signature", 1);
-    r2 = abi.encodeWithSignature(x, 1);
-    assert(r1.length == r2.length);
-    for (uint i = 0; i < r1.length; i++)
-        assert(r1[i] == r2[i]);
-}
+    function f() public pure returns (bytes memory r1, bytes memory r2) {
+        string memory x = "my_signature";
+        r1 = abi.encodeWithSignature("my_signature", 1);
+        r2 = abi.encodeWithSignature(x, 1);
+        assert(r1.length == r2.length);
+        for (uint i = 0; i < r1.length; i++)
+            assert(r1[i] == r2[i]);
+    }
 }
 // ====
 // compileToEwasm: false

@@ -1,6 +1,6 @@
 interface I {
-struct A {
-    int dummy;
-}
+    struct A {
+        int dummy;
+    }
 }
 // ----

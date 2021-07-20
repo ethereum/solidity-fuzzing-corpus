@@ -1,7 +1,7 @@
 contract C {
-function g() view public {
-    assembly { {} }
-}
+    function g() view public {
+        assembly { {} }
+    }
 }
 
 // ----

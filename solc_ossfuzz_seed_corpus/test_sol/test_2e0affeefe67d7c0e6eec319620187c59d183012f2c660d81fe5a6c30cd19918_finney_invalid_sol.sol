@@ -1,6 +1,6 @@
 contract C {
   function f() {
-uint x = 1 finney;
+    uint x = 1 finney;
   }
 }
 // ----

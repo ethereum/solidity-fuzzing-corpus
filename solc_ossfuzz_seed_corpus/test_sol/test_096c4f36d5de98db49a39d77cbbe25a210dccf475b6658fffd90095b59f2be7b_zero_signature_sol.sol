@@ -1,6 +1,6 @@
 error buyAndFree22457070633(uint256);
 contract C {
-error buyAndFree22457070633(uint256);
+    error buyAndFree22457070633(uint256);
 }
 // ----
 // Warning 2519: (55-92): This declaration shadows an existing declaration.

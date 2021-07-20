@@ -20,21 +20,21 @@ contract Test
 
   function tests() internal
   {
-funcTakesInternalPure(internalViewFunc); // view -> pure should fail
-funcTakesInternalPure(internalMutableFunc); // mutable -> pure should fail
+    funcTakesInternalPure(internalViewFunc); // view -> pure should fail
+    funcTakesInternalPure(internalMutableFunc); // mutable -> pure should fail
 
-funcTakesInternalView(internalMutableFunc); // mutable -> view should fail
+    funcTakesInternalView(internalMutableFunc); // mutable -> view should fail
 
-funcTakesExternalPure(this.externalViewFunc); // view -> pure should fail
-funcTakesExternalPure(this.externalPayableFunc); // payable -> pure should fail
-funcTakesExternalPure(this.externalMutableFunc); // mutable -> pure should fail
+    funcTakesExternalPure(this.externalViewFunc); // view -> pure should fail
+    funcTakesExternalPure(this.externalPayableFunc); // payable -> pure should fail
+    funcTakesExternalPure(this.externalMutableFunc); // mutable -> pure should fail
 
-funcTakesExternalView(this.externalPayableFunc); // payable -> view should fail
-funcTakesExternalView(this.externalMutableFunc); // mutable -> view should fail
+    funcTakesExternalView(this.externalPayableFunc); // payable -> view should fail
+    funcTakesExternalView(this.externalMutableFunc); // mutable -> view should fail
 
-funcTakesExternalPayable(this.externalPureFunc); // pure -> payable should fail
-funcTakesExternalPayable(this.externalViewFunc); // view -> payable should fail
-funcTakesExternalPayable(this.externalMutableFunc); // mutable -> payable should fail
+    funcTakesExternalPayable(this.externalPureFunc); // pure -> payable should fail
+    funcTakesExternalPayable(this.externalViewFunc); // view -> payable should fail
+    funcTakesExternalPayable(this.externalMutableFunc); // mutable -> payable should fail
   }
 }
 // ----

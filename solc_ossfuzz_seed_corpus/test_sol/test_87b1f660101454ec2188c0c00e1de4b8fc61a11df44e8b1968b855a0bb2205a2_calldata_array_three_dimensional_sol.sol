@@ -6,7 +6,7 @@ contract C {
 		b = x[i].length;
 		c = x[i][j].length;
 		d = x[i][j][k];
-}
+    }
 }
 // ====
 // compileToEwasm: also

@@ -1,11 +1,11 @@
 contract C {
 	function(uint) m_g;
-function f1(function(uint) internal g1) internal {
+    function f1(function(uint) internal g1) internal {
 		g1(2);
-}
-function f2(function(function(uint) internal) internal g2) internal {
+    }
+    function f2(function(function(uint) internal) internal g2) internal {
 		g2(m_g);
-}
+    }
 	function h() public {
 		f2(f1);
 	}

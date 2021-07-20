@@ -1,6 +1,6 @@
 error test266151307();
 contract C {
-error test266151307();
+    error test266151307();
 }
 // ----
 // Warning 2519: (40-62): This declaration shadows an existing declaration.

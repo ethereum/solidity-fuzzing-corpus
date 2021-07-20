@@ -1,5 +1,5 @@
 contract test {
-receive() external payable {}
+    receive() external payable {}
 }
 // ----
 //     :test

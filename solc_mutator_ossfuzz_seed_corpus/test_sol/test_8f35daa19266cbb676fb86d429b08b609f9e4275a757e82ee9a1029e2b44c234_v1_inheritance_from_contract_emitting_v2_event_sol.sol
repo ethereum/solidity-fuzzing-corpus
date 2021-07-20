@@ -2,17 +2,17 @@
 pragma abicoder               v2;
 
 struct Item {
-uint x;
+    uint x;
 }
 
 library L {
-event Ev(Item);
+    event Ev(Item);
 }
 
 contract C {
-function foo() public {
-    emit L.Ev(Item(1));
-}
+    function foo() public {
+        emit L.Ev(Item(1));
+    }
 }
 ==== Source: B ====
 pragma abicoder v1;

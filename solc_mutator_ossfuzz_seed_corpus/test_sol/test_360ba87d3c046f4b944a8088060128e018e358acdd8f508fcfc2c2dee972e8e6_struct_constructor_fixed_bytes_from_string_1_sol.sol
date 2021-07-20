@@ -1,12 +1,12 @@
 pragma experimental SMTChecker;
 contract C {
   struct S {
-int a;
-bytes5 b;
+    int a;
+    bytes5 b;
   }
   function f() public pure {
-assert(S({a:2, b:""}).b == bytes5(0)); // should hold
-assert(S({a:2, b:""}).a == 0); // should fail
+    assert(S({a:2, b:""}).b == bytes5(0)); // should hold
+    assert(S({a:2, b:""}).a == 0); // should fail
   }
 }
 // ----

@@ -7,15 +7,15 @@ pragma solidity ^0.8.0;
 import "./Address.sol";
 
 function sub(uint256 a, uint256 b) pure returns (uint256) {
-return a - b;
+    return a - b;
 }
 
 contract ERC20 {
-mapping (address => uint256) private _balances;
+    mapping (address => uint256) private _balances;
 
-function transferFrom(uint256 amount) public view {
-    sub(_balances[msg.sender], amount);
-}
+    function transferFrom(uint256 amount) public view {
+        sub(_balances[msg.sender], amount);
+    }
 }
 // ====
 // SMTEngine: all

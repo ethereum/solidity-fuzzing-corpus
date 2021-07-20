@@ -1,10 +1,10 @@
 contract C {
-function f() public pure {
-    uint[] memory x;
-    uint[1:](x);
-    uint[1:2](x);
-    uint[][1:](x);
-}
+    function f() public pure {
+        uint[] memory x;
+        uint[1:](x);
+        uint[1:2](x);
+        uint[][1:](x);
+    }
 }
 // ----
 // TypeError 1760: (77-85): Types cannot be sliced.

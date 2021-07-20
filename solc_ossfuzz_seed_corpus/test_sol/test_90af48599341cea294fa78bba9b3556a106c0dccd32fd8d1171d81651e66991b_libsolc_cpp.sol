@@ -1,8 +1,8 @@
-	{
-		"language": "Solidity",
-		"sources": {
-			"fileA": {
-				"content": "contract A { }"
-			}
+{
+	"language": "Solidity",
+	"sources": {
+		"fileA": {
+			"content": "contract A { }"
 		}
 	}
+}

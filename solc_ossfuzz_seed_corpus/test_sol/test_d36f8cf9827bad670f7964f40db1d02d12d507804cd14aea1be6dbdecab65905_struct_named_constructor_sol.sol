@@ -1,13 +1,13 @@
 contract C {
-struct S {
-    uint256 a;
-    bool x;
-}
-S public s;
+    struct S {
+        uint256 a;
+        bool x;
+    }
+    S public s;
 
-constructor() {
-    s = S({x: true, a: 1});
-}
+    constructor() {
+        s = S({x: true, a: 1});
+    }
 }
 
 // ====

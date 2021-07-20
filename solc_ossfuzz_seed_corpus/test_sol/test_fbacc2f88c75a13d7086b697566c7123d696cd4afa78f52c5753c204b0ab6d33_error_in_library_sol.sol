@@ -1,4 +1,4 @@
 library L {
-error E(uint);
+    error E(uint);
 }
 // ----

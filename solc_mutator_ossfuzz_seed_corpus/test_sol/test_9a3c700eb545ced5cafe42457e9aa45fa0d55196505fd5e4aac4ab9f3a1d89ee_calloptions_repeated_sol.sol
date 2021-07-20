@@ -1,12 +1,12 @@
 contract D {}
 contract C {
-function foo(int a) payable external {
-    this.foo{value:2, gas: 5}{gas:2};
-    (this.foo{value:2, gas: 5}){gas:2};
-    this.foo{value:2, gas: 5}{value:6};
-    this.foo{gas:2, value: 5}{value:2, gas:5};
-    new D{salt:"abc"}{salt:"a"}();
-}
+    function foo(int a) payable external {
+        this.foo{value:2, gas: 5}{gas:2};
+        (this.foo{value:2, gas: 5}){gas:2};
+        this.foo{value:2, gas: 5}{value:6};
+        this.foo{gas:2, value: 5}{value:2, gas:5};
+        new D{salt:"abc"}{salt:"a"}();
+    }
 }
 // ====
 // EVMVersion: >=constantinople

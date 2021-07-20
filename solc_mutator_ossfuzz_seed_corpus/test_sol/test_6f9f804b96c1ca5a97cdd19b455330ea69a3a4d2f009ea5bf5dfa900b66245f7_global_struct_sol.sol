@@ -1,8 +1,8 @@
 pragma abicoder               v2;
 struct S { uint a; }
 contract C {
-function f(S calldata s) external view {}
-function g(S memory s) public view {}
+    function f(S calldata s) external view {}
+    function g(S memory s) public view {}
 }
 // ----
 //     :C

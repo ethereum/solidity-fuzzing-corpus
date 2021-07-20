@@ -5,7 +5,7 @@ function g(bool) pure returns (bool) { return true; }
 import {f as g, g as g} from "s1.sol";
 contract C {
   function foo() public pure returns (uint, bool) {
-return (g(2), g(false));
+    return (g(2), g(false));
   }
 }
 // ====

@@ -8,7 +8,7 @@ function test() returns (bool) {
 
 contract D {
   function f() public returns (bool) {
-return test();
+    return test();
   }
 }
 // ====

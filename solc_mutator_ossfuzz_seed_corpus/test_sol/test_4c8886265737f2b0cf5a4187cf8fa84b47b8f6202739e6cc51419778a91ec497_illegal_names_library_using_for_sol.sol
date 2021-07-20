@@ -1,22 +1,22 @@
 library super {
-function f() public {
-}
+    function f() public {
+    }
 }
 
 library this {
-function f() public {
-}
+    function f() public {
+    }
 }
 library _ {
-function f() public {
-}
+    function f() public {
+    }
 }
 
 contract C {
-// These are not errors
-using super for uint;
-using this for uint16;
-using _ for int;
+    // These are not errors
+    using super for uint;
+    using this for uint16;
+    using _ for int;
 }
 // ----
 // DeclarationError 3726: (0-49): The name "super" is reserved.

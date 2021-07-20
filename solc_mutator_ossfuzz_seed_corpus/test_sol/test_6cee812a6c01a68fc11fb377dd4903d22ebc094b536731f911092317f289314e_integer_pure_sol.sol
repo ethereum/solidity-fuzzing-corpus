@@ -1,14 +1,14 @@
 contract test {
 
-function viewAssignment() public view {
-    int min = type(int).min;
-    min;
-}
+    function viewAssignment() public view {
+        int min = type(int).min;
+        min;
+    }
 
-function assignment() public {
-    int max = type(int).max;
-    max;
-}
+    function assignment() public {
+        int max = type(int).max;
+        max;
+    }
 
 }
 // ----

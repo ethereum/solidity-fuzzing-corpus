@@ -1,4 +1,4 @@
-		contract C1 {}
-		/**
-		**/
-		contract C2 {}
+contract C1 {}
+/**
+**/
+contract C2 {}

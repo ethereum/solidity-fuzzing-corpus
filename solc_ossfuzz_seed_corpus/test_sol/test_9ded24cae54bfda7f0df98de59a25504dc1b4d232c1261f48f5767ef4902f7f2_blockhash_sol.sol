@@ -1,13 +1,13 @@
 contract C {
-function f() public returns(bytes32) {
-    return blockhash(1);
-}
-function g() public returns(bytes32) {
-    return blockhash(2);
-}
-function h() public returns(bytes32) {
-    return blockhash(3);
-}
+    function f() public returns(bytes32) {
+        return blockhash(1);
+    }
+    function g() public returns(bytes32) {
+        return blockhash(2);
+    }
+    function h() public returns(bytes32) {
+        return blockhash(3);
+    }
 }
 // ====
 // compileToEwasm: also

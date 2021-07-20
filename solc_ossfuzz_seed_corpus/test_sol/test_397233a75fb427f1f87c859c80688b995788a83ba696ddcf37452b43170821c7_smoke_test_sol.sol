@@ -1,4 +1,4 @@
 contract test {
-uint256 stateVariable1;
+    uint256 stateVariable1;
 }
 // ----

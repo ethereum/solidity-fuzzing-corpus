@@ -1,12 +1,12 @@
 contract C {
-function f(uint x) public pure {
-    require(x == 2);
-    uint y;
-    for (; x == 2;) {
-        y = 7;
+    function f(uint x) public pure {
+        require(x == 2);
+        uint y;
+        for (; x == 2;) {
+            y = 7;
+        }
+        assert(x == 2);
     }
-    assert(x == 2);
-}
 }
 // ====
 // SMTEngine: all

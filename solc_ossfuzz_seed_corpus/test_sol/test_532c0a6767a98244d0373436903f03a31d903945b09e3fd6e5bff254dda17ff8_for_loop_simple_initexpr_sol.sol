@@ -1,10 +1,10 @@
 contract test {
-function fun(uint256 a) public {
-    uint256 i =0;
-    for (i = 0; i < 10; i++) {
-        uint256 x = i; break; continue;
+    function fun(uint256 a) public {
+        uint256 i =0;
+        for (i = 0; i < 10; i++) {
+            uint256 x = i; break; continue;
+        }
     }
-}
 }
 // ----
 // Warning 5740: (103-106): Unreachable code.

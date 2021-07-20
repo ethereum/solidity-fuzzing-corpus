@@ -1,5 +1,5 @@
 contract Lotto {
-uint256 public ticketPrice = 500;
+    uint256 public ticketPrice = 500;
 }
 
 // ====

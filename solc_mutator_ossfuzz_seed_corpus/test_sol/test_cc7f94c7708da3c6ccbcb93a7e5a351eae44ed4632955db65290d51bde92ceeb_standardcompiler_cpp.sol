@@ -1,4 +1,4 @@
-	{
-		"language": "INVALID",
-		"sources": { "name": { "content": "abc" } }
-	}
+{
+	"language": "INVALID",
+	"sources": { "name": { "content": "abc" } }
+}

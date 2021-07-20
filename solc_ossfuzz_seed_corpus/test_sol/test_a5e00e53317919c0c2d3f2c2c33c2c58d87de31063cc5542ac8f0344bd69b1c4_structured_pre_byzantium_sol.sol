@@ -1,11 +1,11 @@
 contract C {
-function f() public {
-    try this.f() {
+    function f() public {
+        try this.f() {
 
-    } catch Error(string memory) {
+        } catch Error(string memory) {
 
+        }
     }
-}
 }
 // ====
 // EVMVersion: <byzantium

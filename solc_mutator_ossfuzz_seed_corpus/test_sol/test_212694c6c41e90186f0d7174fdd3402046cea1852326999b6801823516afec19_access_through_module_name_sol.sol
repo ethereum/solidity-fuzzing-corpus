@@ -1,19 +1,19 @@
 ==== Source: a ====
 import "a" as M;
 contract C {
-uint public x;
-modifier m { x = 1; _; }
+    uint public x;
+    modifier m { x = 1; _; }
 
-function f() public M.M.C.m returns (uint t, uint r) {
-    t = x;
-    x = 3;
-    r = 9;
-}
-function g() public m returns (uint t, uint r) {
-    t = x;
-    x = 4;
-    r = 10;
-}
+    function f() public M.M.C.m returns (uint t, uint r) {
+        t = x;
+        x = 3;
+        r = 9;
+    }
+    function g() public m returns (uint t, uint r) {
+        t = x;
+        x = 4;
+        r = 10;
+    }
 }
 // ====
 // compileViaYul: also

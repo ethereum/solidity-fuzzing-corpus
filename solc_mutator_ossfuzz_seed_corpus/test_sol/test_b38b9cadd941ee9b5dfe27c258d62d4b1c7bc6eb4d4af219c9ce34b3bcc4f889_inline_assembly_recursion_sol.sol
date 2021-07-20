@@ -1,21 +1,21 @@
 contract C {
-function f(uint256 a) public returns (uint256 b) {
-    assembly {
-        function fac(n) -> nf {
-            switch n
-                case 0 {
-                    nf := 1
-                }
-                case 1 {
-                    nf := 1
-                }
-                default {
-                    nf := mul(n, fac(sub(n, 1)))
-                }
+    function f(uint256 a) public returns (uint256 b) {
+        assembly {
+            function fac(n) -> nf {
+                switch n
+                    case 0 {
+                        nf := 1
+                    }
+                    case 1 {
+                        nf := 1
+                    }
+                    default {
+                        nf := mul(n, fac(sub(n, 1)))
+                    }
+            }
+            b := fac(a)
         }
-        b := fac(a)
     }
-}
 }
 
 // ====

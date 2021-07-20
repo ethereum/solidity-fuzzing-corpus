@@ -1,25 +1,25 @@
 abstract contract B
 {
-    function iWillRevert() pure public virtual { revert(); }
+        function iWillRevert() pure public virtual { revert(); }
 
-    function test2(bool _param) pure external returns(uint256)
-    {
-            if (_param) return 1;
+        function test2(bool _param) pure external returns(uint256)
+        {
+                if (_param) return 1;
 
-            iWillRevert();
-    }
+                iWillRevert();
+        }
 }
 
 contract C is B
 {
-    function iWillRevert() pure public override {  }
+        function iWillRevert() pure public override {  }
 
-    function test(bool _param) pure external returns(uint256)
-    {
-            if (_param) return 1;
+        function test(bool _param) pure external returns(uint256)
+        {
+                if (_param) return 1;
 
-            iWillRevert();
-    }
+                iWillRevert();
+        }
 }
 
 // ----

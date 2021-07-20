@@ -1,18 +1,18 @@
 contract Other {
-constructor() payable {
-}
-function getAddress() public returns (address) {
-    return address(this);
-}
+    constructor() payable {
+    }
+    function getAddress() public returns (address) {
+        return address(this);
+    }
 }
 contract ClientReceipt {
-Other other;
-constructor() payable {
-    other = new Other{value:500}();
-}
-function getAddress() public returns (address) {
-    return other.getAddress();
-}
+    Other other;
+    constructor() payable {
+        other = new Other{value:500}();
+    }
+    function getAddress() public returns (address) {
+        return other.getAddress();
+    }
 }
 // ====
 // compileViaYul: also

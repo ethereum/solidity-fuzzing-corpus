@@ -1,6 +1,6 @@
 contract A { }
 contract B is A {
-function f() public { A a = B(address(1)); }
+    function f() public { A a = B(address(1)); }
 }
 // ----
 // Warning 2072: (59-62): Unused local variable.

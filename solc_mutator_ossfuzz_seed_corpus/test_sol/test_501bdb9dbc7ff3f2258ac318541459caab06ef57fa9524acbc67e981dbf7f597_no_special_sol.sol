@@ -1,15 +1,15 @@
 contract C {
-function f() public returns (uint, uint) {
-    try this {
-    } catch {
+    function f() public returns (uint, uint) {
+        try this {
+        } catch {
+        }
+        try gasleft() {
+        } catch {
+        }
+        try type(address) {
+        } catch {
+        }
     }
-    try gasleft() {
-    } catch {
-    }
-    try type(address) {
-    } catch {
-    }
-}
 }
 // ----
 // TypeError 5347: (72-76): Try can only be used with external function calls and contract creation calls.

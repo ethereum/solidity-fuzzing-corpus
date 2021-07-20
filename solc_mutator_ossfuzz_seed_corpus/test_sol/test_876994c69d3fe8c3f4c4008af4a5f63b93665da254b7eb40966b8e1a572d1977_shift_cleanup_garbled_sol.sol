@@ -1,10 +1,10 @@
 contract C {
-function f() public returns (uint8 x) {
-    assembly {
-        x := 0xffff
+    function f() public returns (uint8 x) {
+        assembly {
+            x := 0xffff
+        }
+        x >>= 8;
     }
-    x >>= 8;
-}
 }
 
 // ====

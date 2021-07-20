@@ -1,6 +1,6 @@
 contract C {
-uint immutable immutable x;
-uint immutable constant x;
+    uint immutable immutable x;
+    uint immutable constant x;
 }
 // ----
 // ParserError 3109: (32-41): Mutability already set to "immutable"

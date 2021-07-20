@@ -1,11 +1,11 @@
 contract C {
-function f(int256 a, uint256 b) internal pure returns (int256) {
-    return a << b;
-}
+    function f(int256 a, uint256 b) internal pure returns (int256) {
+        return a << b;
+    }
 
-function g(int256 a, uint256 b) internal pure returns (int256) {
-    return a >> b;
-}
+    function g(int256 a, uint256 b) internal pure returns (int256) {
+        return a >> b;
+    }
 
 	function t() public pure {
 		assert(f(1, 2**256 - 1) == 0);

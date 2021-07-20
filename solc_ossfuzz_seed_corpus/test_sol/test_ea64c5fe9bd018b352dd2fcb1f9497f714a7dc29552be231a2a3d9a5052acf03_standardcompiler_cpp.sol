@@ -1,15 +1,15 @@
-	{
-		"language": "Solidity",
-		"sources": {
+{
+	"language": "Solidity",
+	"sources": {
+		"A.sol": {
+			"content": "contract A { constructor() { uint x = 2; { uint y = 3; } } }"
+		}
+	},
+	"settings": {
+		"outputSelection": {
 			"A.sol": {
-				"content": "contract A { constructor() { uint x = 2; { uint y = 3; } } }"
-			}
-		},
-		"settings": {
-			"outputSelection": {
-				"A.sol": {
-					"A": ["evm.bytecode.sourceMap"]
-				}
+				"A": ["evm.bytecode.sourceMap"]
 			}
 		}
 	}
+}

@@ -1,4 +1,4 @@
 contract C {
-function f() public view returns (bytes32) { return blockhash(3); }
+    function f() public view returns (bytes32) { return blockhash(3); }
 }
 // ----

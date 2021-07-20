@@ -1,4 +1,4 @@
 contract C {
-function g() view public { }
+    function g() view public { }
 }
 // ----

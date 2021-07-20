@@ -10,14 +10,14 @@ contract C {
 	}
 
 	/* Commented out because Spacer segfaults in Z3 4.8.9
-function inc_post() public {
+    function inc_post() public {
 		x++;
 	}
 
 	function dec_post() public {
 		x--;
 	}
-*/
+    */
 
 }
 // ====

@@ -1,16 +1,16 @@
 contract A{
-function f() private pure{
+    function f() private pure{
 
-}
+    }
 }
 contract B{
-A public a;
+    A public a;
 }
 contract C{
-B b;
-function f() public view{
-    b.a.f();
-}
+    B b;
+    function f() public view{
+        b.a.f();
+    }
 }
 
 // ----

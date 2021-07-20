@@ -1,7 +1,7 @@
 contract C {
-function f() public returns (address) {
-    return tx.origin;
-}
+    function f() public returns (address) {
+        return tx.origin;
+    }
 }
 // ====
 // compileToEwasm: also

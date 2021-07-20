@@ -1,5 +1,5 @@
 contract test {
-function g() public { f(); }
-function f() public {}
+    function g() public { f(); }
+    function f() public {}
 }
 // ----

@@ -1,8 +1,8 @@
 contract C {
   function f() public pure {
-assembly {
-  let mod := 2
-}
+    assembly {
+      let mod := 2
+    }
   }
 }
 // ----

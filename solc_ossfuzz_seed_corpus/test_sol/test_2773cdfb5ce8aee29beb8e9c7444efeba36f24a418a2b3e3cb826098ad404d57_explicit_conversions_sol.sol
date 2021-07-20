@@ -1,8 +1,8 @@
 contract test {
-function f() public {
-    uint(1, 1);
-    uint({arg:1});
-}
+    function f() public {
+        uint(1, 1);
+        uint({arg:1});
+    }
 }
 // ----
 // TypeError 2558: (50-60): Exactly one argument expected for explicit type conversion.

@@ -2,11 +2,11 @@
 pragma solidity >=0.0;
 
 library L {
-function f() external {}
+    function f() external {}
 }
 
 contract C {
-function foo() public {
-    L.f();
-}
+    function foo() public {
+        L.f();
+    }
 }

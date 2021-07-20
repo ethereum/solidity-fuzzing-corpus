@@ -1,7 +1,7 @@
-	{
-		"methods": {
-			"f()": {
-				"notice": "hello world"
-			}
+{
+	"methods": {
+		"f()": {
+			"notice": "hello world"
 		}
 	}
+}

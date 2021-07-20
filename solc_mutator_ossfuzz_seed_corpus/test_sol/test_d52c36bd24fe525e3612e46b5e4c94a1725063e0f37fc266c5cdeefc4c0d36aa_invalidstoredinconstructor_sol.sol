@@ -5,18 +5,18 @@ contract C {
   bool flag;
 
   constructor() {
-if (!flag) {
-  flag = true;
-  function() internal invalid;
-  storedFn = invalid;
-  storedFn();
-}
+    if (!flag) {
+      flag = true;
+      function() internal invalid;
+      storedFn = invalid;
+      storedFn();
+    }
   }
   function f() public pure {}
 }
 contract Test {
   function f() public {
-new C();
+    new C();
   }
 }
 // ====

@@ -6,39 +6,39 @@ contract C0 {
   { }
   function f1(bool i0,address i1,address i2) external returns(bytes memory o0,C0 o1,int176 o2)
   {
-address(0x8f0BaF5855E3A46dA2c860FfbBbde4DAB26Ce659);
-if (true)
-{ }
-{
+    address(0x8f0BaF5855E3A46dA2c860FfbBbde4DAB26Ce659);
+    if (true)
+    { }
+    {
 
-}
-
-
-{
-  { }
-  if (true)
-  { }
-}
-
-if (false)
-{ }
+    }
 
 
-{
-
-  {
+    {
+      { }
+      if (true)
+      { }
+    }
 
     if (false)
     { }
-    "044135e5222e89108b4d010793f4f0b3";
-    if (true)
+
+
+    {
+
+      {
+
+        if (false)
+        { }
+        "044135e5222e89108b4d010793f4f0b3";
+        if (true)
+        { }
+      }
+
+
+    }
+    if (false)
     { }
-  }
-
-
-}
-if (false)
-{ }
   }
 }
 // ----

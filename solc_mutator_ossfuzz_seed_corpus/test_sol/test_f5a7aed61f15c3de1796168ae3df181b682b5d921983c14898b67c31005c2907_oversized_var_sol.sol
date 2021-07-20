@@ -1,15 +1,15 @@
 contract b {
-struct c {
-    uint [2 ** 253] a;
-}
+    struct c {
+        uint [2 ** 253] a;
+    }
 
-c d;
+    c d;
 
-function e() public view {
-    c storage x = d;
-    x.a[0];
-    function()[3**44] storage fs;
-}
+    function e() public view {
+        c storage x = d;
+        x.a[0];
+        function()[3**44] storage fs;
+    }
 }
 // ----
 // Warning 7325: (66-67): Type struct b.c covers a large part of storage and thus makes collisions likely. Either use mappings or dynamic arrays and allow their size to be increased only in small quantities per transaction.

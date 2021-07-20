@@ -5,33 +5,33 @@ function f0(bytes memory i0)  returns(bool o0,bytes memory o1,bytes memory o2)
 {
   {
 
-o1 = "15ecaa0817";
-{ }
-(address(0xDa58fB6AEc0a45319fA1ED557F4Bfe162a3B4f0d) <= address(0xB78D96C94c6C8687BfD8A8f5396338c1c17773E8));
-o1 = o2;
-{
-}
-o1 = o2;
+    o1 = "15ecaa0817";
+    { }
+    (address(0xDa58fB6AEc0a45319fA1ED557F4Bfe162a3B4f0d) <= address(0xB78D96C94c6C8687BfD8A8f5396338c1c17773E8));
+    o1 = o2;
+    {
+    }
+    o1 = o2;
   }
 
   if (true)
   { }
   {
-o2 = i0;
-if (false)
-{ }
-{
+    o2 = i0;
+    if (false)
+    { }
+    {
 
 
-  if (true)
-  { }
+      if (true)
+      { }
 
-  if (true)
-  { }
-}
-!((address(0x2ae0a33696492f560AADc53b7460fA5df821Db72) != address(0xDB37c361Ab1dA4D1A8E4375d3D8D360c49BA9916)));
-if (false)
-{ }
+      if (true)
+      { }
+    }
+    !((address(0x2ae0a33696492f560AADc53b7460fA5df821Db72) != address(0xDB37c361Ab1dA4D1A8E4375d3D8D360c49BA9916)));
+    if (false)
+    { }
 
   }
 

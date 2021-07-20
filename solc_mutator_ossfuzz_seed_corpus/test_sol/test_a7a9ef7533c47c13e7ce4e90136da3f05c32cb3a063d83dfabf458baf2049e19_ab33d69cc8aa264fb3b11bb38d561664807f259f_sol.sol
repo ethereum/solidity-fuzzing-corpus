@@ -12,16 +12,16 @@ function f2(bool i0,bytes memory i1,function () external i2)
 {
 
   {
-i0;
+    i0;
 
-if (true)
-{ }
+    if (true)
+    { }
 
   }
   {
-i2;
-if (true)
-{ }
+    i2;
+    if (true)
+    { }
 
   }
 

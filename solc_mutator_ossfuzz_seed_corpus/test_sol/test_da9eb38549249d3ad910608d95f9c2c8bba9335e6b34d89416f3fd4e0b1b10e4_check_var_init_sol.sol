@@ -1,17 +1,17 @@
 contract C {
-uint public x = msg.value - 10; // can underflow
-constructor() payable {}
+    uint public x = msg.value - 10; // can underflow
+    constructor() payable {}
 }
 
 contract D {
 	function h() internal returns (uint) {
 		return msg.value - 10; // can underflow
 	}
-function f() public {
-    unchecked {
-        h(); // unchecked here does not mean h does not underflow
+    function f() public {
+        unchecked {
+            h(); // unchecked here does not mean h does not underflow
+        }
     }
-}
 }
 // ====
 // SMTEngine: all

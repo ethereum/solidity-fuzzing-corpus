@@ -1,9 +1,9 @@
 contract C {
-function f() public {
-    uint x;
-    uint y;
-    (true ? x : y) = 1;
-}
+    function f() public {
+        uint x;
+        uint y;
+        (true ? x : y) = 1;
+    }
 }
 // ----
 // TypeError 2212: (80-92): Conditional expression as left value is not supported yet.

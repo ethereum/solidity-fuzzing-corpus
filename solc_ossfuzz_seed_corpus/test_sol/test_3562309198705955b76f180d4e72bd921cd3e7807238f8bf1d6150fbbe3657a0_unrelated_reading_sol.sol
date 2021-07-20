@@ -1,8 +1,8 @@
 contract C {
-uint immutable x = 1;
+    uint immutable x = 1;
 
-function readX() internal pure returns(uint) {
-    return x + 3;
-}
+    function readX() internal pure returns(uint) {
+        return x + 3;
+    }
 }
 // ----

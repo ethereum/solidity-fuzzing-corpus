@@ -1,5 +1,5 @@
-		contract test {
-			function f() public {
-				blockhash(3);
-			}
-		}
+contract test {
+	function f() public {
+		blockhash(3);
+	}
+}

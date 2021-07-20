@@ -1,7 +1,7 @@
 contract C {
-function f(function(uint) external returns (uint) g, function(uint) external returns (uint) h) public {
+    function f(function(uint) external returns (uint) g, function(uint) external returns (uint) h) public {
 		assert(g(2) == h(2));
-}
+    }
 }
 // ====
 // SMTEngine: all

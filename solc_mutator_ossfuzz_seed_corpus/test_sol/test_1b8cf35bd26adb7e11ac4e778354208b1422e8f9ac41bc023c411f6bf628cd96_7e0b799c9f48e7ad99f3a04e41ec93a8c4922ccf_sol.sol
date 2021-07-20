@@ -4,31 +4,31 @@
 contract C0 {
   function f0(function () external i0,address i1,address i2,address i3) external
   {
-if (true)
-{
-}
-i2 = i3;
+    if (true)
+    {
+    }
+    i2 = i3;
 
 
-{
-  if (true)
-  { }
+    {
+      if (true)
+      { }
 
 
-  if (false)
-  { }
-  {
+      if (false)
+      { }
+      {
+        if (true)
+        { }
+        false;
+
+
+
+      }
+    }
+    i1 = i2;
     if (true)
     { }
-    false;
-
-
-
-  }
-}
-i1 = i2;
-if (true)
-{ }
   }
   function f1(uint200 i0,bytes16 i1) external returns(function () external o0)
   { }

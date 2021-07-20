@@ -1,12 +1,12 @@
 // Check that variables are cleared
 contract C {
-function f(uint x) public pure {
-    x = 2;
-    while (x > 1) {
-        x = 1;
+    function f(uint x) public pure {
+        x = 2;
+        while (x > 1) {
+            x = 1;
+        }
+        assert(x == 2);
     }
-    assert(x == 2);
-}
 }
 // ====
 // SMTEngine: all

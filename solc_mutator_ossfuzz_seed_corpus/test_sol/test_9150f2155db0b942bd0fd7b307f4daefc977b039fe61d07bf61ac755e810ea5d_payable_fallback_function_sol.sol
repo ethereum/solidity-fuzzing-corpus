@@ -1,5 +1,5 @@
 contract test {
-fallback () external payable {}
+    fallback () external payable {}
 }
 // ----
 //     :test

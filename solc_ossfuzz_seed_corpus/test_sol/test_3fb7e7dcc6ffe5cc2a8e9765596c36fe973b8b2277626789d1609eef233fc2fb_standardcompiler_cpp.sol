@@ -1,13 +1,13 @@
+{
+	"language": "Solidity",
+	"sources":
+	{ "": { "content": "pragma solidity >=0.0; contract C { function f() public pure {} }" } },
+	"settings":
 	{
-		"language": "Solidity",
-		"sources":
-		{ "": { "content": "pragma solidity >=0.0; contract C { function f() public pure {} }" } },
-		"settings":
+		"stopAfter": "rrr",
+		"outputSelection":
 		{
-			"stopAfter": "rrr",
-			"outputSelection":
-			{
-				"*": { "C": ["evm.bytecode"] }
-			}
+			"*": { "C": ["evm.bytecode"] }
 		}
 	}
+}

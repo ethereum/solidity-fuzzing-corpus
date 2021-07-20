@@ -1,17 +1,17 @@
 contract C{
-uint x;
+    uint x;
 	constructor(uint y) {
 		assert(x == 1);
 		x = 1;
 	}
-function f() public {
+    function f() public {
 		assert(x == 2);
 		++x;
 		++x;
 		g();
 		g();
 		assert(x == 3);
-}
+    }
 
 	function g() internal {
 		--x;

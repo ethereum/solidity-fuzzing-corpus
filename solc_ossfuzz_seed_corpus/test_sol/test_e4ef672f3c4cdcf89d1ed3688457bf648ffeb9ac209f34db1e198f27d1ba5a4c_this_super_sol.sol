@@ -1,8 +1,8 @@
 contract C {
-function f() pure public {
-    uint super = 3;
-    uint this = 4;
-}
+    function f() pure public {
+        uint super = 3;
+        uint this = 4;
+    }
 }
 // ----
 // DeclarationError 3726: (52-62): The name "super" is reserved.

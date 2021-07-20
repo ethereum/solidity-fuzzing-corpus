@@ -1,27 +1,27 @@
 contract Base {
-uint256 data;
+    uint256 data;
 
-function setData(uint256 i) public {
-    data = i;
-}
+    function setData(uint256 i) public {
+        data = i;
+    }
 
-function getViaBase() public returns (uint256 i) {
-    return data;
-}
+    function getViaBase() public returns (uint256 i) {
+        return data;
+    }
 }
 
 
 contract A is Base {
-function setViaA(uint256 i) public {
-    setData(i);
-}
+    function setViaA(uint256 i) public {
+        setData(i);
+    }
 }
 
 
 contract B is Base {
-function getViaB() public returns (uint256 i) {
-    return getViaBase();
-}
+    function getViaB() public returns (uint256 i) {
+        return getViaBase();
+    }
 }
 
 

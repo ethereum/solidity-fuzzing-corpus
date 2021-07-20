@@ -1,5 +1,5 @@
 library C {
-receive() external payable {}
+    receive() external payable {}
 }
 // ----
 // DeclarationError 4549: (16-45): Libraries cannot have receive ether functions.

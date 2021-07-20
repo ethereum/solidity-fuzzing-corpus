@@ -1,4 +1,4 @@
 contract test {
-int8 public j = 127;
+    int8 public j = 127;
 }
 // ----

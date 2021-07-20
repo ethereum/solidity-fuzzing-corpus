@@ -6,7 +6,7 @@ import "a" as M;
 uint constant b = M.c;
 uint constant d = b;
 contract C {
-uint constant a = b;
+    uint constant a = b;
 }
 // ----
 // TypeError 6161: (b:17-38): The value of the constant b has a cyclic dependency via c.

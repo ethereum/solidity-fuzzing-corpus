@@ -1,9 +1,9 @@
 contract C {
-int[]data;
+    int[]data;
 
-function f() public {
-    (data.pop)();
-}
+    function f() public {
+        (data.pop)();
+    }
 }
 // ====
 // SMTEngine: all

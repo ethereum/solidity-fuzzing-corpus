@@ -1,7 +1,7 @@
 contract C {
-function f() public returns (uint) {
-    return block.chainid;
-}
+    function f() public returns (uint) {
+        return block.chainid;
+    }
 }
 // ====
 // EVMVersion: >=istanbul

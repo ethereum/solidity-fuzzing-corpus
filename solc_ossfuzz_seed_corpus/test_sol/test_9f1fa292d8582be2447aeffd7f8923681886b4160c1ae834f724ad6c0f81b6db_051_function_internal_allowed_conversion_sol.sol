@@ -1,11 +1,11 @@
 contract C {
-uint a;
+    uint a;
 }
 contract Test {
-C a;
-function g (C c) public {}
-function internalCall() public {
-    g(a);
-}
+    C a;
+    function g (C c) public {}
+    function internalCall() public {
+        g(a);
+    }
 }
 // ----

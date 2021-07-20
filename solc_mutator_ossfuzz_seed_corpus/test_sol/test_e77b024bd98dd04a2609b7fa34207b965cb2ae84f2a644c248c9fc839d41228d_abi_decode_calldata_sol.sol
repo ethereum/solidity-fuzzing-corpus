@@ -1,7 +1,7 @@
 // This restriction might be lifted in the future
 contract C {
   function f() public pure {
-abi.decode("abc", (bytes calldata));
+    abi.decode("abc", (bytes calldata));
   }
 }
 // ----

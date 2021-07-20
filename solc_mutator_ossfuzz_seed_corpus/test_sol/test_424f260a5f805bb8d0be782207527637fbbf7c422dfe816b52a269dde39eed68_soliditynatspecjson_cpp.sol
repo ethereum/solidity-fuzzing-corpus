@@ -1,8 +1,8 @@
-		contract test {
-			///
-			/// @notice hello
+contract test {
+	///
+	/// @notice hello
 
-			/// @notice world
-			function f() public {
-			}
-		}
+	/// @notice world
+	function f() public {
+	}
+}

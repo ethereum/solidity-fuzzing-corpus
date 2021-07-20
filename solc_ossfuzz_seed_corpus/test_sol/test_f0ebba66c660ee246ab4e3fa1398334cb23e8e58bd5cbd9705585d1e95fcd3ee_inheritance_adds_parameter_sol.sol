@@ -1,7 +1,7 @@
 contract A {
-event X();
+    event X();
 }
 contract B is A {
-event X(uint);
+    event X(uint);
 }
 // ----

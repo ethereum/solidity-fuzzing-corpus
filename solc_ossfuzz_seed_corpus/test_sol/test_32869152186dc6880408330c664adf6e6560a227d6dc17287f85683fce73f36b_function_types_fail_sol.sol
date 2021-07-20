@@ -1,16 +1,16 @@
 contract C {
-function f() pure public {
-    function () external nonpayFun;
-    nonpayFun();
-}
-function g() pure public {
-    function () external view viewFun;
-    viewFun();
-}
-function h() view public {
-    function () external nonpayFun;
-    nonpayFun();
-}
+    function f() pure public {
+        function () external nonpayFun;
+        nonpayFun();
+    }
+    function g() pure public {
+        function () external view viewFun;
+        viewFun();
+    }
+    function h() view public {
+        function () external nonpayFun;
+        nonpayFun();
+    }
 }
 // ----
 // TypeError 8961: (92-103): Function declared as pure, but this expression (potentially) modifies the state and thus requires non-payable (the default) or payable.

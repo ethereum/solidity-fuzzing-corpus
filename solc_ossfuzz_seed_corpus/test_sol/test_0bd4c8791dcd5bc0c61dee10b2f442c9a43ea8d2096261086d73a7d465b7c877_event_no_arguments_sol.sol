@@ -1,8 +1,8 @@
 contract ClientReceipt {
-event Deposit();
-function deposit() public {
-    emit Deposit();
-}
+    event Deposit();
+    function deposit() public {
+        emit Deposit();
+    }
 }
 // ====
 // compileViaYul: also

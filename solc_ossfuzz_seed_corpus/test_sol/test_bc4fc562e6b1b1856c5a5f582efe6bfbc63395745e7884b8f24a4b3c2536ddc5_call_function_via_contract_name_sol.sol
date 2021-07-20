@@ -1,15 +1,15 @@
 contract A {
-function f() external {}
-function g() external pure {}
-function h() public pure {}
+    function f() external {}
+    function g() external pure {}
+    function h() public pure {}
 }
 
 contract B {
-function i() external {
-    A.f();
-    A.g();
-    A.h(); // might be allowed in the future
-}
+    function i() external {
+        A.f();
+        A.g();
+        A.h(); // might be allowed in the future
+    }
 }
 // ----
 // TypeError 3419: (160-165): Cannot call function via contract type name.

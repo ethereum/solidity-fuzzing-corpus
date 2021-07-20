@@ -1,7 +1,7 @@
 ==== Source: s1.sol ====
 contract C {
   function f() public pure returns (uint) {
-return 1337;
+    return 1337;
   }
 }
 ==== Source: s2.sol ====

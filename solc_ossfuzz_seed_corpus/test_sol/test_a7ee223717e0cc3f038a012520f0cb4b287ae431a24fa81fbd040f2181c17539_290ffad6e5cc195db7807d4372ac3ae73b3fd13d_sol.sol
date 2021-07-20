@@ -13,23 +13,23 @@ contract C0 {
 
 
 
-if (false)
-{
+    if (false)
+    {
 
-  { }
-  if (true)
-  { }
-  if (true)
-  { }
-}
-
-
-{
-}
+      { }
+      if (true)
+      { }
+      if (true)
+      { }
+    }
 
 
-if (true)
-{ }
+    {
+    }
+
+
+    if (true)
+    { }
   }
   function f2(function () external i0,uint168 i1) external returns(bytes memory o0,bool o1,address o2)
   { }

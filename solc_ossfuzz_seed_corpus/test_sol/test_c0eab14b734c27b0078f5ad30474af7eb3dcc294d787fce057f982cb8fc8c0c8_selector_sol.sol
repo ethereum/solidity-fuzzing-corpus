@@ -1,18 +1,18 @@
 library L {
-error E();
+    error E();
 }
 library S {
-error E(uint);
+    error E(uint);
 }
 library T {
-error E();
+    error E();
 }
 contract C {
-function f() public pure returns (bytes4, bytes4) {
-    assert(L.E.selector == T.E.selector);
-    assert(L.E.selector != S.E.selector);
-    return (L.E.selector, S.E.selector);
-}
+    function f() public pure returns (bytes4, bytes4) {
+        assert(L.E.selector == T.E.selector);
+        assert(L.E.selector != S.E.selector);
+        return (L.E.selector, S.E.selector);
+    }
 }
 // ====
 // compileViaYul: also

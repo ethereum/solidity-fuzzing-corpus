@@ -1,8 +1,8 @@
-	{
-		"language": "Solidity",
-		"sources": {
-			"empty": {
-				"content": ""
-			}
+{
+	"language": "Solidity",
+	"sources": {
+		"empty": {
+			"content": ""
 		}
 	}
+}

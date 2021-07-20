@@ -1,7 +1,7 @@
-	{
-	   "methods" : {
-		  "mul(uint256)" : {
-			 "notice" : "I do something awesome"
-		  }
-	   }
-	}
+{
+   "methods" : {
+	  "mul(uint256)" : {
+		 "notice" : "I do something awesome"
+	  }
+   }
+}

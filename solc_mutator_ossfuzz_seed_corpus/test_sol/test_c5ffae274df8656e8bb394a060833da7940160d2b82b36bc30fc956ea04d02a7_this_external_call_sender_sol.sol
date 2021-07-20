@@ -1,25 +1,25 @@
 contract C {
-address lastCaller;
+    address lastCaller;
 
-constructor() {
-    lastCaller = msg.sender;
-}
+    constructor() {
+        lastCaller = msg.sender;
+    }
 
-modifier log {
-    lastCaller = msg.sender;
-    _;
-}
+    modifier log {
+        lastCaller = msg.sender;
+        _;
+    }
 
-function test() log public {
-    assert(lastCaller == msg.sender);
-    this.g();
-    assert(lastCaller == address(this));
-    assert(lastCaller == msg.sender);
-    assert(lastCaller == address(0));
-}
+    function test() log public {
+        assert(lastCaller == msg.sender);
+        this.g();
+        assert(lastCaller == address(this));
+        assert(lastCaller == msg.sender);
+        assert(lastCaller == address(0));
+    }
 
-function g() log public {
-}
+    function g() log public {
+    }
 }
 // ====
 // SMTEngine: all

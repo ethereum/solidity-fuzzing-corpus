@@ -1,6 +1,6 @@
 error E();
 function f() pure {
-E();
+    E();
 }
 // ----
 // TypeError 7757: (35-38): Errors can only be used with revert statements: "revert MyError();".

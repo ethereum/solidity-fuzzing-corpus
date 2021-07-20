@@ -12,9 +12,9 @@ function f2(bytes8 i0,bool i1)  returns(address o0)
   {
 
 
-{ }
-if (false)
-{ }
+    { }
+    if (false)
+    { }
 
 
   }
@@ -25,14 +25,14 @@ if (false)
   { }
 
   {
-{
-  if (false)
-  { }
+    {
+      if (false)
+      { }
 
-}
+    }
 
-if (false)
-{ }
+    if (false)
+    { }
 
   }
 

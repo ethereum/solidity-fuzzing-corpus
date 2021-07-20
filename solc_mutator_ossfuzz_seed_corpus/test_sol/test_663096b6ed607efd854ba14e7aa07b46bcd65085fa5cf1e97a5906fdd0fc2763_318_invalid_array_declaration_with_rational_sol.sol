@@ -1,7 +1,7 @@
 contract test {
-function f() public {
-    uint[3.5] a; a;
-}
+    function f() public {
+        uint[3.5] a; a;
+    }
 }
 // ----
 // TypeError 3208: (55-58): Array with fractional length specified.

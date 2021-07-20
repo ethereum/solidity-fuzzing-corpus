@@ -1,8 +1,8 @@
 error E(uint a, uint b);
 contract C {
-function f() public pure {
-    revert E(2, 7);
-}
+    function f() public pure {
+        revert E(2, 7);
+    }
 }
 // ====
 // compileViaYul: also

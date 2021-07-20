@@ -1,37 +1,37 @@
 contract c {
-struct Data {
-    uint256 x;
-    uint256 y;
-}
-Data[2**10] data;
-uint256[2**10 + 3] ids;
+    struct Data {
+        uint256 x;
+        uint256 y;
+    }
+    Data[2**10] data;
+    uint256[2**10 + 3] ids;
 
-function setIDStatic(uint256 id) public {
-    ids[2] = id;
-}
+    function setIDStatic(uint256 id) public {
+        ids[2] = id;
+    }
 
-function setID(uint256 index, uint256 id) public {
-    ids[index] = id;
-}
+    function setID(uint256 index, uint256 id) public {
+        ids[index] = id;
+    }
 
-function setData(uint256 index, uint256 x, uint256 y) public {
-    data[index].x = x;
-    data[index].y = y;
-}
+    function setData(uint256 index, uint256 x, uint256 y) public {
+        data[index].x = x;
+        data[index].y = y;
+    }
 
-function getID(uint256 index) public returns (uint256) {
-    return ids[index];
-}
+    function getID(uint256 index) public returns (uint256) {
+        return ids[index];
+    }
 
-function getData(uint256 index) public returns (uint256 x, uint256 y) {
-    x = data[index].x;
-    y = data[index].y;
-}
+    function getData(uint256 index) public returns (uint256 x, uint256 y) {
+        x = data[index].x;
+        y = data[index].y;
+    }
 
-function getLengths() public returns (uint256 l1, uint256 l2) {
-    l1 = data.length;
-    l2 = ids.length;
-}
+    function getLengths() public returns (uint256 l1, uint256 l2) {
+        l1 = data.length;
+        l2 = ids.length;
+    }
 }
 // ====
 // compileToEwasm: also

@@ -11,21 +11,21 @@ function f0(function () external i0)  returns(function () external o0,bytes29 o1
   }
   if (false)
   {
-{ }
+    { }
 
-address(0x190eBCC2eFBE62746f5762437DFA809A5be2460e);
-if (true)
-{ }
+    address(0x190eBCC2eFBE62746f5762437DFA809A5be2460e);
+    if (true)
+    { }
 
-"71";
-if (false)
-{ }
+    "71";
+    if (false)
+    { }
 
-{
+    {
 
-  { }
+      { }
 
-}
+    }
 
 
 

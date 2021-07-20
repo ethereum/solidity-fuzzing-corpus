@@ -1,8 +1,8 @@
 contract C {
   function f() public pure {
-abi.decode("abc", uint);
-abi.decode("abc", this);
-abi.decode("abc", f());
+    abi.decode("abc", uint);
+    abi.decode("abc", this);
+    abi.decode("abc", f());
   }
 }
 // ----

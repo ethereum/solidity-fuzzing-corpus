@@ -6,9 +6,9 @@
 
 
 contract C {
-function f() public { int x; }
-function g() public { int x; }
-function h() public {
+    function f() public { int x; }
+    function g() public { int x; }
+    function h() public {
 
 
 
@@ -96,8 +96,8 @@ function h() public {
 
 
 
-    /**/ int a; /**/
-    /**/ int b; /**/
-    /**/ int c; /**/
-}
+        /**/ int a; /**/
+        /**/ int b; /**/
+        /**/ int c; /**/
+    }
 }

@@ -1,7 +1,7 @@
 contract C {
-function f() public returns (address) {
-    return msg.sender;
-}
+    function f() public returns (address) {
+        return msg.sender;
+    }
 }
 // ====
 // compileToEwasm: also

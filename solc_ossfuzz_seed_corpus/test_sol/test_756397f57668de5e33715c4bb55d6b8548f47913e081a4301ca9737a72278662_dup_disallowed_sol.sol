@@ -1,26 +1,26 @@
 contract C {
-function f() pure public {
-    assembly {
-        dup0()
-        dup1()
-        dup2()
-        dup3()
-        dup4()
-        dup5()
-        dup6()
-        dup7()
-        dup8()
-        dup9()
-        dup10()
-        dup11()
-        dup12()
-        dup13()
-        dup14()
-        dup15()
-        dup16()
-        dup32()
+    function f() pure public {
+        assembly {
+            dup0()
+            dup1()
+            dup2()
+            dup3()
+            dup4()
+            dup5()
+            dup6()
+            dup7()
+            dup8()
+            dup9()
+            dup10()
+            dup11()
+            dup12()
+            dup13()
+            dup14()
+            dup15()
+            dup16()
+            dup32()
+        }
     }
-}
 }
 // ----
 // DeclarationError 4619: (75-79): Function "dup0" not found.

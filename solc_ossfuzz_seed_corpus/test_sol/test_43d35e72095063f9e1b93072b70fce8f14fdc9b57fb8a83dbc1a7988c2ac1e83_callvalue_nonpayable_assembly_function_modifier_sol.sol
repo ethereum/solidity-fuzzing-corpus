@@ -7,7 +7,7 @@ contract C
 		}
 		_;
 	}
-function f() m public {
-}
+    function f() m public {
+    }
 }
 // ----

@@ -1,8 +1,8 @@
 contract C {
-function f() pure public {
-    uint x;
-    assembly { x := 7 }
-}
+    function f() pure public {
+        uint x;
+        assembly { x := 7 }
+    }
 }
 
 // ----

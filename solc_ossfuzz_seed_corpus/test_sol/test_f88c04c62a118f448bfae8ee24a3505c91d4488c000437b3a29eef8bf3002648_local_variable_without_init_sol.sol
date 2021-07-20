@@ -1,8 +1,8 @@
 contract C {
-function f() public pure returns (uint) {
-    uint x;
-    return x;
-}
+    function f() public pure returns (uint) {
+        uint x;
+        return x;
+    }
 }
 // ====
 // compileToEwasm: also

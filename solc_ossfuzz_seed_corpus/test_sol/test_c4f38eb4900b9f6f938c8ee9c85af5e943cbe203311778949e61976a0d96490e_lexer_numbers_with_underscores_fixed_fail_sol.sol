@@ -1,11 +1,11 @@
 contract C {
   function f() public pure {
-fixed F1 = 3.1415_;
-fixed F2 = 3__1.4__15;
-fixed F3 = 1_.2;
-fixed F4 = 1._2;
-fixed F5 = 1.2e_12;
-fixed F6 = 1._;
+    fixed F1 = 3.1415_;
+    fixed F2 = 3__1.4__15;
+    fixed F3 = 1_.2;
+    fixed F4 = 1._2;
+    fixed F5 = 1.2e_12;
+    fixed F6 = 1._;
   }
 }
 // ----

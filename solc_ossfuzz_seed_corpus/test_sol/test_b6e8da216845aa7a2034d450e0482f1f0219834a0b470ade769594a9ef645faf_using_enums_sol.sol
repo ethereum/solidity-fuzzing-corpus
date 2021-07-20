@@ -1,15 +1,15 @@
 contract test {
-enum ActionChoices {GoLeft, GoRight, GoStraight, Sit}
+    enum ActionChoices {GoLeft, GoRight, GoStraight, Sit}
 
-constructor() {
-    choices = ActionChoices.GoStraight;
-}
+    constructor() {
+        choices = ActionChoices.GoStraight;
+    }
 
-function getChoice() public returns (uint256 d) {
-    d = uint256(choices);
-}
+    function getChoice() public returns (uint256 d) {
+        d = uint256(choices);
+    }
 
-ActionChoices choices;
+    ActionChoices choices;
 }
 
 // ====

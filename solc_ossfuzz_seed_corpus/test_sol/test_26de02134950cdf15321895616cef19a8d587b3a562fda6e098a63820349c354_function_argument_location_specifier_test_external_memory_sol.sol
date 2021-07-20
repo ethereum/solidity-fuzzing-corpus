@@ -1,5 +1,5 @@
 contract test {
-function f(bytes memory) external;
+    function f(bytes memory) external;
 }
 // ----
 // TypeError 3656: (0-56): Contract "test" should be marked as abstract.

@@ -1,5 +1,5 @@
 contract C {
-function f() external payable {}
+    function f() external payable {}
 	function g(address a) external pure {
 		a.call{value: 42};
 		a.call{gas: 42};

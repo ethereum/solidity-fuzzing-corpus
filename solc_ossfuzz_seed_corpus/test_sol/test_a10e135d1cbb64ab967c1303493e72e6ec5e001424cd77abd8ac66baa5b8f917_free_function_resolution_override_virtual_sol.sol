@@ -2,7 +2,7 @@
 function f() pure returns (uint) { return 1337; }
 contract C {
   function f() public pure virtual returns (uint) {
-return f();
+    return f();
   }
 }
 ==== Source: s2.sol ====
@@ -10,7 +10,7 @@ import "s1.sol";
 function f() pure returns (uint) { return 42; }
 contract D is C {
   function f() public pure override returns (uint) {
-return f();
+    return f();
   }
 }
 // ----

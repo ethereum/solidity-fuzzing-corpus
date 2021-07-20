@@ -3,23 +3,23 @@
 // also has to be pulled into the caller's code)
 // This has to work without linking, because everything will be inlined.
 library L {
-function g(uint256[] memory _data) private {
-    _data[3] = 2;
-}
+    function g(uint256[] memory _data) private {
+        _data[3] = 2;
+    }
 
-function f(uint256[] memory _data) internal {
-    g(_data);
-}
+    function f(uint256[] memory _data) internal {
+        g(_data);
+    }
 }
 
 
 contract C {
-function f() public returns (uint256) {
-    uint256[] memory x = new uint256[](7);
-    x[3] = 8;
-    L.f(x);
-    return x[3];
-}
+    function f() public returns (uint256) {
+        uint256[] memory x = new uint256[](7);
+        x[3] = 8;
+        L.f(x);
+        return x[3];
+    }
 }
 
 // ====

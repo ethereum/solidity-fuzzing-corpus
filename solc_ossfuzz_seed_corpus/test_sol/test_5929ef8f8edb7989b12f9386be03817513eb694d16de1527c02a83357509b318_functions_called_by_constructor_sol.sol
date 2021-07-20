@@ -1,18 +1,18 @@
 contract Test {
-bytes3 name;
-bool flag;
+    bytes3 name;
+    bool flag;
 
-constructor() {
-    setName("abc");
-}
+    constructor() {
+        setName("abc");
+    }
 
-function getName() public returns (bytes3 ret) {
-    return name;
-}
+    function getName() public returns (bytes3 ret) {
+        return name;
+    }
 
-function setName(bytes3 _name) private {
-    name = _name;
-}
+    function setName(bytes3 _name) private {
+        name = _name;
+    }
 }
 
 // ====

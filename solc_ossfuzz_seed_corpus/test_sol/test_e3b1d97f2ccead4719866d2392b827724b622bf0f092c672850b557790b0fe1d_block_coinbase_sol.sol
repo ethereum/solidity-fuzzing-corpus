@@ -1,7 +1,7 @@
 contract C {
-function f() public returns (address payable) {
-    return block.coinbase;
-}
+    function f() public returns (address payable) {
+        return block.coinbase;
+    }
 }
 // ====
 // compileToEwasm: also

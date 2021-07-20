@@ -1,9 +1,9 @@
 contract C {
-function f() public returns (uint id) {
-    assembly {
-        id := chainid()
+    function f() public returns (uint id) {
+        assembly {
+            id := chainid()
+        }
     }
-}
 }
 // ====
 // EVMVersion: >=istanbul

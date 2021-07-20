@@ -1,4 +1,4 @@
 abstract contract A {
-constructor(function() internal) {}
+    constructor(function() internal) {}
 }
 // ----

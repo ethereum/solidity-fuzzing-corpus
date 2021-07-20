@@ -1,5 +1,5 @@
 contract A {
-event X();
-event X(uint);
+    event X();
+    event X(uint);
 }
 // ----
