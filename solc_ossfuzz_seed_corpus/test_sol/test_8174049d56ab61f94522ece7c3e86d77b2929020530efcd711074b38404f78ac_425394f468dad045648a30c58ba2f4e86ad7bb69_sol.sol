@@ -1,0 +1,10 @@
+
+==== Source: su0.sol ====
+pragma solidity >= 0.0.0;
+contract C0 {
+  int232 constant s0 = int232(1740909257016698023578141175685673036067283795063774853296254730558967);
+  function f0() external  returns(bytes17 o0,uint168 o1)
+  {
+    o1 &= uint168(22546159478833656011521035740920133952797679332082);
+  }
+}

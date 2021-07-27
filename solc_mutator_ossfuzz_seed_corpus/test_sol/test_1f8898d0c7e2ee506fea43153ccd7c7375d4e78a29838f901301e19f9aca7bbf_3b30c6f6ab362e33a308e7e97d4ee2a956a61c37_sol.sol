@@ -1,0 +1,9 @@
+
+==== Source: su0.sol ====
+pragma solidity >= 0.0.0;
+function f0(uint136 i0,bytes26 i1,int184 i2)   returns(bytes28 o0,bytes21 o1)
+{
+  o1 |= bytes21(0x51963f72ae5d85a0147004259acdb24752ddf4d083);
+  i1 ^= bytes26(0xf88b3b716786626c9f4599e3cd2894d33bc25d602d3e6e4a8b4e);
+  i0 >>= (type(uint136).max * (uint136(55743171992196614520140880703267541633843) & uint136(46755734957617127981946928554432652023814)));
+}

@@ -1,0 +1,16 @@
+
+==== Source: su0.sol ====
+pragma solidity >= 0.0.0;
+contract C0 {
+  uint208 constant s0 = uint208(185066525924911888972908536905946235945019295983992541839367033);
+  uint192 immutable s1;
+  bytes11 immutable s2;
+  constructor(uint192 i0,bytes11 i1)   {
+    s1 = (uint192(3616156015218009317876518973710072176357814941919356994549) % uint192(599896229263590323671845388859307039695775776987039238703));
+    s2 = bytes11(bytes31(0x3ab7db526d374ca9d46f92482871363c9e1402a1ad7232a6d01b6d07850bbb));
+    {
+    }
+  }
+  function f0(bytes4 i0) external  returns(bytes15 o0)
+  { }
+}
