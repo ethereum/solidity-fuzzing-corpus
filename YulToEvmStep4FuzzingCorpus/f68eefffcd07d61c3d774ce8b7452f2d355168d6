@@ -1,0 +1,27 @@
+
+	object "main" {
+		code {
+			codecopy(0, dataoffset("deployed"), datasize("deployed"))
+			return(0, datasize("deployed"))
+		}
+		object "deployed" {
+			code {
+				{
+{
+pop(0x3ffffffffffffffffffffffffffffffff)
+pop(0x3fffffffffffffffffffffffffffffffff)
+pop(0x3ffffffffffffffffffffffffffffffffff)
+pop(0x3fffffffffffffffffffffffffffffffffff)
+pop(0x3ffffffffffffffffffffffffffffffffffff)
+pop(0x3fffffffffffffffffffffffffffffffffffff)
+pop(0x3ffffffffffffffffffffffffffffffffffffff)
+switch 0x3fffffffffffffffffffffffffffffffffffffff
+case true {}
+pop(0x3ffffffffffffffffffffffffffffffffffffffff)
+}
+}
+
+			}
+		}
+	}
+		

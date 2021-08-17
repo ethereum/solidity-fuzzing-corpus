@@ -1,0 +1,26 @@
+
+	object "main" {
+		code {
+			codecopy(0, dataoffset("deployed"), datasize("deployed"))
+			return(0, datasize("deployed"))
+		}
+		object "deployed" {
+			code {
+				{
+{
+let x_0 := 0x7fffffffffffffff
+switch mload(0x7ffffffffffffffff)
+case 0x7fffffffffffffffff {
+x_0 := 0x7ffffffffffffffffff
+}
+case true {
+x_0 := 0x7fffffffffffffffffff
+}
+codecopy(x_0, 0x7ffffffffffffffffffff, 0x7fffffffffffffffffffff)
+}
+}
+
+			}
+		}
+	}
+		

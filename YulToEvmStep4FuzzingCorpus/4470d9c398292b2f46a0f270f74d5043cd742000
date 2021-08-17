@@ -1,0 +1,40 @@
+
+	object "main" {
+		code {
+			codecopy(0, dataoffset("deployed"), datasize("deployed"))
+			return(0, datasize("deployed"))
+		}
+		object "deployed" {
+			code {
+				{
+{
+let x_2, x_3, x_4, x_5 := foo_m_0(0x3fffff, 0x3ffffff, 0x3fffffff)
+{
+let x_11, x_12, x_13, x_14 := foo_m_0(mulmod(0x3ffffffffffffff, 0x3fffffffffffffff, 0x3ffffffffffffffff), 0x3fffffffffffffffff, 0x3ffffffffffffffffff)
+for { let i_0 := 0 } lt(i_0, 0x60) { i_0 := add(i_0, 0x20) } {
+mstore8(0x3fffffffffffffffffff, 0x3ffffffffffffffffffff)
+}
+}
+let x_24, x_25, x_26, x_27 := foo_m_0(0x3fffffffffffffffffffffffffff, 0x3ffffffffffffffffffffffffffff, 0x3fffffffffffffffffffffffffffff)
+let x_33, x_34, x_35, x_36 := foo_m_0(0x3ffffffffffffffffffffffffffffffffffff, 0x3fffffffffffffffffffffffffffffffffffff, call(0x3ffffffffffffffffffffffffffffffffffffff, 0x3fffffffffffffffffffffffffffffffffffffff, 0x3ffffffffffffffffffffffffffffffffffffffff, 0x3fffffffffffffffffffffffffffffffffffffffff, 0x3ffffffffffffffffffffffffffffffffffffffffff, 0x3fffffffffffffffffffffffffffffffffffffffffff, 0x3ffffffffffffffffffffffffffffffffffffffffffff))
+mstore(0x3fffffffffffffffffffffffffffffffffffffffffffff, 0x3ffffffffffffffffffffffffffffffffffffffffffffff)
+let x_50, x_51, x_52, x_53 := foo_m_0(0x3fffffffffffffffffffffffffffffffffffffffffffffffffffff, 0x3ffffffffffffffffffffffffffffffffffffffffffffffffffffff, 0x3fffffffffffffffffffffffffffffffffffffffffffffffffffffff)
+function foo_m_0(x_58, x_59, x_60) -> x_61, x_62, x_63, x_64
+{
+for { let i_1 := 0 } lt(i_1, 0x60) { i_1 := add(i_1, 0x20) } {
+mstore8(0x4, 0x40)
+}
+sstore(0x400, 0x4000)
+sstore(0x40000, slt(x_60,0x400000))
+sstore(0x4000000, addmod(0x40000000, 0x400000000, origin()))
+sstore(slt(0x4000000000,0x40000000000), xor(0x400000000000,0x4000000000000))
+}
+let x_80, x_81, x_82, x_83 := foo_m_0(0x40000000000000000000, 0x400000000000000000000, 0x4000000000000000000000)
+let x_89, x_90, x_91, x_92 := foo_m_0(0x40000000000000000000000000000, 0x400000000000000000000000000000, 0x4000000000000000000000000000000)
+}
+}
+
+			}
+		}
+	}
+		

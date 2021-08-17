@@ -1,0 +1,28 @@
+
+	object "main" {
+		code {
+			codecopy(0, dataoffset("deployed"), datasize("deployed"))
+			return(0, datasize("deployed"))
+		}
+		object "deployed" {
+			code {
+				{
+{
+mstore(0xfffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff, mod(0xffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff,0x0))
+mstore(mod("",0x1), mod("",0xffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff))
+mstore(mod("",0x1f), mod("",0x9f))
+mstore(0xa0, mod("",0xa1))
+mstore(mod("",0xff), 0x100)
+mstore(0x101, mod("",0x10))
+mstore(mod("",0x100), 0x1000)
+mstore(mod("",0x10000), 0x100000)
+mstore(mod("",0x1000000), mod("",0x10000000))
+mstore(mod("",0x100000000), mod("",0x1000000000))
+mstore(mod("",0x10000000000), 0x100000000000)
+}
+}
+
+			}
+		}
+	}
+		

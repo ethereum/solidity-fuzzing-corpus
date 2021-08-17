@@ -1,0 +1,40 @@
+
+	object "main" {
+		code {
+			codecopy(0, dataoffset("deployed"), datasize("deployed"))
+			return(0, datasize("deployed"))
+		}
+		object "deployed" {
+			code {
+				{
+{
+function foo_m_0(x_1, x_2, x_3, x_4) -> x_5, x_6, x_7, x_8
+{
+extcodecopy(0x1000000000000000000000000001, 0x100000000000000000000000001, 0x10000000000000000000000001, 0x1000000000000000000000001)
+switch eq(0x100000000000000000000001,0x10000000000000000000001)
+case 0x1000000000000000000001 {
+}
+case 0x100000000000000000001 {
+x_5 := mload(0x10000000000000000001)
+}
+case 0x1000000000000000001 {}
+case "" {}
+case 0x100000000000000001 {
+}
+default {
+x_5 := mload(0x10000000000000001)
+}
+let x_23, x_24, x_25, x_26 := foo_m_0(0x1000000001, addmod(add(x_3,0), 0x100000001, 0x10000001), x_5, 0)
+}
+let x_31, x_32, x_33, x_34 := foo_m_0(calldataload(224),sload(288),calldataload(32),sload(96))
+sstore(160, x_31)
+sstore(224, x_32)
+sstore(288, x_33)
+sstore(32, x_34)
+}
+}
+
+			}
+		}
+	}
+		

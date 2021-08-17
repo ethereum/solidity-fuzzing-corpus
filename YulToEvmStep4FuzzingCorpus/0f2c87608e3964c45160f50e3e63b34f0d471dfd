@@ -1,0 +1,26 @@
+
+	object "main" {
+		code {
+			codecopy(0, dataoffset("deployed"), datasize("deployed"))
+			return(0, datasize("deployed"))
+		}
+		object "deployed" {
+			code {
+				{
+{
+for { let i_0 := 0 } lt(i_0, 0x60) { i_0 := add(i_0, 0x20) } {
+extcodecopy(0x3fffffffffff, 0x3ffffffffffff, 0x3fffffffffffff, 0x3ffffffffffffff)
+}
+for { let i_1 := 0 } lt(i_1, 0x60) { i_1 := add(i_1, 0x20) } {
+switch 0x3fffffffffffffff
+case 0x03ffffffffffffffff {}
+default {
+}
+}
+}
+}
+
+			}
+		}
+	}
+		

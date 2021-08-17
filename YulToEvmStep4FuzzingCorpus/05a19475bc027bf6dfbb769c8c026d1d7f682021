@@ -1,0 +1,49 @@
+
+	object "main" {
+		code {
+			codecopy(0, dataoffset("deployed"), datasize("deployed"))
+			return(0, datasize("deployed"))
+		}
+		object "deployed" {
+			code {
+				{
+{
+let x_0 := 0x1000000000000000000000000000000000000000000000000000001
+switch x_0
+case "" {
+sstore(0x100000000000000000000000000000000000000000000000000001, 0x10000000000000000000000000000000000000000000000000001)
+}
+default {
+for { let i_0 := 0 } lt(i_0, 0x60) { i_0 := add(i_0, 0x20) } {
+function foo_m_4(x_6, x_7) -> x_8, x_9, x_10, x_11
+{
+for { let i_1 := 0 } lt(i_1, 0x60) { i_1 := add(i_1, 0x20) } {
+{
+}
+}
+}
+let x_13, x_14, x_15, x_16 := foo_m_4(sload(288),calldataload(32))
+sstore(96, x_13)
+sstore(160, x_14)
+sstore(224, x_15)
+sstore(288, x_16)
+let x_30 := mulmod(0x1000000000000000000000001, 0x100000000000000000000001, 0x10000000000000000000001)
+function foo_m_5(x_34, x_35, x_36, x_37) -> x_38, x_39, x_40, x_41
+{
+let x_44, x_45, x_46, x_47 := foo_m_5(0x1000001, 0x100001, 0x10001, 0x1001)
+}
+let x_53, x_54, x_55, x_56 := foo_m_5(sload(288),calldataload(32),sload(96),calldataload(160))
+sstore(224, x_53)
+sstore(288, x_54)
+sstore(32, x_55)
+sstore(96, x_56)
+extcodecopy(0x1ffffffffffffffffffff, 0x1fffffffffffffffffffff, x_0, 0x1ffffffffffffffffffffff)
+}
+}
+}
+}
+
+			}
+		}
+	}
+		

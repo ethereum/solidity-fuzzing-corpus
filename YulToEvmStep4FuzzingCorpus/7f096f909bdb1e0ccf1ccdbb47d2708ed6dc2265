@@ -1,0 +1,22 @@
+
+	object "main" {
+		code {
+			codecopy(0, dataoffset("deployed"), datasize("deployed"))
+			return(0, datasize("deployed"))
+		}
+		object "deployed" {
+			code {
+				{
+{
+let x_0 := sub(codesize(),0x7fffffffffffffffffffffffffffffffffffffffffffffffffffffffff)
+sstore(x_0, x_0)
+x_0 := sub(codesize(),0x7ffffffffffffffffffffffffffffffffffffffffffffffffffffffffff)
+log2(exp(mul(mul(eq(0x7fffffffffffffffffffffffffffffffffffffffffffffffffffffffffff,0x7ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff),0x7fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff),0x7ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff),0x7fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff), mul(0x8,signextend(mul(mul(mload(0x80),0x800),0x8000),0x80000)), 0x800000, 0x8000000)
+sstore(x_0, not(x_0))
+}
+}
+
+			}
+		}
+	}
+		

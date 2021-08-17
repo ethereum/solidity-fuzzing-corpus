@@ -1,0 +1,57 @@
+
+	object "main" {
+		code {
+			codecopy(0, dataoffset("deployed"), datasize("deployed"))
+			return(0, datasize("deployed"))
+		}
+		object "deployed" {
+			code {
+				{
+{
+switch gas()
+case 0xfffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff {}
+case 0xffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff {}
+case 0x0 {}
+case 0x1 {}
+case 0x1f {}
+case 0x9f {}
+case 0xa0 {}
+case 0xa1 {
+for { let i_0 := 0 } lt(i_0, 0x60) { i_0 := add(i_0, 0x20) } {
+}
+}
+case 0xff {}
+case 0x100 {}
+case 0x101 {}
+case 0x10 {}
+case 0x1000 {}
+case 0x10000 {}
+case 0x100000 {}
+case 0x1000000 {}
+case 0x10000000 {
+function foo_m_19(x_20, x_21, x_22, x_23) -> x_24, x_25
+{
+}
+let x_27, x_28 := foo_m_19(sload(32),calldataload(96),sload(160),calldataload(224))
+sstore(288, x_27)
+sstore(32, x_28)
+}
+case 0x10000000000000000000000000000000 {}
+case 0x100000000000000000000000000000000 {}
+case 0x1000000000000000000000000000000000 {}
+case 0x10000000000000000000000000000000000 {}
+case 0x100000000000000000000000000000000000 {}
+case 0x1000000000000000000000000000000000000 {}
+case 0x10000000000000000000000000000000000000 {}
+case 0x100000000000000000000000000000000000000 {}
+case 0x1000000000000000000000000000000000000000 {}
+default {
+stop()
+}
+}
+}
+
+			}
+		}
+	}
+		

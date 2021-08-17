@@ -1,0 +1,46 @@
+
+	object "main" {
+		code {
+			codecopy(0, dataoffset("deployed"), datasize("deployed"))
+			return(0, datasize("deployed"))
+		}
+		object "deployed" {
+			code {
+				{
+{
+mstore(mulmod(0xfffffffffffffffffffffffffffffffffffffffffffffffffffffffffff, 0xffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff, 0xfffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff), 0xffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff)
+codecopy(0xfffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff, 0xffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff, 0x0)
+let x_10, x_11 := foo_m_1(0xa0, 0xa1)
+mstore(0xff, 0x100)
+switch 0x101
+case "h" {
+log0(0x10, 0x100)
+}
+function foo_m_0(x_20, x_21) -> x_22, x_23
+{
+switch 0x100000000
+case "h" {
+log0(0x1000000000, 0x10000000000)
+}
+}
+let x_28, x_29 := foo_m_0(0x10000000000000000,sload(160))
+sstore(224, x_28)
+sstore(288, x_29)
+function foo_m_1(x_40, x_41) -> x_42, x_43
+{
+switch 0x10000000000000000000000000000
+case "h" {
+log0(0x100000000000000000000000000000, 0x1000000000000000000000000000000)
+}
+}
+let x_48, x_49 := foo_m_1(0x1000000000000000000000000000000000000,sload(160))
+sstore(224, x_48)
+sstore(288, x_49)
+let x_61, x_62 := foo_m_0(0x100000000000000000000000000000000000000000000000, 0x1000000000000000000000000000000000000000000000000)
+}
+}
+
+			}
+		}
+	}
+		

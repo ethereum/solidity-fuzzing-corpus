@@ -1,0 +1,19 @@
+
+	object "main" {
+		code {
+			codecopy(0, dataoffset("deployed"), datasize("deployed"))
+			return(0, datasize("deployed"))
+		}
+		object "deployed" {
+			code {
+				{
+{
+let x_0 := or(0x3ffffffffffff,0x3fffffffffffff)
+extcodecopy(0x3ffffffffffffff, gt(addmod(0x3fffffffffffffff, 0x3ffffffffffffffff, x_0),addmod(0x3fffffffffffffffff, addmod(or(0x3ffffffffffffffffff,0x3fffffffffffffffffff), addmod(0x3ffffffffffffffffffff, 0x3fffffffffffffffffffff, x_0), x_0), x_0)), 0x3ffffffffffffffffffffff, addmod(or(addmod(0x3fffffffffffffffffffffff, addmod(0x3ffffffffffffffffffffffff, 0x3fffffffffffffffffffffffff, x_0), x_0),addmod(or(0x3ffffffffffffffffffffffffff,0x3fffffffffffffffffffffffffff), addmod(0x3ffffffffffffffffffffffffffff, 0x3fffffffffffffffffffffffffffff, x_0), x_0)), gt(0x3ffffffffffffffffffffffffffffff,0x3fffffffffffffffffffffffffffffff), x_0))
+}
+}
+
+			}
+		}
+	}
+		

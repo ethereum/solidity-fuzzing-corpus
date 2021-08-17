@@ -1,0 +1,30 @@
+
+	object "main" {
+		code {
+			codecopy(0, dataoffset("deployed"), datasize("deployed"))
+			return(0, datasize("deployed"))
+		}
+		object "deployed" {
+			code {
+				{
+{
+for {}
+eq(gt(shl(0x0,codesize()),codesize()),0x0){
+invalid()
+}
+{
+for {}
+eq(gt(shl(gt(0x0,codesize()),codesize()),codesize()),0x0){
+invalid()
+}
+{
+invalid()
+}
+}
+}
+}
+
+			}
+		}
+	}
+		

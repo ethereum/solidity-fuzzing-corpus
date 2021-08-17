@@ -1,0 +1,27 @@
+
+	object "main" {
+		code {
+			codecopy(0, dataoffset("deployed"), datasize("deployed"))
+			return(0, datasize("deployed"))
+		}
+		object "deployed" {
+			code {
+				{
+{
+let x_0 := 0xa0
+for {}
+x_0{
+x_0 := x_0
+extcodecopy(0xa1, 0xff, 0x100, x_0)
+}
+{
+x_0 := x_0
+extcodecopy(0x101, 0x10, 0x100, x_0)
+}
+}
+}
+
+			}
+		}
+	}
+		

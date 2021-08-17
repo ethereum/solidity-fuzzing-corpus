@@ -1,0 +1,68 @@
+
+	object "main" {
+		code {
+			codecopy(0, dataoffset("deployed"), datasize("deployed"))
+			return(0, datasize("deployed"))
+		}
+		object "deployed" {
+			code {
+				{
+{
+let x_2, x_3
+function foo_m_0(x_4, x_5, x_6, x_7) -> x_8, x_9
+{
+function foo_m_11(x_12, x_13) -> x_14, x_15
+{
+function foo_m_17(x_18, x_19) -> x_20, x_21
+{
+function foo_m_23(x_24, x_25) -> x_26, x_27
+{
+let x_30, x_31 := foo_m_23(0x1fffffffffffffffffffffffffffffffffffff, add(extcodesize(0x1ffffffffffffffffffffffffffffffffffffff),0x1fffffffffffffffffffffffffffffffffffffff))
+}
+let x_36, x_37 := foo_m_23(0x1fffffffffffffffffffffffffffffffffffffffffffff,sload(96))
+sstore(160, x_36)
+sstore(224, x_37)
+}
+let x_48, x_49 := foo_m_17(0x1fffffffffffffffffffffffffffffffffffffffffffffffffffffffff,sload(160))
+sstore(224, x_48)
+sstore(288, x_49)
+}
+let x_60, x_61 := foo_m_11(0x200000,sload(224))
+sstore(288, x_60)
+sstore(32, x_61)
+}
+let x_72, x_73 := foo_m_0(0x200000000000000000,sload(288),calldataload(32),sload(96))
+sstore(160, x_72)
+sstore(224, x_73)
+function foo_m_1(x_88, x_89) -> x_90, x_91
+{
+function foo_m_93(x_94, x_95) -> x_96, x_97
+{
+function foo_m_99(x_100, x_101) -> x_102, x_103
+{
+function foo_m_105(x_106, x_107) -> x_108, x_109
+{
+let x_112, x_113 := foo_m_1(0x20000000000000000000000000000000000000000000000000000000, add(extcodesize(0x200000000000000000000000000000000000000000000000000000000),0x2000000000000000000000000000000000000000000000000000000000))
+}
+let x_118, x_119 := foo_m_105(mload(64),0x200000000000000000000000000000000000000000000000000000000000001)
+sstore(224, x_118)
+sstore(288, x_119)
+}
+let x_130, x_131 := foo_m_99(mload(128),0x200000000000000000000000000000000000000000000000001)
+sstore(288, x_130)
+sstore(32, x_131)
+}
+let x_142, x_143 := foo_m_93(mload(192),0x200000000000000000000000000000000000001)
+sstore(32, x_142)
+sstore(96, x_143)
+}
+let x_154, x_155 := foo_m_1(mload(256),0x200000000000000000000000001)
+sstore(96, x_154)
+sstore(160, x_155)
+}
+}
+
+			}
+		}
+	}
+		

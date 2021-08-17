@@ -1,0 +1,42 @@
+
+	object "main" {
+		code {
+			codecopy(0, dataoffset("deployed"), datasize("deployed"))
+			return(0, datasize("deployed"))
+		}
+		object "deployed" {
+			code {
+				{
+{
+function foo_m_0() -> x_4, x_5, x_6, x_7
+{
+function foo_m_9() -> x_10, x_11, x_12, x_13
+{
+}
+}
+function foo_m_1() -> x_15, x_16, x_17
+{
+let x_20, x_21, x_22 := foo_m_3()
+for { let i_0 := 0 } lt(i_0, 0x60) { i_0 := add(i_0, 0x20) } {
+if 0x1000000000000001 {
+mstore8(blockhash(0x100000000000001), 0x10000000000001)
+}
+}
+}
+let x_27 := 0x100000000001
+function foo_m_2() -> x_29, x_30, x_31
+{
+let x_34, x_35, x_36 := foo_m_1()
+}
+function foo_m_3() -> x_38, x_39, x_40
+{
+let x_43, x_44, x_45 := foo_m_2()
+let x_48, x_49, x_50 := foo_m_3()
+}
+}
+}
+
+			}
+		}
+	}
+		

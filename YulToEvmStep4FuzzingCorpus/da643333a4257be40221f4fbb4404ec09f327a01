@@ -1,0 +1,48 @@
+
+	object "main" {
+		code {
+			codecopy(0, dataoffset("deployed"), datasize("deployed"))
+			return(0, datasize("deployed"))
+		}
+		object "deployed" {
+			code {
+				{
+{
+mstore(0x400000000000000000000000001, difficulty())
+function foo_m_0(x_2, x_3, x_4) -> x_5, x_6, x_7, x_8
+{
+for { let i_0 := 0 } lt(i_0, 0x60) { i_0 := add(i_0, 0x20) } {
+{
+if x_4 {
+{
+if x_6 {
+leave
+}
+}
+}
+if x_2 {
+for { let i_1 := 0 } lt(i_1, 0x60) { i_1 := add(i_1, 0x20) } {
+{
+if x_2 {
+leave
+}
+}
+}
+}
+}
+}
+selfdestruct(x_3)
+mstore8(slt(x_2,0x400000000000000001), 0x40000000000000001)
+}
+let x_12, x_13, x_14, x_15 := foo_m_0(mload(256),0x4000001,sload(96))
+sstore(160, x_12)
+sstore(224, x_13)
+sstore(288, x_14)
+sstore(32, x_15)
+}
+}
+
+			}
+		}
+	}
+		

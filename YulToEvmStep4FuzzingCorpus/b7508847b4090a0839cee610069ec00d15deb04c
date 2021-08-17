@@ -1,0 +1,25 @@
+
+	object "main" {
+		code {
+			codecopy(0, dataoffset("deployed"), datasize("deployed"))
+			return(0, datasize("deployed"))
+		}
+		object "deployed" {
+			code {
+				{
+{
+let x_2 := foo_s_0(0x1ffffffffffffffffffffffffffffffffffffffffffffffffffffffff, 0x1fffffffffffffffffffffffffffffffffffffffffffffffffffffffff, 0x1ffffffffffffffffffffffffffffffffffffffffffffffffffffffffff)
+let x_8 := foo_s_0("", 0x1ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff, 0x1fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff)
+let x_13 := foo_s_0(0x2000, 0x20000, 0x200000)
+function foo_s_0(x_18, x_19, x_20) -> x_21
+{
+x_19 := call(0x200000000000, addmod(0x2000000000000, 0x20000000000000, mload(0x200000000000000)), 0x2000000000000000, 0x20000000000000000, xor(xor(calldatasize(),create(0x200000000000000000, 0x2000000000000000000, 0x20000000000000000000)),xor(calldatasize(),0x200000000000000000000)), 0x2000000000000000000000, addmod(0x20000000000000000000000, 0x200000000000000000000000, 0x2000000000000000000000000))
+}
+let x_38 := foo_s_0(0x20000000000000000000000000000, 0x200000000000000000000000000000, "")
+}
+}
+
+			}
+		}
+	}
+		

@@ -1,0 +1,47 @@
+
+	object "main" {
+		code {
+			codecopy(0, dataoffset("deployed"), datasize("deployed"))
+			return(0, datasize("deployed"))
+		}
+		object "deployed" {
+			code {
+				{
+{
+let x_2, x_3, x_4, x_5 := foo_m_0(0x3ffffff, 0x3fffffff)
+let x_10, x_11, x_12, x_13 := foo_m_0(0x3ffffffffffffff, x_2)
+{
+let x_17, x_18, x_19, x_20 := foo_m_0(0x3fffffffffffffffffffff, 0x3ffffffffffffffffffffff)
+}
+let x_25, x_26, x_27, x_28 := foo_m_0(0x3fffffffffffffffffffffffffffff, 0x3ffffffffffffffffffffffffffffff)
+{
+let x_33, x_34, x_35, x_36 := foo_m_0(0x3fffffffffffffffffffffffffffffffffffff, 0x3ffffffffffffffffffffffffffffffffffffff)
+let x_41, x_42, x_43, x_44 := foo_m_0(0x3fffffffffffffffffffffffffffffffffffffffffffff, 0x3ffffffffffffffffffffffffffffffffffffffffffffff)
+let x_49, x_50, x_51, x_52 := foo_m_0(0x3fffffffffffffffffffffffffffffffffffffffffffffffffffff, 0x3ffffffffffffffffffffffffffffffffffffffffffffffffffffff)
+}
+let x_57, x_58, x_59, x_60 := foo_m_0(0x3fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff, 0x3ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff)
+let x_65, x_66, x_67, x_68 := foo_m_0(0x400000, 0x4000000)
+let x_73, x_74, x_75, x_76 := foo_m_0(0x40000000000000, 0x400000000000000)
+let x_81, x_82, x_83, x_84 := foo_m_0(0x4000000000000000000000, 0x40000000000000000000000)
+let x_89, x_90, x_91, x_92 := foo_m_0(0x400000000000000000000000000000, 0x4000000000000000000000000000000)
+function foo_m_0(x_96, x_97) -> x_98, x_99, x_100, x_101
+{
+for { let i_0 := 0 } lt(i_0, 0x60) { i_0 := add(i_0, 0x20) } {
+}
+for { let i_1 := 0 } lt(i_1, 0x60) { i_1 := add(i_1, 0x20) } {
+}
+sstore(mod(x_96,0x400000000000000000000000000000000000000), slt(0x4000000000000000000000000000000000000000,calldatasize()))
+}
+let x_105, x_106, x_107, x_108 := foo_m_0(sload(32),calldataload(96))
+sstore(160, x_105)
+sstore(224, x_106)
+sstore(288, x_107)
+sstore(32, x_108)
+let x_123, x_124, x_125, x_126 := foo_m_0(0x4000000000000000000000000000000000000000000000000000000000000000, 0x4000000000000000000000000000000000000000000000000000000000000001)
+}
+}
+
+			}
+		}
+	}
+		

@@ -1,0 +1,26 @@
+
+	object "main" {
+		code {
+			codecopy(0, dataoffset("deployed"), datasize("deployed"))
+			return(0, datasize("deployed"))
+		}
+		object "deployed" {
+			code {
+				{
+{
+mstore(addmod(0x20000000000000000000000000000000000000000000000000000000001, shl(gt(0x2000000000000000000000000000000000000000000000000000000001,gasprice()),gasprice()), gasprice()), gasprice())
+mstore(addmod(0x200000000000000000000000000000000000000000000000000000001, gt(gasprice(),gasprice()), gasprice()), gasprice())
+for {}
+0x0{
+mstore(mulmod(0x20000000000000000000000000000000000000000000000000000001, shl(gasprice(),gasprice()), gasprice()), gasprice())
+mstore(addmod(0x2000000000000000000000000000000000000000000000000000001, mulmod(0x200000000000000000000000000000000000000000000000000001, shl(gasprice(),gasprice()), gasprice()), gasprice()), gasprice())
+}
+{
+}
+}
+}
+
+			}
+		}
+	}
+		

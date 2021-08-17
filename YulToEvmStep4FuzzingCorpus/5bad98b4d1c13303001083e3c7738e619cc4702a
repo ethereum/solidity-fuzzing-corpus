@@ -1,0 +1,20 @@
+
+	object "main" {
+		code {
+			codecopy(0, dataoffset("deployed"), datasize("deployed"))
+			return(0, datasize("deployed"))
+		}
+		object "deployed" {
+			code {
+				{
+{
+revert(addmod(0x11, shr(0x1f,0x1ff), shr(0x1fff,0x1ffff)), addmod(0x1fffff, shr(0x1ffffff,0x1fffffff), shr(0x1ffffffff,0x1fffffffff)))
+let x_10 := 0x1fffffffffff
+pop(x_10)
+}
+}
+
+			}
+		}
+	}
+		

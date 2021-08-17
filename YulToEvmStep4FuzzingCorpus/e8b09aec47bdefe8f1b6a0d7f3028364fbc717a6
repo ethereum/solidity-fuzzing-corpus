@@ -1,0 +1,39 @@
+
+	object "main" {
+		code {
+			codecopy(0, dataoffset("deployed"), datasize("deployed"))
+			return(0, datasize("deployed"))
+		}
+		object "deployed" {
+			code {
+				{
+{
+for {
+let x_0, x_1
+switch mload(0x4000000000000000)
+case 0x40000000000000000 {}
+case 0x400000000000000000 {
+x_0 := 0x4000000000000000000
+}
+case 0x40000000000000000000 {
+x_0 := 0x400000000000000000000
+}
+case 0x4000000000000000000000 {
+x_0 := 0x40000000000000000000000
+}
+}
+xor(0x0,xor(call(x_0, 0x0, 0x0, 0x0, add(addmod(x_0, 0x0, 0x0),0x0), 0x0, 0x0),0x0)){
+codecopy(0x400000000000000000000000, 0x4000000000000000000000000, 0x40000000000000000000000000)
+}
+{
+for { let i_0 := 0 } lt(i_0, 0x60) { i_0 := add(i_0, 0x20) } {
+continue
+}
+}
+}
+}
+
+			}
+		}
+	}
+		

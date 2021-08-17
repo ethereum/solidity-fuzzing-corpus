@@ -1,0 +1,29 @@
+
+	object "main" {
+		code {
+			codecopy(0, dataoffset("deployed"), datasize("deployed"))
+			return(0, datasize("deployed"))
+		}
+		object "deployed" {
+			code {
+				{
+{
+codecopy(0x11, 0x1f, 0x01ff)
+codecopy(0x1fff, 0x01ffff, shl(0x1fffff,0x01ffffff))
+codecopy(0x1fffffff, 0x01ffffffff, 0x1fffffffff)
+codecopy(0x01ffffffffff, 0x1fffffffffff, shl(0x01ffffffffffff,0x1fffffffffffff))
+codecopy(0x01ffffffffffffff, 0x1fffffffffffffff, 0x1ffffffffffffffff)
+codecopy(0x1fffffffffffffffff, 0x01ffffffffffffffffff, 0x1fffffffffffffffffff)
+codecopy(0x01ffffffffffffffffffff, 0x1fffffffffffffffffffff, shl(0x01ffffffffffffffffffffff,0x1fffffffffffffffffffffff))
+codecopy(0x01ffffffffffffffffffffffff, 0x1fffffffffffffffffffffffff, 0x01ffffffffffffffffffffffffff)
+codecopy(0x1fffffffffffffffffffffffffff, 0x01ffffffffffffffffffffffffffff, 0x1fffffffffffffffffffffffffffff)
+codecopy(0x01ffffffffffffffffffffffffffffff, 0x1fffffffffffffffffffffffffffffff, 0x1ffffffffffffffffffffffffffffffff)
+codecopy(0x1fffffffffffffffffffffffffffffffff, 0x01ffffffffffffffffffffffffffffffffff, 0x1fffffffffffffffffffffffffffffffffff)
+codecopy(0x01ffffffffffffffffffffffffffffffffffff, 0x1fffffffffffffffffffffffffffffffffffff, 0x1ffffffffffffffffffffffffffffffffffffff)
+}
+}
+
+			}
+		}
+	}
+		

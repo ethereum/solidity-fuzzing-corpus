@@ -1,0 +1,37 @@
+
+	object "main" {
+		code {
+			codecopy(0, dataoffset("deployed"), datasize("deployed"))
+			return(0, datasize("deployed"))
+		}
+		object "deployed" {
+			code {
+				{
+{
+switch 0x5
+case 0x7 {
+stop()
+}
+case 0x7f {
+stop()
+}
+case "" {}
+switch 0x7ff
+case 0x7fff {
+}
+case 0x7ffff {
+stop()
+}
+switch 0x7fffff
+case 0x7ffffff {
+stop()
+}
+case 0x7fffffff {
+}
+}
+}
+
+			}
+		}
+	}
+		

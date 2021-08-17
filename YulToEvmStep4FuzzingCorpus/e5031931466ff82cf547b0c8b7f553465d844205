@@ -1,0 +1,18 @@
+
+	object "main" {
+		code {
+			codecopy(0, dataoffset("deployed"), datasize("deployed"))
+			return(0, datasize("deployed"))
+		}
+		object "deployed" {
+			code {
+				{
+{
+codecopy(keccak256(gas(),difficulty()), 0x10000000000000000000000000000000000001, sdiv(gas(),0))
+}
+}
+
+			}
+		}
+	}
+		

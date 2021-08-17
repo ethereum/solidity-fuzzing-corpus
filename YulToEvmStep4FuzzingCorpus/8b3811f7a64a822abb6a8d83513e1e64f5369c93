@@ -1,0 +1,25 @@
+
+	object "main" {
+		code {
+			codecopy(0, dataoffset("deployed"), datasize("deployed"))
+			return(0, datasize("deployed"))
+		}
+		object "deployed" {
+			code {
+				{
+{
+function foo_s_0(x_1) -> x_2
+{
+sstore(foo_s_0(0x7fffffffffffffffff)
+, 0x7ffffffffffffffffff)
+leave
+}
+sstore(foo_s_0(0x7fffffffffffffffffff)
+, 0x7ffffffffffffffffffff)
+}
+}
+
+			}
+		}
+	}
+		

@@ -1,0 +1,41 @@
+
+	object "main" {
+		code {
+			codecopy(0, dataoffset("deployed"), datasize("deployed"))
+			return(0, datasize("deployed"))
+		}
+		object "deployed" {
+			code {
+				{
+{
+let x_0 := not(add(0x1000000001,0x100000001))
+if 0x10000001 {
+x_0 := 0x1000001
+}
+switch mload(0x100001)
+case 0x10001 {
+x_0 := addmod(0x1001, 0x101, 0x11)
+}
+case 0x1f {
+x_0 := 0x1ff
+invalid()
+}
+case 0x1fff {
+mstore(0x1ffff, addmod(0x1fffff, 0x1ffffff, 0x1fffffff))
+}
+case 0x1ffffffff {
+x_0 := not(add(x_0,0x1fffffffff))
+}
+case 0x1ffffffffff {
+for { let i_0 := 0 } lt(i_0, 0x60) { i_0 := add(i_0, 0x20) } {
+invalid()
+}
+}
+invalid()
+}
+}
+
+			}
+		}
+	}
+		

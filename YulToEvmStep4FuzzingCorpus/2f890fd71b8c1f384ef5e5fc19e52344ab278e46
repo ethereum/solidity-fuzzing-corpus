@@ -1,0 +1,31 @@
+
+	object "main" {
+		code {
+			codecopy(0, dataoffset("deployed"), datasize("deployed"))
+			return(0, datasize("deployed"))
+		}
+		object "deployed" {
+			code {
+				{
+{
+let x_0 := 0x1ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
+x_0 := 0x1fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
+{
+}
+for { let i_0 := 0 } lt(i_0, 0x60) { i_0 := add(i_0, 0x20) } {
+x_0 := 0x2
+}
+for { let i_1 := 0 } lt(i_1, 0x60) { i_1 := add(i_1, 0x20) } {
+x_0 := 0x20
+}
+extcodecopy(0x200, x_0, 0x2000, 0x20000)
+if 0x200000 {
+log1(0x2000000, or("",eq(0x20000000,0x200000000)), or(false,eq(0x2000000000,0x20000000000)))
+}
+}
+}
+
+			}
+		}
+	}
+		

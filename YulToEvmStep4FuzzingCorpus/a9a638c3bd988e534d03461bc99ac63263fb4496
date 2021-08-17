@@ -1,0 +1,25 @@
+
+	object "main" {
+		code {
+			codecopy(0, dataoffset("deployed"), datasize("deployed"))
+			return(0, datasize("deployed"))
+		}
+		object "deployed" {
+			code {
+				{
+{
+codecopy(and(not(0),gas()), 0x1fffffffffffffffffff, 0x1ffffffffffffffffffff)
+codecopy(and(not(false),and(not(false),and(not(0x1fffffffffffffffffffff),gas()))), 0x1ffffffffffffffffffffff, 0x1fffffffffffffffffffffff)
+pop(not(gasprice()))
+codecopy(and(0x1ffffffffffffffffffffffff,gas()), 0x1fffffffffffffffffffffffff, 0x1ffffffffffffffffffffffffff)
+codecopy(and(not(0),gas()), 0x1fffffffffffffffffffffffffff, 0x1ffffffffffffffffffffffffffff)
+codecopy(and(not(false),and(not(0x1fffffffffffffffffffffffffffff),gas())), 0x1ffffffffffffffffffffffffffffff, 0x1fffffffffffffffffffffffffffffff)
+codecopy(and(not(0x1ffffffffffffffffffffffffffffffff),gas()), 0x1fffffffffffffffffffffffffffffffff, 0x1ffffffffffffffffffffffffffffffffff)
+codecopy(and(not(0),gas()), 0x1fffffffffffffffffffffffffffffffffff, 0x1ffffffffffffffffffffffffffffffffffff)
+}
+}
+
+			}
+		}
+	}
+		

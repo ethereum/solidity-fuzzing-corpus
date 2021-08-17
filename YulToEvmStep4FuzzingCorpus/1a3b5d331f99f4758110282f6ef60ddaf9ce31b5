@@ -1,0 +1,43 @@
+
+	object "main" {
+		code {
+			codecopy(0, dataoffset("deployed"), datasize("deployed"))
+			return(0, datasize("deployed"))
+		}
+		object "deployed" {
+			code {
+				{
+{
+foo_n_0(0xfffffffffffffffffffffffffffffffffffffffffffffffffffffffffff, 0xffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff, 0xfffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff)
+{
+}
+foo_n_0(0xfffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff, 0xffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff, 0x0)
+mstore(0x1, msize())
+foo_n_0(0x1f, 0x9f, 0xa0)
+function foo_n_0(x_14, x_15, x_16)
+{
+mstore(0x10, msize())
+for { let i_0 := 0 } lt(i_0, 0x60) { i_0 := add(i_0, 0x20) } {
+{
+if x_15 {
+leave
+}
+if x_14 {
+leave
+}
+}
+}
+for { let i_1 := 0 } lt(i_1, 0x60) { i_1 := add(i_1, 0x20) } {
+}
+mstore8(slt(x_14,0x100), or(x_14,0x1000))
+}
+foo_n_0(mload(64),0x100000000,sload(224))
+foo_n_0(0x1000000000000, not(0x10000000000000), 0x100000000000000)
+foo_n_0(0x10000000000000000, 0x100000000000000000, 0x1000000000000000000)
+}
+}
+
+			}
+		}
+	}
+		

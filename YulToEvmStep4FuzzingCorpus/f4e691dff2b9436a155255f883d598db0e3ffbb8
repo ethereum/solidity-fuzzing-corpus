@@ -1,0 +1,30 @@
+
+	object "main" {
+		code {
+			codecopy(0, dataoffset("deployed"), datasize("deployed"))
+			return(0, datasize("deployed"))
+		}
+		object "deployed" {
+			code {
+				{
+{
+switch codesize()
+case 0xEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEE {}
+case "2" {}
+case "" {}
+default {
+switch codesize()
+case "QQQQQQQQQQQQQ" {}
+case "2" {}
+case "" {}
+default {
+sstore(0x40000000000000000000000000000, 0x400000000000000000000000000000)
+}
+}
+}
+}
+
+			}
+		}
+	}
+		

@@ -1,0 +1,26 @@
+
+	object "main" {
+		code {
+			codecopy(0, dataoffset("deployed"), datasize("deployed"))
+			return(0, datasize("deployed"))
+		}
+		object "deployed" {
+			code {
+				{
+{
+let x_2 := foo_s_0(0xffffffffffffffffffffffffffffffffffffffffff, 0xfffffffffffffffffffffffffffffffffffffffffff, 0xffffffffffffffffffffffffffffffffffffffffffff)
+let x_8 := foo_s_0(0xffffffffffffffffffffffffffffffffffffffffffffffff, 0xfffffffffffffffffffffffffffffffffffffffffffffffff, 0xffffffffffffffffffffffffffffffffffffffffffffffffff)
+let x_14 := foo_s_0(0xffffffffffffffffffffffffffffffffffffffffffffffffffffff, 0xfffffffffffffffffffffffffffffffffffffffffffffffffffffff, 0xffffffffffffffffffffffffffffffffffffffffffffffffffffffff)
+let x_20 := foo_s_0(0xffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff, 0xfffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff, 0xffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff)
+function foo_s_0(x_25, x_26, x_27) -> x_28
+{
+x_26 := call(0x1f, 0x9f, 0xa0, 0xa1, xor(xor(calldatasize(),0xff),slt(x_25,0x100)), 0x101, addmod(addmod(gt(addmod(0x10, 0x100, x_25),addmod(0x1000, 0x10000, 0x100000)), 0x1000000, 0x10000000), 0x100000000, 0x1000000000))
+}
+let x_47 := foo_s_0(0x10000000000000, 0x100000000000000, 0x1000000000000000)
+}
+}
+
+			}
+		}
+	}
+		

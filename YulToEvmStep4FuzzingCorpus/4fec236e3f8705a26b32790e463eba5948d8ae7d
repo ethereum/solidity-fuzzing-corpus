@@ -1,0 +1,40 @@
+
+	object "main" {
+		code {
+			codecopy(0, dataoffset("deployed"), datasize("deployed"))
+			return(0, datasize("deployed"))
+		}
+		object "deployed" {
+			code {
+				{
+{
+function foo_m_0() -> x_2, x_3, x_4, x_5
+{
+selfdestruct(0x7ff)
+}
+function foo_m_1(x_8) -> x_9, x_10, x_11, x_12
+{
+for { let i_0 := 0 } lt(i_0, 0x60) { i_0 := add(i_0, 0x20) } {
+x_8 := call(add(0x7fffffffff,0x7ffffffffff), 0x7fffffffffff, 0x7ffffffffffff, 0x7fffffffffffff, 0x7ffffffffffffff, 0x7fffffffffffffff, 0x7ffffffffffffffff)
+for { let i_1 := 0 } lt(i_1, 0x60) { i_1 := add(i_1, 0x20) } {
+function foo_m_22(x_23, x_24, x_25, x_26) -> x_27, x_28, x_29, x_30
+{
+selfdestruct(0x7fffffffffffffffffffffffffff)
+}
+}
+}
+let x_34, x_35, x_36, x_37 := foo_m_1(mulmod(0x7ffffffffffffffffffffffffffffffffff, 0x7fffffffffffffffffffffffffffffffffff, 0x7ffffffffffffffffffffffffffffffffffff))
+let x_43, x_44, x_45, x_46 := foo_m_0()
+}
+let x_48, x_49, x_50, x_51 := foo_m_1(mload(128))
+mstore(192, x_48)
+mstore(256, x_49)
+mstore(0, x_50)
+mstore(64, x_51)
+}
+}
+
+			}
+		}
+	}
+		

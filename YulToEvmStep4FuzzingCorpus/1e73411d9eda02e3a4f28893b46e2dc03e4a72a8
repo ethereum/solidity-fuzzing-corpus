@@ -1,0 +1,33 @@
+
+	object "main" {
+		code {
+			codecopy(0, dataoffset("deployed"), datasize("deployed"))
+			return(0, datasize("deployed"))
+		}
+		object "deployed" {
+			code {
+				{
+{
+for { let i_0 := 0 } lt(i_0, 0x60) { i_0 := add(i_0, 0x20) } {
+function foo_m_0() -> x_1, x_2, x_3, x_4
+{
+for { let i_1 := 0 } lt(i_1, 0x60) { i_1 := add(i_1, 0x20) } {
+x_1 := 0x80000000000000000000000000000000000000
+continue
+}
+extcodecopy(0x800000000000000000000000000000000000000, 0x8000000000000000000000000000000000000000, 0x80000000000000000000000000000000000000000, blockhash(0x800000000000000000000000000000000000000000))
+}
+let x_11, x_12, x_13, x_14 := foo_m_0()
+sstore(224, x_11)
+sstore(288, x_12)
+sstore(32, x_13)
+sstore(96, x_14)
+let x_25, x_26, x_27, x_28 := foo_m_0()
+}
+}
+}
+
+			}
+		}
+	}
+		

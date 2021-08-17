@@ -1,0 +1,29 @@
+
+	object "main" {
+		code {
+			codecopy(0, dataoffset("deployed"), datasize("deployed"))
+			return(0, datasize("deployed"))
+		}
+		object "deployed" {
+			code {
+				{
+{
+let x_1 := balance(0x3fffffffffffff)
+sstore(0x3ffffffffffffff, exp(x_1,0x3fffffffffffffff))
+mstore(0x3ffffffffffffffff, 0x3fffffffffffffffff)
+mstore(0x3ffffffffffffffffff, 0x3fffffffffffffffffff)
+mstore(x_1, 0x3ffffffffffffffffffff)
+for { let i_0 := 0 } lt(i_0, 0x60) { i_0 := add(i_0, 0x20) } {
+x_1 := add(x_1,exp(x_1,0x3fffffffffffffffffffff))
+}
+function foo_n_0(x_11)
+{
+x_11 := add(x_11,exp(x_11,0x3ffffffffffffffffffffffff))
+}
+}
+}
+
+			}
+		}
+	}
+		

@@ -1,0 +1,28 @@
+
+	object "main" {
+		code {
+			codecopy(0, dataoffset("deployed"), datasize("deployed"))
+			return(0, datasize("deployed"))
+		}
+		object "deployed" {
+			code {
+				{
+{
+mstore(iszero(0x1000000001), 0x100000001)
+switch mload(iszero(0x10000001))
+case 0x1000001 {}
+case 0x100001 {}
+default {
+{
+extcodecopy(create(0x10001, 0x1001, 0x101), 0x11, 0x1f, 0x1ff)
+}
+}
+switch mload(iszero(0x1fff))
+case 0x1ffff {}
+}
+}
+
+			}
+		}
+	}
+		

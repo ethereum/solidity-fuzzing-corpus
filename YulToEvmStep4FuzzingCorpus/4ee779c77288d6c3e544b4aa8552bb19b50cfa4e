@@ -1,0 +1,37 @@
+
+	object "main" {
+		code {
+			codecopy(0, dataoffset("deployed"), datasize("deployed"))
+			return(0, datasize("deployed"))
+		}
+		object "deployed" {
+			code {
+				{
+{
+for { let i_0 := 0 } lt(i_0, 0x60) { i_0 := add(i_0, 0x20) } {
+break
+}
+for {
+mstore(0xfffffffffffffffffffffffffffffffffffffffffffffffffffffffff, 0xffffffffffffffffffffffffffffffffffffffffffffffffffffffffff)
+mstore(0xfffffffffffffffffffffffffffffffffffffffffffffffffffffffffff, mload(0xffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff))
+mstore(not(0xfffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff), 0xffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff)
+mstore(not(0xfffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff), not(0xffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff))
+mstore(0x0, mload(0x1))
+mstore(0xffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff, mload(0x1f))
+mstore(0x9f, mload(0xa0))
+if 0xa1 {
+log0(0xff, 0x100)
+}
+extcodecopy("", 0x101, 0x10, 0x100)
+}
+0x0{}
+{
+continue
+}
+}
+}
+
+			}
+		}
+	}
+		

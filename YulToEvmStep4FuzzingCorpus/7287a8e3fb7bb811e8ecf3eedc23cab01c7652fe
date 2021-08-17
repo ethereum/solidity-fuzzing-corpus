@@ -1,0 +1,139 @@
+
+	object "main" {
+		code {
+			codecopy(0, dataoffset("deployed"), datasize("deployed"))
+			return(0, datasize("deployed"))
+		}
+		object "deployed" {
+			code {
+				{
+{
+for { let i_0 := 0 } lt(i_0, 0x60) { i_0 := add(i_0, 0x20) } {
+function foo_m_1(x_5, x_6, x_7, x_8) -> x_9, x_10, x_11, x_12
+{
+}
+let x_14, x_15, x_16, x_17 := foo_m_1(0x80000,sload(96),calldataload(160),sload(224))
+sstore(288, x_14)
+sstore(32, x_15)
+sstore(96, x_16)
+sstore(160, x_17)
+function foo_m_2(x_36, x_37, x_38, x_39) -> x_40, x_41, x_42, x_43
+{
+}
+let x_45, x_46, x_47, x_48 := foo_m_2(sload(32),calldataload(96),sload(160),calldataload(224))
+sstore(288, x_45)
+sstore(32, x_46)
+sstore(96, x_47)
+sstore(160, x_48)
+function foo_m_3(x_66, x_67, x_68, x_69) -> x_70, x_71, x_72, x_73
+{
+function foo_m_75(x_76, x_77, x_78, x_79) -> x_80, x_81
+{
+}
+let x_83, x_84 := foo_m_75(sload(224),calldataload(288),sload(32),calldataload(96))
+sstore(160, x_83)
+sstore(224, x_84)
+}
+let x_98, x_99, x_100, x_101 := foo_m_3(0x8000000000000000000000000000000000000001,sload(224),calldataload(288),sload(32))
+sstore(96, x_98)
+sstore(160, x_99)
+sstore(224, x_100)
+sstore(288, x_101)
+function foo_m_4(x_120, x_121, x_122) -> x_123, x_124, x_125, x_126
+{
+function foo_m_128(x_129, x_130, x_131, x_132) -> x_133, x_134, x_135, x_136
+{
+{
+}
+}
+let x_138, x_139, x_140, x_141 := foo_m_128(0xf,sload(224),calldataload(288),sload(32))
+sstore(96, x_138)
+sstore(160, x_139)
+sstore(224, x_140)
+sstore(288, x_141)
+}
+let x_160, x_161, x_162, x_163 := foo_m_4(mload(192),0xfffffffffffffffffffffffff,sload(32))
+sstore(96, x_160)
+sstore(160, x_161)
+sstore(224, x_162)
+sstore(288, x_163)
+}
+function foo_m_0(x_180, x_181, x_182, x_183) -> x_184, x_185, x_186, x_187
+{
+function foo_m_189(x_190, x_191, x_192, x_193) -> x_194, x_195
+{
+}
+let x_197, x_198 := foo_m_189(calldataload(32),sload(96),calldataload(160),sload(224))
+sstore(288, x_197)
+sstore(32, x_198)
+}
+let x_212, x_213, x_214, x_215 := foo_m_0(mload(256),0x1000,sload(96),calldataload(160))
+sstore(224, x_212)
+sstore(288, x_213)
+sstore(32, x_214)
+sstore(96, x_215)
+for { let i_1 := 0 } lt(i_1, 0x60) { i_1 := add(i_1, 0x20) } {
+function foo_m_234(x_239, x_240, x_241, x_242) -> x_243, x_244, x_245, x_246
+{
+}
+let x_248, x_249, x_250, x_251 := foo_m_234(mload(128),0x1000000000000000000000000000000000000000,sload(288),calldataload(32))
+sstore(96, x_248)
+sstore(160, x_249)
+sstore(224, x_250)
+sstore(288, x_251)
+function foo_m_235(x_270, x_271, x_272, x_273) -> x_274, x_275, x_276, x_277
+{
+}
+let x_279, x_280, x_281, x_282 := foo_m_235(calldataload(160),sload(224),calldataload(288),sload(32))
+sstore(96, x_279)
+sstore(160, x_280)
+sstore(224, x_281)
+sstore(288, x_282)
+function foo_m_236(x_300, x_301, x_302, x_303) -> x_304, x_305, x_306, x_307
+{
+function foo_m_309(x_310, x_311, x_312, x_313) -> x_314, x_315
+{
+}
+let x_317, x_318 := foo_m_309(calldataload(32),sload(96),calldataload(160),sload(224))
+sstore(288, x_317)
+sstore(32, x_318)
+}
+let x_332, x_333, x_334, x_335 := foo_m_236(mload(256),0x10001,sload(96),calldataload(160))
+sstore(224, x_332)
+sstore(288, x_333)
+sstore(32, x_334)
+sstore(96, x_335)
+function foo_m_237(x_354, x_355, x_356, x_357) -> x_358, x_359, x_360, x_361
+{
+}
+let x_363, x_364, x_365, x_366 := foo_m_237(calldataload(288),sload(32),calldataload(96),sload(160))
+sstore(224, x_363)
+sstore(288, x_364)
+sstore(32, x_365)
+sstore(96, x_366)
+function foo_m_238(x_384, x_385, x_386) -> x_387, x_388, x_389, x_390
+{
+function foo_m_392(x_393, x_394, x_395, x_396) -> x_397, x_398, x_399, x_400
+{
+{
+}
+}
+let x_402, x_403, x_404, x_405 := foo_m_392(0x20,sload(32),calldataload(96),sload(160))
+sstore(224, x_402)
+sstore(288, x_403)
+sstore(32, x_404)
+sstore(96, x_405)
+}
+let x_424, x_425, x_426, x_427 := foo_m_238(mload(0),0x20000000000000000000000000,sload(160))
+sstore(224, x_424)
+sstore(288, x_425)
+sstore(32, x_426)
+sstore(96, x_427)
+}
+}
+}
+
+			}
+		}
+	}
+		

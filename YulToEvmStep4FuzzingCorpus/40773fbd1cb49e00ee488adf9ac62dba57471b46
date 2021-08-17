@@ -1,0 +1,40 @@
+
+	object "main" {
+		code {
+			codecopy(0, dataoffset("deployed"), datasize("deployed"))
+			return(0, datasize("deployed"))
+		}
+		object "deployed" {
+			code {
+				{
+{
+for {}
+byte(0x0,gas()){
+{
+for {}
+byte(0x0,gas()){
+{
+selfdestruct(0xfff)
+}
+}
+{
+switch 0xffff
+default {
+break
+}
+}
+}
+}
+{
+switch 0xfffff
+default {
+break
+}
+}
+}
+}
+
+			}
+		}
+	}
+		

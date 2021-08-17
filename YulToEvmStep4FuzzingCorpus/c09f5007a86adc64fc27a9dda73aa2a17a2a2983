@@ -1,0 +1,24 @@
+
+	object "main" {
+		code {
+			codecopy(0, dataoffset("deployed"), datasize("deployed"))
+			return(0, datasize("deployed"))
+		}
+		object "deployed" {
+			code {
+				{
+{
+mstore("", call(0x1000000001, not(0x100000001), 0x10000001, "r", 0x1000001, 0x100001, 0x10001))
+log1(0x1001, keccak256(0x101,div(not(0x11),0x1f)), 0x1ff)
+switch keccak256("",0x1fff)
+case 0x1ffff {}
+case "r" {}
+case "" {}
+mstore("r", 0x1fffff)
+}
+}
+
+			}
+		}
+	}
+		

@@ -1,0 +1,30 @@
+
+	object "main" {
+		code {
+			codecopy(0, dataoffset("deployed"), datasize("deployed"))
+			return(0, datasize("deployed"))
+		}
+		object "deployed" {
+			code {
+				{
+{
+foo_n_0(0x80000000000000000000001, 0x8000000000000000000001, 0x800000000000000000001)
+if 0x80000000000000000001 {
+sstore(0x8000000000000000001, 0x800000000000000001)
+}
+function foo_n_0(x_8, x_9, x_10)
+{
+sstore(gas(), byte(x_8,byte(x_8,byte(x_9,byte(x_8,0x8000000000001)))))
+}
+foo_n_0(0x80000000001, 0x8000000001, 0x800000001)
+foo_n_0(0x8000001, 0x800001, 0x80001)
+foo_n_0(create(0x801, 0x81, 0x9), 0xf, 0xff)
+foo_n_0(0xffff, 0xfffff, 0xffffff)
+foo_n_0(0xffffffff, 0xfffffffff, 0xffffffffff)
+}
+}
+
+			}
+		}
+	}
+		

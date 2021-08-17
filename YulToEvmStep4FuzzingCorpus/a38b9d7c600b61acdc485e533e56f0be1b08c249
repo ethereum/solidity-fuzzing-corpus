@@ -1,0 +1,33 @@
+
+	object "main" {
+		code {
+			codecopy(0, dataoffset("deployed"), datasize("deployed"))
+			return(0, datasize("deployed"))
+		}
+		object "deployed" {
+			code {
+				{
+{
+selfdestruct(0x1ffffffffffffffffffffffffffffffffffffffffffffffffffffffffff)
+selfdestruct(0x1fffffffffffffffffffffffffffffffffffffffffffffffffffffffffff)
+selfdestruct(0x1ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff)
+selfdestruct(0x1fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff)
+selfdestruct(0x1ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff)
+selfdestruct(0x1fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff)
+selfdestruct(0x2)
+selfdestruct(0x20)
+selfdestruct(0x200)
+selfdestruct(0x2000)
+selfdestruct(0x20000)
+revert(0x200000, 0x2000000)
+selfdestruct(0x20000000)
+selfdestruct(0x200000000)
+selfdestruct(0x2000000000)
+selfdestruct(0x20000000000)
+}
+}
+
+			}
+		}
+	}
+		

@@ -1,0 +1,53 @@
+
+	object "main" {
+		code {
+			codecopy(0, dataoffset("deployed"), datasize("deployed"))
+			return(0, datasize("deployed"))
+		}
+		object "deployed" {
+			code {
+				{
+{
+let x_1 := 0x10000000000000000000000001
+let x_4, x_5 := foo_m_0()
+function foo_m_0() -> x_7, x_8
+{
+codecopy(0x100000000000000001, 0x10000000000000001, 0x1000000000000001)
+switch gas()
+case true {}
+case 0x100000000000001 {}
+case 0x10000000000001 {}
+case 0x1000000000001 {}
+case 0x100000000001 {}
+case 0x10000000001 {}
+case 0 {}
+case 0x1000000001 {}
+case 0x100000001 {}
+case 0x10000001 {}
+case 0x1000001 {}
+case 0x100001 {}
+case 0x010001 {}
+case 0x1001 {}
+case 0x101 {}
+case 0x11 {
+}
+case 0x1f {}
+case 0x1ff {}
+case 0x1fff {}
+case 0x1ffff {}
+case 0x1fffff {}
+case 0x1ffffff {}
+default {
+codecopy(0x1fffffff, 0x1ffffffff, 0x1fffffffff)
+}
+}
+let x_36, x_37 := foo_m_0()
+mstore(0, x_36)
+mstore(64, x_37)
+}
+}
+
+			}
+		}
+	}
+		

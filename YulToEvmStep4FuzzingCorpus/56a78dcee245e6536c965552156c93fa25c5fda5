@@ -1,0 +1,20 @@
+
+	object "main" {
+		code {
+			codecopy(0, dataoffset("deployed"), datasize("deployed"))
+			return(0, datasize("deployed"))
+		}
+		object "deployed" {
+			code {
+				{
+{
+sstore(0, 0x21)
+sstore(sub(xor(0x3,xor(origin(),0x3f)),keccak256(codesize(),xor(codesize(),0x3ff))), addmod(0x3fff, 0x3ffff, 0x3fffff))
+sstore(4611686018427387904, not(not(sload(not(0x3ffffff)))))
+}
+}
+
+			}
+		}
+	}
+		

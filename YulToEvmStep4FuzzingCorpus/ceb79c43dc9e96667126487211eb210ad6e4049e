@@ -1,0 +1,28 @@
+
+	object "main" {
+		code {
+			codecopy(0, dataoffset("deployed"), datasize("deployed"))
+			return(0, datasize("deployed"))
+		}
+		object "deployed" {
+			code {
+				{
+{
+codecopy(0x5, caller(), caller())
+codecopy(0x7, caller(), caller())
+codecopy(and(caller(),0x7f), 0x7ff, 0x7fff)
+codecopy(and(caller(),0x7ffff), caller(), caller())
+codecopy(0x7fffff, caller(), caller())
+codecopy(0x7ffffff, 0x7fffffff, 0x7ffffffff)
+codecopy(0x7fffffffff, caller(), caller())
+codecopy(and(caller(),0x7ffffffffff), 0x7fffffffffff, 0x7ffffffffffff)
+codecopy(0x7fffffffffffff, caller(), caller())
+codecopy(0x7ffffffffffffff, caller(), caller())
+codecopy(0x7fffffffffffffff, 0x7ffffffffffffffff, 0x7fffffffffffffffff)
+}
+}
+
+			}
+		}
+	}
+		

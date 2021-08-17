@@ -1,0 +1,40 @@
+
+	object "main" {
+		code {
+			codecopy(0, dataoffset("deployed"), datasize("deployed"))
+			return(0, datasize("deployed"))
+		}
+		object "deployed" {
+			code {
+				{
+{
+let x_0 := not(add(0x800000000001,0x80000000001))
+if 0x8000000001 {
+x_0 := 0x800000001
+}
+switch mload(0x80000001)
+case 0x8000001 {
+x_0 := 0x800001
+}
+case 0x80001 {
+x_0 := 0x8001
+}
+case 0x801 {
+x_0 := 0x81
+}
+case 0x9 {
+x_0 := 0xf
+}
+case 0xff {
+for { let i_0 := 0 } lt(i_0, 0x60) { i_0 := add(i_0, 0x20) } {
+invalid()
+}
+}
+codecopy(x_0, 0xfff, 0xffff)
+}
+}
+
+			}
+		}
+	}
+		

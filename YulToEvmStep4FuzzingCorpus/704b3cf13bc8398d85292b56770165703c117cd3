@@ -1,0 +1,63 @@
+
+	object "main" {
+		code {
+			codecopy(0, dataoffset("deployed"), datasize("deployed"))
+			return(0, datasize("deployed"))
+		}
+		object "deployed" {
+			code {
+				{
+{
+switch gas()
+case 0x1fffffffffffffffffffffffff {}
+case 0x01ffffffffffffffffffffffffff {}
+case 0x1fffffffffffffffffffffffffff {}
+case 0x1ffffffffffffffffffffffffffff {}
+case "" {
+stop()
+}
+case 0x1fffffffffffffffffffffffffffff {}
+case 0x1ffffffffffffffffffffffffffffff {}
+case 0x1fffffffffffffffffffffffffffffff {}
+case 0x1ffffffffffffffffffffffffffffffff {}
+case 0x1fffffffffffffffffffffffffffffffff {
+let x_9 := gas()
+}
+case 0x1fffffffffffffffffffffffffffffffffff {}
+case 0x1ffffffffffffffffffffffffffffffffffff {}
+case 0x1fffffffffffffffffffffffffffffffffffff {}
+case 0x1ffffffffffffffffffffffffffffffffffffff {
+let x_14 := gas()
+}
+case 0x1ffffffffffffffffffffffffffffffffffffffff {}
+case 0x1fffffffffffffffffffffffffffffffffffffffff {
+}
+case 0x1ffffffffffffffffffffffffffffffffffffffffff {}
+case 0x1fffffffffffffffffffffffffffffffffffffffffff {}
+case 0x1ffffffffffffffffffffffffffffffffffffffffffff {}
+case 167772160 {}
+case 0x1fffffffffffffffffffffffffffffffffffffffffffff {}
+case 0x1ffffffffffffffffffffffffffffffffffffffffffffff {
+for { let i_0 := 0 } lt(i_0, 0x60) { i_0 := add(i_0, 0x20) } {
+pop(0x1fffffffffffffffffffffffffffffffffffffffffffffff)
+}
+}
+case 0x1ffffffffffffffffffffffffffffffffffffffffffffffff {}
+case 0x1fffffffffffffffffffffffffffffffffffffffffffffffff {}
+case 0x1ffffffffffffffffffffffffffffffffffffffffffffffffff {}
+case 0x1fffffffffffffffffffffffffffffffffffffffffffffffffff {}
+case 0x01ffffffffffffffffffffffffffffffffffffffffffffffffffff {
+for { let i_1 := 0 } lt(i_1, 0x60) { i_1 := add(i_1, 0x20) } {
+stop()
+}
+}
+default {
+stop()
+}
+}
+}
+
+			}
+		}
+	}
+		

@@ -1,0 +1,26 @@
+
+	object "main" {
+		code {
+			codecopy(0, dataoffset("deployed"), datasize("deployed"))
+			return(0, datasize("deployed"))
+		}
+		object "deployed" {
+			code {
+				{
+{
+for {}
+extcodesize(0x0){
+mstore(extcodesize(0x21), extcodesize(0x3))
+mstore(extcodesize(0x3f), extcodesize(0x3ff))
+}
+{
+mstore(extcodesize(0x3fff), extcodesize(0x3ffff))
+mstore(extcodesize(0x3fffff), extcodesize(create(0x3ffffff, addmod(0x3fffffff, 0x3ffffffff, 0x3fffffffff), 0x3ffffffffff)))
+}
+}
+}
+
+			}
+		}
+	}
+		

@@ -1,0 +1,26 @@
+
+	object "main" {
+		code {
+			codecopy(0, dataoffset("deployed"), datasize("deployed"))
+			return(0, datasize("deployed"))
+		}
+		object "deployed" {
+			code {
+				{
+{
+function foo_s_0(x_1) -> x_2
+{
+x_2 := call(true, 0x1fffffffffffffffffffffffffffffffffffffffff, 0x1ffffffffffffffffffffffffffffffffffffffffff, keccak256(0x1fffffffffffffffffffffffffffffffffffffffffff,0x1ffffffffffffffffffffffffffffffffffffffffffff), 0x1fffffffffffffffffffffffffffffffffffffffffffff, 0x1ffffffffffffffffffffffffffffffffffffffffffffff, addmod(foo_s_0(0x1fffffffffffffffffffffffffffffffffffffffffffffff)
+, 0x1ffffffffffffffffffffffffffffffffffffffffffffffff, foo_s_0(mload(0x1fffffffffffffffffffffffffffffffffffffffffffffffff))
+))
+}
+sstore(foo_s_0(0x1ffffffffffffffffffffffffffffffffffffffffffffffffff)
+, gt(signextend(0x1fffffffffffffffffffffffffffffffffffffffffffffffffff,0x1ffffffffffffffffffffffffffffffffffffffffffffffffffff),gt(0x1fffffffffffffffffffffffffffffffffffffffffffffffffffff,0x1ffffffffffffffffffffffffffffffffffffffffffffffffffffff)))
+let x_19 := foo_s_0(difficulty())
+}
+}
+
+			}
+		}
+	}
+		

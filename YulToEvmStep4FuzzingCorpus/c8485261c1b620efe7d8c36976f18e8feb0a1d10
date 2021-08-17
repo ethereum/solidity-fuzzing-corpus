@@ -1,0 +1,36 @@
+
+	object "main" {
+		code {
+			codecopy(0, dataoffset("deployed"), datasize("deployed"))
+			return(0, datasize("deployed"))
+		}
+		object "deployed" {
+			code {
+				{
+{
+function foo_m_0(x_3, x_4) -> x_5, x_6
+{
+switch not(gasprice())
+case 0x800 {}
+default {
+codecopy(or(not(""),or(not(""),"")), 0x8000, 0x80000)
+}
+}
+function foo_m_1() -> x_11, x_12, x_13, x_14
+{
+}
+function foo_n_2()
+{
+foo_n_2()
+}
+let x_19, x_20 := foo_m_0(0x80000000000000000, 0x800000000000000000)
+let x_25, x_26 := foo_m_0(0x80000000000000000000000, 0x800000000000000000000000)
+let x_31, x_32 := foo_m_0(0x80000000000000000000000000000, 0x800000000000000000000000000000)
+let x_37, x_38 := foo_m_0(0x80000000000000000000000000000000000, 0x800000000000000000000000000000000000)
+}
+}
+
+			}
+		}
+	}
+		

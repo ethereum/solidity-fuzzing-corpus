@@ -1,0 +1,35 @@
+
+	object "main" {
+		code {
+			codecopy(0, dataoffset("deployed"), datasize("deployed"))
+			return(0, datasize("deployed"))
+		}
+		object "deployed" {
+			code {
+				{
+{
+let x_0 := 0x1000000000000000000000000000000000001
+for { let i_0 := 0 } lt(i_0, 0x60) { i_0 := add(i_0, 0x20) } {
+}
+mstore(0x100000000000000000000000000000000001, 0x10000000000000000000000000000000001)
+for { let i_1 := 0 } lt(i_1, 0x60) { i_1 := add(i_1, 0x20) } {
+}
+if gas() {
+function foo_m_4(x_5, x_6, x_7) -> x_8, x_9, x_10, x_11
+{
+sstore(0x1000000000000000000000001, 0x100000000000000000000001)
+}
+let x_15, x_16, x_17, x_18 := foo_m_4(calldataload(32),sload(96),calldataload(160))
+sstore(224, x_15)
+sstore(288, x_16)
+sstore(32, x_17)
+sstore(96, x_18)
+mstore(x_16, 0)
+}
+}
+}
+
+			}
+		}
+	}
+		

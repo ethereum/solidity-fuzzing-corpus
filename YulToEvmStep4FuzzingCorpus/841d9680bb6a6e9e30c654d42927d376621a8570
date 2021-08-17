@@ -1,0 +1,42 @@
+
+	object "main" {
+		code {
+			codecopy(0, dataoffset("deployed"), datasize("deployed"))
+			return(0, datasize("deployed"))
+		}
+		object "deployed" {
+			code {
+				{
+{
+for {
+let x_0, x_1
+switch 0x41
+case 0x5 {}
+case 0x07 {
+x_0 := 0x7f
+}
+case 0x7ff {
+let x_7, x_8
+}
+case 0x7fffff {
+x_0 := 0x7ffffff
+}
+case 0x7fffffff {
+let x_12, x_13
+}
+}
+xor(0x0,xor(call(x_0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0),0x0)){
+let x_14, x_15
+}
+{
+for { let i_0 := 0 } lt(i_0, 0x60) { i_0 := add(i_0, 0x20) } {
+continue
+}
+}
+}
+}
+
+			}
+		}
+	}
+		

@@ -1,0 +1,20 @@
+
+	object "main" {
+		code {
+			codecopy(0, dataoffset("deployed"), datasize("deployed"))
+			return(0, datasize("deployed"))
+		}
+		object "deployed" {
+			code {
+				{
+{
+sstore(xor(0x3fffffffffffffffffffffffffffffffffffffffffffffffffffff,xor(xor(xor(xor(0x3ffffffffffffffffffffffffffffffffffffffffffffffffffffff,xor(xor(xor(calldatasize(),0x3fffffffffffffffffffffffffffffffffffffffffffffffffffffff),xor(codesize(),0x3ffffffffffffffffffffffffffffffffffffffffffffffffffffffff)),xor(0x3fffffffffffffffffffffffffffffffffffffffffffffffffffffffff,codesize()))),0x3ffffffffffffffffffffffffffffffffffffffffffffffffffffffffff),xor(codesize(),0x3fffffffffffffffffffffffffffffffffffffffffffffffffffffffffff)),xor(0x3ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff,codesize()))), 0x3fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff)
+sstore(0, 0x3ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff)
+sstore(0, 0x3fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff)
+}
+}
+
+			}
+		}
+	}
+		

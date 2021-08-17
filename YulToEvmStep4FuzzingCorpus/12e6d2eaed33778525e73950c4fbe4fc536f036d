@@ -1,0 +1,20 @@
+
+	object "main" {
+		code {
+			codecopy(0, dataoffset("deployed"), datasize("deployed"))
+			return(0, datasize("deployed"))
+		}
+		object "deployed" {
+			code {
+				{
+{
+mstore(add(gas(),add(gas(),0xfffffffffffffffffffffffffffffffffffffffffffffffffffffffff)), 0xffffffffffffffffffffffffffffffffffffffffffffffffffffffffff)
+selfdestruct(call(0xfffffffffffffffffffffffffffffffffffffffffffffffffffffffffff, call(0xffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff, 0xfffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff, 0xffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff, 0xfffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff, 0xffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff, 0x0, 0x1), 0xffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff, 0x1f, 0x9f, 0xa0, 0xa1))
+mstore(0xff, 0x100)
+}
+}
+
+			}
+		}
+	}
+		

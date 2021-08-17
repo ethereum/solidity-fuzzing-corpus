@@ -1,0 +1,72 @@
+
+	object "main" {
+		code {
+			codecopy(0, dataoffset("deployed"), datasize("deployed"))
+			return(0, datasize("deployed"))
+		}
+		object "deployed" {
+			code {
+				{
+{
+function foo_m_0(x_3, x_4) -> x_5, x_6, x_7, x_8
+{
+sstore(0x2000000000000000000000000000000000000000000000001, 0x200000000000000000000000000000000000000000000001)
+let x_13, x_14, x_15, x_16 := foo_m_0(0x20000000000000000000000000000000000000001, 0x2000000000000000000000000000000000000001)
+}
+let x_20, x_21, x_22, x_23 := foo_m_0(mload(192),0x200000000000000000000000000001)
+sstore(32, x_20)
+sstore(96, x_21)
+sstore(160, x_22)
+sstore(224, x_23)
+for { let i_0 := 0 } lt(i_0, 0x60) { i_0 := add(i_0, 0x20) } {
+function foo_m_38(x_41, x_42) -> x_43, x_44, x_45, x_46
+{
+sstore(0x20000000001, 0x2000000001)
+let x_51, x_52, x_53, x_54 := foo_m_2(0x201, 0x21, 0x3, 0x3f)
+}
+let x_60, x_61, x_62, x_63 := foo_m_38(mload(192),0x3fffffffffff)
+sstore(32, x_60)
+sstore(96, x_61)
+sstore(160, x_62)
+sstore(224, x_63)
+for { let i_1 := 0 } lt(i_1, 0x60) { i_1 := add(i_1, 0x20) } {
+}
+function foo_m_39() -> x_78, x_79, x_80, x_81
+{
+let x_84, x_85, x_86, x_87 := foo_m_40()
+}
+let x_89, x_90, x_91, x_92 := foo_m_39()
+sstore(160, x_89)
+sstore(224, x_90)
+sstore(288, x_91)
+sstore(32, x_92)
+function foo_m_40() -> x_102, x_103, x_104, x_105
+{
+let x_108, x_109, x_110, x_111 := foo_m_40()
+}
+}
+function foo_m_1() -> x_113, x_114, x_115, x_116
+{
+let x_119, x_120, x_121, x_122 := foo_m_1()
+}
+let x_124, x_125, x_126, x_127 := foo_m_1()
+mstore(0, x_124)
+mstore(64, x_125)
+mstore(128, x_126)
+mstore(192, x_127)
+function foo_m_2(x_137, x_138, x_139, x_140) -> x_141, x_142, x_143, x_144
+{
+let x_147, x_148, x_149, x_150 := foo_m_2(0x4000000000000000000000000000000, 0x40000000000000000000000000000000, 0x400000000000000000000000000000000, 0x4000000000000000000000000000000000)
+}
+let x_156, x_157, x_158, x_159 := foo_m_2(mload(64),0x40000000000000000000000000000000000000000000,sload(224),calldataload(288))
+sstore(32, x_156)
+sstore(96, x_157)
+sstore(160, x_158)
+sstore(224, x_159)
+}
+}
+
+			}
+		}
+	}
+		

@@ -1,0 +1,37 @@
+
+	object "main" {
+		code {
+			codecopy(0, dataoffset("deployed"), datasize("deployed"))
+			return(0, datasize("deployed"))
+		}
+		object "deployed" {
+			code {
+				{
+{
+let x_2, x_3, x_4, x_5 := foo_m_0(0x1ffffffffffffffff, 0x1fffffffffffffffff, 0x1ffffffffffffffffff)
+{
+let x_11, x_12, x_13, x_14 := foo_m_0(0x1fffffffffffffffffffffffff, 0x1ffffffffffffffffffffffffff, 0x1fffffffffffffffffffffffffff)
+for { let i_0 := 0 } lt(i_0, 0x60) { i_0 := add(i_0, 0x20) } {
+mstore8(0x1ffffffffffffffffffffffffffff, 0x1fffffffffffffffffffffffffffff)
+}
+}
+let x_22, x_23, x_24, x_25 := foo_m_0(0x1ffffffffffffffffffffffffffffffffffff, 0x1fffffffffffffffffffffffffffffffffffff, 0x1ffffffffffffffffffffffffffffffffffffff)
+let x_31, x_32, x_33, x_34 := foo_m_0(0x1fffffffffffffffffffffffffffffffffffffffffffff, 0x1ffffffffffffffffffffffffffffffffffffffffffffff, call(0x1fffffffffffffffffffffffffffffffffffffffffffffff, 0x1ffffffffffffffffffffffffffffffffffffffffffffffff, 0x1fffffffffffffffffffffffffffffffffffffffffffffffff, calldataload(0x1ffffffffffffffffffffffffffffffffffffffffffffffffff), 0x1fffffffffffffffffffffffffffffffffffffffffffffffffff, 0x1ffffffffffffffffffffffffffffffffffffffffffffffffffff, 0x1fffffffffffffffffffffffffffffffffffffffffffffffffffff))
+mstore(0x1ffffffffffffffffffffffffffffffffffffffffffffffffffffff, 0x1fffffffffffffffffffffffffffffffffffffffffffffffffffffff)
+let x_48, x_49, x_50, x_51 := foo_m_0(0x1ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff, 0x1fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff, 0x2)
+function foo_m_0(x_56, x_57, x_58) -> x_59, x_60, x_61, x_62
+{
+sstore(0x2000000000, 0x20000000000)
+sstore(0x200000000000, div(x_58,0x2000000000000))
+mstore(0x20000000000000, addmod(0x200000000000000, 0x2000000000000000, origin()))
+sstore(slt(0x20000000000000000,0x200000000000000000), xor(x_56,0x2000000000000000000))
+}
+let x_75, x_76, x_77, x_78 := foo_m_0(0x20000000000000000000000000, 0x200000000000000000000000000, 0x2000000000000000000000000000)
+let x_84, x_85, x_86, x_87 := foo_m_0(0x20000000000000000000000000000000000, 0x200000000000000000000000000000000000, 0x2000000000000000000000000000000000000)
+}
+}
+
+			}
+		}
+	}
+		

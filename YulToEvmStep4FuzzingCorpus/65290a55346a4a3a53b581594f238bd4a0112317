@@ -1,0 +1,31 @@
+
+	object "main" {
+		code {
+			codecopy(0, dataoffset("deployed"), datasize("deployed"))
+			return(0, datasize("deployed"))
+		}
+		object "deployed" {
+			code {
+				{
+{
+for {
+mstore(0xfff, 0xffff)
+mstore(0xfffff, mload(call(0xffffff, create(0xfffffff, 648518346341351424, 0xffffffff), 0xfffffffff, 0xffffffffff, 0xfffffffffff, 0xffffffffffff, 0xfffffffffffff)))
+mstore(not(0xffffffffffffff), 0xfffffffffffffff)
+mstore(not(0xffffffffffffffff), not(number()))
+mstore(mload(0xfffffffffffffffff), mload(0xffffffffffffffffff))
+mstore(0xfffffffffffffffffff, create(0xffffffffffffffffffff, 648518346341351424, 0xfffffffffffffffffffff))
+mstore(0xffffffffffffffffffffff, mload(0xfffffffffffffffffffffff))
+mstore(0xffffffffffffffffffffffff, 0xfffffffffffffffffffffffff)
+}
+lt(0x0,0x0){}
+{
+continue
+}
+}
+}
+
+			}
+		}
+	}
+		

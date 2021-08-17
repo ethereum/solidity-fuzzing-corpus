@@ -1,0 +1,47 @@
+
+	object "main" {
+		code {
+			codecopy(0, dataoffset("deployed"), datasize("deployed"))
+			return(0, datasize("deployed"))
+		}
+		object "deployed" {
+			code {
+				{
+{
+let x_0 := 0x3ffffffffffffffffffffffffffffffffffffffffffff
+for { let i_0 := 0 } lt(i_0, 0x60) { i_0 := add(i_0, 0x20) } {
+switch 0x3fffffffffffffffffffffffffffffffffffffffffffff
+case 0x3ffffffffffffffffffffffffffffffffffffffffffffff {
+}
+case 0x3fffffffffffffffffffffffffffffffffffffffffffffff {
+break
+}
+case 0x3ffffffffffffffffffffffffffffffffffffffffffffffff {
+mstore(0x3fffffffffffffffffffffffffffffffffffffffffffffffff, x_0)
+switch 0x3ffffffffffffffffffffffffffffffffffffffffffffffffff
+case 0x3fffffffffffffffffffffffffffffffffffffffffffffffffff {
+sstore(0x3ffffffffffffffffffffffffffffffffffffffffffffffffffff, 0x3fffffffffffffffffffffffffffffffffffffffffffffffffffff)
+continue
+}
+default {
+}
+break
+}
+default {
+if 0x3ffffffffffffffffffffffffffffffffffffffffffffffffffffff {
+break
+extcodecopy(0x3fffffffffffffffffffffffffffffffffffffffffffffffffffffff, 0x3ffffffffffffffffffffffffffffffffffffffffffffffffffffffff, 0x3fffffffffffffffffffffffffffffffffffffffffffffffffffffffff, 0x3ffffffffffffffffffffffffffffffffffffffffffffffffffffffffff)
+continue
+}
+break
+}
+break
+continue
+}
+}
+}
+
+			}
+		}
+	}
+		

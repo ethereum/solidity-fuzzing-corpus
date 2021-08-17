@@ -1,0 +1,28 @@
+
+	object "main" {
+		code {
+			codecopy(0, dataoffset("deployed"), datasize("deployed"))
+			return(0, datasize("deployed"))
+		}
+		object "deployed" {
+			code {
+				{
+{
+mstore("", "")
+log1(0x7ffffffffffffffffffffffffffffffffffffffffffffffffffffffff, extcodesize(0x7fffffffffffffffffffffffffffffffffffffffffffffffffffffffff), 0x7ffffffffffffffffffffffffffffffffffffffffffffffffffffffffff)
+switch keccak256("",0x7fffffffffffffffffffffffffffffffffffffffffffffffffffffffffff)
+case 0x7ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff {}
+case "r" {}
+case "" {}
+switch keccak256("",gas())
+case 0x7fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff {}
+case "r" {}
+case "" {}
+mstore(extcodesize(0x7ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff), 0x7fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff)
+}
+}
+
+			}
+		}
+	}
+		

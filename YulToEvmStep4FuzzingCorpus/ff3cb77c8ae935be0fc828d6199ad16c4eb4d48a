@@ -1,0 +1,50 @@
+
+	object "main" {
+		code {
+			codecopy(0, dataoffset("deployed"), datasize("deployed"))
+			return(0, datasize("deployed"))
+		}
+		object "deployed" {
+			code {
+				{
+{
+let x_3, x_4, x_5, x_6 := foo_m_0(0x3fffffffffffffffffffffffffffffffffffffffffffffffff, 0x3ffffffffffffffffffffffffffffffffffffffffffffffffff, 0x3fffffffffffffffffffffffffffffffffffffffffffffffffff, create(0x3ffffffffffffffffffffffffffffffffffffffffffffffffffff, 0x3fffffffffffffffffffffffffffffffffffffffffffffffffffff, 0x3ffffffffffffffffffffffffffffffffffffffffffffffffffffff))
+let x_15, x_16, x_17, x_18 := foo_m_0(0x3fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff, 0x3ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff, 0x3fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff, mod(x_6,x_6))
+switch 0x4
+case 0x40 {}
+default {
+for { let i_0 := 0 } lt(i_0, 0x60) { i_0 := add(i_0, 0x20) } {
+}
+}
+function foo_m_0(x_25, x_26, x_27, x_28) -> x_29, x_30, x_31, x_32
+{
+sstore(mod(x_25,x_28), 0x400000000000)
+let x_36 := foo_s_1(0x4000000000000000, foo_s_1(0x40000000000000000, 0x400000000000000000, x_25, 0x4000000000000000000)
+, 0x40000000000000000000, 0x400000000000000000000)
+}
+let x_44, x_45, x_46, x_47 := foo_m_0(mload(0),0x4000000000000000000000000000000,sload(160),calldataload(224))
+sstore(288, x_44)
+sstore(32, x_45)
+sstore(96, x_46)
+sstore(160, x_47)
+function foo_s_1(x_66, x_67, x_68, x_69) -> x_70
+{
+sstore(mod(x_67,x_69), 0x40000000000000000000000000000000000000000000000000)
+let x_74 := foo_s_1(0x400000000000000000000000000000000000000000000000000000, foo_s_1(0x4000000000000000000000000000000000000000000000000000000, 0x40000000000000000000000000000000000000000000000000000000, x_67, 0x400000000000000000000000000000000000000000000000000000000)
+, 0x4000000000000000000000000000000000000000000000000000000000, 0x40000000000000000000000000000000000000000000000000000000000)
+}
+let x_82 := foo_s_1(calldataload(160),sload(224),calldataload(288),sload(32))
+sstore(96, x_82)
+pop(x_3)
+let x_95, x_96, x_97, x_98 := foo_m_0(0x400000000000000000000000000000000000000000000000001, 0x40000000000000000000000000000000000000000000000001, 0x4000000000000000000000000000000000000000000000001, 0x400000000000000000000000000000000000000000000001)
+{
+switch 0x40000000000000000000000000000000000000000000001
+case "" {}
+}
+}
+}
+
+			}
+		}
+	}
+		

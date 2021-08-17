@@ -1,0 +1,27 @@
+
+	object "main" {
+		code {
+			codecopy(0, dataoffset("deployed"), datasize("deployed"))
+			return(0, datasize("deployed"))
+		}
+		object "deployed" {
+			code {
+				{
+{
+function foo_n_0()
+{
+function foo_s_2() -> x_3
+{
+}
+let x_5 := foo_s_2()
+mstore(256, x_5)
+}
+foo_n_0()
+calldatacopy(sdiv(0x1fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff,and(0x2,0x20)), sdiv(0x200,sdiv(0x2000,0x20000)), sdiv(0x200000,sdiv(0x2000000,sdiv(0x20000000,0))))
+}
+}
+
+			}
+		}
+	}
+		

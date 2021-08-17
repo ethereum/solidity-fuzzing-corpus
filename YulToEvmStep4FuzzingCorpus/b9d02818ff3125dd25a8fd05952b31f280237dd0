@@ -1,0 +1,38 @@
+
+	object "main" {
+		code {
+			codecopy(0, dataoffset("deployed"), datasize("deployed"))
+			return(0, datasize("deployed"))
+		}
+		object "deployed" {
+			code {
+				{
+{
+let x_0 := 0x7ffffffffffff
+for {
+let x_2 := 0x7ffffffffffffff
+}
+sload(0x0){
+{
+}
+for {
+}
+call(0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0){}
+{
+switch 0x7fffffffffffffff
+default {
+continue
+}
+extcodecopy(x_0, 0x7ffffffffffffffff, 0x7fffffffffffffffff, 0x7ffffffffffffffffff)
+}
+}
+{
+mstore(create(0x7fffffffffffffffffff, addmod(0x7ffffffffffffffffffff, 0x7fffffffffffffffffffff, coinbase()), 0x7ffffffffffffffffffffff), 0x7fffffffffffffffffffffff)
+}
+}
+}
+
+			}
+		}
+	}
+		

@@ -1,0 +1,42 @@
+
+	object "main" {
+		code {
+			codecopy(0, dataoffset("deployed"), datasize("deployed"))
+			return(0, datasize("deployed"))
+		}
+		object "deployed" {
+			code {
+				{
+{
+function foo_m_0() -> x_3, x_4, x_5, x_6
+{
+selfdestruct(calldataload(x_4))
+}
+function foo_m_1() -> x_8, x_9, x_10, x_11
+{
+{
+function foo_m_13() -> x_16, x_17, x_18, x_19
+{
+selfdestruct(calldataload(x_17))
+}
+function foo_m_14() -> x_21, x_22, x_23, x_24
+{
+selfdestruct(calldataload(x_23))
+}
+function foo_m_15() -> x_26, x_27, x_28, x_29
+{
+selfdestruct(calldataload(x_28))
+}
+}
+}
+function foo_m_2() -> x_31, x_32, x_33, x_34
+{
+selfdestruct(calldataload(x_33))
+}
+}
+}
+
+			}
+		}
+	}
+		

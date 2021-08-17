@@ -1,0 +1,39 @@
+
+	object "main" {
+		code {
+			codecopy(0, dataoffset("deployed"), datasize("deployed"))
+			return(0, datasize("deployed"))
+		}
+		object "deployed" {
+			code {
+				{
+{
+function foo_n_0(x_1, x_2, x_3)
+{
+sstore(div(0x3fff,0x3ffff), 0x3fffff)
+sstore(div(x_1,0x3ffffff), 0x3fffffff)
+}
+{
+mstore(0x3ffffffff, 0x3fffffffff)
+}
+foo_n_0(0x3fffffffffff, 0x3ffffffffffff, 0x3fffffffffffff)
+switch mload(0x3ffffffffffffff)
+case 0x3fffffffffffffff {
+}
+case 0x3ffffffffffffffff {
+}
+case 0x3fffffffffffffffff {
+}
+case 0x03ffffffffffffffffff {
+}
+case 0 {
+mstore(0x3fffffffffffffffffff, mload(0x3ffffffffffffffffffff))
+}
+foo_n_0(0x3ffffffffffffffffffffff, 0x3fffffffffffffffffffffff, 0x3ffffffffffffffffffffffff)
+}
+}
+
+			}
+		}
+	}
+		

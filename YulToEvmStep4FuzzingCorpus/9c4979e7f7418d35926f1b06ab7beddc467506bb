@@ -1,0 +1,43 @@
+
+	object "main" {
+		code {
+			codecopy(0, dataoffset("deployed"), datasize("deployed"))
+			return(0, datasize("deployed"))
+		}
+		object "deployed" {
+			code {
+				{
+{
+let x_2, x_3, x_4 := foo_m_0(0x4000000000000000000000000000000000000000000000000000000001, 0x400000000000000000000000000000000000000000000000000000001, 0x40000000000000000000000000000000000000000000000000000001)
+{
+let x_10, x_11, x_12 := foo_m_0(0x40000000000000000000000000000000000000000000000001, 0x4000000000000000000000000000000000000000000000001, 0x400000000000000000000000000000000000000000000001)
+}
+let x_18, x_19, x_20 := foo_m_0(0x400000000000000000000000000000000000000001, 0x40000000000000000000000000000000000000001, 0x4000000000000000000000000000000000000001)
+{
+let x_26, x_27, x_28 := foo_m_0(0x4000000000000000000000000000000001, 0x400000000000000000000000000000001, 0x40000000000000000000000000000001)
+let x_34, x_35, x_36 := foo_m_0(0x40000000000000000000000001, 0x4000000000000000000000001, 0x400000000000000000000001)
+}
+let x_42, x_43, x_44 := foo_m_0(0x400000000000000001, 0x40000000000000001, 0x4000000000000001)
+let x_50, x_51, x_52 := foo_m_0(0x4000000001, 0x400000001, 0x40000001)
+let x_58, x_59, x_60 := foo_m_0(0x41, msize(), 0x5)
+let x_65, x_66, x_67 := foo_m_0(0x7fffff, 0x7ffffff, 0x7fffffff)
+let x_73, x_74, x_75 := foo_m_0(0x7fffffffffffff, 0x7ffffffffffffff, 0x7fffffffffffffff)
+function foo_m_0(x_80, x_81, x_82) -> x_83, x_84, x_85
+{
+sstore(mod(x_80,0x7fffffffffffffffffffffff), mod(x_80,0x7ffffffffffffffffffffffff))
+for { let i_0 := 0 } lt(i_0, 0x60) { i_0 := add(i_0, 0x20) } {
+}
+sstore(mod(x_80,0x7fffffffffffffffffffffffff), slt(0x7ffffffffffffffffffffffffff,0x7fffffffffffffffffffffffffff))
+}
+let x_92, x_93, x_94 := foo_m_0(calldataload(224),sload(288),calldataload(32))
+sstore(96, x_92)
+sstore(160, x_93)
+sstore(224, x_94)
+let x_109, x_110, x_111 := foo_m_0(0x7fffffffffffffffffffffffffffffffffffffffffffffffff, 0x7ffffffffffffffffffffffffffffffffffffffffffffffffff, 0x7fffffffffffffffffffffffffffffffffffffffffffffffffff)
+}
+}
+
+			}
+		}
+	}
+		

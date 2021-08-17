@@ -1,0 +1,134 @@
+
+	object "main" {
+		code {
+			codecopy(0, dataoffset("deployed"), datasize("deployed"))
+			return(0, datasize("deployed"))
+		}
+		object "deployed" {
+			code {
+				{
+{
+for { let i_0 := 0 } lt(i_0, 0x60) { i_0 := add(i_0, 0x20) } {
+function foo_m_1(x_6, x_7, x_8, x_9) -> x_10, x_11, x_12, x_13
+{
+}
+let x_15, x_16, x_17, x_18 := foo_m_1(calldataload(32),sload(96),calldataload(160),sload(224))
+sstore(288, x_15)
+sstore(32, x_16)
+sstore(96, x_17)
+sstore(160, x_18)
+function foo_m_2(x_36, x_37, x_38, x_39) -> x_40, x_41, x_42, x_43
+{
+}
+let x_45, x_46, x_47, x_48 := foo_m_2(sload(32),calldataload(96),sload(160),calldataload(224))
+sstore(288, x_45)
+sstore(32, x_46)
+sstore(96, x_47)
+sstore(160, x_48)
+function foo_m_3(x_66, x_67, x_68, x_69) -> x_70, x_71, x_72, x_73
+{
+function foo_m_75(x_76, x_77, x_78, x_79) -> x_80, x_81, x_82, x_83
+{
+}
+let x_85, x_86, x_87, x_88 := foo_m_75(sload(32),calldataload(96),sload(160),calldataload(224))
+sstore(288, x_85)
+sstore(32, x_86)
+sstore(96, x_87)
+sstore(160, x_88)
+}
+let x_106, x_107, x_108, x_109 := foo_m_3(0xfffffffffffffffffffffffffffffffffffffffff,sload(160),calldataload(224),sload(288))
+sstore(32, x_106)
+sstore(96, x_107)
+sstore(160, x_108)
+sstore(224, x_109)
+function foo_m_4(x_128, x_129, x_130, x_131) -> x_132, x_133, x_134, x_135
+{
+}
+let x_137, x_138, x_139, x_140 := foo_m_4(sload(96),calldataload(160),sload(224),calldataload(288))
+sstore(32, x_137)
+sstore(96, x_138)
+sstore(160, x_139)
+sstore(224, x_140)
+function foo_m_5(x_158, x_159, x_160) -> x_161, x_162, x_163, x_164
+{
+function foo_m_166(x_167, x_168, x_169, x_170) -> x_171, x_172, x_173, x_174
+{
+function foo_m_176(x_177, x_178, x_179, x_180) -> x_181, x_182, x_183, x_184
+{
+}
+let x_186, x_187, x_188, x_189 := foo_m_176(0x100000000000000000000000000000000000000000000000,sload(160),calldataload(224),sload(288))
+sstore(32, x_186)
+sstore(96, x_187)
+sstore(160, x_188)
+sstore(224, x_189)
+}
+let x_208, x_209, x_210, x_211 := foo_m_166(mload(128),0x100000000000000000000000000000000000000000000000000000001,sload(288),calldataload(32))
+sstore(96, x_208)
+sstore(160, x_209)
+sstore(224, x_210)
+sstore(288, x_211)
+}
+let x_230, x_231, x_232, x_233 := foo_m_5(0x1000000000000000000000000000000000001,sload(288),calldataload(32))
+sstore(96, x_230)
+sstore(160, x_231)
+sstore(224, x_232)
+sstore(288, x_233)
+}
+function foo_m_0(x_250, x_251, x_252, x_253) -> x_254, x_255, x_256, x_257
+{
+}
+let x_259, x_260, x_261, x_262 := foo_m_0(calldataload(160),sload(224),calldataload(288),sload(32))
+sstore(96, x_259)
+sstore(160, x_260)
+sstore(224, x_261)
+sstore(288, x_262)
+for { let i_1 := 0 } lt(i_1, 0x60) { i_1 := add(i_1, 0x20) } {
+let x_283, x_284, x_285, x_286 := foo_m_0(0x1ffffffffffffffff, 0x1fffffffffffffffff, 0x1ffffffffffffffffff, 0x1fffffffffffffffffff)
+function foo_m_280(x_292, x_293, x_294, x_295) -> x_296, x_297, x_298, x_299
+{
+function foo_m_301(x_302, x_303, x_304, x_305) -> x_306, x_307, x_308, x_309
+{
+}
+let x_311, x_312, x_313, x_314 := foo_m_301(calldataload(224),sload(288),calldataload(32),sload(96))
+sstore(160, x_311)
+sstore(224, x_312)
+sstore(288, x_313)
+sstore(32, x_314)
+}
+let x_332, x_333, x_334, x_335 := foo_m_280(mload(256),0x200000,sload(96),calldataload(160))
+sstore(224, x_332)
+sstore(288, x_333)
+sstore(32, x_334)
+sstore(96, x_335)
+function foo_m_281(x_354, x_355, x_356, x_357) -> x_358, x_359, x_360, x_361
+{
+function foo_m_363(x_364, x_365, x_366, x_367) -> x_368, x_369, x_370, x_371
+{
+function foo_m_373(x_374, x_375, x_376, x_377) -> x_378, x_379, x_380, x_381
+{
+}
+let x_383, x_384, x_385, x_386 := foo_m_373(calldataload(288),sload(32),calldataload(96),sload(160))
+sstore(224, x_383)
+sstore(288, x_384)
+sstore(32, x_385)
+sstore(96, x_386)
+}
+let x_404, x_405, x_406, x_407 := foo_m_363(mload(0),0x200000000000000000000000000000000000000000000000001,sload(160),calldataload(224))
+sstore(288, x_404)
+sstore(32, x_405)
+sstore(96, x_406)
+sstore(160, x_407)
+}
+let x_426, x_427, x_428, x_429 := foo_m_281(0x2000000000000000000000000000001,sload(160),calldataload(224),sload(288))
+sstore(32, x_426)
+sstore(96, x_427)
+sstore(160, x_428)
+sstore(224, x_429)
+}
+}
+}
+
+			}
+		}
+	}
+		

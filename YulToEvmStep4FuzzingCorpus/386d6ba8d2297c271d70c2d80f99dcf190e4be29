@@ -1,0 +1,38 @@
+
+	object "main" {
+		code {
+			codecopy(0, dataoffset("deployed"), datasize("deployed"))
+			return(0, datasize("deployed"))
+		}
+		object "deployed" {
+			code {
+				{
+{
+let x_0 := 0x3ffffffffffffffffffffffffffffffffffffffffffffffffffffff
+for {}
+x_0{
+x_0 := 0x3fffffffffffffffffffffffffffffffffffffffffffffffffffffff
+selfdestruct(0x3ffffffffffffffffffffffffffffffffffffffffffffffffffffffff)
+}
+{
+break
+}
+for {}
+add(0x0,x_0){
+x_0 := 0x3fffffffffffffffffffffffffffffffffffffffffffffffffffffffff
+selfdestruct(0x3ffffffffffffffffffffffffffffffffffffffffffffffffffffffffff)
+}
+{
+switch 0x3fffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
+default {
+break
+}
+break
+}
+}
+}
+
+			}
+		}
+	}
+		

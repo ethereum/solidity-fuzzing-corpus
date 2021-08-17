@@ -1,0 +1,73 @@
+
+	object "main" {
+		code {
+			codecopy(0, dataoffset("deployed"), datasize("deployed"))
+			return(0, datasize("deployed"))
+		}
+		object "deployed" {
+			code {
+				{
+{
+let x_2, x_3
+function foo_m_0(x_4, x_5) -> x_6, x_7
+{
+function foo_m_9(x_10, x_11) -> x_12, x_13
+{
+function foo_m_15(x_16, x_17) -> x_18, x_19
+{
+function foo_m_21(x_22) -> x_23, x_24
+{
+function foo_m_26() -> x_27, x_28
+{
+function foo_m_30(x_31, x_32) -> x_33, x_34, x_35, x_36
+{
+}
+let x_38, x_39, x_40, x_41 := foo_m_30(0x1fffffff,sload(224))
+sstore(288, x_38)
+sstore(32, x_39)
+sstore(96, x_40)
+sstore(160, x_41)
+}
+let x_56, x_57 := foo_m_26()
+mstore(0, x_56)
+mstore(64, x_57)
+}
+let x_63, x_64 := foo_m_21(sload(224))
+sstore(288, x_63)
+sstore(32, x_64)
+calldatacopy(create(0x1ffffffffffffffffffffffffffffffffff, 0x1fffffffffffffffffffffffffffffffffff, 0x1ffffffffffffffffffffffffffffffffffff), 0x1fffffffffffffffffffffffffffffffffffff, 0x1ffffffffffffffffffffffffffffffffffffff)
+}
+let x_77, x_78 := foo_m_15(calldataload(32),sload(96))
+sstore(160, x_77)
+sstore(224, x_78)
+let x_88 := x_77
+}
+let x_89, x_90 := foo_m_9(calldataload(96),sload(160))
+sstore(224, x_89)
+sstore(288, x_90)
+extcodecopy(0x1ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff, 0x1fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff, 0x2, 0x20)
+}
+let x_104, x_105 := foo_m_0(0x20000000,sload(32))
+sstore(96, x_104)
+sstore(160, x_105)
+function foo_m_1() -> x_116, x_117, x_118, x_119
+{
+function foo_m_121(x_122, x_123) -> x_124, x_125
+{
+}
+let x_127, x_128 := foo_m_121(sload(32),calldataload(96))
+sstore(160, x_127)
+sstore(224, x_128)
+}
+let x_138, x_139, x_140, x_141 := foo_m_1()
+mstore(128, x_138)
+mstore(192, x_139)
+mstore(256, x_140)
+mstore(0, x_141)
+}
+}
+
+			}
+		}
+	}
+		

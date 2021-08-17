@@ -1,0 +1,27 @@
+
+	object "main" {
+		code {
+			codecopy(0, dataoffset("deployed"), datasize("deployed"))
+			return(0, datasize("deployed"))
+		}
+		object "deployed" {
+			code {
+				{
+{
+mstore(not(xor(0x100000000000000000000000000000000000000000000000000000001,calldatasize())), 0x10000000000000000000000000000000000000000000000000000001)
+function foo_m_0() -> x_3, x_4, x_5, x_6
+{
+}
+let x_8, x_9, x_10, x_11 := foo_m_0()
+mstore(128, x_8)
+mstore(192, x_9)
+mstore(256, x_10)
+mstore(0, x_11)
+mstore(not(iszero(0x1000000000000000000000000000000000001)), 0x100000000000000000000000000000000001)
+}
+}
+
+			}
+		}
+	}
+		

@@ -1,0 +1,55 @@
+
+	object "main" {
+		code {
+			codecopy(0, dataoffset("deployed"), datasize("deployed"))
+			return(0, datasize("deployed"))
+		}
+		object "deployed" {
+			code {
+				{
+{
+let x_0 := 0x2000000000000000001
+for { let i_0 := 0 } lt(i_0, 0x60) { i_0 := add(i_0, 0x20) } {
+switch x_0
+case 0x200000000000000001 {
+if 0x20000000000000001 {
+invalid()
+}
+}
+default {
+if 0x2000000000000001 {
+invalid()
+}
+}
+let x_5 := 0x20000000000001
+continue
+}
+let x_7 := 0x200000000001
+switch 0x20000000001
+default {
+if 0x2000000001 {
+invalid()
+}
+}
+for { let i_1 := 0 } lt(i_1, 0x60) { i_1 := add(i_1, 0x20) } {
+switch x_0
+case 0x200000001 {
+if 0x20000001 {
+invalid()
+}
+}
+default {
+if 0x2000001 {
+invalid()
+}
+}
+let x_14 := 0x20001
+continue
+}
+}
+}
+
+			}
+		}
+	}
+		

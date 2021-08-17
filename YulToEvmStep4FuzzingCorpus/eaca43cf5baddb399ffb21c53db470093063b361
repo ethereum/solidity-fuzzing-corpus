@@ -1,0 +1,23 @@
+
+	object "main" {
+		code {
+			codecopy(0, dataoffset("deployed"), datasize("deployed"))
+			return(0, datasize("deployed"))
+		}
+		object "deployed" {
+			code {
+				{
+{
+mstore(not(mulmod(0xfff, mulmod(0xffff, 0xfffff, 0xffffff), 0xfffffff)), 0xffffffff)
+switch mulmod(0xfffffffff, 0xffffffffff, 0xfffffffffff)
+case 0xffffffffffff {}
+case 0xfffffffffffff {
+mstore(not(mulmod(0xffffffffffffff, 0xfffffffffffffff, 0xffffffffffffffff)), 0xfffffffffffffffff)
+}
+}
+}
+
+			}
+		}
+	}
+		

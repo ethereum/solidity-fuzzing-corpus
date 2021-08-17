@@ -1,0 +1,19 @@
+
+	object "main" {
+		code {
+			codecopy(0, dataoffset("deployed"), datasize("deployed"))
+			return(0, datasize("deployed"))
+		}
+		object "deployed" {
+			code {
+				{
+{
+revert(addmod(0x4000001, shr(0x400001,shr(0x40001,0x4001)), shr(0x401,0x41)), addmod(0x5, shr(0x7,0x7f), shr(0x7ff,0x7fff)))
+pop(0x7ffff)
+}
+}
+
+			}
+		}
+	}
+		

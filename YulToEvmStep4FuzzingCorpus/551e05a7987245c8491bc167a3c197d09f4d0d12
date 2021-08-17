@@ -1,0 +1,30 @@
+
+	object "main" {
+		code {
+			codecopy(0, dataoffset("deployed"), datasize("deployed"))
+			return(0, datasize("deployed"))
+		}
+		object "deployed" {
+			code {
+				{
+{
+for {}
+gt(gas(),0){
+extcodecopy(gas(), 0x5, 0x7, 0x7f)
+}
+{
+for {}
+gt(gas(),0){
+extcodecopy(gas(), 0x7ff, 0x7fff, 0x7ffff)
+}
+{
+extcodecopy(gt(msize(),false), gt(gas(),0), gt(gas(),0), gt(gas(),0))
+}
+}
+}
+}
+
+			}
+		}
+	}
+		

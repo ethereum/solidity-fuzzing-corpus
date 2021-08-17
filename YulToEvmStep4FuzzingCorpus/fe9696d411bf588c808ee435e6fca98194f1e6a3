@@ -1,0 +1,21 @@
+
+	object "main" {
+		code {
+			codecopy(0, dataoffset("deployed"), datasize("deployed"))
+			return(0, datasize("deployed"))
+		}
+		object "deployed" {
+			code {
+				{
+{
+let x_0 := 0x7fffffffff
+codecopy(0x7ffffffffff, 0x7fffffffffff, mulmod(0x7ffffffffffff, not(x_0), not(x_0)))
+codecopy(mulmod(0x7fffffffffffff, not(x_0), not(x_0)), 0x7ffffffffffffff, mulmod(0x7fffffffffffffff, not(x_0), not(x_0)))
+codecopy(0x7ffffffffffffffff, 0x7fffffffffffffffff, mulmod(0x7ffffffffffffffffff, not(x_0), not(x_0)))
+}
+}
+
+			}
+		}
+	}
+		

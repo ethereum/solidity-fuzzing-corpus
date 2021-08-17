@@ -1,0 +1,54 @@
+
+	object "main" {
+		code {
+			codecopy(0, dataoffset("deployed"), datasize("deployed"))
+			return(0, datasize("deployed"))
+		}
+		object "deployed" {
+			code {
+				{
+{
+extcodecopy(0x8000001, 0x800001, 0x80001, 0x8001)
+let x_4 := gt(0x81,0x9)
+switch mload(0xf)
+case 0xff {
+x_4 := 0xfff
+}
+case 0xffff {
+x_4 := 0xfffff
+}
+case 0xffffff {
+x_4 := 0xfffffff
+}
+case 0xffffffff {
+x_4 := 0xfffffffff
+}
+case 0xffffffffff {
+x_4 := 0xfffffffffff
+}
+case 0xffffffffffff {}
+switch mload(0xfffffffffffff)
+case 0xffffffffffffff {
+x_4 := 0xfffffffffffffff
+}
+case 0xffffffffffffffff {
+x_4 := 0xfffffffffffffffff
+}
+case 0xffffffffffffffffff {
+x_4 := 0xfffffffffffffffffff
+}
+case 0xffffffffffffffffffff {
+x_4 := 0xfffffffffffffffffffff
+}
+case 0xffffffffffffffffffffff {
+x_4 := 0xfffffffffffffffffffffff
+}
+case 0xffffffffffffffffffffffff {}
+extcodecopy(0xfffffffffffffffffffffffff, x_4, 0xffffffffffffffffffffffffff, 0xfffffffffffffffffffffffffff)
+}
+}
+
+			}
+		}
+	}
+		

@@ -1,0 +1,25 @@
+
+	object "main" {
+		code {
+			codecopy(0, dataoffset("deployed"), datasize("deployed"))
+			return(0, datasize("deployed"))
+		}
+		object "deployed" {
+			code {
+				{
+{
+function foo_m_0() -> x_1, x_2, x_3
+{
+let x_5 := sub(codesize(),0xffffffffffffffffffffffffffffffffffffffffffff)
+}
+let x_7, x_8, x_9 := foo_m_0()
+mstore(64, x_7)
+mstore(128, x_8)
+mstore(192, x_9)
+}
+}
+
+			}
+		}
+	}
+		

@@ -1,0 +1,32 @@
+
+	object "main" {
+		code {
+			codecopy(0, dataoffset("deployed"), datasize("deployed"))
+			return(0, datasize("deployed"))
+		}
+		object "deployed" {
+			code {
+				{
+{
+mstore(0x8000000000001, 0x800000000001)
+mstore(0x80000000001, 0x8000000001)
+mstore(0x800000001, 0x80000001)
+mstore(0x8000001, 0x800001)
+mstore(0x80001, 0x8001)
+mstore(0x801, 0x81)
+mstore(0x9, 0xf)
+mstore(0xff, 0xfff)
+let x_16 := 0xfffff
+mstore(msize(), msize())
+mstore(0xffffff, 0xfffffff)
+mstore(0xffffffff, 0xfffffffff)
+mstore(0xffffffffff, 0xfffffffffff)
+mstore(0xffffffffffff, 0xfffffffffffff)
+mstore(0xffffffffffffff, 0xfffffffffffffff)
+}
+}
+
+			}
+		}
+	}
+		

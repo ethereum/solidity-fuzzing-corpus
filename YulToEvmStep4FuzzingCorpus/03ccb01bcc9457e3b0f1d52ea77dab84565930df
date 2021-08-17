@@ -1,0 +1,52 @@
+
+	object "main" {
+		code {
+			codecopy(0, dataoffset("deployed"), datasize("deployed"))
+			return(0, datasize("deployed"))
+		}
+		object "deployed" {
+			code {
+				{
+{
+let x_1 := blockhash(0x200000000000000001)
+let x_4, x_5, x_6, x_7 := foo_m_0()
+function foo_m_0() -> x_9, x_10, x_11, x_12
+{
+switch gas()
+case 0 {}
+case 0x200001 {}
+case 0x08 {}
+case 0x20001 {}
+case 0x2001 {
+let x_17, x_18
+}
+case 0x3 {}
+case 0x3f {}
+case 0x3ff {}
+case 0x3fff {}
+case 0x3ffff {}
+case 0x3fffff {}
+case 0x3ffffff {}
+case 0x3fffffff {}
+case 0x3ffffffff {}
+case 0x3fffffffff {}
+case 0x3ffffffffff {}
+case 0x3fffffffffff {}
+case 0x3ffffffffffff {}
+case 0x3fffffffffffff {}
+case 0x3ffffffffffffff {}
+case 0x3fffffffffffffff {
+leave
+}
+case 0x3ffffffffffffffff {}
+default {
+x_11 := 0x3fffffffffffffffff
+}
+}
+}
+}
+
+			}
+		}
+	}
+		

@@ -1,0 +1,64 @@
+
+	object "main" {
+		code {
+			codecopy(0, dataoffset("deployed"), datasize("deployed"))
+			return(0, datasize("deployed"))
+		}
+		object "deployed" {
+			code {
+				{
+{
+for { let i_0 := 0 } lt(i_0, 0x60) { i_0 := add(i_0, 0x20) } {
+let x_4, x_5, x_6, x_7 := foo_m_0(0x40000000000000000000001, 0x4000000000000000000001, 0x400000000000000000001, 0x40000000000000000001)
+function foo_m_0(x_13, x_14, x_15, x_16) -> x_17, x_18, x_19, x_20
+{
+}
+let x_22, x_23, x_24, x_25 := foo_m_0(0x401,sload(32),calldataload(96),sload(160))
+sstore(224, x_22)
+sstore(288, x_23)
+sstore(32, x_24)
+sstore(96, x_25)
+function foo_m_1() -> x_44, x_45, x_46, x_47
+{
+mstore(0x7fffffffffffffffff, 0x7ffffffffffffffffff)
+}
+let x_51, x_52, x_53, x_54 := foo_m_1()
+sstore(224, x_51)
+sstore(288, x_52)
+sstore(32, x_53)
+sstore(96, x_54)
+function foo_m_2(x_64, x_65, x_66) -> x_67, x_68, x_69, x_70
+{
+calldatacopy(0x7ffffffffffffffffffffffffffffffffffffffff, 0x7fffffffffffffffffffffffffffffffffffffffff, 0x7ffffffffffffffffffffffffffffffffffffffffff)
+mstore(0x7fffffffffffffffffffffffffffffffffffffffffff, 0x7ffffffffffffffffffffffffffffffffffffffffffff)
+}
+}
+for { let i_1 := 0 } lt(i_1, 0x60) { i_1 := add(i_1, 0x20) } {
+let x_80, x_81, x_82, x_83 := foo_m_78(0x7fffffffffffffffffffffffffffffffffffffffffffffffffffff, 0x7ffffffffffffffffffffffffffffffffffffffffffffffffffffff, 0x7fffffffffffffffffffffffffffffffffffffffffffffffffffffff, 0x7ffffffffffffffffffffffffffffffffffffffffffffffffffffffff)
+continue
+function foo_m_77() -> x_89, x_90, x_91, x_92
+{
+mstore(0x7ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff, 0x7fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff)
+}
+let x_96, x_97, x_98, x_99 := foo_m_77()
+mstore(64, x_96)
+mstore(128, x_97)
+mstore(192, x_98)
+mstore(256, x_99)
+function foo_m_78(x_109, x_110, x_111, x_112) -> x_113, x_114, x_115, x_116
+{
+mstore(0x80000000000000000000000, x_110)
+}
+let x_119, x_120, x_121, x_122 := foo_m_78(calldataload(160),sload(224),calldataload(288),sload(32))
+sstore(96, x_119)
+sstore(160, x_120)
+sstore(224, x_121)
+sstore(288, x_122)
+}
+}
+}
+
+			}
+		}
+	}
+		

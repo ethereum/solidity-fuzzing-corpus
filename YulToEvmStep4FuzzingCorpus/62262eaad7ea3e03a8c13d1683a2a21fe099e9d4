@@ -1,0 +1,18 @@
+
+	object "main" {
+		code {
+			codecopy(0, dataoffset("deployed"), datasize("deployed"))
+			return(0, datasize("deployed"))
+		}
+		object "deployed" {
+			code {
+				{
+{
+extcodecopy(lt(0xff,0xfff), lt(0xffff,0xfffff), lt(add(0xffffff,coinbase()),lt(add(0xfffffff,coinbase()),lt(add(0xffffffff,coinbase()),lt(add(0xfffffffff,coinbase()),sgt(0xffffffffff,add(0xfffffffffff,0xffffffffffff)))))), lt(0xfffffffffffff,0xffffffffffffff))
+}
+}
+
+			}
+		}
+	}
+		

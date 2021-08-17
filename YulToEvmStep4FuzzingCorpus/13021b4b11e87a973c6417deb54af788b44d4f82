@@ -1,0 +1,28 @@
+
+	object "main" {
+		code {
+			codecopy(0, dataoffset("deployed"), datasize("deployed"))
+			return(0, datasize("deployed"))
+		}
+		object "deployed" {
+			code {
+				{
+{
+function foo_s_0(x_1) -> x_2
+{
+x_2 := call(true, 0xfffffffffffffffffffffffffffffffffffffffffffffffffff, foo_s_0(0xffffffffffffffffffffffffffffffffffffffffffffffffffff)
+, mulmod(0xfffffffffffffffffffffffffffffffffffffffffffffffffffff, 0xffffffffffffffffffffffffffffffffffffffffffffffffffffff, 0xfffffffffffffffffffffffffffffffffffffffffffffffffffffff), 0xffffffffffffffffffffffffffffffffffffffffffffffffffffffff, 0xfffffffffffffffffffffffffffffffffffffffffffffffffffffffff, addmod(0xffffffffffffffffffffffffffffffffffffffffffffffffffffffffff, 0xfffffffffffffffffffffffffffffffffffffffffffffffffffffffffff, foo_s_0(mload(0xffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff))
+))
+}
+sstore(foo_s_0(call(true, 0xfffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff, foo_s_0(mload(0xffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff))
+, 0xfffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff, 0xffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff, 0x0, addmod(0x1, 0xffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff, foo_s_0(mload(0x1f))
+)))
+, 0x9f)
+let x_24 := foo_s_0(difficulty())
+}
+}
+
+			}
+		}
+	}
+		

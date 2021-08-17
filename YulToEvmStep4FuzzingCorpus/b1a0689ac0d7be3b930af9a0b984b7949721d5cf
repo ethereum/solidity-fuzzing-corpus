@@ -1,0 +1,49 @@
+
+	object "main" {
+		code {
+			codecopy(0, dataoffset("deployed"), datasize("deployed"))
+			return(0, datasize("deployed"))
+		}
+		object "deployed" {
+			code {
+				{
+{
+function foo_m_0(x_1, x_2, x_3, x_4) -> x_5, x_6, x_7, x_8
+{
+for { let i_0 := 0 } lt(i_0, 0x60) { i_0 := add(i_0, 0x20) } {
+log3(0x21, 0x3, create(0x3f, 0x3ff, 0x3fff), 0x3ffff, 0x3fffff)
+let x_18, x_19, x_20, x_21 := foo_m_0(0x3ffffffffffff, 0x3fffffffffffff, 0x3ffffffffffffff, 0x3fffffffffffffff)
+}
+codecopy(0x3ffffffffffffffff, balance(0x3fffffffffffffffff), 0x3ffffffffffffffffff)
+switch 0x3fffffffffffffffffff
+default {
+}
+let x_32, x_33, x_34, x_35 := foo_m_0(0x3ffffffffffffffffffffffffff, 0x3fffffffffffffffffffffffffff, 0x3ffffffffffffffffffffffffffff, 0x3fffffffffffffffffffffffffffff)
+}
+let x_41, x_42, x_43, x_44 := foo_m_0(sload(224),calldataload(288),sload(32),calldataload(96))
+sstore(160, x_41)
+sstore(224, x_42)
+sstore(288, x_43)
+sstore(32, x_44)
+codecopy(0x3fffffffffffffffffffffffffffffffffffffffffffffffffff, 0x3ffffffffffffffffffffffffffffffffffffffffffffffffffff, 0x3fffffffffffffffffffffffffffffffffffffffffffffffffffff)
+switch balance(0x3ffffffffffffffffffffffffffffffffffffffffffffffffffffff)
+case "" {
+sstore(0x3fffffffffffffffffffffffffffffffffffffffffffffffffffffff, 0x3ffffffffffffffffffffffffffffffffffffffffffffffffffffffff)
+let x_69, x_70, x_71, x_72 := foo_m_0(0x3fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff, 0x4, 0x40, 0x400)
+}
+default {
+let x_79, x_80, x_81, x_82 := foo_m_0(0x4000000000, 0x40000000000, 0x400000000000, 0x4000000000000)
+}
+let x_89, x_90, x_91, x_92 := foo_m_0(0x40000000000000000000, 0x400000000000000000000, 0x4000000000000000000000, 0x40000000000000000000000)
+calldatacopy(0x400000000000000000000000, 0x4000000000000000000000000, 0x40000000000000000000000000)
+for { let i_1 := 0 } lt(i_1, 0x60) { i_1 := add(i_1, 0x20) } {
+let x_102, x_103, x_104, x_105 := foo_m_0(0x400000000000000000000000000000000, 0x4000000000000000000000000000000000, 0x40000000000000000000000000000000000, 0x400000000000000000000000000000000000)
+}
+codecopy(0x4000000000000000000000000000000000000, 0x40000000000000000000000000000000000000, 0x400000000000000000000000000000000000000)
+}
+}
+
+			}
+		}
+	}
+		

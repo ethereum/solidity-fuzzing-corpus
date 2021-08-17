@@ -1,0 +1,27 @@
+
+	object "main" {
+		code {
+			codecopy(0, dataoffset("deployed"), datasize("deployed"))
+			return(0, datasize("deployed"))
+		}
+		object "deployed" {
+			code {
+				{
+{
+function foo_n_0()
+{
+codecopy(0x200000001, 0x20000001, 0x2000001)
+codecopy(0x200001, 0x20001, 0x2001)
+codecopy(0x201, 0x21, 0x3)
+codecopy(0x3f, 0x3ff, 0x3fff)
+codecopy(0x3ffff, 0x3fffff, 0x3ffffff)
+codecopy(8, 0x3fffffff, 0x3ffffffff)
+codecopy(0x3fffffffff, 0x3ffffffffff, 0x3fffffffffff)
+}
+}
+}
+
+			}
+		}
+	}
+		

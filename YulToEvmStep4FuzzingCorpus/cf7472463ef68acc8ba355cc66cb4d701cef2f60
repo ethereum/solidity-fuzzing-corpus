@@ -1,0 +1,23 @@
+
+	object "main" {
+		code {
+			codecopy(0, dataoffset("deployed"), datasize("deployed"))
+			return(0, datasize("deployed"))
+		}
+		object "deployed" {
+			code {
+				{
+{
+function foo_m_0(x_1, x_2, x_3, x_4) -> x_5, x_6, x_7, x_8
+{
+extcodecopy(0x7fffffffffffffffffffff, 0x7ffffffffffffffffffffff, 0x7fffffffffffffffffffffff, 0x7ffffffffffffffffffffffff)
+let x_15, x_16, x_17, x_18 := foo_m_0(0x7fffffffffffffffffffffffffffffff, 0x7ffffffffffffffffffffffffffffffff, 0x7fffffffffffffffffffffffffffffffff, 0x7ffffffffffffffffffffffffffffffffff)
+let x_25, x_26, x_27, x_28 := foo_m_0(0x7fffffffffffffffffffffffffffffffffffffffff, addmod(add("N",0x7ffffffffffffffffffffffffffffffffffffffffff), addmod(add(x_4,0x7fffffffffffffffffffffffffffffffffffffffffff), addmod(0x7ffffffffffffffffffffffffffffffffffffffffffff, 0x7fffffffffffffffffffffffffffffffffffffffffffff, 0x7ffffffffffffffffffffffffffffffffffffffffffffff), "N"), "N"), 0x7fffffffffffffffffffffffffffffffffffffffffffffff, 0x7ffffffffffffffffffffffffffffffffffffffffffffffff)
+}
+}
+}
+
+			}
+		}
+	}
+		

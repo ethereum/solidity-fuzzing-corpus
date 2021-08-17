@@ -1,0 +1,27 @@
+
+	object "main" {
+		code {
+			codecopy(0, dataoffset("deployed"), datasize("deployed"))
+			return(0, datasize("deployed"))
+		}
+		object "deployed" {
+			code {
+				{
+{
+let x_3, x_4, x_5, x_6 := foo_m_0(0xf, 0xff, 0xfff, 0xffff)
+function foo_m_0(x_12, x_13, x_14, x_15) -> x_16, x_17, x_18, x_19
+{
+sstore(0xffffffffffffff, 0xfffffffffffffff)
+}
+function foo_m_1() -> x_23, x_24, x_25, x_26
+{
+let x_29, x_30, x_31, x_32 := foo_m_0(0xfffffffffffffffffffffffffff, 0xffffffffffffffffffffffffffff, 0xfffffffffffffffffffffffffffff, 0xffffffffffffffffffffffffffffff)
+mstore(0xfffffffffffffffffffffffffffffff, mload(0xffffffffffffffffffffffffffffffff))
+}
+}
+}
+
+			}
+		}
+	}
+		

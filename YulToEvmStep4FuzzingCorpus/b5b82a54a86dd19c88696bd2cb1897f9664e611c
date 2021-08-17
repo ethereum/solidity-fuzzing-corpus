@@ -1,0 +1,26 @@
+
+	object "main" {
+		code {
+			codecopy(0, dataoffset("deployed"), datasize("deployed"))
+			return(0, datasize("deployed"))
+		}
+		object "deployed" {
+			code {
+				{
+{
+mstore(iszero(0x800000000000001), 0x80000000000001)
+mstore(0x8000000000001, 0x800000000001)
+mstore(iszero(0x80000000001), 0x8000000001)
+mstore(0x800000001, 0x80000001)
+let x_10 := foo_s_0()
+function foo_s_0() -> x_12
+{
+extcodecopy(0x81, "", and(not(""),""), 0x9)
+}
+}
+}
+
+			}
+		}
+	}
+		

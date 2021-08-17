@@ -1,0 +1,44 @@
+
+	object "main" {
+		code {
+			codecopy(0, dataoffset("deployed"), datasize("deployed"))
+			return(0, datasize("deployed"))
+		}
+		object "deployed" {
+			code {
+				{
+{
+for { let i_0 := 0 } lt(i_0, 0x60) { i_0 := add(i_0, 0x20) } {
+switch origin()
+case 0x1fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff {}
+switch gaslimit()
+case 0x1ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff {
+continue
+}
+case "" {
+for { let i_1 := 0 } lt(i_1, 0x60) { i_1 := add(i_1, 0x20) } {
+switch origin()
+case 0x1fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff {
+break
+}
+switch call(0x2, 0x20, 0x200, 0x2000, 0x20000, 0x200000, 0x2000000)
+case 0x20000000 {}
+case "" {}
+default {
+continue
+}
+break
+}
+}
+case 0x200000000 {}
+default {
+continue
+}
+}
+}
+}
+
+			}
+		}
+	}
+		

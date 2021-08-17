@@ -1,0 +1,39 @@
+
+	object "main" {
+		code {
+			codecopy(0, dataoffset("deployed"), datasize("deployed"))
+			return(0, datasize("deployed"))
+		}
+		object "deployed" {
+			code {
+				{
+{
+for {
+let x_0, x_1
+switch iszero(0x1ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff)
+case 0x1fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff {}
+case 0x1ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff {}
+case 0x1fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff {
+}
+case 0x02 {
+x_0 := 0x20
+}
+case 0x200 {
+mstore(0x2000, 0x20000)
+}
+}
+xor(0x0,xor(call(x_0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0),0x0)){
+codecopy(0x200000, 0x2000000, 0x20000000)
+}
+{
+}
+for { let i_0 := 0 } lt(i_0, 0x60) { i_0 := add(i_0, 0x20) } {
+calldatacopy(0x200000000, create(0x2000000000, 0x20000000000, 0x200000000000), 0x2000000000000)
+}
+}
+}
+
+			}
+		}
+	}
+		

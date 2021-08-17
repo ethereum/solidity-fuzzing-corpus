@@ -1,0 +1,42 @@
+
+	object "main" {
+		code {
+			codecopy(0, dataoffset("deployed"), datasize("deployed"))
+			return(0, datasize("deployed"))
+		}
+		object "deployed" {
+			code {
+				{
+{
+let x_0 := 0x7
+for {}
+add(0x0,x_0){
+x_0 := 0x7f
+selfdestruct(0x7ff)
+}
+{
+switch 0x7fff
+default {
+break
+}
+break
+}
+for {}
+add(0x0,x_0){
+x_0 := chainid()
+selfdestruct(0x7ffff)
+}
+{
+switch 0x7fffff
+default {
+break
+}
+break
+}
+}
+}
+
+			}
+		}
+	}
+		

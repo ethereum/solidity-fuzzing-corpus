@@ -1,0 +1,30 @@
+
+	object "main" {
+		code {
+			codecopy(0, dataoffset("deployed"), datasize("deployed"))
+			return(0, datasize("deployed"))
+		}
+		object "deployed" {
+			code {
+				{
+{
+for { let i_0 := 0 } lt(i_0, 0x60) { i_0 := add(i_0, 0x20) } {
+selfdestruct(addmod(0x1000000000000000000000000001, 0x100000000000000000000000001, 0x10000000000000000000000001))
+}
+mstore("", "")
+log1(0x1000000000000000000000001, 0x100000000000000000000001, 0x10000000000000000000001)
+switch keccak256("",create(keccak256("",create(0x1000000000000000000001, 0x100000000000000000001, 0x10000000000000000001)), 0x1000000000000000001, 0x100000000000000001))
+case 0 {
+}
+case "r" {}
+default {
+mstore(0x10000000000000001, 0x1000000000000001)
+}
+mstore("r", 0x100000000000001)
+}
+}
+
+			}
+		}
+	}
+		

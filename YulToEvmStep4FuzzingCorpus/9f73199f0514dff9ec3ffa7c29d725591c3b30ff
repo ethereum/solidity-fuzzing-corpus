@@ -1,0 +1,31 @@
+
+	object "main" {
+		code {
+			codecopy(0, dataoffset("deployed"), datasize("deployed"))
+			return(0, datasize("deployed"))
+		}
+		object "deployed" {
+			code {
+				{
+{
+function foo_n_0(x_3, x_4)
+{
+foo_n_0(0x20, 0x200)
+}
+foo_n_0(mload(0),0x20000000)
+function foo_n_1(x_14, x_15)
+{
+foo_n_2(0x2000000000000, 0x20000000000000)
+}
+function foo_n_2(x_20, x_21)
+{
+foo_n_2(0x2000000000000000000, 0x20000000000000000000)
+}
+foo_n_2(sload(224),calldataload(288))
+}
+}
+
+			}
+		}
+	}
+		

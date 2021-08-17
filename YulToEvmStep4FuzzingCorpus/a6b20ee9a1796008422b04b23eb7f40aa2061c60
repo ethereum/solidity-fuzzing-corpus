@@ -1,0 +1,37 @@
+
+	object "main" {
+		code {
+			codecopy(0, dataoffset("deployed"), datasize("deployed"))
+			return(0, datasize("deployed"))
+		}
+		object "deployed" {
+			code {
+				{
+{
+let x_0 := 0x100000001
+for {}
+0{
+x_0 := x_0
+}
+{
+x_0 := 0x10000001
+}
+for {}
+add(0x0,x_0){
+x_0 := number()
+revert(0x1000001, number())
+}
+{
+switch 0x100001
+default {
+break
+}
+break
+}
+}
+}
+
+			}
+		}
+	}
+		

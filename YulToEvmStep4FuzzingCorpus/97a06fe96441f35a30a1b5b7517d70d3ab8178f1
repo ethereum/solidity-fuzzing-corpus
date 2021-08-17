@@ -1,0 +1,30 @@
+
+	object "main" {
+		code {
+			codecopy(0, dataoffset("deployed"), datasize("deployed"))
+			return(0, datasize("deployed"))
+		}
+		object "deployed" {
+			code {
+				{
+{
+function foo_s_0(x_2, x_3, x_4, x_5) -> x_6
+{
+x_6 := mload(0x10000000000000000000000000000001)
+}
+function foo_m_1() -> x_9, x_10, x_11, x_12
+{
+function foo_s_14(x_15, x_16, x_17, x_18) -> x_19
+{
+x_19 := mload(0x1000000000000000001)
+}
+}
+let x_22 := foo_s_0(0x10000000000000001, 0x1000000000000001, addmod(0x100000000000001, 0x10000000000001, 0x1000000000001), 0x100000000001)
+
+}
+}
+
+			}
+		}
+	}
+		

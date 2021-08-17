@@ -1,0 +1,28 @@
+
+	object "main" {
+		code {
+			codecopy(0, dataoffset("deployed"), datasize("deployed"))
+			return(0, datasize("deployed"))
+		}
+		object "deployed" {
+			code {
+				{
+{
+sstore(foo_s_0(0x1ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff)
+, create(0x1fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff, 0x2, foo_s_0(not(0x20))
+))
+function foo_s_0(x_5) -> x_6
+{
+x_6 := call(not(xor(calldatasize(),calldatasize())), 0x200000, 0x2000000, 0x20000000, 0x200000000, 0x2000000000, addmod(0x20000000000, 0x200000000000, not(0x2000000000000)))
+}
+let x_16 := foo_s_0(sload(288))
+sstore(32, x_16)
+for { let i_0 := 0 } lt(i_0, 0x60) { i_0 := add(i_0, 0x20) } {
+}
+}
+}
+
+			}
+		}
+	}
+		

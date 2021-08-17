@@ -1,0 +1,23 @@
+
+	object "main" {
+		code {
+			codecopy(0, dataoffset("deployed"), datasize("deployed"))
+			return(0, datasize("deployed"))
+		}
+		object "deployed" {
+			code {
+				{
+{
+function foo_m_0(x_1, x_2, x_3, x_4) -> x_5, x_6, x_7, x_8
+{
+extcodecopy(0x2, 0x20, 0x200, 0x2000)
+let x_15, x_16, x_17, x_18 := foo_m_0(0x20000000000, 0x200000000000, 0x2000000000000, 0x20000000000000)
+let x_25, x_26, x_27, x_28 := foo_m_0(0x200000000000000000000, addmod(add(x_4,0x2000000000000000000000), addmod(add(x_4,0x20000000000000000000000), addmod(0x200000000000000000000000, calldataload(0x2000000000000000000000000), 0x20000000000000000000000000), "N"), "N"), 0x200000000000000000000000000, x_1)
+}
+}
+}
+
+			}
+		}
+	}
+		

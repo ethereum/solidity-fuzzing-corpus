@@ -1,0 +1,28 @@
+
+	object "main" {
+		code {
+			codecopy(0, dataoffset("deployed"), datasize("deployed"))
+			return(0, datasize("deployed"))
+		}
+		object "deployed" {
+			code {
+				{
+{
+let x_0 := 0x2000000000000000001
+switch mload(0x200000000000000001)
+case 0x20000000000000001 {
+x_0 := 0x2000000000000001
+codecopy(x_0, 0x200000000000001, 0x20000000000001)
+let x_7 := 0x200000000001
+}
+case 0x20000000001 {
+x_0 := call(0x2000000001, 0x200000001, 0x20000001, 0x2000001, 0x200001, 0x20001, addmod(0x2001, 0x201, call(0x21, 0x3, 0x3f, 0x3ff, 0x3fff, 0x3ffff, addmod(0x3fffff, 0x3ffffff, call(0x3fffffff, 0x3ffffffff, 0x3fffffffff, 0x3ffffffffff, origin(), 0x3fffffffffff, 0x3ffffffffffff)))))
+}
+codecopy(x_0, 0x3fffffffffffff, 0x3ffffffffffffff)
+}
+}
+
+			}
+		}
+	}
+		

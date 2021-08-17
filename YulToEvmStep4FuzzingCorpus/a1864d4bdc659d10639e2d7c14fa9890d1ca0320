@@ -1,0 +1,33 @@
+
+	object "main" {
+		code {
+			codecopy(0, dataoffset("deployed"), datasize("deployed"))
+			return(0, datasize("deployed"))
+		}
+		object "deployed" {
+			code {
+				{
+{
+let x_2, x_3, x_4, x_5 := foo_m_0(0x20000, 0x200000)
+function foo_m_0(x_9, x_10) -> x_11, x_12, x_13, x_14
+{
+switch x_9
+case 0x20000000000000 {
+leave
+x_9 := 0x200000000000000
+x_9 := 0x2000000000000000
+x_9 := 0x20000000000000000
+x_9 := 0x200000000000000000
+}
+default {
+let x_22, x_23, x_24, x_25 := foo_m_0(0x2000000000000000000000000, 0x20000000000000000000000000)
+}
+}
+pop(0x200000000000000000000000000)
+}
+}
+
+			}
+		}
+	}
+		

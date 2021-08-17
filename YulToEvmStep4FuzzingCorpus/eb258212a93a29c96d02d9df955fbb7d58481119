@@ -1,0 +1,33 @@
+
+	object "main" {
+		code {
+			codecopy(0, dataoffset("deployed"), datasize("deployed"))
+			return(0, datasize("deployed"))
+		}
+		object "deployed" {
+			code {
+				{
+{
+function foo_m_0(x_2, x_3, x_4, x_5) -> x_6, x_7, x_8, x_9
+{
+selfdestruct(0x80000000000000000000000000000000000000000001)
+}
+function foo_m_1(x_12, x_13, x_14, x_15) -> x_16, x_17, x_18, x_19
+{
+let x_22, x_23, x_24, x_25 := foo_m_1(0x8000000000000000000000000001, 0x800000000000000000000000001, 0x80000000000000000000000001, 0x8000000000000000000000001)
+let x_32, x_33, x_34, x_35 := foo_m_1(caller(), 0x800000000000000001, 0x80000000000000001, 0x8000000000000001)
+for { let i_0 := 0 } lt(i_0, 0x60) { i_0 := add(i_0, 0x20) } {
+for { let i_1 := 0 } lt(i_1, 0x60) { i_1 := add(i_1, 0x20) } {
+let x_41, x_42, x_43, x_44 := foo_m_0(0x800000001, 0x80000001, 0x8000001, 0x800001)
+}
+let x_51, x_52, x_53, x_54 := foo_m_0(0xff, 0xfff, 0xffff, 0xfffff)
+}
+let x_61, x_62, x_63, x_64 := foo_m_0(0xffffffffffff, addmod(add(x_24,0xfffffffffffff), 0xffffffffffffff, 0xfffffffffffffff), 0xffffffffffffffff, x_12)
+}
+}
+}
+
+			}
+		}
+	}
+		

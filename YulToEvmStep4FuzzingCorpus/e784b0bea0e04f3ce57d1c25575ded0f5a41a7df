@@ -1,0 +1,36 @@
+
+	object "main" {
+		code {
+			codecopy(0, dataoffset("deployed"), datasize("deployed"))
+			return(0, datasize("deployed"))
+		}
+		object "deployed" {
+			code {
+				{
+{
+codecopy(0x1ffffffffffffffffff, 0x1fffffffffffffffffff, blockhash(0x1ffffffffffffffffffff))
+codecopy(blockhash(0x1fffffffffffffffffffff), blockhash(0x1ffffffffffffffffffffff), 0x1fffffffffffffffffffffff)
+codecopy(blockhash(0x1ffffffffffffffffffffffff), 0x1fffffffffffffffffffffffff, 0x1ffffffffffffffffffffffffff)
+codecopy(0x1fffffffffffffffffffffffffff, blockhash(0x1ffffffffffffffffffffffffffff), 0x1fffffffffffffffffffffffffffff)
+for { let i_0 := 0 } lt(i_0, 0x60) { i_0 := add(i_0, 0x20) } {
+}
+codecopy(blockhash(0x1ffffffffffffffffffffffffffffff), blockhash(0x1fffffffffffffffffffffffffffffff), 0x1ffffffffffffffffffffffffffffffff)
+codecopy(0x1fffffffffffffffffffffffffffffffff, 0x1ffffffffffffffffffffffffffffffffff, 0x1fffffffffffffffffffffffffffffffffff)
+for { let i_1 := 0 } lt(i_1, 0x60) { i_1 := add(i_1, 0x20) } {
+continue
+}
+codecopy(blockhash(0x1ffffffffffffffffffffffffffffffffffff), 0x1fffffffffffffffffffffffffffffffffffff, 0x1ffffffffffffffffffffffffffffffffffffff)
+codecopy(blockhash(0x1fffffffffffffffffffffffffffffffffffffff), blockhash(0x1ffffffffffffffffffffffffffffffffffffffff), 0x1fffffffffffffffffffffffffffffffffffffffff)
+codecopy(0x1ffffffffffffffffffffffffffffffffffffffffff, blockhash(0x1fffffffffffffffffffffffffffffffffffffffffff), 0x1ffffffffffffffffffffffffffffffffffffffffffff)
+codecopy(0x1fffffffffffffffffffffffffffffffffffffffffffff, 0x1ffffffffffffffffffffffffffffffffffffffffffffff, 0x1fffffffffffffffffffffffffffffffffffffffffffffff)
+codecopy(blockhash(0x1ffffffffffffffffffffffffffffffffffffffffffffffff), blockhash(0x1fffffffffffffffffffffffffffffffffffffffffffffffff), 0x1ffffffffffffffffffffffffffffffffffffffffffffffffff)
+codecopy(blockhash(0x1fffffffffffffffffffffffffffffffffffffffffffffffffff), blockhash(0x1ffffffffffffffffffffffffffffffffffffffffffffffffffff), 0x1fffffffffffffffffffffffffffffffffffffffffffffffffffff)
+codecopy(0x1ffffffffffffffffffffffffffffffffffffffffffffffffffffff, blockhash(0x1fffffffffffffffffffffffffffffffffffffffffffffffffffffff), 0x1ffffffffffffffffffffffffffffffffffffffffffffffffffffffff)
+codecopy(0x1fffffffffffffffffffffffffffffffffffffffffffffffffffffffff, 0x1ffffffffffffffffffffffffffffffffffffffffffffffffffffffffff, 0x1fffffffffffffffffffffffffffffffffffffffffffffffffffffffffff)
+}
+}
+
+			}
+		}
+	}
+		

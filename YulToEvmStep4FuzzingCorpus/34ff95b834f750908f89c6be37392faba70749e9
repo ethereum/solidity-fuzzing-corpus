@@ -1,0 +1,24 @@
+
+	object "main" {
+		code {
+			codecopy(0, dataoffset("deployed"), datasize("deployed"))
+			return(0, datasize("deployed"))
+		}
+		object "deployed" {
+			code {
+				{
+{
+for { let i_0 := 0 } lt(i_0, 0x60) { i_0 := add(i_0, 0x20) } {
+codecopy(and(and("",not("")),not("")), and(0,not(0x1000000000000000000000000001)), 0x100000000000000000000000001)
+}
+for { let i_1 := 0 } lt(i_1, 0x60) { i_1 := add(i_1, 0x20) } {
+codecopy(0x10000000000000000000000001, and("",not("")), 0x1000000000000000000000001)
+}
+codecopy(and(and("",0x100000000000000000000001),mload("")), and(iszero(0x10000000000000000000001),not("")), 0x1000000000000000000001)
+}
+}
+
+			}
+		}
+	}
+		

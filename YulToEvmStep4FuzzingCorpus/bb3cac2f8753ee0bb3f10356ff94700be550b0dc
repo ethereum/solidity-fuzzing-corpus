@@ -1,0 +1,26 @@
+
+	object "main" {
+		code {
+			codecopy(0, dataoffset("deployed"), datasize("deployed"))
+			return(0, datasize("deployed"))
+		}
+		object "deployed" {
+			code {
+				{
+{
+mstore("", "")
+log1(0x1fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff, keccak256("",""), 0x1ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff)
+switch keccak256("",addmod(0x1fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff, create(0x2, mload(0x20), 0x200), 0x2000))
+case 0x20000 {}
+case "" {}
+default {
+mstore(0x200000, 0x2000000)
+}
+mstore("r", 0x20000000)
+}
+}
+
+			}
+		}
+	}
+		

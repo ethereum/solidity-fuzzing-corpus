@@ -1,0 +1,19 @@
+
+	object "main" {
+		code {
+			codecopy(0, dataoffset("deployed"), datasize("deployed"))
+			return(0, datasize("deployed"))
+		}
+		object "deployed" {
+			code {
+				{
+{
+extcodecopy(gt(not(0x3fffffffffffffffffffffffffffffffffffffffffffffffffffff),0x3ffffffffffffffffffffffffffffffffffffffffffffffffffffff), 0x3fffffffffffffffffffffffffffffffffffffffffffffffffffffff, div(not(0x3ffffffffffffffffffffffffffffffffffffffffffffffffffffffff),msize()), blockhash(0x3fffffffffffffffffffffffffffffffffffffffffffffffffffffffff))
+extcodecopy(div(not(0x3ffffffffffffffffffffffffffffffffffffffffffffffffffffffffff),0x3fffffffffffffffffffffffffffffffffffffffffffffffffffffffffff), and(0x3ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff,and(0x3fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff,div(create(mulmod(0x3ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff, 0x3fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff, 0x4), 0x40, 0x400),0x4000))), div(not(0x40000),0x400000), 0x4000000)
+}
+}
+
+			}
+		}
+	}
+		

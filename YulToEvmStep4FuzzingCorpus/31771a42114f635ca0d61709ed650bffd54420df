@@ -1,0 +1,49 @@
+
+	object "main" {
+		code {
+			codecopy(0, dataoffset("deployed"), datasize("deployed"))
+			return(0, datasize("deployed"))
+		}
+		object "deployed" {
+			code {
+				{
+{
+let x_2, x_3, x_4, x_5 := foo_m_0(0x1000000000000000000000000000000000000000000000001, 0x100000000000000000000000000000000000000000000001, add(0x10000000000000000000000000000000000000000000001,0x1000000000000000000000000000000000000000000001))
+{
+let x_12, x_13, x_14, x_15 := foo_m_0(0x100000000000000000000000000000000000001, 0x10000000000000000000000000000000000001, 0x1000000000000000000000000000000000001)
+let x_21, x_22, x_23, x_24 := foo_m_0(0x100000000000000000000000000001, 0x10000000000000000000000000001, x_2)
+}
+let x_29, x_30, x_31, x_32 := foo_m_0(0x1000000000000000000001, 0x100000000000000000001, 0x10000000000000000001)
+let x_38, x_39, x_40, x_41 := foo_m_0(0x1000000000001, 0x100000000001, 0x10000000001)
+let x_47, x_48, x_49, x_50 := foo_m_0(0x1001, 0x101, 0x11)
+let x_56, x_57, x_58, x_59 := foo_m_0(0x1fffffff, 0x1ffffffff, 0x1fffffffff)
+let x_65, x_66, x_67, x_68 := foo_m_0(0x1ffffffffffffffff, 0x1fffffffffffffffff, 0x1ffffffffffffffffff)
+function foo_m_0(x_73, x_74, x_75) -> x_76, x_77, x_78, x_79
+{
+sstore(gt(x_73,0x1fffffffffffffffffffffffffff), 0x1ffffffffffffffffffffffffffff)
+for { let i_0 := 0 } lt(i_0, 0x60) { i_0 := add(i_0, 0x20) } {
+function foo_m_83() -> x_84, x_85, x_86, x_87
+{
+let x_90, x_91, x_92, x_93 := foo_m_83()
+}
+let x_95, x_96, x_97, x_98 := foo_m_83()
+sstore(32, x_95)
+sstore(96, x_96)
+sstore(160, x_97)
+sstore(224, x_98)
+}
+sstore(mod(x_73,0x1ffffffffffffffffffffffffffffffffffffffffffffffffffffff), exp(0x1fffffffffffffffffffffffffffffffffffffffffffffffffffffff,x_73))
+}
+let x_110, x_111, x_112, x_113 := foo_m_0(0x1fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff,sload(288),calldataload(32))
+sstore(96, x_110)
+sstore(160, x_111)
+sstore(224, x_112)
+sstore(288, x_113)
+let x_131, x_132, x_133, x_134 := foo_m_0(0x2000000000000000000, 0x20000000000000000000, 0x200000000000000000000)
+}
+}
+
+			}
+		}
+	}
+		

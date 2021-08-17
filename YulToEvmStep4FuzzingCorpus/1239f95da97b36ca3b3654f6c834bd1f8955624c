@@ -1,0 +1,20 @@
+
+	object "main" {
+		code {
+			codecopy(0, dataoffset("deployed"), datasize("deployed"))
+			return(0, datasize("deployed"))
+		}
+		object "deployed" {
+			code {
+				{
+{
+mstore(add(add(0x11,""),add("",0x1f)), 0x1ff)
+mstore(add(add(0x1fff,""),add("",add("",add(0x1ffff,0x1fffff)))), 0x1ffffff)
+mstore(add(add(0x1fffffff,""),add("",0x1ffffffff)), 0x1fffffffff)
+}
+}
+
+			}
+		}
+	}
+		

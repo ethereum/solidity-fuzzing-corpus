@@ -1,0 +1,28 @@
+
+	object "main" {
+		code {
+			codecopy(0, dataoffset("deployed"), datasize("deployed"))
+			return(0, datasize("deployed"))
+		}
+		object "deployed" {
+			code {
+				{
+{
+let x_0 := origin()
+switch mload(0x1fffff)
+case 0x1ffffff {
+x_0 := 0x1fffffff
+codecopy(x_0, 0x1ffffffff, 0x1fffffffff)
+let x_6 := origin()
+}
+case 0x1fffffffffff {
+x_0 := call(0x1ffffffffffff, 0x1fffffffffffff, 0x1ffffffffffffff, 0x1fffffffffffffff, 0x1ffffffffffffffff, 0x1fffffffffffffffff, addmod(0x1ffffffffffffffffff, 0x1fffffffffffffffffff, call(0x1ffffffffffffffffffff, 0x1fffffffffffffffffffff, 0x1ffffffffffffffffffffff, 0x1fffffffffffffffffffffff, 0x1ffffffffffffffffffffffff, 0x1fffffffffffffffffffffffff, addmod(0x1ffffffffffffffffffffffffff, 0x1fffffffffffffffffffffffffff, call(0x1ffffffffffffffffffffffffffff, 0x1fffffffffffffffffffffffffffff, 0x1ffffffffffffffffffffffffffffff, 0x1fffffffffffffffffffffffffffffff, origin(), 0x1ffffffffffffffffffffffffffffffff, 0x1fffffffffffffffffffffffffffffffff)))))
+}
+codecopy(x_0, 0x1ffffffffffffffffffffffffffffffffff, 0x1fffffffffffffffffffffffffffffffffff)
+}
+}
+
+			}
+		}
+	}
+		

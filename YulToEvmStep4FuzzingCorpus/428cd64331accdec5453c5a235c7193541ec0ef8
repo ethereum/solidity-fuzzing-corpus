@@ -1,0 +1,50 @@
+
+	object "main" {
+		code {
+			codecopy(0, dataoffset("deployed"), datasize("deployed"))
+			return(0, datasize("deployed"))
+		}
+		object "deployed" {
+			code {
+				{
+{
+let x_2, x_3, x_4, x_5 := foo_m_0(0x2000000000000000000000000000000000000000000001, 0x200000000000000000000000000000000000000000001, 0x20000000000000000000000000000000000000000001)
+{
+sstore(gas(), 0x2000000000000000000000000000000000000000001)
+}
+function foo_m_0(x_11, x_12, x_13) -> x_14, x_15, x_16, x_17
+{
+sstore(div(0x2000000000000000000000000000000001,0x200000000000000000000000000000001), 0x20000000000000000000000000000001)
+sstore(div(x_11,0x2000000000000000000000000000001), 0x200000000000000000000000000001)
+}
+let x_24, x_25, x_26, x_27 := foo_m_0(mload(0),0x20000000000000000001,sload(160))
+sstore(224, x_24)
+sstore(288, x_25)
+sstore(32, x_26)
+sstore(96, x_27)
+switch mload(0x200000001)
+case 0x20000001 {
+x_2 := 0x2000001
+}
+case 0x200001 {
+mstore(8, 8)
+mstore(add(calldatasize(),8), 0x20001)
+mstore(add(calldatasize(),8), 0x2001)
+}
+case 0x201 {
+}
+case 0x21 {
+x_2 := 0x3
+}
+case 0x3f {}
+for { let i_0 := 0 } lt(i_0, 0x60) { i_0 := add(i_0, 0x20) } {
+for { let i_1 := 0 } lt(i_1, 0x60) { i_1 := add(i_1, 0x20) } {
+}
+}
+}
+}
+
+			}
+		}
+	}
+		

@@ -1,0 +1,33 @@
+
+	object "main" {
+		code {
+			codecopy(0, dataoffset("deployed"), datasize("deployed"))
+			return(0, datasize("deployed"))
+		}
+		object "deployed" {
+			code {
+				{
+{
+function foo_s_0(x_1) -> x_2
+{
+for {
+let x_4 := x_1
+if 0x100000000000001 {
+x_2 := 0x10000000000001
+}
+sstore(0, x_4)
+}
+x_2{}
+{
+}
+}
+sstore(foo_s_0(0x1000000000001)
+, foo_s_0(0x100000000001)
+)
+}
+}
+
+			}
+		}
+	}
+		

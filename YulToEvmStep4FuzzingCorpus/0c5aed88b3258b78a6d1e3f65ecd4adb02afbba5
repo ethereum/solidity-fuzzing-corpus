@@ -1,0 +1,25 @@
+
+	object "main" {
+		code {
+			codecopy(0, dataoffset("deployed"), datasize("deployed"))
+			return(0, datasize("deployed"))
+		}
+		object "deployed" {
+			code {
+				{
+{
+function foo_s_0(x_1) -> x_2
+{
+x_2 := call(0x400000000000000001, 0x40000000000000001, 0x4000000000000001, 0x400000000000001, 0x40000000000001, 0x4000000000001, addmod(0x400000000001, mulmod(0x40000000001, 0x4000000001, 0x400000001), call(0x40000001, 0x4000001, foo_s_0(gasprice())
+, mulmod(0x400001, 0x40001, 0x4001), 0x401, 0x41, addmod(0x5, 0x7, call(0x7f, 0x7ff, 0x7fff, 0x7ffff, mload(0x7fffff), 0x7ffffff, 0x7fffffff)))))
+}
+sstore(foo_s_0(0x7ffffffff)
+, foo_s_0(0x7fffffffff)
+)
+}
+}
+
+			}
+		}
+	}
+		

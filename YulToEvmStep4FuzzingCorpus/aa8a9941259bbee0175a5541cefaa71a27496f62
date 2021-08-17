@@ -1,0 +1,57 @@
+
+	object "main" {
+		code {
+			codecopy(0, dataoffset("deployed"), datasize("deployed"))
+			return(0, datasize("deployed"))
+		}
+		object "deployed" {
+			code {
+				{
+{
+switch gas()
+case 0x1000000000000000000000000000000001 {}
+case 0x100000000000000000000000000000001 {}
+case 0x10000000000000000000000000000001 {}
+case 0x1000000000000000000000000000001 {}
+case 0x100000000000000000000000000001 {}
+case false {}
+case 0x10000000000000000000000000001 {}
+case 0x1000000000000000000000000001 {}
+case 0x100000000000000000000000001 {}
+case 0x10000000000000000000000001 {}
+case 0x1000000000000000000000001 {}
+case 0x100000000000000000000001 {}
+case 0x10000000000000000000001 {}
+case 0x1000000000000000000001 {}
+case 0x100000000000000000001 {}
+case 0x10000000000000000001 {}
+case 0x1000000000000000001 {
+function foo_m_16(x_17, x_18, x_19, x_20) -> x_21, x_22, x_23, x_24
+{
+}
+let x_26, x_27, x_28, x_29 := foo_m_16(0x1f,sload(160),calldataload(224),sload(288))
+sstore(32, x_26)
+sstore(96, x_27)
+sstore(160, x_28)
+sstore(224, x_29)
+}
+case 0x1ffffffffffffffff {}
+case 0x1fffffffffffffffff {}
+case 0x1ffffffffffffffffff {}
+case 0x1fffffffffffffffffff {}
+default {
+}
+for { let i_0 := 0 } lt(i_0, 0x60) { i_0 := add(i_0, 0x20) } {
+switch 0x1ffffffffffffffffffff
+default {
+extcodecopy(0x1fffffffffffffffffffff, 0x1ffffffffffffffffffffff, 0x1fffffffffffffffffffffff, create(0x1ffffffffffffffffffffffff, coinbase(), 0x1fffffffffffffffffffffffff))
+}
+break
+}
+}
+}
+
+			}
+		}
+	}
+		

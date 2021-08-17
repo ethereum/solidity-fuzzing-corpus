@@ -1,0 +1,28 @@
+
+	object "main" {
+		code {
+			codecopy(0, dataoffset("deployed"), datasize("deployed"))
+			return(0, datasize("deployed"))
+		}
+		object "deployed" {
+			code {
+				{
+{
+function foo_s_0(x_1) -> x_2
+{
+x_2 := not(foo_s_0(addmod(foo_s_0(mload(0x800000000000000000000000000000000000000))
+, "", ""))
+)
+}
+for {}
+foo_s_0(0x0)
+{}
+{
+}
+}
+}
+
+			}
+		}
+	}
+		

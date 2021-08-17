@@ -1,0 +1,45 @@
+
+	object "main" {
+		code {
+			codecopy(0, dataoffset("deployed"), datasize("deployed"))
+			return(0, datasize("deployed"))
+		}
+		object "deployed" {
+			code {
+				{
+{
+sstore(foo_s_1(0x80000000000000000000001)
+, 0x8000000000000000000001)
+let x_5, x_6, x_7, x_8 := foo_m_0(0x800000000000001, 0x80000000000001, 0x8000000000001)
+function foo_m_0(x_13, x_14, x_15) -> x_16, x_17, x_18, x_19
+{
+sstore(mod(x_13,0x8001), x_13)
+for { let i_0 := 0 } lt(i_0, 0x60) { i_0 := add(i_0, 0x20) } {
+for { let i_1 := 0 } lt(i_1, 0x60) { i_1 := add(i_1, 0x20) } {
+x_13 := 0x801
+}
+}
+sstore(mod(x_13,0x81), 0x9)
+}
+let x_25, x_26, x_27, x_28 := foo_m_0(sload(32),calldataload(96),sload(160))
+sstore(224, x_25)
+sstore(288, x_26)
+sstore(32, x_27)
+sstore(96, x_28)
+let x_45, x_46, x_47, x_48 := foo_m_0(0xffffffffffffffffffffffffff, 0xfffffffffffffffffffffffffff, 0xffffffffffffffffffffffffffff)
+let x_54 := foo_s_1(0xffffffffffffffffffffffffffffffff)
+function foo_s_1(x_57) -> x_58
+{
+x_58 := not(foo_s_1(mulmod(mload(0xffffffffffffffffffffffffffffffffffff), 0xfffffffffffffffffffffffffffffffffffff, 0xffffffffffffffffffffffffffffffffffffff))
+)
+}
+let x_63 := foo_s_1(mload(192))
+mstore(256, x_63)
+let x_70 := foo_s_1(0xffffffffffffffffffffffffffffffffffffffffffffffff)
+}
+}
+
+			}
+		}
+	}
+		

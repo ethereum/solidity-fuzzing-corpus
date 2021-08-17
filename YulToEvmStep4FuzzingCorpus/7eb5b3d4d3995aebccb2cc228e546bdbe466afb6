@@ -1,0 +1,23 @@
+
+	object "main" {
+		code {
+			codecopy(0, dataoffset("deployed"), datasize("deployed"))
+			return(0, datasize("deployed"))
+		}
+		object "deployed" {
+			code {
+				{
+{
+pop(create(0x80000001, 0x8000001, 0x800001))
+codecopy("QQQQQQQQQQQQQQQQQQQQQQQQ", 0x80001, "QQQQQQQQQQQQQQQQQQQQQQQQ")
+codecopy("QQQQQQQQQQQQQQQQQQQQQQQQ", "QQQQQQQQQQQQQQQQQQQQQQQQ", 0x8001)
+codecopy(false, 0x801, "QQQQQQQQQQQQQQQQQQQQQQQQ")
+codecopy("QQQQQQQQQQQQQQQQQQQQQQQQ", "QQQQQQQQQQQQQQQQQQQQQQQQ", "QQQQQQQQQQQQQQQQQQQQQQQQ")
+codecopy(0x81, 0x9, "QQQQQQQQQQQQQQQQQQQQQQQQ")
+}
+}
+
+			}
+		}
+	}
+		

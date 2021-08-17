@@ -1,0 +1,36 @@
+
+	object "main" {
+		code {
+			codecopy(0, dataoffset("deployed"), datasize("deployed"))
+			return(0, datasize("deployed"))
+		}
+		object "deployed" {
+			code {
+				{
+{
+for { let i_0 := 0 } lt(i_0, 0x60) { i_0 := add(i_0, 0x20) } {
+break
+}
+for {
+mstore(0x1ffffffffffffffffffffffffffffffffffffffffffffffffffff, 0x1fffffffffffffffffffffffffffffffffffffffffffffffffffff)
+mstore(0x1ffffffffffffffffffffffffffffffffffffffffffffffffffffff, mload(0x1fffffffffffffffffffffffffffffffffffffffffffffffffffffff))
+mstore(not(0x1ffffffffffffffffffffffffffffffffffffffffffffffffffffffff), 0x1fffffffffffffffffffffffffffffffffffffffffffffffffffffffff)
+mstore(not(0x1ffffffffffffffffffffffffffffffffffffffffffffffffffffffffff), not(0x1fffffffffffffffffffffffffffffffffffffffffffffffffffffffffff))
+mstore(0x1ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff, mload(0x1fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff))
+mstore(0x1ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff, mload(0x1fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff))
+mstore(0x2, mload(0x20))
+mstore(0x200, 0x2000)
+extcodecopy("", 0x20000, 0x200000, 0x2000000)
+let x_19, x_20
+}
+0x0{}
+{
+continue
+}
+}
+}
+
+			}
+		}
+	}
+		

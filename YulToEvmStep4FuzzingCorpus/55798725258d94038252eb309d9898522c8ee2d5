@@ -1,0 +1,35 @@
+
+	object "main" {
+		code {
+			codecopy(0, dataoffset("deployed"), datasize("deployed"))
+			return(0, datasize("deployed"))
+		}
+		object "deployed" {
+			code {
+				{
+{
+sstore(0x7fff, foo_s_0(0x7ffff)
+)
+log1(0x7fffff, 0x7ffffff, 0x7fffffff)
+sstore(foo_s_0(0x7ffffffff)
+, foo_s_0(0x7fffffffff)
+)
+function foo_s_0(x_8) -> x_9
+{
+x_9 := gt(x_8,mulmod(0x7fffffffffffff, 0x7ffffffffffffff, x_8))
+}
+sstore(0x7fffffffffffffff, foo_s_0(0x7ffffffffffffffff)
+)
+sstore(mulmod(0x7fffffffffffffffff, mulmod(foo_s_0(0x7ffffffffffffffffff)
+, 0x7fffffffffffffffffff, 0x7ffffffffffffffffffff), 0x7fffffffffffffffffffff), foo_s_0(0x7ffffffffffffffffffffff)
+)
+sstore(foo_s_0(0x7fffffffffffffffffffffff)
+, foo_s_0(0x7ffffffffffffffffffffffff)
+)
+}
+}
+
+			}
+		}
+	}
+		

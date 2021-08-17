@@ -1,0 +1,49 @@
+
+	object "main" {
+		code {
+			codecopy(0, dataoffset("deployed"), datasize("deployed"))
+			return(0, datasize("deployed"))
+		}
+		object "deployed" {
+			code {
+				{
+{
+{
+let x_2, x_3, x_4, x_5 := foo_m_0(0x7fffffffffffffff, 0x7ffffffffffffffff, smod(0x7fffffffffffffffff,0x7ffffffffffffffffff))
+let x_12, x_13, x_14, x_15 := foo_m_0(0x7fffffffffffffffffffffffff, 0x7ffffffffffffffffffffffffff, 0x7fffffffffffffffffffffffffff)
+mstore(0x7ffffffffffffffffffffffffffff, 0x7fffffffffffffffffffffffffffff)
+}
+let x_23, x_24, x_25, x_26 := foo_m_0(0x7ffffffffffffffffffffffffffffffffffff, 0x7fffffffffffffffffffffffffffffffffffff, mulmod(0x7ffffffffffffffffffffffffffffffffffffff, 0x7fffffffffffffffffffffffffffffffffffffff, 0x7ffffffffffffffffffffffffffffffffffffffff))
+let x_34, x_35, x_36, x_37 := foo_m_0(x_23, 0x7fffffffffffffffffffffffffffffffffffffffffffffff, 0x7ffffffffffffffffffffffffffffffffffffffffffffffff)
+let x_42, x_43, x_44, x_45 := foo_m_0(0x7fffffffffffffffffffffffffffffffffffffffffffffffffffffff, 0x7ffffffffffffffffffffffffffffffffffffffffffffffffffffffff, 0x7fffffffffffffffffffffffffffffffffffffffffffffffffffffffff)
+let x_51, x_52, x_53, x_54 := foo_m_0(0x8, 0x80, 0x800)
+mstore(0x8000, 0x80000)
+let x_62, x_63, x_64, x_65 := foo_m_0(0x800000000000, 0x8000000000000, 0x80000000000000)
+function foo_m_0(x_70, x_71, x_72) -> x_73, x_74, x_75, x_76
+{
+sstore(0x800000000000000000000000, x_72)
+function foo_m_78() -> x_80, x_81
+{
+for { let i_0 := 0 } lt(i_0, 0x60) { i_0 := add(i_0, 0x20) } {
+x_80 := 0x8000000000000000000000000000
+continue
+}
+}
+let x_84, x_85 := foo_m_78()
+mstore(256, x_84)
+mstore(0, x_85)
+sstore(0x800000000000000000000000000000000000, slt(x_70,0x8000000000000000000000000000000000000))
+}
+let x_93, x_94, x_95, x_96 := foo_m_0(sload(288),calldataload(32),sload(96))
+sstore(160, x_93)
+sstore(224, x_94)
+sstore(288, x_95)
+sstore(32, x_96)
+let x_113, x_114, x_115, x_116 := foo_m_0(0x800000000000000000000000000000000000000000000000000000000000000, 0x8000000000000000000000000000000000000000000000000000000000000000, 0x8000000000000000000000000000000000000000000000000000000000000001)
+}
+}
+
+			}
+		}
+	}
+		

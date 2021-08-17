@@ -1,0 +1,34 @@
+
+	object "main" {
+		code {
+			codecopy(0, dataoffset("deployed"), datasize("deployed"))
+			return(0, datasize("deployed"))
+		}
+		object "deployed" {
+			code {
+				{
+{
+log1(0x1000000001, 0x100000001, 0x10000001)
+sstore(0x1000001, foo_s_0(0x100001)
+)
+function foo_s_0(x_6) -> x_7
+{
+x_7 := gt(x_6,mulmod(0x11, 0x1f, x_6))
+}
+sstore(0x1ff, foo_s_0(0x1fff)
+)
+for { let i_0 := 0 } lt(i_0, 0x60) { i_0 := add(i_0, 0x20) } {
+let x_13 := 0x1fffff
+}
+sstore(mulmod(0x1ffffff, timestamp(), 0x1fffffff), foo_s_0(0x1ffffffff)
+)
+sstore(foo_s_0(0x1fffffffff)
+, foo_s_0(0x1ffffffffff)
+)
+}
+}
+
+			}
+		}
+	}
+		

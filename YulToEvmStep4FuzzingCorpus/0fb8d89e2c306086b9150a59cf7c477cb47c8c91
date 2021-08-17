@@ -1,0 +1,59 @@
+
+	object "main" {
+		code {
+			codecopy(0, dataoffset("deployed"), datasize("deployed"))
+			return(0, datasize("deployed"))
+		}
+		object "deployed" {
+			code {
+				{
+{
+switch gas()
+case 0x20000000000000000001 {}
+case 0x2000000000000000001 {}
+case 0x200000000000000001 {}
+case 0x20000000000000001 {}
+case 0x2000000000000001 {}
+case 0x200000000000001 {
+for { let i_0 := 0 } lt(i_0, 0x60) { i_0 := add(i_0, 0x20) } {
+for { let i_1 := 0 } lt(i_1, 0x60) { i_1 := add(i_1, 0x20) } {
+}
+}
+}
+case 0x20000000000001 {}
+case 0x2000000000001 {}
+case 0x200000000001 {}
+case "" {}
+case 0x20000000001 {}
+case 0x2000000001 {}
+case 0x200000001 {}
+case 0x20000001 {}
+case 0x2000001 {}
+case 0x200001 {}
+case 0x20001 {}
+case 0x2001 {}
+case 0x201 {}
+case 0x21 {}
+case 0x3 {}
+case 0x3f {}
+case 0x3ff {}
+case 0x3fff {}
+case 0x3ffff {}
+case 0x3fffff {}
+case 0x3ffffff {}
+case 0x3fffffff {
+}
+case 0x3ffffffff {}
+case 0x3fffffffff {}
+case 0x3ffffffffff {}
+case 0x3fffffffffff {}
+default {
+stop()
+}
+}
+}
+
+			}
+		}
+	}
+		

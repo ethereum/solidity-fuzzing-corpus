@@ -1,0 +1,35 @@
+
+	object "main" {
+		code {
+			codecopy(0, dataoffset("deployed"), datasize("deployed"))
+			return(0, datasize("deployed"))
+		}
+		object "deployed" {
+			code {
+				{
+{
+return(0x9, 0xf)
+return(0xff, 0xfff)
+return(0xffff, 0xfffff)
+return(0xffffff, 0xfffffff)
+return(0xffffffff, 0xfffffffff)
+return(0xffffffffff, 0xfffffffffff)
+return(0xffffffffffff, 0xfffffffffffff)
+return(addmod(0xffffffffffffff, 0xfffffffffffffff, 0xffffffffffffffff), true)
+return(0xfffffffffffffffff, 0xffffffffffffffffff)
+return(0xfffffffffffffffffff, 0xffffffffffffffffffff)
+return(0xfffffffffffffffffffff, 0xffffffffffffffffffffff)
+return(0xfffffffffffffffffffffff, 0xffffffffffffffffffffffff)
+return(0xfffffffffffffffffffffffff, 0xffffffffffffffffffffffffff)
+return(0xfffffffffffffffffffffffffff, 0xffffffffffffffffffffffffffff)
+return(0xfffffffffffffffffffffffffffff, 0xffffffffffffffffffffffffffffff)
+return(0xfffffffffffffffffffffffffffffff, 0xffffffffffffffffffffffffffffffff)
+return(0xfffffffffffffffffffffffffffffffff, 0xffffffffffffffffffffffffffffffffff)
+return(0xfffffffffffffffffffffffffffffffffff, 0xffffffffffffffffffffffffffffffffffff)
+}
+}
+
+			}
+		}
+	}
+		

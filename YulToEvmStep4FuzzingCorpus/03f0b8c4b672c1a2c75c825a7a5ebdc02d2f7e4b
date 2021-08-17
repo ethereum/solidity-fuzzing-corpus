@@ -1,0 +1,25 @@
+
+	object "main" {
+		code {
+			codecopy(0, dataoffset("deployed"), datasize("deployed"))
+			return(0, datasize("deployed"))
+		}
+		object "deployed" {
+			code {
+				{
+{
+revert(0x400000000000000000000000001, 0x40000000000000000000000001)
+revert(0x4000000000000000000000001, 0x400000000000000000000001)
+function foo_m_0(x_5, x_6, x_7, x_8) -> x_9, x_10, x_11, x_12
+{
+let x_15, x_16, x_17, x_18 := foo_m_0(call(0x40000001, 0x4000001, 0x400001, not(true), 0x40001, 0x4001, 0x401), 0x41, 0x5, 0x7)
+let x_30, x_31, x_32, x_33 := foo_m_0(0x7fffffff, addmod(lt(x_7,0x7ffffffff), 0x7fffffffff, 0x07ffffffffff), 0x7fffffffffff, not(add(x_5,0x7ffffffffffff)))
+selfdestruct(call(0x7fffffffffffff, 0x7ffffffffffffff, 0x7fffffffffffffff, not(0x7ffffffffffffffff), 0x7fffffffffffffffff, 0x7ffffffffffffffffff, 0x7fffffffffffffffffff))
+}
+}
+}
+
+			}
+		}
+	}
+		

@@ -1,0 +1,27 @@
+
+	object "main" {
+		code {
+			codecopy(0, dataoffset("deployed"), datasize("deployed"))
+			return(0, datasize("deployed"))
+		}
+		object "deployed" {
+			code {
+				{
+{
+foo_n_0(0x7ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff, balance(caller()), 0x7fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff)
+function foo_n_0(x_4, x_5, x_6)
+{
+extcodecopy(0x800, 0x8000, 0x80000, call(0x800000, 0x8000000, 0x80000000, 0x800000000, 0x8000000000, 0x80000000000, 0x800000000000))
+codecopy(0x8000000000000, x_6, mulmod(0x80000000000000, x_6, x_6))
+codecopy(0x800000000000000, 0x8000000000000000, x_6)
+}
+foo_n_0(sload(96),calldataload(160),sload(224))
+foo_n_0(0x800000000000000000000000, mulmod(0x8000000000000000000000000, 0x80000000000000000000000000, 0x800000000000000000000000000), 0x8000000000000000000000000000)
+foo_n_0(mulmod(0x800000000000000000000000000000, 0x8000000000000000000000000000000, 0x80000000000000000000000000000000), 0x800000000000000000000000000000000, balance(caller()))
+}
+}
+
+			}
+		}
+	}
+		

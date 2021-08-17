@@ -1,0 +1,20 @@
+
+	object "main" {
+		code {
+			codecopy(0, dataoffset("deployed"), datasize("deployed"))
+			return(0, datasize("deployed"))
+		}
+		object "deployed" {
+			code {
+				{
+{
+mstore(keccak256(or(add(0x7fffffffffffff,origin()),add(codesize(),0x7ffffffffffffff)),0x7fffffffffffffff), 0x7ffffffffffffffff)
+sstore(add(add(0x7fffffffffffffffff,origin()),add(codesize(),0x7ffffffffffffffffff)), 0x7fffffffffffffffffff)
+sstore(add(add(0x7ffffffffffffffffffff,origin()),add(codesize(),0x7fffffffffffffffffffff)), 0x7ffffffffffffffffffffff)
+}
+}
+
+			}
+		}
+	}
+		

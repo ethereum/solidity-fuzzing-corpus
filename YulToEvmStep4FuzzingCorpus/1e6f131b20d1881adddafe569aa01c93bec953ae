@@ -1,0 +1,18 @@
+
+	object "main" {
+		code {
+			codecopy(0, dataoffset("deployed"), datasize("deployed"))
+			return(0, datasize("deployed"))
+		}
+		object "deployed" {
+			code {
+				{
+{
+selfdestruct(sgt(sub(0x8000000000000000000000000000000000000001,0x800000000000000000000000000000000000001),sgt(0x80000000000000000000000000000000000001,0x8000000000000000000000000000000000001)))
+}
+}
+
+			}
+		}
+	}
+		

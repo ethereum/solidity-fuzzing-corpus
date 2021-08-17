@@ -1,0 +1,38 @@
+
+	object "main" {
+		code {
+			codecopy(0, dataoffset("deployed"), datasize("deployed"))
+			return(0, datasize("deployed"))
+		}
+		object "deployed" {
+			code {
+				{
+{
+function foo_m_0() -> x_3, x_4
+{
+for { let i_0 := 0 } lt(i_0, 0x60) { i_0 := add(i_0, 0x20) } {
+let x_7, x_8 := foo_m_0()
+}
+if x_3 {
+invalid()
+}
+}
+function foo_m_1() -> x_10, x_11
+{
+if x_10 {
+invalid()
+}
+}
+function foo_m_2() -> x_13, x_14
+{
+if x_13 {
+invalid()
+}
+}
+}
+}
+
+			}
+		}
+	}
+		

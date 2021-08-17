@@ -1,0 +1,33 @@
+
+	object "main" {
+		code {
+			codecopy(0, dataoffset("deployed"), datasize("deployed"))
+			return(0, datasize("deployed"))
+		}
+		object "deployed" {
+			code {
+				{
+{
+let x_2, x_3, x_4, x_5 := foo_m_0(0x1001, 0x101, 0x11)
+{
+}
+let x_11, x_12, x_13, x_14 := foo_m_0(0x1fffffff, 0x1ffffffff, 0x1fffffffff)
+let x_20, x_21, x_22, x_23 := foo_m_0(0x1ffffffffffffffff, 0x1fffffffffffffffff, 0x1ffffffffffffffffff)
+mstore(0x1fffffffffffffffffff, 0x1ffffffffffffffffffff)
+let x_31, x_32, x_33, x_34 := foo_m_0(0x1fffffffffffffffffffffffffff, 0x1ffffffffffffffffffffffffffff, 0x1fffffffffffffffffffffffffffff)
+function foo_m_0(x_39, x_40, x_41) -> x_42, x_43, x_44, x_45
+{
+sstore("", 0x1ffffffffffffffffffffffffffffffffffffff)
+sstore(0x1fffffffffffffffffffffffffffffffffffffff, slt(x_39,0x1ffffffffffffffffffffffffffffffffffffffff))
+mstore(0x1fffffffffffffffffffffffffffffffffffffffff, addmod(0x1ffffffffffffffffffffffffffffffffffffffffff, 0x1fffffffffffffffffffffffffffffffffffffffffff, number()))
+sstore(slt(0x1ffffffffffffffffffffffffffffffffffffffffffff,0x1fffffffffffffffffffffffffffffffffffffffffffff), slt(x_39,addmod(0x1ffffffffffffffffffffffffffffffffffffffffffffff, 0x1fffffffffffffffffffffffffffffffffffffffffffffff, number())))
+}
+let x_58, x_59, x_60, x_61 := foo_m_0(0x1ffffffffffffffffffffffffffffffffffffffffffffffffffffff, 0x1fffffffffffffffffffffffffffffffffffffffffffffffffffffff, 0x1ffffffffffffffffffffffffffffffffffffffffffffffffffffffff)
+let x_67, x_68, x_69, x_70 := foo_m_0(0x1fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff, 0x2, calldataload(0x20))
+}
+}
+
+			}
+		}
+	}
+		

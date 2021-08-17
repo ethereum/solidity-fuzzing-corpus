@@ -1,0 +1,27 @@
+
+	object "main" {
+		code {
+			codecopy(0, dataoffset("deployed"), datasize("deployed"))
+			return(0, datasize("deployed"))
+		}
+		object "deployed" {
+			code {
+				{
+{
+function foo_n_0(x_1, x_2, x_3, x_4)
+{
+extcodecopy(0x5, 0x7, 0x7f, x_1)
+sstore(0, 0x7ff)
+}
+foo_n_0(sload(32),calldataload(96),sload(160),calldataload(224))
+for { let i_0 := 0 } lt(i_0, 0x60) { i_0 := add(i_0, 0x20) } {
+{
+}
+}
+}
+}
+
+			}
+		}
+	}
+		

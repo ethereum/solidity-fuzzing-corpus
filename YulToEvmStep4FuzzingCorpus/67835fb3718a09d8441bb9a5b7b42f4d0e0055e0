@@ -1,0 +1,27 @@
+
+	object "main" {
+		code {
+			codecopy(0, dataoffset("deployed"), datasize("deployed"))
+			return(0, datasize("deployed"))
+		}
+		object "deployed" {
+			code {
+				{
+{
+mstore8(0x7ffffffff, 0x7fffffffff)
+let x_2 := sub(0x7fffffffffff,0x7ffffffffffff)
+sstore(x_2, x_2)
+x_2 := sub(codesize(),0x7fffffffffffff)
+sstore(x_2, x_2)
+x_2 := sub(codesize(),0x7ffffffffffffff)
+sstore(x_2, x_2)
+sstore(x_2, x_2)
+let x_7 := sub(0x7ffffffffffffffff,0x7fffffffffffffffff)
+mstore8(x_2, 0x7ffffffffffffffffff)
+}
+}
+
+			}
+		}
+	}
+		

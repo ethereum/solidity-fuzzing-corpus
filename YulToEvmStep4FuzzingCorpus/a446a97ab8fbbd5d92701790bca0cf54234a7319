@@ -1,0 +1,23 @@
+
+	object "main" {
+		code {
+			codecopy(0, dataoffset("deployed"), datasize("deployed"))
+			return(0, datasize("deployed"))
+		}
+		object "deployed" {
+			code {
+				{
+{
+for {}
+create2(create2(0x0, 0x0, 0x0, 0x0), 0x0, 0x0, address()){}
+{
+pop(add(addmod(0xff, selfbalance(), 0xfff),0xffff))
+}
+mstore(create2(0xfffff, 0xffffff, 0xfffffff, addmod(0xffffffff, selfbalance(), 0xfffffffff)), 0xffffffffff)
+}
+}
+
+			}
+		}
+	}
+		

@@ -1,0 +1,59 @@
+
+	object "main" {
+		code {
+			codecopy(0, dataoffset("deployed"), datasize("deployed"))
+			return(0, datasize("deployed"))
+		}
+		object "deployed" {
+			code {
+				{
+{
+switch gas()
+case 0xffffffffffffffffffff {}
+case 0xfffffffffffffffffffff {}
+case 0xffffffffffffffffffffff {
+extcodecopy(0xfffffffffffffffffffffff, 0xffffffffffffffffffffffff, 0xfffffffffffffffffffffffff, 0xffffffffffffffffffffffffff)
+stop()
+}
+case 0xfffffffffffffffffffffffffff {}
+case 0xffffffffffffffffffffffffffff {}
+case 0xfffffffffffffffffffffffffffff {}
+case 0xffffffffffffffffffffffffffffff {}
+case 0xfffffffffffffffffffffffffffffff {}
+case 0xffffffffffffffffffffffffffffffff {}
+case 0xfffffffffffffffffffffffffffffffff {}
+case 0xffffffffffffffffffffffffffffffffff {}
+case 0xfffffffffffffffffffffffffffffffffff {}
+case 0xffffffffffffffffffffffffffffffffffff {}
+case 0xfffffffffffffffffffffffffffffffffffff {}
+case 0xffffffffffffffffffffffffffffffffffffff {}
+case 0xfffffffffffffffffffffffffffffffffffffff {}
+case 0xffffffffffffffffffffffffffffffffffffffff {}
+case 0xfffffffffffffffffffffffffffffffffffffffff {}
+case 0xffffffffffffffffffffffffffffffffffffffffff {}
+case 0 {}
+case 0xfffffffffffffffffffffffffffffffffffffffffff {}
+case 0xffffffffffffffffffffffffffffffffffffffffffff {}
+case 0xfffffffffffffffffffffffffffffffffffffffffffff {}
+case 0xffffffffffffffffffffffffffffffffffffffffffffff {}
+case 0x0fffffffffffffffffffffffffffffffffffffffffffffff {}
+case 0xffffffffffffffffffffffffffffffffffffffffffffffff {}
+case 0xfffffffffffffffffffffffffffffffffffffffffffffffff {
+codecopy(0xffffffffffffffffffffffffffffffffffffffffffffffffff, gas(), 0xfffffffffffffffffffffffffffffffffffffffffffffffffff)
+}
+case 0xffffffffffffffffffffffffffffffffffffffffffffffffffff {}
+case 0xfffffffffffffffffffffffffffffffffffffffffffffffffffff {}
+case 0xffffffffffffffffffffffffffffffffffffffffffffffffffffff {}
+case 0xfffffffffffffffffffffffffffffffffffffffffffffffffffffff {}
+case 0xffffffffffffffffffffffffffffffffffffffffffffffffffffffff {}
+case 0xfffffffffffffffffffffffffffffffffffffffffffffffffffffffff {}
+default {
+stop()
+}
+}
+}
+
+			}
+		}
+	}
+		

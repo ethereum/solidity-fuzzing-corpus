@@ -1,0 +1,26 @@
+
+	object "main" {
+		code {
+			codecopy(0, dataoffset("deployed"), datasize("deployed"))
+			return(0, datasize("deployed"))
+		}
+		object "deployed" {
+			code {
+				{
+{
+for { let i_0 := 0 } lt(i_0, 0x60) { i_0 := add(i_0, 0x20) } {
+switch mulmod(0x200000000001, 0x20000000001, 0x2000000001)
+case 0x200000001 {
+mstore(0x20000001, 0x2000001)
+}
+case 0x200001 {
+mstore(0x20001, 0x2001)
+}
+}
+}
+}
+
+			}
+		}
+	}
+		

@@ -1,0 +1,24 @@
+
+	object "main" {
+		code {
+			codecopy(0, dataoffset("deployed"), datasize("deployed"))
+			return(0, datasize("deployed"))
+		}
+		object "deployed" {
+			code {
+				{
+{
+function foo_s_0(x_1) -> x_2
+{
+x_2 := call(0x100001, 0x10001, 0x1001, 0x101, 0x11, 0x1f, addmod(0x1ff, 0x1fff, call(0x1ffff, create(0x1fffff, 0x1ffffff, 0x1fffffff), 0x1ffffffff, 0x1fffffffff, 0x1ffffffffff, 0x1fffffffffff, addmod(0x1ffffffffffff, 0x1fffffffffffff, call(0x1ffffffffffffff, 0x1fffffffffffffff, 0x1ffffffffffffffff, 0x1fffffffffffffffff, callvalue(), 0x1ffffffffffffffffff, 0x1fffffffffffffffffff)))))
+}
+sstore(foo_s_0(0x1ffffffffffffffffffff)
+, foo_s_0(0x1fffffffffffffffffffff)
+)
+}
+}
+
+			}
+		}
+	}
+		

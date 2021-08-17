@@ -1,0 +1,21 @@
+
+	object "main" {
+		code {
+			codecopy(0, dataoffset("deployed"), datasize("deployed"))
+			return(0, datasize("deployed"))
+		}
+		object "deployed" {
+			code {
+				{
+{
+log1("", addmod(0xfffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff, 0xffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff, 0x0), lt(or(not(0x1),0xffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff),gas()))
+let x_5 := msize()
+log1(0x9f, 0xa0, lt(or(not(0xa1),0xff),gas()))
+log1(eq(gas(),0x100), 0x101, 0x10)
+}
+}
+
+			}
+		}
+	}
+		

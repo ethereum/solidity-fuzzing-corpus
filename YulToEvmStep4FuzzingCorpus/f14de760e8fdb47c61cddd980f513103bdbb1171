@@ -1,0 +1,21 @@
+
+	object "main" {
+		code {
+			codecopy(0, dataoffset("deployed"), datasize("deployed"))
+			return(0, datasize("deployed"))
+		}
+		object "deployed" {
+			code {
+				{
+{
+sstore(div(div(not(0x201),0x21),0x3), 0x3f)
+extcodecopy(div(not(0x3ff),16777216), 0x3fff, div(div(not(0x3ffff),16777216),0x3fffff), 16777216)
+extcodecopy(div(not(0x3ffffff),0x3fffffff), 0x3ffffffff, div(div(not(0x3fffffffff),0x3ffffffffff),0x3fffffffffff), not(16777216))
+extcodecopy(div(not(0x3ffffffffffff),16777216), 0x3fffffffffffff, div(div(not(0x3ffffffffffffff),16777216),0x3fffffffffffffff), 16777216)
+}
+}
+
+			}
+		}
+	}
+		

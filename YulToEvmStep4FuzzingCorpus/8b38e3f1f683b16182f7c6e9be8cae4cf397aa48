@@ -1,0 +1,19 @@
+
+	object "main" {
+		code {
+			codecopy(0, dataoffset("deployed"), datasize("deployed"))
+			return(0, datasize("deployed"))
+		}
+		object "deployed" {
+			code {
+				{
+{
+mstore(not(0x3ffffffffffffffff), addmod(0x3fffffffffffffffff, addmod(not(0x3ffffffffffffffffff), 0x3fffffffffffffffffff, 0x3ffffffffffffffffffff), 0x3fffffffffffffffffffff))
+mstore(addmod(not(0x3ffffffffffffffffffffff), addmod(not(0x3fffffffffffffffffffffff), 0x3ffffffffffffffffffffffff, 0x3fffffffffffffffffffffffff), 0x3ffffffffffffffffffffffffff), 0x3fffffffffffffffffffffffffff)
+}
+}
+
+			}
+		}
+	}
+		

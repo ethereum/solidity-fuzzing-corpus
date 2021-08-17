@@ -1,0 +1,23 @@
+
+	object "main" {
+		code {
+			codecopy(0, dataoffset("deployed"), datasize("deployed"))
+			return(0, datasize("deployed"))
+		}
+		object "deployed" {
+			code {
+				{
+{
+function foo_m_0(x_1, x_2) -> x_3, x_4, x_5, x_6
+{
+log2(addmod(0x200000000000000000001, 0x20000000000000000001, x_1), 0x2000000000000000001, 0x200000000000000001, 0x20000000000000001)
+let x_14, x_15, x_16, x_17 := foo_m_0(0x2000000001, 0x200000001)
+}
+let x_22, x_23, x_24, x_25 := foo_m_0(0x21, 0x3)
+}
+}
+
+			}
+		}
+	}
+		

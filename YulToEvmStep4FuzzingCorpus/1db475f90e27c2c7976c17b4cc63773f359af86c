@@ -1,0 +1,36 @@
+
+	object "main" {
+		code {
+			codecopy(0, dataoffset("deployed"), datasize("deployed"))
+			return(0, datasize("deployed"))
+		}
+		object "deployed" {
+			code {
+				{
+{
+function foo_m_0() -> x_2, x_3, x_4, x_5
+{
+switch x_2
+case "" {}
+default {
+log0(0x2000000000000000, 0x20000000000000000)
+}
+}
+function foo_m_1() -> x_9, x_10, x_11, x_12
+{
+switch x_9
+case "" {}
+default {
+log0(0x20000000000000000000000, 0x200000000000000000000000)
+log0(0x2000000000000000000000000, 0x20000000000000000000000000)
+}
+switch x_9
+case "" {}
+}
+}
+}
+
+			}
+		}
+	}
+		

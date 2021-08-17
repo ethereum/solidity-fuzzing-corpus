@@ -1,0 +1,33 @@
+
+	object "main" {
+		code {
+			codecopy(0, dataoffset("deployed"), datasize("deployed"))
+			return(0, datasize("deployed"))
+		}
+		object "deployed" {
+			code {
+				{
+{
+let x_2, x_3, x_4, x_5 := foo_m_0(0x7fffffffff, 0x7ffffffffff, 0x7fffffffffff)
+{
+}
+let x_11, x_12, x_13, x_14 := foo_m_0(0x7ffffffffffffffffff, 0x7fffffffffffffffffff, 0x7ffffffffffffffffffff)
+let x_20, x_21, x_22, x_23 := foo_m_0(call(0x7fffffffffffffffffffffffffff, 0x7ffffffffffffffffffffffffffff, 0x7fffffffffffffffffffffffffffff, 0x7ffffffffffffffffffffffffffffff, 0x7fffffffffffffffffffffffffffffff, sload(0x7ffffffffffffffffffffffffffffffff), 0x7fffffffffffffffffffffffffffffffff), 0x7ffffffffffffffffffffffffffffffffff, 0x7fffffffffffffffffffffffffffffffffff)
+mstore(0x7ffffffffffffffffffffffffffffffffffff, 0x7fffffffffffffffffffffffffffffffffffff)
+let x_37, x_38, x_39, x_40 := foo_m_0(0x7ffffffffffffffffffffffffffffffffffffffffffff, 0x7fffffffffffffffffffffffffffffffffffffffffffff, 0x7ffffffffffffffffffffffffffffffffffffffffffffff)
+function foo_m_0(x_45, x_46, x_47) -> x_48, x_49, x_50, x_51
+{
+sstore("", 0x7fffffffffffffffffffffffffffffffffffffffffffffffffffffff)
+sstore(0x7ffffffffffffffffffffffffffffffffffffffffffffffffffffffff, slt(x_45,0x7fffffffffffffffffffffffffffffffffffffffffffffffffffffffff))
+mstore(0x7ffffffffffffffffffffffffffffffffffffffffffffffffffffffffff, addmod(0x7fffffffffffffffffffffffffffffffffffffffffffffffffffffffffff, 0x7ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff, number()))
+sstore(slt(call(0x7fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff, x_47, 0x7ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff, 0x7fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff, 0x8, 0x80, 0x800),0x8000), calldataload(0x80000))
+}
+let x_68, x_69, x_70, x_71 := foo_m_0(0x800000000000, 0x8000000000000, 0x80000000000000)
+let x_77, x_78, x_79, x_80 := foo_m_0(0x800000000000000000000, 0x8000000000000000000000, calldataload(0x80000000000000000000000))
+}
+}
+
+			}
+		}
+	}
+		

@@ -1,0 +1,34 @@
+
+	object "main" {
+		code {
+			codecopy(0, dataoffset("deployed"), datasize("deployed"))
+			return(0, datasize("deployed"))
+		}
+		object "deployed" {
+			code {
+				{
+{
+sstore(blockhash(0x800000000000001), 0x80000000000001)
+function foo_m_0(x_3, x_4, x_5, x_6) -> x_7, x_8, x_9, x_10
+{
+for {
+let x_12 := x_3
+log4(0x801, 0x81, 0x9, 0xf, 0xff, 0xfff)
+}
+x_3{}
+{
+}
+sstore(0xffff, 0xfffff)
+sstore(x_3, addmod(0xffffff, 0xfffffff, 0xffffffff))
+}
+let x_25, x_26, x_27, x_28 := foo_m_0(mload(0xfffffffffffffff), 0xffffffffffffffff, 0xfffffffffffffffff, 0xffffffffffffffffff)
+let x_34 := 0xffffffffffffffffffff
+let x_37, x_38, x_39, x_40 := foo_m_0(0xfffffffffffffffffffffffffff, 0xffffffffffffffffffffffffffff, 0xfffffffffffffffffffffffffffff, blockhash(0xffffffffffffffffffffffffffffff))
+sstore(0xfffffffffffffffffffffffffffffff, true)
+}
+}
+
+			}
+		}
+	}
+		

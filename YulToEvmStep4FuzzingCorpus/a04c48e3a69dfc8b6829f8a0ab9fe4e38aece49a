@@ -1,0 +1,30 @@
+
+	object "main" {
+		code {
+			codecopy(0, dataoffset("deployed"), datasize("deployed"))
+			return(0, datasize("deployed"))
+		}
+		object "deployed" {
+			code {
+				{
+{
+function foo_s_0(x_1) -> x_2
+{
+x_2 := not(foo_s_0(addmod(balance(true), 0x800000000000000000000000000000000000000, foo_s_0(foo_s_0(sload(0x8000000000000000000000000000000000000000))
+)
+))
+)
+}
+let x_6 := foo_s_0(calldataload(288))
+sstore(32, x_6)
+let x_13 := foo_s_0(0x80000000000000000000000000000000000000000000000000)
+mstore(foo_s_0(true)
+, foo_s_0(0x800000000000000000000000000000000000000000000000000)
+)
+}
+}
+
+			}
+		}
+	}
+		

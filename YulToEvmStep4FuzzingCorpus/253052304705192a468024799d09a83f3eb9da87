@@ -1,0 +1,23 @@
+
+	object "main" {
+		code {
+			codecopy(0, dataoffset("deployed"), datasize("deployed"))
+			return(0, datasize("deployed"))
+		}
+		object "deployed" {
+			code {
+				{
+{
+function foo_m_0(x_1, x_2, x_3) -> x_4, x_5, x_6, x_7
+{
+let x_10, x_11, x_12, x_13 := foo_m_0(addmod(0x200000, call(x_4, 0x2000000, 0x20000000, 0x200000000, 0x2000000000, 0x20000000000, 0x200000000000), 0x2000000000000), 0x20000000000000, 0x200000000000000)
+mstore(0, x_1)
+}
+mstore(0, 0x2000000000000000)
+}
+}
+
+			}
+		}
+	}
+		

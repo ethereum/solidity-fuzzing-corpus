@@ -1,0 +1,32 @@
+
+	object "main" {
+		code {
+			codecopy(0, dataoffset("deployed"), datasize("deployed"))
+			return(0, datasize("deployed"))
+		}
+		object "deployed" {
+			code {
+				{
+{
+mstore(add(0x4001,"A"), 0x401)
+mstore(not(add(true,0x41)), 0x5)
+for { let i_0 := 0 } lt(i_0, 0x60) { i_0 := add(i_0, 0x20) } {
+for { let i_1 := 0 } lt(i_1, 0x60) { i_1 := add(i_1, 0x20) } {
+}
+sstore(0x7, 0x7f)
+sstore(0, 0x7ff)
+sstore(lt(0,msize()), 0x7fff)
+if call(0x7ffff, 0x7fffff, 0x7ffffff, 0x7fffffff, 0x7ffffffff, 0x7fffffffff, 0x7ffffffffff) {
+break
+}
+}
+mstore(add(0x7fffffffffff,"A"), 0x7ffffffffffff)
+mstore(0x7fffffffffffff, 0x7ffffffffffffff)
+mstore("A", 0x7fffffffffffffff)
+}
+}
+
+			}
+		}
+	}
+		

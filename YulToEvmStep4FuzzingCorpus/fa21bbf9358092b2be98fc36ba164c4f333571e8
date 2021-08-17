@@ -1,0 +1,22 @@
+
+	object "main" {
+		code {
+			codecopy(0, dataoffset("deployed"), datasize("deployed"))
+			return(0, datasize("deployed"))
+		}
+		object "deployed" {
+			code {
+				{
+{
+log1(exp(0x5,0x7), exp(0x7f,0x7ff), exp(0x7fff,0x7ffff))
+log1(exp(0x7fffff,0x7ffffff), exp(0x7fffffff,0x7ffffffff), exp(0x7fffffffff,0x7ffffffffff))
+log1(exp(exp(0x7fffffffffff,0x7ffffffffffff),addmod(0x7fffffffffffff, 0x7ffffffffffffff, 0x7fffffffffffffff)), caller(), exp(0x7ffffffffffffffff,0x7fffffffffffffffff))
+log1(exp(0x7ffffffffffffffffff,0x7fffffffffffffffffff), exp(0x7ffffffffffffffffffff,0x7fffffffffffffffffffff), exp(0x7ffffffffffffffffffffff,0x7fffffffffffffffffffffff))
+log1(exp(0x7ffffffffffffffffffffffff,exp(0x7fffffffffffffffffffffffff,0x7ffffffffffffffffffffffffff)), exp(0x7fffffffffffffffffffffffffff,0x7ffffffffffffffffffffffffffff), exp(0x7fffffffffffffffffffffffffffff,0x7ffffffffffffffffffffffffffffff))
+}
+}
+
+			}
+		}
+	}
+		

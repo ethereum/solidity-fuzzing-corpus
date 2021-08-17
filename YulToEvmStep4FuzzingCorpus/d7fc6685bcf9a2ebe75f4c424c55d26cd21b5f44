@@ -1,0 +1,55 @@
+
+	object "main" {
+		code {
+			codecopy(0, dataoffset("deployed"), datasize("deployed"))
+			return(0, datasize("deployed"))
+		}
+		object "deployed" {
+			code {
+				{
+{
+function foo_m_0() -> x_1, x_2, x_3, x_4
+{
+switch gas()
+case 0 {}
+case 0x20000000000001 {}
+case 0x2000000000001 {}
+case 0x200000000001 {}
+case 0x20000000001 {}
+case 0x2000000001 {
+leave
+}
+case 0x0200000001 {}
+case 0x20000001 {}
+case 0x2000001 {}
+case 0x200001 {}
+case 0x20001 {}
+case 0x2001 {}
+case 0x201 {}
+case 0x21 {}
+case 0x3 {}
+case 0x3f {}
+case 0x3ff {}
+case 0x3fff {}
+case 0x3ffff {}
+case 0x3fffff {}
+case 0x3ffffff {
+leave
+}
+case 0x3fffffff {}
+default {
+x_3 := 0x3ffffffff
+}
+}
+let x_28, x_29, x_30, x_31 := foo_m_0()
+mstore(128, x_28)
+mstore(192, x_29)
+mstore(256, x_30)
+mstore(0, x_31)
+}
+}
+
+			}
+		}
+	}
+		

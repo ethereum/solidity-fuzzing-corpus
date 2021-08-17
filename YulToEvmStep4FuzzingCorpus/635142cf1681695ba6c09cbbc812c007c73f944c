@@ -1,0 +1,26 @@
+
+	object "main" {
+		code {
+			codecopy(0, dataoffset("deployed"), datasize("deployed"))
+			return(0, datasize("deployed"))
+		}
+		object "deployed" {
+			code {
+				{
+{
+pop(0x4000000000000000000001)
+let x_1 := keccak256(number(),number())
+codecopy(number(), 0x40000000000000000001, 0x4000000000000000001)
+let x_4 := 0x40000000000000001
+pop(0x4000000000000001)
+pop(0x400000000000001)
+pop(number())
+let x_8 := 0x4000000000001
+pop(0x400000000001)
+}
+}
+
+			}
+		}
+	}
+		

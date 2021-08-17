@@ -1,0 +1,37 @@
+
+	object "main" {
+		code {
+			codecopy(0, dataoffset("deployed"), datasize("deployed"))
+			return(0, datasize("deployed"))
+		}
+		object "deployed" {
+			code {
+				{
+{
+let x_2, x_3, x_4, x_5 := foo_m_0(0x2000000000001, 0x200000000001, 0x20000000001)
+{
+let x_11, x_12, x_13, x_14 := foo_m_0(0x2001, 0x201, 0x21)
+}
+let x_20, x_21, x_22, x_23 := foo_m_0(0x3ffffff, 0x3fffffff, 0x3ffffffff)
+let x_29, x_30, x_31, x_32 := foo_m_0(0x3fffffffffffffff, 0x3ffffffffffffffff, not(0x3fffffffffffffffff))
+mstore(0x3ffffffffffffffffff, 0x3fffffffffffffffffff)
+let x_40, x_41, x_42, x_43 := foo_m_0(0x3ffffffffffffffffffffffffff, 0x3fffffffffffffffffffffffffff, 0x3ffffffffffffffffffffffffffff)
+function foo_m_0(x_48, x_49, x_50) -> x_51, x_52, x_53, x_54
+{
+mstore(x_48, 0x3fffffffffffffffffffffffffffffffffffff)
+sstore(slt(0x3ffffffffffffffffffffffffffffffffffffff,0x3fffffffffffffffffffffffffffffffffffffff), keccak256(x_48,0x3ffffffffffffffffffffffffffffffffffffffff))
+}
+let x_60, x_61, x_62, x_63 := foo_m_0(mload(192),0x3ffffffffffffffffffffffffffffffffffffffffffffffffff,sload(32))
+sstore(96, x_60)
+sstore(160, x_61)
+sstore(224, x_62)
+sstore(288, x_63)
+let x_81, x_82, x_83, x_84 := foo_m_0(0x4000, 0x40000, 0x400000)
+let x_90, x_91, x_92, x_93 := foo_m_0(0x4000000000000, 0x40000000000000, 0x400000000000000)
+}
+}
+
+			}
+		}
+	}
+		

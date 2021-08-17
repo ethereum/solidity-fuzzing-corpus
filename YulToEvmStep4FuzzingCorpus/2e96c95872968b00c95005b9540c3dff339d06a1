@@ -1,0 +1,28 @@
+
+	object "main" {
+		code {
+			codecopy(0, dataoffset("deployed"), datasize("deployed"))
+			return(0, datasize("deployed"))
+		}
+		object "deployed" {
+			code {
+				{
+{
+sstore(0x1000000001, foo_s_0(0x100000001)
+)
+for { let i_0 := 0 } lt(i_0, 0x60) { i_0 := add(i_0, 0x20) } {
+let x_4 := foo_s_0(0x10001)
+let x_8 := foo_s_0(x_4)
+}
+function foo_s_0(x_10) -> x_11
+{
+x_11 := call(0x1ffff, 0x1fffff, 0x1ffffff, 0x1fffffff, 0x1ffffffff, 0x1fffffffff, addmod(0x1ffffffffff, 0x1fffffffffff, call(0x1ffffffffffff, 0x1fffffffffffff, 0x1ffffffffffffff, difficulty(), 0x1fffffffffffffff, 0x1ffffffffffffffff, addmod(0x1fffffffffffffffff, 0x1ffffffffffffffffff, call(0x1fffffffffffffffffff, 0x1ffffffffffffffffffff, 0x1fffffffffffffffffffff, 0x1ffffffffffffffffffffff, 0x1fffffffffffffffffffffff, 0x1ffffffffffffffffffffffff, 0x1fffffffffffffffffffffffff)))))
+}
+let x_36 := foo_s_0(0x1fffffffffffffffffffffffffffff)
+}
+}
+
+			}
+		}
+	}
+		

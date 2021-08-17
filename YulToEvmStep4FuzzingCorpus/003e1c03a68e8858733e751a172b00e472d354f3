@@ -1,0 +1,29 @@
+
+	object "main" {
+		code {
+			codecopy(0, dataoffset("deployed"), datasize("deployed"))
+			return(0, datasize("deployed"))
+		}
+		object "deployed" {
+			code {
+				{
+{
+pop(number())
+if 0x7ffffffffffffffffffffffffffffffffffffffffffffffffffffffffff {
+log0(0x7fffffffffffffffffffffffffffffffffffffffffffffffffffffffffff, 0x7ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff)
+}
+log0(0x7fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff, 0x7ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff)
+invalid()
+mstore(13893632, 0x7fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff)
+codecopy(0x8, 0x80, 0x800)
+if 0x8000 {
+log0(0x80000, 0x800000)
+log0(0x8000000, 0x80000000)
+}
+}
+}
+
+			}
+		}
+	}
+		

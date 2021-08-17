@@ -1,0 +1,79 @@
+
+	object "main" {
+		code {
+			codecopy(0, dataoffset("deployed"), datasize("deployed"))
+			return(0, datasize("deployed"))
+		}
+		object "deployed" {
+			code {
+				{
+{
+function foo_m_0(x_2, x_3, x_4) -> x_5, x_6
+{
+function foo_m_8(x_9, x_10) -> x_11, x_12
+{
+function foo_m_14(x_15, x_16) -> x_17, x_18
+{
+function foo_m_20(x_21, x_22) -> x_23, x_24
+{
+mstore8(0x3ffffffffff, 0x3fffffffffff)
+leave
+}
+let x_28, x_29 := foo_m_20(0x3fffffffffffffffff,sload(160))
+sstore(224, x_28)
+sstore(288, x_29)
+leave
+leave
+leave
+}
+let x_40, x_41 := foo_m_14(0x3fffffffffffffffffffffffffffff,sload(224))
+sstore(288, x_40)
+sstore(32, x_41)
+leave
+leave
+leave
+}
+let x_52, x_53 := foo_m_8(0x3fffffffffffffffffffffffffffffffffffffffff,sload(288))
+sstore(32, x_52)
+sstore(96, x_53)
+leave
+leave
+leave
+}
+let x_64, x_65 := foo_m_0(0x3fffffffffffffffffffffffffffffffffffffffffffffffffffff,sload(32),calldataload(96))
+sstore(160, x_64)
+sstore(224, x_65)
+function foo_m_1(x_78, x_79, x_80) -> x_81, x_82
+{
+switch 0x40000
+case "" {}
+default {
+function foo_m_85(x_86, x_87) -> x_88, x_89
+{
+function foo_m_91(x_92, x_93) -> x_94, x_95
+{
+leave
+}
+let x_97, x_98 := foo_m_91(calldataload(32),sload(96))
+sstore(160, x_97)
+sstore(224, x_98)
+leave
+leave
+leave
+}
+let x_108, x_109 := foo_m_85(0x4000000000000000000000000000000000,sload(160))
+sstore(224, x_108)
+sstore(288, x_109)
+leave
+}
+}
+let x_120, x_121 := foo_m_1(0x4000000000000000000000000000000000000000000000,sload(224),calldataload(288))
+sstore(32, x_120)
+sstore(96, x_121)
+}
+}
+
+			}
+		}
+	}
+		

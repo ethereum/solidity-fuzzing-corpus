@@ -1,0 +1,26 @@
+
+	object "main" {
+		code {
+			codecopy(0, dataoffset("deployed"), datasize("deployed"))
+			return(0, datasize("deployed"))
+		}
+		object "deployed" {
+			code {
+				{
+{
+mstore(mod("",0x3fffffffffffffffffffffffffffffffffff), mod(mod("",0x3ffffffffffffffffffffffffffffffffffff),0x3fffffffffffffffffffffffffffffffffffff))
+mstore(0x3ffffffffffffffffffffffffffffffffffffff, mod("",0x3fffffffffffffffffffffffffffffffffffffff))
+mstore(mod(mod("",0x3ffffffffffffffffffffffffffffffffffffffff),0x3fffffffffffffffffffffffffffffffffffffffff), 0x3ffffffffffffffffffffffffffffffffffffffffff)
+mstore(0x3fffffffffffffffffffffffffffffffffffffffffff, mod(mod("",0x3ffffffffffffffffffffffffffffffffffffffffffff),0x3fffffffffffffffffffffffffffffffffffffffffffff))
+mstore(0x3ffffffffffffffffffffffffffffffffffffffffffffff, mod(mod("",0x3fffffffffffffffffffffffffffffffffffffffffffffff),0x3ffffffffffffffffffffffffffffffffffffffffffffffff))
+mstore(mod("",0x3fffffffffffffffffffffffffffffffffffffffffffffffff), mod(mod(mod(mod("",0x3ffffffffffffffffffffffffffffffffffffffffffffffffff),0x3fffffffffffffffffffffffffffffffffffffffffffffffffff),0x3ffffffffffffffffffffffffffffffffffffffffffffffffffff),0x3fffffffffffffffffffffffffffffffffffffffffffffffffffff))
+mstore("", mod("",0x3ffffffffffffffffffffffffffffffffffffffffffffffffffffff))
+pop(0x3fffffffffffffffffffffffffffffffffffffffffffffffffffffff)
+mstore(mod("",0x3ffffffffffffffffffffffffffffffffffffffffffffffffffffffff), 0x3fffffffffffffffffffffffffffffffffffffffffffffffffffffffff)
+}
+}
+
+			}
+		}
+	}
+		

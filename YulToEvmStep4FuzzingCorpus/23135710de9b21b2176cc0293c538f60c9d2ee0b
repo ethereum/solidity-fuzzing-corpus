@@ -1,0 +1,44 @@
+
+	object "main" {
+		code {
+			codecopy(0, dataoffset("deployed"), datasize("deployed"))
+			return(0, datasize("deployed"))
+		}
+		object "deployed" {
+			code {
+				{
+{
+log2(or(or(or(or(codesize(),codesize()),codesize()),codesize()),codesize()), 0x1000000000000000000000000000000001, 0, 0x100000000000000000000000000000001)
+for { let i_0 := 0 } lt(i_0, 0x60) { i_0 := add(i_0, 0x20) } {
+switch codesize()
+case 0x10000000000000000000000000000001 {}
+default {
+switch codesize()
+case 0x1000000000000000000000000000001 {}
+default {
+switch codesize()
+case 0x100000000000000000000000000001 {}
+default {
+continue
+}
+}
+}
+}
+for { let i_1 := 0 } lt(i_1, 0x60) { i_1 := add(i_1, 0x20) } {
+switch codesize()
+case 0x10000000000000000000000000001 {}
+default {
+switch codesize()
+case 0x1000000000000000000000000001 {}
+default {
+continue
+}
+}
+}
+}
+}
+
+			}
+		}
+	}
+		

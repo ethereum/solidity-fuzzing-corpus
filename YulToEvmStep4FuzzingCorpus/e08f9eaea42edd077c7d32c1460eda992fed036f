@@ -1,0 +1,25 @@
+
+	object "main" {
+		code {
+			codecopy(0, dataoffset("deployed"), datasize("deployed"))
+			return(0, datasize("deployed"))
+		}
+		object "deployed" {
+			code {
+				{
+{
+codecopy(shl(0,gas()), shl("I",msize()), shl(0,msize()))
+{
+let x_0, x_1, x_2, x_3
+}
+{
+}
+let x_4 := sar(shl(0,msize()),0x2000000000000000000000000000000000000000001)
+codecopy(shl(0,x_4), shl(gas(),x_4), 0x200000000000000000000000000000000000000001)
+}
+}
+
+			}
+		}
+	}
+		

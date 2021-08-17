@@ -1,0 +1,46 @@
+
+	object "main" {
+		code {
+			codecopy(0, dataoffset("deployed"), datasize("deployed"))
+			return(0, datasize("deployed"))
+		}
+		object "deployed" {
+			code {
+				{
+{
+let x_0 := 0x1ffffffff
+for {}
+add(0x0,add(0x0,x_0)){
+x_0 := create2(0x1fffffffff, 0x1ffffffffff, 0x1fffffffffff, 0x1ffffffffffff)
+selfdestruct(18446744073709551599)
+}
+{
+switch 0x1fffffffffffff
+default {
+break
+}
+break
+}
+for {}
+add(0x0,add(0x0,x_0)){
+x_0 := 0x1ffffffffffffff
+selfdestruct(0x1fffffffffffffff)
+}
+{
+switch 0x1ffffffffffffffff
+default {
+break
+switch 0x1fffffffffffffffff
+default {
+break
+}
+}
+break
+}
+}
+}
+
+			}
+		}
+	}
+		

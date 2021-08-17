@@ -1,0 +1,33 @@
+
+	object "main" {
+		code {
+			codecopy(0, dataoffset("deployed"), datasize("deployed"))
+			return(0, datasize("deployed"))
+		}
+		object "deployed" {
+			code {
+				{
+{
+if 0x7fffff {
+let x_3 := foo_s_0()
+}
+let x_6 := foo_s_0()
+x_6 := add(0x7ffffffffffff,slt(0x7fffffffffffff,0x7ffffffffffffff))
+function foo_s_0() -> x_11
+{
+}
+sstore(xor(0x7fffffffffffffffff,calldatasize()), 0x7ffffffffffffffffff)
+switch x_6
+case "" {}
+case 0x7fffffffffffffffffff {}
+default {
+x_6 := add(0x7ffffffffffffffffffff,18374959154260345087)
+log0(0x7fffffffffffffffffffff, 0x7ffffffffffffffffffffff)
+}
+}
+}
+
+			}
+		}
+	}
+		

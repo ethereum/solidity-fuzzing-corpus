@@ -1,0 +1,36 @@
+
+	object "main" {
+		code {
+			codecopy(0, dataoffset("deployed"), datasize("deployed"))
+			return(0, datasize("deployed"))
+		}
+		object "deployed" {
+			code {
+				{
+{
+let x_0 := 0x8000001
+x_0 := 0x800001
+switch mload(0x80001)
+case 0x8001 {
+x_0 := 0x801
+}
+case 0x81 {
+x_0 := 0x9
+}
+case 0xf {
+x_0 := x_0
+}
+case 0xff {
+}
+case 0xfff {
+x_0 := 0xffff
+}
+case 0xfffff {}
+extcodecopy(0xffffff, x_0, 0xfffffff, 0xffffffff)
+}
+}
+
+			}
+		}
+	}
+		

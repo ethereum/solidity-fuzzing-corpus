@@ -1,0 +1,24 @@
+
+	object "main" {
+		code {
+			codecopy(0, dataoffset("deployed"), datasize("deployed"))
+			return(0, datasize("deployed"))
+		}
+		object "deployed" {
+			code {
+				{
+{
+pop(mload(0x3fffffffffff))
+calldatacopy(addmod(0x3ffffffffffff, 0x3fffffffffffff, 0x3ffffffffffffff), 0x3fffffffffffffff, 0x3ffffffffffffffff)
+log1(0x3fffffffffffffffff, call(call(0x3ffffffffffffffffff, call(call(0x3fffffffffffffffffff, addmod(0x3ffffffffffffffffffff, 0x3fffffffffffffffffffff, not(callvalue())), codesize(), 0x3ffffffffffffffffffffff, 0x3fffffffffffffffffffffff, 0x3ffffffffffffffffffffffff, 0x3fffffffffffffffffffffffff), 0x3ffffffffffffffffffffffffff, 0x3fffffffffffffffffffffffffff, 0x3ffffffffffffffffffffffffffff, 0x3fffffffffffffffffffffffffffff, 0x3ffffffffffffffffffffffffffffff, 0x3fffffffffffffffffffffffffffffff), not(codesize()), 0x3ffffffffffffffffffffffffffffffff, 0x3fffffffffffffffffffffffffffffffff, gas(), 0x3ffffffffffffffffffffffffffffffffff), timestamp(), 0x3fffffffffffffffffffffffffffffffffff, 0x3ffffffffffffffffffffffffffffffffffff, 0x3fffffffffffffffffffffffffffffffffffff, 0x3ffffffffffffffffffffffffffffffffffffff, 0x3fffffffffffffffffffffffffffffffffffffff), codesize())
+for { let i_0 := 0 } lt(i_0, 0x60) { i_0 := add(i_0, 0x20) } {
+{
+}
+}
+}
+}
+
+			}
+		}
+	}
+		

@@ -1,0 +1,57 @@
+
+	object "main" {
+		code {
+			codecopy(0, dataoffset("deployed"), datasize("deployed"))
+			return(0, datasize("deployed"))
+		}
+		object "deployed" {
+			code {
+				{
+{
+switch gas()
+case 0x3fffffffffffffffffffffffffffffffffffffffffffffffffffff {}
+case 0x3ffffffffffffffffffffffffffffffffffffffffffffffffffffff {}
+case 0x3fffffffffffffffffffffffffffffffffffffffffffffffffffffff {
+stop()
+}
+case 0x3ffffffffffffffffffffffffffffffffffffffffffffffffffffffff {}
+case 0x3fffffffffffffffffffffffffffffffffffffffffffffffffffffffff {}
+case 0x3ffffffffffffffffffffffffffffffffffffffffffffffffffffffffff {}
+case 0x3fffffffffffffffffffffffffffffffffffffffffffffffffffffffffff {}
+case 0x3ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff {}
+case 0x3fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff {}
+case 0x3ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff {}
+case 0x3fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff {}
+case 0x4 {}
+case 0x40 {}
+case 0x400 {}
+case 0x4000 {}
+case 0x40000 {}
+case 0x400000 {}
+case 0x4000000 {}
+case 0x40000000 {}
+case 0 {}
+case 0x400000000 {}
+case 0x4000000000 {}
+case 0x40000000000 {}
+case 0x400000000000 {}
+case 0x4000000000000 {}
+case 0x40000000000000 {
+codecopy(0x400000000000000, 0x4000000000000000, 0x40000000000000000)
+}
+case 0x400000000000000000 {}
+case 0x4000000000000000000 {}
+case 0x40000000000000000000 {}
+case 0x400000000000000000000 {}
+case 0x4000000000000000000000 {
+}
+default {
+return(0x40000000000000000000000, addmod(0x400000000000000000000000, 0x4000000000000000000000000, 0x40000000000000000000000000))
+}
+}
+}
+
+			}
+		}
+	}
+		

@@ -1,0 +1,23 @@
+
+	object "main" {
+		code {
+			codecopy(0, dataoffset("deployed"), datasize("deployed"))
+			return(0, datasize("deployed"))
+		}
+		object "deployed" {
+			code {
+				{
+{
+sstore(xor(xor(xor(xor(calldatasize(),0xfffffffffffffff),xor(codesize(),0xffffffffffffffff)),xor(0xfffffffffffffffff,codesize())),xor(calldatasize(),0xffffffffffffffffff)), 0xfffffffffffffffffff)
+sstore(0, 0xffffffffffffffffffff)
+sstore(0, 0xfffffffffffffffffffff)
+sstore(0, 0xffffffffffffffffffffff)
+sstore(0, 0xfffffffffffffffffffffff)
+sstore(0, 0xffffffffffffffffffffffff)
+}
+}
+
+			}
+		}
+	}
+		

@@ -1,0 +1,30 @@
+
+	object "main" {
+		code {
+			codecopy(0, dataoffset("deployed"), datasize("deployed"))
+			return(0, datasize("deployed"))
+		}
+		object "deployed" {
+			code {
+				{
+{
+pop(number())
+let x_0 := keccak256(0x7fffffffffffffffffffffffffffffffffffffffffffffffffffffffff,number())
+codecopy(number(), 0x7ffffffffffffffffffffffffffffffffffffffffffffffffffffffffff, 0x7fffffffffffffffffffffffffffffffffffffffffffffffffffffffffff)
+let x_4 := 0x7fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
+pop(0x7ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff)
+pop(number())
+for { let i_0 := 0 } lt(i_0, 0x60) { i_0 := add(i_0, 0x20) } {
+for { let i_1 := 0 } lt(i_1, 0x60) { i_1 := add(i_1, 0x20) } {
+x_0 := create(0x7fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff, 0x8, 0x80)
+}
+}
+let x_10 := 0x8000
+pop(0x80000)
+}
+}
+
+			}
+		}
+	}
+		

@@ -1,0 +1,32 @@
+
+	object "main" {
+		code {
+			codecopy(0, dataoffset("deployed"), datasize("deployed"))
+			return(0, datasize("deployed"))
+		}
+		object "deployed" {
+			code {
+				{
+{
+foo_n_0(0x200000000000000001, 0x20000000000000001, add(0x2000000000000001,0x200000000000001))
+{
+}
+foo_n_0(0x2000000000001, 0x200000000001, 0x20000000001)
+foo_n_0(0x200000001, 0x20000001, 0x2000001)
+mstore(0x200001, 0x20001)
+foo_n_0(0x201, 0x21, 0x3)
+function foo_n_0(x_20, x_21, x_22)
+{
+sstore(mod(x_22,0x3fffff), slt(x_20,0x3ffffff))
+sstore(mod(x_21,0x3fffffff), slt(x_20,0x3ffffffff))
+extcodecopy(0x3fffffffff, x_22, 0x3ffffffffff, 0x3fffffffffff)
+}
+foo_n_0(0x3ffffffffffffff,sload(160),calldataload(224))
+foo_n_0(0x3ffffffffffffffffffff, 0x3fffffffffffffffffffff, not(call(0x3ffffffffffffffffffffff, 0x3fffffffffffffffffffffff, 0x3ffffffffffffffffffffffff, 0x3fffffffffffffffffffffffff, origin(), 0x3ffffffffffffffffffffffffff, 0x3fffffffffffffffffffffffffff)))
+}
+}
+
+			}
+		}
+	}
+		

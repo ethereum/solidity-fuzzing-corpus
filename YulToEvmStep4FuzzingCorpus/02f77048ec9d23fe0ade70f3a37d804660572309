@@ -1,0 +1,20 @@
+
+	object "main" {
+		code {
+			codecopy(0, dataoffset("deployed"), datasize("deployed"))
+			return(0, datasize("deployed"))
+		}
+		object "deployed" {
+			code {
+				{
+{
+codecopy(shl(0x11,0x1f), shl(0x1ff,shl(0x1fff,0x1ffff)), shl(0x1fffff,shl(0x1ffffff,addmod(0x1fffffff, 0x1ffffffff, 0x1fffffffff))))
+extcodecopy(0x1ffffffffff, 0x1fffffffffff, 0x1ffffffffffff, 0x1fffffffffffff)
+codecopy(shl(0x1ffffffffffffff,0x1fffffffffffffff), shl(0x1ffffffffffffffff,shl(0x1fffffffffffffffff,0x1ffffffffffffffffff)), 0x1fffffffffffffffffff)
+}
+}
+
+			}
+		}
+	}
+		

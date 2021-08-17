@@ -1,0 +1,30 @@
+
+	object "main" {
+		code {
+			codecopy(0, dataoffset("deployed"), datasize("deployed"))
+			return(0, datasize("deployed"))
+		}
+		object "deployed" {
+			code {
+				{
+{
+extcodecopy(0x9, 0xf, 0xff, 0xfff)
+extcodecopy(0xffff, 0xfffff, 0xffffff, 0xfffffff)
+extcodecopy(0xffffffff, number(), 0xfffffffff, 0xffffffffff)
+extcodecopy(0xfffffffffff, callvalue(), 0xffffffffffff, 0xfffffffffffff)
+extcodecopy(0xffffffffffffff, 0xfffffffffffffff, 0xffffffffffffffff, 0xfffffffffffffffff)
+let x_18 := create(0xfffffffffffffffffff, 0xffffffffffffffffffff, 0xfffffffffffffffffffff)
+extcodecopy(0xffffffffffffffffffffff, 0xfffffffffffffffffffffff, 0xffffffffffffffffffffffff, 0xfffffffffffffffffffffffff)
+extcodecopy(0xffffffffffffffffffffffffff, 0xfffffffffffffffffffffffffff, 0xffffffffffffffffffffffffffff, 0xfffffffffffffffffffffffffffff)
+extcodecopy(0xffffffffffffffffffffffffffffff, 0xfffffffffffffffffffffffffffffff, 0xffffffffffffffffffffffffffffffff, 0xfffffffffffffffffffffffffffffffff)
+extcodecopy(0xffffffffffffffffffffffffffffffffff, 0xfffffffffffffffffffffffffffffffffff, 0xffffffffffffffffffffffffffffffffffff, 0xfffffffffffffffffffffffffffffffffffff)
+extcodecopy(0xffffffffffffffffffffffffffffffffffffff, 0xfffffffffffffffffffffffffffffffffffffff, 0xffffffffffffffffffffffffffffffffffffffff, 0xfffffffffffffffffffffffffffffffffffffffff)
+extcodecopy(0xffffffffffffffffffffffffffffffffffffffffff, 0xfffffffffffffffffffffffffffffffffffffffffff, 0xffffffffffffffffffffffffffffffffffffffffffff, 0xfffffffffffffffffffffffffffffffffffffffffffff)
+extcodecopy(0xffffffffffffffffffffffffffffffffffffffffffffff, 0xfffffffffffffffffffffffffffffffffffffffffffffff, 0xffffffffffffffffffffffffffffffffffffffffffffffff, 0xfffffffffffffffffffffffffffffffffffffffffffffffff)
+}
+}
+
+			}
+		}
+	}
+		

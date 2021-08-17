@@ -1,0 +1,39 @@
+
+	object "main" {
+		code {
+			codecopy(0, dataoffset("deployed"), datasize("deployed"))
+			return(0, datasize("deployed"))
+		}
+		object "deployed" {
+			code {
+				{
+{
+let x_0 := 0x401
+x_0 := 0x41
+switch mload(0x5)
+case 0x7 {
+x_0 := 0x7f
+}
+case 0x7ff {
+x_0 := 0x7fff
+extcodecopy(blockhash(0x7ffff), 0x7fffff, 0x7ffffff, 0x7fffffff)
+}
+case 0x7ffffffff {
+x_0 := 0x7fffffffff
+}
+case 0x7ffffffffff {
+}
+case 0x7fffffffffff {
+x_0 := 0x7ffffffffffff
+}
+case 0x7fffffffffffff {
+x_0 := 0x7ffffffffffffff
+}
+extcodecopy(0x7fffffffffffffff, x_0, 0x7ffffffffffffffff, 0x7fffffffffffffffff)
+}
+}
+
+			}
+		}
+	}
+		

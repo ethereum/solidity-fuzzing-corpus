@@ -1,0 +1,19 @@
+
+	object "main" {
+		code {
+			codecopy(0, dataoffset("deployed"), datasize("deployed"))
+			return(0, datasize("deployed"))
+		}
+		object "deployed" {
+			code {
+				{
+{
+extcodecopy(div(not(16777216),0x1001), or(div(not(16777216),0x101),div(not(0x11),0x1f)), or(not(div(not(1),0x1ff)),0x1fff), 0x1ffff)
+mstore("5", 0x1fffff)
+}
+}
+
+			}
+		}
+	}
+		

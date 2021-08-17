@@ -1,0 +1,29 @@
+
+	object "main" {
+		code {
+			codecopy(0, dataoffset("deployed"), datasize("deployed"))
+			return(0, datasize("deployed"))
+		}
+		object "deployed" {
+			code {
+				{
+{
+mstore(not(""), 0x10000)
+mstore(not(0), 0x100000)
+mstore(not(""), 0x1000000)
+mstore(not(0), 0x10000000)
+mstore(not(0x100000000), 0x1000000000)
+mstore(not(""), 0x10000000000)
+mstore(not(0), or(0x100000000000,0x1000000000000))
+mstore(gas(), 0x10000000000000)
+mstore(not(gas()), 0x100000000000000)
+mstore(not(0), 0x1000000000000000)
+mstore(not(0x10000000000000000), slt(or(codesize(),codesize()),codesize()))
+mstore(not(0), 0x100000000000000000)
+}
+}
+
+			}
+		}
+	}
+		

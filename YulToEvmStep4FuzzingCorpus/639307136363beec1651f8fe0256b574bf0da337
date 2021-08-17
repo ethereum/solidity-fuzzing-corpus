@@ -1,0 +1,35 @@
+
+	object "main" {
+		code {
+			codecopy(0, dataoffset("deployed"), datasize("deployed"))
+			return(0, datasize("deployed"))
+		}
+		object "deployed" {
+			code {
+				{
+{
+sstore(0x1ffffffffff, foo_s_0(0x1fffffffffff)
+)
+log1(0x1ffffffffffff, 0x1fffffffffffff, 0x1ffffffffffffff)
+sstore(foo_s_0(foo_s_0(0x1fffffffffffffff)
+)
+, foo_s_0(0x1ffffffffffffffff)
+)
+function foo_s_0(x_8) -> x_9
+{
+x_9 := gt(x_8,mulmod(0x1ffffffffffffffffffff, mulmod(0x1fffffffffffffffffffff, 0x1ffffffffffffffffffffff, x_8), x_8))
+}
+sstore(0x1fffffffffffffffffffffff, foo_s_0(0x1ffffffffffffffffffffffff)
+)
+sstore(mulmod(0x1fffffffffffffffffffffffff, mulmod(0x1ffffffffffffffffffffffffff, 0x1fffffffffffffffffffffffffff, 0x1ffffffffffffffffffffffffffff), 0x1fffffffffffffffffffffffffffff), foo_s_0(0x1ffffffffffffffffffffffffffffff)
+)
+sstore(foo_s_0(0x1fffffffffffffffffffffffffffffff)
+, foo_s_0(0x1ffffffffffffffffffffffffffffffff)
+)
+}
+}
+
+			}
+		}
+	}
+		

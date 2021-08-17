@@ -1,0 +1,31 @@
+
+	object "main" {
+		code {
+			codecopy(0, dataoffset("deployed"), datasize("deployed"))
+			return(0, datasize("deployed"))
+		}
+		object "deployed" {
+			code {
+				{
+{
+for {
+mstore(0x40000000000001, 0x4000000000001)
+mstore(not(0x400000000001), mload(not(balance(0x40000000001))))
+mstore(not(0x4000000001), not(0x400000001))
+mstore(0x40000001, mload(0x4000001))
+mstore(0x400001, mload(0x40001))
+mstore(0x4001, mload(0x401))
+mstore(0x41, 0x5)
+}
+lt(0x0,0x0){
+}
+{
+continue
+}
+}
+}
+
+			}
+		}
+	}
+		

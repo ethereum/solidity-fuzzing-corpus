@@ -1,0 +1,43 @@
+
+	object "main" {
+		code {
+			codecopy(0, dataoffset("deployed"), datasize("deployed"))
+			return(0, datasize("deployed"))
+		}
+		object "deployed" {
+			code {
+				{
+{
+let x_2, x_3, x_4, x_5 := foo_m_0(0x1000000000000000000000000000000000000000000000001, 0x100000000000000000000000000000000000000000000001, 0x10000000000000000000000000000000000000000000001, add(0x1000000000000000000000000000000000000000000001,0x100000000000000000000000000000000000000000001))
+let x_13, x_14, x_15, x_16 := foo_m_0(0x10000000000000000000000000000000000001, 0x1000000000000000000000000000000000001, 0x100000000000000000000000000000000001, 0x10000000000000000000000000000000001)
+{
+}
+let x_23, x_24, x_25, x_26 := foo_m_0(0x1000000000000000000000000001, 0x100000000000000000000000001, 0x10000000000000000000000001, 0x1000000000000000000000001)
+let x_33, x_34, x_35, x_36 := foo_m_0(0x100000000000000001, 0x10000000000000001, 0x1000000000000001, add(x_13,0x100000000000001))
+let x_43, x_44, x_45, x_46 := foo_m_0(not(false), 0x10000001, 0x1000001, 0x100001)
+let x_52, x_53, x_54, x_55 := foo_m_0(0x1fff, 0x1ffff, 0x1fffff, 0x1ffffff)
+function foo_m_0(x_61, x_62, x_63, x_64) -> x_65, x_66, x_67, x_68
+{
+let x_70 := 0x1fffffffffffffffff
+switch mload(0x1ffffffffffffffffff)
+case 0x1fffffffffffffffffff {}
+case 0x1ffffffffffffffffffff {
+x_65 := 0x1fffffffffffffffffffff
+}
+case 0x1ffffffffffffffffffffff {
+x_61 := 0x1fffffffffffffffffffffff
+}
+case 0x1ffffffffffffffffffffffff {
+x_61 := 0x1fffffffffffffffffffffffff
+}
+codecopy(x_61, 0x1ffffffffffffffffffffffffff, 0x1fffffffffffffffffffffffffff)
+}
+let x_83, x_84, x_85, x_86 := foo_m_0(0x1ffffffffffffffffffffffffffffffffff, 0x1fffffffffffffffffffffffffffffffffff, 0x1ffffffffffffffffffffffffffffffffffff, 0x1fffffffffffffffffffffffffffffffffffff)
+let x_93, x_94, x_95, x_96 := foo_m_0(0x1ffffffffffffffffffffffffffffffffffffffffffff, gaslimit(), 0x1fffffffffffffffffffffffffffffffffffffffffffff, 0x1ffffffffffffffffffffffffffffffffffffffffffffff)
+}
+}
+
+			}
+		}
+	}
+		

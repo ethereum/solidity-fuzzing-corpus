@@ -1,0 +1,19 @@
+
+	object "main" {
+		code {
+			codecopy(0, dataoffset("deployed"), datasize("deployed"))
+			return(0, datasize("deployed"))
+		}
+		object "deployed" {
+			code {
+				{
+{
+let x_0 := exp(address(),0x3fffffffffffffffffffffffffffffffffff)
+extcodecopy(gt(0x3ffffffffffffffffffffffffffffffffffff,x_0), gt(0x3fffffffffffffffffffffffffffffffffffff,add(mload(0x3ffffffffffffffffffffffffffffffffffffff),0x3fffffffffffffffffffffffffffffffffffffff)), 0x3ffffffffffffffffffffffffffffffffffffffff, addmod(0x3fffffffffffffffffffffffffffffffffffffffff, 0x3ffffffffffffffffffffffffffffffffffffffffff, x_0))
+}
+}
+
+			}
+		}
+	}
+		

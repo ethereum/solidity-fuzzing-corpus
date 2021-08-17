@@ -1,0 +1,50 @@
+
+	object "main" {
+		code {
+			codecopy(0, dataoffset("deployed"), datasize("deployed"))
+			return(0, datasize("deployed"))
+		}
+		object "deployed" {
+			code {
+				{
+{
+for { let i_0 := 0 } lt(i_0, 0x60) { i_0 := add(i_0, 0x20) } {
+let x_0 := iszero(0xffffffffffffffffffffffffffffffffffffffffffffffff)
+switch codesize()
+case 0xfffffffffffffffffffffffffffffffffffffffffffffffff {}
+case 0xffffffffffffffffffffffffffffffffffffffffffffffffff {}
+case 0xfffffffffffffffffffffffffffffffffffffffffffffffffff {}
+case 0xffffffffffffffffffffffffffffffffffffffffffffffffffff {}
+case 0xfffffffffffffffffffffffffffffffffffffffffffffffffffff {}
+case 0xffffffffffffffffffffffffffffffffffffffffffffffffffffff {}
+case 0xfffffffffffffffffffffffffffffffffffffffffffffffffffffff {}
+case 0xffffffffffffffffffffffffffffffffffffffffffffffffffffffff {}
+case 0xfffffffffffffffffffffffffffffffffffffffffffffffffffffffff {}
+case 0xffffffffffffffffffffffffffffffffffffffffffffffffffffffffff {}
+case 0xfffffffffffffffffffffffffffffffffffffffffffffffffffffffffff {}
+case 0xffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff {}
+case 0xfffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff {
+continue
+}
+case 0xffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff {}
+case 0xfffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff {}
+case 0xffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff {}
+case 0x0 {}
+case 0x1 {}
+case 0x1f {}
+case 0x9f {}
+case 0xa0 {}
+case 0xa1 {}
+case 0xff {}
+case 0x100 {}
+default {
+stop()
+}
+}
+}
+}
+
+			}
+		}
+	}
+		

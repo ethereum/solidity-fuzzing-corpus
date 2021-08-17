@@ -1,0 +1,22 @@
+
+	object "main" {
+		code {
+			codecopy(0, dataoffset("deployed"), datasize("deployed"))
+			return(0, datasize("deployed"))
+		}
+		object "deployed" {
+			code {
+				{
+{
+let x_0 := call(0x401, 0x41, 0x5, 0x7, 0x7f, 0x7ff, 0x7fff)
+for { let i_0 := 0 } lt(i_0, 0x60) { i_0 := add(i_0, 0x20) } {
+log0(call(call(not(add(call(0x7ffff, 0x7fffff, 0x7ffffff, 0x7fffffff, 0x7ffffffff, 0x7fffffffff, x_0),0x7ffffffffff)), 0x7fffffffffff, 0x7ffffffffffff, 0x7fffffffffffff, 0x7ffffffffffffff, 0x7fffffffffffffff, 0x7ffffffffffffffff), 0x7fffffffffffffffff, 0x7ffffffffffffffffff, 0x7fffffffffffffffffff, 0x7ffffffffffffffffffff, 0x7fffffffffffffffffffff, x_0), x_0)
+}
+sstore(x_0, x_0)
+}
+}
+
+			}
+		}
+	}
+		

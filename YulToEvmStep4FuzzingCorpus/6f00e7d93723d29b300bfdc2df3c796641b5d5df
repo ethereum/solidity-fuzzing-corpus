@@ -1,0 +1,19 @@
+
+	object "main" {
+		code {
+			codecopy(0, dataoffset("deployed"), datasize("deployed"))
+			return(0, datasize("deployed"))
+		}
+		object "deployed" {
+			code {
+				{
+{
+codecopy(or(not(""),and(not(""),0x4001)), or(not(""),and(not(""),0x401)), 0x41)
+codecopy(or(or(not(""),and(not(""),not(create(0x5, 0x07, 0x7f)))),and(not(""),0x7ff)), 0x7fff, 0x7ffff)
+}
+}
+
+			}
+		}
+	}
+		

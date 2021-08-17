@@ -1,0 +1,32 @@
+
+	object "main" {
+		code {
+			codecopy(0, dataoffset("deployed"), datasize("deployed"))
+			return(0, datasize("deployed"))
+		}
+		object "deployed" {
+			code {
+				{
+{
+sstore(0x1ffffffff, 0x1fffffffff)
+function foo_m_0(x_3, x_4, x_5, x_6) -> x_7, x_8, x_9, x_10
+{
+for {}
+x_3{}
+{
+invalid()
+}
+sstore(0x1fffffffffffffffffff, 0x1ffffffffffffffffffff)
+sstore(x_3, 0x1fffffffffffffffffffff)
+}
+let x_16, x_17, x_18, x_19 := foo_m_0(mload(call(0x1ffffffffffffffffffffffffffff, 0x1fffffffffffffffffffffffffffff, addmod(0x1ffffffffffffffffffffffffffffff, not(create(0x1fffffffffffffffffffffffffffffff, 0x1ffffffffffffffffffffffffffffffff, create(0x1fffffffffffffffffffffffffffffffff, 0x1ffffffffffffffffffffffffffffffffff, create(0x1fffffffffffffffffffffffffffffffffff, 0x1ffffffffffffffffffffffffffffffffffff, 0x1fffffffffffffffffffffffffffffffffffff)))), 0x1ffffffffffffffffffffffffffffffffffffff), 0x1fffffffffffffffffffffffffffffffffffffff, 0x1ffffffffffffffffffffffffffffffffffffffff, 0x1fffffffffffffffffffffffffffffffffffffffff, 0x1ffffffffffffffffffffffffffffffffffffffffff)), 0x1fffffffffffffffffffffffffffffffffffffffffff, 0x1ffffffffffffffffffffffffffffffffffffffffffff, 0x1fffffffffffffffffffffffffffffffffffffffffffff)
+let x_39 := 0x1fffffffffffffffffffffffffffffffffffffffffffffff
+let x_42, x_43, x_44, x_45 := foo_m_0(0x1ffffffffffffffffffffffffffffffffffffffffffffffffffffff, 0x1fffffffffffffffffffffffffffffffffffffffffffffffffffffff, 0x1ffffffffffffffffffffffffffffffffffffffffffffffffffffffff, blockhash(0x1fffffffffffffffffffffffffffffffffffffffffffffffffffffffff))
+sstore(0x1ffffffffffffffffffffffffffffffffffffffffffffffffffffffffff, not(0))
+}
+}
+
+			}
+		}
+	}
+		

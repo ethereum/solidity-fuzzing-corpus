@@ -1,0 +1,23 @@
+
+	object "main" {
+		code {
+			codecopy(0, dataoffset("deployed"), datasize("deployed"))
+			return(0, datasize("deployed"))
+		}
+		object "deployed" {
+			code {
+				{
+{
+function foo_n_0(x_1, x_2, x_3, x_4)
+{
+extcodecopy(msize(), 0x1000000000000000000000000000000000, 0x10000000000000000000000000000000000, 0x100000000000000000000000000000000000)
+sstore("", "")
+}
+foo_n_0(mload(0),0x10000000000000000000000000000000000000000,sload(160),calldataload(224))
+}
+}
+
+			}
+		}
+	}
+		

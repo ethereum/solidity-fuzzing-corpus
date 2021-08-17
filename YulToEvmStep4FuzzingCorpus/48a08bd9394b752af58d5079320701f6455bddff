@@ -1,0 +1,29 @@
+
+	object "main" {
+		code {
+			codecopy(0, dataoffset("deployed"), datasize("deployed"))
+			return(0, datasize("deployed"))
+		}
+		object "deployed" {
+			code {
+				{
+{
+mstore("b", 0x40000000000001)
+switch mload(0x4000000000001)
+case 0x400000000001 {}
+case 0x40000000001 {
+}
+case 0x4000000001 {}
+case 0x400000001 {
+codecopy(or(or(or(not(""),and(not(""),0x40000001)),and(not(""),0x4000001)),and(not(""),0x400001)), 0x40001, 0x4001)
+}
+default {
+}
+mstore("bb", 0x401)
+}
+}
+
+			}
+		}
+	}
+		

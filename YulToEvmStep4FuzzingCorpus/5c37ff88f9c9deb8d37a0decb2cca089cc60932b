@@ -1,0 +1,23 @@
+
+	object "main" {
+		code {
+			codecopy(0, dataoffset("deployed"), datasize("deployed"))
+			return(0, datasize("deployed"))
+		}
+		object "deployed" {
+			code {
+				{
+{
+for { let i_0 := 0 } lt(i_0, 0x60) { i_0 := add(i_0, 0x20) } {
+codecopy(blockhash(0xfffffffffffffffffffffffffffffffffffffffffffffffffffffffff), blockhash(0xffffffffffffffffffffffffffffffffffffffffffffffffffffffffff), 0xfffffffffffffffffffffffffffffffffffffffffffffffffffffffffff)
+codecopy(0xffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff, blockhash(0xfffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff), 0xffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff)
+codecopy(0xfffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff, blockhash(0xffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff), blockhash(blockhash(0x0)))
+}
+codecopy(0x1, sload(0xffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff), 0x1f)
+}
+}
+
+			}
+		}
+	}
+		

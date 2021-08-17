@@ -1,0 +1,21 @@
+
+	object "main" {
+		code {
+			codecopy(0, dataoffset("deployed"), datasize("deployed"))
+			return(0, datasize("deployed"))
+		}
+		object "deployed" {
+			code {
+				{
+{
+log1(byte(0x4000000000000000000001,msize()), byte(0x400000000000000000001,msize()), add(call(0x40000000000000000001, 0x4000000000000000001, 0x400000000000000001, 0x40000000000000001, 0x4000000000000001, 0x400000000000001, 0x40000000000001),0x4000000000001))
+log1(byte(0x400000000001,gas()), 0x40000000001, 0x4000000001)
+log1(byte(0x400000001,msize()), byte(0x40000001,msize()), 0x4000001)
+pop(not(blockhash(0x400001)))
+}
+}
+
+			}
+		}
+	}
+		

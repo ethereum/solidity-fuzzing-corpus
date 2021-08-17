@@ -1,0 +1,24 @@
+
+	object "main" {
+		code {
+			codecopy(0, dataoffset("deployed"), datasize("deployed"))
+			return(0, datasize("deployed"))
+		}
+		object "deployed" {
+			code {
+				{
+{
+function foo_s_0(x_1) -> x_2
+{
+x_2 := call(0x7ffffffffffffffffff, 0x7fffffffffffffffffff, 0x7ffffffffffffffffffff, 0x7fffffffffffffffffffff, msize(), 0x7ffffffffffffffffffffff, addmod(0x7fffffffffffffffffffffff, 0x7ffffffffffffffffffffffff, call(0x7fffffffffffffffffffffffff, 0x7ffffffffffffffffffffffffff, 0, 0x7fffffffffffffffffffffffffff, 0x7ffffffffffffffffffffffffffff, 0x7fffffffffffffffffffffffffffff, addmod(0x7ffffffffffffffffffffffffffffff, 0x7fffffffffffffffffffffffffffffff, call(0x7ffffffffffffffffffffffffffffffff, 0x7fffffffffffffffffffffffffffffffff, 0x7ffffffffffffffffffffffffffffffffff, 0x7fffffffffffffffffffffffffffffffffff, mload(0x7ffffffffffffffffffffffffffffffffffff), msize(), 0x7fffffffffffffffffffffffffffffffffffff)))))
+}
+sstore(foo_s_0(call(0x7ffffffffffffffffffffffffffffffffffffff, "", 0x7fffffffffffffffffffffffffffffffffffffff, 0x7ffffffffffffffffffffffffffffffffffffffff, 0x7fffffffffffffffffffffffffffffffffffffffff, 0x7ffffffffffffffffffffffffffffffffffffffffff, "CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC"))
+, foo_s_0(0x7fffffffffffffffffffffffffffffffffffffffffff)
+)
+}
+}
+
+			}
+		}
+	}
+		

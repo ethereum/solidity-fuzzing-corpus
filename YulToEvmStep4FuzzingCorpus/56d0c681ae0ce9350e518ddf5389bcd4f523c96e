@@ -1,0 +1,71 @@
+
+	object "main" {
+		code {
+			codecopy(0, dataoffset("deployed"), datasize("deployed"))
+			return(0, datasize("deployed"))
+		}
+		object "deployed" {
+			code {
+				{
+{
+for { let i_0 := 0 } lt(i_0, 0x60) { i_0 := add(i_0, 0x20) } {
+let x_4, x_5, x_6, x_7 := foo_m_0(0x2000000000000000000000000000000000000000, 0x20000000000000000000000000000000000000000, 0x200000000000000000000000000000000000000000, number())
+function foo_m_0(x_12, x_13, x_14, x_15) -> x_16, x_17, x_18, x_19
+{
+}
+let x_21, x_22, x_23, x_24 := foo_m_0(sload(224),calldataload(288),sload(32),calldataload(96))
+sstore(160, x_21)
+sstore(224, x_22)
+sstore(288, x_23)
+sstore(32, x_24)
+function foo_m_1() -> x_42, x_43, x_44, x_45
+{
+mstore(0x200000000000000000000000000000000000000000000000001, 0x20000000000000000000000000000000000000000000000001)
+}
+let x_49, x_50, x_51, x_52 := foo_m_1()
+sstore(160, x_49)
+sstore(224, x_50)
+sstore(288, x_51)
+sstore(32, x_52)
+function foo_m_2(x_62, x_63, x_64) -> x_65, x_66, x_67, x_68
+{
+calldatacopy(0x2000000000000000000000000001, 0x200000000000000000000000001, 0x20000000000000000000000001)
+mstore(0x2000000000000000000000001, 0x200000000000000000000001)
+}
+let x_75, x_76, x_77, x_78 := foo_m_2(calldataload(32),sload(96),calldataload(160))
+sstore(224, x_75)
+sstore(288, x_76)
+sstore(32, x_77)
+sstore(96, x_78)
+}
+for { let i_1 := 0 } lt(i_1, 0x60) { i_1 := add(i_1, 0x20) } {
+let x_98, x_99, x_100, x_101 := foo_m_95()
+function foo_m_94(x_103, x_104, x_105, x_106) -> x_107, x_108, x_109, x_110
+{
+}
+function foo_m_95() -> x_112, x_113, x_114, x_115
+{
+mstore(0x3ffffffffffffffffffff, 0x3fffffffffffffffffffff)
+}
+let x_119, x_120, x_121, x_122 := foo_m_95()
+sstore(160, x_119)
+sstore(224, x_120)
+sstore(288, x_121)
+sstore(32, x_122)
+function foo_m_96(x_132, x_133, x_134, x_135) -> x_136, x_137, x_138, x_139
+{
+mstore(0x3ffffffffffffffffffffffffffffffffffffffffffff, 0x3fffffffffffffffffffffffffffffffffffffffffffff)
+}
+let x_143, x_144, x_145, x_146 := foo_m_96(calldataload(288),sload(32),calldataload(96),sload(160))
+sstore(224, x_143)
+sstore(288, x_144)
+sstore(32, x_145)
+sstore(96, x_146)
+}
+}
+}
+
+			}
+		}
+	}
+		

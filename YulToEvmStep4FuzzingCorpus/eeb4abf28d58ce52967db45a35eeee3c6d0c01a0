@@ -1,0 +1,31 @@
+
+	object "main" {
+		code {
+			codecopy(0, dataoffset("deployed"), datasize("deployed"))
+			return(0, datasize("deployed"))
+		}
+		object "deployed" {
+			code {
+				{
+{
+function foo_s_0(x_1) -> x_2
+{
+x_2 := delegatecall(0x4000000001, 0x400000001, 0x40000001, 0x4000001, 0x400001, call(0x40001, 0x4001, 0x401, 0x41, 0x5, create(0x7, 0x7f, 0x7ff), create(0x7fff, 0x7ffff, 0x7fffff)))
+}
+for { let i_0 := 0 } lt(i_0, 0x60) { i_0 := add(i_0, 0x20) } {
+sstore(foo_s_0(0x7ffffff)
+, blockhash(0x7fffffff))
+for { let i_1 := 0 } lt(i_1, 0x60) { i_1 := add(i_1, 0x20) } {
+sstore(foo_s_0(foo_s_0(0x7ffffffff)
+)
+, foo_s_0(0x7fffffffff)
+)
+}
+}
+}
+}
+
+			}
+		}
+	}
+		

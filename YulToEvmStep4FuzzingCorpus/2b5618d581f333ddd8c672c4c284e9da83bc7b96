@@ -1,0 +1,37 @@
+
+	object "main" {
+		code {
+			codecopy(0, dataoffset("deployed"), datasize("deployed"))
+			return(0, datasize("deployed"))
+		}
+		object "deployed" {
+			code {
+				{
+{
+function foo_m_0(x_1, x_2, x_3, x_4) -> x_5, x_6, x_7, x_8
+{
+mstore(0x3fffffffffffffffffffffffffffffffffffffffffffff, 0x3ffffffffffffffffffffffffffffffffffffffffffffff)
+let x_14, x_15, x_16 := foo_m_10(0x3ffffffffffffffffffffffffffffffffffffffffffffffffffff, 0x3fffffffffffffffffffffffffffffffffffffffffffffffffffff, 0x3ffffffffffffffffffffffffffffffffffffffffffffffffffffff)
+function foo_m_10(x_21, x_22, x_23) -> x_24, x_25, x_26
+{
+mstore8(calldatasize(), eq(signextend(x_21,0x3ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff),0x3fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff))
+}
+let x_30, x_31, x_32 := foo_m_10(sload(160),calldataload(224),sload(288))
+sstore(32, x_30)
+sstore(96, x_31)
+sstore(160, x_32)
+mstore(0x40000000000000000, 0)
+}
+let x_47, x_48, x_49, x_50 := foo_m_0(calldataload(96),sload(160),calldataload(224),sload(288))
+sstore(32, x_47)
+sstore(96, x_48)
+sstore(160, x_49)
+sstore(224, x_50)
+log1(gas(), 0x400000000000000000000000000000000000000, exp(0x4000000000000000000000000000000000000000,0x40000000000000000000000000000000000000000))
+}
+}
+
+			}
+		}
+	}
+		

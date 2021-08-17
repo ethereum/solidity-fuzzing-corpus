@@ -1,0 +1,21 @@
+
+	object "main" {
+		code {
+			codecopy(0, dataoffset("deployed"), datasize("deployed"))
+			return(0, datasize("deployed"))
+		}
+		object "deployed" {
+			code {
+				{
+{
+pop(0xffffffffffffffffffff)
+pop(create(0xfffffffffffffffffffff, 0xffffffffffffffffffffff, 0xfffffffffffffffffffffff))
+pop(0xffffffffffffffffffffffff)
+pop(create(0xfffffffffffffffffffffffff, 0xffffffffffffffffffffffffff, 0xfffffffffffffffffffffffffff))
+}
+}
+
+			}
+		}
+	}
+		

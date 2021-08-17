@@ -1,0 +1,23 @@
+
+	object "main" {
+		code {
+			codecopy(0, dataoffset("deployed"), datasize("deployed"))
+			return(0, datasize("deployed"))
+		}
+		object "deployed" {
+			code {
+				{
+{
+log4(0x20000000000000000001, 0x2000000000000000001, 0x200000000000000001, call(0x20000000000000001, 0x2000000000000001, 0x200000000000001, 0x20000000000001, calldatasize(), 0x2000000000001, 0x200000000001), 0x20000000001, 0x2000000001)
+return(0x200000001, 0x20000001)
+log4(call(0x2000001, 0x200001, 0x20001, 0x2001, calldatasize(), 0x201, 0x21), 0x3, 0x3f, 0x3ff, 0x3fff, 0x3ffff)
+return(0x3fffff, 0x3ffffff)
+log4(call(0x3fffffff, 0x3ffffffff, 0x3fffffffff, 0x3ffffffffff, timestamp(), 0x3fffffffffff, call(0x3ffffffffffff, 0x3fffffffffffff, 0x3ffffffffffffff, 0x3fffffffffffffff, calldatasize(), 0x3ffffffffffffffff, 0x3fffffffffffffffff)), 0x3ffffffffffffffffff, 0x3fffffffffffffffffff, 0x3ffffffffffffffffffff, 0x3fffffffffffffffffffff, 0x3ffffffffffffffffffffff)
+log4(call(0x3fffffffffffffffffffffff, 0x3ffffffffffffffffffffffff, 0x3fffffffffffffffffffffffff, 0x3ffffffffffffffffffffffffff, 0x3fffffffffffffffffffffffffff, 0x3ffffffffffffffffffffffffffff, 0x3fffffffffffffffffffffffffffff), 0x3ffffffffffffffffffffffffffffff, 0x3fffffffffffffffffffffffffffffff, 0x3ffffffffffffffffffffffffffffffff, 0x3fffffffffffffffffffffffffffffffff, gas())
+}
+}
+
+			}
+		}
+	}
+		

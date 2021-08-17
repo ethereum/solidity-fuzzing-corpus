@@ -1,0 +1,20 @@
+
+	object "main" {
+		code {
+			codecopy(0, dataoffset("deployed"), datasize("deployed"))
+			return(0, datasize("deployed"))
+		}
+		object "deployed" {
+			code {
+				{
+{
+let x_0 := 0x100001
+sstore(0x10001, 0x1001)
+extcodecopy(div(0x101,0x11), div(div(calldataload(div(div(calldataload(0x1f),16777216),lt(0x1ff,0x1fff))),16777216),lt(0x1ffff,0x1fffff)), timestamp(), "")
+}
+}
+
+			}
+		}
+	}
+		

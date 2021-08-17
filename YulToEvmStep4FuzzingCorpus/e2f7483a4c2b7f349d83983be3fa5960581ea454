@@ -1,0 +1,52 @@
+
+	object "main" {
+		code {
+			codecopy(0, dataoffset("deployed"), datasize("deployed"))
+			return(0, datasize("deployed"))
+		}
+		object "deployed" {
+			code {
+				{
+{
+switch gas()
+case 0x1ffffffffffffffffffffffffffffffffffffffffffffffffffffffffff {}
+case 0x1fffffffffffffffffffffffffffffffffffffffffffffffffffffffffff {}
+case 0x1ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff {}
+case 0x1fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff {}
+case 0x1ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff {}
+case 0x1fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff {}
+case 0 {}
+case 0x2 {}
+case 0x20 {}
+case 0x200 {}
+case 0x2000 {}
+case 0x20000 {}
+case 0x200000 {}
+case 0x2000000 {}
+case 0x20000000 {}
+case 0x200000000 {}
+case 0x2000000000 {}
+case 0x20000000000 {}
+case 0x200000000000 {}
+case 0x2000000000000 {}
+case 0x20000000000000 {
+}
+case 0x200000000000000 {}
+default {
+codecopy(0x2000000000000000, callcode(0x20000000000000000, 0x200000000000000000, 0x2000000000000000000, 0x20000000000000000000, 0x200000000000000000000, 0x2000000000000000000000, 0x20000000000000000000000), 0x200000000000000000000000)
+}
+for { let i_0 := 0 } lt(i_0, 0x60) { i_0 := add(i_0, 0x20) } {
+switch 0x2000000000000000000000000
+case true {}
+default {
+break
+}
+break
+}
+}
+}
+
+			}
+		}
+	}
+		

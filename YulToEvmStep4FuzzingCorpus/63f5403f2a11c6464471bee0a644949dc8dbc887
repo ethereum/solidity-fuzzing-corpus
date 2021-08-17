@@ -1,0 +1,37 @@
+
+	object "main" {
+		code {
+			codecopy(0, dataoffset("deployed"), datasize("deployed"))
+			return(0, datasize("deployed"))
+		}
+		object "deployed" {
+			code {
+				{
+{
+foo_n_0(mload(0x2000000001), 0x200000001, create(0x20000001, 0x2000001, 0x200001))
+{
+calldatacopy(0x20001, 0x2001, 0x201)
+}
+foo_n_0(0x3, 0x3f, 0x3ff)
+foo_n_0(0x3ffff, 0x3fffff, 0x3ffffff)
+mstore(0x3fffffff, 0x3ffffffff)
+foo_n_0(0x3ffffffffff, 0x3fffffffffff, 0x3ffffffffffff)
+function foo_n_0(x_24, x_25, x_26)
+{
+sstore(mod(x_26,0x3fffffffffffffffff), slt(x_24,0x3ffffffffffffffffff))
+for { let i_0 := 0 } lt(i_0, 0x60) { i_0 := add(i_0, 0x20) } {
+for { let i_1 := 0 } lt(i_1, 0x60) { i_1 := add(i_1, 0x20) } {
+extcodecopy(0x3fffffffffffffffffff, 0x3ffffffffffffffffffff, 0x3fffffffffffffffffffff, 0x3ffffffffffffffffffffff)
+}
+}
+sstore(mod(x_25,0x3fffffffffffffffffffffff), slt(x_24,0x3ffffffffffffffffffffffff))
+}
+foo_n_0(calldataload(224),sload(288),calldataload(32))
+foo_n_0(0x3ffffffffffffffffffffffffffffffff, 0x3fffffffffffffffffffffffffffffffff, add(0x3ffffffffffffffffffffffffffffffffff,0x3fffffffffffffffffffffffffffffffffff))
+}
+}
+
+			}
+		}
+	}
+		

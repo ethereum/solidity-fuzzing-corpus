@@ -1,0 +1,49 @@
+
+	object "main" {
+		code {
+			codecopy(0, dataoffset("deployed"), datasize("deployed"))
+			return(0, datasize("deployed"))
+		}
+		object "deployed" {
+			code {
+				{
+{
+for { let i_0 := 0 } lt(i_0, 0x60) { i_0 := add(i_0, 0x20) } {
+let x_3, x_4, x_5, x_6 := foo_m_0()
+function foo_m_0() -> x_8, x_9, x_10, x_11
+{
+x_8 := add(gasprice(),0x20000000)
+}
+let x_14, x_15, x_16, x_17 := foo_m_0()
+mstore(0, x_14)
+mstore(64, x_15)
+mstore(128, x_16)
+mstore(192, x_17)
+function foo_m_1(x_27, x_28, x_29) -> x_30, x_31, x_32, x_33
+{
+mstore(0x200000000000000000000000000000, 0x2000000000000000000000000000000)
+}
+}
+for { let i_1 := 0 } lt(i_1, 0x60) { i_1 := add(i_1, 0x20) } {
+let x_40, x_41, x_42, x_43 := foo_m_38(0x2000000000000000000000000000000000000000, 0x20000000000000000000000000000000000000000, number())
+function foo_m_37() -> x_47, x_48, x_49, x_50
+{
+x_47 := add(gasprice(),0x20000000000000000000000000000000000000000000000)
+}
+let x_53, x_54, x_55, x_56 := foo_m_37()
+sstore(288, x_53)
+sstore(32, x_54)
+sstore(96, x_55)
+sstore(160, x_56)
+function foo_m_38(x_66, x_67, x_68) -> x_69, x_70, x_71, x_72
+{
+mstore(0x200000000000000000000000000000000000000000000000000000000001, 0x20000000000000000000000000000000000000000000000000000000001)
+}
+}
+}
+}
+
+			}
+		}
+	}
+		

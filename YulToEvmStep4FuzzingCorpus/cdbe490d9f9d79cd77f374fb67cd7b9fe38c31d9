@@ -1,0 +1,40 @@
+
+	object "main" {
+		code {
+			codecopy(0, dataoffset("deployed"), datasize("deployed"))
+			return(0, datasize("deployed"))
+		}
+		object "deployed" {
+			code {
+				{
+{
+let x_0 := 0x800
+if 0x8000 {
+}
+for {
+x_0 := x_0
+}
+sload(0x0){
+function foo_s_3(x_4) -> x_5
+{
+x_5 := call(0x800000000, 0x8000000000, x_4, 0x80000000000, 0x800000000000, 0x8000000000000, call(0x80000000000000, 0x800000000000000, 0x8000000000000000, x_4, 0x80000000000000000, 0x800000000000000000, 0x8000000000000000000))
+}
+let x_18 := foo_s_3(calldataload(32))
+sstore(96, x_18)
+sstore(foo_s_3(0x80000000000000000000000000)
+, foo_s_3(foo_s_3(0x800000000000000000000000000)
+)
+)
+}
+{
+for { let i_0 := 0 } lt(i_0, 0x60) { i_0 := add(i_0, 0x20) } {
+x_0 := 0x8000000000000000000000000000
+}
+}
+}
+}
+
+			}
+		}
+	}
+		

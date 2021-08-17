@@ -1,0 +1,93 @@
+
+	object "main" {
+		code {
+			codecopy(0, dataoffset("deployed"), datasize("deployed"))
+			return(0, datasize("deployed"))
+		}
+		object "deployed" {
+			code {
+				{
+{
+function foo_m_0() -> x_4, x_5, x_6, x_7
+{
+let x_10, x_11, x_12, x_13 := foo_m_1(0x1ffffffffffffffffffffff, 0x1fffffffffffffffffffffff)
+}
+let x_17, x_18, x_19, x_20 := foo_m_0()
+sstore(96, x_17)
+sstore(160, x_18)
+sstore(224, x_19)
+sstore(288, x_20)
+function foo_m_1(x_30, x_31) -> x_32, x_33, x_34, x_35
+{
+sstore(0x1fffffffffffffffffffffffffffffffffffffffffffff, 0x1ffffffffffffffffffffffffffffffffffffffffffffff)
+function foo_m_37() -> x_40, x_41, x_42, x_43
+{
+let x_46, x_47, x_48, x_49 := foo_m_0()
+}
+let x_51, x_52, x_53, x_54 := foo_m_37()
+sstore(224, x_51)
+sstore(288, x_52)
+sstore(32, x_53)
+sstore(96, x_54)
+}
+let x_64, x_65, x_66, x_67 := foo_m_1(mload(0),0x20000000000000000)
+sstore(160, x_64)
+sstore(224, x_65)
+sstore(288, x_66)
+sstore(32, x_67)
+for { let i_0 := 0 } lt(i_0, 0x60) { i_0 := add(i_0, 0x20) } {
+function foo_m_82(x_85, x_86) -> x_87, x_88, x_89, x_90
+{
+{
+pop(0x200000000000000000000000000000000000)
+}
+}
+let x_93, x_94, x_95, x_96 := foo_m_82(sload(288),calldataload(32))
+sstore(96, x_93)
+sstore(160, x_94)
+sstore(224, x_95)
+sstore(288, x_96)
+function foo_m_83() -> x_110, x_111, x_112, x_113
+{
+let x_116, x_117, x_118, x_119 := foo_m_3()
+}
+let x_121, x_122, x_123, x_124 := foo_m_83()
+sstore(224, x_121)
+sstore(288, x_122)
+sstore(32, x_123)
+sstore(96, x_124)
+function foo_m_84() -> x_134, x_135, x_136, x_137
+{
+let x_140, x_141, x_142, x_143 := foo_m_84()
+}
+let x_145, x_146, x_147, x_148 := foo_m_84()
+sstore(32, x_145)
+sstore(96, x_146)
+sstore(160, x_147)
+sstore(224, x_148)
+}
+function foo_m_2() -> x_158, x_159, x_160, x_161
+{
+let x_164, x_165, x_166, x_167 := foo_m_3()
+}
+let x_169, x_170, x_171, x_172 := foo_m_2()
+sstore(160, x_169)
+sstore(224, x_170)
+sstore(288, x_171)
+sstore(32, x_172)
+function foo_m_3() -> x_182, x_183, x_184, x_185
+{
+let x_188, x_189, x_190, x_191 := foo_m_3()
+}
+let x_193, x_194, x_195, x_196 := foo_m_3()
+sstore(288, x_193)
+sstore(32, x_194)
+sstore(96, x_195)
+sstore(160, x_196)
+}
+}
+
+			}
+		}
+	}
+		

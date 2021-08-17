@@ -1,0 +1,30 @@
+
+	object "main" {
+		code {
+			codecopy(0, dataoffset("deployed"), datasize("deployed"))
+			return(0, datasize("deployed"))
+		}
+		object "deployed" {
+			code {
+				{
+{
+let x_1, x_2
+function foo_m_0(x_3, x_4, x_5) -> x_6, x_7, x_8, x_9
+{
+sstore(gas(), byte(x_3,0x4000000000000000000000000000000000000000000000000000000000000))
+}
+for {}
+byte(x_1,0x0){}
+{
+for { let i_0 := 0 } lt(i_0, 0x60) { i_0 := add(i_0, 0x20) } {
+x_1 := 0x40000000000000000000000000000000000000000000000000000000000000
+}
+}
+log1(codesize(), codesize(), 0x0400000000000000000000000000000000000000000000000000000000000000)
+}
+}
+
+			}
+		}
+	}
+		

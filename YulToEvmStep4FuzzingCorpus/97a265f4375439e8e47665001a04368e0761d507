@@ -1,0 +1,34 @@
+
+	object "main" {
+		code {
+			codecopy(0, dataoffset("deployed"), datasize("deployed"))
+			return(0, datasize("deployed"))
+		}
+		object "deployed" {
+			code {
+				{
+{
+let x_0, x_1, x_2, x_3
+let x_4 := 0x11
+for { let i_0 := 0 } lt(i_0, 0x60) { i_0 := add(i_0, 0x20) } {
+switch x_4
+case 0x1f {
+x_0 := 0x1ff
+}
+continue
+}
+let x_8 := 0x1ffff
+for { let i_1 := 0 } lt(i_1, 0x60) { i_1 := add(i_1, 0x20) } {
+switch x_4
+case 0x1fffff {
+continue
+}
+x_4 := 0x1ffffff
+}
+}
+}
+
+			}
+		}
+	}
+		

@@ -1,0 +1,34 @@
+
+	object "main" {
+		code {
+			codecopy(0, dataoffset("deployed"), datasize("deployed"))
+			return(0, datasize("deployed"))
+		}
+		object "deployed" {
+			code {
+				{
+{
+sstore(mload(0xffffffffffffffffffffffffffffffffffffffffffffffff), 0xfffffffffffffffffffffffffffffffffffffffffffffffff)
+function foo_m_0(x_3, x_4, x_5, x_6) -> x_7, x_8, x_9, x_10
+{
+for {
+let x_12 := x_3
+log4(0xffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff, 0xfffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff, 0xffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff, 0xfffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff, x_3, x_3)
+}
+x_3{}
+{
+}
+sstore(0xffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff, 0x0)
+sstore(x_3, 0x1)
+}
+let x_21, x_22, x_23, x_24 := foo_m_0(mload(0x100), 0x101, 0x10, 0x100)
+let x_30 := 0x10000
+let x_33, x_34, x_35, x_36 := foo_m_0(0x100000000000, 0x1000000000000, 0x10000000000000, blockhash(0x100000000000000))
+sstore(0x1000000000000000, true)
+}
+}
+
+			}
+		}
+	}
+		

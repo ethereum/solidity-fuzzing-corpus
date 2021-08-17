@@ -1,0 +1,19 @@
+
+	object "main" {
+		code {
+			codecopy(0, dataoffset("deployed"), datasize("deployed"))
+			return(0, datasize("deployed"))
+		}
+		object "deployed" {
+			code {
+				{
+{
+log2(0x1000000001, or(0x100000001,0), 0x10000001, or(gaslimit(),0))
+extcodecopy("", or(0x1000001,0x100001), create(0x10001, or(0x1001,0x101), 0x11), or("",0))
+}
+}
+
+			}
+		}
+	}
+		

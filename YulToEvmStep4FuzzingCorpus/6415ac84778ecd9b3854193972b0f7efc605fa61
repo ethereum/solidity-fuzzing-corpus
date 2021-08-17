@@ -1,0 +1,29 @@
+
+	object "main" {
+		code {
+			codecopy(0, dataoffset("deployed"), datasize("deployed"))
+			return(0, datasize("deployed"))
+		}
+		object "deployed" {
+			code {
+				{
+{
+function foo_m_0() -> x_1, x_2, x_3, x_4
+{
+selfdestruct(x_1)
+function foo_m_6(x_7, x_8, x_9, x_10) -> x_11, x_12, x_13, x_14
+{
+}
+}
+let x_16, x_17, x_18, x_19 := foo_m_0()
+mstore(64, x_16)
+mstore(128, x_17)
+mstore(192, x_18)
+mstore(256, x_19)
+}
+}
+
+			}
+		}
+	}
+		

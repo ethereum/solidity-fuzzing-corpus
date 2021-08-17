@@ -1,0 +1,31 @@
+
+	object "main" {
+		code {
+			codecopy(0, dataoffset("deployed"), datasize("deployed"))
+			return(0, datasize("deployed"))
+		}
+		object "deployed" {
+			code {
+				{
+{
+for {
+mstore(0xfffffffffffffffffffffffffffffffffffffffffffffffffffffffff, 0xffffffffffffffffffffffffffffffffffffffffffffffffffffffffff)
+mstore(0xfffffffffffffffffffffffffffffffffffffffffffffffffffffffffff, mload(call(0xffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff, create(0xfffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff, 648518346341351424, 0xffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff), 0xfffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff, 0xffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff, 0x0, 0x1, 0xffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff)))
+mstore(not(0x1f), 0x9f)
+mstore(not(0xa0), not(number()))
+mstore(mload(0xa1), mload(0xff))
+mstore(0x100, mload(0x101))
+mstore(0x10, mload(0x100))
+mstore(0x1000, 0x10000)
+}
+lt(0x0,0x0){}
+{
+continue
+}
+}
+}
+
+			}
+		}
+	}
+		

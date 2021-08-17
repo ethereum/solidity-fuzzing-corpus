@@ -1,0 +1,26 @@
+
+	object "main" {
+		code {
+			codecopy(0, dataoffset("deployed"), datasize("deployed"))
+			return(0, datasize("deployed"))
+		}
+		object "deployed" {
+			code {
+				{
+{
+function foo_m_0(x_1, x_2, x_3) -> x_4, x_5, x_6
+{
+mstore8(div(call(0x10000000000000000000000001, 0x1000000000000000000000001, 0x100000000000000000000001, 0x10000000000000000000001, 0x1000000000000000000001, 0x100000000000000000001, 0x10000000000000000001),0x1000000000000000001), 0x100000000000000001)
+sstore(div(not(div(not(div(not(x_1),0x10000000000000001)),0x1000000000000001)),0x100000000000001), 0x10000000000001)
+}
+let x_22, x_23, x_24 := foo_m_0(0x10000001, 0x1000001, 0x100001)
+let x_29, x_30
+let x_32, x_33, x_34 := foo_m_0(x_22, 0x1ffff, 0x1fffff)
+let x_39, x_40, x_41 := foo_m_0(0x1fffffffffff, 0x1ffffffffffff, 0x1fffffffffffff)
+}
+}
+
+			}
+		}
+	}
+		

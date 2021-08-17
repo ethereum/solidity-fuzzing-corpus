@@ -1,0 +1,29 @@
+
+	object "main" {
+		code {
+			codecopy(0, dataoffset("deployed"), datasize("deployed"))
+			return(0, datasize("deployed"))
+		}
+		object "deployed" {
+			code {
+				{
+{
+extcodecopy(not(mulmod(0x20000000000000000001, 0x2000000000000000001, 0x200000000000000001)), not(0x20000000000000001), 0x2000000000000001, not(0x200000000000001))
+extcodecopy(not(0x20000000000001), not(0x2000000000001), 0x200000000001, not(0x20000000001))
+extcodecopy(not(0x2000000001), 0x200000001, 0x20000001, not(0x2000001))
+extcodecopy(not(0x200001), not(0x20001), not(0x2001), not(0x201))
+switch not(0x21)
+default {
+extcodecopy(not(0x3), not(0x3f), 0x3ff, not(0x3fff))
+extcodecopy(not(0x3ffff), 0x3fffff, 0x3ffffff, not(0x3fffffff))
+}
+switch or(0x3ffffffff,0x3fffffffff)
+case 4127195136 {}
+default {}
+}
+}
+
+			}
+		}
+	}
+		

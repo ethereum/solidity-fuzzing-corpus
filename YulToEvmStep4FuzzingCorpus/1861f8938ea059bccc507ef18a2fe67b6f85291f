@@ -1,0 +1,21 @@
+
+	object "main" {
+		code {
+			codecopy(0, dataoffset("deployed"), datasize("deployed"))
+			return(0, datasize("deployed"))
+		}
+		object "deployed" {
+			code {
+				{
+{
+for { let i_0 := 0 } lt(i_0, 0x60) { i_0 := add(i_0, 0x20) } {
+extcodecopy(sload(sload(0x7ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff)), sload(sload(0x7fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff)), sload(sload(sload(0x8))), not(sload(sload(sload(0x80)))))
+extcodecopy(sload(0x800), sload(not(0x8000)), 0x80000, 0x800000)
+}
+}
+}
+
+			}
+		}
+	}
+		

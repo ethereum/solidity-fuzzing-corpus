@@ -1,0 +1,43 @@
+
+	object "main" {
+		code {
+			codecopy(0, dataoffset("deployed"), datasize("deployed"))
+			return(0, datasize("deployed"))
+		}
+		object "deployed" {
+			code {
+				{
+{
+let x_2, x_3, x_4, x_5 := foo_m_0(0x100000000000000000000000001, 0x10000000000000000000000001, add(0x1000000000000000000000001,0x100000000000000000000001))
+let x_12, x_13, x_14, x_15 := foo_m_0(x_2, 0x10000000000000001, 0x1000000000000001)
+{
+}
+let x_20, x_21, x_22, x_23 := foo_m_0(0x100000001, 0x10000001, 0x1000001)
+let x_29, x_30, x_31, x_32 := foo_m_0(0x1ff, 0x1fff, call(0x1ffff, 0x1fffff, 0x1ffffff, codesize(), 0x1fffffff, 0x1ffffffff, 0x1fffffffff))
+mstore(0x1ffffffffff, 0x1fffffffffff)
+let x_45, x_46, x_47, x_48 := foo_m_0(0x1ffffffffffffffffff, 0x1fffffffffffffffffff, call(0x1ffffffffffffffffffff, 0x1fffffffffffffffffffff, 0x1ffffffffffffffffffffff, codesize(), 0x1fffffffffffffffffffffff, 0x1ffffffffffffffffffffffff, 0x1fffffffffffffffffffffffff))
+function foo_m_0(x_58, x_59, x_60) -> x_61, x_62, x_63, x_64
+{
+let x_66 := 0x1fffffffffffffffffffffffffffffffffff
+switch mload(0x1ffffffffffffffffffffffffffffffffffff)
+case 0x1fffffffffffffffffffffffffffffffffffff {}
+case 0x1ffffffffffffffffffffffffffffffffffffff {
+x_62 := 0x1fffffffffffffffffffffffffffffffffffffff
+}
+case 0x1ffffffffffffffffffffffffffffffffffffffff {
+x_58 := 0x1fffffffffffffffffffffffffffffffffffffffff
+}
+case 0x1ffffffffffffffffffffffffffffffffffffffffff {
+leave
+}
+codecopy(x_58, 0x1fffffffffffffffffffffffffffffffffffffffffff, 0x1ffffffffffffffffffffffffffffffffffffffffffff)
+}
+let x_78, x_79, x_80, x_81 := foo_m_0(0x1fffffffffffffffffffffffffffffffffffffffffffffffffff, 0x1ffffffffffffffffffffffffffffffffffffffffffffffffffff, 0x1fffffffffffffffffffffffffffffffffffffffffffffffffffff)
+let x_87, x_88, x_89, x_90 := foo_m_0(0x1ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff, 0x1fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff, 0x1ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff)
+}
+}
+
+			}
+		}
+	}
+		

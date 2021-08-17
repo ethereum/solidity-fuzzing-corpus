@@ -1,0 +1,24 @@
+
+	object "main" {
+		code {
+			codecopy(0, dataoffset("deployed"), datasize("deployed"))
+			return(0, datasize("deployed"))
+		}
+		object "deployed" {
+			code {
+				{
+{
+log1(eq(eq(0x10000000000000000001,0x1000000000000000001),0x100000000000000001), 0x10000000000000001, exp(0x1000000000000001,0x100000000000001))
+log1(exp(exp(0x10000000000001,0x1000000000001),0x100000000001), exp(0x10000000001,0x1000000001), exp(0x100000001,0x10000001))
+log1(exp(exp(0x1000001,0x100001),0x10001), exp(0x1001,0x101), exp(0x11,0x1f))
+log1(exp(exp(0x1ff,0x1fff),0x1ffff), 0x1fffff, exp(0x1ffffff,0x1fffffff))
+log1(exp(0x1ffffffff,0x1fffffffff), 0x1ffffffffff, exp(0x1fffffffffff,0x1ffffffffffff))
+log1(exp(exp(0x1fffffffffffff,0x1ffffffffffffff),0x1fffffffffffffff), 0x1ffffffffffffffff, 0x1fffffffffffffffff)
+log1(eq(0x1ffffffffffffffffff,0x1fffffffffffffffffff), eq(0x1ffffffffffffffffffff,0x1fffffffffffffffffffff), 0x1ffffffffffffffffffffff)
+}
+}
+
+			}
+		}
+	}
+		

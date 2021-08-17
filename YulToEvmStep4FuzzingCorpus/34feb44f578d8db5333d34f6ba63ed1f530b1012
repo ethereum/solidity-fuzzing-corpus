@@ -1,0 +1,21 @@
+
+	object "main" {
+		code {
+			codecopy(0, dataoffset("deployed"), datasize("deployed"))
+			return(0, datasize("deployed"))
+		}
+		object "deployed" {
+			code {
+				{
+{
+calldatacopy(0x21, 0x3, 0x3f)
+if 0x3ff {
+selfdestruct(0x3fff)
+}
+}
+}
+
+			}
+		}
+	}
+		

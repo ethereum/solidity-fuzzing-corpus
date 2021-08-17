@@ -1,0 +1,33 @@
+
+	object "main" {
+		code {
+			codecopy(0, dataoffset("deployed"), datasize("deployed"))
+			return(0, datasize("deployed"))
+		}
+		object "deployed" {
+			code {
+				{
+{
+function foo_n_0()
+{
+selfdestruct(create(0x8000000000000000000000000000000000000000000000001, 0x800000000000000000000000000000000000000000000001, 0x80000000000000000000000000000000000000000000001))
+leave
+}
+foo_n_0()
+function foo_n_1()
+{
+selfdestruct(0x80000000000000000000000000000000000000000001)
+leave
+function foo_n_7()
+{
+selfdestruct(0x800000000000000000000000000000000000000001)
+leave
+}
+}
+}
+}
+
+			}
+		}
+	}
+		

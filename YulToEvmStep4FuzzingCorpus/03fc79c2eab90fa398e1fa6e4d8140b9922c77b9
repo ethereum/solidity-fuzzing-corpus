@@ -1,0 +1,55 @@
+
+	object "main" {
+		code {
+			codecopy(0, dataoffset("deployed"), datasize("deployed"))
+			return(0, datasize("deployed"))
+		}
+		object "deployed" {
+			code {
+				{
+{
+{
+let x_0 := 0x2000000000000000001
+x_0 := 0x200000000000000001
+calldatacopy(0x20000000000000001, 0x2000000000000001, 0x200000000000001)
+}
+{
+let x_6 := 0x2000000000001
+x_6 := 0x200000000001
+}
+{
+let x_9 := 0x2000000001
+x_9 := 0x200000001
+}
+{
+{
+calldatacopy(0x20000001, true, 0x2000001)
+}
+}
+{
+let x_14 := 0x20001
+x_14 := call(0x2001, 0x201, 0x21, 0x3, 0x3f, 0x3ff, 0x3fff)
+}
+{
+let x_23 := 0x3fffff
+x_23 := 0x3ffffff
+}
+{
+let x_26 := 0x3ffffffff
+x_26 := 0x3fffffffff
+}
+calldatacopy(0x3ffffffffff, 0x3fffffffffff, 0x3ffffffffffff)
+{
+let x_32 := 0x3ffffffffffffff
+}
+{
+let x_34 := 0x3ffffffffffffffff
+x_34 := 0x3fffffffffffffffff
+}
+}
+}
+
+			}
+		}
+	}
+		

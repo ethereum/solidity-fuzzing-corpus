@@ -1,0 +1,21 @@
+
+	object "main" {
+		code {
+			codecopy(0, dataoffset("deployed"), datasize("deployed"))
+			return(0, datasize("deployed"))
+		}
+		object "deployed" {
+			code {
+				{
+{
+extcodecopy(call(callvalue(), 0x201, 0x21, 0x3, 0x3f, callvalue(), 0x3ff), call(delegatecall(callvalue(), 0x3fff, 0x3ffff, 0x3fffff, 0x3ffffff, 0x3fffffff), 0x3ffffffff, 0x3fffffffff, callvalue(), 0x3ffffffffff, 0x3fffffffffff, 0x3ffffffffffff), 0x3fffffffffffff, 0x3ffffffffffffff)
+pop(0x3fffffffffffffff)
+revert(0x3ffffffffffffffff, 0x3fffffffffffffffff)
+extcodecopy(call(callvalue(), 0x3ffffffffffffffffff, 0x3fffffffffffffffffff, 0x3ffffffffffffffffffff, 0x3fffffffffffffffffffff, callvalue(), 0x3ffffffffffffffffffffff), call(delegatecall(callvalue(), 0x3fffffffffffffffffffffff, 0x3ffffffffffffffffffffffff, 0x3fffffffffffffffffffffffff, 0x3ffffffffffffffffffffffffff, 0x3fffffffffffffffffffffffffff), 0x3ffffffffffffffffffffffffffff, 0x3fffffffffffffffffffffffffffff, callvalue(), 0x3ffffffffffffffffffffffffffffff, 0x3fffffffffffffffffffffffffffffff, 0x3ffffffffffffffffffffffffffffffff), 0x3fffffffffffffffffffffffffffffffff, 0x3ffffffffffffffffffffffffffffffffff)
+}
+}
+
+			}
+		}
+	}
+		

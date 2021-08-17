@@ -1,0 +1,50 @@
+
+	object "main" {
+		code {
+			codecopy(0, dataoffset("deployed"), datasize("deployed"))
+			return(0, datasize("deployed"))
+		}
+		object "deployed" {
+			code {
+				{
+{
+switch gas()
+case 0 {}
+case 0x201 {}
+case 0x21 {}
+case 0x3 {
+}
+case 0x3f {}
+case 0x3ff {}
+case 0x3fff {
+log0(0x3ffff, 0x3fffff)
+}
+case 0x3ffffff {}
+case 0x3fffffff {}
+case 0x3ffffffff {}
+case 0x3fffffffff {}
+case 0x3ffffffffff {
+}
+case 0x3fffffffffff {}
+case 0x3ffffffffffff {
+calldatacopy(0x3fffffffffffff, 0x3ffffffffffffff, 0x3fffffffffffffff)
+}
+case true {}
+case 0x3ffffffffffffffff {}
+case 122509653573632 {
+invalid()
+}
+case 0x3fffffffffffffffff {}
+case 0x3ffffffffffffffffff {}
+case 0x3fffffffffffffffffff {}
+case 0x3ffffffffffffffffffff {}
+default {
+codecopy(0x3fffffffffffffffffffff, 0x03ffffffffffffffffffffff, 0x3fffffffffffffffffffffff)
+}
+}
+}
+
+			}
+		}
+	}
+		

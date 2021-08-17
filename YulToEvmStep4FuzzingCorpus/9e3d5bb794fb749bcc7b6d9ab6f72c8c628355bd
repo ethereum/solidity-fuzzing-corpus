@@ -1,0 +1,18 @@
+
+	object "main" {
+		code {
+			codecopy(0, dataoffset("deployed"), datasize("deployed"))
+			return(0, datasize("deployed"))
+		}
+		object "deployed" {
+			code {
+				{
+{
+codecopy(add(add(add(gas(),gt(0xfff,0xffff)),0),gas()), 0xfffff, add(add(gas(),gt(0xffffff,0xfffffff)),0))
+}
+}
+
+			}
+		}
+	}
+		

@@ -1,0 +1,33 @@
+
+	object "main" {
+		code {
+			codecopy(0, dataoffset("deployed"), datasize("deployed"))
+			return(0, datasize("deployed"))
+		}
+		object "deployed" {
+			code {
+				{
+{
+{
+}
+let x_2, x_3, x_4, x_5 := foo_m_0(0x400000000000001, 0x40000000000001, 0x4000000000001)
+let x_11, x_12, x_13, x_14 := foo_m_0(0x400001, 0x40001, 0x4001)
+mstore(0x401, 0x41)
+let x_22, x_23, x_24, x_25 := foo_m_0(0x7fffff, 0x7ffffff, 0x7fffffff)
+function foo_m_0(x_30, x_31, x_32) -> x_33, x_34, x_35, x_36
+{
+sstore(call(0x7ffffffffffffffff, 0x7fffffffffffffffff, 0x7ffffffffffffffffff, 0x7fffffffffffffffffff, x_30, 0x7ffffffffffffffffffff, 0x7fffffffffffffffffffff), 0x7ffffffffffffffffffffff)
+for { let i_0 := 0 } lt(i_0, 0x60) { i_0 := add(i_0, 0x20) } {
+for { let i_1 := 0 } lt(i_1, 0x60) { i_1 := add(i_1, 0x20) } {
+sstore(addmod(0x7fffffffffffffffffffffff, 0x7ffffffffffffffffffffffff, true), 0x7fffffffffffffffffffffffff)
+}
+}
+}
+let x_49, x_50, x_51, x_52 := foo_m_0(0x7ffffffffffffffffffffffffffffffff, 0x7fffffffffffffffffffffffffffffffff, not(0x7ffffffffffffffffffffffffffffffffff))
+}
+}
+
+			}
+		}
+	}
+		

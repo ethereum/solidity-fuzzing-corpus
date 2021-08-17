@@ -1,0 +1,19 @@
+
+	object "main" {
+		code {
+			codecopy(0, dataoffset("deployed"), datasize("deployed"))
+			return(0, datasize("deployed"))
+		}
+		object "deployed" {
+			code {
+				{
+{
+let x_0 := or(0x1000000000000000001,0x100000000000000001)
+extcodecopy(0x10000000000000001, gt(addmod(0x1000000000000001, 0x100000000000001, x_0),addmod(0x10000000000001, addmod(or(0x1000000000001,0x100000000001), addmod(0x10000000001, 0x1000000001, x_0), x_0), x_0)), 0x100000001, addmod(or(addmod(0x10000001, addmod(0x1000001, 0x100001, x_0), x_0),addmod(0x10001, 0x1001, x_0)), gt(0x101,0x11), x_0))
+}
+}
+
+			}
+		}
+	}
+		

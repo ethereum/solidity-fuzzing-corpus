@@ -1,0 +1,54 @@
+
+	object "main" {
+		code {
+			codecopy(0, dataoffset("deployed"), datasize("deployed"))
+			return(0, datasize("deployed"))
+		}
+		object "deployed" {
+			code {
+				{
+{
+switch gas()
+case 0xfffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff {}
+case 0xffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff {}
+case 0 {
+stop()
+}
+case 0x01 {}
+case 0x1f {}
+case 0x9f {}
+case 0xa0 {}
+case 0xa1 {}
+case 0xff {}
+case 0x100 {}
+case 0x101 {}
+case 0x10 {}
+case 0x1000 {}
+case 0x10000 {}
+case 0x100000 {}
+case 0x1000000 {}
+case 0x10000000 {}
+case 0x100000000 {}
+case 0x1000000000 {}
+case 0x10000000000 {}
+case 0x100000000000 {
+codecopy(0x1000000000000, gas(), 0x10000000000000)
+}
+case 0x100000000000000 {}
+case 0x1000000000000000 {}
+case 0x10000000000000000 {}
+case 0x100000000000000000 {}
+case 0x01000000000000000000 {}
+case 0x10000000000000000000 {
+stop()
+}
+default {
+stop()
+}
+}
+}
+
+			}
+		}
+	}
+		

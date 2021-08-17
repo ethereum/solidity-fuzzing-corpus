@@ -1,0 +1,60 @@
+
+	object "main" {
+		code {
+			codecopy(0, dataoffset("deployed"), datasize("deployed"))
+			return(0, datasize("deployed"))
+		}
+		object "deployed" {
+			code {
+				{
+{
+switch gas()
+case 0x5 {}
+case 0x7 {}
+case 0x7f {}
+case 0x7ff {}
+case 0x7fff {}
+case 0x7ffff {
+for { let i_0 := 0 } lt(i_0, 0x60) { i_0 := add(i_0, 0x20) } {
+for { let i_1 := 0 } lt(i_1, 0x60) { i_1 := add(i_1, 0x20) } {
+continue
+}
+}
+}
+case 0x7fffff {}
+case 0x7ffffff {}
+case 0x7fffffff {}
+case 0x7ffffffff {}
+case 0x7fffffffff {}
+case "" {}
+case 0x7ffffffffff {
+let x_12 := difficulty()
+}
+case 0x7ffffffffffff {}
+case 0x7fffffffffffff {}
+case 0x7ffffffffffffff {}
+case 0x7fffffffffffffff {}
+case 0x7ffffffffffffffff {}
+case 0x7fffffffffffffffff {}
+case 0x7ffffffffffffffffff {}
+case 0x7fffffffffffffffffff {}
+case 0x7ffffffffffffffffffff {}
+case 0x7fffffffffffffffffffff {}
+case 0x7ffffffffffffffffffffff {}
+case 0x7fffffffffffffffffffffff {}
+case 0x7ffffffffffffffffffffffff {
+}
+case 0x7fffffffffffffffffffffffff {}
+case 0x7ffffffffffffffffffffffffff {}
+case 0x7fffffffffffffffffffffffffff {}
+case 0x7ffffffffffffffffffffffffffff {}
+default {
+stop()
+}
+}
+}
+
+			}
+		}
+	}
+		

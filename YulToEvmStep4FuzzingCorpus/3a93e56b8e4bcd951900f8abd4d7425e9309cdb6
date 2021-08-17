@@ -1,0 +1,38 @@
+
+	object "main" {
+		code {
+			codecopy(0, dataoffset("deployed"), datasize("deployed"))
+			return(0, datasize("deployed"))
+		}
+		object "deployed" {
+			code {
+				{
+{
+function foo_m_0(x_1, x_2, x_3, x_4) -> x_5, x_6, x_7, x_8
+{
+extcodecopy(0x7ffffffffffffffffffffffff, 0x7fffffffffffffffffffffffff, 0x7ffffffffffffffffffffffffff, 0x7fffffffffffffffffffffffffff)
+switch eq(0x7ffffffffffffffffffffffffffff,0x7fffffffffffffffffffffffffffff)
+case 0x7ffffffffffffffffffffffffffffff {
+}
+case 0x7fffffffffffffffffffffffffffffff {
+x_5 := mload(0x7ffffffffffffffffffffffffffffffff)
+}
+case 0x7fffffffffffffffffffffffffffffffff {}
+case 0x7ffffffffffffffffffffffffffffffffff {
+for { let i_0 := 0 } lt(i_0, 0x60) { i_0 := add(i_0, 0x20) } {
+for { let i_1 := 0 } lt(i_1, 0x60) { i_1 := add(i_1, 0x20) } {
+}
+}
+}
+default {
+x_5 := mload(0x7fffffffffffffffffffffffffffffffffff)
+}
+let x_23, x_24, x_25, x_26 := foo_m_0(0x7ffffffffffffffffffffffffffffffffffffffffff, addmod(0x7fffffffffffffffffffffffffffffffffffffffffff, 0x7ffffffffffffffffffffffffffffffffffffffffffff, 0x7fffffffffffffffffffffffffffffffffffffffffffff), x_2, x_1)
+}
+}
+}
+
+			}
+		}
+	}
+		

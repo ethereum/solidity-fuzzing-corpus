@@ -1,0 +1,33 @@
+
+	object "main" {
+		code {
+			codecopy(0, dataoffset("deployed"), datasize("deployed"))
+			return(0, datasize("deployed"))
+		}
+		object "deployed" {
+			code {
+				{
+{
+if 0xffffffffffffffffffffffffffffffffffffff {
+codecopy(0xfffffffffffffffffffffffffffffffffffffff, 0xffffffffffffffffffffffffffffffffffffffff, 0xfffffffffffffffffffffffffffffffffffffffff)
+selfdestruct(0xffffffffffffffffffffffffffffffffffffffffff)
+}
+if 0xfffffffffffffffffffffffffffffffffffffffffff {
+codecopy(0xffffffffffffffffffffffffffffffffffffffffffff, 0xfffffffffffffffffffffffffffffffffffffffffffff, 0xffffffffffffffffffffffffffffffffffffffffffffff)
+selfdestruct(0xfffffffffffffffffffffffffffffffffffffffffffffff)
+}
+codecopy(0xffffffffffffffffffffffffffffffffffffffffffffffff, 0xfffffffffffffffffffffffffffffffffffffffffffffffff, create(0xffffffffffffffffffffffffffffffffffffffffffffffffff, 0xfffffffffffffffffffffffffffffffffffffffffffffffffff, 0xffffffffffffffffffffffffffffffffffffffffffffffffffff))
+if 0xfffffffffffffffffffffffffffffffffffffffffffffffffffff {
+selfdestruct(0xffffffffffffffffffffffffffffffffffffffffffffffffffffff)
+}
+let x_17 := create(0xffffffffffffffffffffffffffffffffffffffffffffffffffffffff, 0xfffffffffffffffffffffffffffffffffffffffffffffffffffffffff, 0xffffffffffffffffffffffffffffffffffffffffffffffffffffffffff)
+if 0xfffffffffffffffffffffffffffffffffffffffffffffffffffffffffff {
+selfdestruct(0xffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff)
+}
+}
+}
+
+			}
+		}
+	}
+		

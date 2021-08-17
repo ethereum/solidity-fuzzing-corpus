@@ -1,0 +1,22 @@
+
+	object "main" {
+		code {
+			codecopy(0, dataoffset("deployed"), datasize("deployed"))
+			return(0, datasize("deployed"))
+		}
+		object "deployed" {
+			code {
+				{
+{
+extcodecopy(exp(0x1ffff,0x1fffff), 0x1ffffff, exp(0x1fffffff,0x1ffffffff), 0x1fffffffff)
+if 0x1ffffffffff {
+extcodecopy(exp(0x1fffffffffff,0x1ffffffffffff), 0x1fffffffffffff, exp(0x1ffffffffffffff,0x1fffffffffffffff), 0x1ffffffffffffffff)
+}
+log1(exp(exp(0x1fffffffffffffffff,addmod(0x1ffffffffffffffffff, mload(0x1fffffffffffffffffff), 0x1ffffffffffffffffffff)),0x1fffffffffffffffffffff), exp(0x1ffffffffffffffffffffff,0x1fffffffffffffffffffffff), exp(0x1ffffffffffffffffffffffff,0x1fffffffffffffffffffffffff))
+}
+}
+
+			}
+		}
+	}
+		

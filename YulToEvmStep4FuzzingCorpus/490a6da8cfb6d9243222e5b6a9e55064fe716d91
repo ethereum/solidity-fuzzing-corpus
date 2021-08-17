@@ -1,0 +1,50 @@
+
+	object "main" {
+		code {
+			codecopy(0, dataoffset("deployed"), datasize("deployed"))
+			return(0, datasize("deployed"))
+		}
+		object "deployed" {
+			code {
+				{
+{
+switch 0x7fffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
+case 0x7ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff {}
+default {
+log0(0x7fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff, 0x7ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff)
+}
+let x_6, x_7, x_8, x_9 := foo_m_0(0x800000, 0x8000000)
+for { let i_0 := 0 } lt(i_0, 0x60) { i_0 := add(i_0, 0x20) } {
+switch x_6
+case 0x80000000 {}
+default {
+log0(0x800000000, 0x8000000000)
+}
+}
+function foo_m_0(x_16, x_17) -> x_18, x_19, x_20, x_21
+{
+switch x_16
+case 0x800000000000000000 {}
+default {
+log0(0x8000000000000000000, 0x80000000000000000000)
+}
+}
+let x_26, x_27, x_28, x_29 := foo_m_0(0x8000000000000000000000000000,sload(160))
+sstore(224, x_26)
+sstore(288, x_27)
+sstore(32, x_28)
+sstore(96, x_29)
+sstore(xor(0x800000000000000000000000000000000000000,calldatasize()), 0x8000000000000000000000000000000000000000)
+switch x_6
+case 0x80000000000000000000000000000000000000000 {}
+default {
+x_6 := add(0x800000000000000000000000000000000000000000,281474976120832)
+log0(0x8000000000000000000000000000000000000000000, 0x80000000000000000000000000000000000000000000)
+}
+}
+}
+
+			}
+		}
+	}
+		

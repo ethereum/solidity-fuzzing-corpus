@@ -1,0 +1,50 @@
+
+	object "main" {
+		code {
+			codecopy(0, dataoffset("deployed"), datasize("deployed"))
+			return(0, datasize("deployed"))
+		}
+		object "deployed" {
+			code {
+				{
+{
+extcodecopy(0x10000000001, extcodehash(0x1000000001), extcodehash(0x100000001), 0x10000001)
+let x_4 := gt(0x100001,0x10001)
+switch extcodehash(0x1001)
+case 0x101 {
+}
+case 0x11 {
+}
+case 0x1f {
+x_4 := 0x1ff
+}
+case 0x1fff {
+x_4 := 0x1ffff
+}
+case 0x1fffff {
+x_4 := 0x1ffffff
+}
+case 0x1fffffff {}
+switch mload(0x1ffffffff)
+case 0x1fffffffff {
+x_4 := 0x1ffffffffff
+}
+case 0x1fffffffffff {
+x_4 := 0x1ffffffffffff
+}
+case 0x1fffffffffffff {
+x_4 := 0x1ffffffffffffff
+}
+case 0x1fffffffffffffff {}
+case 0x1ffffffffffffffff {
+extcodecopy(0x1fffffffffffffffff, 0x1ffffffffffffffffff, extcodehash(0x1fffffffffffffffffff), 0x1ffffffffffffffffffff)
+}
+case 0x1fffffffffffffffffffff {}
+extcodecopy(0x1ffffffffffffffffffffff, x_4, 0x1fffffffffffffffffffffff, 0x1ffffffffffffffffffffffff)
+}
+}
+
+			}
+		}
+	}
+		

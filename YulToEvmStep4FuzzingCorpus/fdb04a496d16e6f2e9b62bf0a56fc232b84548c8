@@ -1,0 +1,42 @@
+
+	object "main" {
+		code {
+			codecopy(0, dataoffset("deployed"), datasize("deployed"))
+			return(0, datasize("deployed"))
+		}
+		object "deployed" {
+			code {
+				{
+{
+function foo_m_0(x_1, x_2, x_3, x_4) -> x_5, x_6, x_7, x_8
+{
+let x_11, x_12, x_13, x_14 := foo_m_0(0x800000000000000, 0x8000000000000000, 0x80000000000000000, 0x800000000000000000)
+let x_21, x_22, x_23, x_24 := foo_m_0(0x8000000000000000000000000, addmod(add(x_3,0x80000000000000000000000000), 0x800000000000000000000000000, 0x8000000000000000000000000000), 0x80000000000000000000000000000, x_5)
+}
+for { let i_0 := 0 } lt(i_0, 0x60) { i_0 := add(i_0, 0x20) } {
+switch 0x800000000000000000000000000000
+case 0x8000000000000000000000000000000 {}
+default {
+switch calldatasize()
+case 0x80000000000000000000000000000000 {}
+default {
+switch codesize()
+case 0x800000000000000000000000000000000 {
+continue
+}
+case 0x8000000000000000000000000000000000 {
+continue
+}
+default {
+break
+}
+}
+}
+}
+}
+}
+
+			}
+		}
+	}
+		
