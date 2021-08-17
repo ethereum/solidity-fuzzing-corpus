@@ -1,0 +1,31 @@
+{
+{
+mstore(0x2001, 0)
+let x_3, x_4, x_5, x_6 := foo_m_0(0x3ffff)
+let x_9, x_10
+function foo_m_0(x_11) -> x_12, x_13, x_14, x_15
+{
+sstore(xor(x_11,0x3fffffffffffff), 0x3ffffffffffffff)
+let x_20, x_21, x_22, x_23 := foo_m_0(add(create(0x3fffffffffffffffffffff, msize(), 0x3ffffffffffffffffffffff),0x3fffffffffffffffffffffff))
+leave
+revert(0x3ffffffffffffffffffffffff, 0x3fffffffffffffffffffffffff)
+leave
+leave
+leave
+for {
+switch 0x3ffffffffffffffffffffffffff
+default {
+}
+}
+0x0{
+}
+{
+continue
+break
+}
+leave
+leave
+}
+sstore(0, 0x3fffffffffffffffffffffffffff)
+}
+}

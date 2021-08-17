@@ -1,0 +1,12 @@
+object "object0" {
+code {
+{
+mstore(mul(0x1001,dataoffset("object0")), signextend(0x101,mul(0x11,mul(0x1f,signextend(0x1ff,mul(origin(),0x1fff))))))
+for { let i_0 := 0 } lt(i_0, 0x60) { i_0 := add(i_0, 0x20) } {
+break
+}
+mstore(0, 0x1ffff)
+}
+}
+data "datablock" hex"1fffff"
+}

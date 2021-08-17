@@ -1,0 +1,45 @@
+object "object0" {
+code {
+{
+}
+}
+data "datablock" hex"07ffffffffffffffffffffffffffffffffffffffffffffffffff"
+object "object1" {
+code {
+{
+for { let i_0 := 0 } lt(i_0, 0x60) { i_0 := add(i_0, 0x20) } {
+continue
+}
+if 0x7fffffffffffffffffffffffffffffffffffffffffffffffffff {
+}
+}
+}
+data "datablock" hex"07ffffffffffffffffffffffffffffffffffffffffffffffffffff"
+}
+object "object2" {
+code {
+{
+for { let i_1 := 0 } lt(i_1, 0x60) { i_1 := add(i_1, 0x20) } {
+continue
+}
+if 0x7fffffffffffffffffffffffffffffffffffffffffffffffffffff {
+}
+mstore8(0, 0x7ffffffffffffffffffffffffffffffffffffffffffffffffffffff)
+}
+}
+data "datablock" hex"7fffffffffffffffffffffffffffffffffffffffffffffffffffffff"
+}
+object "object3" {
+code {
+{
+}
+}
+data "datablock" hex"07ffffffffffffffffffffffffffffffffffffffffffffffffffffffff"
+object "object4" {
+code {
+{
+}
+}
+}
+}
+}

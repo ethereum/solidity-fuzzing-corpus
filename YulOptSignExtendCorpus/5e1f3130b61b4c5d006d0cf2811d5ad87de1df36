@@ -1,0 +1,36 @@
+object "object0" {
+code {
+{
+let x_0, x_1, x_2, x_3
+switch 0x400
+default {
+}
+}
+}
+data "datablock" hex"4000"
+object "object1" {
+code {
+{
+switch 0x40000
+default {
+if 0x400000 {
+}
+}
+}
+}
+data "datablock" hex"04000000"
+}
+object "object2" {
+code {
+{
+switch 0x40000000
+default {
+if 0x400000000 {
+mstore8(0, 0x4000000000)
+}
+}
+}
+}
+data "datablock" hex"040000000000"
+}
+}

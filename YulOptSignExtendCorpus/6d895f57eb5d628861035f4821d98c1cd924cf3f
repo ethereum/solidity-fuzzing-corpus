@@ -1,0 +1,9 @@
+{
+{
+let x_0 := keccak256(keccak256(0x1f,0x1ff),0x1fff)
+let x_4 := keccak256(signextend(0x1fffff,0x1ffffff),0x1fffffff)
+codecopy(0x1ffffffff, keccak256(keccak256(0x1fffffffff,0x1ffffffffff),keccak256(keccak256(0x1fffffffffff,0x1ffffffffffff),0x1fffffffffffff)), keccak256(0x1ffffffffffffff,0x1fffffffffffffff))
+mstore(0x1ffffffffffffffff, addmod(0x1fffffffffffffffff, 0x1ffffffffffffffffff, 0))
+mstore8(0, x_4)
+}
+}

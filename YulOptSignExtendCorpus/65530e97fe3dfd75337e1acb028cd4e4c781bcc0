@@ -1,0 +1,33 @@
+object "object0" {
+code {
+{
+revert(dataoffset("object0"), 0x7ff)
+{
+}
+}
+}
+data "datablock" hex"7fff"
+object "object1" {
+code {
+{
+revert(dataoffset("object1"), 0x7ffff)
+{
+revert(dataoffset("object1"), 0x7fffff)
+}
+}
+}
+data "datablock" hex"07ffffff"
+object "object2" {
+code {
+{
+switch 0x7fffffff
+default {
+switch 0x7ffffffff
+default {
+}
+}
+}
+}
+}
+}
+}

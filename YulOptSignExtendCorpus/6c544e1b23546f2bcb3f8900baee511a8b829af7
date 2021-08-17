@@ -1,0 +1,27 @@
+object "object0" {
+code {
+{
+switch 0x4001
+default {
+extcodecopy(0x401, not(not(calldatasize())), not(not(0x41)), not(not(not(0x5))))
+switch 0x7
+default {
+}
+}
+if 0x7f {
+selfdestruct(0)
+}
+switch 0x7ff
+default {
+}
+sstore(0, 0x7fff)
+}
+}
+object "object1" {
+code {
+{
+}
+}
+data "datablock" hex"0A"
+}
+}

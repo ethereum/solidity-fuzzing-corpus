@@ -1,0 +1,21 @@
+object "object0" {
+code {
+{
+mstore8(sdiv(0x3ffffffffffffffffffffffffffffffffff,0x3fffffffffffffffffffffffffffffffffff), sdiv(add(addmod(0x3ffffffffffffffffffffffffffffffffffff, 0x3fffffffffffffffffffffffffffffffffffff, 0x3ffffffffffffffffffffffffffffffffffffff),0x3fffffffffffffffffffffffffffffffffffffff),calldatasize()))
+}
+}
+object "object1" {
+code {
+{
+}
+}
+data "datablock" hex"03ffffffffffffffffffffffffffffffffffffffff"
+object "object2" {
+code {
+{
+selfdestruct(addmod(0x3fffffffffffffffffffffffffffffffffffffffff, datasize("object2"), 0x3ffffffffffffffffffffffffffffffffffffffffff))
+}
+}
+}
+}
+}

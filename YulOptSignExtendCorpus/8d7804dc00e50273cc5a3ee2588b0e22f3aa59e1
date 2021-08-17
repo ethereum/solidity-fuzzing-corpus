@@ -1,0 +1,26 @@
+{
+{
+for { let i_0 := 0 } lt(i_0, 0x60) { i_0 := add(i_0, 0x20) } {
+for {
+let x_2, x_3, x_4, x_5 := foo_m_0(0x1ff, 0x1fff, 0x1ffff, 0x1fffff)
+let x_12, x_13, x_14, x_15 := foo_m_0(0x1ffffffffffff, 0x1fffffffffffff, 0x1ffffffffffffff, 0x1fffffffffffffff)
+let x_22, x_23, x_24, x_25 := foo_m_0(0x1ffffffffffffffffffffff, 0x1fffffffffffffffffffffff, 0x1ffffffffffffffffffffffff, 0x1fffffffffffffffffffffffff)
+let x_32, x_33, x_34, x_35 := foo_m_0(0x1ffffffffffffffffffffffffffffffff, 0x1fffffffffffffffffffffffffffffffff, 0x1ffffffffffffffffffffffffffffffffff, 0x1fffffffffffffffffffffffffffffffffff)
+}
+0x0{
+}
+{
+mstore8(0, x_14)
+}
+let x_42, x_43, x_44, x_45 := foo_m_0(0x1ffffffffffffffffffffffffffffffffffffffffff, 0x1fffffffffffffffffffffffffffffffffffffffffff, 0x1ffffffffffffffffffffffffffffffffffffffffffff, 0x1fffffffffffffffffffffffffffffffffffffffffffff)
+if 0x1ffffffffffffffffffffffffffffffffffffffffffffff {
+sstore(0x1fffffffffffffffffffffffffffffffffffffffffffffff, 0x1ffffffffffffffffffffffffffffffffffffffffffffffff)
+continue
+}
+break
+}
+function foo_m_0(x_54, x_55, x_56, x_57) -> x_58, x_59, x_60, x_61
+{
+}
+}
+}

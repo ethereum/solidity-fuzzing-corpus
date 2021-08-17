@@ -1,0 +1,17 @@
+{
+{
+function foo_s_0(x_1, x_2, x_3, x_4) -> x_5
+{
+mstore(eq(smod(signextend(not(0x1fffffffffffffffff),0x1ffffffffffffffffff),0x1fffffffffffffffffff),smod(smod(not(0x1ffffffffffffffffffff),0x1fffffffffffffffffffff),0x1ffffffffffffffffffffff)), 0x1fffffffffffffffffffffff)
+mstore(smod(smod(smod(not(0x1ffffffffffffffffffffffff),0x1fffffffffffffffffffffffff),0x1ffffffffffffffffffffffffff),0x1fffffffffffffffffffffffffff), 0x1ffffffffffffffffffffffffffff)
+leave
+let x_20 := foo_s_0(0x1ffffffffffffffffffffffffffffffff, 0x1fffffffffffffffffffffffffffffffff, 0x1ffffffffffffffffffffffffffffffffff, 0x1fffffffffffffffffffffffffffffffffff)
+}
+let x_26 := foo_s_0(calldataload(288),sload(32),calldataload(96),sload(160))
+sstore(224, x_26)
+let x_39 := foo_s_0(codesize(), 0x1fffffffffffffffffffffffffffffffffffffffffffffffffff, 0x1ffffffffffffffffffffffffffffffffffffffffffffffffffff, 0x1fffffffffffffffffffffffffffffffffffffffffffffffffffff)
+let x_45 := foo_s_0(x_26, 0x1fffffffffffffffffffffffffffffffffffffffffffffffffffffffff, 0x01ffffffffffffffffffffffffffffffffffffffffffffffffffffffffff, 0x1fffffffffffffffffffffffffffffffffffffffffffffffffffffffffff)
+let x_51 := foo_s_0(0x1fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff, 0x2, 0x20, 0x200)
+mstore8(0, x_26)
+}
+}

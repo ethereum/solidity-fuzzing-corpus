@@ -1,0 +1,15 @@
+{
+{
+function foo_s_0(x_1, x_2, x_3, x_4) -> x_5
+{
+extcodecopy(0x3ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff, signextend(byte(0x3fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff,0x3ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff),div(signextend(byte(0x3fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff,0x4),byte(create2(x_2, msize(), 0x40, 0x400),0x4000)),0x40000)), 0x400000, addmod(0x4000000, 0x40000000, 0x400000000))
+leave
+}
+let x_20 := foo_s_0(sload(96),calldataload(160),sload(224),calldataload(288))
+sstore(32, x_20)
+let x_33 := foo_s_0(codesize(), 0x4000000000000000000000000, 0x40000000000000000000000000, 0x400000000000000000000000000)
+let x_39 := foo_s_0(x_20, 0x4000000000000000000000000000000, 0x40000000000000000000000000000000, 0x400000000000000000000000000000000)
+let x_45 := foo_s_0(0x4000000000000000000000000000000000000, 0x40000000000000000000000000000000000000, 0x400000000000000000000000000000000000000, 0x4000000000000000000000000000000000000000)
+mstore8(0, x_33)
+}
+}

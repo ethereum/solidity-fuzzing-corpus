@@ -1,0 +1,26 @@
+{
+{
+let x_2, x_3 := foo_m_0(0x1ffffffffffffff, 0x1fffffffffffffff)
+let x_8, x_9 := foo_m_0(0x1ffffffffffffffffffff, 0x1fffffffffffffffffffff)
+sstore(0x1ffffffffffffffffffffff, x_8)
+let x_15, x_16 := foo_m_0(0x1fffffffffffffffffffffffffff, 0x1ffffffffffffffffffffffffffff)
+let x_21, x_22 := foo_m_0(0x1fffffffffffffffffffffffffffffffff, 0x1ffffffffffffffffffffffffffffffffff)
+function foo_m_0(x_26, x_27) -> x_28, x_29
+{
+switch x_26
+case 0x1ffffffffffffffffffffffffffffffffffffffff {
+}
+default {
+if 0x1fffffffffffffffffffffffffffffffffffffffff {
+}
+}
+for { let i_0 := 0 } lt(i_0, 0x60) { i_0 := add(i_0, 0x20) } {
+continue
+for { let i_1 := 0 } lt(i_1, 0x60) { i_1 := add(i_1, 0x20) } {
+}
+}
+}
+mstore(0, x_21)
+mstore8(0, x_16)
+}
+}

@@ -1,0 +1,25 @@
+{
+{
+function foo_s_0(x_1, x_2, x_3, x_4) -> x_5
+{
+x_1 := 0x20001
+x_4 := 0x2001
+for { let i_0 := 0 } lt(i_0, 0x60) { i_0 := add(i_0, 0x20) } {
+switch 0x201
+default {
+for { let i_1 := 0 } lt(i_1, 0x60) { i_1 := add(i_1, 0x20) } {
+}
+leave
+}
+continue
+}
+if 0x21 {
+sstore(0, 0x3)
+}
+mstore8(0, x_4)
+}
+let x_13 := foo_s_0(0x3ffff, 0x3fffff, 0x3ffffff, number())
+let x_19 := foo_s_0(x_13, gas(), 0x3ffffffffff, 0x3fffffffffff)
+let x_24 := foo_s_0(0x3fffffffffffffff, 0x3ffffffffffffffff, 0x3fffffffffffffffff, 0x3ffffffffffffffffff)
+}
+}

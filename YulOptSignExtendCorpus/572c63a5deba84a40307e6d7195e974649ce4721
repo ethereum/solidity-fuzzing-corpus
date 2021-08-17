@@ -1,0 +1,16 @@
+{
+{
+mstore(0x1000000000001, 0x100000000001)
+mstore(not(0x10000000001), 0x1000000001)
+mstore(not(""), 0x100000001)
+mstore(not(0), 0x10000001)
+mstore(not(0x1000001), 0x100001)
+mstore(not(0x10001), 0x1001)
+mstore(not(0x101), 0x11)
+mstore(gas(), 0x1f)
+mstore(not(gas()), 0x1ff)
+mstore(not(0x1fff), 0x1ffff)
+mstore(not(""), 0x1fffff)
+mstore(not(0), 0x1ffffff)
+}
+}

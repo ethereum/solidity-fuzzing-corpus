@@ -1,0 +1,25 @@
+{
+{
+function foo_m_0(x_1, x_2) -> x_3, x_4, x_5, x_6
+{
+switch 0x400001
+default {
+x_3 := 0x40001
+for { let i_0 := 0 } lt(i_0, 0x60) { i_0 := add(i_0, 0x20) } {
+mstore8(0, x_5)
+}
+leave
+}
+let x_11, x_12, x_13, x_14 := foo_m_0(0x7ff, 0x7fff)
+x_5 := 0x7ffff
+let x_20, x_21, x_22, x_23 := foo_m_0(0x7fffffffffff, 0x7ffffffffffff)
+let x_28, x_29, x_30, x_31 := foo_m_0(0x7fffffffffffffffffff, 0x7ffffffffffffffffffff)
+let x_36, x_37, x_38, x_39 := foo_m_0(0x7fffffffffffffffffffffffffff, 0x7ffffffffffffffffffffffffffff)
+}
+let x_43, x_44, x_45, x_46 := foo_m_0(calldataload(288),sload(32))
+sstore(96, x_43)
+sstore(160, x_44)
+sstore(224, x_45)
+sstore(288, x_46)
+}
+}

@@ -1,0 +1,13 @@
+{
+{
+let x_0 := 0x21
+codecopy(mulmod(0x3, 0x3f, 0x3ff), codesize(), 0x3fff)
+codecopy(signextend(8,x_0), 0x3ffff, 0x3fffff)
+codecopy(shl(8,x_0), 0x3ffffff, 0x3fffffff)
+codecopy(shl(8,0x3ffffffff), 0x3fffffffff, 0x3ffffffffff)
+codecopy(shl(8,x_0), 0x3fffffffffff, 0x3ffffffffffff)
+codecopy(shl(8,x_0), "", 0x3fffffffffffff)
+codecopy(0x3ffffffffffffff, 0x3fffffffffffffff, 0x3ffffffffffffffff)
+codecopy(shl(8,x_0), 0x3fffffffffffffffff, 0x3ffffffffffffffffff)
+}
+}

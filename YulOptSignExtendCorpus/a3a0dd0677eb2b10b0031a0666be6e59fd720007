@@ -1,0 +1,11 @@
+{
+{
+switch 0x5
+default {
+}
+let x_1 := keccak256(0x7f,0x7ff)
+codecopy(x_1, keccak256(0,0x7fff), signextend(0x7ffff,0x7fffff))
+mstore(0, x_1)
+mstore(keccak256(0,signextend(false,0x7ffffff)), x_1)
+}
+}

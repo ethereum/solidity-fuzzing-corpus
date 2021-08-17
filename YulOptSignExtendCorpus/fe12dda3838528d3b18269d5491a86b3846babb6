@@ -1,0 +1,25 @@
+{
+{
+for { let i_0 := 0 } lt(i_0, 0x60) { i_0 := add(i_0, 0x20) } {
+if balance(0x100000000000000000000000000000001) {
+for { let i_1 := 0 } lt(i_1, 0x60) { i_1 := add(i_1, 0x20) } {
+}
+}
+break
+mstore(0, 0x10000000000000000000000000000001)
+}
+codecopy(0x1000000000000000000000000000001, 0x100000000000000000000000000001, 0x10000000000000000000000000001)
+let x_7, x_8, x_9, x_10 := foo_m_0(0x1000000000000000000001, 0x100000000000000000001, 0x10000000000000000001, 0x1000000000000000001)
+mstore(balance(0x100000000000000001), 0x10000000000000001)
+function foo_m_0(x_18, x_19, x_20, x_21) -> x_22, x_23, x_24, x_25
+{
+mstore(0x1000001, calldatasize())
+sstore(calldatasize(), sdiv(x_18,0x100001))
+mstore(sdiv(x_18,0x10001), 0x1001)
+let x_32, x_33, x_34, x_35 := foo_m_0(0x1fffff, 0x1ffffff, 0x1fffffff, 0x1ffffffff)
+leave
+}
+extcodecopy(0x1fffffffff, 0x1ffffffffff, 0x1fffffffffff, mulmod(0x1ffffffffffff, 0x1fffffffffffff, 0x1ffffffffffffff))
+let x_48, x_49, x_50, x_51 := foo_m_0(0x1fffffffffffffffffffff, 0x1ffffffffffffffffffffff, 0x1fffffffffffffffffffffff, 0x1ffffffffffffffffffffffff)
+}
+}

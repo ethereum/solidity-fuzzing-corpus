@@ -1,0 +1,69 @@
+object "object0" {
+code {
+{
+if 0x4000000001 {
+}
+}
+}
+data "datablock" hex"0400000001"
+object "object1" {
+code {
+{
+}
+}
+data "datablock" hex"40000001"
+}
+object "object2" {
+code {
+{
+}
+}
+data "datablock" hex"04000001"
+}
+object "object3" {
+code {
+{
+for {
+mstore(0, 0x400001)
+}
+0x0{}
+{
+break
+}
+}
+}
+data "datablock" hex"040001"
+object "object4" {
+code {
+{
+switch 0x4001
+default {
+}
+}
+}
+data "datablock" hex"0401"
+}
+object "object5" {
+code {
+{
+}
+}
+data "datablock" hex"41"
+}
+object "object6" {
+code {
+{
+if 0x5 {
+}
+}
+}
+data "datablock" hex"07"
+}
+object "object7" {
+code {
+{
+}
+}
+}
+}
+}

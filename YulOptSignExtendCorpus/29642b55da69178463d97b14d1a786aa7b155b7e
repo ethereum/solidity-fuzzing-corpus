@@ -1,0 +1,23 @@
+{
+{
+for {
+switch 0x200000000001
+default {
+}
+}
+blockhash(0x0){}
+{
+switch 0x20000000001
+default {
+}
+switch 0x2000000001
+default {
+continue
+}
+}
+sstore(0, 0x200000001)
+extcodecopy(0x20000001, 0x2000001, 0x200001, 0x20001)
+sstore(0, 0x2001)
+mstore8(0, 0x201)
+}
+}

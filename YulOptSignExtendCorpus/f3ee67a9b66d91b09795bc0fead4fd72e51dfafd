@@ -1,0 +1,30 @@
+object "object0" {
+code {
+{
+switch 0x200000000001
+default {
+extcodecopy(0x20000000001, not(not(calldatasize())), not(not(0x2000000001)), not(not(not(0x200000001))))
+}
+for { let i_0 := 0 } lt(i_0, 0x60) { i_0 := add(i_0, 0x20) } {
+if 0x20000001 {
+switch 0x2000001
+default {
+}
+}
+break
+continue
+}
+switch 0x200001
+default {
+}
+sstore(0, 0x20001)
+}
+}
+object "object1" {
+code {
+{
+}
+}
+data "datablock" hex"0A"
+}
+}

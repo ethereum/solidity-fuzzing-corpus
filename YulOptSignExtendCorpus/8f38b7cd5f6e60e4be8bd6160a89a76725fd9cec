@@ -1,0 +1,22 @@
+{
+{
+let x_2, x_3 := foo_m_0(0x3ffffffffffffffff, 0x3fffffffffffffffff)
+let x_8, x_9 := foo_m_0(0x3ffffffffffffffffffffff, 0x3fffffffffffffffffffffff)
+sstore(0x3ffffffffffffffffffffffff, x_8)
+let x_15, x_16 := foo_m_0(0x3fffffffffffffffffffffffffffff, 0x3ffffffffffffffffffffffffffffff)
+let x_21, x_22 := foo_m_0(0x3fffffffffffffffffffffffffffffffffff, 0x3ffffffffffffffffffffffffffffffffffff)
+function foo_m_0(x_26, x_27) -> x_28, x_29
+{
+switch x_26
+case 0x3ffffffffffffffffffffffffffffffffffffffffff {
+}
+default {
+extcodecopy(0x3fffffffffffffffffffffffffffffffffffffffffff, 0x3ffffffffffffffffffffffffffffffffffffffffffff, 0x3fffffffffffffffffffffffffffffffffffffffffffff, x_26)
+mstore8(0, x_26)
+leave
+}
+}
+mstore(0, x_21)
+mstore8(0, x_16)
+}
+}

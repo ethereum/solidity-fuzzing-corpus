@@ -1,0 +1,19 @@
+{
+{
+mstore(0x80000001, not(0x8000001))
+mstore(not(0x800001), 0x80001)
+mstore(not(""), 0x8001)
+mstore(not(0), 0x801)
+mstore(not(0x81), 0x9)
+mstore(not(0xf), 0xff)
+mstore(not(0), 0xfff)
+mstore(gas(), 0xffff)
+mstore(not(gas()), 0xfffff)
+mstore(not(0xffffff), 0xfffffff)
+mstore(not(""), 0xffffffff)
+mstore(not(0), call(0xfffffffff, 0xffffffffff, 0xfffffffffff, 0xffffffffffff, 0xfffffffffffff, 0xffffffffffffff, 0xfffffffffffffff))
+stop()
+return(0xffffffffffffffff, 0xfffffffffffffffff)
+mstore(0, 0xffffffffffffffffff)
+}
+}

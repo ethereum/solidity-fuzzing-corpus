@@ -1,0 +1,19 @@
+object "object0" {
+code {
+{
+switch not(0x1ffff)
+case 0x1fffff {
+mstore(0x1ffffff, datasize("object0"))
+}
+case 0x1fffffff {
+pop(0x1ffffffff)
+switch 0x1fffffffff
+default {
+}
+mstore8(0, 0x1ffffffffff)
+}
+default {
+}
+}
+}
+}

@@ -1,0 +1,20 @@
+{
+{
+calldatacopy(0x401, 0x41, 0x5)
+function foo_n_0(x_4, x_5, x_6)
+{
+for { let i_0 := 0 } lt(i_0, 0x60) { i_0 := add(i_0, 0x20) } {
+for { let i_1 := 0 } lt(i_1, 0x60) { i_1 := add(i_1, 0x20) } {
+log1(0x7ffff, signextend(smod(not(0x7fffff),msize()),0x7ffffff), 0x7fffffff)
+foo_n_0(0x7fffffffff, 0x7ffffffffff, 0x7fffffffffff)
+}
+continue
+continue
+}
+foo_n_0(0x7fffffffffffff, create(0x7ffffffffffffff, 0x7fffffffffffffff, 0x7ffffffffffffffff), 0x7fffffffffffffffff)
+mstore(0, x_6)
+leave
+}
+foo_n_0(sload(96),calldataload(160),sload(224))
+}
+}

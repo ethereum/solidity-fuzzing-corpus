@@ -1,0 +1,21 @@
+object "object0" {
+code {
+{
+mstore(0x10000, 0x100000)
+mstore(not(datasize("object0")), 0x1000000)
+mstore(not(""), 0x10000000)
+mstore(not(0), 0x100000000)
+mstore(not(0x1000000000), 0x10000000000)
+mstore(not(""), 0x100000000000)
+mstore(not(0), 0x1000000000000)
+mstore(gas(), 0x10000000000000)
+mstore(not(0), 0x100000000000000)
+mstore(not(""), 0x1000000000000000)
+mstore(not(0), 0x10000000000000000)
+switch 0x100000000000000000
+default {
+}
+}
+}
+data "datablock" hex"01000000000000000000"
+}

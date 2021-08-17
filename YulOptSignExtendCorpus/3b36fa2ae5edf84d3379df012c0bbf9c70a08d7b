@@ -1,0 +1,22 @@
+object "object0" {
+code {
+{
+for { let i_0 := 0 } lt(i_0, 0x60) { i_0 := add(i_0, 0x20) } {
+}
+}
+}
+data "datablock" hex"020001"
+object "object1" {
+code {
+{
+}
+}
+object "object2" {
+code {
+{
+let x_1 := addmod(dataoffset("object2"), 0x201, 0x21)
+}
+}
+}
+}
+}

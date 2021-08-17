@@ -1,0 +1,16 @@
+{
+{
+function foo_s_0(x_1, x_2, x_3, x_4) -> x_5
+{
+let x_7, x_8, x_9, x_10
+sstore(gt(xor(xor(codesize(),0x3fffffffff),xor(codesize(),0x3ffffffffff)),0), 0x3fffffffffff)
+extcodecopy(xor(xor(codesize(),0x3ffffffffffff),signextend(0x3fffffffffffff,0x3ffffffffffffff)), 0x3fffffffffffffff, x_4, 0x3ffffffffffffffff)
+sstore(0, x_10)
+leave
+}
+let x_20 := foo_s_0(0x3ffffffffffffffffffff, 0x3fffffffffffffffffffff, 0x3ffffffffffffffffffffff, 0x3fffffffffffffffffffffff)
+let x_27 := foo_s_0(0x3fffffffffffffffffffffffffff, 0x3ffffffffffffffffffffffffffff, 0x3fffffffffffffffffffffffffffff, 0x3ffffffffffffffffffffffffffffff)
+let x_34 := foo_s_0(0x3ffffffffffffffffffffffffffffffffff, add(foo_s_0(0x3fffffffffffffffffffffffffffffffffff, 0x3ffffffffffffffffffffffffffffffffffff, 0x3fffffffffffffffffffffffffffffffffffff, 0x3ffffffffffffffffffffffffffffffffffffff)
+,0x3fffffffffffffffffffffffffffffffffffffff), 0x3ffffffffffffffffffffffffffffffffffffffff, 0x3fffffffffffffffffffffffffffffffffffffffff)
+}
+}

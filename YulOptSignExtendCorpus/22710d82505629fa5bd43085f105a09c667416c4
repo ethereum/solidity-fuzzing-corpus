@@ -1,0 +1,13 @@
+{
+{
+extcodecopy(sdiv(signextend(0x7ffff,0x7fffff),0x7ffffff), 0x7fffffff, 0x7ffffffff, sdiv(signextend(0x7fffffffff,0x7ffffffffff),0x7fffffffffff))
+let x_8 := caller()
+extcodecopy(0x033333333333333333333333, 0x7fffffffffffff, 0x7ffffffffffffff, 0x033333333333333333333333)
+extcodecopy(0x7fffffffffffffff, 0x033333333333333333333333, 0x033333333333333333333333, 0x033333333333333333333333)
+mstore(create(0x7ffffffffffffffff, 0x7fffffffffffffffff, 0x7ffffffffffffffffff), 0x033333333333333333333333)
+mstore(0x033333333333333333333333, 0x033333333333333333333333)
+mstore(0x033333333333333333333333, 0x033333333333333333333333)
+sstore(0, x_8)
+sstore(0, x_8)
+}
+}

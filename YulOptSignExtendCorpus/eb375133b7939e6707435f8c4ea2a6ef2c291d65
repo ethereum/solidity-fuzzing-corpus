@@ -1,0 +1,20 @@
+{
+{
+mstore(0x100000000000000000000000001, 0x10000000000000000000000001)
+let x_4, x_5, x_6, x_7 := foo_m_0()
+let x_10, x_11, x_12, x_13 := foo_m_0()
+let x_16, x_17, x_18, x_19 := foo_m_0()
+function foo_m_0() -> x_21, x_22, x_23, x_24
+{
+sstore(coinbase(), signextend(0,0x11))
+sstore(xor(x_21,0x1f), 0x1ff)
+let x_30, x_31, x_32, x_33 := foo_m_0()
+leave
+revert(0x1fffffffff, 0x1ffffffffff)
+let x_38, x_39, x_40, x_41 := foo_m_0()
+leave
+leave
+}
+sstore(0, addmod(0x1fffffffffffffffff, sload(0x1ffffffffffffffffff), 0x1fffffffffffffffffff))
+}
+}

@@ -1,0 +1,20 @@
+{
+{
+mstore(not(0x20000000001), 0x2000000001)
+mstore(not(0x200000001), 0x20000001)
+mstore(not(0x2000001), 0x200001)
+mstore(not(0x20001), 0x2001)
+mstore(not(0x201), 0x21)
+mstore(not(0x3), 0x3f)
+mstore(not(0), 0x3ff)
+mstore(gas(), 0x3fff)
+mstore(not(gas()), 0x3ffff)
+mstore(not(0x3fffff), 0x3ffffff)
+mstore(not(0x3fffffff), 0x3ffffffff)
+mstore(not(0), 0x3fffffffff)
+switch 0x3ffffffffff
+default {
+mstore(not(0x3fffffffffff), not(0x3ffffffffffff))
+}
+}
+}

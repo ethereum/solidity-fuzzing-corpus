@@ -1,0 +1,27 @@
+object "object0" {
+code {
+{
+for { let i_0 := 0 } lt(i_0, 0x60) { i_0 := add(i_0, 0x20) } {
+let x_2 := foo_s_0(0x1ffffffff, 0x1fffffffff, 0x1ffffffffff, 0x1fffffffffff)
+}
+switch 0x1ffffffffffff
+default {
+let x_10 := foo_s_0(0x1ffffffffffffffff, 0x1fffffffffffffffff, 0x1ffffffffffffffffff, 0x1fffffffffffffffffff)
+}
+function foo_s_0(x_16, x_17, x_18, x_19) -> x_20
+{
+mstore(xor(xor(timestamp(),0x1ffffffffffffffffffffffffff),xor(timestamp(),0x1fffffffffffffffffffffffffff)), 0x1ffffffffffffffffffffffffffff)
+leave
+for {}
+0x0{
+}
+{
+continue
+}
+let x_26 := foo_s_0(0x1ffffffffffffffffffffffffffffffff, 0x1fffffffffffffffffffffffffffffffff, 0x1ffffffffffffffffffffffffffffffffff, 0x1fffffffffffffffffffffffffffffffffff)
+}
+let x_33 := foo_s_0(0x1fffffffffffffffffffffffffffffffffffffff, 0x1ffffffffffffffffffffffffffffffffffffffff, 0x1fffffffffffffffffffffffffffffffffffffffff, 0x1ffffffffffffffffffffffffffffffffffffffffff)
+}
+}
+data "datablock" hex"1fffffffffffffffffffffffffffffffffffffffffff"
+}

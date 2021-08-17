@@ -1,0 +1,21 @@
+object "object0" {
+code {
+{
+mstore(not(""), 0x7fffffffffffffffffffffffffffff)
+mstore(0x7ffffffffffffffffffffffffffffff, 0x7fffffffffffffffffffffffffffffff)
+mstore(not(0), 0x7ffffffffffffffffffffffffffffffff)
+mstore(not(0x7fffffffffffffffffffffffffffffffff), 0x7ffffffffffffffffffffffffffffffffff)
+mstore(not(""), 0x7fffffffffffffffffffffffffffffffffff)
+mstore(not(0), 0x7ffffffffffffffffffffffffffffffffffff)
+mstore(gas(), 0x7fffffffffffffffffffffffffffffffffffff)
+mstore(not(gas()), 0x7ffffffffffffffffffffffffffffffffffffff)
+mstore(not(0x7fffffffffffffffffffffffffffffffffffffff), 0x7ffffffffffffffffffffffffffffffffffffffff)
+mstore(not(""), 0x7fffffffffffffffffffffffffffffffffffffffff)
+mstore(not(""), 0x7ffffffffffffffffffffffffffffffffffffffffff)
+for { let i_0 := 0 } lt(i_0, 0x60) { i_0 := add(i_0, 0x20) } {
+continue
+}
+}
+}
+data "datablock" hex"7fffffffffffffffffffffffffffffffffffffffffff"
+}

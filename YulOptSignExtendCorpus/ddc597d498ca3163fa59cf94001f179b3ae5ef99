@@ -1,0 +1,30 @@
+{
+{
+let x_0 := 0x7
+x_0 := 0x7f
+switch 0x7ff
+default {
+for { let i_0 := 0 } lt(i_0, 0x60) { i_0 := add(i_0, 0x20) } {
+x_0 := mulmod(0x7fff, 0x7ffff, 0x7fffff)
+mstore(0, x_0)
+pop(0x7ffffff)
+continue
+break
+}
+for { let i_1 := 0 } lt(i_1, 0x60) { i_1 := add(i_1, 0x20) } {
+mstore(0, x_0)
+if 0x7fffffff {
+continue
+}
+if 0x7ffffffff {
+}
+break
+}
+switch 0x7fffffffff
+default {
+}
+}
+sstore(0, x_0)
+sstore(0, x_0)
+}
+}

@@ -1,0 +1,61 @@
+object "object0" {
+code {
+{
+sstore(0x1fffffffffffffffffff, 0x1ffffffffffffffffffff)
+sstore(0x1fffffffffffffffffffff, 0x1ffffffffffffffffffffff)
+sstore(0x1fffffffffffffffffffffff, iszero(0x1ffffffffffffffffffffffff))
+sstore(0x1fffffffffffffffffffffffff, 0x1ffffffffffffffffffffffffff)
+extcodecopy(sload(sload(0x1fffffffffffffffffffffffffff)), sload(sload(not(0x1ffffffffffffffffffffffffffff))), sload(sload(0x1fffffffffffffffffffffffffffff)), sload(sload(0x1ffffffffffffffffffffffffffffff)))
+}
+}
+data "datablock" hex"1fffffffffffffffffffffffffffffff"
+object "object1" {
+code {
+{
+}
+}
+data "datablock" hex"01ffffffffffffffffffffffffffffffff"
+object "object2" {
+code {
+{
+}
+}
+data "datablock" hex"1fffffffffffffffffffffffffffffffff"
+object "object3" {
+code {
+{
+}
+}
+data "datablock" hex"01ffffffffffffffffffffffffffffffffff"
+object "object4" {
+code {
+{
+}
+}
+data "datablock" hex"1fffffffffffffffffffffffffffffffffff"
+object "object5" {
+code {
+{
+}
+}
+data "datablock" hex"01ffffffffffffffffffffffffffffffffffff"
+object "object6" {
+code {
+{
+}
+}
+data "datablock" hex"1fffffffffffffffffffffffffffffffffffff"
+object "object7" {
+code {
+{
+}
+}
+data "datablock" hex"01ffffffffffffffffffffffffffffffffffffff"
+}
+}
+}
+}
+}
+}
+}
+}

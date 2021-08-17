@@ -1,0 +1,23 @@
+{
+{
+sstore(0x2000000000000000001, foo_s_0(0x200000000000000001)
+)
+function foo_s_0(x_3) -> x_4
+{
+x_4 := add(x_3,0x20000000000001)
+leave
+let x_8 := foo_s_0(0x2000000001)
+leave
+leave
+if 0x200000001 {
+}
+}
+let x_12 := foo_s_0(sload(160))
+sstore(224, x_12)
+calldatacopy(0x21, 0x3, addmod(0x3f, foo_s_0(0x3ff)
+, 0x3fff))
+mstore8(0, addmod(0x3ffff, foo_s_0(0x3fffff)
+, foo_s_0(0x3ffffff)
+))
+}
+}

@@ -1,0 +1,23 @@
+{
+{
+let x_2, x_3 := foo_m_0(0x80000000000000000000000000000000000000000000000000000000001, 0x8000000000000000000000000000000000000000000000000000000001, 0x800000000000000000000000000000000000000000000000000000001, 0x80000000000000000000000000000000000000000000000000000001)
+let x_10, x_11 := foo_m_0(0x800000000000000000000000000000000000000000000000001, 0x80000000000000000000000000000000000000000000000001, 0x8000000000000000000000000000000000000000000000001, iszero(0x800000000000000000000000000000000000000000000001))
+function foo_m_0(x_17, x_18, x_19, x_20) -> x_21, x_22
+{
+log3(div(signextend(0x8000000000000000000000000000000000000001,signextend(0x800000000000000000000000000000000000001,x_17)),codesize()), div(calldatasize(),0x80000000000000000000000000000000000001), 0x8000000000000000000000000000000000001, 0x800000000000000000000000000000000001, 0x80000000000000000000000000000000001)
+leave
+leave
+let x_31, x_32 := foo_m_0(0x800000000000000000000000000001, 0x80000000000000000000000000001, 0x8000000000000000000000000001, 0x800000000000000000000000001)
+}
+let x_38, x_39 := foo_m_0(mload(64),0x8000000000000000001,sload(224),calldataload(288))
+sstore(32, x_38)
+sstore(96, x_39)
+let x_55, x_56 := foo_m_0(0x800001, 0x80001, 0x8001, 0x801)
+let x_63, x_64 := foo_m_0(0xfff, 0xffff, 0xfffff, 0xffffff)
+let x_71, x_72 := foo_m_0(0xfffffffffff, 0xffffffffffff, 0xfffffffffffff, 0xffffffffffffff)
+let x_79, x_80 := foo_m_0(0xfffffffffffffffffff, 0xffffffffffffffffffff, 0xfffffffffffffffffffff, blockhash(0xffffffffffffffffffffff))
+let x_87, x_88 := foo_m_0(0xfffffffffffffffffffffffffff, 0xffffffffffffffffffffffffffff, 0xfffffffffffffffffffffffffffff, 0xffffffffffffffffffffffffffffff)
+let x_95, x_96 := foo_m_0(call(0xfffffffffffffffffffffffffffffffffff, 0xffffffffffffffffffffffffffffffffffff, 0xfffffffffffffffffffffffffffffffffffff, 0xffffffffffffffffffffffffffffffffffffff, 0xfffffffffffffffffffffffffffffffffffffff, 0xffffffffffffffffffffffffffffffffffffffff, 0xfffffffffffffffffffffffffffffffffffffffff), 0xffffffffffffffffffffffffffffffffffffffffff, 0xfffffffffffffffffffffffffffffffffffffffffff, 0xffffffffffffffffffffffffffffffffffffffffffff)
+sstore(0xfffffffffffffffffffffffffffffffffffffffffffff, x_95)
+}
+}

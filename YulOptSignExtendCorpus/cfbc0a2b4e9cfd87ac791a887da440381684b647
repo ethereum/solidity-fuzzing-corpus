@@ -1,0 +1,14 @@
+{
+{
+let x_0 := not(0x1ffffffffffffffffffffffffff)
+codecopy(shl(8,0x1fffffffffffffffffffffffffff), 0x1ffffffffffffffffffffffffffff, shl(true,x_0))
+codecopy(0x1fffffffffffffffffffffffffffff, 0x1ffffffffffffffffffffffffffffff, 0x1fffffffffffffffffffffffffffffff)
+codecopy(shl(8,x_0), 0x1ffffffffffffffffffffffffffffffff, 0x1fffffffffffffffffffffffffffffffff)
+codecopy(shl(8,0x1ffffffffffffffffffffffffffffffffff), 0x1fffffffffffffffffffffffffffffffffff, 0x1ffffffffffffffffffffffffffffffffffff)
+codecopy(shl(8,x_0), 0x1fffffffffffffffffffffffffffffffffffff, 0x1ffffffffffffffffffffffffffffffffffffff)
+codecopy(shl(8,x_0), 0x1fffffffffffffffffffffffffffffffffffffff, 0x1ffffffffffffffffffffffffffffffffffffffff)
+codecopy(shl(8,x_0), 0x1fffffffffffffffffffffffffffffffffffffffff, 0x1ffffffffffffffffffffffffffffffffffffffffff)
+codecopy(shl(8,x_0), 0x1fffffffffffffffffffffffffffffffffffffffffff, 0x1ffffffffffffffffffffffffffffffffffffffffffff)
+mstore8(0, x_0)
+}
+}

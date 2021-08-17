@@ -1,0 +1,39 @@
+object "object0" {
+code {
+{
+if timestamp() {
+extcodecopy(0x1000000001, 0x100000001, 0x10000001, 0x1000001)
+}
+}
+}
+data "datablock" hex"100001"
+object "object1" {
+code {
+{
+if timestamp() {
+}
+}
+}
+data "datablock" hex"010001"
+object "object2" {
+code {
+{
+if timestamp() {
+extcodecopy(0x1001, 0x101, 0x11, 0x1f)
+}
+}
+}
+object "object3" {
+code {
+{
+if timestamp() {
+extcodecopy(0x1ff, 0x1fff, 0x1ffff, 0x1fffff)
+mstore(0, 0x1ffffff)
+}
+}
+}
+data "datablock" hex"1fffffff"
+}
+}
+}
+}

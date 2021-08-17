@@ -1,0 +1,24 @@
+{
+{
+let x_1 := 0x10001
+mstore(0x1001, 0x101)
+function foo_m_0(x_5, x_6, x_7) -> x_8, x_9, x_10, x_11
+{
+revert(0x1ffffffff, 0x1fffffffff)
+leave
+leave
+leave
+for {
+}
+0x0{}
+{
+}
+leave
+}
+let x_15, x_16, x_17, x_18 := foo_m_0(calldataload(32),sload(96),calldataload(160))
+sstore(224, x_15)
+sstore(288, x_16)
+sstore(32, x_17)
+sstore(96, x_18)
+}
+}

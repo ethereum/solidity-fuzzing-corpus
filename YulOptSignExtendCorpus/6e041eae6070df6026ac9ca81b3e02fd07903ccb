@@ -1,0 +1,26 @@
+{
+{
+function foo_s_0(x_1, x_2, x_3, x_4) -> x_5
+{
+for { let i_0 := 0 } lt(i_0, 0x60) { i_0 := add(i_0, 0x20) } {
+mstore8(0, x_2)
+switch 0x7fff
+default {
+for { let i_1 := 0 } lt(i_1, 0x60) { i_1 := add(i_1, 0x20) } {
+continue
+break
+}
+break
+}
+break
+}
+}
+let x_8 := foo_s_0(sload(32),calldataload(96),sload(160),calldataload(224))
+sstore(288, x_8)
+let x_21 := foo_s_0(0x7fffffffffffffffffff, 0x7ffffffffffffffffffff, x_8, 0x7fffffffffffffffffffff)
+let x_27 := foo_s_0(add(foo_s_0(0x7fffffffffffffffffffffffff, 0x7ffffffffffffffffffffffffff, 0x7fffffffffffffffffffffffffff, 0x7ffffffffffffffffffffffffffff)
+,0x7fffffffffffffffffffffffffffff), 0x7ffffffffffffffffffffffffffffff, 0x7fffffffffffffffffffffffffffffff, 0x7ffffffffffffffffffffffffffffffff)
+let x_38 := foo_s_0(0x7ffffffffffffffffffffffffffffffffffff, signextend(foo_s_0(0x7fffffffffffffffffffffffffffffffffffff, 0x7ffffffffffffffffffffffffffffffffffffff, 0x7fffffffffffffffffffffffffffffffffffffff, 0x7ffffffffffffffffffffffffffffffffffffffff)
+,0x7fffffffffffffffffffffffffffffffffffffffff), 0x7ffffffffffffffffffffffffffffffffffffffffff, 0x7fffffffffffffffffffffffffffffffffffffffffff)
+}
+}

@@ -1,0 +1,8 @@
+{
+{
+codecopy(signextend(create(0x3fffffffffffffffffffffffffffffffffffffffffffffffffffff, create(0x3ffffffffffffffffffffffffffffffffffffffffffffffffffffff, not(gasprice()), 0x3fffffffffffffffffffffffffffffffffffffffffffffffffffffff), iszero(calldatasize())),0x3ffffffffffffffffffffffffffffffffffffffffffffffffffffffff), shr(calldatasize(),create(0, create(0x3fffffffffffffffffffffffffffffffffffffffffffffffffffffffff, 0x3ffffffffffffffffffffffffffffffffffffffffffffffffffffffffff, 0x3fffffffffffffffffffffffffffffffffffffffffffffffffffffffffff), 0x3ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff)), signextend(create(0x3fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff, create(0x3ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff, not(gasprice()), 0x3fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff), iszero(calldatasize())),0x4))
+mstore(0x40, blockhash(calldatasize()))
+mstore8(0, 0x400)
+mstore(0, 0x4000)
+}
+}

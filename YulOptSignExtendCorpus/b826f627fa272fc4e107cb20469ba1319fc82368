@@ -1,0 +1,15 @@
+{
+{
+let x_0 := signextend(8,and(0x7fffffffffffffffffffffffffffffffffffffffffffffffffff,signextend(not(difficulty()),0x7ffffffffffffffffffffffffffffffffffffffffffffffffffff)))
+codecopy(call(0x7fffffffffffffffffffffffffffffffffffffffffffffffffffff, 0x7ffffffffffffffffffffffffffffffffffffffffffffffffffffff, 0x7fffffffffffffffffffffffffffffffffffffffffffffffffffffff, 0x7ffffffffffffffffffffffffffffffffffffffffffffffffffffffff, 0x7fffffffffffffffffffffffffffffffffffffffffffffffffffffffff, 0x7ffffffffffffffffffffffffffffffffffffffffffffffffffffffffff, 0x7fffffffffffffffffffffffffffffffffffffffffffffffffffffffffff), 0x7ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff, 0x7fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff)
+codecopy(signextend(8,x_0), 0x7ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff, 0x7fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff)
+codecopy(shl(8,x_0), 0x8, 0x80)
+codecopy(signextend(8,0x800), 0x8000, 0x80000)
+codecopy(shl(8,x_0), 0x800000, 0x8000000)
+switch 0x80000000
+default {
+}
+codecopy(shl(x_0,x_0), 0x800000000, 0x8000000000)
+codecopy(shl(8,x_0), 8, 0x80000000000)
+}
+}

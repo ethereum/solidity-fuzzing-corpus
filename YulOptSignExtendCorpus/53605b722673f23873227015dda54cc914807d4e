@@ -1,0 +1,28 @@
+object "object0" {
+code {
+{
+sstore(0x3fffffffffffffffffffffffffffffffffffffffffffffffffffff, 0x3ffffffffffffffffffffffffffffffffffffffffffffffffffffff)
+sstore(0x3fffffffffffffffffffffffffffffffffffffffffffffffffffffff, 0x3ffffffffffffffffffffffffffffffffffffffffffffffffffffffff)
+switch 0x3fffffffffffffffffffffffffffffffffffffffffffffffffffffffff
+default {
+for { let i_0 := 0 } lt(i_0, 0x60) { i_0 := add(i_0, 0x20) } {
+}
+}
+sstore(0x3ffffffffffffffffffffffffffffffffffffffffffffffffffffffffff, 0x3fffffffffffffffffffffffffffffffffffffffffffffffffffffffffff)
+sstore(0x3ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff, 0x3fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff)
+if 0x3ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff {
+mstore8(0x3fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff, 0x4)
+}
+switch 0x40
+default {
+}
+switch 0x400
+default {
+switch 0x4000
+default {
+}
+}
+}
+}
+data "datablock" hex"040000"
+}

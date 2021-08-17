@@ -1,0 +1,35 @@
+{
+{
+sstore(0x7fffffffffffffffffffffffffffffff, foo_s_0(0x7ffffffffffffffffffffffffffffffff)
+)
+sstore(0x7fffffffffffffffffffffffffffffffff, foo_s_0(0x7ffffffffffffffffffffffffffffffffff)
+)
+function foo_s_0(x_6) -> x_7
+{
+x_7 := add(x_6,0x7ffffffffffffffffffffffffffffffffffffff)
+for {
+let x_11, x_12 := foo_m_1()
+mstore8(0, x_7)
+}
+0x0{
+let x_15, x_16 := foo_m_1()
+}
+{
+}
+}
+function foo_m_1() -> x_18, x_19
+{
+for { let i_0 := 0 } lt(i_0, 0x60) { i_0 := add(i_0, 0x20) } {
+if 0x7ffffffffffffffffffffffffffffffffffffffffffffffffff {
+switch 0x7fffffffffffffffffffffffffffffffffffffffffffffffffff
+default {
+}
+continue
+}
+if 0x7ffffffffffffffffffffffffffffffffffffffffffffffffffff {
+}
+let x_25, x_26 := foo_m_1()
+}
+}
+}
+}

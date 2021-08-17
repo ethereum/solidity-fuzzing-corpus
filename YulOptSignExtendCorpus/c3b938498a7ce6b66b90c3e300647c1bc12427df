@@ -1,0 +1,21 @@
+object "object0" {
+code {
+{
+function foo_n_0()
+{
+let x_2 := 0x7ffffffffffffffff
+mstore(0, x_2)
+leave
+}
+for {
+mstore(0, 0x7fffffffffffffffff)
+}
+0x0{}
+{
+break
+}
+mstore(0, 0x7ffffffffffffffffff)
+}
+}
+data "datablock" hex"7fffffffffffffffffff"
+}

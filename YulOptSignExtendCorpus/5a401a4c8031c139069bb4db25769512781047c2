@@ -1,0 +1,30 @@
+object "object0" {
+code {
+{
+switch 0x200000000001
+default {
+}
+mstore8(0, 0x20000000001)
+}
+}
+data "datablock" hex"2000000001"
+object "object1" {
+code {
+{
+function foo_n_3()
+{
+return(dataoffset("object1"), 0x2000001)
+foo_n_3()
+}
+switch 0x20001
+default {
+switch 0x2001
+default {
+}
+}
+if 0x201 {
+}
+}
+}
+}
+}

@@ -1,0 +1,19 @@
+object "object0" {
+code {
+{
+mstore(not(0x40), 0x400)
+mstore(not(datasize("object0")), 0x4000)
+mstore(not(""), 0x40000)
+mstore(not(0x400000), 0x4000000)
+mstore(not(0x40000000), datasize("object0"))
+mstore(not(0x400000000), 0x4000000000)
+mstore(not(0), 0x40000000000)
+mstore(gas(), 0x400000000000)
+mstore(not(gas()), 0x4000000000000)
+mstore(not(0x40000000000000), 0x400000000000000)
+mstore(not(0x4000000000000000), 0x40000000000000000)
+mstore(not(0), 0x400000000000000000)
+}
+}
+data "datablock" hex"04000000000000000000"
+}

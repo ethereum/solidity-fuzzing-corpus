@@ -1,0 +1,29 @@
+{
+{
+let x_0 := 0x401
+switch mload(0x41)
+case 0x5 {
+x_0 := 0x7
+for {}
+0x0{}
+{
+}
+}
+case 0x7f {
+x_0 := 0x7ff
+}
+case 0x7fff {
+x_0 := 0x7ffff
+}
+case 0x7fffff {
+x_0 := 0x7ffffff
+}
+default {
+switch 0x7fffffff
+default {
+}
+}
+calldatacopy(x_0, eq(0x7ffffffff,0x7fffffffff), 0x7ffffffffff)
+mstore8(0, x_0)
+}
+}

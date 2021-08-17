@@ -1,0 +1,10 @@
+{
+{
+switch 0x8000000000001
+default {
+sstore(xor(0x800000000001,0x80000000001), calldatasize())
+extcodecopy(sload(sload(0x8000000001)), sload(create(0x800000001, 0x80000001, 0x8000001)), sload(blockhash(0x800001)), calldataload(0x80001))
+extcodecopy(sload(sload(0x8001)), sload(sload(sload(sload(sload(0x801))))), "1", 0x81)
+}
+}
+}

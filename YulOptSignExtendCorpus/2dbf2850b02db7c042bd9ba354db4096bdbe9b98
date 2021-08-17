@@ -1,0 +1,40 @@
+object "object0" {
+code {
+{
+function foo_m_0(x_1, x_2, x_3, x_4) -> x_5, x_6, x_7, x_8
+{
+for {
+}
+x_1{
+switch 0x1ff
+default {
+leave
+leave
+}
+for {}
+0x0{
+switch 0x1fff
+default {
+}
+}
+{
+break
+}
+}
+{
+mstore8(0, x_8)
+}
+if 0x1ffff {
+let x_14, x_15, x_16, x_17 := foo_m_0(0x1fffffffffff, 0x1ffffffffffff, 0x1fffffffffffff, 0x1ffffffffffffff)
+let x_24, x_25, x_26, x_27 := foo_m_0(0x1fffffffffffffffffffff, 0x1ffffffffffffffffffffff, 0x1fffffffffffffffffffffff, 0x1ffffffffffffffffffffffff)
+}
+leave
+}
+let x_33, x_34, x_35, x_36 := foo_m_0(sload(288),calldataload(32),sload(96),calldataload(160))
+sstore(224, x_33)
+sstore(288, x_34)
+sstore(32, x_35)
+sstore(96, x_36)
+}
+}
+}

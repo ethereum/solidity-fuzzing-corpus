@@ -1,0 +1,18 @@
+{
+{
+mstore(0, 0x3fffffffffffffffffffffffffffffffffffffffffffffffffffff)
+{
+mstore(0, 0x3ffffffffffffffffffffffffffffffffffffffffffffffffffffff)
+{
+mstore(0, 0x3fffffffffffffffffffffffffffffffffffffffffffffffffffffff)
+sstore(0, 0x3ffffffffffffffffffffffffffffffffffffffffffffffffffffffff)
+}
+codecopy(mload(0), signextend(0x3fffffffffffffffffffffffffffffffffffffffffffffffffffffffff,0), keccak256(0x03ffffffffffffffffffffffffffffffffffffffffffffffffffffffffff,0x3fffffffffffffffffffffffffffffffffffffffffffffffffffffffffff))
+mstore(0, 0x3ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff)
+sstore(0, 0x3fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff)
+}
+codecopy(mload(0), signextend(0x3ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff,0), keccak256(0x3fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff,0x4))
+mstore(0, 0x40)
+sstore(0, 0x400)
+}
+}

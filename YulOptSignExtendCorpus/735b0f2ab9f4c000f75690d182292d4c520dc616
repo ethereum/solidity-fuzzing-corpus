@@ -1,0 +1,24 @@
+{
+{
+switch 0x200000001
+default {
+let x_5 := foo_s_1(0x20001, 0x2001, 0x201, 0x21)
+}
+function foo_s_0(x_11, x_12, x_13, x_14) -> x_15
+{
+x_11 := x_12
+leave
+mstore(0, x_15)
+}
+function foo_s_1(x_17, x_18, x_19, x_20) -> x_21
+{
+x_17 := x_18
+let x_24 := foo_s_2(0x3fffffffffffffff, 0x3ffffffffffffffff, 0x3fffffffffffffffff, 0x3ffffffffffffffffff)
+leave
+}
+function foo_s_2(x_30, x_31, x_32, x_33) -> x_34
+{
+mstore8(0, x_34)
+}
+}
+}

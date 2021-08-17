@@ -1,0 +1,26 @@
+{
+{
+let x_2, x_3, x_4, x_5 := foo_m_0(signextend(div(0x1001,0x101),0x11), addmod(0x1f, 0x1ff, 0), signextend(0x1fff,0x1ffff), 0x1fffff)
+function foo_m_0(x_15, x_16, x_17, x_18) -> x_19, x_20, x_21, x_22
+{
+let x_26, x_27, x_28, x_29 := foo_m_24(signextend(div(0x1ffffffffffffffffffffff,0x1fffffffffffffffffffffff),0x1ffffffffffffffffffffffff), addmod(0x1fffffffffffffffffffffffff, 0x1ffffffffffffffffffffffffff, 0), signextend(0x1fffffffffffffffffffffffffff,0x1ffffffffffffffffffffffffffff), 0x1fffffffffffffffffffffffffffff)
+function foo_m_24(x_39, x_40, x_41, x_42) -> x_43, x_44, x_45, x_46
+{
+for { let i_0 := 0 } lt(i_0, 0x60) { i_0 := add(i_0, 0x20) } {
+leave
+}
+mstore(0, x_45)
+}
+let x_48, x_49, x_50, x_51 := foo_m_24(mload(128),0x1ffffffffffffffffffffffffffffffffffffffffffffffff,sload(288),calldataload(32))
+sstore(96, x_48)
+sstore(160, x_49)
+sstore(224, x_50)
+sstore(288, x_51)
+}
+let x_70, x_71, x_72, x_73 := foo_m_0(0x20000,sload(288),calldataload(32),sload(96))
+sstore(160, x_70)
+sstore(224, x_71)
+sstore(288, x_72)
+sstore(32, x_73)
+}
+}

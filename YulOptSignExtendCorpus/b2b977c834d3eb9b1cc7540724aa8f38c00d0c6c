@@ -1,0 +1,33 @@
+{
+{
+codecopy(0x800000000000001, 0x80000000000001, sload(0x8000000000001))
+let x_5, x_6, x_7, x_8 := foo_m_0(0x800001, msize(), 0x80001)
+function foo_m_0(x_12, x_13, x_14) -> x_15, x_16, x_17, x_18
+{
+switch 0xfffff
+default {
+extcodecopy(0xffffff, 0xfffffff, 0xffffffff, 0xfffffffff)
+for { let i_0 := 0 } lt(i_0, 0x60) { i_0 := add(i_0, 0x20) } {
+continue
+for { let i_1 := 0 } lt(i_1, 0x60) { i_1 := add(i_1, 0x20) } {
+leave
+}
+mstore(0, x_16)
+}
+switch 0xffffffffff
+default {
+}
+leave
+}
+leave
+let x_27, x_28, x_29, x_30 := foo_m_0(0xfffffffffffffffff, 0xffffffffffffffffff, 0xfffffffffffffffffff)
+leave
+leave
+}
+let x_35, x_36, x_37, x_38 := foo_m_0(calldataload(32),sload(96),calldataload(160))
+sstore(224, x_35)
+sstore(288, x_36)
+sstore(32, x_37)
+sstore(96, x_38)
+}
+}

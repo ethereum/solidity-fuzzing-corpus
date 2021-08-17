@@ -1,0 +1,42 @@
+object "object0" {
+code {
+{
+if 0x1ffffffffffffffffffffffffffffffffffffffffffffffffffffffffff {
+switch 0x1fffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
+default {
+for {
+sstore(0, 0x1ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff)
+}
+0x0{}
+{
+}
+}
+if 0x1fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff {
+}
+}
+if 0x1ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff {
+}
+}
+}
+object "object1" {
+code {
+{
+if 0x1fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff {
+switch 0x2
+default {
+}
+}
+invalid()
+}
+}
+object "object2" {
+code {
+{
+switch 0x20
+default {
+}
+}
+}
+}
+}
+}

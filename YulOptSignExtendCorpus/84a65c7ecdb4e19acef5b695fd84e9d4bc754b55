@@ -1,0 +1,15 @@
+object "object0" {
+code {
+{
+for { let i_0 := 0 } lt(i_0, 0x60) { i_0 := add(i_0, 0x20) } {
+mstore(datasize("object0"), 0x1000001)
+}
+selfdestruct(call(0x100001, 0x10001, 0x1001, "AAAAAAAAAAAAAAAAAAA", 0x101, 0x11, 0x1f))
+for {}
+0x0{}
+{
+}
+}
+}
+data "datablock" hex"01ff"
+}

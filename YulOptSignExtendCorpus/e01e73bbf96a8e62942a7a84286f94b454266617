@@ -1,0 +1,19 @@
+{
+{
+if 0x1fffffff {
+for { let i_0 := 0 } lt(i_0, 0x60) { i_0 := add(i_0, 0x20) } {
+switch 0x1ffffffff
+default {
+break
+}
+continue
+}
+mstore(0, 0x1fffffffff)
+mstore8(0, 0x1ffffffffff)
+}
+let x_4 := div(8,signextend(8,signextend(create(0x1ffffffffffff, 0x1fffffffffffff, 0x1ffffffffffffff),0x1fffffffffffffff)))
+extcodecopy(0x1ffffffffffffffff, signextend(0x1fffffffffffffffff,0x1ffffffffffffffffff), 0x1fffffffffffffffffff, div(not(0x1ffffffffffffffffffff),address()))
+mstore8(0, x_4)
+sstore(0, x_4)
+}
+}

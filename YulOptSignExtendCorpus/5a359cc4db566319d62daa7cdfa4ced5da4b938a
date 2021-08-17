@@ -1,0 +1,10 @@
+{
+{
+calldatacopy(shl(0xff,0xfff), 0xffff, 0xfffff)
+calldatacopy(shl(0xffffff,signextend(0xfffffff,signextend(0xffffffff,0xfffffffff))), 0xffffffffff, 0xfffffffffff)
+invalid()
+calldatacopy(shl(shl(0xffffffffffff,0xfffffffffffff),0xffffffffffffff), 0xfffffffffffffff, 0xffffffffffffffff)
+mstore(0, 0xfffffffffffffffff)
+sstore(0, 0xffffffffffffffffff)
+}
+}

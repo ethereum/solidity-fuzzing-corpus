@@ -1,0 +1,16 @@
+{
+{
+mstore(0, 0x20001)
+let x_1 := keccak256(slt(0x201,0x21),0x3)
+calldatacopy(signextend(0x3f,0), keccak256(or(0x3ff,0x3fff),0x3ffff), keccak256(0x3fffff,0x3ffffff))
+{
+mstore(0, x_1)
+sstore(0, x_1)
+let x_11 := keccak256(slt(0x3ffffffff,0x3fffffffff),0x3ffffffffff)
+calldatacopy(signextend(0x3fffffffffff,0), keccak256(or(0x3ffffffffffff,0x3fffffffffffff),0x3ffffffffffffff), call(0x3fffffffffffffff, 0x3ffffffffffffffff, 0x3fffffffffffffffff, 0x3ffffffffffffffffff, 0x3fffffffffffffffffff, 0x3ffffffffffffffffffff, 0x3fffffffffffffffffffff))
+{
+sstore(0, x_11)
+}
+}
+}
+}

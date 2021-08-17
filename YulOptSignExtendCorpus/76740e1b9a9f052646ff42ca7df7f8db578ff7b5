@@ -1,0 +1,24 @@
+object "object0" {
+code {
+{
+mstore(signextend(0x1fffffff,dataoffset("datablock")), mul(0x1ffffffff,mul(mul(dataoffset("datablock"),0x1fffffffff),signextend(0x1ffffffffff,signextend(0x1fffffffffff,mul(dataoffset("datablock"),0x1ffffffffffff))))))
+for { let i_0 := 0 } lt(i_0, 0x60) { i_0 := add(i_0, 0x20) } {
+continue
+mstore(0, 0x1fffffffffffff)
+}
+for { let i_1 := 0 } lt(i_1, 0x60) { i_1 := add(i_1, 0x20) } {
+continue
+switch 0x1ffffffffffffff
+default {
+break
+break
+}
+switch 0x1fffffffffffffff
+default {
+}
+break
+}
+}
+}
+data "datablock" hex"01ffffffffffffffff"
+}

@@ -1,0 +1,26 @@
+object "object0" {
+code {
+{
+revert(dataoffset("object0"), 0x1fffffffffffffffffffffffffffffffffffff)
+}
+}
+data "datablock" hex"01ffffffffffffffffffffffffffffffffffffff"
+object "object1" {
+code {
+{
+revert(dataoffset("object1"), 0x1fffffffffffffffffffffffffffffffffffffff)
+revert(dataoffset("object1"), 0x1ffffffffffffffffffffffffffffffffffffffff)
+for { let i_0 := 0 } lt(i_0, 0x60) { i_0 := add(i_0, 0x20) } {
+}
+}
+}
+data "datablock" hex"1fffffffffffffffffffffffffffffffffffffffff"
+object "object2" {
+code {
+{
+sstore(0, 0x1ffffffffffffffffffffffffffffffffffffffffff)
+}
+}
+}
+}
+}

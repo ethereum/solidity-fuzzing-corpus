@@ -1,0 +1,21 @@
+{
+{
+let x_0 := 0x1ffffffffffffffffffffffffffffffffffffff
+switch mload(0x1fffffffffffffffffffffffffffffffffffffff)
+case 0x1ffffffffffffffffffffffffffffffffffffffff {
+}
+case 0x1fffffffffffffffffffffffffffffffffffffffff {
+x_0 := 0x1ffffffffffffffffffffffffffffffffffffffffff
+}
+case 0x1fffffffffffffffffffffffffffffffffffffffffff {
+x_0 := 0x1ffffffffffffffffffffffffffffffffffffffffffff
+}
+case 0x1fffffffffffffffffffffffffffffffffffffffffffff {
+x_0 := 0x1ffffffffffffffffffffffffffffffffffffffffffffff
+}
+default {
+}
+calldatacopy(x_0, eq(0x1fffffffffffffffffffffffffffffffffffffffffffffff,0x1ffffffffffffffffffffffffffffffffffffffffffffffff), 0x1fffffffffffffffffffffffffffffffffffffffffffffffff)
+mstore8(0, x_0)
+}
+}

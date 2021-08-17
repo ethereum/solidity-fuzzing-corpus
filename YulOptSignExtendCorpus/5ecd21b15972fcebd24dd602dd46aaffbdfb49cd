@@ -1,0 +1,14 @@
+{
+{
+switch 0x40001
+default {
+mstore8(0, 0x4001)
+}
+if blockhash(0x401) {
+extcodecopy(sload(sload(0x41)), sload(0x5), sload(sload(0x7)), sload(sload(0x7f)))
+switch 0x7ff
+default {
+}
+}
+}
+}

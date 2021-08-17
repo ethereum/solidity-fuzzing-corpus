@@ -1,0 +1,43 @@
+{
+{
+switch codesize()
+case 0x8000001 {
+}
+case 0x800001 {
+}
+case 0x80001 {
+}
+case 0x8001 {
+for { let i_0 := 0 } lt(i_0, 0x60) { i_0 := add(i_0, 0x20) } {
+}
+}
+case 0x801 {
+}
+case 0x81 {
+switch 0x9
+default {
+}
+}
+case 0xf {
+switch 0xff
+default {
+}
+}
+case 0xfff {
+switch 0xffff
+default {
+}
+}
+case 0xfffff {
+}
+case 0xffffff {
+}
+case 0xfffffff {
+}
+case 0xffffffff {
+}
+default {
+sstore(codesize(), 0xfffffffff)
+}
+}
+}

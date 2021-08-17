@@ -1,0 +1,31 @@
+object "object0" {
+code {
+{
+for { let i_0 := 0 } lt(i_0, 0x60) { i_0 := add(i_0, 0x20) } {
+extcodecopy(0x2000000000000000000000000000000, dataoffset("object1.object2.datablock"), 0x20000000000000000000000000000000, dataoffset("object1.object2.datablock"))
+if 0x200000000000000000000000000000000 {
+for { let i_1 := 0 } lt(i_1, 0x60) { i_1 := add(i_1, 0x20) } {
+break
+}
+}
+}
+}
+}
+data "datablock" hex"2000000000000000000000000000000000"
+object "object1" {
+code {
+{
+}
+}
+object "object2" {
+code {
+{
+switch 0x20000000000000000000000000000000000
+default {
+}
+}
+}
+data "datablock" hex"200000000000000000000000000000000000"
+}
+}
+}

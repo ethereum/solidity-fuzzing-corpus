@@ -1,0 +1,24 @@
+{
+{
+codecopy(0x2000000000000001, 0x200000000000001, 0x20000000000001)
+let x_5, x_6, x_7, x_8 := foo_m_0(mulmod(0x2000001, call(0x200001, 0x20001, 0x2001, 0x201, 0x21, 0x3, 0x3f), 0x3ff), 0x3fff, 0x3ffff)
+function foo_m_0(x_21, x_22, x_23) -> x_24, x_25, x_26, x_27
+{
+for { let i_0 := 0 } lt(i_0, 0x60) { i_0 := add(i_0, 0x20) } {
+continue
+}
+switch 0x3fffffffffffff
+default {
+for { let i_1 := 0 } lt(i_1, 0x60) { i_1 := add(i_1, 0x20) } {
+}
+}
+}
+let x_30, x_31, x_32, x_33 := foo_m_0(0x3fffffffffffffffffffff,sload(288),calldataload(32))
+sstore(96, x_30)
+sstore(160, x_31)
+sstore(224, x_32)
+sstore(288, x_33)
+mstore(0, x_31)
+sstore(0, x_7)
+}
+}

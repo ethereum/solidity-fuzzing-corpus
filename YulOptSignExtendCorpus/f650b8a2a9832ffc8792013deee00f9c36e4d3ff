@@ -1,0 +1,35 @@
+{
+{
+function foo_m_0(x_1, x_2) -> x_3, x_4, x_5, x_6
+{
+mstore(0x1000000000000000000000000000000000000000000000001, 0x100000000000000000000000000000000000000000000001)
+let x_12, x_13, x_14, x_15 := foo_m_8(true, 0x10000000000000000000000000000000000000001)
+function foo_m_8(x_18, x_19) -> x_20, x_21, x_22, x_23
+{
+mstore(0x100000000000000000000000000000001, 0x10000000000000000000000000000001)
+let x_28, x_29, x_30, x_31 := foo_m_8(true, 0x1000000000000000000000001)
+if 0x100000000000000000000001 {
+}
+if 0x10000000000000000000001 {
+leave
+}
+let x_37, x_38, x_39, x_40 := foo_m_0(0x1000000000000001, 0x100000000000001)
+}
+let x_44, x_45, x_46, x_47 := foo_m_8(mload(0),0x10001)
+sstore(160, x_44)
+sstore(224, x_45)
+sstore(288, x_46)
+sstore(32, x_47)
+if 0x1ffffff {
+}
+if 0x1fffffff {
+}
+}
+let x_64, x_65, x_66, x_67 := foo_m_0(mload(0),0x1fffffffffffffffff)
+sstore(160, x_64)
+sstore(224, x_65)
+sstore(288, x_66)
+sstore(32, x_67)
+mstore(0, addmod(0x1ffffffffffffffffffffffffff, 0x1fffffffffffffffffffffffffff, 0x1ffffffffffffffffffffffffffff))
+}
+}

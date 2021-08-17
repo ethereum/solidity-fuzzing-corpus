@@ -1,0 +1,23 @@
+object "object0" {
+code {
+{
+return(0x9, 0xf)
+mstore(datasize("object1.datablock"), datasize("object1.datablock"))
+return(0xff, 0xfff)
+for { let i_0 := 0 } lt(i_0, 0x60) { i_0 := add(i_0, 0x20) } {
+}
+mstore8(0, 0xffff)
+for { let i_1 := 0 } lt(i_1, 0x60) { i_1 := add(i_1, 0x20) } {
+break
+}
+}
+}
+data "datablock" hex"0fffff"
+object "object1" {
+code {
+{
+}
+}
+data "datablock" hex"ffffff"
+}
+}

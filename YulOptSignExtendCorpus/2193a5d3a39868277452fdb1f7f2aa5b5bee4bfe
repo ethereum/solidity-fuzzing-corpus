@@ -1,0 +1,15 @@
+object "object0" {
+code {
+{
+datacopy(0xff, 0xfff, 0xffff)
+datacopy(0xfffff, 0xffffff, 0xfffffff)
+datacopy(0xffffffff, 0xfffffffff, 0xffffffffff)
+datacopy(0xfffffffffff, 0xffffffffffff, 0xfffffffffffff)
+datacopy(0xffffffffffffff, 0xfffffffffffffff, 0xffffffffffffffff)
+datacopy(0xfffffffffffffffff, 0xffffffffffffffffff, 0xfffffffffffffffffff)
+datacopy(0xffffffffffffffffffff, 0xfffffffffffffffffffff, 0xffffffffffffffffffffff)
+datacopy(0xfffffffffffffffffffffff, 0xffffffffffffffffffffffff, 0xfffffffffffffffffffffffff)
+}
+}
+data "datablock" hex"ffffffffffffffffffffffffff"
+}

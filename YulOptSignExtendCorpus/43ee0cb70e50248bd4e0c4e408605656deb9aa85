@@ -1,0 +1,29 @@
+object "object0" {
+code {
+{
+codecopy(0x1fffffffffffffffffffffffffffffffffffffffffffffffffffffffffff, foo_s_0()
+, 0x1ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff)
+function foo_s_0() -> x_3
+{
+selfdestruct(x_3)
+for { let i_0 := 0 } lt(i_0, 0x60) { i_0 := add(i_0, 0x20) } {
+let x_6 := foo_s_0()
+leave
+}
+if 0x200 {
+let x_10 := foo_s_0()
+}
+}
+switch 0x2000000
+default {
+for {}
+0x0{}
+{
+}
+}
+if 0x20000000 {
+}
+}
+}
+data "datablock" hex"0200000000"
+}

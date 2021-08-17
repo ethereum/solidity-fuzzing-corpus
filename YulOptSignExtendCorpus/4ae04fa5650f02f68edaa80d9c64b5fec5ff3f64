@@ -1,0 +1,15 @@
+{
+{
+let x_0 := 0x100000000001
+codecopy(mulmod(0x10000000001, 0x1000000001, 0x100000001), 0x10000001, 0x1000001)
+codecopy(signextend(8,x_0), 0x100001, 0x10001)
+codecopy(shl(8,msize()), 0x1001, 0x101)
+codecopy(signextend(8,0x11), 0x1f, 0x1ff)
+codecopy(shl(8,x_0), 0x1fff, 0x1ffff)
+codecopy(shl(8,x_0), "", 0x1fffff)
+codecopy(add(0x1ffffff,4398046511104), 0x1fffffff, 0x1ffffffff)
+codecopy(signextend(8,x_0), 0x1fffffffff, 0x1ffffffffff)
+if 0x1fffffffffff {
+}
+}
+}

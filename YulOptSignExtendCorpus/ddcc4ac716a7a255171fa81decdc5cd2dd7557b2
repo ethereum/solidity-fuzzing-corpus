@@ -1,0 +1,17 @@
+{
+{
+let x_0 := 0x7fffffffffffffffffffffffffffffffffffffffffffffffffff
+codecopy(signextend(8,x_0), 0x7ffffffffffffffffffffffffffffffffffffffffffffffffffff, shl(x_0,x_0))
+codecopy(0x7fffffffffffffffffffffffffffffffffffffffffffffffffffff, 0x7ffffffffffffffffffffffffffffffffffffffffffffffffffffff, 0x7fffffffffffffffffffffffffffffffffffffffffffffffffffffff)
+codecopy(shl(8,x_0), 0x7ffffffffffffffffffffffffffffffffffffffffffffffffffffffff, 0x7fffffffffffffffffffffffffffffffffffffffffffffffffffffffff)
+codecopy(shl(8,0x7ffffffffffffffffffffffffffffffffffffffffffffffffffffffffff), 0x7fffffffffffffffffffffffffffffffffffffffffffffffffffffffffff, 0x7ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff)
+codecopy(signextend(8,x_0), 0x7fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff, 0x7ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff)
+codecopy(shl(8,x_0), 0x7fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff, 0x8)
+codecopy(and(8,x_0), 0x80, 0x800)
+if 0x8000 {
+codecopy(0x80000, 0x800000, 0x8000000)
+}
+codecopy(signextend(0x80000000,x_0), 0x800000000, 0x8000000000)
+mstore8(0, x_0)
+}
+}

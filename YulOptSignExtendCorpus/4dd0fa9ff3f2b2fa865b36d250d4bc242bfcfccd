@@ -1,0 +1,28 @@
+object "object0" {
+code {
+{
+let x_0, x_1, x_2, x_3
+for { let i_0 := 0 } lt(i_0, 0x60) { i_0 := add(i_0, 0x20) } {
+if create(0x100000001, 0x10000001, 0x1000001) {
+continue
+}
+mstore8(0, x_1)
+switch 0x100001
+default {
+continue
+}
+}
+}
+}
+data "datablock" hex"010001"
+object "object1" {
+code {
+{
+switch 0x1001
+default {
+}
+}
+}
+data "datablock" hex"0101"
+}
+}

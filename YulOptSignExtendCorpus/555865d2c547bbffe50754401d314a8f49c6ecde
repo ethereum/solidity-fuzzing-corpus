@@ -1,0 +1,13 @@
+{
+{
+let x_0 := shl(8,and(0x400,div(not(difficulty()),0x4000)))
+codecopy(mulmod(and(0x40000,div(not(difficulty()),0x400000)), 0x4000000, 0x40000000), 0x400000000, 0x4000000000)
+pop(0x40000000000)
+codecopy(0x400000000000, shl(8,div(not(difficulty()),0x4000000000000)), 0x40000000000000)
+codecopy(signextend(true,0x400000000000000), 0x4000000000000000, 0x40000000000000000)
+codecopy(shl(8,x_0), 0x400000000000000000, 0x4000000000000000000)
+codecopy(shl(12,x_0), 8, 0x40000000000000000000)
+mstore8(0, x_0)
+mstore8(0, x_0)
+}
+}

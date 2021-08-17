@@ -1,0 +1,46 @@
+object "object0" {
+code {
+{
+}
+}
+data "datablock" hex"040000000000000000000000000000000000000001"
+object "object1" {
+code {
+{
+for {}
+add(0x0,0x0){
+}
+{
+}
+mstore(0, 0x4000000000000000000000000000000000000001)
+}
+}
+data "datablock" hex"0400000000000000000000000000000000000001"
+object "object2" {
+code {
+{
+for {}
+add(0x0,0x0){}
+{
+mstore8(0, 0x40000000000000000000000000000000000001)
+break
+}
+}
+}
+data "datablock" hex"04000000000000000000000000000000000001"
+object "object3" {
+code {
+{
+}
+}
+data "datablock" hex"400000000000000000000000000000000001"
+object "object4" {
+code {
+{
+}
+}
+}
+}
+}
+}
+}

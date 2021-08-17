@@ -1,0 +1,41 @@
+{
+{
+function foo_s_0(x_3, x_4, x_5, x_6) -> x_7
+{
+x_3 := x_5
+leave
+leave
+switch 0x11
+default {
+switch 0x1f
+default {
+}
+}
+switch 0x1ff
+default {
+leave
+}
+}
+function foo_s_1(x_12, x_13, x_14, x_15) -> x_16
+{
+x_12 := x_13
+leave
+leave
+let x_19 := foo_s_0(0x1ffffffffffff, 0x1fffffffffffff, 0x1ffffffffffffff, 0x1fffffffffffffff)
+switch 0x1ffffffffffffffff
+default {
+}
+}
+function foo_s_2(x_26, x_27, x_28, x_29) -> x_30
+{
+x_26 := x_27
+let x_33 := foo_s_2(0x1ffffffffffffffffffffffffff, 0x1fffffffffffffffffffffffffff, 0x1ffffffffffffffffffffffffffff, 0x1fffffffffffffffffffffffffffff)
+leave
+for { let i_0 := 0 } lt(i_0, 0x60) { i_0 := add(i_0, 0x20) } {
+let x_40 := foo_s_0(0x1fffffffffffffffffffffffffffffffff, 0x1ffffffffffffffffffffffffffffffffff, 0x1fffffffffffffffffffffffffffffffffff, 0x1ffffffffffffffffffffffffffffffffffff)
+leave
+}
+leave
+}
+}
+}

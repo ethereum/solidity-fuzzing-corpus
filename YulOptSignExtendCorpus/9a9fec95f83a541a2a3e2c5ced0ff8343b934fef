@@ -1,0 +1,25 @@
+{
+{
+foo_n_0(0x80001)
+foo_n_0(0x801)
+foo_n_0(0x9)
+foo_n_0(0xff)
+foo_n_0(0xffff)
+function foo_n_0(x_11)
+{
+mstore8(0, x_11)
+sstore(0, 0xfffffff)
+sstore(mod(mod("",0xffffffff),0xfffffffff), 0xffffffffff)
+mstore(mod(0xfffffffffff,0xffffffffffff), mod(0x0fffffffffffff,0))
+mstore8(0, x_11)
+for { let i_0 := 0 } lt(i_0, 0x60) { i_0 := add(i_0, 0x20) } {
+break
+break
+}
+leave
+}
+foo_n_0(calldataload(32))
+mstore(0, 0xffffffffffffffff)
+mstore8(0, 0xfffffffffffffffff)
+}
+}

@@ -1,0 +1,22 @@
+{
+{
+function foo_s_0(x_1, x_2, x_3, x_4) -> x_5
+{
+for { let i_0 := 0 } lt(i_0, 0x60) { i_0 := add(i_0, 0x20) } {
+function foo_s_7(x_8, x_9, x_10, x_11) -> x_12
+{
+for { let i_1 := 0 } lt(i_1, 0x60) { i_1 := add(i_1, 0x20) } {
+break
+leave
+}
+leave
+}
+break
+}
+leave
+}
+let x_15 := foo_s_0(0xff, 0xfff, 0xffff, 0xfffff)
+let x_22 := foo_s_0(x_15, 0xfffffffff, 0xffffffffff, 0xfffffffffff)
+let x_28 := foo_s_0(0xfffffffffffffff, 0xffffffffffffffff, 0xfffffffffffffffff, 0xffffffffffffffffff)
+}
+}

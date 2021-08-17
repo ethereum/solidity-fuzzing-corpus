@@ -1,0 +1,21 @@
+object "object0" {
+code {
+{
+mstore(0xfffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff, 0xffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff)
+mstore(0x0, mload(0x1))
+mstore8(0xffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff, mload(0x1f))
+mstore(mload(0x9f), mload(0xa0))
+mstore(0xa1, 0xff)
+mstore(0x100, mload(0x101))
+mstore(0x10, mload(0x100))
+mstore8(0x1000, mload(mload(0x10000)))
+mstore(0x100000, mload(0x1000000))
+mstore(mload(0x10000000), mload(0x100000000))
+mstore8(0x1000000000, mload(0x10000000000))
+sstore(0, 0x100000000000)
+switch 0x1000000000000
+default {
+}
+}
+}
+}

@@ -1,0 +1,36 @@
+{
+{
+return(0x80001, 0x8001)
+function foo_n_0()
+{
+leave
+}
+return(0x81, 0x9)
+return(0xf, 0xff)
+return(0xfff, 0xffff)
+function foo_n_1()
+{
+return(0xfffffff, 0xffffffff)
+return(0xfffffffff, 0xffffffffff)
+return(0xfffffffffff, 0xffffffffffff)
+return(0xfffffffffffff, 0xffffffffffffff)
+return(0xfffffffffffffff, 0xffffffffffffffff)
+function foo_n_12()
+{
+switch 0xffffffffffffffffff
+default {
+if 0xfffffffffffffffffff {
+}
+}
+switch 0xffffffffffffffffffff
+default {
+}
+}
+return(0xfffffffffffffffffffff, 0xffffffffffffffffffffff)
+return(0xfffffffffffffffffffffff, 0xffffffffffffffffffffffff)
+leave
+}
+return(0xfffffffffffffffffffffffff, 0xffffffffffffffffffffffffff)
+return(0xfffffffffffffffffffffffffff, 0xffffffffffffffffffffffffffff)
+}
+}

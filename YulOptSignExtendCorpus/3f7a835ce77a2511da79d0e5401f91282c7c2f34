@@ -1,0 +1,20 @@
+{
+{
+mstore(not(""), 0xfffffffffffffffffffffffffffffffffffffffffffffff)
+mstore(0xffffffffffffffffffffffffffffffffffffffffffffffff, 0xfffffffffffffffffffffffffffffffffffffffffffffffff)
+mstore(not(0), 0xffffffffffffffffffffffffffffffffffffffffffffffffff)
+mstore(not(0xfffffffffffffffffffffffffffffffffffffffffffffffffff), 0xffffffffffffffffffffffffffffffffffffffffffffffffffff)
+mstore(not(""), 0xfffffffffffffffffffffffffffffffffffffffffffffffffffff)
+mstore(not(0), 0xffffffffffffffffffffffffffffffffffffffffffffffffffffff)
+mstore(gas(), 0xfffffffffffffffffffffffffffffffffffffffffffffffffffffff)
+mstore(not(gas()), 0xffffffffffffffffffffffffffffffffffffffffffffffffffffffff)
+mstore(not(0xfffffffffffffffffffffffffffffffffffffffffffffffffffffffff), 0xffffffffffffffffffffffffffffffffffffffffffffffffffffffffff)
+mstore(not(0), 0xfffffffffffffffffffffffffffffffffffffffffffffffffffffffffff)
+mstore(not(0), 0xffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff)
+for { let i_0 := 0 } lt(i_0, 0x60) { i_0 := add(i_0, 0x20) } {
+continue
+sstore(0, 0xfffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff)
+}
+mstore8(0, 0xffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff)
+}
+}

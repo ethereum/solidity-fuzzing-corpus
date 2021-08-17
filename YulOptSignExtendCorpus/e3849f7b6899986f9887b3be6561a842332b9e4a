@@ -1,0 +1,26 @@
+{
+{
+if 0x21 {
+switch 0x3
+default {
+foo_n_0(0x3ff, 0x3fff, 0x3ffff, 0x3fffff)
+foo_n_0(0x3fffffff, 0x3ffffffff, 0x3fffffffff, 0x3ffffffffff)
+foo_n_0(0x3ffffffffffff, 0x3fffffffffffff, 0x3ffffffffffffff, 0x3fffffffffffffff)
+}
+for { let i_0 := 0 } lt(i_0, 0x60) { i_0 := add(i_0, 0x20) } {
+foo_n_0(0x3fffffffffffffffff, 0x3ffffffffffffffffff, 0x3fffffffffffffffffff, 0x3ffffffffffffffffffff)
+break
+continue
+for { let i_1 := 0 } lt(i_1, 0x60) { i_1 := add(i_1, 0x20) } {
+foo_n_0(0x3ffffffffffffffffffffff, 0x3fffffffffffffffffffffff, 0x3ffffffffffffffffffffffff, 0x3fffffffffffffffffffffffff)
+}
+}
+foo_n_0(0x3fffffffffffffffffffffffffff, 0x3ffffffffffffffffffffffffffff, 0x3fffffffffffffffffffffffffffff, 0x3ffffffffffffffffffffffffffffff)
+}
+foo_n_0(0x3ffffffffffffffffffffffffffffffff, 0x3fffffffffffffffffffffffffffffffff, 0x3ffffffffffffffffffffffffffffffffff, 0x3fffffffffffffffffffffffffffffffffff)
+function foo_n_0(x_38, x_39, x_40, x_41)
+{
+}
+foo_n_0(0x3ffffffffffffffffffffffffffffffffffffffffff, 0x3fffffffffffffffffffffffffffffffffffffffffff, origin(), 0x3ffffffffffffffffffffffffffffffffffffffffffff)
+}
+}

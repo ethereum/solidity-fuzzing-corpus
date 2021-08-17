@@ -1,0 +1,22 @@
+{
+{
+function foo_n_0(x_1, x_2, x_3, x_4)
+{
+foo_n_0(addmod(0xffffffffffffffffffffffffffffffffffffffffffffffffffffff, 0xfffffffffffffffffffffffffffffffffffffffffffffffffffffff, mulmod(addmod(0xffffffffffffffffffffffffffffffffffffffffffffffffffffffff, 0xfffffffffffffffffffffffffffffffffffffffffffffffffffffffff, mulmod(addmod(0xffffffffffffffffffffffffffffffffffffffffffffffffffffffffff, 0xfffffffffffffffffffffffffffffffffffffffffffffffffffffffffff, 0xffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff), 0xfffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff, x_1)), 0xffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff, 0xfffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff)), 0xffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff, 0x0, mulmod(gasprice(), 0x1, 0xffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff))
+leave
+mstore(0x1f, 0x9f)
+foo_n_0(0xa1, 0xff, 0x100, 0x101)
+leave
+leave
+for { let i_0 := 0 } lt(i_0, 0x60) { i_0 := add(i_0, 0x20) } {
+if 0x10 {
+}
+foo_n_0(0x1000, 0x10000, 0x100000, 0x1000000)
+}
+for { let i_1 := 0 } lt(i_1, 0x60) { i_1 := add(i_1, 0x20) } {
+break
+}
+}
+foo_n_0(sload(160),calldataload(224),sload(288),calldataload(32))
+}
+}

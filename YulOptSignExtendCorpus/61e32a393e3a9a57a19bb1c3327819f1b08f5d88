@@ -1,0 +1,29 @@
+object "object0" {
+code {
+{
+for {
+}
+0x0{
+}
+{
+if 0x7fffffffffffffffffffffff {
+for { let i_0 := 0 } lt(i_0, 0x60) { i_0 := add(i_0, 0x20) } {
+}
+break
+}
+sstore(0, 0x7ffffffffffffffffffffffff)
+}
+pop(0x7fffffffffffffffffffffffff)
+if 0x7ffffffffffffffffffffffffff {
+}
+}
+}
+data "datablock" hex"7fffffffffffffffffffffffffff"
+object "object1" {
+code {
+{
+selfdestruct(addmod(0x7ffffffffffffffffffffffffffff, 0x7fffffffffffffffffffffffffffff, 0x7ffffffffffffffffffffffffffffff))
+}
+}
+}
+}

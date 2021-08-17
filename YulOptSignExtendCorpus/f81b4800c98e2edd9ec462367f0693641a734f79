@@ -1,0 +1,9 @@
+{
+{
+let x_0 := keccak256(keccak256(0x1fffffffffffffffffff,1),0x1fffffffffffffffffffff)
+let x_4 := keccak256(keccak256(keccak256(0x1fffffffffffffffffffffff,1),0x1fffffffffffffffffffffffff),0x1ffffffffffffffffffffffffff)
+codecopy(keccak256(0x1fffffffffffffffffffffffffff,0x1ffffffffffffffffffffffffffff), 0x1fffffffffffffffffffffffffffff, signextend(0x1ffffffffffffffffffffffffffffff,0x1fffffffffffffffffffffffffffffff))
+mstore(0, mulmod(mulmod(addmod(0x1ffffffffffffffffffffffffffffffff, 0, 0x1fffffffffffffffffffffffffffffffff), 0x1ffffffffffffffffffffffffffffffffff, gas()), 0x1fffffffffffffffffffffffffffffffffff, 0x1ffffffffffffffffffffffffffffffffffff))
+mstore8(0, x_0)
+}
+}

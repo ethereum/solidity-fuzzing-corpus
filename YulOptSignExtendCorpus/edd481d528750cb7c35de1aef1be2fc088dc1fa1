@@ -1,0 +1,31 @@
+object "object0" {
+code {
+{
+switch 0x7ffffffffffffffffffffffffffffffffffffffffffffffffffffffff
+case 0x7fffffffffffffffffffffffffffffffffffffffffffffffffffffffff {
+function foo_n_2()
+{
+leave
+}
+foo_n_2()
+for { let i_0 := 0 } lt(i_0, 0x60) { i_0 := add(i_0, 0x20) } {
+}
+sstore(0, 0x7ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff)
+foo_n_2()
+}
+case 0x7ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff {
+function foo_n_7()
+{
+leave
+foo_n_7()
+}
+foo_n_7()
+for { let i_1 := 0 } lt(i_1, 0x60) { i_1 := add(i_1, 0x20) } {
+foo_n_7()
+}
+}
+default {
+}
+}
+}
+}

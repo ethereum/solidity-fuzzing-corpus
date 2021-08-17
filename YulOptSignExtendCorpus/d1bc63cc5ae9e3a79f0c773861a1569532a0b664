@@ -1,0 +1,19 @@
+{
+{
+let x_2, x_3 := foo_m_0(call(0x10000000000000000000000000001, 0x1000000000000000000000000001, 0x100000000000000000000000001, 0x10000000000000000000000001, 0x1000000000000000000000001, 0x100000000000000000000001, 0x10000000000000000000001), 0x1000000000000000000001, 0x100000000000000000001, 0x10000000000000000001)
+let x_16, x_17 := foo_m_0(0x100000000000001, 0x10000000000001, 0x1000000000001, iszero(0x100000000001))
+function foo_m_0(x_23, x_24, x_25, x_26) -> x_27, x_28
+{
+sstore(0x1001, gas())
+sstore(0, addmod(0x101, 0x11, 0x1f))
+}
+let x_35, x_36 := foo_m_0(0x1ffffff, 0x1fffffff, 0x1ffffffff, 0x1fffffffff)
+let x_43, x_44 := foo_m_0(0x1ffffffffffffff, 0x1fffffffffffffff, 0x1ffffffffffffffff, 0x1fffffffffffffffff)
+let x_51, x_52 := foo_m_0(0x1ffffffffffffffffffffff, 0x1fffffffffffffffffffffff, 0x1ffffffffffffffffffffffff, 0x1fffffffffffffffffffffffff)
+let x_59, x_60 := foo_m_0(0x1ffffffffffffffffffffffffffffff, 0x1fffffffffffffffffffffffffffffff, 0x1ffffffffffffffffffffffffffffffff, mload(0x1fffffffffffffffffffffffffffffffff))
+let x_67, x_68 := foo_m_0(0x1ffffffffffffffffffffffffffffffffffffff, 0x1fffffffffffffffffffffffffffffffffffffff, 0x1ffffffffffffffffffffffffffffffffffffffff, 0x1fffffffffffffffffffffffffffffffffffffffff)
+let x_75, x_76 := foo_m_0(call(0x1ffffffffffffffffffffffffffffffffffffffffffffff, 0x1fffffffffffffffffffffffffffffffffffffffffffffff, 0x1ffffffffffffffffffffffffffffffffffffffffffffffff, 0x1fffffffffffffffffffffffffffffffffffffffffffffffff, 0x1ffffffffffffffffffffffffffffffffffffffffffffffffff, 0x1fffffffffffffffffffffffffffffffffffffffffffffffffff, 0x1ffffffffffffffffffffffffffffffffffffffffffffffffffff), 0x1fffffffffffffffffffffffffffffffffffffffffffffffffffff, 0x1ffffffffffffffffffffffffffffffffffffffffffffffffffffff, 0x1fffffffffffffffffffffffffffffffffffffffffffffffffffffff)
+sstore(0, x_16)
+mstore8(0, x_59)
+}
+}

@@ -1,0 +1,15 @@
+{
+{
+function foo_n_0(x_1, x_2, x_3, x_4)
+{
+foo_n_0(addmod(0x1000000000001, 0x100000000001, mulmod(addmod(0x10000000001, 0x1000000001, mulmod(addmod(0x100000001, 0x10000001, 0x1000001), 0x100001, 0x10001)), 0x1001, 0x101)), 0x11, 0x1f, 0x1ff)
+leave
+if 0x1fff {
+leave
+}
+foo_n_0(0x1fffff, 0x1ffffff, 0x1fffffff, 0x1ffffffff)
+}
+foo_n_0(0x1fffffffffff,sload(32),calldataload(96),sload(160))
+mstore8(0, 0x1ffffffffffffffffff)
+}
+}

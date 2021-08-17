@@ -1,0 +1,28 @@
+{
+{
+sstore(0x2001, foo_s_0(0x201)
+)
+function foo_s_0(x_3) -> x_4
+{
+x_4 := add(x_3,x_3)
+leave
+let x_7 := foo_s_0(0x3fffff)
+leave
+leave
+leave
+switch 0x3ffffff
+default {
+leave
+leave
+}
+if 0x3fffffff {
+}
+}
+let x_12 := foo_s_0(sload(160))
+sstore(224, x_12)
+calldatacopy(0x3ffffffffffffff, not(timestamp()), addmod(0x3fffffffffffffff, foo_s_0(0x3ffffffffffffffff)
+, 0x3fffffffffffffffff))
+mstore8(0, addmod(0x3ffffffffffffffffff, foo_s_0(0x3fffffffffffffffffff)
+, 0x3ffffffffffffffffffff))
+}
+}

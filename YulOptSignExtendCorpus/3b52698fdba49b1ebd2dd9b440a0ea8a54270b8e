@@ -1,0 +1,19 @@
+{
+{
+let x_2, x_3 := foo_m_0(0x100001, 0x10001, 0x1001, 0x101)
+let x_10, x_11 := foo_m_0(0x1ffff, 0x1fffff, 0x1ffffff, iszero(0x1fffffff))
+function foo_m_0(x_17, x_18, x_19, x_20) -> x_21, x_22
+{
+log3(signextend(or(signextend(codesize(),0x1fffffffffffffff),signextend(0x1ffffffffffffffff,x_17)),codesize()), div(calldatasize(),0x1fffffffffffffffff), 0x1ffffffffffffffffff, 0x1fffffffffffffffffff, 0x1ffffffffffffffffffff)
+leave
+leave
+}
+let x_31, x_32 := foo_m_0(0x1fffffffffffffffffffffffff, 0x1ffffffffffffffffffffffffff, 0x1fffffffffffffffffffffffffff, 0x1ffffffffffffffffffffffffffff)
+let x_39, x_40 := foo_m_0(0x1fffffffffffffffffffffffffffffffff, 0x1ffffffffffffffffffffffffffffffffff, 0x1fffffffffffffffffffffffffffffffffff, 0x1ffffffffffffffffffffffffffffffffffff)
+let x_47, x_48 := foo_m_0(0x1fffffffffffffffffffffffffffffffffffffffff, 0x1ffffffffffffffffffffffffffffffffffffffffff, 0x1fffffffffffffffffffffffffffffffffffffffffff, 0x1ffffffffffffffffffffffffffffffffffffffffffff)
+let x_55, x_56 := foo_m_0(0x1fffffffffffffffffffffffffffffffffffffffffffffffff, 0x1ffffffffffffffffffffffffffffffffffffffffffffffffff, 0x1fffffffffffffffffffffffffffffffffffffffffffffffffff, blockhash(0x1ffffffffffffffffffffffffffffffffffffffffffffffffffff))
+let x_63, x_64 := foo_m_0(0x1fffffffffffffffffffffffffffffffffffffffffffffffffffffffff, 0x1ffffffffffffffffffffffffffffffffffffffffffffffffffffffffff, 0x1fffffffffffffffffffffffffffffffffffffffffffffffffffffffffff, 0x1ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff)
+let x_71, x_72 := foo_m_0(call(0x20, 0x200, 0x2000, 0x20000, 0x200000, 0x2000000, 0x20000000), 0x200000000, 0x2000000000, 0x20000000000)
+sstore(0, x_10)
+}
+}

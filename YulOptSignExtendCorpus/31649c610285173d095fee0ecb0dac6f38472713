@@ -1,0 +1,16 @@
+{
+{
+sstore(0, 0x100000000)
+function foo_n_0()
+{
+selfdestruct(extcodesize(0x10000000000))
+}
+let x_4, x_5
+sstore(0, x_4)
+for { let i_0 := 0 } lt(i_0, 0x60) { i_0 := add(i_0, 0x20) } {
+foo_n_0()
+}
+mstore(0, x_4)
+mstore(0, x_4)
+}
+}

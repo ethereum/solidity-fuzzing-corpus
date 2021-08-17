@@ -1,0 +1,13 @@
+{
+{
+let x_0 := not(0x7ffffffffffffffffffffffffffffffffffffffffffffffff)
+let x_2, x_3
+calldatacopy(byte(0x7fffffffffffffffffffffffffffffffffffffffffffffffffff,gaslimit()), true, 0x7ffffffffffffffffffffffffffffffffffffffffffffffffffff)
+codecopy(xor(8,x_0), 0x7fffffffffffffffffffffffffffffffffffffffffffffffffffff, 0x7ffffffffffffffffffffffffffffffffffffffffffffffffffffff)
+codecopy(shl(true,0x7fffffffffffffffffffffffffffffffffffffffffffffffffffffff), 0x7ffffffffffffffffffffffffffffffffffffffffffffffffffffffff, 0x7fffffffffffffffffffffffffffffffffffffffffffffffffffffffff)
+codecopy(shl(call(0x7ffffffffffffffffffffffffffffffffffffffffffffffffffffffffff, 0x7fffffffffffffffffffffffffffffffffffffffffffffffffffffffffff, 0x7ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff, 0x7fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff, 0x7ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff, 0x7fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff, add(0x8,x_2)),x_0), 0x80, 0x800)
+codecopy(signextend(8,x_0), 8, x_0)
+codecopy(shl(0x8000,x_0), 0x80000, 0x800000)
+codecopy(signextend(0x8000000,x_0), 0x80000000, 0x800000000)
+}
+}

@@ -1,0 +1,25 @@
+{
+{
+sstore(0x100000000000000000000000001, extcodesize(0x10000000000000000000000001))
+mstore8(0x1000000000000000000000001, 0x100000000000000000000001)
+sstore(0x10000000000000000000001, 0x1000000000000000000001)
+mstore(0x100000000000000000001, sload(not(true)))
+function foo_m_0(x_8, x_9, x_10, x_11) -> x_12, x_13, x_14, x_15
+{
+let x_17, x_18
+let x_20, x_21, x_22, x_23 := foo_m_0(0x101, 0x11, 0x1f, 0x1ff)
+let x_30, x_31, x_32, x_33 := foo_m_0(0x1fffffffff, 0x1ffffffffff, 0x1fffffffffff, extcodesize(0x1ffffffffffff))
+for { let i_0 := 0 } lt(i_0, 0x60) { i_0 := add(i_0, 0x20) } {
+switch 0x1fffffffffffff
+default {
+}
+}
+for { let i_1 := 0 } lt(i_1, 0x60) { i_1 := add(i_1, 0x20) } {
+}
+}
+sstore(0x1ffffffffffffff, 0x1fffffffffffffff)
+mstore8(0x1ffffffffffffffff, sload(0x1fffffffffffffffff))
+sstore(0x1ffffffffffffffffff, 0x1fffffffffffffffffff)
+let x_47, x_48, x_49, x_50 := foo_m_0(0x1ffffffffffffffffffffffffff, 0x1fffffffffffffffffffffffffff, 0x1ffffffffffffffffffffffffffff, 0x1fffffffffffffffffffffffffffff)
+}
+}

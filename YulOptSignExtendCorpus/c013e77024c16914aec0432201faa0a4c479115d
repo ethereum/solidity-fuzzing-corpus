@@ -1,0 +1,16 @@
+{
+{
+function foo_s_0(x_1, x_2, x_3, x_4) -> x_5
+{
+for { let i_0 := 0 } lt(i_0, 0x60) { i_0 := add(i_0, 0x20) } {
+x_1 := sdiv(not(mul(x_1,0x1fffffffffffffffffffffffffffffffffffffffff)),not(0x1ffffffffffffffffffffffffffffffffffffffffff))
+continue
+}
+leave
+}
+let x_10 := foo_s_0(0x1ffffffffffffffffffffffffffffffffffffffffffffff, 0x1fffffffffffffffffffffffffffffffffffffffffffffff, 0x1ffffffffffffffffffffffffffffffffffffffffffffffff, 0x1fffffffffffffffffffffffffffffffffffffffffffffffff)
+let x_17 := foo_s_0(x_10, 0x1fffffffffffffffffffffffffffffffffffffffffffffffffffff, 0x1ffffffffffffffffffffffffffffffffffffffffffffffffffffff, 0x1fffffffffffffffffffffffffffffffffffffffffffffffffffffff)
+let x_23 := foo_s_0(0x1fffffffffffffffffffffffffffffffffffffffffffffffffffffffffff, 0x1ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff, 0x1fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff, 0x1ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff)
+mstore8(0, x_10)
+}
+}

@@ -1,0 +1,22 @@
+object "object0" {
+code {
+{
+mstore8(false, 0x1ffffffffff)
+switch 0x1fffffffffff
+default {
+}
+}
+}
+data "datablock" hex"01ffffffffffff"
+object "object1" {
+code {
+{
+mstore8(false, 0x1fffffffffffff)
+switch 0x1ffffffffffffff
+default {
+}
+}
+}
+data "datablock" hex"1fffffffffffffff"
+}
+}

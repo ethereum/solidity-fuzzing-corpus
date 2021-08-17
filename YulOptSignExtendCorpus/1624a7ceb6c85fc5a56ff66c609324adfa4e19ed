@@ -1,0 +1,9 @@
+{
+{
+let x_0 := 0x401
+extcodecopy(0x41, calldataload(mulmod(0x5, 0x7, 0x7f)), addmod(x_0, 0x7ff, x_0), addmod(x_0, 0x7fff, x_0))
+extcodecopy(0x7ffff, addmod(0x7fffff, x_0, x_0), x_0, addmod(0x7ffffff, 0x7fffffff, x_0))
+mstore(0, create(0x7ffffffff, 0x7fffffffff, 0x7ffffffffff))
+mstore8(0, x_0)
+}
+}

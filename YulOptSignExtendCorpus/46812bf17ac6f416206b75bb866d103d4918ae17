@@ -1,0 +1,19 @@
+{
+{
+let x_0 := 0xffffffffffffffffffffffffffffffffffffffffffffffff
+codecopy(mulmod(0xfffffffffffffffffffffffffffffffffffffffffffffffff, 0xffffffffffffffffffffffffffffffffffffffffffffffffff, 0xfffffffffffffffffffffffffffffffffffffffffffffffffff), 0xffffffffffffffffffffffffffffffffffffffffffffffffffff, 0xfffffffffffffffffffffffffffffffffffffffffffffffffffff)
+{
+let x_7 := call(0xfffffffffffffffffffffffffffffffffffffffffffffffffffffff, 0xffffffffffffffffffffffffffffffffffffffffffffffffffffffff, x_0, 0xfffffffffffffffffffffffffffffffffffffffffffffffffffffffff, 0xffffffffffffffffffffffffffffffffffffffffffffffffffffffffff, 0xfffffffffffffffffffffffffffffffffffffffffffffffffffffffffff, 0xffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff)
+}
+codecopy(signextend(8,x_0), 0xfffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff, 0xffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff)
+codecopy(signextend(8,x_0), 0xfffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff, 0xffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff)
+codecopy(shl(8,0x0), 0x1, 0xffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff)
+codecopy(shl(call(0x1f, 0x9f, x_0, 0xa0, 0xa1, 0xff, 0x100),x_0), 0x101, 0x10)
+codecopy(shl(8,x_0), "", 0x100)
+codecopy(0x1000, 0x10000, 0x100000)
+codecopy(shl(8,mulmod(0x1000000, 0x10000000, 0x100000000)), 0x1000000000, 0x10000000000)
+{
+revert(0x100000000000, 0x1000000000000)
+}
+}
+}

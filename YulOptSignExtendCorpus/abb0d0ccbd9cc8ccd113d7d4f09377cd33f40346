@@ -1,0 +1,23 @@
+{
+{
+foo_n_0(0x7ffffffffffffffffffffffffffffffffffffffffffffffffffff)
+foo_n_0(0x7ffffffffffffffffffffffffffffffffffffffffffffffffffffff)
+foo_n_0(0x7ffffffffffffffffffffffffffffffffffffffffffffffffffffffff)
+foo_n_0(0x7ffffffffffffffffffffffffffffffffffffffffffffffffffffffffff)
+foo_n_0(0x7ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff)
+function foo_n_0(x_11)
+{
+sstore(origin(), 0x7fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff)
+sstore(signextend(x_11,0x8), 0x80)
+x_11 := 0x800
+mstore(mod(0x8000,0x80000), 0x800000)
+mstore8(0, x_11)
+if 0x8000000 {
+leave
+}
+}
+foo_n_0(mload(64))
+mstore(0, 0x8000000000)
+mstore8(0, 0x80000000000)
+}
+}

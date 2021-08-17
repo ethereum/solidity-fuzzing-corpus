@@ -1,0 +1,27 @@
+{
+{
+mstore(gaslimit(), 0x1000000001)
+function foo_m_0(x_2, x_3, x_4, x_5) -> x_6, x_7, x_8, x_9
+{
+if 0x1ff {
+}
+for { let i_0 := 0 } lt(i_0, 0x60) { i_0 := add(i_0, 0x20) } {
+}
+let x_13, x_14, x_15, x_16 := foo_m_0(0x1fffffffff, 0x1ffffffffff, 0x1fffffffffff, 0x1ffffffffffff)
+}
+let x_22, x_23, x_24, x_25 := foo_m_0(0x1ffffffffffffffffffff,sload(32),calldataload(96),sload(160))
+sstore(224, x_22)
+sstore(288, x_23)
+sstore(32, x_24)
+sstore(96, x_25)
+mstore(gaslimit(), 0x1fffffffffffffffffffffffffffffffffff)
+mstore(gaslimit(), 0x1ffffffffffffffffffffffffffffffffffff)
+for { let i_1 := 0 } lt(i_1, 0x60) { i_1 := add(i_1, 0x20) } {
+let x_47, x_48, x_49, x_50 := foo_m_0(0x1fffffffffffffffffffffffffffffffffffffffffff, 0x1ffffffffffffffffffffffffffffffffffffffffffff, 0x1fffffffffffffffffffffffffffffffffffffffffffff, 0x1ffffffffffffffffffffffffffffffffffffffffffffff)
+}
+mstore(gaslimit(), 0x1fffffffffffffffffffffffffffffffffffffffffffffff)
+mstore(gaslimit(), 0x1ffffffffffffffffffffffffffffffffffffffffffffffff)
+stop()
+mstore(gaslimit(), 0x1fffffffffffffffffffffffffffffffffffffffffffffffff)
+}
+}

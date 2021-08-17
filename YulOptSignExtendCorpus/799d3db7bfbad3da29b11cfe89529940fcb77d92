@@ -1,0 +1,25 @@
+object "object0" {
+code {
+{
+calldatacopy(0x200000000001, 0x20000000001, datasize("object0"))
+for { let i_0 := 0 } lt(i_0, 0x60) { i_0 := add(i_0, 0x20) } {
+continue
+}
+calldatacopy(0x2000000001, 0x200000001, datasize("object0"))
+}
+}
+object "object1" {
+code {
+{
+calldatacopy(0x20000001, 0x2000001, datasize("object1"))
+for { let i_1 := 0 } lt(i_1, 0x60) { i_1 := add(i_1, 0x20) } {
+continue
+switch 0x200001
+default {
+}
+}
+calldatacopy(0x20001, 0x2001, datasize("object1"))
+}
+}
+}
+}

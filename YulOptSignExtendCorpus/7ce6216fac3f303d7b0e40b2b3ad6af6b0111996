@@ -1,0 +1,19 @@
+{
+{
+let x_0 := 0x100001
+switch 0x10001
+default {
+for { let i_0 := 0 } lt(i_0, 0x60) { i_0 := add(i_0, 0x20) } {
+x_0 := create(call(0x1001, true, 0x101, 0x11, 0x1f, 0x1ff, 0x1fff), 0x1ffff, 0x1fffff)
+mstore(0, x_0)
+switch 0x1ffffff
+default {
+for { let i_1 := 0 } lt(i_1, 0x60) { i_1 := add(i_1, 0x20) } {
+}
+}
+}
+}
+sstore(true, x_0)
+sstore(0, 0x1fffffff)
+}
+}

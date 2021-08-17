@@ -1,0 +1,32 @@
+object "object0" {
+code {
+{
+selfdestruct(datasize("object0"))
+selfdestruct(datasize("object0"))
+}
+}
+object "object1" {
+code {
+{
+selfdestruct(datasize("object1"))
+for {}
+0x0{
+switch 0x7ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
+default {
+}
+}
+{
+break
+}
+selfdestruct(datasize("object1"))
+mstore8(0, 0x7fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff)
+}
+}
+object "object2" {
+code {
+{
+}
+}
+}
+}
+}

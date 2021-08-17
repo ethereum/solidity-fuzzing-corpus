@@ -1,0 +1,19 @@
+object "object0" {
+code {
+{
+mstore(not(0x1fffffffffffffffffff), 0x1ffffffffffffffffffff)
+mstore(not(datasize("object0")), 0x1fffffffffffffffffffff)
+mstore(not(""), 0x1ffffffffffffffffffffff)
+mstore(not(0), 0x1fffffffffffffffffffffff)
+mstore(not(0x1ffffffffffffffffffffffff), datasize("object0"))
+mstore(not(0x1fffffffffffffffffffffffff), 0x1ffffffffffffffffffffffffff)
+mstore(not(0), 0x1fffffffffffffffffffffffffff)
+mstore(gas(), 0x1ffffffffffffffffffffffffffff)
+mstore(not(gas()), 0x1fffffffffffffffffffffffffffff)
+mstore(not(0x1ffffffffffffffffffffffffffffff), 0x1fffffffffffffffffffffffffffffff)
+mstore(not(""), 0x1ffffffffffffffffffffffffffffffff)
+mstore(not(0), 0x1fffffffffffffffffffffffffffffffff)
+}
+}
+data "datablock" hex"01ffffffffffffffffffffffffffffffffff"
+}

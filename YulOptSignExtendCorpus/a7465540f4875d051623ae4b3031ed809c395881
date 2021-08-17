@@ -1,0 +1,10 @@
+{
+{
+mstore(calldataload(addmod(0x11, 0x1f, calldatasize())), 0x1ff)
+calldatacopy(0x1fff, addmod(calldataload(addmod(calldataload(addmod(0x1ffff, 0x1fffff, calldatasize())), 0x1ffffff, calldatasize())), 0x1fffffff, calldatasize()), 0x1ffffffff)
+mstore8(0, 0x1fffffffff)
+mstore(not(0), calldataload(addmod(calldataload(addmod(0x1ffffffffff, 0x1fffffffffff, calldatasize())), 0x1ffffffffffff, calldatasize())))
+sstore(0, 0x1fffffffffffff)
+mstore8(0x01ffffffffffffff, 0x1fffffffffffffff)
+}
+}

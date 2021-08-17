@@ -1,0 +1,24 @@
+{
+{
+let x_2, x_3 := foo_m_0(0x10000001, 0x1000001, 0x100001, 0x10001)
+let x_10, x_11 := foo_m_0(0x1ff, 0x1fff, 0x1ffff, iszero(0x1fffff))
+function foo_m_0(x_17, x_18, x_19, x_20) -> x_21, x_22
+{
+log3(signextend(x_19,codesize()), 0x1fffffffffffff, 0x1ffffffffffffff, 0x1fffffffffffffff, 0x1ffffffffffffffff)
+leave
+leave
+let x_29, x_30 := foo_m_0(0x1fffffffffffffffffffff, 0x1ffffffffffffffffffffff, 0x1fffffffffffffffffffffff, 0x1ffffffffffffffffffffffff)
+let x_37, x_38 := foo_m_0(0x1fffffffffffffffffffffffffffff, 0x1ffffffffffffffffffffffffffffff, 0x1fffffffffffffffffffffffffffffff, 0x1ffffffffffffffffffffffffffffffff)
+}
+let x_44, x_45 := foo_m_0(0x1ffffffffffffffffffffffffffffffffffffff,sload(32),calldataload(96),sload(160))
+sstore(224, x_44)
+sstore(288, x_45)
+let x_61, x_62 := foo_m_0(0x1fffffffffffffffffffffffffffffffffffffffffffffffffffff, 0x1ffffffffffffffffffffffffffffffffffffffffffffffffffffff, 0x1fffffffffffffffffffffffffffffffffffffffffffffffffffffff, 0x1ffffffffffffffffffffffffffffffffffffffffffffffffffffffff)
+let x_69, x_70 := foo_m_0(0x1fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff, 0x1ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff, 0x1fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff, 0x2)
+let x_77, x_78 := foo_m_0(0x200000, 0x2000000, 0x20000000, 0x200000000)
+let x_85, x_86 := foo_m_0(0x20000000000000, 0x200000000000000, 0x2000000000000000, blockhash(0x20000000000000000))
+let x_93, x_94 := foo_m_0(0x2000000000000000000000, 0x20000000000000000000000, 0x200000000000000000000000, 0x2000000000000000000000000)
+let x_101, x_102 := foo_m_0(call(0x200000000000000000000000000000, 0x2000000000000000000000000000000, 0x20000000000000000000000000000000, 0x200000000000000000000000000000000, 0x2000000000000000000000000000000000, 0x20000000000000000000000000000000000, 0x200000000000000000000000000000000000), 0x2000000000000000000000000000000000000, 0x20000000000000000000000000000000000000, 0x200000000000000000000000000000000000000)
+let x_115, x_116 := foo_m_0(0x20000000000000000000000000000000000000000000, 0x200000000000000000000000000000000000000000000, 0x2000000000000000000000000000000000000000000000, 0x20000000000000000000000000000000000000000000000)
+}
+}

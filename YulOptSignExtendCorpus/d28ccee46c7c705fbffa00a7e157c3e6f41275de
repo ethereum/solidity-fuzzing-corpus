@@ -1,0 +1,13 @@
+object "object0" {
+code {
+{
+extcodecopy(0x21, 0x3, coinbase(), 0x3f)
+extcodecopy(coinbase(), 0x3ff, coinbase(), 0x3fff)
+extcodecopy(0x3ffff, 0x3fffff, coinbase(), 0x3ffffff)
+extcodecopy(coinbase(), 0x3fffffff, coinbase(), 0x3ffffffff)
+extcodecopy(0x3fffffffff, 0x3ffffffffff, coinbase(), 0x3fffffffffff)
+extcodecopy(coinbase(), 0x3ffffffffffff, coinbase(), 0x3fffffffffffff)
+}
+}
+data "datablock" hex"03ffffffffffffff"
+}

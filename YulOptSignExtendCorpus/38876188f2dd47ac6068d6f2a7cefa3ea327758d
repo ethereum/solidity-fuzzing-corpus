@@ -1,0 +1,8 @@
+{
+{
+sstore(add(true,mod(0,sload(0x20001))), 0x2001)
+sstore(signextend(128,mod(0,call(0x201, 0x21, 0x3, 0x3f, 0x3ff, 0x3fff, 0x3ffff))), 0x3fffff)
+sstore(signextend(true,0x3ffffff), 0x3fffffff)
+mstore8(add(true,mod(0,sload(0x3ffffffff))), signextend(128,mod(mod(0,sload(0x3fffffffff)),sload(0x3ffffffffff))))
+}
+}

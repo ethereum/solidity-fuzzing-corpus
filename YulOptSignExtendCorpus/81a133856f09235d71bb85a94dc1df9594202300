@@ -1,0 +1,9 @@
+{
+{
+mstore(0, 0x3fffffffffffffffffffffffffffffffffffffffffffffffffffff)
+let x_1 := keccak256(0x3fffffffffffffffffffffffffffffffffffffffffffffffffffffff,0x3ffffffffffffffffffffffffffffffffffffffffffffffffffffffff)
+codecopy(x_1, keccak256(0,0x3fffffffffffffffffffffffffffffffffffffffffffffffffffffffff), signextend(0x3ffffffffffffffffffffffffffffffffffffffffffffffffffffffffff,0x3fffffffffffffffffffffffffffffffffffffffffffffffffffffffffff))
+mstore(0, x_1)
+mstore(keccak256(0,keccak256(8,0x3ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff)), x_1)
+}
+}

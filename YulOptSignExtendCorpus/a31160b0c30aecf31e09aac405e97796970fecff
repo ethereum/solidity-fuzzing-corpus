@@ -1,0 +1,18 @@
+{
+{
+extcodecopy(0x3fffffffffffffffffffffffffffffffffffffffff, addmod(0x3ffffffffffffffffffffffffffffffffffffffffff, 0x3fffffffffffffffffffffffffffffffffffffffffff, 0x3ffffffffffffffffffffffffffffffffffffffffffff), not(caller()), 0x3fffffffffffffffffffffffffffffffffffffffffffff)
+let x_5 := caller()
+x_5 := sload(0x3fffffffffffffffffffffffffffffffffffffffffffffff)
+{
+extcodecopy(0x3ffffffffffffffffffffffffffffffffffffffffffffffff, addmod(0x3fffffffffffffffffffffffffffffffffffffffffffffffff, 0x3ffffffffffffffffffffffffffffffffffffffffffffffffff, 0x3fffffffffffffffffffffffffffffffffffffffffffffffffff), not(caller()), 0x3ffffffffffffffffffffffffffffffffffffffffffffffffffff)
+let x_12 := caller()
+x_5 := sload(0x3ffffffffffffffffffffffffffffffffffffffffffffffffffffff)
+x_5 := gasprice()
+mstore(x_5, addmod(0x3fffffffffffffffffffffffffffffffffffffffffffffffffffffff, 0x3ffffffffffffffffffffffffffffffffffffffffffffffffffffffff, create(0x3fffffffffffffffffffffffffffffffffffffffffffffffffffffffff, gasprice(), 0x3ffffffffffffffffffffffffffffffffffffffffffffffffffffffffff)))
+mstore(0x033333333333333333333333, 0x3fffffffffffffffffffffffffffffffffffffffffffffffffffffffffff)
+}
+x_5 := gasprice()
+mstore(x_5, addmod(0x3ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff, 0x3fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff, create(0x3ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff, gasprice(), 0x3fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff)))
+mstore(0x033333333333333333333333, 0x4)
+}
+}

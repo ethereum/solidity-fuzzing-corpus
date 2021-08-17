@@ -1,0 +1,20 @@
+{
+{
+mstore(0xffffffffffffffffffffffffffffffffffff, 0xfffffffffffffffffffffffffffffffffffff)
+mstore(not(0xffffffffffffffffffffffffffffffffffffff), 0xfffffffffffffffffffffffffffffffffffffff)
+mstore(not(0xffffffffffffffffffffffffffffffffffffffff), 0xfffffffffffffffffffffffffffffffffffffffff)
+mstore(not(0), 0xffffffffffffffffffffffffffffffffffffffffff)
+mstore(not(0xfffffffffffffffffffffffffffffffffffffffffff), 0xffffffffffffffffffffffffffffffffffffffffffff)
+mstore(not(0xfffffffffffffffffffffffffffffffffffffffffffff), 0xffffffffffffffffffffffffffffffffffffffffffffff)
+mstore(not(0), 0xfffffffffffffffffffffffffffffffffffffffffffffff)
+mstore(gas(), 0xffffffffffffffffffffffffffffffffffffffffffffffff)
+mstore(not(gas()), 0xfffffffffffffffffffffffffffffffffffffffffffffffff)
+mstore(not(0xffffffffffffffffffffffffffffffffffffffffffffffffff), 0xfffffffffffffffffffffffffffffffffffffffffffffffffff)
+calldatacopy(0xffffffffffffffffffffffffffffffffffffffffffffffffffff, 0xfffffffffffffffffffffffffffffffffffffffffffffffffffff, 0xffffffffffffffffffffffffffffffffffffffffffffffffffffff)
+mstore(not(0), 0xfffffffffffffffffffffffffffffffffffffffffffffffffffffff)
+if 0xffffffffffffffffffffffffffffffffffffffffffffffffffffffff {
+for { let i_0 := 0 } lt(i_0, 0x60) { i_0 := add(i_0, 0x20) } {
+}
+}
+}
+}

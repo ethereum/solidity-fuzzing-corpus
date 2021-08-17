@@ -1,0 +1,34 @@
+object "object0" {
+code {
+{
+extcodecopy(0x200000000000000000, not(dataoffset("object0")), 0x2000000000000000000, 0x20000000000000000000)
+if 0x200000000000000000000 {
+}
+switch 0x2000000000000000000000
+default {
+}
+}
+}
+object "object1" {
+code {
+{
+extcodecopy(0x20000000000000000000000, not(dataoffset("object1")), 0x200000000000000000000000, 0x2000000000000000000000000)
+if 0x20000000000000000000000000 {
+for {}
+0x0{}
+{
+}
+}
+switch 0x200000000000000000000000000
+default {
+}
+}
+}
+object "object2" {
+code {
+{
+}
+}
+}
+}
+}

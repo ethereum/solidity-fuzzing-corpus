@@ -1,0 +1,29 @@
+{
+{
+foo_n_0(0x100000001)
+foo_n_0(0x1000001)
+foo_n_0(0x10001)
+foo_n_0(0x101)
+foo_n_0(0x1f)
+function foo_n_0(x_11)
+{
+mstore8(0, x_11)
+sstore(mod(mod("",0x1ffff),0x1fffff), 0x1ffffff)
+sstore(0x1fffffff, 0x1ffffffff)
+mstore(mod(0x1fffffffff,0x1ffffffffff), mod(0x1fffffffffff,0))
+mstore8(0, x_11)
+if 0x1ffffffffffff {
+leave
+}
+for { let i_0 := 0 } lt(i_0, 0x60) { i_0 := add(i_0, 0x20) } {
+for { let i_1 := 0 } lt(i_1, 0x60) { i_1 := add(i_1, 0x20) } {
+continue
+}
+}
+leave
+}
+foo_n_0(sload(96))
+mstore(0, 0x1fffffffffffffff)
+stop()
+}
+}

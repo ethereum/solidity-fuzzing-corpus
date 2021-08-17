@@ -1,0 +1,37 @@
+{
+{
+function foo_m_0() -> x_2, x_3, x_4, x_5
+{
+for { let i_0 := 0 } lt(i_0, 0x60) { i_0 := add(i_0, 0x20) } {
+leave
+for { let i_1 := 0 } lt(i_1, 0x60) { i_1 := add(i_1, 0x20) } {
+continue
+}
+}
+if 0x10000000000000000000000000000000000 {
+let x_9, x_10, x_11, x_12 := foo_m_0()
+}
+}
+let x_14, x_15, x_16, x_17 := foo_m_0()
+mstore(0, x_14)
+mstore(64, x_15)
+mstore(128, x_16)
+mstore(192, x_17)
+function foo_m_1() -> x_27, x_28, x_29, x_30
+{
+function foo_m_32() -> x_33, x_34, x_35, x_36
+{
+let x_39, x_40, x_41, x_42 := foo_m_32()
+leave
+}
+let x_44, x_45, x_46, x_47 := foo_m_32()
+mstore(0, x_44)
+mstore(64, x_45)
+mstore(128, x_46)
+mstore(192, x_47)
+if 0x10000000000000000000000000000000000000000001 {
+let x_59, x_60, x_61, x_62 := foo_m_1()
+}
+}
+}
+}

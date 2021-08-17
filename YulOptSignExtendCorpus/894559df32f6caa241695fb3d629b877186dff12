@@ -1,0 +1,15 @@
+{
+{
+let x_2 := foo_s_0(0x20000001)
+let x_6 := foo_s_0(0x2001)
+let x_10 := foo_s_0(0x3f)
+let x_14 := foo_s_0(0x3fffff)
+function foo_s_0(x_17) -> x_18
+{
+sstore(0, 0x3fffffffff)
+sstore(xor(signextend(signextend(0x3ffffffffff,address()),add(0x3fffffffffff,0x3ffffffffffff)),signextend(0x3fffffffffffff,address())), 0x3ffffffffffffff)
+sstore(false, 0x3fffffffffffffff)
+}
+sstore(0, x_10)
+}
+}

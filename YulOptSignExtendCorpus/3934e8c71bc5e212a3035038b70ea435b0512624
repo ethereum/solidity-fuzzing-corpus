@@ -1,0 +1,36 @@
+{
+{
+foo_n_0(0x7fffffffffffffffffffffffffffffffffffffffffffffffff, 0x7ffffffffffffffffffffffffffffffffffffffffffffffffff, 0x7fffffffffffffffffffffffffffffffffffffffffffffffffff)
+foo_n_0(0x7fffffffffffffffffffffffffffffffffffffffffffffffffffff, 0x7ffffffffffffffffffffffffffffffffffffffffffffffffffffff, 0x7fffffffffffffffffffffffffffffffffffffffffffffffffffffff)
+foo_n_0(0x7fffffffffffffffffffffffffffffffffffffffffffffffffffffffff, 0x7ffffffffffffffffffffffffffffffffffffffffffffffffffffffffff, 0x7fffffffffffffffffffffffffffffffffffffffffffffffffffffffffff)
+foo_n_0(0x7fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff, 0x7ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff, 0x7fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff)
+function foo_n_0(x_17, x_18, x_19)
+{
+for { let i_0 := 0 } lt(i_0, 0x60) { i_0 := add(i_0, 0x20) } {
+{
+x_19 := 0x80000
+}
+switch 0x800000
+default {
+leave
+continue
+}
+if 0x8000000 {
+foo_n_0(0x800000000, 0x8000000000, 0x80000000000)
+}
+mstore8(0, x_17)
+}
+{
+x_19 := 0x800000000000
+}
+switch 0x8000000000000
+default {
+for { let i_1 := 0 } lt(i_1, 0x60) { i_1 := add(i_1, 0x20) } {
+continue
+}
+}
+}
+foo_n_0(sload(32),calldataload(96),sload(160))
+mstore(0, 0x80000000000000000000)
+}
+}

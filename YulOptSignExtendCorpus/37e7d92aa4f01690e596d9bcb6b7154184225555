@@ -1,0 +1,21 @@
+{
+{
+let x_2, x_3 := foo_m_0(0x400000000000000000000000000000000001, 0x40000000000000000000000000000000001, 0x4000000000000000000000000000000001, iszero(0x400000000000000000000000000000001))
+function foo_m_0(x_9, x_10, x_11, x_12) -> x_13, x_14
+{
+mstore(0, x_9)
+let x_16 := signextend(slt(0x400000000000000000000001,0x40000000000000000000001),0x4000000000000000000001)
+calldatacopy(signextend(0x400000000000000000001,0), keccak256(or(0x40000000000000000001,0x4000000000000000001),0x400000000000000001), keccak256(0x40000000000000001,0x4000000000000001))
+mstore(0, x_9)
+}
+let x_26, x_27 := foo_m_0(mload(0),0x40000001,sload(160),calldataload(224))
+sstore(288, x_26)
+sstore(32, x_27)
+let x_43, x_44 := foo_m_0(0x7fffff, 0x7ffffff, 0x7fffffff, 0x7ffffffff)
+let x_51, x_52 := foo_m_0(0x7fffffffffffff, 0x7ffffffffffffff, 0x7fffffffffffffff, 0x7ffffffffffffffff)
+let x_59, x_60 := foo_m_0(0x7fffffffffffffffffffff, 0x7ffffffffffffffffffffff, 0x7fffffffffffffffffffffff, iszero(0x7ffffffffffffffffffffffff))
+let x_67, x_68 := foo_m_0(0x7fffffffffffffffffffffffffffff, 0x7ffffffffffffffffffffffffffffff, 0x7fffffffffffffffffffffffffffffff, 0x7ffffffffffffffffffffffffffffffff)
+let x_75, x_76 := foo_m_0(call(0x7fffffffffffffffffffffffffffffffffffff, 0x7ffffffffffffffffffffffffffffffffffffff, 0x7fffffffffffffffffffffffffffffffffffffff, 0x7ffffffffffffffffffffffffffffffffffffffff, 0x7fffffffffffffffffffffffffffffffffffffffff, 0x7ffffffffffffffffffffffffffffffffffffffffff, 0x7fffffffffffffffffffffffffffffffffffffffffff), 0x7ffffffffffffffffffffffffffffffffffffffffffff, 0x7fffffffffffffffffffffffffffffffffffffffffffff, 0x7ffffffffffffffffffffffffffffffffffffffffffffff)
+sstore(0, x_26)
+}
+}

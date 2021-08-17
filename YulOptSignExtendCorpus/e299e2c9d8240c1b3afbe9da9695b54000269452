@@ -1,0 +1,8 @@
+{
+{
+extcodecopy(0x1ffffffffffffffffffffffffffffffffff, xor(0x1fffffffffffffffffffffffffffffffffff,chainid()), signextend(chainid(),signextend(chainid(),add(0x1ffffffffffffffffffffffffffffffffffff,0x1fffffffffffffffffffffffffffffffffffff))), chainid())
+extcodecopy(0x1ffffffffffffffffffffffffffffffffffffff, xor(0x1fffffffffffffffffffffffffffffffffffffff,chainid()), signextend(chainid(),signextend(chainid(),add(0x1ffffffffffffffffffffffffffffffffffffffff,0x1fffffffffffffffffffffffffffffffffffffffff))), chainid())
+mstore(0, 0x1ffffffffffffffffffffffffffffffffffffffffff)
+mstore8(0, 0x1fffffffffffffffffffffffffffffffffffffffffff)
+}
+}

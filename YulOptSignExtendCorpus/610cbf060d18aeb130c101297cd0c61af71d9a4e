@@ -1,0 +1,13 @@
+{
+{
+extcodecopy(0x7ffffffffffffffffffffffffffffffffffffffffffffffffff, 0x033333333333333333333333, 0x033333333333333333333333, 0x033333333333333333333333)
+let x_1 := caller()
+extcodecopy(0x033333333333333333333333, 0x7ffffffffffffffffffffffffffffffffffffffffffffffffffff, 0x7fffffffffffffffffffffffffffffffffffffffffffffffffffff, 0x033333333333333333333333)
+extcodecopy(0x7ffffffffffffffffffffffffffffffffffffffffffffffffffffff, caller(), 0x033333333333333333333333, 0x033333333333333333333333)
+mstore(0x033333333333333333333333, 0x033333333333333333)
+mstore(0x033333333333333333333333, 0x033333333333333333333333)
+mstore(0x033333333333333333, 0x033333333333333333333333)
+mstore8(0, x_1)
+sstore(0, x_1)
+}
+}

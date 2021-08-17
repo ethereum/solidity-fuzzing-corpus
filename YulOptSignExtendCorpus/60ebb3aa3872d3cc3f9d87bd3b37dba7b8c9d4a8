@@ -1,0 +1,9 @@
+{
+{
+let x_0 := mulmod(0x100001, 0x10001, 0x1001)
+extcodecopy(signextend(mulmod(0x101, 0x11, 0x1f),exp(0x1ff,mul(addmod(0x1fff, 0x1ffff, mulmod(0x1fffff, 0x1ffffff, 0x1fffffff)),0x1ffffffff))), xor(signextend(0x1fffffffff,0x1ffffffffff),0x1fffffffffff), xor(0x1ffffffffffff,exp(0x1fffffffffffff,0x1ffffffffffffff)), 0x1fffffffffffffff)
+let x_21 := mulmod(0x1fffffffffffffffff, 0x1ffffffffffffffffff, 0x1fffffffffffffffffff)
+mstore(0, x_21)
+mstore(0, x_0)
+}
+}

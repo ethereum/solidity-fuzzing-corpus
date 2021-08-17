@@ -1,0 +1,13 @@
+{
+{
+let x_0 := 0x401
+codecopy(shl(8,x_0), 0x41, 0x5)
+codecopy(signextend(8,x_0), 0x7, 0x7f)
+codecopy(shl(8,x_0), 0x7ff, 0x7fff)
+codecopy(shl(8,0x7ffff), 0x7fffff, 0x7ffffff)
+codecopy(shl(8,x_0), 0x7fffffff, 0x7ffffffff)
+codecopy(shl(8,x_0), "", 0x7fffffffff)
+codecopy(0x7ffffffffff, 0x7fffffffffff, 0x7ffffffffffff)
+codecopy(shl(8,x_0), 0x7fffffffffffff, 0x7ffffffffffffff)
+}
+}

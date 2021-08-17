@@ -1,0 +1,23 @@
+{
+{
+function foo_m_0(x_1, x_2, x_3, x_4) -> x_5, x_6, x_7, x_8
+{
+let x_11, x_12, x_13, x_14 := foo_m_0(0x3fffffffffffffffffffffffffff, 0x3ffffffffffffffffffffffffffff, 0x3fffffffffffffffffffffffffffff, 0x3ffffffffffffffffffffffffffffff)
+leave
+let x_21, x_22, x_23, x_24 := foo_m_0(0x3fffffffffffffffffffffffffffffffffffff, 0x3ffffffffffffffffffffffffffffffffffffff, 0x3fffffffffffffffffffffffffffffffffffffff, 0x3ffffffffffffffffffffffffffffffffffffffff)
+if x_1 {
+}
+leave
+for {
+let x_31, x_32, x_33, x_34 := foo_m_0(0x3fffffffffffffffffffffffffffffffffffffffffffffff, 0x3ffffffffffffffffffffffffffffffffffffffffffffffff, 0x3fffffffffffffffffffffffffffffffffffffffffffffffff, 0x3ffffffffffffffffffffffffffffffffffffffffffffffffff)
+}
+0x0{}
+{
+break
+}
+}
+calldatacopy(0x3fffffffffffffffffffffffffffffffffffffffffffffffffff, 0x3ffffffffffffffffffffffffffffffffffffffffffffffffffff, 0x3fffffffffffffffffffffffffffffffffffffffffffffffffffff)
+invalid()
+sstore(0, 0x3ffffffffffffffffffffffffffffffffffffffffffffffffffffff)
+}
+}

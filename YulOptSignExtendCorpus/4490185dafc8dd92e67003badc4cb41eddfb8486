@@ -1,0 +1,12 @@
+{
+{
+let x_0 := gasprice()
+extcodecopy(0xffffffffffffffffffffffffffffffffffffffffffffffffffffffffff, 0xfffffffffffffffffffffffffffffffffffffffffffffffffffffffffff, div(signextend(div(sload(0xffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff),0xfffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff),0xffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff),0xfffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff), 0xffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff)
+sstore(sub(addmod(0x0, 0x1, 0xffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff),0x1f), 0x9f)
+mstore(div(div(0xa0,0xa1),0xff), 0x100)
+{
+sstore(add(0x101,sload(add(0x10,sload(signextend(0x100,sload(add(0x1000,sload(x_0)))))))), x_0)
+}
+mstore8(0, x_0)
+}
+}

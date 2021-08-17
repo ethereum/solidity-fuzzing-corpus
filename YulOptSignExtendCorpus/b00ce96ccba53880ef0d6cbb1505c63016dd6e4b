@@ -1,0 +1,14 @@
+{
+{
+function foo_n_0()
+{
+for { let i_0 := 0 } lt(i_0, 0x60) { i_0 := add(i_0, 0x20) } {
+foo_n_0()
+}
+foo_n_0()
+mstore(0, 0xfffffff)
+}
+sstore(xor(xor(xor(0xffffffff,address()),xor(0xfffffffff,gas())),signextend(0xffffffffff,address())), add(create(0xfffffffffff, 0xffffffffffff, xor(xor(xor(0xfffffffffffff,address()),xor(0xffffffffffffff,gas())),signextend(0xfffffffffffffff,address()))),0xffffffffffffffff))
+sstore(0, 0xfffffffffffffffff)
+}
+}

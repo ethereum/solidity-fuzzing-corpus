@@ -1,0 +1,19 @@
+{
+{
+mstore(not(0x9), 0xf)
+mstore(not(0xff), 0xfff)
+mstore(not(""), 0xffff)
+mstore(not(0xfffff), 0xffffff)
+mstore(not(0xfffffff), 0xffffffff)
+mstore(not(0xfffffffff), 0xffffffffff)
+mstore(not(0), 0xfffffffffff)
+mstore(gas(), 0xffffffffffff)
+mstore(not(gas()), 0xfffffffffffff)
+mstore(not(0xffffffffffffff), 0xfffffffffffffff)
+mstore(not(0xffffffffffffffff), 0xfffffffffffffffff)
+mstore(not(0), 0xffffffffffffffffff)
+switch 0xfffffffffffffffffff
+default {
+}
+}
+}

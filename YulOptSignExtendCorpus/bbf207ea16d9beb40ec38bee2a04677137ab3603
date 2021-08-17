@@ -1,0 +1,18 @@
+object "object0" {
+code {
+{
+codecopy(xor(msize(),msize()), 0x1fffffffff, dataoffset("object0"))
+for { let i_0 := 0 } lt(i_0, 0x60) { i_0 := add(i_0, 0x20) } {
+switch 0x1ffffffffff
+default {
+switch 0x1fffffffffff
+default {
+break
+}
+}
+continue
+}
+}
+}
+data "datablock" hex"01ffffffffffff"
+}

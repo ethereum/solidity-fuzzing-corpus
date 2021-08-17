@@ -1,0 +1,21 @@
+{
+{
+codecopy(0x800000000000001, 0x80000000000001, sload(0x8000000000001))
+sstore(0x800000000001, 0x80000000001)
+function foo_m_0(x_6, x_7, x_8) -> x_9, x_10, x_11, x_12
+{
+codecopy(0x81, 0x9, mulmod(mulmod(0xf, 0xff, 0xfff), mulmod(0xffff, mulmod(0xfffff, 0xffffff, 0xfffffff), 0xffffffff), mulmod(0xfffffffff, 0xffffffffff, 0xfffffffffff)))
+if mulmod(mulmod(0xffffffffffff, 0xfffffffffffff, 0xffffffffffffff), mulmod(0xfffffffffffffff, 0xffffffffffffffff, 0xfffffffffffffffff), mulmod(0xffffffffffffffffff, 0xfffffffffffffffffff, x_6)) {
+for { let i_0 := 0 } lt(i_0, 0x60) { i_0 := add(i_0, 0x20) } {
+leave
+}
+}
+let x_36, x_37, x_38, x_39 := foo_m_0(0xffffffffffffffffffffffffff, 0xfffffffffffffffffffffffffff, 0xffffffffffffffffffffffffffff)
+}
+let x_44, x_45, x_46, x_47 := foo_m_0(mload(0),0xffffffffffffffffffffffffffffffffffffff,sload(160))
+sstore(224, x_44)
+sstore(288, x_45)
+sstore(32, x_46)
+sstore(96, x_47)
+}
+}

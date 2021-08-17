@@ -1,0 +1,9 @@
+{
+{
+let x_0 := exp(not(false),0xffff)
+extcodecopy(0xfffff, addmod(0xffffff, x_0, x_0), addmod(1, 0xffffffff, x_0), addmod(x_0, 0xfffffffff, x_0))
+extcodecopy(0xffffffffff, addmod(0xfffffffffff, x_0, x_0), addmod(x_0, 0xffffffffffff, x_0), addmod(x_0, 0xfffffffffffff, x_0))
+sstore(0, x_0)
+mstore8(0, x_0)
+}
+}

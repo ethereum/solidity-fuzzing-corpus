@@ -1,0 +1,23 @@
+object "object0" {
+code {
+{
+log4(0x40001, 0x4001, 0x401, dataoffset("object0"), 0x41, msize())
+log4(0x5, 0x7, 0x7f, dataoffset("object0"), 0x7ff, msize())
+log4(0x7fff, 0x7ffff, 0x7fffff, dataoffset("object0"), 0x7ffffff, msize())
+calldatacopy(0x7fffffff, 0, 0x7ffffffff)
+log4(0x7fffffffff, 0x7ffffffffff, 0x7fffffffffff, dataoffset("object0"), 0x7ffffffffffff, msize())
+if 0x7fffffffffffff {
+switch 0x7ffffffffffffff
+default {
+for {
+}
+0x0{}
+{
+continue
+}
+}
+}
+}
+}
+data "datablock" hex"7fffffffffffffff"
+}

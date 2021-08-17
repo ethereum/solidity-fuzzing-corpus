@@ -1,0 +1,16 @@
+object "object0" {
+code {
+{
+for { let i_0 := 0 } lt(i_0, 0x60) { i_0 := add(i_0, 0x20) } {
+datacopy(0x3ffffffffffffffffffffffffffffffff, 0x3fffffffffffffffffffffffffffffffff, 0x3ffffffffffffffffffffffffffffffffff)
+for { let i_1 := 0 } lt(i_1, 0x60) { i_1 := add(i_1, 0x20) } {
+if sload(sload(0x3fffffffffffffffffffffffffffffffffff)) {
+}
+}
+continue
+}
+mstore8(0, 0x3ffffffffffffffffffffffffffffffffffff)
+}
+}
+data "datablock" hex"3fffffffffffffffffffffffffffffffffffff"
+}

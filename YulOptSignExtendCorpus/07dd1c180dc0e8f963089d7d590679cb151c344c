@@ -1,0 +1,25 @@
+object "object0" {
+code {
+{
+return(0xffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff, 0xfffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff)
+mstore(datasize("object1.datablock"), datasize("object1.datablock"))
+return(0xffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff, 0xfffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff)
+for { let i_0 := 0 } lt(i_0, 0x60) { i_0 := add(i_0, 0x20) } {
+}
+mstore8(0, datasize("object1.datablock"))
+for { let i_1 := 0 } lt(i_1, 0x60) { i_1 := add(i_1, 0x20) } {
+break
+}
+if 0xffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff {
+}
+}
+}
+data "datablock" hex"00"
+object "object1" {
+code {
+{
+}
+}
+data "datablock" hex"01"
+}
+}

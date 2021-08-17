@@ -1,0 +1,11 @@
+object "object0" {
+code {
+{
+for { let i_0 := 0 } lt(i_0, 0x60) { i_0 := add(i_0, 0x20) } {
+datacopy(0x7ffffffffffffff, 0x7fffffffffffffff, 0x7ffffffffffffffff)
+}
+mstore8(0, 0x7fffffffffffffffff)
+}
+}
+data "datablock" hex"07ffffffffffffffffff"
+}

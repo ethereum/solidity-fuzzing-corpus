@@ -1,0 +1,19 @@
+object "object0" {
+code {
+{
+codecopy(0x400000000000000000001, foo_s_0()
+, foo_s_0()
+)
+function foo_s_0() -> x_2
+{
+x_2 := mulmod(0x400000000000000001, 0x40000000000000001, 0x4000000000000001)
+switch gas()
+default {
+leave
+}
+let x_8 := foo_s_0()
+}
+}
+}
+data "datablock" hex"400000000001"
+}

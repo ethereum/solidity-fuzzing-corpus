@@ -1,0 +1,21 @@
+object "object0" {
+code {
+{
+codecopy(0x2001, foo_s_0()
+, foo_s_0()
+)
+function foo_s_0() -> x_2
+{
+x_2 := mulmod(0x3, 0x3f, 0x3ff)
+for { let i_0 := 0 } lt(i_0, 0x60) { i_0 := add(i_0, 0x20) } {
+mstore8(0, x_2)
+leave
+}
+let x_8 := foo_s_0()
+}
+extcodecopy(div(not(2314885530818453504),0x3ffffff), not(2314885530818453504), signextend(signextend(signextend(0x3fffffff,0x3ffffffff),mulmod(0x3fffffffff, 0x3ffffffffff, 0x3fffffffffff)),mulmod(0x3ffffffffffff, 0x3fffffffffffff, 0x3ffffffffffffff)), 0x3fffffffffffffff)
+let x_21 := foo_s_0()
+}
+}
+data "datablock" hex"3fffffffffffffffffff"
+}

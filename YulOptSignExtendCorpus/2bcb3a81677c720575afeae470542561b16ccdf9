@@ -1,0 +1,29 @@
+{
+{
+let x_1 := 0x80001
+function foo_n_0()
+{
+leave
+}
+for {
+x_1 := 0x801
+x_1 := x_1
+}
+sload(0x0){
+x_1 := 0x81
+foo_n_0()
+}
+{
+}
+for {
+x_1 := 0xf
+x_1 := x_1
+}
+sload(x_1){
+x_1 := 0xff
+}
+{
+mstore(0, x_1)
+}
+}
+}

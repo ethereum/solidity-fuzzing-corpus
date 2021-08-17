@@ -1,0 +1,29 @@
+{
+{
+function foo_s_0(x_1, x_2, x_3, x_4) -> x_5
+{
+x_1 := 0xfffffffffffffffffffffffffffffffffffffffffffff
+x_5 := 0xffffffffffffffffffffffffffffffffffffffffffffff
+if x_2 {
+if 0xfffffffffffffffffffffffffffffffffffffffffffffff {
+}
+leave
+}
+leave
+switch 0xffffffffffffffffffffffffffffffffffffffffffffffff
+default {
+let x_12 := foo_s_0(0xffffffffffffffffffffffffffffffffffffffffffffffffffff, 0xfffffffffffffffffffffffffffffffffffffffffffffffffffff, 0xffffffffffffffffffffffffffffffffffffffffffffffffffffff, 0xfffffffffffffffffffffffffffffffffffffffffffffffffffffff)
+let x_19 := foo_s_0(0xfffffffffffffffffffffffffffffffffffffffffffffffffffffffffff, 0xffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff, 0xfffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff, 0xffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff)
+}
+mstore8(0, x_4)
+leave
+leave
+leave
+}
+let x_26 := foo_s_0(0x1, 0xffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff, 0x1f, number())
+let x_32 := foo_s_0(x_26, gas(), 0xff, 0x100)
+let x_37 := foo_s_0(0x1000, 0x10000, 0x100000, 0x1000000)
+sstore(0, x_32)
+mstore8(0, x_26)
+}
+}

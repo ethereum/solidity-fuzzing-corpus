@@ -1,0 +1,19 @@
+{
+{
+mstore(0, 0x3fffffffffffffffffffffffffffffffffff)
+sstore(0x3ffffffffffffffffffffffffffffffffffff, 0x3fffffffffffffffffffffffffffffffffffff)
+sstore(0x3ffffffffffffffffffffffffffffffffffffff, 0x3fffffffffffffffffffffffffffffffffffffff)
+sstore(0x3ffffffffffffffffffffffffffffffffffffffff, sload(0x3fffffffffffffffffffffffffffffffffffffffff))
+function foo_m_0(x_8, x_9, x_10, x_11) -> x_12, x_13, x_14, x_15
+{
+let x_18, x_19, x_20, x_21 := foo_m_0(0x3fffffffffffffffffffffffffffffffffffffffffffffffffffffffff, 0x3ffffffffffffffffffffffffffffffffffffffffffffffffffffffffff, 0x3fffffffffffffffffffffffffffffffffffffffffffffffffffffffffff, 0x3ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff)
+switch 0x3fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
+default {
+}
+}
+sstore(0x3ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff, 0x3fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff)
+sstore(0x4, sload(0x40))
+sstore(msize(), 0x400)
+let x_34, x_35, x_36, x_37 := foo_m_0(0x4000000000, 0x40000000000, 0x400000000000, 0x4000000000000)
+}
+}

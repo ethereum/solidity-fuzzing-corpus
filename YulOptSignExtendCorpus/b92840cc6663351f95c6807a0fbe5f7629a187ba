@@ -1,0 +1,31 @@
+{
+{
+let x_0 := 0x7fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
+x_0 := 0x8
+switch 0x80
+default {
+for { let i_0 := 0 } lt(i_0, 0x60) { i_0 := add(i_0, 0x20) } {
+x_0 := 0
+mstore(0, x_0)
+switch 0x800
+default {
+switch 0x8000
+default {
+}
+}
+continue
+}
+for { let i_1 := 0 } lt(i_1, 0x60) { i_1 := add(i_1, 0x20) } {
+mstore(0, x_0)
+if 0x80000 {
+continue
+}
+}
+switch 0x800000
+default {
+}
+}
+sstore(0, x_0)
+sstore(0, x_0)
+}
+}

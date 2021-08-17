@@ -1,0 +1,13 @@
+{
+{
+let x_0 := signextend(8,and(0x7fffff,div(not(difficulty()),0x7ffffff)))
+codecopy(mulmod(0x7fffffff, 0x7ffffffff, 0x7fffffffff), 0x7ffffffffff, 0x7fffffffffff)
+codecopy(signextend(8,x_0), 0x7ffffffffffff, 0x7fffffffffffff)
+codecopy(shl(8,x_0), 0x7ffffffffffffff, 0x7fffffffffffffff)
+codecopy(signextend(true,0x7ffffffffffffffff), 0x7fffffffffffffffff, 0x7ffffffffffffffffff)
+codecopy(shl(8,x_0), 0x7fffffffffffffffffff, 0x7ffffffffffffffffffff)
+codecopy(shl(8,x_0), "", 0x7fffffffffffffffffffff)
+codecopy(shl(8,x_0), 0x7ffffffffffffffffffffff, 0x7fffffffffffffffffffffff)
+codecopy(shl(8,x_0), 8, 0x7ffffffffffffffffffffffff)
+}
+}

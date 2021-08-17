@@ -1,0 +1,43 @@
+object "object0" {
+code {
+{
+switch 0x7ffffffffffffffffffffff
+default {
+}
+}
+}
+data "datablock" hex"7fffffffffffffffffffffff"
+object "object1" {
+code {
+{
+if 0x7ffffffffffffffffffffffff {
+}
+}
+}
+}
+object "object2" {
+code {
+{
+switch 0x7fffffffffffffffffffffffff
+default {
+}
+sstore(0, 0x7ffffffffffffffffffffffffff)
+}
+}
+data "datablock" hex"7fffffffffffffffffffffffffff"
+object "object3" {
+code {
+{
+if 0x7ffffffffffffffffffffffffffff {
+}
+}
+}
+}
+object "object4" {
+code {
+{
+}
+}
+}
+}
+}

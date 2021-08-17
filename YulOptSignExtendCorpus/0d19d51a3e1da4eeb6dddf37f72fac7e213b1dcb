@@ -1,0 +1,14 @@
+{
+{
+function foo_s_0(x_1, x_2, x_3) -> x_4
+{
+extcodecopy(0x3fffff, not(div(not(0x3ffffff),signextend(not(0x3fffffff),addmod(0x3ffffffff, mload(0x3fffffffff), x_1)))), div(not(0x3ffffffffff),addmod(0x3fffffffffff, 0x3ffffffffffff, x_1)), x_4)
+}
+let x_14 := foo_s_0(calldataload(224),sload(288),calldataload(32))
+sstore(96, x_14)
+let x_25 := foo_s_0(0x3ffffffffffffffffffffffffff, 0x3fffffffffffffffffffffffffff, 0x3ffffffffffffffffffffffffffff)
+let x_31 := foo_s_0(0x3ffffffffffffffffffffffffffffffff, 0x3fffffffffffffffffffffffffffffffff, 0x3ffffffffffffffffffffffffffffffffff)
+let x_37 := foo_s_0(0x3ffffffffffffffffffffffffffffffffffffff, 0x3fffffffffffffffffffffffffffffffffffffff, 0x3ffffffffffffffffffffffffffffffffffffffff)
+mstore8(0, x_14)
+}
+}

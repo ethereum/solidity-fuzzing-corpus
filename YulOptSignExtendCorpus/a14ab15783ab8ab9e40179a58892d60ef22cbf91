@@ -1,0 +1,23 @@
+{
+{
+let x_2, x_3, x_4 := foo_m_0(0x200000000000000000000000000000000000000001, 0x20000000000000000000000000000000000000001, 0x2000000000000000000000000000000000000001, 0x200000000000000000000000000000000000001)
+let x_11, x_12, x_13 := foo_m_0(0x200000000000000000000000000000001, 0x20000000000000000000000000000001, 0x2000000000000000000000000000001, blockhash(0x200000000000000000000000000001))
+function foo_m_0(x_19, x_20, x_21, x_22) -> x_23, x_24, x_25
+{
+x_23 := call(0x200000000000000000001, addmod(0x20000000000000000001, x_19, 0x2000000000000000001), 0x200000000000000001, 0x20000000000000001, 0x2000000000000001, 0x200000000000001, 0x20000000000001)
+leave
+leave
+leave
+leave
+let x_36, x_37, x_38 := foo_m_0(0x20000001, 0x2000001, 0x200001, 0x20001)
+}
+let x_45, x_46, x_47 := foo_m_0(0x3ff, 0x3fff, 0x3ffff, 0x3fffff)
+let x_54, x_55, x_56 := foo_m_0(0x3fffffffffff, 0x3ffffffffffff, 0x3fffffffffffff, 0x3ffffffffffffff)
+let x_63, x_64, x_65 := foo_m_0(0x3ffffffffffffffffffff, 0x3fffffffffffffffffffff, 0x3ffffffffffffffffffffff, 0x3fffffffffffffffffffffff)
+let x_72, x_73, x_74 := foo_m_0(0x3fffffffffffffffffffffffffffff, 0x3ffffffffffffffffffffffffffffff, 0x3fffffffffffffffffffffffffffffff, blockhash(0x3ffffffffffffffffffffffffffffffff))
+let x_81, x_82, x_83 := foo_m_0(0x3ffffffffffffffffffffffffffffffffffffff, 0x3fffffffffffffffffffffffffffffffffffffff, 0x3ffffffffffffffffffffffffffffffffffffffff, 0x3fffffffffffffffffffffffffffffffffffffffff)
+let x_90, x_91, x_92 := foo_m_0(call(0x3fffffffffffffffffffffffffffffffffffffffffffffff, 0x3ffffffffffffffffffffffffffffffffffffffffffffffff, 0x3fffffffffffffffffffffffffffffffffffffffffffffffff, 0x3ffffffffffffffffffffffffffffffffffffffffffffffffff, 0x3fffffffffffffffffffffffffffffffffffffffffffffffffff, 0x3ffffffffffffffffffffffffffffffffffffffffffffffffffff, 0x3fffffffffffffffffffffffffffffffffffffffffffffffffffff), 0x3ffffffffffffffffffffffffffffffffffffffffffffffffffffff, 0x3fffffffffffffffffffffffffffffffffffffffffffffffffffffff, 0x3ffffffffffffffffffffffffffffffffffffffffffffffffffffffff)
+mstore(0, 0x3fffffffffffffffffffffffffffffffffffffffffffffffffffffffff)
+mstore(0, x_46)
+}
+}
