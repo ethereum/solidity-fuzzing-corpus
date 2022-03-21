@@ -1,0 +1,9 @@
+{
+	"methods":
+	{
+		"f()":
+		{
+		"notice": "world"
+		}
+	}
+}
