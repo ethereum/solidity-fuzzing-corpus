@@ -1,0 +1,49 @@
+
+==== Source: su0.sol ====
+type T0 is int192;
+struct St0 {
+  uint128 el0;
+  int8 el1;
+  uint152 el2;
+  T0 el3;
+}
+pragma solidity >= 0.0.0;
+T0 constant cons0 = T0.wrap(int192(1810519132443043193308482463315164747229147234041298985373));
+contract C0 {
+  type T1 is address;
+  error er0();
+  bool  public s0;
+  uint248   s1 = uint248(24653168456438110574882772006720919910907581538842486545715868282141229943);
+  mapping(address => bytes17)  public s2;
+  St0[]   s3;
+  constructor(bool i0) payable  {
+    s0 = ((bytes22(0x00000000000000000000000000000000000000000000) > bytes22(0xffffffffffffffffffffffffffffffffffffffffffff)) || ((~(uint144(18757678495047290659800081023396274144370076))) <= uint144(487776087733923883377622773284490499805060)));
+    s2[address(this)] &= bytes17(0x3179670f9fecea1b4d550c64460b684be3);
+    unchecked {
+    }
+  }
+  uint56 public constant cons1 = ((((((uint56(0) | uint56(0)) - uint56(0)) % uint56(45949543494665255)) ** uint184(uint184(4635493279564102327120609813153262171173543336873330461))) << uint152(uint152(4857198750822321766557187193971417009192085740))) << uint232(uint232(5838429802703666666683472934565445606375437089620121984694171840457199)));
+  event ev0(bool  ep0, bytes13 indexed ep1, St0[]  ep2);
+  event ev1() anonymous;
+  struct St1 {
+    bytes5 el0;
+  }
+  function f0() external virtual  payable returns(function (address payable) external  [2] memory o0,bool o1)
+  {
+    for(;
+;
+)
+    {
+    }
+    emit ev0(false, bytes13(0xffffffffffffffffffffffffff), new St0[](2));
+    revert er0();
+    emit ev0((bytes14(0xffffffffffffffffffffffffffff) <= bytes14(0xffffffffffffffffffffffffffff)), bytes13(0xffffffffffffffffffffffffff), new St0[](1));
+  }
+}
+
+==== Source: su1.sol ====
+pragma solidity >= 0.0.0;
+int248 constant cons2 = ((((((int248(-5096909571707800291231016133249149662874766133232187909876128520749649529) ^ int248(0)) * int248(-25538553932436333196018375347798692770669342987819693234732285615063000951)) | int248(-104597693816289463773538704417993775904712501596018033636346840271911267244)) | int248(88761211974705501750893420008439102846727138071670597974122331535650396437)) % int248(-167490281296950337107940615452509141094426438872433265758642759979908777597)) ^ int248(226156424291633194186662080095093570025917938800079226639565593765455331327));
+import "su0.sol";
+// ====
+// ----

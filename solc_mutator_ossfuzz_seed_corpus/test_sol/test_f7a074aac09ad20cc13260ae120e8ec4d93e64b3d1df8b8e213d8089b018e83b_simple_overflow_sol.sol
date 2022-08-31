@@ -1,5 +1,5 @@
 contract C {
-function f(uint a, uint b) public pure returns (uint) { return a + b; }
+    function f(uint a, uint b) public pure returns (uint) { return a + b; }
 }
 // ====
 // SMTEngine: all

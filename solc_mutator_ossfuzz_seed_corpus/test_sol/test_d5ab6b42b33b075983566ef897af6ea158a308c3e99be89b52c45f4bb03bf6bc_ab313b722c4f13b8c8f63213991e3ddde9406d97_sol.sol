@@ -1,0 +1,35 @@
+==== Source:  ====
+
+==== Source: su0.sol ====
+library L0 {
+  function f0() external   
+  {
+    assembly
+    {
+      if extcodehash(0)
+      {
+        codecopy(add(0x80, mod(75294485485750030670961610862521119667687255553399996069122356187131193754025, 1024)), 115792089237316195423570985008687907853269984665640564039457584007913129639935, mod(0, 1024))
+      }
+      calldatacopy(add(0x80, mod(eq(iszero(107137593337329817315742010000614450650944384393397153384977182476034812335047), 115792089237316195423570985008687907853269984665640564039457584007913129639935), 1024)), 0, mod(115792089237316195423570985008687907853269984665640564039457584007913129639935, 1024))
+      return(115792089237316195423570985008687907853269984665640564039457584007913129639935, 115792089237316195423570985008687907853269984665640564039457584007913129639935)
+    }
+  }
+  event ev0(address  ep0, function () external    ep1, address payable  ep2, bool  ep3) anonymous;
+  function f1() public   
+  {
+  }
+  function f2(int184 i0,uint160 i1,address payable i2) external    returns(bool o0)
+  {
+  }
+  using L0 for *;
+  error er0();
+}
+using L0 for uint;
+using L0 for uint;
+using L0 for uint;
+using L0 for uint;
+pragma solidity >= 0.0.0;
+using L0 for uint;
+using L0 for uint;
+// ----
+// Warning 2018: (su0.sol:15-805): Function state mutability can be restricted to view
