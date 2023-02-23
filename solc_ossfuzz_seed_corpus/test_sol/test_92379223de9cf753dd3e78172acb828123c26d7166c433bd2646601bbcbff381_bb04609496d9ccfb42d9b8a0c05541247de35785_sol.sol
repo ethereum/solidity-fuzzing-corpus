@@ -1,0 +1,13 @@
+
+==== Source: su0.sol ====
+bool constant cons0 = false;
+pragma solidity >= 0.0.0;
+
+==== Source: su1.sol ====
+struct St0 {
+  address payable el0;
+  bool el1;
+}
+pragma solidity >= 0.0.0;
+// ====
+// ----
