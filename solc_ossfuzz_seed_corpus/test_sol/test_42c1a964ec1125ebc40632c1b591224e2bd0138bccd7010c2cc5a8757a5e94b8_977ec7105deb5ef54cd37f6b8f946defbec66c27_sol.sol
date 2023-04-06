@@ -1,0 +1,45 @@
+==== Source:  ====
+
+==== Source: su0.sol ====
+pragma solidity >= 0.0.0;
+function f0()    
+{
+  for(uint solinit0 = 0; solinit0 < (((((uint256(115792089237316195423570985008687907853269984665640564039457584007913129639935) + (uint256(115545890740233916780986240177290198497397933915381302624720691224445110680805) ^ uint256(58336546699505626131953748981226911810063439812945146474215433653152556084436))) - uint256(115792089237316195423570985008687907853269984665640564039457584007913129639935)) - uint256(115792089237316195423570985008687907853269984665640564039457584007913129639935)) ^ uint256(0)) % 11); solinit0++)
+  {
+  }
+}
+
+==== Source: su1.sol ====
+contract C0 {
+  function f1(function (uint24[2][2][3][6][9][] memory, uint152) external   returns (bool, uint16[9] memory) i0) external virtual  payable returns(int208 o0,int168 o1)
+  {
+    (o1) = (((((((int168(-174269157480198253797655394868546935250854189147520) | int168(0)) % int168(187072209578355573530071658587684226515959365500927)) | int168(77703853228901893681209416281414711721994247376181)) ^ int168(187072209578355573530071658587684226515959365500927)) ^ int168(187072209578355573530071658587684226515959365500927)) + int168(187072209578355573530071658587684226515959365500927)));
+    assert(o1 == ((((((int168(-174269157480198253797655394868546935250854189147520) | int168(0)) % int168(187072209578355573530071658587684226515959365500927)) | int168(77703853228901893681209416281414711721994247376181)) ^ int168(187072209578355573530071658587684226515959365500927)) ^ int168(187072209578355573530071658587684226515959365500927)) + int168(187072209578355573530071658587684226515959365500927)));
+    function (address payable) internal   returns (uint256, int104, function (bytes30, bool, bool) internal   returns (address payable[5][][] memory, uint24, bool)) l0;
+    (bool l1, uint16[9] memory l2) = i0(new uint24[2][2][3][6][9][](1),uint152(0));
+    bytes2 l3 = ((true ? bytes2(0xffff) : (bytes2(0xacf0) & bytes2(0x037c))) ^ bytes2(0x0000));
+  }
+  fallback() external virtual  payable
+  {
+  }
+  int160  public s0;
+  mapping(uint120 => address[])   s1;
+  int256   s2 = int256(0);
+  constructor(int160 i0)   {
+    s0 &= (int160(730750818665451459101842416358141509827966271487) | int160((int184(0) + (int184(0) + int184(0)))));
+    unchecked {
+      (s2) = ((~(int256(40172634771859932025948708123255429986068021912029140037900822163599973447848))));
+      assert(s2 == (~(int256(40172634771859932025948708123255429986068021912029140037900822163599973447848))));
+    }
+  }
+}
+pragma solidity >= 0.0.0;
+// ----
+// Warning 3628: (su1.sol:0-1886): This contract has a payable fallback function, but no receive ether function. Consider adding a receive ether function.
+// Warning 5667: (su1.sol:161-170): Unused function parameter. Remove or comment out the variable name to silence this warning.
+// Warning 2072: (su1.sol:1011-1174): Unused local variable.
+// Warning 2072: (su1.sol:1181-1188): Unused local variable.
+// Warning 2072: (su1.sol:1190-1209): Unused local variable.
+// Warning 2072: (su1.sol:1264-1273): Unused local variable.
+// Warning 5667: (su1.sol:1507-1516): Unused function parameter. Remove or comment out the variable name to silence this warning.
+// Warning 2018: (su0.sol:26-581): Function state mutability can be restricted to pure

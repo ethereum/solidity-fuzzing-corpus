@@ -1,0 +1,27 @@
+
+==== Source: su0.sol ====
+function f0()     returns(function () external   returns (uint56) o0)
+{
+  int104[] memory l0 = new int104[](6);
+}
+pragma solidity >= 0.0.0;
+
+==== Source: su1.sol ====
+pragma solidity >= 0.0.0;
+library L0 {
+  function f1() private   
+  {
+    uint248 l0 = (uint248(237210461015152542497634637851093235019711451972877810099146830413093518590) & (uint248(75852709865999521925961639024827617322457078804412592257724525991209935110) * ((uint248(452312848583266388373324160190187140051835877600158453279131187530910662655) * uint248(452312848583266388373324160190187140051835877600158453279131187530910662655)) & uint248(452312848583266388373324160190187140051835877600158453279131187530910662655))));
+  }
+  function f2() public    returns(function (bytes18) external   returns (int256, bytes16[2] memory) o0,uint200 o1)
+  {
+  }
+}
+contract C0 {
+  bytes16  public s0 = bytes16(0x00000000000000000000000000000000);
+  using L0 for *;
+  using L0 for *;
+}
+bool constant cons0 = true;
+// ====
+// ----

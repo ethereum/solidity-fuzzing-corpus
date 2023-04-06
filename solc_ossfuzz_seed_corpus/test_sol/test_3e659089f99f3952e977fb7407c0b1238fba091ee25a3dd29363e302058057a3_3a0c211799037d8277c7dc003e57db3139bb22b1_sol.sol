@@ -1,0 +1,21 @@
+==== Source:  ====
+
+==== Source: su0.sol ====
+pragma solidity >= 0.0.0;
+library L0 {
+  function f0() public    returns(function (bool) external   o0,uint88[] memory o1)
+  {
+    (o1[o1.length], o1[uint256(76123621005120699422676172368340650666287433943235909122103921306464519125669)]) = (uint88(0), uint88(((((uint88(0) & (uint88(309485009821345068724781055) & uint88(309485009821345068724781055))) << uint88(uint88(309485009821345068724781055))) & uint88(0)) / uint88(132374898335159050957804086))));
+    assert(o1[o1.length] == uint88(0));
+    assert(o1[uint256(76123621005120699422676172368340650666287433943235909122103921306464519125669)] == uint88(((((uint88(0) & (uint88(309485009821345068724781055) & uint88(309485009821345068724781055))) << uint88(uint88(309485009821345068724781055))) & uint88(0)) / uint88(132374898335159050957804086))));
+    uint88 l0 = (uint88(309485009821345068724781055) + (~(uint88(309485009821345068724781055))));
+    bytes7 l1 = (~(((~(bytes7(0x615a378e8664b8))) ^ bytes7(0xf23d19b4baec9d))));
+    uint208 l2 = uint208(((uint208(0) % (uint208(0) * (uint208(411376139330301510538742295639337626245683966408394965837152255) | uint208(24052655035462810440148516567579630761434912306075643068015839)))) / uint208(3286144685186725903169712819902191532630921298613484421305676)));
+  }
+}
+// ----
+// Warning 5667: (su0.sol:73-102): Unused function parameter. Remove or comment out the variable name to silence this warning.
+// Warning 2072: (su0.sol:808-817): Unused local variable.
+// Warning 2072: (su0.sol:906-915): Unused local variable.
+// Warning 2072: (su0.sol:987-997): Unused local variable.
+// Warning 2018: (su0.sol:41-1267): Function state mutability can be restricted to pure

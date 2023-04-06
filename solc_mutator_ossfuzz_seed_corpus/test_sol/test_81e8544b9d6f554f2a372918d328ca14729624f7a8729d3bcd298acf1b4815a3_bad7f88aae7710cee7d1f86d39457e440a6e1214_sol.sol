@@ -1,0 +1,31 @@
+
+==== Source: su0.sol ====
+contract C0 {
+  address payable   s0;
+  bytes28  public s1;
+  int184   s2;
+  constructor(address payable i0,bytes28 i1,int184 i2)   {
+    s0 = payable(ecrecover(bytes32(0xe0fb648b75bd6909a1102aed42b7ab98c890029e3c2f6bbebfd5559d3198be25), uint8(255), (false ? (bytes32(0x5926eb2b0d950bde641ab2434f6240c13e630a52e8dafa88dc07b740b52345d1) & bytes32(0xee43cbeb6962cc7bab4d4c0aab18a9334f783e159339666e79e981a05b41889b)) : bytes32(0xf11a7dc22eaedec11e4e1bd73475c6a830215a9038bd52ac524f8f791c906e0a)), bytes32(0xffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff)));
+    s1 ^= (false ? bytes28(0x00000000000000000000000000000000000000000000000000000000) : bytes28(0xe2ed007f2be7b516bbcda856e10ad63e449b5b2f5196db733308f640));
+    s2 *= (int184(12259964326927110866866776217202473468949912977468817407) | int184(0));
+    {
+      bytes28  l0 = s1;
+      bytes28  l1 = l0;
+      assert(l1 == s1);
+      int184  l2 = s2;
+      int184  l3 = l2;
+      assert(l3 == s2);
+      bytes28  l4 = s1;
+      bytes28  l5 = l4;
+      assert(l5 == s1);
+    }
+  }
+  fallback() external   
+  {
+    (s2) = ((int184(12259964326927110866866776217202473468949912977468817407) ** uint120((~((uint120(369084274213833553461322669876409858) - (uint120(1329227995784915872903807060280344575) * uint120(795102972286524210417398934223165984))))))));
+    assert(s2 == (int184(12259964326927110866866776217202473468949912977468817407) ** uint120((~((uint120(369084274213833553461322669876409858) - (uint120(1329227995784915872903807060280344575) * uint120(795102972286524210417398934223165984))))))));
+  }
+}
+pragma solidity >= 0.0.0;
+// ====
+// ----

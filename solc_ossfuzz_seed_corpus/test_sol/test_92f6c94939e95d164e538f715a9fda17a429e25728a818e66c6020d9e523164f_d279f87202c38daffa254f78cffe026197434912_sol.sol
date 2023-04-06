@@ -1,0 +1,33 @@
+
+==== Source: su0.sol ====
+contract C0 {
+  bytes13   s0 = bytes13(0xffffffffffffffffffffffffff);
+  address[][9]   s1 = [[address(0x0000000000000000000000000000000000000004), address(0x0000000000000000000000000000000000000006)], [address(0x0000000000000000000000000000000000000001), address(0x0000000000000000000000000000000000000004)], [address(0x0000000000000000000000000000000000000005), address(0x0000000000000000000000000000000000000002)], [address(0x0000000000000000000000000000000000000002), address(0x0000000000000000000000000000000000000001)], [address(0x0000000000000000000000000000000000000001), address(0x0000000000000000000000000000000000000006)], [address(0x0000000000000000000000000000000000000007), address(0x0000000000000000000000000000000000000007)], [address(0x0000000000000000000000000000000000000007), address(0x0000000000000000000000000000000000000006)], [address(0x0000000000000000000000000000000000000006), address(0x0000000000000000000000000000000000000008)], [address(0x0000000000000000000000000000000000000005), address(0x0000000000000000000000000000000000000006)]];
+
+	function compareMemoryAndStorage(address[][9] memory v1, address[][9] storage v2) internal returns (bool) {
+		if (v1.length != v2.length)
+			return false;
+		for (uint i = 0; i < v1.length; i++)
+
+			if (!compareMemoryAndStorage(v1[i], v2[i]))
+
+				return false;
+		return true;
+	}
+
+	function compareMemoryAndStorage(address[] memory v1, address[] storage v2) internal returns (bool) {
+		if (v1.length != v2.length)
+			return false;
+		for (uint i = 0; i < v1.length; i++)
+
+			if (v1[i] != v2[i])
+
+				return false;
+		return true;
+	}
+  bytes16  public s2 = bytes16(0x00000000000000000000000000000000);
+  address payable   s3 = payable(address(this));
+}
+pragma solidity >= 0.0.0;
+// ====
+// ----

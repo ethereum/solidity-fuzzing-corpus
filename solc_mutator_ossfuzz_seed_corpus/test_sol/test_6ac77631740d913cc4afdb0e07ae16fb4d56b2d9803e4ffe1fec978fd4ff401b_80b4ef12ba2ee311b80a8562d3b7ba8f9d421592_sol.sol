@@ -1,0 +1,27 @@
+==== Source:  ====
+
+==== Source: su0.sol ====
+pragma solidity >= 0.0.0;
+contract C0 {
+  int200   s0;
+  uint168   s1 = uint168(0);
+  mapping(int88 => bytes19)   s2;
+  constructor(int200 i0) payable  {
+    s0 /= (int200(((int200(803469022129495137770981046170581301261101496891396417650687) & (int200(388845008047907812557739704120016443162426381178971711265179) - int200(803469022129495137770981046170581301261101496891396417650687))) / int200(803469022129495137770981046170581301261101496891396417650687))) * int200(803469022129495137770981046170581301261101496891396417650687));
+    s2[(-((true ? int88(150875846060404182762364615) : ((int88(-58811918704766273561759352) + int88(139345192157685577244635425)) * int88(154742504910672534362390527)))))] = (bytes19(0xe477257d40b77d14d07cab8edb8a90824b7250) ^ bytes19(0xffffffffffffffffffffffffffffffffffffff));
+    {
+      uint168  l0 = s1;
+      uint168  l1 = l0;
+      assert(l1 == s1);
+      s0 &= (-((~(int200(803469022129495137770981046170581301261101496891396417650687)))));
+      uint168  l2 = s1;
+      uint168  l3 = l2;
+      assert(l3 == s1);
+    }
+  }
+}
+
+==== Source: su1.sol ====
+pragma solidity >= 0.0.0;
+// ----
+// Warning 5667: (su0.sol:132-141): Unused function parameter. Remove or comment out the variable name to silence this warning.

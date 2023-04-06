@@ -1,0 +1,26 @@
+==== Source:  ====
+
+==== Source: su0.sol ====
+struct St0 {
+  bytes5 el0;
+  function () external   returns (int232) el1;
+  bool el2;
+}
+pragma solidity >= 0.0.0;
+library L0 {
+  function f0(bytes memory i0,uint24[3][2][5][1][][] memory i1) private    returns(St0 memory o0)
+  {
+    (i1[uint256(115792089237316195423570985008687907853269984665640564039457584007913129639935)], i1[((i0.length * uint256((((uint256(83693684845784182859040649129721377069014704775168797402426615548234164730949) >> uint176(uint176(95780971304118053647396689196894323976171195136475135))) ^ uint256(21631774882442920263163592383981700690145701764664674261350616215226206202823)) / uint256(70119521448133330539523993382002505340299983661942025893036867782038476907872)))) - uint256(115792089237316195423570985008687907853269984665640564039457584007913129639935))]) = (new uint24[3][2][5][1][](4), (false ? i1[(uint216(2952739046848736008171856963500926513976530113007964402022707221) | uint256(0))] : new uint24[3][2][5][1][](4)));
+    St0 memory l0;
+    revert(((false ? o0.el2 : o0.el2) ? string.concat(string("ffffffffffffffffffffffffffffffffffffa0943344121ed8d122e4827a59accd69015b895f3678b46b42175f46"), string("00ffff")) : string("baf1d698694316ad4e0a0c1dffe1d8747f3ae20fc34317209ebeffffffffffffffff")));
+  }
+  modifier m0() 
+  {
+    address payable l0 = payable(address(0x0000000000000000000000000000000000000006));
+    _;
+  }
+}
+using L0 for bytes;
+// ----
+// Warning 2072: (su0.sol:964-977): Unused local variable.
+// Warning 2018: (su0.sol:129-1242): Function state mutability can be restricted to pure

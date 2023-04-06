@@ -1,0 +1,22 @@
+
+==== Source: su0.sol ====
+library L0 {
+  modifier m0(int160 i0) 
+  {
+    _;
+    uint224 l0 = uint224(((uint224(3349865087379561672553328323135261721194613908840827529598656801924) + ((uint224((uint224(26959946667150639794667015087019630673637144422540572481103610249215) / uint224(0))) ^ uint224(26959946667150639794667015087019630673637144422540572481103610249215)) - uint224(0))) / uint224(0)));
+    bytes19 l1 = (bytes19((~(bytes16(bytes27(0x000000000000000000000000000000000000000000000000000000))))) ^ bytes19(0x00000000000000000000000000000000000000));
+  }
+  function f0(bytes4 i0) external  m0(int16(27579)) m0(((~(int160(uint160(503161978609251580377954084318819086072407919969)))) + (int72(2361183241434822606847) & int160(0))))  returns(function (function () external   returns (int232, bool)) external   returns (bytes memory, int160) o0,bool o1)
+  {
+    address payable l0 = payable(address(0x0000000000000000000000000000000000000007));
+  }
+  error er0();
+}
+pragma solidity >= 0.0.0;
+using L0 for bytes4;
+
+==== Source: su1.sol ====
+pragma solidity >= 0.0.0;
+// ====
+// ----

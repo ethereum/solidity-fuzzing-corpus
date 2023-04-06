@@ -1,0 +1,42 @@
+
+==== Source: su0.sol ====
+contract C0 {
+  uint40[4]  public s0 = [uint40(1035571433166), uint40(1099511627775), uint40(0), uint40(0)];
+
+	function compareMemoryAndStorage(uint40[4] memory v1, uint40[4] storage v2) internal returns (bool) {
+		if (v1.length != v2.length)
+			return false;
+		for (uint i = 0; i < v1.length; i++)
+
+			if (v1[i] != v2[i])
+
+				return false;
+		return true;
+	}
+  mapping(bytes30 => int248)   s1;
+  mapping(bytes16 => address)   s2;
+  mapping(bool => mapping(bytes9 => mapping(address => bytes7)))  public s3;
+  constructor()   {
+    s1[bytes30(0x7bbcfb1a6ca9777c183d6e882a2dc958deb8ff401680da95ad0d30aae4c0)] &= int248(226156424291633194186662080095093570025917938800079226639565593765455331327);
+    s2[bytes16(bytes27(0x50703536926294a318f3ddd488a4fc62ffe867ea201f5669008ab6))] = address(this);
+    {
+      (s0[(uint256(0) ^ uint8(((uint8(70) ** uint136(uint136(84745345175242248660227662322158099612851))) / uint8(255))))]) = (uint40(552353572059));
+      assert(s0[(uint256(0) ^ uint8(((uint8(70) ** uint136(uint136(84745345175242248660227662322158099612851))) / uint8(255))))] == uint40(552353572059));
+      (s0[((((uint256(49876114206766300099794755642285319887878459312669709730668339583039214574320) % (uint256(70227951767775177936124086685052406502993716516379710423625131915878369902280) & uint256(0))) * uint256(0)) << uint88(uint88(309485009821345068724781055))) & uint256(0))]) = (s0[uint256(115792089237316195423570985008687907853269984665640564039457584007913129639935)]);
+      assert(s0[((((uint256(49876114206766300099794755642285319887878459312669709730668339583039214574320) % (uint256(70227951767775177936124086685052406502993716516379710423625131915878369902280) & uint256(0))) * uint256(0)) << uint88(uint88(309485009821345068724781055))) & uint256(0))] == s0[uint256(115792089237316195423570985008687907853269984665640564039457584007913129639935)]);
+    }
+  }
+  fallback() external virtual  
+  {
+    return;
+  }
+  receive() external virtual  payable
+  {
+  }
+}
+pragma solidity >= 0.0.0;
+library L0 {
+  event ev0(int104[5][][]  ep0, uint152  ep1);
+}
+// ====
+// ----

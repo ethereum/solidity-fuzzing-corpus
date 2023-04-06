@@ -1,0 +1,59 @@
+
+==== Source: su0.sol ====
+library L0 {
+  address public constant cons0 = 0x857e2C4A8CaE5Be5185348C4825db15E20F4f3dc;
+  function f0() external    returns(function (bytes4, uint240[3][6][4] memory) external   returns (int64) o0,address o1)
+  {
+    uint72 l0 = (~(uint72(4722366482869645213695)));
+    require((((((int152(-2291527894813186852754786980790207441735413517) ^ int152(0)) * int184(0)) & int184(12259964326927110866866776217202473468949912977468817407)) - int184(0)) < int184(-3009016348926618376015310230694117974861544294855330789)), string("0000000000000000000000000000000000000000000000000000000000000000000000000000000000"));
+    bytes24 l1 = bytes24(0xf0ab299ffb6609e941499bb60d83b3595baf741f20e0077d);
+  }
+}
+contract C0 {
+  using L0 for *;
+  using L0 for *;
+  function f1() public virtual   returns(string memory o0,bool o1)
+  {
+    address l0 = address(this);
+  }
+  mapping(uint256 => bytes7)   s0;
+  address payable immutable  s1 = payable(address(this));
+  address   s2 = address(this);
+  int112[8][7]   s3;
+
+	function compareMemoryAndStorage(int112[8][7] memory v1, int112[8][7] storage v2) internal returns (bool) {
+		if (v1.length != v2.length)
+			return false;
+		for (uint i = 0; i < v1.length; i++)
+
+			if (!compareMemoryAndStorage(v1[i], v2[i]))
+
+				return false;
+		return true;
+	}
+
+	function compareMemoryAndStorage(int112[8] memory v1, int112[8] storage v2) internal returns (bool) {
+		if (v1.length != v2.length)
+			return false;
+		for (uint i = 0; i < v1.length; i++)
+
+			if (v1[i] != v2[i])
+
+				return false;
+		return true;
+	}
+  constructor(int112[8][7] memory i0)   {
+    s3 = i0;
+    s0[(uint256(5483414023652858229949620553755647636791177819581560166275569867000820076390) & (uint256(115792089237316195423570985008687907853269984665640564039457584007913129639935) ** uint72(uint72(((uint72(4722366482869645213695) - uint72(3638491822043540068199)) / uint72(4722366482869645213695))))))] = (~(bytes7(0xffffffffffffff)));
+    unchecked {
+      (bool l0, bytes memory l1) = address(this).call(abi.encodeWithSignature("f1()"));
+      s2 = address(this);
+      assert(s2 == address(this));
+      (i0[(uint32((uint32(4294967295) / (uint32(0) % uint32(4294967295)))) * uint88(0))], s3[((uint256(0) + (~(((uint256(0) - uint256(115792089237316195423570985008687907853269984665640564039457584007913129639935)) * uint256(115792089237316195423570985008687907853269984665640564039457584007913129639935))))) ** uint216(uint216(105312291668557186697918027683670432318895095400549111254310977535)))]) = ([int112(0), int112(2596148429267413814265248164610047), int112(2596148429267413814265248164610047), int112(2596148429267413814265248164610047), int112(-377177842682949040388549238223294), int112(1645673195673248270333342509196974), int112(2596148429267413814265248164610047), int112(2596148429267413814265248164610047)], [int112(405184330661067329532313491612499), int112(0), int112(-1269830373909526513125497065616204), int112(2596148429267413814265248164610047), int112(2596148429267413814265248164610047), int112(1961461839376556071453083146377412), int112(2596148429267413814265248164610047), int112(-170684100833212910802161557276253)]);
+    }
+  }
+  using L0 for *;
+}
+pragma solidity >= 0.0.0;
+// ====
+// ----

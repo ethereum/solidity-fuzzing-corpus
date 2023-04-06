@@ -1,0 +1,56 @@
+==== Source:  ====
+
+==== Source: su0.sol ====
+contract C0 {
+  int104[][1][7]   s0 = [[[int104(0), int104(0), int104(-158817081392122094658702102382), int104(10141204801825835211973625643007), int104(0), int104(10141204801825835211973625643007), int104(-3270981039151410198398040664568), int104(0)]], [[int104(10141204801825835211973625643007), int104(10141204801825835211973625643007), int104(10141204801825835211973625643007), int104(10141204801825835211973625643007), int104(0), int104(10141204801825835211973625643007), int104(0), int104(10141204801825835211973625643007)]], [[int104(10141204801825835211973625643007), int104(0), int104(0), int104(-9566277525900551955632924072397), int104(0), int104(10141204801825835211973625643007), int104(-3589739418291647026828523650331), int104(10141204801825835211973625643007)]], [[int104(-2491954411048729535740672232819), int104(0), int104(10141204801825835211973625643007), int104(10141204801825835211973625643007), int104(0), int104(0), int104(10141204801825835211973625643007), int104(6469953219912571474192717218171)]], [[int104(-3107924940414306916577666306913), int104(10141204801825835211973625643007), int104(3357385738534157174564439031111), int104(0), int104(0), int104(0), int104(0), int104(10097001507596010813311783817236)]], [[int104(10141204801825835211973625643007), int104(9479198224373658625800840271887), int104(10141204801825835211973625643007), int104(-7658892163663369745279327370041), int104(8623987853820138943844142428055), int104(-4242192831309929997361042807833), int104(-4079553747345665132986752072564), int104(0)]], [[int104(0), int104(-9786074038586414930646233249500), int104(10141204801825835211973625643007), int104(0), int104(1352739015618138604288076017416), int104(0), int104(-2704028592546069265153394076800), int104(0)]]];
+
+	function compareMemoryAndStorage(int104[][1][7] memory v1, int104[][1][7] storage v2) internal returns (bool) {
+		if (v1.length != v2.length)
+			return false;
+		for (uint i = 0; i < v1.length; i++)
+
+			if (!compareMemoryAndStorage(v1[i], v2[i]))
+
+				return false;
+		return true;
+	}
+
+	function compareMemoryAndStorage(int104[][1] memory v1, int104[][1] storage v2) internal returns (bool) {
+		if (v1.length != v2.length)
+			return false;
+		for (uint i = 0; i < v1.length; i++)
+
+			if (!compareMemoryAndStorage(v1[i], v2[i]))
+
+				return false;
+		return true;
+	}
+
+	function compareMemoryAndStorage(int104[] memory v1, int104[] storage v2) internal returns (bool) {
+		if (v1.length != v2.length)
+			return false;
+		for (uint i = 0; i < v1.length; i++)
+
+			if (v1[i] != v2[i])
+
+				return false;
+		return true;
+	}
+  int256  public s1 = int256(-38363600415984603031818005935720996266172554162753977457696319212896253478068);
+  address immutable public s2;
+  constructor(address i0)   {
+    s2 = address(this);
+    {
+      address  l0 = s2;
+      address  l1 = l0;
+      assert(l1 == s2);
+      int256  l2 = s1;
+      int256  l3 = l2;
+      assert(l3 == s1);
+    }
+  }
+}
+pragma solidity >= 0.0.0;
+// ----
+// Warning 5667: (su0.sol:2731-2741): Unused function parameter. Remove or comment out the variable name to silence this warning.
+// Warning 2018: (su0.sol:2329-2575): Function state mutability can be restricted to view

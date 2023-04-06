@@ -1,0 +1,23 @@
+==== Source:  ====
+
+==== Source: su0.sol ====
+pragma solidity >= 0.0.0;
+contract C0 {
+  receive() external   payable
+  {
+  }
+  address payable   s0 = payable(address(this));
+  bytes3   s1 = bytes3(0xffffff);
+  bytes28 immutable  s2 = bytes28(0xffffffffffffffffffffffffffffffffffffffffffffffffffffffff);
+}
+
+==== Source: su1.sol ====
+pragma solidity >= 0.0.0;
+function f1()    
+{
+  uint192 l0 = (((uint192(0) & uint192((uint192(6277101735386680763835789423207666416102355444464034512895) / uint192(6277101735386680763835789423207666416102355444464034512895)))) ^ uint192(2198450330103836891551106382963524340285352889002124065412)) - uint192(0));
+  (l0) = (uint192(((uint192(0) | (((bytes16(0x00000000000000000000000000000000) | bytes16(0xffffffffffffffffffffffffffffffff)) != bytes16(0xffffffffffffffffffffffffffffffff)) ? uint192(2250284414019741133396527678935145581042449728601039242838) : uint192(5450552380736105567412119594300853836268268837633134848196))) / uint192(3281635353498460742801265096445020718643359196535433635822))));
+  assert(l0 == uint192(((uint192(0) | (((bytes16(0x00000000000000000000000000000000) | bytes16(0xffffffffffffffffffffffffffffffff)) != bytes16(0xffffffffffffffffffffffffffffffff)) ? uint192(2250284414019741133396527678935145581042449728601039242838) : uint192(5450552380736105567412119594300853836268268837633134848196))) / uint192(3281635353498460742801265096445020718643359196535433635822))));
+}
+// ----
+// Warning 2018: (su1.sol:26-1101): Function state mutability can be restricted to pure

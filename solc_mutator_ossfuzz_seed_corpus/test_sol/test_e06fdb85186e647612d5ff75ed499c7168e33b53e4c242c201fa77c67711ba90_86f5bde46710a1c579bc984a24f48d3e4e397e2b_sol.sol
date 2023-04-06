@@ -1,0 +1,32 @@
+
+==== Source: su0.sol ====
+contract C0 {
+  function f0() public virtual  payable returns(bool o0,bytes6 o1,bool o2)
+  {
+    {
+      uint256 l0 = uint256(75489972798160557470853739781477984402037134075914509729053960658152143227337);
+      bool l1 = ((uint56(72057594037927935) * (uint56(0) + (uint56(72057594037927935) & uint56(72057594037927935)))) >= uint56(0));
+      revert(string.concat(string.concat((true ? (true ? string("469e527d2dabe05d2a72dd125e10ea53cca8b3e519011696cbed3400000000000000000000") : string("0000000019b625171180d556361fc6c68b")) : string("ffffffffffffffffffffffffffffffffffffff0000000000000000000000")), string("0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000"), string("000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000")), string("000000000000000000000000000000000000000000006da45f0b0ec7b251bc360643")));
+    }
+  }
+  bool   s0;
+  uint160   s1 = uint160(1461501637330902918203684832716283019655932542975);
+  mapping(bytes1 => bool)  public s2;
+  uint48   s3 = uint48(281474976710655);
+  constructor(bool i0)   {
+    s0 = true;
+    s2[bytes1(0xed)] = ((uint16(0) <= (((uint16(28439) - uint16(1169)) * uint16(0)) * uint16(55938))) ? true : true);
+    unchecked {
+      uint160  l0 = s1;
+      uint160  l1 = l0;
+      assert(l1 == s1);
+      (bool l2, bytes memory l3) = address(this).call(bytes(string("0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000")));
+      bool  l4 = s0;
+      bool  l5 = l4;
+      assert(l5 == s0);
+    }
+  }
+}
+pragma solidity >= 0.0.0;
+// ====
+// ----

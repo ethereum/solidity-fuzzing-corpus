@@ -1,0 +1,66 @@
+
+==== Source: su0.sol ====
+pragma solidity >= 0.0.0;
+library L0 {
+  function f0(address i0) public    returns(function (int176, address payable, bytes6) external   returns (int160) o0)
+  {
+    bytes14 l0 = (true ? ((~(bytes14(0x0000000000000000000000000000))) ^ bytes14(0xffffffffffffffffffffffffffff)) : bytes14(0x898fb2cf9846c0b0f213e6298fff));
+    (int160 l1) = o0((((int176((int176(21814580274174645697282088009255213456498796296403209) / int176(47890485652059026823698344598447161988085597568237567))) & int176(8049181938492252828254914367493277702396122989718750)) | int176(0)) - int176(0)),((false ? true : (int64(0) <= int64(9223372036854775807))) ? payable(address(0x0000000000000000000000000000000000000003)) : payable(address(0x0000000000000000000000000000000000000008))),bytes6(0x000000000000));
+    bool l2 = (((uint240(0) ** uint104(uint104((uint104(6943631699631752974153770643844) / uint104(20282409603651670423947251286015))))) | uint240(0)) < uint240(1430307587549532056348086032450003543871389681795195494997256848612397445));
+  }
+  function f1(int232 i0) public    returns(uint72 o0)
+  {
+    bytes27 l0 = ((((int136(43556142965880123323311949751266331066367) > int136((int136(26677411043693854813953410480717110843948) / int136(18795102156583918029940845269445339046604)))) ? payable(address(0x0000000000000000000000000000000000000004)) : payable(address(0x0000000000000000000000000000000000000007))) == payable(address(0x0000000000000000000000000000000000000005))) ? bytes27(0x000000000000000000000000000000000000000000000000000000) : bytes27(0xe20e193d0e6b5092908dd4255d1bd4540389244ac599d94d6fb6ba));
+    function () external   returns (address payable[10] memory) l1;
+  }
+}
+
+==== Source: su1.sol ====
+library L1 {
+  function f2() external    returns(int152 o0,int48 o1)
+  {
+  }
+  function f3(bytes2 i0) external   
+  {
+    int8 l0 = int8(100);
+  }
+}
+pragma solidity >= 0.0.0;
+contract C0 {
+  using L1 for *;
+  receive() external   payable
+  {
+    string memory l0 = string("d97d0c53fda300000000000000000000000000000000");
+    (bool l1, bytes memory l2) = payable(this).call{value: 6549368446225997446}("");
+    int120 l3 = (int120(((((int120((int120(664613997892457936451903530140172287) / int120(0))) & int120(0)) & int120(664613997892457936451903530140172287)) + int120(-277790442370087842765457218822622101)) / int120(564836958502699120243846328341893891))) & int120(-616183284434900424855579121648548550));
+  }
+  fallback() external virtual  
+  {
+    uint192 l0 = uint192(317767147430101368316202034382571705780496000358377066932);
+  }
+  using L1 for *;
+  function f6(uint232 i0,function (address payable[][2][] memory) external   returns (uint128, int240) i1,bytes13 i2) internal   
+  {
+    (i0) = ((uint232(0) - (uint232(0) ^ ((uint232(0) - uint232(2077077739901144564269062212389834795130884265021774726641958358198708)) % uint232(5008962898597538831212272325413929338898048644990984830562730834744192)))));
+    assert(i0 == (uint232(0) - (uint232(0) ^ ((uint232(0) - uint232(2077077739901144564269062212389834795130884265021774726641958358198708)) % uint232(5008962898597538831212272325413929338898048644990984830562730834744192)))));
+    assert(false);
+    address payable l0 = payable(address(this));
+  }
+  bool immutable  s0;
+  address   s1 = address(this);
+  address   s2;
+  constructor(bool i0,address i1)   {
+    s0 = false;
+    s2 = address(this);
+    unchecked {
+      address  l0 = s1;
+      address  l1 = l0;
+      assert(l1 == s1);
+      address  l2 = s1;
+      address  l3 = l2;
+      assert(l3 == s1);
+    }
+  }
+}
+// ====
+// ----

@@ -1,0 +1,18 @@
+==== Source:  ====
+
+==== Source: su0.sol ====
+function f0(int16[3][][5][4][6][10] memory i0,bool[][3] memory i1)     returns(string memory o0,function () external   o1)
+{
+  i0[uint256(((((((uint256(85232827376306607855387688379205326114384052744323919596470751058972445017305) - uint256(19192760889614665277306978016478762692608347369718836926489974322677005224193)) - uint256(0)) ^ uint256(41412444346498971788724750575624845086387752763304823829128302035367592944118)) << uint248(uint248(0))) + uint256(0)) / uint256(0)))] = (i0[(uint256(111848776700510283928342849602649741265466479427737945303360536851082280413783) ** uint208(uint208(204700461034153894732824186722688260349295082847165662961279094)))] = [[[new int16[3][](9), new int16[3][](9), new int16[3][](9), new int16[3][](9), new int16[3][](9)], [new int16[3][](9), new int16[3][](9), new int16[3][](9), new int16[3][](9), new int16[3][](9)], [new int16[3][](9), new int16[3][](9), new int16[3][](9), new int16[3][](9), new int16[3][](9)], [new int16[3][](9), new int16[3][](9), new int16[3][](9), new int16[3][](9), new int16[3][](9)]], [[new int16[3][](9), new int16[3][](9), new int16[3][](9), new int16[3][](9), new int16[3][](9)], [new int16[3][](9), new int16[3][](9), new int16[3][](9), new int16[3][](9), new int16[3][](9)], [new int16[3][](9), new int16[3][](9), new int16[3][](9), new int16[3][](9), new int16[3][](9)], [new int16[3][](9), new int16[3][](9), new int16[3][](9), new int16[3][](9), new int16[3][](9)]], [[new int16[3][](9), new int16[3][](9), new int16[3][](9), new int16[3][](9), new int16[3][](9)], [new int16[3][](9), new int16[3][](9), new int16[3][](9), new int16[3][](9), new int16[3][](9)], [new int16[3][](9), new int16[3][](9), new int16[3][](9), new int16[3][](9), new int16[3][](9)], [new int16[3][](9), new int16[3][](9), new int16[3][](9), new int16[3][](9), new int16[3][](9)]], [[new int16[3][](9), new int16[3][](9), new int16[3][](9), new int16[3][](9), new int16[3][](9)], [new int16[3][](9), new int16[3][](9), new int16[3][](9), new int16[3][](9), new int16[3][](9)], [new int16[3][](9), new int16[3][](9), new int16[3][](9), new int16[3][](9), new int16[3][](9)], [new int16[3][](9), new int16[3][](9), new int16[3][](9), new int16[3][](9), new int16[3][](9)]], [[new int16[3][](9), new int16[3][](9), new int16[3][](9), new int16[3][](9), new int16[3][](9)], [new int16[3][](9), new int16[3][](9), new int16[3][](9), new int16[3][](9), new int16[3][](9)], [new int16[3][](9), new int16[3][](9), new int16[3][](9), new int16[3][](9), new int16[3][](9)], [new int16[3][](9), new int16[3][](9), new int16[3][](9), new int16[3][](9), new int16[3][](9)]], [[new int16[3][](9), new int16[3][](9), new int16[3][](9), new int16[3][](9), new int16[3][](9)], [new int16[3][](9), new int16[3][](9), new int16[3][](9), new int16[3][](9), new int16[3][](9)], [new int16[3][](9), new int16[3][](9), new int16[3][](9), new int16[3][](9), new int16[3][](9)], [new int16[3][](9), new int16[3][](9), new int16[3][](9), new int16[3][](9), new int16[3][](9)]]]);
+  bytes32 l0 = (bytes32(0x09ae56ad9795e4010057de9913d632b768c901bca7c0d6b9d685d73311c84da0) & keccak256(bytes(string("1fb7e5e0d7b6dad91372c9b8a2702804523e"))));
+  assembly
+  {
+  }
+  delete i1[uint256(0)];
+}
+pragma solidity >= 0.0.0;
+// ----
+// Warning 5667: (su0.sol:79-95): Unused function parameter. Remove or comment out the variable name to silence this warning.
+// Warning 5667: (su0.sol:96-121): Unused function parameter. Remove or comment out the variable name to silence this warning.
+// Warning 2072: (su0.sol:3008-3018): Unused local variable.
+// Warning 2018: (su0.sol:0-3212): Function state mutability can be restricted to pure

@@ -1,0 +1,73 @@
+==== Source:  ====
+
+==== Source: su0.sol ====
+address constant cons0 = 0xFFfFfFffFFfffFFfFFfFFFFFffFFFffffFfFFFfF;
+library L0 {
+  function f0() internal    returns(bytes20 o0)
+  {
+    assembly
+    {
+      function af0(ai0, ai1, ai2, ai3) -> ao0, ao1, ao2, ao3, ao4, ao5
+      {
+        returndatacopy(add(0x80, mod(107028095473366866226736355618964991508439353207950004512482825885998076024242, 1024)), calldataload(mod(ai1, calldatasize())), mod(ai1, 1024))
+        ao0 := smod(115792089237316195423570985008687907853269984665640564039457584007913129639935, 4957498189222465129649618600375462287952274870584032344878928721298433378342)
+        return(add(0x80, mod(107028095473366866226736355618964991508439353207950004512482825885998076024242, 1024)), calldatasize())
+      }
+      let al0, al1, al2, al3, al4, al5 := af0(selfbalance(), 115792089237316195423570985008687907853269984665640564039457584007913129639935, 0, 0)
+      o0 := calldataload(mod(origin(), calldatasize()))
+      switch 0
+      case 115792089237316195423570985008687907853269984665640564039457584007913129639935
+      {
+        {
+          o0 := mload(add(0x80, mod(107028095473366866226736355618964991508439353207950004512482825885998076024242, 1024)))
+          switch div(create2(115792089237316195423570985008687907853269984665640564039457584007913129639935, 115792089237316195423570985008687907853269984665640564039457584007913129639935, 42996840536776517972581506741163957858632353031430132783707939198495621908850, 105623570894177505681995915429697122014935771610212250299600301282256725990407), 115792089237316195423570985008687907853269984665640564039457584007913129639935)
+          case 65888261611932585298940450477763427771505445439780701412871121714701478241002
+          {
+            {
+              o0 := 0
+            }
+            {
+            }
+          }
+          {
+            o0 := 115792089237316195423570985008687907853269984665640564039457584007913129639935
+            o0 := 0
+          }
+        }
+      }
+      case 11813752724437246092521513609262903324123092978473923094054515016605858718248
+      {
+      }
+      case 0
+      {
+        let al6, al7, al8, al9, al10, al11 := af0(115792089237316195423570985008687907853269984665640564039457584007913129639935, al3, 67560419223959074729011832328155012773678015429870025108687599891303498214513, 99783790295168462422795479656401724081707543379109921157529556292540619493923)
+      }
+      o0 := al0
+    }
+    uint8 l0 = uint8(137);
+  }
+  function f1(bool i0,function (uint40[][][][6][][1] memory) external   returns (bytes32, address, bytes24) i1) external    returns(bool o0)
+  {
+    (bytes32 l0, address l1, bytes24 l2) = i1((true ? [new uint40[][][][6][](3)] : (true ? [new uint40[][][][6][](3)] : [new uint40[][][][6][](3)])));
+    bytes24 l3 = bytes24(0xffffffffffffffffffffffffffffffffffffffffffffffff);
+    o0 = true;
+    assert(o0 == true);
+  }
+  type T0 is int88;
+}
+pragma solidity >= 0.0.0;
+struct St0 {
+  string el0;
+  address el1;
+  address payable el2;
+}
+
+==== Source: su1.sol ====
+pragma solidity >= 0.0.0;
+// ----
+// Warning 2072: (su0.sol:2418-2426): Unused local variable.
+// Warning 5667: (su0.sol:2459-2466): Unused function parameter. Remove or comment out the variable name to silence this warning.
+// Warning 2072: (su0.sol:2595-2605): Unused local variable.
+// Warning 2072: (su0.sol:2607-2617): Unused local variable.
+// Warning 2072: (su0.sol:2619-2629): Unused local variable.
+// Warning 2072: (su0.sol:2745-2755): Unused local variable.

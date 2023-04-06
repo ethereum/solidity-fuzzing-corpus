@@ -1,0 +1,40 @@
+
+==== Source: su0.sol ====
+pragma solidity >= 0.0.0;
+contract C0 {
+  bytes32   s0 = bytes32(0xffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff);
+  mapping(int80 => int88)  public s1;
+  bool[]   s2;
+
+	function compareMemoryAndStorage(bool[] memory v1, bool[] storage v2) internal returns (bool) {
+		if (v1.length != v2.length)
+			return false;
+		for (uint i = 0; i < v1.length; i++)
+
+			if (v1[i] != v2[i])
+
+				return false;
+		return true;
+	}
+  constructor(bool[] memory i0)   {
+    s2 = i0;
+    s1[(~(int80(23527125826885846359926)))] ^= s1[((int80(604462909807314587353087) * ((int80(497051846263830318762460) - int80(604462909807314587353087)) * int80(-38103813892346432674462))) & int80(604462909807314587353087))];
+    {
+      (bool l0, bytes memory l1) = address(this).call(bytes("000000000000000000000000000000000000000000000000000000000000ffffffffffffffffffffffff"));
+      (s2, s2) = ([true, false, false, false, false, true], [false, true, true, true, true, false]);
+      s2.pop();
+      s2.pop();
+      s2.push(false);
+      (i0[(uint256(115792089237316195423570985008687907853269984665640564039457584007913129639935) * (uint256(85468470800296689291548773959532478041426330615459964608817155430812494753553) ^ ((uint256(79815641944964620932374279560403143230119187069432534173604788369502594928394) ** uint136(uint136(0))) + uint256(115792089237316195423570985008687907853269984665640564039457584007913129639935))))]) = (false);
+      assert(i0[(uint256(115792089237316195423570985008687907853269984665640564039457584007913129639935) * (uint256(85468470800296689291548773959532478041426330615459964608817155430812494753553) ^ ((uint256(79815641944964620932374279560403143230119187069432534173604788369502594928394) ** uint136(uint136(0))) + uint256(115792089237316195423570985008687907853269984665640564039457584007913129639935))))] == false);
+    }
+  }
+  struct St0 {
+    function () external   returns (address, address payable) el0;
+    bytes25 el1;
+    uint128 el2;
+    int184 el3;
+  }
+}
+// ====
+// ----

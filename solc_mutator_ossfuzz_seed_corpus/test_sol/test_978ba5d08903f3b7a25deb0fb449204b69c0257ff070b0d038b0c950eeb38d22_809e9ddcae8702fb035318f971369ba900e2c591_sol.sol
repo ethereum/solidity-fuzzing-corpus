@@ -1,0 +1,25 @@
+
+==== Source: su0.sol ====
+library L0 {
+  function f0(address payable i0,int80 i1) external   
+  {
+  }
+  error er0();
+  modifier m0(uint232[] memory i0) 
+  {
+    uint128 l0 = (((uint128(340282366920938463463374607431768211455) * ((uint128(340282366920938463463374607431768211455) % uint128(253469493353403081417030865957983047727)) * uint128(0))) + uint128(340282366920938463463374607431768211455)) * uint128(0));
+    address l1 = address(0x0000000000000000000000000000000000000003);
+    _;
+    i0[(~((i0.length * address(0x0000000000000000000000000000000000000001).balance)))] <<= ((false ? ((uint232((uint232(6901746346790563787434755862277025452451108972170386555162524223799295) / uint232(0))) % uint232(0)) | uint232(0)) : uint232(3689502265218447927307289201768511888067760334662844786536568484611469)) ** uint128(uint128(261480077740554457594967129728314496874)));
+  }
+}
+pragma solidity >= 0.0.0;
+
+==== Source: su1.sol ====
+pragma solidity >= 0.0.0;
+library L1 {
+  bytes18 public constant cons0 = bytes18(0xffffffffffffffffffffffffffffffffffff);
+  uint32 public constant cons1 = 4294967295;
+}
+// ====
+// ----

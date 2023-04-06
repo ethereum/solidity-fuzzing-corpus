@@ -1,0 +1,53 @@
+
+==== Source: su0.sol ====
+pragma solidity >= 0.0.0;
+contract C0 {
+  uint168   s0 = uint168(272711013598041569683586463448749301263839487739597);
+  int56[2][6]   s1;
+
+	function compareMemoryAndStorage(int56[2][6] memory v1, int56[2][6] storage v2) internal returns (bool) {
+		if (v1.length != v2.length)
+			return false;
+		for (uint i = 0; i < v1.length; i++)
+
+			if (!compareMemoryAndStorage(v1[i], v2[i]))
+
+				return false;
+		return true;
+	}
+
+	function compareMemoryAndStorage(int56[2] memory v1, int56[2] storage v2) internal returns (bool) {
+		if (v1.length != v2.length)
+			return false;
+		for (uint i = 0; i < v1.length; i++)
+
+			if (v1[i] != v2[i])
+
+				return false;
+		return true;
+	}
+  constructor(int56[2][6] memory i0)   {
+    s1 = i0;
+    unchecked {
+      (bool l0) = payable(this).send(17781193713096596383);
+      uint168  l1 = s0;
+      uint168  l2 = l1;
+      assert(l2 == s0);
+    }
+  }
+  receive() external   payable
+  {
+    do
+    {
+      (s1[uint256(75949951292367414949227191072370614467935921299194710861481618061292919146809)], s1[uint256(85113798378704323616438539492038788728398244251094301935663088099015606350277)]) = (s1[((((uint256(115792089237316195423570985008687907853269984665640564039457584007913129639935) | uint256(0)) ^ uint256(115792089237316195423570985008687907853269984665640564039457584007913129639935)) | uint256(115792089237316195423570985008687907853269984665640564039457584007913129639935)) ^ uint256(105343709637085474497090059164416666265259964693184090980335132081926243459174))], (false ? [int56(6595783222383151), int56(36028797018963967)] : [int56(0), int56(29581874641585705)]));
+    }
+    while (((((int120(664613997892457936451903530140172287) - int120(uint120(413396542750652493655173684680104730))) * int120(-605267500925438719611493577962631781)) % int120(664613997892457936451903530140172287)) >= int120(664613997892457936451903530140172287)));
+    s1 = [[int56(28238991876220574), int56(0)], [int56(28055454181712674), int56(0)], [int56(-13222885637298578), int56(-34915689316003762)], [int56(-20955870234665468), int56(8905413917878186)], [int56(-32966890345635873), int56(36028797018963967)], [int56(-294536002925074), int56(36028797018963967)]];
+  }
+}
+function f1(function (address[6] memory, bytes30) external   returns (function (address, uint16, address) external  ) i0)     returns(bool[2][][8][][4][] memory o0)
+{
+  bool l0 = false;
+}
+// ====
+// ----

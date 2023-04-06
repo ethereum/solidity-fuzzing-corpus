@@ -1,0 +1,30 @@
+
+==== Source: su0.sol ====
+pragma solidity >= 0.0.0;
+contract C0 {
+  address payable   s0 = payable(address(this));
+  mapping(bytes13 => bool)  public s1;
+  int120   s2 = int120(664613997892457936451903530140172287);
+  bytes27   s3;
+  constructor(bytes27 i0)   {
+    s3 = (bytes27(0x000000000000000000000000000000000000000000000000000000) | bytes27(0xffffffffffffffffffffffffffffffffffffffffffffffffffffff));
+    s1[bytes13(0x00000000000000000000000000)] = (int256(0) == ((((int256(57896044618658097711785492504343953926634992332820282019728792003956564819967) * int256(57896044618658097711785492504343953926634992332820282019728792003956564819967)) ^ int256(4889472446335799735816594358870414576642864631658132855918500707230311454329)) ^ int256(57896044618658097711785492504343953926634992332820282019728792003956564819967)) ^ int256(57896044618658097711785492504343953926634992332820282019728792003956564819967)));
+    {
+      (bool l0, bytes memory l1) = address(this).call(bytes("cd74ffffffffffffffffffffffffffffffffffffffffffff"));
+      int120  l2 = s2;
+      int120  l3 = l2;
+      assert(l3 == s2);
+    }
+  }
+}
+
+==== Source: su1.sol ====
+pragma solidity >= 0.0.0;
+struct St0 {
+  int144 el0;
+  bool el1;
+  address el2;
+}
+bytes13 constant cons0 = bytes13(0xea0aa9be85b10b6790ab89f9ad);
+// ====
+// ----

@@ -1,0 +1,34 @@
+==== Source:  ====
+
+==== Source: su0.sol ====
+contract C0 {
+  fallback() external   payable
+  {
+    int56 l0 = (((((uint32(4207701219) ^ uint32(0)) * uint152(104897977446503280325674586924226581755545703)) >= uint152(5708990770823839524233143877797980545530986495)) ? int56(0) : int56(7284565195698394)) % int56(0));
+    require((false ? true : (int104(10141204801825835211973625643007) <= int104(0))), string.concat(string("ffffffffffffffffffffffffffffffffffffffffffffda926f98"), string("00000000000000000000000000000000000000000000")));
+    (bool l1) = payable(this).send(443134416522450402);
+  }
+  int24  public s0 = int24(0);
+  uint88   s1 = uint88(0);
+}
+function f1(bool i0)     returns(address payable[6] memory o0)
+{
+  o0[uint256((address(0x0000000000000000000000000000000000000006).balance / (uint256(107113074412218763590173774473196939935577039988062990037596269557711176915092) - (uint256(115792089237316195423570985008687907853269984665640564039457584007913129639935) ^ uint256(115792089237316195423570985008687907853269984665640564039457584007913129639935)))))] = payable(address(0x0000000000000000000000000000000000000007));
+  assert(o0[uint256((address(0x0000000000000000000000000000000000000006).balance / (uint256(107113074412218763590173774473196939935577039988062990037596269557711176915092) - (uint256(115792089237316195423570985008687907853269984665640564039457584007913129639935) ^ uint256(115792089237316195423570985008687907853269984665640564039457584007913129639935)))))] == payable(address(0x0000000000000000000000000000000000000007)));
+  uint152 l0 = ((uint152(5708990770823839524233143877797980545530986495) | (uint152(5708990770823839524233143877797980545530986495) * (~(uint152(5708990770823839524233143877797980545530986495))))) + uint152(0));
+  unchecked {
+    bytes9 l1 = bytes9(0xffffffffffffffffff);
+    bytes4[] memory l2 = new bytes4[](2);
+    revert(string("00000000000000000000b974"));
+  }
+}
+pragma solidity >= 0.0.0;
+// ----
+// Warning 3628: (su0.sol:0-612): This contract has a payable fallback function, but no receive ether function. Consider adding a receive ether function.
+// Warning 2072: (su0.sol:54-62): Unused local variable.
+// Warning 2072: (su0.sol:498-505): Unused local variable.
+// Warning 5667: (su0.sol:625-632): Unused function parameter. Remove or comment out the variable name to silence this warning.
+// Warning 2072: (su0.sol:1519-1529): Unused local variable.
+// Warning 2072: (su0.sol:1747-1756): Unused local variable.
+// Warning 2072: (su0.sol:1793-1811): Unused local variable.
+// Warning 2018: (su0.sol:613-1884): Function state mutability can be restricted to view

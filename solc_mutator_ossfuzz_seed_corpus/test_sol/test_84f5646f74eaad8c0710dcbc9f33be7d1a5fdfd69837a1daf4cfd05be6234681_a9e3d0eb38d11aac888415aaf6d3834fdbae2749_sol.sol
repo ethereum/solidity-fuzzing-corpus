@@ -1,0 +1,20 @@
+
+==== Source: su0.sol ====
+pragma solidity >= 0.0.0;
+contract C0 {
+  receive() external virtual  payable
+  {
+  }
+  mapping(address => uint208)  public s0;
+  constructor()   {
+    s0[address(bytes20(address(0x80B029495105848E6783367106011B207411D6D7)))] <<= uint208(((uint208(411376139330301510538742295639337626245683966408394965837152255) & (uint208(((uint208(0) << uint104(uint104(0))) / uint208(204220734949016487398502461815854977672504844648329848224529294))) * uint208(208337250303873452639844080634624052506571257317036713839901318))) / uint208(8396086245955481175718686436029078675238990930937277937181963)));
+    {
+      (bool l0, bytes memory l1) = payable(this).call{value: 16570182711404199140}("");
+    }
+  }
+  struct St0 {
+    bytes18 el0;
+  }
+}
+// ====
+// ----

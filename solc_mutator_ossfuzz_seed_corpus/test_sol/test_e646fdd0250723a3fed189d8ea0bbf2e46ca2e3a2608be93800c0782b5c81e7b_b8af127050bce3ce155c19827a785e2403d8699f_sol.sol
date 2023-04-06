@@ -1,0 +1,33 @@
+
+==== Source: su0.sol ====
+contract C0 {
+  receive() external   payable
+  {
+    revert(string("ffffffffffffffffffffff000000000000000000000000000000000000000000000000000000"));
+  }
+  fallback() external virtual  
+  {
+    payable(this).transfer(14402263699145403937);
+    bool l0 = (payable(address(bytes20(address(0x2b75447082F3e65a5A0578C3155Abf4945b4f072)))) <= payable(address(this)));
+  }
+  bool   s0;
+  mapping(uint192 => bytes21)   s1;
+  uint240   s2;
+  int152 immutable public s3 = int152(0);
+  constructor(bool i0,uint240 i1)   {
+    s0 = false;
+    s2 >>= (((((true ? uint240(1766847064778384329583297500742918515827483896875618958121606201292619775) : uint240(0)) ^ uint240(1766847064778384329583297500742918515827483896875618958121606201292619775)) ^ uint240(0)) << uint232(uint232(0))) & uint240(1075390666141825819080961790673266961748903916153430486009080480847008815));
+    s1[(uint192(6277101735386680763835789423207666416102355444464034512895) % (uint192(1982426592625038915039732732084870778551082278909653799010) & uint192(403588657380071257893310033032053769104859132984640487328)))] |= ((bytes21(0x000000000000000000000000000000000000000000) & s1[((uint192(6277101735386680763835789423207666416102355444464034512895) - uint192(0)) * uint192(0))]) ^ bytes21(0xffffffffffffffffffffffffffffffffffffffffff));
+    unchecked {
+      uint240  l0 = s2;
+      uint240  l1 = l0;
+      assert(l1 == s2);
+      bool  l2 = s0;
+      bool  l3 = l2;
+      assert(l3 == s0);
+    }
+  }
+}
+pragma solidity >= 0.0.0;
+// ====
+// ----

@@ -1,0 +1,42 @@
+
+==== Source: su0.sol ====
+pragma solidity >= 0.0.0;
+library L0 {
+  function f0() external    returns(uint144 o0)
+  {
+    {
+      (o0) = (uint144(14567324516045837517524646455237304218603821));
+      assert(o0 == uint144(14567324516045837517524646455237304218603821));
+      function (uint176) internal   returns (address payable, bytes6, uint176) l0;
+      o0 ^= (((((uint144(0) ^ uint144(9980988788203939118946663716822861143393627)) ** uint208(uint208(0))) % uint144(0)) + uint144(0)) << uint160(uint160(1461501637330902918203684832716283019655932542975)));
+      bytes16 l1 = bytes16(0xe9cddce1f2debc965c2a86b5ac61fca9);
+      bool l2 = false;
+    }
+    uint200 l3 = ((uint200(((((uint200(1606938044258990275541962092341162602522202993782792835301375) ** uint192(uint192(1068706868853650005993158151769826029228364907080319792543))) + uint200(1606938044258990275541962092341162602522202993782792835301375)) ^ uint200(0)) / uint200(631473720559566179666145493068460755303903461574141049480688))) >> uint128(uint128(340282366920938463463374607431768211455))) ** uint8(uint8(0)));
+  }
+}
+library L1 {
+  function f1() external    returns(bool o0)
+  {
+    bytes9 l0 = bytes9(bytes26(bytes13(0x00000000000000000000000000)));
+  }
+}
+
+==== Source: su1.sol ====
+library L2 {
+  function f2() public    returns(bool o0,address o1)
+  {
+    int240 l0 = (false ? int240(((int240(706584300226704245102170798916163859926995601666228965047135564544540949) + (int240(476962325576225630675652570912943153603377715510821699515682706906136443) % int240(883423532389192164791648750371459257913741948437809479060803100646309887))) / int240(883423532389192164791648750371459257913741948437809479060803100646309887))) : int240(0));
+    address[][3] memory l1 = [new address[](5), new address[](5), new address[](5)];
+    l1[(uint256(((int256(0) + int256(uint256(0))) | int256(0))) * uint256(0))] = new address[](5);
+    bytes1[9][] memory l2 = new bytes1[9][](1);
+  }
+  function f3(bytes memory i0,bool i1) public    returns(uint56[][5] memory o0)
+  {
+  }
+}
+using L2 for bytes;
+pragma solidity >= 0.0.0;
+import "su0.sol";
+// ====
+// ----

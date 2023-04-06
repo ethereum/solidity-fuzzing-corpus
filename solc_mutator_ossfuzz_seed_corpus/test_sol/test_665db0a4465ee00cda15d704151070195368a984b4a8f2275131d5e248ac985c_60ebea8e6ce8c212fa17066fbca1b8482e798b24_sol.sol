@@ -1,0 +1,61 @@
+==== Source:  ====
+
+==== Source: su0.sol ====
+contract C0 {
+  mapping(bool => mapping(bytes27 => bool))   s0;
+  constructor()   {
+    {
+    }
+  }
+}
+contract C1 is C0 {
+  bytes15  public s1;
+  uint256  public s2 = uint256(0);
+  address payable[]   s3 = [payable(address(0x0000000000000000000000000000000000000005)), payable(address(0x0000000000000000000000000000000000000005))];
+
+	function compareMemoryAndStorage(address payable[] memory v1, address payable[] storage v2) internal returns (bool) {
+		if (v1.length != v2.length)
+			return false;
+		for (uint i = 0; i < v1.length; i++)
+
+			if (v1[i] != v2[i])
+
+				return false;
+		return true;
+	}
+  bytes6  public s4 = bytes6(0x000000000000);
+  constructor(bytes15 i0)   {
+    s1 = bytes15(0x000000000000000000000000000000);
+    {
+      bytes6  l0 = s4;
+      bytes6  l1 = l0;
+      assert(l1 == s4);
+      bytes15  l2 = s1;
+      bytes15  l3 = l2;
+      assert(l3 == s1);
+      (s3[uint256(115792089237316195423570985008687907853269984665640564039457584007913129639935)]) = (payable(address(this)));
+      assert(s3[uint256(115792089237316195423570985008687907853269984665640564039457584007913129639935)] == payable(address(this)));
+      (bool l4, bytes memory l5) = address(this).call(bytes("0000000000000000e19459d158b3ba02374c921254a3d8"));
+      (s3[((((((uint256(115792089237316195423570985008687907853269984665640564039457584007913129639935) | uint256(13434049024568163260319109787009984810690641655409946981741395496769827836939)) | uint256(55361780475483769391141117307453975358811341889874726702126915257222260022948)) ^ uint256(71401610482866107759649671421594109058829942544555367772690854323183145287600)) ^ uint256(115792089237316195423570985008687907853269984665640564039457584007913129639935)) ^ uint256(115792089237316195423570985008687907853269984665640564039457584007913129639935)) | uint256(115792089237316195423570985008687907853269984665640564039457584007913129639935))]) = (payable(address(this)));
+      assert(s3[((((((uint256(115792089237316195423570985008687907853269984665640564039457584007913129639935) | uint256(13434049024568163260319109787009984810690641655409946981741395496769827836939)) | uint256(55361780475483769391141117307453975358811341889874726702126915257222260022948)) ^ uint256(71401610482866107759649671421594109058829942544555367772690854323183145287600)) ^ uint256(115792089237316195423570985008687907853269984665640564039457584007913129639935)) ^ uint256(115792089237316195423570985008687907853269984665640564039457584007913129639935)) | uint256(115792089237316195423570985008687907853269984665640564039457584007913129639935))] == payable(address(this)));
+      [new address[10][][](7), new address[10][][](7), new address[10][][](7), new address[10][][](7), new address[10][][](7), new address[10][][](7), new address[10][][](7), new address[10][][](7), new address[10][][](7)];
+    }
+  }
+  event ev0(bytes30  ep0) anonymous;
+  fallback() external virtual  
+  {
+    bytes6  l0 = s4;
+    bytes6  l1 = l0;
+    assert(l1 == s4);
+    address payable[] memory l2 = s3;
+    address payable[] memory l3 = l2;
+    assert(compareMemoryAndStorage(l3, s3));
+  }
+}
+pragma solidity >= 0.0.0;
+// ----
+// Warning 6133: (su0.sol:2613-2829): Statement has no effect.
+// Warning 5667: (su0.sol:659-669): Unused function parameter. Remove or comment out the variable name to silence this warning.
+// Warning 2072: (su0.sol:1143-1150): Unused local variable.
+// Warning 2072: (su0.sol:1152-1167): Unused local variable.
+// Warning 2018: (su0.sol:334-598): Function state mutability can be restricted to view

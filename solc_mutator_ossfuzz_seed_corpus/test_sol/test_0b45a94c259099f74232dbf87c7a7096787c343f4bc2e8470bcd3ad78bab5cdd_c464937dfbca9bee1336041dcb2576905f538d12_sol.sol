@@ -1,0 +1,33 @@
+
+==== Source: su0.sol ====
+pragma solidity >= 0.0.0;
+library L0 {
+  function f0(int128 i0) private    returns(int144 o0)
+  {
+  }
+}
+struct St0 {
+  address el0;
+  bytes28[2][][] el1;
+  address payable el2;
+}
+
+==== Source: su1.sol ====
+pragma solidity >= 0.0.0;
+library L1 {
+  event ev0(function (uint144) external   returns (bool, uint224)  ep0, address payable  ep1, int48[]  ep2) anonymous;
+  modifier m0(address payable[][] memory i0) 
+  {
+    delete i0;
+    (i0[(((((int256(57896044618658097711785492504343953926634992332820282019728792003956564819967) & int256(17451065981454230272461615568520975112048292328365200622692515171812595056095)) != int256(0)) ? uint256(0) : uint256(12541026131171240731133546170233896266285327968272158995357056495981646029241)) * uint256(48752074838540265796498645225030116429200967986699739807787210235875493489872)) - uint256(0))], i0[uint256(0)]) = (new address payable[](8), new address payable[](8));
+    address payable l0 = payable(address(0x0000000000000000000000000000000000000004));
+    function (bool, uint40, int24) internal   returns (uint232, bool, int104) l1;
+    unchecked {
+      i0[uint256(((uint256(79041259351164441794736478068266100574115569682413477293638767459030760980585) | (uint256(115792089237316195423570985008687907853269984665640564039457584007913129639935) ^ (uint256(0) | uint256(112388044374896417987559671227791569341157195420825071495725433263389028589759)))) / uint256(0)))] = new address payable[](8);
+      bool l2 = false;
+    }
+    _;
+  }
+}
+// ====
+// ----

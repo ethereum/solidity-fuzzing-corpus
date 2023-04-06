@@ -1,0 +1,22 @@
+
+==== Source: su0.sol ====
+library L0 {
+  function f0() public   
+  {
+    function (uint80, uint192) external   returns (bytes19, bytes16) l0;
+    return;
+  }
+}
+pragma solidity >= 0.0.0;
+library L1 {
+  function f1() external    returns(int184 o0)
+  {
+    unchecked {
+      uint128 l0 = uint128(340282366920938463463374607431768211455);
+      bytes20 l1 = (bytes20(address(0x0000000000000000000000000000000000000000)) ^ bytes20(address(0x3dC6DaA931c451363B675223185F908303b76D2A)));
+      uint192 l2 = (((uint192(((uint192(6277101735386680763835789423207666416102355444464034512895) >> uint256(uint256(23345916587415426913285209348510661583999186835624735429902746970021242862714))) / uint192(4859362460830593670889402904381604985213741902610528411442))) ** uint48(uint48(56808169213657))) % uint192(0)) - uint192(0));
+    }
+  }
+}
+// ====
+// ----

@@ -1,0 +1,34 @@
+
+==== Source: su0.sol ====
+library L0 {
+  function f0(uint16 i0) external   
+  {
+  }
+  function f1(int112 i0,address payable[] memory i1,address payable i2) external   
+  {
+    uint88 l0 = uint88(0);
+    assembly
+    {
+      i0 := i1
+      calldatacopy(add(0x80, mod(19811271154412648325725783028515934536535350950503176956017548803710995620512, 1024)), i0, mod(i0, 1024))
+      returndatacopy(add(0x80, mod(103358658331605577203918553810867510637889330131301523910378997555150703674492, 1024)), 4067397632034063987901194596925065535629766436325403253750962949869174641479, mod(0, 1024))
+      i2 := i2
+    }
+    address payable l1 = payable(address(0x0000000000000000000000000000000000000001));
+    (i1[uint256(115792089237316195423570985008687907853269984665640564039457584007913129639935)], i1[(uint24((uint24(6130954) / (uint24(15169032) - uint24(16777215)))) % uint256(0))], i1[((uint256(115792089237316195423570985008687907853269984665640564039457584007913129639935) % uint256((uint256((uint96(0) + uint96(9903861124487332266258796184))) / uint256(0)))) >> uint224(uint224(26959946667150639794667015087019630673637144422540572481103610249215)))]) = (payable(address(0x0000000000000000000000000000000000000003)), payable(ecrecover((sha256(bytes(string("000000a5a9"))) & (false ? bytes32(0x5f3fe126f8000370d9809d4c91ea9020e158dc3211ec7a128874a412418b7402) : bytes32(0xffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff))), uint8(255), bytes32(0xc12359dc1e0e6e265955598c7d02adda74ece7e6b6efe7fcd2aaeeacd2806036), bytes32(0xffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff))), payable(address(0x0000000000000000000000000000000000000002)));
+    assert(i1[uint256(115792089237316195423570985008687907853269984665640564039457584007913129639935)] == payable(address(0x0000000000000000000000000000000000000003)));
+    assert(i1[(uint24((uint24(6130954) / (uint24(15169032) - uint24(16777215)))) % uint256(0))] == payable(ecrecover((sha256(bytes(string("000000a5a9"))) & (false ? bytes32(0x5f3fe126f8000370d9809d4c91ea9020e158dc3211ec7a128874a412418b7402) : bytes32(0xffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff))), uint8(255), bytes32(0xc12359dc1e0e6e265955598c7d02adda74ece7e6b6efe7fcd2aaeeacd2806036), bytes32(0xffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff))));
+    assert(i1[((uint256(115792089237316195423570985008687907853269984665640564039457584007913129639935) % uint256((uint256((uint96(0) + uint96(9903861124487332266258796184))) / uint256(0)))) >> uint224(uint224(26959946667150639794667015087019630673637144422540572481103610249215)))] == payable(address(0x0000000000000000000000000000000000000002)));
+    uint32 l2 = (true ? uint32((((false ? uint32(3975343809) : uint32(0)) & uint32(0)) / uint32(421863026))) : uint32(0));
+  }
+  error er0(function (uint224) external   returns (bytes13, bool, int40) ep0, bool ep1);
+}
+function f2()     returns(int80 o0,bool[] memory o1)
+{
+  address payable l0 = payable(msg.sender);
+}
+using L0 for uint16;
+using L0 for uint16;
+pragma solidity >= 0.0.0;
+// ====
+// ----

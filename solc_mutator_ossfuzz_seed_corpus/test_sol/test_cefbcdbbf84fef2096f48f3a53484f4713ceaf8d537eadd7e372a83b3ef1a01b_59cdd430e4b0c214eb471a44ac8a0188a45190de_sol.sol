@@ -1,0 +1,23 @@
+==== Source:  ====
+
+==== Source: su0.sol ====
+library L0 {
+  function f0(string memory i0) external    returns(bool o0,bool[][] memory o1)
+  {
+    o1[((((((uint256(115792089237316195423570985008687907853269984665640564039457584007913129639935) >> uint192(uint192(0))) | uint256(115792089237316195423570985008687907853269984665640564039457584007913129639935)) + uint256(48840814272357145440047097020869298880473907716495410358066054719574673235286)) & uint256(0)) | uint256(104375534128258837859409872613483785165348997478738379585499107612318591996886)) + uint256(0))] = new bool[](3);
+    (o1[uint256(0)], o1[(o1.length ** uint248(((((uint248(0) * uint248(452312848583266388373324160190187140051835877600158453279131187530910662655)) % uint248(452312848583266388373324160190187140051835877600158453279131187530910662655)) % uint248(0)) + uint248(332024896345369439005563699386503159335458937508739907583978934034605360319))))], o1[uint256(((o1.length & (uint256(0) - (~(uint256(77647726522166539325381859949543846751560136407589072336972993355481552298325))))) / uint256(115792089237316195423570985008687907853269984665640564039457584007913129639935)))]) = ((true ? new bool[](3) : (true ? (false ? new bool[](3) : new bool[](3)) : new bool[](3))), new bool[](3), new bool[](3));
+  }
+  error er0(uint176 ep0, bytes23[5][2][10][] ep1);
+}
+pragma solidity >= 0.0.0;
+using L0 for string;
+using L0 for string;
+
+==== Source: su1.sol ====
+library L1 {
+}
+pragma solidity >= 0.0.0;
+// ----
+// Warning 5667: (su0.sol:27-43): Unused function parameter. Remove or comment out the variable name to silence this warning.
+// Warning 5667: (su0.sol:65-72): Unused function parameter. Remove or comment out the variable name to silence this warning.
+// Warning 2018: (su0.sol:15-1238): Function state mutability can be restricted to pure

@@ -1,0 +1,23 @@
+
+==== Source: su0.sol ====
+pragma solidity >= 0.0.0;
+contract C0 {
+  receive() external virtual  payable
+  {
+  }
+  bytes25   s0;
+  bool  public s1;
+  bytes4   s2 = bytes4(0xffffffff);
+  uint72  public s3 = uint72(4722366482869645213695);
+  constructor(bytes25 i0,bool i1)   {
+    s0 &= ((uint240(1766847064778384329583297500742918515827483896875618958121606201292619775) == uint240((int240(883423532389192164791648750371459257913741948437809479060803100646309887) % int240(883423532389192164791648750371459257913741948437809479060803100646309887)))) ? bytes25(0xa49b7d2b9ec47f5882c89bcc6aa67b7e4a93f5bf01ea9b836b) : bytes25(0xffffffffffffffffffffffffffffffffffffffffffffffffff));
+    s1 = (int184(12259964326927110866866776217202473468949912977468817407) > ((int184(0) - (int184(0) + int184(-1169672157485667151121121136666408233749144518286042356))) * int184(0)));
+    {
+      bool  l0 = s1;
+      bool  l1 = l0;
+      assert(l1 == s1);
+    }
+  }
+}
+// ====
+// ----

@@ -1,0 +1,33 @@
+==== Source:  ====
+
+==== Source: su0.sol ====
+pragma solidity >= 0.0.0;
+library L0 {
+  function f0() public   
+  {
+    string("8cde1ee10ecb6f585761be4c308c46fc8a0cf790a30bcc39b2565f6bbe000000000000");
+    string memory l0 = string("000000000000000000000000000000000000");
+    (l0) = (string("ffffffffffffffffffffffffffffa4cfcfb8ab098f554796d9a7af289b6f4b95897482"));
+    assert(keccak256(bytes(l0)) == keccak256(bytes(string("ffffffffffffffffffffffffffffa4cfcfb8ab098f554796d9a7af289b6f4b95897482"))));
+  }
+}
+library L1 {
+  function f1(int232 i0,address[] memory i1) external    returns(bool o0)
+  {
+    (o0, i1[((uint256(93474586582539428743941013162128836664136931039428169843687022949868941619811) & uint256((uint256((uint64(18446744073709551615) + uint64(18446744073709551615))) / uint256(0)))) | uint256(35032782371547061947020904467947766286881491209888399082689932197478129666148))]) = (true, i1[(uint256((int256((~(uint256(107214562710779199705039758320085218727219880138142546467151119444397836771312)))) & int256(0))) & uint256(115792089237316195423570985008687907853269984665640564039457584007913129639935))]);
+    assert(o0 == true);
+    assert(i1[((uint256(93474586582539428743941013162128836664136931039428169843687022949868941619811) & uint256((uint256((uint64(18446744073709551615) + uint64(18446744073709551615))) / uint256(0)))) | uint256(35032782371547061947020904467947766286881491209888399082689932197478129666148))] == i1[(uint256((int256((~(uint256(107214562710779199705039758320085218727219880138142546467151119444397836771312)))) & int256(0))) & uint256(115792089237316195423570985008687907853269984665640564039457584007913129639935))]);
+    (o0, o0, o0) = (true, false, true);
+    assert(o0 == true);
+    assert(o0 == false);
+    assert(o0 == true);
+    int160 l0 = int160(730750818665451459101842416358141509827966271487);
+  }
+  event ev0(bytes  ep0);
+}
+// ----
+// Warning 6133: (su0.sol:73-153): Statement has no effect.
+// Warning 5667: (su0.sol:490-499): Unused function parameter. Remove or comment out the variable name to silence this warning.
+// Warning 2072: (su0.sol:1734-1743): Unused local variable.
+// Warning 2018: (su0.sol:41-460): Function state mutability can be restricted to pure
+// Warning 2018: (su0.sol:478-1807): Function state mutability can be restricted to pure
