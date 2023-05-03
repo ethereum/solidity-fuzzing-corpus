@@ -1,0 +1,29 @@
+
+==== Source: su0.sol ====
+function f0(address payable i0,bool i1)     {
+}
+pragma solidity >= 0.0.0;
+struct St0 {
+  uint64 el0;
+  bool el1;
+}
+
+==== Source: su1.sol ====
+struct St1 {
+  bytes el0;
+  mapping(address => mapping(int224 => int192)) el1;
+  bool el2;
+  uint152 el3;
+}
+struct St2 {
+  uint152 el0;
+}
+function f1(bool i0,int208 i1)      returns(int184[4] memory o0,int248 o1){
+  (o0[(((~(uint256(9985295852795967444776332574716953072012124884327520505295503261876423697328))) % (uint256(0) - uint256(115792089237316195423570985008687907853269984665640564039457584007913129639935))) | uint256(0))], o0[uint256(0)]) = (int184(-4759990254222553094746951125796512634383135782414299179), int184(0));
+  assert(o0[(((~(uint256(9985295852795967444776332574716953072012124884327520505295503261876423697328))) % (uint256(0) - uint256(115792089237316195423570985008687907853269984665640564039457584007913129639935))) | uint256(0))] == int184(-4759990254222553094746951125796512634383135782414299179));
+  assert(o0[uint256(0)] == int184(0));
+}
+pragma solidity >= 0.0.0;
+error er0(function (address payable) external   returns (uint64) ep0);
+// ====
+// ----
