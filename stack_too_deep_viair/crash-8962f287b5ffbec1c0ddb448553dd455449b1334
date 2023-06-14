@@ -1,0 +1,24 @@
+{
+mstore(memoryguard(0x10000), 1)
+sstore(mload(calldataload(0)), 1)
+{
+function foo_m_0(x_1) -> x_2, x_3, x_4, x_5
+{
+x_2 := call(delegatecall(0x100000000000000000001, 0x10000000000000000001, mod(call(x_1, x_1, 0x1000000000000000001, mod(0x100000000000000001, 32768), mod(0x10000000000000001, 32768), mod(0x1000000000000001, 32768), mod(0x100000000000001, 32768)), 32768), mod(0x10000000000001, 32768), mod(addmod(0x1000000000001, 0x100000000001, 0x10000000001), 32768), mod(0x1000000001, 32768)), sload(x_2), 0x100000001, mod(msize(), 32768), mod(0x10000001, 32768), mod(msize(), 32768), mod(callvalue(), 32768))
+}
+let x_21, x_22, x_23, x_24 := foo_m_0(sload(224))
+sstore(288, x_21)
+sstore(32, x_22)
+sstore(96, x_23)
+sstore(160, x_24)
+for { let i_0 := 0 } lt(i_0, 0x60) { i_0 := add(i_0, 0x20) } {
+let x_37, x_38, x_39, x_40 := foo_m_0(0x1ffffffffffffffff)
+let x_44, x_45, x_46, x_47 := foo_m_0(0x1fffffffffffffffffffffff)
+}
+for { let i_1 := 0 } lt(i_1, 0x60) { i_1 := add(i_1, 0x20) } {
+calldatacopy(mod(0x1ffffffffffffffffffffffff, 32768), 0x1fffffffffffffffffffffffff, mod(0x1ffffffffffffffffffffffffff, 32768))
+let x_54, x_55, x_56, x_57 := foo_m_0(0x1fffffffffffffffffffffffffffffffff)
+let x_61, x_62, x_63, x_64 := foo_m_0(0x1ffffffffffffffffffffffffffffffffffffffff)
+}
+}
+}

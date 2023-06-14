@@ -1,0 +1,22 @@
+{
+mstore(memoryguard(0x10000), 1)
+sstore(mload(calldataload(0)), 1)
+{
+function foo_m_0(x_1) -> x_2, x_3
+{
+x_2 := call(call(0xffffffffffffffffffffffffffffffffffffffffffffffffffff, 0xfffffffffffffffffffffffffffffffffffffffffffffffffffff, 0xffffffffffffffffffffffffffffffffffffffffffffffffffffff, mod(call(x_1, x_1, 0xfffffffffffffffffffffffffffffffffffffffffffffffffffffff, mod(0xffffffffffffffffffffffffffffffffffffffffffffffffffffffff, 32768), mod(0xfffffffffffffffffffffffffffffffffffffffffffffffffffffffff, 32768), mod(0xffffffffffffffffffffffffffffffffffffffffffffffffffffffffff, 32768), mod(0xfffffffffffffffffffffffffffffffffffffffffffffffffffffffffff, 32768)), 32768), mod(0xffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff, 32768), mod(0xfffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff, 32768), mod(0xffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff, 32768)), sload(0xfffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff), 0xffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff, mod(0x0, 32768), mod(0x1, 32768), mod(0xffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff, 32768), mod(x_3, 32768))
+}
+let x_21, x_22 := foo_m_0(calldataload(160))
+sstore(224, x_21)
+sstore(288, x_22)
+for { let i_0 := 0 } lt(i_0, 0x60) { i_0 := add(i_0, 0x20) } {
+let x_31, x_32 := foo_m_0(0x10000000)
+}
+pop(0x100000000)
+for { let i_1 := 0 } lt(i_1, 0x60) { i_1 := add(i_1, 0x20) } {
+let x_37, x_38 := foo_m_0("z")
+let x_41, x_42 := foo_m_0(0x100000000000000000)
+let x_46, x_47 := foo_m_0(0x10000000000000000000000)
+}
+}
+}

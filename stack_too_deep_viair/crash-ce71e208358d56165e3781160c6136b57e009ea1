@@ -1,0 +1,25 @@
+{
+mstore(memoryguard(0x10000), 1)
+sstore(mload(calldataload(0)), 1)
+{
+foo_n_0(0x7ffffffffffffffff, 0x7fffffffffffffffff, 0x7ffffffffffffffffff, 0x7fffffffffffffffffff)
+foo_n_0(0x7fffffffffffffffffffff, 0x7ffffffffffffffffffffff, 0x7fffffffffffffffffffffff, 0x7ffffffffffffffffffffffff)
+{
+foo_n_0(0x7ffffffffffffffffffffffffff, 0x7fffffffffffffffffffffffffff, 0x7ffffffffffffffffffffffffffff, 0x7fffffffffffffffffffffffffffff)
+}
+foo_n_0(0x7fffffffffffffffffffffffffffffff, 0x7ffffffffffffffffffffffffffffffff, 0x7fffffffffffffffffffffffffffffffff, 0x7ffffffffffffffffffffffffffffffffff)
+foo_n_0(0x7ffffffffffffffffffffffffffffffffffff, 0x7fffffffffffffffffffffffffffffffffffff, 0x7ffffffffffffffffffffffffffffffffffffff, 0x7fffffffffffffffffffffffffffffffffffffff)
+foo_n_0(0x7fffffffffffffffffffffffffffffffffffffffff, 0x7ffffffffffffffffffffffffffffffffffffffffff, 0x7fffffffffffffffffffffffffffffffffffffffffff, 0x7ffffffffffffffffffffffffffffffffffffffffffff)
+function foo_n_0(x_31, x_32, x_33, x_34)
+{
+calldatacopy(mod(call(0x7ffffffffffffffffffffffffffffffffffffffffffffffffff, 0x7fffffffffffffffffffffffffffffffffffffffffffffffffff, 0x7ffffffffffffffffffffffffffffffffffffffffffffffffffff, mod(0x7fffffffffffffffffffffffffffffffffffffffffffffffffffff, 32768), mod(0x7ffffffffffffffffffffffffffffffffffffffffffffffffffffff, 32768), mod(0x7fffffffffffffffffffffffffffffffffffffffffffffffffffffff, 32768), mod("", 32768)), 32768), 0x7ffffffffffffffffffffffffffffffffffffffffffffffffffffffff, mod(add(0x7fffffffffffffffffffffffffffffffffffffffffffffffffffffffff,call(0x7ffffffffffffffffffffffffffffffffffffffffffffffffffffffffff, 0x7fffffffffffffffffffffffffffffffffffffffffffffffffffffffffff, 0x7ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff, mod(0x7fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff, 32768), mod(0x7ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff, 32768), mod(x_31, 32768), mod(0x7fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff, 32768))), 32768))
+calldatacopy(mod(call(0x8, 0x80, 0x800, mod(0x8000, 32768), mod(0x80000, 32768), mod(0x800000, 32768), mod(0x8000000, 32768)), 32768), 0x80000000, mod(0x800000000, 32768))
+for { let i_0 := 0 } lt(i_0, 0x60) { i_0 := add(i_0, 0x20) } {
+for { let i_1 := 0 } lt(i_1, 0x60) { i_1 := add(i_1, 0x20) } {
+}
+}
+}
+foo_n_0(0x800000000000,sload(96),calldataload(160),sload(224))
+foo_n_0(0x80000000000000000000, sload(0x800000000000000000000), 0x8000000000000000000000, 0x80000000000000000000000)
+}
+}
