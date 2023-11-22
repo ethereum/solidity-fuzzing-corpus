@@ -1,3 +1,0 @@
-contract D {}
-:linenos:
-
