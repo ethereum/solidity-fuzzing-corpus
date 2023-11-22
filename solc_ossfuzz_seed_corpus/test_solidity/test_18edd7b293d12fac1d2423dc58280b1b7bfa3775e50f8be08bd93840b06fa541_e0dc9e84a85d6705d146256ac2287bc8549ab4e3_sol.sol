@@ -1,0 +1,62 @@
+==== Source:  ====
+
+==== Source: su0.sol ====
+struct St0 {
+  mapping(int176 => int176) el0;
+  bytes6 el1;
+}
+struct St1 {
+  bool el0;
+}
+pragma solidity >= 0.0.0;
+
+==== Source: su1.sol ====
+error er0(address payable[] ep0);
+pragma solidity >= 0.0.0;
+contract C0 {
+  struct St2 {
+    bytes el0;
+  }
+  event ev0(bytes8  ep0);
+  C0.St2  public s0 = C0.St2(bytes("ffffffffffffffffffffffffffffffffffffffffffffffffffffff000000000000"));
+
+	function compareMemoryAndStorage(C0.St2 memory v1, C0.St2 storage v2) internal returns (bool) {
+
+		if (!compareMemoryAndStorage(v1.el0, v2.el0))
+			return false;
+
+	return true;
+	}
+	function compareMemoryAndStorage(bytes memory v1, bytes storage v2) internal pure returns (bool) {
+		return keccak256(bytes(v1)) == keccak256(bytes(v2));
+	}
+  int192[6]   s1;
+
+	function compareMemoryAndStorage(int192[6] memory v1, int192[6] storage v2) internal returns (bool) {
+		if (v1.length != v2.length)
+			return false;
+		for (uint i = 0; i < v1.length; i++)
+
+			if (v1[i] != v2[i])
+
+				return false;
+		return true;
+	}
+  int256   s2 = int256(0);
+  address  public s3 = address(this);
+  constructor(int192[6] memory i0)   {
+    s1 = i0;
+    {
+    }
+  }
+  fallback() external virtual  
+  {
+    (s0.el0, s1[((uint256(47885886927853861706691366448481744790344051551552963410793456342102749246748) + (uint256(115792089237316195423570985008687907853269984665640564039457584007913129639935) & uint256(115792089237316195423570985008687907853269984665640564039457584007913129639935))) + uint256(38946089115307530771688272815247309896695009221680526001879800910782731719497))], s2) = (bytes("9443c1d30476104697250ba4314c0fb956823d8c127a6006c3014d38dfebd7944037fdbbf7648be062284ba68f6c"), ((int192(0) % (((int192(0) ** uint128(uint128(314337224558890511769577144744323417205))) - int192(1159876678815041151463656413739449135829160344676080326413)) & int192(0))) ** uint184(uint184(0))), int256(((((int256(0) | (int256(0) - int256(0))) % int256(0)) ^ int256(51229334671222072962488018302502857069822813990570389897784976572815155583704)) / int256(479356881164887536592245017945287519237323925366102742122071146167648601424))));
+    assert(keccak256(bytes(s0.el0)) == keccak256(bytes(bytes("9443c1d30476104697250ba4314c0fb956823d8c127a6006c3014d38dfebd7944037fdbbf7648be062284ba68f6c"))));
+    assert(s1[((uint256(47885886927853861706691366448481744790344051551552963410793456342102749246748) + (uint256(115792089237316195423570985008687907853269984665640564039457584007913129639935) & uint256(115792089237316195423570985008687907853269984665640564039457584007913129639935))) + uint256(38946089115307530771688272815247309896695009221680526001879800910782731719497))] == ((int192(0) % (((int192(0) ** uint128(uint128(314337224558890511769577144744323417205))) - int192(1159876678815041151463656413739449135829160344676080326413)) & int192(0))) ** uint184(uint184(0))));
+    assert(s2 == int256(((((int256(0) | (int256(0) - int256(0))) % int256(0)) ^ int256(51229334671222072962488018302502857069822813990570389897784976572815155583704)) / int256(479356881164887536592245017945287519237323925366102742122071146167648601424))));
+  }
+}
+// ----
+// Warning 2018: (su1.sol:243-427): Function state mutability can be restricted to view
+// Warning 2018: (su1.sol:606-854): Function state mutability can be restricted to view

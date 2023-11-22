@@ -1,0 +1,44 @@
+==== Source:  ====
+
+==== Source: su0.sol ====
+library L0 {
+  error er0(bytes22 ep0);
+  int16 public constant cons0 = (~((((((int16(-12831) - int16(32767)) | int16(32767)) ** uint184(uint184(0))) ** uint240(uint240(0))) % int16(0))));
+  type T0 is uint24;
+  error er1();
+  bool public constant cons1 = false;
+  using L0 for *;
+}
+function f0(address payable i0,int168 i1,bool i2)    
+{
+  if ((true && true))
+  {
+  }
+}
+pragma solidity >= 0.0.0;
+
+==== Source: su1.sol ====
+pragma solidity >= 0.0.0;
+function f1(address payable i0)     returns(address o0,function (bytes26) external   returns (uint8) o1)
+{
+}
+enum EN0 {
+  M0, M1, M2, M3, M4, M5, M6, M7,
+  M8, M9, M10, M11, M12, M13, M14, M15,
+  M16, M17, M18, M19, M20, M21, M22, M23,
+  M24, M25, M26, M27, M28, M29, M30, M31,
+  M32, M33, M34, M35, M36, M37, M38, M39,
+  M40, M41, M42, M43, M44, M45, M46, M47,
+  M48, M49, M50, M51, M52, M53, M54, M55,
+  M56, M57, M58, M59, M60, M61, M62, M63,
+  M64, M65, M66, M67, M68, M69, M70, M71,
+  M72, M73, M74
+}
+import "su0.sol";
+// ----
+// Warning 3149: (su0.sol:77-147): The result type of the exponentiation operation is equal to the type of the first operand (int16) ignoring the (larger) type of the second operand (uint184) which might be unexpected. Silence this warning by either converting the first or the second operand to the type of the other.
+// Warning 3149: (su0.sol:76-171): The result type of the exponentiation operation is equal to the type of the first operand (int16) ignoring the (larger) type of the second operand (uint240) which might be unexpected. Silence this warning by either converting the first or the second operand to the type of the other.
+// Warning 5667: (su0.sol:294-312): Unused function parameter. Remove or comment out the variable name to silence this warning.
+// Warning 5667: (su0.sol:313-322): Unused function parameter. Remove or comment out the variable name to silence this warning.
+// Warning 5667: (su0.sol:323-330): Unused function parameter. Remove or comment out the variable name to silence this warning.
+// Warning 2018: (su0.sol:282-369): Function state mutability can be restricted to pure

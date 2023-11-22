@@ -1,0 +1,49 @@
+
+==== Source: su0.sol ====
+pragma solidity >= 0.0.0;
+contract C0 {
+  error er0(address[7] ep0);
+  struct St0 {
+    bytes30 el0;
+    bytes15 el1;
+    int88 el2;
+  }
+  fallback() external virtual  
+  {
+  }
+  function f1() public virtual  payable  returns(bytes17[9] memory o0,bool o1)  {
+    if ((true ? false : true))
+    {
+      o0 = (true ? [bytes17(0x0000000000000000000000000000000000), bytes17(0x0000000000000000000000000000000000), bytes17(0xffffffffffffffffffffffffffffffffff), bytes17(0x35d1a6c328b0ab56025eaf9b4cc87e99bb), bytes17(0x86374f413f8782ceb407b9f64b0bd79778), bytes17(0x0000000000000000000000000000000000), bytes17(0xffffffffffffffffffffffffffffffffff), bytes17(0x65560ee49ca59157948056dfb8b57fa7bc), bytes17(0xa68cf9acd9e2800d1b8b73d500e7691800)] : [bytes17(0xffffffffffffffffffffffffffffffffff), bytes17(0x7fb16b6c81c32b825d9891f22494a030de), bytes17(0xfe95e797c00e3e06c9d6a55745c85cb330), bytes17(0x814130788810457aef513728ac6073bc71), bytes17(0x0000000000000000000000000000000000), bytes17(0x0000000000000000000000000000000000), bytes17(0x3c78d7d4760b5848f8cc435e6b44766266), bytes17(0x6137aa8a75b6b65c022c9c96ad6a8f200c), bytes17(0xffffffffffffffffffffffffffffffffff)]);
+    }
+    else if (true)
+    {
+      (o0[((false ? ((payable(address(this)).balance ** uint96(uint96(79228162514264337593543950335))) - uint256(115792089237316195423570985008687907853269984665640564039457584007913129639935)) : uint256(106027983036559640999568930701931587476755191283935871519362759175657314083751)) & uint256(0))], o1) = (((bytes17(0xbdc75e8a6b814f7560c548bdc8c95f95ab) & o0[(uint256(12354205399835364809560913490262543462536332751940152777951416653142727646741) | uint256(710450437305262293306979808732776673654394443702256548568211044295819777067))]) & bytes17(0xffffffffffffffffffffffffffffffffff)), (bytes24(0xffffffffffffffffffffffffffffffffffffffffffffffff) <= bytes24(0x000000000000000000000000000000000000000000000000)));
+      assert(o0[((false ? ((payable(address(this)).balance ** uint96(uint96(79228162514264337593543950335))) - uint256(115792089237316195423570985008687907853269984665640564039457584007913129639935)) : uint256(106027983036559640999568930701931587476755191283935871519362759175657314083751)) & uint256(0))] == ((bytes17(0xbdc75e8a6b814f7560c548bdc8c95f95ab) & o0[(uint256(12354205399835364809560913490262543462536332751940152777951416653142727646741) | uint256(710450437305262293306979808732776673654394443702256548568211044295819777067))]) & bytes17(0xffffffffffffffffffffffffffffffffff)));
+      assert(o1 == (bytes24(0xffffffffffffffffffffffffffffffffffffffffffffffff) <= bytes24(0x000000000000000000000000000000000000000000000000)));
+      if ((false ? false : false))
+      {
+        return ([bytes17(0xffffffffffffffffffffffffffffffffff), bytes17(0xffffffffffffffffffffffffffffffffff), bytes17(0x0000000000000000000000000000000000), bytes17(0x0000000000000000000000000000000000), bytes17(0xffffffffffffffffffffffffffffffffff), bytes17(0xffffffffffffffffffffffffffffffffff), bytes17(0xffffffffffffffffffffffffffffffffff), bytes17(0xf5b31e9ad0e85a74f72d8bf434b710ed3e), bytes17(0xffffffffffffffffffffffffffffffffff)], false);
+      }
+    }
+  }
+  int168   s0;
+  constructor(int168 i0)   {
+    s0 %= int168((int168((int168(0) / (((int168(54857389070783618729593470825065413358584877856201) | int168(-91071472801230741906753196476291804237574709055623)) * int168(-114479066776242642453632715234214400039672914790238)) - int168(11436138064376365007584798533124135388837182780541)))) / int168(187072209578355573530071658587684226515959365500927)));
+    unchecked {
+    }
+  }
+  struct St1 {
+    string el0;
+    int64 el1;
+  }
+}
+function f2(bytes3 i0)    pure suffix returns(bytes memory o0){
+}
+
+==== Source: su1.sol ====
+pragma solidity >= 0.0.0;
+function f3(uint56 i0)    pure suffix returns(int168 o0){
+}
+// ====
+// ----

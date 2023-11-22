@@ -1,0 +1,34 @@
+
+==== Source: su0.sol ====
+library L0 {
+  enum EN0 {
+    M0, M1, M2, M3, M4, M5, M6, M7,
+    M8, M9, M10, M11, M12, M13, M14, M15,
+    M16, M17, M18, M19, M20, M21, M22, M23,
+    M24, M25, M26, M27
+  }
+  function f0(function (bytes14[] memory, uint216) external   i0) public    returns(function (address) external   returns (uint200, string memory, bytes24) o0)
+  {
+  }
+  int240 public constant cons0 = (int240((((((int240(883423532389192164791648750371459257913741948437809479060803100646309887) ** uint120(uint120(0))) ^ int240(0)) ** uint80(uint80(731410347515092547743336))) + int240(0)) / int240(883423532389192164791648750371459257913741948437809479060803100646309887))) ^ int240(0));
+  error er0();
+}
+type T0 is int248;
+pragma solidity >= 0.0.0;
+uint232 constant cons1 = (uint232(0) - ((((uint232(985826310733023622095576038245260595666906548808660696373800611234348) ** uint144(uint144(22300745198530623141535718272648361505980415))) - uint232(6901746346790563787434755862277025452451108972170386555162524223799295)) | uint232(1958271320989977704516400814463972223214259426945379592119546030990277)) ^ uint232(6901746346790563787434755862277025452451108972170386555162524223799295)));
+function f1()     returns(uint16 o0)
+{
+}
+
+==== Source: su1.sol ====
+struct St0 {
+  function () external   el0;
+  uint56[1] el1;
+  uint192 el2;
+}
+function f2()    
+{
+}
+pragma solidity >= 0.0.0;
+// ====
+// ----

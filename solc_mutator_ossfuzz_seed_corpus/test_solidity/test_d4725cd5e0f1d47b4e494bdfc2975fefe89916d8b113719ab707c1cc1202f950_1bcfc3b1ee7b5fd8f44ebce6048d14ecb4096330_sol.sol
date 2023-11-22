@@ -1,0 +1,33 @@
+==== Source:  ====
+
+==== Source: su0.sol ====
+pragma solidity >= 0.0.0;
+
+==== Source: su1.sol ====
+pragma solidity >= 0.0.0;
+function f0(uint240 i0,bytes24 i1,bytes2 i2,uint16 i3)  returns(bytes23 o0,bytes6 o1)
+{
+
+  (int96 l0) = abi.decode("e7ae41716c14e288587a185a43f282", (int96));
+  int112 l1 = abi.decode(abi.decode("b6a7a41203012d6c7993e99c3398ef9bf12ad3403e5878d933b30f30f9b17ca959", (bytes)), (int112));
+}
+function f1(int232 i0,uint128 i1,bytes7 i2) 
+{
+  uint200 l0 = (uint200((uint200(1240972829521267826064252534730655962539463423529488702333576) / ((uint200((((abi.decode(abi.encode(((uint152(1851521762796212497351658893032629116746478872) - ~((uint152(569888899027117793992553696555118452008649453) << type(uint152).max))) ** ~(uint152(3791655994009149146704236672926790998561325807))), (((-(int152(-415489452418264850930725190230874491458930955)) & int152(438786142479098849809453811931647334053813890)) ^ (~(((int152(-31558351414545459548671339322923105512522364) ^ type(int152).min) - int152(608331512733197220368720286967478540065288562))) & int152(-484229266196708930127252125100578247942286092))) - int152(-2065875324624118243603761707876516047466951477)), uint144(15906874451762837623427048120897206751054574), int248(82527414082700939864166458668386093601936558406401730945691164899673378367)), (uint200)) | uint200(660301006698922966443351336818236793644391212813984010707956)) << uint200(269502132688641237606961808096430387972142175627608937906060)) / uint200(635603228831125301008773487497463431472107792198932848455595))) % uint200(236384300432676340804172420916889314057272587209343147469928)) % uint200(844424377927135402398552868642103077304723967647950547515652)))) * uint200(425101840410998830240417617136833888411539946828058395127106));
+  (bytes23 l1, bytes6 l2) = f0(uint240(640151704661137124497843697482046495913960008609002817366227325272232522),(bytes24(0x0193715109ebbdde143a823ed17eb81b91ba55ba41d5e807) & bytes24(0xac56708c0662f9b7644f4f4e8a610df2e7f950e8f1f49005)),(bytes2(0x2864) & ((bytes2(0xbfdf) ^ (bytes2(0x339b) | (bytes2(0x1f78) ^ (bytes2(0x93d4) & abi.decode(address(0xbadD955d3afeE1bd3cfF01050437e4E18347ba1b).code, (bytes2)))))) & bytes2(0x75f9))),(uint16(1686) - uint16(41236)));
+  (l1,l2) = f0((uint240(((abi.decode(abi.decode(abi.decode("373f57ba53429be2769ecc320ca8143f84dc4aec92a3c60872aadbedd232b2bc9f24530a28dc605b9087ea", (bytes)), (bytes)), (uint240)) ** type(uint240).min) / uint240(254245726815437429814521601697092999622287768330565776960693205496982785))) >> (type(uint240).min & ((uint240(610613315265762370992831488698872681385561039362528772394849730610429188) & (((abi.decode(abi.encode((((bytes12(0xc603efe80d933cbda417c25f) ^ (bytes12(0x36ac69209c0f9b38a44ef018) & bytes12(0x68165af977902ffc113825b6))) ^ (bytes12(0xe1e1e9dc990a7b57035ca736) ^ (abi.decode(address(0xFBF058211f0128ab126f9798Cf40cF5883D6fA12).code, (bytes12)) ^ bytes12(0x7765707c924e328ab2b3e28f)))) ^ bytes12(0xc34186be8c3db613bc355de8))), (uint240)) & uint240(549931883597378302967582099037133388725683067667986658741396451303841714)) ^ uint240(657437642389094544501799867303605737176177165906733721019263793063616036)) ** uint240(968526573941483825730895013890390989179317337307188447121941496563676799))) & uint240(131665433786903372832488938409358731495683817087890621884799528729365974)))),bytes24(0x80a01b54ca76809fd5a799300d872d8cb35eca331793797b),(bytes2(0x9467) & bytes2(0x80d3)),uint16(14816));
+}
+// ----
+// Warning 5667: (su1.sol:38-48): Unused function parameter. Remove or comment out the variable name to silence this warning.
+// Warning 5667: (su1.sol:49-59): Unused function parameter. Remove or comment out the variable name to silence this warning.
+// Warning 5667: (su1.sol:60-69): Unused function parameter. Remove or comment out the variable name to silence this warning.
+// Warning 5667: (su1.sol:70-79): Unused function parameter. Remove or comment out the variable name to silence this warning.
+// Warning 5667: (su1.sol:90-100): Unused function parameter. Remove or comment out the variable name to silence this warning.
+// Warning 5667: (su1.sol:101-110): Unused function parameter. Remove or comment out the variable name to silence this warning.
+// Warning 2072: (su1.sol:118-126): Unused local variable.
+// Warning 2072: (su1.sol:187-196): Unused local variable.
+// Warning 5667: (su1.sol:326-335): Unused function parameter. Remove or comment out the variable name to silence this warning.
+// Warning 5667: (su1.sol:336-346): Unused function parameter. Remove or comment out the variable name to silence this warning.
+// Warning 5667: (su1.sol:347-356): Unused function parameter. Remove or comment out the variable name to silence this warning.
+// Warning 2072: (su1.sol:363-373): Unused local variable.
+// Warning 2018: (su1.sol:26-313): Function state mutability can be restricted to pure
