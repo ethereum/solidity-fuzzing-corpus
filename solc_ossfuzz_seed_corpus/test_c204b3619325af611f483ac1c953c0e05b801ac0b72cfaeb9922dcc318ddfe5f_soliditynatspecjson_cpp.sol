@@ -1,8 +1,0 @@
-	{
-		"methods": {
-			"f()":
-			{
-			"notice": "world"
-			}
-		}
-	}

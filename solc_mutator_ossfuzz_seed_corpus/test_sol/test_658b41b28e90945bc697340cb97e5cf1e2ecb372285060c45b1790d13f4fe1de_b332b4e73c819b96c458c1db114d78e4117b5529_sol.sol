@@ -1,7 +1,0 @@
-
-==== Source: su0.sol ====
-pragma solidity >= 0.0.0;
-function f0(int168 i0,uint16 i1)   returns(bytes25 o0,int144 o1,bytes20 o2)
-{
-  o1 /= (int144(-7346282474687712665613583528422831641928782) % ((bytes21(0x23eeec00ba605f4b589819d7271561116cf1b975e5) == bytes21(0x37addb77be49582154f73d903281a8a4e36374c601)) ? int56(445189205490946) : int56(-22409627831864680)));
-}
