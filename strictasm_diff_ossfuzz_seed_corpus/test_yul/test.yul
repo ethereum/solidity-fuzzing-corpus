@@ -1,12 +1,21 @@
 {
-        function f(a) -> x { x := add(a, a) }
-        function g(b, c) -> y { y := mul(mload(c), f(b)) }
-
-	for {let i:= 0} lt(i,2) {i := add(i,1)}
-	{
-		let y
-		y := g(f(3), 7)
-		if gt(i, 0) { y := 42 break }
-		mstore(0, y)
-	}
+    for { let i_0 := 0 } lt(i_0, 0x60) { i_0 := add(i_0, 0x20) }
+    {
+        switch mload(0x1fffffffffffffffffffffffff)
+        case 0x1ffffffffffffffffffffffffff { }
+        default {
+            for { let i_1 := 0 } lt(i_1, 0x60) { i_1 := add(i_1, 0x20) }
+            {
+                switch 0x1fffffffffffffffffffffffffff
+                case   0x1ffffffffffffffffffffffffffff { }
+                default { break }
+                continue
+                let x_4, x_5
+            }
+        }
+        let x_6, x_7
+    }
 }
+// ====
+// stackOptimization: true
+// ----

@@ -1,18 +1,23 @@
 {
-{
-for { let i_0 := 0 } lt(i_0, 0x60) { i_0 := add(i_0, 0x20) } {
-let x_0
-x_0 := 0x100000000000000000000000000000000000000000000000000
-switch pc()
-case 0x1000000000000000000000000000000000000000000000000000 {
-continue
+
+  function g() -> o {
+    sstore(0, exp(0x1fff,0xfff))
+  }
+  function f() {
+    pop(g())
+  }
+  f()
+  f()
 }
-case 0x10000000000000000000000000000000000000000000000000000 {
-x_0 := 0x100000000000000000000000000000000000000000000000000000
-}
-default {
-selfdestruct(x_0)
-}
-}
-}
-}
+// ====
+// EVMVersion: >byzantium
+// ----
+// step: fullSuite
+//
+// {
+//     {
+//         let _1 := 0x45e272cd059e42ccdecb8a1ff00b4113dc523ecd75eee1ff9551ffdffdffdfff
+//         sstore(0, _1)
+//         sstore(0, _1)
+//     }
+// }

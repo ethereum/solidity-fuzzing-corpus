@@ -1,14 +1,40 @@
 {
-{
-function foo_n_0(x_1, x_2, x_3, x_4)
-{
-for {
-leave
-stop()
+    function f(a, b) -> x {
+        let t
+        a := 2
+        x := 2
+        t := 2
+        if b { leave }
+        a := 8
+        x := 8
+        t := 8
+    }
+    function g(a, b) -> x {
+        let t
+        a := 2
+        x := 2
+        t := 2
+        if b { }
+        a := 8
+        x := 8
+        t := 8
+    }
 }
-0x8000000000000000000000000000000001{}
-{}
-}
-foo_n_0(0x8000000000000000000000000000001,sload(32),calldataload(96),sload(160))
-}
-}
+// ----
+// step: unusedAssignEliminator
+//
+// {
+//     function f(a, b) -> x
+//     {
+//         let t
+//         x := 2
+//         if b { leave }
+//         x := 8
+//     }
+//     function g(a_1, b_2) -> x_3
+//     {
+//         let t_4
+//         if b_2 { }
+//         x_3 := 8
+//     }
+// }
